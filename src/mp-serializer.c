@@ -395,7 +395,7 @@ mp_serializer_to_string(MpSerializer *serializer, const MPNumber *x)
     default:
     case MP_DISPLAY_FORMAT_AUTOMATIC:
         s0 = mp_to_string(serializer, x, &n_digits);
-        if (n_digits <= serializer->priv->leading_digits)
+        if (serializer->priv->base != 10 || n_digits <= serializer->priv->leading_digits)
             return s0;
         else {
             g_free (s0);
