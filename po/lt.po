@@ -1,5 +1,5 @@
 # translation of lt.po to Lithuanian
-# Lithuanian translation of gcalctool
+# Lithuanian translation of mate-calc
 # Copyright (C) 2003-2006, 2007, 2008 Free Software Foundation, Inc.
 #
 #
@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?"
-"product=gcalctool&component=general\n"
+"product=mate-calc&component=general\n"
 "POT-Creation-Date: 2010-06-20 12:43+0000\n"
 "PO-Revision-Date: 2010-06-25 16:06+0300\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
@@ -479,73 +479,73 @@ msgid "_Angle units:"
 msgstr "_Kampo vienetai:"
 
 #. Title of main window
-#: ../data/gcalctool.desktop.in.h:1 ../src/math-window.c:521
+#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:521
 msgid "Calculator"
 msgstr "Skaičiuotuvas"
 
-#: ../data/gcalctool.desktop.in.h:2
+#: ../data/mate-calc.desktop.in.h:2
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Atlikti aritmetinius, mokslinius ar finansinius skaičiavimus"
 
-#: ../data/gcalctool.schemas.in.h:1
+#: ../data/mate-calc.schemas.in.h:1
 msgid "Accuracy value"
 msgstr "Tikslumo reikšmė"
 
-#: ../data/gcalctool.schemas.in.h:2
+#: ../data/mate-calc.schemas.in.h:2
 msgid "Currency of the current calculation"
 msgstr "Dabartinio skaičiavimo valiuta"
 
-#: ../data/gcalctool.schemas.in.h:3
+#: ../data/mate-calc.schemas.in.h:3
 msgid "Currency to convert the current calculation into"
 msgstr "Valiuta, į kurią konvertuoti dabartinį skaičiavimą"
 
-#: ../data/gcalctool.schemas.in.h:4
+#: ../data/mate-calc.schemas.in.h:4
 msgid "Display Mode"
 msgstr "Rodymo veiksena"
 
-#: ../data/gcalctool.schemas.in.h:5
+#: ../data/mate-calc.schemas.in.h:5
 msgid ""
 "Indicates whether any trailing zeroes after the numeric point should be "
 "shown in the display value."
 msgstr "Nurodo, ar turėtų būti rodomi nuliai pabaigoje po kablelio."
 
-#: ../data/gcalctool.schemas.in.h:6
+#: ../data/mate-calc.schemas.in.h:6
 msgid "Indicates whether the memory register window is initially displayed."
 msgstr "Nurodo, ar iš pradžių atverti atminties registro langą."
 
-#: ../data/gcalctool.schemas.in.h:7
+#: ../data/mate-calc.schemas.in.h:7
 msgid "Indicates whether thousands separators are shown in large numbers."
 msgstr "Nurodo, ar dideliems skaičiams rodomi tūkstančių skirtukai."
 
-#: ../data/gcalctool.schemas.in.h:8
+#: ../data/mate-calc.schemas.in.h:8
 msgid "Mode"
 msgstr "Režimas"
 
-#: ../data/gcalctool.schemas.in.h:9
+#: ../data/mate-calc.schemas.in.h:9
 msgid "Numeric Base"
 msgstr "Skaičiavimo sistema"
 
-#: ../data/gcalctool.schemas.in.h:10
+#: ../data/mate-calc.schemas.in.h:10
 msgid "Show Registers"
 msgstr "Rodyti registrus"
 
-#: ../data/gcalctool.schemas.in.h:11
+#: ../data/mate-calc.schemas.in.h:11
 msgid "Show Thousands Separators"
 msgstr "Rodyti tūkstančių skyriklį"
 
-#: ../data/gcalctool.schemas.in.h:12
+#: ../data/mate-calc.schemas.in.h:12
 msgid "Show Trailing Zeroes"
 msgstr "Rodyti nulius skaičiaus gale"
 
-#: ../data/gcalctool.schemas.in.h:13
+#: ../data/mate-calc.schemas.in.h:13
 msgid "Source currency"
 msgstr "Iš valiutos"
 
-#: ../data/gcalctool.schemas.in.h:14
+#: ../data/mate-calc.schemas.in.h:14
 msgid "Target currency"
 msgstr "Į valiutą"
 
-#: ../data/gcalctool.schemas.in.h:15
+#: ../data/mate-calc.schemas.in.h:15
 msgid ""
 "The display format used in advanced mode. One of: \"ENG\" (engineering), "
 "\"FIX\" (fixed-point) and \"SCI\" (scientific)"
@@ -553,7 +553,7 @@ msgstr ""
 "Rodymo formatas sudėtingesneje veiksenoje. Galimos reikšmės: "
 "„ENG“ (inžinerinis), „FIX“ (fiksuoto kablelio) ir „SCI“ (mokslinis)"
 
-#: ../data/gcalctool.schemas.in.h:16
+#: ../data/mate-calc.schemas.in.h:16
 msgid ""
 "The initial calculator mode. Valid values are \"BASIC\", \"FINANCIAL\", "
 "\"LOGICAL\", \"SCIENTIFIC\" and \"PROGRAMMING\""
@@ -561,51 +561,51 @@ msgstr ""
 "Pradinė skaičiuoklio veiksena. Galimos reikšmės: „BASIC“, „FINANCIAL“, "
 "„LOGICAL“, „SCIENTIFIC“ ir „PROGRAMMING“"
 
-#: ../data/gcalctool.schemas.in.h:17
+#: ../data/mate-calc.schemas.in.h:17
 msgid ""
 "The initial trigonometric type. Valid values are \"DEG\" (degrees), \"GRAD"
 "\" (gradians) and \"RAD\" (radians)."
 msgstr ""
 "Pradinis trigonometrijos tipas. Galimos reikšmės: „DEG“, „GRAD“, „RAD“."
 
-#: ../data/gcalctool.schemas.in.h:18
+#: ../data/mate-calc.schemas.in.h:18
 msgid "The initial x-coordinate for the window"
 msgstr "Lango pradinė X koordinatė."
 
-#: ../data/gcalctool.schemas.in.h:19
+#: ../data/mate-calc.schemas.in.h:19
 msgid "The initial y-coordinate for the window"
 msgstr "Lango pradinė Y koordinatė."
 
-#: ../data/gcalctool.schemas.in.h:20
+#: ../data/mate-calc.schemas.in.h:20
 msgid ""
 "The number of digits displayed after the numeric point. This value must be "
 "in the range 0 to 9."
 msgstr "Skaitmenų po kablelio skaičius (tarp 0 ir 9)."
 
-#: ../data/gcalctool.schemas.in.h:21
+#: ../data/mate-calc.schemas.in.h:21
 msgid "The number of pixels to place the window from the left of the screen."
 msgstr "Pikselių skaičius nuo ekrano kairės."
 
-#: ../data/gcalctool.schemas.in.h:22
+#: ../data/mate-calc.schemas.in.h:22
 msgid "The number of pixels to place the window from the top of the screen."
 msgstr "Pikselių skaičius nuo ekrano viršaus."
 
-#: ../data/gcalctool.schemas.in.h:23
+#: ../data/mate-calc.schemas.in.h:23
 msgid "The numeric base (used in programming mode)"
 msgstr "Skaičiavimo sistemos pagrindas (naudojamas programavimo veiksenoje)"
 
-#: ../data/gcalctool.schemas.in.h:24
+#: ../data/mate-calc.schemas.in.h:24
 msgid ""
 "The size of the words used in bitwise operations. Valid values are 16, 32 "
 "and 64."
 msgstr ""
 "Žodžio ilgis naudojamas bitinėse operacijose. Galimos reikšmės: 16, 32, 64."
 
-#: ../data/gcalctool.schemas.in.h:25
+#: ../data/mate-calc.schemas.in.h:25
 msgid "Trigonometric type"
 msgstr "Trigonometrinis tipas"
 
-#: ../data/gcalctool.schemas.in.h:26
+#: ../data/mate-calc.schemas.in.h:26
 msgid "Word size"
 msgstr "Žodžio ilgis"
 
@@ -749,8 +749,8 @@ msgstr "JAV doleris"
 msgid "South African rand"
 msgstr "Pietų Afrikos Respublikos randas"
 
-#. Description on how to use gcalctool displayed on command-line
-#: ../src/gcalctool.c:77
+#. Description on how to use mate-calc displayed on command-line
+#: ../src/mate-calc.c:77
 #, c-format
 msgid ""
 "Usage:\n"
@@ -759,8 +759,8 @@ msgstr ""
 "Naudojimas:\n"
 "  %s - Vykdyti matematinius skaičiavimus"
 
-#. Description on gcalctool command-line help options displayed on command-line
-#: ../src/gcalctool.c:85
+#. Description on mate-calc command-line help options displayed on command-line
+#: ../src/mate-calc.c:85
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -775,8 +775,8 @@ msgstr ""
 "  --help-all                      Rodyti visas pagalbos parinktis\n"
 "  --help-gtk                      Rodyti GTK+ parinktis"
 
-#. Description on gcalctool command-line GTK+ options displayed on command-line
-#: ../src/gcalctool.c:96
+#. Description on mate-calc command-line GTK+ options displayed on command-line
+#: ../src/mate-calc.c:96
 #, c-format
 msgid ""
 "GTK+ Options:\n"
@@ -799,8 +799,8 @@ msgstr ""
 "  --gtk-module=MODULIAI            Įkelti papildomus GTK+ modulius\n"
 "  --g-fatal-warnings              Visi perspėjimai yra „mirtini"
 
-#. Description on gcalctool application options displayed on command-line
-#: ../src/gcalctool.c:110
+#. Description on mate-calc application options displayed on command-line
+#: ../src/mate-calc.c:110
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -812,13 +812,13 @@ msgstr ""
 "  -s, --solve <equation>          Išspręsti duotą lygtį"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: ../src/gcalctool.c:155
+#: ../src/mate-calc.c:155
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "Argumnetui --solve yra privaloma lygtis sprendimui"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: ../src/gcalctool.c:169
+#: ../src/mate-calc.c:169
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "Nežinomas argumentas „%s“"

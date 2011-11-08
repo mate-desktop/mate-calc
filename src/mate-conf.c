@@ -72,7 +72,7 @@ static void
 usage(const gchar *progname, gboolean show_application, gboolean show_gtk)
 {
     fprintf(stderr,
-            /* Description on how to use gcalctool displayed on command-line */
+            /* Description on how to use mate-calc displayed on command-line */
             _("Usage:\n"
               "  %s — Perform mathematical calculations"), progname);
 
@@ -80,7 +80,7 @@ usage(const gchar *progname, gboolean show_application, gboolean show_gtk)
             "\n\n");
 
     fprintf(stderr,
-            /* Description on gcalctool command-line help options displayed on command-line */
+            /* Description on mate-calc command-line help options displayed on command-line */
             _("Help Options:\n"
               "  -v, --version                   Show release version\n"
               "  -h, -?, --help                  Show help options\n"
@@ -91,7 +91,7 @@ usage(const gchar *progname, gboolean show_application, gboolean show_gtk)
 
     if (show_gtk) {
         fprintf(stderr,
-                /* Description on gcalctool command-line GTK+ options displayed on command-line */
+                /* Description on mate-calc command-line GTK+ options displayed on command-line */
                 _("GTK+ Options:\n"
                   "  --class=CLASS                   Program class as used by the window manager\n"
                   "  --name=NAME                     Program name as used by the window manager\n"
@@ -105,7 +105,7 @@ usage(const gchar *progname, gboolean show_application, gboolean show_gtk)
 
     if (show_application) {
         fprintf(stderr,
-                /* Description on gcalctool application options displayed on command-line */
+                /* Description on mate-calc application options displayed on command-line */
                 _("Application Options:\n"
                   "  -u, --unittest                  Perform unit tests\n"
                   "  -s, --solve <equation>          Solve the given equation"));
@@ -222,7 +222,7 @@ main(int argc, char **argv)
 
     get_options(argc, argv);
 
-    settings = g_settings_new ("org.mate.gcalctool");
+    settings = g_settings_new ("org.mate.mate-calc");
     accuracy = g_settings_get_int(settings, "accuracy");
     word_size = g_settings_get_int(settings, "word-size");
     base = g_settings_get_int(settings, "base");

@@ -1,4 +1,4 @@
-uidir = $(datadir)/gcalctool
+uidir = $(datadir)/mate-calc
 ui_DATA = \
 	preferences.ui \
 	buttons-basic.ui \
@@ -6,20 +6,20 @@ ui_DATA = \
 	buttons-financial.ui \
 	buttons-programming.ui
 
-gsettings_SCHEMAS = org.mate.gcalctool.gschema.xml
+gsettings_SCHEMAS = org.mate.mate-calc.gschema.xml
 @INTLTOOL_XML_NOMERGE_RULE@
 @GSETTINGS_RULES@
 
 Utilitiesdir = $(datadir)/applications
-Utilities_in_files = gcalctool.desktop.in
+Utilities_in_files = mate-calc.desktop.in
 Utilities_DATA = $(Utilities_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
-man1_MANS = gcalctool.1
+man1_MANS = mate-calc.1
 
-EXTRA_DIST = $(ui_DATA) org.mate.gcalctool.gschema.xml.in gcalctool.desktop.in $(man1_MANS)
+EXTRA_DIST = $(ui_DATA) org.mate.mate-calc.gschema.xml.in mate-calc.desktop.in $(man1_MANS)
 
 DISTCLEANFILES = \
 	Makefile.in \
-	gcalctool.desktop \
+	mate-calc.desktop \
 	$(gsettings_SCHEMAS)

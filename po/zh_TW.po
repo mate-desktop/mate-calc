@@ -444,93 +444,93 @@ msgid "_Angle units:"
 msgstr "角度單位(_A):"
 
 #. Title of main window
-#: ../data/gcalctool.desktop.in.h:1 ../src/math-window.c:521
+#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:521
 msgid "Calculator"
 msgstr "計算機"
 
-#: ../data/gcalctool.desktop.in.h:2
+#: ../data/mate-calc.desktop.in.h:2
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "進行數字、科學或金融的計算"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:1
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:1
 msgid "Accuracy value"
 msgstr "準確度數值"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:2
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:2
 msgid "Angle units"
 msgstr "角度單位"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:3
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:3
 msgid "Button mode"
 msgstr "按鈕模式"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:4
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:4
 msgid "Currency of the current calculation"
 msgstr "目前計算的貨幣"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:5
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:5
 msgid "Currency to convert the current calculation into"
 msgstr "要將目前計算結果換算為貨幣"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:6
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:6
 msgid ""
 "Indicates whether any trailing zeroes after the numeric point should be "
 "shown in the display value."
 msgstr "表示在顯示的數值中小數點後的 0 是否要顯示。"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:7
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:7
 msgid "Indicates whether thousands separators are shown in large numbers."
 msgstr "表示在大數字上是否顯示千位數分隔字元。"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:8
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:8
 msgid "Number format"
 msgstr "數字格式"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:9
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:9
 msgid "Numeric Base"
 msgstr "數字基底"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:10
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:10
 msgid "Show Thousands Separators"
 msgstr "顯示千位分隔符號"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:11
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:11
 msgid "Show Trailing Zeroes"
 msgstr "顯示小數點後的 0"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:12
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:12
 msgid "Source currency"
 msgstr "來源貨幣"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:13
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:13
 msgid "Target currency"
 msgstr "目標貨幣"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:14
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:14
 msgid "The angle units to use"
 msgstr "要使用的角度單位"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:15
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:15
 msgid "The button mode"
 msgstr "按鈕的模式"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:16
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:16
 msgid "The format to display numbers in"
 msgstr "顯示數字所用的格式"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:17
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:17
 msgid "The number of digits displayed after the numeric point"
 msgstr "小數點後要顯示的位數"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:18
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:18
 msgid "The numeric base"
 msgstr "數字基底"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:19
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:19
 msgid "The size of the words used in bitwise operations"
 msgstr "在逐位元運算中使用的字詞大小"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:20
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:20
 msgid "Word size"
 msgstr "文字大小"
 
@@ -674,8 +674,8 @@ msgstr "美元"
 msgid "South African rand"
 msgstr "南菲蘭特"
 
-#. Description on how to use gcalctool displayed on command-line
-#: ../src/gcalctool.c:76
+#. Description on how to use mate-calc displayed on command-line
+#: ../src/mate-calc.c:76
 #, c-format
 msgid ""
 "Usage:\n"
@@ -684,8 +684,8 @@ msgstr ""
 "用法：\n"
 "  %s — 進行數學計算"
 
-#. Description on gcalctool command-line help options displayed on command-line
-#: ../src/gcalctool.c:84
+#. Description on mate-calc command-line help options displayed on command-line
+#: ../src/mate-calc.c:84
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -699,8 +699,8 @@ msgstr ""
 "  --help-all                      顯示所有求助選項\n"
 "  --help-gtk                      顯示 GTK+ 選項"
 
-#. Description on gcalctool command-line GTK+ options displayed on command-line
-#: ../src/gcalctool.c:95
+#. Description on mate-calc command-line GTK+ options displayed on command-line
+#: ../src/mate-calc.c:95
 #, c-format
 msgid ""
 "GTK+ Options:\n"
@@ -721,8 +721,8 @@ msgstr ""
 "  --gtk-module=MODULES            載入額外的 GTK+ 模組\n"
 "  --g-fatal-warnings              將所有警告設為嚴重的"
 
-#. Description on gcalctool application options displayed on command-line
-#: ../src/gcalctool.c:109
+#. Description on mate-calc application options displayed on command-line
+#: ../src/mate-calc.c:109
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -734,13 +734,13 @@ msgstr ""
 "  -s, --solve <equation>          解開指定的算式"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: ../src/gcalctool.c:154
+#: ../src/mate-calc.c:154
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "引數 --solve 需要指定想解開的方程式"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: ../src/gcalctool.c:168
+#: ../src/mate-calc.c:168
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "不明的引數「%s」"

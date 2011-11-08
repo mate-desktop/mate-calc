@@ -1,10 +1,10 @@
-# Dzongkha translation of gcalctool.
+# Dzongkha translation of mate-calc.
 # Copyright @ 2006 Free Software Foundation, Inc.
 # Mindu Dorji
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gcalctool-mate.HEAD.dz\n"
+"Project-Id-Version: mate-calc-mate.HEAD.dz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-11 03:56+0000\n"
 "PO-Revision-Date: 2008-09-09 15:08+0530\n"
@@ -18,73 +18,73 @@ msgstr ""
 "X-Poedit-Country: BHUTAN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../gcalctool/calctool.c:566
+#: ../mate-calc/calctool.c:566
 msgid "Kilometer-to-mile conversion factor"
 msgstr "ཀི་ལོ་མི་ཊར་ལས་ མ་ཡེལ་ལུ་བསྒྱུར་ནིའི་ཆ་རྐྱེན།"
 
-#: ../gcalctool/calctool.c:568
+#: ../mate-calc/calctool.c:568
 msgid "square root of 2"
 msgstr "༢ སིཀོའེར་རུཊི།"
 
-#: ../gcalctool/calctool.c:569
+#: ../mate-calc/calctool.c:569
 msgid "Euler's Number (e)"
 msgstr "Euler's ཨང་གྲངས་ (e)"
 
-#: ../gcalctool/calctool.c:570
+#: ../mate-calc/calctool.c:570
 msgid "pi"
 msgstr "pi"
 
-#: ../gcalctool/calctool.c:571
+#: ../mate-calc/calctool.c:571
 msgid "Centimeter-to-inch conversion factor"
 msgstr "སེན་ཊི་མི་ཊར་ལས་ ཨིན་ཅི་ལུ་བསྒྱུར་ནིའི་ཆ་རྐྱེན།"
 
-#: ../gcalctool/calctool.c:573
+#: ../mate-calc/calctool.c:573
 msgid "degrees in a radian"
 msgstr "ཌི་གིརིསི་ཚུ་ རེ་ཌི་ཡཱན་ཅིག་ནང།"
 
-#: ../gcalctool/calctool.c:574
+#: ../mate-calc/calctool.c:574
 msgid "2 ^ 20"
 msgstr "༢ ^ ༢༠ "
 
-#: ../gcalctool/calctool.c:575
+#: ../mate-calc/calctool.c:575
 msgid "Gram-to-ounce conversion factor"
 msgstr "ག་རམ་ལས་ ཨའུནསི་ལུ་བསྒྱུར་ནིའི་ཆ་རྐྱེན།"
 
-#: ../gcalctool/calctool.c:577
+#: ../mate-calc/calctool.c:577
 msgid "Kilojoule-to-British-thermal-unit conversion factor"
 msgstr "ཀི་ལོ་ཇོ་ལི་ལས་ བི་རི་ཊིཤི་ཐར་མཱལ་ཆ་ཕྲན་ནང་ བསྒྱུར་ནིའི་ཆ་རྐྱེན།"
 
-#: ../gcalctool/calctool.c:580
+#: ../mate-calc/calctool.c:580
 msgid "Cubic-centimeter-to-cubic-inch conversion factor"
 msgstr "ཀུས་བིཀ་ལས་ སེན་ཊི་མི་ཊར་དང་ ཀུས་བིཀ་ལས་ཨིནཅ་ལུ་ བསྒྱུར་ནིའི་ཆ་རྐྱེན།"
 
 #. THIS ROUTINE IS CALLED WHEN AN ERROR CONDITION IS ENCOUNTERED, AND
 #. *  AFTER A MESSAGE HAS BEEN WRITTEN TO STDERR.
 #.
-#: ../gcalctool/calctool.c:591
-#: ../gcalctool/display.c:262
-#: ../gcalctool/mp.c:1981
-#: ../gcalctool/mpmath.c:372
-#: ../gcalctool/mpmath.c:411
-#: ../gcalctool/mpmath.c:466
+#: ../mate-calc/calctool.c:591
+#: ../mate-calc/display.c:262
+#: ../mate-calc/mp.c:1981
+#: ../mate-calc/mpmath.c:372
+#: ../mate-calc/mpmath.c:411
+#: ../mate-calc/mpmath.c:466
 msgid "Error"
 msgstr "འཛོལ་བ།།"
 
 #. Translators: the following string contains two strings that
-#. * are passed to it: the first is the gcalctool program name and
+#. * are passed to it: the first is the mate-calc program name and
 #. * the second is an error message (see the last parameter in the
 #. * getparam() call in the get_options() routine below.
 #.
-#: ../gcalctool/calctool.c:608
+#: ../mate-calc/calctool.c:608
 #, c-format
 msgid "%s: %s as next argument.\n"
 msgstr "%s: %s སྒྲུབ་རྟགས་ཤུལ་མམ་བཟུམ་སྦེ། \n"
 
 #. Translators: the following string contains two strings that
-#. * are passed to it: the first is the gcalctool program name and
+#. * are passed to it: the first is the mate-calc program name and
 #. * the second is the program version number.
 #.
-#: ../gcalctool/calctool.c:621
+#: ../mate-calc/calctool.c:621
 #, c-format
 msgid ""
 "%s version %s\n"
@@ -93,164 +93,164 @@ msgstr ""
 "%s ཐོན་རིམ། %s\n"
 "\n"
 
-#: ../gcalctool/calctool.c:622
+#: ../mate-calc/calctool.c:622
 #, c-format
 msgid "Usage: %s: [-D] [-E] [-a accuracy] "
 msgstr "ལག་ལེན་: %s: [-D] [-E] [-a ངེས་བདེན་]"
 
-#: ../gcalctool/calctool.c:623
+#: ../mate-calc/calctool.c:623
 msgid "\t\t [-?] [-v] [-h]\n"
 msgstr "\t\t [-?] [-v] [-h]\n"
 
-#: ../gcalctool/calctool.c:648
+#: ../mate-calc/calctool.c:648
 msgid "-a needs accuracy value"
 msgstr "-ཨེ་ལུ་ ངེས་བདེན་བེ་ལུ་དགོ་པས།"
 
-#: ../gcalctool/calctool.c:652
-#: ../gcalctool/get.c:237
+#: ../mate-calc/calctool.c:652
+#: ../mate-calc/get.c:237
 #, c-format
 msgid "%s: accuracy should be in the range 0-%d\n"
 msgstr "ངེས་བདེན་%s:དེ་ ཁྱབ་ཚད་ ༠-%d ནང་དགོ \n"
 
-#: ../gcalctool/functions.c:189
+#: ../mate-calc/functions.c:189
 msgid "No undo history"
 msgstr "འབད་ཤོལ་གྱི་ལོ་རྒྱུས་མིན་ནུག་ "
 
-#: ../gcalctool/functions.c:221
+#: ../mate-calc/functions.c:221
 msgid "No redo steps"
 msgstr "ལོག་འབད་ནི་མིན་ནུག་ "
 
-#: ../gcalctool/functions.c:577
+#: ../mate-calc/functions.c:577
 msgid "Invalid number for the current base"
 msgstr "ད་ལྟོའི་གཞི་རྟེན་གྱི་དོན་ལུ་ ནུས་མེད་ཨང་གྲངས།"
 
-#: ../gcalctool/functions.c:581
+#: ../mate-calc/functions.c:581
 msgid "Too long number"
 msgstr "རིང་གྲགས་པའི་ཨང་གྲངས།"
 
-#: ../gcalctool/functions.c:585
+#: ../mate-calc/functions.c:585
 msgid "Invalid bitwise operation parameter(s)"
 msgstr "ནུས་མེད་ཀྱི་བིཊི་དང་འཁྲིལ་བའི་བཀོལ་སྤྱོད་ཀྱི་ཚད་བཟུང་།"
 
-#: ../gcalctool/functions.c:589
+#: ../mate-calc/functions.c:589
 msgid "Invalid modulus operation parameter(s)"
 msgstr "ནུས་མེད་ཀྱི་བིཊི་དང་འཁྲིལ་བའི་བཀོལ་སྤྱོད་ཀྱི་ཚད་བཟུང་(s)"
 
-#: ../gcalctool/functions.c:593
+#: ../mate-calc/functions.c:593
 msgid "Math operation error"
 msgstr "ཨང་རྩིས་བཀོལ་བསྐྱོད་འཛོལ་བ"
 
-#: ../gcalctool/functions.c:597
+#: ../mate-calc/functions.c:597
 msgid "Malformed expression"
 msgstr "བཟོ་བསྒྱུར་བའི་གསལ་བརྗོད།"
 
-#: ../gcalctool/functions.c:696
+#: ../mate-calc/functions.c:696
 msgid "Error, operands must be integers"
 msgstr "འཛོལ་བ། ཨོ་པེ་རེནཌི་ཚུ་ ཧྲིལ་ཨང་ཨིན་དགོ "
 
-#: ../gcalctool/functions.c:923
-#: ../gcalctool/functions.c:1278
+#: ../mate-calc/functions.c:923
+#: ../mate-calc/functions.c:1278
 msgid "No sane value to convert"
 msgstr "གསོག་འཇོག་འབད་ནིའི་ སེན་བེ་ལུ་མིན་འདུག"
 
-#: ../gcalctool/functions.c:1023
-#: ../gcalctool/functions.c:1351
+#: ../mate-calc/functions.c:1023
+#: ../mate-calc/functions.c:1351
 msgid "No sane value to store"
 msgstr "གསོག་འཇོག་འབད་ནིའི་ སེན་བེ་ལུ་མིན་འདུག"
 
-#: ../gcalctool/functions.c:1144
+#: ../mate-calc/functions.c:1144
 msgid "Malformed function"
 msgstr "བཟོ་བསྒྱུར་བའི་ལས་འགན།"
 
-#: ../gcalctool/functions.c:1306
+#: ../mate-calc/functions.c:1306
 msgid "Cleared display, prefix without an operator is not allowed"
 msgstr "བཀྲམ་སྟོན་བསལ་ཡོད། ལག་ལེན་པ་ཅིག་མེད་པའི་སྔོན་ཚིག་མི་ཆོག"
 
-#: ../gcalctool/functions.c:1327
+#: ../mate-calc/functions.c:1327
 msgid "Malformed parenthesis expression"
 msgstr "བཟོ་བསྒྱུར་བའི་ གུག་ཤད་གསལ་བརྗོད།"
 
-#: ../gcalctool/functions.c:1503
+#: ../mate-calc/functions.c:1503
 msgid "No sane value to do bitwise shift"
 msgstr "བིཊི་ཝའིསི་སོར་ལྡེ་འབད་ནི་ལུ་་ སེནཨི་མིན་འདུག"
 
-#: ../gcalctool/get.c:258
+#: ../mate-calc/get.c:258
 #, c-format
 msgid "%s: base should be 2, 8, 10 or 16\n"
 msgstr "%s: གཞི་རྟེན་དེ་ ༢། ༨། ༡༠ ཡང་ན་ ༡༦ ཨིན་དགོ \n"
 
-#: ../gcalctool/get.c:273
+#: ../mate-calc/get.c:273
 #, c-format
 msgid "%s: invalid display mode [%s]\n"
 msgstr "%s: ནུས་མེད་བཀྲམ་སྟོན་ཐབས་ལམ་ [%s] \n"
 
-#: ../gcalctool/get.c:288
+#: ../mate-calc/get.c:288
 #, c-format
 msgid "%s: invalid mode [%s]\n"
 msgstr "%s: ནུས་མེད་ཐབས་ལམ། [%s]\n"
 
-#: ../gcalctool/get.c:302
+#: ../mate-calc/get.c:302
 #, c-format
 msgid "%s: invalid trigonometric mode [%s]\n"
 msgstr "%s: ནུས་མེད་ ཊི་གོ་ནོ་མི་ཊིཀ་ ཐབས་ལམ། [%s]\n"
 
-#: ../gcalctool/get.c:320
+#: ../mate-calc/get.c:320
 #, c-format
 msgid "%s: invalid syntax mode [%s]\n"
 msgstr "%s: ནུས་མེད་ཚིག་སྦྱོར་ཐབས་ལམ། [%s]\n"
 
-#: ../gcalctool/gtk.c:55
-#: ../gcalctool.desktop.in.h:1
+#: ../mate-calc/gtk.c:55
+#: ../mate-calc.desktop.in.h:1
 msgid "Calculator"
 msgstr "རྩིས་འཕྲུལ།"
 
-#: ../gcalctool/gtk.c:55
+#: ../mate-calc/gtk.c:55
 msgid "Calculator - Advanced"
 msgstr "རྩིས་འཕྲུལ་ - ཡར་འཕེལ་ཅན་ "
 
-#: ../gcalctool/gtk.c:55
+#: ../mate-calc/gtk.c:55
 msgid "Calculator - Financial"
 msgstr "དངུལ་འབྲེལ་གྱི་ རྩིས་འཕྲུལ་ "
 
-#: ../gcalctool/gtk.c:56
+#: ../mate-calc/gtk.c:56
 msgid "Calculator - Scientific"
 msgstr "ཚན་རིག་གི་ རྩིས་འཕྲུལ་ "
 
-#: ../gcalctool/gtk.c:61
+#: ../mate-calc/gtk.c:61
 #, c-format
 msgid "Calculator [%s]"
 msgstr "རྩིས་འཕྲུལ་ [%s]"
 
-#: ../gcalctool/gtk.c:61
+#: ../mate-calc/gtk.c:61
 #, c-format
 msgid "Calculator [%s] - Advanced"
 msgstr "རྩིས་འཕྲུལ་  [%s] - ཡར་འཕེལ་ཅན་ "
 
-#: ../gcalctool/gtk.c:61
+#: ../mate-calc/gtk.c:61
 #, c-format
 msgid "Calculator [%s] - Financial"
 msgstr "རྩིས་འཕྲུལ་  [%s] - དངུལ་འབྲེལ་ "
 
-#: ../gcalctool/gtk.c:62
+#: ../mate-calc/gtk.c:62
 #, c-format
 msgid "Calculator [%s] - Scientific"
 msgstr "རྩིས་འཕྲུལ་ [%s] -  ཚན་རིག་གི་ "
 
-#: ../gcalctool/gtk.c:510
+#: ../mate-calc/gtk.c:510
 msgid "Activated no operator precedence mode"
 msgstr "ལག་ལེན་པའི་སྔོན་དཔེ་ཐབས་ལམ་གཅིག་ཡང་ ཤུགས་ལྡན་མ་བཟོ་བས།"
 
-#: ../gcalctool/gtk.c:513
+#: ../mate-calc/gtk.c:513
 msgid "Activated expression mode with operator precedence"
 msgstr "གསལ་བརྗོད་ཐབས་ལམ་དེ་ ལག་ལེན་པའི་སྔོན་དཔེ་དང་བཅས་ ཤུགས་ལྡན་བཟོ་ནུག"
 
-#: ../gcalctool/gtk.c:542
-#: ../glade/gcalctool.glade.h:389
+#: ../mate-calc/gtk.c:542
+#: ../glade/mate-calc.glade.h:389
 #, no-c-format
 msgid "_Other (%d) ..."
 msgstr "གཞན་ (%d) ...(_O)"
 
-#: ../gcalctool/gtk.c:546
+#: ../mate-calc/gtk.c:546
 #, c-format
 msgid "Set accuracy from 0 to %d numeric places."
 msgid_plural "Set accuracy from 0 to %d numeric places."
@@ -258,7 +258,7 @@ msgstr[0] "༠  ལས་ %d ཚུན་ ངེས་བདེན་ གི་�
 msgstr[1] "༠  ལས་ %d ཚུན་ ངེས་བདེན་ གི་ཨང་གྲངས་ས་གནས་ཚུ་ གཞི་སྒྲིག་འབད། "
 
 #. Translator: This refers to the current accuracy setting
-#: ../gcalctool/gtk.c:552
+#: ../mate-calc/gtk.c:552
 #, c-format
 msgid "Currently set to %d places."
 msgid_plural "Currently set to %d places."
@@ -266,56 +266,56 @@ msgstr[0] "ད་ལྟོ་ %d ས་ཁོངས་ཚུ་ལུ་ གཞ�
 msgstr[1] "ད་ལྟོ་ %d ས་ཁོངས་ཚུ་ལུ་ གཞི་སྒྲིག་འབད་ཡོད་ "
 
 #. Factorial
-#: ../gcalctool/gtk.c:584
-#: ../glade/gcalctool.glade.h:314
+#: ../mate-calc/gtk.c:584
+#: ../glade/mate-calc.glade.h:314
 msgid "Sin"
 msgstr "སའིན།"
 
-#: ../gcalctool/gtk.c:584
+#: ../mate-calc/gtk.c:584
 msgid "Sinh"
 msgstr "སའིན་ "
 
-#: ../gcalctool/gtk.c:585
+#: ../mate-calc/gtk.c:585
 msgid "Sin<sup>-1</sup>"
 msgstr "སིན་ <sup>-༡</sup>"
 
-#: ../gcalctool/gtk.c:586
+#: ../mate-calc/gtk.c:586
 msgid "Sinh<sup>-1</sup>"
 msgstr "Sinh<sup>-1</sup>"
 
 #. Factorial
-#: ../gcalctool/gtk.c:588
-#: ../glade/gcalctool.glade.h:140
+#: ../mate-calc/gtk.c:588
+#: ../glade/mate-calc.glade.h:140
 msgid "Cos"
 msgstr "ཀོསི།"
 
-#: ../gcalctool/gtk.c:588
+#: ../mate-calc/gtk.c:588
 msgid "Cosh"
 msgstr "ཀོསི་ "
 
-#: ../gcalctool/gtk.c:589
+#: ../mate-calc/gtk.c:589
 msgid "Cos<sup>-1</sup>"
 msgstr "Cos<sup>-1</sup>"
 
-#: ../gcalctool/gtk.c:590
+#: ../mate-calc/gtk.c:590
 msgid "Cosh<sup>-1</sup>"
 msgstr "Cosh<sup>-༡</sup>"
 
 #. Factorial
-#: ../gcalctool/gtk.c:592
-#: ../glade/gcalctool.glade.h:339
+#: ../mate-calc/gtk.c:592
+#: ../glade/mate-calc.glade.h:339
 msgid "Tan"
 msgstr "ཊེན།"
 
-#: ../gcalctool/gtk.c:592
+#: ../mate-calc/gtk.c:592
 msgid "Tanh"
 msgstr "ཊེན་ "
 
-#: ../gcalctool/gtk.c:593
+#: ../mate-calc/gtk.c:593
 msgid "Tan<sup>-1</sup>"
 msgstr "Tan<sup>-༡</sup>"
 
-#: ../gcalctool/gtk.c:594
+#: ../mate-calc/gtk.c:594
 msgid "Tanh<sup>-1</sup>"
 msgstr "Tanh<sup>-༡</sup>"
 
@@ -328,15 +328,15 @@ msgstr "Tanh<sup>-༡</sup>"
 #. * (a one becomes a zero and a zero becomes a one), causing the
 #. * displayed integer value to be adjusted accordingly.
 #.
-#: ../gcalctool/gtk.c:690
+#: ../mate-calc/gtk.c:690
 msgid "Bit editor activated. Click on bit values to toggle them."
 msgstr "བིཊི་ ཞུན་དགཔ་ ཤུགས་ལྡན་བཟོ་ཡོདཔ། འདི་ཚུ་སོར་སྟོན་འབད་ནིའི་དོན་ལུ་ བིཊི་ བེ་ལུ་གུ་ ཨེབ་གཏང་འབད། "
 
-#: ../gcalctool/gtk.c:1151
+#: ../mate-calc/gtk.c:1151
 msgid "translator-credits"
 msgstr "ཨའི་ཌི་ཨར་སི་གི་མ་དངུལ་རྒྱབ་སྐྱོར་ཐོག་ལས་ བརྡ་དོན་འཕྲུལ་རིག་ལས་ཁུངས་ནང་ སྐད་བསྒྱུར་འབད་ཡི། ཁ་གསལ་གྱི་དོན་ལུ་ འབྲེལ་བ་འཐབ་ས་: <pema_geyleg@druknet.bt>/<pgeyleg@dit.gov.bt>"
 
-#: ../gcalctool/gtk.c:1154
+#: ../mate-calc/gtk.c:1154
 msgid ""
 "Gcalctool is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -348,7 +348,7 @@ msgstr ""
 " ཇི་ཨེན་ཡུ་ ཡོངས་ཁྱབ་མི་མང་ཆོག་ཐམ་གྱི་ ཐོན་རིམ་ ༢ ཡང་ན་ ཁྱོད་རའི་བློ་འདོད་བཞིན་དུ་ ཤུལ་ལས་ཀྱི་ཐོན་རིམ་གང་རུང་གི་ ཁ་ཚིག་དང་འཁྲིལ་ཏེ་ བསྐྱར་འགྲེམ་འབད་བ་\n"
 " ཡང་ན་ ལེགས་བཅོས་འབད་ཆོག\n"
 
-#: ../gcalctool/gtk.c:1158
+#: ../mate-calc/gtk.c:1158
 msgid ""
 "Gcalctool is distributed in the hope that it will be useful,\n"
 "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
@@ -360,7 +360,7 @@ msgstr ""
 " དམིགས་བསལ་དགོས་དོན་ཅིག་གི་དོན་ལུ་ ཚུད་སྒྲིག་ཡོད་མེད་ཀྱི་ཉེན་ལེན་ཙམ་ཡང་མེད།\n"
 " རྒྱས་བཤད་ཀྱི་དོན་ལུ་ ཇི་ཨེན་ཡུ་ ཡོངས་ཁྱབ་མི་མང་ཆོག་ཐམ་ལུ་བལྟ།\n"
 
-#: ../gcalctool/gtk.c:1162
+#: ../mate-calc/gtk.c:1162
 msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with Gcalctool; if not, write to the Free Software Foundation, Inc.,\n"
@@ -370,924 +370,924 @@ msgstr ""
 " ཐོབ་ཐོབ་འོང་། གལ་སྲིད་མ་ཐོབ་ཅིན་ \n"
 "Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA ལུ་ ཡི་གུ་གཏང་།\n"
 
-#: ../gcalctool/gtk.c:1173
+#: ../mate-calc/gtk.c:1173
 msgid "Gcalctool"
 msgstr "ཇི་ཀེལ་སི་ཊུལ།"
 
-#: ../gcalctool/gtk.c:1175
+#: ../mate-calc/gtk.c:1175
 msgid "© 1986-2008 The Gcalctool authors"
 msgstr "© ༡༩༨༧༔༢༠༠༦ ཇི་ཀེལ་སི་ཊུལ་གྱི་རྩོམ་པ་པོ་ཚུ།"
 
-#: ../gcalctool/gtk.c:1177
+#: ../mate-calc/gtk.c:1177
 msgid "Calculator with financial and scientific modes."
 msgstr "དངུལ་འབྲེལ་དང་ ཚན་རིག་ཐབས་ལམ་བཅས་པའི་རྩིས་འཕྲུལ།"
 
-#: ../gcalctool/gtk.c:1479
-#: ../glade/gcalctool.glade.h:119
+#: ../mate-calc/gtk.c:1479
+#: ../glade/mate-calc.glade.h:119
 msgid "C"
 msgstr "C"
 
-#: ../gcalctool/gtk.c:1497
-#: ../glade/gcalctool.glade.h:170
+#: ../mate-calc/gtk.c:1497
+#: ../glade/mate-calc.glade.h:170
 msgid "F"
 msgstr "F།"
 
-#: ../gcalctool/gtk.c:1671
+#: ../mate-calc/gtk.c:1671
 msgid "Changing Modes Clears Calculation"
 msgstr "ཐབས་ལམ་ བསྒྱུར་བཅོས་འབད་མི་དེ་གིས་ རྩིས་ལས་ བལས་འོང་ "
 
-#: ../gcalctool/gtk.c:1674
+#: ../mate-calc/gtk.c:1674
 msgid "When you change modes, the current calculation will be cleared, and the base will be reset to decimal."
 msgstr "ཁྱོད་ཀྱིས་ཐབས་ལམ་སོརཝ་དང་ ད་ལྟོའི་རྩིས་བཏོན་ཏེ་བསལ་ཞིནམ་ལས་ གཞི་རྟེན་དེ་ ཌེ་སི་མཱལ་ལུ་ སླར་སྒྲིག་འབདཝ་ཨིན།"
 
-#: ../gcalctool/gtk.c:1678
+#: ../mate-calc/gtk.c:1678
 msgid "_Do not warn me again"
 msgstr "ང་ལུ་ལོག་སྟེ་ ཉེན་བརྡ་མ་འབད།(_D)"
 
-#: ../gcalctool/gtk.c:1683
+#: ../mate-calc/gtk.c:1683
 msgid "C_hange Mode"
 msgstr "ཐབས་ལམ་སོར།(_h)"
 
 #. translators: R is the short form of register used inter alia
 #. in popup menus
-#: ../gcalctool/gtk.c:1820
+#: ../mate-calc/gtk.c:1820
 msgid "R"
 msgstr "R"
 
-#: ../gcalctool/gtk.c:2186
+#: ../mate-calc/gtk.c:2186
 msgid "Clipboard contained malformed calculation"
 msgstr "འཛིན་པང་ནང་ལུ་ བཟོ་བསྒྱུར་བའི་ རྩིས་ལས་འདུག"
 
-#: ../gcalctool/gtk.c:2258
+#: ../mate-calc/gtk.c:2258
 msgid "Paste"
 msgstr "སྦྱར"
 
-#: ../gcalctool/gtk.c:2531
+#: ../mate-calc/gtk.c:2531
 msgid "Error loading user interface"
 msgstr "ལག་ལེན་པའི་ ངོས་འདྲ་བ་ མངོན་གསལ་འབད་ནི་ལུ་ འཐུས་ཤོར་བྱུང་ཡོདཔ་ "
 
-#: ../gcalctool/gtk.c:2533
+#: ../mate-calc/gtk.c:2533
 #, c-format
 msgid "The user interface file %s is missing or unable to be loaded. Please check your installation."
 msgstr "ལག་ལེན་པ་ངོས་འདྲ་བའི་ཡིག་སྣོད་ %s བརླག་སྟོར་ཞུགས་པ་  ཡང་ན་ མངོན་གསལ་འབད་མ་ཚུགས། ཁྱོད་རའི་ གཞི་བཙུགས་་ ཞིབ་དཔྱད་འབད་གནང་། "
 
-#: ../gcalctool/gtk.c:2761
-#: ../gcalctool/gtk.c:2779
+#: ../mate-calc/gtk.c:2761
+#: ../mate-calc/gtk.c:2779
 msgid "No."
 msgstr "མེན།"
 
-#: ../gcalctool/gtk.c:2763
-#: ../gcalctool/gtk.c:2781
+#: ../mate-calc/gtk.c:2763
+#: ../mate-calc/gtk.c:2781
 msgid "Value"
 msgstr "བེ་ལུ།"
 
-#: ../gcalctool/gtk.c:2765
-#: ../gcalctool/gtk.c:2783
+#: ../mate-calc/gtk.c:2765
+#: ../mate-calc/gtk.c:2783
 msgid "Description"
 msgstr "འགྲེལ་བཤད།"
 
 #. Set default accuracy menu item
-#: ../gcalctool/gtk.c:2921
-#: ../glade/gcalctool.glade.h:269
+#: ../mate-calc/gtk.c:2921
+#: ../glade/mate-calc.glade.h:269
 #, no-c-format
 msgid "Reset to _Default (%d)"
 msgstr "གྲུབ་འབྲས་ སྔོན་སྒྲིག་(%d)ལུ་  (_D)"
 
-#: ../gcalctool/mp.c:3364
+#: ../mate-calc/mp.c:3364
 msgid "Negative X and non-integer Y not supported"
 msgstr "མེད་ཆ་ཨེགསི་དང་ ཧྲིལ་ཨང་མིན་པའི་ཝའིལུ་ རྒྱབ་སྐྱོར་མིན་འདུག"
 
-#: ../gcalctool/mpmath.c:273
+#: ../mate-calc/mpmath.c:273
 msgid "Error, cannot calculate cosine"
 msgstr "འཛོལ་བ། ཀོ་སའིན་རྩིས་བརྐྱབ་མི་ཚུགས་པས།"
 
-#: ../gcalctool.desktop.in.h:2
+#: ../mate-calc.desktop.in.h:2
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "མཚན་རིགས་ དངུལ་འབྲེལ་ ཡང་ན་ ཨང་རྩིས་ཀྱི་ རྩིས་ལས་ཀྱི་ ལས་འགན་བསྒྲུབ་ "
 
 #. This is a percentage sign
-#: ../glade/gcalctool.glade.h:3
+#: ../glade/mate-calc.glade.h:3
 #, no-c-format
 msgid "%"
 msgstr "%"
 
 #. 16 bit unsigned integer
-#: ../glade/gcalctool.glade.h:5
+#: ../glade/mate-calc.glade.h:5
 msgid "&16"
 msgstr "&༡༦"
 
 #. 32 bit unsigned integer
-#: ../glade/gcalctool.glade.h:7
+#: ../glade/mate-calc.glade.h:7
 msgid "&32"
 msgstr "&༣༢"
 
 #. Left bracket
-#: ../glade/gcalctool.glade.h:9
+#: ../glade/mate-calc.glade.h:9
 msgid "("
 msgstr "("
 
 #. Right bracket
-#: ../glade/gcalctool.glade.h:11
+#: ../glade/mate-calc.glade.h:11
 msgid ")"
 msgstr ")"
 
-#: ../glade/gcalctool.glade.h:12
+#: ../glade/mate-calc.glade.h:12
 msgid "+"
 msgstr "+"
 
 #. Numeric point
-#: ../glade/gcalctool.glade.h:14
+#: ../glade/mate-calc.glade.h:14
 msgid "."
 msgstr "."
 
 #. Numeric 0
-#: ../glade/gcalctool.glade.h:16
+#: ../glade/mate-calc.glade.h:16
 msgid "0"
 msgstr "༠"
 
 #. Numeric 1
-#: ../glade/gcalctool.glade.h:18
+#: ../glade/mate-calc.glade.h:18
 msgid "1"
 msgstr "༡"
 
-#: ../glade/gcalctool.glade.h:19
+#: ../glade/mate-calc.glade.h:19
 msgid "1/<i>x</i>"
 msgstr "1/<i>x</i>"
 
-#: ../glade/gcalctool.glade.h:20
+#: ../glade/mate-calc.glade.h:20
 msgid "1/x"
 msgstr "༡/x"
 
-#: ../glade/gcalctool.glade.h:21
+#: ../glade/mate-calc.glade.h:21
 msgid "10 places"
 msgstr "ས་གནས་ ༡༠"
 
-#: ../glade/gcalctool.glade.h:22
+#: ../glade/mate-calc.glade.h:22
 msgid "10 to the power of displayed value [}]"
 msgstr "བཀྲམ་སྟོན་འབད་མི་བེ་ལུ་གི་དབང་ཚད་ལུ་ ༡༠། [}] "
 
-#: ../glade/gcalctool.glade.h:23
+#: ../glade/mate-calc.glade.h:23
 msgid "10 to the x"
 msgstr "x ལུ་ ༡༠"
 
 #. 10 to thepower of  x. Note that this label uses mark up and the "x" is a superscript character. See: http://en.wikipedia.org/wiki/Superscript for more details on superscripts.
-#: ../glade/gcalctool.glade.h:25
+#: ../glade/mate-calc.glade.h:25
 msgid "10<sup><i>x</i></sup>"
 msgstr "10<sup><i>x</i></sup>"
 
-#: ../glade/gcalctool.glade.h:26
+#: ../glade/mate-calc.glade.h:26
 msgid "10x"
 msgstr "10x"
 
-#: ../glade/gcalctool.glade.h:27
+#: ../glade/mate-calc.glade.h:27
 msgid "11 places"
 msgstr "ས་གནས་ ༡༡"
 
-#: ../glade/gcalctool.glade.h:28
+#: ../glade/mate-calc.glade.h:28
 msgid "12 places"
 msgstr "ས་གནས་ ༡༢"
 
-#: ../glade/gcalctool.glade.h:29
+#: ../glade/mate-calc.glade.h:29
 msgid "13 places"
 msgstr "ས་གནས་ ༡༣"
 
-#: ../glade/gcalctool.glade.h:30
+#: ../glade/mate-calc.glade.h:30
 msgid "14 places"
 msgstr "ས་གནས་ ༡༤"
 
-#: ../glade/gcalctool.glade.h:31
+#: ../glade/mate-calc.glade.h:31
 msgid "15"
 msgstr "༡༥"
 
-#: ../glade/gcalctool.glade.h:32
+#: ../glade/mate-calc.glade.h:32
 msgid "15 places"
 msgstr "ས་གནས་ ༡༥"
 
-#: ../glade/gcalctool.glade.h:33
+#: ../glade/mate-calc.glade.h:33
 msgid "16 bit unsigned integer"
 msgstr "བིཊི་-༡༦ འབད་མི་ མིང་རྟགས་མ་བཀོད་པའི་ཧྲིལ་ཨང་།"
 
-#: ../glade/gcalctool.glade.h:34
+#: ../glade/mate-calc.glade.h:34
 msgid "16-bit unsigned integer value of display (])"
 msgstr "བཀྲམ་སྟོན་གྱི་ བིཊི་- ༡༦ འབད་མི་ མིང་རྟགས་མ་བཀོད་པའི་ཧྲིལ་ཨང་བེ་ལུ། (])"
 
 #. Numeric 2
-#: ../glade/gcalctool.glade.h:36
+#: ../glade/mate-calc.glade.h:36
 msgid "2"
 msgstr "༢"
 
 #. Numeric 3
-#: ../glade/gcalctool.glade.h:38
+#: ../glade/mate-calc.glade.h:38
 msgid "3"
 msgstr "༣"
 
-#: ../glade/gcalctool.glade.h:39
+#: ../glade/mate-calc.glade.h:39
 msgid "31"
 msgstr "༣༡"
 
-#: ../glade/gcalctool.glade.h:40
+#: ../glade/mate-calc.glade.h:40
 msgid "32"
 msgstr "༣༢།"
 
-#: ../glade/gcalctool.glade.h:41
+#: ../glade/mate-calc.glade.h:41
 msgid "32-bit unsigned integer value of display ([)"
 msgstr "བཀྲམ་སྟོན་གྱི་ བིཊི་-༣༢ འབད་མི་ མིང་རྟགས་མ་བཀོད་པའི་ཧྲིལ་ཨང་བེ་ལུ། ([)\""
 
 #. Numeric 4
-#: ../glade/gcalctool.glade.h:43
+#: ../glade/mate-calc.glade.h:43
 msgid "4"
 msgstr "༤"
 
-#: ../glade/gcalctool.glade.h:44
+#: ../glade/mate-calc.glade.h:44
 msgid "47"
 msgstr "༤༧"
 
 #. Numeric 5
-#: ../glade/gcalctool.glade.h:46
+#: ../glade/mate-calc.glade.h:46
 msgid "5"
 msgstr "༥"
 
 #. Numeric 6
-#: ../glade/gcalctool.glade.h:48
+#: ../glade/mate-calc.glade.h:48
 msgid "6"
 msgstr "༦"
 
-#: ../glade/gcalctool.glade.h:49
+#: ../glade/mate-calc.glade.h:49
 msgid "63"
 msgstr "༦༣"
 
 #. Numeric 7
-#: ../glade/gcalctool.glade.h:51
+#: ../glade/mate-calc.glade.h:51
 msgid "7"
 msgstr "༧"
 
 #. Numeric 8
-#: ../glade/gcalctool.glade.h:53
+#: ../glade/mate-calc.glade.h:53
 msgid "8"
 msgstr "༨"
 
 #. Numeric 9
-#: ../glade/gcalctool.glade.h:55
+#: ../glade/mate-calc.glade.h:55
 msgid "9"
 msgstr "༩"
 
 #. Shift left
-#: ../glade/gcalctool.glade.h:57
+#: ../glade/mate-calc.glade.h:57
 msgid "<"
 msgstr "<"
 
 #. Factorial
-#: ../glade/gcalctool.glade.h:59
+#: ../glade/mate-calc.glade.h:59
 msgid "<i>x</i>!"
 msgstr "<i>x</i>!"
 
 #. x squared. Note that this label uses mark up and the "x" is a superscript character. See: http://en.wikipedia.org/wiki/Superscript for more details on superscripts.
-#: ../glade/gcalctool.glade.h:61
+#: ../glade/mate-calc.glade.h:61
 msgid "<i>x</i><sup>2</sup>"
 msgstr "<i>x</i><ཨེསི་ཡུ་པི་>༢</sup>"
 
 #. X to the power of y. Note that this label uses mark up and the "y" is a superscript character. See: http://en.wikipedia.org/wiki/Superscript for more details on superscripts.
-#: ../glade/gcalctool.glade.h:63
+#: ../glade/mate-calc.glade.h:63
 msgid "<i>x</i><sup><i>y</i></sup>"
 msgstr "<i>x</i><sup><i>y</i></sup>"
 
-#: ../glade/gcalctool.glade.h:64
+#: ../glade/mate-calc.glade.h:64
 msgid "<small><i><b>Note:</b> All constant values are specified in the decimal numeric base.</i></small>"
 msgstr "<small><i><b>དྲན་འཛིན་:</b>ཆད་མེད་བེ་ལུསི་ཆ་མཉམ་ ཌི་སི་མཱལ་ཨང་གྲངས་གཞི་རྟེན་ནང་ གསལ་བཀོད་འབད་དེ་ཡོད།</i></small>"
 
 #. "R0" is the abbreviation for "Register 0", used in the memory register dialog
-#: ../glade/gcalctool.glade.h:66
+#: ../glade/mate-calc.glade.h:66
 msgid "<span weight=\"bold\">R0</span>"
 msgstr "<span weight=\"bold\">R0</span>"
 
 #. "R1" is the abbreviation for "Register 1", used in the memory register dialog
-#: ../glade/gcalctool.glade.h:68
+#: ../glade/mate-calc.glade.h:68
 msgid "<span weight=\"bold\">R1</span>"
 msgstr "<span weight=\"bold\">R1</span>"
 
 #. "R2" is the abbreviation for "Register 2", used in the memory register dialog
-#: ../glade/gcalctool.glade.h:70
+#: ../glade/mate-calc.glade.h:70
 msgid "<span weight=\"bold\">R2</span>"
 msgstr "<span weight=\"bold\">R2</span>"
 
 #. "R3" is the abbreviation for "Register 3", used in the memory register dialog
-#: ../glade/gcalctool.glade.h:72
+#: ../glade/mate-calc.glade.h:72
 msgid "<span weight=\"bold\">R3</span>"
 msgstr "<span weight=\"bold\">R3</span>"
 
 #. "R4" is the abbreviation for "Register 4", used in the memory register dialog
-#: ../glade/gcalctool.glade.h:74
+#: ../glade/mate-calc.glade.h:74
 msgid "<span weight=\"bold\">R4</span>"
 msgstr "<span weight=\"bold\">R4</span>"
 
 #. "R5" is the abbreviation for "Register 5", used in the memory register dialog
-#: ../glade/gcalctool.glade.h:76
+#: ../glade/mate-calc.glade.h:76
 msgid "<span weight=\"bold\">R5</span>"
 msgstr "<span weight=\"bold\">R5</span>"
 
 #. "R6" is the abbreviation for "Register 6", used in the memory register dialog
-#: ../glade/gcalctool.glade.h:78
+#: ../glade/mate-calc.glade.h:78
 msgid "<span weight=\"bold\">R6</span>"
 msgstr "<span weight=\"bold\">R6</span>"
 
 #. "R7" is the abbreviation for "Register 7", used in the memory register dialog
-#: ../glade/gcalctool.glade.h:80
+#: ../glade/mate-calc.glade.h:80
 msgid "<span weight=\"bold\">R7</span>"
 msgstr "<span weight=\"bold\">R7</span>"
 
 #. "R8" is the abbreviation for "Register 8", used in the memory register dialog
-#: ../glade/gcalctool.glade.h:82
+#: ../glade/mate-calc.glade.h:82
 msgid "<span weight=\"bold\">R8</span>"
 msgstr "<span weight=\"bold\">R8</span>"
 
 #. "R9" is the abbreviation for "Register 9", used in the memory register dialog
-#: ../glade/gcalctool.glade.h:84
+#: ../glade/mate-calc.glade.h:84
 msgid "<span weight=\"bold\">R9</span>"
 msgstr "<span weight=\"bold\">R9</span>"
 
 #. This is the calculate result button (=)
-#: ../glade/gcalctool.glade.h:86
+#: ../glade/mate-calc.glade.h:86
 msgid "="
 msgstr "="
 
 #. Shift right
-#: ../glade/gcalctool.glade.h:88
+#: ../glade/mate-calc.glade.h:88
 msgid ">"
 msgstr ">"
 
-#: ../glade/gcalctool.glade.h:89
+#: ../glade/mate-calc.glade.h:89
 msgid "A"
 msgstr "A"
 
-#: ../glade/gcalctool.glade.h:90
+#: ../glade/mate-calc.glade.h:90
 msgid "AND"
 msgstr "དང་ "
 
-#: ../glade/gcalctool.glade.h:91
+#: ../glade/mate-calc.glade.h:91
 msgid "A_rithmetic Precedence"
 msgstr "ཨང་རྩིས་རིག་པ་སྔོན་དཔེ་(_r)"
 
 #. Abs is short for Absolute
-#: ../glade/gcalctool.glade.h:93
+#: ../glade/mate-calc.glade.h:93
 msgid "Abs"
 msgstr "ཡང་དག"
 
-#: ../glade/gcalctool.glade.h:94
+#: ../glade/mate-calc.glade.h:94
 msgid "Absolute value"
 msgstr "ཡང་དག་བེ་ལུ་ "
 
-#: ../glade/gcalctool.glade.h:95
+#: ../glade/mate-calc.glade.h:95
 msgid "Absolute value [u]"
 msgstr "ཡང་དག་བེ་ལུ། [u]"
 
 #. Accuracy
-#: ../glade/gcalctool.glade.h:97
+#: ../glade/mate-calc.glade.h:97
 msgid "Acc"
 msgstr "ངེས་བདེན།"
 
-#: ../glade/gcalctool.glade.h:98
+#: ../glade/mate-calc.glade.h:98
 msgid "Accuracy"
 msgstr "ངེས་བདེན།"
 
-#: ../glade/gcalctool.glade.h:99
+#: ../glade/mate-calc.glade.h:99
 msgid "Add"
 msgstr "བསྡོམས།"
 
-#: ../glade/gcalctool.glade.h:100
+#: ../glade/mate-calc.glade.h:100
 msgid "Add [+]"
 msgstr "བསྡོམས་ [+]"
 
-#: ../glade/gcalctool.glade.h:101
+#: ../glade/mate-calc.glade.h:101
 msgid "Advanced"
 msgstr "མཐོ་རིམ་ཅན།"
 
-#: ../glade/gcalctool.glade.h:102
+#: ../glade/mate-calc.glade.h:102
 msgid "B"
 msgstr "B"
 
-#: ../glade/gcalctool.glade.h:103
+#: ../glade/mate-calc.glade.h:103
 msgid "Backspace"
 msgstr "རྒྱབ་བཤུད།"
 
-#: ../glade/gcalctool.glade.h:104
+#: ../glade/mate-calc.glade.h:104
 msgid "Base 10 log [G]"
 msgstr "གཞི་རྟེན་ ༡༠ གྱི་ལོག [G]"
 
-#: ../glade/gcalctool.glade.h:105
+#: ../glade/mate-calc.glade.h:105
 msgid "Base 2 log [H]"
 msgstr "གཞི་རྟེན་ ༢ ལོག [H]"
 
-#: ../glade/gcalctool.glade.h:106
+#: ../glade/mate-calc.glade.h:106
 msgid "Basic"
 msgstr "གཞི་རྩ།"
 
-#: ../glade/gcalctool.glade.h:107
+#: ../glade/mate-calc.glade.h:107
 msgid "Bitwise AND"
 msgstr "བིཊི་དང་འཁྲིལ་བའི་AND"
 
-#: ../glade/gcalctool.glade.h:108
+#: ../glade/mate-calc.glade.h:108
 msgid "Bitwise AND [&]"
 msgstr "བིཊི་དང་འཁྲིལ་བའི་AND[&]"
 
-#: ../glade/gcalctool.glade.h:109
+#: ../glade/mate-calc.glade.h:109
 msgid "Bitwise NOT"
 msgstr "བིཊི་དང་འཁྲིལ་བའི་ NOT"
 
-#: ../glade/gcalctool.glade.h:110
+#: ../glade/mate-calc.glade.h:110
 msgid "Bitwise NOT [~]"
 msgstr "བིཊི་དང་འཁྲིལ་བའི་NOT [~]"
 
-#: ../glade/gcalctool.glade.h:111
+#: ../glade/mate-calc.glade.h:111
 msgid "Bitwise OR"
 msgstr "བིཊི་དང་འཁྲིལ་བའི་OR།"
 
-#: ../glade/gcalctool.glade.h:112
+#: ../glade/mate-calc.glade.h:112
 msgid "Bitwise OR [|]"
 msgstr "བིཊི་དང་འཁྲིལ་བའི་ ཨོ་ཨར་ [|] "
 
-#: ../glade/gcalctool.glade.h:113
+#: ../glade/mate-calc.glade.h:113
 msgid "Bitwise XNOR"
 msgstr "བིཊི་དང་འཁྲིལ་བའི་ ཨེགསི་ཨེན་ཨོ་ཨར་ "
 
-#: ../glade/gcalctool.glade.h:114
+#: ../glade/mate-calc.glade.h:114
 msgid "Bitwise XNOR [n]"
 msgstr "བིཊི་དང་འཁྲིལ་བའི་ XNOR [n]"
 
-#: ../glade/gcalctool.glade.h:115
+#: ../glade/mate-calc.glade.h:115
 msgid "Bitwise XOR"
 msgstr "བིཊི་དང་འཁྲིལ་བའི་ ཨེགསི་ཨོ་་ཨར་ "
 
-#: ../glade/gcalctool.glade.h:116
+#: ../glade/mate-calc.glade.h:116
 msgid "Bitwise XOR [x]"
 msgstr "བིཊི་དང་འཁྲིལ་བའི་Xor[x]"
 
 #. Bksp is short for Backspace
-#: ../glade/gcalctool.glade.h:118
+#: ../glade/mate-calc.glade.h:118
 msgid "Bksp"
 msgstr "རྒྱབ་བཤུད།"
 
-#: ../glade/gcalctool.glade.h:120
+#: ../glade/mate-calc.glade.h:120
 msgid "CE"
 msgstr "སི་ཨི།"
 
-#: ../glade/gcalctool.glade.h:121
+#: ../glade/mate-calc.glade.h:121
 msgid "Calculate result"
 msgstr "གྲུབ་འབྲས་རྩིས་བཏོན།"
 
-#: ../glade/gcalctool.glade.h:122
+#: ../glade/mate-calc.glade.h:122
 msgid "Calculate result [=]"
 msgstr "གྲུབ་འབྲས་རྩིས་བཏོན་ [=]"
 
-#: ../glade/gcalctool.glade.h:123
+#: ../glade/mate-calc.glade.h:123
 msgid "Ch_aracter:"
 msgstr "ཡིག་འབྲུ་: (_a)"
 
-#: ../glade/gcalctool.glade.h:124
+#: ../glade/mate-calc.glade.h:124
 msgid "Change Sign [C]"
 msgstr "རྟགས་བསྒྱུར་བཅོས་འབད་ [C]"
 
-#: ../glade/gcalctool.glade.h:125
+#: ../glade/mate-calc.glade.h:125
 msgid "Change sign"
 msgstr "རྟགས་བསྒྱུར་བཅོས་འབད་ "
 
-#: ../glade/gcalctool.glade.h:126
+#: ../glade/mate-calc.glade.h:126
 msgid "Clear"
 msgstr "བསལ།"
 
-#: ../glade/gcalctool.glade.h:127
+#: ../glade/mate-calc.glade.h:127
 msgid "Clear displayed value [Escape]"
 msgstr "བཀྲམ་སྟོན་འབད་ཡོད་པའི་ བེ་ལུ་ བསལ་  [Escape]"
 
-#: ../glade/gcalctool.glade.h:128
+#: ../glade/mate-calc.glade.h:128
 msgid "Clear displayed value and any partial calculation [Shift Delete]"
 msgstr "བཀྲམ་སྟོན་འབད་མི་བེ་ལུ་དང་ རྩིས་ལས་ཆ་ཤས་གང་རུང་ཅིག་བསལ་ [Shift Delete]"
 
-#: ../glade/gcalctool.glade.h:129
+#: ../glade/mate-calc.glade.h:129
 msgid "Clear entry"
 msgstr "ཐོ་བཀོད་བསལ།"
 
-#: ../glade/gcalctool.glade.h:130
+#: ../glade/mate-calc.glade.h:130
 msgid "Click a _value or description to edit it:"
 msgstr "འདི་ཞུན་དག་འབད་ནིའི་དོན་ལུ་ བེ་ལུའམ་ འགྲེལ་བཤད་ཅིག་ལུ་ ཨེབ་གཏང་འབད།  (_v)"
 
 #. Clr is short for Clear
-#: ../glade/gcalctool.glade.h:132
+#: ../glade/mate-calc.glade.h:132
 msgid "Clr"
 msgstr "Clr"
 
-#: ../glade/gcalctool.glade.h:133
+#: ../glade/mate-calc.glade.h:133
 msgid "Compounding term"
 msgstr "སྦྱོར་བའི་མིང་ཚིག་ "
 
-#: ../glade/gcalctool.glade.h:134
+#: ../glade/mate-calc.glade.h:134
 msgid "Compounding term [m]"
 msgstr "ཀམ་པའུནཌི་ ཊརམ། [m]"
 
-#: ../glade/gcalctool.glade.h:135
+#: ../glade/mate-calc.glade.h:135
 msgid "Con"
 msgstr "Con"
 
-#: ../glade/gcalctool.glade.h:136
+#: ../glade/mate-calc.glade.h:136
 msgid "Constants"
 msgstr "ཆད་མེད་ཚུ་ "
 
-#: ../glade/gcalctool.glade.h:137
+#: ../glade/mate-calc.glade.h:137
 msgid "Constants [#]"
 msgstr "ཆད་མེད། [#]"
 
-#: ../glade/gcalctool.glade.h:138
+#: ../glade/mate-calc.glade.h:138
 msgid "Copy selection"
 msgstr "སེལ་འཐུ་འབད་མི་ འདྲ་བཤུས་རྐྱབས།"
 
-#: ../glade/gcalctool.glade.h:141
+#: ../glade/mate-calc.glade.h:141
 msgid "Cosine [J]"
 msgstr "ཀོ་སའིན། [J]"
 
 #. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period.
 #. See also:
 #. http://en.wikipedia.org/wiki/Compound_interest
-#: ../glade/gcalctool.glade.h:145
+#: ../glade/mate-calc.glade.h:145
 msgid "Ctrm"
 msgstr "Ctrm།"
 
-#: ../glade/gcalctool.glade.h:146
+#: ../glade/mate-calc.glade.h:146
 msgid "D"
 msgstr "D།"
 
 #. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also:
 #. http://en.wikipedia.org/wiki/Depreciation
-#: ../glade/gcalctool.glade.h:149
+#: ../glade/mate-calc.glade.h:149
 msgid "Ddb"
 msgstr "Ddb"
 
-#: ../glade/gcalctool.glade.h:150
+#: ../glade/mate-calc.glade.h:150
 msgid "De_grees"
 msgstr "ཌི་གི་རིསི། (_g)"
 
-#: ../glade/gcalctool.glade.h:151
+#: ../glade/mate-calc.glade.h:151
 msgid "Divide"
 msgstr "བགོ"
 
-#: ../glade/gcalctool.glade.h:152
+#: ../glade/mate-calc.glade.h:152
 msgid "Divide [/]"
 msgstr "བགོ་  [/]"
 
-#: ../glade/gcalctool.glade.h:153
+#: ../glade/mate-calc.glade.h:153
 msgid "Double-declining depreciation"
 msgstr "གཉིས་ལྡབ་མར་འབབ་ཀྱི་ མར་བཅགས་ "
 
-#: ../glade/gcalctool.glade.h:154
+#: ../glade/mate-calc.glade.h:154
 msgid "Double-declining depreciation [D]"
 msgstr "གཉིས་ལྡབ་མར་འབབ་ཀྱི་ མར་བཅགས་ [D]"
 
-#: ../glade/gcalctool.glade.h:155
+#: ../glade/mate-calc.glade.h:155
 msgid "E"
 msgstr "E"
 
-#: ../glade/gcalctool.glade.h:156
+#: ../glade/mate-calc.glade.h:156
 msgid "E to the x"
 msgstr "ཨེགསི་ལུ་ཨི།"
 
-#: ../glade/gcalctool.glade.h:157
+#: ../glade/mate-calc.glade.h:157
 msgid "E_ng"
 msgstr "འཕྲུལ་རིག  (_n)"
 
-#: ../glade/gcalctool.glade.h:158
+#: ../glade/mate-calc.glade.h:158
 msgid "Edit Constants"
 msgstr "ཆད་མེད་ཚུ་ ཞུན་དག་རྐྱབས།"
 
-#: ../glade/gcalctool.glade.h:159
+#: ../glade/mate-calc.glade.h:159
 msgid "Edit Constants..."
 msgstr "ཆད་མེད་ཚུ་ ཞུན་དག་རྐྱབས་..."
 
-#: ../glade/gcalctool.glade.h:160
+#: ../glade/mate-calc.glade.h:160
 msgid "Edit Functions"
 msgstr "ལས་འགན་ཚུ་ ཞུན་དག་རྐྱབས།"
 
-#: ../glade/gcalctool.glade.h:161
+#: ../glade/mate-calc.glade.h:161
 msgid "Edit Functions..."
 msgstr "ལས་འགན་ཚུ་ ཞུན་དག་རྐྱབས་..."
 
-#: ../glade/gcalctool.glade.h:162
+#: ../glade/mate-calc.glade.h:162
 msgid "End group of calculations [)]"
 msgstr "རྩིས་ལས་སྡེ་ཚན་མཇུག་བསྡུ་ [)]"
 
-#: ../glade/gcalctool.glade.h:163
+#: ../glade/mate-calc.glade.h:163
 msgid "Enter an exponential number [E]"
 msgstr "ཨེགསི་པོ་ནེན་ཤི་ཡཱལ་ ཨང་གྲངས་བཙུགས་ [E]"
 
 #. Exchange with register
-#: ../glade/gcalctool.glade.h:165
+#: ../glade/mate-calc.glade.h:165
 msgid "Exch"
 msgstr " Exch"
 
-#: ../glade/gcalctool.glade.h:166
+#: ../glade/mate-calc.glade.h:166
 msgid "Exchange displayed value with memory register [X]"
 msgstr "བཀྲམ་སྟོན་འབད་ཡོད་པའི་བེ་ལུ་ དྲན་ཚད་ཐོ་དེབ་དང་གཅིག་ཁར་ བརྗེ་སོར་འབད། [X]"
 
-#: ../glade/gcalctool.glade.h:167
+#: ../glade/mate-calc.glade.h:167
 msgid "Exchange with register"
 msgstr "ཐོ་དེབ་དང་གཅིག་ཁར་ བརྗེ་སོར་འབད།"
 
 #. Exponential
-#: ../glade/gcalctool.glade.h:169
+#: ../glade/mate-calc.glade.h:169
 msgid "Exp"
 msgstr "Exp"
 
-#: ../glade/gcalctool.glade.h:171
+#: ../glade/mate-calc.glade.h:171
 msgid "Factorial"
 msgstr "ཕེཀ་ཊོ་རི་ཡཱལ།"
 
-#: ../glade/gcalctool.glade.h:172
+#: ../glade/mate-calc.glade.h:172
 msgid "Factorial of displayed value [!]"
 msgstr "བཀྲམ་སྟོན་འབད་མི་བེ་ལུ་གི་ ཆ་རྐྱེན་གྱི། [!] "
 
-#: ../glade/gcalctool.glade.h:173
+#: ../glade/mate-calc.glade.h:173
 msgid "Financial"
 msgstr "དངུལ་འབྲེལ།"
 
 #. Fractional portion
-#: ../glade/gcalctool.glade.h:175
+#: ../glade/mate-calc.glade.h:175
 msgid "Frac"
 msgstr "Frac"
 
-#: ../glade/gcalctool.glade.h:176
+#: ../glade/mate-calc.glade.h:176
 msgid "Fractional portion"
 msgstr "ཆ་ཤས་ཡན་ལག"
 
-#: ../glade/gcalctool.glade.h:177
+#: ../glade/mate-calc.glade.h:177
 msgid "Fractional portion of displayed value [:]"
 msgstr "བཀྲམ་སྟོན་འབད་མི་བེ་ལུ་གི་ ཆ་ཤས་ཡན་ལག [:]"
 
-#: ../glade/gcalctool.glade.h:178
+#: ../glade/mate-calc.glade.h:178
 msgid "Fun"
 msgstr "Fun"
 
-#: ../glade/gcalctool.glade.h:179
+#: ../glade/mate-calc.glade.h:179
 msgid "Future value"
 msgstr "མ་འོངས་བེ་ལུ་ "
 
-#: ../glade/gcalctool.glade.h:180
+#: ../glade/mate-calc.glade.h:180
 msgid "Future value [v]"
 msgstr "མ་འོངས་བེ་ལུ། [v]"
 
 #. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also:
 #. http://en.wikipedia.org/wiki/Future_value
-#: ../glade/gcalctool.glade.h:183
+#: ../glade/mate-calc.glade.h:183
 msgid "Fv"
 msgstr "Fv"
 
-#: ../glade/gcalctool.glade.h:184
+#: ../glade/mate-calc.glade.h:184
 msgid "Gr_adians"
 msgstr "གེརེ་ཌི་ཡཱནསི། (_a)"
 
-#: ../glade/gcalctool.glade.h:185
+#: ../glade/mate-calc.glade.h:185
 msgid "H_yp"
 msgstr "ཨེཆ་ཝའི་པི། (_y)"
 
-#: ../glade/gcalctool.glade.h:186
+#: ../glade/mate-calc.glade.h:186
 msgid "He_x"
 msgstr "ཧེག་ཟ།  (_x)"
 
-#: ../glade/gcalctool.glade.h:187
+#: ../glade/mate-calc.glade.h:187
 msgid "Hexadecimal digit A"
 msgstr "ཧེག་ཟ་ཌེ་སི་མཱལ་ཨང་གྲངས་A"
 
-#: ../glade/gcalctool.glade.h:188
+#: ../glade/mate-calc.glade.h:188
 msgid "Hexadecimal digit A [a]"
 msgstr "ཧེག་ཟ་ཌེ་སི་མཱལ་ ཨང་གྲངས་ A [a]"
 
-#: ../glade/gcalctool.glade.h:189
+#: ../glade/mate-calc.glade.h:189
 msgid "Hexadecimal digit B"
 msgstr "ཧེག་ཟ་ཌེ་སི་མཱལ་ཨང་གྲངས་B"
 
-#: ../glade/gcalctool.glade.h:190
+#: ../glade/mate-calc.glade.h:190
 msgid "Hexadecimal digit B [b]"
 msgstr "ཧེག་ཟ་ཌེ་སི་མཱལ་ ཨང་གྲངས་ B [b] "
 
-#: ../glade/gcalctool.glade.h:191
+#: ../glade/mate-calc.glade.h:191
 msgid "Hexadecimal digit C"
 msgstr "ཧེག་ཟ་ཌེ་སི་མཱལ་ཨང་གྲངས་C།"
 
-#: ../glade/gcalctool.glade.h:192
+#: ../glade/mate-calc.glade.h:192
 msgid "Hexadecimal digit C [c]"
 msgstr "ཧེག་ཟ་ཌེ་སི་མཱལ་ ཨང་གྲངས་ C [c]"
 
-#: ../glade/gcalctool.glade.h:193
+#: ../glade/mate-calc.glade.h:193
 msgid "Hexadecimal digit D"
 msgstr "ཧེག་ཟ་ཌེ་སི་མཱལ་ཨང་གྲངས་D།"
 
-#: ../glade/gcalctool.glade.h:194
+#: ../glade/mate-calc.glade.h:194
 msgid "Hexadecimal digit D [d]"
 msgstr "ཧེག་ཟ་ཌེ་སི་མཱལ་ ཨང་གྲངས་ D [d]"
 
-#: ../glade/gcalctool.glade.h:195
+#: ../glade/mate-calc.glade.h:195
 msgid "Hexadecimal digit E"
 msgstr "ཧེག་ཟ་ཌེ་སི་མཱལ་ཨང་གྲངས་E།"
 
-#: ../glade/gcalctool.glade.h:196
+#: ../glade/mate-calc.glade.h:196
 msgid "Hexadecimal digit E [e]"
 msgstr "ཧེག་ཟ་ཌེ་སི་མཱལ་ ཨང་གྲངས་E  [e]"
 
-#: ../glade/gcalctool.glade.h:197
+#: ../glade/mate-calc.glade.h:197
 msgid "Hexadecimal digit F"
 msgstr "ཧེག་ཟ་ཌེ་སི་མཱལ་ཨང་གྲངས་F།"
 
-#: ../glade/gcalctool.glade.h:198
+#: ../glade/mate-calc.glade.h:198
 msgid "Hexadecimal digit F [f]"
 msgstr "ཧེག་ཟ་ཌེ་སི་མཱལ་ ཨང་གྲངས་ F [f]"
 
-#: ../glade/gcalctool.glade.h:199
+#: ../glade/mate-calc.glade.h:199
 msgid "Insert ASCII Value"
 msgstr "ASCII་བེ་ལུ་བཙུགས།"
 
-#: ../glade/gcalctool.glade.h:200
+#: ../glade/mate-calc.glade.h:200
 msgid "Insert ASCII value"
 msgstr "ASCII བེ་ལུ་བཙུགས།"
 
 #. Integer portion
-#: ../glade/gcalctool.glade.h:202
+#: ../glade/mate-calc.glade.h:202
 msgid "Int"
 msgstr "ཧྲིལ་ཨང་།"
 
-#: ../glade/gcalctool.glade.h:203
+#: ../glade/mate-calc.glade.h:203
 msgid "Integer portion"
 msgstr "ཧྲིལ་ཨང་ཆ་ཤས།"
 
-#: ../glade/gcalctool.glade.h:204
+#: ../glade/mate-calc.glade.h:204
 msgid "Integer portion of displayed value [i]"
 msgstr "བཀྲམ་སྟོན་འབད་མི་བེ་ལུ་ [ཨའི]གི་ ཧྲིལ་ཨང་ཆ་ཤས།"
 
-#: ../glade/gcalctool.glade.h:205
+#: ../glade/mate-calc.glade.h:205
 msgid "Left bracket"
 msgstr "གཡོན་གྱི་གུག་ཤད།"
 
 #. Natural logarithm
-#: ../glade/gcalctool.glade.h:207
+#: ../glade/mate-calc.glade.h:207
 msgid "Ln"
 msgstr "ཨེལ་ཨེན།"
 
 #. Factorial
-#: ../glade/gcalctool.glade.h:209
+#: ../glade/mate-calc.glade.h:209
 msgid "Log<sub>10</sub>"
 msgstr "ལོག་ <sub>༡༠</sub>"
 
 #. Factorial
-#: ../glade/gcalctool.glade.h:211
+#: ../glade/mate-calc.glade.h:211
 msgid "Log<sub>2</sub>"
 msgstr "ལོག་<sub>༢</sub>"
 
-#: ../glade/gcalctool.glade.h:212
+#: ../glade/mate-calc.glade.h:212
 msgid "Memory Registers"
 msgstr "དྲན་ཚད་ཐོ་དེབ་ཚུ།"
 
-#: ../glade/gcalctool.glade.h:213
+#: ../glade/mate-calc.glade.h:213
 msgid "Mod"
 msgstr "མོཌི།"
 
-#: ../glade/gcalctool.glade.h:214
+#: ../glade/mate-calc.glade.h:214
 msgid "Modulus Division [M]"
 msgstr "མོ་ཌུ་ལཱསི་སྡེ་ཚན་ [M]"
 
-#: ../glade/gcalctool.glade.h:215
+#: ../glade/mate-calc.glade.h:215
 msgid "Multiply"
 msgstr "བསྒྱུར་རྩིས"
 
-#: ../glade/gcalctool.glade.h:216
+#: ../glade/mate-calc.glade.h:216
 msgid "Multiply [*]"
 msgstr "བསྒྱུར་རྩིས་ [*]"
 
-#: ../glade/gcalctool.glade.h:217
+#: ../glade/mate-calc.glade.h:217
 msgid "NOT"
 msgstr "NOT"
 
-#: ../glade/gcalctool.glade.h:218
+#: ../glade/mate-calc.glade.h:218
 msgid "Natural log [N]"
 msgstr "ནེ་ཅ་རཱལ་ལོག [N]"
 
-#: ../glade/gcalctool.glade.h:219
+#: ../glade/mate-calc.glade.h:219
 msgid "Numeric 0"
 msgstr "ཨང་གྲངས་༠"
 
-#: ../glade/gcalctool.glade.h:220
+#: ../glade/mate-calc.glade.h:220
 msgid "Numeric 1"
 msgstr "ཨང་གྲངས་༡"
 
-#: ../glade/gcalctool.glade.h:221
+#: ../glade/mate-calc.glade.h:221
 msgid "Numeric 2"
 msgstr "ཨང་གྲངས་༢"
 
-#: ../glade/gcalctool.glade.h:222
+#: ../glade/mate-calc.glade.h:222
 msgid "Numeric 3"
 msgstr "ཨང་གྲངས་༣"
 
-#: ../glade/gcalctool.glade.h:223
+#: ../glade/mate-calc.glade.h:223
 msgid "Numeric 4"
 msgstr "ཨང་གྲངས་༤"
 
-#: ../glade/gcalctool.glade.h:224
+#: ../glade/mate-calc.glade.h:224
 msgid "Numeric 5"
 msgstr "ཨང་གྲངས་༥"
 
-#: ../glade/gcalctool.glade.h:225
+#: ../glade/mate-calc.glade.h:225
 msgid "Numeric 6"
 msgstr "ཨང་གྲངས་༦"
 
-#: ../glade/gcalctool.glade.h:226
+#: ../glade/mate-calc.glade.h:226
 msgid "Numeric 7"
 msgstr "ཨང་གྲངས་ ༧"
 
-#: ../glade/gcalctool.glade.h:227
+#: ../glade/mate-calc.glade.h:227
 msgid "Numeric 8"
 msgstr "ཨང་གྲངས་ ༨"
 
-#: ../glade/gcalctool.glade.h:228
+#: ../glade/mate-calc.glade.h:228
 msgid "Numeric 9"
 msgstr "ཨང་གྲངས་ ༩"
 
-#: ../glade/gcalctool.glade.h:229
+#: ../glade/mate-calc.glade.h:229
 msgid "Numeric point"
 msgstr "ཨང་གྲངས་ཀྱི་ཚག"
 
-#: ../glade/gcalctool.glade.h:230
+#: ../glade/mate-calc.glade.h:230
 msgid "OR"
 msgstr "ཡང་ན་ "
 
-#: ../glade/gcalctool.glade.h:231
+#: ../glade/mate-calc.glade.h:231
 msgid "Paste selection"
 msgstr "སེལ་འཐུ་འབད་མི་སྦྱར།"
 
-#: ../glade/gcalctool.glade.h:232
+#: ../glade/mate-calc.glade.h:232
 msgid "Payment period"
 msgstr "དངུལ་སྤྲོད་དུས་མཚམས་ "
 
-#: ../glade/gcalctool.glade.h:233
+#: ../glade/mate-calc.glade.h:233
 msgid "Payment period [t]"
 msgstr "དངུལ་སྤྲོད་དུས་མཚམས་ [t]"
 
-#: ../glade/gcalctool.glade.h:234
+#: ../glade/mate-calc.glade.h:234
 msgid "Percentage"
 msgstr "བརྒྱ་ཆ།"
 
-#: ../glade/gcalctool.glade.h:236
+#: ../glade/mate-calc.glade.h:236
 #, no-c-format
 msgid "Percentage [%]"
 msgstr "བརྒྱ་ཆ་  [%]"
 
-#: ../glade/gcalctool.glade.h:237
+#: ../glade/mate-calc.glade.h:237
 msgid "Periodic interest rate"
 msgstr "དུས་མཚམས་ བསྐྱེད་ཀྱི་ཚད་ "
 
-#: ../glade/gcalctool.glade.h:238
+#: ../glade/mate-calc.glade.h:238
 msgid "Periodic interest rate [T]"
 msgstr "དུས་མཚམས་བསྐྱེད་ཀྱི་ཚད། [T]"
 
-#: ../glade/gcalctool.glade.h:239
+#: ../glade/mate-calc.glade.h:239
 msgid "Periodic payment"
 msgstr "དུས་མཚམས་དངུལ་སྤྲོད་"
 
-#: ../glade/gcalctool.glade.h:240
+#: ../glade/mate-calc.glade.h:240
 msgid "Periodic payment [P]"
 msgstr "དུས་མཚམས་དངུལ་སྤྲོད། [པི] "
 
 #. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also:
 #. http://en.wikipedia.org/wiki/Amortization_schedule
-#: ../glade/gcalctool.glade.h:243
+#: ../glade/mate-calc.glade.h:243
 msgid "Pmt"
 msgstr "Pmt"
 
-#: ../glade/gcalctool.glade.h:244
+#: ../glade/mate-calc.glade.h:244
 msgid "Present value"
 msgstr "ད་ལྟོའི་བེ་ལུ་"
 
-#: ../glade/gcalctool.glade.h:245
+#: ../glade/mate-calc.glade.h:245
 msgid "Present value [p]"
 msgstr "ད་ལྟོའི་བེ་ལུ། [p]"
 
 #. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also:
 #. http://en.wikipedia.org/wiki/Present_value
-#: ../glade/gcalctool.glade.h:248
+#: ../glade/mate-calc.glade.h:248
 msgid "Pv"
 msgstr "Pv"
 
-#: ../glade/gcalctool.glade.h:249
+#: ../glade/mate-calc.glade.h:249
 msgid "Quit the calculator"
 msgstr "རྩིས་འཕྲུལ་སྤངས་།"
 
-#: ../glade/gcalctool.glade.h:250
+#: ../glade/mate-calc.glade.h:250
 msgid "Raise displayed value to the power of y [^]"
 msgstr "བཀྲམ་སྟོན་འབད་མི་བེ་ལུ་ ཝའི་གི་དབང་ཚད་ལུ་སེང་། [^]"
 
 #. Random number
-#: ../glade/gcalctool.glade.h:252
+#: ../glade/mate-calc.glade.h:252
 msgid "Rand"
 msgstr "རེནཌི།"
 
-#: ../glade/gcalctool.glade.h:253
+#: ../glade/mate-calc.glade.h:253
 msgid "Random number"
 msgstr "གང་བྱུང་ཨང་གྲངས།"
 
-#: ../glade/gcalctool.glade.h:254
+#: ../glade/mate-calc.glade.h:254
 msgid "Random number in the range 0.0 to 1.0 [?]"
 msgstr "ཁྱབ་ཚད་ ༠.༠ ལས་ ༡.༠ ནང་ ག་ཐོབ་ཨང་གྲངས།  [?]"
 
@@ -1297,577 +1297,577 @@ msgstr "ཁྱབ་ཚད་ ༠.༠ ལས་ ༡.༠ ནང་ ག་ཐོ�
 #.
 #.
 #.
-#: ../glade/gcalctool.glade.h:261
+#: ../glade/mate-calc.glade.h:261
 msgid "Rate"
 msgstr "གོང་ཚད།"
 
 #. Retrieve from register
-#: ../glade/gcalctool.glade.h:263
+#: ../glade/mate-calc.glade.h:263
 msgid "Rcl"
 msgstr "Rcl"
 
-#: ../glade/gcalctool.glade.h:264
+#: ../glade/mate-calc.glade.h:264
 msgid "Reciprocal"
 msgstr "ཕན་ཚུན་གཉིས་ཕན་ "
 
-#: ../glade/gcalctool.glade.h:265
+#: ../glade/mate-calc.glade.h:265
 msgid "Reciprocal [r]"
 msgstr "མཚུངས་ལན། [r]"
 
-#: ../glade/gcalctool.glade.h:266
+#: ../glade/mate-calc.glade.h:266
 msgid "Redo"
 msgstr "ལོག་འབད།"
 
-#: ../glade/gcalctool.glade.h:267
+#: ../glade/mate-calc.glade.h:267
 msgid "Remove rightmost character from displayed value [Backspace]"
 msgstr "བཀྲམ་སྟོན་འབད་མི་ བེ་ལུ་ནང་ལས་ གཡས་མཐའི་ཡིག་འབྲུ་ རྩ་བསྐྲད་གཏང་ [Backspace]"
 
-#: ../glade/gcalctool.glade.h:270
+#: ../glade/mate-calc.glade.h:270
 msgid "Result Region"
 msgstr "གྲུབ་འབྲས་ཀྱི་ ས་ཁོངས་ "
 
-#: ../glade/gcalctool.glade.h:271
+#: ../glade/mate-calc.glade.h:271
 msgid "Retrieve from register"
 msgstr "ཐོ་དེབ་ནང་ལས་ སླར་འདྲེན་འབད།"
 
-#: ../glade/gcalctool.glade.h:272
+#: ../glade/mate-calc.glade.h:272
 msgid "Retrieve memory register to display [R]"
 msgstr "དྲན་ཚད་ཐོ་དེབ་ བཀྲམ་སྟོན་གྱི་དོན་ལུ་ སླར་འདྲེན་འབད། [R]"
 
-#: ../glade/gcalctool.glade.h:273
+#: ../glade/mate-calc.glade.h:273
 msgid "Right bracket"
 msgstr "གཡས་ཀྱི་གུག་ཤད།"
 
-#: ../glade/gcalctool.glade.h:274
+#: ../glade/mate-calc.glade.h:274
 msgid "Scientific"
 msgstr "ཚན་རིག་གི"
 
-#: ../glade/gcalctool.glade.h:275
+#: ../glade/mate-calc.glade.h:275
 msgid "Set Precision"
 msgstr "པི་རི་སི་ཤཱན་ གཞི་སྒྲིག་འབད།"
 
-#: ../glade/gcalctool.glade.h:276
+#: ../glade/mate-calc.glade.h:276
 msgid "Set accuracy from 0 to 9 numeric places [A]"
 msgstr "༠ ལས་ ༩ གི་ཨང་གྲངས་ས་གནས་ཚུ་ ངེས་བདེན་ གཞི་སྒྲིག་འབད་ [A]"
 
-#: ../glade/gcalctool.glade.h:277
+#: ../glade/mate-calc.glade.h:277
 msgid "Set display type to engineering format"
 msgstr "བཀྲམ་སྟོན་དབྱེ་བ་དེ་ འཕྲུལ་རིག་རྩ་སྒྲིག་ལུ་ གཞི་སྒྲིག་འབད།"
 
-#: ../glade/gcalctool.glade.h:278
+#: ../glade/mate-calc.glade.h:278
 msgid "Set display type to fixed-point format"
 msgstr "བཀྲམ་སྟོན་དབྱེ་བ་དེ་ གཏན་བཟོས་རྩེའི་རྩ་སྒྲིག་ལུ་ གཞི་སྒྲིག་འབད།"
 
-#: ../glade/gcalctool.glade.h:279
+#: ../glade/mate-calc.glade.h:279
 msgid "Set display type to scientific format"
 msgstr "བཀྲམ་སྟོན་དབྱེ་བ་དེ་ ཚན་རིག་རྩ་སྒྲིག་ལུ་ གཞི་སྒྲིག་འབད།"
 
-#: ../glade/gcalctool.glade.h:280
+#: ../glade/mate-calc.glade.h:280
 msgid "Set hyperbolic option for trigonometric functions"
 msgstr "ཊི་གོ་ནོ་མི་ཊིཀ་ ལས་འགན་དོན་ལུ་ ཧའི་པར་བོ་ལིཀ་གདམ་ཁ་ གཞི་སྒྲིག་འབད།"
 
-#: ../glade/gcalctool.glade.h:281
+#: ../glade/mate-calc.glade.h:281
 msgid "Set inverse option for trigonometric functions"
 msgstr "ཊི་གོ་ནོ་མི་ཊིཀ་ ལས་འགན་དོན་ལུ་ ཨིན་བརསི་གདམ་ཁ་ གཞི་སྒྲིག་འབད།"
 
-#: ../glade/gcalctool.glade.h:282
+#: ../glade/mate-calc.glade.h:282
 msgid "Set numeric base to binary (base 2)"
 msgstr "ཨང་གྲངས་གཞི་རྟེན་ བའི་ན་རི་ (གཞི་རྟེན་༢) ལུ་ གཞི་སྒྲིག་འབད།"
 
-#: ../glade/gcalctool.glade.h:283
+#: ../glade/mate-calc.glade.h:283
 msgid "Set numeric base to decimal (base 10)"
 msgstr "ཨང་གྲངས་གཞི་རྟེན་ ཌེ་སི་མཱལ་ (གཞི་རྟེན་༡༠) ལུ་ གཞི་སྒྲིག་འབད།"
 
-#: ../glade/gcalctool.glade.h:284
+#: ../glade/mate-calc.glade.h:284
 msgid "Set numeric base to hexadecimal (base 16)"
 msgstr "ཨང་གྲངས་གཞི་རྟེན་ ཧེག་ཟ་ཌེ་སི་མཱལ་(གཞི་རྟེན་༡༦) ལུ་ གཞི་སྒྲིག་འབད།"
 
-#: ../glade/gcalctool.glade.h:285
+#: ../glade/mate-calc.glade.h:285
 msgid "Set numeric base to octal (base 8)"
 msgstr "ཨང་གྲངས་གཞི་རྟེན་ ཨོཀ་ཊཱལ (གཞི་རྟེན་༨) ལུ་ གཞི་སྒྲིག་འབད།"
 
-#: ../glade/gcalctool.glade.h:286
+#: ../glade/mate-calc.glade.h:286
 msgid "Set trigonometric type to degrees"
 msgstr "ཊི་གོ་ནོ་མི་རིཀ་དབྱེ་བ་ ཌི་གི་རིསི་ལུ་ གཞི་སྒྲིག་འབད།"
 
-#: ../glade/gcalctool.glade.h:287
+#: ../glade/mate-calc.glade.h:287
 msgid "Set trigonometric type to gradians"
 msgstr "ཊི་གོ་ནོ་མི་ཊིཀ་དབྱེ་བ་ གེརེ་ཌི་ཡཱནསི་ལུ་ གཞི་སྒྲིག་འབད།"
 
-#: ../glade/gcalctool.glade.h:288
+#: ../glade/mate-calc.glade.h:288
 msgid "Set trigonometric type to radians"
 msgstr "ཊི་གོ་ནོ་མི་ཊིཀ་དབྱེ་བ་ རེ་ཌི་ཡཱནསི་ལུ་ གཞི་སྒྲིག་འབད།"
 
-#: ../glade/gcalctool.glade.h:289
+#: ../glade/mate-calc.glade.h:289
 msgid "Shift displayed value 1-15 places to the left [<]"
 msgstr "བཀྲམ་སྟོན་འབད་ཡོད་པའི་བེ་ལུ་ ༡-༡༥ ས་གནས་གཡོན་ལུ་བཤུད་ [<]"
 
-#: ../glade/gcalctool.glade.h:290
+#: ../glade/mate-calc.glade.h:290
 msgid "Shift displayed value 1-15 places to the right [>]"
 msgstr "བཀྲམ་སྟོན་འབད་ཡོད་པའི་བེ་ལུ་ ༡-༡༥ ས་གནས་གཡས་ལུ་བཤུད་ [>]"
 
-#: ../glade/gcalctool.glade.h:291
+#: ../glade/mate-calc.glade.h:291
 msgid "Shift left"
 msgstr "གཡོན་ལུ་བཤུད།"
 
-#: ../glade/gcalctool.glade.h:292
+#: ../glade/mate-calc.glade.h:292
 msgid "Shift right"
 msgstr "གཡས་ལུ་བཤུད།"
 
 #. When the bit editor is visible, there will be two rows of ones
 #. and zeroes shown. When the number being displayed in
 #. in the calculator is an integer value, these ones and zeroes will be sensitive, and they will correspond to the value of each of the bits in the displayed integer number. By clicking on any of the labels for these ones and zeroes, their value can be toggled (a one becomes a zero and a zero becomes a one), causing the displayed integer value to be adjusted accordingly.
-#: ../glade/gcalctool.glade.h:296
+#: ../glade/mate-calc.glade.h:296
 msgid "Show Bit Editor"
 msgstr "བིཊི་ ཞུན་དགཔ་སྟོན་ "
 
 #. When the bit editor is visible, there will be two rows of ones
 #. and zeroes shown. When the number being displayed in
 #. in the calculator is an integer value, these ones and zeroes will be sensitive, and they will correspond to the value of each of the bits in the displayed integer number. By clicking on any of the labels for these ones and zeroes, their value can be toggled (a one becomes a zero and a zero becomes a one), causing the displayed integer value to be adjusted accordingly.
-#: ../glade/gcalctool.glade.h:300
+#: ../glade/mate-calc.glade.h:300
 msgid "Show Bit _Editor"
 msgstr "བིཊི་ ཞུན་དགཔ་སྟོན་ (_E)"
 
-#: ../glade/gcalctool.glade.h:301
+#: ../glade/mate-calc.glade.h:301
 msgid "Show T_housands Separator"
 msgstr "སྟོང་ཕྲག་ཚུ་གི་དབྱེ་བྱེད་སྟོན། (_h)"
 
-#: ../glade/gcalctool.glade.h:302
+#: ../glade/mate-calc.glade.h:302
 msgid "Show _Trailing Zeroes"
 msgstr "རྒྱབ་ལུས་ཀླད་སྐོར་ཚུ་སྟོན། (_T)"
 
 #. When the bit editor is visible, there will be two rows of ones
 #. and zeroes shown. When the number being displayed in
 #. in the calculator is an integer value, these ones and zeroes will be sensitive, and they will correspond to the value of each of the bits in the displayed integer number. By clicking on any of the labels for these ones and zeroes, their value can be toggled (a one becomes a zero and a zero becomes a one), causing the displayed integer value to be adjusted accordingly.
-#: ../glade/gcalctool.glade.h:306
+#: ../glade/mate-calc.glade.h:306
 msgid "Show bit editor"
 msgstr "བིཊི་ ཞུན་དགཔ་ སྟོན་ "
 
-#: ../glade/gcalctool.glade.h:307
+#: ../glade/mate-calc.glade.h:307
 msgid "Show help contents"
 msgstr "གྲོགས་རམ་གྱི་ནང་དོན་སྟོན།"
 
-#: ../glade/gcalctool.glade.h:308
+#: ../glade/mate-calc.glade.h:308
 msgid "Show memory registers"
 msgstr "དྲན་ཚད་ཐོ་དེབ་ཚུ་སྟོན།"
 
-#: ../glade/gcalctool.glade.h:309
+#: ../glade/mate-calc.glade.h:309
 msgid "Show the About Gcalctool dialog"
 msgstr "ཇི་ཀེལ་སུ་ཊུལ་ཌའི་ལོག་གི་སྐོར་ལས་སྟོན།"
 
-#: ../glade/gcalctool.glade.h:310
+#: ../glade/mate-calc.glade.h:310
 msgid "Show thousands separator"
 msgstr "སྟོང་ཕྲགཚུ་གི་་དབྱེ་བྱེད་སྟོན།"
 
-#: ../glade/gcalctool.glade.h:311
+#: ../glade/mate-calc.glade.h:311
 msgid "Show trailing zeroes"
 msgstr "རྒྱབ་ལུས་ཀླད་སྐོར་ཚུ་སྟོན།"
 
-#: ../glade/gcalctool.glade.h:312
+#: ../glade/mate-calc.glade.h:312
 msgid "Significant _places:"
 msgstr "རྩ་ཅན་ས་གནས་ཚུ་ (_p)"
 
-#: ../glade/gcalctool.glade.h:315
+#: ../glade/mate-calc.glade.h:315
 msgid "Sine [K]"
 msgstr "སའིན། [K]"
 
 #. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also:
 #. http://en.wikipedia.org/wiki/Depreciation
-#: ../glade/gcalctool.glade.h:318
+#: ../glade/mate-calc.glade.h:318
 msgid "Sln"
 msgstr "Sln"
 
-#: ../glade/gcalctool.glade.h:319
+#: ../glade/mate-calc.glade.h:319
 msgid "Square"
 msgstr "གྲུ་བཞི་ "
 
-#: ../glade/gcalctool.glade.h:320
+#: ../glade/mate-calc.glade.h:320
 msgid "Square [@]"
 msgstr "གྲུ་བཞི། [@]"
 
-#: ../glade/gcalctool.glade.h:321
+#: ../glade/mate-calc.glade.h:321
 msgid "Square root"
 msgstr "སིཀོའེར་རུཊི་ "
 
-#: ../glade/gcalctool.glade.h:322
+#: ../glade/mate-calc.glade.h:322
 msgid "Square root [s]"
 msgstr "སིཀོའེར་རུཊི[s]"
 
-#: ../glade/gcalctool.glade.h:323
+#: ../glade/mate-calc.glade.h:323
 msgid "Start group of calculations [(]"
 msgstr "རྩིས་ལས་ སྡེ་ཚན་འགོ་བཙུགས་ [(] "
 
 #. Store to register
-#: ../glade/gcalctool.glade.h:325
+#: ../glade/mate-calc.glade.h:325
 msgid "Sto"
 msgstr "Sto"
 
-#: ../glade/gcalctool.glade.h:326
+#: ../glade/mate-calc.glade.h:326
 msgid "Store displayed value in memory register [S]"
 msgstr "བཀྲམ་སྟོན་འབད་མི་བེ་ལུ་ དྲན་ཚད་ཐོ་དེབ་[S]ནང་ གསོག་འཇོག་འབད།"
 
-#: ../glade/gcalctool.glade.h:327
+#: ../glade/mate-calc.glade.h:327
 msgid "Store to register"
 msgstr "ཐོ་དེབ་ལུ་ གསོག་འཇོག་འབད།"
 
-#: ../glade/gcalctool.glade.h:328
+#: ../glade/mate-calc.glade.h:328
 msgid "Straight-line depreciation"
 msgstr "ཐིག་འཕྲང་ མར་བཅགས་ "
 
-#: ../glade/gcalctool.glade.h:329
+#: ../glade/mate-calc.glade.h:329
 msgid "Straight-line depreciation [l]"
 msgstr "ཐད་ཀར་གྱི་མར་བཅགས། [l]"
 
-#: ../glade/gcalctool.glade.h:330
+#: ../glade/mate-calc.glade.h:330
 msgid "Subtract"
 msgstr "ཕབ།"
 
-#: ../glade/gcalctool.glade.h:331
+#: ../glade/mate-calc.glade.h:331
 msgid "Subtract [-]"
 msgstr "ཕབ་ [-]"
 
-#: ../glade/gcalctool.glade.h:332
+#: ../glade/mate-calc.glade.h:332
 msgid "Sum-of-the years'-digits depreciation"
 msgstr "ལོའི་བསྡོམས་ཀྱི་ཨང་གྲངས་མར་བཅགས་ "
 
-#: ../glade/gcalctool.glade.h:333
+#: ../glade/mate-calc.glade.h:333
 msgid "Sum-of-the years'-digits depreciation [y]"
 msgstr "ལོའི་བསྡོམས་ཀྱི་ཨང་གྲངས་མར་བཅགས་ [y]"
 
 #. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones.
 #. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also:
 #. http://en.wikipedia.org/wiki/Depreciation
-#: ../glade/gcalctool.glade.h:337
+#: ../glade/mate-calc.glade.h:337
 msgid "Syd"
 msgstr "Syd"
 
-#: ../glade/gcalctool.glade.h:340
+#: ../glade/mate-calc.glade.h:340
 msgid "Tangent [L]"
 msgstr "ཊེན་ཇེནཊི་། [L]"
 
-#: ../glade/gcalctool.glade.h:341
+#: ../glade/mate-calc.glade.h:341
 msgid "Ten to the x"
 msgstr "ཨེགསི་ལུ་བཅུ་ཐམ།"
 
 #. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also:
 #. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
-#: ../glade/gcalctool.glade.h:344
+#: ../glade/mate-calc.glade.h:344
 msgid "Term"
 msgstr "Term"
 
-#: ../glade/gcalctool.glade.h:345
+#: ../glade/mate-calc.glade.h:345
 msgid "Undo"
 msgstr "འབད་བཤོལ།"
 
-#: ../glade/gcalctool.glade.h:346
+#: ../glade/mate-calc.glade.h:346
 msgid "Use Arithmetic Precedence"
 msgstr "ཨང་རྩིས་སྔོན་དཔེ་ལག་ལེན་འཐབ།"
 
-#: ../glade/gcalctool.glade.h:347
+#: ../glade/mate-calc.glade.h:347
 msgid "Use Left-right Precedence"
 msgstr "གཡོན་-གཡས་སྔོན་དཔེ་ལག་ལེན་འཐབ།"
 
-#: ../glade/gcalctool.glade.h:348
+#: ../glade/mate-calc.glade.h:348
 msgid "User-defined functions"
 msgstr "ལག་ལེན་པའི་ངེས་འཛིན་ལས་འགན་ཚུ་ "
 
-#: ../glade/gcalctool.glade.h:349
+#: ../glade/mate-calc.glade.h:349
 msgid "User-defined functions [F]"
 msgstr "ལག་ལེན་པའི་ངེས་འཛིན་ལས་འགན་ [F]"
 
-#: ../glade/gcalctool.glade.h:350
+#: ../glade/mate-calc.glade.h:350
 msgid "X to the y"
 msgstr "ཝའི་ལུ་ཨེགསི།"
 
-#: ../glade/gcalctool.glade.h:351
+#: ../glade/mate-calc.glade.h:351
 msgid "XNOR"
 msgstr "XNOR"
 
-#: ../glade/gcalctool.glade.h:352
+#: ../glade/mate-calc.glade.h:352
 msgid "XOR"
 msgstr "XOR"
 
-#: ../glade/gcalctool.glade.h:353
+#: ../glade/mate-calc.glade.h:353
 msgid "_0 significant places"
 msgstr "རྩ་ཅན་ས་གནས་ ༠། (_0)"
 
-#: ../glade/gcalctool.glade.h:354
+#: ../glade/mate-calc.glade.h:354
 msgid "_1 place"
 msgstr "ས་གནས་༡།(_1)"
 
-#: ../glade/gcalctool.glade.h:355
+#: ../glade/mate-calc.glade.h:355
 msgid "_1 significant place"
 msgstr "རྩ་ཅན་ས་གནས་ ༡། (_1)"
 
-#: ../glade/gcalctool.glade.h:356
+#: ../glade/mate-calc.glade.h:356
 msgid "_2 places"
 msgstr "ས་གནས་༢།(_2)"
 
-#: ../glade/gcalctool.glade.h:357
+#: ../glade/mate-calc.glade.h:357
 msgid "_2 significant places"
 msgstr "རྩ་ཅན་ས་གནས་༢། (_2)"
 
-#: ../glade/gcalctool.glade.h:358
+#: ../glade/mate-calc.glade.h:358
 msgid "_3 places"
 msgstr "ས་གནས་ ༣།(_3)"
 
-#: ../glade/gcalctool.glade.h:359
+#: ../glade/mate-calc.glade.h:359
 msgid "_3 significant places"
 msgstr "རྩ་ཅན་ས་གནས་༣། (_3)"
 
-#: ../glade/gcalctool.glade.h:360
+#: ../glade/mate-calc.glade.h:360
 msgid "_4 places"
 msgstr "ས་གནས་ ༤།(_4)"
 
-#: ../glade/gcalctool.glade.h:361
+#: ../glade/mate-calc.glade.h:361
 msgid "_4 significant places"
 msgstr "རྩ་ཅན་ས་གནས་༤། (_4)"
 
-#: ../glade/gcalctool.glade.h:362
+#: ../glade/mate-calc.glade.h:362
 msgid "_5 places"
 msgstr "ས་གནས་ ༥།(_5)"
 
-#: ../glade/gcalctool.glade.h:363
+#: ../glade/mate-calc.glade.h:363
 msgid "_5 significant places"
 msgstr "རྩ་ཅན་ས་གནས་༥།(_5)"
 
-#: ../glade/gcalctool.glade.h:364
+#: ../glade/mate-calc.glade.h:364
 msgid "_6 places"
 msgstr "ས་གནས་ ༦།(_6)"
 
-#: ../glade/gcalctool.glade.h:365
+#: ../glade/mate-calc.glade.h:365
 msgid "_6 significant places"
 msgstr "རྩ་ཅན་ས་གནས་༦། (_6)"
 
-#: ../glade/gcalctool.glade.h:366
+#: ../glade/mate-calc.glade.h:366
 msgid "_7 places"
 msgstr "ས་གནས་ ༧།(_7)"
 
-#: ../glade/gcalctool.glade.h:367
+#: ../glade/mate-calc.glade.h:367
 msgid "_7 significant places"
 msgstr "རྩ་ཅན་ས་གནས་༧། (_7)"
 
-#: ../glade/gcalctool.glade.h:368
+#: ../glade/mate-calc.glade.h:368
 msgid "_8 places"
 msgstr "ས་གནས་ ༨།(_8)"
 
-#: ../glade/gcalctool.glade.h:369
+#: ../glade/mate-calc.glade.h:369
 msgid "_8 significant places"
 msgstr "རྩ་ཅན་ས་གནས་༨། (_8)"
 
-#: ../glade/gcalctool.glade.h:370
+#: ../glade/mate-calc.glade.h:370
 msgid "_9 places"
 msgstr "ས་གནས་ ༩།(_9)"
 
-#: ../glade/gcalctool.glade.h:371
+#: ../glade/mate-calc.glade.h:371
 msgid "_9 significant places"
 msgstr "རྩ་ཅན་ས་གནས་༩།(_9)"
 
-#: ../glade/gcalctool.glade.h:372
+#: ../glade/mate-calc.glade.h:372
 msgid "_Advanced"
 msgstr "མཐོ་རིམ་ཅན། (_A)"
 
-#: ../glade/gcalctool.glade.h:373
+#: ../glade/mate-calc.glade.h:373
 msgid "_Basic"
 msgstr "གཞི་རྩ། (_B)"
 
-#: ../glade/gcalctool.glade.h:374
+#: ../glade/mate-calc.glade.h:374
 msgid "_Bin"
 msgstr "བིན། (_B)"
 
-#: ../glade/gcalctool.glade.h:375
+#: ../glade/mate-calc.glade.h:375
 msgid "_Calculator"
 msgstr "རྩིས་འཕྲུལ། (_C)"
 
-#: ../glade/gcalctool.glade.h:376
+#: ../glade/mate-calc.glade.h:376
 msgid "_Contents"
 msgstr "ནང་དོན་ཚུ། (_C)"
 
-#: ../glade/gcalctool.glade.h:377
+#: ../glade/mate-calc.glade.h:377
 msgid "_Dec"
 msgstr "ཌེ་སི་མཱལ་།  (_D)"
 
-#: ../glade/gcalctool.glade.h:378
+#: ../glade/mate-calc.glade.h:378
 msgid "_Edit"
 msgstr "ཞུན་དག (_E)"
 
-#: ../glade/gcalctool.glade.h:379
+#: ../glade/mate-calc.glade.h:379
 msgid "_Financial"
 msgstr "དངུལ་འབྲེལ། (_F)"
 
-#: ../glade/gcalctool.glade.h:380
+#: ../glade/mate-calc.glade.h:380
 msgid "_Fix"
 msgstr "ཕིགསི།  (_F)"
 
-#: ../glade/gcalctool.glade.h:381
+#: ../glade/mate-calc.glade.h:381
 msgid "_Help"
 msgstr "གྲོགས་རམ། (_H)"
 
-#: ../glade/gcalctool.glade.h:382
+#: ../glade/mate-calc.glade.h:382
 msgid "_Insert"
 msgstr "བཙུགས།  (_I)"
 
-#: ../glade/gcalctool.glade.h:383
+#: ../glade/mate-calc.glade.h:383
 msgid "_Insert ASCII value..."
 msgstr "ASCII བེ་ལུ་བཙུགས་་་་་ (_I)"
 
-#: ../glade/gcalctool.glade.h:384
+#: ../glade/mate-calc.glade.h:384
 msgid "_Inv"
 msgstr "ཨའི་ཨེན་ཝི། (_I)"
 
-#: ../glade/gcalctool.glade.h:385
+#: ../glade/mate-calc.glade.h:385
 msgid "_Left-to-right Precedence"
 msgstr "གཡོན་ལས་གཡས་སྔོན་དཔེ་ (_L)"
 
-#: ../glade/gcalctool.glade.h:386
+#: ../glade/mate-calc.glade.h:386
 msgid "_Memory Registers"
 msgstr "དྲན་ཚད་ཐོ་དེབ་ཚུ། (_M)"
 
-#: ../glade/gcalctool.glade.h:387
+#: ../glade/mate-calc.glade.h:387
 msgid "_Oct"
 msgstr "ཨོཀ་ཊཱལ། (_O)"
 
-#: ../glade/gcalctool.glade.h:390
+#: ../glade/mate-calc.glade.h:390
 msgid "_Radians"
 msgstr "རེ་ཌི་ཡཱནསི། (_R)"
 
-#: ../glade/gcalctool.glade.h:391
+#: ../glade/mate-calc.glade.h:391
 msgid "_Redo"
 msgstr "ལོག་འབད།(_R)"
 
-#: ../glade/gcalctool.glade.h:392
+#: ../glade/mate-calc.glade.h:392
 msgid "_Sci"
 msgstr "ཚན་རིག  (_S)"
 
-#: ../glade/gcalctool.glade.h:393
+#: ../glade/mate-calc.glade.h:393
 msgid "_Scientific"
 msgstr "ཚན་རིག་གི་ (_S)"
 
-#: ../glade/gcalctool.glade.h:394
+#: ../glade/mate-calc.glade.h:394
 msgid "_Set"
 msgstr "གཞི་སྒྲིག  (_S)"
 
-#: ../glade/gcalctool.glade.h:395
+#: ../glade/mate-calc.glade.h:395
 msgid "_Undo"
 msgstr "འབད་བཤོལ།(_U)"
 
-#: ../glade/gcalctool.glade.h:396
+#: ../glade/mate-calc.glade.h:396
 msgid "_View"
 msgstr "མཐོང་སྣང་། (_V)"
 
-#: ../glade/gcalctool.glade.h:397
+#: ../glade/mate-calc.glade.h:397
 msgid "e to the power of displayed value [{]"
 msgstr "བཀྲམ་སྟོན་འབད་མི་བུའི་དབང་ཚད་ལུ་ཨི།[{] "
 
 #. E to the power of x. Note that this label uses mark up and the "x" is a superscript character. See: http://en.wikipedia.org/wiki/Superscript for more details on superscripts.
-#: ../glade/gcalctool.glade.h:399
+#: ../glade/mate-calc.glade.h:399
 msgid "e<sup>x</sup>"
 msgstr "ཨི་<sup><i>ཨེགསི་</sup>"
 
-#: ../glade/gcalctool.glade.h:400
+#: ../glade/mate-calc.glade.h:400
 msgid "ex"
 msgstr "ཨི་ཨེགསི་ "
 
 #. This is accessible name for memory register 0.  It is spoken
 #. by screen readers such as Orca, to help people who are
 #. blind or have low vision.
-#: ../glade/gcalctool.glade.h:404
+#: ../glade/mate-calc.glade.h:404
 msgid "register 0"
 msgstr "་ཐོ་དེབ་ཚུ ༠"
 
 #. This is accessible name for memory register 1.  It is spoken
 #. by screen readers such as Orca, to help people who are
 #. blind or have low vision.
-#: ../glade/gcalctool.glade.h:408
+#: ../glade/mate-calc.glade.h:408
 msgid "register 1"
 msgstr "ཐོ་དེབ་ ༡"
 
 #. This is accessible name for memory register 2.  It is spoken
 #. by screen readers such as Orca, to help people who are
 #. blind or have low vision.
-#: ../glade/gcalctool.glade.h:412
+#: ../glade/mate-calc.glade.h:412
 msgid "register 2"
 msgstr "ཐོ་དེབ་ཚུ་ ༢"
 
 #. This is accessible name for memory register 3.  It is spoken
 #. by screen readers such as Orca, to help people who are
 #. blind or have low vision.
-#: ../glade/gcalctool.glade.h:416
+#: ../glade/mate-calc.glade.h:416
 msgid "register 3"
 msgstr "ཐོ་དེབ་ཚུ་ ༣"
 
 #. This is accessible name for memory register 4.  It is spoken
 #. by screen readers such as Orca, to help people who are
 #. blind or have low vision.
-#: ../glade/gcalctool.glade.h:420
+#: ../glade/mate-calc.glade.h:420
 msgid "register 4"
 msgstr "ཐོ་དེབ་ ༤"
 
 #. This is accessible name for memory register 5.  It is spoken
 #. by screen readers such as Orca, to help people who are
 #. blind or have low vision.
-#: ../glade/gcalctool.glade.h:424
+#: ../glade/mate-calc.glade.h:424
 msgid "register 5"
 msgstr "ཐོ་དེབ་ ༥"
 
 #. This is accessible name for memory register 6.  It is spoken
 #. by screen readers such as Orca, to help people who are
 #. blind or have low vision.
-#: ../glade/gcalctool.glade.h:428
+#: ../glade/mate-calc.glade.h:428
 msgid "register 6"
 msgstr "ཐོ་དེབ་ ༦"
 
 #. This is accessible name for memory register 7.  It is spoken
 #. by screen readers such as Orca, to help people who are
 #. blind or have low vision.
-#: ../glade/gcalctool.glade.h:432
+#: ../glade/mate-calc.glade.h:432
 msgid "register 7"
 msgstr "ཐོ་དེབ་ ༧"
 
 #. This is accessible name for memory register 8.  It is spoken
 #. by screen readers such as Orca, to help people who are
 #. blind or have low vision.
-#: ../glade/gcalctool.glade.h:436
+#: ../glade/mate-calc.glade.h:436
 msgid "register 8"
 msgstr "ཐོ་དེབ་ ༨"
 
 #. This is accessible name for memory register 9.  It is spoken
 #. by screen readers such as Orca, to help people who are
 #. blind or have low vision.
-#: ../glade/gcalctool.glade.h:440
+#: ../glade/mate-calc.glade.h:440
 msgid "register 9"
 msgstr "ཐོ་དེབ་ ༩ "
 
-#: ../glade/gcalctool.glade.h:441
+#: ../glade/mate-calc.glade.h:441
 msgid "x2"
 msgstr "ཨེགསི་ ༢"
 
-#: ../glade/gcalctool.glade.h:442
+#: ../glade/mate-calc.glade.h:442
 msgid "xy"
 msgstr "xy"
 
 #. This is a plus-minus sign (+/-)
-#: ../glade/gcalctool.glade.h:444
+#: ../glade/mate-calc.glade.h:444
 msgid "±"
 msgstr "±"
 
 #. This is a multiplication sign (*)
-#: ../glade/gcalctool.glade.h:446
+#: ../glade/mate-calc.glade.h:446
 msgid "×"
 msgstr "×"
 
 #. this is a division sign (÷)
-#: ../glade/gcalctool.glade.h:448
+#: ../glade/mate-calc.glade.h:448
 msgid "÷"
 msgstr "÷"
 
 #. This is a minus sign (-)
-#: ../glade/gcalctool.glade.h:450
+#: ../glade/mate-calc.glade.h:450
 msgid "−"
 msgstr "−"
 
 #. This is a square root sign
-#: ../glade/gcalctool.glade.h:452
+#: ../glade/mate-calc.glade.h:452
 msgid "√"
 msgstr "√"
 

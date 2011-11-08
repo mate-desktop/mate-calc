@@ -105,7 +105,7 @@ math_window_critical_error(MathWindow *window, const gchar *title, const gchar *
 static void
 copy_cb(GtkWidget *widget, MathWindow *window)
 {
-    math_equation_copy (window->priv->equation);  
+    math_equation_copy (window->priv->equation);
 }
 
 
@@ -161,7 +161,7 @@ help_cb(GtkWidget *widget, MathWindow *window)
     GError *error = NULL;
 
     screen = gtk_widget_get_screen (GTK_WIDGET (window));
-    gtk_show_uri (screen, "ghelp:gcalctool", gtk_get_current_event_time (), &error);
+    gtk_show_uri (screen, "ghelp:mate-calc", gtk_get_current_event_time (), &error);
 
     if (error != NULL)
     {
@@ -201,28 +201,28 @@ about_cb(GtkWidget *widget, MathWindow *window)
     const gchar *translator_credits = _("translator-credits");
 
     /* The license this software is under (GPL2+) */
-    char *license = _("Gcalctool is free software; you can redistribute it and/or modify\n"
+    char *license = _("mate-calc is free software; you can redistribute it and/or modify\n"
           "it under the terms of the GNU General Public License as published by\n"
           "the Free Software Foundation; either version 2 of the License, or\n"
           "(at your option) any later version.\n"
           "\n"
-          "Gcalctool is distributed in the hope that it will be useful,\n"
+          "mate-calc is distributed in the hope that it will be useful,\n"
           "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
           "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
           "GNU General Public License for more details.\n"
           "\n"
           "You should have received a copy of the GNU General Public License\n"
-          "along with Gcalctool; if not, write to the Free Software Foundation, Inc.,\n"
+          "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
           "51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA");
 
     gtk_show_about_dialog(GTK_WINDOW(window),
                           "name",
                           /* Program name in the about dialog */
-                          _("Gcalctool"),
+                          _("mate-calc"),
                           "version", VERSION,
                           "copyright",
                           /* Copyright notice in the about dialog */
-                          _("\xc2\xa9 1986–2010 The Gcalctool authors"),
+                          _("\xc2\xa9 1986–2010 The mate-calc authors"),
                           "license", license,
                           "comments",
                           /* Short description in the about dialog */
@@ -347,21 +347,21 @@ create_menu(MathWindow *window)
     GtkAccelGroup *accel_group;
     GtkWidget *menu, *menu_item;
     GSList *group = NULL;
-  
+
     accel_group = gtk_accel_group_new();
     gtk_window_add_accel_group(GTK_WINDOW(window), accel_group);
 
-    /* Calculator menu */  
+    /* Calculator menu */
     #define CALCULATOR_MENU_LABEL _("_Calculator")
     /* Mode menu */
     #define MODE_MENU_LABEL _("_Mode")
     /* Help menu label */
     #define HELP_MENU_LABEL _("_Help")
-    /* Basic menu label */  
+    /* Basic menu label */
     #define MODE_BASIC_LABEL _("_Basic")
-    /* Advanced menu label */  
+    /* Advanced menu label */
     #define MODE_ADVANCED_LABEL _("_Advanced")
-    /* Financial menu label */  
+    /* Financial menu label */
     #define MODE_FINANCIAL_LABEL _("_Financial")
     /* Programming menu label */
     #define MODE_PROGRAMMING_LABEL _("_Programming")
@@ -403,7 +403,7 @@ create_gui(MathWindow *window)
 {
     GtkWidget *main_vbox, *vbox;
     GtkWidget *scrolled_window;
-  
+
     main_vbox = gtk_vbox_new(FALSE, 0);
     gtk_container_add(GTK_CONTAINER(window), main_vbox);
     gtk_widget_show(main_vbox);
@@ -411,12 +411,12 @@ create_gui(MathWindow *window)
     window->priv->menu_bar = gtk_menu_bar_new();
     gtk_box_pack_start(GTK_BOX(main_vbox), window->priv->menu_bar, TRUE, TRUE, 0);
     gtk_widget_show(window->priv->menu_bar);
-  
+
     create_menu(window);
 
     vbox = gtk_vbox_new(FALSE, 6);
     gtk_container_set_border_width(GTK_CONTAINER(vbox), 6);
-    gtk_box_pack_start(GTK_BOX(main_vbox), vbox, TRUE, TRUE, 0);  
+    gtk_box_pack_start(GTK_BOX(main_vbox), vbox, TRUE, TRUE, 0);
     gtk_widget_show(vbox);
 
     scrolled_window = gtk_scrolled_window_new(NULL, NULL);
@@ -520,7 +520,7 @@ math_window_init(MathWindow *window)
                          /* Title of main window */
                          _("Calculator"));
     gtk_window_set_icon_name(GTK_WINDOW(window), "accessories-calculator");
-    gtk_window_set_role(GTK_WINDOW(window), "gcalctool");
+    gtk_window_set_role(GTK_WINDOW(window), "mate-calc");
     gtk_window_set_resizable(GTK_WINDOW(window), FALSE);
     g_signal_connect_after(G_OBJECT(window), "key-press-event", G_CALLBACK(key_press_cb), NULL);
     g_signal_connect(G_OBJECT(window), "delete-event", G_CALLBACK(delete_cb), NULL);

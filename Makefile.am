@@ -14,5 +14,4 @@ DISTCLEANFILES = \
 	xmldocs.make
 
 EXTRA_DIST = \
-	autogen.sh \
-	gcalctool.doap
+	autogen.sh

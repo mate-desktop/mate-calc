@@ -43,24 +43,24 @@ registers_load(MathVariables *variables)
 {
     FILE *f;
     char line[1024];
-    
+
     f = fopen(variables->priv->file_name, "r");
     if (!f)
         return;
-    
+
     g_hash_table_remove_all(variables->priv->registers);
 
     while (fgets(line, 1024, f) != NULL)
     {
         char *name, *value;
         MPNumber *t;
-        
+
         value = strchr(line, '=');
         if (!value)
             continue;
         *value = '\0';
         value = value + 1;
-        
+
         name = g_strstrip(line);
         value = g_strstrip(value);
 
@@ -89,7 +89,7 @@ registers_save(MathVariables *variables)
     f = fopen(variables->priv->file_name, "w");
     if (!f)
         return;
-    
+
     g_hash_table_iter_init(&iter, variables->priv->registers);
     while (g_hash_table_iter_next(&iter, &key, &val))
     {
@@ -112,7 +112,7 @@ math_variables_get_names(MathVariables *variables)
     gpointer key;
     gint i = 0;
     gchar **names;
-  
+
     names = g_malloc0(sizeof(gchar *) * (g_hash_table_size(variables->priv->registers) + 1));
 
     g_hash_table_iter_init(&iter, variables->priv->registers);
@@ -158,6 +158,6 @@ math_variables_init(MathVariables *variables)
 {
     variables->priv = G_TYPE_INSTANCE_GET_PRIVATE (variables, math_variables_get_type(), MathVariablesPrivate);
     variables->priv->registers = g_hash_table_new_full(g_str_hash, g_str_equal, g_free, g_free);
-    variables->priv->file_name = g_build_filename(g_get_user_data_dir(), "gcalctool", "registers", NULL);
+    variables->priv->file_name = g_build_filename(g_get_user_data_dir(), "mate-calc", "registers", NULL);
     registers_load(variables);
 }

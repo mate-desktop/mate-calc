@@ -1,7 +1,7 @@
 dnl Process this file with autoconf to produce a configure script.
 
 AC_INIT(configure.ac)
-AM_INIT_AUTOMAKE(gcalctool, 5.32.0)
+AM_INIT_AUTOMAKE(mate-calc, 5.32.0)
 AM_CONFIG_HEADER(config.h)
 AM_MAINTAINER_MODE
 MATE_MAINTAINER_MODE_DEFINES
@@ -41,7 +41,7 @@ case "$with_gtk" in
        ;;
 esac
 
-PKG_CHECK_MODULES(GCALCTOOL, [
+PKG_CHECK_MODULES(MATE_CALC, [
     gtk+-$GTK_API_VERSION >= $GTK_REQUIRED
     gio-2.0 >= $GIO_REQUIRED
     libxml-2.0
@@ -60,7 +60,7 @@ dnl ###########################################################################
 
 AM_PROG_LEX
 if [[ "$LEX" != "flex" ]]; then
-	AC_MSG_ERROR(flex is required to create the gcalctool scanners)
+	AC_MSG_ERROR(flex is required to create the mate-calc scanners)
 fi
 
 dnl ###########################################################################
@@ -78,7 +78,7 @@ dnl Internationalization
 dnl ###########################################################################
 
 IT_PROG_INTLTOOL([0.35.0])
-AC_SUBST(GETTEXT_PACKAGE, gcalctool)
+AC_SUBST(GETTEXT_PACKAGE, mate-calc)
 
 dnl ###########################################################################
 dnl Documentation
@@ -91,9 +91,9 @@ dnl Files to generate
 dnl ###########################################################################
 
 AC_OUTPUT([
-Makefile
-src/Makefile
-po/Makefile.in
-data/Makefile
-help/Makefile
+	Makefile
+	src/Makefile
+	po/Makefile.in
+	data/Makefile
+	help/Makefile
 ])

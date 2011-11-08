@@ -2,7 +2,7 @@ include $(top_srcdir)/mate-doc-utils.make
 
 dist-hook: doc-dist-hook
 
-DOC_ID = gcalctool
+DOC_ID = mate-calc
 DOC_INCLUDES = legal.xml
 DOC_FIGURES =
 DOC_PAGES = absolute.page \

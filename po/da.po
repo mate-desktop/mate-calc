@@ -1,6 +1,6 @@
-# Danish translation of gcalctool.
+# Danish translation of mate-calc.
 # Copyright (C) 2003-2010 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gcalctool package.
+# This file is distributed under the same license as the mate-calc package.
 # Ole Laursen <olau@hardworking.dk>, 2003, 04.
 # Martin Willemoes Hansen <mwh@sysrq.dk>, 2004, 05.
 # Lasse Bang Mikkelsen <lbm@fatalerror.dk>, 2006.
@@ -18,11 +18,11 @@
 # interest rate ~ rentesats
 # principal ~ hovedstol
 # place ~ ciffer eller bit (bemærk bitshift-operationerne hvor det bør være bit)
-# word (programmeringstilstand) ~ word (datatype af variabel længde i gcalctool, i normal sprogbrug er en word dog 2 byte)
+# word (programmeringstilstand) ~ word (datatype af variabel længde i mate-calc, i normal sprogbrug er en word dog 2 byte)
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gcalctool\n"
+"Project-Id-Version: mate-calc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-08-22 13:15+0200\n"
 "PO-Revision-Date: 2010-08-22 02:47+0200\n"
@@ -492,96 +492,96 @@ msgid "_Angle units:"
 msgstr "_Vinkelenheder:"
 
 #. Title of main window
-#: ../data/gcalctool.desktop.in.h:1 ../src/math-window.c:521
+#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:521
 msgid "Calculator"
 msgstr "Lommeregner"
 
-#: ../data/gcalctool.desktop.in.h:2
+#: ../data/mate-calc.desktop.in.h:2
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Udfør aritmetiske, videnskabelige eller finansielle udregninger"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:1
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:1
 msgid "Accuracy value"
 msgstr "Værdi for nøjagtighed"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:2
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:2
 msgid "Angle units"
 msgstr "Vinkelenheder"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:3
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:3
 msgid "Button mode"
 msgstr "Knaptilstand"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:4
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:4
 msgid "Currency of the current calculation"
 msgstr "Valuta for den aktuelle beregning"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:5
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:5
 msgid "Currency to convert the current calculation into"
 msgstr "Valuta, som den aktuelle beregning skal konverteres til"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:6
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:6
 msgid ""
 "Indicates whether any trailing zeroes after the numeric point should be "
 "shown in the display value."
 msgstr ""
 "Angiver om nuller, der følger efter kommaet, skal indgå i den viste værdi."
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:7
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:7
 msgid "Indicates whether thousands separators are shown in large numbers."
 msgstr "Angiver om tusindtalsseparatorer vises i store tal."
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:8
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:8
 msgid "Number format"
 msgstr "Talformat"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:9
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:9
 msgid "Numeric Base"
 msgstr "Numerisk grundtal"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:10
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:10
 msgid "Show Thousands Separators"
 msgstr "Vis tusinde-adskillere"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:11
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:11
 msgid "Show Trailing Zeroes"
 msgstr "Vis afsluttende nuller"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:12
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:12
 msgid "Source currency"
 msgstr "Kildevaluta"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:13
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:13
 msgid "Target currency"
 msgstr "Målvaluta"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:14
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:14
 msgid "The angle units to use"
 msgstr "Vinkelenhed, der skal bruges"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:15
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:15
 msgid "The button mode"
 msgstr "Knaptilstanden"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:16
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:16
 msgid "The format to display numbers in"
 msgstr "Formatet som tal vises i"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:17
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:17
 msgid "The number of digits displayed after the numeric point"
 msgstr "Antallet af cifre, der vises efter kommaet"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:18
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:18
 msgid "The numeric base"
 msgstr "Numerisk grundtal"
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:19
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:19
 msgid "The size of the words used in bitwise operations"
 msgstr ""
 "Størrelsen af word, der bruges i bitvise operationer. Gyldige værdier er 16, "
 "32 og 64."
 
-#: ../data/org.mate.gcalctool.gschema.xml.in.h:20
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:20
 msgid "Word size"
 msgstr "Word-størrelse"
 
@@ -725,8 +725,8 @@ msgstr "Amerikanske dollar"
 msgid "South African rand"
 msgstr "Sydafrikanske rand"
 
-#. Description on how to use gcalctool displayed on command-line
-#: ../src/gcalctool.c:76
+#. Description on how to use mate-calc displayed on command-line
+#: ../src/mate-calc.c:76
 #, c-format
 msgid ""
 "Usage:\n"
@@ -735,8 +735,8 @@ msgstr ""
 "Brug:\n"
 "  %s — Foretag matematiske udregninger"
 
-#. Description on gcalctool command-line help options displayed on command-line
-#: ../src/gcalctool.c:84
+#. Description on mate-calc command-line help options displayed on command-line
+#: ../src/mate-calc.c:84
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -751,8 +751,8 @@ msgstr ""
 "  --help-all                      Vis alle hjælpetilvalg\n"
 "  --help-gtk                      Vis GTK+-tilvalg"
 
-#. Description on gcalctool command-line GTK+ options displayed on command-line
-#: ../src/gcalctool.c:95
+#. Description on mate-calc command-line GTK+ options displayed on command-line
+#: ../src/mate-calc.c:95
 #, c-format
 msgid ""
 "GTK+ Options:\n"
@@ -775,8 +775,8 @@ msgstr ""
 "  --gtk-module=MODULER            Indlæs ekstra GTK+-moduler\n"
 "  --g-fatal-warnings              Gør alle advarsler fatale"
 
-#. Description on gcalctool application options displayed on command-line
-#: ../src/gcalctool.c:109
+#. Description on mate-calc application options displayed on command-line
+#: ../src/mate-calc.c:109
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -788,13 +788,13 @@ msgstr ""
 "  -s, --solve <ligning>           Løs den givne ligning"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: ../src/gcalctool.c:154
+#: ../src/mate-calc.c:154
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "Argumentet --solve kræver en ligning, der skal løses"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: ../src/gcalctool.c:168
+#: ../src/mate-calc.c:168
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "Ukendt argument \"%s\""

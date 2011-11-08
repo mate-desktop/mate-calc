@@ -1,6 +1,6 @@
 # Thai gcaltool translation.
 # Copyright (C) 2005-2010 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gcalctool package.
+# This file is distributed under the same license as the mate-calc package.
 #
 # Ithipan Methasate <tumm_xx@hotmail.com>, 2003.
 # Chanchai Junlouchai <taz@opentle.org>, 2004.
@@ -10,9 +10,9 @@
 # Sira Nokyoongtong <gumaraa@gmail.com>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: gcalctool\n"
+"Project-Id-Version: mate-calc\n"
 "Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?"
-"product=gcalctool&component=general\n"
+"product=mate-calc&component=general\n"
 "POT-Creation-Date: 2010-05-24 01:46+0000\n"
 "PO-Revision-Date: 2010-05-25 13:33+0700\n"
 "Last-Translator: Sira Nokyoongtong <gumaraa@gmail.com>\n"
@@ -486,57 +486,57 @@ msgid "_Angle units:"
 msgstr "หน่วยมุ_ม:"
 
 #. Title of main window
-#: ../data/gcalctool.desktop.in.h:1 ../src/math-window.c:520
+#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:520
 msgid "Calculator"
 msgstr "เครื่องคิดเลข"
 
-#: ../data/gcalctool.desktop.in.h:2
+#: ../data/mate-calc.desktop.in.h:2
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "คำนวณเลขคณิต ฟังก์ชันวิทยาศาสตร์ หรือการเงิน"
 
-#: ../data/gcalctool.schemas.in.h:1
+#: ../data/mate-calc.schemas.in.h:1
 msgid "Accuracy value"
 msgstr "ความละเอียด"
 
-#: ../data/gcalctool.schemas.in.h:2
+#: ../data/mate-calc.schemas.in.h:2
 msgid "Display Mode"
 msgstr "โหมดการแสดงผล"
 
-#: ../data/gcalctool.schemas.in.h:3
+#: ../data/mate-calc.schemas.in.h:3
 msgid ""
 "Indicates whether any trailing zeroes after the numeric point should be "
 "shown in the display value."
 msgstr "กำหนดว่าจะแสดงเลขศูนย์เติมท้ายจุดทศนิยมในค่าที่แสดงหรือไม่"
 
-#: ../data/gcalctool.schemas.in.h:4
+#: ../data/mate-calc.schemas.in.h:4
 msgid "Indicates whether the memory register window is initially displayed."
 msgstr "กำหนดว่าจะแสดงหน้าต่างหน่วยความจำเรจิสเตอร์เมื่อเริ่มต้นหรือไม่"
 
-#: ../data/gcalctool.schemas.in.h:5
+#: ../data/mate-calc.schemas.in.h:5
 msgid "Indicates whether thousands separators are shown in large numbers."
 msgstr "กำหนดว่าจะแสดงสัญลักษณ์แบ่งหลักพันในเลขจำนวนขนาดใหญ่หรือไม่"
 
-#: ../data/gcalctool.schemas.in.h:6
+#: ../data/mate-calc.schemas.in.h:6
 msgid "Mode"
 msgstr "โหมด"
 
-#: ../data/gcalctool.schemas.in.h:7
+#: ../data/mate-calc.schemas.in.h:7
 msgid "Numeric Base"
 msgstr "ฐานเลข"
 
-#: ../data/gcalctool.schemas.in.h:8
+#: ../data/mate-calc.schemas.in.h:8
 msgid "Show Registers"
 msgstr "แสดงเรจิสเตอร์"
 
-#: ../data/gcalctool.schemas.in.h:9
+#: ../data/mate-calc.schemas.in.h:9
 msgid "Show Thousands Separators"
 msgstr "แสดงสัญลักษณ์แบ่งหลักพัน"
 
-#: ../data/gcalctool.schemas.in.h:10
+#: ../data/mate-calc.schemas.in.h:10
 msgid "Show Trailing Zeroes"
 msgstr "แสดงเลขศูนย์ต่อท้าย"
 
-#: ../data/gcalctool.schemas.in.h:11
+#: ../data/mate-calc.schemas.in.h:11
 msgid ""
 "The display format used in advanced mode. One of: \"ENG\" (engineering), "
 "\"FIX\" (fixed-point) and \"SCI\" (scientific)"
@@ -544,7 +544,7 @@ msgstr ""
 "รูปแบบการแสดงผลในโหมดพิเศษ ค่าที่เป็นไปได้คือ \"ENG\" (วิศวกรรม), \"FIX"
 "\" (จุดทศนิยมตายตัว) และ \"SCI\" (วิทยาศาสตร์)"
 
-#: ../data/gcalctool.schemas.in.h:12
+#: ../data/mate-calc.schemas.in.h:12
 msgid ""
 "The initial calculator mode. Valid values are \"BASIC\", \"FINANCIAL\", "
 "\"LOGICAL\", \"SCIENTIFIC\" and \"PROGRAMMING\""
@@ -553,7 +553,7 @@ msgstr ""
 "\"LOGICAL\" (พิเศษ), \"SCIENTIFIC\" (วิทยาศาสตร์) และ \"PROGRAMMING"
 "\" (การเขียนโปรแกรม)"
 
-#: ../data/gcalctool.schemas.in.h:13
+#: ../data/mate-calc.schemas.in.h:13
 msgid ""
 "The initial trigonometric type. Valid values are \"DEG\" (degrees), \"GRAD"
 "\" (gradians) and \"RAD\" (radians)."
@@ -561,43 +561,43 @@ msgstr ""
 "รูปแบบตรีโกณมิติเริ่มแรก ค่าที่เป็นไปได้คือ \"DEG\" (องศา), \"GRAD\" (เกรเดียน) และ \"RAD"
 "\" (เรเดียน)"
 
-#: ../data/gcalctool.schemas.in.h:14
+#: ../data/mate-calc.schemas.in.h:14
 msgid "The initial x-coordinate for the window"
 msgstr "พิกัด X เริ่มแรกของหน้าต่าง"
 
-#: ../data/gcalctool.schemas.in.h:15
+#: ../data/mate-calc.schemas.in.h:15
 msgid "The initial y-coordinate for the window"
 msgstr "พิกัด Y เริ่มแรกของหน้าต่าง"
 
-#: ../data/gcalctool.schemas.in.h:16
+#: ../data/mate-calc.schemas.in.h:16
 msgid ""
 "The number of digits displayed after the numeric point. This value must be "
 "in the range 0 to 9."
 msgstr "จำนวนหลักของเลขหลังจุดทศนิยม ค่านี้ต้องอยู่ในช่วง 0 ถึง 9"
 
-#: ../data/gcalctool.schemas.in.h:17
+#: ../data/mate-calc.schemas.in.h:17
 msgid "The number of pixels to place the window from the left of the screen."
 msgstr "พิกัดจุดแนวนอนที่จะวางหน้าต่าง นับจากขอบซ้ายของหน้าจอ"
 
-#: ../data/gcalctool.schemas.in.h:18
+#: ../data/mate-calc.schemas.in.h:18
 msgid "The number of pixels to place the window from the top of the screen."
 msgstr "พิกัดจุดแนวตั้งที่จะวางหน้าต่าง นับจากขอบบนของหน้าจอ"
 
-#: ../data/gcalctool.schemas.in.h:19
+#: ../data/mate-calc.schemas.in.h:19
 msgid "The numeric base (used in programming mode)"
 msgstr "ฐานเลข (สำหรับโหมดการเขียนโปรแกรม)"
 
-#: ../data/gcalctool.schemas.in.h:20
+#: ../data/mate-calc.schemas.in.h:20
 msgid ""
 "The size of the words used in bitwise operations. Valid values are 16, 32 "
 "and 64."
 msgstr "ขนาดของเวิร์ดที่ใช้ในการกระทำบิต ค่าที่เป็นไปได้คือ 16, 32 และ 64"
 
-#: ../data/gcalctool.schemas.in.h:21
+#: ../data/mate-calc.schemas.in.h:21
 msgid "Trigonometric type"
 msgstr "รูปแบบตรีโกณมิติ"
 
-#: ../data/gcalctool.schemas.in.h:22
+#: ../data/mate-calc.schemas.in.h:22
 msgid "Word size"
 msgstr "ขนาดเวิร์ด"
 
@@ -741,8 +741,8 @@ msgstr "ดอลลาร์ สหรัฐ"
 msgid "South African rand"
 msgstr "แรนด์ แอฟริกาใต้"
 
-#. Description on how to use gcalctool displayed on command-line
-#: ../src/gcalctool.c:77
+#. Description on how to use mate-calc displayed on command-line
+#: ../src/mate-calc.c:77
 #, c-format
 msgid ""
 "Usage:\n"
@@ -751,8 +751,8 @@ msgstr ""
 "วิธีใช้:\n"
 "  %s — เครื่องคำนวณทางคณิตศาสตร์"
 
-#. Description on gcalctool command-line help options displayed on command-line
-#: ../src/gcalctool.c:85
+#. Description on mate-calc command-line help options displayed on command-line
+#: ../src/mate-calc.c:85
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -767,8 +767,8 @@ msgstr ""
 "  --help-all                      แสดงคำอธิบายของตัวเลือกทั้งหมด\n"
 "  --help-gtk                      แสดงตัวเลือก GTK+"
 
-#. Description on gcalctool command-line GTK+ options displayed on command-line
-#: ../src/gcalctool.c:96
+#. Description on mate-calc command-line GTK+ options displayed on command-line
+#: ../src/mate-calc.c:96
 #, c-format
 msgid ""
 "GTK+ Options:\n"
@@ -789,8 +789,8 @@ msgstr ""
 "  --gtk-module=MODULES            โหลดมอดูล GTK+ เพิ่มเติม\n"
 "  --g-fatal-warnings              ถือว่าคำเตือนต่างๆ ที่เกิดขึ้นเป็นความผิดพลาดร้ายแรง"
 
-#. Description on gcalctool application options displayed on command-line
-#: ../src/gcalctool.c:110
+#. Description on mate-calc application options displayed on command-line
+#: ../src/mate-calc.c:110
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -802,13 +802,13 @@ msgstr ""
 "  -s, --solve <equation>          หาผลลัพธ์ของนิพจน์ที่กำหนด"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: ../src/gcalctool.c:155
+#: ../src/mate-calc.c:155
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "อาร์กิวเมนต์ --solve ต้องการนิพจน์ที่จะหาผลลัพธ์ด้วย"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: ../src/gcalctool.c:169
+#: ../src/mate-calc.c:169
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "ไม่รู้จักอาร์กิวเมนต์ '%s'"
@@ -2978,9 +2978,9 @@ msgstr "แทนเจนต์ไฮเพอร์โบลิกผกผั
 #, fuzzy
 #~ msgid "/View/_Financial Mode"
 #~ msgstr ""
-#~ "#-#-#-#-#  th.po (gcalctool)  #-#-#-#-#\n"
+#~ "#-#-#-#-#  th.po (mate-calc)  #-#-#-#-#\n"
 #~ "/มุมมอง/โหมด_การเงิน\n"
-#~ "#-#-#-#-#  th2.po (gcalctool)  #-#-#-#-#\n"
+#~ "#-#-#-#-#  th2.po (mate-calc)  #-#-#-#-#\n"
 #~ "/มุมมอง/โหมดการเ_งิน"
 
 #~ msgid "/View/_Scientific Mode"

@@ -25,7 +25,7 @@ static char*
 get_rate_filepath()
 {
     return g_build_filename(g_get_user_cache_dir (),
-                            "gcalctool",
+                            "mate-calc",
                             "eurofxref-daily.xml",
                             NULL);
 }
@@ -211,7 +211,7 @@ currency_convert(const MPNumber *from_amount,
     }
     if (!loaded_rates)
         currency_load_rates();
-  
+
     from_index = currency_get_index(source_currency);
     to_index = currency_get_index(target_currency);
     if (from_index < 0 || to_index < 0)
