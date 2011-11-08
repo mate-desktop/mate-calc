@@ -1,11 +1,11 @@
 dnl Process this file with autoconf to produce a configure script.
 
 AC_INIT(configure.ac)
-AM_INIT_AUTOMAKE(mate-calc, 5.32.0)
+AM_INIT_AUTOMAKE(mate-calc, 2011.11.8)
 AM_CONFIG_HEADER(config.h)
 AM_MAINTAINER_MODE
 MATE_MAINTAINER_MODE_DEFINES
-m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
+m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
 AC_ISC_POSIX
 AC_PROG_CC
@@ -24,32 +24,32 @@ GIO_REQUIRED=2.25.10
 
 AC_MSG_CHECKING([which gtk+ version to compile against])
 AC_ARG_WITH([gtk],
-  [AS_HELP_STRING([--with-gtk=2.0|3.0],[which gtk+ version to compile against (default: 2.0)])],
-  [case "$with_gtk" in
-     2.0|3.0) ;;
-     *) AC_MSG_ERROR([invalid gtk version specified]) ;;
-   esac],
-  [with_gtk=2.0])
+	[AS_HELP_STRING([--with-gtk=2.0|3.0], [which gtk+ version to compile against (default: 2.0)])],
+	[case "$with_gtk" in
+		2.0|3.0) ;;
+		*) AC_MSG_ERROR([invalid gtk version specified]) ;;
+	 esac],
+	[with_gtk=2.0])
 AC_MSG_RESULT([$with_gtk])
 
 case "$with_gtk" in
-  2.0) GTK_API_VERSION=2.0
-       GTK_REQUIRED=2.18.0
-       ;;
-  3.0) GTK_API_VERSION=3.0
-       GTK_REQUIRED=2.90.4
-       ;;
+	2.0) GTK_API_VERSION=2.0
+		GTK_REQUIRED=2.18.0
+		;;
+	3.0) GTK_API_VERSION=3.0
+		GTK_REQUIRED=2.90.4
+		;;
 esac
 
 PKG_CHECK_MODULES(MATE_CALC, [
-    gtk+-$GTK_API_VERSION >= $GTK_REQUIRED
-    gio-2.0 >= $GIO_REQUIRED
-    libxml-2.0
-    gmodule-export-2.0
+	gtk+-$GTK_API_VERSION >= $GTK_REQUIRED
+	gio-2.0 >= $GIO_REQUIRED
+	libxml-2.0
+	gmodule-export-2.0
 ])
 
 PKG_CHECK_MODULES(MATE_CALC_CMD, [
-    glib-2.0
+	glib-2.0
 ])
 
 AC_CHECK_LIB(m, log)
