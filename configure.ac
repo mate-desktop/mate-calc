@@ -48,7 +48,7 @@ PKG_CHECK_MODULES(MATE_CALC, [
     gmodule-export-2.0
 ])
 
-PKG_CHECK_MODULES(GCALCCMD, [
+PKG_CHECK_MODULES(MATE_CALC_CMD, [
     glib-2.0
 ])
 

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <enum id="org.mate.gcalctool.NumberFormat">
+  <enum id="org.mate.mate-conf.NumberFormat">
     <value value="0" nick="fixed"/>
     <value value="1" nick="scientific"/>
     <value value="2" nick="engineering"/>
   </enum>
-  <enum id="org.mate.gcalctool.ButtonMode">
+  <enum id="org.mate.mate-conf.ButtonMode">
     <value value="0" nick="basic"/>
     <value value="1" nick="advanced"/>
     <value value="2" nick="financial"/>
     <value value="3" nick="programming"/>
   </enum>
-  <enum id="org.mate.gcalctool.AngleUnit">
+  <enum id="org.mate.mate-conf.AngleUnit">
     <value value="0" nick="radians"/>
     <value value="1" nick="degrees"/>
     <value value="2" nick="gradians"/>
   </enum>
 
-  <schema path="/apps/gcalctool/" id="org.mate.gcalctool" gettext-domain="gcalctool">
+  <schema path="/apps/mate-conf/" id="org.mate.mate-conf" gettext-domain="mate-conf">
     <key type="i" name="accuracy">
       <default>9</default>
       <range min="0" max="9"/>
@@ -46,17 +46,17 @@
       <_summary>Show Trailing Zeroes</_summary>
       <_description>Indicates whether any trailing zeroes after the  numeric point should be shown in the display value.</_description>
     </key>
-    <key name="number-format" enum="org.mate.gcalctool.NumberFormat">
+    <key name="number-format" enum="org.mate.mate-conf.NumberFormat">
       <default>'fixed'</default>
       <_summary>Number format</_summary>
       <_description>The format to display numbers in</_description>
     </key>
-    <key name="angle-units" enum="org.mate.gcalctool.AngleUnit">
+    <key name="angle-units" enum="org.mate.mate-conf.AngleUnit">
       <default>'degrees'</default>
       <_summary>Angle units</_summary>
       <_description>The angle units to use</_description>
     </key>
-    <key name="button-mode" enum="org.mate.gcalctool.ButtonMode">
+    <key name="button-mode" enum="org.mate.mate-conf.ButtonMode">
       <default>'basic'</default>
       <_summary>Button mode</_summary>
       <_description>The button mode</_description>
