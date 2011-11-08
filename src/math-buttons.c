@@ -38,7 +38,7 @@ struct MathButtonsPrivate
 
     ButtonMode mode;
     gint programming_base;
-  
+
     GtkBuilder *basic_ui, *advanced_ui, *financial_ui, *programming_ui;
 
     GdkColor color_numbers, color_action, color_operator, color_function, color_memory, color_group;
@@ -55,8 +55,8 @@ struct MathButtonsPrivate
 
     GtkWidget *angle_combo;
     GtkWidget *angle_label;
-  
-    GtkWidget *base_combo;  
+
+    GtkWidget *base_combo;
     GtkWidget *base_label;
     GtkWidget *bit_panel;
     GtkWidget *bit_labels[MAXBITS];
@@ -252,10 +252,10 @@ static ButtonData button_data[] = {
       N_("Undo [Ctrl+Z]")},
     {"shift_left", NULL, ACTION,
       /* Tooltip for the shift left button */
-      N_("Shift Left")},  
+      N_("Shift Left")},
     {"shift_right", NULL, ACTION,
       /* Tooltip for the shift right button */
-      N_("Shift Right")},  
+      N_("Shift Right")},
     {"finc_compounding_term", NULL, FUNCTION,
       /* Tooltip for the compounding term button */
       N_("Compounding Term")},
@@ -320,15 +320,18 @@ math_buttons_new(MathEquation *equation)
 static void
 set_tint (GtkWidget *widget, GdkColor *tint, gint alpha)
 {
+	// hell no. It's a calculator, not a rainbow
+	return;
+
     GtkStyle *style;
     int j;
-  
+
     if (!widget)
       return;
 
     gtk_widget_ensure_style(widget);
     style = gtk_widget_get_style(widget);
-  
+
     for (j = 0; j < 5; j++) {
         GdkColor color;
 
@@ -354,7 +357,7 @@ set_data(GtkBuilder *ui, const gchar *object_name, const gchar *name, const char
 static void
 set_int_data(GtkBuilder *ui, const gchar *object_name, const gchar *name, gint value)
 {
-    GObject *object;  
+    GObject *object;
     object = gtk_builder_get_object(ui, object_name);
     if (object)
         g_object_set_data(object, name, GINT_TO_POINTER(value));
@@ -467,7 +470,7 @@ update_bit_panel(MathButtons *buttons)
 
     if (!buttons->priv->bit_panel)
         return;
-  
+
     enabled = math_equation_get_number(buttons->priv->equation, &x);
 
     if (enabled) {
@@ -483,7 +486,7 @@ update_bit_panel(MathButtons *buttons)
 
     gtk_widget_set_sensitive(buttons->priv->bit_panel, enabled);
     gtk_widget_set_sensitive(buttons->priv->base_label, enabled);
-      
+
     if (!enabled)
         return;
 
@@ -497,7 +500,7 @@ update_bit_panel(MathButtons *buttons)
         gtk_label_set_text(GTK_LABEL(buttons->priv->bit_labels[i]), label);
     }
 
-    base = math_equation_get_base(buttons->priv->equation);      
+    base = math_equation_get_base(buttons->priv->equation);
     label = g_string_new("");
     if (base != 8) {
         if (label->len != 0)
@@ -534,7 +537,7 @@ update_currency_label(MathButtons *buttons)
 
     if (!math_equation_get_number(buttons->priv->equation, &x))
         return;
-  
+
     if (currency_convert(&x,
                          math_equation_get_source_currency(buttons->priv->equation),
                          math_equation_get_target_currency(buttons->priv->equation),
@@ -632,7 +635,7 @@ base_changed_cb(MathEquation *equation, GParamSpec *spec, MathButtons *buttons)
     GtkTreeModel *model;
     GtkTreeIter iter;
     gboolean valid;
-  
+
     if (buttons->priv->mode != PROGRAMMING)
         return;
 
@@ -677,7 +680,7 @@ source_currency_changed_cb(MathEquation *equation, GParamSpec *spec, MathButtons
     GtkTreeModel *model;
     GtkTreeIter iter;
     gboolean valid;
-  
+
     if (buttons->priv->mode != FINANCIAL)
         return;
 
@@ -725,7 +728,7 @@ target_currency_changed_cb(MathEquation *equation, GParamSpec *spec, MathButtons
     GtkTreeModel *model;
     GtkTreeIter iter;
     gboolean valid;
-  
+
     if (buttons->priv->mode != FINANCIAL)
         return;
 
@@ -787,7 +790,7 @@ load_mode(MathButtons *buttons, ButtonMode mode)
         panel = &buttons->priv->prog_panel;
         break;
     }
-  
+
     if (*panel)
         return *panel;
 
@@ -818,21 +821,21 @@ load_mode(MathButtons *buttons, ButtonMode mode)
 
         if (button_data[i].tooltip)
             gtk_widget_set_tooltip_text(button, _(button_data[i].tooltip));
-      
+
         atk_object_set_name (gtk_widget_get_accessible (button), button_data[i].widget_name);
 
         switch (button_data[i].class) {
         case NUMBER:
-            set_tint(button, &buttons->priv->color_numbers, 1);          
+            set_tint(button, &buttons->priv->color_numbers, 1);
             break;
         case NUMBER_BOLD:
             set_tint(button, &buttons->priv->color_numbers, 2);
             break;
         case OPERATOR:
-            set_tint(button, &buttons->priv->color_operator, 1);          
+            set_tint(button, &buttons->priv->color_operator, 1);
             break;
         case FUNCTION:
-            set_tint(button, &buttons->priv->color_function, 1);          
+            set_tint(button, &buttons->priv->color_function, 1);
             break;
         case MEMORY:
             set_tint(button, &buttons->priv->color_memory, 1);
@@ -862,7 +865,7 @@ load_mode(MathButtons *buttons, ButtonMode mode)
     widget = GET_WIDGET(builder, "calc_numeric_point_button");
     if (widget)
         gtk_button_set_label(GTK_BUTTON(widget), math_equation_get_numeric_point_text(buttons->priv->equation));
-  
+
     widget = GET_WIDGET(builder, "calc_superscript_button");
     if (widget) {
         buttons->priv->superscript_toggles = g_list_append(buttons->priv->superscript_toggles, widget);
@@ -875,7 +878,7 @@ load_mode(MathButtons *buttons, ButtonMode mode)
         if (math_equation_get_number_mode(buttons->priv->equation) == SUBSCRIPT)
             gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(widget), TRUE);
     }
-  
+
     if (mode == ADVANCED) {
         GtkListStore *model;
         GtkTreeIter iter;
@@ -1005,7 +1008,7 @@ load_mode(MathButtons *buttons, ButtonMode mode)
     gtk_builder_connect_signals(builder, buttons);
 
     display_changed_cb(buttons->priv->equation, NULL, buttons);
-  
+
     return *panel;
 }
 
@@ -1038,13 +1041,13 @@ void
 math_buttons_set_mode(MathButtons *buttons, ButtonMode mode)
 {
     ButtonMode old_mode;
- 
+
     if (buttons->priv->mode == mode)
         return;
 
     old_mode = buttons->priv->mode;
     buttons->priv->mode = mode;
-  
+
     if (mode == PROGRAMMING)
         math_equation_set_base(buttons->priv->equation, buttons->priv->programming_base);
     else
@@ -1091,7 +1094,7 @@ G_MODULE_EXPORT
 void
 subtract_cb(GtkWidget *widget, MathButtons *buttons)
 {
-    math_equation_insert_subtract(buttons->priv->equation);  
+    math_equation_insert_subtract(buttons->priv->equation);
 }
 
 
@@ -1155,7 +1158,7 @@ button_menu_position_func(GtkMenu *menu, gint *x, gint *y,
     GtkAllocation allocation;
     GdkPoint loc;
     gint border;
-  
+
     gdk_window_get_origin(gtk_widget_get_window(button), &loc.x, &loc.y);
     border = gtk_container_get_border_width(GTK_CONTAINER(button));
     gtk_widget_get_allocation(button, &allocation);
@@ -1231,7 +1234,7 @@ make_register_menu_item(MathButtons *buttons, const gchar *name, const MPNumber 
 
     g_object_set_data(G_OBJECT(item), "register_id", g_strdup(name)); // FIXME: Memory leak
     g_signal_connect(item, "activate", callback, buttons);
-  
+
     return item;
 }
 
@@ -1263,7 +1266,7 @@ store_cb(GtkWidget *widget, MathButtons *buttons)
                                             _("No variables defined"));
         gtk_widget_set_sensitive(item, FALSE);
         gtk_menu_shell_append(GTK_MENU_SHELL(menu), item);
-    }  
+    }
     for (i = 0; names[i]; i++) {
         MPNumber *value;
         value = math_variables_get_value(math_equation_get_variables(buttons->priv->equation), names[i]);
@@ -1285,7 +1288,7 @@ store_cb(GtkWidget *widget, MathButtons *buttons)
 static void
 recall_menu_cb(GtkMenuItem *menu, MathButtons *buttons)
 {
-    math_equation_recall(buttons->priv->equation, g_object_get_data(G_OBJECT(menu), "register_id"));  
+    math_equation_recall(buttons->priv->equation, g_object_get_data(G_OBJECT(menu), "register_id"));
 }
 
 
@@ -1309,7 +1312,7 @@ recall_cb(GtkWidget *widget, MathButtons *buttons)
                                             _("No variables defined"));
         gtk_widget_set_sensitive(item, FALSE);
         gtk_menu_shell_append(GTK_MENU_SHELL(menu), item);
-    }  
+    }
     for (i = 0; names[i]; i++) {
         MPNumber *value;
         value = math_variables_get_value(math_equation_get_variables(buttons->priv->equation), names[i]);
@@ -1414,7 +1417,7 @@ shift_right_cb(GtkWidget *widget, MathButtons *buttons)
         }
     }
 
-    popup_button_menu(widget, GTK_MENU(buttons->priv->shift_right_menu));  
+    popup_button_menu(widget, GTK_MENU(buttons->priv->shift_right_menu));
 }
 
 
@@ -1433,10 +1436,10 @@ function_cb(GtkWidget *widget, MathButtons *buttons)
     if (!buttons->priv->function_menu) {
         gint i;
         GtkWidget *menu;
-        struct 
+        struct
         {
             gchar *name, *function;
-        } functions[] = 
+        } functions[] =
         {
             { /* Tooltip for the integer component button */
               N_("Integer Component"), "int " },
@@ -1459,7 +1462,7 @@ function_cb(GtkWidget *widget, MathButtons *buttons)
 
         for (i = 0; functions[i].name != NULL; i++) {
             GtkWidget *item;
-          
+
             item = gtk_menu_item_new_with_label(_(functions[i].name));
             g_object_set_data(G_OBJECT(item), "function", g_strdup (functions[i].function));
             gtk_menu_shell_append(GTK_MENU_SHELL(menu), item);
@@ -1468,7 +1471,7 @@ function_cb(GtkWidget *widget, MathButtons *buttons)
         }
     }
 
-    popup_button_menu(widget, GTK_MENU(buttons->priv->function_menu));  
+    popup_button_menu(widget, GTK_MENU(buttons->priv->function_menu));
 }
 
 
@@ -1587,7 +1590,7 @@ character_code_dialog_response_cb(GtkWidget *dialog, gint response_id, MathButto
 
     text = gtk_entry_get_text(GTK_ENTRY(buttons->priv->character_code_entry));
 
-    if (response_id == GTK_RESPONSE_OK) {     
+    if (response_id == GTK_RESPONSE_OK) {
         MPNumber x;
         int i = 0;
 
@@ -1668,7 +1671,7 @@ number_mode_changed_cb(MathEquation *equation, GParamSpec *spec, MathButtons *bu
 {
     GList *i;
     NumberMode mode;
-  
+
     mode = math_equation_get_number_mode(equation);
 
     for (i = buttons->priv->superscript_toggles; i; i = i->next) {
