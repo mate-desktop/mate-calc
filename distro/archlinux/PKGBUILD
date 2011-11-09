@@ -1,5 +1,5 @@
 pkgname=mate-calc
-pkgver=2011.08.31
+pkgver=2011.11.08
 pkgrel=1
 pkgdesc="Calculator for the Mate desktop environment"
 arch=('i686' 'x86_64')
@@ -9,13 +9,11 @@ makedepends=('pkgconfig')
 groups=('mate-extra')
 url="http://matsusoft.com.ar/projects"
 source=(http://sourceforge.net/projects/matede/files/${pkgver}/${pkgname}.tar.gz/download)
-sha256sums=('3df9b180231a2e01aef092bf756c6cd4f054db98aadc7950ae8c05abaee73441')
+sha256sums=('e4b34f353454f79d73c5edd7efccf7f87027de82ed325ed9f7c31ed6f3bab755')
 
 build()
 {
 	cd "${srcdir}/${pkgname}"
-	#./autogen.sh || return 1
-	#intltoolize --automake --copy --force || return 1
 	./autogen.sh --prefix=/usr || return 1
 	make || return 1
 }
