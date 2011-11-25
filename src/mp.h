@@ -53,28 +53,26 @@
  *
  * x = sign * (MP_BASE^(exponent-1) + MP_BASE^(exponent-2) + ...)
  */
-typedef struct
-{
-   /* Sign (+1, -1) or 0 for the value zero */
-   int sign, im_sign;
+typedef struct {
+	/* Sign (+1, -1) or 0 for the value zero */
+	int sign, im_sign;
 
-   /* Exponent (to base MP_BASE) */
-   int exponent, im_exponent;
+	/* Exponent (to base MP_BASE) */
+	int exponent, im_exponent;
 
-   /* Normalized fraction */
-   int fraction[MP_SIZE], im_fraction[MP_SIZE];
+	/* Normalized fraction */
+	int fraction[MP_SIZE], im_fraction[MP_SIZE];
 } MPNumber;
 
-typedef enum
-{
-    MP_RADIANS,
-    MP_DEGREES,
-    MP_GRADIANS
+typedef enum {
+	MP_RADIANS,
+	MP_DEGREES,
+	MP_GRADIANS
 } MPAngleUnit;
 
 /* Returns error string or NULL if no error */
 // FIXME: Global variable
-const char *mp_get_error(void);
+const char* mp_get_error(void);
 
 /* Clear any current error */
 void mp_clear_error(void);

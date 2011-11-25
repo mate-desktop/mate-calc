@@ -23,19 +23,19 @@
 #include "mp.h"
 #include "math-equation.h"
 
-void do_finc_expression(MathEquation *equation, int function, MPNumber *arg1, MPNumber *arg2, MPNumber *arg3, MPNumber *arg4);
+void do_finc_expression(MathEquation* equation, int function, MPNumber* arg1, MPNumber* arg2, MPNumber* arg3, MPNumber* arg4);
 
 enum finc_dialogs {
-    FINC_CTRM_DIALOG,
-    FINC_DDB_DIALOG,
-    FINC_FV_DIALOG,
-    FINC_GPM_DIALOG,
-    FINC_PMT_DIALOG,
-    FINC_PV_DIALOG,
-    FINC_RATE_DIALOG,
-    FINC_SLN_DIALOG,
-    FINC_SYD_DIALOG,
-    FINC_TERM_DIALOG
+	FINC_CTRM_DIALOG,
+	FINC_DDB_DIALOG,
+	FINC_FV_DIALOG,
+	FINC_GPM_DIALOG,
+	FINC_PMT_DIALOG,
+	FINC_PV_DIALOG,
+	FINC_RATE_DIALOG,
+	FINC_SLN_DIALOG,
+	FINC_SYD_DIALOG,
+	FINC_TERM_DIALOG
 };
 
 #endif /* FINANCIAL_H */

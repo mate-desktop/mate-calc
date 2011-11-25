@@ -29,34 +29,32 @@ G_BEGIN_DECLS
 
 typedef struct MathButtonsPrivate MathButtonsPrivate;
 
-typedef struct
-{
+typedef struct {
     GtkVBox parent_instance;
-    MathButtonsPrivate *priv;
+    MathButtonsPrivate* priv;
 } MathButtons;
 
-typedef struct
-{
-    GtkVBoxClass parent_class;
+typedef struct {
+	GtkVBoxClass parent_class;
 } MathButtonsClass;
 
 typedef enum {
-    BASIC,
-    ADVANCED,
-    FINANCIAL,
-    PROGRAMMING
+	BASIC,
+	ADVANCED,
+	FINANCIAL,
+	PROGRAMMING
 } ButtonMode;
 
 GType math_buttons_get_type(void);
 
-MathButtons *math_buttons_new(MathEquation *equation);
+MathButtons* math_buttons_new(MathEquation* equation);
 
-void math_buttons_set_mode(MathButtons *buttons, ButtonMode mode);
+void math_buttons_set_mode(MathButtons* buttons, ButtonMode mode);
 
-ButtonMode math_buttons_get_mode(MathButtons *buttons);
+ButtonMode math_buttons_get_mode(MathButtons* buttons);
 
-void math_buttons_set_programming_base(MathButtons *buttons, gint base);
+void math_buttons_set_programming_base(MathButtons* buttons, gint base);
 
-gint math_buttons_get_programming_base(MathButtons *buttons);
+gint math_buttons_get_programming_base(MathButtons* buttons);
 
 #endif /* MATH_BUTTONS_H */

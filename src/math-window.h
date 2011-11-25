@@ -31,31 +31,29 @@ G_BEGIN_DECLS
 
 typedef struct MathWindowPrivate MathWindowPrivate;
 
-typedef struct
-{
-    GtkWindow parent_instance;
-    MathWindowPrivate *priv;
+typedef struct {
+	GtkWindow parent_instance;
+	MathWindowPrivate* priv;
 } MathWindow;
 
-typedef struct
-{
-    GtkWindowClass parent_class;
+typedef struct {
+	GtkWindowClass parent_class;
 
-    void (*quit)(MathWindow *window);
+	void (*quit) (MathWindow* window);
 } MathWindowClass;
 
 GType math_window_get_type(void);
 
-MathWindow *math_window_new(MathEquation *equation);
+MathWindow* math_window_new(MathEquation* equation);
 
-GtkWidget *math_window_get_menu_bar(MathWindow *window);
+GtkWidget* math_window_get_menu_bar(MathWindow* window);
 
-MathEquation *math_window_get_equation(MathWindow *window);
+MathEquation* math_window_get_equation(MathWindow* window);
 
-MathDisplay *math_window_get_display(MathWindow *window);
+MathDisplay* math_window_get_display(MathWindow* window);
 
-MathButtons *math_window_get_buttons(MathWindow *window);
+MathButtons* math_window_get_buttons(MathWindow* window);
 
-void math_window_critical_error(MathWindow *window, const gchar *title, const gchar *contents);
+void math_window_critical_error(MathWindow* window, const gchar* title, const gchar* contents);
 
 #endif /* MATH_WINDOW_H */

@@ -26,39 +26,39 @@ typedef struct MPEquationParserState MPEquationParserState;
 
 /* State for parser */
 struct MPEquationParserState {
-    /* User provided options */
-    MPEquationOptions *options;
+	/* User provided options */
+	MPEquationOptions* options;
 
-    /* Function to check if a variable is defined */
-    int (*variable_is_defined)(MPEquationParserState *state, const char *name);
+	/* Function to check if a variable is defined */
+	int (*variable_is_defined)(MPEquationParserState* state, const char* name);
 
-    /* Function to get variable values */
-    int (*get_variable)(MPEquationParserState *state, const char *name, MPNumber *z);
+	/* Function to get variable values */
+	int (*get_variable)(MPEquationParserState* state, const char* name, MPNumber* z);
 
-    /* Function to set variable values */
-    void (*set_variable)(MPEquationParserState *state, const char *name, const MPNumber *x);
+	/* Function to set variable values */
+	void (*set_variable)(MPEquationParserState* state, const char* name, const MPNumber *x);
 
-    /* Function to check if a function is defined */
-    int (*function_is_defined)(MPEquationParserState *state, const char *name);
+	/* Function to check if a function is defined */
+	int (*function_is_defined)(MPEquationParserState* state, const char* name);
 
-    /* Function to solve functions */
-    int (*get_function)(MPEquationParserState *state, const char *name, const MPNumber *x, MPNumber *z);
+	/* Function to solve functions */
+	int (*get_function)(MPEquationParserState* state, const char* name, const MPNumber* x, MPNumber* z);
 
-    /* Function to convert units */
-    int (*convert)(MPEquationParserState *state, const MPNumber *x, const char *x_units, const char *z_units, MPNumber *z);
+	/* Function to convert units */
+	int (*convert)(MPEquationParserState* state, const MPNumber* x, const char* x_units, const char* z_units, MPNumber* z);
 
-    // FIXME: get_operator??
+	// FIXME: get_operator??
 
-    /* Error returned from parser */
-    int error;
+	/* Error returned from parser */
+	int error;
 
-    /* Name of token where error occured */
-    char *error_token;
+	/* Name of token where error occured */
+	char* error_token;
 
-    /* Value returned from parser */
-    MPNumber ret;
+	/* Value returned from parser */
+	MPNumber ret;
 };
 
-int _mp_equation_error(void *yylloc, MPEquationParserState *state, char *text);
+int _mp_equation_error(void* yylloc, MPEquationParserState* state, char* text);
 
 #endif

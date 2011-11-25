@@ -28,25 +28,23 @@ G_BEGIN_DECLS
 
 typedef struct MathVariablesPrivate MathVariablesPrivate;
 
-typedef struct
-{
-    GObject parent_instance;
-    MathVariablesPrivate *priv;
+typedef struct {
+	GObject parent_instance;
+	MathVariablesPrivate* priv;
 } MathVariables;
 
-typedef struct
-{
-    GObjectClass parent_class;
+typedef struct {
+	GObjectClass parent_class;
 } MathVariablesClass;
 
 GType math_variables_get_type(void);
 
-MathVariables *math_variables_new(void);
+MathVariables* math_variables_new(void);
 
-gchar **math_variables_get_names(MathVariables *variables);
+gchar** math_variables_get_names(MathVariables* variables);
 
-void math_variables_set_value(MathVariables *variables, const char *name, const MPNumber *value);
+void math_variables_set_value(MathVariables* variables, const char* name, const MPNumber* value);
 
-MPNumber *math_variables_get_value(MathVariables *variables, const char *name);
+MPNumber* math_variables_get_value(MathVariables* variables, const char* name);
 
 #endif /* MATH_VARIABLES_H */

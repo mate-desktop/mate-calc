@@ -29,19 +29,17 @@ G_BEGIN_DECLS
 
 typedef struct MathPreferencesDialogPrivate MathPreferencesDialogPrivate;
 
-typedef struct
-{
-    GtkDialog                 parent_instance;
-    MathPreferencesDialogPrivate *priv;
+typedef struct {
+	GtkDialog parent_instance;
+	MathPreferencesDialogPrivate* priv;
 } MathPreferencesDialog;
 
-typedef struct
-{
-    GtkDialogClass parent_class;
+typedef struct {
+	GtkDialogClass parent_class;
 } MathPreferencesDialogClass;
 
 GType math_preferences_get_type(void);
 
-MathPreferencesDialog *math_preferences_dialog_new(MathEquation *equation);
+MathPreferencesDialog* math_preferences_dialog_new(MathEquation* equation);
 
 #endif /* MATH_PREFERENCES_H */
