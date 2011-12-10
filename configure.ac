@@ -1,7 +1,7 @@
 dnl Process this file with autoconf to produce a configure script.
 
 AC_INIT(configure.ac)
-AM_INIT_AUTOMAKE(mate-calc, 2011.12.01)
+AM_INIT_AUTOMAKE(mate-calc, 1.1.0)
 AM_CONFIG_HEADER(config.h)
 AM_MAINTAINER_MODE
 MATE_MAINTAINER_MODE_DEFINES
