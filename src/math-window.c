@@ -215,6 +215,7 @@ static void about_cb(GtkWidget* widget, MathWindow* window)
 		"documenters", documenters,
 		"translator_credits", translator_credits,
 		"logo-icon-name", "accessories-calculator",
+        "webiste", "https://mate-desktop.org",
 		NULL);
 }
 
