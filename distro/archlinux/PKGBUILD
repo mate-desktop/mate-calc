@@ -7,21 +7,18 @@ license=('LGPL' 'GPL')
 depends=('gtk2' 'libxml2' 'libpng' 'freetype2' 'pixman' 'glib' 'pango' 'gdk-pixbuf2' 'cairo' 'atk')
 makedepends=('pkgconfig' 'mate-doc-utils')
 groups=('mate-extra')
-url="http://matsusoft.com.ar/projects"
-source=(http://sourceforge.net/projects/matede/files/${pkgver}/${pkgname}.tar.gz/download)
-sha256sums=('e4b34f353454f79d73c5edd7efccf7f87027de82ed325ed9f7c31ed6f3bab755')
+url="http://matsusoft.com.ar/projects/mate/"
+source=()
+sha256sums=()
 
-build()
-{
-	cd "${srcdir}/${pkgname}"
+build() {
+	cd "${srcdir}/../../../"
 	./autogen.sh --prefix=/usr || return 1
 	make || return 1
 }
 
-
-package()
-{
-	cd "${srcdir}/${pkgname}"
+package() {
+	cd "${srcdir}/../../../"
 	make DESTDIR="${pkgdir}" install || return 1
 }
 
