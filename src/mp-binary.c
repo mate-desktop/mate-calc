@@ -167,7 +167,9 @@ mp_mask(const MPNumber *x, int wordlen, MPNumber *z)
 void
 mp_shift(const MPNumber *x, int count, MPNumber *z)
 {
-    int i, multiplier = 1;
+    int i;
+    MPNumber multiplier;
+    mp_set_from_integer(1, &multiplier);
 
     if (!mp_is_integer(x)) {
         /* Translators: Error displayed when bit shift attempted on non-integer values */
@@ -177,15 +179,14 @@ mp_shift(const MPNumber *x, int count, MPNumber *z)
 
     if (count >= 0) {
         for (i = 0; i < count; i++)
-            multiplier *= 2;
-        mp_multiply_integer(x, multiplier, z);
+            mp_multiply_integer(&multiplier, 2, &multiplier);
+        mp_multiply(x, &multiplier, z);
     }
     else {
-        MPNumber temp;
         for (i = 0; i < -count; i++)
-            multiplier *= 2;
-        mp_divide_integer(x, multiplier, &temp);
-        mp_floor(&temp, z);
+            mp_multiply_integer(&multiplier, 2, &multiplier);
+        mp_divide(x, &multiplier, z);
+        mp_floor(z, z);
     }
 }
 

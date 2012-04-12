@@ -182,6 +182,7 @@ static void do_conversion(yyscan_t yyscanner, const MPNumber *x, const char *x_u
 %left UNARY_PLUS
 %left tADD tSUBTRACT
 %left tAND tOR tXOR tXNOR
+%left tLSHIFT tRSHIFT
 %left tMULTIPLY tDIVIDE tMOD MULTIPLICATION
 %left tNOT
 %left tROOT tROOT3 tROOT4
@@ -242,6 +243,8 @@ exp:
 | exp tOR exp %prec BOOLEAN_OPERATOR {mp_or(&$1, &$3, &$$);}
 | exp tXOR exp %prec BOOLEAN_OPERATOR {mp_xor(&$1, &$3, &$$);}
 | tNUMBER {mp_set_from_mp(&$1, &$$);}
+| exp tLSHIFT exp {mp_shift(&$1, mp_cast_to_int(&$3), &$$);}
+| exp tRSHIFT exp {mp_shift(&$1, -mp_cast_to_int(&$3), &$$);}
 ;
 
 
