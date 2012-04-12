@@ -252,10 +252,10 @@ static ButtonData button_data[] = {
       N_("Undo [Ctrl+Z]")},
     {"shift_left", NULL, ACTION,
       /* Tooltip for the shift left button */
-      N_("Shift Left")},
+      N_("Shift Left [<<]")},
     {"shift_right", NULL, ACTION,
       /* Tooltip for the shift right button */
-      N_("Shift Right")},
+      N_("Shift Right [>>]")},
     {"finc_compounding_term", NULL, FUNCTION,
       /* Tooltip for the compounding term button */
       N_("Compounding Term")},

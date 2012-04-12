@@ -75,6 +75,8 @@ MOD  [mM][oO][dD]
 AND  "∧"|[aA][nN][dD]
 OR   "∨"|[oO][rR]
 XOR  "⊻"|"⊕"|[xX][oO][rR]
+LSHIFT  "<<"
+RSHIFT  ">>"
 NOT  "¬"|"~"|[nN][oO][tT]
 RE   "⃰ℜ"
 IM   "ℑ"
@@ -94,6 +96,8 @@ IN   [iI][nN]
 "√"         {return tROOT;}
 "∛"         {return tROOT3;}
 "∜"         {return tROOT4;}
+{LSHIFT}    {return tLSHIFT;}
+{RSHIFT}    {return tRSHIFT;}
 {NOT}       {return tNOT;}
 {AND}       {return tAND;}
 {OR}        {return tOR;}
