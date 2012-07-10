@@ -1,1607 +1,484 @@
-# translation of mr.po to Marathi
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
+# Translators:
 # Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006.
 # Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008, 2009.
 # Sandeep Shedmake <sshedmak@redhat.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: mr\n"
-"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?product=mate-calc&component=general\n"
-"POT-Creation-Date: 2009-08-16 06:22+0000\n"
-"PO-Revision-Date: 2009-09-09 16:46+0530\n"
-"Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
-"Language-Team: Marathi <fedora-trans-mr@redhat.com>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 16:03+0100\n"
+"PO-Revision-Date: 2012-03-14 15:06+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: KBabel 1.11.4\n"
+"Language: mr\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#. Payment Period Dialog: Button to calculate result
-#: ../data/financial.ui.h:2
-msgid "C_alculate"
-msgstr "गणना करा (_a)"
-
-#. Gross Profit Margin Dialog: Label before cost input
-#: ../data/financial.ui.h:4
-msgid "C_ost:"
-msgstr "किंमत (_o):"
-
-#. Periodic Payment Dialog: Description of calculation
-#: ../data/financial.ui.h:6
-msgid ""
-"Calculates the amount of the periodic payment of a loan, where payments are "
-"made at the end of each payment period. "
+#. Accessible name for the inverse button
+#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:30
+msgid "Inverse"
 msgstr ""
-"नियतकालिक लोन पेमेन्टच्या प्रमाणची गणना करतो, जेथे पेमेन्ट प्रत्येक प्रेमेन्ट कालावधीच्या "
-"समाप्तीस केले जाते. "
 
-#. Sum-Of-The-Years'-Digits Depreciation Dialog: Description of calculation
-#: ../data/financial.ui.h:8
-msgid ""
-"Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-Of-The-Years'-Digits method. This method of depreciation "
-"accelerates the rate of depreciation, so that more depreciation expense "
-"occurs in earlier periods than in later ones. The useful life is the number "
-"of periods, typically years, over which an asset is depreciated. "
+#. Accessible name for the factorize button
+#: ../data/buttons-advanced.ui.h:4 ../data/buttons-programming.ui.h:2
+msgid "Factorize"
 msgstr ""
-"Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-Of-The-Years'-Digits method. This method of depreciation "
-"accelerates the rate of depreciation, so that more depreciation expense "
-"occurs in earlier periods than in later ones. The useful life is the number "
-"of periods, typically years, over which an asset is depreciated. "
 
-#. Double-Declining Depreciation Dialog: Description of calculation
-#: ../data/financial.ui.h:10
-msgid ""
-"Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the double-declining balance method."
+#. Accessible name for the factorial button
+#: ../data/buttons-advanced.ui.h:6 ../data/buttons-programming.ui.h:28
+msgid "Factorial"
 msgstr ""
-"Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the double-declining balance method."
 
-#. Future Value Dialog: Description of calculation
-#: ../data/financial.ui.h:12
-msgid ""
-"Calculates the future value of an investment based on a series of equal "
-"payments at a periodic interest rate over the number of payment periods in "
-"the term."
-msgstr ""
-"Calculates the future value of an investment based on a series of equal "
-"payments at a periodic interest rate over the number of payment periods in "
-"the term."
-
-#. Compounding Term Dialog: Description of calculation
-#: ../data/financial.ui.h:14
-msgid ""
-"Calculates the number of compounding periods necessary to increase an "
-"investment of present value to a future value, at a fixed interest rate per "
-"compounding period."
-msgstr ""
-"Calculates the number of compounding periods necessary to increase an "
-"investment of present value to a future value, at a fixed interest rate per "
-"compounding period."
-
-#. Payment Period Dialog: Description of calculation
-#: ../data/financial.ui.h:16
-msgid ""
-"Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest "
-"rate."
-msgstr ""
-"Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest "
-"rate."
-
-#. Periodic Interest Rate Dialog: Description of calculation
-#: ../data/financial.ui.h:18
-msgid ""
-"Calculates the periodic interest necessary to increase an investment to a "
-"future value, over the number of compounding periods. "
-msgstr ""
-"Calculates the periodic interest necessary to increase an investment to a "
-"future value, over the number of compounding periods. "
-
-#. Present Value Dialog: Description of calculation
-#: ../data/financial.ui.h:20
-msgid ""
-"Calculates the present value of an investment based on a series of equal "
-"payments discounted at a periodic interest rate over the number of payment "
-"periods in the term. "
-msgstr ""
-"Calculates the present value of an investment based on a series of equal "
-"payments discounted at a periodic interest rate over the number of payment "
-"periods in the term. "
-
-#. Gross Profit Margin Dialog: Description of calculation
-#: ../data/financial.ui.h:22
-msgid ""
-"Calculates the resale price of a product, based on the product cost and the "
-"wanted gross profit margin."
-msgstr ""
-"Calculates the resale price of a product, based on the product cost and the "
-"wanted gross profit margin."
-
-#. Straight-Line Depreciation Dialog: Description of calculation
-#: ../data/financial.ui.h:24
-msgid ""
-"Calculates the straight-line depreciation of an asset for one period. The "
-"straight-line method of depreciation divides the depreciable cost evenly "
-"over the useful life of an asset. The useful life is the number of periods, "
-"typically years, over which an asset is depreciated. "
-msgstr ""
-"Calculates the straight-line depreciation of an asset for one period. The "
-"straight-line method of depreciation divides the depreciable cost evenly "
-"over the useful life of an asset. The useful life is the number of periods, "
-"typically years, over which an asset is depreciated. "
-
-#. Title of Compounding Term dialog
-#: ../data/financial.ui.h:26
-msgid "Compounding Term"
-msgstr "संयुग संज्ञा"
-
-#. Title of Double-Declining Depreciation dialog
-#: ../data/financial.ui.h:28
-msgid "Double-Declining Depreciation"
-msgstr "दुहेरी-उतरती घसरण"
-
-#. Title of Future Value dialog
-#: ../data/financial.ui.h:30
-msgid "Future Value"
-msgstr "भविष्यातील मूल्य"
-
-#. Payment Period Dialog: Label before future value input
-#: ../data/financial.ui.h:32
-msgid "Future _Value:"
-msgstr "भविष्यातील मूल्य (_V):"
-
-#. Title of Gross Profit Margin dialog
-#: ../data/financial.ui.h:34 ../data/mate-calc.ui.h:209
-msgid "Gross Profit Margin"
-msgstr "Gross Profit Margin"
-
-#. Title of Payment Period dialog
-#: ../data/financial.ui.h:36
-msgid "Payment Period"
-msgstr "रक्कम देण्याची कालावधी"
-
-#. Title of Periodic Interest Rate dialog
-#: ../data/financial.ui.h:38
-msgid "Periodic Interest Rate"
-msgstr "कालावधीचा व्याज दर"
-
-#. Payment Period Dialog: Label before periodic interest rate input
-#: ../data/financial.ui.h:40
-msgid "Periodic Interest _Rate:"
-msgstr "कालावधीचा व्याज दर (_R):"
-
-#. Title of Periodic Payment dialog
-#: ../data/financial.ui.h:42
-msgid "Periodic Payment"
-msgstr "नियमित हप्ता"
-
-#. Title of Present Value dialog
-#: ../data/financial.ui.h:44
-msgid "Present Value"
-msgstr "वर्तमान मूल्य"
-
-#. Periodic Interest Rate Dialog: Label before present value input
-#: ../data/financial.ui.h:46
-msgid "Present _Value:"
-msgstr "वर्तमान मूल्य (_V):"
-
-#. Title of Straight-Line Depreciation dialog
-#: ../data/financial.ui.h:48
-msgid "Straight-Line Depreciation"
-msgstr "सरळ रेषेतील घसरण"
-
-#. Title of Sum-Of-The-Years'-Digits Depreciation dialog
-#: ../data/financial.ui.h:50
-msgid "Sum-Of-The-Years'-Digits Depreciation"
-msgstr "वर्षाचे एकूण संख्या मधील अंकीय घसरण"
-
-#. Sum-Of-The-Years'-Digits Depreciation Dialog: Label before cost input
-#: ../data/financial.ui.h:52
-msgid "_Cost:"
-msgstr "किंमत (_C):"
-
-#. Periodic Interest Rate Dialog: Label before future value input
-#: ../data/financial.ui.h:54
-msgid "_Future Value:"
-msgstr "भविष्यातील मूल्य (_F):"
-
-#. Sum-Of-The-Years'-Digits Depreciation Dialog: Label before life input
-#: ../data/financial.ui.h:56
-msgid "_Life:"
-msgstr "कार्यकाळ (_L):"
-
-#. Gross Profit Margin Dialog: Label before margin input
-#: ../data/financial.ui.h:58
-msgid "_Margin:"
-msgstr "सीमा (_M):"
-
-#. Present Value Dialog: Label before number of periods input
-#: ../data/financial.ui.h:60
-msgid "_Number Of Periods:"
-msgstr "नियतकालची संख्या (_N):"
-
-#. Sum-Of-The-Years'-Digits Depreciation Dialog: Label before period input
-#: ../data/financial.ui.h:62
-msgid "_Period:"
-msgstr "नियतकाल (_P):"
-
-#. Payment Period Dialog: Label before periodic payment input
-#: ../data/financial.ui.h:64
-msgid "_Periodic Payment:"
-msgstr "नियतकालिक हप्ता (_P):"
-
-#. Periodic Payment Dialog: Label before principal input
-#: ../data/financial.ui.h:66
-msgid "_Principal:"
-msgstr "मुद्दल (_P):"
-
-#. Sum-Of-The-Years'-Digits Depreciation Dialog: Label before salvage input
-#: ../data/financial.ui.h:68
-msgid "_Salvage:"
-msgstr "वाचवलेला मालमत्ता (_S):"
-
-#. Periodic Interest Rate Dialog: Label before term input
-#: ../data/financial.ui.h:70
-msgid "_Term:"
-msgstr "कालावधी (_T):"
-
-#. The percentage button
-#: ../data/mate-calc.ui.h:3
-#, no-c-format
-msgid "%"
-msgstr "%"
-
-#. Subtraction button
-#: ../data/mate-calc.ui.h:5
-msgid "&#x2212;"
-msgstr "&#x2212;"
-
-#. Square root button
-#: ../data/mate-calc.ui.h:7
-msgid "&#x221A;"
-msgstr "&#x221A;"
-
-#. Change sign button
-#: ../data/mate-calc.ui.h:9
-msgid "&#xB1;"
-msgstr "&#xB1;"
-
-#. Multiplication button
-#: ../data/mate-calc.ui.h:11
-msgid "&#xD7;"
-msgstr "&#xD7;"
-
-#. Division button
-#: ../data/mate-calc.ui.h:13
-msgid "&#xF7;"
-msgstr "&#xF7;"
-
-#. Start calculation group button
-#: ../data/mate-calc.ui.h:15
-msgid "("
-msgstr "("
-
-#: ../data/mate-calc.ui.h:16
-#| msgid "Ln"
-msgid "(Ln)"
-msgstr "(Ln)"
-
-#: ../data/mate-calc.ui.h:17
-#| msgid "Set accuracy from 0 to %d numeric place. [A]"
-#| msgid_plural "Set accuracy from 0 to %d numeric places. [A]"
-msgid "(Set accuracy from 0 to N numeric places [A])"
-msgstr "(अचूकपणा 0 ते N सांख्यीक स्थानपर्यंत सेट करा. [A])"
-
-#: ../data/mate-calc.ui.h:18
-msgid "(X^Y)"
-msgstr "(X^Y)"
-
-#: ../data/mate-calc.ui.h:19
-msgid "(cos)"
-msgstr "(cos)"
-
-#: ../data/mate-calc.ui.h:20
-msgid "(log)"
-msgstr "(log)"
-
-#: ../data/mate-calc.ui.h:21
-msgid "(log2)"
-msgstr "(log2)"
-
-#: ../data/mate-calc.ui.h:22
-msgid "(sin)"
-msgstr "(sin)"
-
-#: ../data/mate-calc.ui.h:23
-msgid "(tan)"
-msgstr "(tan)"
-
-#. Right bracket
-#: ../data/mate-calc.ui.h:25
-msgid ")"
-msgstr ")"
-
-#. Addition button
-#: ../data/mate-calc.ui.h:27
-msgid "+"
-msgstr "+"
-
-#. Numeric 0 button
-#: ../data/mate-calc.ui.h:29
-msgid "0"
-msgstr "0"
-
-#. Numeric 1 button
-#: ../data/mate-calc.ui.h:31
-msgid "1"
-msgstr "1"
-
-#. 1's complement
-#: ../data/mate-calc.ui.h:33
-msgid "1's"
-msgstr "1's"
-
-#: ../data/mate-calc.ui.h:34
-msgid "1's complement [z]"
-msgstr "1's complement [z]"
-
-#. Reciprocal button
-#: ../data/mate-calc.ui.h:36
-msgid "1/<i>x</i>"
-msgstr "1/<i>x</i>"
-
-#: ../data/mate-calc.ui.h:37
-msgid "1/x"
-msgstr "1/x"
-
-#. Right Shift Popup: Menu item to shift right by 10 bits
-#: ../data/mate-calc.ui.h:39
-msgid "10 places"
-msgstr "10 जागा"
-
-#. Right Shift Popup: Menu item to shift right by 11 bits
-#: ../data/mate-calc.ui.h:41
-msgid "11 places"
-msgstr "11 जागा"
-
-#. Right Shift Popup: Menu item to shift right by 12 bits
-#: ../data/mate-calc.ui.h:43
-msgid "12 places"
-msgstr "12 जागा"
-
-#. Right Shift Popup: Menu item to shift right by 13 bits
-#: ../data/mate-calc.ui.h:45
-msgid "13 places"
-msgstr "13 जागा"
-
-#. Right Shift Popup: Menu item to shift right by 14 bits
-#: ../data/mate-calc.ui.h:47
-msgid "14 places"
-msgstr "14 जागा"
-
-#. Label for bit 15 on the bit editor
-#: ../data/mate-calc.ui.h:49
-msgid "15"
-msgstr "15"
-
-#. Right Shift Popup: Menu item to shift right by 15 bits
-#: ../data/mate-calc.ui.h:51
-msgid "15 places"
-msgstr "15 जागा"
-
-#. Numeric 2 button
-#: ../data/mate-calc.ui.h:53
-msgid "2"
-msgstr "2"
-
-#. 2's complement
-#: ../data/mate-calc.ui.h:55
-msgid "2's"
-msgstr "2's"
-
-#: ../data/mate-calc.ui.h:56
-msgid "2's complement [Z]"
-msgstr "2's complement [Z]"
-
-#. Numeric 3 button
-#: ../data/mate-calc.ui.h:58
-msgid "3"
-msgstr "3"
-
-#. Label for bit 31 on the bit editor
-#: ../data/mate-calc.ui.h:60
-msgid "31"
-msgstr "31"
-
-#. Label for bit 32 on the bit editor
-#: ../data/mate-calc.ui.h:62
-msgid "32"
-msgstr "32"
-
-#. Numeric 4 button
-#: ../data/mate-calc.ui.h:64
-msgid "4"
-msgstr "4"
-
-#. Label for bit 47 on the bit editor
-#: ../data/mate-calc.ui.h:66
-msgid "47"
-msgstr "47"
-
-#. Numeric 5 button
-#: ../data/mate-calc.ui.h:68
-msgid "5"
-msgstr "5"
-
-#. Numeric 6 button
-#: ../data/mate-calc.ui.h:70
-msgid "6"
-msgstr "6"
-
-#. Label for the most significant bit (bit 63) on the bit editor
-#: ../data/mate-calc.ui.h:72
-msgid "63"
-msgstr "63"
-
-#. Numeric 7 button
-#: ../data/mate-calc.ui.h:74
-msgid "7"
-msgstr "7"
-
-#. Numeric 8 button
-#: ../data/mate-calc.ui.h:76
-msgid "8"
-msgstr "8"
-
-#. Numeric 9 button
-#: ../data/mate-calc.ui.h:78
-msgid "9"
-msgstr "9"
-
-#. Shift left button
-#: ../data/mate-calc.ui.h:80
-msgid "<"
-msgstr "<"
-
-#. Factorial
-#: ../data/mate-calc.ui.h:82
-msgid "<i>x</i>!"
-msgstr "<i>x</i>!"
-
-#. x to the power of 2 button
-#: ../data/mate-calc.ui.h:84
-msgid "<i>x</i><sup>2</sup>"
-msgstr "<i>x</i><sup>2</sup>"
-
-#. Edit Function Dialog: Note about what base numbers will be entered as
-#: ../data/mate-calc.ui.h:86
-msgid ""
-"<small><i><b>Note:</b> All constant values are specified in the decimal "
-"numeric base.</i></small>"
-msgstr ""
-"<small><i><b>टिप:</b> सर्व स्थीरांक मूल्य डेसीमल संख्यायीक बेस मध्ये निश्चित केले जाते.</i></"
-"small>"
-
-#. "R0" is the abbreviation for "Register 0", used in the memory register dialog
-#: ../data/mate-calc.ui.h:88
-msgid "<span weight=\"bold\">R0</span>"
-msgstr "<span weight=\"bold\">R0</span>"
-
-#. "R1" is the abbreviation for "Register 1", used in the memory register dialog
-#: ../data/mate-calc.ui.h:90
-msgid "<span weight=\"bold\">R1</span>"
-msgstr "<span weight=\"bold\">R1</span>"
-
-#. "R2" is the abbreviation for "Register 2", used in the memory register dialog
-#: ../data/mate-calc.ui.h:92
-msgid "<span weight=\"bold\">R2</span>"
-msgstr "<span weight=\"bold\">R2</span>"
-
-#. "R3" is the abbreviation for "Register 3", used in the memory register dialog
-#: ../data/mate-calc.ui.h:94
-msgid "<span weight=\"bold\">R3</span>"
-msgstr "<span weight=\"bold\">R3</span>"
-
-#. "R4" is the abbreviation for "Register 4", used in the memory register dialog
-#: ../data/mate-calc.ui.h:96
-msgid "<span weight=\"bold\">R4</span>"
-msgstr "<span weight=\"bold\">R4</span>"
-
-#. "R5" is the abbreviation for "Register 5", used in the memory register dialog
-#: ../data/mate-calc.ui.h:98
-msgid "<span weight=\"bold\">R5</span>"
-msgstr "<span weight=\"bold\">R5</span>"
-
-#. "R6" is the abbreviation for "Register 6", used in the memory register dialog
-#: ../data/mate-calc.ui.h:100
-msgid "<span weight=\"bold\">R6</span>"
-msgstr "<span weight=\"bold\">R6</span>"
-
-#. "R7" is the abbreviation for "Register 7", used in the memory register dialog
-#: ../data/mate-calc.ui.h:102
-msgid "<span weight=\"bold\">R7</span>"
-msgstr "<span weight=\"bold\">R7</span>"
-
-#. "R8" is the abbreviation for "Register 8", used in the memory register dialog
-#: ../data/mate-calc.ui.h:104
-msgid "<span weight=\"bold\">R8</span>"
-msgstr "<span weight=\"bold\">R8</span>"
-
-#. "R9" is the abbreviation for "Register 9", used in the memory register dialog
-#: ../data/mate-calc.ui.h:106
-msgid "<span weight=\"bold\">R9</span>"
-msgstr "<span weight=\"bold\">R9</span>"
-
-#. Solve button (clicking this solves the displayed calculation)
-#: ../data/mate-calc.ui.h:108
+#. Label on the solve button (clicking this solves the displayed calculation)
+#: ../data/buttons-advanced.ui.h:8 ../data/buttons-basic.ui.h:2
+#: ../data/buttons-financial.ui.h:10 ../data/buttons-programming.ui.h:6
 msgid "="
 msgstr "="
 
-#. Shift right button
-#: ../data/mate-calc.ui.h:110
-msgid ">"
-msgstr ">"
-
-#. Hexadecimal digit A button
-#: ../data/mate-calc.ui.h:112
-msgid "A"
-msgstr "A"
-
-#. Boolean AND button
-#: ../data/mate-calc.ui.h:114
-msgid "AND"
-msgstr "AND"
-
-#. Absolute value button. Abs is short for Absolute
-#: ../data/mate-calc.ui.h:116
-msgid "Abs"
-msgstr "Abs"
-
-#: ../data/mate-calc.ui.h:117
-msgid "Absolute value"
-msgstr "पूर्णतया मूल्य"
-
-#: ../data/mate-calc.ui.h:118
-msgid "Absolute value [u]"
-msgstr "संपूर्ण मूल्य [u]"
-
-#. Accuracy button
-#: ../data/mate-calc.ui.h:120
-msgid "Acc"
-msgstr "Acc"
-
-#: ../data/mate-calc.ui.h:121
-msgid "Add"
-msgstr "जोडा"
-
-#: ../data/mate-calc.ui.h:122
-msgid "Add [+]"
-msgstr "[+] जोडा"
-
-#: ../data/mate-calc.ui.h:123
-msgid "Advanced"
-msgstr "प्रगत"
-
-#. Hexadecimal digit B button
-#: ../data/mate-calc.ui.h:125
-msgid "B"
-msgstr "B"
-
-#: ../data/mate-calc.ui.h:126
-msgid "Backspace"
-msgstr "Backspace"
-
-#: ../data/mate-calc.ui.h:127
-msgid "Basic"
-msgstr "मुळ"
-
-#: ../data/mate-calc.ui.h:128
-msgid "Bitwise AND [&]"
-msgstr "बीटनुरूप AND [&]"
-
-#: ../data/mate-calc.ui.h:129
-msgid "Bitwise NOT [~]"
-msgstr "बीटनुरूप NOT [~]"
-
-#: ../data/mate-calc.ui.h:130
-msgid "Bitwise OR [|]"
-msgstr "बीटनुरूप OR [|]"
-
-#: ../data/mate-calc.ui.h:131
-msgid "Bitwise XNOR [{]"
-msgstr "बीटनुरूप XNOR [{]"
-
-#: ../data/mate-calc.ui.h:132
-msgid "Bitwise XOR [x]"
-msgstr "बीटनुरूप XOR [x]"
-
-#. Bksp is short for Backspace
-#: ../data/mate-calc.ui.h:134
-msgid "Bksp"
-msgstr "Bksp"
-
-#. Hexadecimal digit C button
-#: ../data/mate-calc.ui.h:136 ../src/gtk.c:1700
-msgid "C"
-msgstr "C"
-
-#. Clear displayed value button
-#: ../data/mate-calc.ui.h:138
-msgid "CE"
-msgstr "CE"
-
-#: ../data/mate-calc.ui.h:139
-msgid "Calculate result"
-msgstr "निकालाची गणना"
-
-#: ../data/mate-calc.ui.h:140
-msgid "Calculate result [=]"
-msgstr "निकालाची गणना [=]"
-
-#. Insert ASCII dialog: Label before character entry
-#: ../data/mate-calc.ui.h:142
-msgid "Ch_aracter:"
-msgstr "अक्षर (_a):"
-
-#: ../data/mate-calc.ui.h:143
-msgid "Change Sign [C]"
-msgstr "चिन्ह बदलवा [C]"
-
-#: ../data/mate-calc.ui.h:144
-msgid "Change sign"
-msgstr "चिन्ह बदलवा"
-
-#: ../data/mate-calc.ui.h:145
+#. Label on the clear display button
+#: ../data/buttons-advanced.ui.h:10 ../data/buttons-basic.ui.h:4
+#: ../data/buttons-financial.ui.h:12 ../data/buttons-programming.ui.h:8
 msgid "Clear"
 msgstr "पुसून टाक"
 
-#: ../data/mate-calc.ui.h:146
-msgid "Clear displayed value [Escape]"
-msgstr "दर्शविलेले मूल्य पुसून टाका [Escape]"
-
-#: ../data/mate-calc.ui.h:147
-msgid "Clear displayed value and any partial calculation [Shift Delete]"
-msgstr "दर्शविलेले मूल्य व अपुरे गणना पुसून टाका [Shift Delete]"
-
-#: ../data/mate-calc.ui.h:148
-msgid "Clear entry"
-msgstr "नोंद खोडा"
-
-#. Edit Functions Dialog: Instructions in dialog
-#: ../data/mate-calc.ui.h:150
-msgid "Click a _value or description to edit it:"
-msgstr "मूल्यवर क्लिक करा किंवा वर्णन संपादीत करा (_v):"
-
-#. Clear display button. Clr is short for Clear
-#: ../data/mate-calc.ui.h:152
-msgid "Clr"
-msgstr "Clr"
-
-#: ../data/mate-calc.ui.h:153
-msgid "Compounding term"
-msgstr "संयुग संज्ञा"
-
-#: ../data/mate-calc.ui.h:154
-msgid "Compounding term [m]"
-msgstr "संयुग संज्ञा [m]"
-
-#. Constants button
-#: ../data/mate-calc.ui.h:156
-msgid "Con"
-msgstr "Con"
-
-#: ../data/mate-calc.ui.h:157
-msgid "Constants [#]"
-msgstr "स्थिरांक [#]"
-
-#: ../data/mate-calc.ui.h:158
-msgid "Copy selection"
-msgstr "निवडलेल्या भागाची प्रत करा"
-
-#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
-#: ../data/mate-calc.ui.h:160
-msgid "Ctrm"
-msgstr "Ctrm"
-
-#. Hexadecimal digit D button
-#: ../data/mate-calc.ui.h:162
-msgid "D"
-msgstr "D"
-
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/mate-calc.ui.h:164
-msgid "Ddb"
-msgstr "Ddb"
-
-#. Degrees radio button
-#: ../data/mate-calc.ui.h:166
-msgid "De_grees"
-msgstr "डीग्री (_g)"
-
-#: ../data/mate-calc.ui.h:167
-msgid "Divide"
-msgstr "भागाकार"
-
-#: ../data/mate-calc.ui.h:168
-msgid "Divide [/]"
-msgstr "भागाकार [/]"
-
-#: ../data/mate-calc.ui.h:169
-msgid "Double-declining depreciation"
-msgstr "दुहेरी-उतरती घसरण"
-
-#: ../data/mate-calc.ui.h:170
-msgid "Double-declining depreciation [D]"
-msgstr "दुहेरी-उतरती घसरण [D]"
-
-#. Hexadecimal digit E button
-#: ../data/mate-calc.ui.h:172
-msgid "E"
-msgstr "E"
-
-#. Engineering display radio button
-#: ../data/mate-calc.ui.h:174
-msgid "E_ng"
-msgstr "Eng (_n)"
-
-#. Title of edit constants dialog
-#: ../data/mate-calc.ui.h:176
-msgid "Edit Constants"
-msgstr "स्थीरांक संपादीत करा"
-
-#. Menu item in the constants menu to show the Edit Constants dialog
-#: ../data/mate-calc.ui.h:178
-msgid "Edit Constants..."
-msgstr "स्थीरांक संपादीत करा..."
-
-#. Title of edit functions dialog
-#: ../data/mate-calc.ui.h:180
-msgid "Edit Functions"
-msgstr "कार्यपध्दती संपादीत करा"
-
-#. Menu item in the constants menu to show the Edit Functions dialog
-#: ../data/mate-calc.ui.h:182
-msgid "Edit Functions..."
-msgstr "कार्यपध्दती संपादीत करा..."
-
-#: ../data/mate-calc.ui.h:183
-msgid "End group of calculations [)]"
-msgstr "गणनाचे शेवटालचे समुह [)]"
-
-#: ../data/mate-calc.ui.h:184
-msgid "Enter an exponential number [E]"
-msgstr "एक्सपोनेंशीयल संख्या [E] प्रविष्ट करा"
-
-#. Memory exchange button. Exch is short for Exchange
-#: ../data/mate-calc.ui.h:186
-msgid "Exch"
-msgstr "Exch"
-
-#: ../data/mate-calc.ui.h:187
-msgid "Exchange displayed value with memory register [X]"
-msgstr "प्रदर्शित मूल्ये व स्मृतीरेजीस्टर [X] अदलाबदल करा"
-
-#: ../data/mate-calc.ui.h:188
-msgid "Exchange with register"
-msgstr "स्मृतीरेजीस्टर बरोबर अदलाबदल करा"
-
-#. Exponential
-#: ../data/mate-calc.ui.h:190
-msgid "Exp"
-msgstr "Exp"
-
-#. Hexadecimal digit F button
-#: ../data/mate-calc.ui.h:192 ../src/gtk.c:1723
-msgid "F"
-msgstr "F"
-
-#: ../data/mate-calc.ui.h:193
-msgid "Factorial of displayed value [!]"
-msgstr "प्रदर्शित संख्येचे फॅक्टोरियल [!]"
-
-#: ../data/mate-calc.ui.h:194
-msgid "Financial"
-msgstr "वित्तीय"
-
-#. Fractional portion button
-#: ../data/mate-calc.ui.h:196
-msgid "Frac"
-msgstr "Frac"
-
-#: ../data/mate-calc.ui.h:197
-msgid "Fractional portion"
-msgstr "अपूर्णाक भाग"
-
-#: ../data/mate-calc.ui.h:198
-msgid "Fractional portion of displayed value [:]"
-msgstr "दर्शित किंमतीचा अपूर्णाकांचा भाग [:]"
-
-#. Functions button
-#: ../data/mate-calc.ui.h:200
-msgid "Fun"
-msgstr "Fun"
-
-#: ../data/mate-calc.ui.h:201
-msgid "Future value"
-msgstr "भविष्यातील मूल्य"
-
-#: ../data/mate-calc.ui.h:202
-msgid "Future value [v]"
-msgstr "भविष्यातले मूल्य [v]"
-
-#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
-#: ../data/mate-calc.ui.h:204
-msgid "Fv"
-msgstr "Fv"
-
-#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
-#: ../data/mate-calc.ui.h:206
-msgid "Gpm"
-msgstr "Gpm"
-
-#. Gradians radio button
-#: ../data/mate-calc.ui.h:208
-msgid "Gr_adians"
-msgstr "ग्रेडियन (_a)"
-
-#: ../data/mate-calc.ui.h:210
-msgid "Gross Profit Margin [I]"
-msgstr "Gross Profit Margin [I]"
-
-#: ../data/mate-calc.ui.h:211
-msgid "Gross Profit Margin [g]"
-msgstr "Gross Profit Margin [g]"
-
-#. Hyperbolic check box
-#: ../data/mate-calc.ui.h:213
-msgid "H_yp"
-msgstr "Hyp (_y)"
-
-#. Base 16 radio button
-#: ../data/mate-calc.ui.h:215
-msgid "He_x"
-msgstr "Hex (_x)"
-
-#: ../data/mate-calc.ui.h:216
-msgid "Hexadecimal digit A [a]"
-msgstr "हेक्झाडेसीमल अंक A [a]"
-
-#: ../data/mate-calc.ui.h:217
-msgid "Hexadecimal digit B [b]"
-msgstr "हेक्झाडेसीमल अंक B [b]"
-
-#: ../data/mate-calc.ui.h:218
-msgid "Hexadecimal digit C [c]"
-msgstr "हेक्झाडेसीमल अंक C [c]"
-
-#: ../data/mate-calc.ui.h:219
-msgid "Hexadecimal digit D [d]"
-msgstr "हेक्झाडेसीमल अंक D [d]"
-
-#: ../data/mate-calc.ui.h:220
-msgid "Hexadecimal digit E [e]"
-msgstr "हेक्झाडेसीमल अंक E [e]"
-
-#: ../data/mate-calc.ui.h:221
-msgid "Hexadecimal digit F [f]"
-msgstr "हेक्झाडेसीमल अंक F [f]"
-
-#. Title of insert ASCII dialog
-#: ../data/mate-calc.ui.h:223
-msgid "Insert ASCII Value"
-msgstr "ASCII मूल्य अंतर्भूत करा"
-
-#: ../data/mate-calc.ui.h:224
-msgid "Insert ASCII value"
-msgstr "ASCII मूल्य अंतर्भूत करा"
-
-#. Integer portion button
-#: ../data/mate-calc.ui.h:226
-msgid "Int"
-msgstr "Int"
-
-#: ../data/mate-calc.ui.h:227
-msgid "Integer portion"
-msgstr "पूर्णांक भाग"
-
-#: ../data/mate-calc.ui.h:228
-msgid "Integer portion of displayed value [i]"
-msgstr "प्रदर्शित मूल्यातील पूर्णांक भाग [i]"
-
-#: ../data/mate-calc.ui.h:229
-msgid "Left bracket"
-msgstr "डावा कंस"
-
-#: ../data/mate-calc.ui.h:230
-msgid "Makes the bitwise functions use 16 bit mode"
-msgstr "बीटवाइज् फंक्शन्स्ला 16 बीट मोड वापरण्यास प्रोत्साहीत करते"
-
-#: ../data/mate-calc.ui.h:231
-msgid "Makes the bitwise functions use 32 bit mode"
-msgstr "बीटवाइज् फंक्शन्स्ला 32 बीट मोड वापरण्यास प्रोत्साहीत करते"
-
-#: ../data/mate-calc.ui.h:232
-msgid "Makes the bitwise functions use 64 bit mode"
-msgstr "बीटवाइज् फंक्शन्स्ला 64 बीट मोड वापरण्यास प्रोत्साहीत करते"
-
-#: ../data/mate-calc.ui.h:233
-msgid "Memory Registers"
-msgstr "मेमरी रेजीस्टर्स्"
-
-#. Modulus division button
-#: ../data/mate-calc.ui.h:235
-msgid "Mod"
-msgstr "Mod"
-
-#: ../data/mate-calc.ui.h:236
-msgid "Modulus Division [M]"
-msgstr "Modulus भागाकार [M]"
-
-#: ../data/mate-calc.ui.h:237
-msgid "Multiply"
-msgstr "गुणाकार"
-
-#: ../data/mate-calc.ui.h:238
-msgid "Multiply [*]"
-msgstr "गुणाकार [*]"
-
-#. Boolean NOT button
-#: ../data/mate-calc.ui.h:240
-msgid "NOT"
-msgstr "NOT"
-
-#: ../data/mate-calc.ui.h:241
-msgid "Numeric 0"
-msgstr "सांख्यीक 0"
-
-#: ../data/mate-calc.ui.h:242
-msgid "Numeric 1"
-msgstr "सांख्यीक 1"
-
-#: ../data/mate-calc.ui.h:243
-msgid "Numeric 2"
-msgstr "सांख्यीक 2"
-
-#: ../data/mate-calc.ui.h:244
-msgid "Numeric 3"
-msgstr "सांख्यीक 3"
-
-#: ../data/mate-calc.ui.h:245
-msgid "Numeric 4"
-msgstr "सांख्यीक 4"
-
-#: ../data/mate-calc.ui.h:246
-msgid "Numeric 5"
-msgstr "सांख्यीक 5"
-
-#: ../data/mate-calc.ui.h:247
-msgid "Numeric 6"
-msgstr "सांख्यीक 6"
-
-#: ../data/mate-calc.ui.h:248
-msgid "Numeric 7"
-msgstr "सांख्यीक 7"
-
-#: ../data/mate-calc.ui.h:249
-msgid "Numeric 8"
-msgstr "सांख्यीक 8"
-
-#: ../data/mate-calc.ui.h:250
-msgid "Numeric 9"
-msgstr "सांख्यीक 9"
-
-#: ../data/mate-calc.ui.h:251
-msgid "Numeric point"
-msgstr "सांख्यीक बिंदू"
-
-#. Boolean OR button
-#: ../data/mate-calc.ui.h:253
-msgid "OR"
-msgstr "OR"
-
-#: ../data/mate-calc.ui.h:254
-msgid "Paste selection"
-msgstr "निवडलेले चिकटवा"
-
-#: ../data/mate-calc.ui.h:255
-msgid "Payment period"
-msgstr "रक्कम देण्याचा कालावधी"
-
-#: ../data/mate-calc.ui.h:256
-msgid "Payment period [t]"
-msgstr "रक्कम देण्याची कालावधी [t]"
-
-#: ../data/mate-calc.ui.h:257
-msgid "Percentage"
-msgstr "टक्केवारी"
-
-#: ../data/mate-calc.ui.h:259
-#, no-c-format
-msgid "Percentage [%]"
-msgstr "टक्केवारी [%]"
-
-#: ../data/mate-calc.ui.h:260
-msgid "Periodic interest rate"
-msgstr "कालावधीचा व्याज दर"
-
-#: ../data/mate-calc.ui.h:261
-msgid "Periodic interest rate [T]"
-msgstr "कालावधीचा व्याज दर [T]"
-
-#: ../data/mate-calc.ui.h:262
-msgid "Periodic payment"
-msgstr "नियमित हप्ता"
-
-#: ../data/mate-calc.ui.h:263
-msgid "Periodic payment [P]"
-msgstr "नियमित हप्ता [P]"
-
-#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
-#: ../data/mate-calc.ui.h:265
-msgid "Pmt"
-msgstr "Pmt"
-
-#: ../data/mate-calc.ui.h:266
-msgid "Present value"
-msgstr "वर्तमान मूल्य"
-
-#: ../data/mate-calc.ui.h:267
-msgid "Present value [p]"
-msgstr "स्ध्यस्थितीचे मूल्य [p]"
-
-#: ../data/mate-calc.ui.h:268
-msgid "Programming"
-msgstr "प्रोग्रामींग"
-
-#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
-#: ../data/mate-calc.ui.h:270
-msgid "Pv"
-msgstr "Pv"
-
-#: ../data/mate-calc.ui.h:271
-msgid "Quit the calculator"
-msgstr "गणनयंत्र बंद करा"
-
-#. Random number
-#: ../data/mate-calc.ui.h:273
-msgid "Rand"
-msgstr "Rand"
-
-#: ../data/mate-calc.ui.h:274
-msgid "Random number in the range 0.0 to 1.0 [?]"
-msgstr "0.0 ते 1.0 मधील कुठलीही संख्या"
-
-#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
-#: ../data/mate-calc.ui.h:276
-msgid "Rate"
-msgstr "दर"
-
-#. Memory recall button. Rcl is short for Recall
-#: ../data/mate-calc.ui.h:278
-msgid "Rcl"
-msgstr "Rcl"
-
-#: ../data/mate-calc.ui.h:279
-msgid "Reciprocal"
-msgstr "अन्योनयपणे"
-
-#: ../data/mate-calc.ui.h:280
-msgid "Reciprocal [r]"
-msgstr "अन्योनयपणे [r]"
-
-#: ../data/mate-calc.ui.h:281
-msgid "Redo"
-msgstr "पुन्हा करा"
-
-#: ../data/mate-calc.ui.h:282
-msgid "Remove rightmost character from displayed value [Backspace]"
-msgstr "दर्शविलेल्या मूल्य पासून उजवे अक्षर काढूण टाका [Backspace]"
-
-#: ../data/mate-calc.ui.h:283
-msgid "Result Region"
-msgstr "परिणाम क्षेत्र"
-
-#: ../data/mate-calc.ui.h:284
-msgid "Retrieve from register"
-msgstr "स्मृती रेजीस्टरमधून प्राप्त करा"
-
-#: ../data/mate-calc.ui.h:285
-msgid "Retrieve memory register to display [R]"
-msgstr "स्मृती रेजीस्टरमधून प्रदर्शन [R] करीता माहिती प्राप्त करा"
-
-#: ../data/mate-calc.ui.h:286
-msgid "Right bracket"
-msgstr "उजवा कंस"
-
-#: ../data/mate-calc.ui.h:287
-msgid "Scientific"
-msgstr "शास्त्रीय"
-
-#. Title of set precision dialog
-#: ../data/mate-calc.ui.h:289
-msgid "Set Precision"
-msgstr "Precision निश्चित करा"
-
-#: ../data/mate-calc.ui.h:290
-msgid "Set display type to engineering format"
-msgstr "सादरीकरणाचा प्रकार अभियांत्रिक स्वरुपाचा करा"
-
-#: ../data/mate-calc.ui.h:291
-msgid "Set display type to fixed-point format"
-msgstr "सादरीकरणाचा प्रकार स्थिर-बिंदू स्वरुपाचा करा"
-
-#: ../data/mate-calc.ui.h:292
-msgid "Set display type to scientific format"
-msgstr "सादरीकरणाचा प्रकार शास्त्रीय स्वरुपाचा करा"
-
-#: ../data/mate-calc.ui.h:293
-msgid "Set hyperbolic option for trigonometric functions"
-msgstr "त्रिकोणामिती मधील कार्यपध्दतीसाठी हायपरबोलीक हा पर्याय निश्चित करा"
-
-#: ../data/mate-calc.ui.h:294
-msgid "Set inverse option for trigonometric functions"
-msgstr "त्रिकोणामिती मधील कार्यपध्दतीसाठी विरुद्ध पर्याय निश्चित करा"
-
-#: ../data/mate-calc.ui.h:295
-msgid "Set numeric base to binary (base 2)"
-msgstr "अंकाच्या पाया व्दिमान (बेस 2) निश्चित करा"
-
-#: ../data/mate-calc.ui.h:296
-msgid "Set numeric base to decimal (base 10)"
-msgstr "अंकाचा पाया दशमान (डेसीमल बेस 10) निश्चित करा"
-
-#: ../data/mate-calc.ui.h:297
-msgid "Set numeric base to hexadecimal (base 16)"
-msgstr "अंकाचा पाया सोळा (हेक्झाडेसीमल बेस 16) निश्चित करा"
-
-#: ../data/mate-calc.ui.h:298
-msgid "Set numeric base to octal (base 8)"
-msgstr "अंकाचा पाया अष्टमान (ऑक्टल बेस 8) निश्चित करा"
-
-#: ../data/mate-calc.ui.h:299
-msgid "Set trigonometric type to degrees"
-msgstr "त्रिकोणमितीचा प्रकार डिग्रीमधे निश्चित करा"
-
-#: ../data/mate-calc.ui.h:300
-msgid "Set trigonometric type to gradians"
-msgstr "त्रिकोणमितीचा प्रकार ग्रडियन्समधे निश्चित करा"
-
-#: ../data/mate-calc.ui.h:301
-msgid "Set trigonometric type to radians"
-msgstr "त्रिकोणमितीचा प्रकार रेडियन्समधे निश्चित करा"
-
-#: ../data/mate-calc.ui.h:302
-msgid "Shift displayed value 1-15 places to the left [<]"
-msgstr "Shift मुळे मूल्य 1-15 ठिकाण डावीकडे दर्शविले जाईल [>]"
-
-#: ../data/mate-calc.ui.h:303
-msgid "Shift displayed value 1-15 places to the right [>]"
-msgstr "Shift मुळे मूल्य 1-15 ठिकाण उजवीकडे दर्शविले जाईल [>]"
-
-#. View|Show Thousands Separator menu item
-#: ../data/mate-calc.ui.h:305
-msgid "Show T_housands Separator"
-msgstr "हजार विभाजक दाखवा (_h)"
-
-#. Accuracy Popup: Check menu item to enable trailing zeroes
-#: ../data/mate-calc.ui.h:307
-msgid "Show _Trailing Zeroes"
-msgstr "शेवटचे शून्य दाखवा (_T)"
-
-#: ../data/mate-calc.ui.h:308
-msgid "Show help contents"
-msgstr "मदत विषयसूची दाखवा"
-
-#: ../data/mate-calc.ui.h:309
-msgid "Show memory registers"
-msgstr "स्मृती रेजीस्टर दाखवा"
-
-#: ../data/mate-calc.ui.h:310
-msgid "Show the About mate-calc dialog"
-msgstr "mate-calc विषयी संवाद दाखवा"
-
-#: ../data/mate-calc.ui.h:311
-msgid "Show thousands separator"
-msgstr "हजार विभाजक दाखवा"
-
-#: ../data/mate-calc.ui.h:312
-msgid "Show trailing zeroes"
-msgstr "शेवटचे शून्य दाखवा"
-
-#. Set Precision Dialog: Label before the significant places spin button
-#: ../data/mate-calc.ui.h:314
-msgid "Significant _places:"
-msgstr "महत्वाची जागी (_p):"
-
-#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/mate-calc.ui.h:316
-msgid "Sln"
-msgstr "Sln"
-
-#: ../data/mate-calc.ui.h:317
-msgid "Square"
-msgstr "वर्ग"
-
-#: ../data/mate-calc.ui.h:318
-msgid "Square [@]"
-msgstr "वर्ग [@]"
-
-#: ../data/mate-calc.ui.h:319
-msgid "Square root"
-msgstr "वर्गमूळ"
-
-#: ../data/mate-calc.ui.h:320
-msgid "Square root [s]"
-msgstr "वर्गमूळ [s]"
-
-#: ../data/mate-calc.ui.h:321
-msgid "Start group of calculations [(]"
-msgstr "गणना करायचे प्रारंभीक समुह [(]"
-
-#. Memory store button. Sto is short for Store
-#: ../data/mate-calc.ui.h:323
-msgid "Sto"
-msgstr "Sto"
-
-#: ../data/mate-calc.ui.h:324
-msgid "Store displayed value in memory register [S]"
-msgstr "प्रदर्शित मूल्य मेमरी रजिस्टर [S] मधे संचयीत करा"
-
-#: ../data/mate-calc.ui.h:325
-msgid "Store to register"
-msgstr "रेजीस्टर मध्ये साठवा"
-
-#: ../data/mate-calc.ui.h:326
-msgid "Straight-line depreciation"
-msgstr "सरळ रेषेतील घसरण"
-
-#: ../data/mate-calc.ui.h:327
-msgid "Straight-line depreciation [l]"
-msgstr "सरळ रेषेतील घसरण [l]"
-
-#: ../data/mate-calc.ui.h:328
-msgid "Subtract"
-msgstr "वजा करा"
-
-#: ../data/mate-calc.ui.h:329
-msgid "Subtract [-]"
-msgstr "वजा करा [-]"
-
-#: ../data/mate-calc.ui.h:330
-msgid "Sum-of-the years'-digits depreciation"
-msgstr "वर्षाचे एकूण संख्या मधील अंकीय घसरण"
-
-#: ../data/mate-calc.ui.h:331
-msgid "Sum-of-the years'-digits depreciation [Y]"
-msgstr "वर्षाचे एकूण संख्या मधील अंकीय घसरण [Y]"
-
-#: ../data/mate-calc.ui.h:332
-msgid "Sum-of-the years'-digits depreciation [y]"
-msgstr "वर्षाचे एकूण संख्या मधील अंकीय घसरण [y]"
-
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/mate-calc.ui.h:334
-msgid "Syd"
-msgstr "Syd"
-
-#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
-#: ../data/mate-calc.ui.h:336
-msgid "Term"
-msgstr "Term"
-
-#. Truncate displayed value
-#: ../data/mate-calc.ui.h:338
-msgid "Trunc"
-msgstr "Trunc"
-
-#: ../data/mate-calc.ui.h:339
-#| msgid "Raise displayed value to the power of y [o]"
-msgid "Truncate displayed value to the chosen word size ([)"
-msgstr "नीवडलेल्या शब्द आकारकरीता दृष्यस्पद मूल्य ट्रंकेट करा ([)"
-
-#: ../data/mate-calc.ui.h:340
+#. Accessible name for the subscript mode button
+#: ../data/buttons-advanced.ui.h:12 ../data/buttons-programming.ui.h:10
+msgid "Subscript"
+msgstr ""
+
+#. Accessible name for the superscript mode button
+#: ../data/buttons-advanced.ui.h:14 ../data/buttons-programming.ui.h:12
+msgid "Superscript"
+msgstr ""
+
+#. Accessible name for the scientific exponent button
+#: ../data/buttons-advanced.ui.h:16
+msgid "Scientific Exponent"
+msgstr ""
+
+#. Accessible name for the recall value button
+#: ../data/buttons-advanced.ui.h:18 ../data/buttons-financial.ui.h:6
+#: ../data/buttons-programming.ui.h:14
+msgid "Recall"
+msgstr ""
+
+#. The label on the memory recall button
+#: ../data/buttons-advanced.ui.h:20 ../data/buttons-financial.ui.h:8
+#: ../data/buttons-programming.ui.h:16
+msgid "&#x2190; R"
+msgstr ""
+
+#. Accessible name for the store value button
+#: ../data/buttons-advanced.ui.h:22 ../data/buttons-financial.ui.h:2
+#: ../data/buttons-programming.ui.h:18
+msgid "Store"
+msgstr ""
+
+#. The label on the memory store button
+#: ../data/buttons-advanced.ui.h:24 ../data/buttons-financial.ui.h:4
+#: ../data/buttons-programming.ui.h:20
+msgid "&#x2192; R"
+msgstr ""
+
+#. Accessible name for the absolute value button
+#: ../data/buttons-advanced.ui.h:26 ../data/buttons-programming.ui.h:4
+msgid "Absolute Value"
+msgstr ""
+
+#. Accessible name for the exponentiation (x to the power of y) button
+#: ../data/buttons-advanced.ui.h:28 ../data/buttons-basic.ui.h:6
+#: ../data/buttons-financial.ui.h:36 ../data/buttons-programming.ui.h:32
+msgid "Exponent"
+msgstr ""
+
+#. Label on the undo button
+#. Label on the clear display button
+#: ../data/buttons-advanced.ui.h:30 ../data/buttons-basic.ui.h:8
+#: ../data/buttons-financial.ui.h:34
 msgid "Undo"
 msgstr "क्रिया मागे घ्या"
 
-#: ../data/mate-calc.ui.h:341
-msgid "User-defined functions [F]"
-msgstr "वापरकर्ता-परिभाषीत कार्यपध्दती [F]"
+#. Calculates the number of compounding periods necessary to increase an
+#. investment of present value pv to a future value of fv, at a fixed interest
+#. rate of int per compounding period. See also:
+#. http://en.wikipedia.org/wiki/Compound_interest
+#: ../data/buttons-financial.ui.h:14
+msgid "Ctrm"
+msgstr "Ctrm"
 
-#. Boolean exclusive NOR button
-#: ../data/mate-calc.ui.h:343
-msgid "XNOR"
-msgstr "XNOR"
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the double-declining balance method. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:16
+msgid "Ddb"
+msgstr "Ddb"
 
-#. Boolean exlcusive OR button
-#: ../data/mate-calc.ui.h:345
-msgid "XOR"
-msgstr "XOR"
+#. Calculates the future value of an investment based on a series of equal
+#. payments, each of amount pmt, at a periodic interest rate of int, over the
+#. number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Future_value
+#: ../data/buttons-financial.ui.h:18
+msgid "Fv"
+msgstr "Fv"
 
-#. Accuracy Popup: Menu item to set accuracy to 0 significant places
-#: ../data/mate-calc.ui.h:347
-msgid "_0 significant places"
-msgstr "0 महत्वाची जागा (_0)"
+#. Calculates the number of payment periods that are necessary during the term
+#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
+#. interest rate of int. Each payment is equal to amount pmt. See also:
+#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#: ../data/buttons-financial.ui.h:20
+msgid "Term"
+msgstr "Term"
 
-#. Right Shift Popup: Menu item to shift right by 1 bit
-#: ../data/mate-calc.ui.h:349
-msgid "_1 place"
-msgstr "1 जागा (_1)"
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the Sum-Of-The-Years'-Digits method. This method of
+#. depreciation accelerates the rate of depreciation, so that more
+#. depreciation expense occurs in earlier periods than in later ones. The
+#. depreciable cost is cost - salvage. The useful life is the number of
+#. periods, typically years, over which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:22
+msgid "Syd"
+msgstr "Syd"
 
-#. Accuracy Popup: Menu item to set accuracy to 1 significant place
-#: ../data/mate-calc.ui.h:351
-msgid "_1 significant place"
-msgstr "1 महत्वाची जागा (_1)"
+#. Calculates the straight-line depreciation of an asset for one period. The
+#. depreciable cost is cost - salvage. The straight-line method of
+#. depreciation divides the depreciable cost evenly over the useful life of an
+#. asset. The useful life is the number of periods, typically years, over
+#. which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:24
+msgid "Sln"
+msgstr "Sln"
 
-#. 16 bit radio button
-#: ../data/mate-calc.ui.h:353
-msgid "_16 bit"
-msgstr "16 बीट (_1)"
+#. Calculates the periodic interest necessary to increase an investment of
+#. present value pv to a future value of fv, over the number of compounding
+#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#: ../data/buttons-financial.ui.h:26
+msgid "Rate"
+msgstr "दर"
 
-#. Right Shift Popup: Menu item to shift right by 2 bits
-#: ../data/mate-calc.ui.h:355
-msgid "_2 places"
-msgstr "2 जागा (_2)"
+#. Calculates the present value of an investment based on a series of equal
+#. payments, each of amount pmt, discounted at a periodic interest rate of
+#. int, over the number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Present_value
+#: ../data/buttons-financial.ui.h:28
+msgid "Pv"
+msgstr "Pv"
 
-#. Accuracy Popup: Menu item to set accuracy to 2 significant places
-#: ../data/mate-calc.ui.h:357
-msgid "_2 significant places"
-msgstr "2 महत्वाची जागा (_2)"
+#. Calculates the amount of the periodic payment of a loan, where payments are
+#. made at the end of each payment period. See also:
+#. http://en.wikipedia.org/wiki/Amortization_schedule
+#: ../data/buttons-financial.ui.h:30
+msgid "Pmt"
+msgstr "Pmt"
 
-#. Right Shift Popup: Menu item to shift right by 3 bits
-#: ../data/mate-calc.ui.h:359
-msgid "_3 places"
-msgstr "3 जागा (_3)"
+#. Calculates the resale price of a product, based on the product cost and the
+#. wanted gross profit margin. See also:
+#. http://en.wikipedia.org/wiki/Gross_profit_margin
+#: ../data/buttons-financial.ui.h:32
+msgid "Gpm"
+msgstr "Gpm"
 
-#. Accuracy Popup: Menu item to set accuracy to 3 significant places
-#: ../data/mate-calc.ui.h:361
-msgid "_3 significant places"
-msgstr "3 महत्वाची जागा (_3)"
+#. Title of Compounding Term dialog
+#. Tooltip for the compounding term button
+#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:261
+msgid "Compounding Term"
+msgstr "संयुग संज्ञा"
 
-#. 32 bit radio button
-#: ../data/mate-calc.ui.h:363
-msgid "_32 bit"
-msgstr "32 बीट (_3)"
+#. Periodic Interest Rate Dialog: Label before present value input
+#: ../data/buttons-financial.ui.h:40
+msgid "Present _Value:"
+msgstr "वर्तमान मूल्य (_V):"
 
-#. Right Shift Popup: Menu item to shift right by 4 bits
-#: ../data/mate-calc.ui.h:365
-msgid "_4 places"
-msgstr "4 जागा (_4)"
+#. Payment Period Dialog: Label before periodic interest rate input
+#: ../data/buttons-financial.ui.h:42
+msgid "Periodic Interest _Rate:"
+msgstr "कालावधीचा व्याज दर (_R):"
 
-#. Accuracy Popup: Menu item to set accuracy to 4 significant places
-#: ../data/mate-calc.ui.h:367
-msgid "_4 significant places"
-msgstr "4 महत्वाची जागा (_4)"
+#. Compounding Term Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:44
+msgid ""
+"Calculates the number of compounding periods necessary to increase an "
+"investment of present value to a future value, at a fixed interest rate per "
+"compounding period."
+msgstr "Calculates the number of compounding periods necessary to increase an investment of present value to a future value, at a fixed interest rate per compounding period."
 
-#. Right Shift Popup: Menu item to shift right by 5 bits
-#: ../data/mate-calc.ui.h:369
-msgid "_5 places"
-msgstr "5 जागा (_5)"
+#. Periodic Interest Rate Dialog: Label before future value input
+#: ../data/buttons-financial.ui.h:46
+msgid "_Future Value:"
+msgstr "भविष्यातील मूल्य (_F):"
 
-#. Accuracy Popup: Menu item to set accuracy to 5 significant places
-#: ../data/mate-calc.ui.h:371
-msgid "_5 significant places"
-msgstr "5 महत्वाची जागा (_5)"
+#. Payment Period Dialog: Button to calculate result
+#: ../data/buttons-financial.ui.h:48
+msgid "C_alculate"
+msgstr "गणना करा (_a)"
 
-#. Right Shift Popup: Menu item to shift right by 6 bits
-#: ../data/mate-calc.ui.h:373
-msgid "_6 places"
-msgstr "6 जागा (_6)"
+#. Title of Double-Declining Depreciation dialog
+#: ../data/buttons-financial.ui.h:50
+msgid "Double-Declining Depreciation"
+msgstr "दुहेरी-उतरती घसरण"
 
-#. Accuracy Popup: Menu item to set accuracy to 6 significant places
-#: ../data/mate-calc.ui.h:375
-msgid "_6 significant places"
-msgstr "6 महत्वाची जागा (_6)"
+#. Double-Declining Depreciation Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:52
+msgid ""
+"Calculates the depreciation allowance on an asset for a specified period of "
+"time, using the double-declining balance method."
+msgstr "Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method."
 
-#. 64 bit radio button
-#: ../data/mate-calc.ui.h:377
-msgid "_64 bit"
-msgstr "64 बीट (_6)"
+#. Gross Profit Margin Dialog: Label before cost input
+#: ../data/buttons-financial.ui.h:54
+msgid "C_ost:"
+msgstr "किंमत (_o):"
 
-#. Right Shift Popup: Menu item to shift right by 7 bits
-#: ../data/mate-calc.ui.h:379
-msgid "_7 places"
-msgstr "7 जागा (_7)"
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#: ../data/buttons-financial.ui.h:56
+msgid "_Life:"
+msgstr "कार्यकाळ (_L):"
 
-#. Accuracy Popup: Menu item to set accuracy to 7 significant places
-#: ../data/mate-calc.ui.h:381
-msgid "_7 significant places"
-msgstr "7 महत्वाची जागा (_7)"
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#: ../data/buttons-financial.ui.h:58
+msgid "_Period:"
+msgstr "नियतकाल (_P):"
 
-#. Right Shift Popup: Menu item to shift right by 8 bits
-#: ../data/mate-calc.ui.h:383
-msgid "_8 places"
-msgstr "8 जागा (_8)"
+#. Title of Future Value dialog
+#. Tooltip for the future value button
+#: ../data/buttons-financial.ui.h:60 ../src/math-buttons.c:267
+msgid "Future Value"
+msgstr "भविष्यातील मूल्य"
 
-#. Accuracy Popup: Menu item to set accuracy to 8 significant places
-#: ../data/mate-calc.ui.h:385
-msgid "_8 significant places"
-msgstr "8 महत्वाची जागा (_8)"
+#. Future Value Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:62
+msgid ""
+"Calculates the future value of an investment based on a series of equal "
+"payments at a periodic interest rate over the number of payment periods in "
+"the term."
+msgstr "Calculates the future value of an investment based on a series of equal payments at a periodic interest rate over the number of payment periods in the term."
 
-#. Right Shift Popup: Menu item to shift right by 9 bits
-#: ../data/mate-calc.ui.h:387
-msgid "_9 places"
-msgstr "9 जागा (_9)"
+#. Payment Period Dialog: Label before periodic payment input
+#: ../data/buttons-financial.ui.h:64
+msgid "_Periodic Payment:"
+msgstr "नियतकालिक हप्ता (_P):"
 
-#. Accuracy Popup: Menu item to set accuracy to 9 significant places
-#: ../data/mate-calc.ui.h:389
-msgid "_9 significant places"
-msgstr "9 महत्वाची जागा (_9)"
+#. Present Value Dialog: Label before number of periods input
+#: ../data/buttons-financial.ui.h:66
+msgid "_Number of Periods:"
+msgstr ""
 
-#. View|Advanced menu item
-#: ../data/mate-calc.ui.h:391
-msgid "_Advanced"
-msgstr "प्रगत (_A)"
+#. Title of Gross Profit Margin dialog
+#. Tooltip for the gross profit margin button
+#: ../data/buttons-financial.ui.h:68 ../src/math-buttons.c:288
+msgid "Gross Profit Margin"
+msgstr "Gross Profit Margin"
 
-#. View|Basic menu item
-#: ../data/mate-calc.ui.h:393
-msgid "_Basic"
-msgstr "मुलभूत (_B)"
+#. Gross Profit Margin Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:70
+msgid ""
+"Calculates the resale price of a product, based on the product cost and the "
+"wanted gross profit margin."
+msgstr "Calculates the resale price of a product, based on the product cost and the wanted gross profit margin."
 
-#. Base 2 radio button
-#: ../data/mate-calc.ui.h:395
-msgid "_Bin"
-msgstr "Bin (_B)"
+#. Gross Profit Margin Dialog: Label before margin input
+#: ../data/buttons-financial.ui.h:72
+msgid "_Margin:"
+msgstr "सीमा (_M):"
 
-#. Calculator menu
-#: ../data/mate-calc.ui.h:397
-msgid "_Calculator"
-msgstr "गणनयंत्र (_C)"
+#. Title of Periodic Payment dialog
+#. Tooltip for the periodic payment button
+#: ../data/buttons-financial.ui.h:74 ../src/math-buttons.c:285
+msgid "Periodic Payment"
+msgstr "नियमित हप्ता"
 
-#: ../data/mate-calc.ui.h:398
-msgid "_Contents"
-msgstr "अनुक्रम (_C)"
+#. Periodic Payment Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:76
+msgid ""
+"Calculates the amount of the periodic payment of a loan, where payments are "
+"made at the end of each payment period. "
+msgstr "नियतकालिक लोन पेमेन्टच्या प्रमाणची गणना करतो, जेथे पेमेन्ट प्रत्येक प्रेमेन्ट कालावधीच्या समाप्तीस केले जाते. "
 
-#. Base 10 radio button
-#: ../data/mate-calc.ui.h:400
-msgid "_Dec"
-msgstr "डिसें (_D)"
+#. Periodic Payment Dialog: Label before principal input
+#: ../data/buttons-financial.ui.h:78
+msgid "_Principal:"
+msgstr "मुद्दल (_P):"
 
-#. Edit menu
-#: ../data/mate-calc.ui.h:402
-msgid "_Edit"
-msgstr "संपादन (_E)"
+#. Periodic Interest Rate Dialog: Label before term input
+#: ../data/buttons-financial.ui.h:80
+msgid "_Term:"
+msgstr "कालावधी (_T):"
 
-#. View|Financial menu item
-#: ../data/mate-calc.ui.h:404
-msgid "_Financial"
-msgstr "वित्तिय (_F)"
+#. Title of Present Value dialog
+#. Tooltip for the present value button
+#: ../data/buttons-financial.ui.h:82 ../src/math-buttons.c:282
+msgid "Present Value"
+msgstr "वर्तमान मूल्य"
 
-#. Fixed-point display radio button
-#: ../data/mate-calc.ui.h:406
-msgid "_Fix"
-msgstr "दुरूस्त करा (_F)"
+#. Present Value Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:84
+msgid ""
+"Calculates the present value of an investment based on a series of equal "
+"payments discounted at a periodic interest rate over the number of payment "
+"periods in the term. "
+msgstr "Calculates the present value of an investment based on a series of equal payments discounted at a periodic interest rate over the number of payment periods in the term. "
 
-#. Help menu
-#: ../data/mate-calc.ui.h:408
-msgid "_Help"
-msgstr "मदत (_H)"
+#. Title of Periodic Interest Rate dialog
+#. Tooltip for the periodic interest rate button
+#: ../data/buttons-financial.ui.h:86 ../src/math-buttons.c:279
+msgid "Periodic Interest Rate"
+msgstr "कालावधीचा व्याज दर"
+
+#. Periodic Interest Rate Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:88
+msgid ""
+"Calculates the periodic interest necessary to increase an investment to a "
+"future value, over the number of compounding periods. "
+msgstr "Calculates the periodic interest necessary to increase an investment to a future value, over the number of compounding periods. "
+
+#. Title of Straight-Line Depreciation dialog
+#: ../data/buttons-financial.ui.h:90
+msgid "Straight-Line Depreciation"
+msgstr "सरळ रेषेतील घसरण"
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#: ../data/buttons-financial.ui.h:92
+msgid "_Cost:"
+msgstr "किंमत (_C):"
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#: ../data/buttons-financial.ui.h:94
+msgid "_Salvage:"
+msgstr "वाचवलेला मालमत्ता (_S):"
+
+#. Straight-Line Depreciation Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:96
+msgid ""
+"Calculates the straight-line depreciation of an asset for one period. The "
+"straight-line method of depreciation divides the depreciable cost evenly "
+"over the useful life of an asset. The useful life is the number of periods, "
+"typically years, over which an asset is depreciated. "
+msgstr "Calculates the straight-line depreciation of an asset for one period. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. "
+
+#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#: ../data/buttons-financial.ui.h:98
+msgid "Sum-of-the-Years'-Digits Depreciation"
+msgstr ""
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:100
+msgid ""
+"Calculates the depreciation allowance on an asset for a specified period of "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
+" accelerates the rate of depreciation, so that more depreciation expense "
+"occurs in earlier periods than in later ones. The useful life is the number "
+"of periods, typically years, over which an asset is depreciated. "
+msgstr ""
+
+#. Title of Payment Period dialog
+#: ../data/buttons-financial.ui.h:102
+msgid "Payment Period"
+msgstr "रक्कम देण्याची कालावधी"
+
+#. Payment Period Dialog: Label before future value input
+#: ../data/buttons-financial.ui.h:104
+msgid "Future _Value:"
+msgstr "भविष्यातील मूल्य (_V):"
+
+#. Payment Period Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:106
+msgid ""
+"Calculates the number of payment periods that are necessary during the term "
+"of an ordinary annuity, to accumulate a future value, at a periodic interest"
+" rate."
+msgstr "Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value, at a periodic interest rate."
+
+#. Accessible name for the shift left button
+#. Tooltip for the shift left button
+#: ../data/buttons-programming.ui.h:22 ../src/math-buttons.c:255
+msgid "Shift Left"
+msgstr ""
+
+#. Accessible name for the shift right button
+#. Tooltip for the shift right button
+#: ../data/buttons-programming.ui.h:24 ../src/math-buttons.c:258
+msgid "Shift Right"
+msgstr ""
+
+#. Accessible name for the insert character button
+#: ../data/buttons-programming.ui.h:26
+msgid "Insert Character"
+msgstr ""
+
+#. Title of insert character code dialog
+#. Tooltip for the insert character code button
+#: ../data/buttons-programming.ui.h:34 ../src/math-buttons.c:240
+msgid "Insert Character Code"
+msgstr ""
+
+#. Insert ASCII dialog: Label before character entry
+#: ../data/buttons-programming.ui.h:36
+msgid "Ch_aracter:"
+msgstr "अक्षर (_a):"
 
 #. Insert ASCII dialog: Button to insert selected character
-#: ../data/mate-calc.ui.h:410
+#: ../data/buttons-programming.ui.h:38
 msgid "_Insert"
 msgstr "अंतर्भूत करा (_I)"
 
-#. Edit|Insert ASCII value menu item
-#: ../data/mate-calc.ui.h:412
-msgid "_Insert ASCII value..."
-msgstr "ASCII  प्रविष्ट करा (_I)..."
+#. Word size combo: 8 bits
+#: ../data/preferences.ui.h:2
+msgid "8-bit"
+msgstr ""
 
-#. Inverse check box
-#: ../data/mate-calc.ui.h:414
-msgid "_Inv"
-msgstr "Inv (_I)"
+#. Word size combo: 16 bits
+#: ../data/preferences.ui.h:4
+msgid "16-bit"
+msgstr ""
 
-#. View|Memory Registers menu item
-#: ../data/mate-calc.ui.h:416
-msgid "_Memory Registers"
-msgstr "स्मृती रेजीस्टर (_M)"
+#. Word size combo: 32 bits
+#: ../data/preferences.ui.h:6
+msgid "32-bit"
+msgstr ""
 
-#. Base 8 radio button
-#: ../data/mate-calc.ui.h:418
-msgid "_Oct"
-msgstr "ऑक्ट (_O)"
+#. Word size combo: 64 bits
+#: ../data/preferences.ui.h:8
+msgid "64-bit"
+msgstr ""
 
-#. View|Programming menu item
-#: ../data/mate-calc.ui.h:420
-msgid "_Programming"
-msgstr "प्रोग्रामींग (_P)"
+#. Title of preferences dialog
+#: ../data/preferences.ui.h:9 ../src/math-preferences.c:239
+msgid "Preferences"
+msgstr ""
 
-#. Radian radio button
-#: ../data/mate-calc.ui.h:422
-msgid "_Radians"
-msgstr "रेडियन (_R)"
+#. Preferences dialog: Label for angle unit combo box
+#: ../data/preferences.ui.h:11
+msgid "_Angle units:"
+msgstr ""
 
-#: ../data/mate-calc.ui.h:423
-msgid "_Redo"
-msgstr "बदल रद्द करू नका (_R)"
+#. Preferences dialog: Label for display format combo box
+#: ../data/preferences.ui.h:13
+msgid "Number _Format:"
+msgstr ""
 
-#. Scientific display radio button
-#: ../data/mate-calc.ui.h:425
-msgid "_Sci"
-msgstr "Sci (_S)"
+#. Preferences dialog: label for word size combo box
+#: ../data/preferences.ui.h:15
+msgid "Word _size:"
+msgstr ""
 
-#. View|Scientific menu item
-#: ../data/mate-calc.ui.h:427
-msgid "_Scientific"
-msgstr "शास्त्रीय (_S)"
+#. Preferences dialog: label for show trailing zeroes check button
+#: ../data/preferences.ui.h:17
+msgid "Show trailing _zeroes"
+msgstr ""
 
-#. Set Precision Dialog: Button to apply settings
-#: ../data/mate-calc.ui.h:429
-msgid "_Set"
-msgstr "मांडणी (_S)"
+#. Preferences dialog: label for show thousands separator check button
+#: ../data/preferences.ui.h:19
+msgid "Show _thousands separators"
+msgstr ""
 
-#: ../data/mate-calc.ui.h:430
-msgid "_Undo"
-msgstr "पूर्ववत करा (_U)"
-
-#. View menu
-#: ../data/mate-calc.ui.h:432
-msgid "_View"
-msgstr "अवलोकन (_V)"
-
-#. This is accessible name for memory register 0.  It is spoken by screen readers such as Orca, to help people who are blind or have low vision.
-#: ../data/mate-calc.ui.h:434
-msgid "register 0"
-msgstr "register 0"
-
-#. This is accessible name for memory register 1.  It is spoken by screen readers such as Orca, to help people who are blind or have low vision.
-#: ../data/mate-calc.ui.h:436
-msgid "register 1"
-msgstr "register 1"
-
-#. This is accessible name for memory register 2.  It is spoken by screen readers such as Orca, to help people who are blind or have low vision.
-#: ../data/mate-calc.ui.h:438
-msgid "register 2"
-msgstr "register 2"
-
-#. This is accessible name for memory register 3.  It is spoken by screen readers such as Orca, to help people who are blind or have low vision.
-#: ../data/mate-calc.ui.h:440
-msgid "register 3"
-msgstr "register 3"
-
-#. This is accessible name for memory register 4.  It is spoken by screen readers such as Orca, to help people who are blind or have low vision.
-#: ../data/mate-calc.ui.h:442
-msgid "register 4"
-msgstr "register 4"
-
-#. This is accessible name for memory register 5.  It is spoken by screen readers such as Orca, to help people who are blind or have low vision.
-#: ../data/mate-calc.ui.h:444
-msgid "register 5"
-msgstr "register 5"
-
-#. This is accessible name for memory register 6.  It is spoken by screen readers such as Orca, to help people who are blind or have low vision.
-#: ../data/mate-calc.ui.h:446
-msgid "register 6"
-msgstr "register 6"
-
-#. This is accessible name for memory register 7.  It is spoken by screen readers such as Orca, to help people who are blind or have low vision.
-#: ../data/mate-calc.ui.h:448
-msgid "register 7"
-msgstr "register 7"
-
-#. This is accessible name for memory register 8.  It is spoken by screen readers such as Orca, to help people who are blind or have low vision.
-#: ../data/mate-calc.ui.h:450
-msgid "register 8"
-msgstr "register 8"
-
-#. This is accessible name for memory register 9.  It is spoken by screen readers such as Orca, to help people who are blind or have low vision.
-#: ../data/mate-calc.ui.h:452
-msgid "register 9"
-msgstr "register 9"
-
-#: ../data/mate-calc.ui.h:453
-msgid "x2"
-msgstr "x2"
-
-#. Translators: The window title when in basic mode
-#: ../data/mate-calc.desktop.in.h:1 ../src/gtk.c:62
+#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:486
 msgid "Calculator"
 msgstr "गणनयंत्र"
 
@@ -1609,129 +486,239 @@ msgstr "गणनयंत्र"
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "अंकगणित, शास्त्रीय किंवा वित्तीय गणना चालवून पहा"
 
-#: ../data/mate-calc.schemas.in.h:1
-#| msgid "Future value"
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:1
 msgid "Accuracy value"
 msgstr "अचूकपणा मूल्य"
 
-#: ../data/mate-calc.schemas.in.h:2
-msgid "Display Mode"
-msgstr "दृष्य मोड"
-
-#: ../data/mate-calc.schemas.in.h:3
-msgid ""
-"Indicates whether any trailing zeroes after the number point should be shown "
-"in the display value."
-msgstr "दृष्यास्पद मूल्यमध्ये नंबर पॉईंट नंतर ट्रेलींग झीरोज् दाखवायचे का, ते दर्शवतो."
-
-#: ../data/mate-calc.schemas.in.h:4
-msgid "Indicates whether the memory register window is initially displayed."
-msgstr "मेमरी रेजिस्टर पटल प्रारंभीकरित्या दाखवले जाते असे दर्शवले जाते."
-
-#: ../data/mate-calc.schemas.in.h:5
-msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr "हजाराचे विभाजक मोठ्या क्रमांकात दाखवले जाते का, ते दर्शवतो."
-
-#: ../data/mate-calc.schemas.in.h:6
-#| msgid "Mod"
-msgid "Mode"
-msgstr "मोड"
-
-#: ../data/mate-calc.schemas.in.h:7
-#| msgid "Numeric 0"
-msgid "Numeric Base"
-msgstr "न्यूमेरीक बेस्"
-
-#: ../data/mate-calc.schemas.in.h:8
-#| msgid "Show memory registers"
-msgid "Show Registers"
-msgstr "रेजीस्टर दाखवा"
-
-#: ../data/mate-calc.schemas.in.h:9
-#| msgid "Show T_housands Separator"
-msgid "Show Thousands Separator"
-msgstr "हजाराचे विभाजक दाखवा"
-
-#: ../data/mate-calc.schemas.in.h:10
-#| msgid "Show _Trailing Zeroes"
-msgid "Show Trailing Zeroes"
-msgstr "शेवटचे शून्य दाखवा"
-
-#: ../data/mate-calc.schemas.in.h:11
-msgid ""
-"The initial calculator mode. Valid values are \"BASIC\", \"FINANCIAL\", "
-"\"LOGICAL\", \"SCIENTIFIC\" and \"PROGRAMMING\""
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:2
+msgid "The number of digits displayed after the numeric point"
 msgstr ""
-"प्रारंभीक गणनायंत्र मोड. वैध मूल्ये \"BASIC\", \"FINANCIAL\", "
-"\"LOGICAL\", \"SCIENTIFIC\" व \"PROGRAMMING\" असे आहे"
 
-#: ../data/mate-calc.schemas.in.h:12
-msgid ""
-"The initial display mode. Valid values are \"ENG\" (engineering), \"FIX"
-"\" (fixed-point) and \"SCI\" (scientific)"
-msgstr ""
-"प्रारंभीक दृष्य मोड. वैध मूल्ये \"ENG\" (इंजीनीअरींग), \"FIX"
-"\" (फिक्स्ड्-पॉईंट) and \"SCI\" (विज्ञाणीक)"
-
-#: ../data/mate-calc.schemas.in.h:13
-msgid ""
-"The initial trigonometric type. Valid values are \"DEG\" (degrees), \"GRAD"
-"\" (gradians) and \"RAD\" (radians)."
-msgstr ""
-"प्राथमीक त्रिकोणामिती प्रकार. वैध मूल्ये \"DEG\" (डिग्रीज्), \"GRAD"
-"\" (ग्रेडीअन्स्) व \"RAD\" (रेडीअन्स्) आहे."
-
-#: ../data/mate-calc.schemas.in.h:14
-msgid "The initial x-coordinate for the window"
-msgstr "पटलकरीता प्राथमीक x-निबंधक"
-
-#: ../data/mate-calc.schemas.in.h:15
-msgid "The initial y-coordinate for the window"
-msgstr "पटलकरीता प्राथमीक y-निबंधक"
-
-#: ../data/mate-calc.schemas.in.h:16
-msgid ""
-"The number of digits displayed after the numeric point. This value must be "
-"in the range 0 to 9."
-msgstr "न्यूमेरीक पॉईंट नंतर दाखवण्याजोगी डिजीटची संख्या. या मूल्यांची व्याप्ती 0 ते 9 असायला हवी."
-
-#: ../data/mate-calc.schemas.in.h:17
-msgid "The number of pixels to place the window from the left of the screen."
-msgstr "पडद्याच्या डाव्या टोकापासून किती पीक्सेल्स्वर पटल स्थायीत करायचे."
-
-#: ../data/mate-calc.schemas.in.h:18
-msgid "The number of pixels to place the window from the top of the screen."
-msgstr "पडद्याच्या वरच्या टोकापासून किती पीक्सेल्स्वर पटल स्थायीत करायचे."
-
-#: ../data/mate-calc.schemas.in.h:19
-msgid "The numeric base for input and display."
-msgstr "इंपुट व दृष्यसाठी संख्यायीक बेस."
-
-#: ../data/mate-calc.schemas.in.h:20
-msgid ""
-"The size of the words used in bitwise operations. Valid values are 16, 32 "
-"and 64."
-msgstr "बीटवाइज् कार्यमध्ये वापरण्याजोगी शब्दाचे आकार. वैध मूल्ये 16, 32 व 64 आहे."
-
-#: ../data/mate-calc.schemas.in.h:21
-#| msgid "Set trigonometric type to degrees"
-msgid "Trigonometric type"
-msgstr "त्रिकोणमितीचा प्रकार"
-
-#: ../data/mate-calc.schemas.in.h:22
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:3
 msgid "Word size"
 msgstr "शब्दाचे आकार"
 
-#: ../src/calctool.c:82
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:4
+msgid "The size of the words used in bitwise operations"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:5
+msgid "Numeric Base"
+msgstr "न्यूमेरीक बेस्"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:6
+msgid "The numeric base"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:7
+msgid "Show Thousands Separators"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:8
+msgid "Indicates whether thousands separators are shown in large numbers."
+msgstr "हजाराचे विभाजक मोठ्या क्रमांकात दाखवले जाते का, ते दर्शवतो."
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:9
+msgid "Show Trailing Zeroes"
+msgstr "शेवटचे शून्य दाखवा"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:10
+msgid ""
+"Indicates whether any trailing zeroes after the numeric point should be "
+"shown in the display value."
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:11
+msgid "Number format"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:12
+msgid "The format to display numbers in"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:13
+msgid "Angle units"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:14
+msgid "The angle units to use"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:15
+msgid "Button mode"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:16
+msgid "The button mode"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:17
+msgid "Source currency"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:18
+msgid "Currency of the current calculation"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:19
+msgid "Target currency"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:20
+msgid "Currency to convert the current calculation into"
+msgstr ""
+
+#: ../src/currency.h:19
+msgid "Australian dollar"
+msgstr ""
+
+#: ../src/currency.h:20
+msgid "Bulgarian lev"
+msgstr ""
+
+#: ../src/currency.h:21
+msgid "Brazilian real"
+msgstr ""
+
+#: ../src/currency.h:22
+msgid "Canadian dollar"
+msgstr ""
+
+#: ../src/currency.h:23
+msgid "Swiss franc"
+msgstr ""
+
+#: ../src/currency.h:24
+msgid "Chinese yuan renminbi"
+msgstr ""
+
+#: ../src/currency.h:25
+msgid "Czech koruna"
+msgstr ""
+
+#: ../src/currency.h:26
+msgid "Danish krone"
+msgstr ""
+
+#: ../src/currency.h:27
+msgid "Estonian kroon"
+msgstr ""
+
+#: ../src/currency.h:28
+msgid "Euro"
+msgstr ""
+
+#: ../src/currency.h:29
+msgid "Pound sterling"
+msgstr ""
+
+#: ../src/currency.h:30
+msgid "Hong Kong dollar"
+msgstr ""
+
+#: ../src/currency.h:31
+msgid "Croatian kuna"
+msgstr ""
+
+#: ../src/currency.h:32
+msgid "Hungarian forint"
+msgstr ""
+
+#: ../src/currency.h:33
+msgid "Indonesian rupiah"
+msgstr ""
+
+#: ../src/currency.h:34
+msgid "Indian rupee"
+msgstr ""
+
+#: ../src/currency.h:35
+msgid "Icelandic krona"
+msgstr ""
+
+#: ../src/currency.h:36
+msgid "Japanese yen"
+msgstr ""
+
+#: ../src/currency.h:37
+msgid "South Korean won"
+msgstr ""
+
+#: ../src/currency.h:38
+msgid "Lithuanian litas"
+msgstr ""
+
+#: ../src/currency.h:39
+msgid "Latvian lats"
+msgstr ""
+
+#: ../src/currency.h:40
+msgid "Mexican peso"
+msgstr ""
+
+#: ../src/currency.h:41
+msgid "Malaysian ringgit"
+msgstr ""
+
+#: ../src/currency.h:42
+msgid "Norwegian krone"
+msgstr ""
+
+#: ../src/currency.h:43
+msgid "New Zealand dollar"
+msgstr ""
+
+#: ../src/currency.h:44
+msgid "Philippine peso"
+msgstr ""
+
+#: ../src/currency.h:45
+msgid "Polish zloty"
+msgstr ""
+
+#: ../src/currency.h:46
+msgid "New Romanian leu"
+msgstr ""
+
+#: ../src/currency.h:47
+msgid "Russian rouble"
+msgstr ""
+
+#: ../src/currency.h:48
+msgid "Swedish krona"
+msgstr ""
+
+#: ../src/currency.h:49
+msgid "Singapore dollar"
+msgstr ""
+
+#: ../src/currency.h:50
+msgid "Thai baht"
+msgstr ""
+
+#: ../src/currency.h:51
+msgid "New Turkish lira"
+msgstr ""
+
+#: ../src/currency.h:52
+msgid "US dollar"
+msgstr ""
+
+#: ../src/currency.h:53
+msgid "South African rand"
+msgstr ""
+
+#. Description on how to use mate-calc displayed on command-line
+#: ../src/mate-calc.c:76
 #, c-format
 msgid ""
 "Usage:\n"
-"  %s - Perform mathematical calculations"
+"  %s — Perform mathematical calculations"
 msgstr ""
-"वापरणी:\n"
-"  %s - गणिती गणना लागू करा"
 
-#: ../src/calctool.c:90
+#. Description on mate-calc command-line help options displayed on command-
+#. line
+#: ../src/mate-calc.c:84
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -1739,601 +726,660 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr ""
-"Help Options:\n"
-"  -v, --version                   Show release version\n"
-"  -h, -?, --help                  Show help options\n"
-"  --help-all                      Show all help options\n"
-"  --help-gtk                      Show GTK+ options"
+msgstr "Help Options:\n  -v, --version                   Show release version\n  -h, -?, --help                  Show help options\n  --help-all                      Show all help options\n  --help-gtk                      Show GTK+ options"
 
-#: ../src/calctool.c:101
+#. Description on mate-calc command-line GTK+ options displayed on command-
+#. line
+#: ../src/mate-calc.c:95
 #, c-format
 msgid ""
 "GTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window "
-"manager\n"
-"  --name=NAME                     Program name as used by the window "
-"manager\n"
+"  --class=CLASS                   Program class as used by the window manager\n"
+"  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr ""
-"GTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window "
-"manager\n"
-"  --name=NAME                     Program name as used by the window "
-"manager\n"
-"  --screen=SCREEN                 X screen to use\n"
-"  --sync                          Make X calls synchronous\n"
-"  --gtk-module=MODULES            Load additional GTK+ modules\n"
-"  --g-fatal-warnings              Make all warnings fatal"
+msgstr "GTK+ Options:\n  --class=CLASS                   Program class as used by the window manager\n  --name=NAME                     Program name as used by the window manager\n  --screen=SCREEN                 X screen to use\n  --sync                          Make X calls synchronous\n  --gtk-module=MODULES            Load additional GTK+ modules\n  --g-fatal-warnings              Make all warnings fatal"
 
-#: ../src/calctool.c:114
+#. Description on mate-calc application options displayed on command-line
+#: ../src/mate-calc.c:109
 #, c-format
 msgid ""
 "Application Options:\n"
-"  -u, --unittest                  Perform unittests\n"
+"  -u, --unittest                  Perform unit tests\n"
 "  -s, --solve <equation>          Solve the given equation"
 msgstr ""
-"Application Options:\n"
-"  -u, --unittest                  Perform unittests\n"
-"  -s, --solve <equation>          Solve the given equation"
 
-#. Translators: Error printed to stderr when user uses --solve argument without an equation
-#: ../src/calctool.c:150
+#. Error printed to stderr when user uses --solve argument without an equation
+#: ../src/mate-calc.c:154
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "घटक --solve निवारण करीता समीकरण आवश्यक आहे"
 
-#. Translators: Error printed to stderr when user provides an unknown command-line argument
-#: ../src/calctool.c:163
+#. Error printed to stderr when user provides an unknown command-line argument
+#: ../src/mate-calc.c:168
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "अपरिचीत घटक '%s'"
 
-#. Translators: A log message displayed when an invalid accuracy
-#. is read from the configuration
-#: ../src/calctool.c:191
-#, c-format
-msgid "%s: accuracy should be in the range 0-%d\n"
-msgstr "%s: अचूकपणा हया मर्यादित असायला पाहिजे 0-%d\n"
+#. Tooltip for the Pi button
+#: ../src/math-buttons.c:106
+msgid "Pi [Ctrl+P]"
+msgstr ""
 
-#: ../src/display.c:417
+#. Tooltip for the Euler's Number button
+#: ../src/math-buttons.c:109
+msgid "Euler’s Number"
+msgstr ""
+
+#. Tooltip for the subscript button
+#: ../src/math-buttons.c:114
+msgid "Subscript mode [Alt]"
+msgstr ""
+
+#. Tooltip for the superscript button
+#: ../src/math-buttons.c:117
+msgid "Superscript mode [Ctrl]"
+msgstr ""
+
+#. Tooltip for the scientific exponent button
+#: ../src/math-buttons.c:120
+msgid "Scientific exponent [Ctrl+E]"
+msgstr ""
+
+#. Tooltip for the add button
+#: ../src/math-buttons.c:123
+msgid "Add [+]"
+msgstr "[+] जोडा"
+
+#. Tooltip for the subtract button
+#: ../src/math-buttons.c:126
+msgid "Subtract [-]"
+msgstr "वजा करा [-]"
+
+#. Tooltip for the multiply button
+#: ../src/math-buttons.c:129
+msgid "Multiply [*]"
+msgstr "गुणाकार [*]"
+
+#. Tooltip for the divide button
+#: ../src/math-buttons.c:132
+msgid "Divide [/]"
+msgstr "भागाकार [/]"
+
+#. Tooltip for the modulus divide button
+#: ../src/math-buttons.c:135
+msgid "Modulus divide"
+msgstr ""
+
+#. Tooltip for the additional functions button
+#: ../src/math-buttons.c:138
+msgid "Additional Functions"
+msgstr ""
+
+#. Tooltip for the exponent button
+#: ../src/math-buttons.c:141
+msgid "Exponent [^ or **]"
+msgstr ""
+
+#. Tooltip for the square button
+#: ../src/math-buttons.c:144
+msgid "Square [Ctrl+2]"
+msgstr ""
+
+#. Tooltip for the percentage button
+#: ../src/math-buttons.c:147
+msgid "Percentage [%]"
+msgstr "टक्केवारी [%]"
+
+#. Tooltip for the factorial button
+#: ../src/math-buttons.c:150
+msgid "Factorial [!]"
+msgstr ""
+
+#. Tooltip for the absolute value button
+#: ../src/math-buttons.c:153
+msgid "Absolute value [|]"
+msgstr ""
+
+#. Tooltip for the complex argument component button
+#: ../src/math-buttons.c:156
+msgid "Complex argument"
+msgstr ""
+
+#. Tooltip for the complex conjugate button
+#: ../src/math-buttons.c:159
+msgid "Complex conjugate"
+msgstr ""
+
+#. Tooltip for the root button
+#: ../src/math-buttons.c:162
+msgid "Root [Ctrl+R]"
+msgstr ""
+
+#. Tooltip for the square root button
+#: ../src/math-buttons.c:165
+msgid "Square root [Ctrl+R]"
+msgstr ""
+
+#. Tooltip for the logarithm button
+#: ../src/math-buttons.c:168
+msgid "Logarithm"
+msgstr ""
+
+#. Tooltip for the natural logarithm button
+#: ../src/math-buttons.c:171
+msgid "Natural Logarithm"
+msgstr ""
+
+#. Tooltip for the sine button
+#: ../src/math-buttons.c:174
+msgid "Sine"
+msgstr ""
+
+#. Tooltip for the cosine button
+#: ../src/math-buttons.c:177
+msgid "Cosine"
+msgstr ""
+
+#. Tooltip for the tangent button
+#: ../src/math-buttons.c:180
+msgid "Tangent"
+msgstr ""
+
+#. Tooltip for the hyperbolic sine button
+#: ../src/math-buttons.c:183
+msgid "Hyperbolic Sine"
+msgstr ""
+
+#. Tooltip for the hyperbolic cosine button
+#: ../src/math-buttons.c:186
+msgid "Hyperbolic Cosine"
+msgstr ""
+
+#. Tooltip for the hyperbolic tangent button
+#: ../src/math-buttons.c:189
+msgid "Hyperbolic Tangent"
+msgstr ""
+
+#. Tooltip for the inverse button
+#: ../src/math-buttons.c:192
+msgid "Inverse [Ctrl+I]"
+msgstr ""
+
+#. Tooltip for the boolean AND button
+#: ../src/math-buttons.c:195
+msgid "Boolean AND"
+msgstr ""
+
+#. Tooltip for the boolean OR button
+#: ../src/math-buttons.c:198
+msgid "Boolean OR"
+msgstr ""
+
+#. Tooltip for the exclusive OR button
+#: ../src/math-buttons.c:201
+msgid "Boolean Exclusive OR"
+msgstr ""
+
+#. Tooltip for the boolean NOT button
+#: ../src/math-buttons.c:204
+msgid "Boolean NOT"
+msgstr ""
+
+#. Tooltip for the integer component button
+#: ../src/math-buttons.c:207 ../src/math-buttons.c:1445
+msgid "Integer Component"
+msgstr ""
+
+#. Tooltip for the fractional component button
+#: ../src/math-buttons.c:210 ../src/math-buttons.c:1447
+msgid "Fractional Component"
+msgstr ""
+
+#. Tooltip for the real component button
+#: ../src/math-buttons.c:213
+msgid "Real Component"
+msgstr ""
+
+#. Tooltip for the imaginary component button
+#: ../src/math-buttons.c:216
+msgid "Imaginary Component"
+msgstr ""
+
+#. Tooltip for the ones complement button
+#: ../src/math-buttons.c:219
+msgid "Ones Complement"
+msgstr ""
+
+#. Tooltip for the twos complement button
+#: ../src/math-buttons.c:222
+msgid "Twos Complement"
+msgstr ""
+
+#. Tooltip for the truncate button
+#: ../src/math-buttons.c:225
+msgid "Truncate"
+msgstr ""
+
+#. Tooltip for the start group button
+#: ../src/math-buttons.c:228
+msgid "Start Group [(]"
+msgstr ""
+
+#. Tooltip for the end group button
+#: ../src/math-buttons.c:231
+msgid "End Group [)]"
+msgstr ""
+
+#. Tooltip for the assign variable button
+#: ../src/math-buttons.c:234
+msgid "Assign Variable"
+msgstr ""
+
+#. Tooltip for the insert variable button
+#: ../src/math-buttons.c:237
+msgid "Insert Variable"
+msgstr ""
+
+#. Tooltip for the solve button
+#: ../src/math-buttons.c:243
+msgid "Calculate Result"
+msgstr ""
+
+#. Tooltip for the factor button
+#: ../src/math-buttons.c:246
+msgid "Factorize [Ctrl+F]"
+msgstr ""
+
+#. Tooltip for the clear button
+#: ../src/math-buttons.c:249
+msgid "Clear Display [Escape]"
+msgstr ""
+
+#. Tooltip for the undo button
+#: ../src/math-buttons.c:252
+msgid "Undo [Ctrl+Z]"
+msgstr ""
+
+#. Tooltip for the double declining depreciation button
+#: ../src/math-buttons.c:264
+msgid "Double Declining Depreciation"
+msgstr ""
+
+#. Tooltip for the financial term button
+#: ../src/math-buttons.c:270
+msgid "Financial Term"
+msgstr ""
+
+#. Tooltip for the sum of the years digits depreciation button
+#: ../src/math-buttons.c:273
+msgid "Sum of the Years Digits Depreciation"
+msgstr ""
+
+#. Tooltip for the straight line depreciation button
+#: ../src/math-buttons.c:276
+msgid "Straight Line Depreciation"
+msgstr ""
+
+#. Advanced buttons: Angle unit combo box: Use degrees for trigonometric
+#. calculations
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
+#. calculations
+#: ../src/math-buttons.c:895 ../src/math-preferences.c:255
+msgid "Degrees"
+msgstr ""
+
+#. Advanced buttons: Angle unit combo box: Use radians for trigonometric
+#. calculations
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
+#. calculations
+#: ../src/math-buttons.c:899 ../src/math-preferences.c:259
+msgid "Radians"
+msgstr ""
+
+#. Advanced buttons: Angle unit combo box: Use gradians for trigonometric
+#. calculations
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
+#. calculations
+#: ../src/math-buttons.c:903 ../src/math-preferences.c:263
+msgid "Gradians"
+msgstr ""
+
+#. Number display mode combo: Binary, e.g. 10011010010₂
+#: ../src/math-buttons.c:937
+msgid "Binary"
+msgstr ""
+
+#. Number display mode combo: Octal, e.g. 2322₈
+#: ../src/math-buttons.c:941
+msgid "Octal"
+msgstr ""
+
+#. Number display mode combo: Decimal, e.g. 1234
+#: ../src/math-buttons.c:945
+msgid "Decimal"
+msgstr ""
+
+#. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
+#: ../src/math-buttons.c:949
+msgid "Hexadecimal"
+msgstr ""
+
+#. Text shown in store menu when no variables defined
+#. Text shown in recall menu when no variables defined
+#: ../src/math-buttons.c:1266 ../src/math-buttons.c:1312
+msgid "No variables defined"
+msgstr ""
+
+#. Left Shift Popup: Menu item to shift left by n places (n < 10)
+#. Right Shift Popup: Menu item to shift right by n places (n < 10)
+#: ../src/math-buttons.c:1355 ../src/math-buttons.c:1399
+#, c-format
+msgid "_%d place"
+msgid_plural "_%d places"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Left Shift Popup: Menu item to shift left by n places (n >= 10)
+#. Right Shift Popup: Menu item to shift right by n places (n >= 10)
+#: ../src/math-buttons.c:1359 ../src/math-buttons.c:1403
+#, c-format
+msgid "%d place"
+msgid_plural "%d places"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Tooltip for the round button
+#: ../src/math-buttons.c:1449
+msgid "Round"
+msgstr ""
+
+#. Tooltip for the floor button
+#: ../src/math-buttons.c:1451
+msgid "Floor"
+msgstr ""
+
+#. Tooltip for the ceiling button
+#: ../src/math-buttons.c:1453
+msgid "Ceiling"
+msgstr ""
+
+#. Tooltip for the ceiling button
+#: ../src/math-buttons.c:1455
+msgid "Sign"
+msgstr ""
+
+#. Error shown when trying to undo with no undo history
+#: ../src/math-equation.c:496
 msgid "No undo history"
 msgstr "बदल रद्द कराचे इतिहास नाही"
 
-#: ../src/display.c:432
-msgid "No redo steps"
-msgstr "बदल रद्द न करण्याकरीताचे पर्याय"
+#. Error shown when trying to redo with no redo history
+#: ../src/math-equation.c:521
+msgid "No redo history"
+msgstr ""
 
-#. Translators: This message is displayed in the status bar when an
-#. invalid user-defined function is executed
-#: ../src/functions.c:235
-msgid "Malformed function"
-msgstr "सदोषीत कार्यपध्दती"
-
-#. Translators: This message is displayed in the status bar when a bit
-#. shift operation is performed and the display does not contain a number
-#: ../src/functions.c:322
-msgid "No sane value to do bitwise shift"
-msgstr "बीटनुरूप स्थानांतर करण्याकरीता मूल्य नाही"
-
-#: ../src/functions.c:343 ../src/functions.c:398
-msgid "No sane value to convert"
-msgstr "रुंपातरासाठी योग्य मूल्य नाही"
-
-#: ../src/functions.c:366 ../src/functions.c:418
+#: ../src/math-equation.c:845
 msgid "No sane value to store"
 msgstr "जतन करण्यासाठी योग्य मूल्य नाही"
 
-#: ../src/functions.c:583
-msgid "Invalid number for the current base"
-msgstr "सद्याच्या बेस करीता अवैध क्रमांक प्रविष्ट करा"
-
-#. Translators: Error displayed to user when they
-#. * perform an invalid bitwise operation, e.g.
-#. * 1 XOR -1
-#: ../src/functions.c:590
-#| msgid "Invalid bitwise operation parameter(s)"
-msgid "Invalid bitwise operation"
-msgstr "अवैध बीटनुरूप कार्य"
-
-#. Translators: Error displayed to user when they
-#. * perform an invalid modulus operation, e.g.
-#. * 6 MOD 1.2
-#: ../src/functions.c:597
-#| msgid "Invalid modulus operation parameter(s)"
-msgid "Invalid modulus operation"
-msgstr "अवैध modulus कार्य"
-
-#. Translators; Error displayd to user when they
-#. * perform a bitwise operation on numbers greater
-#. * than the current word
-#: ../src/functions.c:604
+#. Error displayed to user when they perform a bitwise operation on numbers
+#. greater than the current word
+#: ../src/math-equation.c:1105
 msgid "Overflow. Try a bigger word size"
 msgstr "ओव्हरफ्लो. मोठे शब्द आकार वापरून पहा"
 
-#. Translators; Error displayd to user when they
-#. * an unknown variable is entered
-#: ../src/functions.c:610
-msgid "Unknown variable"
-msgstr "अपरिचीत वेरियेबल"
+#. Error displayed to user when they an unknown variable is entered
+#: ../src/math-equation.c:1110
+#, c-format
+msgid "Unknown variable '%s'"
+msgstr ""
 
-#. Translators; Error displayd to user when they
-#. * an unknown function is entered
-#: ../src/functions.c:616
-msgid "Unknown function"
-msgstr "अपरिचीत फंक्शन"
+#. Error displayed to user when an unknown function is entered
+#: ../src/math-equation.c:1115
+#, c-format
+msgid "Function '%s' is not defined"
+msgstr ""
 
-#. Translators: Error displayed to user when they
-#. * enter an invalid calculation
-#: ../src/functions.c:626
+#. Error displayed to user when an conversion with unknown units is attempted
+#: ../src/math-equation.c:1120
+msgid "Unknown conversion"
+msgstr ""
+
+#. Error displayed to user when they enter an invalid calculation
+#: ../src/math-equation.c:1129
 msgid "Malformed expression"
 msgstr "सदोषीत वाक्यरचना"
 
-#. Translators: The window title when in advanced mode
-#: ../src/gtk.c:64
-msgid "Calculator - Advanced"
-msgstr "गणनयंत्र - प्रगत"
-
-#. Translators: The window title when in financial mode
-#: ../src/gtk.c:66
-msgid "Calculator - Financial"
-msgstr "गणनयंत्र - वित्तीय"
-
-#. Translators: The window title when in scientific mode
-#: ../src/gtk.c:68
-msgid "Calculator - Scientific"
-msgstr "गणनयंत्र - शास्त्रीय"
-
-#. Translators: The window title when in programming mode
-#: ../src/gtk.c:70
-msgid "Calculator - Programming"
-msgstr "गणनयंत्र - प्रोग्रामींग"
-
-#. Translators: The window title when in basic mode. %s is replaced with the hostname.
-#: ../src/gtk.c:76
-#, c-format
-msgid "Calculator [%s]"
-msgstr "गणनयंत्र [%s]"
-
-#. Translators: The window title when in advanced mode. %s is replaced with the hostname.
-#: ../src/gtk.c:78
-#, c-format
-msgid "Calculator [%s] - Advanced"
-msgstr "गणनयंत्र [%s] - प्रगत"
-
-#. Translators: The window title when in financial mode. %s is replaced with the hostname.
-#: ../src/gtk.c:80
-#, c-format
-msgid "Calculator [%s] - Financial"
-msgstr "गणनयंत्र [%s] - वित्तीय"
-
-#. Translators: The window title when in scientific mode. %s is replaced with the hostname.
-#: ../src/gtk.c:82
-#, c-format
-msgid "Calculator [%s] - Scientific"
-msgstr "गणनयंत्र [%s] - शास्त्रीय"
-
-#. Translators: The window title when in programming mode. %s is replaced with the hostname.
-#: ../src/gtk.c:84
-#, c-format
-msgid "Calculator [%s] - Programming"
-msgstr "गणनयंत्र [%s] - प्रोग्रामींग"
-
-#. Translators: Title of the error dialog when unable to load the UI files
-#: ../src/gtk.c:572
-msgid "Error loading user interface"
-msgstr "वापरकर्ता संवाद दाखल करतेवेळी त्रुटी"
-
-#. Translators: Description in UI error dialog when unable to load the UI files. %s is replaced with the error message provided by GTK+
-#: ../src/gtk.c:575
-#, c-format
-#| msgid ""
-#| "The user interface file %s is missing or unable to be loaded. Please "
-#| "check your installation."
-msgid ""
-"A required file is missing or damaged, please check your installation.\n"
-"\n"
-"%s"
+#. Error displayed when trying to factorize a non-integer value
+#: ../src/math-equation.c:1152
+msgid "Need an integer to factorize"
 msgstr ""
-"आवश्यक फाइल आढळली नाही किंवा सदोषीत आहे, कृपया तुमचे प्रतिष्ठापन तपासा.\n"
-"\n"
-"%s"
 
-#. Translators: Accuracy Popup: Menu item to show the accuracy dialog. %d is replaced with the current accuracy.
-#: ../src/gtk.c:672
-#, c-format
-msgid "_Other (%d) ..."
-msgstr "इतर (%d) (_O)..."
-
-#. Translators: Tooltip for accuracy button
-#: ../src/gtk.c:678
-#, c-format
-msgid "Set accuracy from 0 to %d numeric place. [A]"
-msgid_plural "Set accuracy from 0 to %d numeric places. [A]"
-msgstr[0] "अचूकपणा 0 ते %d सांख्यीक स्थानपर्यंत निश्चित करा. [A]"
-msgstr[1] "अचूकपणा 0 ते %d सांख्यीक स्थानपर्यंत निश्चित करा. [A]"
-
-#. Translators: The sine button
-#: ../src/gtk.c:703
-#| msgid "Sin"
-msgid "sin"
-msgstr "sin"
-
-#. Translators: The inverse sine button
-#: ../src/gtk.c:705
-#| msgid "Sin<sup>-1</sup>"
-msgid "sin<sup>−1</sup>"
-msgstr "sin<sup>−1</sup>"
-
-#. Translators: The hyperbolic sine button
-#: ../src/gtk.c:707
-#| msgid "Sinh"
-msgid "sinh"
-msgstr "sinh"
-
-#. Translators: The inverse hyperbolic sine button
-#: ../src/gtk.c:709
-#| msgid "Sinh<sup>-1</sup>"
-msgid "sinh<sup>−1</sup>"
-msgstr "sinh<sup>−1</sup>"
-
-#. Translators: The sine tooltip
-#: ../src/gtk.c:712
-msgid "Sine [k]"
-msgstr "Sine [K]"
-
-#. Translators: The inverse sine tooltip
-#: ../src/gtk.c:714
-msgid "Inverse Sine [K]"
-msgstr "Inverse Sine [K]"
-
-#. Translators: The hyperbolic sine tooltip
-#: ../src/gtk.c:716
-msgid "Hyperbolic Sine [k]"
-msgstr "Hyperbolic Sine [k]"
-
-#. Translators: The hyperbolic inverse sine tooltip
-#: ../src/gtk.c:718
-msgid "Hyperbolic Inverse Sine [K]"
-msgstr "Hyperbolic Inverse Sine [K]"
-
-#. Translators: The cosine button
-#: ../src/gtk.c:722
-#| msgid "Cos"
-msgid "cos"
-msgstr "cos"
-
-#. Translators: The inverse cosine button
-#: ../src/gtk.c:724
-#| msgid "Cos<sup>-1</sup>"
-msgid "cos<sup>−1</sup>"
-msgstr "cos<sup>−1</sup>"
-
-#. Translators: The hyperbolic cosine button
-#: ../src/gtk.c:726
-#| msgid "Cosh"
-msgid "cosh"
-msgstr "cosh"
-
-#. Translators: The inverse hyperbolic cosine button
-#: ../src/gtk.c:728
-#| msgid "Cosh<sup>-1</sup>"
-msgid "cosh<sup>−1</sup>"
-msgstr "cosh<sup>−1</sup>"
-
-#. Translators: The cosine tooltip
-#: ../src/gtk.c:731
-msgid "Cosine [j]"
-msgstr "Cosine [j]"
-
-#. Translators: The inverse cosine tooltip
-#: ../src/gtk.c:733
-msgid "Inverse Cosine [J]"
-msgstr "Inverse Cosine [J]"
-
-#. Translators: The hyperbolic cosine tooltip
-#: ../src/gtk.c:735
-msgid "Hyperbolic Cosine [j]"
-msgstr "Hyperbolic Cosine [j]"
-
-#. Translators: The hyperbolic inverse cosine tooltip
-#: ../src/gtk.c:737
-msgid "Hyperbolic Inverse Cosine [J]"
-msgstr "Hyperbolic Inverse Cosine [J]"
-
-#. Translators: The tangent button
-#: ../src/gtk.c:741
-#| msgid "Tan"
-msgid "tan"
-msgstr "tan"
-
-#. Translators: The inverse tangent button
-#: ../src/gtk.c:743
-#| msgid "Tan<sup>-1</sup>"
-msgid "tan<sup>−1</sup>"
-msgstr "tan<sup>−1</sup>"
-
-#. Translators: The hyperbolic tangent button
-#: ../src/gtk.c:745
-#| msgid "Tanh"
-msgid "tanh"
-msgstr "tanh"
-
-#. Translators: The inverse hyperbolic tangent button
-#: ../src/gtk.c:747
-#| msgid "Tanh<sup>-1</sup>"
-msgid "tanh<sup>−1</sup>"
-msgstr "tanh<sup>−1</sup>"
-
-#. Translators: The tangent tooltip
-#: ../src/gtk.c:750
-msgid "Tangent [w]"
-msgstr "Tangent [w]"
-
-#. Translators: The inverse tangent tooltip
-#: ../src/gtk.c:752
-msgid "Inverse Tangent [W]"
-msgstr "Inverse Tangent [W]"
-
-#. Translators: The hyperbolic tangent tooltip
-#: ../src/gtk.c:754
-msgid "Hyperbolic Tangent [w]"
-msgstr "Hyperbolic Tangent [w]"
-
-#. Translators: The hyperbolic inverse tangent tooltip
-#: ../src/gtk.c:756
-msgid "Hyperbolic Inverse Tangent [W]"
-msgstr "Hyperbolic Inverse Tangent [W]"
-
-#. Translators: The natural logaritm button
-#: ../src/gtk.c:761
-#| msgid "Sln"
-msgid "ln"
-msgstr "ln"
-
-#. Translators: The e to the power of x button
-#: ../src/gtk.c:763
-msgid "e<sup><i>x</i></sup>"
-msgstr "e<sup><i>x</i></sup>"
-
-#. Translators: Tooltip for the natural log button
-#: ../src/gtk.c:766
-#| msgid "Natural log [n]"
-msgid "Natural logarithm [n]"
-msgstr "Natural logarithm [n]"
-
-#. Translators: Tooltip for the e to the power of x button
-#: ../src/gtk.c:768
-msgid "e to the power of the displayed value [N]"
-msgstr "e to the power of the displayed value [N]"
-
-#. Translators: The 10-based logaritm button
-#: ../src/gtk.c:773
-#| msgid "Log"
-msgid "log"
-msgstr "log"
-
-#. Translators: The 10 to the power of x button
-#: ../src/gtk.c:775
-msgid "10<sup><i>x</i></sup>"
-msgstr "10<sup><i>x</i></sup>"
-
-#. Translators: Tooltip for the log base 10 button
-#: ../src/gtk.c:778
-#| msgid "Base 10 log [g]"
-msgid "Base 10 logarithm [g]"
-msgstr "Base 10 logarithm [g]"
-
-#. Translators: Tooltip for the 10 to the power of x button
-#: ../src/gtk.c:780
-msgid "10 to the power of displayed value [G]"
-msgstr "10 to the power of displayed value [G]"
-
-#. Translators: The 2-based logaritm button
-#: ../src/gtk.c:785
-#| msgid "Log<sub>2</sub>"
-msgid "log<sub>2</sub>"
-msgstr "log<sub>2</sub>"
-
-#. Translators: The 2 to the power of x button
-#: ../src/gtk.c:787
-msgid "2<sup><i>x</i></sup>"
-msgstr "2<sup><i>x</i></sup>"
-
-#. Translators: Tooltip for the log base 2 button
-#: ../src/gtk.c:790
-#| msgid "Base 2 log [h]"
-msgid "Base 2 logarithm [h]"
-msgstr "Base 2 logarithm [h]"
-
-#. Translators: Tooltip for the 2 to the power of x button
-#: ../src/gtk.c:792
-msgid "2 to the power of the displayed value [H]"
-msgstr "2 to the power of the displayed value [H]"
-
-#. Translators: The x to the power of y button
-#: ../src/gtk.c:797
-msgid "x<sup><i>y</i></sup>"
-msgstr "x<sup><i>y</i></sup>"
-
-#. Translators: The x to the power of reciprocal y button
-#: ../src/gtk.c:799
-msgid "x<sup>1/<i>y</i></sup>"
-msgstr "x<sup>1/<i>y</i></sup>"
-
-#. Translators: Tooltip for the x to the power of y button
-#: ../src/gtk.c:802
-msgid "Raise displayed value to the power of y [o]"
-msgstr "Raise displayed value to the power of y [o]"
-
-#. Translators: Tooltip for the x to the power of reciprocal y button
-#: ../src/gtk.c:804
-msgid "Raise displayed value to the power of reciprocal y [O]"
-msgstr "Raise displayed value to the power of reciprocal y [O]"
-
-#. Translators: The translator credits. Please translate this with your name(s).
-#: ../src/gtk.c:1365
-msgid "translator-credits"
-msgstr "संदिप शेडमाके <sandeep.shedmake@gmail.com>, 2008, 2009. संदिप शेडमाके <sshedmak@redhat.com>, 2009."
-
-#: ../src/gtk.c:1369
-#| msgid ""
-#| "mate-calc is free software; you can redistribute it and/or modify\n"
-#| "it under the terms of the GNU General Public License as published by\n"
-#| "the Free Software Foundation; either version 2 of the License, or\n"
-#| "(at your option) any later version.\n"
-#| "\n"
-#| "mate-calc is distributed in the hope that it will be useful,\n"
-#| "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-#| "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-#| "GNU General Public License for more details.\n"
-#| "\n"
-#| "You should have received a copy of the GNU General Public License\n"
-#| "along with mate-calc; if not, write to the Free Software Foundation, "
-#| "Inc.,\n"
-#| "51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA\n"
-msgid ""
-"mate-calc is free software; you can redistribute it and/or modify\n"
-"it under the terms of the GNU General Public License as published by\n"
-"the Free Software Foundation; either version 2 of the License, or\n"
-"(at your option) any later version.\n"
-"\n"
-"mate-calc is distributed in the hope that it will be useful,\n"
-"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License\n"
-"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
-"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+#. This message is displayed in the status bar when a bit
+#. shift operation is performed and the display does not contain a number
+#: ../src/math-equation.c:1229
+msgid "No sane value to bitwise shift"
 msgstr ""
-"mate-calc is free software; you can redistribute it and/or modify\n"
-"it under the terms of the GNU General Public License as published by\n"
-"the Free Software Foundation; either version 2 of the License, or\n"
-"(at your option) any later version.\n"
-"\n"
-"mate-calc is distributed in the hope that it will be useful,\n"
-"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License\n"
-"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
-"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
-#. Translators: Program name in the about dialog
-#: ../src/gtk.c:1385
-msgid "mate-calc"
-msgstr "mate-calc"
+#. Message displayed when cannot toggle bit in display
+#: ../src/math-equation.c:1258
+msgid "Displayed value not an integer"
+msgstr ""
 
-#. Translators: Copyright notice in the about dialog
-#: ../src/gtk.c:1388
-msgid "© 1986-2008 The mate-calc authors"
-msgstr "© 1986-2008 The mate-calc authors"
+#. Digits localized for the given language
+#: ../src/math-equation.c:1648
+msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
+msgstr ""
 
-#. Translators: Short description in the about dialog
-#: ../src/gtk.c:1391
-msgid "Calculator with financial and scientific modes."
-msgstr "वित्तीय व शास्त्रीय पध्दतीचे गणनयंत्र."
+#. Label on close button in preferences dialog
+#: ../src/math-preferences.c:245
+msgid "_Close"
+msgstr ""
 
-#: ../src/gtk.c:1549
+#. Number display mode combo: Fixed, e.g. 1234
+#: ../src/math-preferences.c:273
+msgid "Fixed"
+msgstr ""
+
+#. Number display mode combo: Scientific, e.g. 1.234×10^3
+#: ../src/math-preferences.c:277
+msgid "Scientific"
+msgstr "शास्त्रीय"
+
+#. Number display mode combo: Engineering, e.g. 1.234k
+#: ../src/math-preferences.c:281
+msgid "Engineering"
+msgstr ""
+
+#. Label used in preferences dialog.  The %d is replaced by a spinbutton
+#: ../src/math-preferences.c:292
+#, c-format
+msgid "Show %d decimal _places"
+msgstr ""
+
+#. Translators: Error message displayed when unable to launch help browser
+#: ../src/math-window.c:161
 msgid "Unable to open help file"
 msgstr "मदत फाइल उघडण्यास अशक्य"
 
-#. Translators: R is the short form of register used inter alia in popup menus
-#: ../src/gtk.c:1956
-msgid "R"
-msgstr "R"
+#. The translator credits. Please translate this with your name(s).
+#: ../src/math-window.c:188
+msgid "translator-credits"
+msgstr "संदिप शेडमाके <sandeep.shedmake@gmail.com>, 2008, 2009. संदिप शेडमाके <sshedmak@redhat.com>, 2009."
 
-#. FIXME: WTF?
-#: ../src/gtk.c:2319
-msgid "Paste"
-msgstr "चिकटवा"
+#. The license this software is under (GPL2+)
+#: ../src/math-window.c:194
+msgid ""
+"mate-calc is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"mate-calc is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
+"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr "mate-calc is free software; you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation; either version 2 of the License, or\n(at your option) any later version.\n\nmate-calc is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with mate-calc; if not, write to the Free Software Foundation, Inc.,\n51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
-#. Translators: Edit Constants Dialog: Constant number column title
-#. Translators: Edit Functions Dialog: Function number column title
-#: ../src/gtk.c:2679 ../src/gtk.c:2696
-msgid "No."
-msgstr "नाही."
+#: ../src/math-window.c:209
+msgid "mate-calc"
+msgstr "mate-calc"
 
-#. Translators: Edit Constants Dialog: Constant value column title
-#. Translators: Edit Functions Dialog: Function value column title
-#: ../src/gtk.c:2681 ../src/gtk.c:2699
-msgid "Value"
-msgstr "मूल्य"
+#: ../src/math-window.c:213
+msgid "Calculator with financial and scientific modes."
+msgstr "वित्तीय व शास्त्रीय पध्दतीचे गणनयंत्र."
 
-#. Translators: Edit Constants Dialog: Constant description column title
-#. Translators: Edit Functions Dialog: Function description column title
-#: ../src/gtk.c:2683 ../src/gtk.c:2702
-msgid "Description"
-msgstr "वर्णन"
+#. Calculator menu
+#: ../src/math-window.c:346
+msgid "_Calculator"
+msgstr "गणनयंत्र (_C)"
 
-#. Set default accuracy menu item
-#. Translators: Accuracy Popup: Menu item to reset the accuracy to the default value. %d is replaced with the default value.
-#: ../src/gtk.c:2826
-#, c-format
-msgid "Reset to _Default (%d)"
-msgstr "मुलभूत (%d) करीता पुन्हस्थापीत करा (_D)"
+#. Mode menu
+#: ../src/math-window.c:348
+msgid "_Mode"
+msgstr ""
 
-#: ../src/mp.c:1467
-msgid "Negative X and non-integer Y not supported"
-msgstr "नकारात्मक X व असंख्यायीक Y समर्थीत नाही"
+#. Help menu label
+#: ../src/math-window.c:350
+msgid "_Help"
+msgstr "मदत (_H)"
+
+#. Basic menu label
+#: ../src/math-window.c:352
+msgid "_Basic"
+msgstr "मुलभूत (_B)"
+
+#. Advanced menu label
+#: ../src/math-window.c:354
+msgid "_Advanced"
+msgstr "प्रगत (_A)"
+
+#. Financial menu label
+#: ../src/math-window.c:356
+msgid "_Financial"
+msgstr "वित्तिय (_F)"
+
+#. Programming menu label
+#: ../src/math-window.c:358
+msgid "_Programming"
+msgstr "प्रोग्रामींग (_P)"
+
+#. Help>Contents menu label
+#: ../src/math-window.c:360
+msgid "_Contents"
+msgstr "अनुक्रम (_C)"
+
+#. Translators: Error displayed when boolean AND attempted on non-integer
+#. values
+#: ../src/mp-binary.c:103
+msgid "Boolean AND is only defined for positive integers"
+msgstr ""
+
+#. Translators: Error displayed when boolean OR attempted on non-integer
+#. values
+#: ../src/mp-binary.c:116
+msgid "Boolean OR is only defined for positive integers"
+msgstr ""
+
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
+#: ../src/mp-binary.c:129
+msgid "Boolean XOR is only defined for positive integers"
+msgstr ""
+
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
+#: ../src/mp-binary.c:144
+msgid "Boolean NOT is only defined for positive integers"
+msgstr ""
+
+#. Translators: Error displayed when bit shift attempted on non-integer values
+#: ../src/mp-binary.c:174
+msgid "Shift is only possible on integer values"
+msgstr ""
+
+#. Translators: Error display when attempting to take argument of zero
+#: ../src/mp.c:149
+msgid "Argument not defined for zero"
+msgstr ""
+
+#. Translators: Error displayed attempted to divide by zero
+#: ../src/mp.c:636 ../src/mp.c:668 ../src/mp.c:1602
+msgid "Division by zero is undefined"
+msgstr ""
+
+#. Translators: Error displayed when attempting to take logarithm of zero
+#: ../src/mp.c:1273 ../src/mp.c:1310
+msgid "Logarithm of zero is undefined"
+msgstr ""
+
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. exponent
+#: ../src/mp.c:1675 ../src/mp.c:1990
+msgid "The power of zero is undefined for a negative exponent"
+msgstr ""
+
+#: ../src/mp.c:1700
+msgid "Reciprocal of zero is undefined"
+msgstr ""
+
+#: ../src/mp.c:1785
+msgid "Root must be non-zero"
+msgstr ""
+
+#: ../src/mp.c:1803
+msgid "Negative root of zero is undefined"
+msgstr ""
+
+#: ../src/mp.c:1809
+msgid "nth root of negative number is undefined for even n"
+msgstr ""
+
+#. Translators: Error displayed when attempted take the factorial of a
+#. fractional number
+#: ../src/mp.c:1930
+msgid "Factorial is only defined for natural numbers"
+msgstr ""
+
+#. Translators: Error displayed when attemping to do a modulus division on
+#. non-integer numbers
+#: ../src/mp.c:1950
+msgid "Modulus division is only defined for integers"
+msgstr ""
 
 #. Translators: Error displayed when tangent value is undefined
-#: ../src/mp-trigonometric.c:281
-msgid "Tangent is infinite"
-msgstr "टँजेंट अमर्यादीत आहे"
+#: ../src/mp-trigonometric.c:311
+msgid ""
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
+"(90°)"
+msgstr ""
 
-#. Translators: This is the label for the default constant, the number of miles in one kilometer (0.621)
-#: ../src/register.c:40
-msgid "Kilometer-to-mile conversion factor"
-msgstr "किलोमीटर-ते-मैल रुपांतरासाठी गुणांक"
+#. Translators: Error displayed when inverse sine value is undefined
+#: ../src/mp-trigonometric.c:356
+msgid "Inverse sine is undefined for values outside [-1, 1]"
+msgstr ""
 
-#. Translators: This is the label for the default constant, the square root of 2 (1.41421)
-#: ../src/register.c:42
-msgid "square root of 2"
-msgstr "2 चे वर्गमूळ"
+#. Translators: Error displayed when inverse cosine value is undefined
+#: ../src/mp-trigonometric.c:373
+msgid "Inverse cosine is undefined for values outside [-1, 1]"
+msgstr ""
 
-#. Translators: This is the label for the default constant, Euler's number (2.71828)
-#: ../src/register.c:44
-msgid "Euler's Number (e)"
-msgstr "Euler संख्या (e)"
+#. Translators: Error displayed when inverse hyperbolic cosine value is
+#. undefined
+#: ../src/mp-trigonometric.c:591
+msgid ""
+"Inverse hyperbolic cosine is undefined for values less than or equal to one"
+msgstr ""
 
-#. Translators: This is the label for the default constant, π (3.14159)
-#: ../src/register.c:46
-msgid "π"
-msgstr "π"
-
-#. Translators: This is the label for the default constant, the number of inches in a centimeter (0.39370)
-#: ../src/register.c:48
-msgid "Centimeter-to-inch conversion factor"
-msgstr "सेंटीमीटर-ते-इंच रुपांतरासाठी गुणांक"
-
-#. Translators: This is the label for the default constant, the number of degrees in a radian (57.2958)
-#: ../src/register.c:50
-msgid "degrees in a radian"
-msgstr "रेडियनमधे डिग्री"
-
-#. Translators: This is the label for the default constant, 2 to the power of 20 (1048576)
-#: ../src/register.c:52
-msgid "2 ^ 20"
-msgstr "2 ^ 20"
-
-#. Translators: This is the label for the default constant, the number of ounces in one gram (0.0353)
-#: ../src/register.c:54
-msgid "Gram-to-ounce conversion factor"
-msgstr "ग्रम-ते-औस रुपांतरासाठी गुणांक"
-
-#. Translators: This is the label for the default constant, the number of British Thermal Units in one Kilojoule (0.948)
-#: ../src/register.c:56
-msgid "Kilojoule-to-British-thermal-unit conversion factor"
-msgstr "किलोज्युल-ते-ब्रिटीश-थर्मल-युनीट रुपांतरासाठी गुणांक"
-
-#. Translators: This is the label for the default constant, the number of cubic inches in one cubic centimeter (0.0610)
-#: ../src/register.c:58
-msgid "Cubic-centimeter-to-cubic-inch conversion factor"
-msgstr "घनसेंटीमीटर-ते-घन-इंच रुपांतरासाठी गुणांक"
-
+#. Translators: Error displayed when inverse hyperbolic tangent value is
+#. undefined
+#: ../src/mp-trigonometric.c:615
+msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
+msgstr ""

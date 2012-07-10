@@ -1,464 +1,487 @@
-# translation of mate-calc.master.ru.po to Russian
-# translation of mate-calc to Russian
-# Copyright (c) 1987-2003 Sun Microsystems, Inc.
-#
-# Немного о переводе:
-#
-# НЕЖЕЛАТЕЛЬНО переводить надписи на кнопках -- у
-# нас слишком много не-русских калькуляторов в ходу, и пользователи
-# привыкли к их надписям (например, что такое 'ВТ' думать, я полагаю,
-# будут долго, но до 'ВыТереть' не додумаются, а вот под 'CE' распознают
-# 'ClEar' мгновенно).
-#
-# Andrew W. Nosenko <awn@bcs.zp.ua>, 2003.
-# Leonid Kanter <leon@asplinux.ru>, 2005, 2006.
-# Artur G. Sibagatullin <ArtSib@mail.ru>, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Alexander Saprykin <xelfium@gmail.com>, 2010.
+# Alexei Sorokin <sor.alexei@hotbox.ru>, 2012.
+# Andrew W. Nosenko <awn@bcs.zp.ua>, 2003.
+# Artur G. Sibagatullin <ArtSib@mail.ru>, 2010.
+# Leonid Kanter <leon@asplinux.ru>, 2005, 2006.
 # Yuri Kozlov <yuray@komyakino.ru>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc trunk\n"
-"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?product=mate-calc&component=general\n"
-"POT-Creation-Date: 2010-09-23 11:32+0000\n"
-"PO-Revision-Date: 2010-09-26 23:37+0300\n"
-"Last-Translator: Yuri Myasoedov <omerta13@yandex.ru>\n"
-"Language-Team: Russian <mate-cyr@gnome.org>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 16:03+0100\n"
+"PO-Revision-Date: 2012-06-26 13:28+0000\n"
+"Last-Translator: Alexei Sorokin <sor.alexei@hotbox.ru>\n"
+"Language-Team: Russian (http://www.transifex.com/projects/p/MATE/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: KBabel 1.11.4\n"
-
-#. The label on the memory recall button
-#: ../data/buttons-advanced.ui.h:2
-#: ../data/buttons-financial.ui.h:2
-#: ../data/buttons-programming.ui.h:2
-msgid "&#x2190; R"
-msgstr "&#x2190; R"
-
-#. The label on the memory store button
-#: ../data/buttons-advanced.ui.h:4
-#: ../data/buttons-financial.ui.h:4
-#: ../data/buttons-programming.ui.h:4
-msgid "&#x2192; R"
-msgstr "&#x2192; R"
-
-#. Label on the solve button (clicking this solves the displayed calculation)
-#: ../data/buttons-advanced.ui.h:6
-#: ../data/buttons-basic.ui.h:2
-#: ../data/buttons-financial.ui.h:6
-#: ../data/buttons-programming.ui.h:6
-msgid "="
-msgstr "="
-
-#. Accessible name for the absolute value button
-#: ../data/buttons-advanced.ui.h:8
-#: ../data/buttons-programming.ui.h:8
-msgid "Absolute Value"
-msgstr "Модуль"
-
-#. Label on the clear display button
-#: ../data/buttons-advanced.ui.h:10
-#: ../data/buttons-basic.ui.h:4
-#: ../data/buttons-financial.ui.h:32
-#: ../data/buttons-programming.ui.h:12
-#| msgid "Clr"
-msgid "Clear"
-msgstr "Очистить"
-
-#. Accessible name for the exponentiation (x to the power of y) button
-#: ../data/buttons-advanced.ui.h:12
-#: ../data/buttons-basic.ui.h:6
-#: ../data/buttons-financial.ui.h:42
-#: ../data/buttons-programming.ui.h:14
-msgid "Exponent"
-msgstr "Возвести в степень"
-
-#. Accessible name for the factorial button
-#: ../data/buttons-advanced.ui.h:14
-#: ../data/buttons-programming.ui.h:16
-msgid "Factorial"
-msgstr "Факториал"
-
-#. Accessible name for the factorize button
-#: ../data/buttons-advanced.ui.h:16
-#: ../data/buttons-programming.ui.h:18
-msgid "Factorize"
-msgstr "Разложить на множители"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
 #. Accessible name for the inverse button
-#: ../data/buttons-advanced.ui.h:18
-#: ../data/buttons-programming.ui.h:24
+#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:30
 msgid "Inverse"
 msgstr "Инвертировать"
 
-#. Accessible name for the recall value button
-#: ../data/buttons-advanced.ui.h:20
-#: ../data/buttons-financial.ui.h:72
-#: ../data/buttons-programming.ui.h:26
-msgid "Recall"
-msgstr "П→X"
+#. Accessible name for the factorize button
+#: ../data/buttons-advanced.ui.h:4 ../data/buttons-programming.ui.h:2
+msgid "Factorize"
+msgstr "Разложить на множители"
 
-#. Accessible name for the scientific exponent button
-#: ../data/buttons-advanced.ui.h:22
-msgid "Scientific Exponent"
-msgstr "Экспоненциальная запись"
+#. Accessible name for the factorial button
+#: ../data/buttons-advanced.ui.h:6 ../data/buttons-programming.ui.h:28
+msgid "Factorial"
+msgstr "Факториал"
 
-#. Accessible name for the store value button
-#: ../data/buttons-advanced.ui.h:24
-#: ../data/buttons-financial.ui.h:76
-#: ../data/buttons-programming.ui.h:32
-msgid "Store"
-msgstr "X→П"
+#. Label on the solve button (clicking this solves the displayed calculation)
+#: ../data/buttons-advanced.ui.h:8 ../data/buttons-basic.ui.h:2
+#: ../data/buttons-financial.ui.h:10 ../data/buttons-programming.ui.h:6
+msgid "="
+msgstr "="
+
+#. Label on the clear display button
+#: ../data/buttons-advanced.ui.h:10 ../data/buttons-basic.ui.h:4
+#: ../data/buttons-financial.ui.h:12 ../data/buttons-programming.ui.h:8
+msgid "Clear"
+msgstr "Очистить"
 
 #. Accessible name for the subscript mode button
-#: ../data/buttons-advanced.ui.h:26
-#: ../data/buttons-programming.ui.h:34
+#: ../data/buttons-advanced.ui.h:12 ../data/buttons-programming.ui.h:10
 msgid "Subscript"
 msgstr "Подстрочный индекс"
 
 #. Accessible name for the superscript mode button
-#: ../data/buttons-advanced.ui.h:28
-#: ../data/buttons-programming.ui.h:36
+#: ../data/buttons-advanced.ui.h:14 ../data/buttons-programming.ui.h:12
 msgid "Superscript"
 msgstr "Надстрочный индекс"
 
+#. Accessible name for the scientific exponent button
+#: ../data/buttons-advanced.ui.h:16
+msgid "Scientific Exponent"
+msgstr "Экспоненциальная запись"
+
+#. Accessible name for the recall value button
+#: ../data/buttons-advanced.ui.h:18 ../data/buttons-financial.ui.h:6
+#: ../data/buttons-programming.ui.h:14
+msgid "Recall"
+msgstr "П→X"
+
+#. The label on the memory recall button
+#: ../data/buttons-advanced.ui.h:20 ../data/buttons-financial.ui.h:8
+#: ../data/buttons-programming.ui.h:16
+msgid "&#x2190; R"
+msgstr "&#x2190; R"
+
+#. Accessible name for the store value button
+#: ../data/buttons-advanced.ui.h:22 ../data/buttons-financial.ui.h:2
+#: ../data/buttons-programming.ui.h:18
+msgid "Store"
+msgstr "X→П"
+
+#. The label on the memory store button
+#: ../data/buttons-advanced.ui.h:24 ../data/buttons-financial.ui.h:4
+#: ../data/buttons-programming.ui.h:20
+msgid "&#x2192; R"
+msgstr "&#x2192; R"
+
+#. Accessible name for the absolute value button
+#: ../data/buttons-advanced.ui.h:26 ../data/buttons-programming.ui.h:4
+msgid "Absolute Value"
+msgstr "Модуль"
+
+#. Accessible name for the exponentiation (x to the power of y) button
+#: ../data/buttons-advanced.ui.h:28 ../data/buttons-basic.ui.h:6
+#: ../data/buttons-financial.ui.h:36 ../data/buttons-programming.ui.h:32
+msgid "Exponent"
+msgstr "Возвести в степень"
+
 #. Label on the undo button
 #. Label on the clear display button
-#: ../data/buttons-advanced.ui.h:30
-#: ../data/buttons-basic.ui.h:8
-#: ../data/buttons-financial.ui.h:86
+#: ../data/buttons-advanced.ui.h:30 ../data/buttons-basic.ui.h:8
+#: ../data/buttons-financial.ui.h:34
 msgid "Undo"
 msgstr "Отменить"
 
-#. Payment Period Dialog: Button to calculate result
-#: ../data/buttons-financial.ui.h:8
-msgid "C_alculate"
-msgstr "В_ычислить"
-
-#. Gross Profit Margin Dialog: Label before cost input
-#: ../data/buttons-financial.ui.h:10
-msgid "C_ost:"
-msgstr "Цена:"
-
-#. Periodic Payment Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:12
-msgid "Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. "
-msgstr "Вычислить периодическую оплату займа, когда оплата производится в конце каждого периода."
-
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#. Calculates the number of compounding periods necessary to increase an
+#. investment of present value pv to a future value of fv, at a fixed interest
+#. rate of int per compounding period. See also:
+#. http://en.wikipedia.org/wiki/Compound_interest
 #: ../data/buttons-financial.ui.h:14
-msgid "Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-of-the-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The useful life is the number of periods, typically years, over which an asset is depreciated. "
-msgstr "Вычислить амортизацию ресурса с помощью метода Сумма-Лет-Цифр за заданный период времени. Этот метод оценки старости учитывает ускорение амортизации, то есть стоимость в ранний период больше, чем в поздний. Полезная жизнь ресурса — это число периодов, обычно лет, в течение которых ресурс устаревает."
-
-#. Double-Declining Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:16
-msgid "Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method."
-msgstr "Вычислить амортизацию ресурса за заданный период с использованием метода двойного уменьшения остатка."
-
-#. Future Value Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:18
-msgid "Calculates the future value of an investment based on a series of equal payments at a periodic interest rate over the number of payment periods in the term."
-msgstr "Вычислить объём инвестиций на основе серии периодических платежей по ставке в течение некоторого периода оплаты."
-
-#. Compounding Term Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:20
-msgid "Calculates the number of compounding periods necessary to increase an investment of present value to a future value, at a fixed interest rate per compounding period."
-msgstr "Вычислить число периодов оплаты, необходимых, чтобы в течение периода периодической оплаты с фиксированной ставкой увеличить текущее значение до необходимого."
-
-#. Payment Period Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:22
-msgid "Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value, at a periodic interest rate."
-msgstr "Вычислить число периодов оплаты, необходимых, чтобы в течение периода периодической оплаты с фиксированной ставкой получить необходимое значение."
-
-#. Periodic Interest Rate Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:24
-msgid "Calculates the periodic interest necessary to increase an investment to a future value, over the number of compounding periods. "
-msgstr "Вычислить платёж, необходимый для увеличения инвестиций до некоторого значения в течение нескольких последовательных периодов."
-
-#. Present Value Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:26
-msgid "Calculates the present value of an investment based on a series of equal payments discounted at a periodic interest rate over the number of payment periods in the term. "
-msgstr "Вычислить объём инвестиций на основе серии равных периодических платежей в течение некоторого срока."
-
-#. Gross Profit Margin Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:28
-msgid "Calculates the resale price of a product, based on the product cost and the wanted gross profit margin."
-msgstr "Вычислить необходимую переоценку продукта, используя цену продукта и необходимый валовой доход."
-
-#. Straight-Line Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:30
-msgid "Calculates the straight-line depreciation of an asset for one period. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. "
-msgstr "Вычислить прямолинейную амортизацию ресурса за один период. Прямой метод делит стоимость амортизации на весь период жизни ресурса. Полезная жизнь ресурса — это число периодов, обычно лет, в течение которых ресурс устаревает."
-
-#. Title of Compounding Term dialog
-#. Tooltip for the compounding term button
-#: ../data/buttons-financial.ui.h:34
-#: ../src/math-buttons.c:261
-msgid "Compounding Term"
-msgstr "Составной период"
-
-#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
-#: ../data/buttons-financial.ui.h:36
 msgid "Ctrm"
 msgstr "Ctrm"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:38
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the double-declining balance method. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:16
 msgid "Ddb"
 msgstr "Ddb"
 
-#. Title of Double-Declining Depreciation dialog
-#: ../data/buttons-financial.ui.h:40
-msgid "Double-Declining Depreciation"
-msgstr "Отброс двойного остатка"
-
-#. Title of Future Value dialog
-#. Tooltip for the future value button
-#: ../data/buttons-financial.ui.h:44
-#: ../src/math-buttons.c:267
-msgid "Future Value"
-msgstr "Будущая стоимость"
-
-#. Payment Period Dialog: Label before future value input
-#: ../data/buttons-financial.ui.h:46
-msgid "Future _Value:"
-msgstr "Будущая _стоимость:"
-
-#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
-#: ../data/buttons-financial.ui.h:48
+#. Calculates the future value of an investment based on a series of equal
+#. payments, each of amount pmt, at a periodic interest rate of int, over the
+#. number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Future_value
+#: ../data/buttons-financial.ui.h:18
 msgid "Fv"
 msgstr "Fv"
 
-#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
-#: ../data/buttons-financial.ui.h:50
-msgid "Gpm"
-msgstr "Gpm"
-
-#. Title of Gross Profit Margin dialog
-#. Tooltip for the gross profit margin button
-#: ../data/buttons-financial.ui.h:52
-#: ../src/math-buttons.c:288
-msgid "Gross Profit Margin"
-msgstr "Валовый доход"
-
-#. Title of Payment Period dialog
-#: ../data/buttons-financial.ui.h:54
-msgid "Payment Period"
-msgstr "Период оплаты"
-
-#. Title of Periodic Interest Rate dialog
-#. Tooltip for the periodic interest rate button
-#: ../data/buttons-financial.ui.h:56
-#: ../src/math-buttons.c:279
-msgid "Periodic Interest Rate"
-msgstr "Периодическая процентная ставка"
-
-#. Payment Period Dialog: Label before periodic interest rate input
-#: ../data/buttons-financial.ui.h:58
-msgid "Periodic Interest _Rate:"
-msgstr "Периодическая проц_ентная ставка:"
-
-#. Title of Periodic Payment dialog
-#. Tooltip for the periodic payment button
-#: ../data/buttons-financial.ui.h:60
-#: ../src/math-buttons.c:285
-msgid "Periodic Payment"
-msgstr "Периодическая оплата"
-
-#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
-#: ../data/buttons-financial.ui.h:62
-msgid "Pmt"
-msgstr "Pmt"
-
-#. Title of Present Value dialog
-#. Tooltip for the present value button
-#: ../data/buttons-financial.ui.h:64
-#: ../src/math-buttons.c:282
-msgid "Present Value"
-msgstr "Текущее значение"
-
-#. Periodic Interest Rate Dialog: Label before present value input
-#: ../data/buttons-financial.ui.h:66
-msgid "Present _Value:"
-msgstr "Текущее _значение:"
-
-#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
-#: ../data/buttons-financial.ui.h:68
-msgid "Pv"
-msgstr "Pv"
-
-#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
-#: ../data/buttons-financial.ui.h:70
-msgid "Rate"
-msgstr "Rate"
-
-#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:74
-msgid "Sln"
-msgstr "Sln"
-
-#. Title of Straight-Line Depreciation dialog
-#: ../data/buttons-financial.ui.h:78
-msgid "Straight-Line Depreciation"
-msgstr "Линейная амортизация"
-
-#. Title of Sum-of-the-Years'-Digits Depreciation dialog
-#: ../data/buttons-financial.ui.h:80
-msgid "Sum-of-the-Years'-Digits Depreciation"
-msgstr "Амортизация Сумма-Лет-Цифр"
-
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:82
-msgid "Syd"
-msgstr "Syd"
-
-#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
-#: ../data/buttons-financial.ui.h:84
+#. Calculates the number of payment periods that are necessary during the term
+#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
+#. interest rate of int. Each payment is equal to amount pmt. See also:
+#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#: ../data/buttons-financial.ui.h:20
 msgid "Term"
 msgstr "Term"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
-#: ../data/buttons-financial.ui.h:88
-msgid "_Cost:"
-msgstr "Ц_ена:"
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the Sum-Of-The-Years'-Digits method. This method of
+#. depreciation accelerates the rate of depreciation, so that more
+#. depreciation expense occurs in earlier periods than in later ones. The
+#. depreciable cost is cost - salvage. The useful life is the number of
+#. periods, typically years, over which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:22
+msgid "Syd"
+msgstr "Syd"
+
+#. Calculates the straight-line depreciation of an asset for one period. The
+#. depreciable cost is cost - salvage. The straight-line method of
+#. depreciation divides the depreciable cost evenly over the useful life of an
+#. asset. The useful life is the number of periods, typically years, over
+#. which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:24
+msgid "Sln"
+msgstr "Sln"
+
+#. Calculates the periodic interest necessary to increase an investment of
+#. present value pv to a future value of fv, over the number of compounding
+#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#: ../data/buttons-financial.ui.h:26
+msgid "Rate"
+msgstr "Rate"
+
+#. Calculates the present value of an investment based on a series of equal
+#. payments, each of amount pmt, discounted at a periodic interest rate of
+#. int, over the number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Present_value
+#: ../data/buttons-financial.ui.h:28
+msgid "Pv"
+msgstr "Pv"
+
+#. Calculates the amount of the periodic payment of a loan, where payments are
+#. made at the end of each payment period. See also:
+#. http://en.wikipedia.org/wiki/Amortization_schedule
+#: ../data/buttons-financial.ui.h:30
+msgid "Pmt"
+msgstr "Pmt"
+
+#. Calculates the resale price of a product, based on the product cost and the
+#. wanted gross profit margin. See also:
+#. http://en.wikipedia.org/wiki/Gross_profit_margin
+#: ../data/buttons-financial.ui.h:32
+msgid "Gpm"
+msgstr "Gpm"
+
+#. Title of Compounding Term dialog
+#. Tooltip for the compounding term button
+#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:261
+msgid "Compounding Term"
+msgstr "Составной период"
+
+#. Periodic Interest Rate Dialog: Label before present value input
+#: ../data/buttons-financial.ui.h:40
+msgid "Present _Value:"
+msgstr "Текущее _значение:"
+
+#. Payment Period Dialog: Label before periodic interest rate input
+#: ../data/buttons-financial.ui.h:42
+msgid "Periodic Interest _Rate:"
+msgstr "Периодическая проц_ентная ставка:"
+
+#. Compounding Term Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:44
+msgid ""
+"Calculates the number of compounding periods necessary to increase an "
+"investment of present value to a future value, at a fixed interest rate per "
+"compounding period."
+msgstr "Вычислить число периодов оплаты, необходимых, чтобы в течение периода периодической оплаты с фиксированной ставкой увеличить текущее значение до необходимого."
 
 #. Periodic Interest Rate Dialog: Label before future value input
-#: ../data/buttons-financial.ui.h:90
+#: ../data/buttons-financial.ui.h:46
 msgid "_Future Value:"
 msgstr "_Будущая стоимость:"
 
+#. Payment Period Dialog: Button to calculate result
+#: ../data/buttons-financial.ui.h:48
+msgid "C_alculate"
+msgstr "В_ычислить"
+
+#. Title of Double-Declining Depreciation dialog
+#: ../data/buttons-financial.ui.h:50
+msgid "Double-Declining Depreciation"
+msgstr "Отброс двойного остатка"
+
+#. Double-Declining Depreciation Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:52
+msgid ""
+"Calculates the depreciation allowance on an asset for a specified period of "
+"time, using the double-declining balance method."
+msgstr "Вычислить амортизацию ресурса за заданный период с использованием метода двойного уменьшения остатка."
+
+#. Gross Profit Margin Dialog: Label before cost input
+#: ../data/buttons-financial.ui.h:54
+msgid "C_ost:"
+msgstr "Цена:"
+
 #. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
-#: ../data/buttons-financial.ui.h:92
+#: ../data/buttons-financial.ui.h:56
 msgid "_Life:"
 msgstr "_Жизненный цикл:"
 
-#. Gross Profit Margin Dialog: Label before margin input
-#: ../data/buttons-financial.ui.h:94
-msgid "_Margin:"
-msgstr "_Маржа:"
-
-#. Present Value Dialog: Label before number of periods input
-#: ../data/buttons-financial.ui.h:96
-msgid "_Number of Periods:"
-msgstr "_Число периодов:"
-
 #. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
-#: ../data/buttons-financial.ui.h:98
+#: ../data/buttons-financial.ui.h:58
 msgid "_Period:"
 msgstr "_Период:"
 
+#. Title of Future Value dialog
+#. Tooltip for the future value button
+#: ../data/buttons-financial.ui.h:60 ../src/math-buttons.c:267
+msgid "Future Value"
+msgstr "Будущая стоимость"
+
+#. Future Value Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:62
+msgid ""
+"Calculates the future value of an investment based on a series of equal "
+"payments at a periodic interest rate over the number of payment periods in "
+"the term."
+msgstr "Вычислить объём инвестиций на основе серии периодических платежей по ставке в течение некоторого периода оплаты."
+
 #. Payment Period Dialog: Label before periodic payment input
-#: ../data/buttons-financial.ui.h:100
+#: ../data/buttons-financial.ui.h:64
 msgid "_Periodic Payment:"
 msgstr "Период_ическая оплата:"
 
+#. Present Value Dialog: Label before number of periods input
+#: ../data/buttons-financial.ui.h:66
+msgid "_Number of Periods:"
+msgstr "_Число периодов:"
+
+#. Title of Gross Profit Margin dialog
+#. Tooltip for the gross profit margin button
+#: ../data/buttons-financial.ui.h:68 ../src/math-buttons.c:288
+msgid "Gross Profit Margin"
+msgstr "Валовый доход"
+
+#. Gross Profit Margin Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:70
+msgid ""
+"Calculates the resale price of a product, based on the product cost and the "
+"wanted gross profit margin."
+msgstr "Вычислить необходимую переоценку продукта, используя цену продукта и необходимый валовой доход."
+
+#. Gross Profit Margin Dialog: Label before margin input
+#: ../data/buttons-financial.ui.h:72
+msgid "_Margin:"
+msgstr "_Маржа:"
+
+#. Title of Periodic Payment dialog
+#. Tooltip for the periodic payment button
+#: ../data/buttons-financial.ui.h:74 ../src/math-buttons.c:285
+msgid "Periodic Payment"
+msgstr "Периодическая оплата"
+
+#. Periodic Payment Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:76
+msgid ""
+"Calculates the amount of the periodic payment of a loan, where payments are "
+"made at the end of each payment period. "
+msgstr "Вычислить периодическую оплату займа, когда оплата производится в конце каждого периода."
+
 #. Periodic Payment Dialog: Label before principal input
-#: ../data/buttons-financial.ui.h:102
+#: ../data/buttons-financial.ui.h:78
 msgid "_Principal:"
 msgstr "_Основной капитал:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
-#: ../data/buttons-financial.ui.h:104
-msgid "_Salvage:"
-msgstr "_Вторсырьё:"
-
 #. Periodic Interest Rate Dialog: Label before term input
-#: ../data/buttons-financial.ui.h:106
+#: ../data/buttons-financial.ui.h:80
 msgid "_Term:"
 msgstr "_Срок:"
 
-#. Insert ASCII dialog: Label before character entry
-#: ../data/buttons-programming.ui.h:10
-msgid "Ch_aracter:"
-msgstr "_Символ:"
+#. Title of Present Value dialog
+#. Tooltip for the present value button
+#: ../data/buttons-financial.ui.h:82 ../src/math-buttons.c:282
+msgid "Present Value"
+msgstr "Текущее значение"
 
-#. Accessible name for the insert character button
-#: ../data/buttons-programming.ui.h:20
-msgid "Insert Character"
-msgstr "Вставить символ"
+#. Present Value Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:84
+msgid ""
+"Calculates the present value of an investment based on a series of equal "
+"payments discounted at a periodic interest rate over the number of payment "
+"periods in the term. "
+msgstr "Вычислить объём инвестиций на основе серии равных периодических платежей в течение некоторого срока."
 
-#. Title of insert character code dialog
-#. Tooltip for the insert character code button
-#: ../data/buttons-programming.ui.h:22
-#: ../src/math-buttons.c:240
-#| msgid "Insert Character"
-msgid "Insert Character Code"
-msgstr "Вставить код символа"
+#. Title of Periodic Interest Rate dialog
+#. Tooltip for the periodic interest rate button
+#: ../data/buttons-financial.ui.h:86 ../src/math-buttons.c:279
+msgid "Periodic Interest Rate"
+msgstr "Периодическая процентная ставка"
+
+#. Periodic Interest Rate Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:88
+msgid ""
+"Calculates the periodic interest necessary to increase an investment to a "
+"future value, over the number of compounding periods. "
+msgstr "Вычислить платёж, необходимый для увеличения инвестиций до некоторого значения в течение нескольких последовательных периодов."
+
+#. Title of Straight-Line Depreciation dialog
+#: ../data/buttons-financial.ui.h:90
+msgid "Straight-Line Depreciation"
+msgstr "Линейная амортизация"
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#: ../data/buttons-financial.ui.h:92
+msgid "_Cost:"
+msgstr "Ц_ена:"
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#: ../data/buttons-financial.ui.h:94
+msgid "_Salvage:"
+msgstr "_Вторсырьё:"
+
+#. Straight-Line Depreciation Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:96
+msgid ""
+"Calculates the straight-line depreciation of an asset for one period. The "
+"straight-line method of depreciation divides the depreciable cost evenly "
+"over the useful life of an asset. The useful life is the number of periods, "
+"typically years, over which an asset is depreciated. "
+msgstr "Вычислить прямолинейную амортизацию ресурса за один период. Прямой метод делит стоимость амортизации на весь период жизни ресурса. Полезная жизнь ресурса — это число периодов, обычно лет, в течение которых ресурс устаревает."
+
+#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#: ../data/buttons-financial.ui.h:98
+msgid "Sum-of-the-Years'-Digits Depreciation"
+msgstr "Амортизация Сумма-Лет-Цифр"
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:100
+msgid ""
+"Calculates the depreciation allowance on an asset for a specified period of "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
+" accelerates the rate of depreciation, so that more depreciation expense "
+"occurs in earlier periods than in later ones. The useful life is the number "
+"of periods, typically years, over which an asset is depreciated. "
+msgstr "Вычислить амортизацию ресурса с помощью метода Сумма-Лет-Цифр за заданный период времени. Этот метод оценки старости учитывает ускорение амортизации, то есть стоимость в ранний период больше, чем в поздний. Полезная жизнь ресурса — это число периодов, обычно лет, в течение которых ресурс устаревает."
+
+#. Title of Payment Period dialog
+#: ../data/buttons-financial.ui.h:102
+msgid "Payment Period"
+msgstr "Период оплаты"
+
+#. Payment Period Dialog: Label before future value input
+#: ../data/buttons-financial.ui.h:104
+msgid "Future _Value:"
+msgstr "Будущая _стоимость:"
+
+#. Payment Period Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:106
+msgid ""
+"Calculates the number of payment periods that are necessary during the term "
+"of an ordinary annuity, to accumulate a future value, at a periodic interest"
+" rate."
+msgstr "Вычислить число периодов оплаты, необходимых, чтобы в течение периода периодической оплаты с фиксированной ставкой получить необходимое значение."
 
 #. Accessible name for the shift left button
 #. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:28
-#: ../src/math-buttons.c:255
+#: ../data/buttons-programming.ui.h:22 ../src/math-buttons.c:255
 msgid "Shift Left"
 msgstr "Сдвинуть влево"
 
 #. Accessible name for the shift right button
 #. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:30
-#: ../src/math-buttons.c:258
+#: ../data/buttons-programming.ui.h:24 ../src/math-buttons.c:258
 msgid "Shift Right"
 msgstr "Сдвинуть вправо"
+
+#. Accessible name for the insert character button
+#: ../data/buttons-programming.ui.h:26
+msgid "Insert Character"
+msgstr "Вставить символ"
+
+#. Title of insert character code dialog
+#. Tooltip for the insert character code button
+#: ../data/buttons-programming.ui.h:34 ../src/math-buttons.c:240
+msgid "Insert Character Code"
+msgstr "Вставить код символа"
+
+#. Insert ASCII dialog: Label before character entry
+#: ../data/buttons-programming.ui.h:36
+msgid "Ch_aracter:"
+msgstr "_Символ:"
 
 #. Insert ASCII dialog: Button to insert selected character
 #: ../data/buttons-programming.ui.h:38
 msgid "_Insert"
 msgstr "_Вставить"
 
-#. Word size combo: 16 bits
+#. Word size combo: 8 bits
 #: ../data/preferences.ui.h:2
+msgid "8-bit"
+msgstr "8 бит"
+
+#. Word size combo: 16 bits
+#: ../data/preferences.ui.h:4
 msgid "16-bit"
 msgstr "16 бит"
 
 #. Word size combo: 32 bits
-#: ../data/preferences.ui.h:4
+#: ../data/preferences.ui.h:6
 msgid "32-bit"
 msgstr "32 бита"
 
 #. Word size combo: 64 bits
-#: ../data/preferences.ui.h:6
+#: ../data/preferences.ui.h:8
 msgid "64-bit"
 msgstr "64 бита"
 
-#. Word size combo: 8 bits
-#: ../data/preferences.ui.h:8
-msgid "8-bit"
-msgstr "8 бит"
-
-#. Preferences dialog: Label for display format combo box
-#: ../data/preferences.ui.h:10
-msgid "Number _Format:"
-msgstr "_Формат числа:"
-
 #. Title of preferences dialog
-#: ../data/preferences.ui.h:11
-#: ../src/math-preferences.c:239
+#: ../data/preferences.ui.h:9 ../src/math-preferences.c:239
 msgid "Preferences"
 msgstr "Параметры"
 
-#. Preferences dialog: label for show thousands separator check button
-#: ../data/preferences.ui.h:13
-msgid "Show _thousands separators"
-msgstr "Показывать разделители _тысяч"
-
-#. Preferences dialog: label for show trailing zeroes check button
-#: ../data/preferences.ui.h:15
-msgid "Show trailing _zeroes"
-msgstr "Показывать незначащие _нули после запятой"
-
-#. Preferences dialog: label for word size combo box
-#: ../data/preferences.ui.h:17
-msgid "Word _size:"
-msgstr "Размер _слова:"
-
 #. Preferences dialog: Label for angle unit combo box
-#: ../data/preferences.ui.h:19
+#: ../data/preferences.ui.h:11
 msgid "_Angle units:"
 msgstr "Единицы измерения _углов:"
 
-#. Title of main window
-#: ../data/mate-calc.desktop.in.h:1
-#: ../src/math-window.c:521
+#. Preferences dialog: Label for display format combo box
+#: ../data/preferences.ui.h:13
+msgid "Number _Format:"
+msgstr "_Формат числа:"
+
+#. Preferences dialog: label for word size combo box
+#: ../data/preferences.ui.h:15
+msgid "Word _size:"
+msgstr "Размер _слова:"
+
+#. Preferences dialog: label for show trailing zeroes check button
+#: ../data/preferences.ui.h:17
+msgid "Show trailing _zeroes"
+msgstr "Показывать незначащие _нули после запятой"
+
+#. Preferences dialog: label for show thousands separator check button
+#: ../data/preferences.ui.h:19
+msgid "Show _thousands separators"
+msgstr "Показывать разделители _тысяч"
+
+#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:486
 msgid "Calculator"
 msgstr "Калькулятор"
 
@@ -471,88 +494,82 @@ msgid "Accuracy value"
 msgstr "Точность значения"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:2
-#| msgid "_Angle units:"
-msgid "Angle units"
-msgstr "Единицы измерения углов"
+msgid "The number of digits displayed after the numeric point"
+msgstr "Количество знаков после запятой"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:3
-msgid "Button mode"
-msgstr "Кнопочный режим"
+msgid "Word size"
+msgstr "Размер слова"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:4
-msgid "Currency of the current calculation"
-msgstr "Валюта текущего вычисления"
+msgid "The size of the words used in bitwise operations"
+msgstr "Размер слова, используемый в побитовых операциях"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:5
-msgid "Currency to convert the current calculation into"
-msgstr "Преобразовать текущее вычисление в валюту"
-
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:6
-msgid "Indicates whether any trailing zeroes after the numeric point should be shown in the display value."
-msgstr "Определяет, показываются ли незначащие нули после десятичной запятой."
-
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:7
-msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr "Определяет, показывать ли разделители тысяч в больших числах."
-
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:8
-msgid "Number format"
-msgstr "Формат чисел"
-
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:9
 msgid "Numeric Base"
 msgstr "Основание системы счисления"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:10
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:6
+msgid "The numeric base"
+msgstr "Основание системы счисления"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:7
 msgid "Show Thousands Separators"
 msgstr "Показывать разделители тысяч"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:11
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:8
+msgid "Indicates whether thousands separators are shown in large numbers."
+msgstr "Определяет, показывать ли разделители тысяч в больших числах."
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:9
 msgid "Show Trailing Zeroes"
 msgstr "Показывать незначащие нули после запятой"
 
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:10
+msgid ""
+"Indicates whether any trailing zeroes after the numeric point should be "
+"shown in the display value."
+msgstr "Определяет, показываются ли незначащие нули после десятичной запятой."
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:11
+msgid "Number format"
+msgstr "Формат чисел"
+
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:12
-msgid "Source currency"
-msgstr "Исходная валюта"
+msgid "The format to display numbers in"
+msgstr "Показывать числа в формате"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:13
-msgid "Target currency"
-msgstr "Целевая валюта"
+msgid "Angle units"
+msgstr "Единицы измерения углов"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:14
 msgid "The angle units to use"
 msgstr "Использовать ед. изм. углов"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:15
-msgid "The button mode"
+msgid "Button mode"
 msgstr "Кнопочный режим"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:16
-msgid "The format to display numbers in"
-msgstr "Показывать числа в формате"
+msgid "The button mode"
+msgstr "Кнопочный режим"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:17
-#| msgid ""
-#| "The number of digits displayed after the numeric point. This value must "
-#| "be in the range 0 to 9."
-msgid "The number of digits displayed after the numeric point"
-msgstr "Количество знаков после запятой"
+msgid "Source currency"
+msgstr "Исходная валюта"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:18
-#| msgid "Numeric Base"
-msgid "The numeric base"
-msgstr "Основание системы счисления"
+msgid "Currency of the current calculation"
+msgstr "Валюта текущего вычисления"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:19
-#| msgid ""
-#| "The size of the words used in bitwise operations. Valid values are 16, 32 "
-#| "and 64."
-msgid "The size of the words used in bitwise operations"
-msgstr "Размер слова, используемый в побитовых операциях"
+msgid "Target currency"
+msgstr "Целевая валюта"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:20
-msgid "Word size"
-msgstr "Размер слова"
+msgid "Currency to convert the current calculation into"
+msgstr "Преобразовать текущее вычисление в валюту"
 
 #: ../src/currency.h:19
 msgid "Australian dollar"
@@ -700,11 +717,10 @@ msgstr "Южноафриканский рэнд"
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr ""
-"Использование:\n"
-"  %s — Произвести математические вычисления"
+msgstr "Использование:\n  %s — Произвести математические вычисления"
 
-#. Description on mate-calc command-line help options displayed on command-line
+#. Description on mate-calc command-line help options displayed on command-
+#. line
 #: ../src/mate-calc.c:84
 #, c-format
 msgid ""
@@ -713,14 +729,10 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr ""
-"Опции помощи:\n"
-"  -v, --version                   Показать версию выпуска\n"
-"  -h, -?, --help                  Показать опции помощи\n"
-"  --help-all                      Показать все опции помощи\n"
-"  --help-gtk                      Показать опции GTK+"
+msgstr "Опции помощи:\n  -v, --version                   Показать версию выпуска\n  -h, -?, --help                  Показать опции помощи\n  --help-all                      Показать все опции помощи\n  --help-gtk                      Показать опции GTK+"
 
-#. Description on mate-calc command-line GTK+ options displayed on command-line
+#. Description on mate-calc command-line GTK+ options displayed on command-
+#. line
 #: ../src/mate-calc.c:95
 #, c-format
 msgid ""
@@ -731,14 +743,7 @@ msgid ""
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr ""
-"Опции GTK+:\n"
-"  --class=CLASS                   Класс программы, который используется менеджером окон\n"
-"  --name=NAME                     Имя программы, которое используется менеджером окон\n"
-"  --screen=SCREEN                 Экран, используемый графической средой X\n"
-"  --sync                          Сделать вызовы от X синхронными\n"
-"  --gtk-module=MODULES            Загрузить дополнительные GTK+ модули\n"
-"  --g-fatal-warnings              Сделать все предупреждения фатальными"
+msgstr "Опции GTK+:\n  --class=CLASS                   Класс программы, который используется менеджером окон\n  --name=NAME                     Имя программы, которое используется менеджером окон\n  --screen=SCREEN                 Экран, используемый графической средой X\n  --sync                          Сделать вызовы от X синхронными\n  --gtk-module=MODULES            Загрузить дополнительные GTK+ модули\n  --g-fatal-warnings              Сделать все предупреждения фатальными"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:109
@@ -747,10 +752,7 @@ msgid ""
 "Application Options:\n"
 "  -u, --unittest                  Perform unit tests\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr ""
-"Опции приложения:\n"
-"  -u, --unittest                  Произвести проверку единиц измерения\n"
-"  -s, --solve <equation>          Вычислить заданное выражение"
+msgstr "Опции приложения:\n  -u, --unittest                  Произвести проверку единиц измерения\n  -s, --solve <equation>          Вычислить заданное выражение"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:154
@@ -771,19 +773,16 @@ msgstr "Число Пи [Ctrl+P]"
 
 #. Tooltip for the Euler's Number button
 #: ../src/math-buttons.c:109
-#| msgid "Euler's number"
 msgid "Euler’s Number"
 msgstr "Число Эйлера"
 
 #. Tooltip for the subscript button
 #: ../src/math-buttons.c:114
-#| msgid "Subscript number mode [Alt+number]"
 msgid "Subscript mode [Alt]"
 msgstr "Подстрочный режим [Alt]"
 
 #. Tooltip for the superscript button
 #: ../src/math-buttons.c:117
-#| msgid "Superscript number mode [Ctrl+number]"
 msgid "Superscript mode [Ctrl]"
 msgstr "Надстрочный режим [Ctrl]"
 
@@ -829,7 +828,6 @@ msgstr "Возвести в степень [^ или **]"
 
 #. Tooltip for the square button
 #: ../src/math-buttons.c:144
-#| msgid "Inverse [Ctrl+I]"
 msgid "Square [Ctrl+2]"
 msgstr "Квадрат [Ctrl+2]"
 
@@ -860,25 +858,21 @@ msgstr "Комплексное сопряжение"
 
 #. Tooltip for the root button
 #: ../src/math-buttons.c:162
-#| msgid "Root [Ctrl+S]"
 msgid "Root [Ctrl+R]"
 msgstr "Корень [Ctrl+R]"
 
 #. Tooltip for the square root button
 #: ../src/math-buttons.c:165
-#| msgid "Root [Ctrl+S]"
 msgid "Square root [Ctrl+R]"
 msgstr "Квадратный корень [Ctrl+R]"
 
 #. Tooltip for the logarithm button
 #: ../src/math-buttons.c:168
-#| msgid "Base 10 logarithm"
 msgid "Logarithm"
 msgstr "Логарифм"
 
 #. Tooltip for the natural logarithm button
 #: ../src/math-buttons.c:171
-#| msgid "Natural logarithm"
 msgid "Natural Logarithm"
 msgstr "Натуральный логарифм"
 
@@ -929,7 +923,6 @@ msgstr "Логическое побитовое ИЛИ"
 
 #. Tooltip for the exclusive OR button
 #: ../src/math-buttons.c:201
-#| msgid "Boolean exclusive OR"
 msgid "Boolean Exclusive OR"
 msgstr "Логическое исключающее ИЛИ"
 
@@ -939,16 +932,12 @@ msgid "Boolean NOT"
 msgstr "Логическое побитовое НЕ"
 
 #. Tooltip for the integer component button
-#: ../src/math-buttons.c:207
-#: ../src/math-buttons.c:1442
-#| msgid "Integer portion"
+#: ../src/math-buttons.c:207 ../src/math-buttons.c:1445
 msgid "Integer Component"
 msgstr "Целая часть"
 
 #. Tooltip for the fractional component button
-#: ../src/math-buttons.c:210
-#: ../src/math-buttons.c:1444
-#| msgid "Fractional portion"
+#: ../src/math-buttons.c:210 ../src/math-buttons.c:1447
 msgid "Fractional Component"
 msgstr "Дробная часть"
 
@@ -964,148 +953,133 @@ msgstr "Мнимая часть"
 
 #. Tooltip for the ones complement button
 #: ../src/math-buttons.c:219
-#| msgid "Ones' complement"
 msgid "Ones Complement"
 msgstr "Дополнение до единицы"
 
 #. Tooltip for the twos complement button
 #: ../src/math-buttons.c:222
-#| msgid "Two's complement"
 msgid "Twos Complement"
 msgstr "Дополнение до двух"
 
 #. Tooltip for the truncate button
 #: ../src/math-buttons.c:225
-#| msgid "Truncate value"
 msgid "Truncate"
 msgstr "Целочисленная часть"
 
 #. Tooltip for the start group button
 #: ../src/math-buttons.c:228
-#| msgid "Start block [(]"
 msgid "Start Group [(]"
 msgstr "Начать блок [(]"
 
 #. Tooltip for the end group button
 #: ../src/math-buttons.c:231
-#| msgid "End block [)]"
 msgid "End Group [)]"
 msgstr "Закончить блок [)]"
 
 #. Tooltip for the assign variable button
 #: ../src/math-buttons.c:234
-#| msgid "Answer variable"
 msgid "Assign Variable"
 msgstr "Установить переменную"
 
 #. Tooltip for the insert variable button
 #: ../src/math-buttons.c:237
-#| msgid "Answer variable"
 msgid "Insert Variable"
 msgstr "Вставить переменную"
 
 #. Tooltip for the solve button
 #: ../src/math-buttons.c:243
-#| msgid "Calculate result [=]"
 msgid "Calculate Result"
 msgstr "Вычислить результат"
 
 #. Tooltip for the factor button
 #: ../src/math-buttons.c:246
-#| msgid "Factorize"
 msgid "Factorize [Ctrl+F]"
 msgstr "Разложить на множители [Ctrl+F]"
 
 #. Tooltip for the clear button
 #: ../src/math-buttons.c:249
-#| msgid "Clear display [Escape]"
 msgid "Clear Display [Escape]"
 msgstr "Очистить дисплей [Escape]"
 
 #. Tooltip for the undo button
 #: ../src/math-buttons.c:252
-#| msgid "Root [Ctrl+S]"
 msgid "Undo [Ctrl+Z]"
 msgstr "Отменить [Ctrl+Z]"
 
 #. Tooltip for the double declining depreciation button
 #: ../src/math-buttons.c:264
-#| msgid "Double-Declining Depreciation"
 msgid "Double Declining Depreciation"
 msgstr "Отброс двойного остатка"
 
 #. Tooltip for the financial term button
 #: ../src/math-buttons.c:270
-#| msgid "_Financial"
 msgid "Financial Term"
 msgstr "Финансовое условие"
 
 #. Tooltip for the sum of the years digits depreciation button
 #: ../src/math-buttons.c:273
-#| msgid "Sum-of-the-Years'-Digits Depreciation"
 msgid "Sum of the Years Digits Depreciation"
 msgstr "Амортизация Сумма-Лет-Цифр"
 
 #. Tooltip for the straight line depreciation button
 #: ../src/math-buttons.c:276
-#| msgid "Straight-Line Depreciation"
 msgid "Straight Line Depreciation"
 msgstr "Линейная амортизация"
 
-#. Advanced buttons: Angle unit combo box: Use degrees for trigonometric calculations
-#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
-#: ../src/math-buttons.c:892
-#: ../src/math-preferences.c:255
+#. Advanced buttons: Angle unit combo box: Use degrees for trigonometric
+#. calculations
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
+#. calculations
+#: ../src/math-buttons.c:895 ../src/math-preferences.c:255
 msgid "Degrees"
 msgstr "Градусы"
 
-#. Advanced buttons: Angle unit combo box: Use radians for trigonometric calculations
-#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
-#: ../src/math-buttons.c:896
-#: ../src/math-preferences.c:259
+#. Advanced buttons: Angle unit combo box: Use radians for trigonometric
+#. calculations
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
+#. calculations
+#: ../src/math-buttons.c:899 ../src/math-preferences.c:259
 msgid "Radians"
 msgstr "Радианы"
 
-#. Advanced buttons: Angle unit combo box: Use gradians for trigonometric calculations
-#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
-#: ../src/math-buttons.c:900
-#: ../src/math-preferences.c:263
+#. Advanced buttons: Angle unit combo box: Use gradians for trigonometric
+#. calculations
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
+#. calculations
+#: ../src/math-buttons.c:903 ../src/math-preferences.c:263
 msgid "Gradians"
 msgstr "Грады"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: ../src/math-buttons.c:934
+#: ../src/math-buttons.c:937
 msgid "Binary"
 msgstr "Двоичный"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: ../src/math-buttons.c:938
+#: ../src/math-buttons.c:941
 msgid "Octal"
 msgstr "Восьмеричный"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: ../src/math-buttons.c:942
+#: ../src/math-buttons.c:945
 msgid "Decimal"
 msgstr "Десятичный"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: ../src/math-buttons.c:946
+#: ../src/math-buttons.c:949
 msgid "Hexadecimal"
 msgstr "Шестнадцатеричный"
 
 #. Text shown in store menu when no variables defined
 #. Text shown in recall menu when no variables defined
-#: ../src/math-buttons.c:1263
-#: ../src/math-buttons.c:1309
+#: ../src/math-buttons.c:1266 ../src/math-buttons.c:1312
 msgid "No variables defined"
 msgstr "Переменные не определены"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: ../src/math-buttons.c:1352
-#: ../src/math-buttons.c:1396
+#: ../src/math-buttons.c:1355 ../src/math-buttons.c:1399
 #, c-format
-#| msgid "_1 place"
 msgid "_%d place"
 msgid_plural "_%d places"
 msgstr[0] "_%d разряд"
@@ -1114,10 +1088,8 @@ msgstr[2] "_%d разрядов"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: ../src/math-buttons.c:1356
-#: ../src/math-buttons.c:1400
+#: ../src/math-buttons.c:1359 ../src/math-buttons.c:1403
 #, c-format
-#| msgid "_1 place"
 msgid "%d place"
 msgid_plural "%d places"
 msgstr[0] "%d разряд"
@@ -1125,22 +1097,22 @@ msgstr[1] "%d разряда"
 msgstr[2] "%d разрядов"
 
 #. Tooltip for the round button
-#: ../src/math-buttons.c:1446
+#: ../src/math-buttons.c:1449
 msgid "Round"
 msgstr "Округлить"
 
 #. Tooltip for the floor button
-#: ../src/math-buttons.c:1448
+#: ../src/math-buttons.c:1451
 msgid "Floor"
 msgstr "Округление в большую сторону"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:1450
+#: ../src/math-buttons.c:1453
 msgid "Ceiling"
 msgstr "Округление в меньшую сторону"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:1452
+#: ../src/math-buttons.c:1455
 msgid "Sign"
 msgstr "Знак"
 
@@ -1151,7 +1123,6 @@ msgstr "Нет истории отмены изменений"
 
 #. Error shown when trying to redo with no redo history
 #: ../src/math-equation.c:521
-#| msgid "No undo history"
 msgid "No redo history"
 msgstr "Нет истории отмены изменений"
 
@@ -1159,7 +1130,8 @@ msgstr "Нет истории отмены изменений"
 msgid "No sane value to store"
 msgstr "Отсутствует разумное значение для сохранения"
 
-#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
+#. Error displayed to user when they perform a bitwise operation on numbers
+#. greater than the current word
 #: ../src/math-equation.c:1105
 msgid "Overflow. Try a bigger word size"
 msgstr "Переполнение. Попробуйте установить большее значение размера слова"
@@ -1209,7 +1181,6 @@ msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
 #. Label on close button in preferences dialog
 #: ../src/math-preferences.c:245
-#| msgid "_Cost:"
 msgid "_Close"
 msgstr "_Закрыть"
 
@@ -1235,20 +1206,17 @@ msgid "Show %d decimal _places"
 msgstr "Показывать %d десятичных _разрядов"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:170
+#: ../src/math-window.c:161
 msgid "Unable to open help file"
 msgstr "Не удалось открыть файл справки"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:201
+#: ../src/math-window.c:188
 msgid "translator-credits"
-msgstr ""
-"Андрей Носенко <awn@bcs.zp.ua>\n"
-"Артур Сибагатуллин <ArtSib@mail.ru>\n"
-"Alexander Saprykin <xelfium@gmail.com>, 2010"
+msgstr "Алексей Сорокин <sor.alexei@hotbox.ru>\nАндрей Носенко <awn@bcs.zp.ua>\nАртур Сибагатуллин <ArtSib@mail.ru>\nAlexander Saprykin <xelfium@gmail.com>"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:204
+#: ../src/math-window.c:194
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1263,95 +1231,76 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
-"mate-calc — свободное программное обеспечение; вы можете\n"
-"распространять его и/или модифицировать на условиях Универсальной \n"
-"общественной лицензии GNU версии 2 либо любой более поздней.\n"
-"\n"
-"mate-calc распространяется в надежде на то, что он будет полезен,\n"
-"но БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ; даже без гарантий КОММЕРЧЕСКОЙ\n"
-"ЦЕННОСТИ или ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ. Для получения\n"
-"дополнительных сведений обратитесь к Универсальной общественной\n"
-"лицензии GNU.\n"
-"\n"
-"Вы должны были получить копию лицензии GNU c программой mate-calc;\n"
-"если лицензия не была получена, известите об этом Фонд свободного\n"
-"программного обеспечения по адресу: Free Software Foundation, Inc.,\n"
-"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr "mate-calc — свободное программное обеспечение; вы можете\nраспространять его и/или модифицировать на условиях Универсальной \nобщественной лицензии GNU версии 2 либо любой более поздней.\n\nmate-calc распространяется в надежде на то, что он будет полезен,\nно БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ; даже без гарантий КОММЕРЧЕСКОЙ\nЦЕННОСТИ или ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ. Для получения\nдополнительных сведений обратитесь к Универсальной общественной\nлицензии GNU.\n\nВы должны были получить копию лицензии GNU c программой mate-calc;\nесли лицензия не была получена, известите об этом Фонд свободного\nпрограммного обеспечения по адресу: Free Software Foundation, Inc.,\n51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
-#. Program name in the about dialog
-#: ../src/math-window.c:221
+#: ../src/math-window.c:209
 msgid "mate-calc"
 msgstr "Калькулятор mate-calc"
 
-#. Copyright notice in the about dialog
-#: ../src/math-window.c:225
-#| msgid "© 1986–2008 The mate-calc authors"
-msgid "© 1986–2010 The mate-calc authors"
-msgstr "© 1986–2010 авторы mate-calc"
-
-#. Short description in the about dialog
-#: ../src/math-window.c:229
+#: ../src/math-window.c:213
 msgid "Calculator with financial and scientific modes."
 msgstr "Калькулятор с финансовым и научным режимами."
 
 #. Calculator menu
-#: ../src/math-window.c:355
+#: ../src/math-window.c:346
 msgid "_Calculator"
 msgstr "_Калькулятор"
 
 #. Mode menu
-#: ../src/math-window.c:357
-#| msgid "Mode"
+#: ../src/math-window.c:348
 msgid "_Mode"
 msgstr "_Режим"
 
 #. Help menu label
-#: ../src/math-window.c:359
+#: ../src/math-window.c:350
 msgid "_Help"
 msgstr "_Справка"
 
 #. Basic menu label
-#: ../src/math-window.c:361
+#: ../src/math-window.c:352
 msgid "_Basic"
 msgstr "_Простой"
 
 #. Advanced menu label
-#: ../src/math-window.c:363
+#: ../src/math-window.c:354
 msgid "_Advanced"
 msgstr "_Расширенный"
 
 #. Financial menu label
-#: ../src/math-window.c:365
+#: ../src/math-window.c:356
 msgid "_Financial"
 msgstr "_Финансовый"
 
 #. Programming menu label
-#: ../src/math-window.c:367
+#: ../src/math-window.c:358
 msgid "_Programming"
 msgstr "_Программирование"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:369
+#: ../src/math-window.c:360
 msgid "_Contents"
 msgstr "_Содержание"
 
-#. Translators: Error displayed when boolean AND attempted on non-integer values
+#. Translators: Error displayed when boolean AND attempted on non-integer
+#. values
 #: ../src/mp-binary.c:103
 msgid "Boolean AND is only defined for positive integers"
 msgstr "Логическое побитовое И определено только для положительных целых чисел"
 
-#. Translators: Error displayed when boolean OR attempted on non-integer values
+#. Translators: Error displayed when boolean OR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:116
 msgid "Boolean OR is only defined for positive integers"
 msgstr "Логическое побитовое ИЛИ определено только для положительных целых чисел"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:129
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "Логическое побитовое исключающее ИЛИ определено только для положительных целых чисел"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:144
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "Логическое побитовое НЕ определено только для положительных целых чисел"
@@ -1367,21 +1316,18 @@ msgid "Argument not defined for zero"
 msgstr "Аргумент не определён для нуля"
 
 #. Translators: Error displayed attempted to divide by zero
-#: ../src/mp.c:636
-#: ../src/mp.c:668
-#: ../src/mp.c:1602
+#: ../src/mp.c:636 ../src/mp.c:668 ../src/mp.c:1602
 msgid "Division by zero is undefined"
 msgstr "Деление на ноль не определено"
 
 #. Translators: Error displayed when attempting to take logarithm of zero
-#: ../src/mp.c:1273
-#: ../src/mp.c:1310
+#: ../src/mp.c:1273 ../src/mp.c:1310
 msgid "Logarithm of zero is undefined"
 msgstr "Логарифм нуля не определён"
 
-#. Translators: Error displayed when attempted to raise 0 to a negative exponent
-#: ../src/mp.c:1675
-#: ../src/mp.c:1990
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. exponent
+#: ../src/mp.c:1675 ../src/mp.c:1990
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "Функция возведения в степень нуля не определена для отрицательных показателей степени"
 
@@ -1401,19 +1347,23 @@ msgstr "Отрицательный корень нуля не определён
 msgid "nth root of negative number is undefined for even n"
 msgstr "Корень n-той степени от отрицательного числа не определён для чётных n"
 
-#. Translators: Error displayed when attempted take the factorial of a fractional number
+#. Translators: Error displayed when attempted take the factorial of a
+#. fractional number
 #: ../src/mp.c:1930
 msgid "Factorial is only defined for natural numbers"
 msgstr "Факториал определён только для натуральных чисел"
 
-#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
+#. Translators: Error displayed when attemping to do a modulus division on
+#. non-integer numbers
 #: ../src/mp.c:1950
 msgid "Modulus division is only defined for integers"
 msgstr "Деление по модулю определено только для целых чисел"
 
 #. Translators: Error displayed when tangent value is undefined
 #: ../src/mp-trigonometric.c:311
-msgid "Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
+msgid ""
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
+"(90°)"
 msgstr "Тангенс не определён для углов с периодом π (180°), начиная с π∕2 (90°)"
 
 #. Translators: Error displayed when inverse sine value is undefined
@@ -1426,13 +1376,15 @@ msgstr "Обратный синус не определён для значен�
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
 msgstr "Обратный косинус не определён для значений вне диапазона [-1, 1]"
 
-#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
+#. Translators: Error displayed when inverse hyperbolic cosine value is
+#. undefined
 #: ../src/mp-trigonometric.c:591
-msgid "Inverse hyperbolic cosine is undefined for values less than or equal to one"
+msgid ""
+"Inverse hyperbolic cosine is undefined for values less than or equal to one"
 msgstr "Обратный гиперболический косинус не определён для значений, меньших или равных единице"
 
-#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
+#. Translators: Error displayed when inverse hyperbolic tangent value is
+#. undefined
 #: ../src/mp-trigonometric.c:615
 msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
 msgstr "Обратный гиперболический тангенс не определён для значений вне диапазона [-1, 1]"
-

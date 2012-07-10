@@ -1,1840 +1,1389 @@
-# translation of mate-calc.HEAD.mk.po to Macedonian
-# translation of mate-calc.HEAD.po to
-# translation of mate-calc.HEAD.po to
-# translation of mate-calc.HEAD.po to
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) 2005 THE PACKAGE'S COPYRIGHT HOLDER.
-#
+# 
+# Translators:
+# Arangel Angov <arangel@linux.net.mk>, 2007.
+# Arangel Angov <ufo@linux.net.mk>, 2004, 2006.
+# Ilin Petkovski <krack@linux.net.mk>, 2003.
 # Ime Prezime <email@adresa.com>, 2003.
 # Ivan Dimitrov <ivan34mk@yahoo.com>, 2003.
-# Ilin Petkovski <krack@linux.net.mk>, 2003.
-# Arangel Angov <ufo@linux.net.mk>, 2004, 2006.
-# Арангел Ангов <ufo@linux.net.mk>, 2005.
 # Jovan Naumovski <jovan@lugola.net>, 2006, 2007, 2008.
-# Arangel Angov <arangel@linux.net.mk>, 2007.
+# Арангел Ангов <ufo@linux.net.mk>, 2005.
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc.HEAD.mk\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-08-04 07:53+0000\n"
-"PO-Revision-Date: 2008-09-25 18:51+0200\n"
-"Last-Translator: Jovan Naumovski <jovan@lugola.net>\n"
-"Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 16:03+0100\n"
+"PO-Revision-Date: 2012-03-14 15:06+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural= n==1 || n%10==1 ? 0 : 1\n"
-"X-Generator: KBabel 1.11.4\n"
+"Language: mk\n"
+"Plural-Forms: nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1\n"
 
-#: ../mate-calc/calctool.c:472
-msgid "Kilometer-to-mile conversion factor"
-msgstr "Фактор за конвертирање на километри во милји"
-
-#: ../mate-calc/calctool.c:474
-msgid "square root of 2"
-msgstr "квадратен корен од 2"
-
-#: ../mate-calc/calctool.c:475
-msgid "Euler's Number (e)"
-msgstr "Ојлеровиот број (e)"
-
-#: ../mate-calc/calctool.c:476
-msgid "pi"
-msgstr "пи"
-
-#: ../mate-calc/calctool.c:477
-msgid "Centimeter-to-inch conversion factor"
-msgstr "Фактор за конвертирање на сентиметри во инчи"
-
-#: ../mate-calc/calctool.c:479
-msgid "degrees in a radian"
-msgstr "степени во радијан"
-
-#: ../mate-calc/calctool.c:480
-msgid "2 ^ 20"
-msgstr "2 ^ 20"
-
-#: ../mate-calc/calctool.c:481
-msgid "Gram-to-ounce conversion factor"
-msgstr "Фактор за конвертирање од грамови во унци"
-
-#: ../mate-calc/calctool.c:483
-msgid "Kilojoule-to-British-thermal-unit conversion factor"
-msgstr "Фактор за конвертирање од килоџул во британски термички единици"
-
-#: ../mate-calc/calctool.c:486
-msgid "Cubic-centimeter-to-cubic-inch conversion factor"
-msgstr "Фактор на конвертирање од кубни сантиметри во кубни инчи"
-
-#. THIS ROUTINE IS CALLED WHEN AN ERROR CONDITION IS ENCOUNTERED, AND
-#. *  AFTER A MESSAGE HAS BEEN WRITTEN TO STDERR.
-#.
-#: ../mate-calc/calctool.c:497 ../mate-calc/mp.c:1814
-#: ../mate-calc/mpmath.c:347 ../mate-calc/mpmath.c:384
-#: ../mate-calc/mpmath.c:432 ../mate-calc/mpmath.c:998
-msgid "Error"
-msgstr "Грешка"
-
-#. Translators: the following string contains two strings that
-#. * are passed to it: the first is the mate-calc program name and
-#. * the second is an error message (see the last parameter in the
-#. * getparam() call in the get_options() routine below.
-#.
-#: ../mate-calc/calctool.c:514
-#, c-format
-msgid "%s: %s as next argument.\n"
-msgstr "%s: %s како следен аргумент.\n"
-
-#. Translators: the following string contains two strings that
-#. * are passed to it: the first is the mate-calc program name and
-#. * the second is the program version number.
-#.
-#: ../mate-calc/calctool.c:527
-#, c-format
-msgid ""
-"%s version %s\n"
-"\n"
+#. Accessible name for the inverse button
+#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:30
+msgid "Inverse"
 msgstr ""
-"%s верзија %s\n"
-"\n"
 
-#: ../mate-calc/calctool.c:528
-#, c-format
-msgid "Usage: %s: [-E] [-u] [-a accuracy] "
-msgstr "Употреба: %s: [-E] [-u] [-a accuracy] "
+#. Accessible name for the factorize button
+#: ../data/buttons-advanced.ui.h:4 ../data/buttons-programming.ui.h:2
+msgid "Factorize"
+msgstr ""
 
-#: ../mate-calc/calctool.c:529
-msgid "\t\t [-?] [-v] [-h]\n"
-msgstr "\t\t [-?] [-v] [-h]\n"
+#. Accessible name for the factorial button
+#: ../data/buttons-advanced.ui.h:6 ../data/buttons-programming.ui.h:28
+msgid "Factorial"
+msgstr "Факториел"
 
-#: ../mate-calc/calctool.c:550
-msgid "-a needs accuracy value"
-msgstr "-на а му треба вредност на точност"
+#. Label on the solve button (clicking this solves the displayed calculation)
+#: ../data/buttons-advanced.ui.h:8 ../data/buttons-basic.ui.h:2
+#: ../data/buttons-financial.ui.h:10 ../data/buttons-programming.ui.h:6
+msgid "="
+msgstr "="
 
-#: ../mate-calc/calctool.c:554 ../mate-calc/get.c:242
-#, c-format
-msgid "%s: accuracy should be in the range 0-%d\n"
-msgstr "%s точноста треба да е во опсег 0-%d\n"
+#. Label on the clear display button
+#: ../data/buttons-advanced.ui.h:10 ../data/buttons-basic.ui.h:4
+#: ../data/buttons-financial.ui.h:12 ../data/buttons-programming.ui.h:8
+msgid "Clear"
+msgstr "Исчисти"
 
-#: ../mate-calc/display.c:322
-msgid "No undo history"
-msgstr "Нема историја за отповикување"
+#. Accessible name for the subscript mode button
+#: ../data/buttons-advanced.ui.h:12 ../data/buttons-programming.ui.h:10
+msgid "Subscript"
+msgstr ""
 
-#: ../mate-calc/display.c:336
-msgid "No redo steps"
-msgstr "Нема чекори за отповикување"
+#. Accessible name for the superscript mode button
+#: ../data/buttons-advanced.ui.h:14 ../data/buttons-programming.ui.h:12
+msgid "Superscript"
+msgstr ""
 
-#: ../mate-calc/functions.c:135
-msgid "Malformed function"
-msgstr "Погрешна функција"
+#. Accessible name for the scientific exponent button
+#: ../data/buttons-advanced.ui.h:16
+msgid "Scientific Exponent"
+msgstr ""
 
-#: ../mate-calc/functions.c:145
-msgid "No sane value to do bitwise shift"
-msgstr "Нема разумна вредност за да се направи битово поместување"
+#. Accessible name for the recall value button
+#: ../data/buttons-advanced.ui.h:18 ../data/buttons-financial.ui.h:6
+#: ../data/buttons-programming.ui.h:14
+msgid "Recall"
+msgstr ""
 
-#: ../mate-calc/functions.c:178 ../mate-calc/functions.c:227
-msgid "No sane value to convert"
-msgstr "Нема вистинска вредност за конвертирање"
+#. The label on the memory recall button
+#: ../data/buttons-advanced.ui.h:20 ../data/buttons-financial.ui.h:8
+#: ../data/buttons-programming.ui.h:16
+msgid "&#x2190; R"
+msgstr ""
 
-#: ../mate-calc/functions.c:202 ../mate-calc/functions.c:244
-msgid "No sane value to store"
-msgstr "Нема вистинска вредност за складирање"
+#. Accessible name for the store value button
+#: ../data/buttons-advanced.ui.h:22 ../data/buttons-financial.ui.h:2
+#: ../data/buttons-programming.ui.h:18
+msgid "Store"
+msgstr ""
 
-#: ../mate-calc/functions.c:401
-msgid "Invalid number for the current base"
-msgstr "Невалиден број за тековната основа"
+#. The label on the memory store button
+#: ../data/buttons-advanced.ui.h:24 ../data/buttons-financial.ui.h:4
+#: ../data/buttons-programming.ui.h:20
+msgid "&#x2192; R"
+msgstr ""
 
-#: ../mate-calc/functions.c:405
-msgid "Too long number"
-msgstr "Предлог број"
+#. Accessible name for the absolute value button
+#: ../data/buttons-advanced.ui.h:26 ../data/buttons-programming.ui.h:4
+msgid "Absolute Value"
+msgstr ""
 
-#: ../mate-calc/functions.c:409
-msgid "Invalid bitwise operation parameter(s)"
-msgstr "Невалидни параметри на битовната операција"
+#. Accessible name for the exponentiation (x to the power of y) button
+#: ../data/buttons-advanced.ui.h:28 ../data/buttons-basic.ui.h:6
+#: ../data/buttons-financial.ui.h:36 ../data/buttons-programming.ui.h:32
+msgid "Exponent"
+msgstr ""
 
-#: ../mate-calc/functions.c:413
-msgid "Invalid modulus operation parameter(s)"
-msgstr "Невалидни параметри на операцијата со остаток"
+#. Label on the undo button
+#. Label on the clear display button
+#: ../data/buttons-advanced.ui.h:30 ../data/buttons-basic.ui.h:8
+#: ../data/buttons-financial.ui.h:34
+msgid "Undo"
+msgstr "Отповикај"
 
-#: ../mate-calc/functions.c:417
-msgid "Math operation error"
-msgstr "Грешка во математичката операција"
+#. Calculates the number of compounding periods necessary to increase an
+#. investment of present value pv to a future value of fv, at a fixed interest
+#. rate of int per compounding period. See also:
+#. http://en.wikipedia.org/wiki/Compound_interest
+#: ../data/buttons-financial.ui.h:14
+msgid "Ctrm"
+msgstr "Ctrm"
 
-#: ../mate-calc/functions.c:421
-msgid "Malformed expression"
-msgstr "Погрешен израз"
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the double-declining balance method. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:16
+msgid "Ddb"
+msgstr "Ddb"
 
-#: ../mate-calc/get.c:263
-#, c-format
-msgid "%s: base should be 2, 8, 10 or 16\n"
-msgstr "%s базата треба да биде 2, 8 , 10 или 16\n"
+#. Calculates the future value of an investment based on a series of equal
+#. payments, each of amount pmt, at a periodic interest rate of int, over the
+#. number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Future_value
+#: ../data/buttons-financial.ui.h:18
+msgid "Fv"
+msgstr "Fv"
 
-#: ../mate-calc/get.c:278
-#, c-format
-msgid "%s: invalid display mode [%s]\n"
-msgstr "%s: неважечки режим на прикажување[%s]\n"
+#. Calculates the number of payment periods that are necessary during the term
+#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
+#. interest rate of int. Each payment is equal to amount pmt. See also:
+#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#: ../data/buttons-financial.ui.h:20
+msgid "Term"
+msgstr "Временски термин"
 
-#: ../mate-calc/get.c:293
-#, c-format
-msgid "%s: invalid mode [%s]\n"
-msgstr "%s: неважечки режим [%s]\n"
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the Sum-Of-The-Years'-Digits method. This method of
+#. depreciation accelerates the rate of depreciation, so that more
+#. depreciation expense occurs in earlier periods than in later ones. The
+#. depreciable cost is cost - salvage. The useful life is the number of
+#. periods, typically years, over which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:22
+msgid "Syd"
+msgstr "Syd"
 
-#: ../mate-calc/get.c:307
-#, c-format
-msgid "%s: invalid trigonometric mode [%s]\n"
-msgstr "%s: неважечки тригонометриски режим [%s]\n"
+#. Calculates the straight-line depreciation of an asset for one period. The
+#. depreciable cost is cost - salvage. The straight-line method of
+#. depreciation divides the depreciable cost evenly over the useful life of an
+#. asset. The useful life is the number of periods, typically years, over
+#. which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:24
+msgid "Sln"
+msgstr "Sln"
 
-#: ../mate-calc/gtk.c:54 ../mate-calc.desktop.in.h:1
+#. Calculates the periodic interest necessary to increase an investment of
+#. present value pv to a future value of fv, over the number of compounding
+#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#: ../data/buttons-financial.ui.h:26
+msgid "Rate"
+msgstr "Стапка"
+
+#. Calculates the present value of an investment based on a series of equal
+#. payments, each of amount pmt, discounted at a periodic interest rate of
+#. int, over the number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Present_value
+#: ../data/buttons-financial.ui.h:28
+msgid "Pv"
+msgstr "Pv"
+
+#. Calculates the amount of the periodic payment of a loan, where payments are
+#. made at the end of each payment period. See also:
+#. http://en.wikipedia.org/wiki/Amortization_schedule
+#: ../data/buttons-financial.ui.h:30
+msgid "Pmt"
+msgstr "Pmt"
+
+#. Calculates the resale price of a product, based on the product cost and the
+#. wanted gross profit margin. See also:
+#. http://en.wikipedia.org/wiki/Gross_profit_margin
+#: ../data/buttons-financial.ui.h:32
+msgid "Gpm"
+msgstr ""
+
+#. Title of Compounding Term dialog
+#. Tooltip for the compounding term button
+#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:261
+msgid "Compounding Term"
+msgstr ""
+
+#. Periodic Interest Rate Dialog: Label before present value input
+#: ../data/buttons-financial.ui.h:40
+msgid "Present _Value:"
+msgstr ""
+
+#. Payment Period Dialog: Label before periodic interest rate input
+#: ../data/buttons-financial.ui.h:42
+msgid "Periodic Interest _Rate:"
+msgstr ""
+
+#. Compounding Term Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:44
+msgid ""
+"Calculates the number of compounding periods necessary to increase an "
+"investment of present value to a future value, at a fixed interest rate per "
+"compounding period."
+msgstr ""
+
+#. Periodic Interest Rate Dialog: Label before future value input
+#: ../data/buttons-financial.ui.h:46
+msgid "_Future Value:"
+msgstr ""
+
+#. Payment Period Dialog: Button to calculate result
+#: ../data/buttons-financial.ui.h:48
+msgid "C_alculate"
+msgstr ""
+
+#. Title of Double-Declining Depreciation dialog
+#: ../data/buttons-financial.ui.h:50
+msgid "Double-Declining Depreciation"
+msgstr ""
+
+#. Double-Declining Depreciation Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:52
+msgid ""
+"Calculates the depreciation allowance on an asset for a specified period of "
+"time, using the double-declining balance method."
+msgstr ""
+
+#. Gross Profit Margin Dialog: Label before cost input
+#: ../data/buttons-financial.ui.h:54
+msgid "C_ost:"
+msgstr ""
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#: ../data/buttons-financial.ui.h:56
+msgid "_Life:"
+msgstr ""
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#: ../data/buttons-financial.ui.h:58
+msgid "_Period:"
+msgstr ""
+
+#. Title of Future Value dialog
+#. Tooltip for the future value button
+#: ../data/buttons-financial.ui.h:60 ../src/math-buttons.c:267
+msgid "Future Value"
+msgstr ""
+
+#. Future Value Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:62
+msgid ""
+"Calculates the future value of an investment based on a series of equal "
+"payments at a periodic interest rate over the number of payment periods in "
+"the term."
+msgstr ""
+
+#. Payment Period Dialog: Label before periodic payment input
+#: ../data/buttons-financial.ui.h:64
+msgid "_Periodic Payment:"
+msgstr ""
+
+#. Present Value Dialog: Label before number of periods input
+#: ../data/buttons-financial.ui.h:66
+msgid "_Number of Periods:"
+msgstr ""
+
+#. Title of Gross Profit Margin dialog
+#. Tooltip for the gross profit margin button
+#: ../data/buttons-financial.ui.h:68 ../src/math-buttons.c:288
+msgid "Gross Profit Margin"
+msgstr ""
+
+#. Gross Profit Margin Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:70
+msgid ""
+"Calculates the resale price of a product, based on the product cost and the "
+"wanted gross profit margin."
+msgstr ""
+
+#. Gross Profit Margin Dialog: Label before margin input
+#: ../data/buttons-financial.ui.h:72
+msgid "_Margin:"
+msgstr ""
+
+#. Title of Periodic Payment dialog
+#. Tooltip for the periodic payment button
+#: ../data/buttons-financial.ui.h:74 ../src/math-buttons.c:285
+msgid "Periodic Payment"
+msgstr ""
+
+#. Periodic Payment Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:76
+msgid ""
+"Calculates the amount of the periodic payment of a loan, where payments are "
+"made at the end of each payment period. "
+msgstr ""
+
+#. Periodic Payment Dialog: Label before principal input
+#: ../data/buttons-financial.ui.h:78
+msgid "_Principal:"
+msgstr ""
+
+#. Periodic Interest Rate Dialog: Label before term input
+#: ../data/buttons-financial.ui.h:80
+msgid "_Term:"
+msgstr ""
+
+#. Title of Present Value dialog
+#. Tooltip for the present value button
+#: ../data/buttons-financial.ui.h:82 ../src/math-buttons.c:282
+msgid "Present Value"
+msgstr ""
+
+#. Present Value Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:84
+msgid ""
+"Calculates the present value of an investment based on a series of equal "
+"payments discounted at a periodic interest rate over the number of payment "
+"periods in the term. "
+msgstr ""
+
+#. Title of Periodic Interest Rate dialog
+#. Tooltip for the periodic interest rate button
+#: ../data/buttons-financial.ui.h:86 ../src/math-buttons.c:279
+msgid "Periodic Interest Rate"
+msgstr ""
+
+#. Periodic Interest Rate Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:88
+msgid ""
+"Calculates the periodic interest necessary to increase an investment to a "
+"future value, over the number of compounding periods. "
+msgstr ""
+
+#. Title of Straight-Line Depreciation dialog
+#: ../data/buttons-financial.ui.h:90
+msgid "Straight-Line Depreciation"
+msgstr ""
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#: ../data/buttons-financial.ui.h:92
+msgid "_Cost:"
+msgstr ""
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#: ../data/buttons-financial.ui.h:94
+msgid "_Salvage:"
+msgstr ""
+
+#. Straight-Line Depreciation Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:96
+msgid ""
+"Calculates the straight-line depreciation of an asset for one period. The "
+"straight-line method of depreciation divides the depreciable cost evenly "
+"over the useful life of an asset. The useful life is the number of periods, "
+"typically years, over which an asset is depreciated. "
+msgstr ""
+
+#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#: ../data/buttons-financial.ui.h:98
+msgid "Sum-of-the-Years'-Digits Depreciation"
+msgstr ""
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:100
+msgid ""
+"Calculates the depreciation allowance on an asset for a specified period of "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
+" accelerates the rate of depreciation, so that more depreciation expense "
+"occurs in earlier periods than in later ones. The useful life is the number "
+"of periods, typically years, over which an asset is depreciated. "
+msgstr ""
+
+#. Title of Payment Period dialog
+#: ../data/buttons-financial.ui.h:102
+msgid "Payment Period"
+msgstr ""
+
+#. Payment Period Dialog: Label before future value input
+#: ../data/buttons-financial.ui.h:104
+msgid "Future _Value:"
+msgstr ""
+
+#. Payment Period Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:106
+msgid ""
+"Calculates the number of payment periods that are necessary during the term "
+"of an ordinary annuity, to accumulate a future value, at a periodic interest"
+" rate."
+msgstr ""
+
+#. Accessible name for the shift left button
+#. Tooltip for the shift left button
+#: ../data/buttons-programming.ui.h:22 ../src/math-buttons.c:255
+msgid "Shift Left"
+msgstr ""
+
+#. Accessible name for the shift right button
+#. Tooltip for the shift right button
+#: ../data/buttons-programming.ui.h:24 ../src/math-buttons.c:258
+msgid "Shift Right"
+msgstr ""
+
+#. Accessible name for the insert character button
+#: ../data/buttons-programming.ui.h:26
+msgid "Insert Character"
+msgstr ""
+
+#. Title of insert character code dialog
+#. Tooltip for the insert character code button
+#: ../data/buttons-programming.ui.h:34 ../src/math-buttons.c:240
+msgid "Insert Character Code"
+msgstr ""
+
+#. Insert ASCII dialog: Label before character entry
+#: ../data/buttons-programming.ui.h:36
+msgid "Ch_aracter:"
+msgstr "Зн_ак:"
+
+#. Insert ASCII dialog: Button to insert selected character
+#: ../data/buttons-programming.ui.h:38
+msgid "_Insert"
+msgstr "_Вметни"
+
+#. Word size combo: 8 bits
+#: ../data/preferences.ui.h:2
+msgid "8-bit"
+msgstr ""
+
+#. Word size combo: 16 bits
+#: ../data/preferences.ui.h:4
+msgid "16-bit"
+msgstr ""
+
+#. Word size combo: 32 bits
+#: ../data/preferences.ui.h:6
+msgid "32-bit"
+msgstr ""
+
+#. Word size combo: 64 bits
+#: ../data/preferences.ui.h:8
+msgid "64-bit"
+msgstr ""
+
+#. Title of preferences dialog
+#: ../data/preferences.ui.h:9 ../src/math-preferences.c:239
+msgid "Preferences"
+msgstr ""
+
+#. Preferences dialog: Label for angle unit combo box
+#: ../data/preferences.ui.h:11
+msgid "_Angle units:"
+msgstr ""
+
+#. Preferences dialog: Label for display format combo box
+#: ../data/preferences.ui.h:13
+msgid "Number _Format:"
+msgstr ""
+
+#. Preferences dialog: label for word size combo box
+#: ../data/preferences.ui.h:15
+msgid "Word _size:"
+msgstr ""
+
+#. Preferences dialog: label for show trailing zeroes check button
+#: ../data/preferences.ui.h:17
+msgid "Show trailing _zeroes"
+msgstr ""
+
+#. Preferences dialog: label for show thousands separator check button
+#: ../data/preferences.ui.h:19
+msgid "Show _thousands separators"
+msgstr ""
+
+#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:486
 msgid "Calculator"
 msgstr "Калкулатор"
 
-#: ../mate-calc/gtk.c:54
-msgid "Calculator - Advanced"
-msgstr "Калкулатор - напреден"
+#: ../data/mate-calc.desktop.in.h:2
+msgid "Perform arithmetic, scientific or financial calculations"
+msgstr "Извршете аритметички, научни или финансиски пресметки"
 
-#: ../mate-calc/gtk.c:54
-msgid "Calculator - Financial"
-msgstr "Калкулатор - финансиски"
-
-#: ../mate-calc/gtk.c:55
-msgid "Calculator - Scientific"
-msgstr "Калкулатор - научен"
-
-#: ../mate-calc/gtk.c:60
-#, c-format
-msgid "Calculator [%s]"
-msgstr "Калкулатор [%s]"
-
-#: ../mate-calc/gtk.c:60
-#, c-format
-msgid "Calculator [%s] - Advanced"
-msgstr "Калкулатор [%s] - напреден"
-
-#: ../mate-calc/gtk.c:60
-#, c-format
-msgid "Calculator [%s] - Financial"
-msgstr "Калкулатор [%s] - финансиски"
-
-#: ../mate-calc/gtk.c:61
-#, c-format
-msgid "Calculator [%s] - Scientific"
-msgstr "Калкулатор [%s] - научен"
-
-#: ../mate-calc/gtk.c:495 ../glade/mate-calc.glade.h:385
-#, no-c-format
-msgid "_Other (%d) ..."
-msgstr "_Друго (%d) ..."
-
-#: ../mate-calc/gtk.c:499
-#, c-format
-msgid "Set accuracy from 0 to %d numeric place."
-msgid_plural "Set accuracy from 0 to %d numeric places."
-msgstr[0] "Постави ја точноста од 0 на %d нумеричко место."
-msgstr[1] "Постави ја точноста од 0 на %d нумерички места."
-msgstr[2] "Постави ја точноста од 0 на %d нумерички места."
-
-#. Translators: This refers to the current accuracy setting
-#: ../mate-calc/gtk.c:505
-#, c-format
-msgid "Currently set to %d place."
-msgid_plural "Currently set to %d places."
-msgstr[0] "Моментално поставен на %d децимално место."
-msgstr[1] "Моментално поставен на %d децимални мести."
-msgstr[2] "Моментално поставен на %d децимални мести."
-
-#. Factorial
-#: ../mate-calc/gtk.c:537 ../glade/mate-calc.glade.h:313
-msgid "Sin"
-msgstr "Sin"
-
-#: ../mate-calc/gtk.c:537
-msgid "Sinh"
-msgstr "Sinh"
-
-#: ../mate-calc/gtk.c:538
-msgid "Sin<sup>-1</sup>"
-msgstr "Sin<sup>-1</sup>"
-
-#: ../mate-calc/gtk.c:539
-msgid "Sinh<sup>-1</sup>"
-msgstr "Sinh<sup>-1</sup>"
-
-#. Factorial
-#: ../mate-calc/gtk.c:541 ../glade/mate-calc.glade.h:139
-msgid "Cos"
-msgstr "Cos"
-
-#: ../mate-calc/gtk.c:541
-msgid "Cosh"
-msgstr "Cosh"
-
-#: ../mate-calc/gtk.c:542
-msgid "Cos<sup>-1</sup>"
-msgstr "Cos<sup>-1</sup>"
-
-#: ../mate-calc/gtk.c:543
-msgid "Cosh<sup>-1</sup>"
-msgstr "Cosh<sup>-1</sup>"
-
-#. Factorial
-#: ../mate-calc/gtk.c:545 ../glade/mate-calc.glade.h:338
-msgid "Tan"
-msgstr "Tan"
-
-#: ../mate-calc/gtk.c:545
-msgid "Tanh"
-msgstr "Tanh"
-
-#: ../mate-calc/gtk.c:546
-msgid "Tan<sup>-1</sup>"
-msgstr "Tan<sup>-1</sup>"
-
-#: ../mate-calc/gtk.c:547
-msgid "Tanh<sup>-1</sup>"
-msgstr "Tanh<sup>-1</sup>"
-
-#. Translators: When the bit editor is visible, there will be two
-#. * rows of ones and zeroes shown. When the number being displayed in
-#. * in the calculator is an integer value, these ones and zeroes will
-#. * be sensitive, and they will correspond to the value of each of
-#. * the bits in the displayed integer number. By clicking on any of
-#. * the labels for these ones and zeroes, their value can be toggled
-#. * (a one becomes a zero and a zero becomes a one), causing the
-#. * displayed integer value to be adjusted accordingly.
-#.
-#: ../mate-calc/gtk.c:643
-msgid "Bit editor activated. Click on bit values to toggle them."
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:1
+msgid "Accuracy value"
 msgstr ""
-"Уредувачот на битови е активиран. Кликнете на вредностите на битовите за да "
-"ги менувате."
 
-#: ../mate-calc/gtk.c:1069
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:2
+msgid "The number of digits displayed after the numeric point"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:3
+msgid "Word size"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:4
+msgid "The size of the words used in bitwise operations"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:5
+msgid "Numeric Base"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:6
+msgid "The numeric base"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:7
+msgid "Show Thousands Separators"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:8
+msgid "Indicates whether thousands separators are shown in large numbers."
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:9
+msgid "Show Trailing Zeroes"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:10
+msgid ""
+"Indicates whether any trailing zeroes after the numeric point should be "
+"shown in the display value."
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:11
+msgid "Number format"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:12
+msgid "The format to display numbers in"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:13
+msgid "Angle units"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:14
+msgid "The angle units to use"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:15
+msgid "Button mode"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:16
+msgid "The button mode"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:17
+msgid "Source currency"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:18
+msgid "Currency of the current calculation"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:19
+msgid "Target currency"
+msgstr ""
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:20
+msgid "Currency to convert the current calculation into"
+msgstr ""
+
+#: ../src/currency.h:19
+msgid "Australian dollar"
+msgstr ""
+
+#: ../src/currency.h:20
+msgid "Bulgarian lev"
+msgstr ""
+
+#: ../src/currency.h:21
+msgid "Brazilian real"
+msgstr ""
+
+#: ../src/currency.h:22
+msgid "Canadian dollar"
+msgstr ""
+
+#: ../src/currency.h:23
+msgid "Swiss franc"
+msgstr ""
+
+#: ../src/currency.h:24
+msgid "Chinese yuan renminbi"
+msgstr ""
+
+#: ../src/currency.h:25
+msgid "Czech koruna"
+msgstr ""
+
+#: ../src/currency.h:26
+msgid "Danish krone"
+msgstr ""
+
+#: ../src/currency.h:27
+msgid "Estonian kroon"
+msgstr ""
+
+#: ../src/currency.h:28
+msgid "Euro"
+msgstr ""
+
+#: ../src/currency.h:29
+msgid "Pound sterling"
+msgstr ""
+
+#: ../src/currency.h:30
+msgid "Hong Kong dollar"
+msgstr ""
+
+#: ../src/currency.h:31
+msgid "Croatian kuna"
+msgstr ""
+
+#: ../src/currency.h:32
+msgid "Hungarian forint"
+msgstr ""
+
+#: ../src/currency.h:33
+msgid "Indonesian rupiah"
+msgstr ""
+
+#: ../src/currency.h:34
+msgid "Indian rupee"
+msgstr ""
+
+#: ../src/currency.h:35
+msgid "Icelandic krona"
+msgstr ""
+
+#: ../src/currency.h:36
+msgid "Japanese yen"
+msgstr ""
+
+#: ../src/currency.h:37
+msgid "South Korean won"
+msgstr ""
+
+#: ../src/currency.h:38
+msgid "Lithuanian litas"
+msgstr ""
+
+#: ../src/currency.h:39
+msgid "Latvian lats"
+msgstr ""
+
+#: ../src/currency.h:40
+msgid "Mexican peso"
+msgstr ""
+
+#: ../src/currency.h:41
+msgid "Malaysian ringgit"
+msgstr ""
+
+#: ../src/currency.h:42
+msgid "Norwegian krone"
+msgstr ""
+
+#: ../src/currency.h:43
+msgid "New Zealand dollar"
+msgstr ""
+
+#: ../src/currency.h:44
+msgid "Philippine peso"
+msgstr ""
+
+#: ../src/currency.h:45
+msgid "Polish zloty"
+msgstr ""
+
+#: ../src/currency.h:46
+msgid "New Romanian leu"
+msgstr ""
+
+#: ../src/currency.h:47
+msgid "Russian rouble"
+msgstr ""
+
+#: ../src/currency.h:48
+msgid "Swedish krona"
+msgstr ""
+
+#: ../src/currency.h:49
+msgid "Singapore dollar"
+msgstr ""
+
+#: ../src/currency.h:50
+msgid "Thai baht"
+msgstr ""
+
+#: ../src/currency.h:51
+msgid "New Turkish lira"
+msgstr ""
+
+#: ../src/currency.h:52
+msgid "US dollar"
+msgstr ""
+
+#: ../src/currency.h:53
+msgid "South African rand"
+msgstr ""
+
+#. Description on how to use mate-calc displayed on command-line
+#: ../src/mate-calc.c:76
+#, c-format
+msgid ""
+"Usage:\n"
+"  %s — Perform mathematical calculations"
+msgstr ""
+
+#. Description on mate-calc command-line help options displayed on command-
+#. line
+#: ../src/mate-calc.c:84
+#, c-format
+msgid ""
+"Help Options:\n"
+"  -v, --version                   Show release version\n"
+"  -h, -?, --help                  Show help options\n"
+"  --help-all                      Show all help options\n"
+"  --help-gtk                      Show GTK+ options"
+msgstr ""
+
+#. Description on mate-calc command-line GTK+ options displayed on command-
+#. line
+#: ../src/mate-calc.c:95
+#, c-format
+msgid ""
+"GTK+ Options:\n"
+"  --class=CLASS                   Program class as used by the window manager\n"
+"  --name=NAME                     Program name as used by the window manager\n"
+"  --screen=SCREEN                 X screen to use\n"
+"  --sync                          Make X calls synchronous\n"
+"  --gtk-module=MODULES            Load additional GTK+ modules\n"
+"  --g-fatal-warnings              Make all warnings fatal"
+msgstr ""
+
+#. Description on mate-calc application options displayed on command-line
+#: ../src/mate-calc.c:109
+#, c-format
+msgid ""
+"Application Options:\n"
+"  -u, --unittest                  Perform unit tests\n"
+"  -s, --solve <equation>          Solve the given equation"
+msgstr ""
+
+#. Error printed to stderr when user uses --solve argument without an equation
+#: ../src/mate-calc.c:154
+#, c-format
+msgid "Argument --solve requires an equation to solve"
+msgstr ""
+
+#. Error printed to stderr when user provides an unknown command-line argument
+#: ../src/mate-calc.c:168
+#, c-format
+msgid "Unknown argument '%s'"
+msgstr ""
+
+#. Tooltip for the Pi button
+#: ../src/math-buttons.c:106
+msgid "Pi [Ctrl+P]"
+msgstr ""
+
+#. Tooltip for the Euler's Number button
+#: ../src/math-buttons.c:109
+msgid "Euler’s Number"
+msgstr ""
+
+#. Tooltip for the subscript button
+#: ../src/math-buttons.c:114
+msgid "Subscript mode [Alt]"
+msgstr ""
+
+#. Tooltip for the superscript button
+#: ../src/math-buttons.c:117
+msgid "Superscript mode [Ctrl]"
+msgstr ""
+
+#. Tooltip for the scientific exponent button
+#: ../src/math-buttons.c:120
+msgid "Scientific exponent [Ctrl+E]"
+msgstr ""
+
+#. Tooltip for the add button
+#: ../src/math-buttons.c:123
+msgid "Add [+]"
+msgstr "Собирање [+]"
+
+#. Tooltip for the subtract button
+#: ../src/math-buttons.c:126
+msgid "Subtract [-]"
+msgstr "Одземај [-]"
+
+#. Tooltip for the multiply button
+#: ../src/math-buttons.c:129
+msgid "Multiply [*]"
+msgstr "Помножи [*]"
+
+#. Tooltip for the divide button
+#: ../src/math-buttons.c:132
+msgid "Divide [/]"
+msgstr "Дели [/]"
+
+#. Tooltip for the modulus divide button
+#: ../src/math-buttons.c:135
+msgid "Modulus divide"
+msgstr ""
+
+#. Tooltip for the additional functions button
+#: ../src/math-buttons.c:138
+msgid "Additional Functions"
+msgstr ""
+
+#. Tooltip for the exponent button
+#: ../src/math-buttons.c:141
+msgid "Exponent [^ or **]"
+msgstr ""
+
+#. Tooltip for the square button
+#: ../src/math-buttons.c:144
+msgid "Square [Ctrl+2]"
+msgstr ""
+
+#. Tooltip for the percentage button
+#: ../src/math-buttons.c:147
+msgid "Percentage [%]"
+msgstr "Процент [%]"
+
+#. Tooltip for the factorial button
+#: ../src/math-buttons.c:150
+msgid "Factorial [!]"
+msgstr ""
+
+#. Tooltip for the absolute value button
+#: ../src/math-buttons.c:153
+msgid "Absolute value [|]"
+msgstr ""
+
+#. Tooltip for the complex argument component button
+#: ../src/math-buttons.c:156
+msgid "Complex argument"
+msgstr ""
+
+#. Tooltip for the complex conjugate button
+#: ../src/math-buttons.c:159
+msgid "Complex conjugate"
+msgstr ""
+
+#. Tooltip for the root button
+#: ../src/math-buttons.c:162
+msgid "Root [Ctrl+R]"
+msgstr ""
+
+#. Tooltip for the square root button
+#: ../src/math-buttons.c:165
+msgid "Square root [Ctrl+R]"
+msgstr ""
+
+#. Tooltip for the logarithm button
+#: ../src/math-buttons.c:168
+msgid "Logarithm"
+msgstr ""
+
+#. Tooltip for the natural logarithm button
+#: ../src/math-buttons.c:171
+msgid "Natural Logarithm"
+msgstr ""
+
+#. Tooltip for the sine button
+#: ../src/math-buttons.c:174
+msgid "Sine"
+msgstr ""
+
+#. Tooltip for the cosine button
+#: ../src/math-buttons.c:177
+msgid "Cosine"
+msgstr ""
+
+#. Tooltip for the tangent button
+#: ../src/math-buttons.c:180
+msgid "Tangent"
+msgstr ""
+
+#. Tooltip for the hyperbolic sine button
+#: ../src/math-buttons.c:183
+msgid "Hyperbolic Sine"
+msgstr ""
+
+#. Tooltip for the hyperbolic cosine button
+#: ../src/math-buttons.c:186
+msgid "Hyperbolic Cosine"
+msgstr ""
+
+#. Tooltip for the hyperbolic tangent button
+#: ../src/math-buttons.c:189
+msgid "Hyperbolic Tangent"
+msgstr ""
+
+#. Tooltip for the inverse button
+#: ../src/math-buttons.c:192
+msgid "Inverse [Ctrl+I]"
+msgstr ""
+
+#. Tooltip for the boolean AND button
+#: ../src/math-buttons.c:195
+msgid "Boolean AND"
+msgstr ""
+
+#. Tooltip for the boolean OR button
+#: ../src/math-buttons.c:198
+msgid "Boolean OR"
+msgstr ""
+
+#. Tooltip for the exclusive OR button
+#: ../src/math-buttons.c:201
+msgid "Boolean Exclusive OR"
+msgstr ""
+
+#. Tooltip for the boolean NOT button
+#: ../src/math-buttons.c:204
+msgid "Boolean NOT"
+msgstr ""
+
+#. Tooltip for the integer component button
+#: ../src/math-buttons.c:207 ../src/math-buttons.c:1445
+msgid "Integer Component"
+msgstr ""
+
+#. Tooltip for the fractional component button
+#: ../src/math-buttons.c:210 ../src/math-buttons.c:1447
+msgid "Fractional Component"
+msgstr ""
+
+#. Tooltip for the real component button
+#: ../src/math-buttons.c:213
+msgid "Real Component"
+msgstr ""
+
+#. Tooltip for the imaginary component button
+#: ../src/math-buttons.c:216
+msgid "Imaginary Component"
+msgstr ""
+
+#. Tooltip for the ones complement button
+#: ../src/math-buttons.c:219
+msgid "Ones Complement"
+msgstr ""
+
+#. Tooltip for the twos complement button
+#: ../src/math-buttons.c:222
+msgid "Twos Complement"
+msgstr ""
+
+#. Tooltip for the truncate button
+#: ../src/math-buttons.c:225
+msgid "Truncate"
+msgstr ""
+
+#. Tooltip for the start group button
+#: ../src/math-buttons.c:228
+msgid "Start Group [(]"
+msgstr ""
+
+#. Tooltip for the end group button
+#: ../src/math-buttons.c:231
+msgid "End Group [)]"
+msgstr ""
+
+#. Tooltip for the assign variable button
+#: ../src/math-buttons.c:234
+msgid "Assign Variable"
+msgstr ""
+
+#. Tooltip for the insert variable button
+#: ../src/math-buttons.c:237
+msgid "Insert Variable"
+msgstr ""
+
+#. Tooltip for the solve button
+#: ../src/math-buttons.c:243
+msgid "Calculate Result"
+msgstr ""
+
+#. Tooltip for the factor button
+#: ../src/math-buttons.c:246
+msgid "Factorize [Ctrl+F]"
+msgstr ""
+
+#. Tooltip for the clear button
+#: ../src/math-buttons.c:249
+msgid "Clear Display [Escape]"
+msgstr ""
+
+#. Tooltip for the undo button
+#: ../src/math-buttons.c:252
+msgid "Undo [Ctrl+Z]"
+msgstr ""
+
+#. Tooltip for the double declining depreciation button
+#: ../src/math-buttons.c:264
+msgid "Double Declining Depreciation"
+msgstr ""
+
+#. Tooltip for the financial term button
+#: ../src/math-buttons.c:270
+msgid "Financial Term"
+msgstr ""
+
+#. Tooltip for the sum of the years digits depreciation button
+#: ../src/math-buttons.c:273
+msgid "Sum of the Years Digits Depreciation"
+msgstr ""
+
+#. Tooltip for the straight line depreciation button
+#: ../src/math-buttons.c:276
+msgid "Straight Line Depreciation"
+msgstr ""
+
+#. Advanced buttons: Angle unit combo box: Use degrees for trigonometric
+#. calculations
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
+#. calculations
+#: ../src/math-buttons.c:895 ../src/math-preferences.c:255
+msgid "Degrees"
+msgstr ""
+
+#. Advanced buttons: Angle unit combo box: Use radians for trigonometric
+#. calculations
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
+#. calculations
+#: ../src/math-buttons.c:899 ../src/math-preferences.c:259
+msgid "Radians"
+msgstr ""
+
+#. Advanced buttons: Angle unit combo box: Use gradians for trigonometric
+#. calculations
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
+#. calculations
+#: ../src/math-buttons.c:903 ../src/math-preferences.c:263
+msgid "Gradians"
+msgstr ""
+
+#. Number display mode combo: Binary, e.g. 10011010010₂
+#: ../src/math-buttons.c:937
+msgid "Binary"
+msgstr ""
+
+#. Number display mode combo: Octal, e.g. 2322₈
+#: ../src/math-buttons.c:941
+msgid "Octal"
+msgstr ""
+
+#. Number display mode combo: Decimal, e.g. 1234
+#: ../src/math-buttons.c:945
+msgid "Decimal"
+msgstr ""
+
+#. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
+#: ../src/math-buttons.c:949
+msgid "Hexadecimal"
+msgstr ""
+
+#. Text shown in store menu when no variables defined
+#. Text shown in recall menu when no variables defined
+#: ../src/math-buttons.c:1266 ../src/math-buttons.c:1312
+msgid "No variables defined"
+msgstr ""
+
+#. Left Shift Popup: Menu item to shift left by n places (n < 10)
+#. Right Shift Popup: Menu item to shift right by n places (n < 10)
+#: ../src/math-buttons.c:1355 ../src/math-buttons.c:1399
+#, c-format
+msgid "_%d place"
+msgid_plural "_%d places"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Left Shift Popup: Menu item to shift left by n places (n >= 10)
+#. Right Shift Popup: Menu item to shift right by n places (n >= 10)
+#: ../src/math-buttons.c:1359 ../src/math-buttons.c:1403
+#, c-format
+msgid "%d place"
+msgid_plural "%d places"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Tooltip for the round button
+#: ../src/math-buttons.c:1449
+msgid "Round"
+msgstr ""
+
+#. Tooltip for the floor button
+#: ../src/math-buttons.c:1451
+msgid "Floor"
+msgstr ""
+
+#. Tooltip for the ceiling button
+#: ../src/math-buttons.c:1453
+msgid "Ceiling"
+msgstr ""
+
+#. Tooltip for the ceiling button
+#: ../src/math-buttons.c:1455
+msgid "Sign"
+msgstr ""
+
+#. Error shown when trying to undo with no undo history
+#: ../src/math-equation.c:496
+msgid "No undo history"
+msgstr "Нема историја за отповикување"
+
+#. Error shown when trying to redo with no redo history
+#: ../src/math-equation.c:521
+msgid "No redo history"
+msgstr ""
+
+#: ../src/math-equation.c:845
+msgid "No sane value to store"
+msgstr "Нема вистинска вредност за складирање"
+
+#. Error displayed to user when they perform a bitwise operation on numbers
+#. greater than the current word
+#: ../src/math-equation.c:1105
+msgid "Overflow. Try a bigger word size"
+msgstr ""
+
+#. Error displayed to user when they an unknown variable is entered
+#: ../src/math-equation.c:1110
+#, c-format
+msgid "Unknown variable '%s'"
+msgstr ""
+
+#. Error displayed to user when an unknown function is entered
+#: ../src/math-equation.c:1115
+#, c-format
+msgid "Function '%s' is not defined"
+msgstr ""
+
+#. Error displayed to user when an conversion with unknown units is attempted
+#: ../src/math-equation.c:1120
+msgid "Unknown conversion"
+msgstr ""
+
+#. Error displayed to user when they enter an invalid calculation
+#: ../src/math-equation.c:1129
+msgid "Malformed expression"
+msgstr "Погрешен израз"
+
+#. Error displayed when trying to factorize a non-integer value
+#: ../src/math-equation.c:1152
+msgid "Need an integer to factorize"
+msgstr ""
+
+#. This message is displayed in the status bar when a bit
+#. shift operation is performed and the display does not contain a number
+#: ../src/math-equation.c:1229
+msgid "No sane value to bitwise shift"
+msgstr ""
+
+#. Message displayed when cannot toggle bit in display
+#: ../src/math-equation.c:1258
+msgid "Displayed value not an integer"
+msgstr ""
+
+#. Digits localized for the given language
+#: ../src/math-equation.c:1648
+msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
+msgstr ""
+
+#. Label on close button in preferences dialog
+#: ../src/math-preferences.c:245
+msgid "_Close"
+msgstr ""
+
+#. Number display mode combo: Fixed, e.g. 1234
+#: ../src/math-preferences.c:273
+msgid "Fixed"
+msgstr ""
+
+#. Number display mode combo: Scientific, e.g. 1.234×10^3
+#: ../src/math-preferences.c:277
+msgid "Scientific"
+msgstr "Научен"
+
+#. Number display mode combo: Engineering, e.g. 1.234k
+#: ../src/math-preferences.c:281
+msgid "Engineering"
+msgstr ""
+
+#. Label used in preferences dialog.  The %d is replaced by a spinbutton
+#: ../src/math-preferences.c:292
+#, c-format
+msgid "Show %d decimal _places"
+msgstr ""
+
+#. Translators: Error message displayed when unable to launch help browser
+#: ../src/math-window.c:161
+msgid "Unable to open help file"
+msgstr ""
+
+#. The translator credits. Please translate this with your name(s).
+#: ../src/math-window.c:188
 msgid "translator-credits"
-msgstr ""
-"Арангел Ангов <ufo@linux.net.mk>\n"
-"Јован Наумовски <jovan@lugola.net>\n"
-"http://mate.linux.net.mk"
+msgstr "Арангел Ангов <ufo@linux.net.mk>\nЈован Наумовски <jovan@lugola.net>\nhttp://mate.linux.net.mk"
 
-#: ../mate-calc/gtk.c:1072
+#. The license this software is under (GPL2+)
+#: ../src/math-window.c:194
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
 "the Free Software Foundation; either version 2 of the License, or\n"
 "(at your option) any later version.\n"
-msgstr ""
-"mate-calc е слободен софтвер; можете да го редистрибуирате и/или менувате\n"
-"во согласност со општата јавна ГНУ лиценца објавена од страна на\n"
-"Фондацијата за слободен софтвер; можете да ја разгледате втората\n"
-"или пак некоја понова верзија.\n"
-
-#: ../mate-calc/gtk.c:1076
-msgid ""
+"\n"
 "mate-calc is distributed in the hope that it will be useful,\n"
 "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
 "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
-msgstr ""
-"mate-calc се дистрибуира со надеж дека ќе биде корисен, \n"
-"но без БИЛО КАКВИ ГАРАНЦИИ.  За повеќе погледнете ја \n"
-"општата јавна ГНУ лиценца.\n"
-
-#: ../mate-calc/gtk.c:1080
-msgid ""
+"\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
-"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA\n"
+"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr ""
-"Заедно со mate-calc треба да добиете и копија од општата и јавна\n"
-"ГНУ лиценца; доколку ја нема лиценцата пишете и на Фондацијата за\n"
-"слободен софтвер на следнава адреса: 59 Temple Place, Suite 330, Boston, MA  "
-"02111-1307  USA\n"
 
-#: ../mate-calc/gtk.c:1091
+#: ../src/math-window.c:209
 msgid "mate-calc"
 msgstr "Алатка mate-calc"
 
-#: ../mate-calc/gtk.c:1093
-msgid "© 1986-2008 The mate-calc authors"
-msgstr "© 1987-2008 авторите на mate-calc"
-
-#: ../mate-calc/gtk.c:1095
+#: ../src/math-window.c:213
 msgid "Calculator with financial and scientific modes."
 msgstr "Калкулатор со финансиски и научен режим на работа."
 
-#: ../mate-calc/gtk.c:1380 ../glade/mate-calc.glade.h:118
-msgid "C"
-msgstr "C"
-
-#: ../mate-calc/gtk.c:1398 ../glade/mate-calc.glade.h:169
-msgid "F"
-msgstr "F"
-
-#: ../mate-calc/gtk.c:1579
-msgid "Changing Modes Clears Calculation"
-msgstr "Променувањето на режимот ја брише пресметката"
-
-#: ../mate-calc/gtk.c:1582
-msgid ""
-"When you change modes, the current calculation will be cleared, and the base "
-"will be reset to decimal."
-msgstr ""
-"Кога менувате режими, моменталната пресметка ќе биде избришана и основата ќе "
-"биде вратена на децимална."
-
-#: ../mate-calc/gtk.c:1586
-msgid "_Do not warn me again"
-msgstr "_Не ме предупредувај пак"
-
-#: ../mate-calc/gtk.c:1591
-msgid "C_hange Mode"
-msgstr "С_мени режим"
-
-#. translators: R is the short form of register used inter alia
-#. in popup menus
-#: ../mate-calc/gtk.c:1707
-msgid "R"
-msgstr "Р"
-
-#: ../mate-calc/gtk.c:2127
-msgid "Paste"
-msgstr "Вметни"
-
-#: ../mate-calc/gtk.c:2381
-msgid "Error loading user interface"
-msgstr "Грешка во вчитувањето на интерфејсот"
-
-#: ../mate-calc/gtk.c:2383
-#, c-format
-msgid ""
-"The user interface file %s is missing or unable to be loaded. Please check "
-"your installation."
-msgstr ""
-"Датотеката со кориснички интерфејс %s недостасува или пак не може да се "
-"вчита. Ве молам, проверете ја Вашата инсталација."
-
-#: ../mate-calc/gtk.c:2607 ../mate-calc/gtk.c:2625
-msgid "No."
-msgstr "Бр."
-
-#: ../mate-calc/gtk.c:2609 ../mate-calc/gtk.c:2627
-msgid "Value"
-msgstr "Вредност"
-
-#: ../mate-calc/gtk.c:2611 ../mate-calc/gtk.c:2629
-msgid "Description"
-msgstr "Опис"
-
-#. Set default accuracy menu item
-#: ../mate-calc/gtk.c:2766 ../glade/mate-calc.glade.h:268
-#, no-c-format
-msgid "Reset to _Default (%d)"
-msgstr "Врати на _стандардното (%d)"
-
-#: ../mate-calc/mp.c:3152
-msgid "Negative X and non-integer Y not supported"
-msgstr "Не се поддржани негативен X и нецелоброен Y."
-
-#: ../mate-calc/mpmath.c:255
-msgid "Error, cannot calculate cosine"
-msgstr "Грешка, неможам да пресметам косинус"
-
-#: ../mate-calc.desktop.in.h:2
-msgid "Perform arithmetic, scientific or financial calculations"
-msgstr "Извршете аритметички, научни или финансиски пресметки"
-
-#. This is a percentage sign
-#: ../glade/mate-calc.glade.h:3
-#, no-c-format
-msgid "%"
-msgstr "%"
-
-#. 16 bit unsigned integer
-#: ../glade/mate-calc.glade.h:5
-msgid "&16"
-msgstr "&16"
-
-#. 32 bit unsigned integer
-#: ../glade/mate-calc.glade.h:7
-msgid "&32"
-msgstr "&32"
-
-#. Left bracket
-#: ../glade/mate-calc.glade.h:9
-msgid "("
-msgstr "("
-
-#. Right bracket
-#: ../glade/mate-calc.glade.h:11
-msgid ")"
-msgstr ")"
-
-#: ../glade/mate-calc.glade.h:12
-msgid "+"
-msgstr "+"
-
-#. Numeric point
-#: ../glade/mate-calc.glade.h:14
-msgid "."
-msgstr "."
-
-#. Numeric 0
-#: ../glade/mate-calc.glade.h:16
-msgid "0"
-msgstr "0"
-
-#. Numeric 1
-#: ../glade/mate-calc.glade.h:18
-msgid "1"
-msgstr "1"
-
-#: ../glade/mate-calc.glade.h:19
-msgid "1/<i>x</i>"
-msgstr "1/<i>x</i>"
-
-#: ../glade/mate-calc.glade.h:20
-msgid "1/x"
-msgstr "1/x"
-
-#: ../glade/mate-calc.glade.h:21
-msgid "10 places"
-msgstr "10 места"
-
-#: ../glade/mate-calc.glade.h:22
-msgid "10 to the power of displayed value [}]"
-msgstr "10 на степен од прикажаната вредност [}]"
-
-#: ../glade/mate-calc.glade.h:23
-msgid "10 to the x"
-msgstr "10 на x-та степен"
-
-#. 10 to thepower of  x. Note that this label uses mark up and the "x" is a superscript character. See: http://en.wikipedia.org/wiki/Superscript for more details on superscripts.
-#: ../glade/mate-calc.glade.h:25
-msgid "10<sup><i>x</i></sup>"
-msgstr "10<sup><i>x</i></sup>"
-
-#: ../glade/mate-calc.glade.h:26
-msgid "10x"
-msgstr "10x"
-
-#: ../glade/mate-calc.glade.h:27
-msgid "11 places"
-msgstr "11 места"
-
-#: ../glade/mate-calc.glade.h:28
-msgid "12 places"
-msgstr "12 места"
-
-#: ../glade/mate-calc.glade.h:29
-msgid "13 places"
-msgstr "13 места"
-
-#: ../glade/mate-calc.glade.h:30
-msgid "14 places"
-msgstr "14 места"
-
-#: ../glade/mate-calc.glade.h:31
-msgid "15"
-msgstr "15"
-
-#: ../glade/mate-calc.glade.h:32
-msgid "15 places"
-msgstr "15 места"
-
-#: ../glade/mate-calc.glade.h:33
-msgid "16 bit unsigned integer"
-msgstr "16-битен позитивен цел број"
-
-#: ../glade/mate-calc.glade.h:34
-msgid "16-bit unsigned integer value of display (])"
-msgstr "Прикажана 16-битна целобројна вредност без знак (])"
-
-#. Numeric 2
-#: ../glade/mate-calc.glade.h:36
-msgid "2"
-msgstr "2"
-
-#. Numeric 3
-#: ../glade/mate-calc.glade.h:38
-msgid "3"
-msgstr "3"
-
-#: ../glade/mate-calc.glade.h:39
-msgid "31"
-msgstr "31"
-
-#: ../glade/mate-calc.glade.h:40
-msgid "32"
-msgstr "32"
-
-#: ../glade/mate-calc.glade.h:41
-msgid "32-bit unsigned integer value of display ([)"
-msgstr "Прикажана 32-битна целобројна вредност без знак ([)"
-
-#. Numeric 4
-#: ../glade/mate-calc.glade.h:43
-msgid "4"
-msgstr "4"
-
-#: ../glade/mate-calc.glade.h:44
-msgid "47"
-msgstr "47"
-
-#. Numeric 5
-#: ../glade/mate-calc.glade.h:46
-msgid "5"
-msgstr "5"
-
-#. Numeric 6
-#: ../glade/mate-calc.glade.h:48
-msgid "6"
-msgstr "6"
-
-#: ../glade/mate-calc.glade.h:49
-msgid "63"
-msgstr "63"
-
-#. Numeric 7
-#: ../glade/mate-calc.glade.h:51
-msgid "7"
-msgstr "7"
-
-#. Numeric 8
-#: ../glade/mate-calc.glade.h:53
-msgid "8"
-msgstr "8"
-
-#. Numeric 9
-#: ../glade/mate-calc.glade.h:55
-msgid "9"
-msgstr "9"
-
-#. Shift left
-#: ../glade/mate-calc.glade.h:57
-msgid "<"
-msgstr "<"
-
-#. Factorial
-#: ../glade/mate-calc.glade.h:59
-msgid "<i>x</i>!"
-msgstr "<i>x</i>!"
-
-#. x squared. Note that this label uses mark up and the "x" is a superscript character. See: http://en.wikipedia.org/wiki/Superscript for more details on superscripts.
-#: ../glade/mate-calc.glade.h:61
-msgid "<i>x</i><sup>2</sup>"
-msgstr "<i>x</i><sup>2</sup>"
-
-#. X to the power of y. Note that this label uses mark up and the "y" is a superscript character. See: http://en.wikipedia.org/wiki/Superscript for more details on superscripts.
-#: ../glade/mate-calc.glade.h:63
-msgid "<i>x</i><sup><i>y</i></sup>"
-msgstr "<i>x</i><sup><i>y</i></sup>"
-
-#: ../glade/mate-calc.glade.h:64
-msgid ""
-"<small><i><b>Note:</b> All constant values are specified in the decimal "
-"numeric base.</i></small>"
-msgstr ""
-"<small><i><b>Забелешка:</b> Сите константни вредности се наведени во "
-"децималниот броен систем.</i></small>"
-
-#. "R0" is the abbreviation for "Register 0", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:66
-msgid "<span weight=\"bold\">R0</span>"
-msgstr "<span weight=\"bold\">R0</span>"
-
-#. "R1" is the abbreviation for "Register 1", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:68
-msgid "<span weight=\"bold\">R1</span>"
-msgstr "<span weight=\"bold\">R1</span>"
-
-#. "R2" is the abbreviation for "Register 2", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:70
-msgid "<span weight=\"bold\">R2</span>"
-msgstr "<span weight=\"bold\">R2</span>"
-
-#. "R3" is the abbreviation for "Register 3", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:72
-msgid "<span weight=\"bold\">R3</span>"
-msgstr "<span weight=\"bold\">R3</span>"
-
-#. "R4" is the abbreviation for "Register 4", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:74
-msgid "<span weight=\"bold\">R4</span>"
-msgstr "<span weight=\"bold\">R4</span>"
-
-#. "R5" is the abbreviation for "Register 5", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:76
-msgid "<span weight=\"bold\">R5</span>"
-msgstr "<span weight=\"bold\">R5</span>"
-
-#. "R6" is the abbreviation for "Register 6", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:78
-msgid "<span weight=\"bold\">R6</span>"
-msgstr "<span weight=\"bold\">R6</span>"
-
-#. "R7" is the abbreviation for "Register 7", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:80
-msgid "<span weight=\"bold\">R7</span>"
-msgstr "<span weight=\"bold\">R7</span>"
-
-#. "R8" is the abbreviation for "Register 8", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:82
-msgid "<span weight=\"bold\">R8</span>"
-msgstr "<span weight=\"bold\">R8</span>"
-
-#. "R9" is the abbreviation for "Register 9", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:84
-msgid "<span weight=\"bold\">R9</span>"
-msgstr "<span weight=\"bold\">R9</span>"
-
-#. This is the calculate result button (=)
-#: ../glade/mate-calc.glade.h:86
-msgid "="
-msgstr "="
-
-#. Shift right
-#: ../glade/mate-calc.glade.h:88
-msgid ">"
-msgstr ">"
-
-#: ../glade/mate-calc.glade.h:89
-msgid "A"
-msgstr "A"
-
-#: ../glade/mate-calc.glade.h:90
-msgid "AND"
-msgstr "И"
-
-#. Abs is short for Absolute
-#: ../glade/mate-calc.glade.h:92
-msgid "Abs"
-msgstr "Апсо."
-
-#: ../glade/mate-calc.glade.h:93
-msgid "Absolute value"
-msgstr "Апсолутна вредност"
-
-#: ../glade/mate-calc.glade.h:94
-msgid "Absolute value [u]"
-msgstr "Апсолутна вредност [u]"
-
-#. Accuracy
-#: ../glade/mate-calc.glade.h:96
-msgid "Acc"
-msgstr "Acc"
-
-#: ../glade/mate-calc.glade.h:97
-msgid "Accuracy"
-msgstr "Точност"
-
-#: ../glade/mate-calc.glade.h:98
-msgid "Add"
-msgstr "Додаj"
-
-#: ../glade/mate-calc.glade.h:99
-msgid "Add [+]"
-msgstr "Собирање [+]"
-
-#: ../glade/mate-calc.glade.h:100
-msgid "Advanced"
-msgstr "Напреден"
-
-#: ../glade/mate-calc.glade.h:101
-msgid "B"
-msgstr "B"
-
-#: ../glade/mate-calc.glade.h:102
-msgid "Backspace"
-msgstr "Backspace"
-
-#: ../glade/mate-calc.glade.h:103
-msgid "Base 10 log [G]"
-msgstr "Логаритам со основа 10 [G]"
-
-#: ../glade/mate-calc.glade.h:104
-msgid "Base 2 log [H]"
-msgstr "Логаритам со основа 2 [H]"
-
-#: ../glade/mate-calc.glade.h:105
-msgid "Basic"
-msgstr "Основен"
-
-#: ../glade/mate-calc.glade.h:106
-msgid "Bitwise AND"
-msgstr "Двонасочно И"
-
-#: ../glade/mate-calc.glade.h:107
-msgid "Bitwise AND [&]"
-msgstr "Двонасочно И [&]"
-
-#: ../glade/mate-calc.glade.h:108
-msgid "Bitwise NOT"
-msgstr "Двонасочно НЕ"
-
-#: ../glade/mate-calc.glade.h:109
-msgid "Bitwise NOT [~]"
-msgstr "Bitwise НЕ [~]"
-
-#: ../glade/mate-calc.glade.h:110
-msgid "Bitwise OR"
-msgstr "Bitwise ИЛИ"
-
-#: ../glade/mate-calc.glade.h:111
-msgid "Bitwise OR [|]"
-msgstr "Двонасочно ИЛИ [|]"
-
-#: ../glade/mate-calc.glade.h:112
-msgid "Bitwise XNOR"
-msgstr "Bitwise НИЛИ"
-
-#: ../glade/mate-calc.glade.h:113
-msgid "Bitwise XNOR [n]"
-msgstr "Двонасочно ексклузивно НИЛИ [n]"
-
-#: ../glade/mate-calc.glade.h:114
-msgid "Bitwise XOR"
-msgstr "Двонасочно ексклузивно ИЛИ"
-
-#: ../glade/mate-calc.glade.h:115
-msgid "Bitwise XOR [x]"
-msgstr "Bitwise X ИЛИ [x]"
-
-#. Bksp is short for Backspace
-#: ../glade/mate-calc.glade.h:117
-msgid "Bksp"
-msgstr "Bksp"
-
-#: ../glade/mate-calc.glade.h:119
-msgid "CE"
-msgstr "CE"
-
-#: ../glade/mate-calc.glade.h:120
-msgid "Calculate result"
-msgstr "Пресметај резултат"
-
-#: ../glade/mate-calc.glade.h:121
-msgid "Calculate result [=]"
-msgstr "Пресметај резултат [=]"
-
-#: ../glade/mate-calc.glade.h:122
-msgid "Ch_aracter:"
-msgstr "Зн_ак:"
-
-#: ../glade/mate-calc.glade.h:123
-msgid "Change Sign [C]"
-msgstr "Промени знак [C]"
-
-#: ../glade/mate-calc.glade.h:124
-msgid "Change sign"
-msgstr "Промени знак"
-
-#: ../glade/mate-calc.glade.h:125
-msgid "Clear"
-msgstr "Исчисти"
-
-#: ../glade/mate-calc.glade.h:126
-msgid "Clear displayed value [Escape]"
-msgstr "Избриши ја прикажаната вредност [Escape]"
-
-#: ../glade/mate-calc.glade.h:127
-msgid "Clear displayed value and any partial calculation [Shift Delete]"
-msgstr ""
-"Избриши ја прикажаната вредност и било која парцијална пресметка [Shift "
-"Delete]"
-
-#: ../glade/mate-calc.glade.h:128
-msgid "Clear entry"
-msgstr "Исчисти запис"
-
-#: ../glade/mate-calc.glade.h:129
-msgid "Click a _value or description to edit it:"
-msgstr "Притиснете врз вредност или опис за да го измените:"
-
-#. Clr is short for Clear
-#: ../glade/mate-calc.glade.h:131
-msgid "Clr"
-msgstr "Clr"
-
-#: ../glade/mate-calc.glade.h:132
-msgid "Compounding term"
-msgstr "Збирен израз"
-
-#: ../glade/mate-calc.glade.h:133
-msgid "Compounding term [m]"
-msgstr "Збирен израз [m]"
-
-#: ../glade/mate-calc.glade.h:134
-msgid "Con"
-msgstr "Конст"
-
-#: ../glade/mate-calc.glade.h:135
-msgid "Constants"
-msgstr "Константи"
-
-#: ../glade/mate-calc.glade.h:136
-msgid "Constants [#]"
-msgstr "Константи [#]"
-
-#: ../glade/mate-calc.glade.h:137
-msgid "Copy selection"
-msgstr "Копирај го избраното"
-
-#: ../glade/mate-calc.glade.h:140
-msgid "Cosine [J]"
-msgstr "Косинус [J]"
-
-#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period.
-#. See also:
-#. http://en.wikipedia.org/wiki/Compound_interest
-#: ../glade/mate-calc.glade.h:144
-msgid "Ctrm"
-msgstr "Ctrm"
-
-#: ../glade/mate-calc.glade.h:145
-msgid "D"
-msgstr "D"
-
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
-#: ../glade/mate-calc.glade.h:148
-msgid "Ddb"
-msgstr "Ddb"
-
-#: ../glade/mate-calc.glade.h:149
-msgid "De_grees"
-msgstr "Сте_пени"
-
-#: ../glade/mate-calc.glade.h:150
-msgid "Divide"
-msgstr "Дели"
-
-#: ../glade/mate-calc.glade.h:151
-msgid "Divide [/]"
-msgstr "Дели [/]"
-
-#: ../glade/mate-calc.glade.h:152
-msgid "Double-declining depreciation"
-msgstr "Двојно опаѓачка девалвација"
-
-#: ../glade/mate-calc.glade.h:153
-msgid "Double-declining depreciation [D]"
-msgstr "Двојно опаѓачка девалвација [D]"
-
-#: ../glade/mate-calc.glade.h:154
-msgid "E"
-msgstr "E"
-
-#: ../glade/mate-calc.glade.h:155
-msgid "E to the x"
-msgstr "Е до x"
-
-#: ../glade/mate-calc.glade.h:156
-msgid "E_ng"
-msgstr "А_нглиски"
-
-#: ../glade/mate-calc.glade.h:157
-msgid "Edit Constants"
-msgstr "Измени константи"
-
-#: ../glade/mate-calc.glade.h:158
-msgid "Edit Constants..."
-msgstr "Измени константи..."
-
-#: ../glade/mate-calc.glade.h:159
-msgid "Edit Functions"
-msgstr "Измени функции"
-
-#: ../glade/mate-calc.glade.h:160
-msgid "Edit Functions..."
-msgstr "Измени функции..."
-
-#: ../glade/mate-calc.glade.h:161
-msgid "End group of calculations [)]"
-msgstr "Заврши група на пресметки [)]"
-
-#: ../glade/mate-calc.glade.h:162
-msgid "Enter an exponential number [E]"
-msgstr "Внеси експоненцијална вредност [E]"
-
-#. Exchange with register
-#: ../glade/mate-calc.glade.h:164
-msgid "Exch"
-msgstr "Разм."
-
-#: ../glade/mate-calc.glade.h:165
-msgid "Exchange displayed value with memory register [X]"
-msgstr "Размени ја прикажаната вредност со меморискиот регистар [X]"
-
-#: ../glade/mate-calc.glade.h:166
-msgid "Exchange with register"
-msgstr "Размени со регистар"
-
-#. Exponential
-#: ../glade/mate-calc.glade.h:168
-msgid "Exp"
-msgstr "Експ."
-
-#: ../glade/mate-calc.glade.h:170
-msgid "Factorial"
-msgstr "Факториел"
-
-#: ../glade/mate-calc.glade.h:171
-msgid "Factorial of displayed value [!]"
-msgstr "Факториел од прикажаната вредност [!]"
-
-#: ../glade/mate-calc.glade.h:172
-msgid "Financial"
-msgstr "Финансиски"
-
-#. Fractional portion
-#: ../glade/mate-calc.glade.h:174
-msgid "Frac"
-msgstr "Дел"
-
-#: ../glade/mate-calc.glade.h:175
-msgid "Fractional portion"
-msgstr "Дропкин дел"
-
-#: ../glade/mate-calc.glade.h:176
-msgid "Fractional portion of displayed value [:]"
-msgstr "Децималниот дел од прикажаната вредност [:]"
-
-#: ../glade/mate-calc.glade.h:177
-msgid "Fun"
-msgstr "Забава"
-
-#: ../glade/mate-calc.glade.h:178
-msgid "Future value"
-msgstr "Идна вредност"
-
-#: ../glade/mate-calc.glade.h:179
-msgid "Future value [v]"
-msgstr "Идна вредност [v]"
-
-#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also:
-#. http://en.wikipedia.org/wiki/Future_value
-#: ../glade/mate-calc.glade.h:182
-msgid "Fv"
-msgstr "Fv"
-
-#: ../glade/mate-calc.glade.h:183
-msgid "Gr_adians"
-msgstr "Гра_диенти"
-
-#: ../glade/mate-calc.glade.h:184
-msgid "H_yp"
-msgstr "H_yp"
-
-#: ../glade/mate-calc.glade.h:185
-msgid "He_x"
-msgstr "Хе_ксално"
-
-#: ../glade/mate-calc.glade.h:186
-msgid "Hexadecimal digit A"
-msgstr "Хексадецимална цифра А"
-
-#: ../glade/mate-calc.glade.h:187
-msgid "Hexadecimal digit A [a]"
-msgstr "Хексадецимална цифра А [a]"
-
-#: ../glade/mate-calc.glade.h:188
-msgid "Hexadecimal digit B"
-msgstr "Хексадецимална цифра B"
-
-#: ../glade/mate-calc.glade.h:189
-msgid "Hexadecimal digit B [b]"
-msgstr "Хексадецимална цифра B [b]"
-
-#: ../glade/mate-calc.glade.h:190
-msgid "Hexadecimal digit C"
-msgstr "Хексадецимална цифра C"
-
-#: ../glade/mate-calc.glade.h:191
-msgid "Hexadecimal digit C [c]"
-msgstr "Хексадецимална цифра C [c]"
-
-#: ../glade/mate-calc.glade.h:192
-msgid "Hexadecimal digit D"
-msgstr "Хексадецимална цифра Д"
-
-#: ../glade/mate-calc.glade.h:193
-msgid "Hexadecimal digit D [d]"
-msgstr "Хексадецимална цифра D [d]"
-
-#: ../glade/mate-calc.glade.h:194
-msgid "Hexadecimal digit E"
-msgstr "Хексадецимална цифра Е"
-
-#: ../glade/mate-calc.glade.h:195
-msgid "Hexadecimal digit E [e]"
-msgstr "Хексадецимална цифра [e]"
-
-#: ../glade/mate-calc.glade.h:196
-msgid "Hexadecimal digit F"
-msgstr "Хексадецимална цифра F"
-
-#: ../glade/mate-calc.glade.h:197
-msgid "Hexadecimal digit F [f]"
-msgstr "Хексадецимална цифра F [f]"
-
-#: ../glade/mate-calc.glade.h:198
-msgid "Insert ASCII Value"
-msgstr "Вметни аски (ASCII) вредност"
-
-#: ../glade/mate-calc.glade.h:199
-msgid "Insert ASCII value"
-msgstr "Вметни ASCII вредност"
-
-#. Integer portion
-#: ../glade/mate-calc.glade.h:201
-msgid "Int"
-msgstr "Int"
-
-#: ../glade/mate-calc.glade.h:202
-msgid "Integer portion"
-msgstr "Целоброен дел"
-
-#: ../glade/mate-calc.glade.h:203
-msgid "Integer portion of displayed value [i]"
-msgstr "Целобројниот дел од прикажаната вредност [i]"
-
-#: ../glade/mate-calc.glade.h:204
-msgid "Left bracket"
-msgstr "Лева заграда"
-
-#. Natural logarithm
-#: ../glade/mate-calc.glade.h:206
-msgid "Ln"
-msgstr "Ln"
-
-#. Factorial
-#: ../glade/mate-calc.glade.h:208
-msgid "Log<sub>10</sub>"
-msgstr "Log<sub>10</sub>"
-
-#. Factorial
-#: ../glade/mate-calc.glade.h:210
-msgid "Log<sub>2</sub>"
-msgstr "Log<sub>2</sub>"
-
-#: ../glade/mate-calc.glade.h:211
-msgid "Memory Registers"
-msgstr "Мемориски регистри"
-
-#: ../glade/mate-calc.glade.h:212
-msgid "Mod"
-msgstr "Режим"
-
-#: ../glade/mate-calc.glade.h:213
-msgid "Modulus Division [M]"
-msgstr "Делење на модули [M]"
-
-#: ../glade/mate-calc.glade.h:214
-msgid "Multiply"
-msgstr "Помножи"
-
-#: ../glade/mate-calc.glade.h:215
-msgid "Multiply [*]"
-msgstr "Помножи [*]"
-
-#: ../glade/mate-calc.glade.h:216
-msgid "NOT"
-msgstr "НЕ"
-
-#: ../glade/mate-calc.glade.h:217
-msgid "Natural log [N]"
-msgstr "Природен логаритам [N]"
-
-#: ../glade/mate-calc.glade.h:218
-msgid "Numeric 0"
-msgstr "Нумеричко 0"
-
-#: ../glade/mate-calc.glade.h:219
-msgid "Numeric 1"
-msgstr "Нумеричко 1"
-
-#: ../glade/mate-calc.glade.h:220
-msgid "Numeric 2"
-msgstr "Нумеричко 2"
-
-#: ../glade/mate-calc.glade.h:221
-msgid "Numeric 3"
-msgstr "Нумеричко 3"
-
-#: ../glade/mate-calc.glade.h:222
-msgid "Numeric 4"
-msgstr "Нумеричко 4"
-
-#: ../glade/mate-calc.glade.h:223
-msgid "Numeric 5"
-msgstr "Нумеричко 5"
-
-#: ../glade/mate-calc.glade.h:224
-msgid "Numeric 6"
-msgstr "Нумеричко 6"
-
-#: ../glade/mate-calc.glade.h:225
-msgid "Numeric 7"
-msgstr "Нумеричко 7"
-
-#: ../glade/mate-calc.glade.h:226
-msgid "Numeric 8"
-msgstr "Нумеричко 8"
-
-#: ../glade/mate-calc.glade.h:227
-msgid "Numeric 9"
-msgstr "Нумеричко 9"
-
-#: ../glade/mate-calc.glade.h:228
-msgid "Numeric point"
-msgstr "Нумеричка точка"
-
-#: ../glade/mate-calc.glade.h:229
-msgid "OR"
-msgstr "ИЛИ"
-
-#: ../glade/mate-calc.glade.h:230
-msgid "Paste selection"
-msgstr "Вменти го избраното"
-
-#: ../glade/mate-calc.glade.h:231
-msgid "Payment period"
-msgstr "Период на исплата"
-
-#: ../glade/mate-calc.glade.h:232
-msgid "Payment period [t]"
-msgstr "Период на исплата [t]"
-
-#: ../glade/mate-calc.glade.h:233
-msgid "Percentage"
-msgstr "Проценти"
-
-#: ../glade/mate-calc.glade.h:235
-#, no-c-format
-msgid "Percentage [%]"
-msgstr "Процент [%]"
-
-#: ../glade/mate-calc.glade.h:236
-msgid "Periodic interest rate"
-msgstr "Периодична каматна стапка"
-
-#: ../glade/mate-calc.glade.h:237
-msgid "Periodic interest rate [T]"
-msgstr "Периодична каматна стапка [T]"
-
-#: ../glade/mate-calc.glade.h:238
-msgid "Periodic payment"
-msgstr "Периодична наплата"
-
-#: ../glade/mate-calc.glade.h:239
-msgid "Periodic payment [P]"
-msgstr "Периодична наплата [P]"
-
-#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also:
-#. http://en.wikipedia.org/wiki/Amortization_schedule
-#: ../glade/mate-calc.glade.h:242
-msgid "Pmt"
-msgstr "Pmt"
-
-#: ../glade/mate-calc.glade.h:243
-msgid "Present value"
-msgstr "Сегашна вредност"
-
-#: ../glade/mate-calc.glade.h:244
-msgid "Present value [p]"
-msgstr "Сегашна вредност [p]"
-
-#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also:
-#. http://en.wikipedia.org/wiki/Present_value
-#: ../glade/mate-calc.glade.h:247
-msgid "Pv"
-msgstr "Pv"
-
-#: ../glade/mate-calc.glade.h:248
-msgid "Quit the calculator"
-msgstr "Излези од калкулаторот"
-
-#: ../glade/mate-calc.glade.h:249
-msgid "Raise displayed value to the power of y [^]"
-msgstr "Подигни ја прикажаната вредност на степен y [^]"
-
-#. Random number
-#: ../glade/mate-calc.glade.h:251
-msgid "Rand"
-msgstr "Случаен"
-
-#: ../glade/mate-calc.glade.h:252
-msgid "Random number"
-msgstr "Случаен број"
-
-#: ../glade/mate-calc.glade.h:253
-msgid "Random number in the range 0.0 to 1.0 [?]"
-msgstr "Случаен број од опсегот 0,0 до 1,0 [?]"
-
-#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also:
-#. http://en.wikipedia.org/wiki/Interest
-#.
-#.
-#.
-#.
-#: ../glade/mate-calc.glade.h:260
-msgid "Rate"
-msgstr "Стапка"
-
-#. Retrieve from register
-#: ../glade/mate-calc.glade.h:262
-msgid "Rcl"
-msgstr "Rcl"
-
-#: ../glade/mate-calc.glade.h:263
-msgid "Reciprocal"
-msgstr "Реципрочно"
-
-#: ../glade/mate-calc.glade.h:264
-msgid "Reciprocal [r]"
-msgstr "Реципрочно [r]"
-
-#: ../glade/mate-calc.glade.h:265
-msgid "Redo"
-msgstr "Повтори"
-
-#: ../glade/mate-calc.glade.h:266
-msgid "Remove rightmost character from displayed value [Backspace]"
-msgstr "Отстрани го најдесниот карактер од прикажаната вредност [Backspace]"
-
-#: ../glade/mate-calc.glade.h:269
-msgid "Result Region"
-msgstr "Регион за резултат"
-
-#: ../glade/mate-calc.glade.h:270
-msgid "Retrieve from register"
-msgstr "Поврати од регистер"
-
-#: ../glade/mate-calc.glade.h:271
-msgid "Retrieve memory register to display [R]"
-msgstr "Прикажи ја вредноста на меморискиот регистар []"
-
-#: ../glade/mate-calc.glade.h:272
-msgid "Right bracket"
-msgstr "Десна заграда"
-
-#: ../glade/mate-calc.glade.h:273
-msgid "Scientific"
-msgstr "Научен"
-
-#: ../glade/mate-calc.glade.h:274
-msgid "Set Precision"
-msgstr "Постави прецизност"
-
-#: ../glade/mate-calc.glade.h:275
-msgid "Set accuracy from 0 to 9 numeric places [A]"
-msgstr "Подеси ја точноста од 0 до 9 нумерички места [A]"
-
-#: ../glade/mate-calc.glade.h:276
-msgid "Set display type to engineering format"
-msgstr "Промени го типот на приказот во технички формат"
-
-#: ../glade/mate-calc.glade.h:277
-msgid "Set display type to fixed-point format"
-msgstr "Промени го типот на приказот во формат со фиксна децимална точка"
-
-#: ../glade/mate-calc.glade.h:278
-msgid "Set display type to scientific format"
-msgstr "Промени го типот на приказот во научен формат"
-
-#: ../glade/mate-calc.glade.h:279
-msgid "Set hyperbolic option for trigonometric functions"
-msgstr "Подеси ја хиперболичната опција за тригонометриските функции"
-
-#: ../glade/mate-calc.glade.h:280
-msgid "Set inverse option for trigonometric functions"
-msgstr "Постави ја опцијата инверзно за тригонометриски функции"
-
-#: ../glade/mate-calc.glade.h:281
-msgid "Set numeric base to binary (base 2)"
-msgstr "Промени ја нумеричката основа во бинарна (основа 2)"
-
-#: ../glade/mate-calc.glade.h:282
-msgid "Set numeric base to decimal (base 10)"
-msgstr "Промени ја нумеричката основа во децимална (основа 10)"
-
-#: ../glade/mate-calc.glade.h:283
-msgid "Set numeric base to hexadecimal (base 16)"
-msgstr "Промени ја нумеричката основа во хексадецимална (основа 16)"
-
-#: ../glade/mate-calc.glade.h:284
-msgid "Set numeric base to octal (base 8)"
-msgstr "Промени ја нумеричката основа во октална (основа 8)"
-
-#: ../glade/mate-calc.glade.h:285
-msgid "Set trigonometric type to degrees"
-msgstr "Тригонометрискиот режим да смета во степени"
-
-#: ../glade/mate-calc.glade.h:286
-msgid "Set trigonometric type to gradians"
-msgstr "Постави го тригонометрискиот тип во градијани"
-
-#: ../glade/mate-calc.glade.h:287
-msgid "Set trigonometric type to radians"
-msgstr "Постави го тригонометрискиот тип во радијани"
-
-#: ../glade/mate-calc.glade.h:288
-msgid "Shift displayed value 1-15 places to the left [<]"
-msgstr "Помести ја прикажаната вредност 1-15 места налево [<]"
-
-#: ../glade/mate-calc.glade.h:289
-msgid "Shift displayed value 1-15 places to the right [>]"
-msgstr "Помести ја прикажаната вредност 1-15 места надесно [>]"
-
-#: ../glade/mate-calc.glade.h:290
-msgid "Shift left"
-msgstr "Помести на лево"
-
-#: ../glade/mate-calc.glade.h:291
-msgid "Shift right"
-msgstr "Помести на десно"
-
-#. When the bit editor is visible, there will be two rows of ones
-#. and zeroes shown. When the number being displayed in
-#. in the calculator is an integer value, these ones and zeroes will be sensitive, and they will correspond to the value of each of the bits in the displayed integer number. By clicking on any of the labels for these ones and zeroes, their value can be toggled (a one becomes a zero and a zero becomes a one), causing the displayed integer value to be adjusted accordingly.
-#: ../glade/mate-calc.glade.h:295
-msgid "Show Bit Editor"
-msgstr "Покажи уредувач на битови"
-
-#. When the bit editor is visible, there will be two rows of ones
-#. and zeroes shown. When the number being displayed in
-#. in the calculator is an integer value, these ones and zeroes will be sensitive, and they will correspond to the value of each of the bits in the displayed integer number. By clicking on any of the labels for these ones and zeroes, their value can be toggled (a one becomes a zero and a zero becomes a one), causing the displayed integer value to be adjusted accordingly.
-#: ../glade/mate-calc.glade.h:299
-msgid "Show Bit _Editor"
-msgstr "Покажи _уредувач на битови"
-
-#: ../glade/mate-calc.glade.h:300
-msgid "Show T_housands Separator"
-msgstr "Покажи ги нули_те од десно"
-
-#: ../glade/mate-calc.glade.h:301
-msgid "Show _Trailing Zeroes"
-msgstr "Покажи ги _нулите од десно"
-
-#. When the bit editor is visible, there will be two rows of ones
-#. and zeroes shown. When the number being displayed in
-#. in the calculator is an integer value, these ones and zeroes will be sensitive, and they will correspond to the value of each of the bits in the displayed integer number. By clicking on any of the labels for these ones and zeroes, their value can be toggled (a one becomes a zero and a zero becomes a one), causing the displayed integer value to be adjusted accordingly.
-#: ../glade/mate-calc.glade.h:305
-msgid "Show bit editor"
-msgstr "Покажи уредувач на битови"
-
-#: ../glade/mate-calc.glade.h:306
-msgid "Show help contents"
-msgstr "Покажи ги помошните содржини"
-
-#: ../glade/mate-calc.glade.h:307
-msgid "Show memory registers"
-msgstr "Покажи ги мемориските регистри"
-
-#: ../glade/mate-calc.glade.h:308
-msgid "Show the About mate-calc dialog"
-msgstr "Покажи го дијалогот „За“"
-
-#: ../glade/mate-calc.glade.h:309
-msgid "Show thousands separator"
-msgstr "Покажи го оделувачот за илјади"
-
-#: ../glade/mate-calc.glade.h:310
-msgid "Show trailing zeroes"
-msgstr "Покажи ги нулите од десно"
-
-#: ../glade/mate-calc.glade.h:311
-msgid "Significant _places:"
-msgstr "Значајни _места:"
-
-#: ../glade/mate-calc.glade.h:314
-msgid "Sine [K]"
-msgstr "Синус [K]"
-
-#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
-#: ../glade/mate-calc.glade.h:317
-msgid "Sln"
-msgstr "Sln"
-
-#: ../glade/mate-calc.glade.h:318
-msgid "Square"
-msgstr "Квадрат"
-
-#: ../glade/mate-calc.glade.h:319
-msgid "Square [@]"
-msgstr "Квадрат [@]"
-
-#: ../glade/mate-calc.glade.h:320
-msgid "Square root"
-msgstr "Корен"
-
-#: ../glade/mate-calc.glade.h:321
-msgid "Square root [s]"
-msgstr "Корен [s]"
-
-#: ../glade/mate-calc.glade.h:322
-msgid "Start group of calculations [(]"
-msgstr "Започни група на пресметки [(]"
-
-#. Store to register
-#: ../glade/mate-calc.glade.h:324
-msgid "Sto"
-msgstr "Sto"
-
-#: ../glade/mate-calc.glade.h:325
-msgid "Store displayed value in memory register [S]"
-msgstr "Зачувај ја прикажаната вредност во меморискиот регистар [S]"
-
-#: ../glade/mate-calc.glade.h:326
-msgid "Store to register"
-msgstr "Складирај во регистрите"
-
-#: ../glade/mate-calc.glade.h:327
-msgid "Straight-line depreciation"
-msgstr "Девалвација по права линија"
-
-#: ../glade/mate-calc.glade.h:328
-msgid "Straight-line depreciation [l]"
-msgstr "Девалвација по права линија [l]"
-
-#: ../glade/mate-calc.glade.h:329
-msgid "Subtract"
-msgstr "Одземање"
-
-#: ../glade/mate-calc.glade.h:330
-msgid "Subtract [-]"
-msgstr "Одземај [-]"
-
-#: ../glade/mate-calc.glade.h:331
-msgid "Sum-of-the years'-digits depreciation"
-msgstr "Девалвација според збирот на цифрите на годините"
-
-#: ../glade/mate-calc.glade.h:332
-msgid "Sum-of-the years'-digits depreciation [y]"
-msgstr "Девалвација според збирот на цифрите на годините [y]"
-
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones.
-#. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
-#: ../glade/mate-calc.glade.h:336
-msgid "Syd"
-msgstr "Syd"
-
-#: ../glade/mate-calc.glade.h:339
-msgid "Tangent [L]"
-msgstr "Тангенс [L]"
-
-#: ../glade/mate-calc.glade.h:340
-msgid "Ten to the x"
-msgstr "Десет до x"
-
-#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also:
-#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
-#: ../glade/mate-calc.glade.h:343
-msgid "Term"
-msgstr "Временски термин"
-
-#: ../glade/mate-calc.glade.h:344
-msgid "Undo"
-msgstr "Отповикај"
-
-#: ../glade/mate-calc.glade.h:345
-msgid "User-defined functions"
-msgstr "Функции дефинирани од корисникот"
-
-#: ../glade/mate-calc.glade.h:346
-msgid "User-defined functions [F]"
-msgstr "Функции дефинирани од корисникот [f]"
-
-#: ../glade/mate-calc.glade.h:347
-msgid "X to the y"
-msgstr "X до y"
-
-#: ../glade/mate-calc.glade.h:348
-msgid "XNOR"
-msgstr "Екслкузивно НИЛИ"
-
-#: ../glade/mate-calc.glade.h:349
-msgid "XOR"
-msgstr "Ексклузивно ИЛИ"
-
-#: ../glade/mate-calc.glade.h:350
-msgid "_0 significant places"
-msgstr "_0 значајни места"
-
-#: ../glade/mate-calc.glade.h:351
-msgid "_1 place"
-msgstr "_1 место"
-
-#: ../glade/mate-calc.glade.h:352
-msgid "_1 significant place"
-msgstr "_1 значајно место"
-
-#: ../glade/mate-calc.glade.h:353
-msgid "_2 places"
-msgstr "_2 места"
-
-#: ../glade/mate-calc.glade.h:354
-msgid "_2 significant places"
-msgstr "_2 значајни места"
-
-#: ../glade/mate-calc.glade.h:355
-msgid "_3 places"
-msgstr "_3 места"
-
-#: ../glade/mate-calc.glade.h:356
-msgid "_3 significant places"
-msgstr "_3 значајни места"
-
-#: ../glade/mate-calc.glade.h:357
-msgid "_4 places"
-msgstr "_4 места"
-
-#: ../glade/mate-calc.glade.h:358
-msgid "_4 significant places"
-msgstr "_4 значајни места"
-
-#: ../glade/mate-calc.glade.h:359
-msgid "_5 places"
-msgstr "_5 места"
-
-#: ../glade/mate-calc.glade.h:360
-msgid "_5 significant places"
-msgstr "_5 значајни места"
-
-#: ../glade/mate-calc.glade.h:361
-msgid "_6 places"
-msgstr "_6 места"
-
-#: ../glade/mate-calc.glade.h:362
-msgid "_6 significant places"
-msgstr "_6 значајни места"
-
-#: ../glade/mate-calc.glade.h:363
-msgid "_7 places"
-msgstr "_7 места"
-
-#: ../glade/mate-calc.glade.h:364
-msgid "_7 significant places"
-msgstr "_7 значајни места"
-
-#: ../glade/mate-calc.glade.h:365
-msgid "_8 places"
-msgstr "_8 места"
-
-#: ../glade/mate-calc.glade.h:366
-msgid "_8 significant places"
-msgstr "_8 значајни места"
-
-#: ../glade/mate-calc.glade.h:367
-msgid "_9 places"
-msgstr "_9 места"
-
-#: ../glade/mate-calc.glade.h:368
-msgid "_9 significant places"
-msgstr "_9 значајни места"
-
-#: ../glade/mate-calc.glade.h:369
-msgid "_Advanced"
-msgstr "_Напреден"
-
-#: ../glade/mate-calc.glade.h:370
-msgid "_Basic"
-msgstr "_Основен"
-
-#: ../glade/mate-calc.glade.h:371
-msgid "_Bin"
-msgstr "_Бинарно"
-
-#: ../glade/mate-calc.glade.h:372
+#. Calculator menu
+#: ../src/math-window.c:346
 msgid "_Calculator"
 msgstr "_Калкулатор"
 
-#: ../glade/mate-calc.glade.h:373
-msgid "_Contents"
-msgstr "_Содржини"
+#. Mode menu
+#: ../src/math-window.c:348
+msgid "_Mode"
+msgstr ""
 
-#: ../glade/mate-calc.glade.h:374
-msgid "_Dec"
-msgstr "_Децимално"
-
-#: ../glade/mate-calc.glade.h:375
-msgid "_Edit"
-msgstr "_Уреди"
-
-#: ../glade/mate-calc.glade.h:376
-msgid "_Financial"
-msgstr "_Финансиски"
-
-#: ../glade/mate-calc.glade.h:377
-msgid "_Fix"
-msgstr "_Фиксно"
-
-#: ../glade/mate-calc.glade.h:378
+#. Help menu label
+#: ../src/math-window.c:350
 msgid "_Help"
 msgstr "_Помош"
 
-#: ../glade/mate-calc.glade.h:379
-msgid "_Insert"
-msgstr "_Вметни"
+#. Basic menu label
+#: ../src/math-window.c:352
+msgid "_Basic"
+msgstr "_Основен"
 
-#: ../glade/mate-calc.glade.h:380
-msgid "_Insert ASCII value..."
-msgstr "_Вметни ASCII вредности..."
+#. Advanced menu label
+#: ../src/math-window.c:354
+msgid "_Advanced"
+msgstr "_Напреден"
 
-#: ../glade/mate-calc.glade.h:381
-msgid "_Inv"
-msgstr "_Inv"
+#. Financial menu label
+#: ../src/math-window.c:356
+msgid "_Financial"
+msgstr "_Финансиски"
 
-#: ../glade/mate-calc.glade.h:382
-msgid "_Memory Registers"
-msgstr "_Мемориски регистри"
+#. Programming menu label
+#: ../src/math-window.c:358
+msgid "_Programming"
+msgstr ""
 
-#: ../glade/mate-calc.glade.h:383
-msgid "_Oct"
-msgstr "_Октално"
+#. Help>Contents menu label
+#: ../src/math-window.c:360
+msgid "_Contents"
+msgstr "_Содржини"
 
-#: ../glade/mate-calc.glade.h:386
-msgid "_Radians"
-msgstr "_Радијани"
+#. Translators: Error displayed when boolean AND attempted on non-integer
+#. values
+#: ../src/mp-binary.c:103
+msgid "Boolean AND is only defined for positive integers"
+msgstr ""
 
-#: ../glade/mate-calc.glade.h:387
-msgid "_Redo"
-msgstr "_Повтори"
+#. Translators: Error displayed when boolean OR attempted on non-integer
+#. values
+#: ../src/mp-binary.c:116
+msgid "Boolean OR is only defined for positive integers"
+msgstr ""
 
-#: ../glade/mate-calc.glade.h:388
-msgid "_Sci"
-msgstr "_Научно"
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
+#: ../src/mp-binary.c:129
+msgid "Boolean XOR is only defined for positive integers"
+msgstr ""
 
-#: ../glade/mate-calc.glade.h:389
-msgid "_Scientific"
-msgstr "_Научен"
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
+#: ../src/mp-binary.c:144
+msgid "Boolean NOT is only defined for positive integers"
+msgstr ""
 
-#: ../glade/mate-calc.glade.h:390
-msgid "_Set"
-msgstr "_Постави"
+#. Translators: Error displayed when bit shift attempted on non-integer values
+#: ../src/mp-binary.c:174
+msgid "Shift is only possible on integer values"
+msgstr ""
 
-#: ../glade/mate-calc.glade.h:391
-msgid "_Undo"
-msgstr "_Отповикај"
+#. Translators: Error display when attempting to take argument of zero
+#: ../src/mp.c:149
+msgid "Argument not defined for zero"
+msgstr ""
 
-#: ../glade/mate-calc.glade.h:392
-msgid "_View"
-msgstr "_Поглед"
+#. Translators: Error displayed attempted to divide by zero
+#: ../src/mp.c:636 ../src/mp.c:668 ../src/mp.c:1602
+msgid "Division by zero is undefined"
+msgstr ""
 
-#: ../glade/mate-calc.glade.h:393
-msgid "e to the power of displayed value [{]"
-msgstr "е на степен од прикажаната вредност [{]"
+#. Translators: Error displayed when attempting to take logarithm of zero
+#: ../src/mp.c:1273 ../src/mp.c:1310
+msgid "Logarithm of zero is undefined"
+msgstr ""
 
-#. E to the power of x. Note that this label uses mark up and the "x" is a superscript character. See: http://en.wikipedia.org/wiki/Superscript for more details on superscripts.
-#: ../glade/mate-calc.glade.h:395
-msgid "e<sup>x</sup>"
-msgstr "e<sup>x</sup>"
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. exponent
+#: ../src/mp.c:1675 ../src/mp.c:1990
+msgid "The power of zero is undefined for a negative exponent"
+msgstr ""
 
-#: ../glade/mate-calc.glade.h:396
-msgid "ex"
-msgstr "ex"
+#: ../src/mp.c:1700
+msgid "Reciprocal of zero is undefined"
+msgstr ""
 
-#. This is accessible name for memory register 0.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:400
-msgid "register 0"
-msgstr "register 0"
+#: ../src/mp.c:1785
+msgid "Root must be non-zero"
+msgstr ""
 
-#. This is accessible name for memory register 1.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:404
-msgid "register 1"
-msgstr "register 1"
+#: ../src/mp.c:1803
+msgid "Negative root of zero is undefined"
+msgstr ""
 
-#. This is accessible name for memory register 2.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:408
-msgid "register 2"
-msgstr "register 2"
+#: ../src/mp.c:1809
+msgid "nth root of negative number is undefined for even n"
+msgstr ""
 
-#. This is accessible name for memory register 3.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:412
-msgid "register 3"
-msgstr "register 3"
+#. Translators: Error displayed when attempted take the factorial of a
+#. fractional number
+#: ../src/mp.c:1930
+msgid "Factorial is only defined for natural numbers"
+msgstr ""
 
-#. This is accessible name for memory register 4.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:416
-msgid "register 4"
-msgstr "register 4"
+#. Translators: Error displayed when attemping to do a modulus division on
+#. non-integer numbers
+#: ../src/mp.c:1950
+msgid "Modulus division is only defined for integers"
+msgstr ""
 
-#. This is accessible name for memory register 5.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:420
-msgid "register 5"
-msgstr "register 5"
+#. Translators: Error displayed when tangent value is undefined
+#: ../src/mp-trigonometric.c:311
+msgid ""
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
+"(90°)"
+msgstr ""
 
-#. This is accessible name for memory register 6.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:424
-msgid "register 6"
-msgstr "register 6"
+#. Translators: Error displayed when inverse sine value is undefined
+#: ../src/mp-trigonometric.c:356
+msgid "Inverse sine is undefined for values outside [-1, 1]"
+msgstr ""
 
-#. This is accessible name for memory register 7.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:428
-msgid "register 7"
-msgstr "register 7"
+#. Translators: Error displayed when inverse cosine value is undefined
+#: ../src/mp-trigonometric.c:373
+msgid "Inverse cosine is undefined for values outside [-1, 1]"
+msgstr ""
 
-#. This is accessible name for memory register 8.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:432
-msgid "register 8"
-msgstr "register 8"
+#. Translators: Error displayed when inverse hyperbolic cosine value is
+#. undefined
+#: ../src/mp-trigonometric.c:591
+msgid ""
+"Inverse hyperbolic cosine is undefined for values less than or equal to one"
+msgstr ""
 
-#. This is accessible name for memory register 9.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:436
-msgid "register 9"
-msgstr "register 9"
-
-#: ../glade/mate-calc.glade.h:437
-msgid "x2"
-msgstr "x2"
-
-#: ../glade/mate-calc.glade.h:438
-msgid "xy"
-msgstr "xy"
-
-#. This is a plus-minus sign (+/-)
-#: ../glade/mate-calc.glade.h:440
-msgid "±"
-msgstr "±"
-
-#. This is a multiplication sign (*)
-#: ../glade/mate-calc.glade.h:442
-msgid "×"
-msgstr "×"
-
-#. this is a division sign (÷)
-#: ../glade/mate-calc.glade.h:444
-msgid "÷"
-msgstr "÷"
-
-#. This is a minus sign (-)
-#: ../glade/mate-calc.glade.h:446
-msgid "−"
-msgstr "−"
-
-#. This is a square root sign
-#: ../glade/mate-calc.glade.h:448
-msgid "√"
-msgstr "√"
-
+#. Translators: Error displayed when inverse hyperbolic tangent value is
+#. undefined
+#: ../src/mp-trigonometric.c:615
+msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
+msgstr ""

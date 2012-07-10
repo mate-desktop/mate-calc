@@ -1,2159 +1,1387 @@
-# Dutch translation for mate-calc
-#
-# This file is distributed under the same license as the mate-calc package.
-#
-# Vincent van Adrighem <V.vanAdrighem@dirck.mine.nu>, 2003.
-# Tino Meinen <tino.meinen@gmail.com>, 2003–2006, 2008, 2009.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Jaap Woldringh <jjh.woldringh@planet.nl>, 2007.
+# Michael Steenbeek <m.o.steenbeek@gmail.com>, 2012.
+# Tino Meinen <tino.meinen@gmail.com>, 2003–2006, 2008, 2009.
+# Vincent van Adrighem <V.vanAdrighem@dirck.mine.nu>, 2003.
 # Wouter Bolsterlee <wbolster@gnome.org>, 2007, 2009.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-06 23:57+0100\n"
-"PO-Revision-Date: 2009-03-06 01:05+0900\n"
-"Last-Translator: Tino Meinen <tino.meinen@gmail.com>\n"
-"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 16:03+0100\n"
+"PO-Revision-Date: 2012-06-26 07:50+0000\n"
+"Last-Translator: Michael Steenbeek <m.o.steenbeek@gmail.com>\n"
+"Language-Team: Dutch (http://www.transifex.com/projects/p/MATE/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#. FIXME: Useless string
-#: ../mate-calc/calctool.c:113 ../mate-calc/display.c:736
-#: ../mate-calc/mp.c:826 ../mate-calc/mp-trigonometric.c:155
-#: ../mate-calc/mp-trigonometric.c:191 ../mate-calc/mp-trigonometric.c:362
-msgid "Error"
-msgstr "Fout"
-
-#. Translators: A log message displayed when an invalid accuracy
-#. is read from the configuration
-#: ../mate-calc/calctool.c:223
-#, c-format
-msgid "%s: accuracy should be in the range 0-%d\n"
-msgstr "%s: nauwkeurigheid moet in het interval 0-%d liggen\n"
-
-# herstelhistorie
-#: ../mate-calc/display.c:390
-msgid "No undo history"
-msgstr "Herstelgeschiedenis leeg"
-
-#: ../mate-calc/display.c:405
-msgid "No redo steps"
-msgstr "Geen bewerkingen beschikbaar"
-
-#. Translators: This message is displayed in the status bar when an
-#. invalid user-defined function is executed
-#: ../mate-calc/functions.c:180
-msgid "Malformed function"
-msgstr "Vorm van functie is niet goed"
-
-#. Translators: This message is displayed in the status bar when a bit
-#. shift operation is performed and the display does not contain a number
-#: ../mate-calc/functions.c:192
-msgid "No sane value to do bitwise shift"
-msgstr "Bitsgewijs verschuiven is zinloos"
-
-#: ../mate-calc/functions.c:211 ../mate-calc/functions.c:253
-msgid "No sane value to convert"
-msgstr "Omrekenen is zinloos"
-
-#: ../mate-calc/functions.c:234 ../mate-calc/functions.c:272
-msgid "No sane value to store"
-msgstr "Opslaan is zinloos"
-
-#: ../mate-calc/functions.c:426
-msgid "Invalid number for the current base"
-msgstr "Getal past niet bij huidig grondtal"
-
-#: ../mate-calc/functions.c:430
-msgid "Too long number"
-msgstr "Getal is te lang"
-
-#: ../mate-calc/functions.c:434
-msgid "Invalid bitwise operation parameter(s)"
-msgstr "Ongeldige bitsgewijze bewerkingsparameter(s)"
-
-#: ../mate-calc/functions.c:438
-msgid "Invalid modulus operation parameter(s)"
-msgstr "Voor deze berekening moeten de te bewerken getallen geheel zijn"
-
-#: ../mate-calc/functions.c:442
-msgid "Math operation error"
-msgstr "Fout bij wiskundige bewerking"
-
-#: ../mate-calc/functions.c:446
-msgid "Malformed expression"
-msgstr "Vorm van uitdrukking is niet goed"
-
-#. Translators: The window title when in basic mode
-#: ../mate-calc/gtk.c:61 ../mate-calc.desktop.in.h:1
-msgid "Calculator"
-msgstr "Rekenmachine"
-
-#. Translators: The window title when in advanced mode
-#: ../mate-calc/gtk.c:63
-msgid "Calculator - Advanced"
-msgstr "Rekenmachine — geavanceerd"
-
-#. Translators: The window title when in financial mode
-#: ../mate-calc/gtk.c:65
-msgid "Calculator - Financial"
-msgstr "Rekenmachine — financieel"
-
-#. Translators: The window title when in scientific mode
-#: ../mate-calc/gtk.c:67
-msgid "Calculator - Scientific"
-msgstr "Rekenmachine — wetenschappelijk"
-
-#. Translators: The window title when in programming mode
-#: ../mate-calc/gtk.c:69
-msgid "Calculator - Programming"
-msgstr "Rekenmachine — programmeren"
-
-#. Translators: The window title when in basic mode. %s is replaced with the hostname.
-#: ../mate-calc/gtk.c:75
-#, c-format
-msgid "Calculator [%s]"
-msgstr "Rekenmachine [%s]"
-
-#. Translators: The window title when in advanced mode. %s is replaced with the hostname.
-#: ../mate-calc/gtk.c:77
-#, c-format
-msgid "Calculator [%s] - Advanced"
-msgstr "Rekenmachine [%s] — geavanceerd"
-
-#. Translators: The window title when in financial mode. %s is replaced with the hostname.
-#: ../mate-calc/gtk.c:79
-#, c-format
-msgid "Calculator [%s] - Financial"
-msgstr "Rekenmachine [%s] — financieel"
-
-#. Translators: The window title when in scientific mode. %s is replaced with the hostname.
-#: ../mate-calc/gtk.c:81
-#, c-format
-msgid "Calculator [%s] - Scientific"
-msgstr "Rekenmachine [%s] — wetenschappelijk"
-
-#. Translators: The window title when in programming mode. %s is replaced with the hostname.
-#: ../mate-calc/gtk.c:83
-#, c-format
-msgid "Calculator [%s] - Programming"
-msgstr "Rekenmachine [%s] — programmeren"
-
-#. Translators: Accuracy Popup: Menu item to show the accuracy dialog. %d is replaced with the current accuracy.
-#: ../mate-calc/gtk.c:540
-#, c-format
-msgid "_Other (%d) ..."
-msgstr "_Anders (%d) …"
-
-#. Translators: Tooltip for accuracy button
-#: ../mate-calc/gtk.c:546
-#, c-format
-msgid "Set accuracy from 0 to %d numeric place. [A]"
-msgid_plural "Set accuracy from 0 to %d numeric places. [A]"
-msgstr[0] "Nauwkeurigheid instellen op 0 tot %d numerieke posities. [A]"
-msgstr[1] "Nauwkeurigheid instellen op 0 tot %d numerieke posities. [A]"
-
-#. Translators: The sine button
-#: ../mate-calc/gtk.c:571
-msgid "Sin"
-msgstr "Sin"
-
-#. Translators: The inverse sine button
-#: ../mate-calc/gtk.c:573
-msgid "Sin<sup>-1</sup>"
-msgstr "Sin<sup>-1</sup>"
-
-#. Translators: The hyperbolic sine button
-#: ../mate-calc/gtk.c:575
-msgid "Sinh"
-msgstr "Sinh"
-
-#. Translators: The inverse hyperbolic sine button
-#: ../mate-calc/gtk.c:577
-msgid "Sinh<sup>-1</sup>"
-msgstr "Sinh<sup>-1</sup>"
-
-#. Translators: The sine tooltip
-#: ../mate-calc/gtk.c:580
-msgid "Sine [k]"
-msgstr "Sinus [k]"
-
-#. Translators: The inverse sine tooltip
-#: ../mate-calc/gtk.c:582
-msgid "Inverse Sine [K]"
-msgstr "Inverse sinus [K]"
-
-#. Translators: The hyperbolic sine tooltip
-#: ../mate-calc/gtk.c:584
-msgid "Hyperbolic Sine [k]"
-msgstr "Hyperbolische sinus [k]"
-
-#. Translators: The hyperbolic inverse sine tooltip
-#: ../mate-calc/gtk.c:586
-msgid "Hyperbolic Inverse Sine [K]"
-msgstr "Inverse hyperbolische sinus [K]"
-
-#. Translators: The cosine button
-#: ../mate-calc/gtk.c:590
-msgid "Cos"
-msgstr "Cos"
-
-#. Translators: The inverse cosine button
-#: ../mate-calc/gtk.c:592
-msgid "Cos<sup>-1</sup>"
-msgstr "Cos<sup>-1</sup>"
-
-#. Translators: The hyperbolic cosine button
-#: ../mate-calc/gtk.c:594
-msgid "Cosh"
-msgstr "Cosh"
-
-#. Translators: The inverse hyperbolic cosine button
-#: ../mate-calc/gtk.c:596
-msgid "Cosh<sup>-1</sup>"
-msgstr "Cosh<sup>-1</sup>"
-
-#. Translators: The cosine tooltip
-#: ../mate-calc/gtk.c:599
-msgid "Cosine [j]"
-msgstr "Cosinus [j]"
-
-#. Translators: The inverse cosine tooltip
-#: ../mate-calc/gtk.c:601
-msgid "Inverse Cosine [J]"
-msgstr "Inverse cosinus [J]"
-
-#. Translators: The hyperbolic cosine tooltip
-#: ../mate-calc/gtk.c:603
-msgid "Hyperbolic Cosine [j]"
-msgstr "Hyperbolische cosinus [j]"
-
-#. Translators: The hyperbolic inverse cosine tooltip
-#: ../mate-calc/gtk.c:605
-msgid "Hyperbolic Inverse Cosine [J]"
-msgstr "Inverse hyperbolische cosinus [J]"
-
-#. Translators: The tangent button
-#: ../mate-calc/gtk.c:609
-msgid "Tan"
-msgstr "Tan"
-
-#. Translators: The inverse tangent button
-#: ../mate-calc/gtk.c:611
-msgid "Tan<sup>-1</sup>"
-msgstr "Tan<sup>-1</sup>"
-
-#. Translators: The hyperbolic tangent button
-#: ../mate-calc/gtk.c:613
-msgid "Tanh"
-msgstr "Tanh"
-
-#. Translators: The inverse hyperbolic tangent button
-#: ../mate-calc/gtk.c:615
-msgid "Tanh<sup>-1</sup>"
-msgstr "Tanh<sup>-1</sup>"
-
-#. Translators: The tangent tooltip
-#: ../mate-calc/gtk.c:618
-msgid "Tangent [w]"
-msgstr "Tangens [w]"
-
-#. Translators: The inverse tangent tooltip
-#: ../mate-calc/gtk.c:620
-msgid "Inverse Tangent [W]"
-msgstr "Inverse tangens [W]"
-
-#. Translators: The hyperbolic tangent tooltip
-#: ../mate-calc/gtk.c:622
-msgid "Hyperbolic Tangent [w]"
-msgstr "Hyperbolische tangens [w]"
-
-#. Translators: The hyperbolic inverse tangent tooltip
-#: ../mate-calc/gtk.c:624
-msgid "Hyperbolic Inverse Tangent [W]"
-msgstr "Inverse hyperbolische tangens [W]"
-
-#. Translators: The natural logaritm button
-#: ../mate-calc/gtk.c:629
-msgid "Ln"
-msgstr "Ln"
-
-#. Translators: The e to the power of x button
-#: ../mate-calc/gtk.c:631
-msgid "e<sup><i>x</i></sup>"
-msgstr "e<sup><i>x</i></sup>"
-
-#. Translators: Tooltip for the natural log button
-#: ../mate-calc/gtk.c:634
-msgid "Natural log [n]"
-msgstr "Natuurlijk logaritme [n]"
-
-#. Translators: Tooltip for the e to the power of x button
-#: ../mate-calc/gtk.c:636
-msgid "e to the power of the displayed value [N]"
-msgstr "e tot de macht van de getoonde waarde [N]"
-
-#. Translators: The 10-based logaritm button
-#: ../mate-calc/gtk.c:641
-msgid "Log"
-msgstr "Log"
-
-#. Translators: The 10 to the power of x button
-#: ../mate-calc/gtk.c:643
-msgid "10<sup><i>x</i></sup>"
-msgstr "10<sup><i>x</i></sup>"
-
-#. Translators: Tooltip for the log base 10 button
-#: ../mate-calc/gtk.c:646
-msgid "Base 10 log [g]"
-msgstr "Logaritme (grondtal 10) [g]"
-
-#. Translators: Tooltip for the 10 to the power of x button
-#: ../mate-calc/gtk.c:648
-msgid "10 to the power of displayed value [G]"
-msgstr "10 tot de macht van de getoonde waarde [G]"
-
-#. Translators: The 2-based logaritm button
-#: ../mate-calc/gtk.c:653
-msgid "Log<sub>2</sub>"
-msgstr "Log<sub>2</sub>"
-
-#. Translators: The 2 to the power of x button
-#: ../mate-calc/gtk.c:655
-msgid "2<sup><i>x</i></sup>"
-msgstr "2<sup><i>x</i></sup>"
-
-#. Translators: Tooltip for the log base 2 button
-#: ../mate-calc/gtk.c:658
-msgid "Base 2 log [h]"
-msgstr "Logaritme (grondtal 2) [h]"
-
-#. Translators: Tooltip for the 2 to the power of x button
-#: ../mate-calc/gtk.c:660
-msgid "2 to the power of the displayed value [H]"
-msgstr "2 tot de macht van de getoonde waarde [H]"
-
-#. Translators: The x to the power of y button
-#: ../mate-calc/gtk.c:665
-msgid "x<sup><i>y</i></sup>"
-msgstr "x<sup><i>y</i></sup>"
-
-#. Translators: The x to the power of reciprocal y button
-#: ../mate-calc/gtk.c:667
-msgid "x<sup>1/<i>y</i></sup>"
-msgstr "x<sup>1/<i>y</i></sup>"
-
-#. Translators: Tooltip for the x to the power of y button
-#: ../mate-calc/gtk.c:670
-msgid "Raise displayed value to the power of y [o]"
-msgstr "Getoonde waarde tot de macht y verheffen [o]"
-
-#. Translators: Tooltip for the x to the power of reciprocal y button
-#: ../mate-calc/gtk.c:672
-msgid "Raise displayed value to the power of reciprocal y [O]"
-msgstr "Getoonde waarde tot de macht 1/y verheffen [O]"
-
-#. Translators: The translator credits. Please translate this with your name(s).
-#: ../mate-calc/gtk.c:1202
-msgid "translator-credits"
-msgstr ""
-"Wouter Bolsterlee\n"
-"Ben Bridts\n"
-"Tino Meinen\n"
-"Jaap Woldringh\n"
-"Vincent van Adrighem\n"
-"\n"
-"Kijk voor meer informatie op http://nl.mate.org/"
-
-#. Translators: The license this software is under (GPL2+)
-#: ../mate-calc/gtk.c:1206
-msgid ""
-"mate-calc is free software; you can redistribute it and/or modify\n"
-"it under the terms of the GNU General Public License as published by\n"
-"the Free Software Foundation; either version 2 of the License, or\n"
-"(at your option) any later version.\n"
-"\n"
-"mate-calc is distributed in the hope that it will be useful,\n"
-"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License\n"
-"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
-"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA\n"
-msgstr ""
-"mate-calc is free software; you can redistribute it and/or modify\n"
-"it under the terms of the GNU General Public License as published by\n"
-"the Free Software Foundation; either version 2 of the License, or\n"
-"(at your option) any later version.\n"
-"\n"
-"mate-calc is distributed in the hope that it will be useful,\n"
-"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License\n"
-"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
-"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA\n"
-
-#. Translators: Program name in the about dialog
-#: ../mate-calc/gtk.c:1223
-msgid "mate-calc"
-msgstr "mate-calc"
-
-#. Translators: Copyright notice in the about dialog
-#: ../mate-calc/gtk.c:1226
-msgid "© 1986-2008 The mate-calc authors"
-msgstr "© 1986-2008 De makers van mate-calc"
-
-#. Translators: Short description in the about dialog
-#: ../mate-calc/gtk.c:1229
-msgid "Calculator with financial and scientific modes."
-msgstr "Rekenmachine met financiële en wetenschappelijke standen."
-
-#: ../mate-calc/gtk.c:1380
-msgid "Unable to open help file"
-msgstr "Kon hulpbestand niet openen"
-
-#. Hexadecimal digit C button
-#: ../mate-calc/gtk.c:1545 ../glade/mate-calc.glade.h:129
-msgid "C"
-msgstr "C"
-
-#. Hexadecimal digit F button
-#: ../mate-calc/gtk.c:1568 ../glade/mate-calc.glade.h:200
-msgid "F"
-msgstr "F"
-
-#. Translators: R is the short form of register used inter alia in popup menus
-#: ../mate-calc/gtk.c:1800
-msgid "R"
-msgstr "R"
-
-#. FIXME: WTF?
-#: ../mate-calc/gtk.c:2226
-msgid "Paste"
-msgstr "Plakken"
-
-#. Translators: Title of the error dialog when unable to load the UI files
-#: ../mate-calc/gtk.c:2446
-msgid "Error loading user interface"
-msgstr "Fout bij het laden van de gebruikersinterface"
-
-#. Translators: Description in UI error dialog when unable to load the UI files. %s is replaced with the path of the missing file
-#: ../mate-calc/gtk.c:2449
-#, c-format
-msgid ""
-"The user interface file %s is missing or unable to be loaded. Please check "
-"your installation."
-msgstr ""
-"Het gebruikersinterfacebestand %s ontbreekt of kan niet geladen worden. "
-"Controleer uw installatie."
-
-# nummer (dus niet 'nee')
-#. Translators: Edit Constants Dialog: Constant number column title
-#. Translators: Edit Functions Dialog: Function number column title
-#: ../mate-calc/gtk.c:2676 ../mate-calc/gtk.c:2697
-msgid "No."
-msgstr "Nr."
-
-#. Translators: Edit Constants Dialog: Constant value column title
-#. Translators: Edit Functions Dialog: Function value column title
-#: ../mate-calc/gtk.c:2679 ../mate-calc/gtk.c:2700
-msgid "Value"
-msgstr "Getal"
-
-#. Translators: Edit Constants Dialog: Constant description column title
-#. Translators: Edit Functions Dialog: Function description column title
-#: ../mate-calc/gtk.c:2682 ../mate-calc/gtk.c:2703
-msgid "Description"
-msgstr "Omschrijving"
-
-#. Set default accuracy menu item
-#. Translators: Accuracy Popup: Menu item to reset the accuracy to the default value. %d is replaced with the default value.
-#: ../mate-calc/gtk.c:2855
-#, c-format
-msgid "Reset to _Default (%d)"
-msgstr "_Terugzetten op standaard (%d)"
-
-#: ../mate-calc/mp.c:1953
-msgid "Negative X and non-integer Y not supported"
-msgstr "Negatieve X en niet gehele Y worden niet ondersteund"
-
-#: ../mate-calc/mp-trigonometric.c:608
-msgid "Error, cannot calculate cosine"
-msgstr "Fout, kan cosinus niet berekenen"
-
-#. Translators: This is the label for the default constant, the number of miles in one kilometer (0.621)
-#: ../mate-calc/register.c:40
-msgid "Kilometer-to-mile conversion factor"
-msgstr "Omrekeningsfactor kilometer-naar-mijl"
-
-#. Translators: This is the label for the default constant, the square root of 2 (1.41421)
-#: ../mate-calc/register.c:42
-msgid "square root of 2"
-msgstr "vierkantswortel van 2"
-
-#. Translators: This is the label for the default constant, Euler's number (2.71828)
-#: ../mate-calc/register.c:44
-msgid "Euler's Number (e)"
-msgstr "Euler's getal (e)"
-
-#. Translators: This is the label for the default constant, π (3.14159)
-#: ../mate-calc/register.c:46
-msgid "π"
-msgstr "π"
-
-#. Translators: This is the label for the default constant, the number of inches in a centimeter (0.39370)
-#: ../mate-calc/register.c:48
-msgid "Centimeter-to-inch conversion factor"
-msgstr "Omrekeningsfactor centimeter-naar-inch"
-
-#. Translators: This is the label for the default constant, the number of degrees in a radian (57.2958)
-#: ../mate-calc/register.c:50
-msgid "degrees in a radian"
-msgstr "graden in een radiaal"
-
-#. Translators: This is the label for the default constant, 2 to the power of 20 (1048576)
-#: ../mate-calc/register.c:52
-msgid "2 ^ 20"
-msgstr "2 ^ 20"
-
-#. Translators: This is the label for the default constant, the number of ounces in one gram (0.0353)
-#: ../mate-calc/register.c:54
-msgid "Gram-to-ounce conversion factor"
-msgstr "Omrekeningsfactor gram-naar-ounce"
-
-#. Translators: This is the label for the default constant, the number of British Thermal Units in one Kilojoule (0.948)
-#: ../mate-calc/register.c:56
-msgid "Kilojoule-to-British-thermal-unit conversion factor"
-msgstr "Omrekeningsfactor kilojoules-naar-BTU"
-
-#. Translators: This is the label for the default constant, the number of cubic inches in one cubic centimeter (0.0610)
-#: ../mate-calc/register.c:58
-msgid "Cubic-centimeter-to-cubic-inch conversion factor"
-msgstr "Omrekeningsfactor kubieke centimeter-naar-kubieke inch"
-
-#: ../mate-calc.desktop.in.h:2
-msgid "Perform arithmetic, scientific or financial calculations"
-msgstr "Rekenkundige, wetenschappelijke of financiële berekeningen uitvoeren"
-
-#. Payment Period Dialog: Button to calculate result
-#: ../glade/financial.glade.h:2
-msgid "C_alculate"
-msgstr "_Berekenen"
-
-# Waarde/aanschafwaarde/kosten
-#. Gross Profit Margin Dialog: Label before cost input
-#: ../glade/financial.glade.h:4
-msgid "C_ost:"
-msgstr "K_osten:"
-
-#. Periodic Payment Dialog: Description of calculation
-#: ../glade/financial.glade.h:6
-msgid ""
-"Calculates the amount of the periodic payment of a loan, where payments are "
-"made at the end of each payment period. "
-msgstr ""
-"Geeft de periodieke aflossing van een lening waarbij de betalingen aan het "
-"einde van elke periode plaatsvinden."
-
-# Wordt soms vertaald als "Som der jaareenheden"
-#. Sum-Of-The-Years'-Digits Depreciation Dialog: Description of calculation
-#: ../glade/financial.glade.h:8
-msgid ""
-"Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-Of-The-Years'-Digits method. This method of depreciation "
-"accelerates the rate of depreciation, so that more depreciation expense "
-"occurs in earlier periods than in later ones. The useful life is the number "
-"of periods, typically years, over which an asset is depreciated. "
-msgstr ""
-"Geeft het afschrijvingsbedrag van activa over een bepaalde termijn volgens "
-"de Sum-Of-The-Years'-Digits methode. Bij deze versnelde afschrijvingsmethode "
-"zijn de afschrijvingbedragen groter in de begintermijnen. De looptijd is het "
-"aantal termijnen, gewoonlijk in jaren, waarin activa worden afgeschreven."
-
-# wordt soms vertaald als dubbele degressieve afschrijvingsmethode
-#. Double-Declining Depreciation Dialog: Description of calculation
-#: ../glade/financial.glade.h:10
-msgid ""
-"Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the double-declining balance method."
-msgstr ""
-"Geeft het afschrijvingsbedrag van activa over een bepaalde termijn volgens "
-"de 'Double-declining balance'-methode."
-
-#. Future Value Dialog: Description of calculation
-#: ../glade/financial.glade.h:12
-msgid ""
-"Calculates the future value of an investment based on a series of equal "
-"payments at a periodic interest rate over the number of payment periods in "
-"the term."
-msgstr ""
-"Geeft de toekomstige waarde van een investering op basis van een reeks "
-"gelijke betalingen bij een discontopercentage over het aantal "
-"betalingstermijnen in de periode."
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#. Accessible name for the inverse button
+#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:30
+msgid "Inverse"
+msgstr "Omkeren"
+
+#. Accessible name for the factorize button
+#: ../data/buttons-advanced.ui.h:4 ../data/buttons-programming.ui.h:2
+msgid "Factorize"
+msgstr "Faculteit"
+
+#. Accessible name for the factorial button
+#: ../data/buttons-advanced.ui.h:6 ../data/buttons-programming.ui.h:28
+msgid "Factorial"
+msgstr "Faculteit"
+
+#. Label on the solve button (clicking this solves the displayed calculation)
+#: ../data/buttons-advanced.ui.h:8 ../data/buttons-basic.ui.h:2
+#: ../data/buttons-financial.ui.h:10 ../data/buttons-programming.ui.h:6
+msgid "="
+msgstr "="
+
+#. Label on the clear display button
+#: ../data/buttons-advanced.ui.h:10 ../data/buttons-basic.ui.h:4
+#: ../data/buttons-financial.ui.h:12 ../data/buttons-programming.ui.h:8
+msgid "Clear"
+msgstr "⌫"
+
+#. Accessible name for the subscript mode button
+#: ../data/buttons-advanced.ui.h:12 ../data/buttons-programming.ui.h:10
+msgid "Subscript"
+msgstr "Subscript"
+
+#. Accessible name for the superscript mode button
+#: ../data/buttons-advanced.ui.h:14 ../data/buttons-programming.ui.h:12
+msgid "Superscript"
+msgstr "Superscript"
+
+#. Accessible name for the scientific exponent button
+#: ../data/buttons-advanced.ui.h:16
+msgid "Scientific Exponent"
+msgstr "Wetenschappelijke exponent"
+
+#. Accessible name for the recall value button
+#: ../data/buttons-advanced.ui.h:18 ../data/buttons-financial.ui.h:6
+#: ../data/buttons-programming.ui.h:14
+msgid "Recall"
+msgstr "Opnieuw oproepen"
+
+#. The label on the memory recall button
+#: ../data/buttons-advanced.ui.h:20 ../data/buttons-financial.ui.h:8
+#: ../data/buttons-programming.ui.h:16
+msgid "&#x2190; R"
+msgstr "&#x2190; R"
+
+#. Accessible name for the store value button
+#: ../data/buttons-advanced.ui.h:22 ../data/buttons-financial.ui.h:2
+#: ../data/buttons-programming.ui.h:18
+msgid "Store"
+msgstr "Opslaan"
+
+#. The label on the memory store button
+#: ../data/buttons-advanced.ui.h:24 ../data/buttons-financial.ui.h:4
+#: ../data/buttons-programming.ui.h:20
+msgid "&#x2192; R"
+msgstr "&#x2192; R"
+
+#. Accessible name for the absolute value button
+#: ../data/buttons-advanced.ui.h:26 ../data/buttons-programming.ui.h:4
+msgid "Absolute Value"
+msgstr "Absolute waarde"
+
+#. Accessible name for the exponentiation (x to the power of y) button
+#: ../data/buttons-advanced.ui.h:28 ../data/buttons-basic.ui.h:6
+#: ../data/buttons-financial.ui.h:36 ../data/buttons-programming.ui.h:32
+msgid "Exponent"
+msgstr "Exponent"
+
+#. Label on the undo button
+#. Label on the clear display button
+#: ../data/buttons-advanced.ui.h:30 ../data/buttons-basic.ui.h:8
+#: ../data/buttons-financial.ui.h:34
+msgid "Undo"
+msgstr "⤺"
+
+#. Calculates the number of compounding periods necessary to increase an
+#. investment of present value pv to a future value of fv, at a fixed interest
+#. rate of int per compounding period. See also:
+#. http://en.wikipedia.org/wiki/Compound_interest
+#: ../data/buttons-financial.ui.h:14
+msgid "Ctrm"
+msgstr "Ctrm"
+
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the double-declining balance method. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:16
+msgid "Ddb"
+msgstr "Dda"
+
+#. Calculates the future value of an investment based on a series of equal
+#. payments, each of amount pmt, at a periodic interest rate of int, over the
+#. number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Future_value
+#: ../data/buttons-financial.ui.h:18
+msgid "Fv"
+msgstr "Tw"
+
+#. Calculates the number of payment periods that are necessary during the term
+#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
+#. interest rate of int. Each payment is equal to amount pmt. See also:
+#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#: ../data/buttons-financial.ui.h:20
+msgid "Term"
+msgstr "Term"
+
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the Sum-Of-The-Years'-Digits method. This method of
+#. depreciation accelerates the rate of depreciation, so that more
+#. depreciation expense occurs in earlier periods than in later ones. The
+#. depreciable cost is cost - salvage. The useful life is the number of
+#. periods, typically years, over which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:22
+msgid "Syd"
+msgstr "Syd"
+
+#. Calculates the straight-line depreciation of an asset for one period. The
+#. depreciable cost is cost - salvage. The straight-line method of
+#. depreciation divides the depreciable cost evenly over the useful life of an
+#. asset. The useful life is the number of periods, typically years, over
+#. which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:24
+msgid "Sln"
+msgstr "La"
+
+#. Calculates the periodic interest necessary to increase an investment of
+#. present value pv to a future value of fv, over the number of compounding
+#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#: ../data/buttons-financial.ui.h:26
+msgid "Rate"
+msgstr "Rente"
+
+#. Calculates the present value of an investment based on a series of equal
+#. payments, each of amount pmt, discounted at a periodic interest rate of
+#. int, over the number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Present_value
+#: ../data/buttons-financial.ui.h:28
+msgid "Pv"
+msgstr "Hw"
+
+#. Calculates the amount of the periodic payment of a loan, where payments are
+#. made at the end of each payment period. See also:
+#. http://en.wikipedia.org/wiki/Amortization_schedule
+#: ../data/buttons-financial.ui.h:30
+msgid "Pmt"
+msgstr "Trm"
+
+#. Calculates the resale price of a product, based on the product cost and the
+#. wanted gross profit margin. See also:
+#. http://en.wikipedia.org/wiki/Gross_profit_margin
+#: ../data/buttons-financial.ui.h:32
+msgid "Gpm"
+msgstr "Bwm"
+
+#. Title of Compounding Term dialog
+#. Tooltip for the compounding term button
+#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:261
+msgid "Compounding Term"
+msgstr "Afkooptermijn"
+
+#. Periodic Interest Rate Dialog: Label before present value input
+#: ../data/buttons-financial.ui.h:40
+msgid "Present _Value:"
+msgstr "Huidige _waarde:"
+
+#. Payment Period Dialog: Label before periodic interest rate input
+#: ../data/buttons-financial.ui.h:42
+msgid "Periodic Interest _Rate:"
+msgstr "Periodieke rente-_ratio:"
 
 #. Compounding Term Dialog: Description of calculation
-#: ../glade/financial.glade.h:14
+#: ../data/buttons-financial.ui.h:44
 msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr ""
-"Geeft het aantal perioden met samengestelde interest dat nodig is om een "
-"investering vanaf de huidige waarde naar de toekomstige waarde te brengen, "
-"bij een vast rentepercentage per periode."
+msgstr "Geeft het aantal perioden met samengestelde interest dat nodig is om een investering vanaf de huidige waarde naar de toekomstige waarde te brengen, bij een vast rentepercentage per periode."
 
-#. Payment Period Dialog: Description of calculation
-#: ../glade/financial.glade.h:16
+#. Periodic Interest Rate Dialog: Label before future value input
+#: ../data/buttons-financial.ui.h:46
+msgid "_Future Value:"
+msgstr "_Toekomstige waarde"
+
+#. Payment Period Dialog: Button to calculate result
+#: ../data/buttons-financial.ui.h:48
+msgid "C_alculate"
+msgstr "_Berekenen"
+
+#. Title of Double-Declining Depreciation dialog
+#: ../data/buttons-financial.ui.h:50
+msgid "Double-Declining Depreciation"
+msgstr "Dubbele degressieve afschrijving"
+
+#. Double-Declining Depreciation Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:52
 msgid ""
-"Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest "
-"rate."
-msgstr ""
+"Calculates the depreciation allowance on an asset for a specified period of "
+"time, using the double-declining balance method."
+msgstr "Geeft het afschrijvingsbedrag van activa over een bepaalde termijn volgens de 'Double-declining balance'-methode."
 
-#. Periodic Interest Rate Dialog: Description of calculation
-#: ../glade/financial.glade.h:18
+#. Gross Profit Margin Dialog: Label before cost input
+#: ../data/buttons-financial.ui.h:54
+msgid "C_ost:"
+msgstr "K_osten:"
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#: ../data/buttons-financial.ui.h:56
+msgid "_Life:"
+msgstr "_Looptijd:"
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#: ../data/buttons-financial.ui.h:58
+msgid "_Period:"
+msgstr "_Periode:"
+
+#. Title of Future Value dialog
+#. Tooltip for the future value button
+#: ../data/buttons-financial.ui.h:60 ../src/math-buttons.c:267
+msgid "Future Value"
+msgstr "Toekomstige waarde"
+
+#. Future Value Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:62
 msgid ""
-"Calculates the periodic interest necessary to increase an investment to a "
-"future value, over the number of compounding periods. "
-msgstr ""
+"Calculates the future value of an investment based on a series of equal "
+"payments at a periodic interest rate over the number of payment periods in "
+"the term."
+msgstr "Geeft de toekomstige waarde van een investering op basis van een reeks gelijke betalingen bij een discontopercentage over het aantal betalingstermijnen in de periode."
 
-# zie definitie toekomstige waarde
+#. Payment Period Dialog: Label before periodic payment input
+#: ../data/buttons-financial.ui.h:64
+msgid "_Periodic Payment:"
+msgstr "_Periodieke betaling:"
+
+#. Present Value Dialog: Label before number of periods input
+#: ../data/buttons-financial.ui.h:66
+msgid "_Number of Periods:"
+msgstr "Aa_ntal periodes:"
+
+#. Title of Gross Profit Margin dialog
+#. Tooltip for the gross profit margin button
+#: ../data/buttons-financial.ui.h:68 ../src/math-buttons.c:288
+msgid "Gross Profit Margin"
+msgstr "Bruto winstmarge"
+
+#. Gross Profit Margin Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:70
+msgid ""
+"Calculates the resale price of a product, based on the product cost and the "
+"wanted gross profit margin."
+msgstr "Berekent de verkoopwaarde van een product, gebaseerd op de kostprijs en de gewenste winstmarge."
+
+#. Gross Profit Margin Dialog: Label before margin input
+#: ../data/buttons-financial.ui.h:72
+msgid "_Margin:"
+msgstr "_Marge:"
+
+#. Title of Periodic Payment dialog
+#. Tooltip for the periodic payment button
+#: ../data/buttons-financial.ui.h:74 ../src/math-buttons.c:285
+msgid "Periodic Payment"
+msgstr "Periodieke betaling"
+
+#. Periodic Payment Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:76
+msgid ""
+"Calculates the amount of the periodic payment of a loan, where payments are "
+"made at the end of each payment period. "
+msgstr "Geeft de periodieke aflossing van een lening waarbij de betalingen aan het einde van elke periode plaatsvinden."
+
+#. Periodic Payment Dialog: Label before principal input
+#: ../data/buttons-financial.ui.h:78
+msgid "_Principal:"
+msgstr "_Kapitaal:"
+
+#. Periodic Interest Rate Dialog: Label before term input
+#: ../data/buttons-financial.ui.h:80
+msgid "_Term:"
+msgstr "_Termijn:"
+
+#. Title of Present Value dialog
+#. Tooltip for the present value button
+#: ../data/buttons-financial.ui.h:82 ../src/math-buttons.c:282
+msgid "Present Value"
+msgstr "Huidige waarde"
+
 #. Present Value Dialog: Description of calculation
-#: ../glade/financial.glade.h:20
+#: ../data/buttons-financial.ui.h:84
 msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr ""
+msgstr "Berekent de huidige waarde van een investering op basis van een reeks van gelijke betalingen contant gemaakt tegen een periodieke rente over het aantal betalingstermijnen binnen de termijn. "
 
-#. Gross Profit Margin Dialog: Description of calculation
-#: ../glade/financial.glade.h:22
+#. Title of Periodic Interest Rate dialog
+#. Tooltip for the periodic interest rate button
+#: ../data/buttons-financial.ui.h:86 ../src/math-buttons.c:279
+msgid "Periodic Interest Rate"
+msgstr "Periodieke rente-ratio"
+
+#. Periodic Interest Rate Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:88
 msgid ""
-"Calculates the resale price of a product, based on the product cost and the "
-"wanted gross profit margin."
-msgstr ""
+"Calculates the periodic interest necessary to increase an investment to a "
+"future value, over the number of compounding periods. "
+msgstr "Berekent het periodieke rentepercentage dat nodig is om een investering te verhogen tot een toekomstige waarde, over het aantal samengestelde perioden. "
+
+#. Title of Straight-Line Depreciation dialog
+#: ../data/buttons-financial.ui.h:90
+msgid "Straight-Line Depreciation"
+msgstr "Lineaire afschrijving"
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#: ../data/buttons-financial.ui.h:92
+msgid "_Cost:"
+msgstr "_Kosten:"
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#: ../data/buttons-financial.ui.h:94
+msgid "_Salvage:"
+msgstr "_Restwaarde:"
 
 #. Straight-Line Depreciation Dialog: Description of calculation
-#: ../glade/financial.glade.h:24
+#: ../data/buttons-financial.ui.h:96
 msgid ""
 "Calculates the straight-line depreciation of an asset for one period. The "
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr ""
+msgstr "Berekent de lineaire afschrijving van activa voor een periode. De lineaire methode van afschrijving verdeelt het af te schrijven kosten gelijkmatig over de gebruiksduur van een actief. De levensduur is het aantal periodes, meestal jaren, gedurende welke een actief wordt afgeschreven. "
 
-#. Title of Compounding Term dialog
-#: ../glade/financial.glade.h:26
-msgid "Compounding Term"
-msgstr "Afkooptermijn"
+#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#: ../data/buttons-financial.ui.h:98
+msgid "Sum-of-the-Years'-Digits Depreciation"
+msgstr "Jaarcijfersafschrijving"
 
-#. Title of Double-Declining Depreciation dialog
-#: ../glade/financial.glade.h:28
-msgid "Double-Declining Depreciation"
-msgstr "Dubbele degressieve afschrijving"
-
-#. Title of Future Value dialog
-#: ../glade/financial.glade.h:30
-msgid "Future Value"
-msgstr "Toekomstige waarde"
-
-#. Payment Period Dialog: Label before future value input
-#: ../glade/financial.glade.h:32
-msgid "Future _Value:"
-msgstr "Toekomstige _waarde:"
-
-#. Title of Gross Profit Margin dialog
-#: ../glade/financial.glade.h:34 ../glade/mate-calc.glade.h:223
-msgid "Gross Profit Margin"
-msgstr ""
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:100
+msgid ""
+"Calculates the depreciation allowance on an asset for a specified period of "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
+" accelerates the rate of depreciation, so that more depreciation expense "
+"occurs in earlier periods than in later ones. The useful life is the number "
+"of periods, typically years, over which an asset is depreciated. "
+msgstr "Berekent de afschrijving op een activa voor een bepaalde periode van tijd, met behulp van de jaartelling-cijfers-methode. Deze methode van afschrijven verhoogt het tempo van de afschrijvingen, zodat meer afschrijvingskosten in eerdere perioden dan in de latere plaatsvindt. De levensduur is het aantal periodes, meestal jaren, gedurende welke een activa wordt afgeschreven. "
 
 #. Title of Payment Period dialog
-#: ../glade/financial.glade.h:36
+#: ../data/buttons-financial.ui.h:102
 msgid "Payment Period"
 msgstr "Betalingstermijn"
 
-#. Title of Periodic Interest Rate dialog
-#: ../glade/financial.glade.h:38
-msgid "Periodic Interest Rate"
-msgstr "Periodieke rente-ratio"
+#. Payment Period Dialog: Label before future value input
+#: ../data/buttons-financial.ui.h:104
+msgid "Future _Value:"
+msgstr "Toekomstige _waarde:"
 
-#. Payment Period Dialog: Label before periodic interest rate input
-#: ../glade/financial.glade.h:40
-msgid "Periodic Interest _Rate:"
-msgstr "Periodic rente-_ratio:"
-
-#. Title of Periodic Payment dialog
-#: ../glade/financial.glade.h:42
-msgid "Periodic Payment"
-msgstr "Periodieke betaling"
-
-#. Title of Present Value dialog
-#: ../glade/financial.glade.h:44
-msgid "Present Value"
-msgstr "Huidige waarde"
-
-#. Periodic Interest Rate Dialog: Label before present value input
-#: ../glade/financial.glade.h:46
-msgid "Present _Value:"
-msgstr "Huidige _waarde:"
-
-#. Title of Straight-Line Depreciation dialog
-#: ../glade/financial.glade.h:48
-msgid "Straight-Line Depreciation"
-msgstr "Lineaire afschrijving"
-
-#. Title of Sum-Of-The-Years'-Digits Depreciation dialog
-#: ../glade/financial.glade.h:50
-msgid "Sum-Of-The-Years'-Digits Depreciation"
-msgstr "Sum-of-the years'-digits afschrijving"
-
-#. Sum-Of-The-Years'-Digits Depreciation Dialog: Label before cost input
-#: ../glade/financial.glade.h:52
-msgid "_Cost:"
-msgstr "_Kosten:"
-
-#. Periodic Interest Rate Dialog: Label before future value input
-#: ../glade/financial.glade.h:54
-msgid "_Future Value:"
-msgstr "_Toekomstige waarde"
-
-#. Sum-Of-The-Years'-Digits Depreciation Dialog: Label before life input
-#: ../glade/financial.glade.h:56
-msgid "_Life:"
-msgstr "_Looptijd:"
-
-#. Gross Profit Margin Dialog: Label before margin input
-#: ../glade/financial.glade.h:58
-msgid "_Margin:"
-msgstr "_Marge:"
-
-#. Present Value Dialog: Label before number of periods input
-#: ../glade/financial.glade.h:60
-msgid "_Number Of Periods:"
-msgstr "_Aantal perioden:"
-
-#. Sum-Of-The-Years'-Digits Depreciation Dialog: Label before period input
-#: ../glade/financial.glade.h:62
-msgid "_Period:"
-msgstr "_Periode:"
-
-#. Payment Period Dialog: Label before periodic payment input
-#: ../glade/financial.glade.h:64
-msgid "_Periodic Payment:"
-msgstr "_Periodieke betaling:"
-
-# kapitaal/hoofdkapitaal
-#. Periodic Payment Dialog: Label before principal input
-#: ../glade/financial.glade.h:66
-msgid "_Principal:"
-msgstr "_Kapitaal:"
-
-#. Sum-Of-The-Years'-Digits Depreciation Dialog: Label before salvage input
-#: ../glade/financial.glade.h:68
-msgid "_Salvage:"
-msgstr "_Restwaarde:"
-
-#. Periodic Interest Rate Dialog: Label before term input
-#: ../glade/financial.glade.h:70
-msgid "_Term:"
-msgstr "_Termijn:"
-
-#. The percentage button
-#: ../glade/mate-calc.glade.h:3
-#, no-c-format
-msgid "%"
-msgstr "%"
-
-#. 16 bit unsigned integer
-#: ../glade/mate-calc.glade.h:5
-msgid "&16"
-msgstr "&16"
-
-#. 32 bit unsigned integer
-#: ../glade/mate-calc.glade.h:7
-msgid "&32"
-msgstr "&32"
-
-#. Start calculation group button
-#: ../glade/mate-calc.glade.h:9
-msgid "("
-msgstr "("
-
-#. Right bracket
-#: ../glade/mate-calc.glade.h:11
-msgid ")"
-msgstr ")"
-
-#. Addition button
-#: ../glade/mate-calc.glade.h:13
-msgid "+"
-msgstr "+"
-
-#. Numeric 0 button
-#: ../glade/mate-calc.glade.h:15
-msgid "0"
-msgstr "0"
-
-#. Numeric 1 button
-#: ../glade/mate-calc.glade.h:17
-msgid "1"
-msgstr "1"
-
-#. Reciprocal button
-#: ../glade/mate-calc.glade.h:19
-msgid "1/<i>x</i>"
-msgstr "1/<i>x</i>"
-
-#: ../glade/mate-calc.glade.h:20
-msgid "1/x"
-msgstr "1/x"
-
-#. Right Shift Popup: Menu item to shift right by 10 bits
-#: ../glade/mate-calc.glade.h:22
-msgid "10 places"
-msgstr "10 plaatsen"
-
-#. Right Shift Popup: Menu item to shift right by 11 bits
-#: ../glade/mate-calc.glade.h:24
-msgid "11 places"
-msgstr "11 plaatsen"
-
-#. Right Shift Popup: Menu item to shift right by 12 bits
-#: ../glade/mate-calc.glade.h:26
-msgid "12 places"
-msgstr "12 plaatsen"
-
-#. Right Shift Popup: Menu item to shift right by 13 bits
-#: ../glade/mate-calc.glade.h:28
-msgid "13 places"
-msgstr "13 plaatsen"
-
-#. Right Shift Popup: Menu item to shift right by 14 bits
-#: ../glade/mate-calc.glade.h:30
-msgid "14 places"
-msgstr "14 plaatsen"
-
-#. Label for bit 15 on the bit editor
-#: ../glade/mate-calc.glade.h:32
-msgid "15"
-msgstr "15"
-
-#. Right Shift Popup: Menu item to shift right by 15 bits
-#: ../glade/mate-calc.glade.h:34
-msgid "15 places"
-msgstr "15 plaatsen"
-
-#. Tooltip for the 16 bit mask button
-#: ../glade/mate-calc.glade.h:36
-msgid "16-bit unsigned integer value of display (])"
-msgstr "16-bit unsigned integer waarde van getoond getal (])"
-
-#. Numeric 2 button
-#: ../glade/mate-calc.glade.h:38
-msgid "2"
-msgstr "2"
-
-#. Numeric 3 button
-#: ../glade/mate-calc.glade.h:40
-msgid "3"
-msgstr "3"
-
-#. Label for bit 31 on the bit editor
-#: ../glade/mate-calc.glade.h:42
-msgid "31"
-msgstr "31"
-
-#. Label for bit 32 on the bit editor
-#: ../glade/mate-calc.glade.h:44
-msgid "32"
-msgstr "32"
-
-#. Tooltip for the 32 bit mask button
-#: ../glade/mate-calc.glade.h:46
-msgid "32-bit unsigned integer value of display ([)"
-msgstr "32-bit unsigned integer waarde van getoond getal ([)"
-
-#. Numeric 4 button
-#: ../glade/mate-calc.glade.h:48
-msgid "4"
-msgstr "4"
-
-#. Label for bit 47 on the bit editor
-#: ../glade/mate-calc.glade.h:50
-msgid "47"
-msgstr "47"
-
-#. Numeric 5 button
-#: ../glade/mate-calc.glade.h:52
-msgid "5"
-msgstr "5"
-
-#. Numeric 6 button
-#: ../glade/mate-calc.glade.h:54
-msgid "6"
-msgstr "6"
-
-#. Label for the most significant bit (bit 63) on the bit editor
-#: ../glade/mate-calc.glade.h:56
-msgid "63"
-msgstr "63"
-
-#. Numeric 7 button
-#: ../glade/mate-calc.glade.h:58
-msgid "7"
-msgstr "7"
-
-#. Numeric 8 button
-#: ../glade/mate-calc.glade.h:60
-msgid "8"
-msgstr "8"
-
-#. Numeric 9 button
-#: ../glade/mate-calc.glade.h:62
-msgid "9"
-msgstr "9"
-
-#. Shift left button
-#: ../glade/mate-calc.glade.h:64
-msgid "<"
-msgstr "<"
-
-#. Factorial
-#: ../glade/mate-calc.glade.h:66
-msgid "<i>x</i>!"
-msgstr "<i>x</i>!"
-
-#. x to the power of 2 button
-#: ../glade/mate-calc.glade.h:68
-msgid "<i>x</i><sup>2</sup>"
-msgstr "<i>x</i><sup>2</sup>"
-
-#. Edit Function Dialog: Note about what base numbers will be entered as
-#: ../glade/mate-calc.glade.h:70
+#. Payment Period Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:106
 msgid ""
-"<small><i><b>Note:</b> All constant values are specified in the decimal "
-"numeric base.</i></small>"
-msgstr ""
-"<small><i><b>Note:</b> Alle constante getallen worden opgegeven in het "
-"decimale talstelsel.</i></small>"
+"Calculates the number of payment periods that are necessary during the term "
+"of an ordinary annuity, to accumulate a future value, at a periodic interest"
+" rate."
+msgstr "Berekent het aantal betalingstermijnen die bij een periodieke rente nodig zijn om, gedurende de looptijd van een gewone lijfrente, een toekomstige waarde bijeen te brengen."
 
-#. "R0" is the abbreviation for "Register 0", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:72
-msgid "<span weight=\"bold\">R0</span>"
-msgstr "<span weight=\"bold\">R0</span>"
+#. Accessible name for the shift left button
+#. Tooltip for the shift left button
+#: ../data/buttons-programming.ui.h:22 ../src/math-buttons.c:255
+msgid "Shift Left"
+msgstr "Naar links verschuiven"
 
-#. "R1" is the abbreviation for "Register 1", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:74
-msgid "<span weight=\"bold\">R1</span>"
-msgstr "<span weight=\"bold\">R1</span>"
+#. Accessible name for the shift right button
+#. Tooltip for the shift right button
+#: ../data/buttons-programming.ui.h:24 ../src/math-buttons.c:258
+msgid "Shift Right"
+msgstr "Naar rechts verschuiven"
 
-#. "R2" is the abbreviation for "Register 2", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:76
-msgid "<span weight=\"bold\">R2</span>"
-msgstr "<span weight=\"bold\">R2</span>"
+#. Accessible name for the insert character button
+#: ../data/buttons-programming.ui.h:26
+msgid "Insert Character"
+msgstr "Teken invoegen"
 
-#. "R3" is the abbreviation for "Register 3", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:78
-msgid "<span weight=\"bold\">R3</span>"
-msgstr "<span weight=\"bold\">R3</span>"
+#. Title of insert character code dialog
+#. Tooltip for the insert character code button
+#: ../data/buttons-programming.ui.h:34 ../src/math-buttons.c:240
+msgid "Insert Character Code"
+msgstr "Tekencode invoegen"
 
-#. "R4" is the abbreviation for "Register 4", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:80
-msgid "<span weight=\"bold\">R4</span>"
-msgstr "<span weight=\"bold\">R4</span>"
-
-#. "R5" is the abbreviation for "Register 5", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:82
-msgid "<span weight=\"bold\">R5</span>"
-msgstr "<span weight=\"bold\">R5</span>"
-
-#. "R6" is the abbreviation for "Register 6", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:84
-msgid "<span weight=\"bold\">R6</span>"
-msgstr "<span weight=\"bold\">R6</span>"
-
-#. "R7" is the abbreviation for "Register 7", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:86
-msgid "<span weight=\"bold\">R7</span>"
-msgstr "<span weight=\"bold\">R7</span>"
-
-#. "R8" is the abbreviation for "Register 8", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:88
-msgid "<span weight=\"bold\">R8</span>"
-msgstr "<span weight=\"bold\">R8</span>"
-
-#. "R9" is the abbreviation for "Register 9", used in the memory register dialog
-#: ../glade/mate-calc.glade.h:90
-msgid "<span weight=\"bold\">R9</span>"
-msgstr "<span weight=\"bold\">R9</span>"
-
-#. Solve button (clicking this solves the displayed calculation)
-#: ../glade/mate-calc.glade.h:92
-msgid "="
-msgstr "="
-
-#. Shift right button
-#: ../glade/mate-calc.glade.h:94
-msgid ">"
-msgstr ">"
-
-#. Hexadecimal digit A button
-#: ../glade/mate-calc.glade.h:96
-msgid "A"
-msgstr "A"
-
-#. Boolean AND button
-#: ../glade/mate-calc.glade.h:98
-msgid "AND"
-msgstr "EN"
-
-#. Absolute value button. Abs is short for Absolute
-#: ../glade/mate-calc.glade.h:100
-msgid "Abs"
-msgstr "Abs"
-
-#: ../glade/mate-calc.glade.h:101
-msgid "Absolute value"
-msgstr "Absolute waarde"
-
-#. Tooltip for the absolute value button
-#: ../glade/mate-calc.glade.h:103
-msgid "Absolute value [u]"
-msgstr "Absolute waarde [u]"
-
-#. Accuracy button
-#: ../glade/mate-calc.glade.h:105
-msgid "Acc"
-msgstr "Nwk"
-
-#: ../glade/mate-calc.glade.h:106
-msgid "Add"
-msgstr "Optellen"
-
-#. Tooltip for the addition button
-#: ../glade/mate-calc.glade.h:108
-msgid "Add [+]"
-msgstr "Optellen [+]"
-
-#. Tooltip for the View|Advanced menu item
-#: ../glade/mate-calc.glade.h:110
-msgid "Advanced"
-msgstr "Geavanceerd"
-
-#. Hexadecimal digit B button
-#: ../glade/mate-calc.glade.h:112
-msgid "B"
-msgstr "B"
-
-#: ../glade/mate-calc.glade.h:113
-msgid "Backspace"
-msgstr "Backspace"
-
-#. Tooltip for the View|Basic menu item
-#: ../glade/mate-calc.glade.h:115
-msgid "Basic"
-msgstr "Eenvoudig"
-
-#. Tooltip for the boolean AND button
-#: ../glade/mate-calc.glade.h:117
-msgid "Bitwise AND [&]"
-msgstr "Bitsgewijs AND [&]"
-
-#. Tooltip for the boolean NOT button
-#: ../glade/mate-calc.glade.h:119
-msgid "Bitwise NOT [~]"
-msgstr "Bitsgewijs NOT [~]"
-
-#. Tooltip for the boolean OR button
-#: ../glade/mate-calc.glade.h:121
-msgid "Bitwise OR [|]"
-msgstr "Bitsgewijs OR [|]"
-
-#. Tooltip for the boolean exclusive NOR button
-#: ../glade/mate-calc.glade.h:123
-msgid "Bitwise XNOR [{]"
-msgstr "Bitsgewijs XNOR [{]"
-
-#. Tooltip for the boolean exlcusive OR button
-#: ../glade/mate-calc.glade.h:125
-msgid "Bitwise XOR [x]"
-msgstr "Bitsgewijs XOR [x]"
-
-#. Bksp is short for Backspace
-#: ../glade/mate-calc.glade.h:127
-msgid "Bksp"
-msgstr "Bksp"
-
-#. Clear displayed value button
-#: ../glade/mate-calc.glade.h:131
-msgid "CE"
-msgstr "CE"
-
-# uitrekenen
-#: ../glade/mate-calc.glade.h:132
-msgid "Calculate result"
-msgstr "Antwoord berekenen"
-
-# uitrekenen
-#. Tooltip for the solve button
-#: ../glade/mate-calc.glade.h:134
-msgid "Calculate result [=]"
-msgstr "Antwoord berekenen [=]"
-
-# Letterteken/teken
 #. Insert ASCII dialog: Label before character entry
-#: ../glade/mate-calc.glade.h:136
+#: ../data/buttons-programming.ui.h:36
 msgid "Ch_aracter:"
 msgstr "_Teken:"
 
-#. Tooltip for the change sign button
-#: ../glade/mate-calc.glade.h:138
-msgid "Change Sign [C]"
-msgstr "Teken veranderen [C]"
-
-#: ../glade/mate-calc.glade.h:139
-msgid "Change sign"
-msgstr "Teken veranderen"
-
-#: ../glade/mate-calc.glade.h:140
-msgid "Clear"
-msgstr "Wissen"
-
-#. Tooltip for the clear displayed value button
-#: ../glade/mate-calc.glade.h:142
-msgid "Clear displayed value [Escape]"
-msgstr "Getoonde waarde wissen [Esc]"
-
-#. Tooltip for the clear display button
-#: ../glade/mate-calc.glade.h:144
-msgid "Clear displayed value and any partial calculation [Shift Delete]"
-msgstr "Getoonde waarde en berekeningen wissen [Shift delete]"
-
-#: ../glade/mate-calc.glade.h:145
-msgid "Clear entry"
-msgstr "Invoer wissen"
-
-#. Edit Functions Dialog: Instructions in dialog
-#: ../glade/mate-calc.glade.h:147
-msgid "Click a _value or description to edit it:"
-msgstr "Klik op een _getal of beschrijving als u die wilt bewerken:"
-
-#. Clear display button. Clr is short for Clear
-#: ../glade/mate-calc.glade.h:149
-msgid "Clr"
-msgstr "Clr"
-
-#: ../glade/mate-calc.glade.h:150
-msgid "Compounding term"
-msgstr "Afkooptermijn"
-
-#. Tooltip for the [Ctrm] button
-#: ../glade/mate-calc.glade.h:152
-msgid "Compounding term [m]"
-msgstr "Afkooptermijn [m]"
-
-#. Constants button
-#: ../glade/mate-calc.glade.h:154
-msgid "Con"
-msgstr "Con"
-
-#. Tooltip for the [Con] button
-#: ../glade/mate-calc.glade.h:156
-msgid "Constants [#]"
-msgstr "Constanten [#]"
-
-#. Tooltip for the Edit|Copy menu item
-#: ../glade/mate-calc.glade.h:158
-msgid "Copy selection"
-msgstr "Selectie kopiëren"
-
-#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period.
-#. See also:
-#. http://en.wikipedia.org/wiki/Compound_interest
-#: ../glade/mate-calc.glade.h:162
-msgid "Ctrm"
-msgstr "Ctrm"
-
-#. Hexadecimal digit D button
-#: ../glade/mate-calc.glade.h:164
-msgid "D"
-msgstr "D"
-
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
-#: ../glade/mate-calc.glade.h:167
-msgid "Ddb"
-msgstr "Dda"
-
-#. Degrees radio button
-#: ../glade/mate-calc.glade.h:169
-msgid "De_grees"
-msgstr "_Graden"
-
-#: ../glade/mate-calc.glade.h:170
-msgid "Divide"
-msgstr "Delen"
-
-#. Tooltip for the division button
-#: ../glade/mate-calc.glade.h:172
-msgid "Divide [/]"
-msgstr "Delen [/]"
-
-#: ../glade/mate-calc.glade.h:173
-msgid "Double-declining depreciation"
-msgstr "Dubbele degressieve afschrijving"
-
-#. Tooltip for the [Ddb] button
-#: ../glade/mate-calc.glade.h:175
-msgid "Double-declining depreciation [D]"
-msgstr "Dubbele degressieve afschrijving [D]"
-
-#. Hexadecimal digit E button
-#: ../glade/mate-calc.glade.h:177
-msgid "E"
-msgstr "E"
-
-#. Engineering display radio button
-#: ../glade/mate-calc.glade.h:179
-msgid "E_ng"
-msgstr "E_ng"
-
-#. Title of edit constants dialog
-#: ../glade/mate-calc.glade.h:181
-msgid "Edit Constants"
-msgstr "Constanten bewerken"
-
-#. Menu item in the constants menu to show the Edit Constants dialog
-#: ../glade/mate-calc.glade.h:183
-msgid "Edit Constants..."
-msgstr "Constanten bewerken..."
-
-#. Title of edit functions dialog
-#: ../glade/mate-calc.glade.h:185
-msgid "Edit Functions"
-msgstr "Functies bewerken"
-
-#. Menu item in the constants menu to show the Edit Functions dialog
-#: ../glade/mate-calc.glade.h:187
-msgid "Edit Functions..."
-msgstr "Functies bewerken..."
-
-#. Tooltip for the end calculation group button
-#: ../glade/mate-calc.glade.h:189
-msgid "End group of calculations [)]"
-msgstr "Einde van groepje berekeningen [)]"
-
-#. Tooltip for the exponential button
-#: ../glade/mate-calc.glade.h:191
-msgid "Enter an exponential number [E]"
-msgstr "Een getal invoeren als een macht van 10 [E]"
-
-#. Memory exchange button. Exch is short for Exchange
-#: ../glade/mate-calc.glade.h:193
-msgid "Exch"
-msgstr "Wissel"
-
-#. Tooltip for the memory exchange button
-#: ../glade/mate-calc.glade.h:195
-msgid "Exchange displayed value with memory register [X]"
-msgstr "Getoond getal wisselen met dat in geheugenregister [X]"
-
-#: ../glade/mate-calc.glade.h:196
-msgid "Exchange with register"
-msgstr "Met getal in geheugenregister wisselen"
-
-#. Exponential
-#: ../glade/mate-calc.glade.h:198
-msgid "Exp"
-msgstr "EE"
-
-#. Tooltip for the factorial button
-#: ../glade/mate-calc.glade.h:202
-msgid "Factorial of displayed value [!]"
-msgstr "Faculteit van de getoonde waarde [!]"
-
-#. Tooltip for the View|Financial menu item
-#: ../glade/mate-calc.glade.h:204
-msgid "Financial"
-msgstr "Financieel"
-
-#. Fractional portion button
-#: ../glade/mate-calc.glade.h:206
-msgid "Frac"
-msgstr "Frac"
-
-#: ../glade/mate-calc.glade.h:207
-msgid "Fractional portion"
-msgstr "Fractionele deel"
-
-#. Tooltip for the fractional portion button
-#: ../glade/mate-calc.glade.h:209
-msgid "Fractional portion of displayed value [:]"
-msgstr "Fractionele deel van getoond getal [:]"
-
-#. Functions button
-#: ../glade/mate-calc.glade.h:211
-msgid "Fun"
-msgstr "Func"
-
-#: ../glade/mate-calc.glade.h:212
-msgid "Future value"
-msgstr "Toekomstige waarde"
-
-#. Tooltip for the [Fv] button
-#: ../glade/mate-calc.glade.h:214
-msgid "Future value [v]"
-msgstr "Toekomstige waarde [v]"
-
-#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also:
-#. http://en.wikipedia.org/wiki/Future_value
-#: ../glade/mate-calc.glade.h:217
-msgid "Fv"
-msgstr "Tw"
-
-# Bruto winstmarge
-#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also:
-#. http://en.wikipedia.org/wiki/Gross_profit_margin
-#: ../glade/mate-calc.glade.h:220
-msgid "Gpm"
-msgstr "Bwm"
-
-#. Gradians radio button
-#: ../glade/mate-calc.glade.h:222
-msgid "Gr_adians"
-msgstr "Gr_ads"
-
-# omzet na aftrek van alle kosten
-#. Tooltip for the [Gpm] button
-#: ../glade/mate-calc.glade.h:225
-msgid "Gross Profit Margin [I]"
-msgstr "Bruto winstmarge [I]"
-
-#: ../glade/mate-calc.glade.h:226
-msgid "Gross Profit Margin [g]"
-msgstr "Bruto winstmarge [g]"
-
-#. Hyperbolic check box
-#: ../glade/mate-calc.glade.h:228
-msgid "H_yp"
-msgstr "H_yp"
-
-#. Base 16 radio button
-#: ../glade/mate-calc.glade.h:230
-msgid "He_x"
-msgstr "He_x"
-
-#. Tooltip for the hexadecimal digit A button
-#: ../glade/mate-calc.glade.h:232
-msgid "Hexadecimal digit A [a]"
-msgstr "Hexadecimaal cijfer A [a]"
-
-#. Tooltip for the hexadecimal digit B button
-#: ../glade/mate-calc.glade.h:234
-msgid "Hexadecimal digit B [b]"
-msgstr "Hexadecimaal cijfer B [b]"
-
-#. Tooltip for the hexadecimal digit C button
-#: ../glade/mate-calc.glade.h:236
-msgid "Hexadecimal digit C [c]"
-msgstr "Hexadecimaal cijfer C [c]"
-
-#. Tooltip for the hexadecimal digit D button
-#: ../glade/mate-calc.glade.h:238
-msgid "Hexadecimal digit D [d]"
-msgstr "Hexadecimaal cijfer D [d]"
-
-#. Tooltip for the hexadecimal digit E button
-#: ../glade/mate-calc.glade.h:240
-msgid "Hexadecimal digit E [e]"
-msgstr "Hexadecimaal cijfer E [e]"
-
-#. Tooltip for the hexadecimal digit F button
-#: ../glade/mate-calc.glade.h:242
-msgid "Hexadecimal digit F [f]"
-msgstr "Hexadecimaal cijfer F [f]"
-
-#. Title of insert ASCII dialog
-#: ../glade/mate-calc.glade.h:244
-msgid "Insert ASCII Value"
-msgstr "ASCII-waarde invoegen"
-
-#. Tooltip for the Edit|Insert ASCII value menu item
-#: ../glade/mate-calc.glade.h:246
-msgid "Insert ASCII value"
-msgstr "ASCII-waarde invoegen"
-
-#. Integer portion button
-#: ../glade/mate-calc.glade.h:248
-msgid "Int"
-msgstr "Int"
-
-#: ../glade/mate-calc.glade.h:249
-msgid "Integer portion"
-msgstr "Gehele deel"
-
-#. Tooltip for the integer portion button
-#: ../glade/mate-calc.glade.h:251
-msgid "Integer portion of displayed value [i]"
-msgstr "Gehele deel van weergegeven getal [i]"
-
-#: ../glade/mate-calc.glade.h:252
-msgid "Left bracket"
-msgstr "Linker haakje"
-
-#: ../glade/mate-calc.glade.h:253
-msgid "Memory Registers"
-msgstr "Geheugenregisters"
-
-#. Modulus division button
-#: ../glade/mate-calc.glade.h:255
-msgid "Mod"
-msgstr "Mod"
-
-#. Tooltip for the modulus division button
-#: ../glade/mate-calc.glade.h:257
-msgid "Modulus Division [M]"
-msgstr "Modulus (rest na deling) [M]"
-
-#: ../glade/mate-calc.glade.h:258
-msgid "Multiply"
-msgstr "Vermenigvuldigen"
-
-#. Tooltip for the multiplication button
-#: ../glade/mate-calc.glade.h:260
-msgid "Multiply [*]"
-msgstr "Vermenigvuldigen [*]"
-
-#. Boolean NOT button
-#: ../glade/mate-calc.glade.h:262
-msgid "NOT"
-msgstr "NIET"
-
-#: ../glade/mate-calc.glade.h:263
-msgid "Numeric 0"
-msgstr "Cijfer 0"
-
-#: ../glade/mate-calc.glade.h:264
-msgid "Numeric 1"
-msgstr "Cijfer 1"
-
-#: ../glade/mate-calc.glade.h:265
-msgid "Numeric 2"
-msgstr "Cijfer 2"
-
-#: ../glade/mate-calc.glade.h:266
-msgid "Numeric 3"
-msgstr "Cijfer 3"
-
-#: ../glade/mate-calc.glade.h:267
-msgid "Numeric 4"
-msgstr "Cijfer 4"
-
-#: ../glade/mate-calc.glade.h:268
-msgid "Numeric 5"
-msgstr "Cijfer 5"
-
-#: ../glade/mate-calc.glade.h:269
-msgid "Numeric 6"
-msgstr "Cijfer 6"
-
-#: ../glade/mate-calc.glade.h:270
-msgid "Numeric 7"
-msgstr "Cijfer 7"
-
-#: ../glade/mate-calc.glade.h:271
-msgid "Numeric 8"
-msgstr "Cijfer 8"
-
-#: ../glade/mate-calc.glade.h:272
-msgid "Numeric 9"
-msgstr "Cijfer 9"
-
-#. Tooltip for the numeric point button
-#: ../glade/mate-calc.glade.h:274
-msgid "Numeric point"
-msgstr "Decimale komma"
-
-#. Boolean OR button
-#: ../glade/mate-calc.glade.h:276
-msgid "OR"
-msgstr "OF"
-
-#. Tooltip for the Edit|Paste menu item
-#: ../glade/mate-calc.glade.h:278
-msgid "Paste selection"
-msgstr "Selectie plakken"
-
-#: ../glade/mate-calc.glade.h:279
-msgid "Payment period"
-msgstr "Betalingstermijn"
-
-#. Tooltip for the [Term] button
-#: ../glade/mate-calc.glade.h:281
-msgid "Payment period [t]"
-msgstr "Betalingstermijn [t]"
-
-#: ../glade/mate-calc.glade.h:282
-msgid "Percentage"
-msgstr "Percentage"
-
-#. Tooltip for the percentage button
-#: ../glade/mate-calc.glade.h:285
-#, no-c-format
-msgid "Percentage [%]"
-msgstr "Percentage [%]"
-
-#: ../glade/mate-calc.glade.h:286
-msgid "Periodic interest rate"
-msgstr "Discontopercentage"
-
-#. Tooltip for the [Rate] button
-#: ../glade/mate-calc.glade.h:288
-msgid "Periodic interest rate [T]"
-msgstr "Discontopercentage [T]"
-
-#: ../glade/mate-calc.glade.h:289
-msgid "Periodic payment"
-msgstr "Discontotermijn"
-
-#. Tooltip for the [Pmt] button
-#: ../glade/mate-calc.glade.h:291
-msgid "Periodic payment [P]"
-msgstr "Discontotermijn [P]"
-
-#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also:
-#. http://en.wikipedia.org/wiki/Amortization_schedule
-#: ../glade/mate-calc.glade.h:294
-msgid "Pmt"
-msgstr "Trm"
-
-#: ../glade/mate-calc.glade.h:295
-msgid "Present value"
-msgstr "Huidige waarde"
-
-#. Tooltip for the [Pv] button
-#: ../glade/mate-calc.glade.h:297
-msgid "Present value [p]"
-msgstr "Huidige waarde [p]"
-
-#. Tooltip for the View|Programming menu item
-#: ../glade/mate-calc.glade.h:299
-msgid "Programming"
-msgstr "Programmeren"
-
-#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also:
-#. http://en.wikipedia.org/wiki/Present_value
-#: ../glade/mate-calc.glade.h:302
-msgid "Pv"
-msgstr "Hw"
-
-#. Tooltip for the Calculator|Quit menu item
-#: ../glade/mate-calc.glade.h:304
-msgid "Quit the calculator"
-msgstr "De rekenmachine afsluiten"
-
-#. Random number
-#: ../glade/mate-calc.glade.h:306
-msgid "Rand"
-msgstr "Rand"
-
-#. Tooltip for the random number button
-#: ../glade/mate-calc.glade.h:308
-msgid "Random number in the range 0.0 to 1.0 [?]"
-msgstr "Willekeurig getal tussen 0,0 en 1,0 [?]"
-
-#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also:
-#. http://en.wikipedia.org/wiki/Interest
-#.
-#.
-#.
-#.
-#: ../glade/mate-calc.glade.h:315
-msgid "Rate"
-msgstr "Rente"
-
-#. Memory recall button. Rcl is short for Recall
-#: ../glade/mate-calc.glade.h:317
-msgid "Rcl"
-msgstr "Rcl"
-
-#: ../glade/mate-calc.glade.h:318
-msgid "Reciprocal"
-msgstr "Omgekeerde"
-
-#. Tooltip for the reciprocal button
-#: ../glade/mate-calc.glade.h:320
-msgid "Reciprocal [r]"
-msgstr "Omgekeerde [r]"
-
-#. Tooltip for the Edit|Redo menu item
-#: ../glade/mate-calc.glade.h:322
-msgid "Redo"
-msgstr "Opnieuw"
-
-#. Tooltip for the backspace button
-#: ../glade/mate-calc.glade.h:324
-msgid "Remove rightmost character from displayed value [Backspace]"
-msgstr "Meest rechtse teken wissen [Backspace]"
-
-#: ../glade/mate-calc.glade.h:325
-msgid "Result Region"
-msgstr "Resultaatgebied"
-
-#: ../glade/mate-calc.glade.h:326
-msgid "Retrieve from register"
-msgstr "Uit geheugen ophalen"
-
-#. Tooltip for the memory recall button
-#: ../glade/mate-calc.glade.h:328
-msgid "Retrieve memory register to display [R]"
-msgstr "Getal uit het geheugenregister ophalen [R]"
-
-#: ../glade/mate-calc.glade.h:329
-msgid "Right bracket"
-msgstr "Rechter haakje"
-
-#. Tooltip for the View|Scientific menu item
-#: ../glade/mate-calc.glade.h:331
-msgid "Scientific"
-msgstr "Wetenschappelijk"
-
-#. Title of set precision dialog
-#: ../glade/mate-calc.glade.h:333
-msgid "Set Precision"
-msgstr "Nauwkeurigheid instellen"
-
-#. Tooltip for the engineering display radio button
-#: ../glade/mate-calc.glade.h:335
-msgid "Set display type to engineering format"
-msgstr "Technische weergave gebruiken"
-
-#. Tooltip for the fixed-point display radio button
-#: ../glade/mate-calc.glade.h:337
-msgid "Set display type to fixed-point format"
-msgstr "Vast aantal cijfers achter de komma"
-
-#. Tooltip for the scientific display radio button
-#: ../glade/mate-calc.glade.h:339
-msgid "Set display type to scientific format"
-msgstr "Wetenschappelijke weergave gebruiken"
-
-#. Tooltip for the hyperbolic check box
-#: ../glade/mate-calc.glade.h:341
-msgid "Set hyperbolic option for trigonometric functions"
-msgstr "Hyperbolische goniometrische functies"
-
-#. Tooltip for the inverse check box
-#: ../glade/mate-calc.glade.h:343
-msgid "Set inverse option for trigonometric functions"
-msgstr "Inverse goniometrische functies"
-
-#. Tooltip for the base 2 radio button
-#: ../glade/mate-calc.glade.h:345
-msgid "Set numeric base to binary (base 2)"
-msgstr "Binaire getallen gebruiken (grondtal 2)"
-
-#. Tooltip for the base 10 radio button
-#: ../glade/mate-calc.glade.h:347
-msgid "Set numeric base to decimal (base 10)"
-msgstr "Decimale getallen gebruiken (grondtal 10)"
-
-#. Tooltip for the base 16 radio button
-#: ../glade/mate-calc.glade.h:349
-msgid "Set numeric base to hexadecimal (base 16)"
-msgstr "Hexadecimale getallen gebruiken (grondtal 16)"
-
-#. Tooltip for the base 8 radio button
-#: ../glade/mate-calc.glade.h:351
-msgid "Set numeric base to octal (base 8)"
-msgstr "Octale getallen gebruiken (grondtal 8)"
-
-#. Tooltip for the degrees radio button
-#: ../glade/mate-calc.glade.h:353
-msgid "Set trigonometric type to degrees"
-msgstr "Graden gebruiken voor goniometrie"
-
-#. Tooltip for the gradians radio button
-#: ../glade/mate-calc.glade.h:355
-msgid "Set trigonometric type to gradians"
-msgstr "Landmetersgraden gebruiken voor goniometrie"
-
-#. Tooltip for the radian radio button
-#: ../glade/mate-calc.glade.h:357
-msgid "Set trigonometric type to radians"
-msgstr "Radialen gebruiken voor goniometrie"
-
-#. Tooltip for the shift left button
-#: ../glade/mate-calc.glade.h:359
-msgid "Shift displayed value 1-15 places to the left [<]"
-msgstr "Getoonde waarde 1-15 plaatsen naar links verschuiven [<]"
-
-#. Tooltip for the right shift button
-#: ../glade/mate-calc.glade.h:361
-msgid "Shift displayed value 1-15 places to the right [>]"
-msgstr "Getoonde waarde 1-15 plaatsen naar rechts verschuiven [>]"
-
-# Als je duizendtallen toont, gebruik je automatisch het scheidingsteken
-#. View|Show Thousands Separator menu item
-#: ../glade/mate-calc.glade.h:363
-msgid "Show T_housands Separator"
-msgstr "_Duizendtallen scheiden"
-
-#. Accuracy Popup: Check menu item to enable trailing zeroes
-#: ../glade/mate-calc.glade.h:365
-msgid "Show _Trailing Zeroes"
-msgstr "Laatste _nullen tonen"
-
-#. Tooltip for the Help|Contents menu
-#: ../glade/mate-calc.glade.h:367
-msgid "Show help contents"
-msgstr "Inhoud hulp tonen"
-
-#. Tooltip for the View|Memory Registers menu item
-#: ../glade/mate-calc.glade.h:369
-msgid "Show memory registers"
-msgstr "Geheugenregisters tonen"
-
-#. Tooltip for the Help|About menu
-#: ../glade/mate-calc.glade.h:371
-msgid "Show the About mate-calc dialog"
-msgstr "Het dialoogvenster Over mate-calc tonen"
-
-# Als je duizendtallen toont, gebruik je automatisch het scheidingsteken
-#. Tooltip for the View|Show Thousands Separator menu item
-#: ../glade/mate-calc.glade.h:373
-msgid "Show thousands separator"
-msgstr "Duizendtallen scheiden"
-
-#. Tooltip for the View|Show Trailing Zeroes menu item
-#: ../glade/mate-calc.glade.h:375
-msgid "Show trailing zeroes"
-msgstr "Laatste nullen tonen"
-
-#. Set Precision Dialog: Label before the significant places spin button
-#: ../glade/mate-calc.glade.h:377
-msgid "Significant _places:"
-msgstr "_Significante cijfers:"
-
-#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
-#: ../glade/mate-calc.glade.h:380
-msgid "Sln"
-msgstr "La"
-
-#: ../glade/mate-calc.glade.h:381
-msgid "Square"
-msgstr "Kwadraat"
-
-#. Tooltip for the x to the power of 2 button
-#: ../glade/mate-calc.glade.h:383
-msgid "Square [@]"
-msgstr "Kwadraat [@]"
-
-#: ../glade/mate-calc.glade.h:384
-msgid "Square root"
-msgstr "vierkantswortel"
-
-#. Tooltip for the square root button
-#: ../glade/mate-calc.glade.h:386
-msgid "Square root [s]"
-msgstr "vierkantswortel [s]"
-
-#. Tooltip for the start calculation group button
-#: ../glade/mate-calc.glade.h:388
-msgid "Start group of calculations [(]"
-msgstr "Begin van groepje berekeningen [(]"
-
-#. Memory store button. Sto is short for Store
-#: ../glade/mate-calc.glade.h:390
-msgid "Sto"
-msgstr "Sto"
-
-#. Tooltip for the memory store button
-#: ../glade/mate-calc.glade.h:392
-msgid "Store displayed value in memory register [S]"
-msgstr "Getoonde getal in geheugenregister opslaan [S]"
-
-#: ../glade/mate-calc.glade.h:393
-msgid "Store to register"
-msgstr "In geheugenregister opslaan"
-
-#: ../glade/mate-calc.glade.h:394
-msgid "Straight-line depreciation"
-msgstr "Lineaire afschrijving"
-
-#. Tooltip for the [Sln] button
-#: ../glade/mate-calc.glade.h:396
-msgid "Straight-line depreciation [l]"
-msgstr "Lineaire afschrijving [l]"
-
-#: ../glade/mate-calc.glade.h:397
-msgid "Subtract"
-msgstr "Aftrekken"
-
-#. Tooltip for the subtraction button
-#: ../glade/mate-calc.glade.h:399
-msgid "Subtract [-]"
-msgstr "Aftrekken [-]"
-
-#: ../glade/mate-calc.glade.h:400
-msgid "Sum-of-the years'-digits depreciation"
-msgstr "Sum-of-the years'-digits afschrijving"
-
-#. Tooltip for the [Syd] button
-#: ../glade/mate-calc.glade.h:402
-msgid "Sum-of-the years'-digits depreciation [Y]"
-msgstr "Sum-of-the years'-digits afschrijving [Y]"
-
-#: ../glade/mate-calc.glade.h:403
-msgid "Sum-of-the years'-digits depreciation [y]"
-msgstr "Sum-of-the years'-digits afschrijving [y]"
-
-# Depreciable cost is [kost minus restwaarde]
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones.
-#. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../glade/mate-calc.glade.h:406
-msgid "Syd"
-msgstr "Syd"
-
-#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also:
-#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
-#: ../glade/mate-calc.glade.h:409
-msgid "Term"
-msgstr "Term"
-
-#. Tooltip for the Edit|Undo menu item
-#: ../glade/mate-calc.glade.h:411
-msgid "Undo"
-msgstr "Ongedaan maken"
-
-#. Tooltip for the [Fun] button
-#: ../glade/mate-calc.glade.h:413
-msgid "User-defined functions [F]"
-msgstr "Zelf gedefinieerde functies [F]"
-
-#. Boolean exclusive NOR button
-#: ../glade/mate-calc.glade.h:415
-msgid "XNOR"
-msgstr "XNOR"
-
-#. Boolean exlcusive OR button
-#: ../glade/mate-calc.glade.h:417
-msgid "XOR"
-msgstr "XOR"
-
-#. Accuracy Popup: Menu item to set accuracy to 0 significant places
-#: ../glade/mate-calc.glade.h:419
-msgid "_0 significant places"
-msgstr "_0 significante plaatsen"
-
-#. Right Shift Popup: Menu item to shift right by 1 bit
-#: ../glade/mate-calc.glade.h:421
-msgid "_1 place"
-msgstr "_1 plaats"
-
-#. Accuracy Popup: Menu item to set accuracy to 1 significant place
-#: ../glade/mate-calc.glade.h:423
-msgid "_1 significant place"
-msgstr "_1 significante plaats"
-
-#. Right Shift Popup: Menu item to shift right by 2 bits
-#: ../glade/mate-calc.glade.h:425
-msgid "_2 places"
-msgstr "_2 plaatsen"
-
-#. Accuracy Popup: Menu item to set accuracy to 2 significant places
-#: ../glade/mate-calc.glade.h:427
-msgid "_2 significant places"
-msgstr "_2 significante plaatsen"
-
-#. Right Shift Popup: Menu item to shift right by 3 bits
-#: ../glade/mate-calc.glade.h:429
-msgid "_3 places"
-msgstr "_3 plaatsen"
-
-#. Accuracy Popup: Menu item to set accuracy to 3 significant places
-#: ../glade/mate-calc.glade.h:431
-msgid "_3 significant places"
-msgstr "_3 significante plaatsen"
-
-#. Right Shift Popup: Menu item to shift right by 4 bits
-#: ../glade/mate-calc.glade.h:433
-msgid "_4 places"
-msgstr "_4 plaatsen"
-
-#. Accuracy Popup: Menu item to set accuracy to 4 significant places
-#: ../glade/mate-calc.glade.h:435
-msgid "_4 significant places"
-msgstr "_4 significante plaatsen"
-
-#. Right Shift Popup: Menu item to shift right by 5 bits
-#: ../glade/mate-calc.glade.h:437
-msgid "_5 places"
-msgstr "_5 plaatsen"
-
-#. Accuracy Popup: Menu item to set accuracy to 5 significant places
-#: ../glade/mate-calc.glade.h:439
-msgid "_5 significant places"
-msgstr "_5 significante plaatsen"
-
-#. Right Shift Popup: Menu item to shift right by 6 bits
-#: ../glade/mate-calc.glade.h:441
-msgid "_6 places"
-msgstr "_6 plaatsen"
-
-#. Accuracy Popup: Menu item to set accuracy to 6 significant places
-#: ../glade/mate-calc.glade.h:443
-msgid "_6 significant places"
-msgstr "_6 significante plaatsen"
-
-#. Right Shift Popup: Menu item to shift right by 7 bits
-#: ../glade/mate-calc.glade.h:445
-msgid "_7 places"
-msgstr "_7 plaatsen"
-
-#. Accuracy Popup: Menu item to set accuracy to 7 significant places
-#: ../glade/mate-calc.glade.h:447
-msgid "_7 significant places"
-msgstr "_7 significante plaatsen"
-
-#. Right Shift Popup: Menu item to shift right by 8 bits
-#: ../glade/mate-calc.glade.h:449
-msgid "_8 places"
-msgstr "_8 plaatsen"
-
-#. Accuracy Popup: Menu item to set accuracy to 8 significant places
-#: ../glade/mate-calc.glade.h:451
-msgid "_8 significant places"
-msgstr "_8 significante plaatsen"
-
-#. Right Shift Popup: Menu item to shift right by 9 bits
-#: ../glade/mate-calc.glade.h:453
-msgid "_9 places"
-msgstr "_9 plaatsen"
-
-#. Accuracy Popup: Menu item to set accuracy to 9 significant places
-#: ../glade/mate-calc.glade.h:455
-msgid "_9 significant places"
-msgstr "_9 significante plaatsen"
-
-# sneltoets is Ctrl + a en de _G wordt gebruikt voor geheugenregisters
-#. View|Advanced menu item
-#: ../glade/mate-calc.glade.h:457
-msgid "_Advanced"
-msgstr "Ge_avanceerd"
-
-#. View|Basic menu item
-#: ../glade/mate-calc.glade.h:459
-msgid "_Basic"
-msgstr "_Eenvoudig"
-
-#. Base 2 radio button
-#: ../glade/mate-calc.glade.h:461
-msgid "_Bin"
-msgstr "_Bin"
-
-#. Calculator menu
-#: ../glade/mate-calc.glade.h:463
-msgid "_Calculator"
-msgstr "_Rekenmachine"
-
-#. Help|Contents menu
-#: ../glade/mate-calc.glade.h:465
-msgid "_Contents"
-msgstr "In_houd"
-
-#. Base 10 radio button
-#: ../glade/mate-calc.glade.h:467
-msgid "_Dec"
-msgstr "_Dec"
-
-#. Edit menu
-#: ../glade/mate-calc.glade.h:469
-msgid "_Edit"
-msgstr "B_ewerken"
-
-#. View|Financial menu item
-#: ../glade/mate-calc.glade.h:471
-msgid "_Financial"
-msgstr "_Financieel"
-
-#. Fixed-point display radio button
-#: ../glade/mate-calc.glade.h:473
-msgid "_Fix"
-msgstr "_Fix"
-
-#. Help menu
-#: ../glade/mate-calc.glade.h:475
-msgid "_Help"
-msgstr "_Hulp"
-
 #. Insert ASCII dialog: Button to insert selected character
-#: ../glade/mate-calc.glade.h:477
+#: ../data/buttons-programming.ui.h:38
 msgid "_Insert"
 msgstr "_Invoegen"
 
-#. Edit|Insert ASCII value menu item
-#: ../glade/mate-calc.glade.h:479
-msgid "_Insert ASCII value..."
-msgstr "ASCII-waarde _invoegen..."
+#. Word size combo: 8 bits
+#: ../data/preferences.ui.h:2
+msgid "8-bit"
+msgstr "8-bit"
 
-#. Inverse check box
-#: ../glade/mate-calc.glade.h:481
-msgid "_Inv"
-msgstr "_Inv"
+#. Word size combo: 16 bits
+#: ../data/preferences.ui.h:4
+msgid "16-bit"
+msgstr "16-bit"
 
-#. View|Memory Registers menu item
-#: ../glade/mate-calc.glade.h:483
-msgid "_Memory Registers"
-msgstr "_Geheugenregisters"
+#. Word size combo: 32 bits
+#: ../data/preferences.ui.h:6
+msgid "32-bit"
+msgstr "32-bit"
 
-#. Base 8 radio button
-#: ../glade/mate-calc.glade.h:485
-msgid "_Oct"
-msgstr "_Oct"
+#. Word size combo: 64 bits
+#: ../data/preferences.ui.h:8
+msgid "64-bit"
+msgstr "64-bit"
 
-#. View|Programming menu item
-#: ../glade/mate-calc.glade.h:487
+#. Title of preferences dialog
+#: ../data/preferences.ui.h:9 ../src/math-preferences.c:239
+msgid "Preferences"
+msgstr "Voorkeuren"
+
+#. Preferences dialog: Label for angle unit combo box
+#: ../data/preferences.ui.h:11
+msgid "_Angle units:"
+msgstr "Hoekeenheid:"
+
+#. Preferences dialog: Label for display format combo box
+#: ../data/preferences.ui.h:13
+msgid "Number _Format:"
+msgstr "Getalindeling:"
+
+#. Preferences dialog: label for word size combo box
+#: ../data/preferences.ui.h:15
+msgid "Word _size:"
+msgstr "Woordgrootte:"
+
+#. Preferences dialog: label for show trailing zeroes check button
+#: ../data/preferences.ui.h:17
+msgid "Show trailing _zeroes"
+msgstr "Achterliggende nullen weergeven"
+
+#. Preferences dialog: label for show thousands separator check button
+#: ../data/preferences.ui.h:19
+msgid "Show _thousands separators"
+msgstr "Duizend_talscheidingstekens tonen"
+
+#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:486
+msgid "Calculator"
+msgstr "Rekenmachine"
+
+#: ../data/mate-calc.desktop.in.h:2
+msgid "Perform arithmetic, scientific or financial calculations"
+msgstr "Rekenkundige, wetenschappelijke of financiële berekeningen uitvoeren"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:1
+msgid "Accuracy value"
+msgstr "Nauwkeurigheidswaarde"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:2
+msgid "The number of digits displayed after the numeric point"
+msgstr "Het aantal cijfers achter de komma"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:3
+msgid "Word size"
+msgstr "Woordgrootte"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:4
+msgid "The size of the words used in bitwise operations"
+msgstr "De lengte van de gebruikte woorden in bitsgewijze operaties"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:5
+msgid "Numeric Base"
+msgstr "Grondtal"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:6
+msgid "The numeric base"
+msgstr "Het grondtal"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:7
+msgid "Show Thousands Separators"
+msgstr "Scheidingstekens voor duizendtallen tonen"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:8
+msgid "Indicates whether thousands separators are shown in large numbers."
+msgstr "Geeft aan of in grote getallen scheidingstekens voor duizendtallen moeten worden weergegeven."
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:9
+msgid "Show Trailing Zeroes"
+msgstr "Eindnullen weergeven"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:10
+msgid ""
+"Indicates whether any trailing zeroes after the numeric point should be "
+"shown in the display value."
+msgstr "Geeft aan of de nullen na de komma op het scherm moeten worden weergegeven."
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:11
+msgid "Number format"
+msgstr "Getalopmaak"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:12
+msgid "The format to display numbers in"
+msgstr "De opmaak waarin getallen worden weergegeven"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:13
+msgid "Angle units"
+msgstr "Hoekeenheden"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:14
+msgid "The angle units to use"
+msgstr "De te gebruiken hoekeenheden"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:15
+msgid "Button mode"
+msgstr "Knoppenmodus"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:16
+msgid "The button mode"
+msgstr "De knoppenmodus"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:17
+msgid "Source currency"
+msgstr "Bronvaluta"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:18
+msgid "Currency of the current calculation"
+msgstr "Valuta van de huidige berekening"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:19
+msgid "Target currency"
+msgstr "Doelvaluta"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:20
+msgid "Currency to convert the current calculation into"
+msgstr "Valuta waar de huidige berekening in omgezet wordt"
+
+#: ../src/currency.h:19
+msgid "Australian dollar"
+msgstr "Australische dollar"
+
+#: ../src/currency.h:20
+msgid "Bulgarian lev"
+msgstr "Bulgaarse lev"
+
+#: ../src/currency.h:21
+msgid "Brazilian real"
+msgstr "Braziliaanse real"
+
+#: ../src/currency.h:22
+msgid "Canadian dollar"
+msgstr "Canadese dollar"
+
+#: ../src/currency.h:23
+msgid "Swiss franc"
+msgstr "Zwitserse frank"
+
+#: ../src/currency.h:24
+msgid "Chinese yuan renminbi"
+msgstr "Chinese yuan"
+
+#: ../src/currency.h:25
+msgid "Czech koruna"
+msgstr "Tsjechische kroon"
+
+#: ../src/currency.h:26
+msgid "Danish krone"
+msgstr "Deense kroon"
+
+#: ../src/currency.h:27
+msgid "Estonian kroon"
+msgstr "Estse kroon"
+
+#: ../src/currency.h:28
+msgid "Euro"
+msgstr "Euro"
+
+#: ../src/currency.h:29
+msgid "Pound sterling"
+msgstr "Pond sterling"
+
+#: ../src/currency.h:30
+msgid "Hong Kong dollar"
+msgstr "Hong Kong dollar"
+
+#: ../src/currency.h:31
+msgid "Croatian kuna"
+msgstr "Kroatische kuna"
+
+#: ../src/currency.h:32
+msgid "Hungarian forint"
+msgstr "Hongaarse forint"
+
+#: ../src/currency.h:33
+msgid "Indonesian rupiah"
+msgstr "Indonesische roepia"
+
+#: ../src/currency.h:34
+msgid "Indian rupee"
+msgstr "Indiase roepia"
+
+#: ../src/currency.h:35
+msgid "Icelandic krona"
+msgstr "IJslandse kroon"
+
+#: ../src/currency.h:36
+msgid "Japanese yen"
+msgstr "Japanse yen"
+
+#: ../src/currency.h:37
+msgid "South Korean won"
+msgstr "Zuid-Koreaanse won"
+
+#: ../src/currency.h:38
+msgid "Lithuanian litas"
+msgstr "Litouwse litas"
+
+#: ../src/currency.h:39
+msgid "Latvian lats"
+msgstr "Letse lats"
+
+#: ../src/currency.h:40
+msgid "Mexican peso"
+msgstr "Mexicaanse peso"
+
+#: ../src/currency.h:41
+msgid "Malaysian ringgit"
+msgstr "Maleisische ringgit"
+
+#: ../src/currency.h:42
+msgid "Norwegian krone"
+msgstr "Noorse kroon"
+
+#: ../src/currency.h:43
+msgid "New Zealand dollar"
+msgstr "Nieuw-Zeelandse dollar"
+
+#: ../src/currency.h:44
+msgid "Philippine peso"
+msgstr "Filippijnse peso"
+
+#: ../src/currency.h:45
+msgid "Polish zloty"
+msgstr "Poolse zloty"
+
+#: ../src/currency.h:46
+msgid "New Romanian leu"
+msgstr "Nieuwe Roemeense leu"
+
+#: ../src/currency.h:47
+msgid "Russian rouble"
+msgstr "Russische roebel"
+
+#: ../src/currency.h:48
+msgid "Swedish krona"
+msgstr "Zweedse kroon"
+
+#: ../src/currency.h:49
+msgid "Singapore dollar"
+msgstr "Singaporese dollar"
+
+#: ../src/currency.h:50
+msgid "Thai baht"
+msgstr "Thaise baht"
+
+#: ../src/currency.h:51
+msgid "New Turkish lira"
+msgstr "Nieuwe Turkse lira"
+
+#: ../src/currency.h:52
+msgid "US dollar"
+msgstr "Amerikaanse dollar"
+
+#: ../src/currency.h:53
+msgid "South African rand"
+msgstr "Zuid-Afrikaanse rand"
+
+#. Description on how to use mate-calc displayed on command-line
+#: ../src/mate-calc.c:76
+#, c-format
+msgid ""
+"Usage:\n"
+"  %s — Perform mathematical calculations"
+msgstr "Gebruik:\n  %s — Wiskundige berekeningen uitvoeren"
+
+#. Description on mate-calc command-line help options displayed on command-
+#. line
+#: ../src/mate-calc.c:84
+#, c-format
+msgid ""
+"Help Options:\n"
+"  -v, --version                   Show release version\n"
+"  -h, -?, --help                  Show help options\n"
+"  --help-all                      Show all help options\n"
+"  --help-gtk                      Show GTK+ options"
+msgstr "Hulpopties:\n  -v, --version                   Geef programmaversie weer\n  -h, -?, --help                  Geef hulp-opties weer\n  --help-all                      Geef alle hulp-opties weer\n  --help-gtk                      Geef GTK+-opties weer\""
+
+#. Description on mate-calc command-line GTK+ options displayed on command-
+#. line
+#: ../src/mate-calc.c:95
+#, c-format
+msgid ""
+"GTK+ Options:\n"
+"  --class=CLASS                   Program class as used by the window manager\n"
+"  --name=NAME                     Program name as used by the window manager\n"
+"  --screen=SCREEN                 X screen to use\n"
+"  --sync                          Make X calls synchronous\n"
+"  --gtk-module=MODULES            Load additional GTK+ modules\n"
+"  --g-fatal-warnings              Make all warnings fatal"
+msgstr "GTK+-opties:\n  --class=KLASSE                   Programmaklasse, zoals gebruikt door de vensterbeheerder\n  --name=NAAM                     Programmanaam, zoals gebruikt door de vensterbeheerder\n  --screen=SCHERM                 Te gebruiken X-scherm\n  --sync                          X-aanroepen synchroon maken\n  --gtk-module=MODULES            Aanvullende GTK+-modules laden\n  --g-fatal-warnings              Alle waarschuwingen fataal maken"
+
+#. Description on mate-calc application options displayed on command-line
+#: ../src/mate-calc.c:109
+#, c-format
+msgid ""
+"Application Options:\n"
+"  -u, --unittest                  Perform unit tests\n"
+"  -s, --solve <equation>          Solve the given equation"
+msgstr "Programmaopties:\n  -u, --unittest                  Unittests uitvoeren\n-s, --solve <vergelijking>          Los de opgegeven vergelijking op"
+
+#. Error printed to stderr when user uses --solve argument without an equation
+#: ../src/mate-calc.c:154
+#, c-format
+msgid "Argument --solve requires an equation to solve"
+msgstr "Argument --solve vereist een vergelijking om op te lossen"
+
+#. Error printed to stderr when user provides an unknown command-line argument
+#: ../src/mate-calc.c:168
+#, c-format
+msgid "Unknown argument '%s'"
+msgstr "Onbekend argument ‘%s’"
+
+#. Tooltip for the Pi button
+#: ../src/math-buttons.c:106
+msgid "Pi [Ctrl+P]"
+msgstr "Pi [Ctrl+P]"
+
+#. Tooltip for the Euler's Number button
+#: ../src/math-buttons.c:109
+msgid "Euler’s Number"
+msgstr "Getal van Euler"
+
+#. Tooltip for the subscript button
+#: ../src/math-buttons.c:114
+msgid "Subscript mode [Alt]"
+msgstr "Subscriptmodus [Alt]"
+
+#. Tooltip for the superscript button
+#: ../src/math-buttons.c:117
+msgid "Superscript mode [Ctrl]"
+msgstr "Superscriptmodus [Ctrl]"
+
+#. Tooltip for the scientific exponent button
+#: ../src/math-buttons.c:120
+msgid "Scientific exponent [Ctrl+E]"
+msgstr "Wetenschappelijke notatie [Ctrl+E]"
+
+#. Tooltip for the add button
+#: ../src/math-buttons.c:123
+msgid "Add [+]"
+msgstr "Optellen [+]"
+
+#. Tooltip for the subtract button
+#: ../src/math-buttons.c:126
+msgid "Subtract [-]"
+msgstr "Aftrekken [-]"
+
+#. Tooltip for the multiply button
+#: ../src/math-buttons.c:129
+msgid "Multiply [*]"
+msgstr "Vermenigvuldigen [*]"
+
+#. Tooltip for the divide button
+#: ../src/math-buttons.c:132
+msgid "Divide [/]"
+msgstr "Delen [/]"
+
+#. Tooltip for the modulus divide button
+#: ../src/math-buttons.c:135
+msgid "Modulus divide"
+msgstr "Modulodelen"
+
+#. Tooltip for the additional functions button
+#: ../src/math-buttons.c:138
+msgid "Additional Functions"
+msgstr "Aanvullende functies"
+
+#. Tooltip for the exponent button
+#: ../src/math-buttons.c:141
+msgid "Exponent [^ or **]"
+msgstr "Exponent [^ of **]"
+
+#. Tooltip for the square button
+#: ../src/math-buttons.c:144
+msgid "Square [Ctrl+2]"
+msgstr "Kwadraat [Ctrl+2]"
+
+#. Tooltip for the percentage button
+#: ../src/math-buttons.c:147
+msgid "Percentage [%]"
+msgstr "Percentage [%]"
+
+#. Tooltip for the factorial button
+#: ../src/math-buttons.c:150
+msgid "Factorial [!]"
+msgstr "Faculteit [!]"
+
+#. Tooltip for the absolute value button
+#: ../src/math-buttons.c:153
+msgid "Absolute value [|]"
+msgstr "Absolute waarde [|]"
+
+#. Tooltip for the complex argument component button
+#: ../src/math-buttons.c:156
+msgid "Complex argument"
+msgstr "Complex argument"
+
+#. Tooltip for the complex conjugate button
+#: ../src/math-buttons.c:159
+msgid "Complex conjugate"
+msgstr "Complex geconjugeerde"
+
+#. Tooltip for the root button
+#: ../src/math-buttons.c:162
+msgid "Root [Ctrl+R]"
+msgstr "Wortel [Ctrl+R]"
+
+#. Tooltip for the square root button
+#: ../src/math-buttons.c:165
+msgid "Square root [Ctrl+R]"
+msgstr "Vierkantswortel [Ctrl+R]"
+
+#. Tooltip for the logarithm button
+#: ../src/math-buttons.c:168
+msgid "Logarithm"
+msgstr "Logaritme"
+
+#. Tooltip for the natural logarithm button
+#: ../src/math-buttons.c:171
+msgid "Natural Logarithm"
+msgstr "Natuurlijk logaritme"
+
+#. Tooltip for the sine button
+#: ../src/math-buttons.c:174
+msgid "Sine"
+msgstr "Sinus"
+
+#. Tooltip for the cosine button
+#: ../src/math-buttons.c:177
+msgid "Cosine"
+msgstr "Cosinus"
+
+#. Tooltip for the tangent button
+#: ../src/math-buttons.c:180
+msgid "Tangent"
+msgstr "Tangens"
+
+#. Tooltip for the hyperbolic sine button
+#: ../src/math-buttons.c:183
+msgid "Hyperbolic Sine"
+msgstr "Hyperbolische sinus"
+
+#. Tooltip for the hyperbolic cosine button
+#: ../src/math-buttons.c:186
+msgid "Hyperbolic Cosine"
+msgstr "Hyperbolische cosinus"
+
+#. Tooltip for the hyperbolic tangent button
+#: ../src/math-buttons.c:189
+msgid "Hyperbolic Tangent"
+msgstr "Hyperbolische tangens"
+
+#. Tooltip for the inverse button
+#: ../src/math-buttons.c:192
+msgid "Inverse [Ctrl+I]"
+msgstr "Omkeren [Ctrl+I]"
+
+#. Tooltip for the boolean AND button
+#: ../src/math-buttons.c:195
+msgid "Boolean AND"
+msgstr "Boolean AND"
+
+#. Tooltip for the boolean OR button
+#: ../src/math-buttons.c:198
+msgid "Boolean OR"
+msgstr "Boolese OR"
+
+#. Tooltip for the exclusive OR button
+#: ../src/math-buttons.c:201
+msgid "Boolean Exclusive OR"
+msgstr "Boolese XOR"
+
+#. Tooltip for the boolean NOT button
+#: ../src/math-buttons.c:204
+msgid "Boolean NOT"
+msgstr "Boolese NOT"
+
+#. Tooltip for the integer component button
+#: ../src/math-buttons.c:207 ../src/math-buttons.c:1445
+msgid "Integer Component"
+msgstr "Gehele deel"
+
+#. Tooltip for the fractional component button
+#: ../src/math-buttons.c:210 ../src/math-buttons.c:1447
+msgid "Fractional Component"
+msgstr "Fractie"
+
+#. Tooltip for the real component button
+#: ../src/math-buttons.c:213
+msgid "Real Component"
+msgstr "Reële deel"
+
+#. Tooltip for the imaginary component button
+#: ../src/math-buttons.c:216
+msgid "Imaginary Component"
+msgstr "Imaginaire deel"
+
+#. Tooltip for the ones complement button
+#: ../src/math-buttons.c:219
+msgid "Ones Complement"
+msgstr "1-complement"
+
+#. Tooltip for the twos complement button
+#: ../src/math-buttons.c:222
+msgid "Twos Complement"
+msgstr "2-complement"
+
+#. Tooltip for the truncate button
+#: ../src/math-buttons.c:225
+msgid "Truncate"
+msgstr "Afkappen"
+
+#. Tooltip for the start group button
+#: ../src/math-buttons.c:228
+msgid "Start Group [(]"
+msgstr "Begin groep [(]"
+
+#. Tooltip for the end group button
+#: ../src/math-buttons.c:231
+msgid "End Group [)]"
+msgstr "Einde groep [)]"
+
+#. Tooltip for the assign variable button
+#: ../src/math-buttons.c:234
+msgid "Assign Variable"
+msgstr "Variabele toewijzen"
+
+#. Tooltip for the insert variable button
+#: ../src/math-buttons.c:237
+msgid "Insert Variable"
+msgstr "Variabele invoegen"
+
+#. Tooltip for the solve button
+#: ../src/math-buttons.c:243
+msgid "Calculate Result"
+msgstr "Bereken antwoord"
+
+#. Tooltip for the factor button
+#: ../src/math-buttons.c:246
+msgid "Factorize [Ctrl+F]"
+msgstr "Faculteit [Ctrl+F]"
+
+#. Tooltip for the clear button
+#: ../src/math-buttons.c:249
+msgid "Clear Display [Escape]"
+msgstr "Scherm leegmaken [Escape]"
+
+#. Tooltip for the undo button
+#: ../src/math-buttons.c:252
+msgid "Undo [Ctrl+Z]"
+msgstr "Ongedaan maken [Ctrl+Z]"
+
+#. Tooltip for the double declining depreciation button
+#: ../src/math-buttons.c:264
+msgid "Double Declining Depreciation"
+msgstr "Dubbele degressieve afschrijving"
+
+#. Tooltip for the financial term button
+#: ../src/math-buttons.c:270
+msgid "Financial Term"
+msgstr "Financiële termijn"
+
+#. Tooltip for the sum of the years digits depreciation button
+#: ../src/math-buttons.c:273
+msgid "Sum of the Years Digits Depreciation"
+msgstr "Som-van-de-jaarcijfers-afschrijvingen"
+
+#. Tooltip for the straight line depreciation button
+#: ../src/math-buttons.c:276
+msgid "Straight Line Depreciation"
+msgstr "Lineaire afschrijving"
+
+#. Advanced buttons: Angle unit combo box: Use degrees for trigonometric
+#. calculations
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
+#. calculations
+#: ../src/math-buttons.c:895 ../src/math-preferences.c:255
+msgid "Degrees"
+msgstr "Graden"
+
+#. Advanced buttons: Angle unit combo box: Use radians for trigonometric
+#. calculations
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
+#. calculations
+#: ../src/math-buttons.c:899 ../src/math-preferences.c:259
+msgid "Radians"
+msgstr "Radialen"
+
+#. Advanced buttons: Angle unit combo box: Use gradians for trigonometric
+#. calculations
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
+#. calculations
+#: ../src/math-buttons.c:903 ../src/math-preferences.c:263
+msgid "Gradians"
+msgstr "Gradiënten"
+
+#. Number display mode combo: Binary, e.g. 10011010010₂
+#: ../src/math-buttons.c:937
+msgid "Binary"
+msgstr "Binair"
+
+#. Number display mode combo: Octal, e.g. 2322₈
+#: ../src/math-buttons.c:941
+msgid "Octal"
+msgstr "Octaal"
+
+#. Number display mode combo: Decimal, e.g. 1234
+#: ../src/math-buttons.c:945
+msgid "Decimal"
+msgstr "Decimaal"
+
+#. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
+#: ../src/math-buttons.c:949
+msgid "Hexadecimal"
+msgstr "Hexadecimaal"
+
+#. Text shown in store menu when no variables defined
+#. Text shown in recall menu when no variables defined
+#: ../src/math-buttons.c:1266 ../src/math-buttons.c:1312
+msgid "No variables defined"
+msgstr "Geen variabelen gedefinieerd"
+
+#. Left Shift Popup: Menu item to shift left by n places (n < 10)
+#. Right Shift Popup: Menu item to shift right by n places (n < 10)
+#: ../src/math-buttons.c:1355 ../src/math-buttons.c:1399
+#, c-format
+msgid "_%d place"
+msgid_plural "_%d places"
+msgstr[0] "_%d plaatsverschuiving"
+msgstr[1] "_%d plaatsverschuivingen"
+
+#. Left Shift Popup: Menu item to shift left by n places (n >= 10)
+#. Right Shift Popup: Menu item to shift right by n places (n >= 10)
+#: ../src/math-buttons.c:1359 ../src/math-buttons.c:1403
+#, c-format
+msgid "%d place"
+msgid_plural "%d places"
+msgstr[0] "_%d plaatsverschuiving"
+msgstr[1] "_%d plaatsverschuivingen"
+
+#. Tooltip for the round button
+#: ../src/math-buttons.c:1449
+msgid "Round"
+msgstr "Afronden"
+
+#. Tooltip for the floor button
+#: ../src/math-buttons.c:1451
+msgid "Floor"
+msgstr "Floor"
+
+#. Tooltip for the ceiling button
+#: ../src/math-buttons.c:1453
+msgid "Ceiling"
+msgstr "Ceiling"
+
+#. Tooltip for the ceiling button
+#: ../src/math-buttons.c:1455
+msgid "Sign"
+msgstr "Teken"
+
+#. Error shown when trying to undo with no undo history
+#: ../src/math-equation.c:496
+msgid "No undo history"
+msgstr "Herstelgeschiedenis leeg"
+
+#. Error shown when trying to redo with no redo history
+#: ../src/math-equation.c:521
+msgid "No redo history"
+msgstr "Geen volgende opdrachten"
+
+#: ../src/math-equation.c:845
+msgid "No sane value to store"
+msgstr "Opslaan is zinloos"
+
+#. Error displayed to user when they perform a bitwise operation on numbers
+#. greater than the current word
+#: ../src/math-equation.c:1105
+msgid "Overflow. Try a bigger word size"
+msgstr "Overloop. Probeer een grotere woordgrootte."
+
+#. Error displayed to user when they an unknown variable is entered
+#: ../src/math-equation.c:1110
+#, c-format
+msgid "Unknown variable '%s'"
+msgstr "Onbekende variable ‘%s’"
+
+#. Error displayed to user when an unknown function is entered
+#: ../src/math-equation.c:1115
+#, c-format
+msgid "Function '%s' is not defined"
+msgstr "Functie ‘%s’ is niet gedefinieerd"
+
+#. Error displayed to user when an conversion with unknown units is attempted
+#: ../src/math-equation.c:1120
+msgid "Unknown conversion"
+msgstr "Onbekende conversie"
+
+#. Error displayed to user when they enter an invalid calculation
+#: ../src/math-equation.c:1129
+msgid "Malformed expression"
+msgstr "Vorm van uitdrukking is niet goed"
+
+#. Error displayed when trying to factorize a non-integer value
+#: ../src/math-equation.c:1152
+msgid "Need an integer to factorize"
+msgstr "Geheel getal nodig om te kunnen ontbinden"
+
+#. This message is displayed in the status bar when a bit
+#. shift operation is performed and the display does not contain a number
+#: ../src/math-equation.c:1229
+msgid "No sane value to bitwise shift"
+msgstr "Waarde kan niet bitsgewijs worden verschoven"
+
+#. Message displayed when cannot toggle bit in display
+#: ../src/math-equation.c:1258
+msgid "Displayed value not an integer"
+msgstr "Weergegeven waarde is niet een geheel geta"
+
+#. Digits localized for the given language
+#: ../src/math-equation.c:1648
+msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
+msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
+
+#. Label on close button in preferences dialog
+#: ../src/math-preferences.c:245
+msgid "_Close"
+msgstr "_Sluiten"
+
+#. Number display mode combo: Fixed, e.g. 1234
+#: ../src/math-preferences.c:273
+msgid "Fixed"
+msgstr "Vast"
+
+#. Number display mode combo: Scientific, e.g. 1.234×10^3
+#: ../src/math-preferences.c:277
+msgid "Scientific"
+msgstr "Wetenschappelijk"
+
+#. Number display mode combo: Engineering, e.g. 1.234k
+#: ../src/math-preferences.c:281
+msgid "Engineering"
+msgstr "Technisch"
+
+#. Label used in preferences dialog.  The %d is replaced by a spinbutton
+#: ../src/math-preferences.c:292
+#, c-format
+msgid "Show %d decimal _places"
+msgstr "Toon %d decimalen"
+
+#. Translators: Error message displayed when unable to launch help browser
+#: ../src/math-window.c:161
+msgid "Unable to open help file"
+msgstr "Kon hulpbestand niet openen"
+
+#. The translator credits. Please translate this with your name(s).
+#: ../src/math-window.c:188
+msgid "translator-credits"
+msgstr "Wouter Bolsterlee\nBen Bridts\nTino Meinen\nJaap Woldringh\nVincent van Adrighem\n\nKijk voor meer informatie op http://nl.mate.org/"
+
+#. The license this software is under (GPL2+)
+#: ../src/math-window.c:194
+msgid ""
+"mate-calc is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"mate-calc is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
+"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr "Mate-calc is vrije software; u kunt het herdistribueren en / of te wijzigen\nonder de voorwaarden van de GNU General Public License zoals gepubliceerd \ndoor\nde Free Software Foundation; versie 2 van de Licentie, of\n(naar keuze) een latere versie.\n\nMate-calc wordt gedistribueerd in de hoop dat het nuttig zal zijn,\nmaar ZONDER ENIGE GARANTIE; zelfs zonder de impliciete garantie van\nVERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL. Zie de\nGNU General Public License voor meer details.\n\nU moet een kopie van de GNU General Public License\nsamen met mate-calc ontvangen, zo niet, schrijf dan naar de Free Software \nFoundation, Inc,\n51 Franklin Street, Fifth Floor, Boston, MA 02.110 tot +1.301, USA"
+
+#: ../src/math-window.c:209
+msgid "mate-calc"
+msgstr "mate-calc"
+
+#: ../src/math-window.c:213
+msgid "Calculator with financial and scientific modes."
+msgstr "Rekenmachine met financiële en wetenschappelijke standen."
+
+#. Calculator menu
+#: ../src/math-window.c:346
+msgid "_Calculator"
+msgstr "_Rekenmachine"
+
+#. Mode menu
+#: ../src/math-window.c:348
+msgid "_Mode"
+msgstr "_Modus"
+
+#. Help menu label
+#: ../src/math-window.c:350
+msgid "_Help"
+msgstr "_Hulp"
+
+#. Basic menu label
+#: ../src/math-window.c:352
+msgid "_Basic"
+msgstr "_Eenvoudig"
+
+#. Advanced menu label
+#: ../src/math-window.c:354
+msgid "_Advanced"
+msgstr "Ge_avanceerd"
+
+#. Financial menu label
+#: ../src/math-window.c:356
+msgid "_Financial"
+msgstr "_Financieel"
+
+#. Programming menu label
+#: ../src/math-window.c:358
 msgid "_Programming"
 msgstr "_Programmeren"
 
-#. Radian radio button
-#: ../glade/mate-calc.glade.h:489
-msgid "_Radians"
-msgstr "_Radialen"
+#. Help>Contents menu label
+#: ../src/math-window.c:360
+msgid "_Contents"
+msgstr "In_houd"
 
-#. Edit|Redo menu item
-#: ../glade/mate-calc.glade.h:491
-msgid "_Redo"
-msgstr "_Opnieuw"
+#. Translators: Error displayed when boolean AND attempted on non-integer
+#. values
+#: ../src/mp-binary.c:103
+msgid "Boolean AND is only defined for positive integers"
+msgstr "Booleaans AND is alleen gedefinieerd voor positieve gehele getallen"
 
-#. Scientific display radio button
-#: ../glade/mate-calc.glade.h:493
-msgid "_Sci"
-msgstr "_Sci"
+#. Translators: Error displayed when boolean OR attempted on non-integer
+#. values
+#: ../src/mp-binary.c:116
+msgid "Boolean OR is only defined for positive integers"
+msgstr "Booleaans OR is alleen gedefinieerd voor positieve gehele getallen"
 
-#. View|Scientific menu item
-#: ../glade/mate-calc.glade.h:495
-msgid "_Scientific"
-msgstr "_Wetenschappelijk"
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
+#: ../src/mp-binary.c:129
+msgid "Boolean XOR is only defined for positive integers"
+msgstr "Booleaans XOR is alleen gedefinieerd voor positieve gehele getallen"
 
-#. Set Precision Dialog: Button to apply settings
-#: ../glade/mate-calc.glade.h:497
-msgid "_Set"
-msgstr "_Instellen"
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
+#: ../src/mp-binary.c:144
+msgid "Boolean NOT is only defined for positive integers"
+msgstr "Booleaans NOT is alleen gedefinieerd voor positieve gehele getallen"
 
-#. Edit|Undo menu item
-#: ../glade/mate-calc.glade.h:499
-msgid "_Undo"
-msgstr "O_ngedaan maken"
+#. Translators: Error displayed when bit shift attempted on non-integer values
+#: ../src/mp-binary.c:174
+msgid "Shift is only possible on integer values"
+msgstr "Bitverschuiving is alleen mogelijk op gehele getallen"
 
-#. View menu
-#: ../glade/mate-calc.glade.h:501
-msgid "_View"
-msgstr "Beel_d"
+#. Translators: Error display when attempting to take argument of zero
+#: ../src/mp.c:149
+msgid "Argument not defined for zero"
+msgstr "Argument niet gedefinieerd voor nulwaarde"
 
-#. This is accessible name for memory register 0.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:505
-msgid "register 0"
-msgstr "register 0"
+#. Translators: Error displayed attempted to divide by zero
+#: ../src/mp.c:636 ../src/mp.c:668 ../src/mp.c:1602
+msgid "Division by zero is undefined"
+msgstr "Deling door nul is niet gedefinieerd"
 
-#. This is accessible name for memory register 1.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:509
-msgid "register 1"
-msgstr "register 1"
+#. Translators: Error displayed when attempting to take logarithm of zero
+#: ../src/mp.c:1273 ../src/mp.c:1310
+msgid "Logarithm of zero is undefined"
+msgstr "Logaritme van nul is niet gedefinieerd"
 
-#. This is accessible name for memory register 2.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:513
-msgid "register 2"
-msgstr "register 2"
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. exponent
+#: ../src/mp.c:1675 ../src/mp.c:1990
+msgid "The power of zero is undefined for a negative exponent"
+msgstr "Nul tot een negatieve macht verheffen is niet gedefinieerd"
 
-#. This is accessible name for memory register 3.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:517
-msgid "register 3"
-msgstr "register 3"
+#: ../src/mp.c:1700
+msgid "Reciprocal of zero is undefined"
+msgstr "Omgekeerde waarde van nul is niet gedefinieerd"
 
-#. This is accessible name for memory register 4.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:521
-msgid "register 4"
-msgstr "register 4"
+#: ../src/mp.c:1785
+msgid "Root must be non-zero"
+msgstr "Wortel mag niet nul zijn"
 
-#. This is accessible name for memory register 5.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:525
-msgid "register 5"
-msgstr "register 5"
+#: ../src/mp.c:1803
+msgid "Negative root of zero is undefined"
+msgstr "Negatieve wortel van nul is niet gedefinieerd"
 
-#. This is accessible name for memory register 6.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:529
-msgid "register 6"
-msgstr "register 6"
+#: ../src/mp.c:1809
+msgid "nth root of negative number is undefined for even n"
+msgstr "n-de wortel van een negatief getal is niet gedefinieerd voor even n"
 
-#. This is accessible name for memory register 7.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:533
-msgid "register 7"
-msgstr "register 7"
+#. Translators: Error displayed when attempted take the factorial of a
+#. fractional number
+#: ../src/mp.c:1930
+msgid "Factorial is only defined for natural numbers"
+msgstr "Faculteit is alleen gedefinieerd voor natuurlijke getallen"
 
-#. This is accessible name for memory register 8.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:537
-msgid "register 8"
-msgstr "register 8"
+#. Translators: Error displayed when attemping to do a modulus division on
+#. non-integer numbers
+#: ../src/mp.c:1950
+msgid "Modulus division is only defined for integers"
+msgstr "Modulusdeling is alleen gedefinieerd voor gehele getallen"
 
-#. This is accessible name for memory register 9.  It is spoken
-#. by screen readers such as Orca, to help people who are
-#. blind or have low vision.
-#: ../glade/mate-calc.glade.h:541
-msgid "register 9"
-msgstr "register 9"
+#. Translators: Error displayed when tangent value is undefined
+#: ../src/mp-trigonometric.c:311
+msgid ""
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
+"(90°)"
+msgstr "Tangens is niet gedefinieerd voor hoeken die een veelvoud van π (180°) verschillen met π∕2 (90°)"
 
-#: ../glade/mate-calc.glade.h:542
-msgid "x2"
-msgstr "x2"
+#. Translators: Error displayed when inverse sine value is undefined
+#: ../src/mp-trigonometric.c:356
+msgid "Inverse sine is undefined for values outside [-1, 1]"
+msgstr "Inverse sinus is niet gedefinieerd voor waarden buiten [-1, 1]"
 
-#. Change sign button
-#: ../glade/mate-calc.glade.h:544
-msgid "±"
-msgstr "±"
+#. Translators: Error displayed when inverse cosine value is undefined
+#: ../src/mp-trigonometric.c:373
+msgid "Inverse cosine is undefined for values outside [-1, 1]"
+msgstr "Inverse cosinus is niet gedefinieerd voor waarden buiten [-1, 1]"
 
-#. Multiplication button
-#: ../glade/mate-calc.glade.h:546
-msgid "×"
-msgstr "×"
+#. Translators: Error displayed when inverse hyperbolic cosine value is
+#. undefined
+#: ../src/mp-trigonometric.c:591
+msgid ""
+"Inverse hyperbolic cosine is undefined for values less than or equal to one"
+msgstr "Inverse hyperbolische cosinus is niet gedefinieerd voor waarden onder de \"\n\"één"
 
-#. Division button
-#: ../glade/mate-calc.glade.h:548
-msgid "÷"
-msgstr "÷"
-
-#. Subtraction button
-#: ../glade/mate-calc.glade.h:550
-msgid "−"
-msgstr "−"
-
-#. Square root button
-#: ../glade/mate-calc.glade.h:552
-msgid "√"
-msgstr "√"
+#. Translators: Error displayed when inverse hyperbolic tangent value is
+#. undefined
+#: ../src/mp-trigonometric.c:615
+msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
+msgstr "Inverse hyperbolische tangens is niet gedefinieerd voor waarden buiten [-1, 1]"
