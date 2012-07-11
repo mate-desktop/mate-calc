@@ -1,1 +1,772 @@
-See http://git.mate-desktop.org/?p=mate-calc&a=summary for the revision history
+commit 8b246b929cc56b992ca8ee966bda2668fa4a9162
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Tue Jul 10 16:47:39 2012 +0200
+
+    sync translations with transifex
+
+ po/af.po                | 2611 +++++++++++---------------
+ po/am.po                | 2071 +++++++++------------
+ po/ar.po                | 2069 +++++----------------
+ po/as.po                | 3432 +++++++++++-----------------------
+ po/ast.po               | 3333 +++++++++++----------------------
+ po/az.po                | 2625 +++++++++++---------------
+ po/be.po                | 2802 +++++++++++-----------------
+ po/bg.po                |  938 +++++-----
+ po/bn.po                | 3491 +++++++++++------------------------
+ po/bn_IN.po             | 2169 +++++++++++-----------
+ po/bs.po                | 2531 +++++++++++--------------
+ po/ca.po                | 3973 ++++++++++++---------------------------
+ po/ca@valencia.po       | 3923 +++++++++++----------------------------
+ po/cs.po                | 1126 +++++-------
+ po/cy.po                | 2762 +++++++++++-----------------
+ po/da.po                | 2462 +++++--------------------
+ po/de.po                | 1005 +++++-----
+ po/dz.po                | 2935 +++++++++++------------------
+ po/el.po                | 1130 +++++-------
+ po/en_CA.po             | 2376 +++++++++++-------------
+ po/en_GB.po             | 2499 +++++--------------------
+ po/en_US.po             | 2544 ++++++++++++-------------
+ po/eo.po                | 1280 +++++--------
+ po/es.po                | 2260 +++++------------------
+ po/et.po                | 1174 ++++++------
+ po/eu.po                | 3218 ++++++++++++--------------------
+ po/fa.po                | 2511 +++++++++++--------------
+ po/fi.po                | 2067 +++++----------------
+ po/fr.po                |  943 +++++-----
+ po/ga.po                | 2647 +++++++++-----------------
+ po/gl.po                | 1147 +++++-------
+ po/gnome-copyrights.txt | 1125 ++++++++++++
+ po/gu.po                | 1166 +++++-------
+ po/he.po                | 1860 +++++--------------
+ po/hi.po                | 3137 +++++++++++--------------------
+ po/hr.po                | 2484 ++++++++++---------------
+ po/hu.po                |  928 +++++-----
+ po/hy.po                |  819 +++++----
+ po/id.po                |  858 ++++-----
+ po/it.po                | 1139 +++++-------
+ po/ja.po                | 1801 +++++-------------
+ po/ka.po                | 2396 +++++++++++-------------
+ po/kk.po                |  736 ++++----
+ po/kn.po                | 3040 +++++++++++-------------------
+ po/ko.po                | 2169 +++++++++++-----------
+ po/lt.po                | 2288 +++++------------------
+ po/lv.po                | 3068 +++++++++++--------------------
+ po/mai.po               | 2684 ++++++++++-----------------
+ po/mg.po                | 2453 ++++++++++++-------------
+ po/mk.po                | 2687 +++++++++++----------------
+ po/ml.po                | 3102 +++++++++++--------------------
+ po/mn.po                | 2604 +++++++++++---------------
+ po/mr.po                | 3138 +++++++++++--------------------
+ po/ms.po                | 2498 +++++++++++--------------
+ po/nb.po                |  933 +++++-----
+ po/ne.po                | 2384 +++++++++++-------------
+ po/nl.po                | 3158 ++++++++++++-------------------
+ po/nn.po                | 3285 +++++++++++----------------------
+ po/oc.po                | 2310 +++++++++--------------
+ po/or.po                | 1885 ++++++++++---------
+ po/pa.po                | 2427 +++++-------------------
+ po/pl.po                |  912 +++++----
+ po/pt.po                | 4699 +++++------------------------------------------
+ po/pt_BR.po             | 1776 +++++-------------
+ po/ro.po                | 2021 +++++---------------
+ po/ru.po                |  930 +++++-----
+ po/si.po                | 3049 +++++++++++-------------------
+ po/sk.po                | 2047 +++++----------------
+ po/sl.po                | 1050 +++++------
+ po/sq.po                | 2670 +++++++++++----------------
+ po/sr.po                | 2715 +++++----------------------
+ po/sr@latin.po          | 2715 +++++----------------------
+ po/sv.po                | 1146 +++++-------
+ po/ta.po                |  906 +++++----
+ po/te.po                | 3147 +++++++++++--------------------
+ po/th.po                | 3012 ++++++------------------------
+ po/tk.po                | 2341 ++++++++++-------------
+ po/tr.po                | 3265 ++++++++++++--------------------
+ po/uk.po                | 2199 +++++++++++-----------
+ po/vi.po                | 3117 ++++++++++++-------------------
+ po/xh.po                | 2527 ++++++++++++-------------
+ po/zh_CN.po             |  910 +++++----
+ po/zh_HK.po             | 1161 +++++-------
+ po/zh_TW.po             | 1162 +++++-------
+ 84 files changed, 66103 insertions(+), 119990 deletions(-)
+
+commit 5f1cfec17897eb320a5422ac90d3166c3b8188e9
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sun Apr 22 19:36:47 2012 +0200
+
+    remove autogenerated files (thanks to stefanct)
+
+ po/POTFILES |   24 ------------------------
+ 1 file changed, 24 deletions(-)
+
+commit 7155e47537e3707d42a675d2603386963c6d9156
+Author: Stefan Tauner <stefan.tauner@student.tuwien.ac.at>
+Date:   Fri Apr 13 01:45:02 2012 +0200
+
+    Support shifts with keyboard
+    
+    This patch also changes the shift operation itself to use MPNumber for the
+    multiplier too. Previously a signed int was used, which led to "interesting" results
+    for bigger numbers. This was hidden because the GUI did not allow shifts with
+    more than 15 places.
+    
+    Signed-off-by: Stefan Tauner <stefan.tauner@student.tuwien.ac.at>
+
+ src/math-buttons.c       |    4 ++--
+ src/mp-binary.c          |   15 ++++++++-------
+ src/mp-equation-lexer.l  |    4 ++++
+ src/mp-equation-parser.y |    3 +++
+ 4 files changed, 17 insertions(+), 9 deletions(-)
+
+commit 5f32b5b06eed534bf0201266169dcb7e8d833349
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Wed Mar 14 16:14:09 2012 +0100
+
+    update for 1.2
+
+ AUTHORS      |    8 +++++++-
+ ChangeLog    |    2 +-
+ README       |   19 +++----------------
+ autogen.sh   |    4 ++--
+ configure.ac |    2 +-
+ 5 files changed, 14 insertions(+), 21 deletions(-)
+
+commit 90ba962d08da1491f115684196f30b1960e42dcd
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Wed Mar 14 16:02:34 2012 +0100
+
+    removed distro/ubuntu folder
+
+ distro/ubuntu/build |   24 ------------------------
+ 1 file changed, 24 deletions(-)
+
+commit 4d5a20b123d4581db46b40f877229bc66d3e58e5
+Author: Perberos <perberos@gmail.com>
+Date:   Thu Jan 26 12:49:35 2012 -0300
+
+    changing pkgbuild source method
+
+ distro/archlinux/PKGBUILD |   17 +++++++----------
+ 1 file changed, 7 insertions(+), 10 deletions(-)
+
+commit 4860b74c6af4545988034578dcbcf8024af83f00
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Fri Jan 13 19:42:22 2012 -0500
+
+    Changed https to http
+
+ src/math-window.c |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit a24dafa5e96e0266950eed6998bb289af714a39d
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Fri Jan 13 19:38:26 2012 -0500
+
+    Fixed typo.
+
+ src/math-window.c |  564 ++++++++++++++++++++++++++---------------------------
+ 1 file changed, 282 insertions(+), 282 deletions(-)
+
+commit 299449e69433796c9ac476b9c3761ea853ce1446
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Fri Jan 13 19:36:45 2012 -0500
+
+    Added mate-desktop.org to the about window.
+
+ src/math-window.c |    1 +
+ 1 file changed, 1 insertion(+)
+
+commit b274cce136c0a42073e6f645c79840c3e3f4a2d2
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Mon Jan 9 21:40:42 2012 -0500
+
+    Changed mate.gr.jp to gnome.gr.jp as requested in Issue #86
+
+ po/ja.po |   12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+commit 24824d12ee60e0400791440a944865cac01462ef
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Fri Dec 9 23:40:01 2011 -0500
+
+    updated version
+
+ configure.ac              |    2 +-
+ distro/archlinux/PKGBUILD |    2 +-
+ distro/ubuntu/build       |    2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 5dd08fe8e2a0b20bc35a3ec73db07946146bf7ab
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Fri Dec 2 20:58:09 2011 -0500
+
+    Changed version to 2011.12.01
+
+ configure.ac              |    2 +-
+ distro/archlinux/PKGBUILD |    2 +-
+ distro/ubuntu/build       |    2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+commit af876ebbd621a63a1a0636fb0ce74da5c2aca480
+Author: Perberos <perberos@gmail.com>
+Date:   Thu Nov 24 23:33:08 2011 -0300
+
+    allman style format
+
+ src/currency.c            |  414 +++++++-------
+ src/currency.h            |   82 ++-
+ src/financial.h           |   22 +-
+ src/math-buttons.h        |   28 +-
+ src/math-display.h        |   18 +-
+ src/math-equation.h       |  134 +++--
+ src/math-preferences.h    |   14 +-
+ src/math-variables.h      |   20 +-
+ src/math-window.c         |  696 +++++++++++------------
+ src/math-window.h         |   26 +-
+ src/mp-equation-private.h |   44 +-
+ src/mp-equation.h         |   71 ++-
+ src/mp-private.h          |   10 +-
+ src/mp.h                  |   26 +-
+ src/unittest.c            | 1336 +++++++++++++++++++++++----------------------
+ 15 files changed, 1469 insertions(+), 1472 deletions(-)
+
+commit 5b8921d58fbb5ad226815829dece99d5cfc781b8
+Author: Perberos <perberos@gmail.com>
+Date:   Thu Nov 24 10:00:00 2011 -0300
+
+    removing extra tabs
+
+ help/Makefile.am |   52 ++++++++++++++++++++++++++--------------------------
+ 1 file changed, 26 insertions(+), 26 deletions(-)
+
+commit d9f36c287968b37bf15f2ef7c4d423082ca203ec
+Merge: ef05e6d e4498de
+Author: Perberos <perberos@gmail.com>
+Date:   Thu Nov 24 03:52:41 2011 -0800
+
+    Merge pull request #2 from stefano-k/patch-1
+    
+    Fixed glib schemas
+
+commit e4498dec48483c0674fb1c0c338b2be35b3527df
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Thu Nov 24 10:01:30 2011 +0100
+
+    Fixed glib schemas
+
+ data/org.mate.mate-calc.gschema.xml.in |   14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+commit ef05e6d95670a3fb68f0daf98e2148a9fed5d1ca
+Author: Perberos <perberos@gmail.com>
+Date:   Mon Nov 14 18:51:31 2011 -0300
+
+    updating autogen.sh
+
+ autogen.sh |   13 +++++++++----
+ 1 file changed, 9 insertions(+), 4 deletions(-)
+
+commit bd319169d10882df9bcf76f52c0fbbb5449a3741
+Author: Perberos <perberos@gmail.com>
+Date:   Tue Nov 8 22:06:03 2011 -0300
+
+    adding mate-doc-utils as make depend
+
+ distro/archlinux/PKGBUILD |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit a4816fcaee474a728aacf444b8e9307df32b8a7b
+Author: Perberos <perberos@gmail.com>
+Date:   Tue Nov 8 22:03:40 2011 -0300
+
+    updating version number and hash
+
+ distro/archlinux/PKGBUILD |    6 ++----
+ distro/ubuntu/build       |    6 ++----
+ 2 files changed, 4 insertions(+), 8 deletions(-)
+
+commit 8eac64b6a0ecdea0d7e9a05d4874e75d4b093148
+Author: Perberos <perberos@gmail.com>
+Date:   Tue Nov 8 15:00:32 2011 -0300
+
+    updating version number
+
+ configure.ac |   38 +++++++++++++++++++-------------------
+ 1 file changed, 19 insertions(+), 19 deletions(-)
+
+commit e9d646c083c6277635fb4502c6836cdd06468dad
+Author: Perberos <perberos@gmail.com>
+Date:   Tue Nov 8 14:55:18 2011 -0300
+
+    wat
+
+ src/math-buttons.c |   79 +++++++++++++++++++++++++++-------------------------
+ 1 file changed, 41 insertions(+), 38 deletions(-)
+
+commit ac935862f8c00672e78643a4c0d53ebed5484d4b
+Author: Perberos <perberos@gmail.com>
+Date:   Tue Nov 8 14:45:38 2011 -0300
+
+    still renaming
+
+ configure.ac                           |    2 +-
+ data/org.mate.mate-calc.gschema.xml.in |   14 +++++------
+ help/C/complex.page                    |    4 +--
+ help/C/functions.page                  |    4 +--
+ help/C/index.page                      |    4 +--
+ help/cs/cs.po                          |    8 +++---
+ help/de/de.po                          |    6 ++---
+ help/el/el.po                          |   12 ++++-----
+ help/es/es.po                          |   12 ++++-----
+ help/eu/eu.po                          |   18 +++++++-------
+ help/fi/fi.po                          |    6 ++---
+ help/fr/fr.po                          |   10 ++++----
+ help/gl/gl.po                          |    8 +++---
+ help/hu/hu.po                          |   12 ++++-----
+ po/POTFILES                            |    2 +-
+ po/POTFILES.in                         |    2 +-
+ po/af.po                               |   24 +++++++++---------
+ po/am.po                               |    6 ++---
+ po/ar.po                               |   24 +++++++++---------
+ po/as.po                               |   42 ++++++++++++++++----------------
+ po/ast.po                              |   24 +++++++++---------
+ po/az.po                               |    8 +++---
+ po/be.po                               |    6 ++---
+ po/be@latin.po                         |   18 +++++++-------
+ po/bg.po                               |   14 +++++------
+ po/bn.po                               |   26 ++++++++++----------
+ po/bn_IN.po                            |   20 +++++++--------
+ po/bs.po                               |    6 ++---
+ po/ca.po                               |   26 ++++++++++----------
+ po/ca@valencia.po                      |   26 ++++++++++----------
+ po/cs.po                               |   16 ++++++------
+ po/cy.po                               |    8 +++---
+ po/da.po                               |   32 ++++++++++++------------
+ po/de.po                               |   16 ++++++------
+ po/dz.po                               |   12 ++++-----
+ po/el.po                               |   20 +++++++--------
+ po/en@shaw.po                          |   20 +++++++--------
+ po/en_CA.po                            |   24 +++++++++---------
+ po/en_GB.po                            |   36 +++++++++++++--------------
+ po/en_US.po                            |    8 +++---
+ po/eo.po                               |   12 ++++-----
+ po/es.po                               |   32 ++++++++++++------------
+ po/et.po                               |   30 +++++++++++------------
+ po/eu.po                               |   24 +++++++++---------
+ po/fa.po                               |   12 ++++-----
+ po/fi.po                               |   22 ++++++++---------
+ po/fr.po                               |   18 +++++++-------
+ po/ga.po                               |   22 ++++++++---------
+ po/gl.po                               |   18 +++++++-------
+ po/gu.po                               |   20 +++++++--------
+ po/he.po                               |   36 +++++++++++++--------------
+ po/hi.po                               |   28 ++++++++++-----------
+ po/hr.po                               |   14 +++++------
+ po/hu.po                               |   20 +++++++--------
+ po/hy.po                               |   14 +++++------
+ po/id.po                               |   14 +++++------
+ po/it.po                               |   18 +++++++-------
+ po/ja.po                               |   22 ++++++++---------
+ po/ka.po                               |   20 +++++++--------
+ po/kk.po                               |   20 +++++++--------
+ po/kn.po                               |   24 +++++++++---------
+ po/ko.po                               |   20 +++++++--------
+ po/ku.po                               |    4 +--
+ po/lt.po                               |   34 +++++++++++++-------------
+ po/lv.po                               |   20 +++++++--------
+ po/mai.po                              |   16 ++++++------
+ po/mg.po                               |   28 ++++++++++-----------
+ po/mk.po                               |   22 ++++++++---------
+ po/ml.po                               |   22 ++++++++---------
+ po/mn.po                               |    4 +--
+ po/mr.po                               |   30 +++++++++++------------
+ po/ms.po                               |    8 +++---
+ po/nb.po                               |   14 +++++------
+ po/ne.po                               |   12 ++++-----
+ po/nl.po                               |   24 +++++++++---------
+ po/nn.po                               |   36 +++++++++++++--------------
+ po/oc.po                               |   16 ++++++------
+ po/or.po                               |   20 +++++++--------
+ po/pa.po                               |   30 +++++++++++------------
+ po/pl.po                               |   20 +++++++--------
+ po/pt.po                               |   36 +++++++++++++--------------
+ po/pt_BR.po                            |   24 +++++++++---------
+ po/ro.po                               |   24 +++++++++---------
+ po/ru.po                               |   22 ++++++++---------
+ po/rw.po                               |    4 +--
+ po/si.po                               |   14 +++++------
+ po/sk.po                               |   24 +++++++++---------
+ po/sl.po                               |   18 +++++++-------
+ po/sq.po                               |   24 +++++++++---------
+ po/sr.po                               |   18 +++++++-------
+ po/sr@latin.po                         |   18 +++++++-------
+ po/sv.po                               |   20 +++++++--------
+ po/ta.po                               |   10 ++++----
+ po/te.po                               |   28 ++++++++++-----------
+ po/th.po                               |   34 +++++++++++++-------------
+ po/tk.po                               |    6 ++---
+ po/tr.po                               |   24 +++++++++---------
+ po/uk.po                               |   18 +++++++-------
+ po/vi.po                               |   18 +++++++-------
+ po/xh.po                               |    6 ++---
+ po/zh_CN.po                            |   20 +++++++--------
+ po/zh_HK.po                            |   16 ++++++------
+ po/zh_TW.po                            |   16 ++++++------
+ 103 files changed, 924 insertions(+), 924 deletions(-)
+
+commit 76cab7abdce51c43a53644a0d8587516d3164586
+Author: Perberos <perberos@gmail.com>
+Date:   Tue Nov 8 14:38:44 2011 -0300
+
+    using autogen.sh on PKGBUILD
+
+ distro/archlinux/PKGBUILD |    6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 0446ce33d5db1f82a989343cf324b856813d2a96
+Author: Perberos <perberos@gmail.com>
+Date:   Tue Nov 8 14:32:59 2011 -0300
+
+    fast typo error
+
+ src/mate-calc.c |  260 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/mate-conf.c |  260 -------------------------------------------------------
+ 2 files changed, 260 insertions(+), 260 deletions(-)
+
+commit b65a74287bf28bec6e020af51a34e123c670b531
+Author: Perberos <perberos@gmail.com>
+Date:   Tue Nov 8 14:30:53 2011 -0300
+
+    renaming from gcalctool to mate-conf
+
+ AUTHORS                                |    4 +-
+ Makefile.am                            |    3 +-
+ README                                 |   28 +-
+ configure.ac                           |   18 +-
+ data/Makefile.am                       |   12 +-
+ data/gcalctool.1                       |   33 -
+ data/gcalctool.desktop.in              |   15 -
+ data/mate-calc.1                       |   33 +
+ data/mate-calc.desktop.in              |   15 +
+ data/org.mate.gcalctool.gschema.xml.in |   75 -
+ data/org.mate.mate-calc.gschema.xml.in |   75 +
+ help/Makefile.am                       |    2 +-
+ help/bg/bg.po                          |  120 +-
+ help/ca/ca.po                          | 2312 +++++++++++++--------------
+ help/cs/cs.po                          |    8 +-
+ help/de/de.po                          |  258 +--
+ help/el/el.po                          |  338 ++--
+ help/es/es.po                          |    8 +-
+ help/eu/eu.po                          | 1790 ++++++++++-----------
+ help/fi/fi.po                          |    8 +-
+ help/fr/fr.po                          |    6 +-
+ help/gl/gl.po                          |    8 +-
+ help/hu/hu.po                          |    6 +-
+ help/it/it.po                          | 1940 +++++++++++------------
+ help/ja/ja.po                          | 1950 +++++++++++------------
+ help/ko/ko.po                          | 2334 +++++++++++++--------------
+ help/oc/oc.po                          | 2228 +++++++++++++-------------
+ help/pt_BR/pt_BR.po                    | 2078 ++++++++++++------------
+ help/ru/ru.po                          | 2264 +++++++++++++-------------
+ help/sv/sv.po                          | 2728 ++++++++++++++++----------------
+ help/zh_CN/zh_CN.po                    |  240 +--
+ help/zh_HK/zh_HK.po                    |  202 +--
+ help/zh_TW/zh_TW.po                    |  200 +--
+ po/POTFILES                            |    6 +-
+ po/POTFILES.in                         |    6 +-
+ po/af.po                               |  812 +++++-----
+ po/am.po                               |  776 ++++-----
+ po/ar.po                               |   72 +-
+ po/as.po                               |  768 ++++-----
+ po/ast.po                              |  306 ++--
+ po/az.po                               |  776 ++++-----
+ po/be.po                               |  776 ++++-----
+ po/be@latin.po                         |  834 +++++-----
+ po/bg.po                               |   68 +-
+ po/bn.po                               |  294 ++--
+ po/bn_IN.po                            |  294 ++--
+ po/bs.po                               |  776 ++++-----
+ po/ca.po                               |  322 ++--
+ po/ca@valencia.po                      |  308 ++--
+ po/cs.po                               |   72 +-
+ po/cy.po                               |  722 ++++-----
+ po/da.po                               |   72 +-
+ po/de.po                               |   70 +-
+ po/dz.po                               |  866 +++++-----
+ po/el.po                               |   68 +-
+ po/en@shaw.po                          |   74 +-
+ po/en_CA.po                            |  758 ++++-----
+ po/en_GB.po                            |   70 +-
+ po/en_US.po                            |  776 ++++-----
+ po/eo.po                               |   84 +-
+ po/es.po                               |   74 +-
+ po/et.po                               |   12 +-
+ po/eu.po                               |  642 ++++----
+ po/fa.po                               |  738 ++++-----
+ po/fi.po                               |   68 +-
+ po/fr.po                               |   70 +-
+ po/ga.po                               |  648 ++++----
+ po/gl.po                               |   76 +-
+ po/gu.po                               |   74 +-
+ po/he.po                               |   68 +-
+ po/hi.po                               |  648 ++++----
+ po/hr.po                               |  810 +++++-----
+ po/hu.po                               |   70 +-
+ po/hy.po                               |   70 +-
+ po/id.po                               |   76 +-
+ po/it.po                               |   68 +-
+ po/ja.po                               |   72 +-
+ po/ka.po                               |  750 ++++-----
+ po/kk.po                               |   74 +-
+ po/kn.po                               |   80 +-
+ po/ko.po                               |  298 ++--
+ po/ku.po                               |  722 ++++-----
+ po/lt.po                               |   80 +-
+ po/lv.po                               |  294 ++--
+ po/mai.po                              |  758 ++++-----
+ po/mg.po                               |  828 +++++-----
+ po/mk.po                               |  816 +++++-----
+ po/ml.po                               |  654 ++++----
+ po/mn.po                               |  776 ++++-----
+ po/mr.po                               |  644 ++++----
+ po/ms.po                               |  776 ++++-----
+ po/nb.po                               |   80 +-
+ po/ne.po                               |  754 ++++-----
+ po/nl.po                               |  758 ++++-----
+ po/nn.po                               |  296 ++--
+ po/oc.po                               |  830 +++++-----
+ po/or.po                               |   84 +-
+ po/pa.po                               |   74 +-
+ po/pl.po                               |   66 +-
+ po/pt.po                               |   82 +-
+ po/pt_BR.po                            |   70 +-
+ po/ro.po                               |   70 +-
+ po/ru.po                               |   72 +-
+ po/rw.po                               |  778 ++++-----
+ po/si.po                               |  638 ++++----
+ po/sk.po                               |   72 +-
+ po/sl.po                               |   74 +-
+ po/sq.po                               |  812 +++++-----
+ po/sr.po                               |   72 +-
+ po/sr@latin.po                         |   72 +-
+ po/sv.po                               |   68 +-
+ po/ta.po                               |   72 +-
+ po/te.po                               |  652 ++++----
+ po/th.po                               |   78 +-
+ po/tk.po                               |  776 ++++-----
+ po/tr.po                               |  646 ++++----
+ po/uk.po                               |  296 ++--
+ po/vi.po                               |  782 ++++-----
+ po/xh.po                               |  776 ++++-----
+ po/zh_CN.po                            |   72 +-
+ po/zh_HK.po                            |   64 +-
+ po/zh_TW.po                            |   64 +-
+ src/Makefile.am                        |   32 +-
+ src/currency.c                         |    4 +-
+ src/gcalccmd.c                         |   98 --
+ src/gcalctool.c                        |  260 ---
+ src/mate-calc-cmd.c                    |   98 ++
+ src/mate-conf.c                        |  260 +++
+ src/math-variables.c                   |   14 +-
+ src/math-window.c                      |   32 +-
+ 130 files changed, 27448 insertions(+), 27449 deletions(-)
+
+commit 2358ba4314dc6d757049bc4871ecf2922614b61b
+Author: Perberos <perberos@gmail.com>
+Date:   Tue Nov 8 13:50:37 2011 -0300
+
+    initial
+
+ AUTHORS                                |   61 +
+ COPYING                                |  339 ++
+ ChangeLog                              |    1 +
+ Makefile.am                            |   18 +
+ NEWS                                   |    9 +
+ README                                 |   83 +
+ autogen.sh                             |   20 +
+ configure.ac                           |   99 +
+ data/Makefile.am                       |   25 +
+ data/buttons-advanced.ui               | 1123 +++++++
+ data/buttons-basic.ui                  |  442 +++
+ data/buttons-financial.ui              | 2583 +++++++++++++++
+ data/buttons-programming.ui            | 3036 ++++++++++++++++++
+ data/gcalctool.1                       |   33 +
+ data/gcalctool.desktop.in              |   15 +
+ data/org.mate.gcalctool.gschema.xml.in |   75 +
+ data/preferences.ui                    |  277 ++
+ distro/archlinux/PKGBUILD              |   29 +
+ distro/ubuntu/build                    |   26 +
+ help/C/absolute.page                   |   22 +
+ help/C/base.page                       |   38 +
+ help/C/boolean.page                    |   31 +
+ help/C/complex.page                    |   14 +
+ help/C/conv-base.page                  |   14 +
+ help/C/conv-character.page             |   19 +
+ help/C/conv-currency.page              |   27 +
+ help/C/conv-length.page                |   30 +
+ help/C/conv-time.page                  |   24 +
+ help/C/conv-weight.page                |   24 +
+ help/C/equation.page                   |   46 +
+ help/C/factorial.page                  |   20 +
+ help/C/factorize.page                  |   15 +
+ help/C/financial.page                  |   60 +
+ help/C/functions.page                  |   91 +
+ help/C/index.page                      |   34 +
+ help/C/keyboard.page                   |   42 +
+ help/C/legal.xml                       |    9 +
+ help/C/logarithm.page                  |   43 +
+ help/C/modulus.page                    |   19 +
+ help/C/mouse.page                      |   37 +
+ help/C/number-display.page             |   43 +
+ help/C/percentage.page                 |   32 +
+ help/C/power.page                      |   55 +
+ help/C/scientific.page                 |   40 +
+ help/C/superscript.page                |   33 +
+ help/C/trigonometry.page               |   46 +
+ help/C/variables.page                  |   56 +
+ help/Makefile.am                       |   39 +
+ help/bg/bg.po                          | 4423 +++++++++++++++++++++++++
+ help/ca/ca.po                          | 5134 +++++++++++++++++++++++++++++
+ help/cs/cs.po                          | 1297 ++++++++
+ help/de/de.po                          | 5398 +++++++++++++++++++++++++++++++
+ help/el/el.po                          | 5491 ++++++++++++++++++++++++++++++++
+ help/es/es.po                          | 1331 ++++++++
+ help/eu/eu.po                          | 3352 +++++++++++++++++++
+ help/fi/fi.po                          | 1299 ++++++++
+ help/fr/fr.po                          | 1339 ++++++++
+ help/gl/gl.po                          | 1179 +++++++
+ help/hu/hu.po                          |  995 ++++++
+ help/it/it.po                          | 3564 +++++++++++++++++++++
+ help/ja/ja.po                          | 4028 +++++++++++++++++++++++
+ help/ko/ko.po                          | 4744 +++++++++++++++++++++++++++
+ help/oc/oc.po                          | 4370 +++++++++++++++++++++++++
+ help/pt_BR/pt_BR.po                    | 4643 +++++++++++++++++++++++++++
+ help/ru/ru.po                          | 4584 ++++++++++++++++++++++++++
+ help/sv/sv.po                          | 4088 ++++++++++++++++++++++++
+ help/zh_CN/zh_CN.po                    | 3388 ++++++++++++++++++++
+ help/zh_HK/zh_HK.po                    | 3956 +++++++++++++++++++++++
+ help/zh_TW/zh_TW.po                    | 3956 +++++++++++++++++++++++
+ po/LINGUAS                             |   89 +
+ po/POTFILES                            |   24 +
+ po/POTFILES.in                         |   27 +
+ po/POTFILES.skip                       |    1 +
+ po/af.po                               | 1852 +++++++++++
+ po/am.po                               | 1686 ++++++++++
+ po/ar.po                               | 2588 +++++++++++++++
+ po/as.po                               | 2689 ++++++++++++++++
+ po/ast.po                              | 2492 +++++++++++++++
+ po/az.po                               | 1878 +++++++++++
+ po/be.po                               | 2075 ++++++++++++
+ po/be@latin.po                         | 1849 +++++++++++
+ po/bg.po                               | 1433 +++++++++
+ po/bn.po                               | 2644 +++++++++++++++
+ po/bn_IN.po                            | 1483 +++++++++
+ po/bs.po                               | 1761 ++++++++++
+ po/ca.po                               | 3101 ++++++++++++++++++
+ po/ca@valencia.po                      | 3076 ++++++++++++++++++
+ po/cs.po                               | 1637 ++++++++++
+ po/cy.po                               | 1936 +++++++++++
+ po/da.po                               | 2970 +++++++++++++++++
+ po/de.po                               | 1499 +++++++++
+ po/dz.po                               | 2083 ++++++++++++
+ po/el.po                               | 1640 ++++++++++
+ po/en@shaw.po                          | 1424 +++++++++
+ po/en_CA.po                            | 1563 +++++++++
+ po/en_GB.po                            | 3010 +++++++++++++++++
+ po/en_US.po                            | 1671 ++++++++++
+ po/eo.po                               | 1802 +++++++++++
+ po/es.po                               | 2763 ++++++++++++++++
+ po/et.po                               | 1359 ++++++++
+ po/eu.po                               | 2292 +++++++++++++
+ po/fa.po                               | 1701 ++++++++++
+ po/fi.po                               | 2575 +++++++++++++++
+ po/fr.po                               | 1441 +++++++++
+ po/ga.po                               | 2233 +++++++++++++
+ po/gl.po                               | 1653 ++++++++++
+ po/gu.po                               | 1563 +++++++++
+ po/he.po                               | 2370 ++++++++++++++
+ po/hi.po                               | 2317 ++++++++++++++
+ po/hr.po                               | 1906 +++++++++++
+ po/hu.po                               | 1426 +++++++++
+ po/hy.po                               | 1365 ++++++++
+ po/id.po                               | 1376 ++++++++
+ po/it.po                               | 1643 ++++++++++
+ po/ja.po                               | 2310 ++++++++++++++
+ po/ka.po                               | 1706 ++++++++++
+ po/kk.po                               | 1361 ++++++++
+ po/kn.po                               | 2237 +++++++++++++
+ po/ko.po                               | 1447 +++++++++
+ po/ku.po                               | 1452 +++++++++
+ po/lt.po                               | 2716 ++++++++++++++++
+ po/lv.po                               | 2243 +++++++++++++
+ po/mai.po                              | 2103 ++++++++++++
+ po/mg.po                               | 1578 +++++++++
+ po/mk.po                               | 1840 +++++++++++
+ po/ml.po                               | 2299 +++++++++++++
+ po/mn.po                               | 1863 +++++++++++
+ po/mr.po                               | 2339 ++++++++++++++
+ po/ms.po                               | 1687 ++++++++++
+ po/nb.po                               | 1393 ++++++++
+ po/ne.po                               | 1568 +++++++++
+ po/nl.po                               | 2159 +++++++++++++
+ po/nn.po                               | 2433 ++++++++++++++
+ po/oc.po                               | 1860 +++++++++++
+ po/or.po                               | 1264 ++++++++
+ po/pa.po                               | 2929 +++++++++++++++++
+ po/pl.po                               | 1418 +++++++++
+ po/pt.po                               | 5203 ++++++++++++++++++++++++++++++
+ po/pt_BR.po                            | 2276 +++++++++++++
+ po/ro.po                               | 2521 +++++++++++++++
+ po/ru.po                               | 1438 +++++++++
+ po/rw.po                               | 2184 +++++++++++++
+ po/si.po                               | 2325 ++++++++++++++
+ po/sk.po                               | 2540 +++++++++++++++
+ po/sl.po                               | 1559 +++++++++
+ po/sq.po                               | 1820 +++++++++++
+ po/sr.po                               | 3224 +++++++++++++++++++
+ po/sr@latin.po                         | 3224 +++++++++++++++++++
+ po/sv.po                               | 1652 ++++++++++
+ po/ta.po                               | 1409 ++++++++
+ po/te.po                               | 2337 ++++++++++++++
+ po/th.po                               | 3214 +++++++++++++++++++
+ po/tk.po                               | 1754 ++++++++++
+ po/tr.po                               | 2297 +++++++++++++
+ po/uk.po                               | 1470 +++++++++
+ po/vi.po                               | 2105 ++++++++++++
+ po/xh.po                               | 1652 ++++++++++
+ po/zh_CN.po                            | 1417 ++++++++
+ po/zh_HK.po                            | 1613 ++++++++++
+ po/zh_TW.po                            | 1614 ++++++++++
+ src/Makefile.am                        |   99 +
+ src/currency.c                         |  244 ++
+ src/currency.h                         |   67 +
+ src/financial.c                        |  294 ++
+ src/financial.h                        |   41 +
+ src/gcalccmd.c                         |   98 +
+ src/gcalctool.c                        |  260 ++
+ src/math-buttons.c                     | 1790 +++++++++++
+ src/math-buttons.h                     |   62 +
+ src/math-display.c                     |  358 +++
+ src/math-display.h                     |   52 +
+ src/math-equation.c                    | 1701 ++++++++++
+ src/math-equation.h                    |  133 +
+ src/math-preferences.c                 |  401 +++
+ src/math-preferences.h                 |   47 +
+ src/math-variables.c                   |  163 +
+ src/math-variables.h                   |   52 +
+ src/math-window.c                      |  527 +++
+ src/math-window.h                      |   61 +
+ src/mp-binary.c                        |  208 ++
+ src/mp-convert.c                       |  933 ++++++
+ src/mp-equation-lexer.l                |  120 +
+ src/mp-equation-parser.y               |  266 ++
+ src/mp-equation-private.h              |   64 +
+ src/mp-equation.c                      |  493 +++
+ src/mp-equation.h                      |   77 +
+ src/mp-private.h                       |   47 +
+ src/mp-trigonometric.c                 |  628 ++++
+ src/mp.c                               | 2092 ++++++++++++
+ src/mp.h                               |  357 +++
+ src/unittest.c                         |  761 +++++
+ src/unittest.h                         |   24 +
+ 192 files changed, 271395 insertions(+)
