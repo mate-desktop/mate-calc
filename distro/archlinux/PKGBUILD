@@ -1,24 +1,25 @@
 pkgname=mate-calc
-pkgver=1.1.0
+pkgver=1.4
 pkgrel=1
 pkgdesc="Calculator for the Mate desktop environment"
 arch=('i686' 'x86_64')
 license=('LGPL' 'GPL')
-depends=('gtk2' 'libxml2' 'libpng' 'freetype2' 'pixman' 'glib' 'pango' 'gdk-pixbuf2' 'cairo' 'atk')
+depends=('gtk2' 'libxml2' 'libpng' 'freetype2' 'pixman' 'pango' 'gdk-pixbuf2' 'cairo' 'atk')
 makedepends=('pkgconfig' 'mate-doc-utils')
 groups=('mate-extra')
-url="http://matsusoft.com.ar/projects/mate/"
+url="http://mate-desktop.org/"
 source=()
 sha256sums=()
+install=mate-calc.install
 
 build() {
-	cd "${srcdir}/../../../"
-	./autogen.sh --prefix=/usr || return 1
-	make || return 1
+  cd "${srcdir}/../../../"
+  ./autogen.sh --prefix=/usr || return 1
+  make || return 1
 }
 
 package() {
-	cd "${srcdir}/../../../"
-	make DESTDIR="${pkgdir}" install || return 1
+  cd "${srcdir}/../../../"
+  make DESTDIR="${pkgdir}" install || return 1
 }
 
