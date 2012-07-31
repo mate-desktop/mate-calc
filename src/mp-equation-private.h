@@ -22,6 +22,12 @@
 
 #include "mp-equation.h"
 
+/* An opaque pointer. */
+#ifndef YY_TYPEDEF_YY_SCANNER_T
+#define YY_TYPEDEF_YY_SCANNER_T
+typedef void* yyscan_t;
+#endif /* YY_TYPEDEF_YY_SCANNER_T */
+
 typedef struct MPEquationParserState MPEquationParserState;
 
 /* State for parser */
