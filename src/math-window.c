@@ -188,7 +188,7 @@ static void about_cb(GtkWidget* widget, MathWindow* window)
     char* translator_credits = _("translator-credits");
 
     char copyright[] = \
-        "Copyright \xc2\xa9 1986–2010 The GCalctool authors"
+        "Copyright \xc2\xa9 1986–2010 The GCalctool authors\n"
         "Copyright \xc2\xa9 2011-2012 MATE developers";
 
     /* The license this software is under (GPL2+) */
