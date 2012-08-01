@@ -13,8 +13,8 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- *  02111-1307, USA.
+ *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ *  02110-1301, USA.
  */
 
 #include <stdlib.h>
@@ -94,7 +94,7 @@ struct MathEquationPrivate
     GList *undo_stack;           /* History of expression mode states */
     GList *redo_stack;
     gboolean in_undo_operation;
-  
+
     gboolean in_reformat;
 
     gboolean in_delete;
@@ -123,7 +123,7 @@ static void
 get_ans_offsets(MathEquation *equation, gint *start, gint *end)
 {
     GtkTextIter iter;
-  
+
     if (!equation->priv->ans_start) {
         *start = *end = -1;
         return;
@@ -287,7 +287,7 @@ reformat_base(MathEquation *equation, gint old_base)
 
         if (c == '\0')
             break;
-               
+
         read_iter = g_utf8_next_char(read_iter);
         offset++;
     }
@@ -309,7 +309,7 @@ reformat_separators(MathEquation *equation)
     read_iter = text;
     while(*read_iter != '\0') {
         gunichar c;
-      
+
         c = g_utf8_get_char(read_iter);
 
         if (strncmp(read_iter, equation->priv->tsep, strlen(equation->priv->tsep)) == 0)
@@ -362,7 +362,7 @@ get_current_state(MathEquation *equation)
     state->can_super_minus = equation->priv->can_super_minus;
     state->entered_multiply = equation->priv->state.entered_multiply;
     state->status = g_strdup(equation->priv->state.status);
-  
+
     return state;
 }
 
@@ -396,7 +396,7 @@ math_equation_push_undo_stack(MathEquation *equation)
     equation->priv->redo_stack = NULL;
 
     state = get_current_state(equation);
-    equation->priv->undo_stack = g_list_prepend(equation->priv->undo_stack, state);  
+    equation->priv->undo_stack = g_list_prepend(equation->priv->undo_stack, state);
 }
 
 
@@ -425,7 +425,7 @@ static void
 apply_state(MathEquation *equation, MathEquationState *state)
 {
     GtkTextIter cursor;
-  
+
     /* Disable undo detection */
     equation->priv->in_undo_operation = TRUE;
 
@@ -489,7 +489,7 @@ math_equation_undo(MathEquation *equation)
 {
     GList *link;
     MathEquationState *state;
-  
+
     if (!equation->priv->undo_stack) {
         math_equation_set_status(equation,
                                  /* Error shown when trying to undo with no undo history */
@@ -686,7 +686,7 @@ math_equation_get_angle_units(MathEquation *equation)
 void
 math_equation_set_source_currency(MathEquation *equation, const gchar *currency)
 {
-    // FIXME: Pick based on locale  
+    // FIXME: Pick based on locale
     if (!currency || currency[0] == '\0')
         currency = currency_names[0].short_name;
 
@@ -707,7 +707,7 @@ math_equation_get_source_currency(MathEquation *equation)
 void
 math_equation_set_target_currency(MathEquation *equation, const gchar *currency)
 {
-    // FIXME: Pick based on locale  
+    // FIXME: Pick based on locale
     if (!currency || currency[0] == '\0')
         currency = currency_names[0].short_name;
 
@@ -734,7 +734,7 @@ math_equation_set_status(MathEquation *equation, const gchar *status)
 
     g_free(equation->priv->state.status);
     equation->priv->state.status = g_strdup(status);
-    g_object_notify(G_OBJECT(equation), "status");    
+    g_object_notify(G_OBJECT(equation), "status");
 }
 
 
@@ -980,7 +980,7 @@ variable_is_defined(const char *name, void *data)
     for (c = lower_name; *c; c++)
         *c = tolower(*c);
 
-    if (strcmp(lower_name, "rand") == 0 || 
+    if (strcmp(lower_name, "rand") == 0 ||
         strcmp(lower_name, "ans") == 0) {
         g_free (lower_name);
         return 1;
@@ -1032,7 +1032,7 @@ set_variable(const char *name, const MPNumber *x, void *data)
 
 static int
 convert(const MPNumber *x, const char *x_units, const char *z_units, MPNumber *z, void *data)
-{   
+{
     return currency_convert(x, x_units, z_units, z);
 }
 
@@ -1090,7 +1090,7 @@ math_equation_solve(MathEquation *equation)
         g_string_append_c(equation_text, ')');
         n_brackets--;
     }
-  
+
 
     result = parse(equation, equation_text->str, &z, &error_token);
     g_string_free(equation_text, TRUE);
@@ -1132,7 +1132,7 @@ math_equation_solve(MathEquation *equation)
 
     if (error_token)
         free(error_token);
-  
+
     if (message) {
         math_equation_set_status(equation, message);
         g_free(message);
@@ -1146,7 +1146,7 @@ math_equation_factorize(MathEquation *equation)
     MPNumber x;
     GList *factors, *factor;
     GString *text;
-  
+
     if (!math_equation_get_number(equation, &x) || !mp_is_integer(&x)) {
         /* Error displayed when trying to factorize a non-integer value */
         math_equation_set_status(equation, _("Need an integer to factorize"));
@@ -1179,7 +1179,7 @@ void
 math_equation_delete(MathEquation *equation)
 {
     gint cursor;
-    GtkTextIter start, end;    
+    GtkTextIter start, end;
 
     g_object_get(G_OBJECT(equation), "cursor-position", &cursor, NULL);
     if (cursor >= gtk_text_buffer_get_char_count(GTK_TEXT_BUFFER(equation)))
@@ -1357,7 +1357,7 @@ math_equation_get_property(GObject    *object,
         g_value_set_string(value, self->priv->state.status);
         break;
     case PROP_DISPLAY:
-        text = math_equation_get_display(self);      
+        text = math_equation_get_display(self);
         g_value_set_string(value, text);
         g_free(text);
         break;
@@ -1433,7 +1433,7 @@ math_equation_class_init (MathEquationClass *klass)
     object_class->set_property = math_equation_set_property;
 
     g_type_class_add_private (klass, sizeof (MathEquationPrivate));
-  
+
     number_mode_type = g_enum_register_static("NumberMode", number_mode_values);
     number_format_type = g_enum_register_static("DisplayFormat", number_format_values);
     angle_unit_type = g_enum_register_static("AngleUnit", angle_unit_values);
@@ -1501,7 +1501,7 @@ math_equation_class_init (MathEquationClass *klass)
                                     g_param_spec_int("base",
                                                      "base",
                                                      "Default number base (derived from number-format)",
-                                                     2, 16, 10, 
+                                                     2, 16, 10,
                                                      G_PARAM_READWRITE));
     g_object_class_install_property(object_class,
                                     PROP_WORD_SIZE,
@@ -1543,10 +1543,10 @@ pre_insert_text_cb (MathEquation  *equation,
                     gpointer       user_data)
 {
     gunichar c;
-  
+
     if (equation->priv->in_reformat)
         return;
-  
+
     /* If following a delete then have already pushed undo stack (GtkTextBuffer
        doesn't indicate replace operations so we have to infer them) */
     if (!equation->priv->in_delete)
@@ -1567,7 +1567,7 @@ pre_insert_text_cb (MathEquation  *equation,
 
         offset = gtk_text_iter_get_offset(location);
         get_ans_offsets(equation, &ans_start, &ans_end);
-      
+
         /* Inserted inside ans */
         if (offset > ans_start && offset < ans_end)
             clear_ans(equation, TRUE);
@@ -1578,7 +1578,7 @@ pre_insert_text_cb (MathEquation  *equation,
 static gboolean
 on_delete(MathEquation *equation)
 {
-  equation->priv->in_delete = FALSE;  
+  equation->priv->in_delete = FALSE;
   return FALSE;
 }
 
@@ -1588,7 +1588,7 @@ pre_delete_range_cb (MathEquation  *equation,
                      GtkTextIter   *start,
                      GtkTextIter   *end,
                      gpointer       user_data)
-{  
+{
     if (equation->priv->in_reformat)
         return;
 
@@ -1604,7 +1604,7 @@ pre_delete_range_cb (MathEquation  *equation,
         start_offset = gtk_text_iter_get_offset(start);
         end_offset = gtk_text_iter_get_offset(end);
         get_ans_offsets(equation, &ans_start, &ans_end);
-      
+
         /* Deleted part of ans */
         if (start_offset < ans_end && end_offset > ans_start)
             clear_ans(equation, TRUE);
@@ -1659,7 +1659,7 @@ math_equation_init(MathEquation *equation)
     equation->priv->ans_tag = gtk_text_buffer_create_tag(GTK_TEXT_BUFFER(equation), NULL, "weight", PANGO_WEIGHT_BOLD, NULL);
 
     g_signal_connect(equation, "insert-text", G_CALLBACK(pre_insert_text_cb), equation);
-    g_signal_connect(equation, "delete-range", G_CALLBACK(pre_delete_range_cb), equation);  
+    g_signal_connect(equation, "delete-range", G_CALLBACK(pre_delete_range_cb), equation);
     g_signal_connect_after(equation, "insert-text", G_CALLBACK(insert_text_cb), equation);
     g_signal_connect_after(equation, "delete-range", G_CALLBACK(delete_range_cb), equation);
 
@@ -1682,7 +1682,7 @@ math_equation_init(MathEquation *equation)
     equation->priv->tsep = tsep ? g_locale_to_utf8(tsep, -1, NULL, NULL, NULL) : g_strdup(",");
 
     equation->priv->tsep_count = 3;
-  
+
     equation->priv->variables = math_variables_new();
 
     equation->priv->state.status = g_strdup("");

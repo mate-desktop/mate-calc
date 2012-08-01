@@ -1,21 +1,21 @@
 /*  $Header$
  *
  *  Copyright (c) 2009 Rich Burridge
- *           
+ *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation; either version 2, or (at your option)
  *  any later version.
- *           
- *  This program is distributed in the hope that it will be useful, but 
+ *
+ *  This program is distributed in the hope that it will be useful, but
  *  WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU 
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
  *  General Public License for more details.
- *           
+ *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- *  02111-1307, USA.
+ *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ *  02110-1301, USA.
  */
 
 #include <stdio.h>
@@ -35,17 +35,17 @@ solve(const char *equation)
     MPEquationOptions options;
     MPNumber z;
     char result_str[MAXLINE];
-    
+
     memset(&options, 0, sizeof(options));
     options.base = 10;
     options.wordlen = 32;
     options.angle_units = MP_DEGREES;
-    
+
     ret = mp_equation_parse(equation, &options, &z, NULL);
 
     if (ret == PARSER_ERR_MP)
         fprintf(stderr, "Error %s\n", mp_get_error());
-    else if (ret)        
+    else if (ret)
         fprintf(stderr, "Error %d\n", ret);
     else {
         mp_cast_to_string(&z, 10, 10, 9, 1, result_str, MAXLINE);

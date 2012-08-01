@@ -13,8 +13,8 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- *  02111-1307, USA.
+ *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ *  02110-1301, USA.
  */
 
 #include <stdlib.h>
@@ -295,7 +295,7 @@ mp_cast_to_int(const MPNumber *x)
 {
     int i;
     int64_t z = 0, v;
-  
+
     /* |x| <= 1 */
     if (x->sign == 0 || x->exponent <= 0)
         return 0;
@@ -306,7 +306,7 @@ mp_cast_to_int(const MPNumber *x)
 
         t = z;
         z = z * MP_BASE + x->fraction[i];
-      
+
         /* Check for overflow */
         if (z <= t)
             return 0;
@@ -336,7 +336,7 @@ mp_cast_to_unsigned_int(const MPNumber *x)
 {
     int i;
     uint64_t z = 0, v;
-  
+
     /* x <= 1 */
     if (x->sign <= 0 || x->exponent <= 0)
         return 0;
@@ -347,7 +347,7 @@ mp_cast_to_unsigned_int(const MPNumber *x)
 
         t = z;
         z = z * MP_BASE + x->fraction[i];
-      
+
         /* Check for overflow */
         if (z <= t)
             return 0;
@@ -837,7 +837,7 @@ mp_set_from_string(const char *str, int default_base, MPNumber *z)
     const char *fractions[]     = {"½", "⅓", "⅔", "¼", "¾", "⅕", "⅖", "⅗", "⅘", "⅙", "⅚", "⅛", "⅜", "⅝", "⅞", NULL};
     int numerators[]            = { 1,   1,   2,   1,   3,   1,   2,   3,   4,   1,   5,   1,   3,   5,   7};
     int denominators[]          = { 2,   3,   3,   4,   4,   5,   5,   5,   5,   6,   6,   8,   8,   8,   8};
-  
+
     if (strstr(str, "°"))
         return set_from_sexagesimal(str, strlen(str), z);
 

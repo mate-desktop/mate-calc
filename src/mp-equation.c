@@ -13,8 +13,8 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- *  02111-1307, USA.
+ *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ *  02110-1301, USA.
  */
 
 #include <ctype.h>
@@ -250,7 +250,7 @@ do_convert(const char *units[][2], const MPNumber *x, const char *x_units, const
 {
     int x_index, z_index;
     MPNumber x_factor, z_factor;
-    
+
     for (x_index = 0; units[x_index][0] != NULL && strcmp(units[x_index][0], x_units) != 0; x_index++);
     if (units[x_index][0] == NULL)
         return 0;
@@ -375,7 +375,7 @@ convert(MPEquationParserState *state, const MPNumber *x, const char *x_units, co
         {"g",                   "0.001"},
         {NULL, NULL}
     };
-    
+
     const char *time_units[][2] = {
         {"year",         "31557600"},
         {"years",        "31557600"},
@@ -406,7 +406,7 @@ convert(MPEquationParserState *state, const MPNumber *x, const char *x_units, co
 
     if (state->options->convert)
         return state->options->convert(x, x_units, z_units, z, state->options->callback_data);
-  
+
     return 0;
 }
 

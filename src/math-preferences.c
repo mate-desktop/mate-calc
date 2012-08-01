@@ -12,8 +12,8 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- *  02111-1307, USA.
+ *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ *  02110-1301, USA.
  */
 
 #include <glib/gi18n.h>
@@ -41,7 +41,7 @@ struct MathPreferencesDialogPrivate
 
 MathPreferencesDialog *
 math_preferences_dialog_new(MathEquation *equation)
-{  
+{
     return g_object_new (math_preferences_get_type(), "equation", equation, NULL);
 }
 
@@ -211,7 +211,7 @@ word_size_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *di
 static void
 angle_unit_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
 {
-    set_combo_box_from_int(GET_WIDGET(dialog->priv->ui, "angle_unit_combobox"), math_equation_get_angle_units(equation));  
+    set_combo_box_from_int(GET_WIDGET(dialog->priv->ui, "angle_unit_combobox"), math_equation_get_angle_units(equation));
 }
 
 

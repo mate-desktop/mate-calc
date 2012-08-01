@@ -14,8 +14,8 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- *  02111-1307, USA.
+ *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ *  02110-1301, USA.
  */
 
 #include <stdio.h>
@@ -62,7 +62,7 @@ static int get_variable(yyscan_t yyscanner, const char *name, int power, MPNumbe
         mp_xpowy_integer(z, power, z);
         return 1;
     }
-    
+
     /* If has more than one character then assume a multiplication of variables */
     if (utf8_next_char(name)[0] != '\0') {
         const char *c, *next;
@@ -118,7 +118,7 @@ static int get_inverse_function(yyscan_t yyscanner, const char *name, const MPNu
 {
     char *inv_name;
     int result;
-    
+
     inv_name = malloc(sizeof(char) * (strlen(name) + strlen("⁻¹") + 1));
     strcpy(inv_name, name);
     strcat(inv_name, "⁻¹");
@@ -153,7 +153,7 @@ static char *make_unit(const char *name, int power)
         name2 = malloc(sizeof(char) * (strlen(name) + strlen("?") + 1));
         sprintf(name2, "%s?", name);
     }
-    
+
     return name2;
 }
 

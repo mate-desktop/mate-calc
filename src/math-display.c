@@ -12,8 +12,8 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- *  02111-1307, USA.
+ *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ *  02110-1301, USA.
  */
 
 #include <string.h>
@@ -247,7 +247,7 @@ create_gui(MathDisplay *display)
 {
     GtkWidget *info_view;
     PangoFontDescription *font_desc;
-  
+
     g_signal_connect(display, "key-press-event", G_CALLBACK(key_press_cb), display);
 
     display->priv->text_view = gtk_text_view_new_with_buffer(GTK_TEXT_BUFFER(display->priv->equation));
@@ -268,7 +268,7 @@ create_gui(MathDisplay *display)
   //FIXME:<property name="AtkObject::accessible-description" translatable="yes" comments="Accessible description for the area in which results are displayed">Result Region</property>
     g_signal_connect(display->priv->text_view, "key-press-event", G_CALLBACK(display_key_press_cb), display);
     gtk_box_pack_start(GTK_BOX(display), display->priv->text_view, TRUE, TRUE, 0);
-  
+
     info_view = gtk_text_view_new();
     gtk_text_view_set_wrap_mode(GTK_TEXT_VIEW(info_view), GTK_WRAP_WORD);
     gtk_widget_set_can_focus(info_view, TRUE); // FIXME: This should be FALSE but it locks the cursor inside the main view for some reason
@@ -351,7 +351,7 @@ math_display_class_init (MathDisplayClass *klass)
 }
 
 
-static void 
+static void
 math_display_init(MathDisplay *display)
 {
     display->priv = G_TYPE_INSTANCE_GET_PRIVATE (display, math_display_get_type(), MathDisplayPrivate);
