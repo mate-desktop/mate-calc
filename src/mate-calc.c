@@ -222,7 +222,7 @@ main(int argc, char **argv)
 
     get_options(argc, argv);
 
-    settings = g_settings_new ("org.mate.mate-calc");
+    settings = g_settings_new ("org.mate.calc");
     accuracy = g_settings_get_int(settings, "accuracy");
     word_size = g_settings_get_int(settings, "word-size");
     base = g_settings_get_int(settings, "base");
