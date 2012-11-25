@@ -1,3 +1,468 @@
+commit 64ff82735358352910145f14d2826bccd983fabd
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Sat Nov 24 21:14:15 2012 -0500
+
+    Merge branches 'master' and 'new'
+
+commit 4531aea8ae8b2253218e0c6734618823003d2408
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Sat Nov 24 20:54:47 2012 -0500
+
+    Reapply shift fix from 7155e47
+
+ src/mp-binary.c |   16 +++++++++-------
+ 1 file changed, 9 insertions(+), 7 deletions(-)
+
+commit c95fe11de7b22818c8d8a9d2b80fdd91cbd8373f
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Sat Nov 24 20:53:35 2012 -0500
+
+    Fixed broken undo and clear buttons for financial and programming mode.
+
+ data/buttons-financial.ui   |  138 +++++++--
+ data/buttons-programming.ui |  669 +++++++++++++++++++++++++++++--------------
+ 2 files changed, 578 insertions(+), 229 deletions(-)
+
+commit 90225e87811feb654e9a3c71734d0e6844f987ed
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Sat Nov 24 20:51:23 2012 -0500
+
+    Fixed gsettings.
+
+ src/Makefile.am        |    3 +-
+ src/mate-calc.c        |  163 +++++-------------------------------------------
+ src/math-buttons.c     |    4 +-
+ src/math-equation.c    |   14 +++--
+ src/math-preferences.c |    7 +++
+ src/math-window.c      |    2 +
+ src/utility.h          |    8 +++
+ 7 files changed, 46 insertions(+), 155 deletions(-)
+
+commit f2afbc975e249e765ee7d7452165912f1b4b479b
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Sat Nov 24 20:49:56 2012 -0500
+
+    Added inverse trig functions.
+
+ data/buttons-advanced.ui |  294 +++++++++++++++++++++++++++-------------------
+ src/math-buttons.c       |    9 ++
+ 2 files changed, 185 insertions(+), 118 deletions(-)
+
+commit 12d89a4ee8424f13f5be22779bd4ed6c4516c6d2
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Sat Nov 24 20:48:39 2012 -0500
+
+    Commented out building documentation with yelp.
+
+ configure.ac     |    2 +-
+ help/Makefile.am |    2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 3e4dfc47e7803d16d14ffe655f9568871c4f2339
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Sat Nov 24 20:47:50 2012 -0500
+
+    GTK2 support. Menu fix. Code cleanups.
+
+ data/buttons-advanced.ui  |   88 +++++++++++---
+ data/buttons-basic.ui     |   87 ++++++++------
+ po/bg.po                  |    2 +-
+ src/mate-calc.c           |  258 +++++----------------------------------
+ src/math-converter.c      |    2 +-
+ src/math-display.c        |    4 +-
+ src/math-variable-popup.c |    6 +-
+ src/math-window.c         |  292 +++++++++++++++++++++++++++++++++++++++++++--
+ src/math-window.h         |   11 +-
+ 9 files changed, 452 insertions(+), 298 deletions(-)
+
+commit 6b24c91d3aa81fdb99500c8c2c12f830fabaefb6
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Sat Nov 24 20:44:45 2012 -0500
+
+    Update codebase.
+
+ AUTHORS                           |    2 +-
+ Makefile.am                       |    7 +-
+ autogen.sh                        |   17 +-
+ configure.ac                      |   80 +-
+ data/Makefile.am                  |    2 +-
+ data/buttons-advanced.ui          | 1936 +++++------
+ data/buttons-basic.ui             |   25 +-
+ data/buttons-financial.ui         | 3185 +++++++++---------
+ data/buttons-programming.ui       |   74 +-
+ data/mate-calc-cmd.1              |   17 +
+ data/mate-calc.1                  |    8 +-
+ data/mate-calc.desktop.in         |    3 +-
+ data/org.mate.calc.gschema.xml.in |   19 +-
+ data/preferences.ui               |    1 -
+ help/C/complex.page               |    4 +-
+ help/C/conv-currency.page         |    2 +-
+ help/C/financial.page             |    2 +-
+ help/C/functions.page             |    4 +-
+ help/C/index.page                 |    4 +-
+ help/C/mouse.page                 |    8 +-
+ help/C/trigonometry.page          |    2 +-
+ help/C/variables.page             |    4 +-
+ help/Makefile.am                  |   66 +-
+ help/ca/ca.po                     | 5750 ++++++--------------------------
+ help/cs/cs.po                     |   60 +-
+ help/de/de.po                     | 5928 ++++++---------------------------
+ help/el/el.po                     | 6032 +++++-----------------------------
+ help/es/es.po                     | 1960 +++++------
+ help/eu/eu.po                     |   18 +-
+ help/fi/fi.po                     |    6 +-
+ help/fr/fr.po                     | 1895 ++++++-----
+ help/gl/gl.po                     |  956 +++++-
+ help/hu/hu.po                     | 1841 ++++++-----
+ help/it/it.po                     | 6268 ++++++++++++++++++-----------------
+ help/ja/ja.po                     | 6394 ++++++++++++++++-------------------
+ help/lv/lv.po                     | 1303 ++++++++
+ help/pt_BR/pt_BR.po               |    2 +-
+ help/ro/ro.po                     | 1376 ++++++++
+ help/sl/sl.po                     | 1035 ++++++
+ help/te/te.po                     | 1130 +++++++
+ help/zh_CN/zh_CN.po               |  451 +--
+ help/zh_HK/zh_HK.po               | 6576 +++++++++++++++++-------------------
+ help/zh_TW/zh_TW.po               | 6578 +++++++++++++++++--------------------
+ po/LINGUAS                        |    3 +
+ po/POTFILES.in                    |    9 +-
+ po/af.po                          | 2590 ++++++++++-----
+ po/am.po                          | 2071 +++++++-----
+ po/ar.po                          | 3362 +++++++++++++++----
+ po/as.po                          | 3525 ++++++++++++++++----
+ po/ast.po                         | 2499 +++++++++-----
+ po/az.po                          | 2625 +++++++++------
+ po/be.po                          | 2202 +++++++++----
+ po/be@latin.po                    |   18 +-
+ po/bg.po                          | 1958 ++++++++---
+ po/bn.po                          | 3491 +++++++++++++-------
+ po/bn_IN.po                       | 2169 ++++++------
+ po/bs.po                          | 2531 ++++++++------
+ po/ca.po                          | 3760 +++++++++++++++++----
+ po/ca@valencia.po                 | 3832 +++++++++++++++++----
+ po/cs.po                          | 1934 ++++++++---
+ po/cy.po                          | 2762 +++++++++-------
+ po/da.po                          | 3474 +++++++++++++++++---
+ po/de.po                          | 2046 ++++++++----
+ po/dz.po                          | 2935 ++++++++++-------
+ po/el.po                          | 2216 ++++++++++---
+ po/en@shaw.po                     |   26 +-
+ po/en_CA.po                       | 2439 +++++++++-----
+ po/en_GB.po                       | 3664 +++++++++++++++++----
+ po/en_US.po                       | 2548 +++++++-------
+ po/eo.po                          | 2417 +++++++++-----
+ po/es.po                          | 3332 ++++++++++++++++---
+ po/et.po                          | 1568 +++++----
+ po/eu.po                          | 2421 +++++++++-----
+ po/fa.po                          | 3137 +++++++++++++-----
+ po/fi.po                          | 1979 ++++++++---
+ po/fr.po                          | 2014 ++++++++----
+ po/ga.po                          | 2661 ++++++++++-----
+ po/gl.po                          | 2271 ++++++++++---
+ po/gu.po                          | 2291 +++++++++----
+ po/he.po                          | 3015 +++++++++++++----
+ po/hi.po                          | 2242 +++++++++----
+ po/hr.po                          | 2484 ++++++++------
+ po/hu.po                          | 1920 ++++++++---
+ po/hy.po                          |  833 +++--
+ po/id.po                          | 1987 +++++++----
+ po/it.po                          | 1961 ++++++++---
+ po/ja.po                          | 2880 ++++++++++++----
+ po/ka.po                          | 2406 ++++++++------
+ po/kk.po                          |  754 +++--
+ po/km.po                          | 2245 +++++++++++++
+ po/kn.po                          | 3153 ++++++++++++++----
+ po/ko.po                          | 2046 ++++++++----
+ po/ku.po                          |    4 +-
+ po/lt.po                          | 2002 +++++++----
+ po/lv.po                          | 2181 ++++++++----
+ po/mai.po                         | 2690 +++++++++------
+ po/mg.po                          | 2463 +++++++-------
+ po/mk.po                          | 3149 +++++++++++++-----
+ po/ml.po                          | 3340 +++++++++++++++----
+ po/mn.po                          | 2604 +++++++++------
+ po/mr.po                          | 3280 ++++++++++++++----
+ po/ms.po                          | 2502 +++++++-------
+ po/my.po                          | 1363 ++++++++
+ po/nb.po                          | 1866 ++++++++---
+ po/ne.po                          | 2392 +++++++-------
+ po/nl.po                          | 3378 +++++++++++++------
+ po/nn.po                          | 3285 +++++++++++-------
+ po/oc.po                          | 2310 +++++++------
+ po/or.po                          | 2468 +++++++++-----
+ po/pa.po                          | 3424 ++++++++++++++++---
+ po/pl.po                          | 1939 ++++++++---
+ po/pt.po                          | 5822 ++++++++++++++++++++++++++++----
+ po/pt_BR.po                       | 2906 ++++++++++++----
+ po/ro.po                          | 4180 +++++++++++++++++------
+ po/ru.po                          | 1965 ++++++++---
+ po/rw.po                          |    4 +-
+ po/si.po                          | 3057 +++++++++++------
+ po/sk.po                          | 2243 +++++++++----
+ po/sl.po                          | 2005 +++++++----
+ po/sq.po                          | 2670 ++++++++-------
+ po/sr.po                          | 2054 ++++++++----
+ po/sr@latin.po                    | 2054 ++++++++----
+ po/sv.po                          | 2431 ++++++++++----
+ po/ta.po                          | 2359 +++++++++----
+ po/te.po                          | 2282 +++++++++----
+ po/th.po                          | 3028 +++++++++++++----
+ po/tk.po                          | 2341 +++++++------
+ po/tr.po                          | 3005 +++++++++++++----
+ po/ug.po                          | 2200 +++++++++++++
+ po/uk.po                          | 2220 +++++++++----
+ po/vi.po                          | 3132 ++++++++++++++----
+ po/xh.po                          | 2531 +++++++-------
+ po/zh_CN.po                       | 1977 ++++++++---
+ po/zh_HK.po                       | 2186 ++++++++----
+ po/zh_TW.po                       | 2189 ++++++++----
+ src/Makefile.am                   |  147 +-
+ src/currency-manager.c            |  626 ++++
+ src/currency-manager.h            |   47 +
+ src/currency.c                    |  300 +-
+ src/currency.h                    |  103 +-
+ src/financial.c                   |   26 +-
+ src/financial.h                   |   46 +-
+ src/lexer.c                       |  587 ++++
+ src/lexer.h                       |   40 +
+ src/mate-calc-cmd.c               |   44 +-
+ src/mate-calc.c                   |  433 ++-
+ src/math-buttons.c                |  864 ++---
+ src/math-buttons.h                |   52 +-
+ src/math-converter.c              |  440 +++
+ src/math-converter.h              |   53 +
+ src/math-display.c                |  229 +-
+ src/math-display.h                |   42 +-
+ src/math-equation.c               | 1002 +++---
+ src/math-equation.h               |  205 +-
+ src/math-preferences.c            |   74 +-
+ src/math-preferences.h            |   36 +-
+ src/math-variable-popup.c         |  308 ++
+ src/math-variable-popup.h         |   40 +
+ src/math-variables.c              |   64 +-
+ src/math-variables.h              |   46 +-
+ src/math-window.c                 |  502 +--
+ src/math-window.h                 |   50 +-
+ src/mp-binary.c                   |   70 +-
+ src/mp-convert.c                  |  246 +-
+ src/mp-enums.c.template           |   36 +
+ src/mp-enums.h.template           |   25 +
+ src/mp-equation.c                 |  273 +-
+ src/mp-equation.h                 |   97 +-
+ src/mp-private.h                  |   34 +-
+ src/mp-serializer.c               |  617 ++++
+ src/mp-serializer.h               |   79 +
+ src/mp-trigonometric.c            |   40 +-
+ src/mp.c                          |   86 +-
+ src/mp.h                          |   71 +-
+ src/parser.c                      | 1228 +++++++
+ src/parser.h                      |   79 +
+ src/parserfunc.c                  |  967 ++++++
+ src/parserfunc.h                  |   80 +
+ src/prelexer.c                    |  214 ++
+ src/prelexer.h                    |   93 +
+ src/test-mp-equation.c            |  630 ++++
+ src/test-mp.c                     |  240 ++
+ src/unit-category.c               |  136 +
+ src/unit-category.h               |   56 +
+ src/unit-manager.c                |  268 ++
+ src/unit-manager.h                |   54 +
+ src/unit.c                        |  212 ++
+ src/unit.h                        |   60 +
+ 188 files changed, 194931 insertions(+), 98684 deletions(-)
+
+commit a10375c2851e8569353c0da9921b8d0d9cbea2e6
+Merge: 57ebf58 db9135a
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Mon Nov 19 02:22:56 2012 -0800
+
+    Merge pull request #8 from bhull2010/master
+    
+    Use org.mate.calc as schema id
+
+commit db9135a42865a737bd6bc7477a9aea4b31941ab1
+Author: Brent Hull <bhull2010@live.com>
+Date:   Sun Nov 18 20:06:28 2012 -0500
+
+    Use org.mate.calc as schema id
+
+ data/Makefile.am                       |    4 +-
+ data/org.mate.calc.gschema.xml.in      |   75 ++++++++++++++++++++++++++++++++
+ data/org.mate.mate-calc.gschema.xml.in |   75 --------------------------------
+ po/POTFILES.in                         |    2 +-
+ src/mate-calc.c                        |    2 +-
+ 5 files changed, 79 insertions(+), 79 deletions(-)
+
+commit 57ebf58f977e36e5d0f6ed81ea5c0ee89e1cd720
+Merge: 36cc53c 481c6b7
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sun Nov 18 16:38:51 2012 -0800
+
+    Merge pull request #7 from bhull2010/master
+    
+    Don't use deprecated apps schema path
+
+commit 481c6b7f08148ae07ff95de83b938b0b99ea23f4
+Author: Brent Hull <bhull2010@live.com>
+Date:   Sun Nov 18 18:58:38 2012 -0500
+
+    Don't use deprecated apps schema path
+
+ data/org.mate.mate-calc.gschema.xml.in |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 36cc53cb4431d9a800fcce667135e32dd38fa788
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Fri Nov 16 15:46:03 2012 -0500
+
+    Fixed unknown variable error when using inverse trig buttons.
+
+ src/mp-equation.c |    1 +
+ 1 file changed, 1 insertion(+)
+
+commit 1cfad684d98f3f9648069f093b761f1885cefd7d
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Fri Nov 16 14:44:42 2012 -0500
+
+    Added buttons for inverse trig functions.
+
+ data/buttons-advanced.ui |  481 ++++++++++++++++++++++++++++++----------------
+ src/math-buttons.c       |    9 +
+ 2 files changed, 323 insertions(+), 167 deletions(-)
+
+commit fa82b016b8d3b5c63ad5f1af8f021a341d7e3560
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Thu Nov 15 19:34:44 2012 -0500
+
+    Mark a few string as translatable, add translator comment to the ones
+    with non obvious meanings.
+    
+    http://git.gnome.org/browse/gcalctool/commit/?h=gnome-2-32&id=91f3718756d752738cc0b50adbef39f23e68b223
+
+ data/buttons-financial.ui |    2 +-
+ src/math-buttons.c        |    9 ++++++---
+ 2 files changed, 7 insertions(+), 4 deletions(-)
+
+commit 9889c1aaec7cabc7fdf425de7824784ce0da9f81
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Thu Nov 15 19:28:28 2012 -0500
+
+    Fix crash when pasting with empty clipboard
+    
+    http://git.gnome.org/browse/gcalctool/commit/?h=gnome-2-32&id=b7b9bc76c0dc59c3cbf85127be3898a06c0a8a26
+
+ src/math-equation.c |    4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 94bcd106fd3bfb418e13e8e536542fd0cee49f0d
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sat Nov 3 21:50:23 2012 +0100
+
+    bump version to 1.5.0
+
+ configure.ac |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit a281dc49e23ebdbce46bb31fc942d07bc758dd28
+Author: Perberos <perberos@gmail.com>
+Date:   Tue Jul 31 21:30:09 2012 -0300
+
+    duh missing endofline
+
+ src/math-window.c |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 7066f9a921a6695ea9c8e2dae2c6fd230add6baa
+Author: Perberos <perberos@gmail.com>
+Date:   Tue Jul 31 21:05:06 2012 -0300
+
+    fixing address issue of fsf
+
+ COPYING                   |   14 +++++------
+ po/ar.po                  |    4 +--
+ po/et.po                  |    4 +--
+ po/nn.po                  |    4 +--
+ po/zh_CN.po               |    4 +--
+ src/financial.c           |    4 +--
+ src/financial.h           |    4 +--
+ src/mate-calc-cmd.c       |   20 +++++++--------
+ src/mate-calc.c           |    4 +--
+ src/math-buttons.c        |    4 +--
+ src/math-buttons.h        |    4 +--
+ src/math-display.c        |   10 ++++----
+ src/math-display.h        |    4 +--
+ src/math-equation.c       |   60 ++++++++++++++++++++++-----------------------
+ src/math-equation.h       |    4 +--
+ src/math-preferences.c    |    8 +++---
+ src/math-preferences.h    |    4 +--
+ src/math-variables.c      |    4 +--
+ src/math-variables.h      |    4 +--
+ src/math-window.c         |    4 +--
+ src/math-window.h         |    4 +--
+ src/mp-binary.c           |    4 +--
+ src/mp-convert.c          |   14 +++++------
+ src/mp-equation-lexer.l   |    4 +--
+ src/mp-equation-parser.y  |   10 ++++----
+ src/mp-equation-private.h |    4 +--
+ src/mp-equation.c         |   10 ++++----
+ src/mp-equation.h         |    4 +--
+ src/mp-private.h          |    4 +--
+ src/mp-trigonometric.c    |    6 ++---
+ src/mp.c                  |   30 +++++++++++------------
+ src/mp.h                  |    4 +--
+ src/unittest.c            |    4 +--
+ src/unittest.h            |    4 +--
+ 34 files changed, 139 insertions(+), 139 deletions(-)
+
+commit 88ab1796d36b39f08d9cd6156fdd5b5d6df19dd1
+Author: Perberos <perberos@gmail.com>
+Date:   Tue Jul 31 20:31:40 2012 -0300
+
+    adding gschemas install on PKGBUILD script
+
+ distro/archlinux/PKGBUILD          |   17 +++++++++--------
+ distro/archlinux/mate-calc.install |   22 ++++++++++++++++++++++
+ 2 files changed, 31 insertions(+), 8 deletions(-)
+
+commit 3ea5c7d9e0d45e1d3908624a95ec5cf2a797a97f
+Author: Perberos <perberos@gmail.com>
+Date:   Tue Jul 31 20:29:58 2012 -0300
+
+    updating about dialog
+
+ src/math-window.c |    3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit f6d05dad1665b9490e53f453cdd17294b9efee55
+Author: Perberos <perberos@gmail.com>
+Date:   Tue Jul 31 20:19:23 2012 -0300
+
+    adding hack to fix bison decls mess
+
+ src/mp-equation-private.h |    6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit 678188bdadef4853b88031b8d5277b81bdfb5f3c
+Author: Perberos <perberos@gmail.com>
+Date:   Tue Jul 31 19:30:42 2012 -0300
+
+    Update src/math-preferences.h
+    
+    adding missing c++ bracket
+
+ src/math-preferences.h |    2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 40f3f46fee04af149ac0f1be6b272677a86513ea
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Wed Jul 11 12:51:26 2012 -0400
+
+    Preparing for 1.4 release.
+
+ ChangeLog    |  773 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ configure.ac |    2 +-
+ 2 files changed, 773 insertions(+), 2 deletions(-)
+
 commit 8b246b929cc56b992ca8ee966bda2668fa4a9162
 Author: Stefano Karapetsas <stefano@karapetsas.com>
 Date:   Tue Jul 10 16:47:39 2012 +0200
