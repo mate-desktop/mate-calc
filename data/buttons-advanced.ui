@@ -9,40 +9,8 @@
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="n_rows">5</property>
-        <property name="n_columns">10</property>
+        <property name="n_columns">11</property>
         <property name="homogeneous">True</property>
-        <child>
-          <object class="GtkButton" id="calc_inverse_button">
-            <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
-            <property name="use_action_appearance">False</property>
-            <property name="focus_on_click">False</property>
-            <child internal-child="accessible">
-              <object class="AtkObject" id="calc_inverse_button-atkobject">
-                <property name="AtkObject::accessible-name" translatable="yes" comments="Accessible name for the inverse button">Inverse</property>
-              </object>
-            </child>
-            <signal name="clicked" handler="button_cb" swapped="no"/>
-            <child>
-              <object class="GtkLabel" id="label20">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="label">&lt;i&gt;x&lt;/i&gt;&lt;sup&gt;−1&lt;/sup&gt;</property>
-                <property name="use_markup">True</property>
-                <property name="justify">center</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="left_attach">6</property>
-            <property name="right_attach">7</property>
-            <property name="top_attach">2</property>
-            <property name="bottom_attach">3</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-          </packing>
-        </child>
         <child>
           <object class="GtkButton" id="calc_factor_button">
             <property name="label">a×b</property>
@@ -64,37 +32,6 @@
             <property name="right_attach">6</property>
             <property name="top_attach">4</property>
             <property name="bottom_attach">5</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="calc_factorial_button">
-            <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
-            <property name="use_action_appearance">False</property>
-            <property name="focus_on_click">False</property>
-            <child internal-child="accessible">
-              <object class="AtkObject" id="calc_factorial_button-atkobject">
-                <property name="AtkObject::accessible-name" translatable="yes" comments="Accessible name for the factorial button">Factorial</property>
-              </object>
-            </child>
-            <signal name="clicked" handler="button_cb" swapped="no"/>
-            <child>
-              <object class="GtkLabel" id="label14">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="label">&lt;i&gt;x&lt;/i&gt;!</property>
-                <property name="use_markup">True</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="left_attach">7</property>
-            <property name="right_attach">8</property>
-            <property name="top_attach">2</property>
-            <property name="bottom_attach">3</property>
             <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
             <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
           </packing>
@@ -677,38 +614,6 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_abs_button">
-            <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
-            <property name="focus_on_click">False</property>
-            <child internal-child="accessible">
-              <object class="AtkObject" id="calc_abs_button-atkobject">
-                <property name="AtkObject::accessible-name" translatable="yes" comments="Accessible name for the absolute value button">Absolute Value</property>
-              </object>
-            </child>
-            <signal name="clicked" handler="button_cb" swapped="no"/>
-            <child>
-              <object class="GtkLabel" id="label1">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="label">|&lt;i&gt;x&lt;/i&gt;|</property>
-                <property name="use_markup">True</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="left_attach">8</property>
-            <property name="right_attach">9</property>
-            <property name="top_attach">2</property>
-            <property name="bottom_attach">3</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-          </packing>
-        </child>
-        <child>
           <object class="GtkButton" id="calc_real_portion_button">
             <property name="label">Re</property>
             <property name="visible">True</property>
@@ -744,26 +649,6 @@
             <property name="right_attach">9</property>
             <property name="top_attach">4</property>
             <property name="bottom_attach">5</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="calc_arg_button">
-            <property name="label">Arg</property>
-            <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
-            <property name="focus_on_click">False</property>
-            <signal name="clicked" handler="button_cb" swapped="no"/>
-          </object>
-          <packing>
-            <property name="left_attach">9</property>
-            <property name="right_attach">10</property>
-            <property name="top_attach">2</property>
-            <property name="bottom_attach">3</property>
             <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
             <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
           </packing>
@@ -933,7 +818,7 @@
           <object class="GtkTable" id="table1">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="n_rows">2</property>
+            <property name="n_rows">3</property>
             <property name="n_columns">3</property>
             <property name="homogeneous">True</property>
             <child>
@@ -1040,11 +925,66 @@
                 <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
               </packing>
             </child>
+            <child>
+              <object class="GtkButton" id="calc_inverse_cosine_button">
+                <property name="label" translatable="yes">acos</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="use_action_appearance">False</property>
+                <property name="focus_on_click">False</property>
+                <signal name="clicked" handler="button_cb" swapped="no"/>
+              </object>
+              <packing>
+                <property name="top_attach">2</property>
+                <property name="bottom_attach">3</property>
+                <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+                <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="calc_inverse_sine_button">
+                <property name="label" translatable="yes">asin</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="use_action_appearance">False</property>
+                <property name="focus_on_click">False</property>
+                <signal name="clicked" handler="button_cb" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="right_attach">2</property>
+                <property name="top_attach">2</property>
+                <property name="bottom_attach">3</property>
+                <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+                <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="calc_inverse_tangent_button">
+                <property name="label" translatable="yes">atan</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="use_action_appearance">False</property>
+                <property name="focus_on_click">False</property>
+                <signal name="clicked" handler="button_cb" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">2</property>
+                <property name="right_attach">3</property>
+                <property name="top_attach">2</property>
+                <property name="bottom_attach">3</property>
+                <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+                <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+              </packing>
+            </child>
           </object>
           <packing>
             <property name="left_attach">6</property>
             <property name="right_attach">10</property>
-            <property name="bottom_attach">2</property>
+            <property name="bottom_attach">3</property>
           </packing>
         </child>
         <child>
@@ -1099,6 +1039,124 @@
             <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
             <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
           </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_inverse_button">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+            <property name="focus_on_click">False</property>
+            <child internal-child="accessible">
+              <object class="AtkObject" id="calc_inverse_button-atkobject">
+                <property name="AtkObject::accessible-name" translatable="yes" comments="Accessible name for the inverse button">Inverse</property>
+              </object>
+            </child>
+            <signal name="clicked" handler="button_cb" swapped="no"/>
+            <child>
+              <object class="GtkLabel" id="label20">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label">&lt;i&gt;x&lt;/i&gt;&lt;sup&gt;−1&lt;/sup&gt;</property>
+                <property name="use_markup">True</property>
+                <property name="justify">center</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="left_attach">10</property>
+            <property name="right_attach">11</property>
+            <property name="top_attach">1</property>
+            <property name="bottom_attach">2</property>
+            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_factorial_button">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+            <property name="focus_on_click">False</property>
+            <child internal-child="accessible">
+              <object class="AtkObject" id="calc_factorial_button-atkobject">
+                <property name="AtkObject::accessible-name" translatable="yes" comments="Accessible name for the factorial button">Factorial</property>
+              </object>
+            </child>
+            <signal name="clicked" handler="button_cb" swapped="no"/>
+            <child>
+              <object class="GtkLabel" id="label14">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label">&lt;i&gt;x&lt;/i&gt;!</property>
+                <property name="use_markup">True</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="left_attach">10</property>
+            <property name="right_attach">11</property>
+            <property name="top_attach">2</property>
+            <property name="bottom_attach">3</property>
+            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_abs_button">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+            <property name="use_underline">True</property>
+            <property name="focus_on_click">False</property>
+            <child internal-child="accessible">
+              <object class="AtkObject" id="calc_abs_button-atkobject">
+                <property name="AtkObject::accessible-name" translatable="yes" comments="Accessible name for the absolute value button">Absolute Value</property>
+              </object>
+            </child>
+            <signal name="clicked" handler="button_cb" swapped="no"/>
+            <child>
+              <object class="GtkLabel" id="label1">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label">|&lt;i&gt;x&lt;/i&gt;|</property>
+                <property name="use_markup">True</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="left_attach">10</property>
+            <property name="right_attach">11</property>
+            <property name="top_attach">3</property>
+            <property name="bottom_attach">4</property>
+            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_arg_button">
+            <property name="label">Arg</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+            <property name="use_underline">True</property>
+            <property name="focus_on_click">False</property>
+            <signal name="clicked" handler="button_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">10</property>
+            <property name="right_attach">11</property>
+            <property name="top_attach">4</property>
+            <property name="bottom_attach">5</property>
+            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+          </packing>
+        </child>
+        <child>
+          <placeholder/>
         </child>
       </object>
     </child>

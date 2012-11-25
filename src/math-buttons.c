@@ -175,6 +175,15 @@ static ButtonData button_data[] = {
     {"hyperbolic_tangent", "tanh ", FUNCTION,
       /* Tooltip for the hyperbolic tangent button */
       N_("Hyperbolic Tangent")},
+    {"inverse_sine", "asin", FUNCTION,
+      /* Tooltip for the inverse sine button */
+      N_("Inverse Sine")},
+    {"inverse_cosine", "acos", FUNCTION,
+      /* Tooltip for the inverse cosine button */
+      N_("Inverse Cosine")},
+    {"inverse_tangent", "atan", FUNCTION,
+      /* Tooltip for the inverse tangent button */
+      N_("Inverse Tangent")},
     {"inverse",            "⁻¹", FUNCTION,
       /* Tooltip for the inverse button */
       N_("Inverse [Ctrl+I]")},
