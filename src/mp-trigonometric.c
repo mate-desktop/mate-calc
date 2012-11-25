@@ -1,20 +1,12 @@
-/*  Copyright (c) 1987-2008 Sun Microsystems, Inc. All Rights Reserved.
- *  Copyright (c) 2008-2009 Robert Ancell
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2, or (at your option)
- *  any later version.
- *
- *  This program is distributed in the hope that it will be useful, but
- *  WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- *  General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- *  02110-1301, USA.
+/*
+ * Copyright (C) 1987-2008 Sun Microsystems, Inc. All Rights Reserved.
+ * Copyright (C) 2008-2011 Robert Ancell.
+ * 
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License as published by the Free Software
+ * Foundation, either version 2 of the License, or (at your option) any later
+ * version. See http://www.gnu.org/copyleft/gpl.html the full text of the
+ * license.
  */
 
 #include <stdlib.h>
@@ -24,6 +16,9 @@
 
 #include "mp.h"
 #include "mp-private.h"
+
+static MPNumber pi;
+static gboolean have_pi = FALSE;
 
 static int
 mp_compare_mp_to_int(const MPNumber *x, int i)
@@ -64,7 +59,11 @@ convert_to_radians(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
 void
 mp_get_pi(MPNumber *z)
 {
-    mp_set_from_string("3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679", 10, z);
+    if (mp_is_zero(&pi)) {
+        mp_set_from_string("3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679", 10, &pi);
+        have_pi = TRUE;
+    }
+    mp_set_from_mp(&pi, z);
 }
 
 
@@ -420,7 +419,7 @@ mp_atan(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
             break;
 
         q *= 2;
-
+        
         /* t = t / (√(t² + 1) + 1) */
         mp_multiply(&t2, &t2, z);
         mp_add_integer(z, 1, z);
@@ -557,6 +556,7 @@ mp_tanh(const MPNumber *x, MPNumber *z)
     } else {
         mp_epowy(&t, &t);
         mp_add_integer(&t, 1, z);
+        mp_add_integer(&t, -1, &t);
         mp_divide(&t, z, z);
     }
 
@@ -588,7 +588,7 @@ mp_acosh(const MPNumber *x, MPNumber *z)
     mp_set_from_integer(1, &t);
     if (mp_is_less_than(x, &t)) {
         /* Translators: Error displayed when inverse hyperbolic cosine value is undefined */
-        mperr(_("Inverse hyperbolic cosine is undefined for values less than or equal to one"));
+        mperr(_("Inverse hyperbolic cosine is undefined for values less than one"));
         mp_set_from_integer(0, z);
         return;
     }

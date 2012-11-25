@@ -1,19 +1,11 @@
-/*  Copyright (c) 2008-2009 Robert Ancell
+/*
+ * Copyright (C) 2008-2011 Robert Ancell
  *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2, or (at your option)
- *  any later version.
- *
- *  This program is distributed in the hope that it will be useful, but
- *  WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- *  General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- *  02110-1301, USA.
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License as published by the Free Software
+ * Foundation, either version 2 of the License, or (at your option) any later
+ * version. See http://www.gnu.org/copyleft/gpl.html the full text of the
+ * license.
  */
 
 #include <glib/gi18n.h>
@@ -41,8 +33,8 @@ struct MathPreferencesDialogPrivate
 
 MathPreferencesDialog *
 math_preferences_dialog_new(MathEquation *equation)
-{
-    return g_object_new (math_preferences_get_type(), "equation", equation, NULL);
+{  
+    return g_object_new(math_preferences_get_type(), "equation", equation, NULL);
 }
 
 
@@ -66,7 +58,7 @@ G_MODULE_EXPORT
 void
 number_format_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialog)
 {
-    DisplayFormat value;
+    MpDisplayFormat value;
     GtkTreeModel *model;
     GtkTreeIter iter;
 
@@ -211,7 +203,7 @@ word_size_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *di
 static void
 angle_unit_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
 {
-    set_combo_box_from_int(GET_WIDGET(dialog->priv->ui, "angle_unit_combobox"), math_equation_get_angle_units(equation));
+    set_combo_box_from_int(GET_WIDGET(dialog->priv->ui, "angle_unit_combobox"), math_equation_get_angle_units(equation));  
 }
 
 
@@ -237,9 +229,7 @@ create_gui(MathPreferencesDialog *dialog)
     gtk_window_set_title(GTK_WINDOW(dialog),
                          /* Title of preferences dialog */
                          _("Preferences"));
-    gtk_window_set_icon_name(GTK_WINDOW(dialog), "accessories-calculator");
     gtk_container_set_border_width(GTK_CONTAINER(dialog), 8);
-    gtk_dialog_set_has_separator(GTK_DIALOG(dialog), FALSE);
     gtk_dialog_add_button(GTK_DIALOG(dialog),
                           /* Label on close button in preferences dialog */
                           _("_Close"), 0);
@@ -269,16 +259,20 @@ create_gui(MathPreferencesDialog *dialog)
     model = gtk_combo_box_get_model(GTK_COMBO_BOX(widget));
     gtk_list_store_append(GTK_LIST_STORE(model), &iter);
     gtk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
+                       /* Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99) */
+                       _("Automatic"), 1, MP_DISPLAY_FORMAT_AUTOMATIC, -1);
+    gtk_list_store_append(GTK_LIST_STORE(model), &iter);
+    gtk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
                        /* Number display mode combo: Fixed, e.g. 1234 */
-                       _("Fixed"), 1, FIX, -1);
+                       _("Fixed"), 1, MP_DISPLAY_FORMAT_FIXED, -1);
     gtk_list_store_append(GTK_LIST_STORE(model), &iter);
     gtk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
                        /* Number display mode combo: Scientific, e.g. 1.234×10^3 */
-                       _("Scientific"), 1, SCI, -1);
+                       _("Scientific"), 1, MP_DISPLAY_FORMAT_SCIENTIFIC, -1);
     gtk_list_store_append(GTK_LIST_STORE(model), &iter);
     gtk_list_store_set(GTK_LIST_STORE(model), &iter, 0,
                        /* Number display mode combo: Engineering, e.g. 1.234k */
-                       _("Engineering"), 1, ENG, -1);
+                       _("Engineering"), 1, MP_DISPLAY_FORMAT_ENGINEERING, -1);
     renderer = gtk_cell_renderer_text_new();
     gtk_cell_layout_pack_start(GTK_CELL_LAYOUT(widget), renderer, TRUE);
     gtk_cell_layout_add_attribute(GTK_CELL_LAYOUT(widget), renderer, "text", 0);
@@ -333,21 +327,21 @@ create_gui(MathPreferencesDialog *dialog)
 
 static void
 math_preferences_set_property(GObject      *object,
-                            guint         prop_id,
-                            const GValue *value,
-                            GParamSpec   *pspec)
+                              guint         prop_id,
+                              const GValue *value,
+                              GParamSpec   *pspec)
 {
     MathPreferencesDialog *self;
 
-    self = MATH_PREFERENCES (object);
+    self = MATH_PREFERENCES(object);
 
     switch (prop_id) {
     case PROP_EQUATION:
-        self->priv->equation = g_value_get_object (value);
+        self->priv->equation = g_value_get_object(value);
         create_gui(self);
         break;
     default:
-        G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
+        G_OBJECT_WARN_INVALID_PROPERTY_ID(object, prop_id, pspec);
         break;
     }
 }
@@ -355,34 +349,34 @@ math_preferences_set_property(GObject      *object,
 
 static void
 math_preferences_get_property(GObject    *object,
-                            guint       prop_id,
-                            GValue     *value,
-                            GParamSpec *pspec)
+                              guint       prop_id,
+                              GValue     *value,
+                              GParamSpec *pspec)
 {
     MathPreferencesDialog *self;
 
-    self = MATH_PREFERENCES (object);
+    self = MATH_PREFERENCES(object);
 
     switch (prop_id) {
     case PROP_EQUATION:
-        g_value_set_object (value, self->priv->equation);
+        g_value_set_object(value, self->priv->equation);
         break;
     default:
-        G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
+        G_OBJECT_WARN_INVALID_PROPERTY_ID(object, prop_id, pspec);
         break;
     }
 }
 
 
 static void
-math_preferences_class_init (MathPreferencesDialogClass *klass)
+math_preferences_class_init(MathPreferencesDialogClass *klass)
 {
-    GObjectClass *object_class = G_OBJECT_CLASS (klass);
+    GObjectClass *object_class = G_OBJECT_CLASS(klass);
 
     object_class->get_property = math_preferences_get_property;
     object_class->set_property = math_preferences_set_property;
 
-    g_type_class_add_private (klass, sizeof (MathPreferencesDialogPrivate));
+    g_type_class_add_private(klass, sizeof(MathPreferencesDialogPrivate));
 
     g_object_class_install_property(object_class,
                                     PROP_EQUATION,
@@ -397,5 +391,5 @@ math_preferences_class_init (MathPreferencesDialogClass *klass)
 static void
 math_preferences_init(MathPreferencesDialog *dialog)
 {
-    dialog->priv = G_TYPE_INSTANCE_GET_PRIVATE (dialog, math_preferences_get_type(), MathPreferencesDialogPrivate);
+    dialog->priv = G_TYPE_INSTANCE_GET_PRIVATE(dialog, math_preferences_get_type(), MathPreferencesDialogPrivate);
 }

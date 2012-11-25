@@ -1,20 +1,12 @@
-/*  Copyright (c) 1987-2008 Sun Microsystems, Inc. All Rights Reserved.
- *  Copyright (c) 2008-2009 Robert Ancell
+/*
+ * Copyright (C) 1987-2008 Sun Microsystems, Inc. All Rights Reserved.
+ * Copyright (C) 2008-2011 Robert Ancell
  *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2, or (at your option)
- *  any later version.
- *
- *  This program is distributed in the hope that it will be useful, but
- *  WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- *  General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- *  02110-1301, USA.
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License as published by the Free Software
+ * Foundation, either version 2 of the License, or (at your option) any later
+ * version. See http://www.gnu.org/copyleft/gpl.html the full text of the
+ * license.
  */
 
 #include <stdlib.h>
@@ -22,6 +14,7 @@
 #include <string.h>
 #include <ctype.h>
 #include <math.h>
+#include <langinfo.h>
 
 #include "mp.h"
 #include "mp-private.h"
@@ -295,7 +288,7 @@ mp_cast_to_int(const MPNumber *x)
 {
     int i;
     int64_t z = 0, v;
-
+  
     /* |x| <= 1 */
     if (x->sign == 0 || x->exponent <= 0)
         return 0;
@@ -306,7 +299,7 @@ mp_cast_to_int(const MPNumber *x)
 
         t = z;
         z = z * MP_BASE + x->fraction[i];
-
+      
         /* Check for overflow */
         if (z <= t)
             return 0;
@@ -336,7 +329,7 @@ mp_cast_to_unsigned_int(const MPNumber *x)
 {
     int i;
     uint64_t z = 0, v;
-
+  
     /* x <= 1 */
     if (x->sign <= 0 || x->exponent <= 0)
         return 0;
@@ -347,7 +340,7 @@ mp_cast_to_unsigned_int(const MPNumber *x)
 
         t = z;
         z = z * MP_BASE + x->fraction[i];
-
+      
         /* Check for overflow */
         if (z <= t)
             return 0;
@@ -506,221 +499,12 @@ mp_cast_to_double(const MPNumber *x)
     }
 }
 
-
-static void
-mp_cast_to_string_real(const MPNumber *x, int default_base, int base, int accuracy, bool trim_zeroes, bool force_sign, GString *string)
-{
-    static char digits[] = "0123456789ABCDEF";
-    MPNumber number, integer_component, fractional_component, temp;
-    int i, last_non_zero;
-
-    if (mp_is_negative(x))
-        mp_abs(x, &number);
-    else
-        mp_set_from_mp(x, &number);
-
-    /* Add rounding factor */
-    mp_set_from_integer(base, &temp);
-    mp_xpowy_integer(&temp, -(accuracy+1), &temp);
-    mp_multiply_integer(&temp, base, &temp);
-    mp_divide_integer(&temp, 2, &temp);
-    mp_add(&number, &temp, &number);
-
-    /* Split into integer and fractional component */
-    mp_floor(&number, &integer_component);
-    mp_fractional_component(&number, &fractional_component);
-
-    /* Write out the integer component least significant digit to most */
-    mp_set_from_mp(&integer_component, &temp);
-    do {
-        MPNumber t, t2, t3;
-        int64_t d;
-
-        mp_divide_integer(&temp, base, &t);
-        mp_floor(&t, &t);
-        mp_multiply_integer(&t, base, &t2);
-
-        mp_subtract(&temp, &t2, &t3);
-
-        d = mp_cast_to_int(&t3);
-        g_string_prepend_c(string, d < 16 ? digits[d] : '?');
-
-        mp_set_from_mp(&t, &temp);
-    } while (!mp_is_zero(&temp));
-
-    last_non_zero = string->len;
-    g_string_append_c(string, '.');
-
-    /* Write out the fractional component */
-    mp_set_from_mp(&fractional_component, &temp);
-    for (i = accuracy; i > 0 && !mp_is_zero(&temp); i--) {
-        int d;
-        MPNumber digit;
-
-        mp_multiply_integer(&temp, base, &temp);
-        mp_floor(&temp, &digit);
-        d = mp_cast_to_int(&digit);
-
-        g_string_append_c(string, digits[d]);
-
-        if(d != 0)
-            last_non_zero = string->len;
-        mp_subtract(&temp, &digit, &temp);
-    }
-
-    /* Strip trailing zeroes */
-    if (trim_zeroes || accuracy == 0)
-        g_string_truncate(string, last_non_zero);
-
-    /* Add sign on non-zero values */
-    if (strcmp(string->str, "0") != 0 || force_sign) {
-        if (mp_is_negative(x))
-            g_string_prepend(string, "−");
-        else if (force_sign)
-            g_string_prepend(string, "+");
-    }
-
-    /* Append base suffix if not in default base */
-    if (base != default_base) {
-        const char *digits[] = {"₀", "₁", "₂", "₃", "₄", "₅", "₆", "₇", "₈", "₉"};
-        int multiplier = 1;
-        int b = base;
-
-        while (base / multiplier != 0)
-            multiplier *= 10;
-        while (multiplier != 1) {
-            int d;
-            multiplier /= 10;
-            d = b / multiplier;
-            g_string_append(string, digits[d]);
-            b -= d * multiplier;
-        }
-    }
-}
-
-
-void
-mp_cast_to_string(const MPNumber *x, int default_base, int base, int accuracy, bool trim_zeroes, char *buffer, int buffer_length)
-{
-    GString *string;
-    MPNumber x_real;
-
-    string = g_string_sized_new(buffer_length);
-
-    mp_real_component(x, &x_real);
-    mp_cast_to_string_real(&x_real, default_base, base, accuracy, trim_zeroes, FALSE, string);
-    if (mp_is_complex(x)) {
-        GString *s;
-        gboolean force_sign = TRUE;
-        MPNumber x_im;
-
-        mp_imaginary_component(x, &x_im);
-
-        if (strcmp(string->str, "0") == 0) {
-            g_string_assign(string, "");
-            force_sign = false;
-        }
-
-        s = g_string_sized_new(buffer_length);
-        mp_cast_to_string_real(&x_im, default_base, 10, accuracy, trim_zeroes, force_sign, s);
-        if (strcmp(s->str, "0") == 0 || strcmp(s->str, "+0") == 0 || strcmp(s->str, "−0") == 0) {
-            /* Ignore */
-        }
-        else if (strcmp(s->str, "1") == 0) {
-            g_string_append(string, "i");
-        }
-        else if (strcmp(s->str, "+1") == 0) {
-            g_string_append(string, "+i");
-        }
-        else if (strcmp(s->str, "−1") == 0) {
-            g_string_append(string, "−i");
-        }
-        else {
-            if (strcmp(s->str, "+0") == 0)
-                g_string_append(string, "+");
-            else if (strcmp(s->str, "0") != 0)
-                g_string_append(string, s->str);
-
-            g_string_append(string, "i");
-        }
-        g_string_free(s, TRUE);
-    }
-
-    // FIXME: Check for truncation
-    strncpy(buffer, string->str, buffer_length);
-    g_string_free(string, TRUE);
-}
-
-
-void
-mp_cast_to_exponential_string(const MPNumber *x, int default_base, int base_, int max_digits, bool trim_zeroes, bool eng_format, char *buffer, int buffer_length)
-{
-    char fixed[1024], *c;
-    MPNumber t, z, base, base3, base10, base10inv, mantissa;
-    int exponent = 0;
-    GString *string;
-    const char *super_digits[] = {"⁰", "¹", "²", "³", "⁴", "⁵", "⁶", "⁷", "⁸", "⁹"};
-
-    string = g_string_sized_new(buffer_length);
-
-    mp_abs(x, &z);
-    if (mp_is_negative(x))
-        g_string_append(string, "−");
-    mp_set_from_mp(&z, &mantissa);
-
-    mp_set_from_integer(base_, &base);
-    mp_xpowy_integer(&base, 3, &base3);
-    mp_xpowy_integer(&base, 10, &base10);
-    mp_set_from_integer(1, &t);
-    mp_divide(&t, &base10, &base10inv);
-
-    if (!mp_is_zero(&mantissa)) {
-        while (!eng_format && mp_is_greater_equal(&mantissa, &base10)) {
-            exponent += 10;
-            mp_multiply(&mantissa, &base10inv, &mantissa);
-        }
-
-        while ((!eng_format &&  mp_is_greater_equal(&mantissa, &base)) ||
-                (eng_format && (mp_is_greater_equal(&mantissa, &base3) || exponent % 3 != 0))) {
-            exponent += 1;
-            mp_divide(&mantissa, &base, &mantissa);
-        }
-
-        while (!eng_format && mp_is_less_than(&mantissa, &base10inv)) {
-            exponent -= 10;
-            mp_multiply(&mantissa, &base10, &mantissa);
-        }
-
-        mp_set_from_integer(1, &t);
-        while (mp_is_less_than(&mantissa, &t) || (eng_format && exponent % 3 != 0)) {
-            exponent -= 1;
-            mp_multiply(&mantissa, &base, &mantissa);
-        }
-    }
-
-    mp_cast_to_string(&mantissa, default_base, base_, max_digits, trim_zeroes, fixed, 1024);
-    g_string_append(string, fixed);
-    if (exponent != 0) {
-        g_string_append_printf(string, "×10"); // FIXME: Use the current base
-        if (exponent < 0) {
-            exponent = -exponent;
-            g_string_append(string, "⁻");
-        }
-        snprintf(fixed, 1024, "%d", exponent);
-        for (c = fixed; *c; c++)
-            g_string_append(string, super_digits[*c - '0']);
-    }
-
-    strncpy(buffer, string->str, buffer_length);
-    g_string_free(string, TRUE);
-}
-
-
 static int
 char_val(char **c, int base)
 {
     int i, j, value, offset;
     const char *digits[][10] = {{"٠", "١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩"},
+                                {"〇", "〡", "〢", "〣", "〤", "〥", "〦", "〧", "〨", "〩"},
                                 {"۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"},
                                 {"߀", "߁", "߂", "߃", "߄", "߅", "߆", "߇", "߈", "߉"},
                                 {"०", "१", "२", "३", "४", "५", "६", "७", "८", "९"},
@@ -895,7 +679,7 @@ mp_set_from_string(const char *str, int default_base, MPNumber *z)
         mp_add(z, &fraction, z);
     }
 
-    if (*c == '.' || *c == ',') {
+    if (*c == '.') {
         has_fraction = TRUE;
         c++;
     }

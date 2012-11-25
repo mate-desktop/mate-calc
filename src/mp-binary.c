@@ -1,26 +1,19 @@
-/*  Copyright (c) 1987-2008 Sun Microsystems, Inc. All Rights Reserved.
- *  Copyright (c) 2008-2009 Robert Ancell
+/*
+ * Copyright (C) 1987-2008 Sun Microsystems, Inc. All Rights Reserved.
+ * Copyright (C) 2008-2011 Robert Ancell
  *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2, or (at your option)
- *  any later version.
- *
- *  This program is distributed in the hope that it will be useful, but
- *  WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- *  General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- *  02110-1301, USA.
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License as published by the Free Software
+ * Foundation, either version 2 of the License, or (at your option) any later
+ * version. See http://www.gnu.org/copyleft/gpl.html the full text of the
+ * license.
  */
 
 #include <stdio.h>
 
 #include "mp.h"
 #include "mp-private.h"
+#include "mp-serializer.h"
 
 // FIXME: Make dynamic
 #define MAX_DIGITS 1000
@@ -39,14 +32,28 @@ static int hex_to_int(char digit)
 }
 
 
+static gchar *
+to_hex_string(const MPNumber *x)
+{
+    MpSerializer *serializer;
+    gchar *result;
+
+    serializer = mp_serializer_new(MP_DISPLAY_FORMAT_FIXED, 16, 0);
+    result = mp_serializer_to_string(serializer, x);
+    g_object_unref(serializer);
+
+    return result;
+}
+
+
 static void
 mp_bitwise(const MPNumber *x, const MPNumber *y, int (*bitwise_operator)(int, int), MPNumber *z, int wordlen)
 {
-    char text1[MAX_DIGITS], text2[MAX_DIGITS], text_out[MAX_DIGITS], text_out2[MAX_DIGITS];
+    char *text1, *text2, text_out[MAX_DIGITS], text_out2[MAX_DIGITS];
     int offset1, offset2, offset_out;
 
-    mp_cast_to_string(x, 16, 16, 0, 0, text1, MAX_DIGITS);
-    mp_cast_to_string(y, 16, 16, 0, 0, text2, MAX_DIGITS);
+    text1 = to_hex_string(x);
+    text2 = to_hex_string(y);
     offset1 = strlen(text1) - 1;
     offset2 = strlen(text2) - 1;
     offset_out = wordlen / 4 - 1;
@@ -54,6 +61,9 @@ mp_bitwise(const MPNumber *x, const MPNumber *y, int (*bitwise_operator)(int, in
         offset_out = offset1 > offset2 ? offset1 : offset2;
     }
     if (offset_out > 0 && (offset_out < offset1 || offset_out < offset2)) {
+        g_free(text1);
+        g_free(text2);
+        mp_set_from_integer(0, z);
         mperr("Overflow. Try a bigger word size");
         return;
     }
@@ -75,6 +85,8 @@ mp_bitwise(const MPNumber *x, const MPNumber *y, int (*bitwise_operator)(int, in
 
     snprintf(text_out2, MAX_DIGITS, "%s", text_out);
     mp_set_from_string(text_out2, 16, z);
+    g_free(text1);
+    g_free(text2);
 }
 
 
@@ -152,24 +164,23 @@ mp_not(const MPNumber *x, int wordlen, MPNumber *z)
 void
 mp_mask(const MPNumber *x, int wordlen, MPNumber *z)
 {
-    char text[MAX_DIGITS];
+    char *text;
     size_t len, offset;
 
     /* Convert to a hexadecimal string and use last characters */
-    mp_cast_to_string(x, 16, 16, 0, 0, text, MAX_DIGITS);
+    text = to_hex_string(x);
     len = strlen(text);
     offset = wordlen / 4;
     offset = len > offset ? len - offset: 0;
     mp_set_from_string(text + offset, 16, z);
+    g_free(text);
 }
 
 
 void
 mp_shift(const MPNumber *x, int count, MPNumber *z)
 {
-    int i;
-    MPNumber multiplier;
-    mp_set_from_integer(1, &multiplier);
+    int i, multiplier = 1;
 
     if (!mp_is_integer(x)) {
         /* Translators: Error displayed when bit shift attempted on non-integer values */
@@ -179,14 +190,15 @@ mp_shift(const MPNumber *x, int count, MPNumber *z)
 
     if (count >= 0) {
         for (i = 0; i < count; i++)
-            mp_multiply_integer(&multiplier, 2, &multiplier);
-        mp_multiply(x, &multiplier, z);
+            multiplier *= 2;
+        mp_multiply_integer(x, multiplier, z);
     }
     else {
+        MPNumber temp;
         for (i = 0; i < -count; i++)
-            mp_multiply_integer(&multiplier, 2, &multiplier);
-        mp_divide(x, &multiplier, z);
-        mp_floor(z, z);
+            multiplier *= 2;
+        mp_divide_integer(x, multiplier, &temp);
+        mp_floor(&temp, z);
     }
 }
 

@@ -1,32 +1,33 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# 
-# Translators:
-# Antón Méixome <meixome@certima.net>, 2010.
-# Antón Méixome <meixome@mancomun.org>, 2009.
-# Fran Dieguez <frandieguez@ubuntu.com>, 2010.
-# Fran Diéguez <frandieguez@ubuntu.com>, 2009, 2010.
+# translation of mate-calc-master-po-gl-72274_.merged.po to Galician
+# translation of mate-calc.po to
+# Galician translation of mate-calc.HEAD.gl.po
+# Copyright (C) 2004, 2005, 2006, 2007, 2008, 2009, 2010 Free Software Foundation, Inc
+# This file is distributed under the same license as the mate-calc package.
 # Ignacio Casal Quinteiro <adorador_del_heavy@hotmail.com>, 2004.
-# Ignacio Casal Quinteiro <icq@cvs.mate.org>, 2007, 2008.
 # Ignacio Casal Quinteiro <nacho.resa@gmail.com>, 2005, 2006.
+# Ignacio Casal Quinteiro <icq@cvs.gnome.org>, 2007, 2008.
 # Mancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun.org>, 2009.
+# Antón Méixome <meixome@mancomun.org>, 2009.
+# Antón Méixome <meixome@certima.net>, 2010.
+# Fran Diéguez <frandieguez@gnome.org>, 2009, 2010, 2011.
+# Fran Dieguez <frandieguez@gnome.org>, 2010, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2012-03-14 16:03+0100\n"
-"PO-Revision-Date: 2012-03-14 15:05+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: Galician (http://www.transifex.com/projects/p/MATE/language/gl/)\n"
+"Project-Id-Version: mate-calc-master-po-gl-72274_.merged\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-09 11:14+0200\n"
+"PO-Revision-Date: 2012-10-09 11:15+0200\n"
+"Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
+"Language-Team: mate-l10n-gl@gnome.org\n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: gl\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 #. Accessible name for the inverse button
-#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:30
+#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:24
 msgid "Inverse"
 msgstr "Inverter"
 
@@ -36,400 +37,382 @@ msgid "Factorize"
 msgstr "Factorizar"
 
 #. Accessible name for the factorial button
-#: ../data/buttons-advanced.ui.h:6 ../data/buttons-programming.ui.h:28
+#: ../data/buttons-advanced.ui.h:6 ../data/buttons-programming.ui.h:22
 msgid "Factorial"
 msgstr "Factorial"
 
 #. Label on the solve button (clicking this solves the displayed calculation)
 #: ../data/buttons-advanced.ui.h:8 ../data/buttons-basic.ui.h:2
-#: ../data/buttons-financial.ui.h:10 ../data/buttons-programming.ui.h:6
+#: ../data/buttons-financial.ui.h:76 ../data/buttons-programming.ui.h:6
 msgid "="
 msgstr "="
 
-#. Label on the clear display button
-#: ../data/buttons-advanced.ui.h:10 ../data/buttons-basic.ui.h:4
-#: ../data/buttons-financial.ui.h:12 ../data/buttons-programming.ui.h:8
-msgid "Clear"
-msgstr "Borrar"
-
 #. Accessible name for the subscript mode button
-#: ../data/buttons-advanced.ui.h:12 ../data/buttons-programming.ui.h:10
+#: ../data/buttons-advanced.ui.h:10 ../data/buttons-programming.ui.h:8
 msgid "Subscript"
 msgstr "Subescribir"
 
 #. Accessible name for the superscript mode button
-#: ../data/buttons-advanced.ui.h:14 ../data/buttons-programming.ui.h:12
+#: ../data/buttons-advanced.ui.h:12 ../data/buttons-programming.ui.h:10
 msgid "Superscript"
 msgstr "Superescribir"
 
 #. Accessible name for the scientific exponent button
-#: ../data/buttons-advanced.ui.h:16
+#: ../data/buttons-advanced.ui.h:14
 msgid "Scientific Exponent"
 msgstr "Expoñente científico"
 
-#. Accessible name for the recall value button
-#: ../data/buttons-advanced.ui.h:18 ../data/buttons-financial.ui.h:6
+#. Accessible name for the memory button
+#. Accessible name for the memory value button
+#. Tooltip for the memory button
+#: ../data/buttons-advanced.ui.h:16 ../data/buttons-financial.ui.h:72
+#: ../src/math-buttons.c:222
+msgid "Memory"
+msgstr "Memoria"
+
+#. The label on the memory button
+#: ../data/buttons-advanced.ui.h:18 ../data/buttons-financial.ui.h:74
 #: ../data/buttons-programming.ui.h:14
-msgid "Recall"
-msgstr "Rechamar"
-
-#. The label on the memory recall button
-#: ../data/buttons-advanced.ui.h:20 ../data/buttons-financial.ui.h:8
-#: ../data/buttons-programming.ui.h:16
-msgid "&#x2190; R"
-msgstr "&#x2190; R"
-
-#. Accessible name for the store value button
-#: ../data/buttons-advanced.ui.h:22 ../data/buttons-financial.ui.h:2
-#: ../data/buttons-programming.ui.h:18
-msgid "Store"
-msgstr "Almacenar"
-
-#. The label on the memory store button
-#: ../data/buttons-advanced.ui.h:24 ../data/buttons-financial.ui.h:4
-#: ../data/buttons-programming.ui.h:20
-msgid "&#x2192; R"
-msgstr "&#x2192; R"
+msgid "x"
+msgstr "x"
 
 #. Accessible name for the absolute value button
-#: ../data/buttons-advanced.ui.h:26 ../data/buttons-programming.ui.h:4
+#: ../data/buttons-advanced.ui.h:20 ../data/buttons-programming.ui.h:4
 msgid "Absolute Value"
 msgstr "Valor absoluto"
 
 #. Accessible name for the exponentiation (x to the power of y) button
-#: ../data/buttons-advanced.ui.h:28 ../data/buttons-basic.ui.h:6
-#: ../data/buttons-financial.ui.h:36 ../data/buttons-programming.ui.h:32
+#: ../data/buttons-advanced.ui.h:22 ../data/buttons-basic.ui.h:4
+#: ../data/buttons-financial.ui.h:98 ../data/buttons-programming.ui.h:26
 msgid "Exponent"
 msgstr "Expoñente"
 
-#. Label on the undo button
-#. Label on the clear display button
-#: ../data/buttons-advanced.ui.h:30 ../data/buttons-basic.ui.h:8
-#: ../data/buttons-financial.ui.h:34
-msgid "Undo"
-msgstr "Desfacer"
-
-#. Calculates the number of compounding periods necessary to increase an
-#. investment of present value pv to a future value of fv, at a fixed interest
-#. rate of int per compounding period. See also:
-#. http://en.wikipedia.org/wiki/Compound_interest
-#: ../data/buttons-financial.ui.h:14
-msgid "Ctrm"
-msgstr "Ctrm"
-
-#. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the double-declining balance method. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:16
-msgid "Ddb"
-msgstr "Ddb"
-
-#. Calculates the future value of an investment based on a series of equal
-#. payments, each of amount pmt, at a periodic interest rate of int, over the
-#. number of payment periods in the term. See also:
-#. http://en.wikipedia.org/wiki/Future_value
-#: ../data/buttons-financial.ui.h:18
-msgid "Fv"
-msgstr "Fv"
-
-#. Calculates the number of payment periods that are necessary during the term
-#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
-#. interest rate of int. Each payment is equal to amount pmt. See also:
-#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
-#: ../data/buttons-financial.ui.h:20
-msgid "Term"
-msgstr "Período"
-
-#. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:22
-msgid "Syd"
-msgstr "Syd"
-
-#. Calculates the straight-line depreciation of an asset for one period. The
-#. depreciable cost is cost - salvage. The straight-line method of
-#. depreciation divides the depreciable cost evenly over the useful life of an
-#. asset. The useful life is the number of periods, typically years, over
-#. which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:24
-msgid "Sln"
-msgstr "Sln"
-
-#. Calculates the periodic interest necessary to increase an investment of
-#. present value pv to a future value of fv, over the number of compounding
-#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
-#: ../data/buttons-financial.ui.h:26
-msgid "Rate"
-msgstr "Taxa"
-
-#. Calculates the present value of an investment based on a series of equal
-#. payments, each of amount pmt, discounted at a periodic interest rate of
-#. int, over the number of payment periods in the term. See also:
-#. http://en.wikipedia.org/wiki/Present_value
-#: ../data/buttons-financial.ui.h:28
-msgid "Pv"
-msgstr "Pv"
-
-#. Calculates the amount of the periodic payment of a loan, where payments are
-#. made at the end of each payment period. See also:
-#. http://en.wikipedia.org/wiki/Amortization_schedule
-#: ../data/buttons-financial.ui.h:30
-msgid "Pmt"
-msgstr "Pmt"
-
-#. Calculates the resale price of a product, based on the product cost and the
-#. wanted gross profit margin. See also:
-#. http://en.wikipedia.org/wiki/Gross_profit_margin
-#: ../data/buttons-financial.ui.h:32
-msgid "Gpm"
-msgstr "MBB"
+#. Accessible name for the store value button
+#: ../data/buttons-advanced.ui.h:24 ../data/buttons-programming.ui.h:12
+msgid "Store"
+msgstr "Almacenar"
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
-#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:261
+#: ../data/buttons-financial.ui.h:2 ../src/math-buttons.c:246
 msgid "Compounding Term"
 msgstr "Prazo composto"
 
+#. Payment Period Dialog: Button to calculate result
+#: ../data/buttons-financial.ui.h:4
+msgid "C_alculate"
+msgstr "C_alcular"
+
 #. Periodic Interest Rate Dialog: Label before present value input
-#: ../data/buttons-financial.ui.h:40
+#: ../data/buttons-financial.ui.h:6
 msgid "Present _Value:"
 msgstr "_Valor presente:"
 
 #. Payment Period Dialog: Label before periodic interest rate input
-#: ../data/buttons-financial.ui.h:42
+#: ../data/buttons-financial.ui.h:8
 msgid "Periodic Interest _Rate:"
 msgstr "_Tipo de xuro periódico:"
 
 #. Compounding Term Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:44
+#: ../data/buttons-financial.ui.h:10
 msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr "Calcula o número de períodos compostos necesarios para incrementar un investimento do valor presente a un valor futuro, cun tipo de xuro fixo por período composto."
+msgstr ""
+"Calcula o número de períodos compostos necesarios para incrementar un "
+"investimento do valor presente a un valor futuro, cun tipo de xuro fixo por "
+"período composto."
 
 #. Periodic Interest Rate Dialog: Label before future value input
-#: ../data/buttons-financial.ui.h:46
+#: ../data/buttons-financial.ui.h:12
 msgid "_Future Value:"
 msgstr "Valor _futuro:"
 
-#. Payment Period Dialog: Button to calculate result
-#: ../data/buttons-financial.ui.h:48
-msgid "C_alculate"
-msgstr "C_alcular"
-
 #. Title of Double-Declining Depreciation dialog
-#: ../data/buttons-financial.ui.h:50
+#: ../data/buttons-financial.ui.h:14
 msgid "Double-Declining Depreciation"
 msgstr "Dobre cota sobre o valor en libros"
 
 #. Double-Declining Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:52
+#: ../data/buttons-financial.ui.h:16
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
-msgstr "Calcula a prestación por depreciación dun activo durante un período específico de tempo, empregando o método de dobre cota sobre o valor en libros."
+msgstr ""
+"Calcula a prestación por depreciación dun activo durante un período "
+"específico de tempo, empregando o método de dobre cota sobre o valor en "
+"libros."
 
 #. Gross Profit Margin Dialog: Label before cost input
-#: ../data/buttons-financial.ui.h:54
+#: ../data/buttons-financial.ui.h:18
 msgid "C_ost:"
 msgstr "C_usto:"
 
 #. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
-#: ../data/buttons-financial.ui.h:56
+#: ../data/buttons-financial.ui.h:20
 msgid "_Life:"
 msgstr "V_ida:"
 
 #. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
-#: ../data/buttons-financial.ui.h:58
+#: ../data/buttons-financial.ui.h:22
 msgid "_Period:"
 msgstr "_Período:"
 
 #. Title of Future Value dialog
 #. Tooltip for the future value button
-#: ../data/buttons-financial.ui.h:60 ../src/math-buttons.c:267
+#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.c:252
 msgid "Future Value"
 msgstr "Valor futuro"
 
 #. Future Value Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:62
+#: ../data/buttons-financial.ui.h:26
 msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
-msgstr "Calcula o valor futuro dun investimento baseado nunha serie de pagamentos iguais cun tipo de xuro periódico sobre o número de períodos de pagamento do prazo."
+msgstr ""
+"Calcula o valor futuro dun investimento baseado nunha serie de pagamentos "
+"iguais cun tipo de xuro periódico sobre o número de períodos de pagamento do "
+"prazo."
 
 #. Payment Period Dialog: Label before periodic payment input
-#: ../data/buttons-financial.ui.h:64
+#: ../data/buttons-financial.ui.h:28
 msgid "_Periodic Payment:"
 msgstr "_Pagamento periódico:"
 
 #. Present Value Dialog: Label before number of periods input
-#: ../data/buttons-financial.ui.h:66
+#: ../data/buttons-financial.ui.h:30
 msgid "_Number of Periods:"
 msgstr "_Número de períodos:"
 
 #. Title of Gross Profit Margin dialog
 #. Tooltip for the gross profit margin button
-#: ../data/buttons-financial.ui.h:68 ../src/math-buttons.c:288
+#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:273
 msgid "Gross Profit Margin"
 msgstr "Marxe de beneficio bruto"
 
 #. Gross Profit Margin Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:70
+#: ../data/buttons-financial.ui.h:34
 msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
-msgstr "Calcula o prezo de revenda dun produto baseándose no custo do produto e na marxe de beneficio bruto."
+msgstr ""
+"Calcula o prezo de revenda dun produto baseándose no custo do produto e na "
+"marxe de beneficio bruto."
 
 #. Gross Profit Margin Dialog: Label before margin input
-#: ../data/buttons-financial.ui.h:72
+#: ../data/buttons-financial.ui.h:36
 msgid "_Margin:"
 msgstr "_Marxe:"
 
 #. Title of Periodic Payment dialog
 #. Tooltip for the periodic payment button
-#: ../data/buttons-financial.ui.h:74 ../src/math-buttons.c:285
+#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:270
 msgid "Periodic Payment"
 msgstr "Pagamento periódico"
 
 #. Periodic Payment Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:76
+#: ../data/buttons-financial.ui.h:40
 msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
-msgstr "Calcula a cantidade de pagamentos periódicos dun préstamo, onde os pagamentos se fan ao final de cada período correspondente. "
+msgstr ""
+"Calcula a cantidade de pagamentos periódicos dun préstamo, onde os "
+"pagamentos se fan ao final de cada período correspondente. "
 
 #. Periodic Payment Dialog: Label before principal input
-#: ../data/buttons-financial.ui.h:78
+#: ../data/buttons-financial.ui.h:42
 msgid "_Principal:"
 msgstr "_Principal:"
 
 #. Periodic Interest Rate Dialog: Label before term input
-#: ../data/buttons-financial.ui.h:80
+#: ../data/buttons-financial.ui.h:44
 msgid "_Term:"
 msgstr "Pra_zo:"
 
 #. Title of Present Value dialog
 #. Tooltip for the present value button
-#: ../data/buttons-financial.ui.h:82 ../src/math-buttons.c:282
+#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:267
 msgid "Present Value"
 msgstr "Valor presente"
 
 #. Present Value Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:84
+#: ../data/buttons-financial.ui.h:48
 msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr "Calcula o valor presente dun investimento baseado nunha serie de pagamentos iguais descontados cun tipo de xuro periódico sobre o número de períodos de pago de cada prazo. "
+msgstr ""
+"Calcula o valor presente dun investimento baseado nunha serie de pagamentos "
+"iguais descontados cun tipo de xuro periódico sobre o número de períodos de "
+"pago de cada prazo. "
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
-#: ../data/buttons-financial.ui.h:86 ../src/math-buttons.c:279
+#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.c:264
 msgid "Periodic Interest Rate"
 msgstr "Tipo de xuro periódico"
 
 #. Periodic Interest Rate Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:88
+#: ../data/buttons-financial.ui.h:52
 msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
-msgstr "Calcula o xuro periódico necesario para incrementar un investimento nun valor futuro, sobre o número de períodos compostos. "
+msgstr ""
+"Calcula o xuro periódico necesario para incrementar un investimento nun "
+"valor futuro, sobre o número de períodos compostos. "
 
 #. Title of Straight-Line Depreciation dialog
-#: ../data/buttons-financial.ui.h:90
+#: ../data/buttons-financial.ui.h:54
 msgid "Straight-Line Depreciation"
 msgstr "Depreciación lineal"
 
 #. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
-#: ../data/buttons-financial.ui.h:92
+#: ../data/buttons-financial.ui.h:56
 msgid "_Cost:"
 msgstr "_Custo:"
 
 #. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
-#: ../data/buttons-financial.ui.h:94
+#: ../data/buttons-financial.ui.h:58
 msgid "_Salvage:"
 msgstr "_Residual:"
 
 #. Straight-Line Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:96
+#: ../data/buttons-financial.ui.h:60
 msgid ""
 "Calculates the straight-line depreciation of an asset for one period. The "
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr "Calcula a depreciación lineal dun activo nun período. O método lineal de depreciación divide o custo amortizábel equitativamente sobre a vida útil dun activo. A vida útil é o número de períodos, xeralmente en anos, nos que un activo será amortizado. "
+msgstr ""
+"Calcula a depreciación lineal dun activo nun período. O método lineal de "
+"depreciación divide o custo amortizábel equitativamente sobre a vida útil "
+"dun activo. A vida útil é o número de períodos, xeralmente en anos, nos que "
+"un activo será amortizado. "
 
 #. Title of Sum-of-the-Years'-Digits Depreciation dialog
-#: ../data/buttons-financial.ui.h:98
+#: ../data/buttons-financial.ui.h:62
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "Depreciación pola suma dos díxitos dos anos"
 
 #. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:100
+#: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
-" accelerates the rate of depreciation, so that more depreciation expense "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
+"accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
-msgstr "Calcula a prestación por depreciación dun activo durante un período específico de tempo, empregando o método de suma dos díxitos dos anos. Este método de depreciación acelera o índice de depreciación, de forma que o maior cargo de depreciación acontece nos primeiros períodos e non nos últimos. A vida útil é o número de períodos, xeralmente en anos, nos que un activo será depreciado. "
+msgstr ""
+"Calcula a prestación por depreciación dun activo durante un período "
+"específico de tempo, empregando o método de suma dos díxitos dos anos. Este "
+"método de depreciación acelera o índice de depreciación, de forma que o "
+"maior cargo de depreciación acontece nos primeiros períodos e non nos "
+"últimos. A vida útil é o número de períodos, xeralmente en anos, nos que un "
+"activo será depreciado. "
 
 #. Title of Payment Period dialog
-#: ../data/buttons-financial.ui.h:102
+#: ../data/buttons-financial.ui.h:66
 msgid "Payment Period"
 msgstr "Período de pagamento"
 
 #. Payment Period Dialog: Label before future value input
-#: ../data/buttons-financial.ui.h:104
+#: ../data/buttons-financial.ui.h:68
 msgid "Future _Value:"
 msgstr "_Valor futuro:"
 
 #. Payment Period Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:106
+#: ../data/buttons-financial.ui.h:70
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest"
-" rate."
-msgstr "Calcula o número de períodos de pagamento necesarios durante o prazo dunha anualidade ordinaria para acumular un valor futuro cun tipo de xuro periódico."
+"of an ordinary annuity, to accumulate a future value, at a periodic interest "
+"rate."
+msgstr ""
+"Calcula o número de períodos de pagamento necesarios durante o prazo dunha "
+"anualidade ordinaria para acumular un valor futuro cun tipo de xuro "
+"periódico."
+
+#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
+#: ../data/buttons-financial.ui.h:78
+msgid "Ctrm"
+msgstr "Ctrm"
+
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:80
+msgid "Ddb"
+msgstr "Ddb"
+
+#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
+#: ../data/buttons-financial.ui.h:82
+msgid "Fv"
+msgstr "Fv"
+
+#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#: ../data/buttons-financial.ui.h:84
+msgid "Term"
+msgstr "Período"
+
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:86
+msgid "Syd"
+msgstr "Syd"
+
+#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:88
+msgid "Sln"
+msgstr "Sln"
+
+#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#: ../data/buttons-financial.ui.h:90
+msgid "Rate"
+msgstr "Taxa"
+
+#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
+#: ../data/buttons-financial.ui.h:92
+msgid "Pv"
+msgstr "Pv"
+
+#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
+#: ../data/buttons-financial.ui.h:94
+msgid "Pmt"
+msgstr "Pmt"
+
+#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
+#: ../data/buttons-financial.ui.h:96
+msgid "Gpm"
+msgstr "MBB"
 
 #. Accessible name for the shift left button
 #. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:22 ../src/math-buttons.c:255
+#: ../data/buttons-programming.ui.h:16 ../src/math-buttons.c:240
 msgid "Shift Left"
 msgstr "Desprazar á esquerda"
 
 #. Accessible name for the shift right button
 #. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:24 ../src/math-buttons.c:258
+#: ../data/buttons-programming.ui.h:18 ../src/math-buttons.c:243
 msgid "Shift Right"
 msgstr "Desprazar á dereita"
 
 #. Accessible name for the insert character button
-#: ../data/buttons-programming.ui.h:26
+#: ../data/buttons-programming.ui.h:20
 msgid "Insert Character"
 msgstr "Inserir carácter"
 
 #. Title of insert character code dialog
 #. Tooltip for the insert character code button
-#: ../data/buttons-programming.ui.h:34 ../src/math-buttons.c:240
+#: ../data/buttons-programming.ui.h:28 ../src/math-buttons.c:225
 msgid "Insert Character Code"
 msgstr "Inserir código de carácter"
 
 #. Insert ASCII dialog: Label before character entry
-#: ../data/buttons-programming.ui.h:36
+#: ../data/buttons-programming.ui.h:30
 msgid "Ch_aracter:"
 msgstr "C_arácter:"
 
 #. Insert ASCII dialog: Button to insert selected character
-#: ../data/buttons-programming.ui.h:38
+#: ../data/buttons-programming.ui.h:32
 msgid "_Insert"
 msgstr "_Inserir"
 
@@ -454,7 +437,8 @@ msgid "64-bit"
 msgstr "64-bit"
 
 #. Title of preferences dialog
-#: ../data/preferences.ui.h:9 ../src/math-preferences.c:239
+#: ../data/preferences.ui.h:9 ../src/mate-calc.c:522
+#: ../src/math-preferences.c:231
 msgid "Preferences"
 msgstr "Preferencias"
 
@@ -483,7 +467,8 @@ msgstr "Mostrar os _ceros á esquerda"
 msgid "Show _thousands separators"
 msgstr "Mostrar o separador de _millares"
 
-#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:486
+#. Title of main window
+#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:243
 msgid "Calculator"
 msgstr "Calculadora"
 
@@ -521,8 +506,9 @@ msgstr "Mostrar o separador de millares"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:8
 msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr "Indica se o separador de millares se amosa en números longos."
+msgstr "Indica se o separador de millares se mostra en números longos."
 
+# (pofilter) accelerators: accelerator _ appears before an invalid accelerator character 'á' (eg. space)
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:9
 msgid "Show Trailing Zeroes"
 msgstr "Mostrar os ceros á esquerda"
@@ -531,7 +517,9 @@ msgstr "Mostrar os ceros á esquerda"
 msgid ""
 "Indicates whether any trailing zeroes after the numeric point should be "
 "shown in the display value."
-msgstr "Indica se no caso de haber ceros execedentes despois do punto, deberían mostrarse despois da presentación do valor."
+msgstr ""
+"Indica se no caso de haber ceros execedentes despois do punto, deberían "
+"mostrarse despois da presentación do valor."
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:11
 msgid "Number format"
@@ -573,157 +561,278 @@ msgstr "Moeda destino"
 msgid "Currency to convert the current calculation into"
 msgstr "Moeda á que converter o cálculo actual"
 
-#: ../src/currency.h:19
-msgid "Australian dollar"
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:21
+msgid "Source units"
+msgstr "Unidades de orixe"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:22
+msgid "Units of the current calculation"
+msgstr "Unidades no calculo actual"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:23
+msgid "Target units"
+msgstr "Unidades de destino"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:24
+msgid "Units to convert the current calculation into"
+msgstr "Unidades ás que converter o cálculo actual"
+
+#: ../src/currency-manager.c:30
+msgid "UAE Dirham"
+msgstr "Dirham UAE"
+
+#: ../src/currency-manager.c:31
+msgid "Australian Dollar"
 msgstr "Dólar australiano"
 
-#: ../src/currency.h:20
-msgid "Bulgarian lev"
+#: ../src/currency-manager.c:32
+msgid "Bulgarian Lev"
 msgstr "Lev búlgaro"
 
-#: ../src/currency.h:21
-msgid "Brazilian real"
+#: ../src/currency-manager.c:33
+msgid "Bahraini Dinar"
+msgstr "Dinar de Bahrein"
+
+#: ../src/currency-manager.c:34
+msgid "Brunei Dollar"
+msgstr "Dólar de Brunei"
+
+#: ../src/currency-manager.c:35
+msgid "Brazilian Real"
 msgstr "Real brasileiro"
 
-#: ../src/currency.h:22
-msgid "Canadian dollar"
+#: ../src/currency-manager.c:36
+msgid "Botswana Pula"
+msgstr "Pula de Botswana"
+
+#: ../src/currency-manager.c:37
+msgid "Canadian Dollar"
 msgstr "Dólar canadiense"
 
-#: ../src/currency.h:23
-msgid "Swiss franc"
+#: ../src/currency-manager.c:38
+msgid "CFA Franc"
+msgstr "Franco francés"
+
+#: ../src/currency-manager.c:39
+msgid "Swiss Franc"
 msgstr "Franco suizo"
 
-#: ../src/currency.h:24
-msgid "Chinese yuan renminbi"
-msgstr "Yuan renminbi chinés"
+#: ../src/currency-manager.c:40
+msgid "Chilean Peso"
+msgstr "Peso chileno"
 
-#: ../src/currency.h:25
-msgid "Czech koruna"
+#: ../src/currency-manager.c:41
+msgid "Chinese Yuan"
+msgstr "Yuan chinés"
+
+#: ../src/currency-manager.c:42
+msgid "Colombian Peso"
+msgstr "Peso colombiano"
+
+#: ../src/currency-manager.c:43
+msgid "Czech Koruna"
 msgstr "Corona checa"
 
-#: ../src/currency.h:26
-msgid "Danish krone"
+#: ../src/currency-manager.c:44
+msgid "Danish Krone"
 msgstr "Corona danesa"
 
-#: ../src/currency.h:27
-msgid "Estonian kroon"
-msgstr "Corona estonia"
+#: ../src/currency-manager.c:45
+msgid "Algerian Dinar"
+msgstr "Dinar argelí"
 
-#: ../src/currency.h:28
+#: ../src/currency-manager.c:46
+msgid "Estonian Kroon"
+msgstr "Corona estona"
+
+#: ../src/currency-manager.c:47
 msgid "Euro"
 msgstr "Euro"
 
-#: ../src/currency.h:29
-msgid "Pound sterling"
+#: ../src/currency-manager.c:48
+msgid "Pound Sterling"
 msgstr "Libra esterlina"
 
-#: ../src/currency.h:30
-msgid "Hong Kong dollar"
+#: ../src/currency-manager.c:49
+msgid "Hong Kong Dollar"
 msgstr "Dólar de Hong Kong"
 
-#: ../src/currency.h:31
-msgid "Croatian kuna"
+#: ../src/currency-manager.c:50
+msgid "Croatian Kuna"
 msgstr "Kuna croata"
 
-#: ../src/currency.h:32
-msgid "Hungarian forint"
+#: ../src/currency-manager.c:51
+msgid "Hungarian Forint"
 msgstr "Florín húngaro"
 
-#: ../src/currency.h:33
-msgid "Indonesian rupiah"
+#: ../src/currency-manager.c:52
+msgid "Indonesian Rupiah"
 msgstr "Rupia indonesia"
 
-#: ../src/currency.h:34
-msgid "Indian rupee"
-msgstr "Rupia índia"
+#: ../src/currency-manager.c:53
+msgid "Israeli New Shekel"
+msgstr "Novo Shéquel israelí"
 
-#: ../src/currency.h:35
-msgid "Icelandic krona"
+#: ../src/currency-manager.c:54
+msgid "Indian Rupee"
+msgstr "Rupia india"
+
+#: ../src/currency-manager.c:55
+msgid "Iranian Rial"
+msgstr "Real iraní"
+
+#: ../src/currency-manager.c:56
+msgid "Icelandic Krona"
 msgstr "Corona de Islandia"
 
-#: ../src/currency.h:36
-msgid "Japanese yen"
+#: ../src/currency-manager.c:57
+msgid "Japanese Yen"
 msgstr "Yen xaponés"
 
-#: ../src/currency.h:37
-msgid "South Korean won"
+#: ../src/currency-manager.c:58
+msgid "South Korean Won"
 msgstr "Wŏn de Corea do Sur"
 
-#: ../src/currency.h:38
-msgid "Lithuanian litas"
-msgstr "Litas lituana"
+#: ../src/currency-manager.c:59
+msgid "Kuwaiti Dinar"
+msgstr "Dinar de Kuwait"
 
-#: ../src/currency.h:39
-msgid "Latvian lats"
+#: ../src/currency-manager.c:60
+msgid "Kazakhstani Tenge"
+msgstr "Tenge kazajo"
+
+#: ../src/currency-manager.c:61
+msgid "Sri Lankan Rupee"
+msgstr "Rupia de Sri Lanka"
+
+#: ../src/currency-manager.c:62
+msgid "Lithuanian Litas"
+msgstr "Lita lituana"
+
+#: ../src/currency-manager.c:63
+msgid "Latvian Lats"
 msgstr "Lats letón"
 
-#: ../src/currency.h:40
-msgid "Mexican peso"
+#: ../src/currency-manager.c:64
+msgid "Libyan Dinar"
+msgstr "Dinar libio"
+
+#: ../src/currency-manager.c:65
+msgid "Mauritian Rupee"
+msgstr "Rupia mauritana"
+
+#: ../src/currency-manager.c:66
+msgid "Mexican Peso"
 msgstr "Peso mexicano"
 
-#: ../src/currency.h:41
-msgid "Malaysian ringgit"
-msgstr "Ringgit malasio"
+#: ../src/currency-manager.c:67
+msgid "Malaysian Ringgit"
+msgstr "Ringgit malaio"
 
-#: ../src/currency.h:42
-msgid "Norwegian krone"
+#: ../src/currency-manager.c:68
+msgid "Norwegian Krone"
 msgstr "Corona noruega"
 
-#: ../src/currency.h:43
-msgid "New Zealand dollar"
+#: ../src/currency-manager.c:69
+msgid "Nepalese Rupee"
+msgstr "Rupia nepalí"
+
+#: ../src/currency-manager.c:70
+msgid "New Zealand Dollar"
 msgstr "Dólar de Nova Zelanda"
 
-#: ../src/currency.h:44
-msgid "Philippine peso"
+#: ../src/currency-manager.c:71
+msgid "Omani Rial"
+msgstr "Rupia omaní"
+
+#: ../src/currency-manager.c:72
+msgid "Peruvian Nuevo Sol"
+msgstr "«Nuevo sol» peruano"
+
+#: ../src/currency-manager.c:73
+msgid "Philippine Peso"
 msgstr "Peso filipino"
 
-#: ../src/currency.h:45
-msgid "Polish zloty"
+#: ../src/currency-manager.c:74
+msgid "Pakistani Rupee"
+msgstr "Rupia pakistaní"
+
+#: ../src/currency-manager.c:75
+msgid "Polish Zloty"
 msgstr "Zloty polaco"
 
-#: ../src/currency.h:46
-msgid "New Romanian leu"
+#: ../src/currency-manager.c:76
+msgid "Qatari Riyal"
+msgstr "Real qatarí"
+
+#: ../src/currency-manager.c:77
+msgid "New Romanian Leu"
 msgstr "Novo leu rumano"
 
-#: ../src/currency.h:47
-msgid "Russian rouble"
+#: ../src/currency-manager.c:78
+msgid "Russian Rouble"
 msgstr "Rublo ruso"
 
-#: ../src/currency.h:48
-msgid "Swedish krona"
+#: ../src/currency-manager.c:79
+msgid "Saudi Riyal"
+msgstr "Riyal saudí"
+
+#: ../src/currency-manager.c:80
+msgid "Swedish Krona"
 msgstr "Corona sueca"
 
-#: ../src/currency.h:49
-msgid "Singapore dollar"
+#: ../src/currency-manager.c:81
+msgid "Singapore Dollar"
 msgstr "Dólar de Singapur"
 
-#: ../src/currency.h:50
-msgid "Thai baht"
+#: ../src/currency-manager.c:82
+msgid "Thai Baht"
 msgstr "Baht tailandés"
 
-#: ../src/currency.h:51
-msgid "New Turkish lira"
+#: ../src/currency-manager.c:83
+msgid "Tunisian Dinar"
+msgstr "Dinar tunecino"
+
+#: ../src/currency-manager.c:84
+msgid "New Turkish Lira"
 msgstr "Lira de Nova Turquía"
 
-#: ../src/currency.h:52
-msgid "US dollar"
+#: ../src/currency-manager.c:85
+msgid "T&T Dollar (TTD)"
+msgstr "Dólar de Trinidade e Tobago"
+
+#: ../src/currency-manager.c:86
+msgid "US Dollar"
 msgstr "Dólar estadounidense"
 
-#: ../src/currency.h:53
-msgid "South African rand"
-msgstr "Rand de Sur África"
+#: ../src/currency-manager.c:87
+msgid "Uruguayan Peso"
+msgstr "Peso uruguaio"
+
+#: ../src/currency-manager.c:88
+msgid "Venezuelan Bolívar"
+msgstr "Bolívar venezolano"
+
+#: ../src/currency-manager.c:89
+msgid "South African Rand"
+msgstr "Rand de Sudáfrica"
+
+#: ../src/financial.c:70
+msgid "Error: the number of periods must be positive"
+msgstr "Erro: o número de períodos debe ser positivo"
 
 #. Description on how to use mate-calc displayed on command-line
-#: ../src/mate-calc.c:76
+#: ../src/mate-calc.c:79
 #, c-format
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr "Uso:\n  %s — Realiza cálculos matemáticos"
+msgstr ""
+"Uso:\n"
+"  %s — Realiza cálculos matemáticos"
 
-#. Description on mate-calc command-line help options displayed on command-
-#. line
-#: ../src/mate-calc.c:84
+#. Description on mate-calc command-line help options displayed on command-line
+#: ../src/mate-calc.c:87
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -731,356 +840,427 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr "Opcións de axuda:\n  -v, --version                   Mostra o númeoro de versión\n  -h, -?, --help                  Mostra as opción de axuda\n  --help-all                      Mostra todas as opcións de axuda\n  --help-gtk                     Mostra as opcións GTK+ "
+msgstr ""
+"Opcións de axuda:\n"
+"  -v, --version                   Mostra o númeoro de versión\n"
+"  -h, -?, --help                  Mostra as opción de axuda\n"
+"  --help-all                      Mostra todas as opcións de axuda\n"
+"  --help-gtk                     Mostra as opcións GTK+ "
 
-#. Description on mate-calc command-line GTK+ options displayed on command-
-#. line
-#: ../src/mate-calc.c:95
+#. Description on mate-calc command-line GTK+ options displayed on command-line
+#: ../src/mate-calc.c:98
 #, c-format
 msgid ""
 "GTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window manager\n"
-"  --name=NAME                     Program name as used by the window manager\n"
+"  --class=CLASS                   Program class as used by the window "
+"manager\n"
+"  --name=NAME                     Program name as used by the window "
+"manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr "Opcións GTK+ \n  --class=CLASS                   Clase de programa tal e como o usa o xestor de xanelas\n  --name=NAME                   Nome de programa tal e como o usa o xestor de xanelas\n  --screen=SCREEN                Pantalla X para usar\n  --sync                          Facer síncronas as chamadas a X \n  --gtk-module=MODULES            Cargar módulos GTK+ adicionais\n  --g-fatal-warnings              Fai que todos os avisos sexan fatais"
+msgstr ""
+"Opcións GTK+ \n"
+"  --class=CLASS                   Clase de programa tal e como o usa o "
+"xestor de xanelas\n"
+"  --name=NAME                   Nome de programa tal e como o usa o xestor "
+"de xanelas\n"
+"  --screen=SCREEN                Pantalla X para usar\n"
+"  --sync                          Facer síncronas as chamadas a X \n"
+"  --gtk-module=MODULES            Cargar módulos GTK+ adicionais\n"
+"  --g-fatal-warnings              Fai que todos os avisos sexan fatais"
 
 #. Description on mate-calc application options displayed on command-line
-#: ../src/mate-calc.c:109
+#: ../src/mate-calc.c:112
 #, c-format
 msgid ""
 "Application Options:\n"
-"  -u, --unittest                  Perform unit tests\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr "Opcións do aplicativo:\n  -u, --unittest                  Realiza test de unitarios\n  -s, --solve <equation>          Resolve a ecuación dada"
+msgstr ""
+"Opcións do aplicativo:\n"
+"  -s, --solve <equation>          Resolve a ecuación dada"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: ../src/mate-calc.c:154
+#: ../src/mate-calc.c:156
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "O argumento --solve require unha ecuación para resolver"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: ../src/mate-calc.c:168
+#: ../src/mate-calc.c:166
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "Argumento descoñecido '%s'"
 
+#. Translators: Error message displayed when unable to launch help browser
+#: ../src/mate-calc.c:358
+msgid "Unable to open help file"
+msgstr "Non é posíbel abrir o ficheiro da axuda"
+
+#. The translator credits. Please translate this with your name(s).
+#: ../src/mate-calc.c:390
+msgid "translator-credits"
+msgstr ""
+"Fran Diéguez <frandieguez@ubuntu.com>, 2009, 2010.\n"
+"Antón Méixome <meixome@certima.net>, 2010.\n"
+"Antón Méixome <meixome@mancomun.org>, 2009.\n"
+"Mancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun."
+"org>, 2009.\n"
+"Ignacio Casal Quinteiro <icq@gnome.org>, 2004, 2005, 2006, 2007, 2008."
+
+#. The license this software is under (GPL2+)
+#: ../src/mate-calc.c:393
+msgid ""
+"Gcalctool is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"Gcalctool is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with Gcalctool; if not, write to the Free Software Foundation, Inc.,\n"
+"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr ""
+"O GCalctool é software libre, pode redistribuílo ou modificalo \n"
+"baixo os termos da Licenza pública xeral GNU tal como a publica\n"
+" a Free Software Foundation; tanto na versión 2 da Licenza como \n"
+"(segundo o seu criterio) en calquera versión posterior.\n"
+"\n"
+"O Gcalctool distribúese esperando que sexa útil, \n"
+"mais SEN NINGUNHA GARANTÍA; mesmo sen a garantía implícita\n"
+"de VALOR COMERCIAL ou ADECUACIÓN PARA UN PROPÓSITO PARTICULAR.\n"
+"Para máis detalles vexa a Licenza pública xeral GNU.\n"
+"\n"
+"Debeu recibir unha copia da Licenza pública xeral GNU \n"
+"xunto co Gcalctool; en caso contrario, escriba á Free Software Foundation,"
+"Inc.,\n"
+"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+
+#. Program name in the about dialog
+#: ../src/mate-calc.c:410
+msgid "Gcalctool"
+msgstr "Gcalctool"
+
+#. Copyright notice in the about dialog
+#: ../src/mate-calc.c:414
+msgid "© 1986–2010 The Gcalctool authors"
+msgstr "© 1986-2010 Os autores do Gcalctool"
+
+#. Short description in the about dialog
+#: ../src/mate-calc.c:418
+msgid "Calculator with financial and scientific modes."
+msgstr "Calculadora con modo financeiro e científico."
+
+#: ../src/mate-calc.c:515
+msgid "Basic"
+msgstr "Básico"
+
+#: ../src/mate-calc.c:516
+msgid "Advanced"
+msgstr "Avanzado"
+
+#: ../src/mate-calc.c:517
+msgid "Financial"
+msgstr "Financeiro"
+
+#: ../src/mate-calc.c:518
+msgid "Programming"
+msgstr "Programación"
+
+#: ../src/mate-calc.c:519
+msgid "Mode"
+msgstr "(Modo)"
+
+#: ../src/mate-calc.c:526
+msgid "About Calculator"
+msgstr "Sobre Calculadora"
+
+#: ../src/mate-calc.c:527
+msgid "Help"
+msgstr "Axuda"
+
+#: ../src/mate-calc.c:528
+msgid "Quit"
+msgstr "Saír"
+
 #. Tooltip for the Pi button
-#: ../src/math-buttons.c:106
+#: ../src/math-buttons.c:94
 msgid "Pi [Ctrl+P]"
 msgstr "Pi [Ctrl+P]"
 
 #. Tooltip for the Euler's Number button
-#: ../src/math-buttons.c:109
+#: ../src/math-buttons.c:97
 msgid "Euler’s Number"
 msgstr "Número de Euler"
 
 #. Tooltip for the subscript button
-#: ../src/math-buttons.c:114
+#: ../src/math-buttons.c:102
 msgid "Subscript mode [Alt]"
 msgstr "Modo de número subscrito [Alt]"
 
 #. Tooltip for the superscript button
-#: ../src/math-buttons.c:117
+#: ../src/math-buttons.c:105
 msgid "Superscript mode [Ctrl]"
 msgstr "Modo de número superescrito [Ctrl]"
 
 #. Tooltip for the scientific exponent button
-#: ../src/math-buttons.c:120
+#: ../src/math-buttons.c:108
 msgid "Scientific exponent [Ctrl+E]"
 msgstr "Expoñente científico [Ctrl+E]"
 
 #. Tooltip for the add button
-#: ../src/math-buttons.c:123
+#: ../src/math-buttons.c:111
 msgid "Add [+]"
 msgstr "Sumar [+]"
 
 #. Tooltip for the subtract button
-#: ../src/math-buttons.c:126
+#: ../src/math-buttons.c:114
 msgid "Subtract [-]"
 msgstr "Restar [-]"
 
 #. Tooltip for the multiply button
-#: ../src/math-buttons.c:129
+#: ../src/math-buttons.c:117
 msgid "Multiply [*]"
 msgstr "Multiplicar [*]"
 
 #. Tooltip for the divide button
-#: ../src/math-buttons.c:132
+#: ../src/math-buttons.c:120
 msgid "Divide [/]"
 msgstr "Dividir [/]"
 
 #. Tooltip for the modulus divide button
-#: ../src/math-buttons.c:135
+#: ../src/math-buttons.c:123
 msgid "Modulus divide"
 msgstr "División de módulo"
 
 #. Tooltip for the additional functions button
-#: ../src/math-buttons.c:138
+#: ../src/math-buttons.c:126
 msgid "Additional Functions"
 msgstr "Funcións adicionais"
 
 #. Tooltip for the exponent button
-#: ../src/math-buttons.c:141
+#: ../src/math-buttons.c:129
 msgid "Exponent [^ or **]"
 msgstr "Exponente [^ or **]"
 
 #. Tooltip for the square button
-#: ../src/math-buttons.c:144
+#: ../src/math-buttons.c:132
 msgid "Square [Ctrl+2]"
 msgstr "Cadrado [Ctrl+2]"
 
 #. Tooltip for the percentage button
-#: ../src/math-buttons.c:147
+#: ../src/math-buttons.c:135
 msgid "Percentage [%]"
 msgstr "Porcentaxe [%]"
 
 #. Tooltip for the factorial button
-#: ../src/math-buttons.c:150
+#: ../src/math-buttons.c:138
 msgid "Factorial [!]"
 msgstr "Factorial [!]"
 
 #. Tooltip for the absolute value button
-#: ../src/math-buttons.c:153
+#: ../src/math-buttons.c:141
 msgid "Absolute value [|]"
 msgstr "Valor absoluto [|]"
 
 #. Tooltip for the complex argument component button
-#: ../src/math-buttons.c:156
+#: ../src/math-buttons.c:144
 msgid "Complex argument"
 msgstr "Argumento complexo"
 
 #. Tooltip for the complex conjugate button
-#: ../src/math-buttons.c:159
+#: ../src/math-buttons.c:147
 msgid "Complex conjugate"
 msgstr "Conxugar complexo"
 
 #. Tooltip for the root button
-#: ../src/math-buttons.c:162
+#: ../src/math-buttons.c:150
 msgid "Root [Ctrl+R]"
 msgstr "Raíz [Ctrl+R]"
 
 #. Tooltip for the square root button
-#: ../src/math-buttons.c:165
+#: ../src/math-buttons.c:153
 msgid "Square root [Ctrl+R]"
 msgstr "Raíz cadrada [Ctrl+R]"
 
 #. Tooltip for the logarithm button
-#: ../src/math-buttons.c:168
+#: ../src/math-buttons.c:156
 msgid "Logarithm"
 msgstr "Logaritmo"
 
 #. Tooltip for the natural logarithm button
-#: ../src/math-buttons.c:171
+#: ../src/math-buttons.c:159
 msgid "Natural Logarithm"
 msgstr "Logaritmo natural"
 
 #. Tooltip for the sine button
-#: ../src/math-buttons.c:174
+#: ../src/math-buttons.c:162
 msgid "Sine"
 msgstr "Seno"
 
 #. Tooltip for the cosine button
-#: ../src/math-buttons.c:177
+#: ../src/math-buttons.c:165
 msgid "Cosine"
 msgstr "Coseno"
 
 #. Tooltip for the tangent button
-#: ../src/math-buttons.c:180
+#: ../src/math-buttons.c:168
 msgid "Tangent"
 msgstr "Tanxente"
 
 #. Tooltip for the hyperbolic sine button
-#: ../src/math-buttons.c:183
+#: ../src/math-buttons.c:171
 msgid "Hyperbolic Sine"
 msgstr "Seno hiperbólico"
 
 #. Tooltip for the hyperbolic cosine button
-#: ../src/math-buttons.c:186
+#: ../src/math-buttons.c:174
 msgid "Hyperbolic Cosine"
 msgstr "Coseno hiperbólico"
 
 #. Tooltip for the hyperbolic tangent button
-#: ../src/math-buttons.c:189
+#: ../src/math-buttons.c:177
 msgid "Hyperbolic Tangent"
 msgstr "Tanxente hiperbólica"
 
 #. Tooltip for the inverse button
-#: ../src/math-buttons.c:192
+#: ../src/math-buttons.c:180
 msgid "Inverse [Ctrl+I]"
 msgstr "Inverter [K]"
 
 #. Tooltip for the boolean AND button
-#: ../src/math-buttons.c:195
+#: ../src/math-buttons.c:183
 msgid "Boolean AND"
 msgstr "Booleano AND"
 
 #. Tooltip for the boolean OR button
-#: ../src/math-buttons.c:198
+#: ../src/math-buttons.c:186
 msgid "Boolean OR"
 msgstr "Booleano OR"
 
 #. Tooltip for the exclusive OR button
-#: ../src/math-buttons.c:201
+#: ../src/math-buttons.c:189
 msgid "Boolean Exclusive OR"
 msgstr "Booleano OR exclusivo"
 
 #. Tooltip for the boolean NOT button
-#: ../src/math-buttons.c:204
+#: ../src/math-buttons.c:192
 msgid "Boolean NOT"
 msgstr "Booleano NOT"
 
 #. Tooltip for the integer component button
-#: ../src/math-buttons.c:207 ../src/math-buttons.c:1445
+#: ../src/math-buttons.c:195 ../src/math-buttons.c:983
 msgid "Integer Component"
 msgstr "Compoñente enteiro"
 
 #. Tooltip for the fractional component button
-#: ../src/math-buttons.c:210 ../src/math-buttons.c:1447
+#: ../src/math-buttons.c:198 ../src/math-buttons.c:985
 msgid "Fractional Component"
 msgstr "Comproñente fraccional"
 
 #. Tooltip for the real component button
-#: ../src/math-buttons.c:213
+#: ../src/math-buttons.c:201
 msgid "Real Component"
 msgstr "Compoñente real"
 
 #. Tooltip for the imaginary component button
-#: ../src/math-buttons.c:216
+#: ../src/math-buttons.c:204
 msgid "Imaginary Component"
 msgstr "Compoñente imaxinario"
 
-#. Tooltip for the ones complement button
-#: ../src/math-buttons.c:219
-msgid "Ones Complement"
+#. Tooltip for the ones' complement button
+#: ../src/math-buttons.c:207
+msgid "Ones' Complement"
 msgstr "Complemento a 1"
 
-#. Tooltip for the twos complement button
-#: ../src/math-buttons.c:222
-msgid "Twos Complement"
+#. Tooltip for the two's complement button
+#: ../src/math-buttons.c:210
+msgid "Two's Complement"
 msgstr "Complemento a 2"
 
 #. Tooltip for the truncate button
-#: ../src/math-buttons.c:225
+#: ../src/math-buttons.c:213
 msgid "Truncate"
 msgstr "Truncar"
 
 #. Tooltip for the start group button
-#: ../src/math-buttons.c:228
+#: ../src/math-buttons.c:216
 msgid "Start Group [(]"
 msgstr "Comezo de grupo [(]"
 
 #. Tooltip for the end group button
-#: ../src/math-buttons.c:231
+#: ../src/math-buttons.c:219
 msgid "End Group [)]"
 msgstr "Final de grupo [)]"
 
-#. Tooltip for the assign variable button
-#: ../src/math-buttons.c:234
-msgid "Assign Variable"
-msgstr "Asignar variábel"
-
-#. Tooltip for the insert variable button
-#: ../src/math-buttons.c:237
-msgid "Insert Variable"
-msgstr "Inserir variábel"
-
 #. Tooltip for the solve button
-#: ../src/math-buttons.c:243
+#: ../src/math-buttons.c:228
 msgid "Calculate Result"
 msgstr "Calcular o resultado"
 
 #. Tooltip for the factor button
-#: ../src/math-buttons.c:246
+#: ../src/math-buttons.c:231
 msgid "Factorize [Ctrl+F]"
 msgstr "Factorizar [Ctrl+F]"
 
 #. Tooltip for the clear button
-#: ../src/math-buttons.c:249
+#: ../src/math-buttons.c:234
 msgid "Clear Display [Escape]"
 msgstr "Limpar a visualización [Escape]"
 
 #. Tooltip for the undo button
-#: ../src/math-buttons.c:252
+#: ../src/math-buttons.c:237
 msgid "Undo [Ctrl+Z]"
 msgstr "Desfacer [Ctrl+Z]"
 
 #. Tooltip for the double declining depreciation button
-#: ../src/math-buttons.c:264
+#: ../src/math-buttons.c:249
 msgid "Double Declining Depreciation"
 msgstr "Depreciación declinante dobre"
 
 #. Tooltip for the financial term button
-#: ../src/math-buttons.c:270
+#: ../src/math-buttons.c:255
 msgid "Financial Term"
 msgstr "Termo financeiro"
 
 #. Tooltip for the sum of the years digits depreciation button
-#: ../src/math-buttons.c:273
+#: ../src/math-buttons.c:258
 msgid "Sum of the Years Digits Depreciation"
 msgstr "Depreciación pola suma dos díxitos dos anos"
 
 #. Tooltip for the straight line depreciation button
-#: ../src/math-buttons.c:276
+#: ../src/math-buttons.c:261
 msgid "Straight Line Depreciation"
 msgstr "Depreciación lineal directa"
 
-#. Advanced buttons: Angle unit combo box: Use degrees for trigonometric
-#. calculations
-#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
-#. calculations
-#: ../src/math-buttons.c:895 ../src/math-preferences.c:255
-msgid "Degrees"
-msgstr "Graos"
-
-#. Advanced buttons: Angle unit combo box: Use radians for trigonometric
-#. calculations
-#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
-#. calculations
-#: ../src/math-buttons.c:899 ../src/math-preferences.c:259
-msgid "Radians"
-msgstr "Radiáns"
-
-#. Advanced buttons: Angle unit combo box: Use gradians for trigonometric
-#. calculations
-#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
-#. calculations
-#: ../src/math-buttons.c:903 ../src/math-preferences.c:263
-msgid "Gradians"
-msgstr "Gradiáns"
-
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: ../src/math-buttons.c:937
+#: ../src/math-buttons.c:601
 msgid "Binary"
 msgstr "Binario"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: ../src/math-buttons.c:941
+#: ../src/math-buttons.c:605
 msgid "Octal"
 msgstr "Octal"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: ../src/math-buttons.c:945
+#: ../src/math-buttons.c:609
 msgid "Decimal"
 msgstr "Decimal"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: ../src/math-buttons.c:949
+#: ../src/math-buttons.c:613
 msgid "Hexadecimal"
 msgstr "Hexadecimal"
 
-#. Text shown in store menu when no variables defined
-#. Text shown in recall menu when no variables defined
-#: ../src/math-buttons.c:1266 ../src/math-buttons.c:1312
-msgid "No variables defined"
-msgstr "Non hai variábeis definidas"
-
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: ../src/math-buttons.c:1355 ../src/math-buttons.c:1399
+#: ../src/math-buttons.c:894 ../src/math-buttons.c:937
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
@@ -1089,7 +1269,7 @@ msgstr[1] "_%d posicións"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: ../src/math-buttons.c:1359 ../src/math-buttons.c:1403
+#: ../src/math-buttons.c:898 ../src/math-buttons.c:941
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
@@ -1097,294 +1277,1303 @@ msgstr[0] "%d posición"
 msgstr[1] "%d posicións"
 
 #. Tooltip for the round button
-#: ../src/math-buttons.c:1449
+#: ../src/math-buttons.c:987
 msgid "Round"
 msgstr "Redondear"
 
 #. Tooltip for the floor button
-#: ../src/math-buttons.c:1451
+#: ../src/math-buttons.c:989
 msgid "Floor"
 msgstr "Redondear cara abaixo"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:1453
+#: ../src/math-buttons.c:991
 msgid "Ceiling"
 msgstr "Redondear cara arriba"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:1455
+#: ../src/math-buttons.c:993
 msgid "Sign"
 msgstr "Signo"
 
+#. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
+#: ../src/math-converter.c:412
+msgid " in "
+msgstr "en"
+
+#. Tooltip for swap conversion button
+#: ../src/math-converter.c:427
+msgid "Switch conversion units"
+msgstr "Cambiar unidades de conversión"
+
 #. Error shown when trying to undo with no undo history
-#: ../src/math-equation.c:496
+#: ../src/math-equation.c:459
 msgid "No undo history"
 msgstr "Non hai historial de desfacer"
 
 #. Error shown when trying to redo with no redo history
-#: ../src/math-equation.c:521
+#: ../src/math-equation.c:486
 msgid "No redo history"
 msgstr "Non hai historial de refacer"
 
-#: ../src/math-equation.c:845
+#: ../src/math-equation.c:944
 msgid "No sane value to store"
 msgstr "Non hai un valor lóxico para almacenar"
 
-#. Error displayed to user when they perform a bitwise operation on numbers
-#. greater than the current word
-#: ../src/math-equation.c:1105
+#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
+#: ../src/math-equation.c:1226
 msgid "Overflow. Try a bigger word size"
 msgstr "Desbordamento de búfer. Probe cun tamaño maior da palabra"
 
 #. Error displayed to user when they an unknown variable is entered
-#: ../src/math-equation.c:1110
+#: ../src/math-equation.c:1231
 #, c-format
 msgid "Unknown variable '%s'"
 msgstr "Variábel descoñecida '%s'"
 
 #. Error displayed to user when an unknown function is entered
-#: ../src/math-equation.c:1115
+#: ../src/math-equation.c:1236
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr "A función '%s' non está definida"
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: ../src/math-equation.c:1120
+#: ../src/math-equation.c:1241
 msgid "Unknown conversion"
 msgstr "Conversión descoñecida"
 
+#. Uncategorized error. Show error token to user
+#: ../src/math-equation.c:1249
+#, c-format
+msgid "Malformed expression at token '%s'"
+msgstr "Expresión formada incorrectamente no token «%s»"
+
+#. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: ../src/math-equation.c:1129
+#: ../src/math-equation.c:1252 ../src/math-equation.c:1257
 msgid "Malformed expression"
 msgstr "Expresión formada incorrectamente"
 
+#: ../src/math-equation.c:1271
+msgid "Calculating"
+msgstr "Calculando"
+
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1152
+#: ../src/math-equation.c:1387
 msgid "Need an integer to factorize"
 msgstr "Necesítase un enteiro para factorizar"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1229
+#: ../src/math-equation.c:1459
 msgid "No sane value to bitwise shift"
 msgstr "Non hai un valor lóxico para o desprazamento de bit a bit"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1258
+#: ../src/math-equation.c:1490
 msgid "Displayed value not an integer"
 msgstr "O valor mostrado non é un enteiro "
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1648
+#: ../src/math-equation.c:1915
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
 #. Label on close button in preferences dialog
-#: ../src/math-preferences.c:245
+#: ../src/math-preferences.c:235
 msgid "_Close"
 msgstr "_Pechar"
 
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
+#: ../src/math-preferences.c:245 ../src/unit-manager.c:54
+msgid "Degrees"
+msgstr "Graos"
+
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
+#: ../src/math-preferences.c:249 ../src/unit-manager.c:55
+msgid "Radians"
+msgstr "Radiáns"
+
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
+#: ../src/math-preferences.c:253 ../src/unit-manager.c:56
+msgid "Gradians"
+msgstr "Gradiáns"
+
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
+#: ../src/math-preferences.c:263
+msgid "Automatic"
+msgstr "Automático"
+
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:273
+#: ../src/math-preferences.c:267
 msgid "Fixed"
 msgstr "Fixado"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:277
+#: ../src/math-preferences.c:271
 msgid "Scientific"
 msgstr "Científico"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:281
+#: ../src/math-preferences.c:275
 msgid "Engineering"
 msgstr "Enxeñaría"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:292
+#: ../src/math-preferences.c:286
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "Mostrar %d _posicións decimais"
 
-#. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:161
-msgid "Unable to open help file"
-msgstr "Non é posíbel abrir o ficheiro da axuda"
-
-#. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:188
-msgid "translator-credits"
-msgstr "Fran Diéguez <frandieguez@ubuntu.com>, 2009, 2010.\nAntón Méixome <meixome@certima.net>, 2010.\nAntón Méixome <meixome@mancomun.org>, 2009.\nMancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun.org>, 2009.\nIgnacio Casal Quinteiro <icq@gnome.org>, 2004, 2005, 2006, 2007, 2008."
-
-#. The license this software is under (GPL2+)
-#: ../src/math-window.c:194
-msgid ""
-"mate-calc is free software; you can redistribute it and/or modify\n"
-"it under the terms of the GNU General Public License as published by\n"
-"the Free Software Foundation; either version 2 of the License, or\n"
-"(at your option) any later version.\n"
-"\n"
-"mate-calc is distributed in the hope that it will be useful,\n"
-"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License\n"
-"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
-"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr "O mate-calc é software libre, pode redistribuílo ou modificalo \nbaixo os termos da Licenza pública xeral GNU tal como a publica\n a Free Software Foundation; tanto na versión 2 da Licenza como \n(segundo o seu criterio) en calquera versión posterior.\n\nO mate-calc distribúese esperando que sexa útil, \nmais SEN NINGUNHA GARANTÍA; mesmo sen a garantía implícita\nde VALOR COMERCIAL ou ADECUACIÓN PARA UN PROPÓSITO PARTICULAR.\nPara máis detalles vexa a Licenza pública xeral GNU.\n\nDebeu recibir unha copia da Licenza pública xeral GNU \nxunto co mate-calc; en caso contrario, escriba á Free Software Foundation,Inc.,\n51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-
-#: ../src/math-window.c:209
-msgid "mate-calc"
-msgstr "mate-calc"
-
-#: ../src/math-window.c:213
-msgid "Calculator with financial and scientific modes."
-msgstr "Calculadora con modo financeiro e científico."
-
-#. Calculator menu
-#: ../src/math-window.c:346
-msgid "_Calculator"
-msgstr "_Calculadora"
-
-#. Mode menu
-#: ../src/math-window.c:348
-msgid "_Mode"
-msgstr "_Modo"
-
-#. Help menu label
-#: ../src/math-window.c:350
-msgid "_Help"
-msgstr "_Axuda"
-
-#. Basic menu label
-#: ../src/math-window.c:352
-msgid "_Basic"
-msgstr "_Básico"
-
-#. Advanced menu label
-#: ../src/math-window.c:354
-msgid "_Advanced"
-msgstr "_Avanzado"
-
-#. Financial menu label
-#: ../src/math-window.c:356
-msgid "_Financial"
-msgstr "_Financeiro"
-
-#. Programming menu label
-#: ../src/math-window.c:358
-msgid "_Programming"
-msgstr "_Programación"
-
-#. Help>Contents menu label
-#: ../src/math-window.c:360
-msgid "_Contents"
-msgstr "_Contidos"
-
-#. Translators: Error displayed when boolean AND attempted on non-integer
-#. values
-#: ../src/mp-binary.c:103
+#. Translators: Error displayed when boolean AND attempted on non-integer values
+#: ../src/mp-binary.c:115
 msgid "Boolean AND is only defined for positive integers"
 msgstr "O booleano AND só está definido para os enteiros positivos"
 
-#. Translators: Error displayed when boolean OR attempted on non-integer
-#. values
-#: ../src/mp-binary.c:116
+#. Translators: Error displayed when boolean OR attempted on non-integer values
+#: ../src/mp-binary.c:128
 msgid "Boolean OR is only defined for positive integers"
 msgstr "O booleano OR so está definido para os enteiros positivos"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer
-#. values
-#: ../src/mp-binary.c:129
+#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#: ../src/mp-binary.c:141
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "O booleano XOR só está definido para os enteiros positivos"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer
-#. values
-#: ../src/mp-binary.c:144
+#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#: ../src/mp-binary.c:156
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "O booleano NOT só está definido para os enteiros positivos"
 
 #. Translators: Error displayed when bit shift attempted on non-integer values
-#: ../src/mp-binary.c:174
+#: ../src/mp-binary.c:187
 msgid "Shift is only possible on integer values"
 msgstr "O desprazamento só está dispoñíbel para os valores enteiros"
 
 #. Translators: Error display when attempting to take argument of zero
-#: ../src/mp.c:149
+#: ../src/mp.c:148
 msgid "Argument not defined for zero"
 msgstr "Argumento non definido a cero"
 
+#: ../src/mp.c:299
+msgid "Overflow: the result couldn't be calculated"
+msgstr "Desbordamento: non foi posíbel calcular o resultado"
+
 #. Translators: Error displayed attempted to divide by zero
-#: ../src/mp.c:636 ../src/mp.c:668 ../src/mp.c:1602
+#: ../src/mp.c:644 ../src/mp.c:676 ../src/mp.c:1605
 msgid "Division by zero is undefined"
 msgstr "A división por cero non está definida"
 
 #. Translators: Error displayed when attempting to take logarithm of zero
-#: ../src/mp.c:1273 ../src/mp.c:1310
+#: ../src/mp.c:1276 ../src/mp.c:1313
 msgid "Logarithm of zero is undefined"
 msgstr "O logaritmo de cero non está definido"
 
-#. Translators: Error displayed when attempted to raise 0 to a negative
-#. exponent
-#: ../src/mp.c:1675 ../src/mp.c:1990
+#. Translators: Error displayed when attempted to raise 0 to a negative exponent
+#: ../src/mp.c:1680 ../src/mp.c:1994
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "A potencia de cero non está definida para un expoñente negativo"
 
-#: ../src/mp.c:1700
+#: ../src/mp.c:1704
 msgid "Reciprocal of zero is undefined"
 msgstr "A reciprocidade de cero non está definida"
 
-#: ../src/mp.c:1785
+#: ../src/mp.c:1789
 msgid "Root must be non-zero"
 msgstr "A raíz non debe ser cero"
 
-#: ../src/mp.c:1803
+#: ../src/mp.c:1807
 msgid "Negative root of zero is undefined"
 msgstr "A raíz negativa de cero non está definida"
 
-#: ../src/mp.c:1809
+#: ../src/mp.c:1813
 msgid "nth root of negative number is undefined for even n"
-msgstr "A raíz n-ésima dun valor negativo non está definida para os valores pares de n"
+msgstr ""
+"A raíz n-ésima dun valor negativo non está definida para os valores pares de "
+"n"
 
-#. Translators: Error displayed when attempted take the factorial of a
-#. fractional number
-#: ../src/mp.c:1930
+#. Translators: Error displayed when attempted take the factorial of a fractional number
+#: ../src/mp.c:1934
 msgid "Factorial is only defined for natural numbers"
 msgstr "O factorial só está definido para os número naturais"
 
-#. Translators: Error displayed when attemping to do a modulus division on
-#. non-integer numbers
-#: ../src/mp.c:1950
+#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
+#: ../src/mp.c:1954
 msgid "Modulus division is only defined for integers"
 msgstr "A división de módulo só está definida para enteiros"
 
 #. Translators: Error displayed when tangent value is undefined
-#: ../src/mp-trigonometric.c:311
+#: ../src/mp-trigonometric.c:310
 msgid ""
-"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
-"(90°)"
-msgstr "A tanxente non está definida para os ángulos que son múltiplos de π (180°) desde π∕2 (90°)"
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
+msgstr ""
+"A tanxente non está definida para os ángulos que son múltiplos de π (180°) "
+"desde π∕2 (90°)"
 
 #. Translators: Error displayed when inverse sine value is undefined
-#: ../src/mp-trigonometric.c:356
+#: ../src/mp-trigonometric.c:355
 msgid "Inverse sine is undefined for values outside [-1, 1]"
 msgstr "O seno inverso non está definido para os valores externos a [-1, 1]"
 
 #. Translators: Error displayed when inverse cosine value is undefined
-#: ../src/mp-trigonometric.c:373
+#: ../src/mp-trigonometric.c:372
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
 msgstr "O coseno inverso non está definido para os valores externos a [-1, 1]"
 
-#. Translators: Error displayed when inverse hyperbolic cosine value is
-#. undefined
+#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
 #: ../src/mp-trigonometric.c:591
-msgid ""
-"Inverse hyperbolic cosine is undefined for values less than or equal to one"
-msgstr "O coseno inverso da hipérbole non está definido para valores inferiores ou iguais a un"
+msgid "Inverse hyperbolic cosine is undefined for values less than one"
+msgstr ""
+"A inversa do coseno hiperbólico non está definido para valores menores que "
+"un."
 
-#. Translators: Error displayed when inverse hyperbolic tangent value is
-#. undefined
+#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
 #: ../src/mp-trigonometric.c:615
 msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
-msgstr "A tanxente hiperbólica inversa non está definida para os valores fóra de [-1, 1]"
+msgstr ""
+"A tanxente hiperbólica inversa non está definida para os valores fóra de "
+"[-1, 1]"
+
+#: ../src/unit-manager.c:54
+#, c-format
+msgctxt "unit-format"
+msgid "%s degrees"
+msgstr "%s graos"
+
+#: ../src/unit-manager.c:54
+msgctxt "unit-symbols"
+msgid "degree,degrees,deg"
+msgstr "grao,graos,gra"
+
+#: ../src/unit-manager.c:55
+#, c-format
+msgctxt "unit-format"
+msgid "%s radians"
+msgstr "%s radiáns"
+
+#: ../src/unit-manager.c:55
+msgctxt "unit-symbols"
+msgid "radian,radians,rad"
+msgstr "radián,radiáns,rad"
+
+#: ../src/unit-manager.c:56
+#, c-format
+msgctxt "unit-format"
+msgid "%s gradians"
+msgstr "%s gradiáns"
+
+#: ../src/unit-manager.c:56
+msgctxt "unit-symbols"
+msgid "gradian,gradians,grad"
+msgstr "gradián,gradiáns,grad"
+
+#: ../src/unit-manager.c:57
+msgid "Parsecs"
+msgstr "Pársecs"
+
+#: ../src/unit-manager.c:57
+#, c-format
+msgctxt "unit-format"
+msgid "%s pc"
+msgstr "%s pc"
+
+#: ../src/unit-manager.c:57
+msgctxt "unit-symbols"
+msgid "parsec,parsecs,pc"
+msgstr "pársec,pársecs,pc"
+
+#: ../src/unit-manager.c:58
+msgid "Light Years"
+msgstr "Anos luz"
+
+#: ../src/unit-manager.c:58
+#, c-format
+msgctxt "unit-format"
+msgid "%s ly"
+msgstr "%s al"
+
+#: ../src/unit-manager.c:58
+msgctxt "unit-symbols"
+msgid "lightyear,lightyears,ly"
+msgstr "ano luz,anos luz,al"
+
+#: ../src/unit-manager.c:59
+msgid "Astronomical Units"
+msgstr "Unidades astronómicas"
+
+#: ../src/unit-manager.c:59
+#, c-format
+msgctxt "unit-format"
+msgid "%s au"
+msgstr "%s ua"
+
+#: ../src/unit-manager.c:59
+msgctxt "unit-symbols"
+msgid "au"
+msgstr "ua"
+
+#: ../src/unit-manager.c:60
+msgid "Nautical Miles"
+msgstr "Millas náuticas"
+
+#: ../src/unit-manager.c:60
+#, c-format
+msgctxt "unit-format"
+msgid "%s nmi"
+msgstr "%s mni"
+
+#: ../src/unit-manager.c:60
+msgctxt "unit-symbols"
+msgid "nmi"
+msgstr "mni"
+
+#: ../src/unit-manager.c:61
+msgid "Miles"
+msgstr "Millas"
+
+#: ../src/unit-manager.c:61
+#, c-format
+msgctxt "unit-format"
+msgid "%s mi"
+msgstr "%s mi"
+
+#: ../src/unit-manager.c:61
+msgctxt "unit-symbols"
+msgid "mile,miles,mi"
+msgstr "milla,millas,mi"
+
+#: ../src/unit-manager.c:62
+msgid "Kilometers"
+msgstr "Kilómetros"
+
+#: ../src/unit-manager.c:62
+#, c-format
+msgctxt "unit-format"
+msgid "%s km"
+msgstr "%s km"
+
+#: ../src/unit-manager.c:62
+msgctxt "unit-symbols"
+msgid "kilometer,kilometers,km,kms"
+msgstr "kilómetro,kilómetro,km,kms"
+
+#: ../src/unit-manager.c:63
+msgid "Cables"
+msgstr "Cables"
+
+#: ../src/unit-manager.c:63
+#, c-format
+msgctxt "unit-format"
+msgid "%s cb"
+msgstr "%s cb"
+
+#: ../src/unit-manager.c:63
+msgctxt "unit-symbols"
+msgid "cable,cables,cb"
+msgstr "cable,cables,cb"
+
+#: ../src/unit-manager.c:64
+msgid "Fathoms"
+msgstr "Brazas"
+
+#: ../src/unit-manager.c:64
+#, c-format
+msgctxt "unit-format"
+msgid "%s ftm"
+msgstr "%s brz"
+
+#: ../src/unit-manager.c:64
+msgctxt "unit-symbols"
+msgid "fathom,fathoms,ftm"
+msgstr "braza,brazas,fathom,fathoms,brz,ftm"
+
+#: ../src/unit-manager.c:65
+msgid "Meters"
+msgstr "Metros"
+
+#: ../src/unit-manager.c:65
+#, c-format
+msgctxt "unit-format"
+msgid "%s m"
+msgstr "%s m"
+
+#: ../src/unit-manager.c:65
+msgctxt "unit-symbols"
+msgid "meter,meters,m"
+msgstr "metro,metros,m"
+
+#: ../src/unit-manager.c:66
+msgid "Yards"
+msgstr "Iardas"
+
+#: ../src/unit-manager.c:66
+#, c-format
+msgctxt "unit-format"
+msgid "%s yd"
+msgstr "%s yd"
+
+#: ../src/unit-manager.c:66
+msgctxt "unit-symbols"
+msgid "yard,yards,yd"
+msgstr "iarda,iardas,yd"
+
+#: ../src/unit-manager.c:67
+msgid "Feet"
+msgstr "Pes"
+
+#: ../src/unit-manager.c:67
+#, c-format
+msgctxt "unit-format"
+msgid "%s ft"
+msgstr "%s ft"
+
+#: ../src/unit-manager.c:67
+msgctxt "unit-symbols"
+msgid "foot,feet,ft"
+msgstr "pe,pes,ft"
+
+#: ../src/unit-manager.c:68
+msgid "Inches"
+msgstr "Polgadas"
+
+#: ../src/unit-manager.c:68
+#, c-format
+msgctxt "unit-format"
+msgid "%s in"
+msgstr "%s polg"
+
+#: ../src/unit-manager.c:68
+msgctxt "unit-symbols"
+msgid "inch,inches,in"
+msgstr "polgada,polgadas,polg"
+
+#: ../src/unit-manager.c:69
+msgid "Centimeters"
+msgstr "Centímetros"
+
+#: ../src/unit-manager.c:69
+#, c-format
+msgctxt "unit-format"
+msgid "%s cm"
+msgstr "%s cm"
+
+#: ../src/unit-manager.c:69
+msgctxt "unit-symbols"
+msgid "centimeter,centimeters,cm,cms"
+msgstr "centímetro,centímetros,cm,cms"
+
+#: ../src/unit-manager.c:70
+msgid "Millimeters"
+msgstr "Milímetros"
+
+#: ../src/unit-manager.c:70
+#, c-format
+msgctxt "unit-format"
+msgid "%s mm"
+msgstr "%s mm"
+
+#: ../src/unit-manager.c:70
+msgctxt "unit-symbols"
+msgid "millimeter,millimeters,mm"
+msgstr "milímetro,milímetros,mm"
+
+#: ../src/unit-manager.c:71
+msgid "Micrometers"
+msgstr "Micrómetros"
+
+#: ../src/unit-manager.c:71
+#, c-format
+msgctxt "unit-format"
+msgid "%s μm"
+msgstr "%s μm"
+
+#: ../src/unit-manager.c:71
+msgctxt "unit-symbols"
+msgid "micrometer,micrometers,um"
+msgstr "micrómetro,micrómetros,um"
+
+#: ../src/unit-manager.c:72
+msgid "Nanometers"
+msgstr "Nanómetros"
+
+#: ../src/unit-manager.c:72
+#, c-format
+msgctxt "unit-format"
+msgid "%s nm"
+msgstr "%s mn"
+
+#: ../src/unit-manager.c:72
+msgctxt "unit-symbols"
+msgid "nanometer,nanometers,nm"
+msgstr "nanómetro,nanómetros,nm"
+
+#: ../src/unit-manager.c:73
+msgid "Hectares"
+msgstr "Hectáreas"
+
+#: ../src/unit-manager.c:73
+#, c-format
+msgctxt "unit-format"
+msgid "%s ha"
+msgstr "%s ha"
+
+#: ../src/unit-manager.c:73
+msgctxt "unit-symbols"
+msgid "hectare,hectares,ha"
+msgstr "hectárea,hectáreas,ha"
+
+#: ../src/unit-manager.c:74
+msgid "Acres"
+msgstr "Acres"
+
+#: ../src/unit-manager.c:74
+#, c-format
+msgctxt "unit-format"
+msgid "%s acres"
+msgstr "%s acres"
+
+#: ../src/unit-manager.c:74
+msgctxt "unit-symbols"
+msgid "acre,acres"
+msgstr "acre,acres"
+
+#: ../src/unit-manager.c:75
+msgid "Square Meters"
+msgstr "Metros cadrados"
+
+#: ../src/unit-manager.c:75
+#, c-format
+msgctxt "unit-format"
+msgid "%s m²"
+msgstr "%s m²"
+
+#: ../src/unit-manager.c:75
+msgctxt "unit-symbols"
+msgid "m²"
+msgstr "m²"
+
+#: ../src/unit-manager.c:76
+msgid "Square Centimeters"
+msgstr "Centímetros cadrados"
+
+#: ../src/unit-manager.c:76
+#, c-format
+msgctxt "unit-format"
+msgid "%s cm²"
+msgstr "%s cm²"
+
+#: ../src/unit-manager.c:76
+msgctxt "unit-symbols"
+msgid "cm²"
+msgstr "cm²"
+
+#: ../src/unit-manager.c:77
+msgid "Square Millimeters"
+msgstr "Milímetros cuadrados"
+
+#: ../src/unit-manager.c:77
+#, c-format
+msgctxt "unit-format"
+msgid "%s mm²"
+msgstr "%s mm²"
+
+#: ../src/unit-manager.c:77
+msgctxt "unit-symbols"
+msgid "mm²"
+msgstr "mm²"
+
+#: ../src/unit-manager.c:78
+msgid "Cubic Meters"
+msgstr "Metros cúbicos"
+
+#: ../src/unit-manager.c:78
+#, c-format
+msgctxt "unit-format"
+msgid "%s m³"
+msgstr "%s m³"
+
+#: ../src/unit-manager.c:78
+msgctxt "unit-symbols"
+msgid "m³"
+msgstr "m³"
+
+#: ../src/unit-manager.c:79
+msgid "Gallons"
+msgstr "Galóns"
+
+#: ../src/unit-manager.c:79
+#, c-format
+msgctxt "unit-format"
+msgid "%s gal"
+msgstr "%s gal"
+
+#: ../src/unit-manager.c:79
+msgctxt "unit-symbols"
+msgid "gallon,gallons,gal"
+msgstr "galón,galóns,gal"
+
+#: ../src/unit-manager.c:80
+msgid "Litres"
+msgstr "Litros"
+
+#: ../src/unit-manager.c:80
+#, c-format
+msgctxt "unit-format"
+msgid "%s L"
+msgstr "%s L"
+
+#: ../src/unit-manager.c:80
+msgctxt "unit-symbols"
+msgid "litre,litres,liter,liters,L"
+msgstr "litro,litros,L"
+
+#: ../src/unit-manager.c:81
+msgid "Quarts"
+msgstr "Cuartos"
+
+#: ../src/unit-manager.c:81
+#, c-format
+msgctxt "unit-format"
+msgid "%s qt"
+msgstr "%s qt"
+
+#: ../src/unit-manager.c:81
+msgctxt "unit-symbols"
+msgid "quart,quarts,qt"
+msgstr "cuarto,cuartos,qt"
+
+#: ../src/unit-manager.c:82
+msgid "Pints"
+msgstr "Pintas"
+
+#: ../src/unit-manager.c:82
+#, c-format
+msgctxt "unit-format"
+msgid "%s pt"
+msgstr "%s pt"
+
+#: ../src/unit-manager.c:82
+msgctxt "unit-symbols"
+msgid "pint,pints,pt"
+msgstr "pinta,pintas,pt"
+
+#: ../src/unit-manager.c:83
+msgid "Millilitres"
+msgstr "Mililitros"
+
+#: ../src/unit-manager.c:83
+#, c-format
+msgctxt "unit-format"
+msgid "%s mL"
+msgstr "%s mL"
+
+#: ../src/unit-manager.c:83
+msgctxt "unit-symbols"
+msgid "millilitre,millilitres,milliliter,milliliters,mL,cm³"
+msgstr "mililitro,mililitros,mL,cm³"
+
+#: ../src/unit-manager.c:84
+msgid "Microlitres"
+msgstr "Microlitros"
+
+#: ../src/unit-manager.c:84
+#, c-format
+msgctxt "unit-format"
+msgid "%s μL"
+msgstr "%s μL"
+
+#: ../src/unit-manager.c:84
+msgctxt "unit-symbols"
+msgid "mm³,μL,uL"
+msgstr "mm³,μL,uL"
+
+#: ../src/unit-manager.c:85
+msgid "Tonnes"
+msgstr "Toneladas"
+
+#: ../src/unit-manager.c:85
+#, c-format
+msgctxt "unit-format"
+msgid "%s T"
+msgstr "%s T"
+
+#: ../src/unit-manager.c:85
+msgctxt "unit-symbols"
+msgid "tonne,tonnes"
+msgstr "tonelada,toneladas"
+
+#: ../src/unit-manager.c:86
+msgid "Kilograms"
+msgstr "Kilogramos"
+
+#: ../src/unit-manager.c:86
+#, c-format
+msgctxt "unit-format"
+msgid "%s kg"
+msgstr "%s kg"
+
+#: ../src/unit-manager.c:86
+msgctxt "unit-symbols"
+msgid "kilogram,kilograms,kilogramme,kilogrammes,kg,kgs"
+msgstr "kilogramo,kilogramos,kg,kgs"
+
+#: ../src/unit-manager.c:87
+msgid "Pounds"
+msgstr "Libras"
+
+#: ../src/unit-manager.c:87
+#, c-format
+msgctxt "unit-format"
+msgid "%s lb"
+msgstr "%s lb"
+
+#: ../src/unit-manager.c:87
+msgctxt "unit-symbols"
+msgid "pound,pounds,lb"
+msgstr "libra,libras,lb"
+
+#: ../src/unit-manager.c:88
+msgid "Ounces"
+msgstr "Onza"
+
+#: ../src/unit-manager.c:88
+#, c-format
+msgctxt "unit-format"
+msgid "%s oz"
+msgstr "%s oz"
+
+#: ../src/unit-manager.c:88
+msgctxt "unit-symbols"
+msgid "ounce,ounces,oz"
+msgstr "onza,onzas,oz"
+
+#: ../src/unit-manager.c:89
+msgid "Grams"
+msgstr "Gramos"
+
+#: ../src/unit-manager.c:89
+#, c-format
+msgctxt "unit-format"
+msgid "%s g"
+msgstr "%s g"
+
+#: ../src/unit-manager.c:89
+msgctxt "unit-symbols"
+msgid "gram,grams,gramme,grammes,g"
+msgstr "gramo,gramos,g"
+
+#: ../src/unit-manager.c:90
+msgid "Years"
+msgstr "Anos"
+
+#: ../src/unit-manager.c:90
+#, c-format
+msgctxt "unit-format"
+msgid "%s years"
+msgstr "%s anos"
+
+#: ../src/unit-manager.c:90
+msgctxt "unit-symbols"
+msgid "year,years"
+msgstr "ano,anos"
+
+#: ../src/unit-manager.c:91
+msgid "Days"
+msgstr "Días"
+
+#: ../src/unit-manager.c:91
+#, c-format
+msgctxt "unit-format"
+msgid "%s days"
+msgstr "%s días"
+
+#: ../src/unit-manager.c:91
+msgctxt "unit-symbols"
+msgid "day,days"
+msgstr "día,días"
+
+#: ../src/unit-manager.c:92
+msgid "Hours"
+msgstr "Horas"
+
+#: ../src/unit-manager.c:92
+#, c-format
+msgctxt "unit-format"
+msgid "%s hours"
+msgstr "%s horas"
+
+#: ../src/unit-manager.c:92
+msgctxt "unit-symbols"
+msgid "hour,hours"
+msgstr "hora,horas"
+
+#: ../src/unit-manager.c:93
+msgid "Minutes"
+msgstr "Minutos"
+
+#: ../src/unit-manager.c:93
+#, c-format
+msgctxt "unit-format"
+msgid "%s minutes"
+msgstr "%s minutos"
+
+#: ../src/unit-manager.c:93
+msgctxt "unit-symbols"
+msgid "minute,minutes"
+msgstr "minuto,minutos"
+
+#: ../src/unit-manager.c:94
+msgid "Seconds"
+msgstr "Segundos"
+
+#: ../src/unit-manager.c:94
+#, c-format
+msgctxt "unit-format"
+msgid "%s s"
+msgstr "%s s"
+
+#: ../src/unit-manager.c:94
+msgctxt "unit-symbols"
+msgid "second,seconds,s"
+msgstr "segundo,segundos,s"
+
+#: ../src/unit-manager.c:95
+msgid "Milliseconds"
+msgstr "Milisegundos"
+
+#: ../src/unit-manager.c:95
+#, c-format
+msgctxt "unit-format"
+msgid "%s ms"
+msgstr "%s ms"
+
+#: ../src/unit-manager.c:95
+msgctxt "unit-symbols"
+msgid "millisecond,milliseconds,ms"
+msgstr "milisegundo,milisegundos,ms"
+
+#: ../src/unit-manager.c:96
+msgid "Microseconds"
+msgstr "Microsegundos"
+
+#: ../src/unit-manager.c:96
+#, c-format
+msgctxt "unit-format"
+msgid "%s μs"
+msgstr "%s μs"
+
+#: ../src/unit-manager.c:96
+msgctxt "unit-symbols"
+msgid "microsecond,microseconds,us,μs"
+msgstr "microsegundo,microsegundos,us,μs"
+
+#: ../src/unit-manager.c:97
+msgid "Celsius"
+msgstr "Celsius"
+
+#: ../src/unit-manager.c:97
+#, c-format
+msgctxt "unit-format"
+msgid "%s ˚C"
+msgstr "%s ˚C"
+
+#: ../src/unit-manager.c:97
+msgctxt "unit-symbols"
+msgid "degC,˚C"
+msgstr "gradC,˚C"
+
+#: ../src/unit-manager.c:98
+msgid "Farenheit"
+msgstr "Farenheit"
+
+#: ../src/unit-manager.c:98
+#, c-format
+msgctxt "unit-format"
+msgid "%s ˚F"
+msgstr "%s ˚F"
+
+#: ../src/unit-manager.c:98
+msgctxt "unit-symbols"
+msgid "degF,˚F"
+msgstr "gradF,˚F"
+
+#: ../src/unit-manager.c:99
+msgid "Kelvin"
+msgstr "Kelvin"
+
+#: ../src/unit-manager.c:99
+#, c-format
+msgctxt "unit-format"
+msgid "%s K"
+msgstr "%s K"
+
+#: ../src/unit-manager.c:99
+msgctxt "unit-symbols"
+msgid "K"
+msgstr "K"
+
+#: ../src/unit-manager.c:100
+msgid "Rankine"
+msgstr "Rankine"
+
+#: ../src/unit-manager.c:100
+#, c-format
+msgctxt "unit-format"
+msgid "%s ˚R"
+msgstr "%s ˚R"
+
+#: ../src/unit-manager.c:100
+msgctxt "unit-symbols"
+msgid "degR,˚R,˚Ra"
+msgstr "degR,˚R,˚Ra"
+
+#: ../src/unit-manager.c:109
+msgid "Angle"
+msgstr "Ángulo"
+
+#: ../src/unit-manager.c:110
+msgid "Length"
+msgstr "Lonxitude"
+
+#: ../src/unit-manager.c:111
+msgid "Area"
+msgstr "Área"
+
+#: ../src/unit-manager.c:112
+msgid "Volume"
+msgstr "Volume"
+
+#: ../src/unit-manager.c:113
+msgid "Weight"
+msgstr "Peso"
+
+#: ../src/unit-manager.c:114
+msgid "Duration"
+msgstr "Duración"
+
+#: ../src/unit-manager.c:115
+msgid "Temperature"
+msgstr "Temperatura"
+
+#: ../src/unit-manager.c:127
+msgid "Currency"
+msgstr "Divisas"
+
+#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
+#: ../src/unit-manager.c:137
+#, c-format
+msgid "%s%%s"
+msgstr "%s%%s"
+
+#~ msgid "<i>x</i>"
+#~ msgstr "<i>x</i>"
+
+#~ msgid "_Calculator"
+#~ msgstr "_Calculadora"
+
+#~ msgid "_Mode"
+#~ msgstr "_Modo"
+
+#~ msgid "_Contents"
+#~ msgstr "_Contidos"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s˚C"
+#~ msgstr "%s˚C"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s˚F"
+#~ msgstr "%s˚F"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s˚K"
+#~ msgstr "%s˚K"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "degK,˚K"
+#~ msgstr "gradK,˚K"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s˚R"
+#~ msgstr "%s˚R"
+
+#~ msgid "United Arab Emirates dirham"
+#~ msgstr "Dinar de Emiratos Árabes Unidos"
+
+#~ msgid "Trinidad and Tobago dollar"
+#~ msgstr "Dólar de Trinidad e Tobago"
+
+#~ msgid "%s%s = %s%s"
+#~ msgstr "%s%s = %s%s"
+
+#~ msgid "Liters"
+#~ msgstr "Litros"
+
+#~ msgid "cm³"
+#~ msgstr "cm³"
+
+#~ msgid "mm³"
+#~ msgstr "mm³"
+
+#~ msgid "Recall"
+#~ msgstr "Rechamar"
+
+#~ msgid "← R"
+#~ msgstr "← R"
+
+#~ msgid "→ R"
+#~ msgstr "→ R"
+
+#~ msgid "Assign Variable"
+#~ msgstr "Asignar variábel"
+
+#~ msgid "Insert Variable"
+#~ msgstr "Inserir variábel"
+
+#~ msgid "Angle Units"
+#~ msgstr "Unidades de ángulos"
+
+#~ msgid "Area Units"
+#~ msgstr "Unidades de área"
+
+#~ msgid "Time Units"
+#~ msgstr "Unidades de tempo"
+
+#~ msgid "No variables defined"
+#~ msgstr "Non hai variábeis definidas"
+
+#~ msgid "Clear"
+#~ msgstr "Borrar"
+
+#~ msgid "Undo"
+#~ msgstr "Desfacer"
+
+#~ msgid "in"
+#~ msgstr "en"
+
+#~ msgid "&#x2190; R"
+#~ msgstr "&#x2190; R"
+
+#~ msgid "&#x2192; R"
+#~ msgstr "&#x2192; R"
+
+#~ msgid "%s radians = %s degrees"
+#~ msgstr "%s radiáns = %s graos"
+
+#~ msgid "%s gradians = %s degrees"
+#~ msgstr "%s gradiáns = %s graos"
+
+#~ msgid "Display Mode"
+#~ msgstr "Modo de presentación"
+
+#~ msgid "Indicates whether the memory register window is initially displayed."
+#~ msgstr "Indica se a xanela de rexistros de memoria se amosa ao iniciar."
+
+#~ msgid "Show Registers"
+#~ msgstr "Mostrar os rexistros"
+
+#~ msgid ""
+#~ "The display format used in advanced mode. One of: \"ENG\" (engineering), "
+#~ "\"FIX\" (fixed-point) and \"SCI\" (scientific)"
+#~ msgstr ""
+#~ "O modo de presentación usado no modo avanzado. Os valores válidos son  "
+#~ "\"ENG\" (enxeñaría), \"FIX\" (punto fixo), SCI (científico)"
+
+#~ msgid ""
+#~ "The initial calculator mode. Valid values are \"BASIC\", \"FINANCIAL\", "
+#~ "\"LOGICAL\", \"SCIENTIFIC\" and \"PROGRAMMING\""
+#~ msgstr ""
+#~ "O modo de calculadora inicial. Os valores válidos son \"BÁSICA\", "
+#~ "\"FINANCEIRA\", \"LÓXICA\", \"CIENTÍFICA\" e \"PROGRAMACIÓN\""
+
+#~ msgid ""
+#~ "The initial trigonometric type. Valid values are \"DEG\" (degrees), \"GRAD"
+#~ "\" (gradians) and \"RAD\" (radians)."
+#~ msgstr ""
+#~ "O tipo trigonométrico inicial. Os valores válidos son \"DEG\" (graos "
+#~ "sexaxesimais), \"GRAD\" (graos centígrados), \"RAD\" (radián)."
+
+#~ msgid "The initial x-coordinate for the window"
+#~ msgstr "Coordenada x inicial para a xanela"
+
+#~ msgid "The initial y-coordinate for the window"
+#~ msgstr "Coordenada y inicial para a xanela"
+
+#~ msgid ""
+#~ "The number of pixels to place the window from the left of the screen."
+#~ msgstr "Distancia en píxeles desde o lado esquerdo da pantalla á xanela."
+
+#~ msgid "The number of pixels to place the window from the top of the screen."
+#~ msgstr "Distancia en píxeles desde a parte superior da pantalla á xanela."
+
+#~ msgid "The numeric base (used in programming mode)"
+#~ msgstr "A base numérica (usada no modo avanzado)"
+
+#~ msgid "Trigonometric type"
+#~ msgstr "Tipo trigonométrico"
+
+#~ msgid "&#xA4;$&#x20AC;"
+#~ msgstr "&#xA4;$&#x20AC;"
+
+#~ msgid ""
+#~ "Converts between different currencies. Enter the amount and the currency "
+#~ "you want to convert from on the upper row, and the currency you want to "
+#~ "convert to on the lower row, and the amount will be displayed on the "
+#~ "lower row."
+#~ msgstr ""
+#~ "Converte entre diferentes divisas. Insira unha cantidade xunto coa divisa "
+#~ "desde a que quere converter na fila superior, e a divisa á que quere "
+#~ "converter na fila inferior. Mostrarase a cantidade na fila inferior."
+
+#~ msgid "Currency Conversion"
+#~ msgstr "Conversión de divisas"
+
+#~ msgid ""
+#~ "You don't have any recent currency rates. Should some be downloaded now?"
+#~ msgstr ""
+#~ "Vostede non ten ningunha taxa de divisas recente. Quere descargar algunha "
+#~ "agora?"
+
+#~ msgid ""
+#~ "Currency rates could not be downloaded. You may receive inaccurate "
+#~ "results, or you may not receive any results at all."
+#~ msgstr ""
+#~ "Non é posíbel descargar ningunha taxa de divisa. Vostede podería recibir "
+#~ "resultados non exactos ou non recibir ningún resultado."
+
+#~ msgid "Logarithm of negative values is undefined"
+#~ msgstr "O logaritmo de valores negativos non está definido"
+
+#~ msgid "The power of negative numbers is only defined for integer exponents"
+#~ msgstr ""
+#~ "A potencia de valores negativos só se define para os expoñentes enteiros"
+
+#~ msgid "Square root is undefined for negative values"
+#~ msgstr "A raíz cadrada de valores negativos non está definida"
+
+#~ msgid "Backspace"
+#~ msgstr "Espacio"
+
+#~ msgid "Delete"
+#~ msgstr "Suprimir"
+
+#~ msgid "Numeric point [. or ,]"
+#~ msgstr "Punto numérico [. ou ,]"
+
+#~ msgid "Base 16"
+#~ msgstr "Base 16"
+
+#~ msgid "Base 2"
+#~ msgstr "Base 2"
+
+#~ msgid "Base 8"
+#~ msgstr "Base 8"
+
+#~ msgid "Result Region"
+#~ msgstr "Rexión resultante"
+
+#~ msgid "Display _Format:"
+#~ msgstr "_Formato da divisa:"
+
+#~ msgid "No redo steps"
+#~ msgstr "Non hai pasos de refacer"
+
+#~ msgid ""
+#~ "A required file is missing or damaged. Please check your installation.\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Falta o ficheiro requirido ou está danado, comprobe a súa instalación.\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid "Error loading user interface"
+#~ msgstr "Produciuse un erro ao cargar a interface de usuario"
+
+#~ msgid "Paste"
+#~ msgstr "Pegar"
+
+#~ msgid "10 places"
+#~ msgstr "10 posicións"
+
+#~ msgid "11 places"
+#~ msgstr "11 posicións"
+
+#~ msgid "12 places"
+#~ msgstr "12 posicións"
+
+#~ msgid "13 places"
+#~ msgstr "13 posicións"
+
+#~ msgid "14 places"
+#~ msgstr "14 posicións"
+
+#~ msgid "15 places"
+#~ msgstr "15 posicións"
+
+#~ msgid "Factorize into prime numbers (Ctrl+F)"
+#~ msgstr "Factorizar aos números primos (Ctrl+F)"
+
+#~ msgid "Insert ASCII Value"
+#~ msgstr "Inserir valor ASCII"
+
+#~ msgid "Insert character"
+#~ msgstr "Inserir carácter"
+
+#~ msgid "Random number"
+#~ msgstr "Número aleatorio"
+
+#~ msgid "Recall value"
+#~ msgstr "Valor de rechamada"
+
+#~ msgid "Shift left [<]"
+#~ msgstr "Desprazar á esquerda [<]"
+
+#~ msgid "Shift right [>]"
+#~ msgstr "Desprazar á dereita [>]"
+
+#~ msgid "Store value"
+#~ msgstr "Almacenar valor"
+
+#~ msgid "_2 places"
+#~ msgstr "_2 posicións"
+
+#~ msgid "_3 places"
+#~ msgstr "_3 posicións"
+
+#~ msgid "_4 places"
+#~ msgstr "_4 posicións"
+
+#~ msgid "_5 places"
+#~ msgstr "_5 posicións"
+
+#~ msgid "_6 places"
+#~ msgstr "_6 posicións"
+
+#~ msgid "_7 places"
+#~ msgstr "_7 posicións"
+
+#~ msgid "_8 places"
+#~ msgstr "_8 posicións"
+
+#~ msgid "_9 places"
+#~ msgstr "_9 posicións"
+
+#~ msgid "_Scientific"
+#~ msgstr "_Científico"
+
+#~ msgid "_View"
+#~ msgstr "_Ver"
+
+#~ msgid "Calculator — Advanced"
+#~ msgstr "Calculadora - Avanzada"
+
+#~ msgid "Calculator — Financial"
+#~ msgstr "Calculadora - Financeira"
+
+#~ msgid "Calculator — Scientific"
+#~ msgstr "Calculadora - Científica"
+
+#~ msgid "Calculator — Programming"
+#~ msgstr "Calculadora - Programación"

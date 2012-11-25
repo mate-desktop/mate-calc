@@ -15,7 +15,7 @@ Utilities_in_files = mate-calc.desktop.in
 Utilities_DATA = $(Utilities_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
-man1_MANS = mate-calc.1
+man1_MANS = mate-calc.1 mate-calc-cmd.1
 
 EXTRA_DIST = $(ui_DATA) org.mate.calc.gschema.xml.in mate-calc.desktop.in $(man1_MANS)
 

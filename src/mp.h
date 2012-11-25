@@ -1,21 +1,12 @@
-
-/*  Copyright (c) 1987-2008 Sun Microsystems, Inc. All Rights Reserved.
- *  Copyright (c) 2008-2009 Robert Ancell
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2, or (at your option)
- *  any later version.
- *
- *  This program is distributed in the hope that it will be useful, but
- *  WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- *  General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- *  02110-1301, USA.
+/*
+ * Copyright (C) 1987-2008 Sun Microsystems, Inc. All Rights Reserved.
+ * Copyright (C) 2008-2011 Robert Ancell.
+ * 
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License as published by the Free Software
+ * Foundation, either version 2 of the License, or (at your option) any later
+ * version. See http://www.gnu.org/copyleft/gpl.html the full text of the
+ * license.
  */
 
 /*  This maths library is based on the MP multi-precision floating-point
@@ -53,26 +44,28 @@
  *
  * x = sign * (MP_BASE^(exponent-1) + MP_BASE^(exponent-2) + ...)
  */
-typedef struct {
-	/* Sign (+1, -1) or 0 for the value zero */
-	int sign, im_sign;
+typedef struct
+{
+   /* Sign (+1, -1) or 0 for the value zero */
+   int sign, im_sign;
 
-	/* Exponent (to base MP_BASE) */
-	int exponent, im_exponent;
+   /* Exponent (to base MP_BASE) */
+   int exponent, im_exponent;
 
-	/* Normalized fraction */
-	int fraction[MP_SIZE], im_fraction[MP_SIZE];
+   /* Normalized fraction */
+   int fraction[MP_SIZE], im_fraction[MP_SIZE];
 } MPNumber;
 
-typedef enum {
-	MP_RADIANS,
-	MP_DEGREES,
-	MP_GRADIANS
+typedef enum
+{
+    MP_RADIANS,
+    MP_DEGREES,
+    MP_GRADIANS
 } MPAngleUnit;
 
 /* Returns error string or NULL if no error */
 // FIXME: Global variable
-const char* mp_get_error(void);
+const char *mp_get_error(void);
 
 /* Clear any current error */
 void mp_clear_error(void);
@@ -267,24 +260,6 @@ int64_t mp_cast_to_int(const MPNumber *x);
 
 /* Returns x as a native unsigned integer */
 uint64_t mp_cast_to_unsigned_int(const MPNumber *x);
-
-/* Converts x to a string representation.
- * The string is written into 'buffer' which is guaranteed to be at least 'buffer_length' octets in size.
- * If not enough space is available the string is truncated.
- * The numbers are written in 'base' (e.g. 10).
- * If 'trim_zeroes' is non-zero then strip off trailing zeroes.
- * Fractional components are truncated at 'max_digits' digits.
- */
-void   mp_cast_to_string(const MPNumber *x, int default_base, int base, int max_digits, bool trim_zeroes, char *buffer, int buffer_length);
-
-/* Converts x to a string representation in exponential form.
- * The string is written into 'buffer' which is guaranteed to be at least 'buffer_length' octets in size.
- * If not enough space is available the string is truncated.
- * The numbers are written in 'base' (e.g. 10).
- * If 'trim_zeroes' is non-zero then strip off trailing zeroes.
- * Fractional components are truncated at 'max_digits' digits.
- */
-void   mp_cast_to_exponential_string(const MPNumber *x, int default_base, int base, int max_digits, bool trim_zeroes, bool eng_format, char *buffer, int buffer_length);
 
 /* Sets z = sin x */
 void   mp_sin(const MPNumber *x, MPAngleUnit unit, MPNumber *z);

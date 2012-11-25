@@ -1,34 +1,29 @@
-/*  Copyright (c) 1987-2008 Sun Microsystems, Inc. All Rights Reserved.
- *  Copyright (c) 2008-2009 Robert Ancell
+/*
+ * Copyright (C) 1987-2008 Sun Microsystems, Inc. All Rights Reserved.
+ * Copyright (C) 2008-2011 Robert Ancell
  *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2, or (at your option)
- *  any later version.
- *
- *  This program is distributed in the hope that it will be useful, but
- *  WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- *  General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- *  02110-1301, USA.
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License as published by the Free Software
+ * Foundation, either version 2 of the License, or (at your option) any later
+ * version. See http://www.gnu.org/copyleft/gpl.html the full text of the
+ * license.
  */
 
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <locale.h>
+#include <glib/gi18n.h>
 
-#include "currency.h"
-#include "unittest.h"
 #include "math-window.h"
+#include "math-preferences.h"
 #include "mp-equation.h"
+#include "unit-manager.h"
 
 static GSettings *settings = NULL;
 
 static MathWindow *window;
+static MathPreferencesDialog *preferences_dialog;
 
 static void
 version(const gchar *progname)
@@ -38,18 +33,26 @@ version(const gchar *progname)
 }
 
 
+static int
+do_convert(const MPNumber *x, const char *x_units, const char *z_units, MPNumber *z, void *data)
+{
+    return unit_manager_convert_by_symbol(unit_manager_get_default(), x, x_units, z_units, z);
+}
+
+
 static void
 solve(const char *equation)
 {
     MPEquationOptions options;
     MPErrorCode error;
     MPNumber result;
-    char result_str[1024];
+    char *result_str;
 
     memset(&options, 0, sizeof(options));
     options.base = 10;
     options.wordlen = 32;
     options.angle_units = MP_DEGREES;
+    options.convert = do_convert;
 
     error = mp_equation_parse(equation, &options, &result, NULL);
     if(error == PARSER_ERR_MP) {
@@ -61,7 +64,7 @@ solve(const char *equation)
         exit(1);
     }
     else {
-        mp_cast_to_string(&result, 10, 10, 9, 1, result_str, 1024);
+        result_str = mp_serializer_to_string(mp_serializer_new(MP_DISPLAY_FORMAT_AUTOMATIC, 10, 9), &result);
         printf("%s\n", result_str);
         exit(0);
     }
@@ -107,7 +110,6 @@ usage(const gchar *progname, gboolean show_application, gboolean show_gtk)
         fprintf(stderr,
                 /* Description on mate-calc application options displayed on command-line */
                 _("Application Options:\n"
-                  "  -u, --unittest                  Perform unit tests\n"
                   "  -s, --solve <equation>          Solve the given equation"));
         fprintf(stderr,
                 "\n\n");
@@ -158,10 +160,6 @@ get_options(int argc, char *argv[])
             else
                 solve(argv[i]);
         }
-        else if (strcmp(arg, "-u") == 0 ||
-            strcmp(arg, "--unittest") == 0) {
-            unittest();
-        }
         else {
             fprintf(stderr,
                     /* Error printed to stderr when user provides an unknown command-line argument */
@@ -175,52 +173,291 @@ get_options(int argc, char *argv[])
 
 
 static void
-quit_cb(MathWindow *window)
+accuracy_cb(MathEquation *equation, GParamSpec *spec)
 {
-    MathEquation *equation;
-    MathButtons *buttons;
-
-    equation = math_window_get_equation(window);
-    buttons = math_window_get_buttons(window);
-
     g_settings_set_int(settings, "accuracy", math_equation_get_accuracy(equation));
-    g_settings_set_int(settings, "word-size", math_equation_get_word_size(equation));
-    g_settings_set_int(settings, "base", math_buttons_get_programming_base(buttons));
-    g_settings_set_boolean(settings, "show-thousands", math_equation_get_show_thousands_separators(equation));
-    g_settings_set_boolean(settings, "show-zeroes", math_equation_get_show_trailing_zeroes(equation));
-    g_settings_set_enum(settings, "number-format", math_equation_get_number_format(equation));
-    g_settings_set_enum(settings, "angle-units", math_equation_get_angle_units(equation));
-    g_settings_set_enum(settings, "button-mode", math_buttons_get_mode(buttons));
-    g_settings_set_string(settings, "source-currency", math_equation_get_source_currency(equation));
-    g_settings_set_string(settings, "target-currency", math_equation_get_target_currency(equation));
-    g_settings_sync();
-
-    currency_free_resources();
-    gtk_main_quit();
 }
 
 
-int
-main(int argc, char **argv)
+static void
+word_size_cb(MathEquation *equation, GParamSpec *spec)
+{
+    g_settings_set_int(settings, "word-size", math_equation_get_word_size(equation));
+}
+
+
+static void
+show_thousands_separators_cb(MathEquation *equation, GParamSpec *spec)
+{
+    g_settings_set_boolean(settings, "show-thousands", math_equation_get_show_thousands_separators(equation));
+}
+
+
+static void
+show_trailing_zeroes_cb(MathEquation *equation, GParamSpec *spec)
+{
+    g_settings_set_boolean(settings, "show-zeroes", math_equation_get_show_trailing_zeroes(equation));
+}
+
+
+static void
+number_format_cb(MathEquation *equation, GParamSpec *spec)
+{
+    g_settings_set_enum(settings, "number-format", math_equation_get_number_format(equation));
+}
+
+
+static void
+angle_unit_cb(MathEquation *equation, GParamSpec *spec)
+{
+    g_settings_set_enum(settings, "angle-units", math_equation_get_angle_units(equation));
+}
+
+
+static void
+source_currency_cb(MathEquation *equation, GParamSpec *spec)
+{
+    g_settings_set_string(settings, "source-currency", math_equation_get_source_currency(equation));
+}
+
+
+static void
+target_currency_cb(MathEquation *equation, GParamSpec *spec)
+{
+    g_settings_set_string(settings, "target-currency", math_equation_get_target_currency(equation));
+}
+
+
+static void
+source_units_cb(MathEquation *equation, GParamSpec *spec)
+{
+    g_settings_set_string(settings, "source-units", math_equation_get_source_units(equation));
+}
+
+
+static void
+target_units_cb(MathEquation *equation, GParamSpec *spec)
+{
+    g_settings_set_string(settings, "target-units", math_equation_get_target_units(equation));
+}
+
+
+static void
+programming_base_cb(MathButtons *buttons, GParamSpec *spec)
+{
+    g_settings_set_int(settings, "base", math_buttons_get_programming_base(buttons));
+}
+
+
+static void
+mode_cb(MathButtons *buttons, GParamSpec *spec, GApplication *app)
+{
+    const char *state;
+    GAction *action;
+
+    g_settings_set_enum(settings, "button-mode", math_buttons_get_mode(buttons));
+
+    switch(math_buttons_get_mode(buttons))
+    {
+    default:
+    case BASIC:
+      state = "basic";
+      //FIXME: Should it revert to decimal mode? math_equation_set_number_format(window->priv->equation, DEC);
+      break;
+
+    case ADVANCED:
+      state = "advanced";
+      break;
+
+    case FINANCIAL:
+      state = "financial";
+      break;
+
+    case PROGRAMMING:
+      state = "programming";
+      break;
+    }
+
+    action = g_action_map_lookup_action(G_ACTION_MAP(app), "mode");
+    g_simple_action_set_state(G_SIMPLE_ACTION(action),
+                              g_variant_new_string(state));
+}
+
+
+static void
+copy_cb(GSimpleAction *action, GVariant *parameter, gpointer user_data)
+{
+    math_equation_copy(math_window_get_equation(window));
+}
+
+
+static void
+paste_cb(GSimpleAction *action, GVariant *parameter, gpointer user_data)
+{
+    math_equation_paste(math_window_get_equation(window));
+}
+
+
+static void
+undo_cb(GSimpleAction *action, GVariant *parameter, gpointer user_data)
+{
+    math_equation_undo(math_window_get_equation(window));
+}
+
+
+static void
+redo_cb(GSimpleAction *action, GVariant *parameter, gpointer user_data)
+{
+    math_equation_redo(math_window_get_equation(window));
+}
+
+
+static void
+mode_changed_cb(GSimpleAction *action, GVariant *parameter, gpointer user_data)
+{
+    const char *mode_str;
+    int mode = BASIC;
+
+    mode_str = g_variant_get_string(parameter, NULL);
+    if (strcmp(mode_str, "basic") == 0)
+        mode = BASIC;
+    else if (strcmp(mode_str, "advanced") == 0)
+        mode = ADVANCED;
+    else if (strcmp(mode_str, "financial") == 0)
+        mode = FINANCIAL;
+    else if (strcmp(mode_str, "programming") == 0)
+        mode = PROGRAMMING;
+    math_buttons_set_mode(math_window_get_buttons(window), mode);
+}
+
+
+static void
+show_preferences_cb(GSimpleAction *action, GVariant *parameter, gpointer user_data)
+{
+    if (!preferences_dialog) {
+        preferences_dialog = math_preferences_dialog_new(math_window_get_equation(window));
+        gtk_window_set_transient_for(GTK_WINDOW(preferences_dialog), GTK_WINDOW(window));
+    }
+    gtk_window_present(GTK_WINDOW(preferences_dialog));
+}
+
+
+static void
+help_cb(GSimpleAction *action, GVariant *parameter, gpointer user_data)
+{
+    GdkScreen *screen;
+    GError *error = NULL;
+
+    screen = gtk_widget_get_screen(GTK_WIDGET(window));
+    gtk_show_uri(screen, "help:mate-calc", gtk_get_current_event_time(), &error);
+
+    if (error != NULL)
+    {
+        GtkWidget *d;
+        /* Translators: Error message displayed when unable to launch help browser */
+        const char *message = _("Unable to open help file");
+
+        d = gtk_message_dialog_new(GTK_WINDOW (window),
+                                   GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT,
+                                   GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE,
+                                   "%s", message);
+        gtk_message_dialog_format_secondary_text(GTK_MESSAGE_DIALOG (d),
+                                                 "%s", error->message);
+        g_signal_connect(d, "response", G_CALLBACK(gtk_widget_destroy), NULL);
+        gtk_window_present(GTK_WINDOW(d));
+
+        g_error_free(error);
+    }
+}
+
+
+static void
+about_cb(GSimpleAction *action, GVariant *parameter, gpointer user_data)
+{
+    const gchar *authors[] = {
+        "Rich Burridge <rich.burridge@gmail.com>",
+        "Robert Ancell <robert.ancell@gmail.com>",
+        "Klaus Niederkrüger <kniederk@umpa.ens-lyon.fr>",
+        "Robin Sonefors <ozamosi@flukkost.nu>",
+        NULL
+    };
+    const gchar *documenters[] = {
+        "Sun Microsystems",
+        NULL
+    };
+
+    /* The translator credits. Please translate this with your name(s). */
+    const gchar *translator_credits = _("translator-credits");
+
+    /* The license this software is under (GPL2+) */
+    char *license = _("mate-calc is free software; you can redistribute it and/or modify\n"
+          "it under the terms of the GNU General Public License as published by\n"
+          "the Free Software Foundation; either version 2 of the License, or\n"
+          "(at your option) any later version.\n"
+          "\n"
+          "mate-calc is distributed in the hope that it will be useful,\n"
+          "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+          "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+          "GNU General Public License for more details.\n"
+          "\n"
+          "You should have received a copy of the GNU General Public License\n"
+          "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
+          "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA");
+
+    gtk_show_about_dialog(GTK_WINDOW(window),
+                          "name",
+                          /* Program name in the about dialog */
+                          _("mate-calc"),
+                          "version", VERSION,
+                          "copyright",
+                          /* Copyright notice in the about dialog */
+                          _("\xc2\xa9 1986–2010 The gcalctool authors\n 2011-2012 mate-calc authors"),
+                          "license", license,
+                          "comments",
+                          /* Short description in the about dialog */
+                          _("Calculator with financial and scientific modes."),
+                          "authors", authors,
+                          "documenters", documenters,
+                          "translator_credits", translator_credits,
+                          "logo-icon-name", "accessories-calculator",
+                          "website", "http://mate-desktop.org",
+                          NULL);
+}
+
+
+static void
+quit_cb(GSimpleAction *action, GVariant *parameter, gpointer user_data)
+{
+    gtk_widget_destroy(GTK_WIDGET(window));
+}
+
+
+static GActionEntry app_entries[] = {
+        { "copy", copy_cb, NULL, NULL, NULL },
+        { "paste", paste_cb, NULL, NULL, NULL },
+        { "undo", undo_cb, NULL, NULL, NULL },
+        { "redo", redo_cb, NULL, NULL, NULL },
+        { "mode", mode_changed_cb, "s", "\"basic\"", NULL },
+        { "preferences", show_preferences_cb, NULL, NULL, NULL },
+        { "help", help_cb, NULL, NULL, NULL },
+        { "about", about_cb, NULL, NULL, NULL },
+        { "quit", quit_cb, NULL, NULL, NULL },
+};
+
+
+static void
+startup_cb(GApplication *application)
 {
     MathEquation *equation;
+    MathButtons *buttons;
     int accuracy = 9, word_size = 64, base = 10;
     gboolean show_tsep = FALSE, show_zeroes = FALSE;
-    DisplayFormat number_format;
+    MpDisplayFormat number_format;
     MPAngleUnit angle_units;
     ButtonMode button_mode;
     gchar *source_currency, *target_currency;
-
-    g_type_init();
-
-    bindtextdomain(GETTEXT_PACKAGE, LOCALE_DIR);
-    bind_textdomain_codeset(GETTEXT_PACKAGE, "UTF-8");
-    textdomain(GETTEXT_PACKAGE);
-
-    /* Seed random number generator. */
-    srand48((long) time((time_t *) 0));
-
-    get_options(argc, argv);
+    gchar *source_units, *target_units;
+    GMenu *menu, *section;
 
     settings = g_settings_new ("org.mate.calc");
     accuracy = g_settings_get_int(settings, "accuracy");
@@ -233,6 +470,8 @@ main(int argc, char **argv)
     button_mode = g_settings_get_enum(settings, "button-mode");
     source_currency = g_settings_get_string(settings, "source-currency");
     target_currency = g_settings_get_string(settings, "target-currency");
+    source_units = g_settings_get_string(settings, "source-units");
+    target_units = g_settings_get_string(settings, "target-units");
 
     equation = math_equation_new();
     math_equation_set_accuracy(equation, accuracy);
@@ -243,18 +482,98 @@ main(int argc, char **argv)
     math_equation_set_angle_units(equation, angle_units);
     math_equation_set_source_currency(equation, source_currency);
     math_equation_set_target_currency(equation, target_currency);
+    math_equation_set_source_units(equation, source_units);
+    math_equation_set_target_units(equation, target_units);
     g_free(source_currency);
     g_free(target_currency);
+    g_free(source_units);
+    g_free(target_units);
+
+    g_signal_connect(equation, "notify::accuracy", G_CALLBACK(accuracy_cb), NULL);
+    g_signal_connect(equation, "notify::word-size", G_CALLBACK(word_size_cb), NULL);
+    g_signal_connect(equation, "notify::show-thousands-separators", G_CALLBACK(show_thousands_separators_cb), NULL);
+    g_signal_connect(equation, "notify::show-trailing-zeroes", G_CALLBACK(show_trailing_zeroes_cb), NULL);
+    g_signal_connect(equation, "notify::number-format", G_CALLBACK(number_format_cb), NULL);
+    g_signal_connect(equation, "notify::angle-units", G_CALLBACK(angle_unit_cb), NULL);
+    g_signal_connect(equation, "notify::source-currency", G_CALLBACK(source_currency_cb), NULL);
+    g_signal_connect(equation, "notify::target-currency", G_CALLBACK(target_currency_cb), NULL);
+    g_signal_connect(equation, "notify::source-units", G_CALLBACK(source_units_cb), NULL);
+    g_signal_connect(equation, "notify::target-units", G_CALLBACK(target_units_cb), NULL);
+
+    g_action_map_add_action_entries(G_ACTION_MAP(application), app_entries, G_N_ELEMENTS(app_entries), NULL);
+
+    window = math_window_new(GTK_APPLICATION(application), equation);
+    buttons = math_window_get_buttons(window);
+    math_buttons_set_programming_base(buttons, base);
+    math_buttons_set_mode(buttons, button_mode); // FIXME: We load the basic buttons even if we immediately switch to the next type
+    g_signal_connect(buttons, "notify::programming-base", G_CALLBACK(programming_base_cb), NULL);
+    g_signal_connect(buttons, "notify::mode", G_CALLBACK(mode_cb), application);
+    mode_cb (buttons, NULL, application);
+
+    menu = g_menu_new();
+
+    section = g_menu_new();
+    g_menu_append(section, _("Basic"), "app.mode::basic");
+    g_menu_append(section, _("Advanced"), "app.mode::advanced");
+    g_menu_append(section, _("Financial"), "app.mode::financial");
+    g_menu_append(section, _("Programming"), "app.mode::programming");
+    g_menu_append_section(menu, _("Mode"), G_MENU_MODEL(section));
+
+    section = g_menu_new();
+    g_menu_append(section, _("Preferences"), "app.preferences");
+    g_menu_append_section(menu, NULL, G_MENU_MODEL(section));
+
+    section = g_menu_new();
+    g_menu_append(section, _("About Calculator"), "app.about");
+    g_menu_append(section, _("Help"), "app.help");
+    g_menu_append(section, _("Quit"), "app.quit");
+    g_menu_append_section(menu, NULL, G_MENU_MODEL(section));
+
+    gtk_application_set_app_menu(GTK_APPLICATION(application), G_MENU_MODEL(menu));
+
+    gtk_application_add_accelerator(GTK_APPLICATION(application), "<control>Q", "app.quit", NULL);
+    gtk_application_add_accelerator(GTK_APPLICATION(application), "F1", "app.help", NULL);
+    gtk_application_add_accelerator(GTK_APPLICATION(application), "<control>C", "app.copy", NULL);
+    gtk_application_add_accelerator(GTK_APPLICATION(application), "<control>V", "app.paste", NULL);
+    gtk_application_add_accelerator(GTK_APPLICATION(application), "<control>Z", "app.undo", NULL);
+    gtk_application_add_accelerator(GTK_APPLICATION(application), "<control><shift>Z", "app.redo", NULL);
+}
+
+
+static void
+activate_cb(GApplication *application)
+{
+    gtk_window_present(GTK_WINDOW(window));
+}
+
+
+int
+main(int argc, char **argv)
+{
+    GtkApplication *app;
+    int status;
+
+    setlocale(LC_ALL, "");
+    bindtextdomain(GETTEXT_PACKAGE, LOCALE_DIR);
+    bind_textdomain_codeset(GETTEXT_PACKAGE, "UTF-8");
+    textdomain(GETTEXT_PACKAGE);
+
+    /* Seed random number generator. */
+    srand48((long) time((time_t *) 0));
+
+    g_type_init();
+
+    get_options(argc, argv);
 
     gtk_init(&argc, &argv);
 
-    window = math_window_new(equation);
-    g_signal_connect(G_OBJECT(window), "quit", G_CALLBACK(quit_cb), NULL);
-    math_buttons_set_programming_base(math_window_get_buttons(window), base);
-    math_buttons_set_mode(math_window_get_buttons(window), button_mode); // FIXME: We load the basic buttons even if we immediately switch to the next type
+    gtk_window_set_default_icon_name("accessories-calculator");
 
-    gtk_widget_show(GTK_WIDGET(window));
-    gtk_main();
+    app = gtk_application_new(NULL, G_APPLICATION_NON_UNIQUE);
+    g_signal_connect(app, "startup", G_CALLBACK(startup_cb), NULL);
+    g_signal_connect(app, "activate", G_CALLBACK(activate_cb), NULL);
 
-    return(0);
+    status = g_application_run(G_APPLICATION(app), argc, argv);
+
+    return status;
 }

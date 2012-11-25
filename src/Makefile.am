@@ -1,4 +1,7 @@
 bin_PROGRAMS = mate-calc mate-calc-cmd
+noinst_PROGRAMS = test-mp test-mp-equation
+
+TESTS = test-mp test-mp-equation
 
 INCLUDES = \
 	-DUI_DIR=\""$(datadir)/mate-calc"\" \
@@ -9,11 +12,15 @@ INCLUDES = \
 	$(MATE_CALC_CFLAGS)
 
 mate_calc_SOURCES = \
+	mate-calc.c \
 	currency.c \
 	currency.h \
-	mate-calc.c \
+	currency-manager.c \
+	currency-manager.h \
 	math-buttons.c \
 	math-buttons.h \
+	math-converter.c \
+	math-converter.h \
 	math-display.c \
 	math-display.h \
 	math-equation.c \
@@ -22,61 +29,139 @@ mate_calc_SOURCES = \
 	math-preferences.h \
 	math-variables.c \
 	math-variables.h \
+	math-variable-popup.c \
+	math-variable-popup.h \
 	math-window.c \
 	math-window.h \
 	mp.c \
 	mp.h \
 	mp-binary.c \
 	mp-convert.c \
-	mp-private.h \
-	mp-trigonometric.c \
+	mp-enums.c \
+	mp-enums.h \
 	mp-equation.c \
 	mp-equation.h \
-	mp-equation-private.h \
-	mp-equation-lexer.c \
-	mp-equation-lexer.h \
-	mp-equation-parser.c \
-	mp-equation-parser.h \
+	mp-private.h \
+	mp-serializer.c \
+	mp-serializer.h \
+	mp-trigonometric.c \
 	financial.c \
 	financial.h \
-	unittest.c \
-	unittest.h
+  	unit.c \
+	unit.h \
+	unit-category.c \
+	unit-category.h \
+	unit-manager.c \
+	unit-manager.h \
+	prelexer.c \
+	prelexer.h \
+	lexer.c \
+	lexer.h \
+	parserfunc.c \
+	parserfunc.h \
+	parser.c \
+	parser.h
 
 mate_calc_LDADD = \
-	$(MATE_CALC_LIBS)
+	$(MATE_CALC_LIBS)        
 
 mate_calc_cmd_SOURCES = \
 	mate-calc-cmd.c \
+	currency.c \
+	currency.h \
+	currency-manager.c \
+	currency-manager.h \
 	mp.c \
-	mp-convert.c \
 	mp-binary.c \
-	mp-trigonometric.c \
+	mp-convert.c \
+	mp-enums.c \
+	mp-enums.h \
 	mp-equation.c \
-	mp-equation-parser.c \
-	mp-equation-lexer.c
+	mp-serializer.c \
+	mp-serializer.h\
+	mp-trigonometric.c \
+	unit.c \
+	unit.h \
+	unit-category.c \
+	unit-category.h \
+	unit-manager.c \
+	unit-manager.h \
+	prelexer.c \
+	prelexer.h \
+	lexer.c \
+	lexer.h \
+	parserfunc.c \
+	parserfunc.h \
+	parser.c \
+	parser.h
 
 mate_calc_cmd_LDADD = \
 	$(MATE_CALC_CMD_LIBS) \
 	-lm
 
+test_mp_SOURCES = \
+	test-mp.c \
+	mp.c \
+	mp-binary.c \
+	mp-convert.c \
+	mp-enums.c \
+	mp-enums.h \
+	mp-serializer.c \
+	mp-serializer.h \
+	mp-trigonometric.c
+
+test_mp_LDADD = \
+	$(MATE_CALC_CMD_LIBS) \
+	-lm
+
+test_mp_equation_SOURCES = \
+	test-mp-equation.c \
+	currency.c \
+	currency.h \
+	currency-manager.c \
+	currency-manager.h \
+	mp.c \
+	mp-convert.c \
+	mp-binary.c \
+	mp-enums.c \
+	mp-enums.h \
+	mp-equation.c \
+	mp-serializer.c \
+	mp-serializer.h \
+	mp-trigonometric.c \
+	unit.c \
+	unit.h \
+	unit-category.c \
+	unit-category.h \
+	unit-manager.c \
+	unit-manager.h \
+	prelexer.c \
+	prelexer.h \
+	lexer.c \
+	lexer.h \
+	parserfunc.c \
+	parserfunc.h \
+	parser.c \
+	parser.h
+
+test_mp_equation_LDADD = \
+	$(MATE_CALC_CMD_LIBS) \
+	-lm
+
 CLEANFILES = \
-	mp-equation-parser.h \
-	mp-equation-parser.c \
-	mp-equation-lexer.c \
-	mp-equation-lexer.h
+	mp-enums.c \
+	mp-enums.h
 
-# Generate parser files
-mp-equation-parser.c mp-equation-parser.h: mp-equation-parser.y mp-equation-lexer.h
-	$(AM_V_GEN)$(YACC) -d -o mp-equation-parser.c $(srcdir)/mp-equation-parser.y
+# Generate enum types
+mp-enums.h: mp-enums.h.template mp-serializer.h
+	$(AM_V_GEN)$(GLIB_MKENUMS) --template $(srcdir)/mp-enums.h.template $(srcdir)/mp-serializer.h > mp-enums.h
 
-# Generate lexer files
-mp-equation-lexer.c mp-equation-lexer.h: mp-equation-lexer.l
-	$(AM_V_GEN)$(LEX) $(srcdir)/mp-equation-lexer.l
+mp-enums.c: mp-enums.c.template mp-enums.h mp-serializer.h
+	$(AM_V_GEN)$(GLIB_MKENUMS) --template $(srcdir)/mp-enums.c.template $(srcdir)/mp-serializer.h > mp-enums.c
 
-# Rebuild parser when source files change
-mp-equation-parser.o: mp-equation-lexer.h
-mp-equation-lexer.o: mp-equation-parser.h
-mp-equation.c: mp-equation-lexer.h mp-equation-parser.h
+# Fix dependencies
+math-serializer.c: mp-enums.h
+math-equation.c: mp-enums.h
 
 # Install a symlink between mate-calc and mate-calculator
 install-exec-hook:
@@ -89,8 +174,8 @@ uninstall-local:
 	&& rm -f "$(DESTDIR)$(bindir)/mate-calculator"
 
 EXTRA_DIST = \
-	mp-equation-parser.y \
-	mp-equation-lexer.l
+	mp-enums.c.template \
+	mp-enums.h.template
 
 DISTCLEANFILES = \
 	Makefile.in

@@ -1,65 +1,54 @@
+/*
+ * Copyright (C) 2008-2011 Robert Ancell.
+ *
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License as published by the Free Software
+ * Foundation, either version 2 of the License, or (at your option) any later
+ * version. See http://www.gnu.org/copyleft/gpl.html the full text of the
+ * license.
+ */
+
 #ifndef CURRENCY_H
 #define CURRENCY_H
 
-#include <glib/gi18n.h>
-
+#include <glib-object.h>
 #include "mp.h"
 
-struct currency_name {
-	char* short_name;
-	char* symbol;
-	char* long_name;
-};
+G_BEGIN_DECLS
 
-/*
- * List taken from http://www.ecb.int/press/pr/date/2008/html/pr081205.en.html
- * with euro added.
- */
-static const struct currency_name currency_names[] = {
-	{"AUD", "$",  N_("Australian dollar")},
-	{"BGN", "лв", N_("Bulgarian lev")},
-	{"BRL", "R$", N_("Brazilian real")},
-	{"CAD", "$",  N_("Canadian dollar")},
-	{"CHF", "Fr", N_("Swiss franc")},
-	{"CNY", "元", N_("Chinese yuan renminbi")},
-	{"CZK", "Kč", N_("Czech koruna")},
-	{"DKK", "kr", N_("Danish krone")},
-	{"EEK", "KR", N_("Estonian kroon")},
-	{"EUR", "€",  N_("Euro")},
-	{"GBP", "£",  N_("Pound sterling")},
-	{"HKD", "$",  N_("Hong Kong dollar")},
-	{"HRK", "kn", N_("Croatian kuna")},
-	{"HUF", "Ft", N_("Hungarian forint")},
-	{"IDR", "Rp", N_("Indonesian rupiah")},
-	{"INR", "Rs", N_("Indian rupee")},
-	{"ISK", "kr", N_("Icelandic krona")},
-	{"JPY", "¥",  N_("Japanese yen")},
-	{"KRW", "₩",  N_("South Korean won")},
-	{"LTL", "Lt", N_("Lithuanian litas")},
-	{"LVL", "Ls", N_("Latvian lats")},
-	{"MXN", "$",  N_("Mexican peso")},
-	{"MYR", "RM", N_("Malaysian ringgit")},
-	{"NOK", "kr", N_("Norwegian krone")},
-	{"NZD", "$",  N_("New Zealand dollar")},
-	{"PHP", "₱",  N_("Philippine peso")},
-	{"PLN", "zł", N_("Polish zloty")},
-	{"RON", "L",  N_("New Romanian leu")},
-	{"RUB", "руб.", N_("Russian rouble")},
-	{"SEK", "kr", N_("Swedish krona")},
-	{"SGD", "$",  N_("Singapore dollar")},
-	{"THB", "฿",  N_("Thai baht")},
-	{"TRY", "TL", N_("New Turkish lira")},
-	{"USD", "$",  N_("US dollar")},
-	{"ZAR", "R",  N_("South African rand")},
-	{NULL, NULL}
-};
+#define CURRENCY(obj) (G_TYPE_CHECK_INSTANCE_CAST ((obj), currency_get_type(), Currency))
 
-// FIXME: Should indicate when rates are updated to UI
+typedef struct CurrencyPrivate CurrencyPrivate;
 
-/* Converts an amount of money from one currency to another */
-gboolean currency_convert(const MPNumber* from_amount, const char* source_currency, const char *target_currency, MPNumber* to_amount);
+typedef struct
+{
+    GObject parent_instance;
+    CurrencyPrivate *priv;
+} Currency;
 
-/* Frees up all allocated resources */
-void currency_free_resources(void);
+typedef struct
+{
+    GObjectClass parent_class;
+} CurrencyClass;
+
+GType currency_get_type(void);
+
+Currency *currency_new(const gchar *name,
+                       const gchar *display_name,
+                       const gchar *symbol);
+
+const gchar *currency_get_name(Currency *currency);
+
+const gchar *currency_get_short_display_name(Currency *currency);
+
+const gchar *currency_get_display_name(Currency *currency);
+
+const gchar *currency_get_symbol(Currency *currency);
+
+void currency_set_value(Currency *currency, MPNumber *value);
+
+const MPNumber *currency_get_value(Currency *currency);
+
+G_END_DECLS
 
 #endif /* CURRENCY_H */

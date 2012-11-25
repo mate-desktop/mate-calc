@@ -1,19 +1,11 @@
-/*  Copyright (c) 2008-2009 Robert Ancell
+/*
+ * Copyright (C) 2008-2011 Robert Ancell
  *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2, or (at your option)
- *  any later version.
- *
- *  This program is distributed in the hope that it will be useful, but
- *  WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- *  General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- *  02110-1301, USA.
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License as published by the Free Software
+ * Foundation, either version 2 of the License, or (at your option) any later
+ * version. See http://www.gnu.org/copyleft/gpl.html the full text of the
+ * license.
  */
 
 #ifndef MATH_VARIABLES_H
@@ -28,23 +20,29 @@ G_BEGIN_DECLS
 
 typedef struct MathVariablesPrivate MathVariablesPrivate;
 
-typedef struct {
-	GObject parent_instance;
-	MathVariablesPrivate* priv;
+typedef struct
+{
+    GObject parent_instance;
+    MathVariablesPrivate *priv;
 } MathVariables;
 
-typedef struct {
-	GObjectClass parent_class;
+typedef struct
+{
+    GObjectClass parent_class;
 } MathVariablesClass;
 
 GType math_variables_get_type(void);
 
-MathVariables* math_variables_new(void);
+MathVariables *math_variables_new(void);
 
-gchar** math_variables_get_names(MathVariables* variables);
+gchar **math_variables_get_names(MathVariables *variables);
 
-void math_variables_set_value(MathVariables* variables, const char* name, const MPNumber* value);
+void math_variables_set(MathVariables *variables, const char *name, const MPNumber *value);
 
-MPNumber* math_variables_get_value(MathVariables* variables, const char* name);
+MPNumber *math_variables_get(MathVariables *variables, const char *name);
+
+void math_variables_delete(MathVariables *variables, const char *name);
+
+G_END_DECLS
 
 #endif /* MATH_VARIABLES_H */

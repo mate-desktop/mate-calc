@@ -1,481 +1,480 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# 
-# Translators:
+# Vietnamese translation for GCalctool.
+# Copyright © 2009 Free Software Foundation, Inc.
+# Nguyễn Thái Ngọc Duy <pclouds@gmail.com>, 2002-2004, 2012.
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2012-03-14 16:03+0100\n"
-"PO-Revision-Date: 2012-03-14 15:06+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Project-Id-Version: mate-calc TRUNK\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mate-calc&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-07-12 10:42+0000\n"
+"PO-Revision-Date: 2012-08-25 17:52+0700\n"
+"Last-Translator: Nguyễn Thái Ngọc Duy <pclouds@gmail.com>\n"
+"Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: vi\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: LocFactoryEditor 1.8\n"
 
 #. Accessible name for the inverse button
-#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:30
+#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:24
+#| msgid "Inverse Sine [K]"
 msgid "Inverse"
-msgstr ""
+msgstr "Nghịch đảo"
 
 #. Accessible name for the factorize button
 #: ../data/buttons-advanced.ui.h:4 ../data/buttons-programming.ui.h:2
+#| msgid "Factorial"
 msgid "Factorize"
-msgstr ""
+msgstr "Phân tích nhân tử"
 
 #. Accessible name for the factorial button
-#: ../data/buttons-advanced.ui.h:6 ../data/buttons-programming.ui.h:28
+#: ../data/buttons-advanced.ui.h:6 ../data/buttons-programming.ui.h:22
 msgid "Factorial"
-msgstr ""
+msgstr "Giai thừa"
 
 #. Label on the solve button (clicking this solves the displayed calculation)
 #: ../data/buttons-advanced.ui.h:8 ../data/buttons-basic.ui.h:2
-#: ../data/buttons-financial.ui.h:10 ../data/buttons-programming.ui.h:6
+#: ../data/buttons-financial.ui.h:76 ../data/buttons-programming.ui.h:6
 msgid "="
 msgstr "="
 
-#. Label on the clear display button
-#: ../data/buttons-advanced.ui.h:10 ../data/buttons-basic.ui.h:4
-#: ../data/buttons-financial.ui.h:12 ../data/buttons-programming.ui.h:8
-msgid "Clear"
-msgstr "Xóa"
-
 #. Accessible name for the subscript mode button
-#: ../data/buttons-advanced.ui.h:12 ../data/buttons-programming.ui.h:10
+#: ../data/buttons-advanced.ui.h:10 ../data/buttons-programming.ui.h:8
+#| msgid "Description"
 msgid "Subscript"
-msgstr ""
+msgstr "Số nhỏ dưới"
 
 #. Accessible name for the superscript mode button
-#: ../data/buttons-advanced.ui.h:14 ../data/buttons-programming.ui.h:12
+#: ../data/buttons-advanced.ui.h:12 ../data/buttons-programming.ui.h:10
+#| msgid "Description"
 msgid "Superscript"
-msgstr ""
+msgstr "Số mũ"
 
 #. Accessible name for the scientific exponent button
-#: ../data/buttons-advanced.ui.h:16
+#: ../data/buttons-advanced.ui.h:14
+#| msgid "Scientific"
 msgid "Scientific Exponent"
-msgstr ""
+msgstr "Luỹ thừa khoa học"
 
-#. Accessible name for the recall value button
-#: ../data/buttons-advanced.ui.h:18 ../data/buttons-financial.ui.h:6
+#. Accessible name for the memory button
+#. Accessible name for the memory value button
+#. Tooltip for the memory button
+#: ../data/buttons-advanced.ui.h:16 ../data/buttons-financial.ui.h:72
+#: ../src/math-buttons.c:222
+msgid "Memory"
+msgstr "Bộ nhớ"
+
+#. The label on the memory button
+#: ../data/buttons-advanced.ui.h:18 ../data/buttons-financial.ui.h:74
 #: ../data/buttons-programming.ui.h:14
-msgid "Recall"
-msgstr ""
-
-#. The label on the memory recall button
-#: ../data/buttons-advanced.ui.h:20 ../data/buttons-financial.ui.h:8
-#: ../data/buttons-programming.ui.h:16
-msgid "&#x2190; R"
-msgstr ""
-
-#. Accessible name for the store value button
-#: ../data/buttons-advanced.ui.h:22 ../data/buttons-financial.ui.h:2
-#: ../data/buttons-programming.ui.h:18
-msgid "Store"
-msgstr ""
-
-#. The label on the memory store button
-#: ../data/buttons-advanced.ui.h:24 ../data/buttons-financial.ui.h:4
-#: ../data/buttons-programming.ui.h:20
-msgid "&#x2192; R"
-msgstr ""
+#| msgid "x2"
+msgid "x"
+msgstr "x"
 
 #. Accessible name for the absolute value button
-#: ../data/buttons-advanced.ui.h:26 ../data/buttons-programming.ui.h:4
+#: ../data/buttons-advanced.ui.h:20 ../data/buttons-programming.ui.h:4
+#| msgid "Absolute value"
 msgid "Absolute Value"
-msgstr ""
+msgstr "Giá trị tuyệt đối"
 
 #. Accessible name for the exponentiation (x to the power of y) button
-#: ../data/buttons-advanced.ui.h:28 ../data/buttons-basic.ui.h:6
-#: ../data/buttons-financial.ui.h:36 ../data/buttons-programming.ui.h:32
+#: ../data/buttons-advanced.ui.h:22 ../data/buttons-basic.ui.h:4
+#: ../data/buttons-financial.ui.h:98 ../data/buttons-programming.ui.h:26
 msgid "Exponent"
-msgstr ""
+msgstr "Luỹ thừa"
 
-#. Label on the undo button
-#. Label on the clear display button
-#: ../data/buttons-advanced.ui.h:30 ../data/buttons-basic.ui.h:8
-#: ../data/buttons-financial.ui.h:34
-msgid "Undo"
-msgstr "Hồi lại"
-
-#. Calculates the number of compounding periods necessary to increase an
-#. investment of present value pv to a future value of fv, at a fixed interest
-#. rate of int per compounding period. See also:
-#. http://en.wikipedia.org/wiki/Compound_interest
-#: ../data/buttons-financial.ui.h:14
-msgid "Ctrm"
-msgstr "Đhợp"
-
-#. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the double-declining balance method. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:16
-msgid "Ddb"
-msgstr "Ktđ"
-
-#. Calculates the future value of an investment based on a series of equal
-#. payments, each of amount pmt, at a periodic interest rate of int, over the
-#. number of payment periods in the term. See also:
-#. http://en.wikipedia.org/wiki/Future_value
-#: ../data/buttons-financial.ui.h:18
-msgid "Fv"
-msgstr "Gt"
-
-#. Calculates the number of payment periods that are necessary during the term
-#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
-#. interest rate of int. Each payment is equal to amount pmt. See also:
-#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
-#: ../data/buttons-financial.ui.h:20
-msgid "Term"
-msgstr "Kỳ"
-
-#. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:22
-msgid "Syd"
-msgstr "Tsn"
-
-#. Calculates the straight-line depreciation of an asset for one period. The
-#. depreciable cost is cost - salvage. The straight-line method of
-#. depreciation divides the depreciable cost evenly over the useful life of an
-#. asset. The useful life is the number of periods, typically years, over
-#. which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:24
-msgid "Sln"
-msgstr "Khđ"
-
-#. Calculates the periodic interest necessary to increase an investment of
-#. present value pv to a future value of fv, over the number of compounding
-#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
-#: ../data/buttons-financial.ui.h:26
-msgid "Rate"
-msgstr "Tỷ lệ"
-
-#. Calculates the present value of an investment based on a series of equal
-#. payments, each of amount pmt, discounted at a periodic interest rate of
-#. int, over the number of payment periods in the term. See also:
-#. http://en.wikipedia.org/wiki/Present_value
-#: ../data/buttons-financial.ui.h:28
-msgid "Pv"
-msgstr "Gh"
-
-#. Calculates the amount of the periodic payment of a loan, where payments are
-#. made at the end of each payment period. See also:
-#. http://en.wikipedia.org/wiki/Amortization_schedule
-#: ../data/buttons-financial.ui.h:30
-msgid "Pmt"
-msgstr "Tđk"
-
-#. Calculates the resale price of a product, based on the product cost and the
-#. wanted gross profit margin. See also:
-#. http://en.wikipedia.org/wiki/Gross_profit_margin
-#: ../data/buttons-financial.ui.h:32
-msgid "Gpm"
-msgstr "TLT"
+#. Accessible name for the store value button
+#: ../data/buttons-advanced.ui.h:24 ../data/buttons-programming.ui.h:12
+msgid "Store"
+msgstr "Lưu"
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
-#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:261
+#: ../data/buttons-financial.ui.h:2 ../src/math-buttons.c:246
 msgid "Compounding Term"
 msgstr "Ký kép"
 
+#. Payment Period Dialog: Button to calculate result
+#: ../data/buttons-financial.ui.h:4
+msgid "C_alculate"
+msgstr "_Tính"
+
 #. Periodic Interest Rate Dialog: Label before present value input
-#: ../data/buttons-financial.ui.h:40
+#: ../data/buttons-financial.ui.h:6
 msgid "Present _Value:"
 msgstr "Giá trị _Hiện tại:"
 
 #. Payment Period Dialog: Label before periodic interest rate input
-#: ../data/buttons-financial.ui.h:42
+#: ../data/buttons-financial.ui.h:8
 msgid "Periodic Interest _Rate:"
-msgstr "Lãi _Xuất Định Kỳ:"
+msgstr "Lãi _suất định Kỳ:"
 
 #. Compounding Term Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:44
+#: ../data/buttons-financial.ui.h:10
 msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr "Tính số các chu kỳ kép cần để tăng một vốn đầu tư có giá trị hiệu tại lên một giá trị tương lai, theo một lãi xuất cố định trong mỗi chu kỳ kép."
+msgstr ""
+"Tính số các chu kỳ kép cần để tăng một vốn đầu tư có giá trị hiệu tại lên "
+"một giá trị tương lai, theo một lãi xuất cố định trong mỗi chu kỳ kép."
 
 #. Periodic Interest Rate Dialog: Label before future value input
-#: ../data/buttons-financial.ui.h:46
+#: ../data/buttons-financial.ui.h:12
 msgid "_Future Value:"
 msgstr "Giá t_rị Tương lai:"
 
-#. Payment Period Dialog: Button to calculate result
-#: ../data/buttons-financial.ui.h:48
-msgid "C_alculate"
-msgstr "_Tính"
-
 #. Title of Double-Declining Depreciation dialog
-#: ../data/buttons-financial.ui.h:50
+#: ../data/buttons-financial.ui.h:14
 msgid "Double-Declining Depreciation"
 msgstr "Khấu hao giảm dần kép"
 
 #. Double-Declining Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:52
+#: ../data/buttons-financial.ui.h:16
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
-msgstr "Tính khấu hao cho một tài sản trong một thời gian nào đó, dùng phương pháp số dư giảm dần kép."
+msgstr ""
+"Tính khấu hao cho một tài sản trong một thời gian nào đó, dùng phương pháp "
+"số dư giảm dần kép."
 
 #. Gross Profit Margin Dialog: Label before cost input
-#: ../data/buttons-financial.ui.h:54
+#: ../data/buttons-financial.ui.h:18
 msgid "C_ost:"
 msgstr "C_hi phí:"
 
 #. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
-#: ../data/buttons-financial.ui.h:56
+#: ../data/buttons-financial.ui.h:20
 msgid "_Life:"
 msgstr "Thời _hạn:"
 
 #. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
-#: ../data/buttons-financial.ui.h:58
+#: ../data/buttons-financial.ui.h:22
 msgid "_Period:"
-msgstr "Chu _kỳ:"
+msgstr "Chu _kì:"
 
 #. Title of Future Value dialog
 #. Tooltip for the future value button
-#: ../data/buttons-financial.ui.h:60 ../src/math-buttons.c:267
+#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.c:252
 msgid "Future Value"
 msgstr "Giá trị Tương lai"
 
 #. Future Value Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:62
+#: ../data/buttons-financial.ui.h:26
 msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
-msgstr "Tính giá trị tương lai của một vốn đầu tư dựa vào trả một số tiền nào đó theo lãi xuất định kỳ trong số chu kỳ chi trả trong thời hạn."
+msgstr ""
+"Tính giá trị tương lai của một vốn đầu tư dựa vào trả một số tiền nào đó "
+"theo lãi xuất định kỳ trong số chu kỳ chi trả trong thời hạn."
 
 #. Payment Period Dialog: Label before periodic payment input
-#: ../data/buttons-financial.ui.h:64
+#: ../data/buttons-financial.ui.h:28
 msgid "_Periodic Payment:"
-msgstr "Trả định _kỳ:"
+msgstr "Trả định _kì:"
 
 #. Present Value Dialog: Label before number of periods input
-#: ../data/buttons-financial.ui.h:66
+#: ../data/buttons-financial.ui.h:30
+#| msgid "_Number Of Periods:"
 msgid "_Number of Periods:"
 msgstr ""
 
 #. Title of Gross Profit Margin dialog
 #. Tooltip for the gross profit margin button
-#: ../data/buttons-financial.ui.h:68 ../src/math-buttons.c:288
+#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:273
 msgid "Gross Profit Margin"
-msgstr "Tổng Lãi Thực"
+msgstr "Tổng lãi thực"
 
 #. Gross Profit Margin Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:70
+#: ../data/buttons-financial.ui.h:34
 msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
-msgstr "Tính giá bán lại của một sản phẩm, dựa vào chi phí sản xuất và tổng lãi thực đã muốn."
+msgstr ""
+"Tính giá bán lại của một sản phẩm, dựa vào chi phí sản xuất và tổng lãi thực "
+"đã muốn."
 
 #. Gross Profit Margin Dialog: Label before margin input
-#: ../data/buttons-financial.ui.h:72
+#: ../data/buttons-financial.ui.h:36
 msgid "_Margin:"
 msgstr "_Biên:"
 
 #. Title of Periodic Payment dialog
 #. Tooltip for the periodic payment button
-#: ../data/buttons-financial.ui.h:74 ../src/math-buttons.c:285
+#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:270
 msgid "Periodic Payment"
 msgstr "Trả Định Kỳ"
 
 #. Periodic Payment Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:76
+#: ../data/buttons-financial.ui.h:40
 msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
-msgstr "Tính tiền trả định kỳ cho một khoản vay, trả tiền ở kết thúc của mỗi chu kỳ chi trả."
+msgstr ""
+"Tính tiền trả định kỳ cho một khoản vay, trả tiền ở kết thúc của mỗi chu kỳ "
+"chi trả."
 
 #. Periodic Payment Dialog: Label before principal input
-#: ../data/buttons-financial.ui.h:78
+#: ../data/buttons-financial.ui.h:42
 msgid "_Principal:"
 msgstr "Tiền _gốc:"
 
 #. Periodic Interest Rate Dialog: Label before term input
-#: ../data/buttons-financial.ui.h:80
+#: ../data/buttons-financial.ui.h:44
 msgid "_Term:"
-msgstr "_Kỳ:"
+msgstr "_Kì:"
 
 #. Title of Present Value dialog
 #. Tooltip for the present value button
-#: ../data/buttons-financial.ui.h:82 ../src/math-buttons.c:282
+#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:267
 msgid "Present Value"
 msgstr "Giá trị Hiện tại"
 
 #. Present Value Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:84
+#: ../data/buttons-financial.ui.h:48
 msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr "Tính giá trị hiện tại của một vốn đầu tư dựa vào một số tiền được trả từng kỳ, giảm giá theo một lãi xuất định kỳ trong số các chu kỳ chi trả trong thời hạn."
+msgstr ""
+"Tính giá trị hiện tại của một vốn đầu tư dựa vào một số tiền được trả từng "
+"kỳ, giảm giá theo một lãi xuất định kỳ trong số các chu kỳ chi trả trong "
+"thời hạn."
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
-#: ../data/buttons-financial.ui.h:86 ../src/math-buttons.c:279
+#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.c:264
 msgid "Periodic Interest Rate"
-msgstr "Lãi Xuất Định Kỳ"
+msgstr "Lãi suất định kì"
 
 #. Periodic Interest Rate Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:88
+#: ../data/buttons-financial.ui.h:52
 msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
-msgstr "Tính lãi xuất định kỳ cần để tăng một vốn đầu tư lên một giá trị tương lai, trong số các chu kỳ kép."
+msgstr ""
+"Tính lãi xuất định kỳ cần để tăng một vốn đầu tư lên một giá trị tương lai, "
+"trong số các chu kỳ kép."
 
 #. Title of Straight-Line Depreciation dialog
-#: ../data/buttons-financial.ui.h:90
+#: ../data/buttons-financial.ui.h:54
 msgid "Straight-Line Depreciation"
 msgstr "Khấu hao theo đường thẳng"
 
 #. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
-#: ../data/buttons-financial.ui.h:92
+#: ../data/buttons-financial.ui.h:56
 msgid "_Cost:"
 msgstr "_Chi phí:"
 
 #. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
-#: ../data/buttons-financial.ui.h:94
+#: ../data/buttons-financial.ui.h:58
 msgid "_Salvage:"
 msgstr "Giá trị th_anh lý:"
 
 #. Straight-Line Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:96
+#: ../data/buttons-financial.ui.h:60
 msgid ""
 "Calculates the straight-line depreciation of an asset for one period. The "
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr "Tính khấu hao theo đường thẳng của một tài sản trong một chu kỳ. Phương pháp khấu hao theo đường thẳng thì phân phối giá có thể giảm ra toàn bộ thời gian sử dụng hữu ích của một tài sản. Thời gian sử dụng hữu ích là số các chu kỳ (thường là năm) trong chúng một tài sản bị sụt giá."
+msgstr ""
+"Tính khấu hao theo đường thẳng của một tài sản trong một chu kỳ. Phương pháp "
+"khấu hao theo đường thẳng thì phân phối giá có thể giảm ra toàn bộ thời gian "
+"sử dụng hữu ích của một tài sản. Thời gian sử dụng hữu ích là số các chu kỳ "
+"(thường là năm) trong chúng một tài sản bị sụt giá."
 
 #. Title of Sum-of-the-Years'-Digits Depreciation dialog
-#: ../data/buttons-financial.ui.h:98
+#: ../data/buttons-financial.ui.h:62
+#| msgid "Sum-Of-The-Years'-Digits Depreciation"
 msgid "Sum-of-the-Years'-Digits Depreciation"
-msgstr ""
+msgstr "Khấu hao tổng số năm"
 
 #. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:100
+#: ../data/buttons-financial.ui.h:64
+#| msgid ""
+#| "Calculates the depreciation allowance on an asset for a specified period "
+#| "of time, using the Sum-Of-The-Years'-Digits method. This method of "
+#| "depreciation accelerates the rate of depreciation, so that more "
+#| "depreciation expense occurs in earlier periods than in later ones. The "
+#| "useful life is the number of periods, typically years, over which an "
+#| "asset is depreciated. "
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
-" accelerates the rate of depreciation, so that more depreciation expense "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
+"accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
 msgstr ""
+"Tính khấu hao được phép cho một tài sản trong một chu kỳ nào đó, dùng phương "
+"pháp khấu hao tổng số năm. Phương pháp khấu hao này tăng tỷ lệ sụt giá, để "
+"khấu hao nhiều trong các chu kỳ trước hơn các chu kỳ sau. Thời gian sử dụng "
+"hữu ích là số các chu kỳ (thường là năm) trong chúng tài sản bị sụt giá."
 
 #. Title of Payment Period dialog
-#: ../data/buttons-financial.ui.h:102
+#: ../data/buttons-financial.ui.h:66
 msgid "Payment Period"
-msgstr "Chu kỳ Chi trả"
+msgstr "Chu kỳ chi trả"
 
 #. Payment Period Dialog: Label before future value input
-#: ../data/buttons-financial.ui.h:104
+#: ../data/buttons-financial.ui.h:68
 msgid "Future _Value:"
-msgstr "G_iá trị Tương lai"
+msgstr "G_iá trị tương lai"
 
 #. Payment Period Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:106
+#: ../data/buttons-financial.ui.h:70
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest"
-" rate."
-msgstr "Tính số các chu kỳ chi trả cần trong thời gian của một niên khoản thông thường, để tích luỹ một giá trị tương lai, theo một lãi xuất định kỳ."
+"of an ordinary annuity, to accumulate a future value, at a periodic interest "
+"rate."
+msgstr ""
+"Tính số các chu kỳ chi trả cần trong thời gian của một niên khoản thông "
+"thường, để tích luỹ một giá trị tương lai, theo một lãi xuất định kỳ."
+
+#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
+#: ../data/buttons-financial.ui.h:78
+msgid "Ctrm"
+msgstr "Ctrm"
+
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:80
+msgid "Ddb"
+msgstr "Ddb"
+
+#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
+#: ../data/buttons-financial.ui.h:82
+msgid "Fv"
+msgstr "Fv"
+
+#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#: ../data/buttons-financial.ui.h:84
+msgid "Term"
+msgstr "Kì"
+
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:86
+msgid "Syd"
+msgstr "Syd"
+
+#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:88
+msgid "Sln"
+msgstr "Sln"
+
+#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#: ../data/buttons-financial.ui.h:90
+msgid "Rate"
+msgstr "Tỷ lệ"
+
+#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
+#: ../data/buttons-financial.ui.h:92
+msgid "Pv"
+msgstr "Pv"
+
+#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
+#: ../data/buttons-financial.ui.h:94
+msgid "Pmt"
+msgstr "Pmt"
+
+#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
+#: ../data/buttons-financial.ui.h:96
+msgid "Gpm"
+msgstr "Gpm"
 
 #. Accessible name for the shift left button
 #. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:22 ../src/math-buttons.c:255
+#: ../data/buttons-programming.ui.h:16 ../src/math-buttons.c:240
 msgid "Shift Left"
-msgstr ""
+msgstr "Dịch trái"
 
 #. Accessible name for the shift right button
 #. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:24 ../src/math-buttons.c:258
+#: ../data/buttons-programming.ui.h:18 ../src/math-buttons.c:243
 msgid "Shift Right"
-msgstr ""
+msgstr "Dịch phải"
 
 #. Accessible name for the insert character button
-#: ../data/buttons-programming.ui.h:26
+#: ../data/buttons-programming.ui.h:20
+#| msgid "Ch_aracter:"
 msgid "Insert Character"
-msgstr ""
+msgstr "Chèn ký tự"
 
 #. Title of insert character code dialog
 #. Tooltip for the insert character code button
-#: ../data/buttons-programming.ui.h:34 ../src/math-buttons.c:240
+#: ../data/buttons-programming.ui.h:28 ../src/math-buttons.c:225
 msgid "Insert Character Code"
-msgstr ""
+msgstr "Chèn mã ký tự"
 
 #. Insert ASCII dialog: Label before character entry
-#: ../data/buttons-programming.ui.h:36
+#: ../data/buttons-programming.ui.h:30
 msgid "Ch_aracter:"
 msgstr "_Ký tự:"
 
 #. Insert ASCII dialog: Button to insert selected character
-#: ../data/buttons-programming.ui.h:38
+#: ../data/buttons-programming.ui.h:32
 msgid "_Insert"
 msgstr "_Chèn"
 
 #. Word size combo: 8 bits
 #: ../data/preferences.ui.h:2
 msgid "8-bit"
-msgstr ""
+msgstr "8-bit"
 
 #. Word size combo: 16 bits
 #: ../data/preferences.ui.h:4
 msgid "16-bit"
-msgstr ""
+msgstr "16-bit"
 
 #. Word size combo: 32 bits
 #: ../data/preferences.ui.h:6
 msgid "32-bit"
-msgstr ""
+msgstr "32-bit"
 
 #. Word size combo: 64 bits
 #: ../data/preferences.ui.h:8
 msgid "64-bit"
-msgstr ""
+msgstr "64-bit"
 
 #. Title of preferences dialog
-#: ../data/preferences.ui.h:9 ../src/math-preferences.c:239
+#: ../data/preferences.ui.h:9 ../src/math-preferences.c:231
+#: ../src/math-window.c:369
 msgid "Preferences"
-msgstr ""
+msgstr "Tuỳ thích"
 
 #. Preferences dialog: Label for angle unit combo box
 #: ../data/preferences.ui.h:11
 msgid "_Angle units:"
-msgstr ""
+msgstr "Đơn vị _góc:"
 
 #. Preferences dialog: Label for display format combo box
 #: ../data/preferences.ui.h:13
 msgid "Number _Format:"
-msgstr ""
+msgstr "Định dạng _số:"
 
 #. Preferences dialog: label for word size combo box
 #: ../data/preferences.ui.h:15
+#| msgid "Word size"
 msgid "Word _size:"
-msgstr ""
+msgstr "_Kích cỡ từ:"
 
 #. Preferences dialog: label for show trailing zeroes check button
 #: ../data/preferences.ui.h:17
+#| msgid "Show trailing zeroes"
 msgid "Show trailing _zeroes"
-msgstr ""
+msgstr "Hiện số không theo _sau"
 
 #. Preferences dialog: label for show thousands separator check button
 #: ../data/preferences.ui.h:19
+#| msgid "Show thousands separator"
 msgid "Show _thousands separators"
-msgstr ""
+msgstr "Hiện dấu tách hàng n_ghìn"
 
-#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:486
+#. Title of main window
+#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:493
 msgid "Calculator"
 msgstr "Bàn tính"
 
@@ -485,7 +484,7 @@ msgstr "Chạy phép tính kiểu số học, khoa học hay tài chính"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:1
 msgid "Accuracy value"
-msgstr ""
+msgstr "Độ chính xác"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:2
 msgid "The number of digits displayed after the numeric point"
@@ -493,7 +492,7 @@ msgstr ""
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:3
 msgid "Word size"
-msgstr ""
+msgstr "Kích cỡ từ"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:4
 msgid "The size of the words used in bitwise operations"
@@ -501,23 +500,26 @@ msgstr ""
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:5
 msgid "Numeric Base"
-msgstr ""
+msgstr "Hệ cơ số"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:6
+#| msgid "Numeric Base"
 msgid "The numeric base"
-msgstr ""
+msgstr "Hệ cơ số"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:7
+#| msgid "Show T_housands Separator"
 msgid "Show Thousands Separators"
-msgstr ""
+msgstr "Hiện dấu tách hàng nghìn"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:8
 msgid "Indicates whether thousands separators are shown in large numbers."
 msgstr ""
+"Cho biết có nên thêm vào dấu phân cách hàng ngàn trong những con số lớn."
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:9
 msgid "Show Trailing Zeroes"
-msgstr ""
+msgstr "Hiển thị số không thập phân"
 
 #: ../data/org.mate.mate-calc.gschema.xml.in.h:10
 msgid ""
@@ -565,157 +567,277 @@ msgstr ""
 msgid "Currency to convert the current calculation into"
 msgstr ""
 
-#: ../src/currency.h:19
-msgid "Australian dollar"
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:21
+msgid "Source units"
 msgstr ""
 
-#: ../src/currency.h:20
-msgid "Bulgarian lev"
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:22
+#| msgid "Quit the calculator"
+msgid "Units of the current calculation"
+msgstr "Đơn vị tính hiện tại"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:23
+msgid "Target units"
+msgstr "Đơn vị đích"
+
+#: ../data/org.mate.mate-calc.gschema.xml.in.h:24
+msgid "Units to convert the current calculation into"
 msgstr ""
 
-#: ../src/currency.h:21
-msgid "Brazilian real"
+#: ../src/currency-manager.c:30
+msgid "UAE Dirham"
 msgstr ""
 
-#: ../src/currency.h:22
-msgid "Canadian dollar"
-msgstr ""
+#: ../src/currency-manager.c:31
+msgid "Australian Dollar"
+msgstr "Đô la Úc"
 
-#: ../src/currency.h:23
-msgid "Swiss franc"
-msgstr ""
+#: ../src/currency-manager.c:32
+msgid "Bulgarian Lev"
+msgstr "Lev Bungari"
 
-#: ../src/currency.h:24
-msgid "Chinese yuan renminbi"
-msgstr ""
+#: ../src/currency-manager.c:33
+msgid "Bahraini Dinar"
+msgstr "Đina Bahrain"
 
-#: ../src/currency.h:25
-msgid "Czech koruna"
-msgstr ""
+#: ../src/currency-manager.c:34
+msgid "Brunei Dollar"
+msgstr "Đô la Brunei"
 
-#: ../src/currency.h:26
-msgid "Danish krone"
-msgstr ""
+#: ../src/currency-manager.c:35
+msgid "Brazilian Real"
+msgstr "Rê-an Brazin"
 
-#: ../src/currency.h:27
-msgid "Estonian kroon"
-msgstr ""
+#: ../src/currency-manager.c:36
+msgid "Botswana Pula"
+msgstr "Pula Botswana"
 
-#: ../src/currency.h:28
+#: ../src/currency-manager.c:37
+msgid "Canadian Dollar"
+msgstr "Đô la Canađa"
+
+#: ../src/currency-manager.c:38
+msgid "CFA Franc"
+msgstr "Franc CFA"
+
+#: ../src/currency-manager.c:39
+msgid "Swiss Franc"
+msgstr "Franc Thuỵ Sĩ"
+
+#: ../src/currency-manager.c:40
+msgid "Chilean Peso"
+msgstr "Pêsô Chilê"
+
+#: ../src/currency-manager.c:41
+msgid "Chinese Yuan"
+msgstr "Nhân dân tệ Trung Quốc"
+
+#: ../src/currency-manager.c:42
+msgid "Colombian Peso"
+msgstr "Pêsô Colombia"
+
+#: ../src/currency-manager.c:43
+msgid "Czech Koruna"
+msgstr "Koruna Séc"
+
+#: ../src/currency-manager.c:44
+msgid "Danish Krone"
+msgstr "Krone Đan Mạch"
+
+#: ../src/currency-manager.c:45
+msgid "Algerian Dinar"
+msgstr "Đina Algeri"
+
+#: ../src/currency-manager.c:46
+msgid "Estonian Kroon"
+msgstr "Kroon Estonia"
+
+#: ../src/currency-manager.c:47
 msgid "Euro"
-msgstr ""
+msgstr "Euro"
 
-#: ../src/currency.h:29
-msgid "Pound sterling"
-msgstr ""
+#: ../src/currency-manager.c:48
+msgid "Pound Sterling"
+msgstr "Bảng Sterling"
 
-#: ../src/currency.h:30
-msgid "Hong Kong dollar"
-msgstr ""
+#: ../src/currency-manager.c:49
+msgid "Hong Kong Dollar"
+msgstr "Đô la Hồng Kông"
 
-#: ../src/currency.h:31
-msgid "Croatian kuna"
-msgstr ""
+#: ../src/currency-manager.c:50
+msgid "Croatian Kuna"
+msgstr "Kuna Croatia"
 
-#: ../src/currency.h:32
-msgid "Hungarian forint"
-msgstr ""
+#: ../src/currency-manager.c:51
+msgid "Hungarian Forint"
+msgstr "Forint Hungari"
 
-#: ../src/currency.h:33
-msgid "Indonesian rupiah"
-msgstr ""
+#: ../src/currency-manager.c:52
+msgid "Indonesian Rupiah"
+msgstr "Rupi Inđônêsia"
 
-#: ../src/currency.h:34
-msgid "Indian rupee"
-msgstr ""
+#: ../src/currency-manager.c:53
+msgid "Israeli New Shekel"
+msgstr "New Shekel Israel"
 
-#: ../src/currency.h:35
-msgid "Icelandic krona"
-msgstr ""
+#: ../src/currency-manager.c:54
+msgid "Indian Rupee"
+msgstr "Rupee Ấn Độ"
 
-#: ../src/currency.h:36
-msgid "Japanese yen"
-msgstr ""
+#: ../src/currency-manager.c:55
+msgid "Iranian Rial"
+msgstr "Rial Iran"
 
-#: ../src/currency.h:37
-msgid "South Korean won"
-msgstr ""
+#: ../src/currency-manager.c:56
+msgid "Icelandic Krona"
+msgstr "Krona Ai-xơ-len"
 
-#: ../src/currency.h:38
-msgid "Lithuanian litas"
-msgstr ""
+#: ../src/currency-manager.c:57
+msgid "Japanese Yen"
+msgstr "Yên Nhật Bản"
 
-#: ../src/currency.h:39
-msgid "Latvian lats"
-msgstr ""
+#: ../src/currency-manager.c:58
+msgid "South Korean Won"
+msgstr "Won Hàn Quốc"
 
-#: ../src/currency.h:40
-msgid "Mexican peso"
-msgstr ""
+#: ../src/currency-manager.c:59
+msgid "Kuwaiti Dinar"
+msgstr "Đina Kuwait"
 
-#: ../src/currency.h:41
-msgid "Malaysian ringgit"
-msgstr ""
+#: ../src/currency-manager.c:60
+msgid "Kazakhstani Tenge"
+msgstr "Tenge Kazakhstan"
 
-#: ../src/currency.h:42
-msgid "Norwegian krone"
-msgstr ""
+#: ../src/currency-manager.c:61
+msgid "Sri Lankan Rupee"
+msgstr "Rupee Sri Lanka"
 
-#: ../src/currency.h:43
-msgid "New Zealand dollar"
-msgstr ""
+#: ../src/currency-manager.c:62
+msgid "Lithuanian Litas"
+msgstr "Lita Lithuania"
 
-#: ../src/currency.h:44
-msgid "Philippine peso"
-msgstr ""
+#: ../src/currency-manager.c:63
+msgid "Latvian Lats"
+msgstr "Lats Latvia"
 
-#: ../src/currency.h:45
-msgid "Polish zloty"
-msgstr ""
+#: ../src/currency-manager.c:64
+msgid "Libyan Dinar"
+msgstr "Đina  Libi"
 
-#: ../src/currency.h:46
-msgid "New Romanian leu"
-msgstr ""
+#: ../src/currency-manager.c:65
+msgid "Mauritian Rupee"
+msgstr "Rupee Mauritania"
 
-#: ../src/currency.h:47
-msgid "Russian rouble"
-msgstr ""
+#: ../src/currency-manager.c:66
+msgid "Mexican Peso"
+msgstr "Pêsô Mexico"
 
-#: ../src/currency.h:48
-msgid "Swedish krona"
-msgstr ""
+#: ../src/currency-manager.c:67
+msgid "Malaysian Ringgit"
+msgstr "Ringgit Malaysian"
 
-#: ../src/currency.h:49
-msgid "Singapore dollar"
-msgstr ""
+#: ../src/currency-manager.c:68
+msgid "Norwegian Krone"
+msgstr "Krone Na Uy"
 
-#: ../src/currency.h:50
-msgid "Thai baht"
-msgstr ""
+#: ../src/currency-manager.c:69
+msgid "Nepalese Rupee"
+msgstr "Rupee Nê-pan"
 
-#: ../src/currency.h:51
-msgid "New Turkish lira"
-msgstr ""
+#: ../src/currency-manager.c:70
+msgid "New Zealand Dollar"
+msgstr "Đô la New Zealand"
 
-#: ../src/currency.h:52
-msgid "US dollar"
-msgstr ""
+#: ../src/currency-manager.c:71
+msgid "Omani Rial"
+msgstr "Rial Oman"
 
-#: ../src/currency.h:53
-msgid "South African rand"
+#: ../src/currency-manager.c:72
+msgid "Peruvian Nuevo Sol"
+msgstr "Nuevo Sol Pêru"
+
+#: ../src/currency-manager.c:73
+msgid "Philippine Peso"
+msgstr "Pêsô Philipin"
+
+#: ../src/currency-manager.c:74
+msgid "Pakistani Rupee"
+msgstr "Rupee Pakistan"
+
+#: ../src/currency-manager.c:75
+msgid "Polish Zloty"
+msgstr "Zloty Phần Lan"
+
+#: ../src/currency-manager.c:76
+msgid "Qatari Riyal"
+msgstr "Riyal Qatar"
+
+#: ../src/currency-manager.c:77
+msgid "New Romanian Leu"
+msgstr "Leu Romani mới"
+
+#: ../src/currency-manager.c:78
+msgid "Russian Rouble"
+msgstr "Rouble Nga"
+
+#: ../src/currency-manager.c:79
+msgid "Saudi Riyal"
+msgstr "Riyal Saudi"
+
+#: ../src/currency-manager.c:80
+msgid "Swedish Krona"
+msgstr "Krona Thuỵ Điển"
+
+#: ../src/currency-manager.c:81
+msgid "Singapore Dollar"
+msgstr "Đô la Singapore"
+
+#: ../src/currency-manager.c:82
+msgid "Thai Baht"
+msgstr "Baht Thái"
+
+#: ../src/currency-manager.c:83
+msgid "Tunisian Dinar"
+msgstr "Đina Tunisia"
+
+#: ../src/currency-manager.c:84
+msgid "New Turkish Lira"
+msgstr "Lira Thổ Nhĩ Kỳ mới"
+
+#: ../src/currency-manager.c:85
+msgid "T&T Dollar (TTD)"
+msgstr "Đô la T&T (TTD)"
+
+#: ../src/currency-manager.c:86
+msgid "US Dollar"
+msgstr "Đô la Mỹ"
+
+#: ../src/currency-manager.c:87
+msgid "Uruguayan Peso"
+msgstr "Pêsô Uruquay"
+
+#: ../src/currency-manager.c:88
+msgid "Venezuelan Bolívar"
+msgstr "Bolívar Vênêzuêla"
+
+#: ../src/currency-manager.c:89
+msgid "South African Rand"
+msgstr "Rand Nam Phi"
+
+#: ../src/financial.c:70
+msgid "Error: the number of periods must be positive"
 msgstr ""
 
 #. Description on how to use mate-calc displayed on command-line
-#: ../src/mate-calc.c:76
+#: ../src/mate-calc.c:77
 #, c-format
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
 msgstr ""
 
-#. Description on mate-calc command-line help options displayed on command-
-#. line
-#: ../src/mate-calc.c:84
+#. Description on mate-calc command-line help options displayed on command-line
+#: ../src/mate-calc.c:85
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -724,27 +846,41 @@ msgid ""
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
 msgstr ""
+"Các tùy chọn trợ giúp:\n"
+"  -v, --version                   Xem phiên bản phần mềm\n"
+"  -h, -?, --help                  Xem các tùy chọn trợ giúp\n"
+"  --help-all                      Xem tất cả tùy chọn trợ giúp\n"
+"  --help-gtk                      Xem tùy chọn GTK+"
 
-#. Description on mate-calc command-line GTK+ options displayed on command-
-#. line
-#: ../src/mate-calc.c:95
+#. Description on mate-calc command-line GTK+ options displayed on command-line
+#: ../src/mate-calc.c:96
 #, c-format
 msgid ""
 "GTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window manager\n"
-"  --name=NAME                     Program name as used by the window manager\n"
+"  --class=CLASS                   Program class as used by the window "
+"manager\n"
+"  --name=NAME                     Program name as used by the window "
+"manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
+"Lựa chọn GTK+ :\n"
+"  --class=CLASS                   Lớp của chương trình được dùng bởi trình "
+"quản lý cửa sổ\n"
+"  --name=NAME                    Tên của chương trình được dùng bởi trình "
+"quản lý cửa sổ\n"
+"  --screen=SCREEN                 Màn hình X được sử dụng\n"
+"  --sync                          Thực hiện lệnh gọi đồng bộ hóa X\n"
+"  --gtk-module=MODULES            Nạp những bộ phận thêm vào của GTK+\n"
+"  --g-fatal-warnings              Tạo tất cả thông báo lỗi nguy hiểm"
 
 #. Description on mate-calc application options displayed on command-line
-#: ../src/mate-calc.c:109
+#: ../src/mate-calc.c:110
 #, c-format
 msgid ""
 "Application Options:\n"
-"  -u, --unittest                  Perform unit tests\n"
 "  -s, --solve <equation>          Solve the given equation"
 msgstr ""
 
@@ -752,629 +888,2371 @@ msgstr ""
 #: ../src/mate-calc.c:154
 #, c-format
 msgid "Argument --solve requires an equation to solve"
-msgstr ""
+msgstr "Tham số --solve cần một phương trình để giải"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: ../src/mate-calc.c:168
+#: ../src/mate-calc.c:164
 #, c-format
 msgid "Unknown argument '%s'"
-msgstr ""
+msgstr "Không hiểu tham số '%s'"
 
 #. Tooltip for the Pi button
-#: ../src/math-buttons.c:106
+#: ../src/math-buttons.c:94
 msgid "Pi [Ctrl+P]"
-msgstr ""
+msgstr "Pi [Ctrl+P]"
 
 #. Tooltip for the Euler's Number button
-#: ../src/math-buttons.c:109
+#: ../src/math-buttons.c:97
+#| msgid "Euler's Number (e)"
 msgid "Euler’s Number"
-msgstr ""
+msgstr "Số Euler"
 
 #. Tooltip for the subscript button
-#: ../src/math-buttons.c:114
+#: ../src/math-buttons.c:102
 msgid "Subscript mode [Alt]"
-msgstr ""
+msgstr "Chế độ số nhỏ dưới [Alt]"
 
 #. Tooltip for the superscript button
-#: ../src/math-buttons.c:117
+#: ../src/math-buttons.c:105
 msgid "Superscript mode [Ctrl]"
-msgstr ""
+msgstr "Chế độ số mũ [Ctrl]"
 
 #. Tooltip for the scientific exponent button
-#: ../src/math-buttons.c:120
+#: ../src/math-buttons.c:108
 msgid "Scientific exponent [Ctrl+E]"
-msgstr ""
+msgstr "Luỹ thừa khoa học [Ctrl+E]"
 
 #. Tooltip for the add button
-#: ../src/math-buttons.c:123
+#: ../src/math-buttons.c:111
 msgid "Add [+]"
 msgstr "Cộng [+]"
 
 #. Tooltip for the subtract button
-#: ../src/math-buttons.c:126
+#: ../src/math-buttons.c:114
 msgid "Subtract [-]"
 msgstr "Trừ [-]"
 
 #. Tooltip for the multiply button
-#: ../src/math-buttons.c:129
+#: ../src/math-buttons.c:117
 msgid "Multiply [*]"
 msgstr "Nhân [*]"
 
 #. Tooltip for the divide button
-#: ../src/math-buttons.c:132
+#: ../src/math-buttons.c:120
 msgid "Divide [/]"
 msgstr "Chia [/]"
 
 #. Tooltip for the modulus divide button
-#: ../src/math-buttons.c:135
+#: ../src/math-buttons.c:123
+#| msgid "Modulus Division [M]"
 msgid "Modulus divide"
-msgstr ""
+msgstr "Chia phần dư"
 
 #. Tooltip for the additional functions button
-#: ../src/math-buttons.c:138
+#: ../src/math-buttons.c:126
+#| msgid "Edit Functions"
 msgid "Additional Functions"
-msgstr ""
+msgstr "Hàm bổ sung"
 
 #. Tooltip for the exponent button
-#: ../src/math-buttons.c:141
+#: ../src/math-buttons.c:129
 msgid "Exponent [^ or **]"
-msgstr ""
+msgstr "Luỹ thừa [^ hoặc **]"
 
 #. Tooltip for the square button
-#: ../src/math-buttons.c:144
+#: ../src/math-buttons.c:132
+#| msgid "Square [@]"
 msgid "Square [Ctrl+2]"
-msgstr ""
+msgstr "Bình phương [Ctrl+2]"
 
 #. Tooltip for the percentage button
-#: ../src/math-buttons.c:147
+#: ../src/math-buttons.c:135
 msgid "Percentage [%]"
 msgstr "Phần trăm [%]"
 
 #. Tooltip for the factorial button
-#: ../src/math-buttons.c:150
+#: ../src/math-buttons.c:138
+#| msgid "Factorial"
 msgid "Factorial [!]"
-msgstr ""
+msgstr "Giai thừa [!]"
 
 #. Tooltip for the absolute value button
-#: ../src/math-buttons.c:153
+#: ../src/math-buttons.c:141
+#| msgid "Absolute value [u]"
 msgid "Absolute value [|]"
-msgstr ""
+msgstr "Giá trị tuyệt đối [|]"
 
 #. Tooltip for the complex argument component button
-#: ../src/math-buttons.c:156
+#: ../src/math-buttons.c:144
 msgid "Complex argument"
 msgstr ""
 
 #. Tooltip for the complex conjugate button
-#: ../src/math-buttons.c:159
+#: ../src/math-buttons.c:147
 msgid "Complex conjugate"
 msgstr ""
 
 #. Tooltip for the root button
-#: ../src/math-buttons.c:162
+#: ../src/math-buttons.c:150
 msgid "Root [Ctrl+R]"
 msgstr ""
 
 #. Tooltip for the square root button
-#: ../src/math-buttons.c:165
+#: ../src/math-buttons.c:153
+#| msgid "Square root [s]"
 msgid "Square root [Ctrl+R]"
-msgstr ""
+msgstr "Căn bậc 2 [Ctrl+R]"
 
 #. Tooltip for the logarithm button
-#: ../src/math-buttons.c:168
+#: ../src/math-buttons.c:156
 msgid "Logarithm"
-msgstr ""
+msgstr "Lôgarít"
 
 #. Tooltip for the natural logarithm button
-#: ../src/math-buttons.c:171
+#: ../src/math-buttons.c:159
+#| msgid "Natural log [n]"
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "Lôgarít tự nhiên"
 
 #. Tooltip for the sine button
-#: ../src/math-buttons.c:174
+#: ../src/math-buttons.c:162
+#| msgid "Sine [k]"
 msgid "Sine"
-msgstr ""
+msgstr "Sin"
 
 #. Tooltip for the cosine button
-#: ../src/math-buttons.c:177
+#: ../src/math-buttons.c:165
+#| msgid "Cosine [j]"
 msgid "Cosine"
-msgstr ""
+msgstr "Cosin"
 
 #. Tooltip for the tangent button
-#: ../src/math-buttons.c:180
+#: ../src/math-buttons.c:168
+#| msgid "Tangent [w]"
 msgid "Tangent"
-msgstr ""
+msgstr "Tang"
 
 #. Tooltip for the hyperbolic sine button
-#: ../src/math-buttons.c:183
+#: ../src/math-buttons.c:171
+#| msgid "Hyperbolic Sine [k]"
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "Sin hyperbol"
 
 #. Tooltip for the hyperbolic cosine button
-#: ../src/math-buttons.c:186
+#: ../src/math-buttons.c:174
+#| msgid "Hyperbolic Cosine [j]"
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "Cosin hyperbol"
 
 #. Tooltip for the hyperbolic tangent button
-#: ../src/math-buttons.c:189
+#: ../src/math-buttons.c:177
+#| msgid "Hyperbolic Tangent [w]"
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "Tang hyperbol"
 
 #. Tooltip for the inverse button
-#: ../src/math-buttons.c:192
+#: ../src/math-buttons.c:180
+#| msgid "Inverse Sine [K]"
 msgid "Inverse [Ctrl+I]"
-msgstr ""
+msgstr "Nghịch đảo [Ctrl+I]"
 
 #. Tooltip for the boolean AND button
-#: ../src/math-buttons.c:195
+#: ../src/math-buttons.c:183
 msgid "Boolean AND"
-msgstr ""
+msgstr "VÀ luận lý"
 
 #. Tooltip for the boolean OR button
-#: ../src/math-buttons.c:198
+#: ../src/math-buttons.c:186
 msgid "Boolean OR"
-msgstr ""
+msgstr "HOẶC luận lý"
 
 #. Tooltip for the exclusive OR button
-#: ../src/math-buttons.c:201
+#: ../src/math-buttons.c:189
 msgid "Boolean Exclusive OR"
-msgstr ""
+msgstr "HOẶC loại trừ luận lý"
 
 #. Tooltip for the boolean NOT button
-#: ../src/math-buttons.c:204
+#: ../src/math-buttons.c:192
 msgid "Boolean NOT"
-msgstr ""
+msgstr "PHỦ ĐỊNH luận lý"
 
 #. Tooltip for the integer component button
-#: ../src/math-buttons.c:207 ../src/math-buttons.c:1445
+#: ../src/math-buttons.c:195 ../src/math-buttons.c:983
+#| msgid "Integer portion"
 msgid "Integer Component"
-msgstr ""
+msgstr "Phần nguyên"
 
 #. Tooltip for the fractional component button
-#: ../src/math-buttons.c:210 ../src/math-buttons.c:1447
+#: ../src/math-buttons.c:198 ../src/math-buttons.c:985
+#| msgid "Fractional portion"
 msgid "Fractional Component"
-msgstr ""
+msgstr "Phần phân số"
 
 #. Tooltip for the real component button
-#: ../src/math-buttons.c:213
+#: ../src/math-buttons.c:201
 msgid "Real Component"
-msgstr ""
+msgstr "Phần thực"
 
 #. Tooltip for the imaginary component button
-#: ../src/math-buttons.c:216
+#: ../src/math-buttons.c:204
 msgid "Imaginary Component"
-msgstr ""
+msgstr "Phần ảo"
 
-#. Tooltip for the ones complement button
-#: ../src/math-buttons.c:219
-msgid "Ones Complement"
-msgstr ""
+#. Tooltip for the ones' complement button
+#: ../src/math-buttons.c:207
+msgid "Ones' Complement"
+msgstr "Bù một"
 
-#. Tooltip for the twos complement button
-#: ../src/math-buttons.c:222
-msgid "Twos Complement"
-msgstr ""
+#. Tooltip for the two's complement button
+#: ../src/math-buttons.c:210
+msgid "Two's Complement"
+msgstr "Bù hai"
 
 #. Tooltip for the truncate button
-#: ../src/math-buttons.c:225
+#: ../src/math-buttons.c:213
 msgid "Truncate"
-msgstr ""
+msgstr "Cắt"
 
 #. Tooltip for the start group button
-#: ../src/math-buttons.c:228
+#: ../src/math-buttons.c:216
+#| msgid "Start group of calculations [(]"
 msgid "Start Group [(]"
-msgstr ""
+msgstr "Bắt đầu nhóm [(]"
 
 #. Tooltip for the end group button
-#: ../src/math-buttons.c:231
+#: ../src/math-buttons.c:219
 msgid "End Group [)]"
-msgstr ""
-
-#. Tooltip for the assign variable button
-#: ../src/math-buttons.c:234
-msgid "Assign Variable"
-msgstr ""
-
-#. Tooltip for the insert variable button
-#: ../src/math-buttons.c:237
-msgid "Insert Variable"
-msgstr ""
+msgstr "Đóng nhóm [)]"
 
 #. Tooltip for the solve button
-#: ../src/math-buttons.c:243
+#: ../src/math-buttons.c:228
+#| msgid "Calculate result"
 msgid "Calculate Result"
-msgstr ""
+msgstr "Tính kết quả"
 
 #. Tooltip for the factor button
-#: ../src/math-buttons.c:246
+#: ../src/math-buttons.c:231
 msgid "Factorize [Ctrl+F]"
-msgstr ""
+msgstr "Phân tích nhân tử [Ctrl+F]"
 
 #. Tooltip for the clear button
-#: ../src/math-buttons.c:249
+#: ../src/math-buttons.c:234
+#| msgid "Clear displayed value [Escape]"
 msgid "Clear Display [Escape]"
-msgstr ""
+msgstr "Xoá hiển thị [Esc]"
 
 #. Tooltip for the undo button
-#: ../src/math-buttons.c:252
+#: ../src/math-buttons.c:237
 msgid "Undo [Ctrl+Z]"
-msgstr ""
+msgstr "Hoàn lại [Ctrl+Z]"
 
 #. Tooltip for the double declining depreciation button
-#: ../src/math-buttons.c:264
+#: ../src/math-buttons.c:249
+#| msgid "Double-Declining Depreciation"
 msgid "Double Declining Depreciation"
-msgstr ""
+msgstr "Khấu hao giảm dần kép"
 
 #. Tooltip for the financial term button
-#: ../src/math-buttons.c:270
+#: ../src/math-buttons.c:255
+#| msgid "Financial"
 msgid "Financial Term"
 msgstr ""
 
 #. Tooltip for the sum of the years digits depreciation button
-#: ../src/math-buttons.c:273
+#: ../src/math-buttons.c:258
+#| msgid "Sum-Of-The-Years'-Digits Depreciation"
 msgid "Sum of the Years Digits Depreciation"
-msgstr ""
+msgstr "Khấu hao tổng số năm"
 
 #. Tooltip for the straight line depreciation button
-#: ../src/math-buttons.c:276
+#: ../src/math-buttons.c:261
+#| msgid "Straight-Line Depreciation"
 msgid "Straight Line Depreciation"
-msgstr ""
-
-#. Advanced buttons: Angle unit combo box: Use degrees for trigonometric
-#. calculations
-#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
-#. calculations
-#: ../src/math-buttons.c:895 ../src/math-preferences.c:255
-msgid "Degrees"
-msgstr ""
-
-#. Advanced buttons: Angle unit combo box: Use radians for trigonometric
-#. calculations
-#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
-#. calculations
-#: ../src/math-buttons.c:899 ../src/math-preferences.c:259
-msgid "Radians"
-msgstr ""
-
-#. Advanced buttons: Angle unit combo box: Use gradians for trigonometric
-#. calculations
-#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
-#. calculations
-#: ../src/math-buttons.c:903 ../src/math-preferences.c:263
-msgid "Gradians"
-msgstr ""
+msgstr "Khấu hao theo đường thẳng"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: ../src/math-buttons.c:937
+#: ../src/math-buttons.c:601
 msgid "Binary"
-msgstr ""
+msgstr "Nhị phân"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: ../src/math-buttons.c:941
+#: ../src/math-buttons.c:605
 msgid "Octal"
-msgstr ""
+msgstr "Bát phân"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: ../src/math-buttons.c:945
+#: ../src/math-buttons.c:609
 msgid "Decimal"
-msgstr ""
+msgstr "Thập phân"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: ../src/math-buttons.c:949
+#: ../src/math-buttons.c:613
+#| msgid "Hexadecimal digit A [a]"
 msgid "Hexadecimal"
-msgstr ""
-
-#. Text shown in store menu when no variables defined
-#. Text shown in recall menu when no variables defined
-#: ../src/math-buttons.c:1266 ../src/math-buttons.c:1312
-msgid "No variables defined"
-msgstr ""
+msgstr "Thập lục phân"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: ../src/math-buttons.c:1355 ../src/math-buttons.c:1399
+#: ../src/math-buttons.c:894 ../src/math-buttons.c:937
 #, c-format
+#| msgid "_1 place"
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] ""
+msgstr[0] "_%d số"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: ../src/math-buttons.c:1359 ../src/math-buttons.c:1403
+#: ../src/math-buttons.c:898 ../src/math-buttons.c:941
 #, c-format
+#| msgid "_1 place"
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] ""
+msgstr[0] "%d số"
 
 #. Tooltip for the round button
-#: ../src/math-buttons.c:1449
+#: ../src/math-buttons.c:987
 msgid "Round"
-msgstr ""
+msgstr "Làm tròn"
 
 #. Tooltip for the floor button
-#: ../src/math-buttons.c:1451
+#: ../src/math-buttons.c:989
 msgid "Floor"
-msgstr ""
+msgstr "Làm tròn xuống"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:1453
+#: ../src/math-buttons.c:991
 msgid "Ceiling"
-msgstr ""
+msgstr "Làm tròn lên"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:1455
+#: ../src/math-buttons.c:993
 msgid "Sign"
-msgstr ""
+msgstr "Dấu"
+
+#. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
+#: ../src/math-converter.c:412
+msgid " in "
+msgstr " theo "
+
+#. Tooltip for swap conversion button
+#: ../src/math-converter.c:427
+msgid "Switch conversion units"
+msgstr "Chuyển đổi đơn vị"
 
 #. Error shown when trying to undo with no undo history
-#: ../src/math-equation.c:496
+#: ../src/math-equation.c:459
 msgid "No undo history"
 msgstr "Không có lược sử hủy bước"
 
 #. Error shown when trying to redo with no redo history
-#: ../src/math-equation.c:521
+#: ../src/math-equation.c:486
+#| msgid "No undo history"
 msgid "No redo history"
-msgstr ""
+msgstr "Không có lược sử làm lại"
 
-#: ../src/math-equation.c:845
+#: ../src/math-equation.c:944
 msgid "No sane value to store"
 msgstr "Không có giá trị hữu tỷ để lưu"
 
-#. Error displayed to user when they perform a bitwise operation on numbers
-#. greater than the current word
-#: ../src/math-equation.c:1105
+#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
+#: ../src/math-equation.c:1226
 msgid "Overflow. Try a bigger word size"
-msgstr ""
+msgstr "Tràn bộ nhớ. Hãy thử với kích thước từ (word) lớn hơn."
 
 #. Error displayed to user when they an unknown variable is entered
-#: ../src/math-equation.c:1110
+#: ../src/math-equation.c:1231
 #, c-format
+#| msgid "Unknown argument '%s'"
 msgid "Unknown variable '%s'"
-msgstr ""
+msgstr "Biến lạ '%s'"
 
 #. Error displayed to user when an unknown function is entered
-#: ../src/math-equation.c:1115
+#: ../src/math-equation.c:1236
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr ""
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: ../src/math-equation.c:1120
+#: ../src/math-equation.c:1241
 msgid "Unknown conversion"
-msgstr ""
+msgstr "Chuyển đổi không biết"
 
 #. Error displayed to user when they enter an invalid calculation
-#: ../src/math-equation.c:1129
+#: ../src/math-equation.c:1250
 msgid "Malformed expression"
-msgstr "Biểu thức dạng sai"
+msgstr "Biểu thức sai"
+
+#: ../src/math-equation.c:1264
+#| msgid "Calculator"
+msgid "Calculating"
+msgstr "Đang tính"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1152
+#: ../src/math-equation.c:1380
 msgid "Need an integer to factorize"
-msgstr ""
+msgstr "Cần số nguyên để phân tích nhân tử"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1229
+#: ../src/math-equation.c:1452
+#| msgid "No sane value to do bitwise shift"
 msgid "No sane value to bitwise shift"
-msgstr ""
+msgstr "Không có giá trị đúng đắn để dịch bit"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1258
+#: ../src/math-equation.c:1483
 msgid "Displayed value not an integer"
 msgstr ""
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1648
+#: ../src/math-equation.c:1908
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
-msgstr ""
+msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
 #. Label on close button in preferences dialog
-#: ../src/math-preferences.c:245
+#: ../src/math-preferences.c:235
 msgid "_Close"
-msgstr ""
+msgstr "Đón_g"
+
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
+#: ../src/math-preferences.c:245 ../src/unit-manager.c:54
+#| msgid "De_grees"
+msgid "Degrees"
+msgstr "Độ"
+
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
+#: ../src/math-preferences.c:249 ../src/unit-manager.c:55
+#| msgid "_Radians"
+msgid "Radians"
+msgstr "_Rađian"
+
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
+#: ../src/math-preferences.c:253 ../src/unit-manager.c:56
+#| msgid "Gr_adians"
+msgid "Gradians"
+msgstr "Gr_ađian"
+
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
+#: ../src/math-preferences.c:263
+msgid "Automatic"
+msgstr "Tự động"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:273
+#: ../src/math-preferences.c:267
 msgid "Fixed"
-msgstr ""
+msgstr "Cố định"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:277
+#: ../src/math-preferences.c:271
 msgid "Scientific"
 msgstr "Khoa học"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:281
+#: ../src/math-preferences.c:275
 msgid "Engineering"
-msgstr ""
+msgstr "Kỹ sư"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:292
+#: ../src/math-preferences.c:286
 #, c-format
 msgid "Show %d decimal _places"
-msgstr ""
+msgstr "Hiện %d _số thập phân"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:161
+#: ../src/math-window.c:171
 msgid "Unable to open help file"
 msgstr "Không thể mở tập tin trợ giúp"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:188
+#: ../src/math-window.c:204
 msgid "translator-credits"
-msgstr "Nhóm Việt hóa MATE (http://matevi.sourceforge.net)"
+msgstr "Nhóm Việt hóa MATE (http://live.gnome.org/MateVi)"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:194
+#: ../src/math-window.c:207
 msgid ""
-"mate-calc is free software; you can redistribute it and/or modify\n"
+"Gcalctool is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
 "the Free Software Foundation; either version 2 of the License, or\n"
 "(at your option) any later version.\n"
 "\n"
-"mate-calc is distributed in the hope that it will be useful,\n"
+"Gcalctool is distributed in the hope that it will be useful,\n"
 "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
 "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
 "You should have received a copy of the GNU General Public License\n"
-"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
+"along with Gcalctool; if not, write to the Free Software Foundation, Inc.,\n"
 "51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr ""
+"Gcalctool là phần mềm tự do; bạn có thể phát hành lại nó \n"
+"và/hoặc sửa đổi nó với điều kiện của Giấy phép Công cộng GNU \n"
+"như được xuất bản bởi Tổ chức Phần mềm Tự do\n"
+" hoặc phiên bản 2 của Giấy phép này, \n"
+"hoặc (tùy chọn) bất kỳ phiên bản sau nào.\n"
+"\n"
+"Gcalctool được phát hành vì mong muốn nó có ích, nhưng KHÔNG CÓ BẤT KỲ BẢO "
+"HÀNH NÀO, THẬM CHÍ KHÔNG CÓ BẢO ĐẢM NGẦM ĐỊNH VỀ KHẢ NĂNG BÁN HAY KHẢ NĂNG "
+"LÀM ĐƯỢC VIỆC DỨT KHOÁT. Xem Giấy phép Công cộng GNU để biết thêm chi tiết.\n"
+"\n"
+"Bạn đã nhận một bản sao của Giấy phép Công cộng GNU cùng với chương trình "
+"này; nếu không, hãy viết thư cho Tổ chức Phần mềm Tự do, Free Software "
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, "
+"USA."
 
-#: ../src/math-window.c:209
-msgid "mate-calc"
-msgstr "mate-calc"
+#. Program name in the about dialog
+#: ../src/math-window.c:224
+msgid "Gcalctool"
+msgstr "Gcalctool"
 
-#: ../src/math-window.c:213
+#. Copyright notice in the about dialog
+#: ../src/math-window.c:228
+#| msgid "© 1986-2008 The Gcalctool authors"
+msgid "© 1986–2010 The Gcalctool authors"
+msgstr "© năm 1986-2010 của Nhóm tạc giả Gcalctool"
+
+#. Short description in the about dialog
+#: ../src/math-window.c:232
 msgid "Calculator with financial and scientific modes."
 msgstr "Máy tính với chế độ tài chính và khoa học."
 
-#. Calculator menu
-#: ../src/math-window.c:346
-msgid "_Calculator"
-msgstr "Bàn _tính"
+#: ../src/math-window.c:362
+msgid "Basic"
+msgstr "Cơ bản"
 
-#. Mode menu
-#: ../src/math-window.c:348
-msgid "_Mode"
-msgstr ""
+#: ../src/math-window.c:363
+msgid "Advanced"
+msgstr "Cấp cao"
 
-#. Help menu label
-#: ../src/math-window.c:350
-msgid "_Help"
-msgstr "Trợ g_iúp"
+#: ../src/math-window.c:364
+msgid "Financial"
+msgstr "Tài chính"
 
-#. Basic menu label
-#: ../src/math-window.c:352
-msgid "_Basic"
-msgstr "Cơ _bản"
+#: ../src/math-window.c:365
+msgid "Programming"
+msgstr "Lập trình"
 
-#. Advanced menu label
-#: ../src/math-window.c:354
-msgid "_Advanced"
-msgstr "_Cấp cao"
+#: ../src/math-window.c:366
+msgid "Mode"
+msgstr "Chế độ"
 
-#. Financial menu label
-#: ../src/math-window.c:356
-msgid "_Financial"
-msgstr "_Tài chính"
+#: ../src/math-window.c:373
+#| msgid "Calculator"
+msgid "About Calculator"
+msgstr "Giới thiệu Bàn tính"
 
-#. Programming menu label
-#: ../src/math-window.c:358
-msgid "_Programming"
-msgstr "_Lập trình"
+#: ../src/math-window.c:374
+#| msgid "_Help"
+msgid "Help"
+msgstr "Trợ giúp"
 
-#. Help>Contents menu label
-#: ../src/math-window.c:360
-msgid "_Contents"
-msgstr "Mụ_c lục"
+#: ../src/math-window.c:375
+msgid "Quit"
+msgstr "Thoát"
 
-#. Translators: Error displayed when boolean AND attempted on non-integer
-#. values
-#: ../src/mp-binary.c:103
+#. Translators: Error displayed when boolean AND attempted on non-integer values
+#: ../src/mp-binary.c:115
 msgid "Boolean AND is only defined for positive integers"
 msgstr ""
 
-#. Translators: Error displayed when boolean OR attempted on non-integer
-#. values
-#: ../src/mp-binary.c:116
+#. Translators: Error displayed when boolean OR attempted on non-integer values
+#: ../src/mp-binary.c:128
 msgid "Boolean OR is only defined for positive integers"
 msgstr ""
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer
-#. values
-#: ../src/mp-binary.c:129
+#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#: ../src/mp-binary.c:141
 msgid "Boolean XOR is only defined for positive integers"
 msgstr ""
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer
-#. values
-#: ../src/mp-binary.c:144
+#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#: ../src/mp-binary.c:156
 msgid "Boolean NOT is only defined for positive integers"
 msgstr ""
 
 #. Translators: Error displayed when bit shift attempted on non-integer values
-#: ../src/mp-binary.c:174
+#: ../src/mp-binary.c:187
 msgid "Shift is only possible on integer values"
 msgstr ""
 
 #. Translators: Error display when attempting to take argument of zero
-#: ../src/mp.c:149
+#: ../src/mp.c:148
 msgid "Argument not defined for zero"
 msgstr ""
 
+#: ../src/mp.c:299
+msgid "Overflow: the result couldn't be calculated"
+msgstr ""
+
 #. Translators: Error displayed attempted to divide by zero
-#: ../src/mp.c:636 ../src/mp.c:668 ../src/mp.c:1602
+#: ../src/mp.c:644 ../src/mp.c:676 ../src/mp.c:1605
 msgid "Division by zero is undefined"
 msgstr ""
 
 #. Translators: Error displayed when attempting to take logarithm of zero
-#: ../src/mp.c:1273 ../src/mp.c:1310
+#: ../src/mp.c:1276 ../src/mp.c:1313
 msgid "Logarithm of zero is undefined"
 msgstr ""
 
-#. Translators: Error displayed when attempted to raise 0 to a negative
-#. exponent
-#: ../src/mp.c:1675 ../src/mp.c:1990
+#. Translators: Error displayed when attempted to raise 0 to a negative exponent
+#: ../src/mp.c:1680 ../src/mp.c:1994
 msgid "The power of zero is undefined for a negative exponent"
 msgstr ""
 
-#: ../src/mp.c:1700
+#: ../src/mp.c:1704
 msgid "Reciprocal of zero is undefined"
 msgstr ""
 
-#: ../src/mp.c:1785
+#: ../src/mp.c:1789
 msgid "Root must be non-zero"
 msgstr ""
 
-#: ../src/mp.c:1803
+#: ../src/mp.c:1807
 msgid "Negative root of zero is undefined"
 msgstr ""
 
-#: ../src/mp.c:1809
+#: ../src/mp.c:1813
 msgid "nth root of negative number is undefined for even n"
 msgstr ""
 
-#. Translators: Error displayed when attempted take the factorial of a
-#. fractional number
-#: ../src/mp.c:1930
+#. Translators: Error displayed when attempted take the factorial of a fractional number
+#: ../src/mp.c:1934
 msgid "Factorial is only defined for natural numbers"
 msgstr ""
 
-#. Translators: Error displayed when attemping to do a modulus division on
-#. non-integer numbers
-#: ../src/mp.c:1950
+#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
+#: ../src/mp.c:1954
 msgid "Modulus division is only defined for integers"
 msgstr ""
 
 #. Translators: Error displayed when tangent value is undefined
-#: ../src/mp-trigonometric.c:311
+#: ../src/mp-trigonometric.c:310
 msgid ""
-"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
-"(90°)"
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
 msgstr ""
 
 #. Translators: Error displayed when inverse sine value is undefined
-#: ../src/mp-trigonometric.c:356
+#: ../src/mp-trigonometric.c:355
 msgid "Inverse sine is undefined for values outside [-1, 1]"
 msgstr ""
 
 #. Translators: Error displayed when inverse cosine value is undefined
-#: ../src/mp-trigonometric.c:373
+#: ../src/mp-trigonometric.c:372
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
 msgstr ""
 
-#. Translators: Error displayed when inverse hyperbolic cosine value is
-#. undefined
+#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
 #: ../src/mp-trigonometric.c:591
-msgid ""
-"Inverse hyperbolic cosine is undefined for values less than or equal to one"
+msgid "Inverse hyperbolic cosine is undefined for values less than one"
 msgstr ""
 
-#. Translators: Error displayed when inverse hyperbolic tangent value is
-#. undefined
+#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
 #: ../src/mp-trigonometric.c:615
 msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
 msgstr ""
+
+#: ../src/unit-manager.c:54
+#, c-format
+#| msgid "De_grees"
+msgctxt "unit-format"
+msgid "%s degrees"
+msgstr "%s độ"
+
+#: ../src/unit-manager.c:54
+msgctxt "unit-symbols"
+msgid "degree,degrees,deg"
+msgstr "độ,độ,độ"
+
+#: ../src/unit-manager.c:55
+#, c-format
+#| msgid "Gr_adians"
+msgctxt "unit-format"
+msgid "%s radians"
+msgstr "%s rađian"
+
+#: ../src/unit-manager.c:55
+msgctxt "unit-symbols"
+msgid "radian,radians,rad"
+msgstr "rađian,rađian,rad"
+
+#: ../src/unit-manager.c:56
+#, c-format
+#| msgid "Gr_adians"
+msgctxt "unit-format"
+msgid "%s gradians"
+msgstr "%s građian"
+
+#: ../src/unit-manager.c:56
+msgctxt "unit-symbols"
+msgid "gradian,gradians,grad"
+msgstr "građian,građian,grad"
+
+#: ../src/unit-manager.c:57
+msgid "Parsecs"
+msgstr "Parsec"
+
+#: ../src/unit-manager.c:57
+#, c-format
+msgctxt "unit-format"
+msgid "%s pc"
+msgstr "%s pc"
+
+#: ../src/unit-manager.c:57
+msgctxt "unit-symbols"
+msgid "parsec,parsecs,pc"
+msgstr "parsec,parsec,pc"
+
+#: ../src/unit-manager.c:58
+msgid "Light Years"
+msgstr "Năm ánh sáng"
+
+#: ../src/unit-manager.c:58
+#, c-format
+msgctxt "unit-format"
+msgid "%s ly"
+msgstr "%s ly"
+
+#: ../src/unit-manager.c:58
+msgctxt "unit-symbols"
+msgid "lightyear,lightyears,ly"
+msgstr "năm ánh sáng,năm ánh sáng,ly"
+
+#: ../src/unit-manager.c:59
+msgid "Astronomical Units"
+msgstr "Đơn vị thiên văn học"
+
+#: ../src/unit-manager.c:59
+#, c-format
+msgctxt "unit-format"
+msgid "%s au"
+msgstr "%s au"
+
+#: ../src/unit-manager.c:59
+msgctxt "unit-symbols"
+msgid "au"
+msgstr "au"
+
+#: ../src/unit-manager.c:60
+msgid "Nautical Miles"
+msgstr "Hải lý"
+
+#: ../src/unit-manager.c:60
+#, c-format
+msgctxt "unit-format"
+msgid "%s nmi"
+msgstr "%s nmi"
+
+#: ../src/unit-manager.c:60
+msgctxt "unit-symbols"
+msgid "nmi"
+msgstr "nmi"
+
+#: ../src/unit-manager.c:61
+msgid "Miles"
+msgstr "Dặm"
+
+#: ../src/unit-manager.c:61
+#, c-format
+msgctxt "unit-format"
+msgid "%s mi"
+msgstr "%s dặm"
+
+#: ../src/unit-manager.c:61
+msgctxt "unit-symbols"
+msgid "mile,miles,mi"
+msgstr "dặm,dặm,mi"
+
+#: ../src/unit-manager.c:62
+msgid "Kilometers"
+msgstr "Kílô mét"
+
+#: ../src/unit-manager.c:62
+#, c-format
+msgctxt "unit-format"
+msgid "%s km"
+msgstr "%s km"
+
+#: ../src/unit-manager.c:62
+msgctxt "unit-symbols"
+msgid "kilometer,kilometers,km,kms"
+msgstr "kilô mét,kilô mét,km,km"
+
+#: ../src/unit-manager.c:63
+msgid "Cables"
+msgstr ""
+
+#: ../src/unit-manager.c:63
+#, c-format
+msgctxt "unit-format"
+msgid "%s cb"
+msgstr "%s cb"
+
+#: ../src/unit-manager.c:63
+msgctxt "unit-symbols"
+msgid "cable,cables,cb"
+msgstr ""
+
+#: ../src/unit-manager.c:64
+msgid "Fathoms"
+msgstr ""
+
+#: ../src/unit-manager.c:64
+#, c-format
+msgctxt "unit-format"
+msgid "%s ftm"
+msgstr "%s ftm"
+
+#: ../src/unit-manager.c:64
+msgctxt "unit-symbols"
+msgid "fathom,fathoms,ftm"
+msgstr ""
+
+#: ../src/unit-manager.c:65
+msgid "Meters"
+msgstr "Mét"
+
+#: ../src/unit-manager.c:65
+#, c-format
+msgctxt "unit-format"
+msgid "%s m"
+msgstr "%s m"
+
+#: ../src/unit-manager.c:65
+msgctxt "unit-symbols"
+msgid "meter,meters,m"
+msgstr "mét,mét,m"
+
+#: ../src/unit-manager.c:66
+msgid "Yards"
+msgstr ""
+
+#: ../src/unit-manager.c:66
+#, c-format
+msgctxt "unit-format"
+msgid "%s yd"
+msgstr "%s yd"
+
+#: ../src/unit-manager.c:66
+msgctxt "unit-symbols"
+msgid "yard,yards,yd"
+msgstr ""
+
+#: ../src/unit-manager.c:67
+msgid "Feet"
+msgstr ""
+
+#: ../src/unit-manager.c:67
+#, c-format
+msgctxt "unit-format"
+msgid "%s ft"
+msgstr "%s ft"
+
+#: ../src/unit-manager.c:67
+msgctxt "unit-symbols"
+msgid "foot,feet,ft"
+msgstr ""
+
+#: ../src/unit-manager.c:68
+msgid "Inches"
+msgstr ""
+
+#: ../src/unit-manager.c:68
+#, c-format
+msgctxt "unit-format"
+msgid "%s in"
+msgstr "%s in"
+
+#: ../src/unit-manager.c:68
+msgctxt "unit-symbols"
+msgid "inch,inches,in"
+msgstr ""
+
+#: ../src/unit-manager.c:69
+msgid "Centimeters"
+msgstr "Centi mét"
+
+#: ../src/unit-manager.c:69
+#, c-format
+msgctxt "unit-format"
+msgid "%s cm"
+msgstr "%s cm"
+
+#: ../src/unit-manager.c:69
+msgctxt "unit-symbols"
+msgid "centimeter,centimeters,cm,cms"
+msgstr "centi mét,centi mét,cm,cm"
+
+#: ../src/unit-manager.c:70
+msgid "Millimeters"
+msgstr "Mili mét"
+
+#: ../src/unit-manager.c:70
+#, c-format
+msgctxt "unit-format"
+msgid "%s mm"
+msgstr "%s mm"
+
+#: ../src/unit-manager.c:70
+msgctxt "unit-symbols"
+msgid "millimeter,millimeters,mm"
+msgstr "mili mét,mili mét,mm"
+
+#: ../src/unit-manager.c:71
+msgid "Micrometers"
+msgstr "Micrô mét"
+
+#: ../src/unit-manager.c:71
+#, c-format
+msgctxt "unit-format"
+msgid "%s μm"
+msgstr "%s μm"
+
+#: ../src/unit-manager.c:71
+msgctxt "unit-symbols"
+msgid "micrometer,micrometers,um"
+msgstr "micrô mét,micrô mét,um"
+
+#: ../src/unit-manager.c:72
+msgid "Nanometers"
+msgstr "Nano mét"
+
+#: ../src/unit-manager.c:72
+#, c-format
+msgctxt "unit-format"
+msgid "%s nm"
+msgstr "%s nm"
+
+#: ../src/unit-manager.c:72
+msgctxt "unit-symbols"
+msgid "nanometer,nanometers,nm"
+msgstr "nano mét,nano mét,nm"
+
+#: ../src/unit-manager.c:73
+msgid "Hectares"
+msgstr "Hécta"
+
+#: ../src/unit-manager.c:73
+#, c-format
+msgctxt "unit-format"
+msgid "%s ha"
+msgstr "%s ha"
+
+#: ../src/unit-manager.c:73
+msgctxt "unit-symbols"
+msgid "hectare,hectares,ha"
+msgstr "hécta,hécta,ha"
+
+#: ../src/unit-manager.c:74
+msgid "Acres"
+msgstr ""
+
+#: ../src/unit-manager.c:74
+#, c-format
+msgctxt "unit-format"
+msgid "%s acres"
+msgstr ""
+
+#: ../src/unit-manager.c:74
+msgctxt "unit-symbols"
+msgid "acre,acres"
+msgstr ""
+
+#: ../src/unit-manager.c:75
+#| msgid "Square root"
+msgid "Square Meters"
+msgstr "Mét vuông"
+
+#: ../src/unit-manager.c:75
+#, c-format
+msgctxt "unit-format"
+msgid "%s m²"
+msgstr "%s m²"
+
+#: ../src/unit-manager.c:75
+msgctxt "unit-symbols"
+msgid "m²"
+msgstr "m²"
+
+#: ../src/unit-manager.c:76
+msgid "Square Centimeters"
+msgstr "Centi mét vuông"
+
+#: ../src/unit-manager.c:76
+#, c-format
+msgctxt "unit-format"
+msgid "%s cm²"
+msgstr "%s cm²"
+
+#: ../src/unit-manager.c:76
+msgctxt "unit-symbols"
+msgid "cm²"
+msgstr "cm²"
+
+#: ../src/unit-manager.c:77
+msgid "Square Millimeters"
+msgstr "Mili mét vuông"
+
+#: ../src/unit-manager.c:77
+#, c-format
+msgctxt "unit-format"
+msgid "%s mm²"
+msgstr "%s mm²"
+
+#: ../src/unit-manager.c:77
+msgctxt "unit-symbols"
+msgid "mm²"
+msgstr "mm²"
+
+#: ../src/unit-manager.c:78
+msgid "Cubic Meters"
+msgstr "Mét khối"
+
+#: ../src/unit-manager.c:78
+#, c-format
+msgctxt "unit-format"
+msgid "%s m³"
+msgstr "%s m³"
+
+#: ../src/unit-manager.c:78
+msgctxt "unit-symbols"
+msgid "m³"
+msgstr "m³"
+
+#: ../src/unit-manager.c:79
+msgid "Gallons"
+msgstr ""
+
+#: ../src/unit-manager.c:79
+#, c-format
+msgctxt "unit-format"
+msgid "%s gal"
+msgstr ""
+
+#: ../src/unit-manager.c:79
+msgctxt "unit-symbols"
+msgid "gallon,gallons,gal"
+msgstr ""
+
+#: ../src/unit-manager.c:80
+msgid "Litres"
+msgstr "Lít"
+
+#: ../src/unit-manager.c:80
+#, c-format
+msgctxt "unit-format"
+msgid "%s L"
+msgstr "%s L"
+
+#: ../src/unit-manager.c:80
+msgctxt "unit-symbols"
+msgid "litre,litres,liter,liters,L"
+msgstr "lít,lít,lít,lít,L"
+
+#: ../src/unit-manager.c:81
+msgid "Quarts"
+msgstr ""
+
+#: ../src/unit-manager.c:81
+#, c-format
+msgctxt "unit-format"
+msgid "%s qt"
+msgstr ""
+
+#: ../src/unit-manager.c:81
+msgctxt "unit-symbols"
+msgid "quart,quarts,qt"
+msgstr ""
+
+#: ../src/unit-manager.c:82
+msgid "Pints"
+msgstr ""
+
+#: ../src/unit-manager.c:82
+#, c-format
+msgctxt "unit-format"
+msgid "%s pt"
+msgstr ""
+
+#: ../src/unit-manager.c:82
+msgctxt "unit-symbols"
+msgid "pint,pints,pt"
+msgstr ""
+
+#: ../src/unit-manager.c:83
+msgid "Millilitres"
+msgstr "Mili lít"
+
+#: ../src/unit-manager.c:83
+#, c-format
+msgctxt "unit-format"
+msgid "%s mL"
+msgstr "%s mL"
+
+#: ../src/unit-manager.c:83
+msgctxt "unit-symbols"
+msgid "millilitre,millilitres,milliliter,milliliters,mL,cm³"
+msgstr "mili lít,mili lít,mili lít,mili lít,ml,cm³"
+
+#: ../src/unit-manager.c:84
+msgid "Microlitres"
+msgstr "Micro lít"
+
+#: ../src/unit-manager.c:84
+#, c-format
+msgctxt "unit-format"
+msgid "%s μL"
+msgstr "%s μL"
+
+#: ../src/unit-manager.c:84
+msgctxt "unit-symbols"
+msgid "mm³,μL,uL"
+msgstr "mm³,μL,uL"
+
+#: ../src/unit-manager.c:85
+msgid "Tonnes"
+msgstr "Tấn"
+
+#: ../src/unit-manager.c:85
+#, c-format
+msgctxt "unit-format"
+msgid "%s T"
+msgstr "%s T"
+
+#: ../src/unit-manager.c:85
+msgctxt "unit-symbols"
+msgid "tonne,tonnes"
+msgstr "tấn,tấn"
+
+#: ../src/unit-manager.c:86
+msgid "Kilograms"
+msgstr "Kílô gram"
+
+#: ../src/unit-manager.c:86
+#, c-format
+msgctxt "unit-format"
+msgid "%s kg"
+msgstr "%s kg"
+
+#: ../src/unit-manager.c:86
+msgctxt "unit-symbols"
+msgid "kilogram,kilograms,kilogramme,kilogrammes,kg,kgs"
+msgstr "kilo gram,kilo gram,kilo gram,kilo gram,kg,kg"
+
+#: ../src/unit-manager.c:87
+msgid "Pounds"
+msgstr ""
+
+#: ../src/unit-manager.c:87
+#, c-format
+msgctxt "unit-format"
+msgid "%s lb"
+msgstr ""
+
+#: ../src/unit-manager.c:87
+msgctxt "unit-symbols"
+msgid "pound,pounds,lb"
+msgstr ""
+
+#: ../src/unit-manager.c:88
+msgid "Ounces"
+msgstr ""
+
+#: ../src/unit-manager.c:88
+#, c-format
+msgctxt "unit-format"
+msgid "%s oz"
+msgstr ""
+
+#: ../src/unit-manager.c:88
+msgctxt "unit-symbols"
+msgid "ounce,ounces,oz"
+msgstr ""
+
+#: ../src/unit-manager.c:89
+msgid "Grams"
+msgstr "Gram"
+
+#: ../src/unit-manager.c:89
+#, c-format
+msgctxt "unit-format"
+msgid "%s g"
+msgstr "%s g"
+
+#: ../src/unit-manager.c:89
+msgctxt "unit-symbols"
+msgid "gram,grams,gramme,grammes,g"
+msgstr "gram,gram,gram,gram,g"
+
+#: ../src/unit-manager.c:90
+msgid "Years"
+msgstr "Năm"
+
+#: ../src/unit-manager.c:90
+#, c-format
+msgctxt "unit-format"
+msgid "%s years"
+msgstr "%s years"
+
+#: ../src/unit-manager.c:90
+msgctxt "unit-symbols"
+msgid "year,years"
+msgstr "năm,năm"
+
+#: ../src/unit-manager.c:91
+msgid "Days"
+msgstr "Ngày"
+
+#: ../src/unit-manager.c:91
+#, c-format
+msgctxt "unit-format"
+msgid "%s days"
+msgstr "%s ngày"
+
+#: ../src/unit-manager.c:91
+msgctxt "unit-symbols"
+msgid "day,days"
+msgstr "ngày,ngày"
+
+#: ../src/unit-manager.c:92
+msgid "Hours"
+msgstr "Giờ"
+
+#: ../src/unit-manager.c:92
+#, c-format
+msgctxt "unit-format"
+msgid "%s hours"
+msgstr "%s giờ"
+
+#: ../src/unit-manager.c:92
+msgctxt "unit-symbols"
+msgid "hour,hours"
+msgstr "giờ,giờ"
+
+#: ../src/unit-manager.c:93
+msgid "Minutes"
+msgstr "Phút"
+
+#: ../src/unit-manager.c:93
+#, c-format
+msgctxt "unit-format"
+msgid "%s minutes"
+msgstr "%s phút"
+
+#: ../src/unit-manager.c:93
+msgctxt "unit-symbols"
+msgid "minute,minutes"
+msgstr "phút,phút"
+
+#: ../src/unit-manager.c:94
+msgid "Seconds"
+msgstr "Giây"
+
+#: ../src/unit-manager.c:94
+#, c-format
+msgctxt "unit-format"
+msgid "%s s"
+msgstr "%s giây"
+
+#: ../src/unit-manager.c:94
+msgctxt "unit-symbols"
+msgid "second,seconds,s"
+msgstr "giây,giây,s"
+
+#: ../src/unit-manager.c:95
+msgid "Milliseconds"
+msgstr "Mili giây"
+
+#: ../src/unit-manager.c:95
+#, c-format
+msgctxt "unit-format"
+msgid "%s ms"
+msgstr "%s ms"
+
+#: ../src/unit-manager.c:95
+msgctxt "unit-symbols"
+msgid "millisecond,milliseconds,ms"
+msgstr "mili giây,mili giây,ms"
+
+#: ../src/unit-manager.c:96
+msgid "Microseconds"
+msgstr "Micro giây"
+
+#: ../src/unit-manager.c:96
+#, c-format
+msgctxt "unit-format"
+msgid "%s μs"
+msgstr "%s μs"
+
+#: ../src/unit-manager.c:96
+msgctxt "unit-symbols"
+msgid "microsecond,microseconds,us,μs"
+msgstr "micrô giây,micrô giây,us,μs"
+
+#: ../src/unit-manager.c:97
+msgid "Celsius"
+msgstr "Độ C"
+
+#: ../src/unit-manager.c:97
+#, c-format
+msgctxt "unit-format"
+msgid "%s ˚C"
+msgstr "%s ˚C"
+
+#: ../src/unit-manager.c:97
+msgctxt "unit-symbols"
+msgid "degC,˚C"
+msgstr "degC,˚C"
+
+#: ../src/unit-manager.c:98
+msgid "Farenheit"
+msgstr ""
+
+#: ../src/unit-manager.c:98
+#, c-format
+msgctxt "unit-format"
+msgid "%s ˚F"
+msgstr "%s ˚F"
+
+#: ../src/unit-manager.c:98
+msgctxt "unit-symbols"
+msgid "degF,˚F"
+msgstr "degF,˚F"
+
+#: ../src/unit-manager.c:99
+msgid "Kelvin"
+msgstr "Kelvin"
+
+#: ../src/unit-manager.c:99
+#, c-format
+msgctxt "unit-format"
+msgid "%s K"
+msgstr "%s K"
+
+#: ../src/unit-manager.c:99
+msgctxt "unit-symbols"
+msgid "K"
+msgstr "K"
+
+#: ../src/unit-manager.c:100
+msgid "Rankine"
+msgstr ""
+
+#: ../src/unit-manager.c:100
+#, c-format
+msgctxt "unit-format"
+msgid "%s ˚R"
+msgstr "%s ˚R"
+
+#: ../src/unit-manager.c:100
+msgctxt "unit-symbols"
+msgid "degR,˚R,˚Ra"
+msgstr "degR,˚R,˚Ra"
+
+#: ../src/unit-manager.c:109
+msgid "Angle"
+msgstr "Góc"
+
+#: ../src/unit-manager.c:110
+msgid "Length"
+msgstr "Chiều dài"
+
+#: ../src/unit-manager.c:111
+msgid "Area"
+msgstr "Diện tích"
+
+#: ../src/unit-manager.c:112
+msgid "Volume"
+msgstr "Thể tích"
+
+#: ../src/unit-manager.c:113
+msgid "Weight"
+msgstr "Trọng lượng"
+
+#: ../src/unit-manager.c:114
+#| msgid "Description"
+msgid "Duration"
+msgstr "Thời gian"
+
+#: ../src/unit-manager.c:115
+msgid "Temperature"
+msgstr "Nhiệt độ"
+
+#: ../src/unit-manager.c:127
+msgid "Currency"
+msgstr "Tiền tệ"
+
+#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
+#: ../src/unit-manager.c:137
+#, c-format
+msgid "%s%%s"
+msgstr "%s%%s"
+
+#~ msgid "Error"
+#~ msgstr "Lỗi"
+
+#~ msgid ""
+#~ "%1$s version %2$s\n"
+#~ "\n"
+#~ "Usage: %3$s: [-u] [-?] [-v] [-h]\n"
+#~ msgstr ""
+#~ "%1$s phiên bản %2$s\n"
+#~ "\n"
+#~ "Sử dụng: %3$s: [-u] [-?] [-v] [-h]\n"
+
+#~ msgid "%s: accuracy should be in the range 0-%d\n"
+#~ msgstr "%s: độ chính xác nên nằm trong phạm vi 0-%d\n"
+
+#~ msgid "No redo steps"
+#~ msgstr "Không có bước làm lại"
+
+#~ msgid "Malformed function"
+#~ msgstr "Hàm dạng sai"
+
+#~ msgid "No sane value to convert"
+#~ msgstr "Không có giá trị hữu tỷ để chuyển đổi"
+
+#~ msgid "Invalid number for the current base"
+#~ msgstr "Số không hợp lệ với cơ số hiện có"
+
+#~ msgid "Too long number"
+#~ msgstr "Số quá dài"
+
+#~ msgid "Invalid bitwise operation parameter(s)"
+#~ msgstr "Tham số thao tác cách một vị trí bit không hợp lệ"
+
+#~ msgid "Invalid modulus operation parameter(s)"
+#~ msgstr "Tham số thao tác giá trị tuyệt đối không hợp lệ"
+
+#~ msgid "Math operation error"
+#~ msgstr "Lỗi thao tác toán học"
+
+#~ msgid "Calculator - Advanced"
+#~ msgstr "Bàn tính — Cấp cao"
+
+#~ msgid "Calculator - Financial"
+#~ msgstr "Bàn tính — Tài chính"
+
+#~ msgid "Calculator - Scientific"
+#~ msgstr "Bàn tính — Khoa học"
+
+#~ msgid "Calculator - Programming"
+#~ msgstr "Bàn tính — Lập trình"
+
+#~ msgid "Calculator [%s]"
+#~ msgstr "Bàn tính [%s]"
+
+#~ msgid "Calculator [%s] - Advanced"
+#~ msgstr "Bàn tính [%s] — Cấp cao"
+
+#~ msgid "Calculator [%s] - Financial"
+#~ msgstr "Bàn tính [%s] — Tài chính"
+
+#~ msgid "Calculator [%s] - Scientific"
+#~ msgstr "Bàn tính [%s] — Khoa học"
+
+#~ msgid "Calculator [%s] - Programming"
+#~ msgstr "Bàn tính [%s] — Lập trình"
+
+#~ msgid "_Other (%d) ..."
+#~ msgstr "_Khác (%d) ..."
+
+#~ msgid "Set accuracy from 0 to %d numeric place. [A]"
+#~ msgid_plural "Set accuracy from 0 to %d numeric places. [A]"
+#~ msgstr[0] "Đặt độ chính xác từ 0 đến %d lần số. [A]"
+
+#~ msgid "Sin"
+#~ msgstr "Sin"
+
+#~ msgid "Sin<sup>-1</sup>"
+#~ msgstr "Sin<sup>-1</sup>"
+
+#~ msgid "Sinh"
+#~ msgstr "Sinh"
+
+#~ msgid "Sinh<sup>-1</sup>"
+#~ msgstr "Sinh<sup>-1</sup>"
+
+#~ msgid "Hyperbolic Inverse Sine [K]"
+#~ msgstr "Sin hyperbol nghịch đảo [K]"
+
+#~ msgid "Cos"
+#~ msgstr "Cos"
+
+#~ msgid "Cos<sup>-1</sup>"
+#~ msgstr "Cos<sup>-1</sup>"
+
+#~ msgid "Cosh"
+#~ msgstr "Cosh"
+
+#~ msgid "Cosh<sup>-1</sup>"
+#~ msgstr "Cosh<sup>-1</sup>"
+
+#~ msgid "Inverse Cosine [J]"
+#~ msgstr "Cosin nghịch đảo [J]"
+
+#~ msgid "Hyperbolic Inverse Cosine [J]"
+#~ msgstr "Cosin hyperbol nghịch đảo [J]"
+
+#~ msgid "Tan"
+#~ msgstr "Tan"
+
+#~ msgid "Tan<sup>-1</sup>"
+#~ msgstr "Tan<sup>-1</sup>"
+
+#~ msgid "Tanh"
+#~ msgstr "Tanh"
+
+#~ msgid "Tanh<sup>-1</sup>"
+#~ msgstr "Tanh<sup>-1</sup>"
+
+#~ msgid "Inverse Tangent [W]"
+#~ msgstr "Tang nghịch đảo [W]"
+
+#~ msgid "Hyperbolic Inverse Tangent [W]"
+#~ msgstr "Tang hyperbol nghịch đảo [W]"
+
+#~ msgid "Ln"
+#~ msgstr "Ln"
+
+#~ msgid "e<sup><i>x</i></sup>"
+#~ msgstr "e<sup><i>x</i></sup>"
+
+#~ msgid "e to the power of the displayed value [N]"
+#~ msgstr "e mũ giá trị hiện có [N]"
+
+#~ msgid "Log"
+#~ msgstr "Log"
+
+#~ msgid "10<sup><i>x</i></sup>"
+#~ msgstr "10<sup><i>x</i></sup>"
+
+#~ msgid "Base 10 log [g]"
+#~ msgstr "Log cơ số 10 [g]"
+
+#~ msgid "10 to the power of displayed value [G]"
+#~ msgstr "10 mũ giá trị hiện có [G]"
+
+#~ msgid "Log<sub>2</sub>"
+#~ msgstr "Log<sub>2</sub>"
+
+#~ msgid "2<sup><i>x</i></sup>"
+#~ msgstr "2<sup><i>x</i></sup>"
+
+#~ msgid "Base 2 log [h]"
+#~ msgstr "Log cơ số 2 [h]"
+
+#~ msgid "2 to the power of the displayed value [H]"
+#~ msgstr "2 mũ giá trị hiện có [H]"
+
+#~ msgid "x<sup><i>y</i></sup>"
+#~ msgstr "x<sup><i>y</i></sup>"
+
+#~ msgid "x<sup>1/<i>y</i></sup>"
+#~ msgstr "x<sup>1/<i>y</i></sup>"
+
+#~ msgid "Raise displayed value to the power of y [o]"
+#~ msgstr "Tăng giá trị hiện thì lên mũ y [o]"
+
+#~ msgid "Raise displayed value to the power of reciprocal y [O]"
+#~ msgstr "Tăng giá trị hiện thì lên mũ y nghịch đảo [O]"
+
+#~ msgid ""
+#~ "Gcalctool is free software; you can redistribute it and/or modify\n"
+#~ "it under the terms of the GNU General Public License as published by\n"
+#~ "the Free Software Foundation; either version 2 of the License, or\n"
+#~ "(at your option) any later version.\n"
+#~ "\n"
+#~ "Gcalctool is distributed in the hope that it will be useful,\n"
+#~ "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+#~ "GNU General Public License for more details.\n"
+#~ "\n"
+#~ "You should have received a copy of the GNU General Public License\n"
+#~ "along with Gcalctool; if not, write to the Free Software Foundation, "
+#~ "Inc.,\n"
+#~ "51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA\n"
+#~ msgstr ""
+#~ "Chương trình này là phần mềm tự do; xem mã nguồn để tìm điều kiện sao "
+#~ "chép.\n"
+#~ "KHÔNG CÓ BẢO HÀNH GÌ CẢ, THẬM CHÍ KHÔNG CÓ BẢO ĐẢM ĐƯỢC NGỤ Ý\n"
+#~ "KHẢ NĂNG BÁN HAY KHẢ NĂNG LÀM ĐƯỢC VIỆC DỨT KHOÁT.Chương trình này là "
+#~ "phần mềm tự do; bạn có thể phát hành lại nó và/hoặc sửa đổi nó với điều "
+#~ "kiện của Giấy Phép Công Cộng GNU như được xuất bản bởi Tổ Chức Phần Mềm "
+#~ "Tự Do; hoặc phiên bản 2 của Giấy Phép này, hoặc (tùy chọn) bất kỳ phiên "
+#~ "bản sau nào.\n"
+#~ "\n"
+#~ "Chương trình này được phát hành vì mong muốn nó có ích, nhưng KHÔNG CÓ "
+#~ "BẢO HÀNH GÌ CẢ, THẬM CHÍ KHÔNG CÓ BẢO ĐẢM ĐƯỢC NGỤ Ý KHẢ NĂNG BÁN HAY KHẢ "
+#~ "NĂNG LÀM ĐƯỢC VIỆC DỨT KHOÁT. Xem Giấy Phép Công Cộng GNU để biết thêm "
+#~ "chi tiết.\n"
+#~ "\n"
+#~ "Bạn đã nhận một bản sao của Giấy Phép Công Cộng GNU cùng với chương trình "
+#~ "này; nếu không, hãy viết thư cho Tổ Chức Phần Mềm Tự Do,\n"
+#~ "Free Software Foundation, Inc.,\n"
+#~ "51 Franklin Street, Fifth Floor,\n"
+#~ "Boston, MA  02110-1301, USA (Mỹ).\n"
+
+#~ msgid "C"
+#~ msgstr "C"
+
+#~ msgid "F"
+#~ msgstr "F"
+
+#~ msgid "R"
+#~ msgstr "N"
+
+#~ msgid "Paste"
+#~ msgstr "Dán"
+
+#~ msgid "Error loading user interface"
+#~ msgstr "Gặp lỗi khi nạp giao diện người dùng"
+
+#~ msgid ""
+#~ "The user interface file %s is missing or unable to be loaded. Please "
+#~ "check your installation."
+#~ msgstr ""
+#~ "Tập tin giao diện người dùng %s bị thiếu hay không thể nạp được. Hãy kiểm "
+#~ "tra lại bản cài đặt."
+
+#~ msgid "No."
+#~ msgstr "Số"
+
+#~ msgid "Value"
+#~ msgstr "Giá trị"
+
+#~ msgid "Reset to _Default (%d)"
+#~ msgstr "Đặt lại về _mặc định (%d)"
+
+#~ msgid "Negative X and non-integer Y not supported"
+#~ msgstr "Không hỗ trợ trừ X và Y không số nguyên"
+
+#~ msgid "Error, cannot calculate cosine"
+#~ msgstr "Lỗi, không thể tính cosin"
+
+#~ msgid "Kilometer-to-mile conversion factor"
+#~ msgstr "Hệ số chuyển đổi kilo-mét đến dặm"
+
+#~ msgid "square root of 2"
+#~ msgstr "căn bậc 2"
+
+#~ msgid "π"
+#~ msgstr "π"
+
+#~ msgid "Centimeter-to-inch conversion factor"
+#~ msgstr "Hệ số chuyển đôi cm sang insơ"
+
+#~ msgid "degrees in a radian"
+#~ msgstr "độ trên 1 radian"
+
+#~ msgid "2 ^ 20"
+#~ msgstr "2 ^ 20"
+
+#~ msgid "Gram-to-ounce conversion factor"
+#~ msgstr "Hệ số chuyển đổi gm đến oz"
+
+#~ msgid "Kilojoule-to-British-thermal-unit conversion factor"
+#~ msgstr "Hệ số chuyển đổi kj đến độ nhiệt Anh"
+
+#~ msgid "Cubic-centimeter-to-cubic-inch conversion factor"
+#~ msgstr "Hệ số chuyển đổi cm bậc ba đến insơ bậc ba"
+
+#~ msgid "%"
+#~ msgstr "%"
+
+#~ msgid "&16"
+#~ msgstr "&16"
+
+#~ msgid "&32"
+#~ msgstr "&32"
+
+#~ msgid "("
+#~ msgstr "("
+
+#~ msgid ")"
+#~ msgstr ")"
+
+#~ msgid "+"
+#~ msgstr "+"
+
+#~ msgid "0"
+#~ msgstr "0"
+
+#~ msgid "1"
+#~ msgstr "1"
+
+#~ msgid "1/<i>x</i>"
+#~ msgstr "1/<i>x</i>"
+
+#~ msgid "1/x"
+#~ msgstr "1/x"
+
+#~ msgid "10 places"
+#~ msgstr "10 số"
+
+#~ msgid "11 places"
+#~ msgstr "11 số"
+
+#~ msgid "12 places"
+#~ msgstr "12 số"
+
+#~ msgid "13 places"
+#~ msgstr "13 số"
+
+#~ msgid "14 places"
+#~ msgstr "14 số"
+
+#~ msgid "15"
+#~ msgstr "15"
+
+#~ msgid "15 places"
+#~ msgstr "15 số"
+
+#~ msgid "16-bit unsigned integer value of display (])"
+#~ msgstr "Giá trị nguyên không dấu 16-bit"
+
+#~ msgid "2"
+#~ msgstr "2"
+
+#~ msgid "3"
+#~ msgstr "3"
+
+#~ msgid "31"
+#~ msgstr "31"
+
+#~ msgid "32"
+#~ msgstr "32"
+
+#~ msgid "32-bit unsigned integer value of display ([)"
+#~ msgstr "Giá trị nguyên không dấu 32-bit ([)"
+
+#~ msgid "4"
+#~ msgstr "4"
+
+#~ msgid "47"
+#~ msgstr "47"
+
+#~ msgid "5"
+#~ msgstr "5"
+
+#~ msgid "6"
+#~ msgstr "6"
+
+#~ msgid "63"
+#~ msgstr "63"
+
+#~ msgid "7"
+#~ msgstr "7"
+
+#~ msgid "8"
+#~ msgstr "8"
+
+#~ msgid "9"
+#~ msgstr "9"
+
+#~ msgid "<"
+#~ msgstr "<"
+
+#~ msgid "<i>x</i>!"
+#~ msgstr "<i>x</i>!"
+
+#~ msgid "<i>x</i><sup>2</sup>"
+#~ msgstr "<i>x</i><sup>2</sup>"
+
+#~ msgid ""
+#~ "<small><i><b>Note:</b> All constant values are specified in the decimal "
+#~ "numeric base.</i></small>"
+#~ msgstr ""
+#~ "<small><i><b>Ghi chú :</b> mọi giá trị hằng số xác định theo cơ số thập "
+#~ "phân.</i></small>"
+
+#~ msgid "<span weight=\"bold\">R0</span>"
+#~ msgstr "<span weight=\"bold\">R0</span>"
+
+#~ msgid "<span weight=\"bold\">R1</span>"
+#~ msgstr "<span weight=\"bold\">R1</span>"
+
+#~ msgid "<span weight=\"bold\">R2</span>"
+#~ msgstr "<span weight=\"bold\">R2</span>"
+
+#~ msgid "<span weight=\"bold\">R3</span>"
+#~ msgstr "<span weight=\"bold\">R3</span>"
+
+#~ msgid "<span weight=\"bold\">R4</span>"
+#~ msgstr "<span weight=\"bold\">R4</span>"
+
+#~ msgid "<span weight=\"bold\">R5</span>"
+#~ msgstr "<span weight=\"bold\">R5</span>"
+
+#~ msgid "<span weight=\"bold\">R6</span>"
+#~ msgstr "<span weight=\"bold\">R6</span>"
+
+#~ msgid "<span weight=\"bold\">R7</span>"
+#~ msgstr "<span weight=\"bold\">R7</span>"
+
+#~ msgid "<span weight=\"bold\">R8</span>"
+#~ msgstr "<span weight=\"bold\">R8</span>"
+
+#~ msgid "<span weight=\"bold\">R9</span>"
+#~ msgstr "<span weight=\"bold\">R9</span>"
+
+#~ msgid ">"
+#~ msgstr ">"
+
+#~ msgid "A"
+#~ msgstr "A"
+
+#~ msgid "AND"
+#~ msgstr "AND"
+
+#~ msgid "Abs"
+#~ msgstr "Tuy"
+
+#~ msgid "Acc"
+#~ msgstr "Chx"
+
+#~ msgid "Add"
+#~ msgstr "Cộng"
+
+#~ msgid "B"
+#~ msgstr "B"
+
+#~ msgid "Backspace"
+#~ msgstr "Xóa lùi"
+
+#~ msgid "Bitwise AND [&]"
+#~ msgstr "Theo bit VÀ [&]"
+
+#~ msgid "Bitwise NOT [~]"
+#~ msgstr "Theo bit KHÔNG [~]"
+
+#~ msgid "Bitwise OR [|]"
+#~ msgstr "Theo bit OR [l]"
+
+#~ msgid "Bitwise XNOR [{]"
+#~ msgstr "Theo bit XNOR [{]"
+
+#~ msgid "Bitwise XOR [x]"
+#~ msgstr "Theo bit XOR [x]"
+
+#~ msgid "Bksp"
+#~ msgstr "XLùi"
+
+#~ msgid "CE"
+#~ msgstr "CE"
+
+#~ msgid "Calculate result [=]"
+#~ msgstr "Tính kết quả [=]"
+
+#~ msgid "Change Sign [C]"
+#~ msgstr "Đổi dấu [C]"
+
+#~ msgid "Change sign"
+#~ msgstr "Đổi dấu"
+
+#~ msgid "Clear"
+#~ msgstr "Xóa"
+
+#~ msgid "Clear displayed value and any partial calculation [Shift Delete]"
+#~ msgstr "Xoá giá trị đã hiển thị và những phần đang tính toán [Shift Delete]"
+
+#~ msgid "Clear entry"
+#~ msgstr "Xóa mục gõ"
+
+#~ msgid "Click a _value or description to edit it:"
+#~ msgstr "Nhấn chọn _giá trị hoặc mô tả để sửa đổi:"
+
+#~ msgid "Clr"
+#~ msgstr "Xoá"
+
+#~ msgid "Compounding term"
+#~ msgstr "Phần đa hợp"
+
+#~ msgid "Compounding term [m]"
+#~ msgstr "Phần đa hợp [m]"
+
+#~ msgid "Con"
+#~ msgstr "Hằng"
+
+#~ msgid "Constants [#]"
+#~ msgstr "Hằng số [#]"
+
+#~ msgid "Copy selection"
+#~ msgstr "Chép vùng chọn"
+
+#~ msgid "D"
+#~ msgstr "D"
+
+#~ msgid "Divide"
+#~ msgstr "Chia"
+
+#~ msgid "Double-declining depreciation"
+#~ msgstr "Khấu hao tỷ lệ đôi"
+
+#~ msgid "Double-declining depreciation [D]"
+#~ msgstr "Khấu hao tỷ lệ đôi [D]"
+
+#~ msgid "E"
+#~ msgstr "E"
+
+#~ msgid "E_ng"
+#~ msgstr "_Kỹ"
+
+#~ msgid "Edit Constants"
+#~ msgstr "Sửa đổi hằng số"
+
+#~ msgid "Edit Constants..."
+#~ msgstr "Sửa đổi hằng số..."
+
+#~ msgid "Edit Functions..."
+#~ msgstr "Sửa đổi hàm..."
+
+#~ msgid "End group of calculations [)]"
+#~ msgstr "Kết thúc nhóm sự tính [)]"
+
+#~ msgid "Enter an exponential number [E]"
+#~ msgstr "Gõ số mũ [E]"
+
+#~ msgid "Exch"
+#~ msgstr "Đổi"
+
+#~ msgid "Exchange displayed value with memory register [X]"
+#~ msgstr "Tráo đổi giá trị hiển thị với bộ nhớ [X]"
+
+#~ msgid "Exchange with register"
+#~ msgstr "Tráo đổi với bộ nhớ"
+
+#~ msgid "Exp"
+#~ msgstr "Mũ"
+
+#~ msgid "Factorial of displayed value [!]"
+#~ msgstr "Giai thừa của giá trị hiển thị [!]"
+
+#~ msgid "Frac"
+#~ msgstr "Phần"
+
+#~ msgid "Fractional portion of displayed value [:]"
+#~ msgstr "Phần phân số của giá trị [:]"
+
+#~ msgid "Fun"
+#~ msgstr "Hàm"
+
+#~ msgid "Future value"
+#~ msgstr "Giá trị tương lai"
+
+#~ msgid "Future value [v]"
+#~ msgstr "Giá trị tương lai [v]"
+
+#~ msgid "Gross Profit Margin [I]"
+#~ msgstr "Tổng Lãi Thực [l]"
+
+#~ msgid "Gross Profit Margin [g]"
+#~ msgstr "Tổng Lãi Thực [g]"
+
+#~ msgid "H_yp"
+#~ msgstr "H_yp"
+
+#~ msgid "He_x"
+#~ msgstr "_Hệ 16"
+
+#~ msgid "Hexadecimal digit B [b]"
+#~ msgstr "Số thập lục B [b]"
+
+#~ msgid "Hexadecimal digit C [c]"
+#~ msgstr "Số thập lục C [c]"
+
+#~ msgid "Hexadecimal digit D [d]"
+#~ msgstr "Số thập lục D [d]"
+
+#~ msgid "Hexadecimal digit E [e]"
+#~ msgstr "Số thập lục E [e]"
+
+#~ msgid "Hexadecimal digit F [f]"
+#~ msgstr "Số thập lục F [f]"
+
+#~ msgid "Insert ASCII Value"
+#~ msgstr "Chèn ký tự ASCII"
+
+#~ msgid "Insert ASCII value"
+#~ msgstr "Chèn Giá trị ASCII"
+
+#~ msgid "Int"
+#~ msgstr "Ngy"
+
+#~ msgid "Integer portion of displayed value [i]"
+#~ msgstr "Phần nguyên của giá trị [i]"
+
+#~ msgid "Left bracket"
+#~ msgstr "Ngoặc trái"
+
+#~ msgid "Memory Registers"
+#~ msgstr "Bộ nhớ"
+
+#~ msgid "Mod"
+#~ msgstr "Suất"
+
+#~ msgid "Multiply"
+#~ msgstr "Nhân"
+
+#~ msgid "NOT"
+#~ msgstr "NOT"
+
+#~ msgid "Numeric 0"
+#~ msgstr "Thuộc số 0"
+
+#~ msgid "Numeric 1"
+#~ msgstr "Thuộc số 1"
+
+#~ msgid "Numeric 2"
+#~ msgstr "Thuộc số 2"
+
+#~ msgid "Numeric 3"
+#~ msgstr "Thuộc số 3"
+
+#~ msgid "Numeric 4"
+#~ msgstr "Thuộc số 4"
+
+#~ msgid "Numeric 5"
+#~ msgstr "Thuộc số 5"
+
+#~ msgid "Numeric 6"
+#~ msgstr "Thuộc số 6"
+
+#~ msgid "Numeric 7"
+#~ msgstr "Thuộc số 7"
+
+#~ msgid "Numeric 8"
+#~ msgstr "Thuộc số 8"
+
+#~ msgid "Numeric 9"
+#~ msgstr "Thuộc số 9"
+
+#~ msgid "Numeric point"
+#~ msgstr "Chấm thập phân"
+
+#~ msgid "OR"
+#~ msgstr "OR"
+
+#~ msgid "Paste selection"
+#~ msgstr "Dán vùng chọn"
+
+#~ msgid "Payment period"
+#~ msgstr "Chu kỳ chi trả"
+
+#~ msgid "Payment period [t]"
+#~ msgstr "Chu kỳ chi trả [t]"
+
+#~ msgid "Percentage"
+#~ msgstr "Phần trăm"
+
+#~ msgid "Periodic interest rate"
+#~ msgstr "Lãi xuất định kỳ"
+
+#~ msgid "Periodic interest rate [T]"
+#~ msgstr "Lãi xuất định kỳ [T]"
+
+#~ msgid "Periodic payment"
+#~ msgstr "Trả định kỳ"
+
+#~ msgid "Periodic payment [P]"
+#~ msgstr "Trả định kỳ [P]"
+
+#~ msgid "Present value"
+#~ msgstr "Giá trị hiện có"
+
+#~ msgid "Present value [p]"
+#~ msgstr "Giá trị hiện tại [p]"
+
+#~ msgid "Rand"
+#~ msgstr "Ngẫu"
+
+#~ msgid "Random number in the range 0.0 to 1.0 [?]"
+#~ msgstr "Số ngẫu nhiên từ 0.0 đến 1.0 [?]"
+
+#~ msgid "Rcl"
+#~ msgstr "Lấy"
+
+#~ msgid "Reciprocal"
+#~ msgstr "Số đảo"
+
+#~ msgid "Reciprocal [r]"
+#~ msgstr "Số đảo [r]"
+
+#~ msgid "Redo"
+#~ msgstr "Làm lại"
+
+#~ msgid "Remove rightmost character from displayed value [Backspace]"
+#~ msgstr "Gỡ bỏ ký tự tận bên phải khỏi giá trị hiển thị [Xoá lùi]"
+
+#~ msgid "Result Region"
+#~ msgstr "Vùng kết quả"
+
+#~ msgid "Retrieve from register"
+#~ msgstr "Lấy từ bộ nhớ"
+
+#~ msgid "Retrieve memory register to display [R]"
+#~ msgstr "Lấy giá trị từ bộ nhớ [R]"
+
+#~ msgid "Right bracket"
+#~ msgstr "Ngoặc phải"
+
+#~ msgid "Set Precision"
+#~ msgstr "Đặt độ chính xác"
+
+#~ msgid "Set display type to engineering format"
+#~ msgstr "Đặt kiểu hiển thị là dạng kỹ thuật"
+
+#~ msgid "Set display type to fixed-point format"
+#~ msgstr "Đặt kiểu hiển thị là dạng định điểm"
+
+#~ msgid "Set display type to scientific format"
+#~ msgstr "Đặt kiểu hiển thị là dạng khoa học"
+
+#~ msgid "Set hyperbolic option for trigonometric functions"
+#~ msgstr "Đặt tùy chọn hyperbolic cho hàm lượng giác"
+
+#~ msgid "Set inverse option for trigonometric functions"
+#~ msgstr "Đặt tùy chọn đảo cho hàm lượng giác"
+
+#~ msgid "Set numeric base to binary (base 2)"
+#~ msgstr "Đặt cơ số nhị phân (cơ số 2)"
+
+#~ msgid "Set numeric base to decimal (base 10)"
+#~ msgstr "Đặt cơ số thập phân (cơ số 10)"
+
+#~ msgid "Set numeric base to hexadecimal (base 16)"
+#~ msgstr "Đặt cơ số thập lục phân (cơ số 16)"
+
+#~ msgid "Set numeric base to octal (base 8)"
+#~ msgstr "Đặt cơ số bát phân (cơ số 8)"
+
+#~ msgid "Set trigonometric type to degrees"
+#~ msgstr "Đặt kiểu lượng giác là độ"
+
+#~ msgid "Set trigonometric type to gradians"
+#~ msgstr "Đặt kiểu lượng giác là gradian"
+
+#~ msgid "Set trigonometric type to radians"
+#~ msgstr "Đặt kiểu lượng giác là radian"
+
+#~ msgid "Shift displayed value 1-15 places to the left [<]"
+#~ msgstr "Dời giá trị hiển thị 1-15 lần sang bên trái [<]"
+
+#~ msgid "Shift displayed value 1-15 places to the right [>]"
+#~ msgstr "Dời giá trị hiển thị 1-15 lần sang bên phải [>]"
+
+#~ msgid "Show _Trailing Zeroes"
+#~ msgstr "Hiện số không theo sau"
+
+#~ msgid "Show help contents"
+#~ msgstr "Hiện mục lục trợ giúp"
+
+#~ msgid "Show memory registers"
+#~ msgstr "Hiện các thanh ghi của bộ nhớ"
+
+#~ msgid "Show the About Gcalctool dialog"
+#~ msgstr "Hiển thị hộp thoại Giới thiệu cho trình Gcalctool"
+
+#~ msgid "Significant _places:"
+#~ msgstr "Số _lẻ"
+
+#~ msgid "Square"
+#~ msgstr "Bình phương"
+
+#~ msgid "Sto"
+#~ msgstr "Lưu"
+
+#~ msgid "Store displayed value in memory register [S]"
+#~ msgstr "Lưu giá trị vào bộ nhớ [S]"
+
+#~ msgid "Store to register"
+#~ msgstr "Lưu vào bộ nhớ"
+
+#~ msgid "Straight-line depreciation"
+#~ msgstr "Khấu hao theo đường thẳng"
+
+#~ msgid "Straight-line depreciation [l]"
+#~ msgstr "Khấu hao thuộc đường thẳng [l]"
+
+#~ msgid "Subtract"
+#~ msgstr "Trừ"
+
+#~ msgid "Sum-of-the years'-digits depreciation"
+#~ msgstr "Khấu hao tống số năm"
+
+#~ msgid "Sum-of-the years'-digits depreciation [Y]"
+#~ msgstr "Khấu hao tống số năm [Y]"
+
+#~ msgid "Sum-of-the years'-digits depreciation [y]"
+#~ msgstr "Khấu hao tống số năm [y]"
+
+#~ msgid "Undo"
+#~ msgstr "Hồi lại"
+
+#~ msgid "User-defined functions [F]"
+#~ msgstr "Hàm tự xác định [F]"
+
+#~ msgid "XNOR"
+#~ msgstr "XNOR"
+
+#~ msgid "XOR"
+#~ msgstr "XOR"
+
+#~ msgid "_0 significant places"
+#~ msgstr "_0 số lẻ"
+
+#~ msgid "_1 significant place"
+#~ msgstr "_1 số lẻ"
+
+#~ msgid "_2 places"
+#~ msgstr "_2 số"
+
+#~ msgid "_2 significant places"
+#~ msgstr "_2 số lẻ"
+
+#~ msgid "_3 places"
+#~ msgstr "_3 số"
+
+#~ msgid "_3 significant places"
+#~ msgstr "_3 số lẻ"
+
+#~ msgid "_4 places"
+#~ msgstr "_4 số"
+
+#~ msgid "_4 significant places"
+#~ msgstr "_4 số lẻ"
+
+#~ msgid "_5 places"
+#~ msgstr "_5 số"
+
+#~ msgid "_5 significant places"
+#~ msgstr "_5 số lẻ"
+
+#~ msgid "_6 places"
+#~ msgstr "_6 số"
+
+#~ msgid "_6 significant places"
+#~ msgstr "_6 số lẻ"
+
+#~ msgid "_7 places"
+#~ msgstr "_7 số"
+
+#~ msgid "_7 significant places"
+#~ msgstr "_7 số lẻ"
+
+#~ msgid "_8 places"
+#~ msgstr "_8 số"
+
+#~ msgid "_8 significant places"
+#~ msgstr "_8 số lẻ"
+
+#~ msgid "_9 places"
+#~ msgstr "_9 số"
+
+#~ msgid "_9 significant places"
+#~ msgstr "_9 số lẻ"
+
+#~ msgid "_Advanced"
+#~ msgstr "_Cấp cao"
+
+#~ msgid "_Basic"
+#~ msgstr "Cơ _bản"
+
+#~ msgid "_Bin"
+#~ msgstr "_Nhị phân"
+
+#~ msgid "_Calculator"
+#~ msgstr "Bàn _tính"
+
+#~ msgid "_Contents"
+#~ msgstr "Mụ_c lục"
+
+#~ msgid "_Dec"
+#~ msgstr "_Thập phân"
+
+#~ msgid "_Edit"
+#~ msgstr "_Sửa"
+
+#~ msgid "_Financial"
+#~ msgstr "_Tài chính"
+
+#~ msgid "_Fix"
+#~ msgstr "Cố địn_h"
+
+#~ msgid "_Insert ASCII value..."
+#~ msgstr "Chèn g_iá trị ASCII..."
+
+#~ msgid "_Inv"
+#~ msgstr "Đả_o"
+
+#~ msgid "_Memory Registers"
+#~ msgstr "_Bộ nhớ"
+
+#~ msgid "_Oct"
+#~ msgstr "_Bát phân"
+
+#~ msgid "_Programming"
+#~ msgstr "_Lập trình"
+
+#~ msgid "_Redo"
+#~ msgstr "_Làm lại"
+
+#~ msgid "_Sci"
+#~ msgstr "_Khoa"
+
+#~ msgid "_Scientific"
+#~ msgstr "_Khoa học"
+
+#~ msgid "_Set"
+#~ msgstr "Đặ_t"
+
+#~ msgid "_Undo"
+#~ msgstr "_Hồi lại"
+
+#~ msgid "_View"
+#~ msgstr "_Xem"
+
+#~ msgid "register 0"
+#~ msgstr "thanh ghi 0"
+
+#~ msgid "register 1"
+#~ msgstr "thanh ghi 1"
+
+#~ msgid "register 2"
+#~ msgstr "thanh ghi 2"
+
+#~ msgid "register 3"
+#~ msgstr "thanh ghi 3"
+
+#~ msgid "register 4"
+#~ msgstr "thanh ghi 4"
+
+#~ msgid "register 5"
+#~ msgstr "thanh ghi 5"
+
+#~ msgid "register 6"
+#~ msgstr "thanh ghi 6"
+
+#~ msgid "register 7"
+#~ msgstr "thanh ghi 7"
+
+#~ msgid "register 8"
+#~ msgstr "thanh ghi 8"
+
+#~ msgid "register 9"
+#~ msgstr "thanh ghi 9"
+
+#~ msgid "±"
+#~ msgstr "±"
+
+#~ msgid "×"
+#~ msgstr "×"
+
+#~ msgid "÷"
+#~ msgstr "÷"
+
+#~ msgid "−"
+#~ msgstr "−"
+
+#~ msgid "√"
+#~ msgstr "√"

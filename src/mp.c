@@ -1,20 +1,12 @@
-/*  Copyright (c) 1987-2008 Sun Microsystems, Inc. All Rights Reserved.
- *  Copyright (c) 2008-2009 Robert Ancell
+/*
+ * Copyright (C) 1987-2008 Sun Microsystems, Inc. All Rights Reserved.
+ * Copyright (C) 2008-2011 Robert Ancell
  *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2, or (at your option)
- *  any later version.
- *
- *  This program is distributed in the hope that it will be useful, but
- *  WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- *  General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- *  02110-1301, USA.
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License as published by the Free Software
+ * Foundation, either version 2 of the License, or (at your option) any later
+ * version. See http://www.gnu.org/copyleft/gpl.html the full text of the
+ * license.
  */
 
 #include <stdlib.h>
@@ -24,6 +16,9 @@
 
 #include "mp.h"
 #include "mp-private.h"
+
+static MPNumber eulers_number;
+static gboolean have_eulers_number = FALSE;
 
 // FIXME: Re-add overflow and underflow detection
 
@@ -101,9 +96,13 @@ mp_ext(int i, int j, MPNumber *x)
 void
 mp_get_eulers(MPNumber *z)
 {
-    MPNumber t;
-    mp_set_from_integer(1, &t);
-    mp_epowy(&t, z);
+    if (!have_eulers_number) {
+        MPNumber t;
+        mp_set_from_integer(1, &t);
+        mp_epowy(&t, &eulers_number);
+        have_eulers_number = TRUE;
+    }
+    mp_set_from_mp(&eulers_number, z);
 }
 
 
@@ -212,8 +211,8 @@ mp_imaginary_component(const MPNumber *x, MPNumber *z)
     z->sign = x->im_sign;
     z->exponent = x->im_exponent;
     memcpy(z->fraction, x->im_fraction, sizeof(int) * MP_SIZE);
-
-    /* Clear (old) imaginary component */
+  
+    /* Clear (old) imaginary component */   
     z->im_sign = 0;
     z->im_exponent = 0;
     memset(z->im_fraction, 0, sizeof(int) * MP_SIZE);
@@ -235,7 +234,7 @@ mp_add_real(const MPNumber *x, int y_sign, const MPNumber *y, MPNumber *z)
         z->sign = y_sign;
         return;
     }
-    /* x + 0 = x */
+    /* x + 0 = x */ 
     else if (mp_is_zero(y)) {
         mp_set_from_mp(x, z);
         return;
@@ -293,6 +292,15 @@ mp_add_real(const MPNumber *x, int y_sign, const MPNumber *y, MPNumber *z)
         z->fraction[MP_T + i] = 0;
 
     if (sign_prod >= 0) {
+        /* This is probably insufficient overflow detection, but it makes us
+         * not crash at least.
+         */
+        if (MP_T + 3 < med) {
+            mperr(_("Overflow: the result couldn't be calculated"));
+            mp_set_from_integer(0, z);
+            return;
+        }
+
         /* HERE DO ADDITION, EXPONENT(Y) >= EXPONENT(X) */
         for (i = MP_T + 3; i >= MP_T; i--)
             z->fraction[i] = small_fraction[i - med];
@@ -450,7 +458,7 @@ mp_sgn(const MPNumber *x, MPNumber *z)
     else if (mp_is_negative(x))
         mp_set_from_integer(-1, z);
     else
-        mp_set_from_integer(1, z);
+        mp_set_from_integer(1, z);  
 }
 
 void
@@ -829,7 +837,7 @@ bool
 mp_is_integer(const MPNumber *x)
 {
     MPNumber t1, t2, t3;
-
+    
     if (mp_is_complex(x))
         return false;
 
@@ -978,7 +986,7 @@ mp_epowy_real(const MPNumber *x, MPNumber *z)
 {
     float r__1;
     int i, ix, xs, tss;
-    float rx, rz, rlb;
+    float rx, rz;
     MPNumber t1, t2;
 
     /* e^0 = 1 */
@@ -992,11 +1000,6 @@ mp_epowy_real(const MPNumber *x, MPNumber *z)
         mp_exp(x, z);
         return;
     }
-
-    /*  SEE IF ABS(X) SO LARGE THAT EXP(X) WILL CERTAINLY OVERFLOW
-     *  OR UNDERFLOW.  1.01 IS TO ALLOW FOR ERRORS IN ALOG.
-     */
-    rlb = log((float)MP_BASE) * 1.01f;
 
     /* NOW SAFE TO CONVERT X TO REAL */
     rx = mp_cast_to_float(x);
@@ -1303,7 +1306,7 @@ void
 mp_logarithm(int64_t n, const MPNumber *x, MPNumber *z)
 {
     MPNumber t1, t2;
-
+    
     /* log(0) undefined */
     if (mp_is_zero(x)) {
         /* Translators: Error displayed when attempting to take logarithm of zero */
@@ -1333,7 +1336,7 @@ mp_multiply_real(const MPNumber *x, const MPNumber *y, MPNumber *z)
     int c, i, xi;
     MPNumber r;
 
-    /* x*0 = 0*y = 0 */
+    /* x*0 = 0*y = 0 */    
     if (x->sign == 0 || y->sign == 0) {
         mp_set_from_integer(0, z);
         return;
@@ -1418,7 +1421,7 @@ mp_multiply_real(const MPNumber *x, const MPNumber *y, MPNumber *z)
     /* Clear complex part */
     z->im_sign = 0;
     z->im_exponent = 0;
-    memset(z->im_fraction, 0, sizeof(int) * MP_SIZE);
+    memset(z->im_fraction, 0, sizeof(int) * MP_SIZE);    
 
     /* NORMALIZE AND ROUND RESULT */
     // FIXME: Use stack variable because of mp_normalize brokeness
@@ -1445,11 +1448,11 @@ mp_multiply(const MPNumber *x, const MPNumber *y, MPNumber *z)
         mp_imaginary_component(x, &im_x);
         mp_real_component(y, &real_y);
         mp_imaginary_component(y, &im_y);
-
+    
         mp_multiply_real(&real_x, &real_y, &t1);
         mp_multiply_real(&im_x, &im_y, &t2);
         mp_subtract(&t1, &t2, &real_z);
-
+    
         mp_multiply_real(&real_x, &im_y, &t1);
         mp_multiply_real(&im_x, &real_y, &t2);
         mp_add(&t1, &t2, &im_z);
@@ -1574,7 +1577,7 @@ mp_multiply_integer_real(const MPNumber *x, int64_t y, MPNumber *z)
 
     z->im_sign = 0;
     z->im_exponent = 0;
-    memset(z->im_fraction, 0, sizeof(int) * MP_SIZE);
+    memset(z->im_fraction, 0, sizeof(int) * MP_SIZE);    
     mp_normalize(z);
 }
 
@@ -1670,10 +1673,11 @@ mp_pwr(const MPNumber *x, const MPNumber *y, MPNumber *z)
         return;
     }*/
 
-    /* 0^-y illegal */
-    if (mp_is_zero(x) && y->sign < 0) {
-        mperr(_("The power of zero is undefined for a negative exponent"));
+    /* 0^y = 0, 0^-y undefined */  
+    if (mp_is_zero(x)) {
         mp_set_from_integer(0, z);
+        if (y->sign < 0)
+            mperr(_("The power of zero is undefined for a negative exponent"));
         return;
     }
 
@@ -1746,7 +1750,7 @@ mp_reciprocal_real(const MPNumber *x, MPNumber *z)
 
 void
 mp_reciprocal(const MPNumber *x, MPNumber *z)
-{
+{    
     if (mp_is_complex(x)) {
         MPNumber t1, t2;
         MPNumber real_x, im_x;
@@ -2003,7 +2007,7 @@ mp_xpowy_integer(const MPNumber *x, int64_t n, MPNumber *z)
         mp_set_from_integer(0, z);
         return;
     }
-
+  
     /* x^1 = x */
     if (n == 1) {
         mp_set_from_mp(x, z);

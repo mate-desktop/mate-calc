@@ -1,19 +1,11 @@
-/*  Copyright (c) 2008-2009 Robert Ancell
+/*
+ * Copyright (C) 2008-2011 Robert Ancell
  *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2, or (at your option)
- *  any later version.
- *
- *  This program is distributed in the hope that it will be useful, but
- *  WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- *  General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- *  02110-1301, USA.
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License as published by the Free Software
+ * Foundation, either version 2 of the License, or (at your option) any later
+ * version. See http://www.gnu.org/copyleft/gpl.html the full text of the
+ * license.
  */
 
 #ifndef MATH_DISPLAY_H
@@ -30,21 +22,25 @@ G_BEGIN_DECLS
 
 typedef struct MathDisplayPrivate MathDisplayPrivate;
 
-typedef struct {
-	GtkVBox parent_instance;
-	MathDisplayPrivate* priv;
+typedef struct
+{
+    GtkViewport parent_instance;
+    MathDisplayPrivate *priv;
 } MathDisplay;
 
-typedef struct {
-	GtkVBoxClass parent_class;
+typedef struct
+{
+    GtkViewportClass parent_class;
 } MathDisplayClass;
 
 GType math_display_get_type(void);
 
-MathDisplay* math_display_new(void);
+MathDisplay *math_display_new(void);
 
-MathDisplay* math_display_new_with_equation(MathEquation* equation);
+MathDisplay *math_display_new_with_equation(MathEquation *equation);
 
-MathEquation* math_display_get_equation(MathDisplay* display);
+MathEquation *math_display_get_equation(MathDisplay *display);
+
+G_END_DECLS
 
 #endif /* MATH_DISPLAY_H */

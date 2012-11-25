@@ -1,21 +1,11 @@
-/*  $Header$
+/*
+ * Copyright (C) 2009 Rich Burridge
  *
- *  Copyright (c) 2009 Rich Burridge
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2, or (at your option)
- *  any later version.
- *
- *  This program is distributed in the hope that it will be useful, but
- *  WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- *  General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- *  02110-1301, USA.
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License as published by the Free Software
+ * Foundation, either version 2 of the License, or (at your option) any later
+ * version. See http://www.gnu.org/copyleft/gpl.html the full text of the
+ * license.
  */
 
 #include <stdio.h>
@@ -23,10 +13,14 @@
 #include <string.h>
 #include <sys/types.h>
 #include <time.h>
+#include <locale.h>
 
 #include "mp-equation.h"
+#include "mp-serializer.h"
 
 #define MAXLINE 1024
+
+static MpSerializer *result_serializer;
 
 static void
 solve(const char *equation)
@@ -34,23 +28,24 @@ solve(const char *equation)
     int ret;
     MPEquationOptions options;
     MPNumber z;
-    char result_str[MAXLINE];
-
+    gchar *result_str = NULL;
+    
     memset(&options, 0, sizeof(options));
     options.base = 10;
     options.wordlen = 32;
     options.angle_units = MP_DEGREES;
-
+    
     ret = mp_equation_parse(equation, &options, &z, NULL);
 
     if (ret == PARSER_ERR_MP)
         fprintf(stderr, "Error %s\n", mp_get_error());
-    else if (ret)
+    else if (ret)        
         fprintf(stderr, "Error %d\n", ret);
     else {
-        mp_cast_to_string(&z, 10, 10, 9, 1, result_str, MAXLINE);
+        result_str = mp_serializer_to_string(result_serializer, &z);
         printf("%s\n", result_str);
     }
+    g_free(result_str);
 }
 
 
@@ -78,6 +73,11 @@ main(int argc, char **argv)
 
     /* Seed random number generator. */
     srand48((long) time((time_t *) 0));
+
+    g_type_init ();
+    setlocale(LC_ALL, "");
+
+    result_serializer = mp_serializer_new(MP_DISPLAY_FORMAT_AUTOMATIC, 10, 9);
 
     equation = (char *) malloc(MAXLINE * sizeof(char));
     while (1) {
