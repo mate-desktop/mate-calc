@@ -14,6 +14,7 @@
 #include <gdk/gdkkeysyms.h>
 
 #include "math-window.h"
+#include "utility.h"
 
 enum {
     PROP_0,
@@ -295,6 +296,7 @@ static void button_mode_changed_cb(MathButtons *buttons, GParamSpec *spec, MathW
     }
 
     gtk_check_menu_item_set_active(GTK_CHECK_MENU_ITEM(menu), TRUE);
+    g_settings_set_enum(g_settings_var, "button-mode", math_buttons_get_mode(buttons));
 }
 
 static GtkWidget *add_menu(GtkWidget *menu_bar, const gchar *name)

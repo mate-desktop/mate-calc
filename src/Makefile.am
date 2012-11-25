@@ -60,7 +60,8 @@ mate_calc_SOURCES = \
 	parserfunc.c \
 	parserfunc.h \
 	parser.c \
-	parser.h
+	parser.h \
+	utility.h
 
 mate_calc_LDADD = \
 	$(MATE_CALC_LIBS)        

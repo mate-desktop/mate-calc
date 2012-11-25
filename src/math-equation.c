@@ -25,7 +25,7 @@
 #include "mp-serializer.h"
 #include "mp-enums.h"
 #include "unit-manager.h"
-
+#include "utility.h"
 
 enum {
     PROP_0,
@@ -671,7 +671,8 @@ math_equation_set_source_currency(MathEquation *equation, const gchar *currency)
         return;
     g_free(equation->priv->source_currency);
     equation->priv->source_currency = g_strdup(currency);
-    g_object_notify(G_OBJECT(equation), "source-currency");
+    g_settings_set_string(g_settings_var, "source-currency",
+            math_equation_get_source_currency(equation));
 }
 
 
@@ -693,7 +694,8 @@ math_equation_set_target_currency(MathEquation *equation, const gchar *currency)
         return;
     g_free(equation->priv->target_currency);
     equation->priv->target_currency = g_strdup(currency);
-    g_object_notify(G_OBJECT(equation), "target-currency");
+    g_settings_set_string(g_settings_var, "target-currency",
+            math_equation_get_target_currency(equation));
 }
 
 
@@ -716,7 +718,8 @@ math_equation_set_source_units(MathEquation *equation, const gchar *units)
 
     g_free(equation->priv->source_units);
     equation->priv->source_units = g_strdup(units);
-    g_object_notify(G_OBJECT(equation), "source-units");
+    g_settings_set_string(g_settings_var, "source-units",
+            math_equation_get_source_units(equation));
 }
 
 const gchar *
@@ -738,7 +741,8 @@ math_equation_set_target_units(MathEquation *equation, const gchar *units)
 
     g_free(equation->priv->target_units);
     equation->priv->target_units = g_strdup(units);
-    g_object_notify(G_OBJECT(equation), "target-units");
+    g_settings_set_string(g_settings_var, "target-units",
+            math_equation_get_target_units(equation));
 }
 
 

@@ -19,8 +19,9 @@
 #include "math-preferences.h"
 #include "mp-equation.h"
 #include "unit-manager.h"
+#include "utility.h"
 
-static GSettings *settings = NULL;
+GSettings *g_settings_var = NULL;
 
 static MathWindow *window;
 
@@ -170,131 +171,11 @@ get_options(int argc, char *argv[])
     }
 }
 
-
-static void
-accuracy_cb(MathEquation *equation, GParamSpec *spec)
-{
-    g_settings_set_int(settings, "accuracy", math_equation_get_accuracy(equation));
-}
-
-
-static void
-word_size_cb(MathEquation *equation, GParamSpec *spec)
-{
-    g_settings_set_int(settings, "word-size", math_equation_get_word_size(equation));
-}
-
-
-static void
-show_thousands_separators_cb(MathEquation *equation, GParamSpec *spec)
-{
-    g_settings_set_boolean(settings, "show-thousands", math_equation_get_show_thousands_separators(equation));
-}
-
-
-static void
-show_trailing_zeroes_cb(MathEquation *equation, GParamSpec *spec)
-{
-    g_settings_set_boolean(settings, "show-zeroes", math_equation_get_show_trailing_zeroes(equation));
-}
-
-
-static void
-number_format_cb(MathEquation *equation, GParamSpec *spec)
-{
-    g_settings_set_enum(settings, "number-format", math_equation_get_number_format(equation));
-}
-
-
-static void
-angle_unit_cb(MathEquation *equation, GParamSpec *spec)
-{
-    g_settings_set_enum(settings, "angle-units", math_equation_get_angle_units(equation));
-}
-
-
-static void
-source_currency_cb(MathEquation *equation, GParamSpec *spec)
-{
-    g_settings_set_string(settings, "source-currency", math_equation_get_source_currency(equation));
-}
-
-
-static void
-target_currency_cb(MathEquation *equation, GParamSpec *spec)
-{
-    g_settings_set_string(settings, "target-currency", math_equation_get_target_currency(equation));
-}
-
-
-static void
-source_units_cb(MathEquation *equation, GParamSpec *spec)
-{
-    g_settings_set_string(settings, "source-units", math_equation_get_source_units(equation));
-}
-
-
-static void
-target_units_cb(MathEquation *equation, GParamSpec *spec)
-{
-    g_settings_set_string(settings, "target-units", math_equation_get_target_units(equation));
-}
-
-
-static void
-programming_base_cb(MathButtons *buttons, GParamSpec *spec)
-{
-    g_settings_set_int(settings, "base", math_buttons_get_programming_base(buttons));
-}
-
-
-/*static void
-mode_cb(MathButtons *buttons, GParamSpec *spec)
-{
-    g_settings_set_enum(settings, "button-mode", math_buttons_get_mode(buttons));
-
-    switch(math_buttons_get_mode(buttons))
-    {
-    default:
-    case BASIC:
-      state = "basic";
-      //FIXME: Should it revert to decimal mode? math_equation_set_number_format(window->priv->equation, DEC);
-      break;
-
-    case ADVANCED:
-      state = "advanced";
-      break;
-
-    case FINANCIAL:
-      state = "financial";
-      break;
-
-    case PROGRAMMING:
-      state = "programming";
-      break;
-    }
-}*/
-
-
 static void
 quit_cb(MathWindow *window)
 {
     gtk_main_quit();
 }
-
-
-/*static GActionEntry app_entries[] = {
-        { "copy", copy_cb, NULL, NULL, NULL },
-        { "paste", paste_cb, NULL, NULL, NULL },
-        { "undo", undo_cb, NULL, NULL, NULL },
-        { "redo", redo_cb, NULL, NULL, NULL },
-        { "mode", mode_changed_cb, "s", "\"basic\"", NULL },
-        { "preferences", show_preferences_cb, NULL, NULL, NULL },
-        { "help", help_cb, NULL, NULL, NULL },
-        { "about", about_cb, NULL, NULL, NULL },
-        { "quit", quit_cb, NULL, NULL, NULL },
-};*/
-
 
 int main(int argc, char **argv)
 {
@@ -318,19 +199,19 @@ int main(int argc, char **argv)
     /* Seed random number generator. */
     srand48((long) time((time_t *) 0));
 
-    settings = g_settings_new ("org.mate.calc");
-    accuracy = g_settings_get_int(settings, "accuracy");
-    word_size = g_settings_get_int(settings, "word-size");
-    base = g_settings_get_int(settings, "base");
-    show_tsep = g_settings_get_boolean(settings, "show-thousands");
-    show_zeroes = g_settings_get_boolean(settings, "show-zeroes");
-    number_format = g_settings_get_enum(settings, "number-format");
-    angle_units = g_settings_get_enum(settings, "angle-units");
-    button_mode = g_settings_get_enum(settings, "button-mode");
-    source_currency = g_settings_get_string(settings, "source-currency");
-    target_currency = g_settings_get_string(settings, "target-currency");
-    source_units = g_settings_get_string(settings, "source-units");
-    target_units = g_settings_get_string(settings, "target-units");
+    g_settings_var = g_settings_new ("org.mate.calc");
+    accuracy = g_settings_get_int(g_settings_var, "accuracy");
+    word_size = g_settings_get_int(g_settings_var, "word-size");
+    base = g_settings_get_int(g_settings_var, "base");
+    show_tsep = g_settings_get_boolean(g_settings_var, "show-thousands");
+    show_zeroes = g_settings_get_boolean(g_settings_var, "show-zeroes");
+    number_format = g_settings_get_enum(g_settings_var, "number-format");
+    angle_units = g_settings_get_enum(g_settings_var, "angle-units");
+    button_mode = g_settings_get_enum(g_settings_var, "button-mode");
+    source_currency = g_settings_get_string(g_settings_var, "source-currency");
+    target_currency = g_settings_get_string(g_settings_var, "target-currency");
+    source_units = g_settings_get_string(g_settings_var, "source-units");
+    target_units = g_settings_get_string(g_settings_var, "target-units");
 
     equation = math_equation_new();
     math_equation_set_accuracy(equation, accuracy);
@@ -348,17 +229,6 @@ int main(int argc, char **argv)
     g_free(source_units);
     g_free(target_units);
 
-    g_signal_connect(equation, "notify::accuracy", G_CALLBACK(accuracy_cb), NULL);
-    g_signal_connect(equation, "notify::word-size", G_CALLBACK(word_size_cb), NULL);
-    g_signal_connect(equation, "notify::show-thousands-separators", G_CALLBACK(show_thousands_separators_cb), NULL);
-    g_signal_connect(equation, "notify::show-trailing-zeroes", G_CALLBACK(show_trailing_zeroes_cb), NULL);
-    g_signal_connect(equation, "notify::number-format", G_CALLBACK(number_format_cb), NULL);
-    g_signal_connect(equation, "notify::angle-units", G_CALLBACK(angle_unit_cb), NULL);
-    g_signal_connect(equation, "notify::source-currency", G_CALLBACK(source_currency_cb), NULL);
-    g_signal_connect(equation, "notify::target-currency", G_CALLBACK(target_currency_cb), NULL);
-    g_signal_connect(equation, "notify::source-units", G_CALLBACK(source_units_cb), NULL);
-    g_signal_connect(equation, "notify::target-units", G_CALLBACK(target_units_cb), NULL);
-
     get_options(argc, argv);
 
     gtk_init(&argc, &argv);
@@ -370,9 +240,6 @@ int main(int argc, char **argv)
     g_signal_connect(G_OBJECT(window), "quit", G_CALLBACK(quit_cb), NULL);
     math_buttons_set_programming_base(buttons, base);
     math_buttons_set_mode(buttons, button_mode); // FIXME: We load the basic buttons even if we immediately switch to the next type
-    g_signal_connect(buttons, "notify::programming-base", G_CALLBACK(programming_base_cb), NULL);
-    //g_signal_connect(buttons, "notify::mode", G_CALLBACK(mode_cb), NULL);
-    //mode_cb (buttons, NULL);
 
     gtk_widget_show(GTK_WIDGET(window));
     gtk_main();

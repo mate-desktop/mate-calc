@@ -15,6 +15,7 @@
 #include "math-variable-popup.h"
 #include "financial.h"
 #include "mp-serializer.h"
+#include "utility.h"
 
 enum {
     PROP_0,
@@ -753,7 +754,8 @@ math_buttons_set_programming_base(MathButtons *buttons, gint base)
         return;
 
     buttons->priv->programming_base = base;
-    g_object_notify(G_OBJECT(buttons), "programming-base");
+
+    g_settings_set_int(g_settings_var, "base", math_buttons_get_programming_base(buttons));
 
     if (buttons->priv->mode == PROGRAMMING)
         math_equation_set_base(buttons->priv->equation, base);

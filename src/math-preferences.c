@@ -12,6 +12,7 @@
 #include <gtk/gtk.h>
 
 #include "math-preferences.h"
+#include "utility.h"
 
 G_DEFINE_TYPE (MathPreferencesDialog, math_preferences, GTK_TYPE_DIALOG);
 
@@ -167,6 +168,7 @@ accuracy_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dia
 {
     gtk_spin_button_set_value(GTK_SPIN_BUTTON(gtk_builder_get_object(dialog->priv->ui, "decimal_places_spin")),
                               math_equation_get_accuracy(equation));
+    g_settings_set_int(g_settings_var, "accuracy", math_equation_get_accuracy(equation));
 }
 
 
@@ -175,6 +177,7 @@ show_thousands_separators_cb(MathEquation *equation, GParamSpec *spec, MathPrefe
 {
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(gtk_builder_get_object(dialog->priv->ui, "thousands_separator_check")),
                                  math_equation_get_show_thousands_separators(equation));
+    g_settings_set_boolean(g_settings_var, "show-thousands", math_equation_get_show_thousands_separators(equation));
 }
 
 
@@ -183,6 +186,7 @@ show_trailing_zeroes_cb(MathEquation *equation, GParamSpec *spec, MathPreference
 {
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(gtk_builder_get_object(dialog->priv->ui, "trailing_zeroes_check")),
                                  math_equation_get_show_trailing_zeroes(equation));
+    g_settings_set_boolean(g_settings_var, "show-zeroes", math_equation_get_show_trailing_zeroes(equation));
 }
 
 
@@ -190,6 +194,7 @@ static void
 number_format_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
 {
     set_combo_box_from_int(GET_WIDGET(dialog->priv->ui, "number_format_combobox"), math_equation_get_number_format(equation));
+    g_settings_set_enum(g_settings_var, "number-format", math_equation_get_number_format(equation));
 }
 
 
@@ -197,6 +202,7 @@ static void
 word_size_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
 {
     set_combo_box_from_int(GET_WIDGET(dialog->priv->ui, "word_size_combobox"), math_equation_get_word_size(equation));
+    g_settings_set_int(g_settings_var, "word-size", math_equation_get_word_size(equation));
 }
 
 
@@ -204,6 +210,7 @@ static void
 angle_unit_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
 {
     set_combo_box_from_int(GET_WIDGET(dialog->priv->ui, "angle_unit_combobox"), math_equation_get_angle_units(equation));  
+    g_settings_set_enum(g_settings_var, "angle-units", math_equation_get_angle_units(equation));
 }
 
 
