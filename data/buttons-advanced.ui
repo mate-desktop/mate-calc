@@ -3,9 +3,11 @@
   <requires lib="gtk+" version="2.16"/>
   <!-- interface-naming-policy toplevel-contextual -->
   <object class="GtkWindow" id="window1">
+    <property name="can_focus">False</property>
     <child>
       <object class="GtkTable" id="button_panel">
         <property name="visible">True</property>
+        <property name="can_focus">False</property>
         <property name="n_rows">5</property>
         <property name="n_columns">10</property>
         <property name="homogeneous">True</property>
@@ -14,6 +16,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="focus_on_click">False</property>
             <child internal-child="accessible">
               <object class="AtkObject" id="calc_inverse_button-atkobject">
@@ -24,6 +27,7 @@
             <child>
               <object class="GtkLabel" id="label20">
                 <property name="visible">True</property>
+                <property name="can_focus">False</property>
                 <property name="label">&lt;i&gt;x&lt;/i&gt;&lt;sup&gt;−1&lt;/sup&gt;</property>
                 <property name="use_markup">True</property>
                 <property name="justify">center</property>
@@ -45,6 +49,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <child internal-child="accessible">
@@ -68,6 +73,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="focus_on_click">False</property>
             <child internal-child="accessible">
               <object class="AtkObject" id="calc_factorial_button-atkobject">
@@ -78,6 +84,7 @@
             <child>
               <object class="GtkLabel" id="label14">
                 <property name="visible">True</property>
+                <property name="can_focus">False</property>
                 <property name="label">&lt;i&gt;x&lt;/i&gt;!</property>
                 <property name="use_markup">True</property>
               </object>
@@ -98,6 +105,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
@@ -116,12 +124,14 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
             <child>
               <object class="GtkLabel" id="imaginary_label">
                 <property name="visible">True</property>
+                <property name="can_focus">False</property>
                 <property name="label">&lt;i&gt;i&lt;/i&gt;</property>
                 <property name="use_markup">True</property>
               </object>
@@ -142,6 +152,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="digit_cb" swapped="no"/>
@@ -159,6 +170,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="digit_cb" swapped="no"/>
@@ -176,6 +188,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="digit_cb" swapped="no"/>
@@ -195,6 +208,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="digit_cb" swapped="no"/>
@@ -214,6 +228,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="digit_cb" swapped="no"/>
@@ -233,6 +248,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="digit_cb" swapped="no"/>
@@ -252,6 +268,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
@@ -271,6 +288,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="digit_cb" swapped="no"/>
@@ -288,6 +306,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="digit_cb" swapped="no"/>
@@ -308,6 +327,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="digit_cb" swapped="no"/>
@@ -325,6 +345,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="numeric_point_cb" swapped="no"/>
@@ -344,6 +365,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="digit_cb" swapped="no"/>
@@ -363,6 +385,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
@@ -382,6 +405,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="subtract_cb" swapped="no"/>
@@ -401,6 +425,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
@@ -420,6 +445,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="solve_cb" swapped="no"/>
@@ -435,18 +461,13 @@
         </child>
         <child>
           <object class="GtkButton" id="calc_clear_button">
+            <property name="label" translatable="yes">Clear</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
-            <property name="use_underline">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="clear_cb" swapped="no"/>
-            <child>
-              <object class="GtkImage" id="image1">
-                <property name="visible">True</property>
-                <property name="icon-name">edit-clear-symbolic</property>
-              </object>
-            </child>
           </object>
           <packing>
             <property name="left_attach">5</property>
@@ -460,6 +481,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="focus_on_click">False</property>
             <child internal-child="accessible">
               <object class="AtkObject" id="calc_subscript_button-atkobject">
@@ -470,6 +492,7 @@
             <child>
               <object class="GtkLabel" id="label4">
                 <property name="visible">True</property>
+                <property name="can_focus">False</property>
                 <property name="label">↓n</property>
                 <property name="use_markup">True</property>
               </object>
@@ -485,6 +508,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="focus_on_click">False</property>
             <child internal-child="accessible">
               <object class="AtkObject" id="calc_superscript_button-atkobject">
@@ -495,6 +519,7 @@
             <child>
               <object class="GtkLabel" id="label3">
                 <property name="visible">True</property>
+                <property name="can_focus">False</property>
                 <property name="label">↑n</property>
                 <property name="use_markup">True</property>
               </object>
@@ -512,6 +537,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <child internal-child="accessible">
@@ -523,6 +549,7 @@
             <child>
               <object class="GtkLabel" id="label2">
                 <property name="visible">True</property>
+                <property name="can_focus">False</property>
                 <property name="label">×10&lt;sup&gt;&lt;i&gt;y&lt;/i&gt;&lt;/sup&gt;</property>
                 <property name="use_markup">True</property>
               </object>
@@ -541,6 +568,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
@@ -558,6 +586,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
@@ -577,6 +606,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
@@ -595,6 +625,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="focus_on_click">False</property>
             <child internal-child="accessible">
               <object class="AtkObject" id="calc_memory_button-atkobject">
@@ -605,25 +636,31 @@
             <child>
               <object class="GtkHBox" id="hbox20">
                 <property name="visible">True</property>
+                <property name="can_focus">False</property>
                 <child>
                   <object class="GtkLabel" id="label23">
                     <property name="visible">True</property>
+                    <property name="can_focus">False</property>
                     <property name="label" translatable="yes" comments="The label on the memory button">x</property>
                     <attributes>
                       <attribute name="style" value="italic"/>
                     </attributes>
                   </object>
                   <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
                     <property name="position">0</property>
                   </packing>
                 </child>
                 <child>
                   <object class="GtkArrow" id="arrow14">
                     <property name="visible">True</property>
+                    <property name="can_focus">False</property>
                     <property name="arrow_type">down</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
+                    <property name="fill">True</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
@@ -644,6 +681,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <child internal-child="accessible">
@@ -655,6 +693,7 @@
             <child>
               <object class="GtkLabel" id="label1">
                 <property name="visible">True</property>
+                <property name="can_focus">False</property>
                 <property name="label">|&lt;i&gt;x&lt;/i&gt;|</property>
                 <property name="use_markup">True</property>
               </object>
@@ -675,6 +714,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
@@ -694,6 +734,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
@@ -713,6 +754,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
@@ -732,6 +774,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
@@ -751,6 +794,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
           </object>
@@ -768,6 +812,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="focus_on_click">False</property>
             <child internal-child="accessible">
               <object class="AtkObject" id="calc_x_pow_y_button-atkobject">
@@ -778,6 +823,7 @@
             <child>
               <object class="GtkLabel" id="x_pow_y_label">
                 <property name="visible">True</property>
+                <property name="can_focus">False</property>
                 <property name="label">&lt;i&gt;x&lt;/i&gt;&lt;sup&gt;&lt;i&gt;y&lt;/i&gt;&lt;/sup&gt;</property>
                 <property name="use_markup">True</property>
               </object>
@@ -798,6 +844,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
@@ -813,18 +860,13 @@
         </child>
         <child>
           <object class="GtkButton" id="calc_undo_button">
+            <property name="label" translatable="yes">Undo</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
-            <property name="use_underline">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="undo_cb" swapped="no"/>
-            <child>
-              <object class="GtkImage" id="image2">
-                <property name="visible">True</property>
-                <property name="icon-name">edit-undo-symbolic</property>
-              </object>
-            </child>
           </object>
           <packing>
             <property name="left_attach">4</property>
@@ -838,12 +880,14 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
             <child>
               <object class="GtkLabel" id="pi_label">
                 <property name="visible">True</property>
+                <property name="can_focus">False</property>
                 <property name="label">π</property>
                 <property name="use_markup">True</property>
               </object>
@@ -863,12 +907,14 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
             <child>
               <object class="GtkLabel" id="eulers_number_label">
                 <property name="visible">True</property>
+                <property name="can_focus">False</property>
                 <property name="label">&lt;i&gt;e&lt;/i&gt;</property>
                 <property name="use_markup">True</property>
               </object>
@@ -886,6 +932,7 @@
         <child>
           <object class="GtkTable" id="table1">
             <property name="visible">True</property>
+            <property name="can_focus">False</property>
             <property name="n_rows">2</property>
             <property name="n_columns">3</property>
             <property name="homogeneous">True</property>
@@ -895,6 +942,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="use_action_appearance">False</property>
                 <property name="focus_on_click">False</property>
                 <signal name="clicked" handler="button_cb" swapped="no"/>
               </object>
@@ -909,6 +957,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="use_action_appearance">False</property>
                 <property name="focus_on_click">False</property>
                 <signal name="clicked" handler="button_cb" swapped="no"/>
               </object>
@@ -925,6 +974,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="use_action_appearance">False</property>
                 <property name="focus_on_click">False</property>
                 <signal name="clicked" handler="button_cb" swapped="no"/>
               </object>
@@ -941,6 +991,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="use_action_appearance">False</property>
                 <property name="focus_on_click">False</property>
                 <signal name="clicked" handler="button_cb" swapped="no"/>
               </object>
@@ -957,6 +1008,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="use_action_appearance">False</property>
                 <property name="focus_on_click">False</property>
                 <signal name="clicked" handler="button_cb" swapped="no"/>
               </object>
@@ -975,6 +1027,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="use_action_appearance">False</property>
                 <property name="focus_on_click">False</property>
                 <signal name="clicked" handler="button_cb" swapped="no"/>
               </object>
@@ -999,6 +1052,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
             <property name="focus_on_click">False</property>
             <child internal-child="accessible">
               <object class="AtkObject" id="calc_function_button-atkobject">
@@ -1009,22 +1063,28 @@
             <child>
               <object class="GtkHBox" id="hbox2">
                 <property name="visible">True</property>
+                <property name="can_focus">False</property>
                 <child>
                   <object class="GtkLabel" id="label5">
                     <property name="visible">True</property>
+                    <property name="can_focus">False</property>
                     <property name="label">f(x)</property>
                   </object>
                   <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
                     <property name="position">0</property>
                   </packing>
                 </child>
                 <child>
                   <object class="GtkArrow" id="arrow1">
                     <property name="visible">True</property>
+                    <property name="can_focus">False</property>
                     <property name="arrow_type">down</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
+                    <property name="fill">True</property>
                     <property name="position">1</property>
                   </packing>
                 </child>

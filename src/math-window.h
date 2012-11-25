@@ -16,6 +16,7 @@
 #include "math-equation.h"
 #include "math-display.h"
 #include "math-buttons.h"
+#include "math-preferences.h"
 
 G_BEGIN_DECLS
 
@@ -25,20 +26,22 @@ typedef struct MathWindowPrivate MathWindowPrivate;
 
 typedef struct
 {
-    GtkApplicationWindow parent_instance;
+    GtkWindow parent_instance;
     MathWindowPrivate *priv;
 } MathWindow;
 
 typedef struct
 {
-    GtkApplicationWindowClass parent_class;
+    GtkWindowClass parent_class;
 
-    void (*quit)(MathWindow *window);
+    void (*quit) (MathWindow *window);
 } MathWindowClass;
 
 GType math_window_get_type(void);
 
-MathWindow *math_window_new(GtkApplication *app, MathEquation *equation);
+MathWindow *math_window_new(MathEquation *equation);
+
+GtkWidget *math_window_get_menu_bar(MathWindow *window);
 
 MathEquation *math_window_get_equation(MathWindow *window);
 
