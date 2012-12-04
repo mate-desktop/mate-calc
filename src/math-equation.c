@@ -1331,8 +1331,11 @@ math_equation_solve(MathEquation *equation)
     equation->priv->in_solve = true;
 
     math_equation_set_number_mode(equation, NORMAL);
-
-    g_thread_new("", math_equation_solve_real, equation);
+    #if GLIB_CHECK_VERSION(2, 32, 0)
+        g_thread_new("", math_equation_solve_real, equation);
+    #else
+        g_thread_create(math_equation_solve_real, equation, TRUE, NULL);
+    #endif
 
     g_timeout_add(50, math_equation_look_for_answer, equation);
     g_timeout_add(100, math_equation_show_in_progress, equation);
@@ -1394,7 +1397,11 @@ math_equation_factorize(MathEquation *equation)
 
     equation->priv->in_solve = true;
 
-    g_thread_new("", math_equation_factorize_real, equation);
+    #if GLIB_CHECK_VERSION(2, 32, 0)
+        g_thread_new("", math_equation_factorize_real, equation);
+    #else
+        g_thread_create(math_equation_factorize_real, equation, TRUE, NULL);
+    #endif
 
     g_timeout_add(50, math_equation_look_for_answer, equation);
     g_timeout_add(100, math_equation_show_in_progress, equation);
