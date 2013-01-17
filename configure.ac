@@ -2,14 +2,13 @@ dnl Process this file with autoconf to produce a configure script.
 
 AC_INIT(configure.ac)
 AM_INIT_AUTOMAKE(mate-calc, 1.5.1)
-AM_CONFIG_HEADER(config.h)
+AC_CONFIG_HEADERS(config.h)
 AM_MAINTAINER_MODE
 MATE_MAINTAINER_MODE_DEFINES
 m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
 
 AC_ISC_POSIX
 AC_PROG_CC
-AM_PROG_CC_STDC
 AC_HEADER_STDC
 
 GLIB_GSETTINGS
