@@ -23,7 +23,7 @@ GIO_REQUIRED=2.25.10
 GTK_REQUIRED=2.18.0
 
 AC_MSG_CHECKING([which gtk+ version to compile against])
-AC_ARG_WITH([gtk+],
+AC_ARG_WITH([gtk],
             [AS_HELP_STRING([--with-gtk=2.0|3.0], [which gtk+ version to compile against (default: 2.0)])],
             [case "$with_gtk" in
                 2.0|3.0) ;;
