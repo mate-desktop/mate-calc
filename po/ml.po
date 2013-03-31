@@ -1,97 +1,117 @@
-# translation of mate-calc.master.ml.po to
-# translation of mate-calc.HEAD.ml.po to
-# This file is distributed under the same license as the mate-calc package.
-# Copyright (C) 2003-2008 mate-calc'S COPYRIGHT HOLDER.
-# FSF-India <locale@gnu.org.in>, 2003.
-# Ani Peter <apeter@redhat.com>, 2006, 2012.
-# പ്രവീണ്‍ അരിമ്പ്രത്തൊടിയില്‍ <pravi.a@gmail.com>, 2008.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Ani Peter <apeter@redhat.com>, 2006,2012.
 # Anish A <anish.nl@gmail.com>, 2010.
+# FSF-India <locale@gnu.org.in>, 2003.
+# പ്രവീണ്‍ അരിമ്പ്രത്തൊടിയില്‍ <pravi.a@gmail.com>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc.master.ml\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
-"cgi?product=mate-calc&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-09-20 17:02+0000\n"
-"PO-Revision-Date: 2012-09-20 22:35+0000\n"
-"Last-Translator: Ani Peter <apeter@redhat.com>\n"
-"Language-Team: Malayalam <discuss@lists.smc.org.in>\n"
-"Language: ml\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2013-03-24 20:10+0100\n"
+"PO-Revision-Date: 2013-03-24 19:29+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Malayalam (http://www.transifex.com/projects/p/MATE/language/ml/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ml\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.0\n"
-"X-DamnedLies-Scope: partial\n"
-
-#. Accessible name for the inverse button
-#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:24
-msgid "Inverse"
-msgstr "തല തിരിയ്ക്കുക"
 
 #. Accessible name for the factorize button
-#: ../data/buttons-advanced.ui.h:4 ../data/buttons-programming.ui.h:2
+#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:8
 msgid "Factorize"
 msgstr "ഘടകങ്ങളാക്കുക"
 
-#. Accessible name for the factorial button
-#: ../data/buttons-advanced.ui.h:6 ../data/buttons-programming.ui.h:22
-msgid "Factorial"
-msgstr "ഫാക്റ്റോറിയല്‍"
-
 #. Label on the solve button (clicking this solves the displayed calculation)
-#: ../data/buttons-advanced.ui.h:8 ../data/buttons-basic.ui.h:2
-#: ../data/buttons-financial.ui.h:76 ../data/buttons-programming.ui.h:6
+#: ../data/buttons-advanced.ui.h:4 ../data/buttons-basic.ui.h:2
+#: ../data/buttons-financial.ui.h:76 ../data/buttons-programming.ui.h:12
 msgid "="
 msgstr "="
 
+#: ../data/buttons-advanced.ui.h:5 ../data/buttons-basic.ui.h:3
+#: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
+msgid "Clear"
+msgstr "വെടിപ്പാക്കുക"
+
 #. Accessible name for the subscript mode button
-#: ../data/buttons-advanced.ui.h:10 ../data/buttons-programming.ui.h:8
+#: ../data/buttons-advanced.ui.h:7 ../data/buttons-programming.ui.h:15
 msgid "Subscript"
 msgstr "സബ്സ്ക്രിപ്റ്റ്"
 
 #. Accessible name for the superscript mode button
-#: ../data/buttons-advanced.ui.h:12 ../data/buttons-programming.ui.h:10
+#: ../data/buttons-advanced.ui.h:9 ../data/buttons-programming.ui.h:17
 msgid "Superscript"
 msgstr "സൂപ്പര്‍സ്ക്രിപ്റ്റ്"
 
 #. Accessible name for the scientific exponent button
-#: ../data/buttons-advanced.ui.h:14
+#: ../data/buttons-advanced.ui.h:11
 msgid "Scientific Exponent"
 msgstr "സൈന്റിഫിക്ക് എക്സ്പോണന്റ്"
 
 #. Accessible name for the memory button
 #. Accessible name for the memory value button
 #. Tooltip for the memory button
-#: ../data/buttons-advanced.ui.h:16 ../data/buttons-financial.ui.h:72
-#: ../src/math-buttons.c:222
+#: ../data/buttons-advanced.ui.h:13 ../data/buttons-financial.ui.h:72
+#: ../src/math-buttons.c:232
 msgid "Memory"
 msgstr "മെമ്മറി"
 
 #. The label on the memory button
-#: ../data/buttons-advanced.ui.h:18 ../data/buttons-financial.ui.h:74
-#: ../data/buttons-programming.ui.h:14
+#: ../data/buttons-advanced.ui.h:15 ../data/buttons-financial.ui.h:74
+#: ../data/buttons-programming.ui.h:21
 msgid "x"
 msgstr "x"
 
-#. Accessible name for the absolute value button
-#: ../data/buttons-advanced.ui.h:20 ../data/buttons-programming.ui.h:4
-msgid "Absolute Value"
-msgstr "ശരിയ്ക്കുള്ള മൂല്യം"
-
 #. Accessible name for the exponentiation (x to the power of y) button
-#: ../data/buttons-advanced.ui.h:22 ../data/buttons-basic.ui.h:4
-#: ../data/buttons-financial.ui.h:98 ../data/buttons-programming.ui.h:26
+#: ../data/buttons-advanced.ui.h:17 ../data/buttons-basic.ui.h:5
+#: ../data/buttons-financial.ui.h:100 ../data/buttons-programming.ui.h:33
 msgid "Exponent"
 msgstr "എക്സപോണന്റ്"
 
+#: ../data/buttons-advanced.ui.h:18 ../data/buttons-basic.ui.h:6
+#: ../data/buttons-financial.ui.h:98
+msgid "Undo"
+msgstr "വരുത്തിയ മാറ്റങ്ങള്‍ വേണ്ടന്ന് വയ്ക്കുക"
+
+#: ../data/buttons-advanced.ui.h:19
+msgid "acos"
+msgstr ""
+
+#: ../data/buttons-advanced.ui.h:20
+msgid "asin"
+msgstr ""
+
+#: ../data/buttons-advanced.ui.h:21
+msgid "atan"
+msgstr ""
+
 #. Accessible name for the store value button
-#: ../data/buttons-advanced.ui.h:24 ../data/buttons-programming.ui.h:12
+#: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:19
 msgid "Store"
 msgstr "സംഭരിക്കുക"
 
+#. Accessible name for the inverse button
+#: ../data/buttons-advanced.ui.h:25 ../data/buttons-programming.ui.h:31
+msgid "Inverse"
+msgstr "തല തിരിയ്ക്കുക"
+
+#. Accessible name for the factorial button
+#: ../data/buttons-advanced.ui.h:27 ../data/buttons-programming.ui.h:29
+msgid "Factorial"
+msgstr "ഫാക്റ്റോറിയല്‍"
+
+#. Accessible name for the absolute value button
+#: ../data/buttons-advanced.ui.h:29 ../data/buttons-programming.ui.h:10
+msgid "Absolute Value"
+msgstr "ശരിയ്ക്കുള്ള മൂല്യം"
+
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
-#: ../data/buttons-financial.ui.h:2 ../src/math-buttons.c:246
+#: ../data/buttons-financial.ui.h:2 ../src/math-buttons.c:256
 msgid "Compounding Term"
 msgstr "കോപൌണ്ടിങ് ടേം"
 
@@ -116,9 +136,7 @@ msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr ""
-"കോംപൌണ്ടിങ് സമയത്തുള്ള ഉറപ്പിച്ച പലിശ നിരക്കില്‍, ഇന്‍വസ്റ്റ്മെന്റിന്റെ നിലവിലുള്ള മൂല്ല്യം ഒരു "
-"ഭാവി മൂല്ല്യമായി വര്‍ദ്ധിപ്പിക്കുന്നതിനാവശ്യമുള്ള കോംപൌണ്ടിങ് കാലാവധിയുടെ എണ്ണം കണക്കുകൂട്ടുന്നു."
+msgstr "കോംപൌണ്ടിങ് സമയത്തുള്ള ഉറപ്പിച്ച പലിശ നിരക്കില്‍, ഇന്‍വസ്റ്റ്മെന്റിന്റെ നിലവിലുള്ള മൂല്ല്യം ഒരു ഭാവി മൂല്ല്യമായി വര്‍ദ്ധിപ്പിക്കുന്നതിനാവശ്യമുള്ള കോംപൌണ്ടിങ് കാലാവധിയുടെ എണ്ണം കണക്കുകൂട്ടുന്നു."
 
 #. Periodic Interest Rate Dialog: Label before future value input
 #: ../data/buttons-financial.ui.h:12
@@ -135,9 +153,7 @@ msgstr "ഡബിള്‍-ഡിക്ലൈനിങ്ങ് വിലയി�
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
-msgstr ""
-"ഡബിള്‍-ഡിക്ലൈനിങ്ങ് ബാലന്‍സ് മാര്‍ഗമുപയോഗിച്ചു്, വ്യക്തമാക്കിയിട്ടുള്ള ഒരു കാലാവധിയില്‍ ആസ്തിയുടെ "
-"വിലയിടിവു് അലവന്‍സ് കണക്കുക്കൂട്ടുന്നു."
+msgstr "ഡബിള്‍-ഡിക്ലൈനിങ്ങ് ബാലന്‍സ് മാര്‍ഗമുപയോഗിച്ചു്, വ്യക്തമാക്കിയിട്ടുള്ള ഒരു കാലാവധിയില്‍ ആസ്തിയുടെ വിലയിടിവു് അലവന്‍സ് കണക്കുക്കൂട്ടുന്നു."
 
 #. Gross Profit Margin Dialog: Label before cost input
 #: ../data/buttons-financial.ui.h:18
@@ -156,7 +172,7 @@ msgstr "_കാലാവധി:"
 
 #. Title of Future Value dialog
 #. Tooltip for the future value button
-#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.c:252
+#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.c:262
 msgid "Future Value"
 msgstr "ഫ്യൂച്ചര്‍ വാല്ല്യൂ"
 
@@ -166,9 +182,7 @@ msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
-msgstr ""
-"സാമകമായ പലിശനിരക്കില്‍ സമമായുള്ള പണമടയ്ക്കലിന്റെ അടിസ്ഥാനത്തിലുള്ള ഒരു ഇന്‍വസ്റ്റമെന്റിന്റെ "
-"ഭാവിയിലുള്ള മൂല്ല്യം കണ്ടുപിടിക്കുന്നു. "
+msgstr "സാമകമായ പലിശനിരക്കില്‍ സമമായുള്ള പണമടയ്ക്കലിന്റെ അടിസ്ഥാനത്തിലുള്ള ഒരു ഇന്‍വസ്റ്റമെന്റിന്റെ ഭാവിയിലുള്ള മൂല്ല്യം കണ്ടുപിടിക്കുന്നു. "
 
 #. Payment Period Dialog: Label before periodic payment input
 #: ../data/buttons-financial.ui.h:28
@@ -182,7 +196,7 @@ msgstr "പീരിയഡുകളുടെ _എണ്ണം:"
 
 #. Title of Gross Profit Margin dialog
 #. Tooltip for the gross profit margin button
-#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:273
+#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:283
 msgid "Gross Profit Margin"
 msgstr "മൊത്തം ലാഭം പരിധി "
 
@@ -191,8 +205,7 @@ msgstr "മൊത്തം ലാഭം പരിധി "
 msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
-msgstr ""
-"വസ്തുവിന്റെ വിലയും ആവശ്യമുള്ള മൊത്ത ലാഭവുമനുസരിച്ചു് ആ വസ്തു വീണ്ടും വില്‍ക്കുവാനുള്ള വില കണക്കുകൂട്ടുന്നു."
+msgstr "വസ്തുവിന്റെ വിലയും ആവശ്യമുള്ള മൊത്ത ലാഭവുമനുസരിച്ചു് ആ വസ്തു വീണ്ടും വില്‍ക്കുവാനുള്ള വില കണക്കുകൂട്ടുന്നു."
 
 #. Gross Profit Margin Dialog: Label before margin input
 #: ../data/buttons-financial.ui.h:36
@@ -201,7 +214,7 @@ msgstr "_പരിധി:"
 
 #. Title of Periodic Payment dialog
 #. Tooltip for the periodic payment button
-#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:270
+#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:280
 msgid "Periodic Payment"
 msgstr "പീരിയോഡിക് പേയ്മെന്റ്"
 
@@ -210,9 +223,7 @@ msgstr "പീരിയോഡിക് പേയ്മെന്റ്"
 msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
-msgstr ""
-"ഓരോ കാലാവധിയുടെയും അവസാനം കാശടയ്ക്കുന്ന ഒരു വായ്പയുടെ സാമയികമായി അടയ്ക്കേണ്ട പണം "
-"കണ്ടുപിടിക്കുന്നു. "
+msgstr "ഓരോ കാലാവധിയുടെയും അവസാനം കാശടയ്ക്കുന്ന ഒരു വായ്പയുടെ സാമയികമായി അടയ്ക്കേണ്ട പണം കണ്ടുപിടിക്കുന്നു. "
 
 #. Periodic Payment Dialog: Label before principal input
 #: ../data/buttons-financial.ui.h:42
@@ -226,7 +237,7 @@ msgstr "_ടേം:"
 
 #. Title of Present Value dialog
 #. Tooltip for the present value button
-#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:267
+#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:277
 msgid "Present Value"
 msgstr "നിലവിലുള്ള മൂല്ല്യം"
 
@@ -236,13 +247,11 @@ msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr ""
-"പണമടയ്ക്കേണ്ട സമയത്തിനുള്ള പലിശ നിരക്ക് കുറച്ച് സമമായ കൊടുത്ത പണത്തിനനുസരിച്ചു് ഒരു "
-"ഇന്‍വസ്റ്റ്മെന്റിനുള്ള നിലവിലുള്ള മൂല്ല്യം കണ്ടുപിടിക്കുന്നു. "
+msgstr "പണമടയ്ക്കേണ്ട സമയത്തിനുള്ള പലിശ നിരക്ക് കുറച്ച് സമമായ കൊടുത്ത പണത്തിനനുസരിച്ചു് ഒരു ഇന്‍വസ്റ്റ്മെന്റിനുള്ള നിലവിലുള്ള മൂല്ല്യം കണ്ടുപിടിക്കുന്നു. "
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
-#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.c:264
+#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.c:274
 msgid "Periodic Interest Rate"
 msgstr "പീരിയോഡിക് പലിശ നിരക്ക്"
 
@@ -251,9 +260,7 @@ msgstr "പീരിയോഡിക് പലിശ നിരക്ക്"
 msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
-msgstr ""
-"കോംപൌഡിങ് പീരിയഡുകളില്‍ ഒരു ഇന്‍വസ്റ്റമെന്റ് ഭാവിയിലുള്ള ഒരു മൂല്ല്യത്തിലേക്ക് "
-"വര്‍ദ്ധിപ്പിക്കുന്നതിനായി ആവശ്യമുള്ള സാമയികമായ പലിശ കണ്ടുപിടിക്കുന്നു."
+msgstr "കോംപൌഡിങ് പീരിയഡുകളില്‍ ഒരു ഇന്‍വസ്റ്റമെന്റ് ഭാവിയിലുള്ള ഒരു മൂല്ല്യത്തിലേക്ക് വര്‍ദ്ധിപ്പിക്കുന്നതിനായി ആവശ്യമുള്ള സാമയികമായ പലിശ കണ്ടുപിടിക്കുന്നു."
 
 #. Title of Straight-Line Depreciation dialog
 #: ../data/buttons-financial.ui.h:54
@@ -277,9 +284,7 @@ msgid ""
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr ""
-"ഒരു പീരിയഡിനുള്ള നേര്‍രേഖാ വിലയിടിവു് കണക്കുകൂട്ടുന്നു. വര്‍ഷങ്ങള്‍ കഴിയുന്നതനുസരിച്ചു് അസ്സറ്റിന്റെ "
-"വിലയിടിയുന്നു."
+msgstr "ഒരു പീരിയഡിനുള്ള നേര്‍രേഖാ വിലയിടിവു് കണക്കുകൂട്ടുന്നു. വര്‍ഷങ്ങള്‍ കഴിയുന്നതനുസരിച്ചു് അസ്സറ്റിന്റെ വിലയിടിയുന്നു."
 
 #. Title of Sum-of-the-Years'-Digits Depreciation dialog
 #: ../data/buttons-financial.ui.h:62
@@ -290,15 +295,11 @@ msgstr "വര്‍ഷത്തിന്റെ അക്കങ്ങളുട�
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
-"accelerates the rate of depreciation, so that more depreciation expense "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
+" accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
-msgstr ""
-"വര്‍ഷത്തിന്റെ അക്കങ്ങളുടെ മാര്‍ഗ്ഗമുപയോഗിച്ചു് ആസ്തിയുടെ വിലയിടിവു്, വ്യക്താക്കിയ കാലാവധിയ്ക്കുള്ളില്‍ "
-"കണ്ടുപിടിക്കുന്നു. വിലയിടിവിന്റെ ഈ മാര്‍ഗ്ഗം വിലയിടിവിനുള്ള റേറ്റ് വര്‍ദ്ദിപ്പിക്കുന്നു. അങ്ങനെ "
-"പിന്നീടുള്ളതിനേക്കാള്‍ മുമ്പുള്ള കാലാവധിയിലുണ്ടാകുന്ന വിലയിടിവു് ചിലവുണ്ടാകുന്നു. ആസ്തിയുടെ "
-"വിലയിടിയുന്ന കാലാവധി ആണു് ഏറ്റവും പ്രധാനം, കാലാവധി വര്‍ഷങ്ങളില്‍."
+msgstr "വര്‍ഷത്തിന്റെ അക്കങ്ങളുടെ മാര്‍ഗ്ഗമുപയോഗിച്ചു് ആസ്തിയുടെ വിലയിടിവു്, വ്യക്താക്കിയ കാലാവധിയ്ക്കുള്ളില്‍ കണ്ടുപിടിക്കുന്നു. വിലയിടിവിന്റെ ഈ മാര്‍ഗ്ഗം വിലയിടിവിനുള്ള റേറ്റ് വര്‍ദ്ദിപ്പിക്കുന്നു. അങ്ങനെ പിന്നീടുള്ളതിനേക്കാള്‍ മുമ്പുള്ള കാലാവധിയിലുണ്ടാകുന്ന വിലയിടിവു് ചിലവുണ്ടാകുന്നു. ആസ്തിയുടെ വിലയിടിയുന്ന കാലാവധി ആണു് ഏറ്റവും പ്രധാനം, കാലാവധി വര്‍ഷങ്ങളില്‍."
 
 #. Title of Payment Period dialog
 #: ../data/buttons-financial.ui.h:66
@@ -314,94 +315,123 @@ msgstr "ഫ്യൂച്ചര്‍ _വാല്ല്യൂ:"
 #: ../data/buttons-financial.ui.h:70
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest "
-"rate."
-msgstr ""
-"സാമയികമായ പലിശ നിരക്കില്‍ ഭാവിയിലുള്ള മൂല്ല്യം ഉള്‍പ്പെടുത്തുന്നതിനായിസാധാരണണ ആന്വിറ്റിയ്ക്ക് "
-"ആവശ്യമുള്ള കാശ് കൊടുക്കേണ്ട കാലാവധി കണ്ടുപിടിക്കുന്നു. "
+"of an ordinary annuity, to accumulate a future value, at a periodic interest"
+" rate."
+msgstr "സാമയികമായ പലിശ നിരക്കില്‍ ഭാവിയിലുള്ള മൂല്ല്യം ഉള്‍പ്പെടുത്തുന്നതിനായിസാധാരണണ ആന്വിറ്റിയ്ക്ക് ആവശ്യമുള്ള കാശ് കൊടുക്കേണ്ട കാലാവധി കണ്ടുപിടിക്കുന്നു. "
 
-#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
-#: ../data/buttons-financial.ui.h:78
+#. Calculates the number of compounding periods necessary to increase an
+#. investment of present value pv to a future value of fv, at a fixed interest
+#. rate of int per compounding period. See also:
+#. http://en.wikipedia.org/wiki/Compound_interest
+#: ../data/buttons-financial.ui.h:79
 msgid "Ctrm"
 msgstr "Ctrm"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:80
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the double-declining balance method. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:81
 msgid "Ddb"
 msgstr "Ddb"
 
-#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
-#: ../data/buttons-financial.ui.h:82
+#. Calculates the future value of an investment based on a series of equal
+#. payments, each of amount pmt, at a periodic interest rate of int, over the
+#. number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Future_value
+#: ../data/buttons-financial.ui.h:83
 msgid "Fv"
 msgstr "Fv"
 
-#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
-#: ../data/buttons-financial.ui.h:84
+#. Calculates the number of payment periods that are necessary during the term
+#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
+#. interest rate of int. Each payment is equal to amount pmt. See also:
+#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#: ../data/buttons-financial.ui.h:85
 msgid "Term"
 msgstr "ടേം"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:86
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the Sum-Of-The-Years'-Digits method. This method of
+#. depreciation accelerates the rate of depreciation, so that more
+#. depreciation expense occurs in earlier periods than in later ones. The
+#. depreciable cost is cost - salvage. The useful life is the number of
+#. periods, typically years, over which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:87
 msgid "Syd"
 msgstr "Syd"
 
-#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:88
+#. Calculates the straight-line depreciation of an asset for one period. The
+#. depreciable cost is cost - salvage. The straight-line method of
+#. depreciation divides the depreciable cost evenly over the useful life of an
+#. asset. The useful life is the number of periods, typically years, over
+#. which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:89
 msgid "Sln"
 msgstr "Sln"
 
-#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
-#: ../data/buttons-financial.ui.h:90
+#. Calculates the periodic interest necessary to increase an investment of
+#. present value pv to a future value of fv, over the number of compounding
+#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#: ../data/buttons-financial.ui.h:91
 msgid "Rate"
 msgstr "റേറ്റ്"
 
-#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
-#: ../data/buttons-financial.ui.h:92
+#. Calculates the present value of an investment based on a series of equal
+#. payments, each of amount pmt, discounted at a periodic interest rate of
+#. int, over the number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Present_value
+#: ../data/buttons-financial.ui.h:93
 msgid "Pv"
 msgstr "Pv"
 
-#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
-#: ../data/buttons-financial.ui.h:94
+#. Calculates the amount of the periodic payment of a loan, where payments are
+#. made at the end of each payment period. See also:
+#. http://en.wikipedia.org/wiki/Amortization_schedule
+#: ../data/buttons-financial.ui.h:95
 msgid "Pmt"
 msgstr "Pmt"
 
-#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
-#: ../data/buttons-financial.ui.h:96
+#. Calculates the resale price of a product, based on the product cost and the
+#. wanted gross profit margin. See also:
+#. http://en.wikipedia.org/wiki/Gross_profit_margin
+#: ../data/buttons-financial.ui.h:97
 msgid "Gpm"
 msgstr "Gpm"
 
+#. Title of insert character code dialog
+#. Tooltip for the insert character code button
+#: ../data/buttons-programming.ui.h:2 ../src/math-buttons.c:235
+msgid "Insert Character Code"
+msgstr "ക്യാരക്ടര്‍ കോഡ് ഇടയ്ക്കു് ചേര്‍ക്കുക"
+
+#. Insert ASCII dialog: Button to insert selected character
+#: ../data/buttons-programming.ui.h:4
+msgid "_Insert"
+msgstr "_ഇടയ്ക്ക് ചേര്‍ക്കുക"
+
+#. Insert ASCII dialog: Label before character entry
+#: ../data/buttons-programming.ui.h:6
+msgid "Ch_aracter:"
+msgstr "അ_ക്ഷരം:"
+
 #. Accessible name for the shift left button
 #. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:16 ../src/math-buttons.c:240
+#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
 msgid "Shift Left"
 msgstr "ഇടത്ത് ഷിഫ്റ്റ്"
 
 #. Accessible name for the shift right button
 #. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:18 ../src/math-buttons.c:243
+#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
 msgid "Shift Right"
 msgstr "വലത്ത് ഷിഫ്റ്റ്"
 
 #. Accessible name for the insert character button
-#: ../data/buttons-programming.ui.h:20
+#: ../data/buttons-programming.ui.h:27
 msgid "Insert Character"
 msgstr "അക്ഷരം ഇടയ്ക്കു് ചേര്‍ക്കുക"
-
-#. Title of insert character code dialog
-#. Tooltip for the insert character code button
-#: ../data/buttons-programming.ui.h:28 ../src/math-buttons.c:225
-msgid "Insert Character Code"
-msgstr "ക്യാരക്ടര്‍ കോഡ് ഇടയ്ക്കു് ചേര്‍ക്കുക"
-
-#. Insert ASCII dialog: Label before character entry
-#: ../data/buttons-programming.ui.h:30
-msgid "Ch_aracter:"
-msgstr "അ_ക്ഷരം:"
-
-#. Insert ASCII dialog: Button to insert selected character
-#: ../data/buttons-programming.ui.h:32
-msgid "_Insert"
-msgstr "_ഇടയ്ക്ക് ചേര്‍ക്കുക"
 
 #. Word size combo: 8 bits
 #: ../data/preferences.ui.h:2
@@ -424,8 +454,7 @@ msgid "64-bit"
 msgstr "64 ബിറ്റ്"
 
 #. Title of preferences dialog
-#: ../data/preferences.ui.h:9 ../src/mate-calc.c:522
-#: ../src/math-preferences.c:231
+#: ../data/preferences.ui.h:9 ../src/math-preferences.c:238
 msgid "Preferences"
 msgstr "മുന്‍ഗണനകള്‍"
 
@@ -454,106 +483,114 @@ msgstr "അവസാനം വരുന്ന _പൂജ്യങ്ങള്‍
 msgid "Show _thousands separators"
 msgstr "_ആയിരങ്ങളെ വേര്‍തിരിച്ചു് കാണിയ്ക്കുന്ന അടയാളം കാണിയ്ക്കുക"
 
+#: ../data/mate-calc.desktop.in.h:1
+msgid "MATE Calculator"
+msgstr ""
+
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:242
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
 msgid "Calculator"
 msgstr "ഗണനി"
 
-#: ../data/mate-calc.desktop.in.h:2
+#: ../data/mate-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "അരിതമെറ്റിക്, ശാസ്ത്രീയം അല്ലെങ്കില്‍ ധനകാര്യ സംബന്ധമായ കണക്കുകൂട്ടലുകള്‍ നടത്തുക"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:1
+#: ../data/org.mate.calc.gschema.xml.in.h:1
 msgid "Accuracy value"
 msgstr "കൃത്യത മൂല്ല്യം"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:2
+#: ../data/org.mate.calc.gschema.xml.in.h:2
 msgid "The number of digits displayed after the numeric point"
 msgstr "ന്യൂമറിക് പോയിന്റിനു് ശേഷം കാണിക്കുന്ന ഡിജിറ്റുകളുടെ എണ്ണം. "
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:3
+#: ../data/org.mate.calc.gschema.xml.in.h:3
 msgid "Word size"
 msgstr "വാക്കിന്റെ വ്യാപ്തി"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:4
+#: ../data/org.mate.calc.gschema.xml.in.h:4
 msgid "The size of the words used in bitwise operations"
 msgstr "ബിറ്റ്‌വൈസ് പ്രക്രിയകള്‍ക്കുള്ള വാക്കുകളുടെ വ്യാപ്തി."
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:5
+#: ../data/org.mate.calc.gschema.xml.in.h:5
 msgid "Numeric Base"
 msgstr "സംഖ്യ ബെയിസ്"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:6
+#: ../data/org.mate.calc.gschema.xml.in.h:6
 msgid "The numeric base"
 msgstr "സംഖ്യ ബെയ്സ്"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:7
+#: ../data/org.mate.calc.gschema.xml.in.h:7
 msgid "Show Thousands Separators"
 msgstr "ആയിരങ്ങളെ വേര്‍തിരിയ്ക്കുന്ന അടയാളം കാണിയ്ക്കുക"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:8
+#: ../data/org.mate.calc.gschema.xml.in.h:8
 msgid "Indicates whether thousands separators are shown in large numbers."
 msgstr "ആയിരങ്ങളെ വേര്‍തിരിയ്ക്കുന്ന അടയാളം വലിയ അക്കങ്ങളിലാണോ കാണിക്കുന്നതു് എന്നു് സൂചിപ്പിക്കുന്നു"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:9
+#: ../data/org.mate.calc.gschema.xml.in.h:9
 msgid "Show Trailing Zeroes"
 msgstr "അവസാനം വരുന്ന പൂജ്യങ്ങള്‍ കാണിയ്ക്കുക"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:10
+#: ../data/org.mate.calc.gschema.xml.in.h:10
 msgid ""
 "Indicates whether any trailing zeroes after the numeric point should be "
 "shown in the display value."
-msgstr ""
-"നമ്പര്‍ പോയിന്റിനു് ശേഷമുള്ള പൂജ്യങ്ങള്‍ ലഭ്യമാക്കുന്ന മൂല്ല്യത്തില്‍ കാണിക്കണമോയെന്നു് സൂചിപ്പിക്കുന്നു."
+msgstr "നമ്പര്‍ പോയിന്റിനു് ശേഷമുള്ള പൂജ്യങ്ങള്‍ ലഭ്യമാക്കുന്ന മൂല്ല്യത്തില്‍ കാണിക്കണമോയെന്നു് സൂചിപ്പിക്കുന്നു."
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:11
+#: ../data/org.mate.calc.gschema.xml.in.h:11
 msgid "Number format"
 msgstr "സംഖ്യ രീതി"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:13
+#: ../data/org.mate.calc.gschema.xml.in.h:12
+msgid "The format to display numbers in"
+msgstr ""
+
+#: ../data/org.mate.calc.gschema.xml.in.h:13
 msgid "Angle units"
 msgstr "കോണ്‍ അളവ്"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:14
+#: ../data/org.mate.calc.gschema.xml.in.h:14
 msgid "The angle units to use"
 msgstr "ഉപയോഗിക്കേണ്ട കോണ്‍ ഏകകം"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:17
-#| msgid "Currency"
+#: ../data/org.mate.calc.gschema.xml.in.h:15
+msgid "Button mode"
+msgstr ""
+
+#: ../data/org.mate.calc.gschema.xml.in.h:16
+msgid "The button mode"
+msgstr ""
+
+#: ../data/org.mate.calc.gschema.xml.in.h:17
 msgid "Source currency"
 msgstr "സോഴ്സ് കറന്‍സി"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:18
-#| msgid "Units of the current calculation"
+#: ../data/org.mate.calc.gschema.xml.in.h:18
 msgid "Currency of the current calculation"
 msgstr "ഇപ്പോഴത്തെ കണക്കിന്റെ ഏകകം"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:19
-#| msgid "Currency"
+#: ../data/org.mate.calc.gschema.xml.in.h:19
 msgid "Target currency"
 msgstr "ലക്ഷ്യ കറന്‍സി"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:20
-#| msgid "Units of the current calculation"
+#: ../data/org.mate.calc.gschema.xml.in.h:20
 msgid "Currency to convert the current calculation into"
 msgstr "ഇപ്പോഴുള്ള കണക്കുകൂട്ടല്‍ വേര്‍തിരിയ്ക്കേണ്ട കറന്‍സി"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:21
-#| msgid "Area Units"
+#: ../data/org.mate.calc.gschema.xml.in.h:21
 msgid "Source units"
 msgstr "ശ്രോതസ്സ് യൂണിറ്റുകള്‍"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:22
+#: ../data/org.mate.calc.gschema.xml.in.h:22
 msgid "Units of the current calculation"
 msgstr "ഇപ്പോഴത്തെ കണക്കിന്റെ ഏകകം"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:23
-#| msgid "Angle units"
+#: ../data/org.mate.calc.gschema.xml.in.h:23
 msgid "Target units"
 msgstr "ടാര്‍ഗറ്റ് യൂണിറ്റുകള്‍"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:24
-#| msgid "Units of the current calculation"
+#: ../data/org.mate.calc.gschema.xml.in.h:24
 msgid "Units to convert the current calculation into"
 msgstr "ഇപ്പോഴത്തെ കണക്കു് വേര്‍തിരിയ്ക്കുവാനുള്ള യൂണിറ്റുകള്‍"
 
@@ -807,11 +844,10 @@ msgstr "പിശക്: പീരിയഡുകളുടെ എണ്ണം �
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr ""
-"ഉപയോഗിക്കേണ്ട വിധം:\n"
-"  %s - കണക്കുപരമായ കണക്കുകൂട്ടലുകള്‍ നടത്തുക"
+msgstr "ഉപയോഗിക്കേണ്ട വിധം:\n  %s - കണക്കുപരമായ കണക്കുകൂട്ടലുകള്‍ നടത്തുക"
 
-#. Description on mate-calc command-line help options displayed on command-line
+#. Description on mate-calc command-line help options displayed on command-
+#. line
 #: ../src/mate-calc.c:87
 #, c-format
 msgid ""
@@ -820,35 +856,21 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr ""
-"സഹായ ഉപാധികള്‍:\n"
-"  -v, --version                   പ്രദര്‍ശന പതിപ്പു് കാണിക്കുക\n"
-"  -h, -?, --help                  സഹായ ഉപാധികള്‍ കാണിക്കുക\n"
-"  --help-all                      എല്ലാ സഹായ ഉപാധികളും കാണിക്കുക\n"
-"  --help-gtk                      GTK+ ഉപാധികള്‍ കാണിക്കുക"
+msgstr "സഹായ ഉപാധികള്‍:\n  -v, --version                   പ്രദര്‍ശന പതിപ്പു് കാണിക്കുക\n  -h, -?, --help                  സഹായ ഉപാധികള്‍ കാണിക്കുക\n  --help-all                      എല്ലാ സഹായ ഉപാധികളും കാണിക്കുക\n  --help-gtk                      GTK+ ഉപാധികള്‍ കാണിക്കുക"
 
-#. Description on mate-calc command-line GTK+ options displayed on command-line
+#. Description on mate-calc command-line GTK+ options displayed on command-
+#. line
 #: ../src/mate-calc.c:98
 #, c-format
 msgid ""
 "GTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window "
-"manager\n"
-"  --name=NAME                     Program name as used by the window "
-"manager\n"
+"  --class=CLASS                   Program class as used by the window manager\n"
+"  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr ""
-"GTK+ ഉപാധികള്‍:\n"
-"  --class=CLASS                   വിന്‍ഡോ മാനേജര്‍ ഉപയോഗിക്കുന്ന പ്രോഗ്രാം "
-"ക്ലാസ്സ്manager\n"
-"  --name=NAME                     വിന്‍ഡോ മാനേജര്‍ ഉപയോഗിക്കുന്ന പ്രോഗ്രാമിന്റെ പേരു്\n"
-"  --screen=SCREEN                 ഉപയോഗിക്കുവാനുള്ള X സ്ക്രീന്‍\n"
-"  --sync                          X കോളുകള്‍ സിന്‍ക്രൊണസ് ആക്കുക\n"
-"  --gtk-module=MODULES            കൂടുതല്‍ GTK+ ഘടകങ്ങള്‍ ലഭ്യമാക്കുക\n"
-"  --g-fatal-warnings              എല്ലാ മുന്നറിയിപ്പുകളും പ്രാധാന്യമാക്കുക"
+msgstr "GTK+ ഉപാധികള്‍:\n  --class=CLASS                   വിന്‍ഡോ മാനേജര്‍ ഉപയോഗിക്കുന്ന പ്രോഗ്രാം ക്ലാസ്സ്manager\n  --name=NAME                     വിന്‍ഡോ മാനേജര്‍ ഉപയോഗിക്കുന്ന പ്രോഗ്രാമിന്റെ പേരു്\n  --screen=SCREEN                 ഉപയോഗിക്കുവാനുള്ള X സ്ക്രീന്‍\n  --sync                          X കോളുകള്‍ സിന്‍ക്രൊണസ് ആക്കുക\n  --gtk-module=MODULES            കൂടുതല്‍ GTK+ ഘടകങ്ങള്‍ ലഭ്യമാക്കുക\n  --g-fatal-warnings              എല്ലാ മുന്നറിയിപ്പുകളും പ്രാധാന്യമാക്കുക"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -856,9 +878,7 @@ msgstr ""
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr ""
-"പ്രയോഗത്തിനുള്ള ഉപാധികള്‍:\n"
-"  -s, --solve <equation>          തന്നിരിക്കുന്ന സമവാക്യം പരിഹരിക്കുക"
+msgstr "പ്രയോഗത്തിനുള്ള ഉപാധികള്‍:\n  -s, --solve <equation>          തന്നിരിക്കുന്ന സമവാക്യം പരിഹരിക്കുക"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:156
@@ -872,372 +892,294 @@ msgstr "--solve എന്ന ആര്‍ഗ്യുമെന്റിനു്
 msgid "Unknown argument '%s'"
 msgstr "അപരിചിതമായ ആര്‍ഗ്യുമെന്റ് '%s'"
 
-#. Translators: Error message displayed when unable to launch help browser
-#: ../src/mate-calc.c:358
-msgid "Unable to open help file"
-msgstr "സഹായത്തിനുള്ള ഫയല്‍ തുറക്കുവാന്‍ സാധ്യമായില്ല"
-
-#. The translator credits. Please translate this with your name(s).
-#: ../src/mate-calc.c:390
-msgid "translator-credits"
-msgstr ""
-"എഫ്എസ്എഫ്-ഇന്ത്യ <locale@gnu.org.in>\n"
-"അനി പീറ്റര്‍ <peter.ani@gmail.com>\n"
-"പ്രവീണ്‍ അരിമ്പ്രത്തൊടിയില്‍ <pravi.a@gmail.com>\n"
-"അനീഷ് എ (Anish A) <aneesh.nl@gmail.com>"
-
-#. The license this software is under (GPL2+)
-#: ../src/mate-calc.c:393
-msgid ""
-"Gcalctool is free software; you can redistribute it and/or modify\n"
-"it under the terms of the GNU General Public License as published by\n"
-"the Free Software Foundation; either version 2 of the License, or\n"
-"(at your option) any later version.\n"
-"\n"
-"Gcalctool is distributed in the hope that it will be useful,\n"
-"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License\n"
-"along with Gcalctool; if not, write to the Free Software Foundation, Inc.,\n"
-"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
-"Gcalctool ഒരു സ്വതന്ത്ര സോഫ്റ്റ്‌വെയറാണു്, നിങ്ങള്‍ക്കതു് പുനര്‍വിതരണം\n"
-"നടത്തുകയോ സ്വതന്ത്ര സോഫ്റ്റ്‌വെയര്‍ ഫൌണ്ടേഷന്‍ പ്രസിദ്ധീകരിച്ച ഗ്നു ജനറല്‍\n"
-" പബ്ലിക് ലൈസന്‍സ് ലക്കം 2 ഓ അതിനേക്കാള്‍ പുതിയ പതിപ്പോ (നിങ്ങളുടെ ഇഷ്ടപ്രകാരം)\n"
-" പ്രകാരം ഭേദഗതി വരുത്താവുന്നതോ ആണു്.\n"
-"\n"
-"Gcalctool നിങ്ങള്‍ക്കു് പ്രയോജനപ്പെടും എന്ന പ്രതീക്ഷയില്‍ വിതരണം ചെയ്യുന്നതാണു്.\n"
-"പക്ഷേ, ഇതിന് ഒരു വാറണ്ടിയും ലഭ്യമല്ല; വ്യാപാരയോഗ്യതയോ ഒരു പ്രത്യേക കാര്യത്തിനു്\n"
-"ചേരുന്നതാണെന്നോ ഉള്ള പരോക്ഷമായ ഒരു വാറണ്ടി പോലും ഇല്ല. കൂടുതല്‍ വിവരങ്ങള്‍ക്കു് \n"
-"ഗ്നു ജനറല്‍ പബ്ലിക് ലൈസന്‍സ് കാണുക.\n"
-"\n"
-"നിങ്ങള്‍ക്കു് ഗ്നോം ടെര്‍മിനലിനൊപ്പം ഗ്നു ജനറല്‍ പബ്ലിക് ലൈസന്‍സിന്റെ ഒരു പകര്‍പ്പു്\n"
-"ലഭിച്ചിട്ടുണ്ടായിരിയ്ക്കണം; ഇല്ലെങ്കില്‍, ഈ വിലാസത്തിലേയ്ക്കെഴുതുക: Free Software\n"
-" Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, "
-"USA."
-
-#. Program name in the about dialog
-#: ../src/mate-calc.c:410
-msgid "Gcalctool"
-msgstr "Gcalctool"
-
-#. Copyright notice in the about dialog
-#: ../src/mate-calc.c:414
-msgid "© 1986–2010 The Gcalctool authors"
-msgstr "© 1986-2010  Gcalctool രചയിതാക്കള്‍"
-
-#. Short description in the about dialog
-#: ../src/mate-calc.c:418
-msgid "Calculator with financial and scientific modes."
-msgstr "ഫിനാന്‍ഷ്യലും ശാസ്ത്രീയ ദശകളുമുള്ള കാല്‍ക്കുലേറ്റര്‍"
-
-#: ../src/mate-calc.c:515
-msgid "Basic"
-msgstr "അടിസ്ഥാനപരമായ"
-
-#: ../src/mate-calc.c:516
-msgid "Advanced"
-msgstr "പുരോഗമിച്ച"
-
-#: ../src/mate-calc.c:517
-msgid "Financial"
-msgstr "ധനകാര്യം"
-
-#: ../src/mate-calc.c:518
-msgid "Programming"
-msgstr "പ്രോഗ്രാമിങ്"
-
-#: ../src/mate-calc.c:519
-msgid "Mode"
-msgstr "മോഡ്"
-
-#: ../src/mate-calc.c:526
-msgid "About Calculator"
-msgstr "ഗണനിയെപ്പറ്റി"
-
-#: ../src/mate-calc.c:527
-msgid "Help"
-msgstr "സഹായം"
-
-#: ../src/mate-calc.c:528
-msgid "Quit"
-msgstr "പുറത്ത് കടക്കുക"
-
 #. Tooltip for the Pi button
-#: ../src/math-buttons.c:94
+#: ../src/math-buttons.c:95
 msgid "Pi [Ctrl+P]"
 msgstr "പൈ [Ctrl+P]"
 
 #. Tooltip for the Euler's Number button
-#: ../src/math-buttons.c:97
+#: ../src/math-buttons.c:98
 msgid "Euler’s Number"
 msgstr "ഓയിലറിന്റെ സംഖ്യ (e)"
 
 #. Tooltip for the subscript button
-#: ../src/math-buttons.c:102
+#: ../src/math-buttons.c:103
 msgid "Subscript mode [Alt]"
 msgstr "സബ്സ്ക്രിപ്റ്റ് മോഡ് [Alt]"
 
 #. Tooltip for the superscript button
-#: ../src/math-buttons.c:105
+#: ../src/math-buttons.c:106
 msgid "Superscript mode [Ctrl]"
 msgstr "സബ്സ്ക്രിപ്റ്റ് മോ‍ഡ് [Ctrl]"
 
 #. Tooltip for the scientific exponent button
-#: ../src/math-buttons.c:108
+#: ../src/math-buttons.c:109
 msgid "Scientific exponent [Ctrl+E]"
 msgstr "സൈന്റിഫിക് എക്സ്പോണന്റ് [Ctrl+E]"
 
 #. Tooltip for the add button
-#: ../src/math-buttons.c:111
+#: ../src/math-buttons.c:112
 msgid "Add [+]"
 msgstr "കൂട്ടുക [+]"
 
 #. Tooltip for the subtract button
-#: ../src/math-buttons.c:114
+#: ../src/math-buttons.c:115
 msgid "Subtract [-]"
 msgstr "കുറയ്ക്കുക [-]"
 
 #. Tooltip for the multiply button
-#: ../src/math-buttons.c:117
+#: ../src/math-buttons.c:118
 msgid "Multiply [*]"
 msgstr "ഗുണിക്കുക [*]"
 
 #. Tooltip for the divide button
-#: ../src/math-buttons.c:120
+#: ../src/math-buttons.c:121
 msgid "Divide [/]"
 msgstr "വിഭജിക്കുക [/]"
 
 #. Tooltip for the modulus divide button
-#: ../src/math-buttons.c:123
+#: ../src/math-buttons.c:124
 msgid "Modulus divide"
 msgstr "ദശയുലസ് ഡിവിഷന്‍ [M]"
 
 #. Tooltip for the additional functions button
-#: ../src/math-buttons.c:126
+#: ../src/math-buttons.c:127
 msgid "Additional Functions"
 msgstr "കൂടുതല്‍ ക്രിയകള്‍"
 
 #. Tooltip for the exponent button
-#: ../src/math-buttons.c:129
+#: ../src/math-buttons.c:130
 msgid "Exponent [^ or **]"
 msgstr "എക്സ്പൊണന്റ് [^ അല്ലെങ്കില്‍ **]"
 
 #. Tooltip for the square button
-#: ../src/math-buttons.c:132
+#: ../src/math-buttons.c:133
 msgid "Square [Ctrl+2]"
 msgstr "വര്‍ഗ്ഗം [@]"
 
 #. Tooltip for the percentage button
-#: ../src/math-buttons.c:135
+#: ../src/math-buttons.c:136
 msgid "Percentage [%]"
 msgstr "ശതമാനം [%]"
 
 #. Tooltip for the factorial button
-#: ../src/math-buttons.c:138
+#: ../src/math-buttons.c:139
 msgid "Factorial [!]"
 msgstr "ഫാക്ടോറിയല്‍ [!]"
 
 #. Tooltip for the absolute value button
-#: ../src/math-buttons.c:141
+#: ../src/math-buttons.c:142
 msgid "Absolute value [|]"
 msgstr "ശരിയ്ക്കുള്ള മൂല്യം [|]"
 
 #. Tooltip for the complex argument component button
-#: ../src/math-buttons.c:144
+#: ../src/math-buttons.c:145
 msgid "Complex argument"
 msgstr "കോംപ്ലക്സ് ആര്‍ഗ്യുമെന്റ്"
 
 #. Tooltip for the complex conjugate button
-#: ../src/math-buttons.c:147
+#: ../src/math-buttons.c:148
 msgid "Complex conjugate"
 msgstr "കോപ്ലക്സ് കോഞ്ചുഗേറ്റ്"
 
 #. Tooltip for the root button
-#: ../src/math-buttons.c:150
+#: ../src/math-buttons.c:151
 msgid "Root [Ctrl+R]"
 msgstr "റൂട്ട് [Ctrl+R]"
 
 #. Tooltip for the square root button
-#: ../src/math-buttons.c:153
+#: ../src/math-buttons.c:154
 msgid "Square root [Ctrl+R]"
 msgstr "സ്ക്വയര്‍ റൂട്ട് [Ctrl+R]"
 
 #. Tooltip for the logarithm button
-#: ../src/math-buttons.c:156
+#: ../src/math-buttons.c:157
 msgid "Logarithm"
 msgstr "ലോഗരിതം"
 
 #. Tooltip for the natural logarithm button
-#: ../src/math-buttons.c:159
+#: ../src/math-buttons.c:160
 msgid "Natural Logarithm"
 msgstr "നാച്ചുറല്‍ ലോഗരിഥം"
 
 #. Tooltip for the sine button
-#: ../src/math-buttons.c:162
+#: ../src/math-buttons.c:163
 msgid "Sine"
 msgstr "സൈന്‍ [k]"
 
 #. Tooltip for the cosine button
-#: ../src/math-buttons.c:165
+#: ../src/math-buttons.c:166
 msgid "Cosine"
 msgstr "കോസൈന്‍ [j]"
 
 #. Tooltip for the tangent button
-#: ../src/math-buttons.c:168
+#: ../src/math-buttons.c:169
 msgid "Tangent"
 msgstr "റ്റാഞ്ചന്റ്"
 
 #. Tooltip for the hyperbolic sine button
-#: ../src/math-buttons.c:171
+#: ../src/math-buttons.c:172
 msgid "Hyperbolic Sine"
 msgstr "ഹൈപ്പര്‍ബോളിക് സൈന്‍"
 
 #. Tooltip for the hyperbolic cosine button
-#: ../src/math-buttons.c:174
+#: ../src/math-buttons.c:175
 msgid "Hyperbolic Cosine"
 msgstr "ഹൈപ്പര്‍ബോളിക് കോസൈന്‍"
 
 #. Tooltip for the hyperbolic tangent button
-#: ../src/math-buttons.c:177
+#: ../src/math-buttons.c:178
 msgid "Hyperbolic Tangent"
 msgstr "ഹൈപ്പര്‍ബോളിക് ടാഞ്ചന്റ്"
 
+#. Tooltip for the inverse sine button
+#: ../src/math-buttons.c:181
+msgid "Inverse Sine"
+msgstr ""
+
+#. Tooltip for the inverse cosine button
+#: ../src/math-buttons.c:184
+msgid "Inverse Cosine"
+msgstr ""
+
+#. Tooltip for the inverse tangent button
+#: ../src/math-buttons.c:187
+msgid "Inverse Tangent"
+msgstr ""
+
 #. Tooltip for the inverse button
-#: ../src/math-buttons.c:180
+#: ../src/math-buttons.c:190
 msgid "Inverse [Ctrl+I]"
 msgstr "തിരിച്ചു് [Ctrl+I]"
 
 #. Tooltip for the boolean AND button
-#: ../src/math-buttons.c:183
+#: ../src/math-buttons.c:193
 msgid "Boolean AND"
 msgstr "ബൂളിയന്‍ AND"
 
 #. Tooltip for the boolean OR button
-#: ../src/math-buttons.c:186
+#: ../src/math-buttons.c:196
 msgid "Boolean OR"
 msgstr "ബൂളിയന്‍ OR"
 
 #. Tooltip for the exclusive OR button
-#: ../src/math-buttons.c:189
+#: ../src/math-buttons.c:199
 msgid "Boolean Exclusive OR"
 msgstr "ബൂളിയന്‍ എക്സ്‌ക്ലൂസീവ് OR "
 
 #. Tooltip for the boolean NOT button
-#: ../src/math-buttons.c:192
+#: ../src/math-buttons.c:202
 msgid "Boolean NOT"
 msgstr "ബൂളിയന്‍ NOT"
 
 #. Tooltip for the integer component button
-#: ../src/math-buttons.c:195 ../src/math-buttons.c:983
+#: ../src/math-buttons.c:205 ../src/math-buttons.c:994
 msgid "Integer Component"
 msgstr "പൂര്‍ണ്ണസംഖ്യയുടെ ഭാഗം"
 
 #. Tooltip for the fractional component button
-#: ../src/math-buttons.c:198 ../src/math-buttons.c:985
+#: ../src/math-buttons.c:208 ../src/math-buttons.c:996
 msgid "Fractional Component"
 msgstr "ഭിന്നസംഖ്യാ ഘടകം"
 
 #. Tooltip for the real component button
-#: ../src/math-buttons.c:201
+#: ../src/math-buttons.c:211
 msgid "Real Component"
 msgstr "റിയല്‍ കോംപണന്റ്"
 
 #. Tooltip for the imaginary component button
-#: ../src/math-buttons.c:204
+#: ../src/math-buttons.c:214
 msgid "Imaginary Component"
 msgstr "ഇമാജിനറി കോംപണന്റ്"
 
 #. Tooltip for the ones' complement button
-#: ../src/math-buttons.c:207
+#: ../src/math-buttons.c:217
 msgid "Ones' Complement"
 msgstr "ഒന്നിന്റെ കോംപൊണന്റ്"
 
 #. Tooltip for the two's complement button
-#: ../src/math-buttons.c:210
+#: ../src/math-buttons.c:220
 msgid "Two's Complement"
 msgstr "രണ്ടിന്റെ കോംപൊണന്റ്"
 
 #. Tooltip for the truncate button
-#: ../src/math-buttons.c:213
+#: ../src/math-buttons.c:223
 msgid "Truncate"
 msgstr "ട്രന്‍കേറ്റ്"
 
 #. Tooltip for the start group button
-#: ../src/math-buttons.c:216
+#: ../src/math-buttons.c:226
 msgid "Start Group [(]"
 msgstr "ഗ്രൂപ്പ് ആരംഭം [(]"
 
 #. Tooltip for the end group button
-#: ../src/math-buttons.c:219
+#: ../src/math-buttons.c:229
 msgid "End Group [)]"
 msgstr "ഗ്രൂപ്പ് അവസം [)]"
 
 #. Tooltip for the solve button
-#: ../src/math-buttons.c:228
+#: ../src/math-buttons.c:238
 msgid "Calculate Result"
 msgstr "ഫലം കണ്ടുപിടിക്കുക"
 
 #. Tooltip for the factor button
-#: ../src/math-buttons.c:231
+#: ../src/math-buttons.c:241
 msgid "Factorize [Ctrl+F]"
 msgstr "ഘടകങ്ങളാക്കു [Ctrl+F]"
 
 #. Tooltip for the clear button
-#: ../src/math-buttons.c:234
+#: ../src/math-buttons.c:244
 msgid "Clear Display [Escape]"
 msgstr "സ്ക്രീന്‍ വെടിപ്പാക്കുക [Escape]"
 
 #. Tooltip for the undo button
-#: ../src/math-buttons.c:237
+#: ../src/math-buttons.c:247
 msgid "Undo [Ctrl+Z]"
 msgstr "വേണ്ട [Ctrl+Z]"
 
 #. Tooltip for the double declining depreciation button
-#: ../src/math-buttons.c:249
+#: ../src/math-buttons.c:259
 msgid "Double Declining Depreciation"
 msgstr "ഡബിള്‍-ഡിക്ലൈനിങ്ങ് വിലയിടിവു്"
 
 #. Tooltip for the financial term button
-#: ../src/math-buttons.c:255
+#: ../src/math-buttons.c:265
 msgid "Financial Term"
 msgstr "ഫിനാന്‍ഷ്യല്‍ വാക്ക്"
 
 #. Tooltip for the sum of the years digits depreciation button
-#: ../src/math-buttons.c:258
+#: ../src/math-buttons.c:268
 msgid "Sum of the Years Digits Depreciation"
 msgstr "വര്‍ഷത്തിന്റെ അക്കങ്ങളുടെ വിലയിടിവു്"
 
 #. Tooltip for the straight line depreciation button
-#: ../src/math-buttons.c:261
+#: ../src/math-buttons.c:271
 msgid "Straight Line Depreciation"
 msgstr "നേര്‍രേഖാ വിലയിടിവു്"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: ../src/math-buttons.c:601
+#: ../src/math-buttons.c:611
 msgid "Binary"
 msgstr "ബൈനറി"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: ../src/math-buttons.c:605
+#: ../src/math-buttons.c:615
 msgid "Octal"
 msgstr "ഒക്റ്റല്‍"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: ../src/math-buttons.c:609
+#: ../src/math-buttons.c:619
 msgid "Decimal"
 msgstr "ഡെസിമല്‍"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: ../src/math-buttons.c:613
+#: ../src/math-buttons.c:623
 msgid "Hexadecimal"
 msgstr "ഹെക്സാ ഡെസിമല്‍"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: ../src/math-buttons.c:894 ../src/math-buttons.c:937
+#: ../src/math-buttons.c:905 ../src/math-buttons.c:948
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
@@ -1246,7 +1188,7 @@ msgstr[1] "_%d സ്ഥാനം"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: ../src/math-buttons.c:898 ../src/math-buttons.c:941
+#: ../src/math-buttons.c:909 ../src/math-buttons.c:952
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
@@ -1254,26 +1196,27 @@ msgstr[0] "_%d സ്ഥാനം"
 msgstr[1] "_%d സ്ഥാനം"
 
 #. Tooltip for the round button
-#: ../src/math-buttons.c:987
+#: ../src/math-buttons.c:998
 msgid "Round"
 msgstr "വട്ടത്തില്‍"
 
 #. Tooltip for the floor button
-#: ../src/math-buttons.c:989
+#: ../src/math-buttons.c:1000
 msgid "Floor"
 msgstr "ഫ്ലോര്‍"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:991
+#: ../src/math-buttons.c:1002
 msgid "Ceiling"
 msgstr "സീലിങ്"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:993
+#: ../src/math-buttons.c:1004
 msgid "Sign"
 msgstr "ചിഹ്നം"
 
-#. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
+#. Label that is displayed between the two conversion combo boxes, e.g.
+#. "[degrees] in [radians]"
 #: ../src/math-converter.c:412
 msgid " in "
 msgstr " ല്‍ "
@@ -1293,131 +1236,224 @@ msgstr "ആവശ്യമില്ലാത്തവയുടെ നാള്�
 msgid "No redo history"
 msgstr "വീണ്ടും ചെയ്യുവാനുള്ളവയുടെ നാള്‍വഴി ലഭ്യമല്ല"
 
-#: ../src/math-equation.c:944
+#: ../src/math-equation.c:948
 msgid "No sane value to store"
 msgstr "സൂക്ഷിയ്ക്കാനായി യുക്തമായ വിലകളൊന്നുമില്ല"
 
-#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
-#: ../src/math-equation.c:1226
+#. Error displayed to user when they perform a bitwise operation on numbers
+#. greater than the current word
+#: ../src/math-equation.c:1230
 msgid "Overflow. Try a bigger word size"
 msgstr "കവിഞ്ഞൊഴുകി. വലിയ വ്യാപ്തിയുള്ള വേര്‍ഡ് വ്യാപ്തി ശ്രമിക്കുക"
 
 #. Error displayed to user when they an unknown variable is entered
-#: ../src/math-equation.c:1231
+#: ../src/math-equation.c:1235
 #, c-format
 msgid "Unknown variable '%s'"
 msgstr "വേരിയബിള്‍ '%s'അപരിചിതം"
 
 #. Error displayed to user when an unknown function is entered
-#: ../src/math-equation.c:1236
+#: ../src/math-equation.c:1240
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr "ഫംഗ്ഷന്‍ '%s' അപരിചിതം"
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: ../src/math-equation.c:1241
+#: ../src/math-equation.c:1245
 msgid "Unknown conversion"
 msgstr "അജ്ഞാത കണ്‍വേര്‍ഷന്‍"
 
+#. Uncategorized error. Show error token to user
+#: ../src/math-equation.c:1253
+#, c-format
+msgid "Malformed expression at token '%s'"
+msgstr ""
+
+#. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: ../src/math-equation.c:1250
+#: ../src/math-equation.c:1256 ../src/math-equation.c:1261
 msgid "Malformed expression"
 msgstr "തെറ്റായ എക്സ്‌പ്രഷന്‍"
 
-#: ../src/math-equation.c:1264
+#: ../src/math-equation.c:1275
 msgid "Calculating"
 msgstr "കണക്കുകൂട്ടുന്നു"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1380
+#: ../src/math-equation.c:1394
 msgid "Need an integer to factorize"
 msgstr "ഫാക്ടറൈസ് ചെയ്യുന്നതിനായി ഇന്റിജര്‍ ആവശ്യമുണ്ടു്"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1452
+#: ../src/math-equation.c:1470
 msgid "No sane value to bitwise shift"
 msgstr "ബിറ്റ്‌വൈസ് ഷിഫ്റ്റ് നടത്താന്‍ യുക്തമായ വിലകളൊന്നുമില്ല"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1483
+#: ../src/math-equation.c:1501
 msgid "Displayed value not an integer"
 msgstr "കാണിച്ച മൂല്ല്യം ഇന്റിജറല്ല"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1908
+#: ../src/math-equation.c:1926
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
 #. Label on close button in preferences dialog
-#: ../src/math-preferences.c:235
+#: ../src/math-preferences.c:242
 msgid "_Close"
 msgstr "_അടയ്ക്കു:"
 
-#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
-#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
-#: ../src/math-preferences.c:245 ../src/unit-manager.c:54
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
+#. calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
+#. grads
+#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "ഡിഗ്രി"
 
-#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
-#: ../src/math-preferences.c:249 ../src/unit-manager.c:55
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
+#. calculations
+#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "റേഡിയന്‍"
 
-#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
-#: ../src/math-preferences.c:253 ../src/unit-manager.c:56
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
+#. calculations
+#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "ഗ്രേഡിയന്‍സ്"
 
-#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
-#: ../src/math-preferences.c:263
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
+#. number 1.234×10^99)
+#: ../src/math-preferences.c:270
 msgid "Automatic"
 msgstr "ഓട്ടോമാറ്റിക്"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:267
+#: ../src/math-preferences.c:274
 msgid "Fixed"
 msgstr "സ്ഥിരം"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:271
+#: ../src/math-preferences.c:278
 msgid "Scientific"
 msgstr "ശാസ്ത്രീയം"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:275
+#: ../src/math-preferences.c:282
 msgid "Engineering"
 msgstr "സാങ്കേതികം"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:286
+#: ../src/math-preferences.c:293
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "%d_ദശാംശ സ്ഥാനങ്ങള്‍ കാണിക്കു"
 
-#. Translators: Error displayed when boolean AND attempted on non-integer values
+#. Translators: Error message displayed when unable to launch help browser
+#: ../src/math-window.c:198
+msgid "Unable to open help file"
+msgstr "സഹായത്തിനുള്ള ഫയല്‍ തുറക്കുവാന്‍ സാധ്യമായില്ല"
+
+#. The translator credits. Please translate this with your name(s).
+#: ../src/math-window.c:225
+msgid "translator-credits"
+msgstr "എഫ്എസ്എഫ്-ഇന്ത്യ <locale@gnu.org.in>\nഅനി പീറ്റര്‍ <peter.ani@gmail.com>\nപ്രവീണ്‍ അരിമ്പ്രത്തൊടിയില്‍ <pravi.a@gmail.com>\nഅനീഷ് എ (Anish A) <aneesh.nl@gmail.com>"
+
+#. The license this software is under (GPL2+)
+#: ../src/math-window.c:232
+msgid ""
+"mate-calc is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"mate-calc is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
+"151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr ""
+
+#: ../src/math-window.c:247
+msgid "mate-calc"
+msgstr "mate-calc"
+
+#: ../src/math-window.c:251
+msgid "Calculator with financial and scientific modes."
+msgstr "ഫിനാന്‍ഷ്യലും ശാസ്ത്രീയ ദശകളുമുള്ള കാല്‍ക്കുലേറ്റര്‍"
+
+#. Calculator menu
+#: ../src/math-window.c:354
+msgid "_Calculator"
+msgstr "_ഗണനി"
+
+#. Mode menu
+#: ../src/math-window.c:356
+msgid "_Mode"
+msgstr ""
+
+#. Help menu label
+#: ../src/math-window.c:358
+msgid "_Help"
+msgstr "_സഹായം"
+
+#. Basic menu label
+#: ../src/math-window.c:360
+msgid "_Basic"
+msgstr "_അടിസ്ഥാനമായ"
+
+#. Advanced menu label
+#: ../src/math-window.c:362
+msgid "_Advanced"
+msgstr "_സങ്കീര്‍ണ്ണമായ"
+
+#. Financial menu label
+#: ../src/math-window.c:364
+msgid "_Financial"
+msgstr "_ധനകാര്യം"
+
+#. Programming menu label
+#: ../src/math-window.c:366
+msgid "_Programming"
+msgstr "_പ്രോഗ്രാമിങ്"
+
+#. Help>Contents menu label
+#: ../src/math-window.c:368
+msgid "_Contents"
+msgstr "_ഉള്ളടക്കം"
+
+#. Translators: Error displayed when boolean AND attempted on non-integer
+#. values
 #: ../src/mp-binary.c:115
 msgid "Boolean AND is only defined for positive integers"
 msgstr "ബൂളിയന്‍ AND പോസിറ്റീവ് ഇന്റിജറുകള്‍ക്കു് മാത്രമുള്ളതാകുന്നു"
 
-#. Translators: Error displayed when boolean OR attempted on non-integer values
+#. Translators: Error displayed when boolean OR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:128
 msgid "Boolean OR is only defined for positive integers"
 msgstr "ബൂളിയന്‍ OR പോസിറ്റീവ് ഇന്റിജറുകള്‍ക്കു് മാത്രമുള്ളതാകുന്നു"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:141
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "ബൂളിയന്‍ XOR പോസിറ്റീവ് ഇന്റിജറുകള്‍ക്കു് മാത്രമുള്ളതാകുന്നു"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:156
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "ബൂളിയന്‍ NOT പോസിറ്റീവ് ഇന്റിജറുകള്‍ക്കു് മാത്രമുള്ളതാകുന്നു"
 
 #. Translators: Error displayed when bit shift attempted on non-integer values
-#: ../src/mp-binary.c:187
+#: ../src/mp-binary.c:190
 msgid "Shift is only possible on integer values"
 msgstr "ഇന്റിജര്‍ മൂല്ല്യങ്ങളില്‍ മാത്രമേ ഷിഫ്റ്റ് സാധ്യമാകൂ"
 
@@ -1440,7 +1476,8 @@ msgstr "പൂജ്യം കൊണ്ട് ഹരിയ്ക്കുക സ
 msgid "Logarithm of zero is undefined"
 msgstr "പൂജ്യത്തിന്റെ ലോഗരിതം നിര്‍വചിച്ചിട്ടില്ല"
 
-#. Translators: Error displayed when attempted to raise 0 to a negative exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. exponent
 #: ../src/mp.c:1680 ../src/mp.c:1994
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "ഒരു നെഗറ്റീവ് കോംപണന്റിനു് സീറോയുടെ പവര്‍ നിഷ്കര്‍ഷിച്ചിട്ടില്ല"
@@ -1461,22 +1498,24 @@ msgstr "പൂജ്യത്തിന്റെ നെഗറ്റിവ് വ�
 msgid "nth root of negative number is undefined for even n"
 msgstr "ഈവന്‍ n-നും നെഗറ്റീവ് നംബറിന്റെ nth റൂട്ട് നിഷ്കര്‍ഷിച്ചിട്ടില്ല"
 
-#. Translators: Error displayed when attempted take the factorial of a fractional number
+#. Translators: Error displayed when attempted take the factorial of a
+#. fractional number
 #: ../src/mp.c:1934
 msgid "Factorial is only defined for natural numbers"
 msgstr "എണ്ണല്‍ സംഖ്യകള്‍ക്ക് മാത്രമേ ഫാക്റ്റോറിയല്‍ നിര്‍വചിച്ചിട്ടുള്ളു"
 
-#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
+#. Translators: Error displayed when attemping to do a modulus division on
+#. non-integer numbers
 #: ../src/mp.c:1954
 msgid "Modulus division is only defined for integers"
 msgstr "മോഡുലസ് ഡിവിഷന്‍ ഇന്റിജറുകള്‍ക്കു് മാത്രമേ നിഷ്കര്‍ഷിച്ചിട്ടുള്ളൂ"
 
 #. Translators: Error displayed when tangent value is undefined
 #: ../src/mp-trigonometric.c:310
-msgid "Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
-msgstr ""
-"π (180°) മുതല്‍ π∕2 (90°) വരെയുള്ളവയുടെ മള്‍ട്ടിപ്പിളുകളായ കോണ്‍ അളവിനു് ടാഞ്ചറ്റ് "
-"നിഷ്കര്‍ഷിച്ചിട്ടില്ല"
+msgid ""
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
+"(90°)"
+msgstr "π (180°) മുതല്‍ π∕2 (90°) വരെയുള്ളവയുടെ മള്‍ട്ടിപ്പിളുകളായ കോണ്‍ അളവിനു് ടാഞ്ചറ്റ് നിഷ്കര്‍ഷിച്ചിട്ടില്ല"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: ../src/mp-trigonometric.c:355
@@ -1488,12 +1527,14 @@ msgstr "[-1, 1]-നു് പുറത്തുള്ള മൂല്ല്യ�
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
 msgstr "[-1, 1]-നു് പുറത്തുള്ള മൂല്ല്യങ്ങള്‍ക്കു് തിരിച്ചുള്ള കോസൈന്‍ നിഷ്കര്‍ഷിച്ചിട്ടില്ല"
 
-#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
+#. Translators: Error displayed when inverse hyperbolic cosine value is
+#. undefined
 #: ../src/mp-trigonometric.c:591
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
 msgstr "ഒന്നില്‍ കുറഞ്ഞ മൂല്ല്യങ്ങള്‍ക്കു് തിരിച്ചുള്ള ഹൈപ്പര്‍ബോളിക് കോസൈന്‍ നിഷ്കര്‍ഷിച്ചിട്ടില്ല"
 
-#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
+#. Translators: Error displayed when inverse hyperbolic tangent value is
+#. undefined
 #: ../src/mp-trigonometric.c:615
 msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
 msgstr "[-1, 1]-നു് പുറത്തുള്ള മൂല്ല്യങ്ങള്‍ക്കു് തിരിച്ചുള്ള ഹൈപ്പര്‍ബോളിക് റ്റാഞ്ചന്റ് നിഷ്കര്‍ഷിച്ചിട്ടില്ല"
@@ -2223,1059 +2264,9 @@ msgstr "താപനില"
 msgid "Currency"
 msgstr "നോട്ട്"
 
-#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
+#. Translators: result of currency conversion, %s is the symbol, %%s is the
+#. placeholder for amount, i.e.: USD100
 #: ../src/unit-manager.c:137
 #, c-format
 msgid "%s%%s"
 msgstr "%s%%s"
-
-#, fuzzy
-#~ msgid "<i>x</i>"
-#~ msgstr "<i>x</i>!"
-
-#~ msgid "_Calculator"
-#~ msgstr "_ഗണനി"
-
-#~ msgid "_Basic"
-#~ msgstr "_അടിസ്ഥാനമായ"
-
-#~ msgid "_Advanced"
-#~ msgstr "_സങ്കീര്‍ണ്ണമായ"
-
-#~ msgid "_Programming"
-#~ msgstr "_പ്രോഗ്രാമിങ്"
-
-#~ msgid "_Contents"
-#~ msgstr "_ഉള്ളടക്കം"
-
-#~ msgid "%"
-#~ msgstr "%"
-
-#~ msgid "&#x2212;"
-#~ msgstr "&#x2212;"
-
-#~ msgid "&#x221A;"
-#~ msgstr "&#x221A;"
-
-#~ msgid "&#xB1;"
-#~ msgstr "&#xB1;"
-
-#~ msgid "&#xD7;"
-#~ msgstr "&#xD7;"
-
-#~ msgid "&#xF7;"
-#~ msgstr "&#xF7;"
-
-#~ msgid "("
-#~ msgstr "("
-
-#~ msgid "(Ln)"
-#~ msgstr "(Ln)"
-
-#~ msgid "(Set accuracy from 0 to N numeric places [A])"
-#~ msgstr "0 മുതല്‍ N വരെ അക്കങ്ങളുടെ സ്ഥാനത്തിനുള്ള കൃത്യത സജ്ജീകരിയ്ക്കുക. [A]"
-
-#~ msgid "(X^Y)"
-#~ msgstr "(X^Y)"
-
-#~ msgid "(cos)"
-#~ msgstr "(cos)"
-
-#~ msgid "(log)"
-#~ msgstr "(log)"
-
-#~ msgid "(log2)"
-#~ msgstr "(log2)"
-
-#~ msgid "(sin)"
-#~ msgstr "(sin)"
-
-#~ msgid "(tan)"
-#~ msgstr "(tan)"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "+"
-#~ msgstr "+"
-
-#~ msgid "0"
-#~ msgstr "0"
-
-#~ msgid "1"
-#~ msgstr "1"
-
-#~ msgid "1's"
-#~ msgstr "1's"
-
-#~ msgid "1/<i>x</i>"
-#~ msgstr "1/<i>x</i>"
-
-#~ msgid "1/x"
-#~ msgstr "1/x"
-
-#~ msgid "15"
-#~ msgstr "15"
-
-#~ msgid "2"
-#~ msgstr "2"
-
-#~ msgid "2's"
-#~ msgstr "2's"
-
-#~ msgid "2's complement [Z]"
-#~ msgstr "2's complement [Z]"
-
-#~ msgid "3"
-#~ msgstr "3"
-
-#~ msgid "31"
-#~ msgstr "31"
-
-#~ msgid "32"
-#~ msgstr "32"
-
-#~ msgid "4"
-#~ msgstr "4"
-
-#~ msgid "47"
-#~ msgstr "47"
-
-#~ msgid "5"
-#~ msgstr "5"
-
-#~ msgid "6"
-#~ msgstr "6"
-
-#~ msgid "63"
-#~ msgstr "63"
-
-#~ msgid "7"
-#~ msgstr "7"
-
-#~ msgid "8"
-#~ msgstr "8"
-
-#~ msgid "9"
-#~ msgstr "9"
-
-#~ msgid "<"
-#~ msgstr "<"
-
-#~ msgid "<i>x</i><sup>2</sup>"
-#~ msgstr "<i>x</i><sup>2</sup>"
-
-#~ msgid ""
-#~ "<small><i><b>Note:</b> All constant values are specified in the decimal "
-#~ "numeric base.</i></small>"
-#~ msgstr ""
-#~ "<small><i><b>കുറിപ്പു്:</b> എല്ലാ കോണ്‍സ്റ്റന്റ് വിലകളും ദശാംശ സംഖ്യയായിട്ടാണു് "
-#~ "നല്‍കിയിരിയ്ക്കുന്നതു്.</i></small>"
-
-#~ msgid "<span weight=\"bold\">R0</span>"
-#~ msgstr "<span weight=\"bold\">R0</span>"
-
-#~ msgid "<span weight=\"bold\">R1</span>"
-#~ msgstr "<span weight=\"bold\">R1</span>"
-
-#~ msgid "<span weight=\"bold\">R2</span>"
-#~ msgstr "<span weight=\"bold\">R2</span>"
-
-#~ msgid "<span weight=\"bold\">R3</span>"
-#~ msgstr "<span weight=\"bold\">R3</span>"
-
-#~ msgid "<span weight=\"bold\">R4</span>"
-#~ msgstr "<span weight=\"bold\">R4</span>"
-
-#~ msgid "<span weight=\"bold\">R5</span>"
-#~ msgstr "<span weight=\"bold\">R5</span>"
-
-#~ msgid "<span weight=\"bold\">R6</span>"
-#~ msgstr "<span weight=\"bold\">R6</span>"
-
-#~ msgid "<span weight=\"bold\">R7</span>"
-#~ msgstr "<span weight=\"bold\">R7</span>"
-
-#~ msgid "<span weight=\"bold\">R8</span>"
-#~ msgstr "<span weight=\"bold\">R8</span>"
-
-#~ msgid "<span weight=\"bold\">R9</span>"
-#~ msgstr "<span weight=\"bold\">R9</span>"
-
-#~ msgid ">"
-#~ msgstr ">"
-
-#~ msgid "A"
-#~ msgstr "A"
-
-#~ msgid "AND"
-#~ msgstr "ആന്‍ഡ്"
-
-#~ msgid "Abs"
-#~ msgstr "Abs"
-
-#~ msgid "Acc"
-#~ msgstr "Acc"
-
-#~ msgid "B"
-#~ msgstr "B"
-
-#~ msgid "Backspace"
-#~ msgstr "Backspace"
-
-#~ msgid "Bitwise AND [&]"
-#~ msgstr "ബിറ്റ്‌വൈസ് AND [&]"
-
-#~ msgid "Bitwise NOT [~]"
-#~ msgstr "ബിറ്റ്‌വൈസ് NOT [~]"
-
-#~ msgid "Bitwise OR [|]"
-#~ msgstr "ബിറ്റ്‌വൈസ് ഓര്‍ [|]"
-
-#~ msgid "Bitwise XNOR [{]"
-#~ msgstr "ബിറ്റ്‌വൈസ് XNOR [{]"
-
-#~ msgid "Bitwise XOR [x]"
-#~ msgstr "ബിറ്റ്‌വൈസ് XOR [x]"
-
-#~ msgid "Bksp"
-#~ msgstr "Bksp"
-
-#~ msgid "C"
-#~ msgstr "C"
-
-#~ msgid "CE"
-#~ msgstr "CE"
-
-#~ msgid "Change Sign [C]"
-#~ msgstr "ചിഹ്നം മാറ്റുക [C]"
-
-#~ msgid "Change sign"
-#~ msgstr "ചിഹ്നം മാറ്റുക "
-
-#, fuzzy
-#~ msgid "Clear"
-#~ msgstr "വില മായ്ക്കുക"
-
-#~ msgid "Clear displayed value and any partial calculation [Shift Delete]"
-#~ msgstr ""
-#~ "സ്ക്രീനില്‍ കാണിക്കുന്ന മൂല്ല്യവും പകുതി എത്തിയ കണക്കു കൂട്ടലുകളും മായിക്കുക [Shift Delete]"
-
-#~ msgid "Clear entry"
-#~ msgstr "വില മായ്ക്കുക"
-
-#~ msgid "Click a _value or description to edit it:"
-#~ msgstr "ഒരു _മൂല്ല്യം അല്ലെങ്കില്‍ വിവരണത്തില്‍ മാറ്റം വരുത്തണമെങ്കില്‍ അതില്‍ ഞെക്കുക:"
-
-#~ msgid "Compounding term"
-#~ msgstr "കോപൌണ്ടിങ് ടേം"
-
-#~ msgid "Compounding term [m]"
-#~ msgstr "കോപൌണ്ടിങ് ടേം [m]"
-
-#~ msgid "Con"
-#~ msgstr "Con"
-
-#~ msgid "Constants [#]"
-#~ msgstr "കോണ്‍സ്റ്റന്റ്സ് [#]"
-
-#~ msgid "Copy selection"
-#~ msgstr "തിരഞ്ഞെടുത്തത് പകര്‍ത്തുക"
-
-#~ msgid "D"
-#~ msgstr "D"
-
-#~ msgid "Divide"
-#~ msgstr "വിഭജിക്കുക"
-
-#~ msgid "Double-declining depreciation"
-#~ msgstr "ഡബിള്‍-ഡിക്ലൈനിങ്ങ് ഡെപ്രീസിയേഷന്‍"
-
-#~ msgid "Double-declining depreciation [D]"
-#~ msgstr "ഡബിള്‍-ഡിക്ലൈനിങ്ങ് ഡെപ്രീസിയേഷന്‍ [D]"
-
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "E_ng"
-#~ msgstr "E_ng"
-
-#~ msgid "Edit Constants"
-#~ msgstr "കോണ്‍സ്റ്റന്റ്സ് മാറ്റുക"
-
-#~ msgid "Edit Constants..."
-#~ msgstr "കോണ്‍സ്റ്റന്റ്സ് മാറ്റുക..."
-
-#~ msgid "Edit Functions..."
-#~ msgstr "ധര്‍മ്മങ്ങളില്‍ മാറ്റം വരുത്തുക..."
-
-#~ msgid "End group of calculations [)]"
-#~ msgstr "കൂട്ടകണക്കുകള്‍ അവസാനിപ്പിക്കുക [)]"
-
-#~ msgid "Enter an exponential number [E]"
-#~ msgstr "ഒരു എക്സ്പൊണന്‍ഷ്യല്‍ നമ്പര്‍ നല്‍കുക [E]"
-
-#~ msgid "Exch"
-#~ msgstr "Exch"
-
-#~ msgid "Exchange displayed value with memory register [X]"
-#~ msgstr ""
-#~ "കാണിച്ചിരിയ്ക്കുന്ന വിലയെ മെമ്മറി രെജിസ്റ്ററില്‍ കാണിച്ചിരിയ്ക്കുന്ന വിലയുമായി കൈമാറ്റം "
-#~ "ചെയ്യുക [X]"
-
-#~ msgid "Exchange with register"
-#~ msgstr "രജിസ്ടറുമായി മാറ്റുക"
-
-#~ msgid "Exp"
-#~ msgstr "Exp"
-
-#~ msgid "F"
-#~ msgstr "F"
-
-#~ msgid "Factorial of displayed value [!]"
-#~ msgstr "സ്ക്രീനിലെ മൂല്ല്യത്തിന്റെ ഫാക്ടോറിയല്‍ [!]"
-
-#~ msgid "Frac"
-#~ msgstr "Frac"
-
-#~ msgid "Fractional portion of displayed value [:]"
-#~ msgstr "കാണിച്ചിരിയ്ക്കുന്ന സംഖ്യയുടെ ഭിന്നസംഖ്യാ ഘടകം [:]"
-
-#~ msgid "Fun"
-#~ msgstr "Fun"
-
-#~ msgid "Gross Profit Margin [I]"
-#~ msgstr "മൊത്തം ലാഭം പരിധി [I]"
-
-#~ msgid "Gross Profit Margin [g]"
-#~ msgstr "മൊത്തം ലാഭം പരിധി [g]"
-
-#~ msgid "H_yp"
-#~ msgstr "H_yp"
-
-#~ msgid "He_x"
-#~ msgstr "He_x"
-
-#~ msgid "Hexadecimal digit B [b]"
-#~ msgstr "ഹെക്സാ ഡെസിമല്‍ ഡിജിറ്റ് B [b]"
-
-#~ msgid "Hexadecimal digit C [c]"
-#~ msgstr "ഹെക്സാ ഡെസിമല്‍ ഡിജിറ്റ് C [c]"
-
-#~ msgid "Hexadecimal digit D [d]"
-#~ msgstr "ഹെക്സാ ഡെസിമല്‍ ഡിജിറ്റ് D [d]"
-
-#~ msgid "Hexadecimal digit E [e]"
-#~ msgstr "ഹെക്സാ ഡെസിമല്‍ ഡിജിറ്റ് E [e]"
-
-#~ msgid "Hexadecimal digit F [f]"
-#~ msgstr "ഹെക്സാ ഡെസിമല്‍ ഡിജിറ്റ് F [f]"
-
-#~ msgid "Insert ASCII value"
-#~ msgstr "ASCII മൂല്ല്യം ഇടയ്ക്ക് ചേര്‍ക്കുക"
-
-#~ msgid "Int"
-#~ msgstr "Int"
-
-#~ msgid "Integer portion of displayed value [i]"
-#~ msgstr "സ്ക്രീനില്‍ കാണിക്കുന്ന മൂല്ല്യത്തിന്റെ പൂര്‍ണ്ണസംഖ്യയുടെ ഭാഗം [i]"
-
-#~ msgid "Left bracket"
-#~ msgstr "ഇടത് ബ്രാക്കറ്റ്"
-
-#~ msgid "Makes the bitwise functions use 16 bit mode"
-#~ msgstr "ബിറ്റ്‌വൈസ് ഫംഗ്ഷനുകള്‍ 16 ബിറ്റ് മോഡ് ഉപയോഗിക്കുന്ന തരത്തിലാക്കുക"
-
-#~ msgid "Makes the bitwise functions use 32 bit mode"
-#~ msgstr "ബിറ്റ്‌വൈസ് ഫംഗ്ഷനുകള്‍ 32 ബിറ്റ് മോഡ് ഉപയോഗിക്കുന്ന തരത്തിലാക്കുക"
-
-#~ msgid "Makes the bitwise functions use 64 bit mode"
-#~ msgstr "ബിറ്റ്‌വൈസ് ഫംഗ്ഷനുകള്‍ 64 ബിറ്റ് മോഡ് ഉപയോഗിക്കുന്ന തരത്തിലാക്കുക"
-
-#~ msgid "Multiply"
-#~ msgstr "ഗുണിക്കുക"
-
-#~ msgid "NOT"
-#~ msgstr "നോട്ട്"
-
-#~ msgid "Numeric 0"
-#~ msgstr "അക്കം 0"
-
-#~ msgid "Numeric 1"
-#~ msgstr "അക്കം 1"
-
-#~ msgid "Numeric 2"
-#~ msgstr "അക്കം 2"
-
-#~ msgid "Numeric 3"
-#~ msgstr "അക്കം 3"
-
-#~ msgid "Numeric 4"
-#~ msgstr "അക്കം 4"
-
-#~ msgid "Numeric 5"
-#~ msgstr "അക്കം 5"
-
-#~ msgid "Numeric 6"
-#~ msgstr "അക്കം 6"
-
-#~ msgid "Numeric 7"
-#~ msgstr "അക്കം 7"
-
-#~ msgid "Numeric 8"
-#~ msgstr "അക്കം 8"
-
-#~ msgid "Numeric 9"
-#~ msgstr "അക്കം 9"
-
-#, fuzzy
-#~ msgid "Numeric point"
-#~ msgstr "അക്കം 0"
-
-#~ msgid "OR"
-#~ msgstr "ഓര്‍"
-
-#~ msgid "Paste selection"
-#~ msgstr "തിരഞ്ഞെടുത്തത് ഒട്ടിക്കുക"
-
-#~ msgid "Percentage"
-#~ msgstr "ശതമാനം"
-
-#~ msgid "Periodic interest rate"
-#~ msgstr "പീരിയോഡിക് ഇന്ററസ്റ്റ് റേറ്റ്"
-
-#~ msgid "Periodic interest rate [T]"
-#~ msgstr "പീരിയോഡിക് ഇന്ററസ്റ്റ് റേറ്റ് [T]"
-
-#~ msgid "Periodic payment"
-#~ msgstr "പീരിയോഡിക് പേയ്മെന്റ്"
-
-#~ msgid "Periodic payment [P]"
-#~ msgstr "പീരിയോഡിക് പേയ്മെന്റ് [P]"
-
-#~ msgid "Rand"
-#~ msgstr "Rand"
-
-#~ msgid "Random number in the range 0.0 to 1.0 [?]"
-#~ msgstr "0.0 മുതല്‍ 1.0 വരെയുള്ള റാന്‍ഡം നമ്പര്‍ [?]"
-
-#, fuzzy
-#~ msgid "Rcl"
-#~ msgstr "തിരിച്ചെടുക്കുക"
-
-#~ msgid "Reciprocal"
-#~ msgstr "റെസിപ്രോക്കല്‍"
-
-#~ msgid "Reciprocal [r]"
-#~ msgstr "റെസിപ്രോക്കല്‍ [r]"
-
-#~ msgid "Redo"
-#~ msgstr "വേണ്ടെന്ന് വച്ച മാറ്റങ്ങള്‍ വീണ്ടും ചെയ്യുക"
-
-#~ msgid "Remove rightmost character from displayed value [Backspace]"
-#~ msgstr ""
-#~ "സ്ക്രീനില്‍ കാണിക്കുന്ന മൂല്ല്യത്തിന്റെ ഏറ്റവും വലത് വശത്തുളള അക്കം നീക്കം ചെയ്യുക [Backspace]"
-
-#~ msgid "Retrieve from register"
-#~ msgstr "രജിസ്ടറില്‍ നിന്നും ലഭ്യമാക്കുക"
-
-#~ msgid "Retrieve memory register to display [R]"
-#~ msgstr "മെമ്മറി രെജിസ്റ്ററിലുള്ളതു് കാണിയ്ക്കുക [R]"
-
-#~ msgid "Right bracket"
-#~ msgstr "വലത് ബ്രാക്കറ്റ്"
-
-#~ msgid "Set Precision"
-#~ msgstr "കൃത്യത സജ്ജീകരിയ്ക്കുക"
-
-#~ msgid "Set display type to engineering format"
-#~ msgstr "പ്രദര്‍ശനം എന്‍ജിനിയറിങ് രീതിയിലാക്കുക"
-
-#~ msgid "Set display type to fixed-point format"
-#~ msgstr "പ്രദര്‍ശനം ഫിക്സഡ്-പോയിന്‍റ് രീതിയിലാക്കുക"
-
-#~ msgid "Set display type to scientific format"
-#~ msgstr "കാഴ്ച സാങ്കേതിക ശൈലിയിലേക്ക് മാറ്റുക"
-
-#~ msgid "Set hyperbolic option for trigonometric functions"
-#~ msgstr "ത്രിഗണോമിതി ധര്‍മ്മങ്ങള്‍ക്കു് ഹൈപ്പര്‍ബോളിക് ഐച്ഛികങ്ങള്‍ സജ്ജീകരിയ്ക്കുക"
-
-#~ msgid "Set inverse option for trigonometric functions"
-#~ msgstr "ത്രിഗണോമിതി ധര്‍മ്മങ്ങള്‍ക്കു് ഇന്‍വേഴ്സ് ഐച്ഛികങ്ങള്‍ സജ്ജീകരിയ്ക്കുക"
-
-#~ msgid "Set numeric base to binary (base 2)"
-#~ msgstr "അക്കങ്ങളുടെ അടിസ്ഥാനം ബൈനറിയായി (അടിസ്ഥാനം 2) സജ്ജീകരിയ്ക്കുക"
-
-#~ msgid "Set numeric base to decimal (base 10)"
-#~ msgstr "അക്കങ്ങളുടെ അടിസ്ഥാനം ദശാംശമായി (അടിസ്ഥാനം 10) സജ്ജീകരിയ്ക്കുക"
-
-#~ msgid "Set numeric base to hexadecimal (base 16)"
-#~ msgstr "അക്കങ്ങളുടെ അടിസ്ഥാനം ഹെക്സാഡെസിമലായി (അടിസ്ഥാനം 16) സജ്ജീകരിയ്ക്കുക"
-
-#~ msgid "Set numeric base to octal (base 8)"
-#~ msgstr "അക്കങ്ങളുടെ അടിസ്ഥാനം ഒക്റ്റലായി (അടിസ്ഥാനം 8) സജ്ജീകരിയ്ക്കുക"
-
-#~ msgid "Set trigonometric type to degrees"
-#~ msgstr "ത്രിഗണോമിതി തരം ഡിഗ്രിയായി സജ്ജീകരിയ്ക്കുക"
-
-#~ msgid "Set trigonometric type to gradians"
-#~ msgstr "ത്രിഗണോമിതി തരം ഗ്രേഡിയനായി സജ്ജീകരിയ്ക്കുക"
-
-#~ msgid "Set trigonometric type to radians"
-#~ msgstr "ത്രിഗണോമിതി തരം റേഡിയനായി സജ്ജീകരിയ്ക്കുക"
-
-#~ msgid "Shift displayed value 1-15 places to the left [<]"
-#~ msgstr "കാണിച്ചിരിയ്ക്കുന്ന വിലയെ 1-15 സ്ഥാനങ്ങള്‍ വരെ ഇടത്തോട്ടു് ഷിഫ്റ്റ് ചെയ്യുക [<]"
-
-#~ msgid "Shift displayed value 1-15 places to the right [>]"
-#~ msgstr "കാണിച്ചിരിയ്ക്കുന്ന വിലയെ 1-15 സ്ഥാനങ്ങള്‍ വരെ വലത്തോട്ടു് ഷിഫ്റ്റ് ചെയ്യുക [>]"
-
-#~ msgid "Show help contents"
-#~ msgstr "സഹായം ലഭ്യമാക്കുക"
-
-#~ msgid "Show the About Gcalctool dialog"
-#~ msgstr "Gcalctool ഡയലോഗിനെ സംബന്ധിച്ച് കാണിക്കുക"
-
-#~ msgid "Significant _places:"
-#~ msgstr "പ്രാധാന്യമുള്ള _സ്ഥാനങ്ങള്‍:"
-
-#~ msgid "Square"
-#~ msgstr "സ്ക്വയര്‍"
-
-#, fuzzy
-#~ msgid "Sto"
-#~ msgstr "സംഭരിക്കുക"
-
-#~ msgid "Store displayed value in memory register [S]"
-#~ msgstr "കാണിച്ചിരിയ്ക്കുന്ന വില മെമ്മറി രെജിസ്റ്ററില്‍ സൂക്ഷിയ്ക്കുക [S]"
-
-#~ msgid "Straight-line depreciation"
-#~ msgstr "നേര്‍രേഖാ വിലയിടിവു്"
-
-#~ msgid "Straight-line depreciation [l]"
-#~ msgstr "നേര്‍രേഖാ വിലയിടിവു് [I]"
-
-#~ msgid "Subtract"
-#~ msgstr "കുറയ്ക്കുക"
-
-#~ msgid "Sum-of-the years'-digits depreciation"
-#~ msgstr "വര്‍ഷത്തിന്റെ അക്കങ്ങളുടെ തുക വിലയിടിവു്"
-
-#~ msgid "Sum-of-the years'-digits depreciation [Y]"
-#~ msgstr "വര്‍ഷത്തിന്റെ അക്കങ്ങളുടെ തുക വിലയിടിവു് [Y]"
-
-#~ msgid "Sum-of-the years'-digits depreciation [y]"
-#~ msgstr "വര്‍ഷത്തിന്റെ അക്കങ്ങളുടെ തുക വിലയിടിവു് [y]"
-
-#~ msgid "Truncate displayed value to the chosen word size ([)"
-#~ msgstr "തെരഞ്ഞെടുത്ത വാക്കിന്റെ വ്യാപ്തിയായി കാണിക്കുന്ന മൂല്ല്യം കുറയ്ക്കുക ([)"
-
-#~ msgid "Undo"
-#~ msgstr "വരുത്തിയ മാറ്റങ്ങള്‍ വേണ്ടന്ന് വയ്ക്കുക"
-
-#~ msgid "User-defined functions [F]"
-#~ msgstr "ഉപയോക്താവു് നിര്‍വ്വചിച്ചിട്ടുള്ള ധര്‍മ്മങ്ങള്‍ [F]"
-
-#~ msgid "XNOR"
-#~ msgstr "എക്സ് നോര്‍"
-
-#~ msgid "XOR"
-#~ msgstr "എക്സ് ഓര്‍"
-
-#~ msgid "_0 significant places"
-#~ msgstr "0 പ്രാധാന്യ സ്ഥലങ്ങള്‍ (_0)"
-
-#~ msgid "_1 significant place"
-#~ msgstr "_1 പ്രാധാന്യ സ്ഥലങ്ങള്‍"
-
-#~ msgid "_16 bit"
-#~ msgstr "_16 ബിറ്റ്"
-
-#~ msgid "_32 bit"
-#~ msgstr "_32 ബിറ്റ്"
-
-#~ msgid "_64 bit"
-#~ msgstr "_64 ബിറ്റ്"
-
-#~ msgid "_Bin"
-#~ msgstr "_Bin"
-
-#~ msgid "_Dec"
-#~ msgstr "_Dec"
-
-#~ msgid "_Edit"
-#~ msgstr "_മാറ്റം വരുത്തുക"
-
-#~ msgid "_Fix"
-#~ msgstr "_Fix"
-
-#~ msgid "_Insert ASCII value..."
-#~ msgstr "ASCII മൂല്ല്യം _ഇടയ്ക്ക് ചേര്‍ക്കുക..."
-
-#~ msgid "_Inv"
-#~ msgstr "_Inv"
-
-#~ msgid "_Oct"
-#~ msgstr "_Oct"
-
-#~ msgid "_Redo"
-#~ msgstr "_വീണ്ടും"
-
-#~ msgid "_Sci"
-#~ msgstr "_Sci"
-
-#~ msgid "_Set"
-#~ msgstr "_സജ്ജീകരിയ്ക്കുക"
-
-#~ msgid "_Undo"
-#~ msgstr "_വേണ്ട"
-
-#~ msgid "register 0"
-#~ msgstr "രജിസ്ടര്‍ 0"
-
-#~ msgid "register 1"
-#~ msgstr "രജിസ്ടര്‍ 1"
-
-#~ msgid "register 2"
-#~ msgstr "രജിസ്ടര്‍ 2"
-
-#~ msgid "register 3"
-#~ msgstr "രജിസ്ടര്‍ 3"
-
-#~ msgid "register 4"
-#~ msgstr "രജിസ്ടര്‍ 4"
-
-#~ msgid "register 5"
-#~ msgstr "രജിസ്ടര്‍ 5"
-
-#~ msgid "register 6"
-#~ msgstr "രജിസ്ടര്‍ 6"
-
-#~ msgid "register 7"
-#~ msgstr "രജിസ്ടര്‍ 7"
-
-#~ msgid "register 8"
-#~ msgstr "രജിസ്ടര്‍ 8"
-
-#~ msgid "register 9"
-#~ msgstr "രജിസ്ടര്‍ 9"
-
-#~ msgid "%s: accuracy should be in the range 0-%d\n"
-#~ msgstr "%s: കൃത്യത 0-%d വരെയുള്ള പരിധിയിലായിരിയ്ക്കണം\n"
-
-#~ msgid "Malformed function"
-#~ msgstr "തെറ്റായ ധര്‍മ്മം"
-
-#~ msgid "No sane value to convert"
-#~ msgstr "മാറ്റാനായി യുക്തമായ വിലകളൊന്നുമില്ല"
-
-#~ msgid "Invalid number for the current base"
-#~ msgstr "ഇപ്പോഴത്തെ അടിസ്ഥാനത്തിനു് അസാധുവായ സംഖ്യ"
-
-#~ msgid "Invalid bitwise operation"
-#~ msgstr "ബിറ്റ്‌വൈസ് ഓപ്പറേഷന്‍ അസാധുവാണു്"
-
-#~ msgid "Invalid modulus operation"
-#~ msgstr "മോഡുലസ് ഓപ്പറേഷന്‍ അസാധുവാണു്"
-
-#~ msgid ""
-#~ "A required file is missing or damaged, please check your installation.\n"
-#~ "\n"
-#~ "%s"
-#~ msgstr ""
-#~ "ആവശ്യമുള്ള ഒരു ഫയല്‍ ലഭ്യമല്ല, ദയവായി നിങ്ങളുടെ ഇന്‍സ്റ്റളേഷന്‍ പരിശോദിയ്ക്കുക.\n"
-#~ "\n"
-#~ "%s"
-
-#~ msgid "_Other (%d) ..."
-#~ msgstr "_മറ്റുളളവ (%d) ..."
-
-#~ msgid "Set accuracy from 0 to %d numeric place. [A]"
-#~ msgid_plural "Set accuracy from 0 to %d numeric places. [A]"
-#~ msgstr[0] "0 മുതല്‍ %d വരെ അക്കങ്ങളുടെ സ്ഥാനത്തിനുള്ള കൃത്യത സജ്ജീകരിയ്ക്കുക. [A]"
-#~ msgstr[1] "0 മുതല്‍ %d വരെ അക്കങ്ങളുടെ സ്ഥാനത്തിനുള്ള കൃത്യത സജ്ജീകരിയ്ക്കുക. [A]"
-
-#~ msgid "sin"
-#~ msgstr "sin"
-
-#~ msgid "sin<sup>−1</sup>"
-#~ msgstr "sin<sup>−1</sup>"
-
-#~ msgid "sinh"
-#~ msgstr "sinh"
-
-#~ msgid "sinh<sup>−1</sup>"
-#~ msgstr "sinh<sup>−1</sup>"
-
-#~ msgid "Hyperbolic Inverse Sine [K]"
-#~ msgstr "Hyperbolic Inverse Sine [K]"
-
-#, fuzzy
-#~ msgid "cos"
-#~ msgstr "cosh"
-
-#~ msgid "cos<sup>−1</sup>"
-#~ msgstr "cos<sup>−1</sup>"
-
-#~ msgid "cosh"
-#~ msgstr "cosh"
-
-#~ msgid "cosh<sup>−1</sup>"
-#~ msgstr "cosh<sup>−1</sup>"
-
-#~ msgid "Inverse Cosine [J]"
-#~ msgstr "Inverse Cosine [J]"
-
-#~ msgid "Hyperbolic Inverse Cosine [J]"
-#~ msgstr "Hyperbolic Inverse Cosine [J]"
-
-#~ msgid "tan"
-#~ msgstr "tan"
-
-#~ msgid "tan<sup>−1</sup>"
-#~ msgstr "tan<sup>−1</sup>"
-
-#~ msgid "tanh"
-#~ msgstr "tanh"
-
-#~ msgid "tanh<sup>−1</sup>"
-#~ msgstr "tanh<sup>−1</sup>"
-
-#~ msgid "Inverse Tangent [W]"
-#~ msgstr "Inverse Tangent [W]"
-
-#~ msgid "Hyperbolic Inverse Tangent [W]"
-#~ msgstr "Hyperbolic Inverse Tangent [W]"
-
-#~ msgid "ln"
-#~ msgstr "ln"
-
-#~ msgid "e<sup><i>x</i></sup>"
-#~ msgstr "e<sup><i>x</i></sup>"
-
-#~ msgid "e to the power of the displayed value [N]"
-#~ msgstr "e ഘാതം കാണിച്ചിരിയ്ക്കുന്ന വില [N]"
-
-#~ msgid "log"
-#~ msgstr "log"
-
-#~ msgid "10<sup><i>x</i></sup>"
-#~ msgstr "10<sup><i>x</i></sup>"
-
-#~ msgid "Base 10 logarithm [g]"
-#~ msgstr "ബെയിസ് 10 ലോഗരിഥം [g]"
-
-#~ msgid "10 to the power of displayed value [G]"
-#~ msgstr "കാണിച്ചിരിയ്ക്കുന്ന സംഖ്യയുടെ 10 ഘാതം [G]"
-
-#~ msgid "log<sub>2</sub>"
-#~ msgstr "ലോഗ്<sub>2</sub>"
-
-#~ msgid "2<sup><i>x</i></sup>"
-#~ msgstr "2<sup><i>x</i></sup>"
-
-#~ msgid "Base 2 logarithm [h]"
-#~ msgstr "ബെയിസ് 2 ലോഗരിഥം [h]"
-
-#~ msgid "2 to the power of the displayed value [H]"
-#~ msgstr "2 to the power of the displayed value [H]"
-
-#~ msgid "x<sup><i>y</i></sup>"
-#~ msgstr "x<sup><i>y</i></sup>"
-
-#~ msgid "x<sup>1/<i>y</i></sup>"
-#~ msgstr "x<sup>1/<i>y</i></sup>"
-
-#~ msgid "Raise displayed value to the power of y [o]"
-#~ msgstr "y യുടെ ഘനമായി കാണിച്ചിരിയ്ക്കുന്ന വിലയെ ഉയര്‍ത്തുക [o]"
-
-#~ msgid "Raise displayed value to the power of reciprocal y [O]"
-#~ msgstr "y യുടെ ഘനമായി കാണിച്ചിരിയ്ക്കുന്ന വിലയെ ഉയര്‍ത്തുക [O]"
-
-#~ msgid "R"
-#~ msgstr "R"
-
-#~ msgid "No."
-#~ msgstr "ഇല്ല."
-
-#~ msgid "Value"
-#~ msgstr "മൂല്യം"
-
-#~ msgid "Reset to _Default (%d)"
-#~ msgstr "_സ്വതവേയുള്ളതിലേക്ക് വീണ്ടും ക്രമികരിക്കുക (%d)"
-
-#~ msgid "Negative X and non-integer Y not supported"
-#~ msgstr "നെഗറ്റീവ് X ഉം എണ്ണല്‍ സംഖ്യയല്ലാത്ത Y ഉം പിന്തുണയ്ക്കുന്നതല്ല"
-
-#~ msgid "Tangent is infinite"
-#~ msgstr "ടാഞ്ചെന്റ് വളരെ വലുതാകുന്നു"
-
-#~ msgid "Kilometer-to-mile conversion factor"
-#~ msgstr "കിലോമീറ്ററില്‍ നിന്നും മൈലിലേക്ക് മാറ്റുന്നതിനുള്ള ഫാക്ടര്‍"
-
-#~ msgid "square root of 2"
-#~ msgstr "2-ന്റെ സ്ക്വയര്‍ റൂട്ട്"
-
-#~ msgid "π"
-#~ msgstr "π"
-
-#~ msgid "Centimeter-to-inch conversion factor"
-#~ msgstr "സെന്റീമീറ്ററില്‍ നിന്നും ഇഞ്ചിലേക്ക് മാറ്റുന്നതിനുള്ള ഫാക്ടര്‍"
-
-#~ msgid "degrees in a radian"
-#~ msgstr "ഒരു റേഡിയനിലുള്ള ഡിഗ്രി"
-
-#~ msgid "2 ^ 20"
-#~ msgstr "2 ^ 20"
-
-#~ msgid "Gram-to-ounce conversion factor"
-#~ msgstr "ഗ്രാമില്‍ നിന്നും ഔണ്‍സിലേക്ക് മാറ്റുന്നതിനുള്ള ഫാക്ടര്‍"
-
-#~ msgid "Kilojoule-to-British-thermal-unit conversion factor"
-#~ msgstr "കിലോജൂളില്‍ നിന്നും ബ്രിട്ടീഷ് തെര്‍മല്‍ യൂണിറ്റിലേക്ക് മാറ്റുന്നതിനുള്ള ഫാക്ടര്‍"
-
-#~ msgid "Cubic-centimeter-to-cubic-inch conversion factor"
-#~ msgstr "ക്യൂബിക് സെന്റീമീറ്ററില്‍ നിന്നും ക്യൂബിക് ഇഞ്ചിലേക്ക് മാറ്റുന്നതിനുള്ള ഫാക്ടര്‍"
-
-#~ msgid "Currency Conversion"
-#~ msgstr "നാണയ വിനിമയം"
-
-#~ msgid "10 places"
-#~ msgstr "10 സ്ഥാനങ്ങള്‍ "
-
-#~ msgid "11 places"
-#~ msgstr "11 സ്ഥാനങ്ങള്‍ "
-
-#~ msgid "12 places"
-#~ msgstr "12 സ്ഥാനങ്ങള്‍ "
-
-#~ msgid "13 places"
-#~ msgstr "13 സ്ഥാനങ്ങള്‍ "
-
-#~ msgid "14 places"
-#~ msgstr "14 സ്ഥാനങ്ങള്‍ "
-
-#~ msgid "15 places"
-#~ msgstr "15 സ്ഥാനങ്ങള്‍ "
-
-#~ msgid "Add"
-#~ msgstr "കൂട്ടുക"
-
-#~ msgid "Future value"
-#~ msgstr "ഫ്യൂച്ചര്‍ വാല്ല്യൂ"
-
-#~ msgid "Future value [v]"
-#~ msgstr "ഫ്യൂച്ചര്‍ വാല്ല്യൂ [v]"
-
-#~ msgid "Memory Registers"
-#~ msgstr "മെമ്മറി രജിസ്ടറുകള്‍"
-
-#~ msgid "Mod"
-#~ msgstr "Mod"
-
-#~ msgid "Payment period"
-#~ msgstr "പെയ്മെന്റ് കാലാവധി"
-
-#~ msgid "Payment period [t]"
-#~ msgstr "പെയ്മെന്റ് കാലാവധി [t]"
-
-#~ msgid "Present value"
-#~ msgstr "നിലവിലുള്ള മൂല്ല്യം"
-
-#~ msgid "Present value [p]"
-#~ msgstr "പ്രെസന്റ് വാല്ല്യൂ [p]"
-
-#~ msgid "Show T_housands Separator"
-#~ msgstr "_ആയിരങ്ങളെ വേര്‍തിരിയ്ക്കുന്ന അടയാളം കാണിയ്ക്കുക"
-
-#~ msgid "Show _Trailing Zeroes"
-#~ msgstr "_അവസാനം വരുന്ന പൂജ്യങ്ങള്‍ കാണിയ്ക്കുക"
-
-#~ msgid "Show memory registers"
-#~ msgstr "മെമ്മറി രജിസ്ടറുകള്‍ കാണിക്കുക"
-
-#~ msgid "Store to register"
-#~ msgstr "രജിസ്ടറിലേക്ക് സംരക്ഷിക്കുക"
-
-#~ msgid "_2 places"
-#~ msgstr "_2 സ്ഥാനങ്ങള്‍"
-
-#~ msgid "_2 significant places"
-#~ msgstr "_2 പ്രാധാന്യ സ്ഥലങ്ങള്‍"
-
-#~ msgid "_3 places"
-#~ msgstr "_3 സ്ഥാനങ്ങള്‍"
-
-#~ msgid "_3 significant places"
-#~ msgstr "_3 പ്രാധാന്യ സ്ഥലങ്ങള്‍"
-
-#~ msgid "_4 places"
-#~ msgstr "_4 സ്ഥാനങ്ങള്‍"
-
-#~ msgid "_4 significant places"
-#~ msgstr "_4 പ്രാധാന്യ സ്ഥലങ്ങള്‍"
-
-#~ msgid "_5 places"
-#~ msgstr "_5 സ്ഥാനങ്ങള്‍"
-
-#~ msgid "_5 significant places"
-#~ msgstr "_5 പ്രാധാന്യ സ്ഥലങ്ങള്‍"
-
-#~ msgid "_6 places"
-#~ msgstr "_6 സ്ഥാനങ്ങള്‍"
-
-#~ msgid "_6 significant places"
-#~ msgstr "_6 പ്രാധാന്യ സ്ഥലങ്ങള്‍"
-
-#~ msgid "_7 places"
-#~ msgstr "_7 സ്ഥാനങ്ങള്‍"
-
-#~ msgid "_7 significant places"
-#~ msgstr "_7 പ്രാധാന്യ സ്ഥലങ്ങള്‍"
-
-#~ msgid "_8 places"
-#~ msgstr "_8 സ്ഥാനങ്ങള്‍"
-
-#~ msgid "_8 significant places"
-#~ msgstr "_8 പ്രാധാന്യ സ്ഥലങ്ങള്‍"
-
-#~ msgid "_9 places"
-#~ msgstr "_9 സ്ഥാനങ്ങള്‍"
-
-#~ msgid "_9 significant places"
-#~ msgstr "_9 പ്രാധാന്യ സ്ഥലങ്ങള്‍"
-
-#~ msgid "_Memory Registers"
-#~ msgstr "_മെമ്മറി രജിസ്ടറുകള്‍"
-
-#~ msgid "_Scientific"
-#~ msgstr "_സാങ്കേതികം"
-
-#~ msgid "_View"
-#~ msgstr "_കാഴ്ച"
-
-#~ msgid "Show Registers"
-#~ msgstr "രജിസ്ടറുകള്‍ കാണിക്കുക"
-
-#~ msgid "Calculator - Advanced"
-#~ msgstr "ഗണനി - സങ്കീര്‍ണ്ണമായ"
-
-#~ msgid "Calculator - Financial"
-#~ msgstr "ഗണനി - ഫിനാന്‍ഷ്യല്‍"
-
-#~ msgid "Calculator - Scientific"
-#~ msgstr "ഗണനി - സാങ്കേതികം"
-
-#~ msgid "Calculator - Programming"
-#~ msgstr "ഗണനി - പ്രോഗ്രാമിങ്"
-
-#~ msgid "Calculator [%s]"
-#~ msgstr "ഗണനി [%s]"
-
-#~ msgid "Calculator [%s] - Advanced"
-#~ msgstr "ഗണനി [%s] - സങ്കീര്‍ണ്ണമായ"
-
-#~ msgid "Calculator [%s] - Financial"
-#~ msgstr "ഗണനി [%s] - ഫിനാന്‍ഷ്യല്‍"
-
-#~ msgid "Calculator [%s] - Scientific"
-#~ msgstr "ഗണനി [%s] - ശാസ്ത്രീയം"
-
-#~ msgid "Calculator [%s] - Programming"
-#~ msgstr "ഗണനി [%s] - പ്രോഗ്രാമിങ്"
-
-#~ msgid "← R"
-#~ msgstr "← R"
-
-#~ msgid "→ R"
-#~ msgstr "→ R"
-
-#~ msgid "United Arab Emirates dirham"
-#~ msgstr "യു എ ഇ ദിര്‍ഹം"
-
-#~ msgid "Trinidad and Tobago dollar"
-#~ msgstr "ട്രിനിഡാദ് അന്‍ഡ് ടൊബാഗോ ഡോളര്‍"
-
-#, fuzzy
-#~| msgid "Insert ASCII Value"
-#~ msgid "Insert Variable"
-#~ msgstr "ASCII മൂല്ല്യം ഇടയ്ക്ക് ചേര്‍ക്കുക"
-
-#~ msgid "Angle Units"
-#~ msgstr "കോണ്‍ ഏകകം"
-
-#~ msgid "Liters"
-#~ msgstr "ലിറ്റര്‍"
-
-#~ msgid "cm³"
-#~ msgstr "സെ.മി³"
-
-#~ msgid "mm³"
-#~ msgstr "മി.മി³"
-
-#~ msgid "Time Units"
-#~ msgstr "സമയ ഏകകം"
-
-#~ msgid "%s%s = %s%s"
-#~ msgstr "%s%s = %s%s"
-
-#~ msgid "Calculate result [=]"
-#~ msgstr "ഫലം കണ്ടുപിടിക്കുക [=]"
-
-#~ msgid "Clr"
-#~ msgstr "Clr"
-
-#~ msgid "Result Region"
-#~ msgstr "ഫലം വരുന്ന ഇടം"
-
-#~ msgid "Display Mode"
-#~ msgstr "ഡിസ്‌പ്ലേ മോഡ്"
-
-#~ msgid "Indicates whether the memory register window is initially displayed."
-#~ msgstr "മെമ്മറി റജിസ്ടര്‍ ജാലകം തുടക്കത്തില്‍ കാണിക്കുന്നുണ്ടോ എന്നു് സൂചിപ്പിക്കുന്നു."
-
-#~ msgid ""
-#~ "The initial calculator mode. Valid values are \"BASIC\", \"FINANCIAL\", "
-#~ "\"LOGICAL\", \"SCIENTIFIC\" and \"PROGRAMMING\""
-#~ msgstr ""
-#~ "ആരംഭത്തിലുള്ള കാല്‍കുലേറ്റര്‍ മോഡ്. ശരിയായ മൂല്ല്യങ്ങള്‍: \"BASIC\", \"FINANCIAL\", "
-#~ "\"LOGICAL\", \"SCIENTIFIC\", \"PROGRAMMING\""
-
-#~ msgid ""
-#~ "The initial display mode. Valid values are \"ENG\" (engineering), \"FIX"
-#~ "\" (fixed-point) and \"SCI\" (scientific)"
-#~ msgstr ""
-#~ "ആരംഭത്തിലുള്ള ഡിസ്‌പ്ലേ മോഡ്. ശരിയായ മൂല്ല്യങ്ങള്‍: \"ENG\" (എഞ്ചിനീയറിങ്), \"FIX"
-#~ "\" (ഫിക്സഡ്-പോയിന്റ്), \"SCI\" (ശാസ്ത്രീയം)"
-
-#~ msgid ""
-#~ "The initial trigonometric type. Valid values are \"DEG\" (degrees), \"GRAD"
-#~ "\" (gradians) and \"RAD\" (radians)."
-#~ msgstr ""
-#~ "ആരംഭക്കിലുള്ള ട്രിഗ്നോമെട്രിക് തരം. ശരിയായ മൂല്ല്യങ്ങള്‍: \"DEG\" (ഡിഗ്രീസ്), \"GRAD"
-#~ "\" (ഗ്രേഡിയന്‍സ്), \"RAD\" (റേഡിയന്‍സ്)."
-
-#~ msgid "The initial x-coordinate for the window"
-#~ msgstr "ജാലകത്തിനു് ആരംഭത്തിലുള്ള x-കോര്‍ഡിനേറ്റ്"
-
-#~ msgid "The initial y-coordinate for the window"
-#~ msgstr "ജാലകത്തിനു് ആരംഭത്തിലുള്ള y-കോര്‍ഡിനേറ്റ്"
-
-#~ msgid ""
-#~ "The number of pixels to place the window from the left of the screen."
-#~ msgstr "സ്ക്രീനിന്റെ ഇടത്തു് നിന്നും ജാലകം സ്ഥാപിക്കുന്നതിനുള്ള പിക്സലുകളുടെ എണ്ണം."
-
-#~ msgid "The number of pixels to place the window from the top of the screen."
-#~ msgstr "സ്ക്രീനിന്റെ മുകളില്‍ നിന്നും ജാലകം സ്ഥാപിക്കുന്നതിനുള്ള പിക്സലുകളുടെ എണ്ണം."
-
-#~ msgid "The numeric base for input and display."
-#~ msgstr "ഇന്‍പുട്ടിനും ഡിസ്‌പ്ലേയ്ക്കുമുള്ള ന്യൂമെറിക് ബെയിസ്."
-
-#~ msgid "Trigonometric type"
-#~ msgstr "ത്രിഗണോമിതി തരം "
-
-#~ msgid "No redo steps"
-#~ msgstr "നടപടികള്‍ വീണ്ടും ചെയ്യേണ്ടതില്ല"
-
-#~ msgid "Error loading user interface"
-#~ msgstr "ഉപയോക്താവുമായുള്ള വിനിമയതലം ലഭ്യമാക്കുന്നതില്‍ പിശക്"

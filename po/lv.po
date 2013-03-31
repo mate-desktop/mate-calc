@@ -1,97 +1,117 @@
-# translation of lv.po to Latvian
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) 2012 Rudolfs Mazūrs, Raivis Dejus
-#
+# 
+# Translators:
+# Linux localization project <viesturs.zarins@mii.lu.lv>, 2006.
+# Raivis Dejus <orvils@gmail.com>, 2006,2009.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2010-2012.
 # Viesturs Zariņš <viesturs.zarins@mii.lu.lv>, 2006.
-# Raivis Dejus <orvils@gmail.com>, 2006, 2009.
-# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2010, 2011, 2012.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: lv\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-07 11:33+0300\n"
-"PO-Revision-Date: 2012-10-07 11:33+0300\n"
-"Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
-"Language-Team: Latviešu <lata-l10n@googlegroups.com>\n"
-"Language: lv\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2013-03-24 20:10+0100\n"
+"PO-Revision-Date: 2013-03-24 19:26+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Latvian (http://www.transifex.com/projects/p/MATE/language/lv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
-"2);\n"
-"X-Generator: Gtranslator 2.91.5\n"
-"X-Launchpad-Export-Date: 2009-02-19 16:52+0000\n"
-
-#. Accessible name for the inverse button
-#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:24
-msgid "Inverse"
-msgstr "Pretējs"
+"Language: lv\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
 
 #. Accessible name for the factorize button
-#: ../data/buttons-advanced.ui.h:4 ../data/buttons-programming.ui.h:2
+#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:8
 msgid "Factorize"
 msgstr "Sadalīt reizinātājos"
 
-#. Accessible name for the factorial button
-#: ../data/buttons-advanced.ui.h:6 ../data/buttons-programming.ui.h:22
-msgid "Factorial"
-msgstr "Faktoriāls"
-
 #. Label on the solve button (clicking this solves the displayed calculation)
-#: ../data/buttons-advanced.ui.h:8 ../data/buttons-basic.ui.h:2
-#: ../data/buttons-financial.ui.h:76 ../data/buttons-programming.ui.h:6
+#: ../data/buttons-advanced.ui.h:4 ../data/buttons-basic.ui.h:2
+#: ../data/buttons-financial.ui.h:76 ../data/buttons-programming.ui.h:12
 msgid "="
 msgstr "="
 
+#: ../data/buttons-advanced.ui.h:5 ../data/buttons-basic.ui.h:3
+#: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
+msgid "Clear"
+msgstr ""
+
 #. Accessible name for the subscript mode button
-#: ../data/buttons-advanced.ui.h:10 ../data/buttons-programming.ui.h:8
+#: ../data/buttons-advanced.ui.h:7 ../data/buttons-programming.ui.h:15
 msgid "Subscript"
 msgstr "Apakšraksts"
 
 #. Accessible name for the superscript mode button
-#: ../data/buttons-advanced.ui.h:12 ../data/buttons-programming.ui.h:10
+#: ../data/buttons-advanced.ui.h:9 ../data/buttons-programming.ui.h:17
 msgid "Superscript"
 msgstr "Augšraksts"
 
 #. Accessible name for the scientific exponent button
-#: ../data/buttons-advanced.ui.h:14
+#: ../data/buttons-advanced.ui.h:11
 msgid "Scientific Exponent"
 msgstr "Zinātniskā kāpināšana"
 
 #. Accessible name for the memory button
 #. Accessible name for the memory value button
 #. Tooltip for the memory button
-#: ../data/buttons-advanced.ui.h:16 ../data/buttons-financial.ui.h:72
-#: ../src/math-buttons.c:222
+#: ../data/buttons-advanced.ui.h:13 ../data/buttons-financial.ui.h:72
+#: ../src/math-buttons.c:232
 msgid "Memory"
 msgstr "Atmiņa"
 
 #. The label on the memory button
-#: ../data/buttons-advanced.ui.h:18 ../data/buttons-financial.ui.h:74
-#: ../data/buttons-programming.ui.h:14
+#: ../data/buttons-advanced.ui.h:15 ../data/buttons-financial.ui.h:74
+#: ../data/buttons-programming.ui.h:21
 msgid "x"
 msgstr "x"
 
-#. Accessible name for the absolute value button
-#: ../data/buttons-advanced.ui.h:20 ../data/buttons-programming.ui.h:4
-msgid "Absolute Value"
-msgstr "Absolūtā vērtība"
-
 #. Accessible name for the exponentiation (x to the power of y) button
-#: ../data/buttons-advanced.ui.h:22 ../data/buttons-basic.ui.h:4
-#: ../data/buttons-financial.ui.h:98 ../data/buttons-programming.ui.h:26
+#: ../data/buttons-advanced.ui.h:17 ../data/buttons-basic.ui.h:5
+#: ../data/buttons-financial.ui.h:100 ../data/buttons-programming.ui.h:33
 msgid "Exponent"
 msgstr "Kāpinātājs"
 
+#: ../data/buttons-advanced.ui.h:18 ../data/buttons-basic.ui.h:6
+#: ../data/buttons-financial.ui.h:98
+msgid "Undo"
+msgstr ""
+
+#: ../data/buttons-advanced.ui.h:19
+msgid "acos"
+msgstr ""
+
+#: ../data/buttons-advanced.ui.h:20
+msgid "asin"
+msgstr ""
+
+#: ../data/buttons-advanced.ui.h:21
+msgid "atan"
+msgstr ""
+
 #. Accessible name for the store value button
-#: ../data/buttons-advanced.ui.h:24 ../data/buttons-programming.ui.h:12
+#: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:19
 msgid "Store"
 msgstr "Krātuve"
 
+#. Accessible name for the inverse button
+#: ../data/buttons-advanced.ui.h:25 ../data/buttons-programming.ui.h:31
+msgid "Inverse"
+msgstr "Pretējs"
+
+#. Accessible name for the factorial button
+#: ../data/buttons-advanced.ui.h:27 ../data/buttons-programming.ui.h:29
+msgid "Factorial"
+msgstr "Faktoriāls"
+
+#. Accessible name for the absolute value button
+#: ../data/buttons-advanced.ui.h:29 ../data/buttons-programming.ui.h:10
+msgid "Absolute Value"
+msgstr "Absolūtā vērtība"
+
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
-#: ../data/buttons-financial.ui.h:2 ../src/math-buttons.c:246
+#: ../data/buttons-financial.ui.h:2 ../src/math-buttons.c:256
 msgid "Compounding Term"
 msgstr "Saliktais periods"
 
@@ -116,10 +136,7 @@ msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr ""
-"Aprēķina nepieciešamo salikto periodu skaitu, lai palielinātu pašreizējās "
-"vērtībās ieguldījumu līdz nākotnes vērtībai, ar fiksēto procentu saliktajā "
-"periodā."
+msgstr "Aprēķina nepieciešamo salikto periodu skaitu, lai palielinātu pašreizējās vērtībās ieguldījumu līdz nākotnes vērtībai, ar fiksēto procentu saliktajā periodā."
 
 #. Periodic Interest Rate Dialog: Label before future value input
 #: ../data/buttons-financial.ui.h:12
@@ -136,9 +153,7 @@ msgstr "Paātrinātā amortizācija"
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
-msgstr ""
-"Aprēķina nolietojuma pabalstu aktīvam noteikta laika periodā, izmantojot "
-"paātrināto norakstīšanas metodi."
+msgstr "Aprēķina nolietojuma pabalstu aktīvam noteikta laika periodā, izmantojot paātrināto norakstīšanas metodi."
 
 #. Gross Profit Margin Dialog: Label before cost input
 #: ../data/buttons-financial.ui.h:18
@@ -157,7 +172,7 @@ msgstr "_Periods:"
 
 #. Title of Future Value dialog
 #. Tooltip for the future value button
-#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.c:252
+#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.c:262
 msgid "Future Value"
 msgstr "Vērtība nākotnē"
 
@@ -167,9 +182,7 @@ msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
-msgstr ""
-"Aprēķina nākotnes vērtību ieguldījumam, pamatojoties uz vairāku vienādu "
-"maksājumu sēriju ar periodisku procentu likmi vairākos periodos termiņā."
+msgstr "Aprēķina nākotnes vērtību ieguldījumam, pamatojoties uz vairāku vienādu maksājumu sēriju ar periodisku procentu likmi vairākos periodos termiņā."
 
 #. Payment Period Dialog: Label before periodic payment input
 #: ../data/buttons-financial.ui.h:28
@@ -183,7 +196,7 @@ msgstr "_Periodu skaits:"
 
 #. Title of Gross Profit Margin dialog
 #. Tooltip for the gross profit margin button
-#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:273
+#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:283
 msgid "Gross Profit Margin"
 msgstr "Bruto peļņas norma"
 
@@ -192,9 +205,7 @@ msgstr "Bruto peļņas norma"
 msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
-msgstr ""
-"Aprēķina tālākpārdošanas produkta cenu, pamatojoties uz ražošanas izmaksām "
-"un vēlamo bruto peļņas normu."
+msgstr "Aprēķina tālākpārdošanas produkta cenu, pamatojoties uz ražošanas izmaksām un vēlamo bruto peļņas normu."
 
 #. Gross Profit Margin Dialog: Label before margin input
 #: ../data/buttons-financial.ui.h:36
@@ -203,7 +214,7 @@ msgstr "_Peļņa:"
 
 #. Title of Periodic Payment dialog
 #. Tooltip for the periodic payment button
-#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:270
+#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:280
 msgid "Periodic Payment"
 msgstr "Periodiskie maksājumi"
 
@@ -212,9 +223,7 @@ msgstr "Periodiskie maksājumi"
 msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
-msgstr ""
-"Izrēķina aizņēmuma periodiskās apmaksas apjomu, kur maksājumi tiek veikti "
-"katra maksājumu perioda beigās."
+msgstr "Izrēķina aizņēmuma periodiskās apmaksas apjomu, kur maksājumi tiek veikti katra maksājumu perioda beigās."
 
 #. Periodic Payment Dialog: Label before principal input
 #: ../data/buttons-financial.ui.h:42
@@ -228,7 +237,7 @@ msgstr "_Termiņš:"
 
 #. Title of Present Value dialog
 #. Tooltip for the present value button
-#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:267
+#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:277
 msgid "Present Value"
 msgstr "Pašreizējā vērtība"
 
@@ -238,14 +247,11 @@ msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr ""
-"Aprēķina tagadnes vērtību ieguldījumam, pamatojoties uz vairāku vienādu "
-"diskontēto maksājumu sēriju ar periodisku procentu likmi vairākos periodos "
-"termiņā. "
+msgstr "Aprēķina tagadnes vērtību ieguldījumam, pamatojoties uz vairāku vienādu diskontēto maksājumu sēriju ar periodisku procentu likmi vairākos periodos termiņā. "
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
-#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.c:264
+#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.c:274
 msgid "Periodic Interest Rate"
 msgstr "Periodiskā procentu likme"
 
@@ -254,9 +260,7 @@ msgstr "Periodiskā procentu likme"
 msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
-msgstr ""
-"Aprēķina periodisku procentu, kas vajadzīgs, lai palielinātu ieguldījumus "
-"nākotnes vērtībai, vairāku salikto periodu laikā."
+msgstr "Aprēķina periodisku procentu, kas vajadzīgs, lai palielinātu ieguldījumus nākotnes vērtībai, vairāku salikto periodu laikā."
 
 #. Title of Straight-Line Depreciation dialog
 #: ../data/buttons-financial.ui.h:54
@@ -280,11 +284,7 @@ msgid ""
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr ""
-"Aprēķina lineāro aktīvu amortizāciju vienā periodā. Lineārā metode sadala "
-"nolietojama izmaksas vienmērīgi aktīva lietderīgās lietošanas laikā. "
-"Lietderīgās lietošanas laiks ir periodu skaits, parasti gadi, pa kuru aktīvi "
-"tiek amortizēti."
+msgstr "Aprēķina lineāro aktīvu amortizāciju vienā periodā. Lineārā metode sadala nolietojama izmaksas vienmērīgi aktīva lietderīgās lietošanas laikā. Lietderīgās lietošanas laiks ir periodu skaits, parasti gadi, pa kuru aktīvi tiek amortizēti."
 
 #. Title of Sum-of-the-Years'-Digits Depreciation dialog
 #: ../data/buttons-financial.ui.h:62
@@ -295,16 +295,11 @@ msgstr "Gada ciparu summas nolietojums"
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
-"accelerates the rate of depreciation, so that more depreciation expense "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
+" accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
-msgstr ""
-"Aprēķina nolietojuma pabalstu aktīvam noteikta laika periodā, izmantojot "
-"“gada dienu skaita” metodi. Šī amortizācijas metode paātrina vērtības "
-"samazinājuma koeficientu, lai vairāk nolietojuma izmaksas notiktu agrākos "
-"periodos, nekā vēlākos. Lietderīgās lietošanas laiks ir vairāki periodi, "
-"parasti gadi, pa kuru aktīvi tiek amortizēti."
+msgstr "Aprēķina nolietojuma pabalstu aktīvam noteikta laika periodā, izmantojot “gada dienu skaita” metodi. Šī amortizācijas metode paātrina vērtības samazinājuma koeficientu, lai vairāk nolietojuma izmaksas notiktu agrākos periodos, nekā vēlākos. Lietderīgās lietošanas laiks ir vairāki periodi, parasti gadi, pa kuru aktīvi tiek amortizēti."
 
 #. Title of Payment Period dialog
 #: ../data/buttons-financial.ui.h:66
@@ -320,94 +315,123 @@ msgstr "_Vērtība nākotnē:"
 #: ../data/buttons-financial.ui.h:70
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest "
-"rate."
-msgstr ""
-"Aprēķina maksājumu periodu skaitu, kas ir nepieciešami parastas rentes "
-"darbības laikā, lai uzkrātu nākotnes vērtību ar periodisku procentu likmi."
+"of an ordinary annuity, to accumulate a future value, at a periodic interest"
+" rate."
+msgstr "Aprēķina maksājumu periodu skaitu, kas ir nepieciešami parastas rentes darbības laikā, lai uzkrātu nākotnes vērtību ar periodisku procentu likmi."
 
-#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
-#: ../data/buttons-financial.ui.h:78
+#. Calculates the number of compounding periods necessary to increase an
+#. investment of present value pv to a future value of fv, at a fixed interest
+#. rate of int per compounding period. See also:
+#. http://en.wikipedia.org/wiki/Compound_interest
+#: ../data/buttons-financial.ui.h:79
 msgid "Ctrm"
 msgstr "Ster"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:80
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the double-declining balance method. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:81
 msgid "Ddb"
 msgstr "Pa"
 
-#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
-#: ../data/buttons-financial.ui.h:82
+#. Calculates the future value of an investment based on a series of equal
+#. payments, each of amount pmt, at a periodic interest rate of int, over the
+#. number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Future_value
+#: ../data/buttons-financial.ui.h:83
 msgid "Fv"
 msgstr "Vn"
 
-#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
-#: ../data/buttons-financial.ui.h:84
+#. Calculates the number of payment periods that are necessary during the term
+#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
+#. interest rate of int. Each payment is equal to amount pmt. See also:
+#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#: ../data/buttons-financial.ui.h:85
 msgid "Term"
 msgstr "Termiņš"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:86
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the Sum-Of-The-Years'-Digits method. This method of
+#. depreciation accelerates the rate of depreciation, so that more
+#. depreciation expense occurs in earlier periods than in later ones. The
+#. depreciable cost is cost - salvage. The useful life is the number of
+#. periods, typically years, over which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:87
 msgid "Syd"
 msgstr "Gcsn"
 
-#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:88
+#. Calculates the straight-line depreciation of an asset for one period. The
+#. depreciable cost is cost - salvage. The straight-line method of
+#. depreciation divides the depreciable cost evenly over the useful life of an
+#. asset. The useful life is the number of periods, typically years, over
+#. which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:89
 msgid "Sln"
 msgstr "Lam"
 
-#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
-#: ../data/buttons-financial.ui.h:90
+#. Calculates the periodic interest necessary to increase an investment of
+#. present value pv to a future value of fv, over the number of compounding
+#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#: ../data/buttons-financial.ui.h:91
 msgid "Rate"
 msgstr "Likme"
 
-#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
-#: ../data/buttons-financial.ui.h:92
+#. Calculates the present value of an investment based on a series of equal
+#. payments, each of amount pmt, discounted at a periodic interest rate of
+#. int, over the number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Present_value
+#: ../data/buttons-financial.ui.h:93
 msgid "Pv"
 msgstr "Pv"
 
-#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
-#: ../data/buttons-financial.ui.h:94
+#. Calculates the amount of the periodic payment of a loan, where payments are
+#. made at the end of each payment period. See also:
+#. http://en.wikipedia.org/wiki/Amortization_schedule
+#: ../data/buttons-financial.ui.h:95
 msgid "Pmt"
 msgstr "Pmk"
 
-#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
-#: ../data/buttons-financial.ui.h:96
+#. Calculates the resale price of a product, based on the product cost and the
+#. wanted gross profit margin. See also:
+#. http://en.wikipedia.org/wiki/Gross_profit_margin
+#: ../data/buttons-financial.ui.h:97
 msgid "Gpm"
 msgstr "Bpn"
 
+#. Title of insert character code dialog
+#. Tooltip for the insert character code button
+#: ../data/buttons-programming.ui.h:2 ../src/math-buttons.c:235
+msgid "Insert Character Code"
+msgstr "Ievietot rakstzīmes kodu"
+
+#. Insert ASCII dialog: Button to insert selected character
+#: ../data/buttons-programming.ui.h:4
+msgid "_Insert"
+msgstr "_Ievietot"
+
+#. Insert ASCII dialog: Label before character entry
+#: ../data/buttons-programming.ui.h:6
+msgid "Ch_aracter:"
+msgstr "R_akstzīme:"
+
 #. Accessible name for the shift left button
 #. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:16 ../src/math-buttons.c:240
+#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
 msgid "Shift Left"
 msgstr "Bīdīt pa kreisi"
 
 #. Accessible name for the shift right button
 #. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:18 ../src/math-buttons.c:243
+#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
 msgid "Shift Right"
 msgstr "Bīdīt pa labi"
 
 #. Accessible name for the insert character button
-#: ../data/buttons-programming.ui.h:20
+#: ../data/buttons-programming.ui.h:27
 msgid "Insert Character"
 msgstr "Ievietot rakstzīmi"
-
-#. Title of insert character code dialog
-#. Tooltip for the insert character code button
-#: ../data/buttons-programming.ui.h:28 ../src/math-buttons.c:225
-msgid "Insert Character Code"
-msgstr "Ievietot rakstzīmes kodu"
-
-#. Insert ASCII dialog: Label before character entry
-#: ../data/buttons-programming.ui.h:30
-msgid "Ch_aracter:"
-msgstr "R_akstzīme:"
-
-#. Insert ASCII dialog: Button to insert selected character
-#: ../data/buttons-programming.ui.h:32
-msgid "_Insert"
-msgstr "_Ievietot"
 
 #. Word size combo: 8 bits
 #: ../data/preferences.ui.h:2
@@ -430,8 +454,7 @@ msgid "64-bit"
 msgstr "64 biti"
 
 #. Title of preferences dialog
-#: ../data/preferences.ui.h:9 ../src/mate-calc.c:522
-#: ../src/math-preferences.c:231
+#: ../data/preferences.ui.h:9 ../src/math-preferences.c:238
 msgid "Preferences"
 msgstr "Iestatījumi"
 
@@ -460,110 +483,114 @@ msgstr "Radīt _beigu nulles"
 msgid "Show _thousands separators"
 msgstr "Rādīt _tūkstošu atdalītāju"
 
+#: ../data/mate-calc.desktop.in.h:1
+msgid "MATE Calculator"
+msgstr ""
+
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:243
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
 msgid "Calculator"
 msgstr "Kalkulators"
 
-#: ../data/mate-calc.desktop.in.h:2
+#: ../data/mate-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Veikt aritmētiskus, zinātniskus vai finansiālus aprēķinus"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:1
+#: ../data/org.mate.calc.gschema.xml.in.h:1
 msgid "Accuracy value"
 msgstr "Precizitātes vērtība"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:2
+#: ../data/org.mate.calc.gschema.xml.in.h:2
 msgid "The number of digits displayed after the numeric point"
 msgstr "Ciparu skaits, ko rāda pēc komata"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:3
+#: ../data/org.mate.calc.gschema.xml.in.h:3
 msgid "Word size"
 msgstr "Vārda garums"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:4
+#: ../data/org.mate.calc.gschema.xml.in.h:4
 msgid "The size of the words used in bitwise operations"
 msgstr "Vārda garums, ko izmantot bitu darbībās"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:5
+#: ../data/org.mate.calc.gschema.xml.in.h:5
 msgid "Numeric Base"
 msgstr "Skaitļa bāze"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:6
+#: ../data/org.mate.calc.gschema.xml.in.h:6
 msgid "The numeric base"
 msgstr "Skaitļa bāze"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:7
+#: ../data/org.mate.calc.gschema.xml.in.h:7
 msgid "Show Thousands Separators"
 msgstr "Rādīt tūkstošu atdalītāju"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:8
+#: ../data/org.mate.calc.gschema.xml.in.h:8
 msgid "Indicates whether thousands separators are shown in large numbers."
 msgstr "Norāda, vai lieliem skaitļiem būtu jārāda tūkstošu atdalītājs."
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:9
+#: ../data/org.mate.calc.gschema.xml.in.h:9
 msgid "Show Trailing Zeroes"
 msgstr "Rādīt beigu nulles"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:10
+#: ../data/org.mate.calc.gschema.xml.in.h:10
 msgid ""
 "Indicates whether any trailing zeroes after the numeric point should be "
 "shown in the display value."
 msgstr "Norāda, vai attēlotajā rezultātā būtu jārāda beigu nulles pēc komata."
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:11
+#: ../data/org.mate.calc.gschema.xml.in.h:11
 msgid "Number format"
 msgstr "Skaitļu formāts"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:12
+#: ../data/org.mate.calc.gschema.xml.in.h:12
 msgid "The format to display numbers in"
 msgstr "Formāts, kādā attēlot skaitļus"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:13
+#: ../data/org.mate.calc.gschema.xml.in.h:13
 msgid "Angle units"
 msgstr "Leņķu mērvienības"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:14
+#: ../data/org.mate.calc.gschema.xml.in.h:14
 msgid "The angle units to use"
 msgstr "Leņķu mērvienības, ko izmantot"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:15
+#: ../data/org.mate.calc.gschema.xml.in.h:15
 msgid "Button mode"
 msgstr "Pogu režīms"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:16
+#: ../data/org.mate.calc.gschema.xml.in.h:16
 msgid "The button mode"
 msgstr "Pogu režīms"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:17
+#: ../data/org.mate.calc.gschema.xml.in.h:17
 msgid "Source currency"
 msgstr "Avota valūta"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:18
+#: ../data/org.mate.calc.gschema.xml.in.h:18
 msgid "Currency of the current calculation"
 msgstr "Pašreizējā aprēķina valūta"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:19
+#: ../data/org.mate.calc.gschema.xml.in.h:19
 msgid "Target currency"
 msgstr "Mērķa valūta"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:20
+#: ../data/org.mate.calc.gschema.xml.in.h:20
 msgid "Currency to convert the current calculation into"
 msgstr "Valūta, uz kuru pārveidot pašreizējo aprēķinu"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:21
+#: ../data/org.mate.calc.gschema.xml.in.h:21
 msgid "Source units"
 msgstr "Avota vienības"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:22
+#: ../data/org.mate.calc.gschema.xml.in.h:22
 msgid "Units of the current calculation"
 msgstr "Esošā aprēķina mērvienības"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:23
+#: ../data/org.mate.calc.gschema.xml.in.h:23
 msgid "Target units"
 msgstr "Mērķa mērvienības"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:24
+#: ../data/org.mate.calc.gschema.xml.in.h:24
 msgid "Units to convert the current calculation into"
 msgstr "Mērvienības, kurās pārveidot esošo aprēķinu"
 
@@ -817,11 +844,10 @@ msgstr "Kļūda — periodu skaitam jābūt pozitīvam"
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr ""
-"Lietojums:\n"
-"  %s — veikt matemātiskus aprēķinus"
+msgstr "Lietojums:\n  %s — veikt matemātiskus aprēķinus"
 
-#. Description on mate-calc command-line help options displayed on command-line
+#. Description on mate-calc command-line help options displayed on command-
+#. line
 #: ../src/mate-calc.c:87
 #, c-format
 msgid ""
@@ -830,36 +856,21 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr ""
-"Palīdzības opcijas:\n"
-"  -v, --version                   Rādīt laidiena versiju\n"
-"  -h, -?, --help                  Rādīt palīdzības opcijas\n"
-"  --help-all                      Rādīt visas palīdzības opcijas\n"
-"  --help-gtk                      Rādīt GTK+ opcijas"
+msgstr "Palīdzības opcijas:\n  -v, --version                   Rādīt laidiena versiju\n  -h, -?, --help                  Rādīt palīdzības opcijas\n  --help-all                      Rādīt visas palīdzības opcijas\n  --help-gtk                      Rādīt GTK+ opcijas"
 
-#. Description on mate-calc command-line GTK+ options displayed on command-line
+#. Description on mate-calc command-line GTK+ options displayed on command-
+#. line
 #: ../src/mate-calc.c:98
 #, c-format
 msgid ""
 "GTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window "
-"manager\n"
-"  --name=NAME                     Program name as used by the window "
-"manager\n"
+"  --class=CLASS                   Program class as used by the window manager\n"
+"  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr ""
-"GTK+ Opcijas:\n"
-"  --class=KLASE                   Programmas klase, kādu izmanto "
-"logu                                   pārvaldnieks\n"
-"  --name=NOSAUKUMS                Programmas nosaukums, kādu izmanto "
-"logu                                   pārvaldnieks\n"
-"  --screen=EKRĀNS                 Izmantojamais X ekrāns\n"
-"  --sync                          Veikt X izsaukumus sinhroni\n"
-"  --gtk-module=MODUĻI             Ielādēt papildus GTK+ moduļus\n"
-"  --g-fatal-warnings              Padarīt visus brīdinājumus fatālus"
+msgstr "GTK+ Opcijas:\n  --class=KLASE                   Programmas klase, kādu izmanto logu                                   pārvaldnieks\n  --name=NOSAUKUMS                Programmas nosaukums, kādu izmanto logu                                   pārvaldnieks\n  --screen=EKRĀNS                 Izmantojamais X ekrāns\n  --sync                          Veikt X izsaukumus sinhroni\n  --gtk-module=MODUĻI             Ielādēt papildus GTK+ moduļus\n  --g-fatal-warnings              Padarīt visus brīdinājumus fatālus"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -867,9 +878,7 @@ msgstr ""
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr ""
-"Lietotnes opcijas:\n"
-"  -s, --solve <vienādojums>       Atrisināt doto vienādojumu"
+msgstr "Lietotnes opcijas:\n  -s, --solve <vienādojums>       Atrisināt doto vienādojumu"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:156
@@ -883,373 +892,294 @@ msgstr "Parametram --solve vajag izteiksmi, ko atrisināt"
 msgid "Unknown argument '%s'"
 msgstr "Nezināms parametrs “%s”"
 
-#. Translators: Error message displayed when unable to launch help browser
-#: ../src/mate-calc.c:358
-msgid "Unable to open help file"
-msgstr "Nevar atvērt palīdzības datni"
-
-#. The translator credits. Please translate this with your name(s).
-#: ../src/mate-calc.c:390
-msgid "translator-credits"
-msgstr ""
-"Viesturs Zariņš <viesturs.zarins@mii.lu.lv>\n"
-"Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
-"Launchpad Contributions:\n"
-"  Peteris Krisjanis https://launchpad.net/~pecisk-gmail\n"
-"  Pēteris Caune https://launchpad.net/~cuu508\n"
-"  Raivis Dejus https://launchpad.net/~orvils"
-
-#. The license this software is under (GPL2+)
-#: ../src/mate-calc.c:393
-msgid ""
-"Gcalctool is free software; you can redistribute it and/or modify\n"
-"it under the terms of the GNU General Public License as published by\n"
-"the Free Software Foundation; either version 2 of the License, or\n"
-"(at your option) any later version.\n"
-"\n"
-"Gcalctool is distributed in the hope that it will be useful,\n"
-"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License\n"
-"along with Gcalctool; if not, write to the Free Software Foundation, Inc.,\n"
-"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
-"Gcalctool ir brīvās programmatūras produkts; jūs varat izplatīt un/vai "
-"modificēt\n"
-"to saskaņā ar GNU Vispārējās Publiskās Licences 2. vai kādas vēlākas\n"
-"versijas noteikumiem.\n"
-"\n"
-"Gcalctool tiek izplatīts ar cerību, ka tas būs noderīgs. Tas tiek izplatīts "
-"BEZ\n"
-"jebkādas garantijas vai iekļautas ražotāja atbildības par šo produktu.\n"
-"Sīkāku informāciju meklējiet GNU Vispārējās Publiskās Licences tekstā.\n"
-"\n"
-"GNU Vispārējās Publiskās Licence ir pieejama kopā ar Gcalctool instalāciju.\n"
-"Ja tā jums nav pieejama, jūs to varat iegūt no Free Software Foundation,\n"
-"Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA"
-
-#. Program name in the about dialog
-#: ../src/mate-calc.c:410
-msgid "Gcalctool"
-msgstr "Gcalctool"
-
-#. Copyright notice in the about dialog
-#: ../src/mate-calc.c:414
-msgid "© 1986–2010 The Gcalctool authors"
-msgstr "© 1986-2010 Gcalctool autori"
-
-#. Short description in the about dialog
-#: ../src/mate-calc.c:418
-msgid "Calculator with financial and scientific modes."
-msgstr "Kalkulators ar finansiālo un zinātnisko režīmu."
-
-#: ../src/mate-calc.c:515
-msgid "Basic"
-msgstr "Vienkāršais"
-
-#: ../src/mate-calc.c:516
-msgid "Advanced"
-msgstr "Paplašinātais"
-
-#: ../src/mate-calc.c:517
-msgid "Financial"
-msgstr "Finanšu"
-
-#: ../src/mate-calc.c:518
-msgid "Programming"
-msgstr "Programmēšanas"
-
-#: ../src/mate-calc.c:519
-msgid "Mode"
-msgstr "Režīms"
-
-#: ../src/mate-calc.c:526
-msgid "About Calculator"
-msgstr "Par Kalkulatoru"
-
-#: ../src/mate-calc.c:527
-msgid "Help"
-msgstr "Palīdzība"
-
-#: ../src/mate-calc.c:528
-msgid "Quit"
-msgstr "Iziet"
-
 #. Tooltip for the Pi button
-#: ../src/math-buttons.c:94
+#: ../src/math-buttons.c:95
 msgid "Pi [Ctrl+P]"
 msgstr "Pī [Ctrl+P]"
 
 #. Tooltip for the Euler's Number button
-#: ../src/math-buttons.c:97
+#: ../src/math-buttons.c:98
 msgid "Euler’s Number"
 msgstr "Eilera skaitlis"
 
 #. Tooltip for the subscript button
-#: ../src/math-buttons.c:102
+#: ../src/math-buttons.c:103
 msgid "Subscript mode [Alt]"
 msgstr "Apakšraksta skaitļa režīms [Alt]"
 
 #. Tooltip for the superscript button
-#: ../src/math-buttons.c:105
+#: ../src/math-buttons.c:106
 msgid "Superscript mode [Ctrl]"
 msgstr "Augšraksta skaitļa režīms [Ctrl]"
 
 #. Tooltip for the scientific exponent button
-#: ../src/math-buttons.c:108
+#: ../src/math-buttons.c:109
 msgid "Scientific exponent [Ctrl+E]"
 msgstr "Zinātniskā kāpināšana [Ctrl+E]"
 
 #. Tooltip for the add button
-#: ../src/math-buttons.c:111
+#: ../src/math-buttons.c:112
 msgid "Add [+]"
 msgstr "Pieskaitīšana [+]"
 
 #. Tooltip for the subtract button
-#: ../src/math-buttons.c:114
+#: ../src/math-buttons.c:115
 msgid "Subtract [-]"
 msgstr "Atņemšana [-]"
 
 #. Tooltip for the multiply button
-#: ../src/math-buttons.c:117
+#: ../src/math-buttons.c:118
 msgid "Multiply [*]"
 msgstr "Reizināšana [*]"
 
 #. Tooltip for the divide button
-#: ../src/math-buttons.c:120
+#: ../src/math-buttons.c:121
 msgid "Divide [/]"
 msgstr "Dalīšana [/]"
 
 #. Tooltip for the modulus divide button
-#: ../src/math-buttons.c:123
+#: ../src/math-buttons.c:124
 msgid "Modulus divide"
 msgstr "Modulārā dalīšana"
 
 #. Tooltip for the additional functions button
-#: ../src/math-buttons.c:126
+#: ../src/math-buttons.c:127
 msgid "Additional Functions"
 msgstr "Papildu funkcijas"
 
 #. Tooltip for the exponent button
-#: ../src/math-buttons.c:129
+#: ../src/math-buttons.c:130
 msgid "Exponent [^ or **]"
 msgstr "Kāpinātājs [^ vai **]"
 
 #. Tooltip for the square button
-#: ../src/math-buttons.c:132
+#: ../src/math-buttons.c:133
 msgid "Square [Ctrl+2]"
 msgstr "Sakne [Ctrl+2]"
 
 #. Tooltip for the percentage button
-#: ../src/math-buttons.c:135
+#: ../src/math-buttons.c:136
 msgid "Percentage [%]"
 msgstr "Procenti [%]"
 
 #. Tooltip for the factorial button
-#: ../src/math-buttons.c:138
+#: ../src/math-buttons.c:139
 msgid "Factorial [!]"
 msgstr "Faktoriāls [!]"
 
 #. Tooltip for the absolute value button
-#: ../src/math-buttons.c:141
+#: ../src/math-buttons.c:142
 msgid "Absolute value [|]"
 msgstr "Absolūtā vērtība [|]"
 
 #. Tooltip for the complex argument component button
-#: ../src/math-buttons.c:144
+#: ../src/math-buttons.c:145
 msgid "Complex argument"
 msgstr "Komplekss arguments"
 
 #. Tooltip for the complex conjugate button
-#: ../src/math-buttons.c:147
+#: ../src/math-buttons.c:148
 msgid "Complex conjugate"
 msgstr "Kompleksi saistīts"
 
 #. Tooltip for the root button
-#: ../src/math-buttons.c:150
+#: ../src/math-buttons.c:151
 msgid "Root [Ctrl+R]"
 msgstr "Sakne [Ctrl+R]"
 
 #. Tooltip for the square root button
-#: ../src/math-buttons.c:153
+#: ../src/math-buttons.c:154
 msgid "Square root [Ctrl+R]"
 msgstr "Kvadrātsakne [Ctrl+R]"
 
 #. Tooltip for the logarithm button
-#: ../src/math-buttons.c:156
+#: ../src/math-buttons.c:157
 msgid "Logarithm"
 msgstr "Logaritms"
 
 #. Tooltip for the natural logarithm button
-#: ../src/math-buttons.c:159
+#: ../src/math-buttons.c:160
 msgid "Natural Logarithm"
 msgstr "Naturālais logaritms"
 
 #. Tooltip for the sine button
-#: ../src/math-buttons.c:162
+#: ../src/math-buttons.c:163
 msgid "Sine"
 msgstr "Sinuss"
 
 #. Tooltip for the cosine button
-#: ../src/math-buttons.c:165
+#: ../src/math-buttons.c:166
 msgid "Cosine"
 msgstr "Kosinuss"
 
 #. Tooltip for the tangent button
-#: ../src/math-buttons.c:168
+#: ../src/math-buttons.c:169
 msgid "Tangent"
 msgstr "Tangenss"
 
 #. Tooltip for the hyperbolic sine button
-#: ../src/math-buttons.c:171
+#: ../src/math-buttons.c:172
 msgid "Hyperbolic Sine"
 msgstr "Hiperboliskais sinuss"
 
 #. Tooltip for the hyperbolic cosine button
-#: ../src/math-buttons.c:174
+#: ../src/math-buttons.c:175
 msgid "Hyperbolic Cosine"
 msgstr "Hiperboliskais kosinuss"
 
 #. Tooltip for the hyperbolic tangent button
-#: ../src/math-buttons.c:177
+#: ../src/math-buttons.c:178
 msgid "Hyperbolic Tangent"
 msgstr "Hiperboliskais tangenss"
 
+#. Tooltip for the inverse sine button
+#: ../src/math-buttons.c:181
+msgid "Inverse Sine"
+msgstr ""
+
+#. Tooltip for the inverse cosine button
+#: ../src/math-buttons.c:184
+msgid "Inverse Cosine"
+msgstr ""
+
+#. Tooltip for the inverse tangent button
+#: ../src/math-buttons.c:187
+msgid "Inverse Tangent"
+msgstr ""
+
 #. Tooltip for the inverse button
-#: ../src/math-buttons.c:180
+#: ../src/math-buttons.c:190
 msgid "Inverse [Ctrl+I]"
 msgstr "Pretējs [Ctrl+I]"
 
 #. Tooltip for the boolean AND button
-#: ../src/math-buttons.c:183
+#: ../src/math-buttons.c:193
 msgid "Boolean AND"
 msgstr "Loģiskais UN"
 
 #. Tooltip for the boolean OR button
-#: ../src/math-buttons.c:186
+#: ../src/math-buttons.c:196
 msgid "Boolean OR"
 msgstr "Loģiskais VAI"
 
 #. Tooltip for the exclusive OR button
-#: ../src/math-buttons.c:189
+#: ../src/math-buttons.c:199
 msgid "Boolean Exclusive OR"
 msgstr "Loģiskais izslēdzošais VAI"
 
 #. Tooltip for the boolean NOT button
-#: ../src/math-buttons.c:192
+#: ../src/math-buttons.c:202
 msgid "Boolean NOT"
 msgstr "Loģiskais NE"
 
 #. Tooltip for the integer component button
-#: ../src/math-buttons.c:195 ../src/math-buttons.c:983
+#: ../src/math-buttons.c:205 ../src/math-buttons.c:994
 msgid "Integer Component"
 msgstr "Veselā daļa"
 
 #. Tooltip for the fractional component button
-#: ../src/math-buttons.c:198 ../src/math-buttons.c:985
+#: ../src/math-buttons.c:208 ../src/math-buttons.c:996
 msgid "Fractional Component"
 msgstr "Daļveida daļa"
 
 #. Tooltip for the real component button
-#: ../src/math-buttons.c:201
+#: ../src/math-buttons.c:211
 msgid "Real Component"
 msgstr "Reālā daļa"
 
 #. Tooltip for the imaginary component button
-#: ../src/math-buttons.c:204
+#: ../src/math-buttons.c:214
 msgid "Imaginary Component"
 msgstr "Imaginārā daļa"
 
 #. Tooltip for the ones' complement button
-#: ../src/math-buttons.c:207
+#: ../src/math-buttons.c:217
 msgid "Ones' Complement"
 msgstr "Vieninieku papildkods"
 
 #. Tooltip for the two's complement button
-#: ../src/math-buttons.c:210
+#: ../src/math-buttons.c:220
 msgid "Two's Complement"
 msgstr "Divnieku papildkods"
 
 #. Tooltip for the truncate button
-#: ../src/math-buttons.c:213
+#: ../src/math-buttons.c:223
 msgid "Truncate"
 msgstr "Apraut"
 
 #. Tooltip for the start group button
-#: ../src/math-buttons.c:216
+#: ../src/math-buttons.c:226
 msgid "Start Group [(]"
 msgstr "Bloka sākums [(]"
 
 #. Tooltip for the end group button
-#: ../src/math-buttons.c:219
+#: ../src/math-buttons.c:229
 msgid "End Group [)]"
 msgstr "Bloka beigas [)]"
 
 #. Tooltip for the solve button
-#: ../src/math-buttons.c:228
+#: ../src/math-buttons.c:238
 msgid "Calculate Result"
 msgstr "Aprēķināt rezultātu"
 
 #. Tooltip for the factor button
-#: ../src/math-buttons.c:231
+#: ../src/math-buttons.c:241
 msgid "Factorize [Ctrl+F]"
 msgstr "Sadalīt reizinātājos [Ctrl+F]"
 
 #. Tooltip for the clear button
-#: ../src/math-buttons.c:234
+#: ../src/math-buttons.c:244
 msgid "Clear Display [Escape]"
 msgstr "Nodzēst vērtību [Escape]"
 
 #. Tooltip for the undo button
-#: ../src/math-buttons.c:237
+#: ../src/math-buttons.c:247
 msgid "Undo [Ctrl+Z]"
 msgstr "Atsaukt [Ctrl+Z]"
 
 #. Tooltip for the double declining depreciation button
-#: ../src/math-buttons.c:249
+#: ../src/math-buttons.c:259
 msgid "Double Declining Depreciation"
 msgstr "Paātrinātā amortizācija"
 
 #. Tooltip for the financial term button
-#: ../src/math-buttons.c:255
+#: ../src/math-buttons.c:265
 msgid "Financial Term"
 msgstr "Finanšu termiņš"
 
 #. Tooltip for the sum of the years digits depreciation button
-#: ../src/math-buttons.c:258
+#: ../src/math-buttons.c:268
 msgid "Sum of the Years Digits Depreciation"
 msgstr "Gada ciparu summas nolietojums"
 
 #. Tooltip for the straight line depreciation button
-#: ../src/math-buttons.c:261
+#: ../src/math-buttons.c:271
 msgid "Straight Line Depreciation"
 msgstr "Lineārā amortizācija"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: ../src/math-buttons.c:601
+#: ../src/math-buttons.c:611
 msgid "Binary"
 msgstr "Binārs"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: ../src/math-buttons.c:605
+#: ../src/math-buttons.c:615
 msgid "Octal"
 msgstr "Oktāls"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: ../src/math-buttons.c:609
+#: ../src/math-buttons.c:619
 msgid "Decimal"
 msgstr "Decimāls"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: ../src/math-buttons.c:613
+#: ../src/math-buttons.c:623
 msgid "Hexadecimal"
 msgstr "Heksadecimāls"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: ../src/math-buttons.c:894 ../src/math-buttons.c:937
+#: ../src/math-buttons.c:905 ../src/math-buttons.c:948
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
@@ -1259,7 +1189,7 @@ msgstr[2] "_%d ciparu"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: ../src/math-buttons.c:898 ../src/math-buttons.c:941
+#: ../src/math-buttons.c:909 ../src/math-buttons.c:952
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
@@ -1268,26 +1198,27 @@ msgstr[1] "%d cipari"
 msgstr[2] "%d ciparu"
 
 #. Tooltip for the round button
-#: ../src/math-buttons.c:987
+#: ../src/math-buttons.c:998
 msgid "Round"
 msgstr "Apaļot"
 
 #. Tooltip for the floor button
-#: ../src/math-buttons.c:989
+#: ../src/math-buttons.c:1000
 msgid "Floor"
 msgstr "Grīda"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:991
+#: ../src/math-buttons.c:1002
 msgid "Ceiling"
 msgstr "Griesti"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:993
+#: ../src/math-buttons.c:1004
 msgid "Sign"
 msgstr "Zīme"
 
-#. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
+#. Label that is displayed between the two conversion combo boxes, e.g.
+#. "[degrees] in [radians]"
 #: ../src/math-converter.c:412
 msgid " in "
 msgstr " izteikts "
@@ -1307,138 +1238,224 @@ msgstr "Nav darbību, ko atsaukt"
 msgid "No redo history"
 msgstr "Nav atkārtošanas vēstures"
 
-#: ../src/math-equation.c:944
+#: ../src/math-equation.c:948
 msgid "No sane value to store"
 msgstr "Nav saprātīgas vērtības, ko saglabāt"
 
-#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
-#: ../src/math-equation.c:1226
+#. Error displayed to user when they perform a bitwise operation on numbers
+#. greater than the current word
+#: ../src/math-equation.c:1230
 msgid "Overflow. Try a bigger word size"
 msgstr "Pārpilde. Mēģiniet ar lielāku vārda garumu"
 
 #. Error displayed to user when they an unknown variable is entered
-#: ../src/math-equation.c:1231
+#: ../src/math-equation.c:1235
 #, c-format
 msgid "Unknown variable '%s'"
 msgstr "Nezināms mainīgais “%s”"
 
 #. Error displayed to user when an unknown function is entered
-#: ../src/math-equation.c:1236
+#: ../src/math-equation.c:1240
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr "Funkcija “%s” nav definēta"
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: ../src/math-equation.c:1241
+#: ../src/math-equation.c:1245
 msgid "Unknown conversion"
 msgstr "Nezināms pārveidojums"
 
 #. Uncategorized error. Show error token to user
-#: ../src/math-equation.c:1249
+#: ../src/math-equation.c:1253
 #, c-format
 msgid "Malformed expression at token '%s'"
 msgstr "Slikti formēta izteiksme pie marķiera “%s”"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: ../src/math-equation.c:1252 ../src/math-equation.c:1257
+#: ../src/math-equation.c:1256 ../src/math-equation.c:1261
 msgid "Malformed expression"
 msgstr "Slikti formēta izteiksme"
 
-#: ../src/math-equation.c:1271
+#: ../src/math-equation.c:1275
 msgid "Calculating"
 msgstr "Rēķina"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1387
+#: ../src/math-equation.c:1394
 msgid "Need an integer to factorize"
 msgstr "Vajag veselu skaitli, lai dalītu reizinātājos"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1459
+#: ../src/math-equation.c:1470
 msgid "No sane value to bitwise shift"
 msgstr "Nav saprātīgas vērtības bitu bīdīšanai"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1490
+#: ../src/math-equation.c:1501
 msgid "Displayed value not an integer"
 msgstr "Attēlotā vērtība nav vesels skaitlis"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1915
+#: ../src/math-equation.c:1926
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
 #. Label on close button in preferences dialog
-#: ../src/math-preferences.c:235
+#: ../src/math-preferences.c:242
 msgid "_Close"
 msgstr "_Aizvērt"
 
-#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
-#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
-#: ../src/math-preferences.c:245 ../src/unit-manager.c:54
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
+#. calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
+#. grads
+#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "Grādi"
 
-#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
-#: ../src/math-preferences.c:249 ../src/unit-manager.c:55
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
+#. calculations
+#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "Radiāni"
 
-#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
-#: ../src/math-preferences.c:253 ../src/unit-manager.c:56
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
+#. calculations
+#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "Gradiāni"
 
-#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
-#: ../src/math-preferences.c:263
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
+#. number 1.234×10^99)
+#: ../src/math-preferences.c:270
 msgid "Automatic"
 msgstr "Automātisks"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:267
+#: ../src/math-preferences.c:274
 msgid "Fixed"
 msgstr "Fiksēts"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:271
+#: ../src/math-preferences.c:278
 msgid "Scientific"
 msgstr "Zinātniskais"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:275
+#: ../src/math-preferences.c:282
 msgid "Engineering"
 msgstr "Inženierijas"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:286
+#: ../src/math-preferences.c:293
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "Rādīt %d ci_parus aiz komata"
 
-#. Translators: Error displayed when boolean AND attempted on non-integer values
+#. Translators: Error message displayed when unable to launch help browser
+#: ../src/math-window.c:198
+msgid "Unable to open help file"
+msgstr "Nevar atvērt palīdzības datni"
+
+#. The translator credits. Please translate this with your name(s).
+#: ../src/math-window.c:225
+msgid "translator-credits"
+msgstr "Viesturs Zariņš <viesturs.zarins@mii.lu.lv>\nRūdolfs Mazurs <rudolfs.mazurs@gmail.com>\nLaunchpad Contributions:\n  Peteris Krisjanis https://launchpad.net/~pecisk-gmail\n  Pēteris Caune https://launchpad.net/~cuu508\n  Raivis Dejus https://launchpad.net/~orvils"
+
+#. The license this software is under (GPL2+)
+#: ../src/math-window.c:232
+msgid ""
+"mate-calc is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"mate-calc is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
+"151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr ""
+
+#: ../src/math-window.c:247
+msgid "mate-calc"
+msgstr "mate-calc"
+
+#: ../src/math-window.c:251
+msgid "Calculator with financial and scientific modes."
+msgstr "Kalkulators ar finansiālo un zinātnisko režīmu."
+
+#. Calculator menu
+#: ../src/math-window.c:354
+msgid "_Calculator"
+msgstr "_Kalkulators"
+
+#. Mode menu
+#: ../src/math-window.c:356
+msgid "_Mode"
+msgstr ""
+
+#. Help menu label
+#: ../src/math-window.c:358
+msgid "_Help"
+msgstr "_Palīdzība"
+
+#. Basic menu label
+#: ../src/math-window.c:360
+msgid "_Basic"
+msgstr "_Vienkāršais"
+
+#. Advanced menu label
+#: ../src/math-window.c:362
+msgid "_Advanced"
+msgstr "P_aplašinātais"
+
+#. Financial menu label
+#: ../src/math-window.c:364
+msgid "_Financial"
+msgstr "_Finansiālais"
+
+#. Programming menu label
+#: ../src/math-window.c:366
+msgid "_Programming"
+msgstr "_Programmēšanas"
+
+#. Help>Contents menu label
+#: ../src/math-window.c:368
+msgid "_Contents"
+msgstr "_Saturs"
+
+#. Translators: Error displayed when boolean AND attempted on non-integer
+#. values
 #: ../src/mp-binary.c:115
 msgid "Boolean AND is only defined for positive integers"
 msgstr "Bula UN ir definēts tikai pozitīviem veseliem skaitļiem"
 
-#. Translators: Error displayed when boolean OR attempted on non-integer values
+#. Translators: Error displayed when boolean OR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:128
 msgid "Boolean OR is only defined for positive integers"
 msgstr "Bula VAI ir definēts tikai pozitīviem veseliem skaitļiem"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:141
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "Bula izslēdzošais VAI ir definēts tikai pozitīviem veseliem skaitļiem"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:156
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "Bula NE ir definēts tikai pozitīviem veseliem skaitļiem"
 
 #. Translators: Error displayed when bit shift attempted on non-integer values
-#: ../src/mp-binary.c:187
+#: ../src/mp-binary.c:190
 msgid "Shift is only possible on integer values"
 msgstr "Bīdīšana ir iespējama tikai ar veseliem skaitļiem"
 
@@ -1461,7 +1478,8 @@ msgstr "Dalīšana ar nulli ir nedefinēta"
 msgid "Logarithm of zero is undefined"
 msgstr "Logaritms no nulles ir nedefinēts"
 
-#. Translators: Error displayed when attempted to raise 0 to a negative exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. exponent
 #: ../src/mp.c:1680 ../src/mp.c:1994
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "Nulles pakāpe nav definēta negatīviem kāpinātājiem"
@@ -1482,12 +1500,14 @@ msgstr "Negatīva nulles sakne ir nedefinēta"
 msgid "nth root of negative number is undefined for even n"
 msgstr "n-tā sakne no negatīva skaitļa ir nedefinēta nepāra n"
 
-#. Translators: Error displayed when attempted take the factorial of a fractional number
+#. Translators: Error displayed when attempted take the factorial of a
+#. fractional number
 #: ../src/mp.c:1934
 msgid "Factorial is only defined for natural numbers"
 msgstr "Faktoriāls ir definēts tikai naturāliem skaitļiem"
 
-#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
+#. Translators: Error displayed when attemping to do a modulus division on
+#. non-integer numbers
 #: ../src/mp.c:1954
 msgid "Modulus division is only defined for integers"
 msgstr "Moduļu dalīšana ir definēta tikai veseliem skaitļiem"
@@ -1495,10 +1515,9 @@ msgstr "Moduļu dalīšana ir definēta tikai veseliem skaitļiem"
 #. Translators: Error displayed when tangent value is undefined
 #: ../src/mp-trigonometric.c:310
 msgid ""
-"Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
-msgstr ""
-"Tangens ir nedefinēts leņķiem, kuri ir π∕2 (90°) vai tā summa ar π (180°) "
-"reizinājumu – π∕2 + kπ, kur k ir vesels skaitlis."
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
+"(90°)"
+msgstr "Tangens ir nedefinēts leņķiem, kuri ir π∕2 (90°) vai tā summa ar π (180°) reizinājumu – π∕2 + kπ, kur k ir vesels skaitlis."
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: ../src/mp-trigonometric.c:355
@@ -1510,17 +1529,17 @@ msgstr "Apgrieztais sinus nav definēts ārpus intervāla [-1, 1]"
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
 msgstr "Apgrieztais kosinus nav definēts ārpus intervāla [-1, 1]"
 
-#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
+#. Translators: Error displayed when inverse hyperbolic cosine value is
+#. undefined
 #: ../src/mp-trigonometric.c:591
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
-msgstr ""
-"Apgrieztais hiperboliskais kosinus ir nedefinēts vērtībām mazākām par viens"
+msgstr "Apgrieztais hiperboliskais kosinus ir nedefinēts vērtībām mazākām par viens"
 
-#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
+#. Translators: Error displayed when inverse hyperbolic tangent value is
+#. undefined
 #: ../src/mp-trigonometric.c:615
 msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
-msgstr ""
-"Apgrieztais hiperboliskais tangens nav definēts ārpus intervāla [-1, 1]"
+msgstr "Apgrieztais hiperboliskais tangens nav definēts ārpus intervāla [-1, 1]"
 
 #: ../src/unit-manager.c:54
 #, c-format
@@ -2247,82 +2266,9 @@ msgstr "Temperatūra"
 msgid "Currency"
 msgstr "Valūta"
 
-#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
+#. Translators: result of currency conversion, %s is the symbol, %%s is the
+#. placeholder for amount, i.e.: USD100
 #: ../src/unit-manager.c:137
 #, c-format
 msgid "%s%%s"
 msgstr "%s%%s"
-
-#~ msgid "<i>x</i>"
-#~ msgstr "<i>x</i>"
-
-#~ msgid "_Calculator"
-#~ msgstr "_Kalkulators"
-
-#~ msgid "_Contents"
-#~ msgstr "_Saturs"
-
-#~ msgctxt "unit-format"
-#~ msgid "%s˚K"
-#~ msgstr "%s˚K"
-
-#~ msgctxt "unit-symbols"
-#~ msgid "degK,˚K"
-#~ msgstr "degK,˚K"
-
-#~ msgid "&#x2190; R"
-#~ msgstr "&#x2190; R"
-
-#~ msgid "&#x2192; R"
-#~ msgstr "&#x2192; R"
-
-#~ msgid "&#xA4;$&#x20AC;"
-#~ msgstr "&#xA4;$&#x20AC;"
-
-#~ msgid "10 places"
-#~ msgstr "10 cipari"
-
-#~ msgid "11 places"
-#~ msgstr "11 cipari"
-
-#~ msgid "12 places"
-#~ msgstr "12 cipari"
-
-#~ msgid "13 places"
-#~ msgstr "13 cipari"
-
-#~ msgid "14 places"
-#~ msgstr "14 cipari"
-
-#~ msgid "15 places"
-#~ msgstr "15 cipari"
-
-#~ msgid "Answer variable"
-#~ msgstr "Atbildes mainīgais"
-
-#~ msgid "Base 16"
-#~ msgstr "Bāze 16"
-
-#~ msgid "Base 2"
-#~ msgstr "Bāze 2"
-
-#~ msgid "Base 8"
-#~ msgstr "Bāze 8"
-
-#~ msgid "Calculate result [=]"
-#~ msgstr "Aprēķināt rezultātu [=]"
-
-#~ msgid "Clr"
-#~ msgstr "Clr"
-
-#~ msgid "Display _Format:"
-#~ msgstr "Attēlošanas _formāts:"
-
-#~ msgid "Factorize into prime numbers (Ctrl+F)"
-#~ msgstr "Sadalīt pirmreizinātājos (Ctrl+F)"
-
-#~ msgid "Insert ASCII Value"
-#~ msgstr "Ievietot ASCII vērtību"
-
-#~ msgid "Insert character"
-#~ msgstr "Ievietot rakstzīmi"

@@ -1,97 +1,119 @@
-# Thai gcaltool translation.
-# Copyright (C) 2005-2012 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-calc package.
-#
-# Ithipan Methasate <tumm_xx@hotmail.com>, 2003.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Chanchai Junlouchai <taz@opentle.org>, 2004.
+# Ithipan Methasate <tumm_xx@hotmail.com>, 2003.
 # Paisa Seeluangsawat <paisa@users.sf.net>, 2004.
-# Supranee Thirawatthanasuk <supranee@opentle.org>, 2004.
-# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2005-2008, 2010-2012.
 # Sira Nokyoongtong <gumaraa@gmail.com>, 2010.
+# Supranee Thirawatthanasuk <supranee@opentle.org>, 2004.
+# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2005-2008, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mate-calc&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-10-05 05:01+0000\n"
-"PO-Revision-Date: 2012-10-09 19:16+0700\n"
-"Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
-"Language-Team: Thai <thai-l10n@googlegroups.com>\n"
-"Language: th\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2013-03-24 20:10+0100\n"
+"PO-Revision-Date: 2013-03-24 19:27+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Thai (http://www.transifex.com/projects/p/MATE/language/th/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: th\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#. Accessible name for the inverse button
-#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:24
-msgid "Inverse"
-msgstr "ส่วนกลับ"
-
 #. Accessible name for the factorize button
-#: ../data/buttons-advanced.ui.h:4 ../data/buttons-programming.ui.h:2
+#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:8
 msgid "Factorize"
 msgstr "แยกตัวประกอบ"
 
-#. Accessible name for the factorial button
-#: ../data/buttons-advanced.ui.h:6 ../data/buttons-programming.ui.h:22
-msgid "Factorial"
-msgstr "แฟกทอเรียล"
-
 #. Label on the solve button (clicking this solves the displayed calculation)
-#: ../data/buttons-advanced.ui.h:8 ../data/buttons-basic.ui.h:2
-#: ../data/buttons-financial.ui.h:76 ../data/buttons-programming.ui.h:6
+#: ../data/buttons-advanced.ui.h:4 ../data/buttons-basic.ui.h:2
+#: ../data/buttons-financial.ui.h:76 ../data/buttons-programming.ui.h:12
 msgid "="
 msgstr "="
 
+#: ../data/buttons-advanced.ui.h:5 ../data/buttons-basic.ui.h:3
+#: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
+msgid "Clear"
+msgstr "ล้าง"
+
 #. Accessible name for the subscript mode button
-#: ../data/buttons-advanced.ui.h:10 ../data/buttons-programming.ui.h:8
+#: ../data/buttons-advanced.ui.h:7 ../data/buttons-programming.ui.h:15
 msgid "Subscript"
 msgstr "ตัวห้อย"
 
 #. Accessible name for the superscript mode button
-#: ../data/buttons-advanced.ui.h:12 ../data/buttons-programming.ui.h:10
+#: ../data/buttons-advanced.ui.h:9 ../data/buttons-programming.ui.h:17
 msgid "Superscript"
 msgstr "ตัวยก"
 
 #. Accessible name for the scientific exponent button
-#: ../data/buttons-advanced.ui.h:14
+#: ../data/buttons-advanced.ui.h:11
 msgid "Scientific Exponent"
 msgstr "เลขชี้กำลังวิทยาศาสตร์"
 
 #. Accessible name for the memory button
 #. Accessible name for the memory value button
 #. Tooltip for the memory button
-#: ../data/buttons-advanced.ui.h:16 ../data/buttons-financial.ui.h:72
-#: ../src/math-buttons.c:222
+#: ../data/buttons-advanced.ui.h:13 ../data/buttons-financial.ui.h:72
+#: ../src/math-buttons.c:232
 msgid "Memory"
 msgstr "หน่วยความจำ"
 
 #. The label on the memory button
-#: ../data/buttons-advanced.ui.h:18 ../data/buttons-financial.ui.h:74
-#: ../data/buttons-programming.ui.h:14
+#: ../data/buttons-advanced.ui.h:15 ../data/buttons-financial.ui.h:74
+#: ../data/buttons-programming.ui.h:21
 msgid "x"
 msgstr "x"
 
-#. Accessible name for the absolute value button
-#: ../data/buttons-advanced.ui.h:20 ../data/buttons-programming.ui.h:4
-msgid "Absolute Value"
-msgstr "ค่าสัมบูรณ์"
-
 #. Accessible name for the exponentiation (x to the power of y) button
-#: ../data/buttons-advanced.ui.h:22 ../data/buttons-basic.ui.h:4
-#: ../data/buttons-financial.ui.h:98 ../data/buttons-programming.ui.h:26
+#: ../data/buttons-advanced.ui.h:17 ../data/buttons-basic.ui.h:5
+#: ../data/buttons-financial.ui.h:100 ../data/buttons-programming.ui.h:33
 msgid "Exponent"
 msgstr "ยกกำลัง"
 
+#: ../data/buttons-advanced.ui.h:18 ../data/buttons-basic.ui.h:6
+#: ../data/buttons-financial.ui.h:98
+msgid "Undo"
+msgstr "เรียกคืน"
+
+#: ../data/buttons-advanced.ui.h:19
+msgid "acos"
+msgstr ""
+
+#: ../data/buttons-advanced.ui.h:20
+msgid "asin"
+msgstr ""
+
+#: ../data/buttons-advanced.ui.h:21
+msgid "atan"
+msgstr ""
+
 #. Accessible name for the store value button
-#: ../data/buttons-advanced.ui.h:24 ../data/buttons-programming.ui.h:12
+#: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:19
 msgid "Store"
 msgstr "เก็บ"
 
+#. Accessible name for the inverse button
+#: ../data/buttons-advanced.ui.h:25 ../data/buttons-programming.ui.h:31
+msgid "Inverse"
+msgstr "ส่วนกลับ"
+
+#. Accessible name for the factorial button
+#: ../data/buttons-advanced.ui.h:27 ../data/buttons-programming.ui.h:29
+msgid "Factorial"
+msgstr "แฟกทอเรียล"
+
+#. Accessible name for the absolute value button
+#: ../data/buttons-advanced.ui.h:29 ../data/buttons-programming.ui.h:10
+msgid "Absolute Value"
+msgstr "ค่าสัมบูรณ์"
+
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
-#: ../data/buttons-financial.ui.h:2 ../src/math-buttons.c:246
+#: ../data/buttons-financial.ui.h:2 ../src/math-buttons.c:256
 msgid "Compounding Term"
 msgstr "จำนวนงวดทบต้น"
 
@@ -116,9 +138,7 @@ msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr ""
-"คำนวณจำนวนงวดในการจ่ายดอกเบี้ยทบต้น เพื่อเพิ่มมูลค่าเงินลงทุนปัจจุบันให้เป็นค่าในอนาคตที่ต้องการ "
-"ที่อัตราดอกเบี้ยคงที่ที่กำหนด"
+msgstr "คำนวณจำนวนงวดในการจ่ายดอกเบี้ยทบต้น เพื่อเพิ่มมูลค่าเงินลงทุนปัจจุบันให้เป็นค่าในอนาคตที่ต้องการ ที่อัตราดอกเบี้ยคงที่ที่กำหนด"
 
 #. Periodic Interest Rate Dialog: Label before future value input
 #: ../data/buttons-financial.ui.h:12
@@ -154,7 +174,7 @@ msgstr "_ระยะเวลา:"
 
 #. Title of Future Value dialog
 #. Tooltip for the future value button
-#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.c:252
+#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.c:262
 msgid "Future Value"
 msgstr "มูลค่าในอนาคต"
 
@@ -164,9 +184,7 @@ msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
-msgstr ""
-"คำนวณมูลค่าในอนาคตของการลงทุนที่ผ่อนส่งเป็นงวด งวดละเท่ากัน โดยให้ดอกเบี้ยในอัตราคงที่ "
-"เป็นจำนวนงวดที่กำหนด"
+msgstr "คำนวณมูลค่าในอนาคตของการลงทุนที่ผ่อนส่งเป็นงวด งวดละเท่ากัน โดยให้ดอกเบี้ยในอัตราคงที่ เป็นจำนวนงวดที่กำหนด"
 
 #. Payment Period Dialog: Label before periodic payment input
 #: ../data/buttons-financial.ui.h:28
@@ -180,7 +198,7 @@ msgstr "_จำนวนงวด:"
 
 #. Title of Gross Profit Margin dialog
 #. Tooltip for the gross profit margin button
-#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:273
+#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:283
 msgid "Gross Profit Margin"
 msgstr "อัตรากำไรสุทธิ"
 
@@ -198,7 +216,7 @@ msgstr "อัตรา_กำไร:"
 
 #. Title of Periodic Payment dialog
 #. Tooltip for the periodic payment button
-#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:270
+#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:280
 msgid "Periodic Payment"
 msgstr "เงินผ่อนต่องวด"
 
@@ -221,7 +239,7 @@ msgstr "_จำนวนงวด:"
 
 #. Title of Present Value dialog
 #. Tooltip for the present value button
-#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:267
+#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:277
 msgid "Present Value"
 msgstr "มูลค่าปัจจุบัน"
 
@@ -231,13 +249,11 @@ msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr ""
-"คำนวณมูลค่าปัจจุบันของการลงทุนที่ผ่อนชำระเป็นงวด งวดละเท่ากัน "
-"โดยหักดอกเบี้ยออกเป็นจำนวนงวดที่กำหนด"
+msgstr "คำนวณมูลค่าปัจจุบันของการลงทุนที่ผ่อนชำระเป็นงวด งวดละเท่ากัน โดยหักดอกเบี้ยออกเป็นจำนวนงวดที่กำหนด"
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
-#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.c:264
+#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.c:274
 msgid "Periodic Interest Rate"
 msgstr "อัตราดอกเบี้ยต่องวด"
 
@@ -246,9 +262,7 @@ msgstr "อัตราดอกเบี้ยต่องวด"
 msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
-msgstr ""
-"คำนวณอัตราดอกเบี้ยต่องวดที่ต้องใช้ในการเพิ่มมูลค่าเงินลงทุนให้เป็นค่าในอนาคตที่ต้องการ "
-"ในจำนวนงวดการทบต้นที่กำหนด"
+msgstr "คำนวณอัตราดอกเบี้ยต่องวดที่ต้องใช้ในการเพิ่มมูลค่าเงินลงทุนให้เป็นค่าในอนาคตที่ต้องการ ในจำนวนงวดการทบต้นที่กำหนด"
 
 #. Title of Straight-Line Depreciation dialog
 #: ../data/buttons-financial.ui.h:54
@@ -272,11 +286,7 @@ msgid ""
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr ""
-"คำนวณค่าเสื่อมราคาแบบเส้นตรงของทรัพย์สินในระยะเวลาที่กำหนด วิธีคำนวณค่าเสื่อมราคาแบบเส้นตรง "
-"จะแบ่งราคาที่เสื่อมออกเป็นช่วงเท่าๆ กันตลอดอายุการใช้งานของทรัพย์สิน "
-"อายุการใช้งานจะนับเป็นจำนวนรอบการคำนวณการเสื่อมราคาตลอดการใช้งานของทรัพย์สิน "
-"ซึ่งโดยปกติจะมีหน่วยเป็นปี"
+msgstr "คำนวณค่าเสื่อมราคาแบบเส้นตรงของทรัพย์สินในระยะเวลาที่กำหนด วิธีคำนวณค่าเสื่อมราคาแบบเส้นตรง จะแบ่งราคาที่เสื่อมออกเป็นช่วงเท่าๆ กันตลอดอายุการใช้งานของทรัพย์สิน อายุการใช้งานจะนับเป็นจำนวนรอบการคำนวณการเสื่อมราคาตลอดการใช้งานของทรัพย์สิน ซึ่งโดยปกติจะมีหน่วยเป็นปี"
 
 #. Title of Sum-of-the-Years'-Digits Depreciation dialog
 #: ../data/buttons-financial.ui.h:62
@@ -287,15 +297,11 @@ msgstr "ค่าเสื่อมราคาแบบผลรวมจำน
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
-"accelerates the rate of depreciation, so that more depreciation expense "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
+" accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
-msgstr ""
-"คำนวณค่าเสื่อมราคาของทรัพย์สินในระยะเวลาที่กำหนด โดยใช้วิธีผลรวมจำนวนปี "
-"วิธีคิดค่าเสื่อมราคาแบบนี้ อัตราการเสื่อมราคาจะสูงในช่วงแรกๆ และจะลดลงในช่วงหลังๆ "
-"อายุการใช้งานจะนับเป็นจำนวนรอบการคำนวณการเสื่อมราคาตลอดการใช้งานของทรัพย์สิน "
-"ซึ่งโดยปกติจะมีหน่วยเป็นปี"
+msgstr "คำนวณค่าเสื่อมราคาของทรัพย์สินในระยะเวลาที่กำหนด โดยใช้วิธีผลรวมจำนวนปี วิธีคิดค่าเสื่อมราคาแบบนี้ อัตราการเสื่อมราคาจะสูงในช่วงแรกๆ และจะลดลงในช่วงหลังๆ อายุการใช้งานจะนับเป็นจำนวนรอบการคำนวณการเสื่อมราคาตลอดการใช้งานของทรัพย์สิน ซึ่งโดยปกติจะมีหน่วยเป็นปี"
 
 #. Title of Payment Period dialog
 #: ../data/buttons-financial.ui.h:66
@@ -311,94 +317,123 @@ msgstr "มูลค่าใน_อนาคต:"
 #: ../data/buttons-financial.ui.h:70
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest "
-"rate."
-msgstr ""
-"คำนวณจำนวนงวดที่ต้องผ่อนเป็นรายปีแบบปกติ เพื่อสะสมให้เป็นมูลค่าในอนาคตที่กำหนด "
-"ที่อัตราดอกเบี้ยคงที่"
+"of an ordinary annuity, to accumulate a future value, at a periodic interest"
+" rate."
+msgstr "คำนวณจำนวนงวดที่ต้องผ่อนเป็นรายปีแบบปกติ เพื่อสะสมให้เป็นมูลค่าในอนาคตที่กำหนด ที่อัตราดอกเบี้ยคงที่"
 
-#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
-#: ../data/buttons-financial.ui.h:78
+#. Calculates the number of compounding periods necessary to increase an
+#. investment of present value pv to a future value of fv, at a fixed interest
+#. rate of int per compounding period. See also:
+#. http://en.wikipedia.org/wiki/Compound_interest
+#: ../data/buttons-financial.ui.h:79
 msgid "Ctrm"
 msgstr "Ctrm"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:80
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the double-declining balance method. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:81
 msgid "Ddb"
 msgstr "Ddb"
 
-#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
-#: ../data/buttons-financial.ui.h:82
+#. Calculates the future value of an investment based on a series of equal
+#. payments, each of amount pmt, at a periodic interest rate of int, over the
+#. number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Future_value
+#: ../data/buttons-financial.ui.h:83
 msgid "Fv"
 msgstr "Fv"
 
-#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
-#: ../data/buttons-financial.ui.h:84
+#. Calculates the number of payment periods that are necessary during the term
+#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
+#. interest rate of int. Each payment is equal to amount pmt. See also:
+#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#: ../data/buttons-financial.ui.h:85
 msgid "Term"
 msgstr "Term"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:86
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the Sum-Of-The-Years'-Digits method. This method of
+#. depreciation accelerates the rate of depreciation, so that more
+#. depreciation expense occurs in earlier periods than in later ones. The
+#. depreciable cost is cost - salvage. The useful life is the number of
+#. periods, typically years, over which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:87
 msgid "Syd"
 msgstr "Syd"
 
-#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:88
+#. Calculates the straight-line depreciation of an asset for one period. The
+#. depreciable cost is cost - salvage. The straight-line method of
+#. depreciation divides the depreciable cost evenly over the useful life of an
+#. asset. The useful life is the number of periods, typically years, over
+#. which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:89
 msgid "Sln"
 msgstr "Sln"
 
-#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
-#: ../data/buttons-financial.ui.h:90
+#. Calculates the periodic interest necessary to increase an investment of
+#. present value pv to a future value of fv, over the number of compounding
+#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#: ../data/buttons-financial.ui.h:91
 msgid "Rate"
 msgstr "อัตรา"
 
-#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
-#: ../data/buttons-financial.ui.h:92
+#. Calculates the present value of an investment based on a series of equal
+#. payments, each of amount pmt, discounted at a periodic interest rate of
+#. int, over the number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Present_value
+#: ../data/buttons-financial.ui.h:93
 msgid "Pv"
 msgstr "Pv"
 
-#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
-#: ../data/buttons-financial.ui.h:94
+#. Calculates the amount of the periodic payment of a loan, where payments are
+#. made at the end of each payment period. See also:
+#. http://en.wikipedia.org/wiki/Amortization_schedule
+#: ../data/buttons-financial.ui.h:95
 msgid "Pmt"
 msgstr "Pmt"
 
-#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
-#: ../data/buttons-financial.ui.h:96
+#. Calculates the resale price of a product, based on the product cost and the
+#. wanted gross profit margin. See also:
+#. http://en.wikipedia.org/wiki/Gross_profit_margin
+#: ../data/buttons-financial.ui.h:97
 msgid "Gpm"
 msgstr "Gpm"
 
+#. Title of insert character code dialog
+#. Tooltip for the insert character code button
+#: ../data/buttons-programming.ui.h:2 ../src/math-buttons.c:235
+msgid "Insert Character Code"
+msgstr "แทรกรหัสตัวอักษร"
+
+#. Insert ASCII dialog: Button to insert selected character
+#: ../data/buttons-programming.ui.h:4
+msgid "_Insert"
+msgstr "แ_ทรก"
+
+#. Insert ASCII dialog: Label before character entry
+#: ../data/buttons-programming.ui.h:6
+msgid "Ch_aracter:"
+msgstr "ตัว_อักษร:"
+
 #. Accessible name for the shift left button
 #. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:16 ../src/math-buttons.c:240
+#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
 msgid "Shift Left"
 msgstr "เลื่อนบิตไปทางซ้าย"
 
 #. Accessible name for the shift right button
 #. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:18 ../src/math-buttons.c:243
+#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
 msgid "Shift Right"
 msgstr "เลื่อนบิตไปทางขวา"
 
 #. Accessible name for the insert character button
-#: ../data/buttons-programming.ui.h:20
+#: ../data/buttons-programming.ui.h:27
 msgid "Insert Character"
 msgstr "แทรกตัวอักษร"
-
-#. Title of insert character code dialog
-#. Tooltip for the insert character code button
-#: ../data/buttons-programming.ui.h:28 ../src/math-buttons.c:225
-msgid "Insert Character Code"
-msgstr "แทรกรหัสตัวอักษร"
-
-#. Insert ASCII dialog: Label before character entry
-#: ../data/buttons-programming.ui.h:30
-msgid "Ch_aracter:"
-msgstr "ตัว_อักษร:"
-
-#. Insert ASCII dialog: Button to insert selected character
-#: ../data/buttons-programming.ui.h:32
-msgid "_Insert"
-msgstr "แ_ทรก"
 
 #. Word size combo: 8 bits
 #: ../data/preferences.ui.h:2
@@ -421,8 +456,7 @@ msgid "64-bit"
 msgstr "64 บิต"
 
 #. Title of preferences dialog
-#: ../data/preferences.ui.h:9 ../src/mate-calc.c:522
-#: ../src/math-preferences.c:231
+#: ../data/preferences.ui.h:9 ../src/math-preferences.c:238
 msgid "Preferences"
 msgstr "ปรับแต่ง"
 
@@ -451,110 +485,114 @@ msgstr "แสดงเลขศู_นย์ต่อท้าย"
 msgid "Show _thousands separators"
 msgstr "แสดงสัญลักษณ์แบ่งหลัก_พัน"
 
+#: ../data/mate-calc.desktop.in.h:1
+msgid "MATE Calculator"
+msgstr ""
+
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:243
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
 msgid "Calculator"
 msgstr "เครื่องคิดเลข"
 
-#: ../data/mate-calc.desktop.in.h:2
+#: ../data/mate-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "คำนวณเลขคณิต ฟังก์ชันวิทยาศาสตร์ หรือการเงิน"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:1
+#: ../data/org.mate.calc.gschema.xml.in.h:1
 msgid "Accuracy value"
 msgstr "ความละเอียด"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:2
+#: ../data/org.mate.calc.gschema.xml.in.h:2
 msgid "The number of digits displayed after the numeric point"
 msgstr "จำนวนหลักของเลขหลังจุดทศนิยม"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:3
+#: ../data/org.mate.calc.gschema.xml.in.h:3
 msgid "Word size"
 msgstr "ขนาดเวิร์ด"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:4
+#: ../data/org.mate.calc.gschema.xml.in.h:4
 msgid "The size of the words used in bitwise operations"
 msgstr "ขนาดของเวิร์ดที่ใช้ในการกระทำบิต"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:5
+#: ../data/org.mate.calc.gschema.xml.in.h:5
 msgid "Numeric Base"
 msgstr "ฐานเลข"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:6
+#: ../data/org.mate.calc.gschema.xml.in.h:6
 msgid "The numeric base"
 msgstr "ฐานเลข"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:7
+#: ../data/org.mate.calc.gschema.xml.in.h:7
 msgid "Show Thousands Separators"
 msgstr "แสดงสัญลักษณ์แบ่งหลักพัน"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:8
+#: ../data/org.mate.calc.gschema.xml.in.h:8
 msgid "Indicates whether thousands separators are shown in large numbers."
 msgstr "กำหนดว่าจะแสดงสัญลักษณ์แบ่งหลักพันในเลขจำนวนขนาดใหญ่หรือไม่"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:9
+#: ../data/org.mate.calc.gschema.xml.in.h:9
 msgid "Show Trailing Zeroes"
 msgstr "แสดงเลขศูนย์ต่อท้าย"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:10
+#: ../data/org.mate.calc.gschema.xml.in.h:10
 msgid ""
 "Indicates whether any trailing zeroes after the numeric point should be "
 "shown in the display value."
 msgstr "กำหนดว่าจะแสดงเลขศูนย์เติมท้ายจุดทศนิยมในค่าที่แสดงหรือไม่"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:11
+#: ../data/org.mate.calc.gschema.xml.in.h:11
 msgid "Number format"
 msgstr "รูปแบบตัวเลข"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:12
+#: ../data/org.mate.calc.gschema.xml.in.h:12
 msgid "The format to display numbers in"
 msgstr "รูปแบบตัวเลขที่แสดง"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:13
+#: ../data/org.mate.calc.gschema.xml.in.h:13
 msgid "Angle units"
 msgstr "หน่วยมุม"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:14
+#: ../data/org.mate.calc.gschema.xml.in.h:14
 msgid "The angle units to use"
 msgstr "หน่วยมุมที่ใช้"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:15
+#: ../data/org.mate.calc.gschema.xml.in.h:15
 msgid "Button mode"
 msgstr "โหมดปุ่ม"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:16
+#: ../data/org.mate.calc.gschema.xml.in.h:16
 msgid "The button mode"
 msgstr "โหมดของปุ่มกด"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:17
+#: ../data/org.mate.calc.gschema.xml.in.h:17
 msgid "Source currency"
 msgstr "สกุลเงินต้นทาง"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:18
+#: ../data/org.mate.calc.gschema.xml.in.h:18
 msgid "Currency of the current calculation"
 msgstr "สกุลเงินของการคำนวณปัจจุบัน"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:19
+#: ../data/org.mate.calc.gschema.xml.in.h:19
 msgid "Target currency"
 msgstr "สกุลเงินปลายทาง"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:20
+#: ../data/org.mate.calc.gschema.xml.in.h:20
 msgid "Currency to convert the current calculation into"
 msgstr "สกุลเงินปลายทางที่จะแปลงผลการคำนวณปัจจุบันไป"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:21
+#: ../data/org.mate.calc.gschema.xml.in.h:21
 msgid "Source units"
 msgstr "หน่วยต้นทาง"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:22
+#: ../data/org.mate.calc.gschema.xml.in.h:22
 msgid "Units of the current calculation"
 msgstr "หน่วยของการคำนวณปัจจุบัน"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:23
+#: ../data/org.mate.calc.gschema.xml.in.h:23
 msgid "Target units"
 msgstr "หน่วยปลายทาง"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:24
+#: ../data/org.mate.calc.gschema.xml.in.h:24
 msgid "Units to convert the current calculation into"
 msgstr "หน่วยที่จะแปลงผลการคำนวณปัจจุบันไป"
 
@@ -808,11 +846,10 @@ msgstr "ผิดพลาด: จำนวนคาบต้องเป็น�
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr ""
-"วิธีใช้:\n"
-"  %s — เครื่องคำนวณทางคณิตศาสตร์"
+msgstr "วิธีใช้:\n  %s — เครื่องคำนวณทางคณิตศาสตร์"
 
-#. Description on mate-calc command-line help options displayed on command-line
+#. Description on mate-calc command-line help options displayed on command-
+#. line
 #: ../src/mate-calc.c:87
 #, c-format
 msgid ""
@@ -821,34 +858,21 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr ""
-"ตัวเลือก:\n"
-"  -v, --version                   แสดงเลขรุ่น\n"
-"  -h, -?, --help                  แสดงคำอธิบายตัวเลือกต่างๆ\n"
-"  --help-all                      แสดงคำอธิบายของตัวเลือกทั้งหมด\n"
-"  --help-gtk                      แสดงตัวเลือก GTK+"
+msgstr "ตัวเลือก:\n  -v, --version                   แสดงเลขรุ่น\n  -h, -?, --help                  แสดงคำอธิบายตัวเลือกต่างๆ\n  --help-all                      แสดงคำอธิบายของตัวเลือกทั้งหมด\n  --help-gtk                      แสดงตัวเลือก GTK+"
 
-#. Description on mate-calc command-line GTK+ options displayed on command-line
+#. Description on mate-calc command-line GTK+ options displayed on command-
+#. line
 #: ../src/mate-calc.c:98
 #, c-format
 msgid ""
 "GTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window "
-"manager\n"
-"  --name=NAME                     Program name as used by the window "
-"manager\n"
+"  --class=CLASS                   Program class as used by the window manager\n"
+"  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr ""
-"ตัวเลือก GTK+:\n"
-"  --class=CLASS                   คลาสของโปรแกรมตามที่ใช้โดยโปรแกรมจัดการหน้าต่าง\n"
-"  --name=NAME                     ชื่อของโปรแกรมตามที่ใช้โดยโปรแกรมจัดการหน้าต่าง\n"
-"  --screen=SCREEN                 สกรีน X ที่จะใช้\n"
-"  --sync                          ทำให้การเรียก X เป็นแบบหยุดคอย (synchronous)\n"
-"  --gtk-module=MODULES            โหลดมอดูล GTK+ เพิ่มเติม\n"
-"  --g-fatal-warnings              ถือว่าคำเตือนต่างๆ ที่เกิดขึ้นเป็นความผิดพลาดร้ายแรง"
+msgstr "ตัวเลือก GTK+:\n  --class=CLASS                   คลาสของโปรแกรมตามที่ใช้โดยโปรแกรมจัดการหน้าต่าง\n  --name=NAME                     ชื่อของโปรแกรมตามที่ใช้โดยโปรแกรมจัดการหน้าต่าง\n  --screen=SCREEN                 สกรีน X ที่จะใช้\n  --sync                          ทำให้การเรียก X เป็นแบบหยุดคอย (synchronous)\n  --gtk-module=MODULES            โหลดมอดูล GTK+ เพิ่มเติม\n  --g-fatal-warnings              ถือว่าคำเตือนต่างๆ ที่เกิดขึ้นเป็นความผิดพลาดร้ายแรง"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -856,9 +880,7 @@ msgstr ""
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr ""
-"ตัวเลือกของโปรแกรม:\n"
-"  -s, --solve <equation>          หาผลลัพธ์ของนิพจน์ที่กำหนด"
+msgstr "ตัวเลือกของโปรแกรม:\n  -s, --solve <equation>          หาผลลัพธ์ของนิพจน์ที่กำหนด"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:156
@@ -872,375 +894,294 @@ msgstr "อาร์กิวเมนต์ --solve ต้องการนิ
 msgid "Unknown argument '%s'"
 msgstr "ไม่รู้จักอาร์กิวเมนต์ '%s'"
 
-#. Translators: Error message displayed when unable to launch help browser
-#: ../src/mate-calc.c:358
-msgid "Unable to open help file"
-msgstr "ไม่สามารถเปิดแฟ้มข้อมูลวิธีใช้"
-
-#. The translator credits. Please translate this with your name(s).
-#: ../src/mate-calc.c:390
-msgid "translator-credits"
-msgstr ""
-"Ithipan Methasate <tumm_xx@hotmail.com>\n"
-"Supranee Thirawatthanasuk <supranee@opentle.org>\n"
-"Chanchai Junlouchai <taz@opentle.org>\n"
-"Paisa Seeluangsawat <paisa@users.sf.net>\n"
-"Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
-"Sira Nokyoongtong <gumaraa@gmail.com>\n"
-"\n"
-"ถ้าพอมีเวลาโปรดมาช่วยกันแปล\n"
-"http://mate-th.sf.net"
-
-#. The license this software is under (GPL2+)
-#: ../src/mate-calc.c:393
-msgid ""
-"Gcalctool is free software; you can redistribute it and/or modify\n"
-"it under the terms of the GNU General Public License as published by\n"
-"the Free Software Foundation; either version 2 of the License, or\n"
-"(at your option) any later version.\n"
-"\n"
-"Gcalctool is distributed in the hope that it will be useful,\n"
-"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License\n"
-"along with Gcalctool; if not, write to the Free Software Foundation, Inc.,\n"
-"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
-"Gcalctool เป็นซอฟต์แวร์เสรี คุณสามารถแจกจ่ายต่อ และ/หรือ แก้ไขโปรแกรมได้\n"
-"ภายใต้เงื่อนไขของ GNU General Public License ที่เผยแพร่โดยมูลนิธิซอฟต์แวร์เสรี\n"
-"ไม่ว่าจะเป็นสัญญาอนุญาตรุ่นที่ 2 หรือรุ่นถัดมา (ตามแต่คุณจะเลือก)\n"
-"\n"
-"Gcalctool เผยแพร่ด้วยความหวังว่าโปรแกรมจะมีประโยชน์\n"
-"แต่ *ไม่มีการรับประกันใดๆ* ไม่มีแม้การรับประกัน *อรรถประโยชน์เชิงพาณิชย์*\n"
-"หรือ *ความเหมาะสมสำหรับวัตถุประสงค์เฉพาะกิจใดๆ* กรุณาอ่าน\n"
-"GNU General Public License เพื่อดูรายละเอียดเพิ่มเติม\n"
-"\n"
-"คุณควรจะได้รับสำเนาของ GNU General Public License มาพร้อมกับ Gcalctool\n"
-"ถ้าคุณไม่ได้รับ กรุณาติดต่อไปที่ Free Software Foundation, Inc., \n"
-"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-
-#. Program name in the about dialog
-#: ../src/mate-calc.c:410
-msgid "Gcalctool"
-msgstr "Gcalctool"
-
-#. Copyright notice in the about dialog
-#: ../src/mate-calc.c:414
-msgid "© 1986–2010 The Gcalctool authors"
-msgstr "© 1986–2010 The Gcalctool authors"
-
-#. Short description in the about dialog
-#: ../src/mate-calc.c:418
-msgid "Calculator with financial and scientific modes."
-msgstr "เครื่องคิดเลข พร้อมด้วยโหมดการเงินและวิทยาศาสตร์"
-
-#: ../src/mate-calc.c:515
-msgid "Basic"
-msgstr "พื้นฐาน"
-
-#: ../src/mate-calc.c:516
-msgid "Advanced"
-msgstr "พิเศษ"
-
-#: ../src/mate-calc.c:517
-msgid "Financial"
-msgstr "การเงิน"
-
-#: ../src/mate-calc.c:518
-msgid "Programming"
-msgstr "การเขียนโปรแกรม"
-
-#: ../src/mate-calc.c:519
-msgid "Mode"
-msgstr "โหมด"
-
-#: ../src/mate-calc.c:526
-msgid "About Calculator"
-msgstr "เกี่ยวกับเครื่องคิดเลข"
-
-#: ../src/mate-calc.c:527
-msgid "Help"
-msgstr "วิธีใช้"
-
-#: ../src/mate-calc.c:528
-msgid "Quit"
-msgstr "ออก"
-
 #. Tooltip for the Pi button
-#: ../src/math-buttons.c:94
+#: ../src/math-buttons.c:95
 msgid "Pi [Ctrl+P]"
 msgstr "พาย [Ctrl+P]"
 
 #. Tooltip for the Euler's Number button
-#: ../src/math-buttons.c:97
+#: ../src/math-buttons.c:98
 msgid "Euler’s Number"
 msgstr "ค่าคงที่ของออยเลอร์"
 
 #. Tooltip for the subscript button
-#: ../src/math-buttons.c:102
+#: ../src/math-buttons.c:103
 msgid "Subscript mode [Alt]"
 msgstr "โหมดเลขตัวห้อย [Alt]"
 
 #. Tooltip for the superscript button
-#: ../src/math-buttons.c:105
+#: ../src/math-buttons.c:106
 msgid "Superscript mode [Ctrl]"
 msgstr "โหมดเลขตัวยก [Ctrl]"
 
 #. Tooltip for the scientific exponent button
-#: ../src/math-buttons.c:108
+#: ../src/math-buttons.c:109
 msgid "Scientific exponent [Ctrl+E]"
 msgstr "เลขชี้กำลังวิทยาศาสตร์ [Ctrl+E]"
 
 #. Tooltip for the add button
-#: ../src/math-buttons.c:111
+#: ../src/math-buttons.c:112
 msgid "Add [+]"
 msgstr "บวก [+]"
 
 #. Tooltip for the subtract button
-#: ../src/math-buttons.c:114
+#: ../src/math-buttons.c:115
 msgid "Subtract [-]"
 msgstr "ลบ [-]"
 
 #. Tooltip for the multiply button
-#: ../src/math-buttons.c:117
+#: ../src/math-buttons.c:118
 msgid "Multiply [*]"
 msgstr "คูณ [*]"
 
 #. Tooltip for the divide button
-#: ../src/math-buttons.c:120
+#: ../src/math-buttons.c:121
 msgid "Divide [/]"
 msgstr "หาร [/]"
 
 #. Tooltip for the modulus divide button
-#: ../src/math-buttons.c:123
+#: ../src/math-buttons.c:124
 msgid "Modulus divide"
 msgstr "หารเอาเศษ"
 
 #. Tooltip for the additional functions button
-#: ../src/math-buttons.c:126
+#: ../src/math-buttons.c:127
 msgid "Additional Functions"
 msgstr "ฟังก์ชันเพิ่มเติม"
 
 #. Tooltip for the exponent button
-#: ../src/math-buttons.c:129
+#: ../src/math-buttons.c:130
 msgid "Exponent [^ or **]"
 msgstr "ยกกำลัง [^ หรือ **]"
 
 #. Tooltip for the square button
-#: ../src/math-buttons.c:132
+#: ../src/math-buttons.c:133
 msgid "Square [Ctrl+2]"
 msgstr "กำลังสอง [Ctrl+2]"
 
 #. Tooltip for the percentage button
-#: ../src/math-buttons.c:135
+#: ../src/math-buttons.c:136
 msgid "Percentage [%]"
 msgstr "อัตราร้อยละ [%]"
 
 #. Tooltip for the factorial button
-#: ../src/math-buttons.c:138
+#: ../src/math-buttons.c:139
 msgid "Factorial [!]"
 msgstr "แฟกทอเรียล [!]"
 
 #. Tooltip for the absolute value button
-#: ../src/math-buttons.c:141
+#: ../src/math-buttons.c:142
 msgid "Absolute value [|]"
 msgstr "ค่าสัมบูรณ์ [|]"
 
 #. Tooltip for the complex argument component button
-#: ../src/math-buttons.c:144
+#: ../src/math-buttons.c:145
 msgid "Complex argument"
 msgstr "อาร์กิวเมนต์ของเลขเชิงซ้อน"
 
 #. Tooltip for the complex conjugate button
-#: ../src/math-buttons.c:147
+#: ../src/math-buttons.c:148
 msgid "Complex conjugate"
 msgstr "สังยุคของเลขเชิงซ้อน"
 
 #. Tooltip for the root button
-#: ../src/math-buttons.c:150
+#: ../src/math-buttons.c:151
 msgid "Root [Ctrl+R]"
 msgstr "ราก [Ctrl+R]"
 
 #. Tooltip for the square root button
-#: ../src/math-buttons.c:153
+#: ../src/math-buttons.c:154
 msgid "Square root [Ctrl+R]"
 msgstr "รากที่สอง [Ctrl+R]"
 
 #. Tooltip for the logarithm button
-#: ../src/math-buttons.c:156
+#: ../src/math-buttons.c:157
 msgid "Logarithm"
 msgstr "ลอการิทึม"
 
 #. Tooltip for the natural logarithm button
-#: ../src/math-buttons.c:159
+#: ../src/math-buttons.c:160
 msgid "Natural Logarithm"
 msgstr "ลอการิทึมธรรมชาติ"
 
 #. Tooltip for the sine button
-#: ../src/math-buttons.c:162
+#: ../src/math-buttons.c:163
 msgid "Sine"
 msgstr "ไซน์"
 
 #. Tooltip for the cosine button
-#: ../src/math-buttons.c:165
+#: ../src/math-buttons.c:166
 msgid "Cosine"
 msgstr "โคไซน์"
 
 #. Tooltip for the tangent button
-#: ../src/math-buttons.c:168
+#: ../src/math-buttons.c:169
 msgid "Tangent"
 msgstr "แทนเจนท์"
 
 #. Tooltip for the hyperbolic sine button
-#: ../src/math-buttons.c:171
+#: ../src/math-buttons.c:172
 msgid "Hyperbolic Sine"
 msgstr "ไซน์ไฮเพอร์โบลิก"
 
 #. Tooltip for the hyperbolic cosine button
-#: ../src/math-buttons.c:174
+#: ../src/math-buttons.c:175
 msgid "Hyperbolic Cosine"
 msgstr "โคไซน์ไฮเพอร์โบลิก"
 
 #. Tooltip for the hyperbolic tangent button
-#: ../src/math-buttons.c:177
+#: ../src/math-buttons.c:178
 msgid "Hyperbolic Tangent"
 msgstr "แทนเจนต์ไฮเพอร์โบลิก"
 
+#. Tooltip for the inverse sine button
+#: ../src/math-buttons.c:181
+msgid "Inverse Sine"
+msgstr ""
+
+#. Tooltip for the inverse cosine button
+#: ../src/math-buttons.c:184
+msgid "Inverse Cosine"
+msgstr ""
+
+#. Tooltip for the inverse tangent button
+#: ../src/math-buttons.c:187
+msgid "Inverse Tangent"
+msgstr ""
+
 #. Tooltip for the inverse button
-#: ../src/math-buttons.c:180
+#: ../src/math-buttons.c:190
 msgid "Inverse [Ctrl+I]"
 msgstr "ส่วนกลับ [Ctrl+I]"
 
 #. Tooltip for the boolean AND button
-#: ../src/math-buttons.c:183
+#: ../src/math-buttons.c:193
 msgid "Boolean AND"
 msgstr "AND แบบบูลีน"
 
 #. Tooltip for the boolean OR button
-#: ../src/math-buttons.c:186
+#: ../src/math-buttons.c:196
 msgid "Boolean OR"
 msgstr "OR แบบบูลีน"
 
 #. Tooltip for the exclusive OR button
-#: ../src/math-buttons.c:189
+#: ../src/math-buttons.c:199
 msgid "Boolean Exclusive OR"
 msgstr "Exclusive OR แบบบูลีน"
 
 #. Tooltip for the boolean NOT button
-#: ../src/math-buttons.c:192
+#: ../src/math-buttons.c:202
 msgid "Boolean NOT"
 msgstr "NOT แบบบูลีน"
 
 #. Tooltip for the integer component button
-#: ../src/math-buttons.c:195 ../src/math-buttons.c:983
+#: ../src/math-buttons.c:205 ../src/math-buttons.c:994
 msgid "Integer Component"
 msgstr "ส่วนจำนวนเต็ม"
 
 #. Tooltip for the fractional component button
-#: ../src/math-buttons.c:198 ../src/math-buttons.c:985
+#: ../src/math-buttons.c:208 ../src/math-buttons.c:996
 msgid "Fractional Component"
 msgstr "ส่วนเศษทศนิยม"
 
 #. Tooltip for the real component button
-#: ../src/math-buttons.c:201
+#: ../src/math-buttons.c:211
 msgid "Real Component"
 msgstr "ส่วนจริง"
 
 #. Tooltip for the imaginary component button
-#: ../src/math-buttons.c:204
+#: ../src/math-buttons.c:214
 msgid "Imaginary Component"
 msgstr "ส่วนจินตภาพ"
 
 #. Tooltip for the ones' complement button
-#: ../src/math-buttons.c:207
+#: ../src/math-buttons.c:217
 msgid "Ones' Complement"
 msgstr "ส่วนเติมเต็มหนึ่ง"
 
 #. Tooltip for the two's complement button
-#: ../src/math-buttons.c:210
+#: ../src/math-buttons.c:220
 msgid "Two's Complement"
 msgstr "ส่วนเติมเต็มสอง"
 
 #. Tooltip for the truncate button
-#: ../src/math-buttons.c:213
+#: ../src/math-buttons.c:223
 msgid "Truncate"
 msgstr "ตัดทอนค่า"
 
 #. Tooltip for the start group button
-#: ../src/math-buttons.c:216
+#: ../src/math-buttons.c:226
 msgid "Start Group [(]"
 msgstr "เริ่มกลุ่มคำนวณ [(]"
 
 #. Tooltip for the end group button
-#: ../src/math-buttons.c:219
+#: ../src/math-buttons.c:229
 msgid "End Group [)]"
 msgstr "จบกลุ่มคำนวณ [)]"
 
 #. Tooltip for the solve button
-#: ../src/math-buttons.c:228
+#: ../src/math-buttons.c:238
 msgid "Calculate Result"
 msgstr "คำนวณผลลัพธ์"
 
 #. Tooltip for the factor button
-#: ../src/math-buttons.c:231
+#: ../src/math-buttons.c:241
 msgid "Factorize [Ctrl+F]"
 msgstr "แยกตัวประกอบ [Ctrl+F]"
 
 #. Tooltip for the clear button
-#: ../src/math-buttons.c:234
+#: ../src/math-buttons.c:244
 msgid "Clear Display [Escape]"
 msgstr "ล้างช่องแสดงผล [Escape]"
 
 #. Tooltip for the undo button
-#: ../src/math-buttons.c:237
+#: ../src/math-buttons.c:247
 msgid "Undo [Ctrl+Z]"
 msgstr "เรียกคืน [Ctrl+Z]"
 
 #. Tooltip for the double declining depreciation button
-#: ../src/math-buttons.c:249
+#: ../src/math-buttons.c:259
 msgid "Double Declining Depreciation"
 msgstr "ค่าเสื่อมราคาแบบยอดลดลงทวีคูณ"
 
 #. Tooltip for the financial term button
-#: ../src/math-buttons.c:255
+#: ../src/math-buttons.c:265
 msgid "Financial Term"
 msgstr "เทอมการเงิน"
 
 #. Tooltip for the sum of the years digits depreciation button
-#: ../src/math-buttons.c:258
+#: ../src/math-buttons.c:268
 msgid "Sum of the Years Digits Depreciation"
 msgstr "ค่าเสื่อมราคาแบบผลรวมจำนวนปี"
 
 #. Tooltip for the straight line depreciation button
-#: ../src/math-buttons.c:261
+#: ../src/math-buttons.c:271
 msgid "Straight Line Depreciation"
 msgstr "ค่าเสื่อมราคาแบบเส้นตรง"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: ../src/math-buttons.c:601
+#: ../src/math-buttons.c:611
 msgid "Binary"
 msgstr "ฐานสอง"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: ../src/math-buttons.c:605
+#: ../src/math-buttons.c:615
 msgid "Octal"
 msgstr "ฐานแปด"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: ../src/math-buttons.c:609
+#: ../src/math-buttons.c:619
 msgid "Decimal"
 msgstr "ฐานสิบ"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: ../src/math-buttons.c:613
+#: ../src/math-buttons.c:623
 msgid "Hexadecimal"
 msgstr "ฐานสิบหก"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: ../src/math-buttons.c:894 ../src/math-buttons.c:937
+#: ../src/math-buttons.c:905 ../src/math-buttons.c:948
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
@@ -1248,33 +1189,34 @@ msgstr[0] "_%d ตำแหน่ง"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: ../src/math-buttons.c:898 ../src/math-buttons.c:941
+#: ../src/math-buttons.c:909 ../src/math-buttons.c:952
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
 msgstr[0] "%d ตำแหน่ง"
 
 #. Tooltip for the round button
-#: ../src/math-buttons.c:987
+#: ../src/math-buttons.c:998
 msgid "Round"
 msgstr "ปัดเศษ"
 
 #. Tooltip for the floor button
-#: ../src/math-buttons.c:989
+#: ../src/math-buttons.c:1000
 msgid "Floor"
 msgstr "ปัดเศษลง"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:991
+#: ../src/math-buttons.c:1002
 msgid "Ceiling"
 msgstr "ปัดเศษขึ้น"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:993
+#: ../src/math-buttons.c:1004
 msgid "Sign"
 msgstr "เครื่องหมาย"
 
-#. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
+#. Label that is displayed between the two conversion combo boxes, e.g.
+#. "[degrees] in [radians]"
 #: ../src/math-converter.c:412
 msgid " in "
 msgstr " เป็น "
@@ -1294,138 +1236,224 @@ msgstr "ไม่มีประวัติคำสั่งที่จะเ
 msgid "No redo history"
 msgstr "ไม่มีประวัติคำสั่งที่จะทำซ้ำ"
 
-#: ../src/math-equation.c:944
+#: ../src/math-equation.c:948
 msgid "No sane value to store"
 msgstr "ไม่มีค่าที่ใช้ได้ให้เก็บ"
 
-#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
-#: ../src/math-equation.c:1226
+#. Error displayed to user when they perform a bitwise operation on numbers
+#. greater than the current word
+#: ../src/math-equation.c:1230
 msgid "Overflow. Try a bigger word size"
 msgstr "ค่าล้น กรุณาลองใช้ขนาดเวิร์ดที่ใหญ่กว่านี้"
 
 #. Error displayed to user when they an unknown variable is entered
-#: ../src/math-equation.c:1231
+#: ../src/math-equation.c:1235
 #, c-format
 msgid "Unknown variable '%s'"
 msgstr "ไม่รู้จักตัวแปร '%s'"
 
 #. Error displayed to user when an unknown function is entered
-#: ../src/math-equation.c:1236
+#: ../src/math-equation.c:1240
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr "ไม่รู้จักฟังก์ชัน '%s'"
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: ../src/math-equation.c:1241
+#: ../src/math-equation.c:1245
 msgid "Unknown conversion"
 msgstr "ไม่มีข้อมูลสำหรับแปลงหน่วย"
 
 #. Uncategorized error. Show error token to user
-#: ../src/math-equation.c:1249
+#: ../src/math-equation.c:1253
 #, c-format
 msgid "Malformed expression at token '%s'"
 msgstr "รูปแบบนิพจน์ไม่ถูกต้องที่โทเคน '%s'"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: ../src/math-equation.c:1252 ../src/math-equation.c:1257
+#: ../src/math-equation.c:1256 ../src/math-equation.c:1261
 msgid "Malformed expression"
 msgstr "รูปแบบนิพจน์ไม่ถูกต้อง"
 
-#: ../src/math-equation.c:1271
+#: ../src/math-equation.c:1275
 msgid "Calculating"
 msgstr "กำลังคำนวณ"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1387
+#: ../src/math-equation.c:1394
 msgid "Need an integer to factorize"
 msgstr "การแยกตัวประกอบทำได้กับจำนวนเต็มเท่านั้น"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1459
+#: ../src/math-equation.c:1470
 msgid "No sane value to bitwise shift"
 msgstr "ไม่มีค่าที่ใช้ได้ให้เลื่อนบิต"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1490
+#: ../src/math-equation.c:1501
 msgid "Displayed value not an integer"
 msgstr "ค่าที่แสดงอยู่ไม่ใช่จำนวนเต็ม"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1915
+#: ../src/math-equation.c:1926
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
 #. Label on close button in preferences dialog
-#: ../src/math-preferences.c:235
+#: ../src/math-preferences.c:242
 msgid "_Close"
 msgstr "ปิ_ด"
 
-#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
-#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
-#: ../src/math-preferences.c:245 ../src/unit-manager.c:54
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
+#. calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
+#. grads
+#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "องศา"
 
-#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
-#: ../src/math-preferences.c:249 ../src/unit-manager.c:55
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
+#. calculations
+#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "เรเดียน"
 
-#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
-#: ../src/math-preferences.c:253 ../src/unit-manager.c:56
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
+#. calculations
+#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "เกรเดียน"
 
-#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
-#: ../src/math-preferences.c:263
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
+#. number 1.234×10^99)
+#: ../src/math-preferences.c:270
 msgid "Automatic"
 msgstr "อัตโนมัติ"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:267
+#: ../src/math-preferences.c:274
 msgid "Fixed"
 msgstr "ทศนิยมตายตัว"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:271
+#: ../src/math-preferences.c:278
 msgid "Scientific"
 msgstr "วิทยาศาสตร์"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:275
+#: ../src/math-preferences.c:282
 msgid "Engineering"
 msgstr "วิศวกรรม"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:286
+#: ../src/math-preferences.c:293
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "แสดงจุดทศนิยม %d _ตำแหน่ง"
 
-#. Translators: Error displayed when boolean AND attempted on non-integer values
+#. Translators: Error message displayed when unable to launch help browser
+#: ../src/math-window.c:198
+msgid "Unable to open help file"
+msgstr "ไม่สามารถเปิดแฟ้มข้อมูลวิธีใช้"
+
+#. The translator credits. Please translate this with your name(s).
+#: ../src/math-window.c:225
+msgid "translator-credits"
+msgstr "Ithipan Methasate <tumm_xx@hotmail.com>\nSupranee Thirawatthanasuk <supranee@opentle.org>\nChanchai Junlouchai <taz@opentle.org>\nPaisa Seeluangsawat <paisa@users.sf.net>\nTheppitak Karoonboonyanan <thep@linux.thai.net>\nSira Nokyoongtong <gumaraa@gmail.com>\n\nถ้าพอมีเวลาโปรดมาช่วยกันแปล\nhttp://mate-th.sf.net"
+
+#. The license this software is under (GPL2+)
+#: ../src/math-window.c:232
+msgid ""
+"mate-calc is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"mate-calc is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
+"151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr ""
+
+#: ../src/math-window.c:247
+msgid "mate-calc"
+msgstr "mate-calc"
+
+#: ../src/math-window.c:251
+msgid "Calculator with financial and scientific modes."
+msgstr "เครื่องคิดเลข พร้อมด้วยโหมดการเงินและวิทยาศาสตร์"
+
+#. Calculator menu
+#: ../src/math-window.c:354
+msgid "_Calculator"
+msgstr "เ_ครื่องคิดเลข"
+
+#. Mode menu
+#: ../src/math-window.c:356
+msgid "_Mode"
+msgstr "โห_มด"
+
+#. Help menu label
+#: ../src/math-window.c:358
+msgid "_Help"
+msgstr "_วิธีใช้"
+
+#. Basic menu label
+#: ../src/math-window.c:360
+msgid "_Basic"
+msgstr "_พื้นฐาน"
+
+#. Advanced menu label
+#: ../src/math-window.c:362
+msgid "_Advanced"
+msgstr "พิ_เศษ"
+
+#. Financial menu label
+#: ../src/math-window.c:364
+msgid "_Financial"
+msgstr "การเ_งิน"
+
+#. Programming menu label
+#: ../src/math-window.c:366
+msgid "_Programming"
+msgstr "การเขียนโ_ปรแกรม"
+
+#. Help>Contents menu label
+#: ../src/math-window.c:368
+msgid "_Contents"
+msgstr "เ_นื้อหา"
+
+#. Translators: Error displayed when boolean AND attempted on non-integer
+#. values
 #: ../src/mp-binary.c:115
 msgid "Boolean AND is only defined for positive integers"
 msgstr "AND แบบบูลีนมีนิยามไว้สำหรับจำนวนเต็มบวกเท่านั้น"
 
-#. Translators: Error displayed when boolean OR attempted on non-integer values
+#. Translators: Error displayed when boolean OR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:128
 msgid "Boolean OR is only defined for positive integers"
 msgstr "OR แบบบูลีนมีนิยามไว้สำหรับจำนวนเต็มบวกเท่านั้น"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:141
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "XOR แบบบูลีนมีนิยามไว้สำหรับจำนวนเต็มบวกเท่านั้น"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:156
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "NOT แบบบูลีนมีนิยามไว้สำหรับจำนวนเต็มบวกเท่านั้น"
 
 #. Translators: Error displayed when bit shift attempted on non-integer values
-#: ../src/mp-binary.c:187
+#: ../src/mp-binary.c:190
 msgid "Shift is only possible on integer values"
 msgstr "การเลื่อนบิตทำได้กับจำนวนเต็มเท่านั้น"
 
@@ -1448,7 +1476,8 @@ msgstr "การหารด้วยศูนย์ไม่มีนิยา
 msgid "Logarithm of zero is undefined"
 msgstr "ลอการิทึมของศูนย์ไม่มีนิยาม"
 
-#. Translators: Error displayed when attempted to raise 0 to a negative exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. exponent
 #: ../src/mp.c:1680 ../src/mp.c:1994
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "เลขยกกำลังของศูนย์ไม่มีนิยามสำหรับเลขชี้กำลังที่เป็นลบ"
@@ -1469,12 +1498,14 @@ msgstr "รากอันดับลบของศูนย์ไม่มี
 msgid "nth root of negative number is undefined for even n"
 msgstr "รากที่ n ของเลขลบไม่มีนิยามสำหรับ n ที่เป็นเลขคู่"
 
-#. Translators: Error displayed when attempted take the factorial of a fractional number
+#. Translators: Error displayed when attempted take the factorial of a
+#. fractional number
 #: ../src/mp.c:1934
 msgid "Factorial is only defined for natural numbers"
 msgstr "แฟกทอเรียลมีนิยามไว้สำหรับจำนวนนับเท่านั้น"
 
-#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
+#. Translators: Error displayed when attemping to do a modulus division on
+#. non-integer numbers
 #: ../src/mp.c:1954
 msgid "Modulus division is only defined for integers"
 msgstr "การหารเอาเศษมีนิยามไว้สำหรับจำนวนเต็มเท่านั้น"
@@ -1482,7 +1513,8 @@ msgstr "การหารเอาเศษมีนิยามไว้สำ
 #. Translators: Error displayed when tangent value is undefined
 #: ../src/mp-trigonometric.c:310
 msgid ""
-"Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
+"(90°)"
 msgstr "แทนเจนต์ไม่มีนิยามสำหรับมุมที่ห่างจาก π∕2 (90°) เป็นจำนวนเท่าของ π (180°)"
 
 #. Translators: Error displayed when inverse sine value is undefined
@@ -1495,12 +1527,14 @@ msgstr "ไซน์ผกผันไม่มีนิยามสำหรั
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
 msgstr "โคไซน์ผกผันไม่มีนิยามสำหรับค่าที่อยู่นอกช่วง [-1, 1]"
 
-#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
+#. Translators: Error displayed when inverse hyperbolic cosine value is
+#. undefined
 #: ../src/mp-trigonometric.c:591
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
 msgstr "โคไซน์ไฮเพอร์โบลิกผกผันไม่มีนิยามสำหรับค่าที่น้อยกว่าหนึ่ง"
 
-#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
+#. Translators: Error displayed when inverse hyperbolic tangent value is
+#. undefined
 #: ../src/mp-trigonometric.c:615
 msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
 msgstr "แทนเจนต์ไฮเพอร์โบลิกผกผันไม่มีนิยามสำหรับค่าที่อยู่นอกช่วง [-1, 1]"
@@ -1941,8 +1975,7 @@ msgstr "%s มล."
 #: ../src/unit-manager.c:83
 msgctxt "unit-symbols"
 msgid "millilitre,millilitres,milliliter,milliliters,mL,cm³"
-msgstr ""
-"มิลลิลิตร,มล.,ซม³,ลบ.ซม.millilitre,millilitres,milliliter,milliliters,mL,cm³"
+msgstr "มิลลิลิตร,มล.,ซม³,ลบ.ซม.millilitre,millilitres,milliliter,milliliters,mL,cm³"
 
 #: ../src/unit-manager.c:84
 msgid "Microlitres"
@@ -2231,1084 +2264,9 @@ msgstr "อุณหภูมิ"
 msgid "Currency"
 msgstr "สกุลเงิน"
 
-#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
+#. Translators: result of currency conversion, %s is the symbol, %%s is the
+#. placeholder for amount, i.e.: USD100
 #: ../src/unit-manager.c:137
 #, c-format
 msgid "%s%%s"
 msgstr "%s%%s"
-
-#~ msgid "_Calculator"
-#~ msgstr "เ_ครื่องคิดเลข"
-
-#~ msgid "_Mode"
-#~ msgstr "โห_มด"
-
-#~ msgid "_Basic"
-#~ msgstr "_พื้นฐาน"
-
-#~ msgid "_Advanced"
-#~ msgstr "พิ_เศษ"
-
-#~ msgid "_Financial"
-#~ msgstr "การเ_งิน"
-
-#~ msgid "_Programming"
-#~ msgstr "การเขียนโ_ปรแกรม"
-
-#~ msgid "_Contents"
-#~ msgstr "เ_นื้อหา"
-
-#~ msgid "Recall"
-#~ msgstr "เรียกคืน"
-
-#~ msgid "Undo"
-#~ msgstr "เรียกคืน"
-
-#~ msgid ""
-#~ "Converts between different currencies. Enter the amount and the currency "
-#~ "you want to convert from on the upper row, and the currency you want to "
-#~ "convert to on the lower row, and the amount will be displayed on the "
-#~ "lower row."
-#~ msgstr ""
-#~ "แปลงเงินข้ามสกุลเงิน กรุณาป้อนจำนวนเงินและหน่วยสกุลเงินต้นทางที่คุณต้องการแปลงในแถวบน "
-#~ "และหน่วยสกุลเงินปลายทางในแถวล่าง แล้วจำนวนเงินในสกุลเงินปลายทางก็จะแสดงที่แถวล่าง"
-
-#~ msgid "Currency Conversion"
-#~ msgstr "แปลงหน่วยสกุลเงิน"
-
-#~ msgid "Display Mode"
-#~ msgstr "โหมดการแสดงผล"
-
-#~ msgid "Indicates whether the memory register window is initially displayed."
-#~ msgstr "กำหนดว่าจะแสดงหน้าต่างหน่วยความจำเรจิสเตอร์เมื่อเริ่มต้นหรือไม่"
-
-#~ msgid "Show Registers"
-#~ msgstr "แสดงเรจิสเตอร์"
-
-#~ msgid ""
-#~ "The display format used in advanced mode. One of: \"ENG\" (engineering), "
-#~ "\"FIX\" (fixed-point) and \"SCI\" (scientific)"
-#~ msgstr ""
-#~ "รูปแบบการแสดงผลในโหมดพิเศษ ค่าที่เป็นไปได้คือ \"ENG\" (วิศวกรรม), \"FIX"
-#~ "\" (จุดทศนิยมตายตัว) และ \"SCI\" (วิทยาศาสตร์)"
-
-#~ msgid ""
-#~ "The initial calculator mode. Valid values are \"BASIC\", \"FINANCIAL\", "
-#~ "\"LOGICAL\", \"SCIENTIFIC\" and \"PROGRAMMING\""
-#~ msgstr ""
-#~ "โหมดเครื่องคิดเลขเริ่มต้น ค่าที่เป็นไปได้คือ \"BASIC\" (พื้นฐาน), \"FINANCIAL"
-#~ "\" (การเงิน), \"LOGICAL\" (พิเศษ), \"SCIENTIFIC\" (วิทยาศาสตร์) และ "
-#~ "\"PROGRAMMING\" (การเขียนโปรแกรม)"
-
-#~ msgid ""
-#~ "The initial trigonometric type. Valid values are \"DEG\" (degrees), \"GRAD"
-#~ "\" (gradians) and \"RAD\" (radians)."
-#~ msgstr ""
-#~ "รูปแบบตรีโกณมิติเริ่มแรก ค่าที่เป็นไปได้คือ \"DEG\" (องศา), \"GRAD\" (เกรเดียน) และ "
-#~ "\"RAD\" (เรเดียน)"
-
-#~ msgid "The initial x-coordinate for the window"
-#~ msgstr "พิกัด X เริ่มแรกของหน้าต่าง"
-
-#~ msgid "The initial y-coordinate for the window"
-#~ msgstr "พิกัด Y เริ่มแรกของหน้าต่าง"
-
-#~ msgid ""
-#~ "The number of pixels to place the window from the left of the screen."
-#~ msgstr "พิกัดจุดแนวนอนที่จะวางหน้าต่าง นับจากขอบซ้ายของหน้าจอ"
-
-#~ msgid "The number of pixels to place the window from the top of the screen."
-#~ msgstr "พิกัดจุดแนวตั้งที่จะวางหน้าต่าง นับจากขอบบนของหน้าจอ"
-
-#~ msgid "The numeric base (used in programming mode)"
-#~ msgstr "ฐานเลข (สำหรับโหมดการเขียนโปรแกรม)"
-
-#~ msgid "Trigonometric type"
-#~ msgstr "รูปแบบตรีโกณมิติ"
-
-#~ msgid "Assign Variable"
-#~ msgstr "ให้ค่ากับตัวแปร"
-
-#~ msgid "Insert Variable"
-#~ msgstr "แทรกตัวแปร"
-
-#~ msgid "No variables defined"
-#~ msgstr "ไม่ได้กำหนดตัวแปรไว้"
-
-#~ msgid ""
-#~ "You don't have any recent currency rates. Should some be downloaded now?"
-#~ msgstr "คุณยังไม่มีข้อมูลอัตราแลกเปลี่ยนสกุลเงินล่าสุดเลย จะดาวน์โหลดตอนนี้เลยหรือไม่?"
-
-#~ msgid ""
-#~ "Currency rates could not be downloaded. You may receive inaccurate "
-#~ "results, or you may not receive any results at all."
-#~ msgstr ""
-#~ "ไม่สามารถดาวน์โหลดอัตราแลกเปลี่ยนสกุลเงินได้ คุณอาจได้รับผลลัพธ์ที่คลาดเคลื่อน "
-#~ "หรืออาจไม่ได้รับผลลัพธ์ใดๆ เลย"
-
-#~ msgid "Logarithm of negative values is undefined"
-#~ msgstr "ลอการิทึมของจำนวนลบไม่มีนิยาม"
-
-#~ msgid "The power of negative numbers is only defined for integer exponents"
-#~ msgstr "เลขยกกำลังของเลขลบมีนิยามไว้สำหรับเลขชี้กำลังที่เป็นจำนวนเต็มเท่านั้น"
-
-#~ msgid "Square root is undefined for negative values"
-#~ msgstr "รากที่สองไม่มีนิยามสำหรับเลขลบ"
-
-#~ msgid "Backspace"
-#~ msgstr "แบ็กสเปซ"
-
-#~ msgid "Base 16"
-#~ msgstr "ฐานสิบหก"
-
-#~ msgid "Base 2"
-#~ msgstr "ฐานสอง"
-
-#~ msgid "Base 8"
-#~ msgstr "ฐานแปด"
-
-#~ msgid "Calculate result [=]"
-#~ msgstr "คำนวณผลลัพธ์ [=]"
-
-#~ msgid "Display _Format:"
-#~ msgstr "รูปแ_บบการแสดงผล:"
-
-#~ msgid "Factorize into prime numbers (Ctrl+F)"
-#~ msgstr "แยกตัวประกอบเป็นจำนวนเฉพาะ (Ctrl+F)"
-
-#~ msgid "Insert ASCII Value"
-#~ msgstr "แทรกค่า ASCII"
-
-#~ msgid "Insert character"
-#~ msgstr "แทรกตัวอักษร"
-
-#~ msgid "Numeric point [. or ,]"
-#~ msgstr "จุดทศนิยม [. หรือ ,]"
-
-#~ msgid "Random number"
-#~ msgstr "ค่าสุ่ม"
-
-#~ msgid "Recall value"
-#~ msgstr "เรียกค่าคืน"
-
-#~ msgid "Result Region"
-#~ msgstr "บริเวณแสดงผลลัพธ์"
-
-#~ msgid "Shift left [<]"
-#~ msgstr "เลื่อนบิตไปทางซ้าย [<]"
-
-#~ msgid "Shift right [>]"
-#~ msgstr "เลื่อนบิตไปทางขวา [>]"
-
-#~ msgid "Store value"
-#~ msgstr "เก็บค่า"
-
-#~ msgid "_Scientific"
-#~ msgstr "_วิทยาศาสตร์"
-
-#~ msgid "_View"
-#~ msgstr "มุ_มมอง"
-
-#~ msgid "No redo steps"
-#~ msgstr "ไม่มีรายการคำสั่งที่จะทำซ้ำ"
-
-#~ msgid "Calculator — Advanced"
-#~ msgstr "เครื่องคิดเลข — พิเศษ"
-
-#~ msgid "Calculator — Financial"
-#~ msgstr "เครื่องคิดเลข — การเงิน"
-
-#~ msgid "Calculator — Scientific"
-#~ msgstr "เครื่องคิดเลข — วิทยาศาสตร์"
-
-#~ msgid "Calculator — Programming"
-#~ msgstr "เครื่องคิดเลข — การเขียนโปรแกรม"
-
-#~ msgid "Error loading user interface"
-#~ msgstr "เกิดข้อผิดพลาดขณะเปิดแฟ้มส่วนติดต่อผู้ใช้"
-
-#~ msgid ""
-#~ "A required file is missing or damaged. Please check your installation.\n"
-#~ "\n"
-#~ "%s"
-#~ msgstr ""
-#~ "มีแฟ้มที่จำเป็นต้องใช้สูญหายหรือเสียหาย กรุณาตรวจสอบการติดตั้งโปรแกรม\n"
-#~ "\n"
-#~ "%s"
-
-#~ msgid ""
-#~ "%1$s version %2$s\n"
-#~ "\n"
-#~ "Usage: %3$s: [-u] [-?] [-v] [-h]\n"
-#~ msgstr ""
-#~ "%1$s รุ่น %2$s\n"
-#~ "\n"
-#~ "วิธีใช้: %3$s [-u] [-?] [-v] [-h]\n"
-
-#~ msgid "%s: accuracy should be in the range 0-%d\n"
-#~ msgstr "%s: จำนวนจุดทศนิยมต้องอยู่ระหว่าง 0-%d\n"
-
-#~ msgid "Malformed function"
-#~ msgstr "รูปแบบฟังก์ชันไม่ถูกต้อง"
-
-#~ msgid "No sane value to convert"
-#~ msgstr "ไม่มีค่าที่ใช้ได้ให้แปลง"
-
-#~ msgid "Invalid number for the current base"
-#~ msgstr "ตัวเลขใช้ไม่ได้สำหรับเลขฐานที่ใช้อยู่"
-
-#~ msgid "Too long number"
-#~ msgstr "ตัวเลขยาวเกินไป"
-
-#~ msgid "Invalid bitwise operation parameter(s)"
-#~ msgstr "พารามิเตอร์สำหรับการกระทำบิตไม่ถูกต้อง"
-
-#~ msgid "Invalid modulus operation parameter(s)"
-#~ msgstr "พารามิเตอร์สำหรับการหารเอาเศษไม่ถูกต้อง"
-
-#~ msgid "Math operation error"
-#~ msgstr "การกระทำคณิตศาสตร์ผิดพลาด"
-
-#~ msgid "Calculator [%s]"
-#~ msgstr "เครื่องคิดเลข [%s]"
-
-#~ msgid "Calculator [%s] - Advanced"
-#~ msgstr "เครื่องคิดเลข [%s] - พิเศษ"
-
-#~ msgid "Calculator [%s] - Financial"
-#~ msgstr "เครื่องคิดเลข [%s] - การเงิน"
-
-#~ msgid "Calculator [%s] - Scientific"
-#~ msgstr "เครื่องคิดเลข [%s] - วิทยาศาสตร์"
-
-#~ msgid "Calculator [%s] - Programming"
-#~ msgstr "เครื่องคิดเลข [%s] - การเขียนโปรแกรม"
-
-#~ msgid "_Other (%d) ..."
-#~ msgstr "ค่า_อื่น (%d) ..."
-
-#~ msgid "Set accuracy from 0 to %d numeric place. [A]"
-#~ msgid_plural "Set accuracy from 0 to %d numeric places. [A]"
-#~ msgstr[0] "ตั้งค่าความละเอียดจาก 0 ถึง %d หลัก [A]"
-
-#~ msgid "Sine [k]"
-#~ msgstr "ไซน์ [k]"
-
-#~ msgid "Hyperbolic Inverse Sine [K]"
-#~ msgstr "ไซน์ผกผันไฮเพอร์โบลิก [K]"
-
-#~ msgid "Cosh<sup>-1</sup>"
-#~ msgstr "Cosh<sup>-1</sup>"
-
-#~ msgid "Cosine [j]"
-#~ msgstr "โคไซน์ [j]"
-
-#~ msgid "Inverse Cosine [J]"
-#~ msgstr "โคไซน์ผกผัน [J]"
-
-#~ msgid "Hyperbolic Inverse Cosine [J]"
-#~ msgstr "โคไซน์ผกผันไฮเพอร์โบลิก [J]"
-
-#~ msgid "Tangent [w]"
-#~ msgstr "แทนเจนต์ [w]"
-
-#~ msgid "Inverse Tangent [W]"
-#~ msgstr "แทนเจนต์ผกผัน [W]"
-
-#~ msgid "Hyperbolic Inverse Tangent [W]"
-#~ msgstr "แทนเจนต์ผกผันไฮเพอร์โบลิก [W]"
-
-#~ msgid "Natural log [n]"
-#~ msgstr "ลอการิทึมธรรมชาติ [n]"
-
-#~ msgid "e to the power of the displayed value [N]"
-#~ msgstr "e ยกกำลังค่าที่แสดง [N]"
-
-#~ msgid "Base 10 log [g]"
-#~ msgstr "ลอการิทึมฐานสิบ [g] "
-
-#~ msgid "10 to the power of displayed value [G]"
-#~ msgstr "10 ยกกำลังค่าที่แสดง [G]"
-
-#~ msgid "2 to the power of the displayed value [H]"
-#~ msgstr "2 ยกกำลังค่าที่แสดง [H]"
-
-#~ msgid "Raise displayed value to the power of y [o]"
-#~ msgstr "เลขที่แสดงอยู่ ยกกำลังเลขที่กำลังจะใส่ [o]"
-
-#~ msgid "Raise displayed value to the power of reciprocal y [O]"
-#~ msgstr "เลขที่แสดงอยู่ ยกกำลังส่วนกลับของเลขที่กำลังจะใส่ [O]"
-
-#~ msgid "No."
-#~ msgstr "ลำดับที่"
-
-#~ msgid "Reset to _Default (%d)"
-#~ msgstr "กลับเป็นค่า_ปริยาย (%d)"
-
-#~ msgid "Negative X and non-integer Y not supported"
-#~ msgstr "ไม่สามารถคำนวณกรณี X เป็นค่าลบและ Y ไม่ใช่จำนวนเต็ม"
-
-#~ msgid "Error, cannot calculate cosine"
-#~ msgstr "เกิดข้อผิดพลาด ไม่สามารถคำนวณโคไซน์"
-
-#~ msgid "Kilometer-to-mile conversion factor"
-#~ msgstr "กิโลเมตรต่อหนึ่งไมล์"
-
-#~ msgid "square root of 2"
-#~ msgstr "รากที่สองของ 2"
-
-#~ msgid "Centimeter-to-inch conversion factor"
-#~ msgstr "เซนติเมตรต่อหนึ่งนิ้ว"
-
-#~ msgid "degrees in a radian"
-#~ msgstr "องศาต่อเรเดียน"
-
-#~ msgid "Gram-to-ounce conversion factor"
-#~ msgstr "กรัมต่อหนึ่งออนซ์"
-
-#~ msgid "Kilojoule-to-British-thermal-unit conversion factor"
-#~ msgstr "กิโลจูลต่อหนึ่งบีทียู"
-
-#~ msgid "Cubic-centimeter-to-cubic-inch conversion factor"
-#~ msgstr "ลูกบาศก์เซนติเมตร ต่อหนึ่งลูกบาศก์นิ้ว"
-
-#~ msgid "16-bit unsigned integer value of display (])"
-#~ msgstr "แปลงค่าที่แสดงเป็นจำนวนเต็มบวก 16 บิต (])"
-
-#~ msgid "32-bit unsigned integer value of display ([)"
-#~ msgstr "แปลงค่าที่แสดงเป็นจำนวนเต็มบวก 32 บิต ([)"
-
-#~ msgid ""
-#~ "<small><i><b>Note:</b> All constant values are specified in the decimal "
-#~ "numeric base.</i></small>"
-#~ msgstr "<small><i><b>หมายเหตุ:</b> ค่าคงที่ทั้งหมดอยู่ในรูปเลขฐานสิบ</i></small>"
-
-#~ msgid "Add"
-#~ msgstr "บวก"
-
-#~ msgid "Change Sign [C]"
-#~ msgstr "สลับเครื่องหมาย [C]"
-
-#~ msgid "Change sign"
-#~ msgstr "สลับเครื่องหมาย"
-
-#~ msgid "Clear displayed value and any partial calculation [Shift Delete]"
-#~ msgstr "ลบค่าที่แสดงและการคำนวณที่ค้างอยู่ [Shift Delete]"
-
-#~ msgid "Clear entry"
-#~ msgstr "ลบค่าที่แสดง"
-
-#~ msgid "Click a _value or description to edit it:"
-#~ msgstr "_คลิกที่ค่าหรือคำอธิบายเพื่อแก้ไข:"
-
-#~ msgid "Compounding term"
-#~ msgstr "จำนวนงวดทบต้น"
-
-#~ msgid "Compounding term [m]"
-#~ msgstr "จำนวนงวดทบต้น [m]"
-
-#~ msgid "Constants [#]"
-#~ msgstr "ค่าคงที่ [#]"
-
-#~ msgid "Copy selection"
-#~ msgstr "คัดลอกส่วนที่เลือก"
-
-#~ msgid "Divide"
-#~ msgstr "หาร"
-
-#~ msgid "Double-declining depreciation"
-#~ msgstr "ค่าเสื่อมราคาแบบยอดลดลงทวีคูณ"
-
-#~ msgid "Double-declining depreciation [D]"
-#~ msgstr "ค่าเสื่อมราคาแบบยอดลดลงทวีคูณ [D]"
-
-#~ msgid "E_ng"
-#~ msgstr "_วิศวฯ"
-
-#~ msgid "Edit Constants"
-#~ msgstr "แก้ไขค่าคงที่"
-
-#~ msgid "Edit Constants..."
-#~ msgstr "แก้ไขค่าคงที่..."
-
-#~ msgid "Edit Functions..."
-#~ msgstr "แก้ไขฟังก์ชัน..."
-
-#~ msgid "End group of calculations [)]"
-#~ msgstr "จบกลุ่มการคำนวณ [)]"
-
-#~ msgid "Enter an exponential number [E]"
-#~ msgstr "ใส่จำนวนเอ็กซ์โพเน็นเชียล [E]"
-
-#~ msgid "Exch"
-#~ msgstr "สลับ"
-
-#~ msgid "Exchange displayed value with memory register [X]"
-#~ msgstr "สลับค่าที่แสดงกับหน่วยความจำเรจิสเตอร์ [X]"
-
-#~ msgid "Exchange with register"
-#~ msgstr "สลับกับหน่วยความจำเรจิสเตอร์"
-
-#~ msgid "Factorial of displayed value [!]"
-#~ msgstr "แฟกทอเรียลของค่าที่แสดง [!]"
-
-#~ msgid "Fractional portion of displayed value [:]"
-#~ msgstr "ส่วนเศษทศนิยมของค่าที่แสดง [:]"
-
-#~ msgid "Future value [v]"
-#~ msgstr "มูลค่าในอนาคต [v]"
-
-#~ msgid "Gross Profit Margin [I]"
-#~ msgstr "อัตรากำไรสุทธิ [I]"
-
-#~ msgid "Gross Profit Margin [g]"
-#~ msgstr "อัตรากำไรสุทธิ [g]"
-
-#~ msgid "He_x"
-#~ msgstr "สิบ_หก"
-
-#~ msgid "Hexadecimal digit A [a]"
-#~ msgstr "เลขฐานสิบหก A [a]"
-
-#~ msgid "Insert ASCII value"
-#~ msgstr "ใส่ค่า ASCII"
-
-#~ msgid "Integer portion of displayed value [i]"
-#~ msgstr "ส่วนจำนวนเต็มของค่าที่แสดง [i]"
-
-#~ msgid "Left bracket"
-#~ msgstr "วงเล็บซ้าย"
-
-#~ msgid "Memory Registers"
-#~ msgstr "หน่วยความจำเรจิสเตอร์"
-
-#~ msgid "Multiply"
-#~ msgstr "คูณ"
-
-#~ msgid "Numeric 1"
-#~ msgstr "เลข 1"
-
-#~ msgid "Paste selection"
-#~ msgstr "แปะส่วนที่เลือก"
-
-#~ msgid "Payment period"
-#~ msgstr "จำนวนงวดผ่อนส่ง"
-
-#~ msgid "Payment period [t]"
-#~ msgstr "จำนวนงวดผ่อนส่ง [t]"
-
-#~ msgid "Percentage"
-#~ msgstr "อัตราร้อยละ"
-
-#~ msgid "Periodic interest rate"
-#~ msgstr "อัตราดอกเบี้ยต่องวด"
-
-#~ msgid "Periodic interest rate [T]"
-#~ msgstr "อัตราดอกเบี้ยต่องวด [T]"
-
-#~ msgid "Periodic payment"
-#~ msgstr "เงินผ่อนต่องวด"
-
-#~ msgid "Periodic payment [P]"
-#~ msgstr "เงินผ่อนต่องวด [P]"
-
-#~ msgid "Present value"
-#~ msgstr "มูลค่าปัจจุบัน"
-
-#~ msgid "Present value [p]"
-#~ msgstr "มูลค่าปัจจุบัน [p]"
-
-#~ msgid "Random number in the range 0.0 to 1.0 [?]"
-#~ msgstr "ค่าสุ่มในช่วง 0.0 ถึง 1.0 [?]"
-
-#~ msgid "Reciprocal"
-#~ msgstr "กลับเศษเป็นส่วน"
-
-#~ msgid "Reciprocal [r]"
-#~ msgstr "กลับเศษเป็นส่วน [r]"
-
-#~ msgid "Redo"
-#~ msgstr "ทำซ้ำ"
-
-#~ msgid "Remove rightmost character from displayed value [Backspace]"
-#~ msgstr "ลบหลักขวาสุดของค่าที่แสดง [Backspace]"
-
-#~ msgid "Retrieve from register"
-#~ msgstr "เรียกค่าจากหน่วยความจำเรจิสเตอร์"
-
-#~ msgid "Retrieve memory register to display [R]"
-#~ msgstr "เรียกหน่วยความจำเรจิสเตอร์ไปแสดง [R]"
-
-#~ msgid "Right bracket"
-#~ msgstr "วงเล็บขวา"
-
-#~ msgid "Set Precision"
-#~ msgstr "ตั้งความละเอียดทศนิยม"
-
-#~ msgid "Set display type to engineering format"
-#~ msgstr "แสดงผลในรูปแบบวิศวกรรม"
-
-#~ msgid "Set display type to fixed-point format"
-#~ msgstr "แสดงผลในรูปแบบจุดทศนิยมคงที่"
-
-#~ msgid "Set display type to scientific format"
-#~ msgstr "แสดงผลในรูปแบบวิทยาศาสตร์"
-
-#~ msgid "Set hyperbolic option for trigonometric functions"
-#~ msgstr "ใช้ฟังก์ชันตรีโกณมิติชนิดไฮเพอร์โบลิก"
-
-#~ msgid "Set inverse option for trigonometric functions"
-#~ msgstr "ใช้อินเวอร์สของฟังก์ชันตรีโกณมิติ"
-
-#~ msgid "Set numeric base to binary (base 2)"
-#~ msgstr "แสดงผลเป็นเลขฐานสอง"
-
-#~ msgid "Set numeric base to decimal (base 10)"
-#~ msgstr "แสดงผลเป็นเลขฐานสิบ"
-
-#~ msgid "Set numeric base to hexadecimal (base 16)"
-#~ msgstr "แสดงผลเป็นเลขฐานสิบหก"
-
-#~ msgid "Set numeric base to octal (base 8)"
-#~ msgstr "แสดงผลเป็นเลขฐานแปด"
-
-#~ msgid "Set trigonometric type to gradians"
-#~ msgstr "ตั้งรูปแบบตรีโกณมิติเป็นหน่วยเกรเดียน"
-
-#~ msgid "Set trigonometric type to radians"
-#~ msgstr "ตั้งรูปแบบตรีโกณมิติเป็นหน่วยเรเดียน"
-
-#~ msgid "Shift displayed value 1-15 places to the left [<]"
-#~ msgstr "เลื่อนบิตค่าที่แสดงไปทางซ้าย 1-15 บิต [<]"
-
-#~ msgid "Shift displayed value 1-15 places to the right [>]"
-#~ msgstr "เลื่อนบิตค่าที่แสดงไปทางขวา 1-15 บิต [>]"
-
-#~ msgid "Show help contents"
-#~ msgstr "แสดงเนื้อหาวิธีใช้"
-
-#~ msgid "Show the About Gcalctool dialog"
-#~ msgstr "แสดงข้อมูลเกี่ยวกับ Gcaltool"
-
-#~ msgid "Significant _places:"
-#~ msgstr "ความละเอียด_ทศนิยม:"
-
-#~ msgid "Square"
-#~ msgstr "กำลังสอง"
-
-#~ msgid "Start group of calculations [(]"
-#~ msgstr "เริ่มกลุ่มการคำนวณ [(]"
-
-#~ msgid "Store displayed value in memory register [S]"
-#~ msgstr "เก็บค่าที่แสดงในหน่วยความจำเรจิสเตอร์ [S]"
-
-#~ msgid "Store to register"
-#~ msgstr "เก็บในหน่วยความจำเรจิสเตอร์"
-
-#~ msgid "Straight-line depreciation"
-#~ msgstr "ค่าเสื่อมราคาแบบเส้นตรง"
-
-#~ msgid "Straight-line depreciation [l]"
-#~ msgstr "ค่าเสื่อมราคาแบบเส้นตรง [l]"
-
-#~ msgid "Subtract"
-#~ msgstr "ลบ"
-
-#~ msgid "Sum-of-the years'-digits depreciation"
-#~ msgstr "ค่าเสื่อมราคาแบบผลรวมจำนวนปี"
-
-#~ msgid "Sum-of-the years'-digits depreciation [Y]"
-#~ msgstr "ค่าเสื่อมราคาแบบผลรวมจำนวนปี [Y]"
-
-#~ msgid "Sum-of-the years'-digits depreciation [y]"
-#~ msgstr "ค่าเสื่อมราคาแบบผลรวมจำนวนปี [y]"
-
-#~ msgid "User-defined functions [F]"
-#~ msgstr "ฟังก์ชันที่กำหนดโดยผู้ใช้ [F]"
-
-#~ msgid "_0 significant places"
-#~ msgstr "ทศนิยม _0 ตำแหน่ง"
-
-#~ msgid "_Dec"
-#~ msgstr "สิ_บ"
-
-#~ msgid "_Edit"
-#~ msgstr "แ_ก้ไข"
-
-#~ msgid "_Insert ASCII value..."
-#~ msgstr "ใ_ส่ค่า ASCII..."
-
-#~ msgid "_Memory Registers"
-#~ msgstr "_หน่วยความจำเรจิสเตอร์"
-
-#~ msgid "_Redo"
-#~ msgstr "_ทำซ้ำ"
-
-#~ msgid "_Sci"
-#~ msgstr "วิท_ย์"
-
-#~ msgid "_Set"
-#~ msgstr "_ตั้ง"
-
-#~ msgid "_Undo"
-#~ msgstr "เรี_ยกคืน"
-
-#~ msgid "register 0"
-#~ msgstr "เรจิสเตอร์ 0"
-
-#~ msgid "%s: %s as next argument.\n"
-#~ msgstr "%s: %s เป็นอาร์กิวเมนต์ตัวต่อไป\n"
-
-#~ msgid ""
-#~ "%s version %s\n"
-#~ "\n"
-#~ msgstr ""
-#~ "%s รุ่น %s\n"
-#~ "\n"
-
-#~ msgid "Usage: %s: [-E] [-u] [-a accuracy] "
-#~ msgstr "วิิธีใช้: %s: [-E] [-u] [-a ความละเอียด] "
-
-#~ msgid "-a needs accuracy value"
-#~ msgstr "-a ต้องการค่าความละเอียด"
-
-#~ msgid "Cleared display, prefix without an operator is not allowed"
-#~ msgstr "ล้างค่าแสดงผล เนื่องจากมีค่าหน้าวงเล็บโดยไม่มีเครื่องหมาย ซึ่งไม่อนุญาต"
-
-#~ msgid "Malformed parenthesis expression"
-#~ msgstr "รูปแบบนิพจน์วงเล็บไม่ถูกต้อง"
-
-#~ msgid "%s: base should be 2, 8, 10 or 16\n"
-#~ msgstr "%s: ฐานเลขควรเป็น 2, 8, 10 หรือ 16\n"
-
-#~ msgid "%s: invalid display mode [%s]\n"
-#~ msgstr "%s: ไม่มีโหมดการแสดงผล [%s]\n"
-
-#~ msgid "%s: invalid mode [%s]\n"
-#~ msgstr "%s: ไม่มีโหมด [%s]\n"
-
-#~ msgid "%s: invalid trigonometric mode [%s]\n"
-#~ msgstr "%s: ไม่มีโหมดตรีโกณมิติ [%s]\n"
-
-#~ msgid "%s: invalid syntax mode [%s]\n"
-#~ msgstr "%s: ไม่มีโหมดไวยากรณ์ [%s]\n"
-
-#~ msgid "Activated no operator precedence mode"
-#~ msgstr "เข้าสู่โหมดไม่ใช้ลำดับเครื่องหมายเลขคณิต"
-
-#~ msgid "Activated expression mode with operator precedence"
-#~ msgstr "เข้าสู่โหมดคำนวณนิพจน์แบบใช้ลำดับเครื่องหมายเลขคณิต"
-
-#~ msgid "Currently set to %d place."
-#~ msgid_plural "Currently set to %d places."
-#~ msgstr[0] "ค่าปัจจุบันคือ %d หลัก"
-
-#~ msgid "Bit editor activated. Click on bit values to toggle them."
-#~ msgstr "เปิดใช้แป้นแก้ไขบิตแล้ว คลิกที่ค่าบิตเพื่อกลับค่าได้"
-
-#~ msgid ""
-#~ "Gcalctool is free software; you can redistribute it and/or modify\n"
-#~ "it under the terms of the GNU General Public License as published by\n"
-#~ "the Free Software Foundation; either version 2 of the License, or\n"
-#~ "(at your option) any later version.\n"
-#~ msgstr ""
-#~ "Gcalctool เป็นซอฟต์แวร์เสรี คุณสามารถแจกจ่ายต่อ และ/หรือ แก้ไขโปรแกรมได้\n"
-#~ "ภายใต้เงื่อนไขของ GNU General Public License ที่เผยแพร่โดยมูลนิธิซอฟต์แวร์เสรี\n"
-#~ "ไม่ว่าจะเป็นสัญญาอนุญาตรุ่นที่ 2 หรือรุ่นถัดมา (ตามแต่คุณจะเลือก)\n"
-
-#~ msgid ""
-#~ "Gcalctool is distributed in the hope that it will be useful,\n"
-#~ "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-#~ "GNU General Public License for more details.\n"
-#~ msgstr ""
-#~ "Gcalctool เผยแพร่ด้วยความหวังว่าโปรแกรมจะมีประโยชน์\n"
-#~ "แต่ _ไม่มีการรับประกันใดๆ_ ไม่มีแม้การรับประกัน _อรรถประโยชน์เชิงพาณิชย์_\n"
-#~ "หรือ _ความเหมาะสมสำหรับวัตถุประสงค์เฉพาะกิจใดๆ_ กรุณาอ่าน\n"
-#~ "GNU General Public License เพื่อดูรายละเอียดเพิ่มเติม\n"
-
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License\n"
-#~ "along with Gcalctool; if not, write to the Free Software Foundation, "
-#~ "Inc.,\n"
-#~ "51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA\n"
-#~ msgstr ""
-#~ "คุณควรจะได้รับสำเนาของ GNU General Public License มาพร้อมกับ Gcalctool\n"
-#~ "ถ้าคุณไม่ได้รับ กรุณาติดต่อไปที่ Free Software Foundation, Inc., \n"
-#~ "51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA\n"
-
-#~ msgid "Changing Modes Clears Calculation"
-#~ msgstr "การเปลี่ยนโหมดจะล้างค่าการคำนวณ"
-
-#~ msgid ""
-#~ "When you change modes, the current calculation will be cleared, and the "
-#~ "base will be reset to decimal."
-#~ msgstr "เมื่อคุณเปลี่ยนโหมด ค่าการคำนวณปัจจุบันจะถูกล้างทิ้ง และจะเปลี่ยนฐานเลขกลับเป็นฐานสิบ"
-
-#~ msgid "_Do not warn me again"
-#~ msgstr "ไ_ม่ต้องเตือนอีก"
-
-#~ msgid "C_hange Mode"
-#~ msgstr "เ_ปลี่ยนโหมด"
-
-#~ msgid "Clipboard contained malformed calculation"
-#~ msgstr "เนื้อหาในคลิปบอร์ดมีรูปแบบการคำนวณไม่ถูกต้อง"
-
-#~ msgid "10 to the x"
-#~ msgstr "10 ยกกำลัง x"
-
-#~ msgid "16 bit unsigned integer"
-#~ msgstr "จำนวนเต็มบวก 16 บิต"
-
-#~ msgid "A_rithmetic Precedence"
-#~ msgstr "ใช้ลำดับเครื่องหมายเ_ลขคณิต"
-
-#~ msgid "Constants"
-#~ msgstr "ค่าคงที่"
-
-#~ msgid "E to the x"
-#~ msgstr "E ยกกำลัง x"
-
-#~ msgid "Hexadecimal digit B"
-#~ msgstr "เลขฐานสิบหก B"
-
-#~ msgid "Hexadecimal digit C"
-#~ msgstr "เลขฐานสิบหก C"
-
-#~ msgid "Hexadecimal digit D"
-#~ msgstr "เลขฐานสิบหก D"
-
-#~ msgid "Hexadecimal digit E"
-#~ msgstr "เลขฐานสิบหก E"
-
-#~ msgid "Hexadecimal digit F"
-#~ msgstr "เลขฐานสิบหก F"
-
-#~ msgid "Log<sub>10</sub>"
-#~ msgstr "Log<sub>10</sub>"
-
-#~ msgid "Set accuracy from 0 to 9 numeric places [A]"
-#~ msgstr "ตั้งค่าความละเอียดทศนิยมตั้งแต่ 0 ถึง 9 ตำแหน่ง [A]"
-
-#~ msgid "Show Bit Editor"
-#~ msgstr "แสดงแป้นแก้ไขบิต"
-
-#~ msgid "Show Bit _Editor"
-#~ msgstr "แสดงแป้นแก้ไข_บิต"
-
-#~ msgid "Show bit editor"
-#~ msgstr "แสดงแป้นแก้ไขบิต"
-
-#~ msgid "Ten to the x"
-#~ msgstr "สิบยกกำลัง x"
-
-#~ msgid "Use Arithmetic Precedence"
-#~ msgstr "ใช้ลำดับเครื่องหมายเลขคณิต"
-
-#~ msgid "Use Left-right Precedence"
-#~ msgstr "ใช้ลำดับการคำนวณจากซ้ายไปขวา"
-
-#~ msgid "User-defined functions"
-#~ msgstr "ฟังก์ชันที่กำหนดโดยผู้ใช้"
-
-#~ msgid "X to the y"
-#~ msgstr "x ยกกำลัง y"
-
-#~ msgid "_Left-to-right Precedence"
-#~ msgstr "คำนวณจากซ้ายไป_ขวา"
-
-#~ msgid "e<sup>x</sup>"
-#~ msgstr "e<sup><i>x</i></sup>"
-
-#~ msgid "Retreive from register"
-#~ msgstr "เรียกค่าจากหน่วยความจำเรจิสเตอร์"
-
-#~ msgid "Show Bitcalculating _Extension"
-#~ msgstr "แสดงส่วนเ_สริมสำหรับการคำนวณบิต"
-
-#~ msgid "Show bitcalculating extension"
-#~ msgstr "แสดงส่วนเสริมสำหรับการคำนวณบิต"
-
-#~ msgid "Expression"
-#~ msgstr "นิพจน์"
-
-#~ msgid "32 bit unsigned integer"
-#~ msgstr "ค่าจำนวนเต็มบวก 32-บิต"
-
-#~ msgid "Numeric stack error"
-#~ msgstr "ค่าสแต็กผิดพลาด"
-
-#~ msgid "Operand stack error"
-#~ msgstr "สแต็กเครื่องหมายผิดพลาด"
-
-#~ msgid "calculator"
-#~ msgstr "เครื่องคิดเลข"
-
-#~ msgid "%s: invalid bitcalc choice [%s]\n"
-#~ msgstr "%s: ไม่มีตัวเลือกการคำนวณบิต [%s]\n"
-
-#~ msgid "2 places"
-#~ msgstr "2 ตำแหน่ง"
-
-#~ msgid "0 significant places"
-#~ msgstr "ทศนิยม 0 ตำแหน่ง"
-
-#~ msgid "_Other (10) ..."
-#~ msgstr "ค่า_อื่น (10) ..."
-
-#~ msgid "Set other precision"
-#~ msgstr "ตั้งค่าความละเอียดอื่น"
-
-#~ msgid "Note:"
-#~ msgstr "บันทึก:"
-
-#~ msgid ""
-#~ "Set accuracy from 0 to %d numeric places. Currently set to %d places. [a]"
-#~ msgstr "ตั้งค่าความละเอียดทศนิยมจาก 0 ถึง %d หลัก ค่าปัจจุบันคือ %d หลัก [a]"
-
-#~ msgid "Accuracy value out of range"
-#~ msgstr "ค่าความละเอียดอยู่นอกช่วงที่ยอมรับได้"
-
-#~ msgid "Perform calculations"
-#~ msgstr "คำนวณผล"
-
-#~ msgid "Previous expression"
-#~ msgstr "นิพจน์ที่แล้ว"
-
-#~ msgid "_Copy"
-#~ msgstr "_คัดลอก"
-
-#~ msgid "_About"
-#~ msgstr "เ_กี่ยวกับ"
-
-#~ msgid "Basic mode"
-#~ msgstr "โหมดพื้นฐาน"
-
-#~ msgid "BASIC"
-#~ msgstr "พื้นฐาน"
-
-#~ msgid "FINANCIAL"
-#~ msgstr "การเงิน"
-
-#~ msgid "SCIENTIFIC"
-#~ msgstr "วิทยาศาสตร์"
-
-#~ msgid "Integer portion of displayed value"
-#~ msgstr "ส่วนจำนวนเต็มของค่าที่แสดง"
-
-#~ msgid "Fractional portion of displayed value"
-#~ msgstr "ส่วนเศษของค่าที่แสดง"
-
-#~ msgid "Retrieve memory register to display"
-#~ msgstr "เรียกหน่วยความจำรีจิสเตอร์ไปแสดง"
-
-#~ msgid "Exchange displayed value with memory register"
-#~ msgstr "สลับค่าที่แสดงกับหน่วยความจำรีจิสเตอร์"
-
-#~ msgid "16-bit unsigned integer value of display"
-#~ msgstr "แปลงค่าที่แสดงเป็น จำนวนเต็มบวก 16 บิท (16-bit unsigned int)"
-
-#~ msgid "32-bit unsigned integer value of display"
-#~ msgstr "แปลงค่าที่แสดงเป็น จำนวนเต็มบวก 32 บิท (32-bit unsigned int)"
-
-#~ msgid "Enter an exponential number"
-#~ msgstr "ใส่เอ็กซ์โปเนนเชียล"
-
-#~ msgid "e to the power of displayed value"
-#~ msgstr "e ยกกำลังค่าที่แสดง"
-
-#~ msgid "10 to the power of displayed value"
-#~ msgstr "10 ยกกำลังค่าที่แสดง"
-
-#~ msgid "Raise displayed value to the power of y"
-#~ msgstr "เลขที่แสดงอยู่ ยกกำลังเลขที่กำลังจะใส่"
-
-#~ msgid "Factorial of displayed value"
-#~ msgstr "แฟกทอเรียลของค่าที่แสดง"
-
-#~ msgid "Random number in the range 0.0 to 1.0"
-#~ msgstr "ค่าสุ่มในช่วง 0.0 ถึง 1.0"
-
-#~ msgid "Set trigonometric type to gradients"
-#~ msgstr "ตั้งรูปแบบตรีโกณมิติไปยังเกรเดียน"
-
-#~ msgid "y to the power of displayed value"
-#~ msgstr "y ยกกำลังด้วยค่าที่แสดง"
-
-#~ msgid "Y to the x"
-#~ msgstr "Y ไปยัง x"
-
-#~ msgid "kilometers per hour or miles per hour"
-#~ msgstr "กิโลเมตรต่อชั่วโมง หรือไมล์ต่อชั่วโมง"
-
-#~ msgid "grams or ounces"
-#~ msgstr "กรัม หรือออนซ์"
-
-#~ msgid ""
-#~ "*** SIGN NOT 0, +1 OR -1 IN MPADD2 CALL.\n"
-#~ "POSSIBLE OVERWRITING PROBLEM ***\n"
-#~ msgstr ""
-#~ "*** เครื่องหมายไม่ใช่ 0, +1 หรือ -1 ในการเรียก MPADD2\n"
-#~ "อาจเกิดปัญหาการเขียนเกิน ***\n"
-
-#~ msgid "*** N .LE. 1 IN CALL TO MPART1 ***\n"
-#~ msgstr "*** N .LE. 1 ในการเรียกไปยัง MPART1 ***\n"
-
-#~ msgid "*** ABS(X) .GT. 1 IN CALL TO MPASIN ***\n"
-#~ msgstr "*** ABS(X) .GT. 1 ในการเรียกไปยัง MPASIN ***\n"
-
-#~ msgid "*** ERROR OCCURRED IN MPATAN, RESULT INCORRECT ***\n"
-#~ msgstr "*** เกิดความผิดพลาดใน MPATAN ผลลัพธ์ผิดพลาด ***\n"
-
-#~ msgid ""
-#~ "*** B = %d ILLEGAL IN CALL TO MPCHK.\n"
-#~ "PERHAPS NOT SET BEFORE CALL TO AN MP ROUTINE ***\n"
-#~ msgstr ""
-#~ "*** B = %d ไม่ถูกต้องในการเรียกใช้ MPCHK.\n"
-#~ "บางทีเนื่องจากไม่ได้ตั้งค่าก่อนเรียกไปยัง AN MP ROUTINE ***\n"
-
-#~ msgid ""
-#~ "*** T = %d ILLEGAL IN CALL TO MPCHK.\n"
-#~ "PERHAPS NOT SET BEFORE CALL TO AN MP ROUTINE ***\n"
-#~ msgstr ""
-#~ "*** T = %d ไม่ถูกต้องในการเรียกใช้ MPCHK.\n"
-#~ "บางทีเนื่องจากไม่ได้ตั้งค่าก่อนเรียกไปยัง AN MP ROUTINE ***\n"
-
-#~ msgid ""
-#~ "*** M .LE. T IN CALL TO MPCHK.\n"
-#~ "PERHAPS NOT SET BEFORE CALL TO AN MP ROUTINE ***\n"
-#~ msgstr ""
-#~ "*** M .LE. T ในการเรียกไปยัง MPCHK.\n"
-#~ "บางทีเนื่องจากไม่ได้ตั้งค่าก่อนเรียกไปยัง AN MP ROUTINE ***\n"
-
-#~ msgid "*** B TOO LARGE IN CALL TO MPCHK ***\n"
-#~ msgstr "*** B มากเกินไปในการเรียกไปยัง MPCHK ***\n"
-
-#~ msgid ""
-#~ "*** MXR TOO SMALL OR NOT SET TO DIM(R) BEFORE CALL TO AN MP ROUTINE ***\n"
-#~ msgstr "*** MXR เล็กเกินไปหรือไม่ตั้งไปยัง DIM(R) ก่อนเรียกไป AN MP ROUTINE ***\n"
-
-#~ msgid ""
-#~ "*** MXR SHOULD BE AT LEAST %d*T + %d = %d  ***\n"
-#~ "*** ACTUALLY MXR = %d, AND T = %d  ***\n"
-#~ msgstr ""
-#~ "*** MXR ควรจะมีค่าอย่างน้อย %d*T + %d = %d  ***\n"
-#~ "*** จริงๆ แล้ว MXR = %d, AND T = %d  ***\n"
-
-#~ msgid "*** FLOATING-POINT OVER/UNDER-FLOW IN MPCMD ***\n"
-#~ msgstr "*** เลขทศนิยมมีค่ามาก/น้อยเกินไปใน MPCMD ***\n"
-
-#~ msgid "*** FLOATING-POINT OVER/UNDER-FLOW IN MPCMR ***\n"
-#~ msgstr "*** เลขทศนิยมมีค่ามาก/น้อยเกินไปใน MPCMR ***\n"
-
-#~ msgid "*** J = 0 IN CALL TO MPCQM ***\n"
-#~ msgstr "*** J = 0 ในการเรียกไปยัง MPCQM ***\n"
-
-#~ msgid "*** ATTEMPTED DIVISION BY ZERO IN CALL TO MPDIV ***\n"
-#~ msgstr "*** พยายามหารด้วยศูนย์ในการเรียกไปยัง MPDIV ***\n"
-
-#~ msgid "*** OVERFLOW OCCURRED IN MPDIV ***\n"
-#~ msgstr "*** เกิดค่ามากเกินไปใน MPDIV ***\n"
-
-#~ msgid "*** ATTEMPTED DIVISION BY ZERO IN CALL TO MPDIVI ***\n"
-#~ msgstr "*** พยายามหารด้วยศูนย์ในการเรียกไปยัง MPDIVI ***\n"
-
-#~ msgid "*** INTEGER OVERFLOW IN MPDIVI, B TOO LARGE ***\n"
-#~ msgstr "*** จำนวนเต็มมีค่ามากเกินไปใน MPDIVI, B มีค่าใหญ่เกินไป ***\n"
-
-#~ msgid "*** ERROR OCCURRED IN MPEXP, RESULT INCORRECT ***\n"
-#~ msgstr "*** มีความผิดพลาดเกิดใน MPEXP, ผลลัพธ์ไม่ถูกต้อง ***\n"
-
-#~ msgid "*** ABS(X) NOT LESS THAN 1 IN CALL TO MPEXP1 ***\n"
-#~ msgstr "*** ABS(X) ต้องไม่น้อยกว่า 1 ในการเรียกไปยัง MPEXP1 ***\n"
-
-#~ msgid "*** X NONPOSITIVE IN CALL TO MPLN ***\n"
-#~ msgstr "*** X ไม่เป็นค่าบวกในการเรียกไปยัง MPLN ***\n"
-
-#~ msgid "*** ERROR IN MPLN, ITERATION NOT CONVERGING ***\n"
-#~ msgstr "*** มีความผิดพลาดใน MPLN, การวนซ้ำไม่มีจุดสิ้นสุด ***\n"
-
-#~ msgid "*** ABS(X) .GE. 1/B IN CALL TO MPLNS ***\n"
-#~ msgstr "*** ABS(X) .GE. 1/B ในการเรียกไปยัง MPLNS ***\n"
-
-#~ msgid ""
-#~ "*** ERROR OCCURRED IN MPLNS.\n"
-#~ "NEWTON ITERATION NOT CONVERGING PROPERLY ***\n"
-#~ msgstr ""
-#~ "*** มีความผิดพลาดใน MPLNS.\n"
-#~ "การวนซ้ำของนิวตันไม่ลู่เข้าอย่างเหมาะสม ***\n"
-
-#~ msgid ""
-#~ "*** ILLEGAL BASE B DIGIT IN CALL TO MPMUL.\n"
-#~ "POSSIBLE OVERWRITING PROBLEM ***\n"
-#~ msgstr ""
-#~ "*** เลขฐาน B ไม่ถูกต้องในการเรียก MPMUL\n"
-#~ "อาจเกิดปัญหาการเขียนเกิน ***\n"
-
-#~ msgid "*** ATTEMPTED DIVISION BY ZERO IN MPMULQ ***\n"
-#~ msgstr "*** มีความพยายามหารด้วยศูนย์ใน MPMULQ ***\n"
-
-#~ msgid ""
-#~ "*** SIGN NOT 0, +1 OR -1 IN CALL TO MPNZR.\n"
-#~ "POSSIBLE OVERWRITING PROBLEM ***\n"
-#~ msgstr ""
-#~ "*** เครื่องหมายไม่ใช่ 0, +1 หรือ -1 ในการเรียก MPNZR\n"
-#~ "อาจเกิดปัญหาการเขียนเกิน ***\n"
-
-#~ msgid "*** ERROR OCCURRED IN MPPI, RESULT INCORRECT ***\n"
-#~ msgstr "*** มีความผิดพลาดใน MPPI, ผลลัพธ์ผิดพลาด ***\n"
-
-#~ msgid ""
-#~ "*** ATTEMPT TO RAISE ZERO TO NEGATIVE POWER IN CALL TO SUBROUTINE MPPWR "
-#~ "***\n"
-#~ msgstr "*** พยายามยกกำลังศูนย์ด้วยเลขลบในการเรียกไปยัง SUBROUTINE MPPWR ***\n"
-
-#~ msgid "*** X NEGATIVE IN CALL TO MPPWR2 ***\n"
-#~ msgstr "*** ค่าลบของ X ในการเรียกไปยัง MPPWR2 ***\n"
-
-#~ msgid "*** X ZERO AND Y NONPOSITIVE IN CALL TO MPPWR2 ***\n"
-#~ msgstr "*** X ศูนย์ และ Y ไม่ใช่ค่าบวกในการเรียกใช้ไปยัง MPPWR2 ***\n"
-
-#~ msgid "*** ATTEMPTED DIVISION BY ZERO IN CALL TO MPREC ***\n"
-#~ msgstr "*** พยายามหารด้วยศูนย์ในการเรียกไปยัง MPREC ***\n"
-
-#~ msgid ""
-#~ "*** ERROR OCCURRED IN MPREC, NEWTON ITERATION NOT CONVERGING PROPERLY "
-#~ "***\n"
-#~ msgstr "*** มีความผิดพลาดใน MPREC, การวนซ้ำของนิวตันไม่ลู่เข้าอย่างเหมาะสม ***\n"
-
-#~ msgid "*** N = 0 IN CALL TO MPROOT ***\n"
-#~ msgstr "*** N = 0 ในการเรียกไปยัง MPROOT ***\n"
-
-#~ msgid "*** ABS(N) TOO LARGE IN CALL TO MPROOT ***\n"
-#~ msgstr "*** ABS(N) ใหญ่เกินไปในการเรียกไปยัง MPROOT ***\n"
-
-#~ msgid "*** X = 0 AND N NEGATIVE IN CALL TO MPROOT ***\n"
-#~ msgstr "*** X = 0 และ N เป็นค่าลบในการเรียกไปยัง MPROOT ***\n"
-
-#~ msgid "*** X NEGATIVE AND N EVEN IN CALL TO MPROOT ***\n"
-#~ msgstr "*** X เป็นลบและ N เป็นคี่ในการเรียกไปยัง MPROOT ***\n"
-
-#~ msgid ""
-#~ "*** ERROR OCCURRED IN MPROOT, NEWTON ITERATION NOT CONVERGING PROPERLY "
-#~ "***\n"
-#~ msgstr "*** มีความผิดพลาดใน MPROOT, การวนซ้ำของนิวตันไม่ลู่เข้าอย่างเหมาะสม ***\n"
-
-#~ msgid "*** IDECPL .LE. 0 IN CALL TO MPSET ***\n"
-#~ msgstr "*** IDECPL .LE. 0 ในการเรียกไปยัง MPSET ***\n"
-
-#~ msgid ""
-#~ "ITMAX2 TOO SMALL IN CALL TO MPSET ***\n"
-#~ "*** INCREASE ITMAX2 AND DIMENSIONS OF MP ARRAYS TO AT LEAST %d ***\n"
-#~ msgstr ""
-#~ "ITMAX2 เล็กเกินไปในการเรียกไปยัง MPSET ***\n"
-#~ "*** เพิ่ม ITMAX2 และมิติของ MP ARRAYS อย่างน้อย %d ***\n"
-
-#~ msgid "*** ERROR OCCURRED IN MPSIN, RESULT INCORRECT ***\n"
-#~ msgstr "*** เกิดความผิดพลาดใน MPSIN ผลลัพธ์ไม่ถูกต้อง ***\n"
-
-#~ msgid "*** ABS(X) .GT. 1 IN CALL TO MPSIN1 ***\n"
-#~ msgstr "*** ABS(X) .GT. 1 ในการเรียกไปยัง MPSIN1 ***\n"
-
-#~ msgid "*** X NEGATIVE IN CALL TO SUBROUTINE MPSQRT ***\n"
-#~ msgstr "*** X เป็นลบในการเรียกไปยัง SUBROUTINE MPSQRT ***\n"

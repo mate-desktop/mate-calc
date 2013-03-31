@@ -1,580 +1,601 @@
-# Esperanto translation for mate-calc.
-# Copyright (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
-# This file is distributed under the same license as the mate-calc package.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Barfos <erineh1@lsu.edu>, 2006.
-# Joseph SCHWENKER < >, 2010.
-# Manuel < >, 2010.
-# Michael MORONI < >, 2010, 2011.
-# Tiffany Antopolski <tiffany.antopolski@gmail.com>, 2011.
 # Behrouz Soroushian <bsoroushian@gmail.com>, 2011.
-# Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2010, 2011, 2012.
-#
+# Joseph SCHWENKER < >, 2010.
+# Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2010-2012.
+# Manuel < >, 2010.
+# Michael MORONI < >, 2010-2011.
+# Tiffany Antopolski <tiffany.antopolski@gmail.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mate-calc&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-11-30 22:17+0000\n"
-"PO-Revision-Date: 2012-04-06 12:44+0200\n"
-"Last-Translator: Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>\n"
-"Language-Team: Esperanto <mate-l10n-eo@lists.launchpad.net>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2013-03-24 20:10+0100\n"
+"PO-Revision-Date: 2013-03-24 19:30+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Esperanto (http://www.transifex.com/projects/p/MATE/language/eo/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: eo\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Virtaal 0.7.0\n"
-"X-DamnedLies-Scope: partial\n"
-"X-Launchpad-Export-Date: 2011-04-21 20:04+0000\n"
-"X-Project-Style: mate\n"
-
-#. The label on the memory button
-#: ../data/buttons-advanced.ui.h:2 ../data/buttons-financial.ui.h:2
-msgid "<i>x</i>"
-msgstr "<i>x</i>"
-
-#. Label on the solve button (clicking this solves the displayed calculation)
-#: ../data/buttons-advanced.ui.h:4 ../data/buttons-basic.ui.h:2
-#: ../data/buttons-financial.ui.h:4 ../data/buttons-programming.ui.h:2
-msgid "="
-msgstr "="
-
-#. Accessible name for the absolute value button
-#: ../data/buttons-advanced.ui.h:6 ../data/buttons-programming.ui.h:4
-msgid "Absolute Value"
-msgstr "Absoluta valoro"
-
-#. Accessible name for the exponentiation (x to the power of y) button
-#: ../data/buttons-advanced.ui.h:8 ../data/buttons-basic.ui.h:4
-#: ../data/buttons-financial.ui.h:38 ../data/buttons-programming.ui.h:8
-msgid "Exponent"
-msgstr "Eksponento"
-
-#. Accessible name for the factorial button
-#: ../data/buttons-advanced.ui.h:10 ../data/buttons-programming.ui.h:10
-msgid "Factorial"
-msgstr "Faktorialo"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Accessible name for the factorize button
-#: ../data/buttons-advanced.ui.h:12 ../data/buttons-programming.ui.h:12
+#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:8
 msgid "Factorize"
 msgstr "Faktorigi"
 
-#. Accessible name for the inverse button
-#: ../data/buttons-advanced.ui.h:14 ../data/buttons-programming.ui.h:18
-msgid "Inverse"
-msgstr "Inverso"
+#. Label on the solve button (clicking this solves the displayed calculation)
+#: ../data/buttons-advanced.ui.h:4 ../data/buttons-basic.ui.h:2
+#: ../data/buttons-financial.ui.h:76 ../data/buttons-programming.ui.h:12
+msgid "="
+msgstr "="
 
-#. Accessible name for the memory button
-#. Accessible name for the memory value button
-#. Tooltip for the memory button
-#: ../data/buttons-advanced.ui.h:16 ../data/buttons-financial.ui.h:50
-#: ../src/math-buttons.c:224
-msgid "Memory"
-msgstr "Memoro"
-
-#. Accessible name for the scientific exponent button
-#: ../data/buttons-advanced.ui.h:18
-msgid "Scientific Exponent"
-msgstr "Scienca eksponento"
-
-#. Accessible name for the store value button
-#: ../data/buttons-advanced.ui.h:20 ../data/buttons-programming.ui.h:24
-msgid "Store"
-msgstr "Konservi"
+#: ../data/buttons-advanced.ui.h:5 ../data/buttons-basic.ui.h:3
+#: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
+msgid "Clear"
+msgstr "Vakigi"
 
 #. Accessible name for the subscript mode button
-#: ../data/buttons-advanced.ui.h:22 ../data/buttons-programming.ui.h:26
+#: ../data/buttons-advanced.ui.h:7 ../data/buttons-programming.ui.h:15
 msgid "Subscript"
 msgstr "Suba indico"
 
 #. Accessible name for the superscript mode button
-#: ../data/buttons-advanced.ui.h:24 ../data/buttons-programming.ui.h:28
+#: ../data/buttons-advanced.ui.h:9 ../data/buttons-programming.ui.h:17
 msgid "Superscript"
 msgstr "Supra indico"
 
+#. Accessible name for the scientific exponent button
+#: ../data/buttons-advanced.ui.h:11
+msgid "Scientific Exponent"
+msgstr "Scienca eksponento"
+
+#. Accessible name for the memory button
+#. Accessible name for the memory value button
+#. Tooltip for the memory button
+#: ../data/buttons-advanced.ui.h:13 ../data/buttons-financial.ui.h:72
+#: ../src/math-buttons.c:232
+msgid "Memory"
+msgstr "Memoro"
+
+#. The label on the memory button
+#: ../data/buttons-advanced.ui.h:15 ../data/buttons-financial.ui.h:74
+#: ../data/buttons-programming.ui.h:21
+msgid "x"
+msgstr "x"
+
+#. Accessible name for the exponentiation (x to the power of y) button
+#: ../data/buttons-advanced.ui.h:17 ../data/buttons-basic.ui.h:5
+#: ../data/buttons-financial.ui.h:100 ../data/buttons-programming.ui.h:33
+msgid "Exponent"
+msgstr "Eksponento"
+
+#: ../data/buttons-advanced.ui.h:18 ../data/buttons-basic.ui.h:6
+#: ../data/buttons-financial.ui.h:98
+msgid "Undo"
+msgstr "Malfari"
+
+#: ../data/buttons-advanced.ui.h:19
+msgid "acos"
+msgstr ""
+
+#: ../data/buttons-advanced.ui.h:20
+msgid "asin"
+msgstr ""
+
+#: ../data/buttons-advanced.ui.h:21
+msgid "atan"
+msgstr ""
+
+#. Accessible name for the store value button
+#: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:19
+msgid "Store"
+msgstr "Konservi"
+
+#. Accessible name for the inverse button
+#: ../data/buttons-advanced.ui.h:25 ../data/buttons-programming.ui.h:31
+msgid "Inverse"
+msgstr "Inverso"
+
+#. Accessible name for the factorial button
+#: ../data/buttons-advanced.ui.h:27 ../data/buttons-programming.ui.h:29
+msgid "Factorial"
+msgstr "Faktorialo"
+
+#. Accessible name for the absolute value button
+#: ../data/buttons-advanced.ui.h:29 ../data/buttons-programming.ui.h:10
+msgid "Absolute Value"
+msgstr "Absoluta valoro"
+
+#. Title of Compounding Term dialog
+#. Tooltip for the compounding term button
+#: ../data/buttons-financial.ui.h:2 ../src/math-buttons.c:256
+msgid "Compounding Term"
+msgstr "Kunmetanta Periodo"
+
 #. Payment Period Dialog: Button to calculate result
-#: ../data/buttons-financial.ui.h:6
+#: ../data/buttons-financial.ui.h:4
 msgid "C_alculate"
 msgstr "K_alkuli"
 
-#. Gross Profit Margin Dialog: Label before cost input
+#. Periodic Interest Rate Dialog: Label before present value input
+#: ../data/buttons-financial.ui.h:6
+msgid "Present _Value:"
+msgstr "Nuna _valoro"
+
+#. Payment Period Dialog: Label before periodic interest rate input
 #: ../data/buttons-financial.ui.h:8
-msgid "C_ost:"
-msgstr "Ko_sto:"
-
-#. Periodic Payment Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:10
-msgid ""
-"Calculates the amount of the periodic payment of a loan, where payments are "
-"made at the end of each payment period. "
-msgstr ""
-"Kalkuli kvanton de la periodaj pagoj por iu prunto, kiam pagoj estas faritaj "
-"fine de ĉiu pagperiodo. "
-
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:12
-msgid ""
-"Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
-"accelerates the rate of depreciation, so that more depreciation expense "
-"occurs in earlier periods than in later ones. The useful life is the number "
-"of periods, typically years, over which an asset is depreciated. "
-msgstr ""
-"Kalkuli asignaĵon por kompensi malplivaloriĝon de aktivo dum iu specifa "
-"perioda, uzante la metodon 'Sumo-de-la-Jaroj'-Ciferoj.  Tiu ĉi metodo de "
-"malplivaloriĝo pli akcelas gradon de malplivaloriĝon, tiel ke pli granda "
-"kvanto de malplivaloriĝaj elspezoj okazas dum pli fruaj periodoj ol la pli "
-"malfruaj.  La uzebla ekzistoperiodo estas la nombroj de periodoj, kutime "
-"jaroj, dum kiuj iu aktivo malplivaloriĝas."
-
-#. Double-Declining Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:14
-msgid ""
-"Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the double-declining balance method."
-msgstr ""
-"Kalkuli asignaĵon por kompensi malplivaloriĝon de aktivo dum iu specifa "
-"perioda, uzante la metodon 'duoble deklinacianta saldo'."
-
-#. Future Value Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:16
-msgid ""
-"Calculates the future value of an investment based on a series of equal "
-"payments at a periodic interest rate over the number of payment periods in "
-"the term."
-msgstr ""
-"Kalkuli la estontan valoron de investaĵo bazita sur serio de egalaj pagoj "
-"per perioda rentumo super la nombro de pagperiodoj dum tuta periodo de la "
-"investaĵo."
+msgid "Periodic Interest _Rate:"
+msgstr "Perioda _rentumo:"
 
 #. Compounding Term Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:18
+#: ../data/buttons-financial.ui.h:10
 msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr ""
-"Kalkuli kiom kunmetantaj periodoj necesas por pliigi investaĵo de estanta "
-"valoro al estonta valoro, por neŝanganta rentumo por ĉiu kunmetanta periodoj."
+msgstr "Kalkuli kiom kunmetantaj periodoj necesas por pliigi investaĵo de estanta valoro al estonta valoro, por neŝanganta rentumo por ĉiu kunmetanta periodoj."
 
-#. Payment Period Dialog: Description of calculation
+#. Periodic Interest Rate Dialog: Label before future value input
+#: ../data/buttons-financial.ui.h:12
+msgid "_Future Value:"
+msgstr "_Estonta valoro:"
+
+#. Title of Double-Declining Depreciation dialog
+#: ../data/buttons-financial.ui.h:14
+msgid "Double-Declining Depreciation"
+msgstr "duoble dekliancanta malplivaloriĝo"
+
+#. Double-Declining Depreciation Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:16
+msgid ""
+"Calculates the depreciation allowance on an asset for a specified period of "
+"time, using the double-declining balance method."
+msgstr "Kalkuli asignaĵon por kompensi malplivaloriĝon de aktivo dum iu specifa perioda, uzante la metodon 'duoble deklinacianta saldo'."
+
+#. Gross Profit Margin Dialog: Label before cost input
+#: ../data/buttons-financial.ui.h:18
+msgid "C_ost:"
+msgstr "Ko_sto:"
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
 #: ../data/buttons-financial.ui.h:20
-msgid ""
-"Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest "
-"rate."
-msgstr ""
-"Kalkuli kiom pagperiodaj necesas dum la daŭro de ordinara anuitato, por "
-"havigi iun estontan valoron, per perioda rentumo."
+msgid "_Life:"
+msgstr "_Ekzistodaŭro:"
 
-#. Periodic Interest Rate Dialog: Description of calculation
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
 #: ../data/buttons-financial.ui.h:22
+msgid "_Period:"
+msgstr "_Periodo:"
+
+#. Title of Future Value dialog
+#. Tooltip for the future value button
+#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.c:262
+msgid "Future Value"
+msgstr "Estonta valoro"
+
+#. Future Value Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:26
 msgid ""
-"Calculates the periodic interest necessary to increase an investment to a "
-"future value, over the number of compounding periods. "
-msgstr ""
-"Kalkuli periodan rentumon necesan por pliigi investaĵon ĝis iu specifa "
-"estonta valoro, dum iu nombro de kunmetantaj periodoj. "
+"Calculates the future value of an investment based on a series of equal "
+"payments at a periodic interest rate over the number of payment periods in "
+"the term."
+msgstr "Kalkuli la estontan valoron de investaĵo bazita sur serio de egalaj pagoj per perioda rentumo super la nombro de pagperiodoj dum tuta periodo de la investaĵo."
+
+#. Payment Period Dialog: Label before periodic payment input
+#: ../data/buttons-financial.ui.h:28
+msgid "_Periodic Payment:"
+msgstr "_Perioda pago:"
+
+#. Present Value Dialog: Label before number of periods input
+#: ../data/buttons-financial.ui.h:30
+msgid "_Number of Periods:"
+msgstr "_Nombro de periodoj:"
+
+#. Title of Gross Profit Margin dialog
+#. Tooltip for the gross profit margin button
+#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:283
+msgid "Gross Profit Margin"
+msgstr "Malnetoprofito marĝeno"
+
+#. Gross Profit Margin Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:34
+msgid ""
+"Calculates the resale price of a product, based on the product cost and the "
+"wanted gross profit margin."
+msgstr "Kalkulas la revendan prezon de produkto, surbaze prezo de la produkto kaj la dezirata malneta profitmarĝeno."
+
+#. Gross Profit Margin Dialog: Label before margin input
+#: ../data/buttons-financial.ui.h:36
+msgid "_Margin:"
+msgstr "_Marĝeno:"
+
+#. Title of Periodic Payment dialog
+#. Tooltip for the periodic payment button
+#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:280
+msgid "Periodic Payment"
+msgstr "Perioda pago"
+
+#. Periodic Payment Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:40
+msgid ""
+"Calculates the amount of the periodic payment of a loan, where payments are "
+"made at the end of each payment period. "
+msgstr "Kalkuli kvanton de la periodaj pagoj por iu prunto, kiam pagoj estas faritaj fine de ĉiu pagperiodo. "
+
+#. Periodic Payment Dialog: Label before principal input
+#: ../data/buttons-financial.ui.h:42
+msgid "_Principal:"
+msgstr "Ĉ_efa:"
+
+#. Periodic Interest Rate Dialog: Label before term input
+#: ../data/buttons-financial.ui.h:44
+msgid "_Term:"
+msgstr "_Periodo:"
+
+#. Title of Present Value dialog
+#. Tooltip for the present value button
+#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:277
+msgid "Present Value"
+msgstr "Nuna valoro"
 
 #. Present Value Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:24
+#: ../data/buttons-financial.ui.h:48
 msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr ""
-"Kalkuli la estanta valoro de la investaĵo bazita sur serio de egalaj pagoj "
-"diskontata por perioda rentumo sur la nombro de pagperiodoj en tuta periodo "
-"de la investaĵo."
+msgstr "Kalkuli la estanta valoro de la investaĵo bazita sur serio de egalaj pagoj diskontata por perioda rentumo sur la nombro de pagperiodoj en tuta periodo de la investaĵo."
 
-#. Gross Profit Margin Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:26
+#. Title of Periodic Interest Rate dialog
+#. Tooltip for the periodic interest rate button
+#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.c:274
+msgid "Periodic Interest Rate"
+msgstr "Perioda rentumo"
+
+#. Periodic Interest Rate Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:52
 msgid ""
-"Calculates the resale price of a product, based on the product cost and the "
-"wanted gross profit margin."
-msgstr ""
-"Kalkulas la revendan prezon de produkto, surbaze prezo de la produkto kaj la "
-"dezirata malneta profitmarĝeno."
+"Calculates the periodic interest necessary to increase an investment to a "
+"future value, over the number of compounding periods. "
+msgstr "Kalkuli periodan rentumon necesan por pliigi investaĵon ĝis iu specifa estonta valoro, dum iu nombro de kunmetantaj periodoj. "
+
+#. Title of Straight-Line Depreciation dialog
+#: ../data/buttons-financial.ui.h:54
+msgid "Straight-Line Depreciation"
+msgstr "Lineara malplivaloriĝo"
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#: ../data/buttons-financial.ui.h:56
+msgid "_Cost:"
+msgstr "_Kosto:"
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#: ../data/buttons-financial.ui.h:58
+msgid "_Salvage:"
+msgstr "Re_stanta valoro:"
 
 #. Straight-Line Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:28
+#: ../data/buttons-financial.ui.h:60
 msgid ""
 "Calculates the straight-line depreciation of an asset for one period. The "
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr ""
-"Kalkuli la lineara malplivaloriĝon de aktivo dum unu periodo. La lineara "
-"metodo de malplivaloriĝo dividas la malplivaloriĝeblan koston egale tra la "
-"ekzistodaŭro de iu aktivo. La ekzistadaŭro estas la kvanto de periodoj, "
-"kutime jaroj, dum kiu la aktivo tute perdas sian valoron."
-
-#. Title of Compounding Term dialog
-#. Tooltip for the compounding term button
-#: ../data/buttons-financial.ui.h:30 ../src/math-buttons.c:248
-msgid "Compounding Term"
-msgstr "Kunmetanta Periodo"
-
-#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
-#: ../data/buttons-financial.ui.h:32
-msgid "Ctrm"
-msgstr "Ktrm"
-
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:34
-msgid "Ddb"
-msgstr "Dds"
-
-#. Title of Double-Declining Depreciation dialog
-#: ../data/buttons-financial.ui.h:36
-msgid "Double-Declining Depreciation"
-msgstr "duoble dekliancanta malplivaloriĝo"
-
-#. Title of Future Value dialog
-#. Tooltip for the future value button
-#: ../data/buttons-financial.ui.h:40 ../src/math-buttons.c:254
-msgid "Future Value"
-msgstr "Estonta valoro"
-
-#. Payment Period Dialog: Label before future value input
-#: ../data/buttons-financial.ui.h:42
-msgid "Future _Value:"
-msgstr "Estonta _valoro:"
-
-#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
-#: ../data/buttons-financial.ui.h:44
-msgid "Fv"
-msgstr "Ev"
-
-#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
-#: ../data/buttons-financial.ui.h:46
-msgid "Gpm"
-msgstr "Mpm"
-
-#. Title of Gross Profit Margin dialog
-#. Tooltip for the gross profit margin button
-#: ../data/buttons-financial.ui.h:48 ../src/math-buttons.c:275
-msgid "Gross Profit Margin"
-msgstr "Malnetoprofito marĝeno"
-
-#. Title of Payment Period dialog
-#: ../data/buttons-financial.ui.h:52
-msgid "Payment Period"
-msgstr "Pagperiodo"
-
-#. Title of Periodic Interest Rate dialog
-#. Tooltip for the periodic interest rate button
-#: ../data/buttons-financial.ui.h:54 ../src/math-buttons.c:266
-msgid "Periodic Interest Rate"
-msgstr "Perioda rentumo"
-
-#. Payment Period Dialog: Label before periodic interest rate input
-#: ../data/buttons-financial.ui.h:56
-msgid "Periodic Interest _Rate:"
-msgstr "Perioda _rentumo:"
-
-#. Title of Periodic Payment dialog
-#. Tooltip for the periodic payment button
-#: ../data/buttons-financial.ui.h:58 ../src/math-buttons.c:272
-msgid "Periodic Payment"
-msgstr "Perioda pago"
-
-#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
-#: ../data/buttons-financial.ui.h:60
-msgid "Pmt"
-msgstr "Ppg"
-
-#. Title of Present Value dialog
-#. Tooltip for the present value button
-#: ../data/buttons-financial.ui.h:62 ../src/math-buttons.c:269
-msgid "Present Value"
-msgstr "Nuna valoro"
-
-#. Periodic Interest Rate Dialog: Label before present value input
-#: ../data/buttons-financial.ui.h:64
-msgid "Present _Value:"
-msgstr "Nuna _valoro"
-
-#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
-#: ../data/buttons-financial.ui.h:66
-msgid "Pv"
-msgstr "Nv"
-
-#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
-#: ../data/buttons-financial.ui.h:68
-msgid "Rate"
-msgstr "Procentaĵo"
-
-#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:70
-msgid "Sln"
-msgstr "Sln"
-
-#. Title of Straight-Line Depreciation dialog
-#: ../data/buttons-financial.ui.h:72
-msgid "Straight-Line Depreciation"
-msgstr "Lineara malplivaloriĝo"
+msgstr "Kalkuli la lineara malplivaloriĝon de aktivo dum unu periodo. La lineara metodo de malplivaloriĝo dividas la malplivaloriĝeblan koston egale tra la ekzistodaŭro de iu aktivo. La ekzistadaŭro estas la kvanto de periodoj, kutime jaroj, dum kiu la aktivo tute perdas sian valoron."
 
 #. Title of Sum-of-the-Years'-Digits Depreciation dialog
-#: ../data/buttons-financial.ui.h:74
+#: ../data/buttons-financial.ui.h:62
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "Sumo-de-la-Jaro'-ciferoj malplivaloriĝo"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:76
-msgid "Syd"
-msgstr "Sjc"
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:64
+msgid ""
+"Calculates the depreciation allowance on an asset for a specified period of "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
+" accelerates the rate of depreciation, so that more depreciation expense "
+"occurs in earlier periods than in later ones. The useful life is the number "
+"of periods, typically years, over which an asset is depreciated. "
+msgstr "Kalkuli asignaĵon por kompensi malplivaloriĝon de aktivo dum iu specifa perioda, uzante la metodon 'Sumo-de-la-Jaroj'-Ciferoj.  Tiu ĉi metodo de malplivaloriĝo pli akcelas gradon de malplivaloriĝon, tiel ke pli granda kvanto de malplivaloriĝaj elspezoj okazas dum pli fruaj periodoj ol la pli malfruaj.  La uzebla ekzistoperiodo estas la nombroj de periodoj, kutime jaroj, dum kiuj iu aktivo malplivaloriĝas."
 
-#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
-#: ../data/buttons-financial.ui.h:78
+#. Title of Payment Period dialog
+#: ../data/buttons-financial.ui.h:66
+msgid "Payment Period"
+msgstr "Pagperiodo"
+
+#. Payment Period Dialog: Label before future value input
+#: ../data/buttons-financial.ui.h:68
+msgid "Future _Value:"
+msgstr "Estonta _valoro:"
+
+#. Payment Period Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:70
+msgid ""
+"Calculates the number of payment periods that are necessary during the term "
+"of an ordinary annuity, to accumulate a future value, at a periodic interest"
+" rate."
+msgstr "Kalkuli kiom pagperiodaj necesas dum la daŭro de ordinara anuitato, por havigi iun estontan valoron, per perioda rentumo."
+
+#. Calculates the number of compounding periods necessary to increase an
+#. investment of present value pv to a future value of fv, at a fixed interest
+#. rate of int per compounding period. See also:
+#. http://en.wikipedia.org/wiki/Compound_interest
+#: ../data/buttons-financial.ui.h:79
+msgid "Ctrm"
+msgstr "Ktrm"
+
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the double-declining balance method. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:81
+msgid "Ddb"
+msgstr "Dds"
+
+#. Calculates the future value of an investment based on a series of equal
+#. payments, each of amount pmt, at a periodic interest rate of int, over the
+#. number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Future_value
+#: ../data/buttons-financial.ui.h:83
+msgid "Fv"
+msgstr "Ev"
+
+#. Calculates the number of payment periods that are necessary during the term
+#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
+#. interest rate of int. Each payment is equal to amount pmt. See also:
+#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#: ../data/buttons-financial.ui.h:85
 msgid "Term"
 msgstr "Periodo"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
-#: ../data/buttons-financial.ui.h:80
-msgid "_Cost:"
-msgstr "_Kosto:"
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the Sum-Of-The-Years'-Digits method. This method of
+#. depreciation accelerates the rate of depreciation, so that more
+#. depreciation expense occurs in earlier periods than in later ones. The
+#. depreciable cost is cost - salvage. The useful life is the number of
+#. periods, typically years, over which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:87
+msgid "Syd"
+msgstr "Sjc"
 
-#. Periodic Interest Rate Dialog: Label before future value input
-#: ../data/buttons-financial.ui.h:82
-msgid "_Future Value:"
-msgstr "_Estonta valoro:"
+#. Calculates the straight-line depreciation of an asset for one period. The
+#. depreciable cost is cost - salvage. The straight-line method of
+#. depreciation divides the depreciable cost evenly over the useful life of an
+#. asset. The useful life is the number of periods, typically years, over
+#. which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:89
+msgid "Sln"
+msgstr "Sln"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
-#: ../data/buttons-financial.ui.h:84
-msgid "_Life:"
-msgstr "_Ekzistodaŭro:"
+#. Calculates the periodic interest necessary to increase an investment of
+#. present value pv to a future value of fv, over the number of compounding
+#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#: ../data/buttons-financial.ui.h:91
+msgid "Rate"
+msgstr "Procentaĵo"
 
-#. Gross Profit Margin Dialog: Label before margin input
-#: ../data/buttons-financial.ui.h:86
-msgid "_Margin:"
-msgstr "_Marĝeno:"
+#. Calculates the present value of an investment based on a series of equal
+#. payments, each of amount pmt, discounted at a periodic interest rate of
+#. int, over the number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Present_value
+#: ../data/buttons-financial.ui.h:93
+msgid "Pv"
+msgstr "Nv"
 
-#. Present Value Dialog: Label before number of periods input
-#: ../data/buttons-financial.ui.h:88
-msgid "_Number of Periods:"
-msgstr "_Nombro de periodoj:"
+#. Calculates the amount of the periodic payment of a loan, where payments are
+#. made at the end of each payment period. See also:
+#. http://en.wikipedia.org/wiki/Amortization_schedule
+#: ../data/buttons-financial.ui.h:95
+msgid "Pmt"
+msgstr "Ppg"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
-#: ../data/buttons-financial.ui.h:90
-msgid "_Period:"
-msgstr "_Periodo:"
+#. Calculates the resale price of a product, based on the product cost and the
+#. wanted gross profit margin. See also:
+#. http://en.wikipedia.org/wiki/Gross_profit_margin
+#: ../data/buttons-financial.ui.h:97
+msgid "Gpm"
+msgstr "Mpm"
 
-#. Payment Period Dialog: Label before periodic payment input
-#: ../data/buttons-financial.ui.h:92
-msgid "_Periodic Payment:"
-msgstr "_Perioda pago:"
+#. Title of insert character code dialog
+#. Tooltip for the insert character code button
+#: ../data/buttons-programming.ui.h:2 ../src/math-buttons.c:235
+msgid "Insert Character Code"
+msgstr "Enmeti signokodon"
 
-#. Periodic Payment Dialog: Label before principal input
-#: ../data/buttons-financial.ui.h:94
-msgid "_Principal:"
-msgstr "Ĉ_efa:"
-
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
-#: ../data/buttons-financial.ui.h:96
-msgid "_Salvage:"
-msgstr "Re_stanta valoro:"
-
-#. Periodic Interest Rate Dialog: Label before term input
-#: ../data/buttons-financial.ui.h:98
-msgid "_Term:"
-msgstr "_Periodo:"
+#. Insert ASCII dialog: Button to insert selected character
+#: ../data/buttons-programming.ui.h:4
+msgid "_Insert"
+msgstr "Enmet_i"
 
 #. Insert ASCII dialog: Label before character entry
 #: ../data/buttons-programming.ui.h:6
 msgid "Ch_aracter:"
 msgstr "_Signo:"
 
-#. Accessible name for the insert character button
-#: ../data/buttons-programming.ui.h:14
-msgid "Insert Character"
-msgstr "Enmeti signon"
-
-#. Title of insert character code dialog
-#. Tooltip for the insert character code button
-#: ../data/buttons-programming.ui.h:16 ../src/math-buttons.c:227
-msgid "Insert Character Code"
-msgstr "Enmeti signokodon"
-
 #. Accessible name for the shift left button
 #. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:20 ../src/math-buttons.c:242
+#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
 msgid "Shift Left"
 msgstr "Ŝovi maldekstren"
 
 #. Accessible name for the shift right button
 #. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:22 ../src/math-buttons.c:245
+#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
 msgid "Shift Right"
 msgstr "Ŝovi dekstren"
 
-#. Insert ASCII dialog: Button to insert selected character
-#: ../data/buttons-programming.ui.h:30
-msgid "_Insert"
-msgstr "Enmet_i"
+#. Accessible name for the insert character button
+#: ../data/buttons-programming.ui.h:27
+msgid "Insert Character"
+msgstr "Enmeti signon"
 
-#. The label on the memory button
-#: ../data/buttons-programming.ui.h:32
-msgid "x"
-msgstr "x"
+#. Word size combo: 8 bits
+#: ../data/preferences.ui.h:2
+msgid "8-bit"
+msgstr "8-bita"
 
 #. Word size combo: 16 bits
-#: ../data/preferences.ui.h:2
+#: ../data/preferences.ui.h:4
 msgid "16-bit"
 msgstr "16-bita"
 
 #. Word size combo: 32 bits
-#: ../data/preferences.ui.h:4
+#: ../data/preferences.ui.h:6
 msgid "32-bit"
 msgstr "32-bita"
 
 #. Word size combo: 64 bits
-#: ../data/preferences.ui.h:6
+#: ../data/preferences.ui.h:8
 msgid "64-bit"
 msgstr "64-bita"
 
-#. Word size combo: 8 bits
-#: ../data/preferences.ui.h:8
-msgid "8-bit"
-msgstr "8-bita"
-
-#. Preferences dialog: Label for display format combo box
-#: ../data/preferences.ui.h:10
-msgid "Number _Format:"
-msgstr "Nombra _formato:"
-
 #. Title of preferences dialog
-#: ../data/preferences.ui.h:11 ../src/math-preferences.c:231
+#: ../data/preferences.ui.h:9 ../src/math-preferences.c:238
 msgid "Preferences"
 msgstr "Agordoj"
 
-#. Preferences dialog: label for show thousands separator check button
-#: ../data/preferences.ui.h:13
-msgid "Show _thousands separators"
-msgstr "Montri milapar_tigilojn"
-
-#. Preferences dialog: label for show trailing zeroes check button
-#: ../data/preferences.ui.h:15
-msgid "Show trailing _zeroes"
-msgstr "Montri sekvantajn _nulojn"
-
-#. Preferences dialog: label for word size combo box
-#: ../data/preferences.ui.h:17
-msgid "Word _size:"
-msgstr "Vort_longo:"
-
 #. Preferences dialog: Label for angle unit combo box
-#: ../data/preferences.ui.h:19
+#: ../data/preferences.ui.h:11
 msgid "_Angle units:"
 msgstr "_Angulaj unuoj:"
 
+#. Preferences dialog: Label for display format combo box
+#: ../data/preferences.ui.h:13
+msgid "Number _Format:"
+msgstr "Nombra _formato:"
+
+#. Preferences dialog: label for word size combo box
+#: ../data/preferences.ui.h:15
+msgid "Word _size:"
+msgstr "Vort_longo:"
+
+#. Preferences dialog: label for show trailing zeroes check button
+#: ../data/preferences.ui.h:17
+msgid "Show trailing _zeroes"
+msgstr "Montri sekvantajn _nulojn"
+
+#. Preferences dialog: label for show thousands separator check button
+#: ../data/preferences.ui.h:19
+msgid "Show _thousands separators"
+msgstr "Montri milapar_tigilojn"
+
+#: ../data/mate-calc.desktop.in.h:1
+msgid "MATE Calculator"
+msgstr ""
+
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:546
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
 msgid "Calculator"
 msgstr "Kalkulilo"
 
-#: ../data/mate-calc.desktop.in.h:2
+#: ../data/mate-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Fari aritmetikajn, sciencajn aŭ financajn kalkulojn"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:1
+#: ../data/org.mate.calc.gschema.xml.in.h:1
 msgid "Accuracy value"
 msgstr "Precizeca valoro"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:2
-msgid "Angle units"
-msgstr "Angulaj unuoj"
+#: ../data/org.mate.calc.gschema.xml.in.h:2
+msgid "The number of digits displayed after the numeric point"
+msgstr ""
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:3
-msgid "Button mode"
-msgstr "Reĝimo de butono"
+#: ../data/org.mate.calc.gschema.xml.in.h:3
+msgid "Word size"
+msgstr "Vortolongo"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:4
-msgid "Currency of the current calculation"
-msgstr "Valuto de la nuna kalkulo"
+#: ../data/org.mate.calc.gschema.xml.in.h:4
+msgid "The size of the words used in bitwise operations"
+msgstr ""
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:5
-msgid "Currency to convert the current calculation into"
-msgstr "Konverti la nunan kalkulon al kiu valuto"
+#: ../data/org.mate.calc.gschema.xml.in.h:5
+msgid "Numeric Base"
+msgstr "Cifereca bazo"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:6
+#: ../data/org.mate.calc.gschema.xml.in.h:6
+msgid "The numeric base"
+msgstr "La cifereca bazo"
+
+#: ../data/org.mate.calc.gschema.xml.in.h:7
+msgid "Show Thousands Separators"
+msgstr "Montri milapartigilojn"
+
+#: ../data/org.mate.calc.gschema.xml.in.h:8
+msgid "Indicates whether thousands separators are shown in large numbers."
+msgstr ""
+
+#: ../data/org.mate.calc.gschema.xml.in.h:9
+msgid "Show Trailing Zeroes"
+msgstr "Montri sekvantajn nulojn"
+
+#: ../data/org.mate.calc.gschema.xml.in.h:10
 msgid ""
 "Indicates whether any trailing zeroes after the numeric point should be "
 "shown in the display value."
 msgstr ""
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:7
-msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr ""
-
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:8
+#: ../data/org.mate.calc.gschema.xml.in.h:11
 msgid "Number format"
 msgstr "Nombra formato:"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:9
-msgid "Numeric Base"
-msgstr "Cifereca bazo"
-
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:10
-msgid "Show Thousands Separators"
-msgstr "Montri milapartigilojn"
-
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:11
-msgid "Show Trailing Zeroes"
-msgstr "Montri sekvantajn nulojn"
-
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:12
-msgid "Source currency"
-msgstr "Fonta valuto"
-
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:13
-msgid "Source units"
-msgstr "Fontaj unuoj"
-
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:14
-msgid "Target currency"
-msgstr "Cela valuto"
-
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:15
-msgid "Target units"
-msgstr "Celaj unuoj"
-
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:16
-msgid "The angle units to use"
-msgstr ""
-
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:17
-msgid "The button mode"
-msgstr "La reĝimo de butono"
-
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:18
+#: ../data/org.mate.calc.gschema.xml.in.h:12
 msgid "The format to display numbers in"
 msgstr ""
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:19
-msgid "The number of digits displayed after the numeric point"
+#: ../data/org.mate.calc.gschema.xml.in.h:13
+msgid "Angle units"
+msgstr "Angulaj unuoj"
+
+#: ../data/org.mate.calc.gschema.xml.in.h:14
+msgid "The angle units to use"
 msgstr ""
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:20
-msgid "The numeric base"
-msgstr "La cifereca bazo"
+#: ../data/org.mate.calc.gschema.xml.in.h:15
+msgid "Button mode"
+msgstr "Reĝimo de butono"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:21
-msgid "The size of the words used in bitwise operations"
-msgstr ""
+#: ../data/org.mate.calc.gschema.xml.in.h:16
+msgid "The button mode"
+msgstr "La reĝimo de butono"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:22
+#: ../data/org.mate.calc.gschema.xml.in.h:17
+msgid "Source currency"
+msgstr "Fonta valuto"
+
+#: ../data/org.mate.calc.gschema.xml.in.h:18
+msgid "Currency of the current calculation"
+msgstr "Valuto de la nuna kalkulo"
+
+#: ../data/org.mate.calc.gschema.xml.in.h:19
+msgid "Target currency"
+msgstr "Cela valuto"
+
+#: ../data/org.mate.calc.gschema.xml.in.h:20
+msgid "Currency to convert the current calculation into"
+msgstr "Konverti la nunan kalkulon al kiu valuto"
+
+#: ../data/org.mate.calc.gschema.xml.in.h:21
+msgid "Source units"
+msgstr "Fontaj unuoj"
+
+#: ../data/org.mate.calc.gschema.xml.in.h:22
 msgid "Units of the current calculation"
 msgstr "Unuoj de la nuna kalkulo"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:23
+#: ../data/org.mate.calc.gschema.xml.in.h:23
+msgid "Target units"
+msgstr "Celaj unuoj"
+
+#: ../data/org.mate.calc.gschema.xml.in.h:24
 msgid "Units to convert the current calculation into"
 msgstr "Konverti la nunan kalkulon al kiuj unuoj"
-
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:24
-msgid "Word size"
-msgstr "Vortolongo"
 
 #: ../src/currency-manager.c:30
 msgid "UAE Dirham"
@@ -821,17 +842,16 @@ msgid "Error: the number of periods must be positive"
 msgstr "Eraro: la kvanto de periodoj devas esti pozitiva"
 
 #. Description on how to use mate-calc displayed on command-line
-#: ../src/mate-calc.c:77
+#: ../src/mate-calc.c:79
 #, c-format
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr ""
-"Uzo:\n"
-"  %s — Fari matematikajn kalkulojn"
+msgstr "Uzo:\n  %s — Fari matematikajn kalkulojn"
 
-#. Description on mate-calc command-line help options displayed on command-line
-#: ../src/mate-calc.c:85
+#. Description on mate-calc command-line help options displayed on command-
+#. line
+#: ../src/mate-calc.c:87
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -839,332 +859,330 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr ""
-"Helpa Opcioj:\n"
-"  -v, --version                   Montri eldonversion\n"
-"  -h, -?, --help                  Montri helpajn opciojn\n"
-"  --help-all                      Montri ĉiujn helpajn opciojn\n"
-"  --help-gtk                      Montri GTK+ opciojn"
+msgstr "Helpa Opcioj:\n  -v, --version                   Montri eldonversion\n  -h, -?, --help                  Montri helpajn opciojn\n  --help-all                      Montri ĉiujn helpajn opciojn\n  --help-gtk                      Montri GTK+ opciojn"
 
-#. Description on mate-calc command-line GTK+ options displayed on command-line
-#: ../src/mate-calc.c:96
+#. Description on mate-calc command-line GTK+ options displayed on command-
+#. line
+#: ../src/mate-calc.c:98
 #, c-format
 msgid ""
 "GTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window "
-"manager\n"
-"  --name=NAME                     Program name as used by the window "
-"manager\n"
+"  --class=CLASS                   Program class as used by the window manager\n"
+"  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr ""
-"Opcioj de GTK+:\n"
-"  --class=CLASS                   Programa klaso kiel uzata de la fenestra "
-"agordilo\n"
-"  --name=NAME                     Programa nomo kiel uzata de the fenestra "
-"agordilo\n"
-"  --screen=SCREEN                 X-ekrano uzota\n"
-"  --sync                          Voki al X sinkrone\n"
-"  --gtk-module=MODULES            Ŝarĝi kromajn modulojn de GTK+\n"
-"  --g-fatal-warnings              Fari ĉiujn avertojn neripareblaj"
+msgstr "Opcioj de GTK+:\n  --class=CLASS                   Programa klaso kiel uzata de la fenestra agordilo\n  --name=NAME                     Programa nomo kiel uzata de the fenestra agordilo\n  --screen=SCREEN                 X-ekrano uzota\n  --sync                          Voki al X sinkrone\n  --gtk-module=MODULES            Ŝarĝi kromajn modulojn de GTK+\n  --g-fatal-warnings              Fari ĉiujn avertojn neripareblaj"
 
 #. Description on mate-calc application options displayed on command-line
-#: ../src/mate-calc.c:110
+#: ../src/mate-calc.c:112
 #, c-format
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr ""
-"Opcioj de la Aplikaĵoj:\n"
-"  -s, --solve <equation>          Solvi la donitan ekvacion"
+msgstr "Opcioj de la Aplikaĵoj:\n  -s, --solve <equation>          Solvi la donitan ekvacion"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: ../src/mate-calc.c:154
+#: ../src/mate-calc.c:156
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "Argumento --solvo bezonas ekvacion por solvi"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: ../src/mate-calc.c:164
+#: ../src/mate-calc.c:166
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "Nekonata argumento '%s'"
 
 #. Tooltip for the Pi button
-#: ../src/math-buttons.c:96
+#: ../src/math-buttons.c:95
 msgid "Pi [Ctrl+P]"
 msgstr "Pi [Ktrl+P]"
 
 #. Tooltip for the Euler's Number button
-#: ../src/math-buttons.c:99
+#: ../src/math-buttons.c:98
 msgid "Euler’s Number"
 msgstr "Eŭlera konstanto"
 
 #. Tooltip for the subscript button
-#: ../src/math-buttons.c:104
+#: ../src/math-buttons.c:103
 msgid "Subscript mode [Alt]"
 msgstr "Reĝimo de suba indico [Alt]"
 
 #. Tooltip for the superscript button
-#: ../src/math-buttons.c:107
+#: ../src/math-buttons.c:106
 msgid "Superscript mode [Ctrl]"
 msgstr "Reĝimo de suba indico [Ktrl]"
 
 #. Tooltip for the scientific exponent button
-#: ../src/math-buttons.c:110
+#: ../src/math-buttons.c:109
 msgid "Scientific exponent [Ctrl+E]"
 msgstr "Scienca eksponento [Ktrl+E]"
 
 #. Tooltip for the add button
-#: ../src/math-buttons.c:113
+#: ../src/math-buttons.c:112
 msgid "Add [+]"
 msgstr "Adicii [+]"
 
 #. Tooltip for the subtract button
-#: ../src/math-buttons.c:116
+#: ../src/math-buttons.c:115
 msgid "Subtract [-]"
 msgstr "Subtrahi [-]"
 
 #. Tooltip for the multiply button
-#: ../src/math-buttons.c:119
+#: ../src/math-buttons.c:118
 msgid "Multiply [*]"
 msgstr "Multipliki [*]"
 
 #. Tooltip for the divide button
-#: ../src/math-buttons.c:122
+#: ../src/math-buttons.c:121
 msgid "Divide [/]"
 msgstr "Dividi [/]"
 
 #. Tooltip for the modulus divide button
-#: ../src/math-buttons.c:125
+#: ../src/math-buttons.c:124
 msgid "Modulus divide"
 msgstr "Module dividi"
 
 #. Tooltip for the additional functions button
-#: ../src/math-buttons.c:128
+#: ../src/math-buttons.c:127
 msgid "Additional Functions"
 msgstr "Aldonaj funkcioj"
 
 #. Tooltip for the exponent button
-#: ../src/math-buttons.c:131
+#: ../src/math-buttons.c:130
 msgid "Exponent [^ or **]"
 msgstr "Eksponento [^ aŭ **]"
 
 #. Tooltip for the square button
-#: ../src/math-buttons.c:134
+#: ../src/math-buttons.c:133
 msgid "Square [Ctrl+2]"
 msgstr "Kvadrato [Ktrl+2]"
 
 #. Tooltip for the percentage button
-#: ../src/math-buttons.c:137
+#: ../src/math-buttons.c:136
 msgid "Percentage [%]"
 msgstr "Elcento [%]"
 
 #. Tooltip for the factorial button
-#: ../src/math-buttons.c:140
+#: ../src/math-buttons.c:139
 msgid "Factorial [!]"
 msgstr "Faktorialo [!]"
 
 #. Tooltip for the absolute value button
-#: ../src/math-buttons.c:143
+#: ../src/math-buttons.c:142
 msgid "Absolute value [|]"
 msgstr "Absoluta valoro [|]"
 
 #. Tooltip for the complex argument component button
-#: ../src/math-buttons.c:146
+#: ../src/math-buttons.c:145
 msgid "Complex argument"
 msgstr "Kompleksa argumento"
 
 #. Tooltip for the complex conjugate button
-#: ../src/math-buttons.c:149
+#: ../src/math-buttons.c:148
 msgid "Complex conjugate"
 msgstr "Kompleksa konjugito"
 
 #. Tooltip for the root button
-#: ../src/math-buttons.c:152
+#: ../src/math-buttons.c:151
 msgid "Root [Ctrl+R]"
 msgstr "Radiko [Ctrl+R]"
 
 #. Tooltip for the square root button
-#: ../src/math-buttons.c:155
+#: ../src/math-buttons.c:154
 msgid "Square root [Ctrl+R]"
 msgstr "Kvadrata radiko [Ktrl+R]"
 
 #. Tooltip for the logarithm button
-#: ../src/math-buttons.c:158
+#: ../src/math-buttons.c:157
 msgid "Logarithm"
 msgstr "Logaritmo"
 
 #. Tooltip for the natural logarithm button
-#: ../src/math-buttons.c:161
+#: ../src/math-buttons.c:160
 msgid "Natural Logarithm"
 msgstr "Natura logaritmo"
 
 #. Tooltip for the sine button
-#: ../src/math-buttons.c:164
+#: ../src/math-buttons.c:163
 msgid "Sine"
 msgstr "Sinuso"
 
 #. Tooltip for the cosine button
-#: ../src/math-buttons.c:167
+#: ../src/math-buttons.c:166
 msgid "Cosine"
 msgstr "Kosinuso"
 
 #. Tooltip for the tangent button
-#: ../src/math-buttons.c:170
+#: ../src/math-buttons.c:169
 msgid "Tangent"
 msgstr "Tangento"
 
 #. Tooltip for the hyperbolic sine button
-#: ../src/math-buttons.c:173
+#: ../src/math-buttons.c:172
 msgid "Hyperbolic Sine"
 msgstr "Hiperbola sinuso"
 
 #. Tooltip for the hyperbolic cosine button
-#: ../src/math-buttons.c:176
+#: ../src/math-buttons.c:175
 msgid "Hyperbolic Cosine"
 msgstr "Hiperbola kosinuso"
 
 #. Tooltip for the hyperbolic tangent button
-#: ../src/math-buttons.c:179
+#: ../src/math-buttons.c:178
 msgid "Hyperbolic Tangent"
 msgstr "Hiperbola tangento"
 
+#. Tooltip for the inverse sine button
+#: ../src/math-buttons.c:181
+msgid "Inverse Sine"
+msgstr ""
+
+#. Tooltip for the inverse cosine button
+#: ../src/math-buttons.c:184
+msgid "Inverse Cosine"
+msgstr ""
+
+#. Tooltip for the inverse tangent button
+#: ../src/math-buttons.c:187
+msgid "Inverse Tangent"
+msgstr ""
+
 #. Tooltip for the inverse button
-#: ../src/math-buttons.c:182
+#: ../src/math-buttons.c:190
 msgid "Inverse [Ctrl+I]"
 msgstr "Inversa [Ktrl+I]"
 
 #. Tooltip for the boolean AND button
-#: ../src/math-buttons.c:185
+#: ../src/math-buttons.c:193
 msgid "Boolean AND"
 msgstr "Bulea KAJO (AND)"
 
 #. Tooltip for the boolean OR button
-#: ../src/math-buttons.c:188
+#: ../src/math-buttons.c:196
 msgid "Boolean OR"
 msgstr "Bulea AŬO (OR)"
 
 #. Tooltip for the exclusive OR button
-#: ../src/math-buttons.c:191
+#: ../src/math-buttons.c:199
 msgid "Boolean Exclusive OR"
 msgstr "Bulea DISAŬO (XOR)"
 
 #. Tooltip for the boolean NOT button
-#: ../src/math-buttons.c:194
+#: ../src/math-buttons.c:202
 msgid "Boolean NOT"
 msgstr "Bulea NEGO (NOT)"
 
 #. Tooltip for the integer component button
-#: ../src/math-buttons.c:197 ../src/math-buttons.c:1038
+#: ../src/math-buttons.c:205 ../src/math-buttons.c:994
 msgid "Integer Component"
 msgstr "Entjera parto"
 
 #. Tooltip for the fractional component button
-#: ../src/math-buttons.c:200 ../src/math-buttons.c:1040
+#: ../src/math-buttons.c:208 ../src/math-buttons.c:996
 msgid "Fractional Component"
 msgstr "Frakcia parto"
 
 #. Tooltip for the real component button
-#: ../src/math-buttons.c:203
+#: ../src/math-buttons.c:211
 msgid "Real Component"
 msgstr "Reela parto"
 
 #. Tooltip for the imaginary component button
-#: ../src/math-buttons.c:206
+#: ../src/math-buttons.c:214
 msgid "Imaginary Component"
 msgstr "Imaginara parto"
 
 #. Tooltip for the ones' complement button
-#: ../src/math-buttons.c:209
+#: ../src/math-buttons.c:217
 msgid "Ones' Complement"
 msgstr "Komplemento ĝis unu"
 
 #. Tooltip for the two's complement button
-#: ../src/math-buttons.c:212
+#: ../src/math-buttons.c:220
 msgid "Two's Complement"
 msgstr "Komplemento ĝis du"
 
 #. Tooltip for the truncate button
-#: ../src/math-buttons.c:215
+#: ../src/math-buttons.c:223
 msgid "Truncate"
 msgstr "Distranĉi"
 
 #. Tooltip for the start group button
-#: ../src/math-buttons.c:218
+#: ../src/math-buttons.c:226
 msgid "Start Group [(]"
 msgstr "Komenci grupon [(]"
 
 #. Tooltip for the end group button
-#: ../src/math-buttons.c:221
+#: ../src/math-buttons.c:229
 msgid "End Group [)]"
 msgstr "Fini grupon [)]"
 
 #. Tooltip for the solve button
-#: ../src/math-buttons.c:230
+#: ../src/math-buttons.c:238
 msgid "Calculate Result"
 msgstr "Kalkuli rezulton"
 
 #. Tooltip for the factor button
-#: ../src/math-buttons.c:233
+#: ../src/math-buttons.c:241
 msgid "Factorize [Ctrl+F]"
 msgstr "Faktorigi [Ktrl+F]"
 
 #. Tooltip for the clear button
-#: ../src/math-buttons.c:236
+#: ../src/math-buttons.c:244
 msgid "Clear Display [Escape]"
 msgstr "Vakigi ekranon [Eskapa klavo]"
 
 #. Tooltip for the undo button
-#: ../src/math-buttons.c:239
+#: ../src/math-buttons.c:247
 msgid "Undo [Ctrl+Z]"
 msgstr "Malfari [Ktrl+Z]"
 
 #. Tooltip for the double declining depreciation button
-#: ../src/math-buttons.c:251
+#: ../src/math-buttons.c:259
 msgid "Double Declining Depreciation"
 msgstr "Duoble deklinacianta malplivaloriĝo"
 
 #. Tooltip for the financial term button
-#: ../src/math-buttons.c:257
+#: ../src/math-buttons.c:265
 msgid "Financial Term"
 msgstr "Financa periodo"
 
 #. Tooltip for the sum of the years digits depreciation button
-#: ../src/math-buttons.c:260
+#: ../src/math-buttons.c:268
 msgid "Sum of the Years Digits Depreciation"
 msgstr "Sumo de la jaraj cifroj malplivaloriĝo"
 
 #. Tooltip for the straight line depreciation button
-#: ../src/math-buttons.c:263
+#: ../src/math-buttons.c:271
 msgid "Straight Line Depreciation"
 msgstr "Lineara malplivaloriĝo"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: ../src/math-buttons.c:653
+#: ../src/math-buttons.c:611
 msgid "Binary"
 msgstr "Duuma"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: ../src/math-buttons.c:657
+#: ../src/math-buttons.c:615
 msgid "Octal"
 msgstr "Okuma"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: ../src/math-buttons.c:661
+#: ../src/math-buttons.c:619
 msgid "Decimal"
 msgstr "Dekuma"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: ../src/math-buttons.c:665
+#: ../src/math-buttons.c:623
 msgid "Hexadecimal"
 msgstr "Deksesuma"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: ../src/math-buttons.c:948 ../src/math-buttons.c:992
+#: ../src/math-buttons.c:905 ../src/math-buttons.c:948
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
@@ -1173,7 +1191,7 @@ msgstr[1] "_%d pozicioj"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: ../src/math-buttons.c:952 ../src/math-buttons.c:996
+#: ../src/math-buttons.c:909 ../src/math-buttons.c:952
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
@@ -1181,26 +1199,27 @@ msgstr[0] "%d pozicio"
 msgstr[1] "%d pozicioj"
 
 #. Tooltip for the round button
-#: ../src/math-buttons.c:1042
+#: ../src/math-buttons.c:998
 msgid "Round"
 msgstr "Rondigi"
 
 #. Tooltip for the floor button
-#: ../src/math-buttons.c:1044
+#: ../src/math-buttons.c:1000
 msgid "Floor"
 msgstr "Planka"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:1046
+#: ../src/math-buttons.c:1002
 msgid "Ceiling"
 msgstr "Plafona"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:1048
+#: ../src/math-buttons.c:1004
 msgid "Sign"
 msgstr "Signumo"
 
-#. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
+#. Label that is displayed between the two conversion combo boxes, e.g.
+#. "[degrees] in [radians]"
 #: ../src/math-converter.c:412
 msgid " in "
 msgstr " en "
@@ -1211,47 +1230,55 @@ msgid "Switch conversion units"
 msgstr "Ŝanĝi konverto-unuojn"
 
 #. Error shown when trying to undo with no undo history
-#: ../src/math-equation.c:458
+#: ../src/math-equation.c:459
 msgid "No undo history"
 msgstr "Neniu malfara historio"
 
 #. Error shown when trying to redo with no redo history
-#: ../src/math-equation.c:485
+#: ../src/math-equation.c:486
 msgid "No redo history"
 msgstr "Neniu refara historia"
 
-#: ../src/math-equation.c:943
+#: ../src/math-equation.c:948
 msgid "No sane value to store"
 msgstr "Neniu 'sana'-valoro por konservi"
 
-#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
-#: ../src/math-equation.c:1225
+#. Error displayed to user when they perform a bitwise operation on numbers
+#. greater than the current word
+#: ../src/math-equation.c:1230
 msgid "Overflow. Try a bigger word size"
 msgstr "Troo. Provu pli grandan vortlongon"
 
 #. Error displayed to user when they an unknown variable is entered
-#: ../src/math-equation.c:1230
+#: ../src/math-equation.c:1235
 #, c-format
 msgid "Unknown variable '%s'"
 msgstr "Nekonata variablo '%s'"
 
 #. Error displayed to user when an unknown function is entered
-#: ../src/math-equation.c:1235
+#: ../src/math-equation.c:1240
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr "Funkcio '%s' ne estas definita"
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: ../src/math-equation.c:1240
+#: ../src/math-equation.c:1245
 msgid "Unknown conversion"
 msgstr "Nekonata konverto"
 
+#. Uncategorized error. Show error token to user
+#: ../src/math-equation.c:1253
+#, c-format
+msgid "Malformed expression at token '%s'"
+msgstr ""
+
+#. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: ../src/math-equation.c:1249
+#: ../src/math-equation.c:1256 ../src/math-equation.c:1261
 msgid "Malformed expression"
 msgstr "Misformita esprimo"
 
-#: ../src/math-equation.c:1263
+#: ../src/math-equation.c:1275
 msgid "Calculating"
 msgstr "Kalkulanta"
 
@@ -1262,193 +1289,174 @@ msgstr "Bezonas entjeron por faktorigi"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1469
+#: ../src/math-equation.c:1470
 msgid "No sane value to bitwise shift"
 msgstr "Neniu 'sana'-valoro por laŭbita ŝovo"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1500
+#: ../src/math-equation.c:1501
 msgid "Displayed value not an integer"
 msgstr "Montrita valoro ne estas entjero"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1925
+#: ../src/math-equation.c:1926
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
 #. Label on close button in preferences dialog
-#: ../src/math-preferences.c:236
+#: ../src/math-preferences.c:242
 msgid "_Close"
 msgstr "_Fermi"
 
-#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
-#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
-#: ../src/math-preferences.c:246 ../src/unit-manager.c:54
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
+#. calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
+#. grads
+#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "Gradoj"
 
-#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
-#: ../src/math-preferences.c:250 ../src/unit-manager.c:55
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
+#. calculations
+#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "Radianoj"
 
-#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
-#: ../src/math-preferences.c:254 ../src/unit-manager.c:56
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
+#. calculations
+#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "Gradusoj"
 
-#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
-#: ../src/math-preferences.c:264
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
+#. number 1.234×10^99)
+#: ../src/math-preferences.c:270
 msgid "Automatic"
 msgstr "Aŭtomate"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:268
+#: ../src/math-preferences.c:274
 msgid "Fixed"
 msgstr "Fiksita"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:272
+#: ../src/math-preferences.c:278
 msgid "Scientific"
 msgstr "Scienca"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:276
+#: ../src/math-preferences.c:282
 msgid "Engineering"
 msgstr "Inĝeniera"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:287
+#: ../src/math-preferences.c:293
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "Montri %d _cifer-pozicioj"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:172
+#: ../src/math-window.c:198
 msgid "Unable to open help file"
 msgstr "Ne eblas malfermi helpdosieron"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:204
+#: ../src/math-window.c:225
 msgid "translator-credits"
-msgstr ""
-"Launchpad Contributions:\n"
-"  Barfos https://launchpad.net/~erineh1\n"
-"  Joseph Schwenker https://launchpad.net/~schwenker-joseph\n"
-"  Kristjan SCHMIDT https://launchpad.net/~kristjan-eo\n"
-"  Manuel https://launchpad.net/~elektrolupo\n"
-"  Michael Moroni https://launchpad.net/~airon90\n"
-"MATE Contributions:\n"
-"  Tiffany ANTOPOLSKI\n"
-"  Behrouz SOROUSHIAN"
+msgstr "Launchpad Contributions:\n  Barfos https://launchpad.net/~erineh1\n  Joseph Schwenker https://launchpad.net/~schwenker-joseph\n  Kristjan SCHMIDT https://launchpad.net/~kristjan-eo\n  Manuel https://launchpad.net/~elektrolupo\n  Michael Moroni https://launchpad.net/~airon90\nMATE Contributions:\n  Tiffany ANTOPOLSKI\n  Behrouz SOROUSHIAN"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:207
+#: ../src/math-window.c:232
 msgid ""
-"Gcalctool is free software; you can redistribute it and/or modify\n"
+"mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
 "the Free Software Foundation; either version 2 of the License, or\n"
 "(at your option) any later version.\n"
 "\n"
-"Gcalctool is distributed in the hope that it will be useful,\n"
+"mate-calc is distributed in the hope that it will be useful,\n"
 "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
 "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
 "You should have received a copy of the GNU General Public License\n"
-"along with Gcalctool; if not, write to the Free Software Foundation, Inc.,\n"
-"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
+"151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr ""
-"Gkalkulilo estas libera programaro; vi povas redistribui kaj/aŭ modifi ĝin "
-"sub la kondiĉoj de Ĝenerala Publika Permesilo de GNU eldonite de la 'Free "
-"Software Foundation'; aŭ en la 2a versio de la permesilo aŭ (laŭ via volo) "
-"en iu sekva versio.\n"
-"\n"
-"Gkalkulilo estas distribuite kun la espero ke ĝi estos utila, sed SEN IA AJN "
-"GARANTIO; eĉ sen la implica garantio de NEGOCEBLO aŭ ADAPTADO AL IU APARTA "
-"CELO. Vidu la Ĝeneralan Publikan Permesilon de GNU por pli da detaloj.\n"
-"\n"
-"Vi devintus ricevi kopion de la Ĝenerala Publika Permesilo de GNU kune kun "
-"Gkalkulilo; se ne, skribu al Free Software Foundation, Inc., 51 Franklin "
-"Street, Fifth Floor, Boston, MA 02110-1301 Usono."
 
-#. Program name in the about dialog
-#: ../src/math-window.c:224
-msgid "Gcalctool"
-msgstr "Gkalkulilo"
+#: ../src/math-window.c:247
+msgid "mate-calc"
+msgstr "mate-calc"
 
-#. Copyright notice in the about dialog
-#: ../src/math-window.c:228
-msgid "© 1986–2010 The Gcalctool authors"
-msgstr "© 1986-2010 La aŭtoroj de Gkalkulilo"
-
-#. Short description in the about dialog
-#: ../src/math-window.c:232
+#: ../src/math-window.c:251
 msgid "Calculator with financial and scientific modes."
 msgstr "Kalkulilo kun financa kaj scienca opcioj."
 
 #. Calculator menu
-#: ../src/math-window.c:381
+#: ../src/math-window.c:354
 msgid "_Calculator"
 msgstr "_Kalkulilo"
 
 #. Mode menu
-#: ../src/math-window.c:383
+#: ../src/math-window.c:356
 msgid "_Mode"
 msgstr "_Reĝimo"
 
 #. Help menu label
-#: ../src/math-window.c:385
+#: ../src/math-window.c:358
 msgid "_Help"
 msgstr "_Helpo"
 
 #. Basic menu label
-#: ../src/math-window.c:387
+#: ../src/math-window.c:360
 msgid "_Basic"
 msgstr "_Baza"
 
 #. Advanced menu label
-#: ../src/math-window.c:389
+#: ../src/math-window.c:362
 msgid "_Advanced"
 msgstr "_Altnivela"
 
 #. Financial menu label
-#: ../src/math-window.c:391
+#: ../src/math-window.c:364
 msgid "_Financial"
 msgstr "_Financa"
 
 #. Programming menu label
-#: ../src/math-window.c:393
+#: ../src/math-window.c:366
 msgid "_Programming"
 msgstr "_Programado"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:395
+#: ../src/math-window.c:368
 msgid "_Contents"
 msgstr "_Enhavo"
 
-#. Translators: Error displayed when boolean AND attempted on non-integer values
+#. Translators: Error displayed when boolean AND attempted on non-integer
+#. values
 #: ../src/mp-binary.c:115
 msgid "Boolean AND is only defined for positive integers"
 msgstr "Bulea KAJO (AND) nur difinita por pozitivaj entjeroj"
 
-#. Translators: Error displayed when boolean OR attempted on non-integer values
+#. Translators: Error displayed when boolean OR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:128
 msgid "Boolean OR is only defined for positive integers"
 msgstr "Bulea AŬO (OR) nur difinita por pozitivaj entjeroj"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:141
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "Bulea DISAŬO (XOR) nur difinita por pozitivaj entjeroj"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:156
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "Bulea NEGO (NOT) nur definita por pozitivaj entjeroj"
 
 #. Translators: Error displayed when bit shift attempted on non-integer values
-#: ../src/mp-binary.c:187
+#: ../src/mp-binary.c:190
 msgid "Shift is only possible on integer values"
 msgstr "Ŝovo estas nur ebla por entjeroj valoroj"
 
@@ -1471,7 +1479,8 @@ msgstr "Divido per nulo ne difinita"
 msgid "Logarithm of zero is undefined"
 msgstr "Logaritmo de nulo ne estas definita"
 
-#. Translators: Error displayed when attempted to raise 0 to a negative exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. exponent
 #: ../src/mp.c:1680 ../src/mp.c:1994
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "La potenco de nulo nedifinita por negativa eksponento"
@@ -1492,12 +1501,14 @@ msgstr "Negativa radiko de nulo ne estas difinita"
 msgid "nth root of negative number is undefined for even n"
 msgstr "n-a radiko de negativa nombro ne estas difinita por pareca nombro n"
 
-#. Translators: Error displayed when attempted take the factorial of a fractional number
+#. Translators: Error displayed when attempted take the factorial of a
+#. fractional number
 #: ../src/mp.c:1934
 msgid "Factorial is only defined for natural numbers"
 msgstr "Faktorialo estas nur difinita por naturaj nombroj"
 
-#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
+#. Translators: Error displayed when attemping to do a modulus division on
+#. non-integer numbers
 #: ../src/mp.c:1954
 msgid "Modulus division is only defined for integers"
 msgstr "Modulo divido nur definita por entjeroj"
@@ -1505,9 +1516,9 @@ msgstr "Modulo divido nur definita por entjeroj"
 #. Translators: Error displayed when tangent value is undefined
 #: ../src/mp-trigonometric.c:310
 msgid ""
-"Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
-msgstr ""
-"Tangento ne definita por anguloj ke estas obloj de π (180°) ekde π∕2 (90°)"
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
+"(90°)"
+msgstr "Tangento ne definita por anguloj ke estas obloj de π (180°) ekde π∕2 (90°)"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: ../src/mp-trigonometric.c:355
@@ -1519,12 +1530,14 @@ msgstr "Inversa sinuso ne definita por valoroj preter [-1, 1]"
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
 msgstr "Inversa kosinuso ne definita por valoroj preter [-1,1]"
 
-#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
+#. Translators: Error displayed when inverse hyperbolic cosine value is
+#. undefined
 #: ../src/mp-trigonometric.c:591
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
 msgstr "Inverso hiperbola kosinuso ne definita por valoroj malpli ol unu"
 
-#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
+#. Translators: Error displayed when inverse hyperbolic tangent value is
+#. undefined
 #: ../src/mp-trigonometric.c:615
 msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
 msgstr "Inverso hiperbola tangento ne definita por valoroj preter [-1, 1]"
@@ -2254,7 +2267,8 @@ msgstr "Temperaturo"
 msgid "Currency"
 msgstr "Valuto"
 
-#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
+#. Translators: result of currency conversion, %s is the symbol, %%s is the
+#. placeholder for amount, i.e.: USD100
 #: ../src/unit-manager.c:137
 #, c-format
 msgid "%s%%s"

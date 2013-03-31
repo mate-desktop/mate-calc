@@ -1,94 +1,115 @@
-# translation of mate-calc.HEAD.po to Punjabi
-# Copyright (C) 2004 THE mate-calc.HEAD'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the mate-calc.HEAD package.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# A S Alam <aalam@users.sf.net>, 2004-2012.
 # Jaswinder Singh Phulewala <jaswindersinghra@yahoo.com>, 2004.
-# A S Alam <aalam@users.sf.net>, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc.HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mate-calc&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-10-05 05:01+0000\n"
-"PO-Revision-Date: 2012-11-04 09:21+0530\n"
-"Last-Translator: A S Alam <aalam@users.sf.net>\n"
-"Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
-"Language: pa\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2013-03-24 20:10+0100\n"
+"PO-Revision-Date: 2013-03-24 19:27+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.5\n"
+"Language: pa\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#. Accessible name for the inverse button
-#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:24
-msgid "Inverse"
-msgstr "ਉਲਟ"
-
 #. Accessible name for the factorize button
-#: ../data/buttons-advanced.ui.h:4 ../data/buttons-programming.ui.h:2
+#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:8
 msgid "Factorize"
 msgstr "ਗੁਣਨਖੰਡ"
 
-#. Accessible name for the factorial button
-#: ../data/buttons-advanced.ui.h:6 ../data/buttons-programming.ui.h:22
-msgid "Factorial"
-msgstr "ਫੈਕਟੋਰੀਅਲ"
-
 #. Label on the solve button (clicking this solves the displayed calculation)
-#: ../data/buttons-advanced.ui.h:8 ../data/buttons-basic.ui.h:2
-#: ../data/buttons-financial.ui.h:76 ../data/buttons-programming.ui.h:6
+#: ../data/buttons-advanced.ui.h:4 ../data/buttons-basic.ui.h:2
+#: ../data/buttons-financial.ui.h:76 ../data/buttons-programming.ui.h:12
 msgid "="
 msgstr "="
 
+#: ../data/buttons-advanced.ui.h:5 ../data/buttons-basic.ui.h:3
+#: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
+msgid "Clear"
+msgstr "ਸਾਫ਼"
+
 #. Accessible name for the subscript mode button
-#: ../data/buttons-advanced.ui.h:10 ../data/buttons-programming.ui.h:8
+#: ../data/buttons-advanced.ui.h:7 ../data/buttons-programming.ui.h:15
 msgid "Subscript"
 msgstr "ਪ੍ਹੈਰ 'ਚ"
 
 #. Accessible name for the superscript mode button
-#: ../data/buttons-advanced.ui.h:12 ../data/buttons-programming.ui.h:10
+#: ../data/buttons-advanced.ui.h:9 ../data/buttons-programming.ui.h:17
 msgid "Superscript"
 msgstr "ਘਾਤ"
 
 #. Accessible name for the scientific exponent button
-#: ../data/buttons-advanced.ui.h:14
+#: ../data/buttons-advanced.ui.h:11
 msgid "Scientific Exponent"
 msgstr "ਵਿਗਿਆਨਿਕ ਭਾਗ"
 
 #. Accessible name for the memory button
 #. Accessible name for the memory value button
 #. Tooltip for the memory button
-#: ../data/buttons-advanced.ui.h:16 ../data/buttons-financial.ui.h:72
-#: ../src/math-buttons.c:222
+#: ../data/buttons-advanced.ui.h:13 ../data/buttons-financial.ui.h:72
+#: ../src/math-buttons.c:232
 msgid "Memory"
 msgstr "ਮੈਮੋਰੀ"
 
 #. The label on the memory button
-#: ../data/buttons-advanced.ui.h:18 ../data/buttons-financial.ui.h:74
-#: ../data/buttons-programming.ui.h:14
+#: ../data/buttons-advanced.ui.h:15 ../data/buttons-financial.ui.h:74
+#: ../data/buttons-programming.ui.h:21
 msgid "x"
 msgstr "x"
 
-#. Accessible name for the absolute value button
-#: ../data/buttons-advanced.ui.h:20 ../data/buttons-programming.ui.h:4
-msgid "Absolute Value"
-msgstr "ਅਸਲੀ ਮੁੱਲ"
-
 #. Accessible name for the exponentiation (x to the power of y) button
-#: ../data/buttons-advanced.ui.h:22 ../data/buttons-basic.ui.h:4
-#: ../data/buttons-financial.ui.h:98 ../data/buttons-programming.ui.h:26
+#: ../data/buttons-advanced.ui.h:17 ../data/buttons-basic.ui.h:5
+#: ../data/buttons-financial.ui.h:100 ../data/buttons-programming.ui.h:33
 msgid "Exponent"
 msgstr "ਐਕਸਪੋਨੈਟ"
 
+#: ../data/buttons-advanced.ui.h:18 ../data/buttons-basic.ui.h:6
+#: ../data/buttons-financial.ui.h:98
+msgid "Undo"
+msgstr "ਵਾਪਿਸ"
+
+#: ../data/buttons-advanced.ui.h:19
+msgid "acos"
+msgstr ""
+
+#: ../data/buttons-advanced.ui.h:20
+msgid "asin"
+msgstr ""
+
+#: ../data/buttons-advanced.ui.h:21
+msgid "atan"
+msgstr ""
+
 #. Accessible name for the store value button
-#: ../data/buttons-advanced.ui.h:24 ../data/buttons-programming.ui.h:12
+#: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:19
 msgid "Store"
 msgstr "ਸਟੋਰ"
 
+#. Accessible name for the inverse button
+#: ../data/buttons-advanced.ui.h:25 ../data/buttons-programming.ui.h:31
+msgid "Inverse"
+msgstr "ਉਲਟ"
+
+#. Accessible name for the factorial button
+#: ../data/buttons-advanced.ui.h:27 ../data/buttons-programming.ui.h:29
+msgid "Factorial"
+msgstr "ਫੈਕਟੋਰੀਅਲ"
+
+#. Accessible name for the absolute value button
+#: ../data/buttons-advanced.ui.h:29 ../data/buttons-programming.ui.h:10
+msgid "Absolute Value"
+msgstr "ਅਸਲੀ ਮੁੱਲ"
+
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
-#: ../data/buttons-financial.ui.h:2 ../src/math-buttons.c:246
+#: ../data/buttons-financial.ui.h:2 ../src/math-buttons.c:256
 msgid "Compounding Term"
 msgstr "ਮਿਸ਼ਰਣ ਪਦ"
 
@@ -113,10 +134,7 @@ msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr ""
-"ਮਿਸ਼ਰਤ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਕਰਦਾ ਹੈ, ਜੋ ਕਿ ਮੌਜੂਦ ਮੁੱਲ ਦੇ ਵੱਧਦੀ ਲਗਾਈ ਪੂੰਜੀ ਦੇ ਭਵਿੱਖ "
-"ਦੇ ਮੁੱਲ ਹੈ, ਜੋ ਕਿ "
-"ਸਥਿਰ ਵਿਆਜ ਰੇਟ ਪ੍ਰਤੀ ਮਿਸ਼ਰਤ ਸਮੇਂ ਲਈ ਹੈ।"
+msgstr "ਮਿਸ਼ਰਤ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਕਰਦਾ ਹੈ, ਜੋ ਕਿ ਮੌਜੂਦ ਮੁੱਲ ਦੇ ਵੱਧਦੀ ਲਗਾਈ ਪੂੰਜੀ ਦੇ ਭਵਿੱਖ ਦੇ ਮੁੱਲ ਹੈ, ਜੋ ਕਿ ਸਥਿਰ ਵਿਆਜ ਰੇਟ ਪ੍ਰਤੀ ਮਿਸ਼ਰਤ ਸਮੇਂ ਲਈ ਹੈ।"
 
 #. Periodic Interest Rate Dialog: Label before future value input
 #: ../data/buttons-financial.ui.h:12
@@ -133,9 +151,7 @@ msgstr "ਮੁੱਲ ਵਿੱਚ ਦੁੱਗਣੀ ਕਮੀ"
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
-msgstr ""
-"ਖਾਸ ਦਿੱਤੇ ਸਮੇਂ ਲਈ ਜਾਇਦਾਦ ਲਈ ਨੁਕਸਾਨ ਦੀ ਗਿਣਤੀ ਹੈ, ਜੋ ਕਿ ਦੂਹਰਾ-ਘਟਣ ਬਕਾਇਆ ਢੰਗ ਨਾਲ "
-"ਹੈ। "
+msgstr "ਖਾਸ ਦਿੱਤੇ ਸਮੇਂ ਲਈ ਜਾਇਦਾਦ ਲਈ ਨੁਕਸਾਨ ਦੀ ਗਿਣਤੀ ਹੈ, ਜੋ ਕਿ ਦੂਹਰਾ-ਘਟਣ ਬਕਾਇਆ ਢੰਗ ਨਾਲ ਹੈ। "
 
 #. Gross Profit Margin Dialog: Label before cost input
 #: ../data/buttons-financial.ui.h:18
@@ -154,7 +170,7 @@ msgstr "ਪੀਰੀਅਡ(_P):"
 
 #. Title of Future Value dialog
 #. Tooltip for the future value button
-#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.c:252
+#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.c:262
 msgid "Future Value"
 msgstr "ਭਵਿੱਖਤ ਮੁੱਲ"
 
@@ -164,10 +180,7 @@ msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
-msgstr ""
-"ਨਿਯਮਤ ਵਿਆਜ ਦਰ ਉੱਤੇ ਬਰਾਬਰ ਦੀਆਂ ਕਿਸ਼ਤਾਂ ਦੀ ਲੜੀ ਉੱਤੇ ਲਗਾਈ ਪੂੰਜੀ ਉੱਤੇ ਭਵਿੱਖ ਮੁੱਲ "
-"ਦੀ ਗਿਣਤੀ ਕਰਦਾ "
-"ਹੈ, ਜੋ ਕਿ ਸਮੇਂ ਵਿੱਚ ਕਿਸ਼ਤ ਸਮੇਂ ਉੱਤੇ ਨਿਰਭਰ ਹੈ।"
+msgstr "ਨਿਯਮਤ ਵਿਆਜ ਦਰ ਉੱਤੇ ਬਰਾਬਰ ਦੀਆਂ ਕਿਸ਼ਤਾਂ ਦੀ ਲੜੀ ਉੱਤੇ ਲਗਾਈ ਪੂੰਜੀ ਉੱਤੇ ਭਵਿੱਖ ਮੁੱਲ ਦੀ ਗਿਣਤੀ ਕਰਦਾ ਹੈ, ਜੋ ਕਿ ਸਮੇਂ ਵਿੱਚ ਕਿਸ਼ਤ ਸਮੇਂ ਉੱਤੇ ਨਿਰਭਰ ਹੈ।"
 
 #. Payment Period Dialog: Label before periodic payment input
 #: ../data/buttons-financial.ui.h:28
@@ -181,7 +194,7 @@ msgstr "ਪੀਰੀਅਡ ਦੀ ਗਿਣਤੀ(_N):"
 
 #. Title of Gross Profit Margin dialog
 #. Tooltip for the gross profit margin button
-#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:273
+#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:283
 msgid "Gross Profit Margin"
 msgstr "ਸ਼ੁੱਧ ਨਫ਼ਾ ਅੰਤਰ"
 
@@ -190,9 +203,7 @@ msgstr "ਸ਼ੁੱਧ ਨਫ਼ਾ ਅੰਤਰ"
 msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
-msgstr ""
-"ਪਰੋਡੱਕਟ ਦਾ ਮੁੜ-ਵੇਚ ਮੁੱਲ ਕੱਢਦਾ ਹੈ, ਜੋ ਕਿ ਪਰੋਡੱਕਟ ਕੀਮਤ ਅਤੇ ਚਾਹੀਦੇ ਕੁੱਲ ਫਾਇਦੇ ਦੇ "
-"ਅੰਤਰ ਉੱਤੇ ਅਧਾਰਿਤ ਹੈ।"
+msgstr "ਪਰੋਡੱਕਟ ਦਾ ਮੁੜ-ਵੇਚ ਮੁੱਲ ਕੱਢਦਾ ਹੈ, ਜੋ ਕਿ ਪਰੋਡੱਕਟ ਕੀਮਤ ਅਤੇ ਚਾਹੀਦੇ ਕੁੱਲ ਫਾਇਦੇ ਦੇ ਅੰਤਰ ਉੱਤੇ ਅਧਾਰਿਤ ਹੈ।"
 
 #. Gross Profit Margin Dialog: Label before margin input
 #: ../data/buttons-financial.ui.h:36
@@ -201,7 +212,7 @@ msgstr "ਦਰ ਅੰਤਰ(_M):"
 
 #. Title of Periodic Payment dialog
 #. Tooltip for the periodic payment button
-#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:270
+#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:280
 msgid "Periodic Payment"
 msgstr "ਮਿਆਦੀ ਅਦਾਇਗੀ"
 
@@ -210,10 +221,7 @@ msgstr "ਮਿਆਦੀ ਅਦਾਇਗੀ"
 msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
-msgstr ""
-"ਨਿਯਮਤ ਲੋਨ ਦੀ ਅਦਾਇਗੀ ਦੀ ਮਾਤਰਾ ਗਿਣਤੀ ਹੈ, ਜਿੱਥੇ ਅਦਾਇਗੀ ਨੂੰ ਹਰੇਕ ਅਦਾਇਗੀ ਸਮੇਂ ਦੇ "
-"ਅੰਤ ਉੱਤੇ ਕੀਤਾ "
-"ਜਾਂਦਾ ਹੈ।"
+msgstr "ਨਿਯਮਤ ਲੋਨ ਦੀ ਅਦਾਇਗੀ ਦੀ ਮਾਤਰਾ ਗਿਣਤੀ ਹੈ, ਜਿੱਥੇ ਅਦਾਇਗੀ ਨੂੰ ਹਰੇਕ ਅਦਾਇਗੀ ਸਮੇਂ ਦੇ ਅੰਤ ਉੱਤੇ ਕੀਤਾ ਜਾਂਦਾ ਹੈ।"
 
 #. Periodic Payment Dialog: Label before principal input
 #: ../data/buttons-financial.ui.h:42
@@ -227,7 +235,7 @@ msgstr "ਟਰਮ(_T):"
 
 #. Title of Present Value dialog
 #. Tooltip for the present value button
-#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:267
+#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:277
 msgid "Present Value"
 msgstr "ਮੌਜੂਦਾ ਮੁੱਲ"
 
@@ -237,14 +245,11 @@ msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr ""
-"ਲਗਾਈ ਪੂੰਜੀ ਲਈ ਮੌਜੂਦਾ ਮੁੱਲ ਕੱਢਦਾ ਹੈ, ਜੋ ਕਿ ਨਾ ਸਬੰਧਤ ਬਰਾਬਰ ਅਦਾਇਗੀ ਦੀ ਲੜੀ ਉੱਤੇ "
-"ਅਧਾਰਿਤ ਹੈ, ਜੋ "
-"ਕਿ ਨਿਯਮਤਕ ਵਿਆਜ ਦਰ ਸੀਮਿਤ ਸਮੇਂ ਵਿੱਚ ਕਿਸ਼ਤ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਮੁਤਾਬਕ ਹੈ।"
+msgstr "ਲਗਾਈ ਪੂੰਜੀ ਲਈ ਮੌਜੂਦਾ ਮੁੱਲ ਕੱਢਦਾ ਹੈ, ਜੋ ਕਿ ਨਾ ਸਬੰਧਤ ਬਰਾਬਰ ਅਦਾਇਗੀ ਦੀ ਲੜੀ ਉੱਤੇ ਅਧਾਰਿਤ ਹੈ, ਜੋ ਕਿ ਨਿਯਮਤਕ ਵਿਆਜ ਦਰ ਸੀਮਿਤ ਸਮੇਂ ਵਿੱਚ ਕਿਸ਼ਤ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਮੁਤਾਬਕ ਹੈ।"
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
-#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.c:264
+#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.c:274
 msgid "Periodic Interest Rate"
 msgstr "ਮਿਆਦੀ ਵਿਆਜ ਦਰ"
 
@@ -253,10 +258,7 @@ msgstr "ਮਿਆਦੀ ਵਿਆਜ ਦਰ"
 msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
-msgstr ""
-"ਨਿਯਮਤ ਵਿਆਜ ਦੀ ਗਿਣਤੀ ਕਰਦਾ ਹੈ, ਜੋ ਕਿ ਭਵਿੱਖ ਮੁੱਲ ਲਈ ਲਗਾਈ ਪੂੰਜੀ ਵਧਾਉਣ ਲਈ ਲਾਜ਼ਮੀ "
-"ਹੈ, ਜੋ ਕਿ "
-"ਮਿਸ਼ਰਤ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਮੁਤਾਬਕ ਹੈ।"
+msgstr "ਨਿਯਮਤ ਵਿਆਜ ਦੀ ਗਿਣਤੀ ਕਰਦਾ ਹੈ, ਜੋ ਕਿ ਭਵਿੱਖ ਮੁੱਲ ਲਈ ਲਗਾਈ ਪੂੰਜੀ ਵਧਾਉਣ ਲਈ ਲਾਜ਼ਮੀ ਹੈ, ਜੋ ਕਿ ਮਿਸ਼ਰਤ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਮੁਤਾਬਕ ਹੈ।"
 
 #. Title of Straight-Line Depreciation dialog
 #: ../data/buttons-financial.ui.h:54
@@ -280,12 +282,7 @@ msgid ""
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr ""
-"ਜਾਇਦਾਦ ਲਈ ਇੱਕ ਸਮੇਂ ਲਈ ਸਿੱਧੇ ਅਵਲੋਕਣ ਦੀ ਗਿਣਤੀ ਕਰਦਾ ਹੈ। ਅਵਲੋਕਣ ਲਈ ਸਿੱਧਾ ਢੰਗ "
-"ਅਵਲੋਕਣ ਕੀਮਤ ਨੂੰ "
-"ਜਾਇਦਾਦ ਦੀ ਫਾਇਦੇਮੰਦ ਉਮਰ ਨੂੰ ਬਰਾਬਰ ਰੂਪ ਵਿੱਚ ਵੰਡਣ ਨਾਲ ਤਿਆਰ ਕੀਤਾ ਜਾਂਦਾ ਹੈ। "
-"ਫਾਇਦੇਮੰਦ ਉਮਰ ਸਮੇਂ "
-"ਦੀ ਗਿਣਤੀ, ਸਾਲਾਂ ਵਿੱਚ, ਹੈ, ਜਿਸ ਦੌਰਾਨ ਜਾਇਦਾਦ ਦਾ ਅਵਲੋਕਣ ਹੁੰਦਾ ਹੈ।"
+msgstr "ਜਾਇਦਾਦ ਲਈ ਇੱਕ ਸਮੇਂ ਲਈ ਸਿੱਧੇ ਅਵਲੋਕਣ ਦੀ ਗਿਣਤੀ ਕਰਦਾ ਹੈ। ਅਵਲੋਕਣ ਲਈ ਸਿੱਧਾ ਢੰਗ ਅਵਲੋਕਣ ਕੀਮਤ ਨੂੰ ਜਾਇਦਾਦ ਦੀ ਫਾਇਦੇਮੰਦ ਉਮਰ ਨੂੰ ਬਰਾਬਰ ਰੂਪ ਵਿੱਚ ਵੰਡਣ ਨਾਲ ਤਿਆਰ ਕੀਤਾ ਜਾਂਦਾ ਹੈ। ਫਾਇਦੇਮੰਦ ਉਮਰ ਸਮੇਂ ਦੀ ਗਿਣਤੀ, ਸਾਲਾਂ ਵਿੱਚ, ਹੈ, ਜਿਸ ਦੌਰਾਨ ਜਾਇਦਾਦ ਦਾ ਅਵਲੋਕਣ ਹੁੰਦਾ ਹੈ।"
 
 #. Title of Sum-of-the-Years'-Digits Depreciation dialog
 #: ../data/buttons-financial.ui.h:62
@@ -296,18 +293,11 @@ msgstr "ਸਲਾਨਾ ਅੰਕਾਂ ਦੇ ਜੋਡ਼ ਵਿੱਚ ਕਮ�
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
-"accelerates the rate of depreciation, so that more depreciation expense "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
+" accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
-msgstr ""
-"ਖਾਸ ਦਿੱਤੇ ਸਮੇਂ ਲਈ ਜਾਇਦਾਦ ਲਈ ਨੁਕਸਾਨ ਦੀ ਗਿਣਤੀ ਹੈ, ਜੋ ਕਿ ਸਾਲਾਂ-ਦੇ-ਜੋੜ-ਅੰਕ ਢੰਗ "
-"ਨਾਲ ਹੈ। ਨੁਕਸਾਨ "
-"ਦਾ ਇਹ ਢੰਗ ਘਟਣ ਦੀ ਦਰ ਨਾਲ ਹੈ, ਇਸਕਰਕੇ ਸ਼ੁਰੂ ਆਲੇ ਸਮੇਂ ਵਿੱਚ ਹੋਣ ਵਾਲਾ ਖ਼ਰਚ ਬਾਅਦ "
-"ਵਾਲੇ ਸਮੇਂ ਨਾਲ ਵੱਧ "
-"ਹੁੰਦਾ ਹੈ। ਫਾਇਦੇਮੰਦ ਉਮਰ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਹੈ, ਆਮ ਤੌਰ ਉੱਤੇ ਸਾਲਾਂ, ਜਿੰਨ੍ਹਾਂ ਲਈ "
-"ਜਾਇਦਾਦ ਦਾ ਨੁਕਸਾਨ ਹੁੰਦਾ "
-"ਹੈ।"
+msgstr "ਖਾਸ ਦਿੱਤੇ ਸਮੇਂ ਲਈ ਜਾਇਦਾਦ ਲਈ ਨੁਕਸਾਨ ਦੀ ਗਿਣਤੀ ਹੈ, ਜੋ ਕਿ ਸਾਲਾਂ-ਦੇ-ਜੋੜ-ਅੰਕ ਢੰਗ ਨਾਲ ਹੈ। ਨੁਕਸਾਨ ਦਾ ਇਹ ਢੰਗ ਘਟਣ ਦੀ ਦਰ ਨਾਲ ਹੈ, ਇਸਕਰਕੇ ਸ਼ੁਰੂ ਆਲੇ ਸਮੇਂ ਵਿੱਚ ਹੋਣ ਵਾਲਾ ਖ਼ਰਚ ਬਾਅਦ ਵਾਲੇ ਸਮੇਂ ਨਾਲ ਵੱਧ ਹੁੰਦਾ ਹੈ। ਫਾਇਦੇਮੰਦ ਉਮਰ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਹੈ, ਆਮ ਤੌਰ ਉੱਤੇ ਸਾਲਾਂ, ਜਿੰਨ੍ਹਾਂ ਲਈ ਜਾਇਦਾਦ ਦਾ ਨੁਕਸਾਨ ਹੁੰਦਾ ਹੈ।"
 
 #. Title of Payment Period dialog
 #: ../data/buttons-financial.ui.h:66
@@ -323,95 +313,123 @@ msgstr "ਭਵਿੱਖਤ ਮੁੱਲ(_V):"
 #: ../data/buttons-financial.ui.h:70
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest "
-"rate."
-msgstr ""
-"ਕਿਸ਼ਤ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਕਰਦਾ ਹੈ, ਜੋ ਕਿ ਆਮ ਪੂੰਜੀ ਦੇ ਸਮੇਂ ਦੌਰਾਨ ਲਾਜ਼ਮੀ ਹੈ, ਤਾਂ ਕਿ "
-"ਭਵਿੱਖ ਮੁੱਲ ਨੂੰ, "
-"ਨਿਯਮਤ ਵਿਆਜ ਰੇਟ ਨਾਲ ਕੱਢਿਆ ਜਾ ਸਕੇ।"
+"of an ordinary annuity, to accumulate a future value, at a periodic interest"
+" rate."
+msgstr "ਕਿਸ਼ਤ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਕਰਦਾ ਹੈ, ਜੋ ਕਿ ਆਮ ਪੂੰਜੀ ਦੇ ਸਮੇਂ ਦੌਰਾਨ ਲਾਜ਼ਮੀ ਹੈ, ਤਾਂ ਕਿ ਭਵਿੱਖ ਮੁੱਲ ਨੂੰ, ਨਿਯਮਤ ਵਿਆਜ ਰੇਟ ਨਾਲ ਕੱਢਿਆ ਜਾ ਸਕੇ।"
 
-#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
-#: ../data/buttons-financial.ui.h:78
+#. Calculates the number of compounding periods necessary to increase an
+#. investment of present value pv to a future value of fv, at a fixed interest
+#. rate of int per compounding period. See also:
+#. http://en.wikipedia.org/wiki/Compound_interest
+#: ../data/buttons-financial.ui.h:79
 msgid "Ctrm"
 msgstr "Ctrm"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:80
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the double-declining balance method. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:81
 msgid "Ddb"
 msgstr "Ddb"
 
-#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
-#: ../data/buttons-financial.ui.h:82
+#. Calculates the future value of an investment based on a series of equal
+#. payments, each of amount pmt, at a periodic interest rate of int, over the
+#. number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Future_value
+#: ../data/buttons-financial.ui.h:83
 msgid "Fv"
 msgstr "Fv"
 
-#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
-#: ../data/buttons-financial.ui.h:84
+#. Calculates the number of payment periods that are necessary during the term
+#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
+#. interest rate of int. Each payment is equal to amount pmt. See also:
+#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#: ../data/buttons-financial.ui.h:85
 msgid "Term"
 msgstr "ਪਦ"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:86
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the Sum-Of-The-Years'-Digits method. This method of
+#. depreciation accelerates the rate of depreciation, so that more
+#. depreciation expense occurs in earlier periods than in later ones. The
+#. depreciable cost is cost - salvage. The useful life is the number of
+#. periods, typically years, over which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:87
 msgid "Syd"
 msgstr "Syd"
 
-#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:88
+#. Calculates the straight-line depreciation of an asset for one period. The
+#. depreciable cost is cost - salvage. The straight-line method of
+#. depreciation divides the depreciable cost evenly over the useful life of an
+#. asset. The useful life is the number of periods, typically years, over
+#. which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:89
 msgid "Sln"
 msgstr "Sln"
 
-#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
-#: ../data/buttons-financial.ui.h:90
+#. Calculates the periodic interest necessary to increase an investment of
+#. present value pv to a future value of fv, over the number of compounding
+#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#: ../data/buttons-financial.ui.h:91
 msgid "Rate"
 msgstr "ਦਰ"
 
-#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
-#: ../data/buttons-financial.ui.h:92
+#. Calculates the present value of an investment based on a series of equal
+#. payments, each of amount pmt, discounted at a periodic interest rate of
+#. int, over the number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Present_value
+#: ../data/buttons-financial.ui.h:93
 msgid "Pv"
 msgstr "Pv"
 
-#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
-#: ../data/buttons-financial.ui.h:94
+#. Calculates the amount of the periodic payment of a loan, where payments are
+#. made at the end of each payment period. See also:
+#. http://en.wikipedia.org/wiki/Amortization_schedule
+#: ../data/buttons-financial.ui.h:95
 msgid "Pmt"
 msgstr "Pmt"
 
-#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
-#: ../data/buttons-financial.ui.h:96
+#. Calculates the resale price of a product, based on the product cost and the
+#. wanted gross profit margin. See also:
+#. http://en.wikipedia.org/wiki/Gross_profit_margin
+#: ../data/buttons-financial.ui.h:97
 msgid "Gpm"
 msgstr "Gpm"
 
+#. Title of insert character code dialog
+#. Tooltip for the insert character code button
+#: ../data/buttons-programming.ui.h:2 ../src/math-buttons.c:235
+msgid "Insert Character Code"
+msgstr "ਅੱਖਰ ਕੋਡ ਸ਼ਾਮਲ"
+
+#. Insert ASCII dialog: Button to insert selected character
+#: ../data/buttons-programming.ui.h:4
+msgid "_Insert"
+msgstr "ਸ਼ਾਮਲ(_i)"
+
+#. Insert ASCII dialog: Label before character entry
+#: ../data/buttons-programming.ui.h:6
+msgid "Ch_aracter:"
+msgstr "ਅੱਖਰ(_a):"
+
 #. Accessible name for the shift left button
 #. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:16 ../src/math-buttons.c:240
+#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
 msgid "Shift Left"
 msgstr "ਖੱਬੀ ਸਿਫ਼ਟ"
 
 #. Accessible name for the shift right button
 #. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:18 ../src/math-buttons.c:243
+#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
 msgid "Shift Right"
 msgstr "ਸੱਜੀ ਸਿਫ਼ਟ"
 
 #. Accessible name for the insert character button
-#: ../data/buttons-programming.ui.h:20
+#: ../data/buttons-programming.ui.h:27
 msgid "Insert Character"
 msgstr "ਅੱਖਰ ਸ਼ਾਮਲ"
-
-#. Title of insert character code dialog
-#. Tooltip for the insert character code button
-#: ../data/buttons-programming.ui.h:28 ../src/math-buttons.c:225
-msgid "Insert Character Code"
-msgstr "ਅੱਖਰ ਕੋਡ ਸ਼ਾਮਲ"
-
-#. Insert ASCII dialog: Label before character entry
-#: ../data/buttons-programming.ui.h:30
-msgid "Ch_aracter:"
-msgstr "ਅੱਖਰ(_a):"
-
-#. Insert ASCII dialog: Button to insert selected character
-#: ../data/buttons-programming.ui.h:32
-msgid "_Insert"
-msgstr "ਸ਼ਾਮਲ(_i)"
 
 #. Word size combo: 8 bits
 #: ../data/preferences.ui.h:2
@@ -434,8 +452,7 @@ msgid "64-bit"
 msgstr "64-ਬਿੱਟ"
 
 #. Title of preferences dialog
-#: ../data/preferences.ui.h:9 ../src/mate-calc.c:522
-#: ../src/math-preferences.c:231
+#: ../data/preferences.ui.h:9 ../src/math-preferences.c:238
 msgid "Preferences"
 msgstr "ਮੇਰੀ ਪਸੰਦ"
 
@@ -464,111 +481,114 @@ msgstr "ਪਿਛਲੀ ਸਿਫ਼ਰਾਂ ਵੇਖੋ(_z)"
 msgid "Show _thousands separators"
 msgstr "ਹਜ਼ਾਰ ਵੱਖਰੇਵਾਂ ਵੇਖੋ(_t)"
 
+#: ../data/mate-calc.desktop.in.h:1
+msgid "MATE Calculator"
+msgstr ""
+
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:243
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
 msgid "Calculator"
 msgstr "ਕੈਲਕੂਲੇਟਰ"
 
-#: ../data/mate-calc.desktop.in.h:2
+#: ../data/mate-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "ਗਣਿਤ, ਵਿਗਿਆਨਕ ਜਾਂ ਵਿੱਤੀ ਗਣਨਾ ਕਰੋ"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:1
+#: ../data/org.mate.calc.gschema.xml.in.h:1
 msgid "Accuracy value"
 msgstr "ਸ਼ੁੱਧ ਮੁੱਲ"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:2
+#: ../data/org.mate.calc.gschema.xml.in.h:2
 msgid "The number of digits displayed after the numeric point"
 msgstr "ਅੰਕ ਪੁਆਇੰਟ ਤੋਂ ਬਾਅਦ ਵੇਖਾਉਣ ਵਾਲੇ ਅੰਕਾਂ ਦੀ ਗਿਣਤੀ ਹੈ।"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:3
+#: ../data/org.mate.calc.gschema.xml.in.h:3
 msgid "Word size"
 msgstr "ਵਰਲਡ ਸਾਈਜ਼"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:4
+#: ../data/org.mate.calc.gschema.xml.in.h:4
 msgid "The size of the words used in bitwise operations"
 msgstr "ਬਿੱਟਵਾਈਜ਼ ਓਪਰੇਸ਼ਨ ਵਿੱਚ ਵਰਤਣ ਲਈ ਸ਼ਬਦ ਦਾ ਆਕਾਰ ਹੈ।"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:5
+#: ../data/org.mate.calc.gschema.xml.in.h:5
 msgid "Numeric Base"
 msgstr "ਸੰਖਿਆਤਮਕ ਬੇਸ"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:6
+#: ../data/org.mate.calc.gschema.xml.in.h:6
 msgid "The numeric base"
 msgstr "ਸੰਖਿਆਤਮਕ ਬੇਸ"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:7
+#: ../data/org.mate.calc.gschema.xml.in.h:7
 msgid "Show Thousands Separators"
 msgstr "ਹਜ਼ਾਰਵਾਂ ਵੱਖਰਾਪਨ ਵੇਖੋ"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:8
+#: ../data/org.mate.calc.gschema.xml.in.h:8
 msgid "Indicates whether thousands separators are shown in large numbers."
 msgstr "ਦਰਸਾਉਂਦਾ ਹੈ ਕਿ ਵੱਡੇ ਨੰਬਰਾਂ ਲਈ ਹਜ਼ਾਰ ਵੱਖਰੇਵਾਂ ਵੇਖਾਉਣਾ ਹੈ।"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:9
+#: ../data/org.mate.calc.gschema.xml.in.h:9
 msgid "Show Trailing Zeroes"
 msgstr "ਪਿਛਲੀਆਂ ਸਿਫ਼ਰਾਂ ਵੇਖੋ"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:10
+#: ../data/org.mate.calc.gschema.xml.in.h:10
 msgid ""
 "Indicates whether any trailing zeroes after the numeric point should be "
 "shown in the display value."
-msgstr ""
-"ਦਰਸਾਉਂਦਾ ਹੈ ਕਿ ਡਿਸਪਲੇਅ ਮੁੱਲ ਵਿੱਚ ਅੰਕੀ ਪੁਆਇੰਟ ਬਾਅਦ ਵਾਲੀਆਂ ਸਿਫ਼ਰਾਂ ਵੇਖਾਉਣੀਆਂ ਹਨ।"
+msgstr "ਦਰਸਾਉਂਦਾ ਹੈ ਕਿ ਡਿਸਪਲੇਅ ਮੁੱਲ ਵਿੱਚ ਅੰਕੀ ਪੁਆਇੰਟ ਬਾਅਦ ਵਾਲੀਆਂ ਸਿਫ਼ਰਾਂ ਵੇਖਾਉਣੀਆਂ ਹਨ।"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:11
+#: ../data/org.mate.calc.gschema.xml.in.h:11
 msgid "Number format"
 msgstr "ਨੰਬਰ ਫਾਰਮੈਟ"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:12
+#: ../data/org.mate.calc.gschema.xml.in.h:12
 msgid "The format to display numbers in"
 msgstr "ਅੰਕ ਵੇਖਾਉਣ ਲਈ ਫਾਰਮੈਟ"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:13
+#: ../data/org.mate.calc.gschema.xml.in.h:13
 msgid "Angle units"
 msgstr "ਕੋਣ ਇਕਾਈਆਂ"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:14
+#: ../data/org.mate.calc.gschema.xml.in.h:14
 msgid "The angle units to use"
 msgstr "ਵਰਤਣ ਲਈ ਕੋਣ ਇਕਾਈ"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:15
+#: ../data/org.mate.calc.gschema.xml.in.h:15
 msgid "Button mode"
 msgstr "ਬਟਨ ਮੋਡ"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:16
+#: ../data/org.mate.calc.gschema.xml.in.h:16
 msgid "The button mode"
 msgstr "ਬਟਨ ਮੋਡ"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:17
+#: ../data/org.mate.calc.gschema.xml.in.h:17
 msgid "Source currency"
 msgstr "ਸਰੋਤ ਮੁਦਰਾ"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:18
+#: ../data/org.mate.calc.gschema.xml.in.h:18
 msgid "Currency of the current calculation"
 msgstr "ਮੌਜੂਦਾ ਗਿਣਤੀ ਦੀ ਮੁਦਰਾ"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:19
+#: ../data/org.mate.calc.gschema.xml.in.h:19
 msgid "Target currency"
 msgstr "ਬਦਲਣ ਲਈ ਮੁਦਰਾ"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:20
+#: ../data/org.mate.calc.gschema.xml.in.h:20
 msgid "Currency to convert the current calculation into"
 msgstr "ਮੁਦਰਾ, ਜਿਸ 'ਚ ਮੌਜੂਦਾ ਗਿਣਤੀ ਨੂੰ ਬਦਲਣਾ ਹੈ"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:21
+#: ../data/org.mate.calc.gschema.xml.in.h:21
 msgid "Source units"
 msgstr "ਸਰੋਤ ਇਕਾਈ"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:22
+#: ../data/org.mate.calc.gschema.xml.in.h:22
 msgid "Units of the current calculation"
 msgstr "ਮੌਜੂਦਾ ਗਿਣਤੀ ਦੀ ਇਕਾਈ"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:23
+#: ../data/org.mate.calc.gschema.xml.in.h:23
 msgid "Target units"
 msgstr "ਟਾਰਗੇਟ ਇਕਾਈ"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:24
+#: ../data/org.mate.calc.gschema.xml.in.h:24
 msgid "Units to convert the current calculation into"
 msgstr "ਇਕਾਈ, ਜਿਸ 'ਚ ਮੌਜੂਦਾ ਗਿਣਤੀ ਨੂੰ ਬਦਲਣਾ ਹੈ"
 
@@ -822,11 +842,10 @@ msgstr "ਗਲਤੀ: ਅੰਤਰਾਲ ਦੀ ਗਿਣਤੀ ਰਿਣਾਤ�
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr ""
-"ਵਰਤੋਂ:\n"
-"  %s — Perform mathematical calculations"
+msgstr "ਵਰਤੋਂ:\n  %s — Perform mathematical calculations"
 
-#. Description on mate-calc command-line help options displayed on command-line
+#. Description on mate-calc command-line help options displayed on command-
+#. line
 #: ../src/mate-calc.c:87
 #, c-format
 msgid ""
@@ -835,36 +854,21 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr ""
-"ਮੱਦਦ ਚੋਣਾਂ:\n"
-"  -v, --version                   Show release version\n"
-"  -h, -?, --help                  Show help options\n"
-"  --help-all                      Show all help options\n"
-"  --help-gtk                      Show GTK+ options"
+msgstr "ਮੱਦਦ ਚੋਣਾਂ:\n  -v, --version                   Show release version\n  -h, -?, --help                  Show help options\n  --help-all                      Show all help options\n  --help-gtk                      Show GTK+ options"
 
-#. Description on mate-calc command-line GTK+ options displayed on command-line
+#. Description on mate-calc command-line GTK+ options displayed on command-
+#. line
 #: ../src/mate-calc.c:98
 #, c-format
 msgid ""
 "GTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window "
-"manager\n"
-"  --name=NAME                     Program name as used by the window "
-"manager\n"
+"  --class=CLASS                   Program class as used by the window manager\n"
+"  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr ""
-"GTK+ ਚੋਣਾਂ:\n"
-"  --class=CLASS                   Program class as used by the window "
-"manager\n"
-"  --name=NAME                     Program name as used by the window "
-"manager\n"
-"  --screen=SCREEN                 X screen to use\n"
-"  --sync                          Make X calls synchronous\n"
-"  --gtk-module=MODULES            Load additional GTK+ modules\n"
-"  --g-fatal-warnings              Make all warnings fatal"
+msgstr "GTK+ ਚੋਣਾਂ:\n  --class=CLASS                   Program class as used by the window manager\n  --name=NAME                     Program name as used by the window manager\n  --screen=SCREEN                 X screen to use\n  --sync                          Make X calls synchronous\n  --gtk-module=MODULES            Load additional GTK+ modules\n  --g-fatal-warnings              Make all warnings fatal"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -872,9 +876,7 @@ msgstr ""
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr ""
-"Application Options:\n"
-"  -s, --solve <equation>          Solve the given equation"
+msgstr "Application Options:\n  -s, --solve <equation>          Solve the given equation"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:156
@@ -888,371 +890,294 @@ msgstr "Argument --solve requires an equation to solve"
 msgid "Unknown argument '%s'"
 msgstr "ਅਣਜਾਣ ਆਰਗੂਮੈਂਟ '%s'"
 
-#. Translators: Error message displayed when unable to launch help browser
-#: ../src/mate-calc.c:358
-msgid "Unable to open help file"
-msgstr "ਮੱਦਦ ਫਾਇਲ ਖੋਲ੍ਹਣ ਲਈ ਅਸਮਰੱਥ"
-
-#. The translator credits. Please translate this with your name(s).
-#: ../src/mate-calc.c:390
-msgid "translator-credits"
-msgstr ""
-"ਜਸਵਿੰਦਰ ਸਿੰਘ ਫੂਲੇਵਾਲਾ (jaswinderphulewala@yahoo.com) ੨੦੦੪\n"
-"ਅਮਨਪਰੀਤ ਸਿੰਘ ਆਲਮ ੨੦੦੪-੨੦੧੦\n"
-"Punjabi OpenSource Team\n"
-"http://www.satluj.com/"
-
-#. The license this software is under (GPL2+)
-#: ../src/mate-calc.c:393
-msgid ""
-"Gcalctool is free software; you can redistribute it and/or modify\n"
-"it under the terms of the GNU General Public License as published by\n"
-"the Free Software Foundation; either version 2 of the License, or\n"
-"(at your option) any later version.\n"
-"\n"
-"Gcalctool is distributed in the hope that it will be useful,\n"
-"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License\n"
-"along with Gcalctool; if not, write to the Free Software Foundation, Inc.,\n"
-"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
-"Gcalctool ਇੱਕ ਮੁਫਤ ਸਾਫਟਵੇਅਰ ਹੈ, ਜਿਸ ਨੂੰ ਤੁਸੀਂ ਗਨੂ ਜਰਨਲ ਪਬਲਿਕ ਲਾਈਸੈਂਸ,\n"
-"ਜਿਸ ਨੂੰ ਫਰੀ ਸਾਫਟਵੇਅਰ ਫਾਊਨਡੇਸ਼ਨ ਨੇ ਤਿਆਰ ਕੀਤਾ ਹੈ, ਦੇ ਵਰਜਨ ੨ ਜਾਂ ਨਵੇਂ ਦੀਆਂ\n"
-"ਸ਼ਰਤਾਂ (ਉਹ ਤੁਹਾਡੀ ਆਪਣੀ ਮਰਜ਼ੀ ਹੈ) ਅਧੀਨ ਵੰਡ ਅਤੇ/ਜਾਂ ਸੋਧ ਸਕਦੇ ਹੋ।\"\n"
-"\n"
-"Gcalctool ਨੂੰ ਇਹ ਮੰਨ ਕੇ ਵੰਡਿਆ ਜਾ ਰਿਹਾ ਹੈ ਕਿ ਇਹ ਫਾਇਦੇਮੰਦ ਰਹੇਗਾ, ਪਰ\n"
-"ਇਸ ਦੀ ਕੋਈ ਵਾਰੰਟੀ ਨਹੀਂ ਲਈ ਜਾ ਰਹੀ ਹੈ, ਕਿਸੇ ਖਾਸ ਕੰਮ ਲਈ ਅਨੁਕੂਲ ਹੋਣ ਜਾਂ\n"
-"ਠੀਕ ਤਰ੍ਹਾਂ ਕੰਮ ਕਰਨ ਦੀ ਵੀ ਕੋਈ ਗਾਰੰਟੀ ਨਹੀਂ ਹੈ।  ਹੋਰ ਵੇਰਵੇ ਲਈ ਗਨੂ ਜਰਨਲ\n"
-"ਪਬਲਿਕ ਲਾਇਸੈਂਸ ਨੂੰ ਪੜ੍ਹੋ।\n"
-"\n"
-"Gcalctool ਨਾਲ ਤੁਸੀਂ ਗਨੂ ਜਰਨਲ ਪਬਲਿਕ ਲਾਇਸੈਂਸ ਦੀ ਨਕਲ ਪ੍ਰਾਪਤ ਕਰੋਗੇ,\n"
-"ਜੇਕਰ ਤੁਹਾਨੂੰਨਹੀਂ ਮਿਲੀ ਹੈ ਤਾਂ ਫਰੀ ਸਾਫਟਵੇਅਰ ਫਾਊਨਡੇਸ਼ਨ, ੫੧ ਫਰਾਕਲਿੰਨ ਸਟਰੀਟ,\n"
-"ਪੰਜਵੀਂ ਮੰਜ਼ਲ,ਬੋਸਟਨ, ਐਮ ਏ ੦੨੧੧੦-੧੩੦੧, ਅਮਰੀਕਾ ਨੂੰ ਲਿਖੋ।"
-
-#. Program name in the about dialog
-#: ../src/mate-calc.c:410
-msgid "Gcalctool"
-msgstr "ਜੀ-ਕੈਲਕੁਲੇਟਰ"
-
-#. Copyright notice in the about dialog
-#: ../src/mate-calc.c:414
-msgid "© 1986–2010 The Gcalctool authors"
-msgstr "© ੧੯੮੬-੨੦੧੦  Gcalctool ਲੇਖਕ"
-
-#. Short description in the about dialog
-#: ../src/mate-calc.c:418
-msgid "Calculator with financial and scientific modes."
-msgstr "ਆਰਥਿਕ ਅਤੇ ਵਿਗਿਆਨਿਕ ਢੰਗਾਂ ਵਾਲਾ ਕੈਲਕੂਲੇਟਰ ਹੈ।"
-
-#: ../src/mate-calc.c:515
-msgid "Basic"
-msgstr "ਮੁੱਢਲਾ"
-
-#: ../src/mate-calc.c:516
-msgid "Advanced"
-msgstr "ਤਕਨੀਕੀ"
-
-#: ../src/mate-calc.c:517
-msgid "Financial"
-msgstr "ਵਿੱਤੀ"
-
-#: ../src/mate-calc.c:518
-msgid "Programming"
-msgstr "ਪਰੋਗਰਾਮਿੰਗ"
-
-#: ../src/mate-calc.c:519
-msgid "Mode"
-msgstr "ਮੋਡ"
-
-#: ../src/mate-calc.c:526
-msgid "About Calculator"
-msgstr "ਕੈਲਕੂਲੇਟਰ ਬਾਰੇ"
-
-#: ../src/mate-calc.c:527
-msgid "Help"
-msgstr "ਮੱਦਦ"
-
-#: ../src/mate-calc.c:528
-msgid "Quit"
-msgstr "ਬੰਦ ਕਰੋ"
-
 #. Tooltip for the Pi button
-#: ../src/math-buttons.c:94
+#: ../src/math-buttons.c:95
 msgid "Pi [Ctrl+P]"
 msgstr "ਪਾਈ [Ctrl+P]"
 
 #. Tooltip for the Euler's Number button
-#: ../src/math-buttons.c:97
+#: ../src/math-buttons.c:98
 msgid "Euler’s Number"
 msgstr "ਈਉਲਰ ਨੰਬਰ"
 
 #. Tooltip for the subscript button
-#: ../src/math-buttons.c:102
+#: ../src/math-buttons.c:103
 msgid "Subscript mode [Alt]"
 msgstr "ਪ੍ਹੈਰ 'ਚ ਮੋਡ [Alt]"
 
 #. Tooltip for the superscript button
-#: ../src/math-buttons.c:105
+#: ../src/math-buttons.c:106
 msgid "Superscript mode [Ctrl]"
 msgstr "ਘਾਤ ਮੋਡ [Ctrl]"
 
 #. Tooltip for the scientific exponent button
-#: ../src/math-buttons.c:108
+#: ../src/math-buttons.c:109
 msgid "Scientific exponent [Ctrl+E]"
 msgstr "ਵਿਗਿਆਨਕ ਐਕਸਪੋਨੈਂਟ [Ctrl+E]"
 
 #. Tooltip for the add button
-#: ../src/math-buttons.c:111
+#: ../src/math-buttons.c:112
 msgid "Add [+]"
 msgstr "ਜੋਡ਼[+]"
 
 #. Tooltip for the subtract button
-#: ../src/math-buttons.c:114
+#: ../src/math-buttons.c:115
 msgid "Subtract [-]"
 msgstr "ਘਟਾਓ [-]"
 
 #. Tooltip for the multiply button
-#: ../src/math-buttons.c:117
+#: ../src/math-buttons.c:118
 msgid "Multiply [*]"
 msgstr "ਗੁਣਾ [*]"
 
 #. Tooltip for the divide button
-#: ../src/math-buttons.c:120
+#: ../src/math-buttons.c:121
 msgid "Divide [/]"
 msgstr "ਭਾਗ [/]"
 
 #. Tooltip for the modulus divide button
-#: ../src/math-buttons.c:123
+#: ../src/math-buttons.c:124
 msgid "Modulus divide"
 msgstr "ਮੋਡੁਲੁਸ ਭਾਗ"
 
 #. Tooltip for the additional functions button
-#: ../src/math-buttons.c:126
+#: ../src/math-buttons.c:127
 msgid "Additional Functions"
 msgstr "ਹੋਰ ਫੰਕਸ਼ਨ"
 
 #. Tooltip for the exponent button
-#: ../src/math-buttons.c:129
+#: ../src/math-buttons.c:130
 msgid "Exponent [^ or **]"
 msgstr "ਐਕਸਪੋਨੈਟ [^ ਜਾਂ **]"
 
 #. Tooltip for the square button
-#: ../src/math-buttons.c:132
+#: ../src/math-buttons.c:133
 msgid "Square [Ctrl+2]"
 msgstr "ਵਰਗ [Ctrl+2]"
 
 #. Tooltip for the percentage button
-#: ../src/math-buttons.c:135
+#: ../src/math-buttons.c:136
 msgid "Percentage [%]"
 msgstr "ਫ਼ੀ-ਸਦੀ [%]"
 
 #. Tooltip for the factorial button
-#: ../src/math-buttons.c:138
+#: ../src/math-buttons.c:139
 msgid "Factorial [!]"
 msgstr "ਫੈਕਟੋਰੀਅਲ [!]"
 
 #. Tooltip for the absolute value button
-#: ../src/math-buttons.c:141
+#: ../src/math-buttons.c:142
 msgid "Absolute value [|]"
 msgstr "ਅਸਲੀ ਮੁੱਲ [|]"
 
 #. Tooltip for the complex argument component button
-#: ../src/math-buttons.c:144
+#: ../src/math-buttons.c:145
 msgid "Complex argument"
 msgstr "ਕੰਪਲੈਕਸ ਆਰਗੂਮੈਂਟ"
 
 #. Tooltip for the complex conjugate button
-#: ../src/math-buttons.c:147
+#: ../src/math-buttons.c:148
 msgid "Complex conjugate"
 msgstr "ਕੰਪਲੈਕਸ ਕੰਜੂਗੇਟ"
 
 #. Tooltip for the root button
-#: ../src/math-buttons.c:150
+#: ../src/math-buttons.c:151
 msgid "Root [Ctrl+R]"
 msgstr "ਮੂਲ [Ctrl+R]"
 
 #. Tooltip for the square root button
-#: ../src/math-buttons.c:153
+#: ../src/math-buttons.c:154
 msgid "Square root [Ctrl+R]"
 msgstr "ਵਰਗਮੂਲ [Ctrl+R]"
 
 #. Tooltip for the logarithm button
-#: ../src/math-buttons.c:156
+#: ../src/math-buttons.c:157
 msgid "Logarithm"
 msgstr "ਲਾਗਰਿਥਮ"
 
 #. Tooltip for the natural logarithm button
-#: ../src/math-buttons.c:159
+#: ../src/math-buttons.c:160
 msgid "Natural Logarithm"
 msgstr "ਨਿਉਚਰਲ ਲਾਗਰਿਥਮ"
 
 #. Tooltip for the sine button
-#: ../src/math-buttons.c:162
+#: ../src/math-buttons.c:163
 msgid "Sine"
 msgstr "Sine"
 
 #. Tooltip for the cosine button
-#: ../src/math-buttons.c:165
+#: ../src/math-buttons.c:166
 msgid "Cosine"
 msgstr "Cosine"
 
 #. Tooltip for the tangent button
-#: ../src/math-buttons.c:168
+#: ../src/math-buttons.c:169
 msgid "Tangent"
 msgstr "Tangent"
 
 #. Tooltip for the hyperbolic sine button
-#: ../src/math-buttons.c:171
+#: ../src/math-buttons.c:172
 msgid "Hyperbolic Sine"
 msgstr "ਹਾਈਪਰਬੋਲਿਕ ਸਾਈਨ"
 
 #. Tooltip for the hyperbolic cosine button
-#: ../src/math-buttons.c:174
+#: ../src/math-buttons.c:175
 msgid "Hyperbolic Cosine"
 msgstr "ਹਾਈਪਰਬੋਲਿਕ ਕੋਸਾਈਨ"
 
 #. Tooltip for the hyperbolic tangent button
-#: ../src/math-buttons.c:177
+#: ../src/math-buttons.c:178
 msgid "Hyperbolic Tangent"
 msgstr "ਹਾਈਪਰਬੋਲਿਕ ਟੇਜੈਂਟ"
 
+#. Tooltip for the inverse sine button
+#: ../src/math-buttons.c:181
+msgid "Inverse Sine"
+msgstr ""
+
+#. Tooltip for the inverse cosine button
+#: ../src/math-buttons.c:184
+msgid "Inverse Cosine"
+msgstr ""
+
+#. Tooltip for the inverse tangent button
+#: ../src/math-buttons.c:187
+msgid "Inverse Tangent"
+msgstr ""
+
 #. Tooltip for the inverse button
-#: ../src/math-buttons.c:180
+#: ../src/math-buttons.c:190
 msgid "Inverse [Ctrl+I]"
 msgstr "ਉਲਟ [Ctrl+I]"
 
 #. Tooltip for the boolean AND button
-#: ../src/math-buttons.c:183
+#: ../src/math-buttons.c:193
 msgid "Boolean AND"
 msgstr "ਬੁਲੀਅਨ AND"
 
 #. Tooltip for the boolean OR button
-#: ../src/math-buttons.c:186
+#: ../src/math-buttons.c:196
 msgid "Boolean OR"
 msgstr "ਬੁਲੀਅਨ OR"
 
 #. Tooltip for the exclusive OR button
-#: ../src/math-buttons.c:189
+#: ../src/math-buttons.c:199
 msgid "Boolean Exclusive OR"
 msgstr "ਬੁਲੀਅਨ ਖਾਸ OR"
 
 #. Tooltip for the boolean NOT button
-#: ../src/math-buttons.c:192
+#: ../src/math-buttons.c:202
 msgid "Boolean NOT"
 msgstr "ਬੁਲੀਅਨ NOT"
 
 #. Tooltip for the integer component button
-#: ../src/math-buttons.c:195 ../src/math-buttons.c:983
+#: ../src/math-buttons.c:205 ../src/math-buttons.c:994
 msgid "Integer Component"
 msgstr "ਪੂਰਨ ਅੰਕ ਵਾਲਾ ਹਿੱਸਾ"
 
 #. Tooltip for the fractional component button
-#: ../src/math-buttons.c:198 ../src/math-buttons.c:985
+#: ../src/math-buttons.c:208 ../src/math-buttons.c:996
 msgid "Fractional Component"
 msgstr "ਗੁਣਨਖੰਡ ਭਾਗ"
 
 #. Tooltip for the real component button
-#: ../src/math-buttons.c:201
+#: ../src/math-buttons.c:211
 msgid "Real Component"
 msgstr "ਰੀਅਲ ਭਾਗ"
 
 #. Tooltip for the imaginary component button
-#: ../src/math-buttons.c:204
+#: ../src/math-buttons.c:214
 msgid "Imaginary Component"
 msgstr "ਇੰਮੈਜ਼ਨਰੀ ਭਾਗ"
 
 #. Tooltip for the ones' complement button
-#: ../src/math-buttons.c:207
+#: ../src/math-buttons.c:217
 msgid "Ones' Complement"
 msgstr "ਇੱਕ ਦਾ ਭਾਗ"
 
 #. Tooltip for the two's complement button
-#: ../src/math-buttons.c:210
+#: ../src/math-buttons.c:220
 msgid "Two's Complement"
 msgstr "ਦੋ ਦਾ ਭਾਗ"
 
 #. Tooltip for the truncate button
-#: ../src/math-buttons.c:213
+#: ../src/math-buttons.c:223
 msgid "Truncate"
 msgstr "ਛਾਂਗਿਆ"
 
 #. Tooltip for the start group button
-#: ../src/math-buttons.c:216
+#: ../src/math-buttons.c:226
 msgid "Start Group [(]"
 msgstr "ਗਰੁੱਪ ਸ਼ੁਰੂ [(]"
 
 #. Tooltip for the end group button
-#: ../src/math-buttons.c:219
+#: ../src/math-buttons.c:229
 msgid "End Group [)]"
 msgstr "ਗਰੁੱਪ ਅੰਤ [)]"
 
 #. Tooltip for the solve button
-#: ../src/math-buttons.c:228
+#: ../src/math-buttons.c:238
 msgid "Calculate Result"
 msgstr "ਗਣਨਾ ਨਤੀਜਾ"
 
 #. Tooltip for the factor button
-#: ../src/math-buttons.c:231
+#: ../src/math-buttons.c:241
 msgid "Factorize [Ctrl+F]"
 msgstr "ਗੁਣਨਖੰਡ [Ctrl+F]"
 
 #. Tooltip for the clear button
-#: ../src/math-buttons.c:234
+#: ../src/math-buttons.c:244
 msgid "Clear Display [Escape]"
 msgstr "ਡਿਸਪਲੇਅ ਸਾਫ਼ ਕਰੋ [Escape]"
 
 #. Tooltip for the undo button
-#: ../src/math-buttons.c:237
+#: ../src/math-buttons.c:247
 msgid "Undo [Ctrl+Z]"
 msgstr "ਵਾਪਸ [Ctrl+Z]"
 
 #. Tooltip for the double declining depreciation button
-#: ../src/math-buttons.c:249
+#: ../src/math-buttons.c:259
 msgid "Double Declining Depreciation"
 msgstr "ਮੁੱਲ ਵਿੱਚ ਦੁੱਗਣੀ ਕਮੀ"
 
 #. Tooltip for the financial term button
-#: ../src/math-buttons.c:255
+#: ../src/math-buttons.c:265
 msgid "Financial Term"
 msgstr "ਵਿੱਤੀ ਟਰਮ"
 
 #. Tooltip for the sum of the years digits depreciation button
-#: ../src/math-buttons.c:258
+#: ../src/math-buttons.c:268
 msgid "Sum of the Years Digits Depreciation"
 msgstr "ਸਲਾਨਾ ਅੰਕਾਂ ਦੇ ਜੋਡ਼ ਵਿੱਚ ਕਮੀ"
 
 #. Tooltip for the straight line depreciation button
-#: ../src/math-buttons.c:261
+#: ../src/math-buttons.c:271
 msgid "Straight Line Depreciation"
 msgstr "ਸਰਲ-ਰੇਖੀ ਕਮੀ"
 
-#  Strings for each base value.
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: ../src/math-buttons.c:601
+#: ../src/math-buttons.c:611
 msgid "Binary"
 msgstr "ਬਾਈਨਰੀ"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: ../src/math-buttons.c:605
+#: ../src/math-buttons.c:615
 msgid "Octal"
 msgstr "ਉਕਟਿਲ"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: ../src/math-buttons.c:609
+#: ../src/math-buttons.c:619
 msgid "Decimal"
 msgstr "ਦਸ਼ਮਲਵ"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: ../src/math-buttons.c:613
+#: ../src/math-buttons.c:623
 msgid "Hexadecimal"
 msgstr "ਹੈਕਸਾਡੈਸੀਮਲ"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: ../src/math-buttons.c:894 ../src/math-buttons.c:937
+#: ../src/math-buttons.c:905 ../src/math-buttons.c:948
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
@@ -1261,7 +1186,7 @@ msgstr[1] "_%d ਥਾਵਾਂ"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: ../src/math-buttons.c:898 ../src/math-buttons.c:941
+#: ../src/math-buttons.c:909 ../src/math-buttons.c:952
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
@@ -1269,26 +1194,27 @@ msgstr[0] "%d ਥਾਂ"
 msgstr[1] "%d ਥਾਵਾਂ"
 
 #. Tooltip for the round button
-#: ../src/math-buttons.c:987
+#: ../src/math-buttons.c:998
 msgid "Round"
 msgstr "ਰਾਊਂਡ"
 
 #. Tooltip for the floor button
-#: ../src/math-buttons.c:989
+#: ../src/math-buttons.c:1000
 msgid "Floor"
 msgstr "ਫਲੋਰ"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:991
+#: ../src/math-buttons.c:1002
 msgid "Ceiling"
 msgstr "ਸਿਲਿੰਗ"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:993
+#: ../src/math-buttons.c:1004
 msgid "Sign"
 msgstr "ਸਾਈਨ"
 
-#. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
+#. Label that is displayed between the two conversion combo boxes, e.g.
+#. "[degrees] in [radians]"
 #: ../src/math-converter.c:412
 msgid " in "
 msgstr " ਵਿੱਚ "
@@ -1308,139 +1234,224 @@ msgstr "ਕੋਈ ਵਾਪਸੀ ਅਤੀਤ ਨਹੀਂ"
 msgid "No redo history"
 msgstr "ਕੋਈ ਮੁੜ-ਵਾਪਸੀ ਅਤੀਤ ਨਹੀਂ"
 
-#: ../src/math-equation.c:944
+#: ../src/math-equation.c:948
 msgid "No sane value to store"
 msgstr "ਸੰਭਾਲਣ ਲਈ sane ਮੁੱਲ ਨਹੀਂ"
 
-#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
-#: ../src/math-equation.c:1226
+#. Error displayed to user when they perform a bitwise operation on numbers
+#. greater than the current word
+#: ../src/math-equation.c:1230
 msgid "Overflow. Try a bigger word size"
 msgstr "ਸੀਮਾ ਤੋਂ ਵੱਧ ਗਿਆ। ਵੱਡਾ ਸ਼ਬਦ ਆਕਾਰ ਵਰਤੋਂ"
 
 #. Error displayed to user when they an unknown variable is entered
-#: ../src/math-equation.c:1231
+#: ../src/math-equation.c:1235
 #, c-format
 msgid "Unknown variable '%s'"
 msgstr "ਅਣਜਾਣ ਵੇਰੀਬਲ '%s'"
 
 #. Error displayed to user when an unknown function is entered
-#: ../src/math-equation.c:1236
+#: ../src/math-equation.c:1240
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr "ਫੰਕਸ਼ਨ '%s' ਦਿੱਤਾ ਨਹੀਂ"
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: ../src/math-equation.c:1241
+#: ../src/math-equation.c:1245
 msgid "Unknown conversion"
 msgstr "ਅਣਜਾਣ ਬਦਲਾਅ"
 
 #. Uncategorized error. Show error token to user
-#: ../src/math-equation.c:1249
+#: ../src/math-equation.c:1253
 #, c-format
-#| msgid "Malformed expression"
 msgid "Malformed expression at token '%s'"
 msgstr "'%s' ਟੋਕਨ ਉੱਤੇ ਨਿਕਾਰਾ ਸਮੀਕਰਨ"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: ../src/math-equation.c:1252 ../src/math-equation.c:1257
+#: ../src/math-equation.c:1256 ../src/math-equation.c:1261
 msgid "Malformed expression"
 msgstr "ਖਰਾਬ ਸਮੀਕਰਨ"
 
-#: ../src/math-equation.c:1271
+#: ../src/math-equation.c:1275
 msgid "Calculating"
 msgstr "ਗਿਣਤੀ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1387
+#: ../src/math-equation.c:1394
 msgid "Need an integer to factorize"
 msgstr "ਗੁਣਨਖੰਡ ਬਣਾਉਣ ਲਈ ਪੂਰਨ ਅੰਕ ਚਾਹੀਦਾ ਹੈ"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1459
+#: ../src/math-equation.c:1470
 msgid "No sane value to bitwise shift"
 msgstr "bitwise shift ਲਈ sane ਮੁੱਲ ਨਹੀਂ"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1490
+#: ../src/math-equation.c:1501
 msgid "Displayed value not an integer"
 msgstr "ਵੇਖਾਇਆ ਮੁੱਲ ਪੂਰਨ ਅੰਕ ਨਹੀਂ ਹੈ"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1915
+#: ../src/math-equation.c:1926
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
 #. Label on close button in preferences dialog
-#: ../src/math-preferences.c:235
+#: ../src/math-preferences.c:242
 msgid "_Close"
 msgstr "ਬੰਦ ਕਰੋ(_C)"
 
-#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
-#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
-#: ../src/math-preferences.c:245 ../src/unit-manager.c:54
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
+#. calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
+#. grads
+#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "ਡਿਗਰੀ"
 
-#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
-#: ../src/math-preferences.c:249 ../src/unit-manager.c:55
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
+#. calculations
+#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "ਰੇਡੀਅਨ"
 
-#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
-#: ../src/math-preferences.c:253 ../src/unit-manager.c:56
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
+#. calculations
+#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "ਗਰੇਡੀਅਨ"
 
-#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
-#: ../src/math-preferences.c:263
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
+#. number 1.234×10^99)
+#: ../src/math-preferences.c:270
 msgid "Automatic"
 msgstr "ਆਟੋਮੈਟਿਕ"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:267
+#: ../src/math-preferences.c:274
 msgid "Fixed"
 msgstr "ਸਥਿਰ"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:271
+#: ../src/math-preferences.c:278
 msgid "Scientific"
 msgstr "ਵਿਗਿਆਨਿਕ"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:275
+#: ../src/math-preferences.c:282
 msgid "Engineering"
 msgstr "ਇੰਜਿਨਅਰਿੰਗ"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:286
+#: ../src/math-preferences.c:293
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "%d ਦਸ਼ਮਲਵ ਅੰਕਾਂ ਤੱਕ ਵੇਖੋ(_p)"
 
-#. Translators: Error displayed when boolean AND attempted on non-integer values
+#. Translators: Error message displayed when unable to launch help browser
+#: ../src/math-window.c:198
+msgid "Unable to open help file"
+msgstr "ਮੱਦਦ ਫਾਇਲ ਖੋਲ੍ਹਣ ਲਈ ਅਸਮਰੱਥ"
+
+#. The translator credits. Please translate this with your name(s).
+#: ../src/math-window.c:225
+msgid "translator-credits"
+msgstr "ਜਸਵਿੰਦਰ ਸਿੰਘ ਫੂਲੇਵਾਲਾ (jaswinderphulewala@yahoo.com) ੨੦੦੪\nਅਮਨਪਰੀਤ ਸਿੰਘ ਆਲਮ ੨੦੦੪-੨੦੧੦\nPunjabi OpenSource Team\nhttp://www.satluj.com/"
+
+#. The license this software is under (GPL2+)
+#: ../src/math-window.c:232
+msgid ""
+"mate-calc is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"mate-calc is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
+"151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr ""
+
+#: ../src/math-window.c:247
+msgid "mate-calc"
+msgstr "ਜੀ-ਕੈਲਕੁਲੇਟਰ"
+
+#: ../src/math-window.c:251
+msgid "Calculator with financial and scientific modes."
+msgstr "ਆਰਥਿਕ ਅਤੇ ਵਿਗਿਆਨਿਕ ਢੰਗਾਂ ਵਾਲਾ ਕੈਲਕੂਲੇਟਰ ਹੈ।"
+
+#. Calculator menu
+#: ../src/math-window.c:354
+msgid "_Calculator"
+msgstr "ਕੈਲਕੂਲੇਟਰ(_C)"
+
+#. Mode menu
+#: ../src/math-window.c:356
+msgid "_Mode"
+msgstr "ਮੋਡ(_M)"
+
+#. Help menu label
+#: ../src/math-window.c:358
+msgid "_Help"
+msgstr "ਮੱਦਦ(_H)"
+
+#. Basic menu label
+#: ../src/math-window.c:360
+msgid "_Basic"
+msgstr "ਮੁੱਢਲਾ(_B)"
+
+#. Advanced menu label
+#: ../src/math-window.c:362
+msgid "_Advanced"
+msgstr "ਤਕਨੀਕੀ(_A)"
+
+#. Financial menu label
+#: ../src/math-window.c:364
+msgid "_Financial"
+msgstr "ਵਿੱਤੀ(_F)"
+
+#. Programming menu label
+#: ../src/math-window.c:366
+msgid "_Programming"
+msgstr "ਪਰੋਗਾਰਮਿੰਗ(_P)"
+
+#. Help>Contents menu label
+#: ../src/math-window.c:368
+msgid "_Contents"
+msgstr "ਸਮੱਗਰੀ(_C)"
+
+#. Translators: Error displayed when boolean AND attempted on non-integer
+#. values
 #: ../src/mp-binary.c:115
 msgid "Boolean AND is only defined for positive integers"
 msgstr "ਧਨਾਤਮਕ ਪੂਰਨ ਅੰਕਾਂ ਲਈ ਹੀ ਬੁਲੀਅਨ AND ਕੱਢਿਆ ਜਾ ਸਕਦਾ ਹੈ"
 
-#. Translators: Error displayed when boolean OR attempted on non-integer values
+#. Translators: Error displayed when boolean OR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:128
 msgid "Boolean OR is only defined for positive integers"
 msgstr "ਧਨਾਤਮਕ ਪੂਰਨ ਅੰਕਾਂ ਲਈ ਹੀ ਬੁਲੀਅਨ OR ਕੱਢਿਆ ਜਾ ਸਕਦਾ ਹੈ"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:141
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "ਧਨਾਤਮਕ ਪੂਰਨ ਅੰਕਾਂ ਲਈ ਹੀ ਬੁਲੀਅਨ XOR ਕੱਢਿਆ ਜਾ ਸਕਦਾ ਹੈ"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:156
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "ਧਨਾਤਮਕ ਪੂਰਨ ਅੰਕਾਂ ਲਈ ਹੀ ਬੁਲੀਅਨ NOT ਕੱਢਿਆ ਜਾ ਸਕਦਾ ਹੈ"
 
 #. Translators: Error displayed when bit shift attempted on non-integer values
-#: ../src/mp-binary.c:187
+#: ../src/mp-binary.c:190
 msgid "Shift is only possible on integer values"
 msgstr "ਪੂਰਨ ਅੰਕ ਮੁੱਲਾਂ ਲਈ ਸਿਫ਼ਟ ਸੰਭਵ ਹੈ"
 
@@ -1463,7 +1474,8 @@ msgstr "ਸਿਫ਼ਰ ਨਾਲ ਭਾਗ ਦੇਣਾ ਸੰਭਵ ਨਹੀ�
 msgid "Logarithm of zero is undefined"
 msgstr "ਸਿਫ਼ਰ ਦਾ ਲਾਗਰਿਥਮ ਸੰਭਵ ਨਹੀਂ"
 
-#. Translators: Error displayed when attempted to raise 0 to a negative exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. exponent
 #: ../src/mp.c:1680 ../src/mp.c:1994
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "ਰਿਣਾਤਮਕ ਭਾਗ ਲਈ ਸਿਫ਼ਰ ਦੀ ਘਾਤ ਸੰਭਵ ਨਹੀਂ ਹੈ"
@@ -1484,12 +1496,14 @@ msgstr "ਸਿਫ਼ਰ ਦਾ ਰਿਣਾਤਮਕ ਰੂਟ ਸੰਭਵ ਨ�
 msgid "nth root of negative number is undefined for even n"
 msgstr "ਰਿਣਾਤਮਕ ਨੰਬਰ ਲਈ nਵਾਂ ਰੂਟ ਧਨਾਤਕਮ n ਲਈ ਸੰਭਵ ਨਹੀਂ"
 
-#. Translators: Error displayed when attempted take the factorial of a fractional number
+#. Translators: Error displayed when attempted take the factorial of a
+#. fractional number
 #: ../src/mp.c:1934
 msgid "Factorial is only defined for natural numbers"
 msgstr "ਕੁਦਰਤੀ ਨੰਬਰਾਂ ਲਈ ਫੈਕਟੋਰੀਅਲ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ"
 
-#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
+#. Translators: Error displayed when attemping to do a modulus division on
+#. non-integer numbers
 #: ../src/mp.c:1954
 msgid "Modulus division is only defined for integers"
 msgstr "ਪੂਰਨ ਅੰਕਾਂ ਲਈ ਹੀ ਮੋਡੁਲੁਸ ਭਾਗ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ"
@@ -1497,7 +1511,8 @@ msgstr "ਪੂਰਨ ਅੰਕਾਂ ਲਈ ਹੀ ਮੋਡੁਲੁਸ ਭਾ�
 #. Translators: Error displayed when tangent value is undefined
 #: ../src/mp-trigonometric.c:310
 msgid ""
-"Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
+"(90°)"
 msgstr "ਟੈਂਜੈੱਟ ਕੋਣਾਂ ਲਈ ਸੰਭਵ ਨਹੀਂ, ਜੋ π∕2 (90°) ਤੋਂ  π (180°) ਦੇ ਗੁਣਾਂਕ ਹਨ"
 
 #. Translators: Error displayed when inverse sine value is undefined
@@ -1510,12 +1525,14 @@ msgstr "ਉਲਟ ਸਾਈਨ [-1, 1] ਬਾਹਰੀ ਮੁੱਲਾਂ ਲਈ
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
 msgstr "ਉਲਟ ਕੋਸਾਈਨ [-1, 1] ਬਾਹਰੀ ਮੁੱਲਾਂ ਲਈ ਸੰਭਵ ਨਹੀਂ"
 
-#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
+#. Translators: Error displayed when inverse hyperbolic cosine value is
+#. undefined
 #: ../src/mp-trigonometric.c:591
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
 msgstr "ਉਲਟ ਹਾਈਪਰਬੋਲਾ ਕੋਸਾਈਨ ਇੱਕ ਤੋਂ ਘੱਟ ਮੁੱਲਾਂ ਲਈ ਸੰਭਵ ਨਹੀਂ"
 
-#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
+#. Translators: Error displayed when inverse hyperbolic tangent value is
+#. undefined
 #: ../src/mp-trigonometric.c:615
 msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
 msgstr "ਉਲਟ ਹਾਈਪਰਬੋਲਾ ਟੈਂਜੈੱਟ [-1, 1] ਬਾਹਰੀ ਮੁੱਲਾਂ ਲਈ ਸੰਭਵ ਨਹੀਂ"
@@ -2245,1510 +2262,9 @@ msgstr "ਤਾਪਮਾਨ"
 msgid "Currency"
 msgstr "ਮੁਦਰਾ"
 
-#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
+#. Translators: result of currency conversion, %s is the symbol, %%s is the
+#. placeholder for amount, i.e.: USD100
 #: ../src/unit-manager.c:137
 #, c-format
 msgid "%s%%s"
 msgstr "%s%%s"
-
-#~ msgid "<i>x</i>"
-#~ msgstr "<i>x</i>"
-
-#~ msgid "_Calculator"
-#~ msgstr "ਕੈਲਕੂਲੇਟਰ(_C)"
-
-#~ msgid "_Basic"
-#~ msgstr "ਮੁੱਢਲਾ(_B)"
-
-#~ msgid "_Advanced"
-#~ msgstr "ਤਕਨੀਕੀ(_A)"
-
-#~ msgid "_Programming"
-#~ msgstr "ਪਰੋਗਾਰਮਿੰਗ(_P)"
-
-#~ msgid "_Contents"
-#~ msgstr "ਸਮੱਗਰੀ(_C)"
-
-#~ msgctxt "unit-format"
-#~ msgid "%s˚K"
-#~ msgstr "%s˚K"
-
-#~ msgctxt "unit-symbols"
-#~ msgid "degK,˚K"
-#~ msgstr "degK,˚K"
-
-#~ msgid "Recall"
-#~ msgstr "Recall"
-
-#~ msgid "← R"
-#~ msgstr "← R"
-
-#~ msgid "→ R"
-#~ msgstr "→ R"
-
-#~ msgid "United Arab Emirates dirham"
-#~ msgstr "ਸੰਯੁਕਤ ਅਰਬ ਅਮੀਰਾਤ ਦੀਰਹਮ"
-
-#~ msgid "Trinidad and Tobago dollar"
-#~ msgstr "ਟਰਿਨੀਦਾਦ ਅਤੇ ਟੋਬੇਗੋ ਡਾਲਰ"
-
-#~ msgid "Assign Variable"
-#~ msgstr "ਜਾਰੀ ਕੀਤਾ ਵੇਰੀਬਲ"
-
-#~ msgid "Insert Variable"
-#~ msgstr "ਉਲਟ ਵੇਰੀਬਲ"
-
-#~ msgid "%s%s = %s%s"
-#~ msgstr "%s%s = %s%s"
-
-#~ msgid "No variables defined"
-#~ msgstr "ਕੋਈ ਵੇਰੀਬਲ ਨਹੀਂ ਦਿੱਤਾ"
-
-#~ msgid "&#x2190; R"
-#~ msgstr "&#x2190; R"
-
-#~ msgid "&#x2192; R"
-#~ msgstr "&#x2192; R"
-
-#~ msgid "Undo"
-#~ msgstr "ਵਾਪਿਸ"
-
-#~ msgid ""
-#~ "Converts between different currencies. Enter the amount and the currency "
-#~ "you want to convert from on the upper row, and the currency you want to "
-#~ "convert to on the lower row, and the amount will be displayed on the "
-#~ "lower row."
-#~ msgstr ""
-#~ "ਵੱਖ ਵੱਖ ਮੁਦਰਾ ਨੂੰ ਆਪਸ ਵਿੱਚ ਬਦਲਦਾ ਹੈ। ਮਾਤਰਾ ਅਤੇ ਮੁਦਰਾ, ਜੋ ਕਿ ਤੁਸੀਂ ਬਦਲਣੀ ਚਾਹੁੰਦੇ ਹੋ, ਉਤਲੀ "
-#~ "ਕਤਾਰ 'ਚ ਦਿਓ, ਅਤੇ ਮੁਦਰਾ, ਜਿਸ ਵਿੱਚ ਤੁਸੀਂ ਬਦਲਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਹੇਠਲੀ ਕਤਾਰ 'ਚ ਦਿਉ ਅਤੇ ਮਾਤਰਾ "
-#~ "ਨੂੰ ਹੇਠਲੀ ਕਤਾਰ ਵਿੱਚ ਵੇਖਾਇਆ ਜਾਵੇਗਾ।"
-
-#~ msgid "Currency Conversion"
-#~ msgstr "ਮੁਦਰਾ ਬਦਲਾਅ"
-
-#~ msgid "&#xA4;$&#x20AC;"
-#~ msgstr "&#xA4;$&#x20AC;"
-
-#~ msgid "10 places"
-#~ msgstr "੧੦ ਥਾਂ"
-
-#~ msgid "11 places"
-#~ msgstr "੧੧ ਥਾਂ"
-
-#~ msgid "12 places"
-#~ msgstr "੧੨ ਥਾਂ"
-
-#~ msgid "13 places"
-#~ msgstr "੧੩ ਥਾਂ"
-
-#~ msgid "14 places"
-#~ msgstr "14 ਥਾਂ"
-
-#~ msgid "15 places"
-#~ msgstr "15 ਥਾਂ"
-
-#~ msgid "Base 16"
-#~ msgstr "ਬੇਸ 16"
-
-#~ msgid "Base 2"
-#~ msgstr "ਬੇਸ 2"
-
-#~ msgid "Base 8"
-#~ msgstr "ਬੇਸ 8"
-
-#~ msgid "Calculate result [=]"
-#~ msgstr "ਗਣਨਾ ਨਤੀਜਾ  [=]"
-
-#~ msgid "Clr"
-#~ msgstr "ਸਾਫ਼"
-
-#~| msgid "Display Mode"
-#~ msgid "Display _Format:"
-#~ msgstr "ਡਿਸਪਲੇਅ ਫਾਰਮੈਟ(_F):"
-
-#~ msgid "Factorize into prime numbers (Ctrl+F)"
-#~ msgstr "ਅਖੰਡ ਨੰਬਰ ਵਿੱਚ ਗੁਣਨਖੰਡ ਬਣਾਓ (Ctrl+F)"
-
-#~ msgid "Insert ASCII Value"
-#~ msgstr "ASCII ਮੁੱਲ ਸ਼ਾਮਿਲ"
-
-#~ msgid "Insert character"
-#~ msgstr "ਅੱਖਰ ਸ਼ਾਮਲ"
-
-#~| msgid "Numeric point"
-#~ msgid "Numeric point [. or ,]"
-#~ msgstr "ਅੰਕ ਬਿੰਦੂ [. ਜਾਂ,]"
-
-#~ msgid "Random number"
-#~ msgstr "ਰਲਵੇਂ ਨੰਬਰ"
-
-#~| msgid "Accuracy value"
-#~ msgid "Recall value"
-#~ msgstr "ਰੀਕਾਲ ਮੁੱਲ"
-
-#~ msgid "Result Region"
-#~ msgstr "ਨਤੀਜਾ ਖੇਤਰ"
-
-#~| msgid "Shift left"
-#~ msgid "Shift left [<]"
-#~ msgstr "ਖੱਬੀ ਸਿਫ਼ਟ [<]"
-
-#~| msgid "Shift right"
-#~ msgid "Shift right [>]"
-#~ msgstr "ਸੱਜੀ ਸਿਫ਼ਟ [>]"
-
-#~| msgid "Future value"
-#~ msgid "Store value"
-#~ msgstr "ਸਟੋਰ ਮੁੱਲ"
-
-#~ msgid "_2 places"
-#~ msgstr "_2 ਥਾਂ"
-
-#~ msgid "_3 places"
-#~ msgstr "_੩ ਥਾਂ"
-
-#~ msgid "_4 places"
-#~ msgstr "_੪ ਥਾਂ"
-
-#~ msgid "_5 places"
-#~ msgstr "_੫ ਥਾਂ"
-
-#~ msgid "_6 places"
-#~ msgstr "_੬ ਥਾਂ"
-
-#~ msgid "_7 places"
-#~ msgstr "_7 ਥਾਂ"
-
-#~ msgid "_8 places"
-#~ msgstr "_8 ਥਾਂ"
-
-#~ msgid "_9 places"
-#~ msgstr "_9 ਥਾਂ"
-
-#~ msgid "_Scientific"
-#~ msgstr "ਵਿਗਿਆਨਿਕ(_S)"
-
-#~ msgid "_View"
-#~ msgstr "ਵੇਖੋ(_V)"
-
-#~ msgid "Display Mode"
-#~ msgstr "ਡਿਸਪਲੇਅ ਮੋਡ"
-
-#~ msgid "Indicates whether the memory register window is initially displayed."
-#~ msgstr "ਦਰਸਾਉਂਦਾ ਹੈ ਕਿ ਮੈਮੋਰੀ ਰਜਿਸਟਰ ਵਿੰਡੋ ਸ਼ੁਰੂ ਸਮੇਂ ਵੇਖਾਉਣੀ ਹੈ।"
-
-#~ msgid "Show Registers"
-#~ msgstr "ਰਜਿਸਟਰ ਵੇਖੋ"
-
-#~ msgid ""
-#~ "The initial calculator mode. Valid values are \"BASIC\", \"FINANCIAL\", "
-#~ "\"LOGICAL\", \"SCIENTIFIC\" and \"PROGRAMMING\""
-#~ msgstr ""
-#~ "ਸ਼ੁਰੂਆਤੀ ਕੈਲਕੂਲੇਟਰ ਮੋਡ ਹੈ। ਸੰਭਵ ਮੁੱਲ ਹਨ \"BASIC\", \"FINANCIAL\", \"LOGICAL\", "
-#~ "\"SCIENTIFIC\" ਅਤੇ \"PROGRAMMING\""
-
-#~ msgid ""
-#~ "The initial display mode. Valid values are \"ENG\" (engineering), \"FIX"
-#~ "\" (fixed-point) and \"SCI\" (scientific)"
-#~ msgstr ""
-#~ "ਸ਼ੁਰੂਆਤੀ ਵੇਖਾਉਣ ਮੋਡ ਹੈ। ਸੰਭਵ ਮੁੱਲ ਹੈ \"ENG\" (ਇੰਜਿਅਰਿੰਗ), \"FIX\" (ਸਥਿਰ-ਪੁਆਇੰਟ) and "
-#~ "\"SCI\" (ਵਿਗਿਆਨਕ)"
-
-#~ msgid ""
-#~ "The initial trigonometric type. Valid values are \"DEG\" (degrees), \"GRAD"
-#~ "\" (gradians) and \"RAD\" (radians)."
-#~ msgstr ""
-#~ "ਸ਼ੁਰੂਆਤੀ ਤਿਕੋਣਮਿਤੀ ਕਿਸਮ। ਸੰਭਵ ਮੁੱਲ \"DEG\" (ਡਿਗਰੀਆਂ), \"GRAD\" (ਗਰੇਡੀਐਂਟ) and \"RAD"
-#~ "\" (ਰੇਡੀਅਨ) ਹਨ।"
-
-#~ msgid "The initial x-coordinate for the window"
-#~ msgstr "ਵਿੰਡੋ ਲਈ ਸ਼ੁਰੂਆਤੀ x-ਧੁਰਾ"
-
-#~ msgid "The initial y-coordinate for the window"
-#~ msgstr "ਵਿੰਡੋ ਲਈ ਸ਼ੁਰੂਆਤੀ y-ਧੁਰਾ"
-
-#~ msgid ""
-#~ "The number of pixels to place the window from the left of the screen."
-#~ msgstr "ਸਕਰੀਨ ਦੇ ਖੱਬਿਓ ਤੋਂ ਵਿੰਡੋ ਦੀ ਥਾਂ ਲਈ ਰੱਖਣ ਵਾਲੇ ਪਿਕਸਲਾਂ ਦੀ ਗਿਣਤੀ ਹੈ।"
-
-#~ msgid "The number of pixels to place the window from the top of the screen."
-#~ msgstr "ਸਕਰੀਨ ਦੇ ਉੱਤੇ ਤੋਂ ਵਿੰਡੋ ਦੀ ਥਾਂ ਲਈ ਰੱਖਣ ਵਾਲੇ ਪਿਕਸਲਾਂ ਦੀ ਗਿਣਤੀ ਹੈ।"
-
-#~ msgid "The numeric base for input and display."
-#~ msgstr "ਇੰਪੁੱਟ ਅਤੇ ਵੇਖਾਉਣ ਲਈ ਅੰਕ ਬੇਸ ਹੈ।"
-
-#~ msgid "Trigonometric type"
-#~ msgstr "ਤਿਕੋਣ-ਮਿਤੀ ਕਿਸਮ"
-
-#~ msgid "No redo steps"
-#~ msgstr "ਕੋਈ ਵਾਪਸੀ ਸਟੈਂਪ ਨਹੀਂ"
-
-#~| msgid "Calculator - Advanced"
-#~ msgid "Calculator — Advanced"
-#~ msgstr "ਕੈਲਕੂਲੇਟਰ — ਤਕਨੀਕੀ"
-
-#~| msgid "Calculator - Financial"
-#~ msgid "Calculator — Financial"
-#~ msgstr "ਕੈਲਕੂਲੇਟਰ — ਵਿੱਤੀ"
-
-#~| msgid "Calculator - Scientific"
-#~ msgid "Calculator — Scientific"
-#~ msgstr "ਕੈਲਕੂਲੇਟਰ — ਵਿਗਿਆਨਿਕ"
-
-#~| msgid "Calculator - Programming"
-#~ msgid "Calculator — Programming"
-#~ msgstr "ਕੈਲਕੂਲੇਟਰ — ਪਰੋਗਰਾਮਿੰਗ"
-
-#~ msgid "Error loading user interface"
-#~ msgstr "ਯੂਜ਼ਰ ਇੰਟਰਫੇਸ ਲੋਡ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ"
-
-#~| msgid ""
-#~| "A required file is missing or damaged, please check your installation.\n"
-#~| "\n"
-#~| "%s"
-#~ msgid ""
-#~ "A required file is missing or damaged. Please check your installation.\n"
-#~ "\n"
-#~ "%s"
-#~ msgstr ""
-#~ "ਇੱਕ ਲੋੜੀਦੀ ਫਾਇਲ ਗੁੰਮ ਹੈ ਜਾਂ ਲੋਡ ਕਰਨ ਲਈ ਅਸਮਰੱਥ ਹੈ। ਆਪਣੀ ਇੰਸਟਾਲੇਸ਼ਨ ਵੇਖੋ।\n"
-#~ "\n"
-#~ "%s"
-
-#~ msgid ""
-#~ "You don't have any recent currency rates. Should some be downloaded now?"
-#~ msgstr "ਤੁਹਾਡੇ ਕੋਲ ਤਾਜ਼ੇ ਮੁੱਦਰਾ ਭਾਅ ਨਹੀਂ ਹਨ। ਕੀ ਹੁਣ ਕੁਝ ਡਾਊਨਲੋਡ ਕਰ ਲਈਏ?"
-
-#~ msgid ""
-#~ "Currency rates could not be downloaded. You may receive inaccurate "
-#~ "results, or you may not receive any results at all."
-#~ msgstr ""
-#~ "ਮੁੱਦਰਾ ਭਾਅਦ ਡਾਊਨਲੋਡ ਨਹੀਂ ਕੀਤੇ ਜਾ ਸਕੇ। ਤੁਹਾਨੂੰ ਨਤੀਜੇ ਠੀਕ ਸ਼ਾਇਦ ਨਾ ਮਿਲ ਸਕਣ, ਜਾਂ ਤੁਹਾਨੂੰ "
-#~ "ਸ਼ਾਇਦ ਕੋਈ ਨਤੀਜਾ ਨਾ ਮਿਲੇ।"
-
-#~ msgid "Logarithm of negative values is undefined"
-#~ msgstr "ਰਿਣਾਤਮਕ ਲਈ ਲਾਗਰਿਥਮ ਸੰਭਵ ਨਹੀਂ"
-
-#~ msgid "The power of negative numbers is only defined for integer exponents"
-#~ msgstr "ਰਿਣਾਤਮਕ ਨੰਬਰ ਦੀ ਘਾਤ ਕੇਵਲ ਪੂਰਨ ਅੰਕ ਦੇ ਭਾਗ ਵਜੋਂ ਹੀ ਦੱਸੀ ਜਾ ਸਕਦੀ ਹੈ"
-
-#~ msgid "Square root is undefined for negative values"
-#~ msgstr "ਰਿਣਾਤਮਕ ਮੁੱਲਾਂ ਲਈ ਵਰਗਮੂਲ ਨਹੀਂ ਕੱਢਿਆ ਜਾ ਸਕਦਾ"
-
-#~ msgid "%"
-#~ msgstr "%"
-
-#~ msgid "&#x221A;"
-#~ msgstr "&#x221A;"
-
-#~ msgid "&#xB1;"
-#~ msgstr "&#xB1;"
-
-#~ msgid "&#xD7;"
-#~ msgstr "&#xD7;"
-
-#~ msgid "&#xF7;"
-#~ msgstr "&#xF7;"
-
-#~ msgid "("
-#~ msgstr "("
-
-#~| msgid "Ln"
-#~ msgid "(Ln)"
-#~ msgstr "(Ln)"
-
-#~| msgid "Set accuracy from 0 to %d numeric place. [A]"
-#~| msgid_plural "Set accuracy from 0 to %d numeric places. [A]"
-#~ msgid "(Set accuracy from 0 to N numeric places [A])"
-#~ msgstr "0 ਤੋਂ %d ਸੰਖਿਆਤਮਕ ਸਥਾਨਾਂ ਤੱਕ ਸ਼ੁੱਧਤਾ ਦਿਓ [A]"
-
-#~ msgid "(X^Y)"
-#~ msgstr "(X^Y)"
-
-#~ msgid "(cos)"
-#~ msgstr "(cos)"
-
-#~ msgid "(log)"
-#~ msgstr "(log)"
-
-#~ msgid "(log2)"
-#~ msgstr "(log2)"
-
-#~ msgid "(sin)"
-#~ msgstr "(sin)"
-
-#~ msgid "(tan)"
-#~ msgstr "(tan)"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "+"
-#~ msgstr "+"
-
-#~ msgid "0"
-#~ msgstr "0"
-
-#~ msgid "1"
-#~ msgstr "1"
-
-#~ msgid "1's"
-#~ msgstr "1ਦਾ"
-
-#~ msgid "1/<i>x</i>"
-#~ msgstr "1/<i>x</i>"
-
-#~ msgid "1/x"
-#~ msgstr "1/x"
-
-#~ msgid "15"
-#~ msgstr "15"
-
-#~ msgid "2"
-#~ msgstr "2"
-
-#~ msgid "2's"
-#~ msgstr "2 ਦਾ"
-
-#~ msgid "3"
-#~ msgstr "3"
-
-#~ msgid "31"
-#~ msgstr "31"
-
-#~ msgid "32"
-#~ msgstr "32"
-
-#~ msgid "4"
-#~ msgstr "4"
-
-#~ msgid "47"
-#~ msgstr "47"
-
-#~ msgid "5"
-#~ msgstr "5"
-
-#~ msgid "6"
-#~ msgstr "6"
-
-#~ msgid "63"
-#~ msgstr "63"
-
-#~ msgid "7"
-#~ msgstr "7"
-
-#~ msgid "8"
-#~ msgstr "8"
-
-#~ msgid "9"
-#~ msgstr "9"
-
-#~ msgid "<"
-#~ msgstr "<"
-
-#~ msgid "<i>x</i><sup>2</sup>"
-#~ msgstr "<i>x</i><sup>2</sup>"
-
-#~ msgid ""
-#~ "<small><i><b>Note:</b> All constant values are specified in the decimal "
-#~ "numeric base.</i></small>"
-#~ msgstr ""
-#~ "<small><i><b>ਨੋਟ:</b>ਸਭ ਸਥਿਰ ਅੰਕ ਮੁੱਲਾਂ ਡੈਸੀਮਲ ਸੰਖਿਆਤਮਕ ਆਧਾਰ ਵਿੱਚ ਦਰਸਾਏ ਗਏ ਹਨ।</"
-#~ "i></small>"
-
-#~ msgid "<span weight=\"bold\">R0</span>"
-#~ msgstr "<span weight=\"bold\">R0</span>"
-
-#~ msgid "<span weight=\"bold\">R1</span>"
-#~ msgstr "<span weight=\"bold\">R1</span>"
-
-#~ msgid "<span weight=\"bold\">R2</span>"
-#~ msgstr "<span weight=\"bold\">R2</span>"
-
-#~ msgid "<span weight=\"bold\">R3</span>"
-#~ msgstr "<span weight=\"bold\">R3</span>"
-
-#~ msgid "<span weight=\"bold\">R4</span>"
-#~ msgstr "<span weight=\"bold\">R4</span>"
-
-#~ msgid "<span weight=\"bold\">R5</span>"
-#~ msgstr "<span weight=\"bold\">R5</span>"
-
-#~ msgid "<span weight=\"bold\">R6</span>"
-#~ msgstr "<span weight=\"bold\">R6</span>"
-
-#~ msgid "<span weight=\"bold\">R7</span>"
-#~ msgstr "<span weight=\"bold\">R7</span>"
-
-#~ msgid "<span weight=\"bold\">R8</span>"
-#~ msgstr "<span weight=\"bold\">R8</span>"
-
-#~ msgid "<span weight=\"bold\">R9</span>"
-#~ msgstr "<span weight=\"bold\">R9</span>"
-
-#~ msgid ">"
-#~ msgstr ">"
-
-#~ msgid "A"
-#~ msgstr "A"
-
-#~ msgid "AND"
-#~ msgstr "AND"
-
-#~ msgid "Abs"
-#~ msgstr "ਅਸਲੀ"
-
-#~ msgid "Acc"
-#~ msgstr "Acc"
-
-#~ msgid "Add"
-#~ msgstr "ਜੋਡ਼"
-
-#~ msgid "B"
-#~ msgstr "B"
-
-#~ msgid "Backspace"
-#~ msgstr "ਬੈਕਸਪੇਸ"
-
-#~ msgid "Bitwise AND [&]"
-#~ msgstr "ਬਿੱਟਵਾਈਸ  AND [&]"
-
-#~ msgid "Bitwise NOT [~]"
-#~ msgstr "ਬਿੱਟਵਾਈਸ NOT [~]"
-
-#~ msgid "Bitwise OR [|]"
-#~ msgstr "ਬਿੱਟਵਾਈਸ XOR"
-
-#~ msgid "Bitwise XNOR [{]"
-#~ msgstr "Bitwise XNOR [{]"
-
-#~ msgid "Bitwise XOR [x]"
-#~ msgstr "Bitwise XOR [x]"
-
-#~ msgid "Bksp"
-#~ msgstr "Bksp"
-
-#~ msgid "C"
-#~ msgstr "C"
-
-#~ msgid "CE"
-#~ msgstr "ਸਾਫ਼"
-
-#~ msgid "Change Sign [C]"
-#~ msgstr "ਚਿੰਨ੍ਹ ਬਦਲੋ [C]"
-
-#~ msgid "Change sign"
-#~ msgstr "ਚਿੰਨ੍ਹ ਬਦਲੋ"
-
-#~ msgid "Clear displayed value and any partial calculation [Shift Delete]"
-#~ msgstr "ਵਿਖਾਇਆ ਮੁੱਲ ਅਤੇ ਹੋਰ ਅਧੂਰੀ ਗਣਨਾ ਸਾਫ਼ ਕਰੋ [Shift Delete]"
-
-#~ msgid "Clear entry"
-#~ msgstr "ਇੰਦਾਰਜ਼ ਸਾਫ਼ ਕਰੋ"
-
-#~ msgid "Click a _value or description to edit it:"
-#~ msgstr "ਇਸ ਨੂੰ ਸੋਧਣ ਲਈ ਇੱਕ-ਮੁੱਲ ਜਾਂ ਵਰਨਣ ਨੂੰ ਦਬਾਓ(_v):"
-
-#~ msgid "Compounding term"
-#~ msgstr "ਮਿਸ਼ਰਣ ਪਦ"
-
-#~ msgid "Compounding term [m]"
-#~ msgstr "ਮਿਸ਼ਰਣ ਪਦ [m]"
-
-#~ msgid "Con"
-#~ msgstr "ਤਬਦੀਲ"
-
-#~ msgid "Constants [#]"
-#~ msgstr "ਸਥਿਰ ਅੰਕ [#]"
-
-#~ msgid "Copy selection"
-#~ msgstr "ਚੁਣੇ ਦੀ ਕਾਪੀ"
-
-#~ msgid "D"
-#~ msgstr "D"
-
-#~ msgid "Divide"
-#~ msgstr "ਭਾਗ"
-
-#~ msgid "Double-declining depreciation"
-#~ msgstr "ਮੁੱਲ ਵਿੱਚ ਦੁੱਗਣੀ ਕਮੀ"
-
-#~ msgid "Double-declining depreciation [D]"
-#~ msgstr "ਮੁੱਲ ਵਿੱਚ ਦੁੱਗਣੀ ਕਮੀ [D]"
-
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "E_ng"
-#~ msgstr "ਇੰਜ(_n)"
-
-#~ msgid "Edit Constants"
-#~ msgstr "ਸਥਿਰ-ਅੰਕ ਸੋਧ"
-
-#~ msgid "Edit Constants..."
-#~ msgstr "ਸਥਿਰ ਅੰਕ ਸੋਧ..."
-
-#~ msgid "Edit Functions..."
-#~ msgstr "ਫੰਕਸ਼ਨ ਸੋਧ..."
-
-#~ msgid "End group of calculations [)]"
-#~ msgstr "ਗਣਨਾ ਸਮੂਹ ਖਤਮ[)]"
-
-#~ msgid "Enter an exponential number [E]"
-#~ msgstr "ਐਕਸਪੋਨੈਂਸ਼ਲ ਨੰਬਰ ਦਿਓ [E]"
-
-#~ msgid "Exch"
-#~ msgstr "ਬਦਲੋ"
-
-#~ msgid "Exchange displayed value with memory register [X]"
-#~ msgstr "ਵਿਖਾਏ ਮੁੱਲ ਨੂੰ ਮੈਮੋਰੀ ਰਜਿਸਟਰ ਨਾਲ ਬਦਲੋ [X]"
-
-#~ msgid "Exchange with register"
-#~ msgstr "ਰਜਿਸਟਰ ਨਾਲ ਬਦਲੋ"
-
-#~ msgid "Exp"
-#~ msgstr "Exp"
-
-#~ msgid "F"
-#~ msgstr "F"
-
-#~ msgid "Factorial of displayed value [!]"
-#~ msgstr "ਵਿਖਾਏ ਗਏ ਮੁੱਲ ਦਾ ਫੈਕਟੋਰੀਅਲ [!]"
-
-#~ msgid "Fractional portion of displayed value [:]"
-#~ msgstr "ਵਿਖਾਈ ਮੁੱਲ ਦਾ ਦਸ਼ਮਲਵ ਵਾਲਾ ਹਿੱਸਾ [:]"
-
-#~ msgid "Fun"
-#~ msgstr "Fun"
-
-#~ msgid "Future value [v]"
-#~ msgstr "ਭਵਿੱਖਤ ਮੁੱਲ [v]"
-
-#~ msgid "Gross Profit Margin [I]"
-#~ msgstr "ਸ਼ੁੱਧ ਨਫ਼ਾ [I]"
-
-#~ msgid "Gross Profit Margin [g]"
-#~ msgstr "ਸ਼ੁੱਧ ਨਫ਼ਾ ਸੰਨ  [g]"
-
-#~ msgid "H_yp"
-#~ msgstr "H_yp"
-
-#~ msgid "He_x"
-#~ msgstr "He_x"
-
-#~ msgid "Hexadecimal digit A [a]"
-#~ msgstr "ਹੈਕਸਾਡੈਸੀਮਲ ਅੰਕ A [a]"
-
-#~ msgid "Hexadecimal digit B [b]"
-#~ msgstr "ਹੈਕਸਾਡੈਸੀਮਲ ਅੰਕ B [b]"
-
-#~ msgid "Hexadecimal digit C [c]"
-#~ msgstr "ਹੈਕਸਾਡੈਸੀਮਲ ਅੰਕ C [c]"
-
-#~ msgid "Hexadecimal digit D [d]"
-#~ msgstr "ਹੈਕਸਾਡੈਸੀਮਲ ਅੰਕ D [d]"
-
-#~ msgid "Hexadecimal digit E [e]"
-#~ msgstr "ਹੈਕਸਾਡੈਸੀਮਲ ਅੰਕ E [e]"
-
-#~ msgid "Hexadecimal digit F [f]"
-#~ msgstr "ਹੈਕਸਾਡੈਸੀਮਲ ਅੰਕ F [f]"
-
-#~ msgid "Insert ASCII value"
-#~ msgstr "ASCII ਮੁੱਲ ਸ਼ਾਮਿਲ"
-
-#~ msgid "Int"
-#~ msgstr "Int"
-
-#~ msgid "Integer portion of displayed value [i]"
-#~ msgstr "ਵਿਖਾਏ ਮੁੱਲ ਦਾ ਪੂਰਨ ਅੰਕ ਵਾਲਾ ਹਿੱਸਾ[i]"
-
-#~ msgid "Left bracket"
-#~ msgstr "ਖੱਬੀ ਬਰੈਕਟ"
-
-#~ msgid "Memory Registers"
-#~ msgstr "ਮੈਮੋਰੀ ਰਜਿਸਟਰ"
-
-#~ msgid "Mod"
-#~ msgstr "ਬਾਕੀ"
-
-#~ msgid "Multiply"
-#~ msgstr "ਗੁਣਾ"
-
-#~ msgid "NOT"
-#~ msgstr "NOT"
-
-#~ msgid "Numeric 0"
-#~ msgstr "ਸੰਖਿਆਤਮਕ 0"
-
-#~ msgid "Numeric 1"
-#~ msgstr "ਸੰਖਿਆਤਮਕ ੧"
-
-#~ msgid "Numeric 2"
-#~ msgstr "ਸੰਖਿਆਤਮਕ ੨"
-
-#~ msgid "Numeric 3"
-#~ msgstr "ਸੰਖਿਆਤਮਕ ੩"
-
-#~ msgid "Numeric 4"
-#~ msgstr "ਸੰਖਿਆਤਮਕ ੪"
-
-#~ msgid "Numeric 5"
-#~ msgstr "ਸੰਖਿਆਤਮਕ ੫"
-
-#~ msgid "Numeric 6"
-#~ msgstr "ਸੰਖਿਆਤਮਕ ੬"
-
-#~ msgid "Numeric 7"
-#~ msgstr "ਸੰਖਿਆਤਮਕ ੭"
-
-#~ msgid "Numeric 8"
-#~ msgstr "ਸੰਖਿਆਤਮਕ ੮"
-
-#~ msgid "Numeric 9"
-#~ msgstr "ਸੰਖਿਆਤਮਕ ੯"
-
-#~ msgid "OR"
-#~ msgstr "OR"
-
-#~ msgid "Paste selection"
-#~ msgstr "ਚੁਣੇ ਨੂੰ ਚੇਪੋ"
-
-#~ msgid "Payment period"
-#~ msgstr "ਅਦਾਇਗੀ ਮਿਆਦ"
-
-#~ msgid "Payment period [t]"
-#~ msgstr "ਅਦਾਇਗੀ ਮਿਆਦ [t]"
-
-#~ msgid "Percentage"
-#~ msgstr "ਫ਼ੀ-ਸਦੀ"
-
-#~ msgid "Periodic interest rate"
-#~ msgstr "ਮਿਆਦੀ ਵਿਆਜ ਦਰ"
-
-#~ msgid "Periodic interest rate [T]"
-#~ msgstr "ਮਿਆਦੀ ਵਿਆਜ ਦਰ [T]"
-
-#~ msgid "Periodic payment"
-#~ msgstr "ਮਿਆਦੀ ਅਦਾਇਗੀ"
-
-#~ msgid "Periodic payment [P]"
-#~ msgstr "ਮਿਆਦੀ ਅਦਾਇਗੀ [P]"
-
-#~ msgid "Present value"
-#~ msgstr "ਮੌਜੂਦਾ ਮੁੱਲ"
-
-#~ msgid "Present value [p]"
-#~ msgstr "ਮੌਜੂਦਾ ਮੁੱਲ [p]"
-
-#~ msgid "Quit the calculator"
-#~ msgstr "ਕੈਲਕੂਲੇਟਰ ਬੰਦ ਕਰੋ"
-
-#~ msgid "Random number in the range 0.0 to 1.0 [?]"
-#~ msgstr "੦.੦ ਤੋਂ ੧.੦ ਵਿਚਕਾਰ ਲਗਾਤਾਰ ਨੰਬਰ [?]"
-
-#~ msgid "Reciprocal"
-#~ msgstr "ਉਲਟਾ"
-
-#~ msgid "Reciprocal [r]"
-#~ msgstr "ਉਲਟਾ [r]"
-
-#~ msgid "Redo"
-#~ msgstr "ਪਰਤਾਓ"
-
-#~ msgid "Remove rightmost character from displayed value [Backspace]"
-#~ msgstr "ਵਿਖਾਈ ਮੁੱਲ ਵਿੱਚੋ ਸੱਜੇ ਪਾਸਿਓ ਅੱਖਰ ਹਟਾਓ [ਬੈਕਸਪੇਸ]"
-
-#~ msgid "Retrieve from register"
-#~ msgstr "ਰਜਿਸਟਰ ਵਿੱਚੋਂ ਪੜ੍ਹੋ"
-
-#~ msgid "Retrieve memory register to display [R]"
-#~ msgstr "ਵਿਖਾਉਣ ਲਈ ਮੈਮੂਰੀ ਰਜਿਸਟਰ ਪੜ੍ਹੋ [R]"
-
-#~ msgid "Right bracket"
-#~ msgstr "ਸੱਜੀ ਬਰੈਕਟ"
-
-#~ msgid "Set Precision"
-#~ msgstr "ਸ਼ੁੱਧਤਾ ਦਿਓ"
-
-#~ msgid "Set display type to engineering format"
-#~ msgstr "ਦਰਿਸ਼ ਕਿਸਮ ਨੂੰ ਇੰਜਨੀਅਰਿੰਗ ਸੰਰਚਨਾ ਵਿੱਚ ਦਿਓ"
-
-#~ msgid "Set display type to fixed-point format"
-#~ msgstr "ਦਰਿਸ਼ ਕਿਸਮ ਨੂੰ ਸਥਿਰ ਬਿੰਦੂ ਸੰਰਚਨਾ ਵਿੱਚ ਦਿਓ"
-
-#~ msgid "Set display type to scientific format"
-#~ msgstr "ਦਰਿਸ਼ ਕਿਸਮ ਨੂੰ ਵਿਗਿਆਨਿਕ ਸੰਰਚਨਾ ਵਿੱਚ ਦਿਓ"
-
-#~ msgid "Set hyperbolic option for trigonometric functions"
-#~ msgstr "ਤਿਕੋਣ-ਮਿਤੀ ਕੰਮਾਂ ਲਈ ਹਾਈਪਰਬੌਲਿਕ ਚੋਣਾਂ ਦਿਓ"
-
-#~ msgid "Set inverse option for trigonometric functions"
-#~ msgstr "ਤਿਕੋਣ-ਮਿਤੀ ਕੰਮਾਂ ਲਈ ਵਿਪਰੀਤ ਚੋਣਾਂ ਦਿਓ"
-
-#~ msgid "Set numeric base to binary (base 2)"
-#~ msgstr "ਸੰਖਿਆਤਮਕ ਆਧਾਰ ਨੂੰ ਬਾਇਨਰੀ (ਆਧਰ 2) ਵਿੱਚ ਦਿਓ"
-
-#~ msgid "Set numeric base to decimal (base 10)"
-#~ msgstr "ਸੰਖਿਆਤਮਕ ਆਧਾਰ ਨੂੰ ਡੈਸੀਮਲ (ਆਧਰ ੧੦) ਵਿੱਚ ਦਿਓ"
-
-#~ msgid "Set numeric base to hexadecimal (base 16)"
-#~ msgstr "ਸੰਖਿਆਤਮਕ ਆਧਾਰ ਨੂੰ ਹੈਕਸਾ-ਡੈਸੀਮਲ (ਆਧਰ ੧੬) ਵਿੱਚ ਦਿਓ"
-
-#~ msgid "Set numeric base to octal (base 8)"
-#~ msgstr "ਸੰਖਿਆਤਮਕ ਆਧਾਰ ਨੂੰ ਉੱਕਟਲ (ਆਧਰ ੮) ਵਿੱਚ ਦਿਓ"
-
-#~ msgid "Set trigonometric type to degrees"
-#~ msgstr "ਤਿਕੋਣ-ਮਿਤੀ ਕਿਸਮ ਨੂੰ ਡਿਗਰੀਆਂ ਵਿੱਚ ਦਿਓ"
-
-#~ msgid "Set trigonometric type to gradians"
-#~ msgstr "ਤਿਕੋਣ-ਮਿਤੀ ਕਿਸਮ ਨੂੰ ਗਰੇਡੀਅਨਜ਼ ਵਿੱਚ ਦਿਓ"
-
-#~ msgid "Set trigonometric type to radians"
-#~ msgstr "ਤਿਕੋਣ-ਮਿਤੀ ਕਿਸਮ ਨੂੰ ਰੇਡੀਅਨਜ਼ ਵਿੱਚ ਦਿਓ"
-
-#~ msgid "Shift displayed value 1-15 places to the left [<]"
-#~ msgstr "ਵਿਖਾਏ ਮੁੱਲ ਨੂੰ ਖੱਬੇ ੧-੧੫ ਸਥਾਨਾਂ ਤੱਕ ਹਟਾਓ [<]"
-
-#~ msgid "Shift displayed value 1-15 places to the right [>]"
-#~ msgstr "ਵਿਖਾਏ ਮੁੱਲ ਨੂੰ ਸੱਜੇ ੧-੧੫ ਸਥਾਨਾਂ ਤੱਕ ਹਟਾਓ [>]"
-
-#~ msgid "Show T_housands Separator"
-#~ msgstr "ਹਜ਼ਾਰਵਾਂ ਵੱਖਰਾਪਨ ਵੇਖਾਓ(_H)"
-
-#~ msgid "Show _Trailing Zeroes"
-#~ msgstr "ਪਿਛਲੀਆਂ ਸਿਫ਼ਰਾਂ ਵੇਖਾਓ(_T)"
-
-#~ msgid "Show help contents"
-#~ msgstr "ਸਹਾਇਤਾ ਭਾਗ ਵੇਖਾਓ"
-
-#~ msgid "Show memory registers"
-#~ msgstr "ਮੈਮੋਰੀ ਰਜਿਸਟਰ ਵੇਖਾਓ"
-
-#~ msgid "Show the About Gcalctool dialog"
-#~ msgstr "Gcalctool ਬਾਰੇ ਵਾਰਤਾਲਾਪ ਵੇਖਾਓ"
-
-#~ msgid "Significant _places:"
-#~ msgstr "ਮਹੱਤਵਪੂਰਨ ਸਥਾਨ(_p):"
-
-#~ msgid "Square"
-#~ msgstr "ਵਰਗ"
-
-#~ msgid "Start group of calculations [(]"
-#~ msgstr "ਹਿਸਾਬੀ ਕਿਰਿਆਵਾਂ ਦਾ ਸਮੂਹ ਸ਼ੁਰੂ ਕਰੋ [(]"
-
-#~ msgid "Store displayed value in memory register [S]"
-#~ msgstr "ਵਿਖਾਈ ਮੁੱਲ ਨੂੰ ਮੈਮੋਰੀ ਰਜਿਸਟਰ ਵਿੱਚ ਸੰਭਾਲੋ[S]"
-
-#~ msgid "Store to register"
-#~ msgstr "ਰਜਿਸਟਰ ਵਿੱਚ ਸੰਭਾਲੋ"
-
-#~ msgid "Straight-line depreciation"
-#~ msgstr "ਮੁੱਲ ਵਿੱਚ ਸਰਲ-ਰੇਖੀ ਕਮੀ"
-
-#~ msgid "Straight-line depreciation [l]"
-#~ msgstr "ਮੁੱਲ ਵਿੱਚ ਸਰਲ-ਰੇਖੀ ਕਮੀ [l]"
-
-#~ msgid "Subtract"
-#~ msgstr "ਘਟਾਓ"
-
-#~ msgid "Sum-of-the years'-digits depreciation"
-#~ msgstr "ਸਲਾਨਾ ਅੰਕਾਂ ਦੇ ਜੋਡ਼ ਵਿੱਚ ਕਮੀ"
-
-#~ msgid "Sum-of-the years'-digits depreciation [Y]"
-#~ msgstr "ਸਲਾਨਾ ਅੰਕਾਂ ਦੇ ਜੋਡ਼ ਵਿੱਚ ਕਮੀ [Y]"
-
-#~ msgid "Sum-of-the years'-digits depreciation [y]"
-#~ msgstr "ਸਲਾਨਾ ਅੰਕਾਂ ਦੇ ਜੋਡ਼ ਵਿੱਚ ਕਮੀ [y]"
-
-#, fuzzy
-#~| msgid "Raise displayed value to the power of y [o]"
-#~ msgid "Truncate displayed value to the chosen word size ([)"
-#~ msgstr "ਵੇਖਾਏ ਗਏ ਮੁੱਲ ਦੀ ਘਾਤ y ਪਤਾ ਕਰੋ [o]"
-
-#~ msgid "User-defined functions [F]"
-#~ msgstr "ਯੂਜ਼ਰ ਵਲੋਂ ਪ੍ਰਭਾਸ਼ਿਤ ਕੰਮ [F]"
-
-#~ msgid "XNOR"
-#~ msgstr "XNOR"
-
-#~ msgid "XOR"
-#~ msgstr "XOR"
-
-#~ msgid "_0 significant places"
-#~ msgstr "_0 ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "_1 significant place"
-#~ msgstr "_੧ ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "_2 significant places"
-#~ msgstr "_੨ ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "_3 significant places"
-#~ msgstr "_੩ ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "_4 significant places"
-#~ msgstr "_੪ ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "_5 significant places"
-#~ msgstr "_੫ ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "_6 significant places"
-#~ msgstr "_੬ ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "_7 significant places"
-#~ msgstr "_7 ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "_8 significant places"
-#~ msgstr "_8 ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "_9 significant places"
-#~ msgstr "_9 ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "_Dec"
-#~ msgstr "_Dec"
-
-#~ msgid "_Edit"
-#~ msgstr "ਸੋਧ(_E)"
-
-#~ msgid "_Insert ASCII value..."
-#~ msgstr "ASCII ਮੁੱਲ ਸ਼ਾਮਿਲ(_I)..."
-
-#~ msgid "_Inv"
-#~ msgstr "_Inv"
-
-#~ msgid "_Memory Registers"
-#~ msgstr "ਮੈਮੋਰੀ ਰਜਿਸਟਰ(_M)"
-
-#~ msgid "_Redo"
-#~ msgstr "ਪਰਤਾਓ(_R)"
-
-#~ msgid "_Sci"
-#~ msgstr "ਵਿਗਿ(_S)"
-
-#~ msgid "_Set"
-#~ msgstr "ਦਿਓ(_S)"
-
-#~ msgid "_Undo"
-#~ msgstr "ਵਾਪਿਸ(_U)"
-
-#~ msgid "register 0"
-#~ msgstr "ਰਜਿਸਟਰ 0"
-
-#~ msgid "register 1"
-#~ msgstr "ਰਜਿਸਟਰ ੧"
-
-#~ msgid "register 2"
-#~ msgstr "ਰਜਿਸਟਰ ੨"
-
-#~ msgid "register 3"
-#~ msgstr "ਰਜਿਸਟਰ ੩"
-
-#~ msgid "register 4"
-#~ msgstr "ਰਜਿਸਟਰ ੪"
-
-#~ msgid "register 5"
-#~ msgstr "ਰਜਿਸਟਰ ੫"
-
-#~ msgid "register 6"
-#~ msgstr "ਰਜਿਸਟਰ ੬"
-
-#~ msgid "register 7"
-#~ msgstr "ਰਜਿਸਟਰ ੭"
-
-#~ msgid "register 8"
-#~ msgstr "ਰਜਿਸਟਰ ੮"
-
-#~ msgid "register 9"
-#~ msgstr "ਰਜਿਸਟਰ ੯"
-
-#~ msgid "%s: accuracy should be in the range 0-%d\n"
-#~ msgstr "%s: ਸ਼ੁੱਧਤਾ 0-%d ਦੀ ਦਰ ਵਿੱਚ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ\n"
-
-#~ msgid "Malformed function"
-#~ msgstr "ਖਰਾਬ ਕੰਮ"
-
-#~ msgid "No sane value to convert"
-#~ msgstr "ਬਦਲਣ ਲਈ sane ਮੁੱਲ ਨਹੀਂ"
-
-#~ msgid "Invalid number for the current base"
-#~ msgstr "ਮੌਜੂਦਾ ਅਧਾਰ ਲਈ ਗਲਤ ਨੰਬਰ"
-
-#~| msgid "Invalid bitwise operation parameter(s)"
-#~ msgid "Invalid bitwise operation"
-#~ msgstr "ਗਲਤ ਬਿੱਟਵਾਇਸ ਓਪਰੇਸ਼ਨ"
-
-#~| msgid "Invalid modulus operation parameter(s)"
-#~ msgid "Invalid modulus operation"
-#~ msgstr "ਗਲਤ ਮੋਡੀਊਲ ਓਪਰੇਸ਼ਨ"
-
-#~ msgid "Calculator [%s]"
-#~ msgstr "ਕੈਲਕੂਲੇਟਰ [%s]"
-
-#~ msgid "Calculator [%s] - Advanced"
-#~ msgstr "ਕੈਲਕੂਲੇਟਰ [%s] - ਤਕਨੀਕੀ"
-
-#~ msgid "Calculator [%s] - Financial"
-#~ msgstr "ਕੈਲਕੂਲੇਟਰ [%s] - ਵਿੱਤੀ"
-
-#~ msgid "Calculator [%s] - Scientific"
-#~ msgstr "ਕੈਲਕੂਲੇਟਰ [%s] - ਵਿਗਿਆਨਕ"
-
-#~ msgid "Calculator [%s] - Programming"
-#~ msgstr "ਕੈਲਕੂਲੇਟਰ [%s] - ਪਰੋਗਰਾਮਿੰਗ"
-
-#~ msgid "_Other (%d) ..."
-#~ msgstr "ਹੋਰ (%d)( _O)..."
-
-#~ msgid "Set accuracy from 0 to %d numeric place. [A]"
-#~ msgid_plural "Set accuracy from 0 to %d numeric places. [A]"
-#~ msgstr[0] "੦ ਤੋਂ %d ਸੰਖਿਆਤਮਕ ਸਥਾਨਾਂ ਤੱਕ ਸ਼ੁੱਧਤਾ ਦਿਓ [A]"
-#~ msgstr[1] "੦ ਤੋਂ %d ਸੰਖਿਆਤਮਕ ਸਥਾਨਾਂ ਤੱਕ ਸ਼ੁੱਧਤਾ ਦਿਓ [A]"
-
-#~| msgid "Sin<sup>-1</sup>"
-#~ msgid "sin<sup>−1</sup>"
-#~ msgstr "sin<sup>−1</sup>"
-
-#~| msgid "Sinh"
-#~ msgid "sinh"
-#~ msgstr "sinh"
-
-#~| msgid "Sinh<sup>-1</sup>"
-#~ msgid "sinh<sup>−1</sup>"
-#~ msgstr "sinh<sup>−1</sup>"
-
-#~ msgid "Hyperbolic Inverse Sine [K]"
-#~ msgstr "Hyperbolic Inverse Sine [K]"
-
-#~| msgid "Cos<sup>-1</sup>"
-#~ msgid "cos<sup>−1</sup>"
-#~ msgstr "cos<sup>−1</sup>"
-
-#~| msgid "Cosh"
-#~ msgid "cosh"
-#~ msgstr "cosh"
-
-#~| msgid "Cosh<sup>-1</sup>"
-#~ msgid "cosh<sup>−1</sup>"
-#~ msgstr "cosh<sup>−1</sup>"
-
-#~ msgid "Inverse Cosine [J]"
-#~ msgstr "Inverse Cosine [J]"
-
-#~ msgid "Hyperbolic Inverse Cosine [J]"
-#~ msgstr "Hyperbolic Inverse Cosine [J]"
-
-#~| msgid "Tan"
-#~ msgid "tan"
-#~ msgstr "tan"
-
-#~| msgid "Tan<sup>-1</sup>"
-#~ msgid "tan<sup>−1</sup>"
-#~ msgstr "tan<sup>−1</sup>"
-
-#~| msgid "Tanh"
-#~ msgid "tanh"
-#~ msgstr "tanh"
-
-#~| msgid "Tanh<sup>-1</sup>"
-#~ msgid "tanh<sup>−1</sup>"
-#~ msgstr "tanh<sup>−1</sup>"
-
-#~ msgid "Inverse Tangent [W]"
-#~ msgstr "Inverse Tangent [W]"
-
-#~ msgid "Hyperbolic Inverse Tangent [W]"
-#~ msgstr "Hyperbolic Inverse Tangent [W]"
-
-#~| msgid "Sln"
-#~ msgid "ln"
-#~ msgstr "ln"
-
-#~ msgid "e<sup><i>x</i></sup>"
-#~ msgstr "e<sup><i>x</i></sup>"
-
-#~ msgid "e to the power of the displayed value [N]"
-#~ msgstr "ਵਿਖਾਈ ਹੋਈ ਮੁੱਲ ਦੀ e ਘਾਤ [N]"
-
-#~| msgid "Log"
-#~ msgid "log"
-#~ msgstr "log"
-
-#~ msgid "10<sup><i>x</i></sup>"
-#~ msgstr "੧੦<sup><i>x</i></sup>"
-
-#~ msgid "10 to the power of displayed value [G]"
-#~ msgstr "10 ਦੀ ਘਾਤ ਵਿਖਾਇਆ ਮੁੱਲ [G]"
-
-#~| msgid "Log<sub>2</sub>"
-#~ msgid "log<sub>2</sub>"
-#~ msgstr "log<sub>2</sub>"
-
-#~ msgid "2<sup><i>x</i></sup>"
-#~ msgstr "2<sup><i>x</i></sup>"
-
-#~| msgid "Base 2 log [h]"
-#~ msgid "Base 2 logarithm [h]"
-#~ msgstr "ਬੇਸ 2 ਲਾਗਰਿਥਮ[H]"
-
-#~ msgid "2 to the power of the displayed value [H]"
-#~ msgstr "ਵਿਖਾਈ ਹੋਈ ਮੁੱਲ ਦੀ ਘਾਤ 2 [H]"
-
-#~ msgid "x<sup><i>y</i></sup>"
-#~ msgstr "x<sup><i>y</i></sup>"
-
-#~ msgid "x<sup>1/<i>y</i></sup>"
-#~ msgstr "x<sup>1/<i>y</i></sup>"
-
-#~ msgid "Raise displayed value to the power of y [o]"
-#~ msgstr "ਵੇਖਾਏ ਗਏ ਮੁੱਲ ਦੀ ਘਾਤ y ਪਤਾ ਕਰੋ [o]"
-
-#~ msgid "Raise displayed value to the power of reciprocal y [O]"
-#~ msgstr "ਵੇਖਾਏ ਗਏ ਮੁੱਲ ਦੀ ਘਾਤ y ਪਤਾ ਕਰੋ [o]"
-
-#~ msgid "R"
-#~ msgstr "R"
-
-#~ msgid "No."
-#~ msgstr "ਨਹੀਂ।"
-
-#~ msgid "Reset to _Default (%d)"
-#~ msgstr "ਡਿਫਾਲਟ ਲਈ ਰੀ-ਸੈੱਟ (%d)(_D)"
-
-#~ msgid "Negative X and non-integer Y not supported"
-#~ msgstr "ਰਿਣਾਤਮਕ X ਅਤੇ ਗੈਰ-ਪੂਰਨ-ਅੰਕੀ Y ਸਹਿਯੋਗੀ ਨਹੀਂ ਹਨ"
-
-#~ msgid "Kilometer-to-mile conversion factor"
-#~ msgstr "ਕਿਲੋਮੀਟਰ ਤੋਂ ਮੀਟਰ ਤਬਦੀਲੀ ਗੁਣਾਂਕ"
-
-#~ msgid "square root of 2"
-#~ msgstr "2 ਵਰਗ ਮੂਲ"
-
-#~ msgid "π"
-#~ msgstr "π"
-
-#~ msgid "Centimeter-to-inch conversion factor"
-#~ msgstr "ਸੈਂਟੀਮੀਟਰ ਤੋਂ ਇੰਚ ਤਬਦੀਲੀ ਗੁਣਾਂਕ"
-
-#~ msgid "degrees in a radian"
-#~ msgstr "ਰੇਡੀਅਨ ਵਿੱਚ ਡਿਗਰੀਆਂ"
-
-#~ msgid "2 ^ 20"
-#~ msgstr "2 ^ 20"
-
-#~ msgid "Gram-to-ounce conversion factor"
-#~ msgstr "ਗਰਾਮ ਤੋਂ ਔਸ ਤਬਦੀਲੀ ਗੁਣਾਂਕ"
-
-#~ msgid "Kilojoule-to-British-thermal-unit conversion factor"
-#~ msgstr "ਕਿਲੋਜੂਲ ਜਾਂ ਬਰਤਾਨੀਵੀ ਤਾਪ ਇਕਾਈਆਂ ਤਬਦੀਲੀ ਗੁਣਾਂਕ"
-
-#~ msgid "Cubic-centimeter-to-cubic-inch conversion factor"
-#~ msgstr "ਘਣ ਸੈਟੀਮੀਟਰ ਜਾਂ ਘਣ ਇੰਚ ਤਬਦੀਲੀ ਗੁਣਾਂਕ"
-
-#~ msgid "Too long number"
-#~ msgstr "ਬਹੁਤ ਲੰਮਾ ਨੰਬਰ ਹੈ"
-
-#~ msgid "Math operation error"
-#~ msgstr "ਹਿਸਾਬ ਓਪਰੇਸ਼ਨ ਗਲਤੀ"
-
-#~ msgid "Error, cannot calculate cosine"
-#~ msgstr "ਗਲਤ, cosine ਲਈ ਗਣਨਾ ਸੰਭਵ ਨਹੀਂ"
-
-#~ msgid "&16"
-#~ msgstr "&੧੬"
-
-#~ msgid "&32"
-#~ msgstr "&੩੨"
-
-#~ msgid "16-bit unsigned integer value of display (])"
-#~ msgstr "ਦਰਿਸ਼ ਦੇ ੧੬-bit ਚਿੰਨ-ਰਹਿਤ ਪੂਰਨ ਅੰਕ ਮੁੱਲ (])"
-
-#~ msgid "32-bit unsigned integer value of display ([)"
-#~ msgstr "ਦਰਿਸ਼ ੩੨-bit ਚਿੰਨ-ਰਹਿਤ ਪੂਰਨ ਅੰਕ ਮੁੱਲ ([)"
-
-#~ msgid "±"
-#~ msgstr "±"
-
-#~ msgid "×"
-#~ msgstr "×"
-
-#~ msgid "÷"
-#~ msgstr "÷"
-
-#~ msgid "−"
-#~ msgstr "−"
-
-#~ msgid "√"
-#~ msgstr "√"
-
-#~ msgid "pi"
-#~ msgstr "pi"
-
-#~ msgid "%s: %s as next argument.\n"
-#~ msgstr "%s: %s ਅਗਲੇ ਆਰਗੂਮੈਟ ਦੀ ਤਰਾਂ। \n"
-
-#~ msgid ""
-#~ "%s version %s\n"
-#~ "\n"
-#~ msgstr ""
-#~ "%s ਵਰਜਨ %s\n"
-#~ "\n"
-
-#~ msgid "Usage: %s: [-D] [-E] [-a accuracy] "
-#~ msgstr "ਵਰਤੋਂ: %s: [-D] [-E] [-a ਸ਼ੁੱਧਤਾ] "
-
-#~ msgid "\t\t [-?] [-v] [-h]\n"
-#~ msgstr "\t\t [-?] [-v] [-h]\n"
-
-#~ msgid "-a needs accuracy value"
-#~ msgstr "-a ਨੂੰ ਸ਼ੁੱਧ ਮੁੱਲ ਦੀ ਜਰੂਰਤ ਹੈ"
-
-#~ msgid "Cleared display, prefix without an operator is not allowed"
-#~ msgstr "ਦਰਿਸ਼ ਸਾਫ਼ ਕੀਤਾ,ਓਪਰੇਟੇਰ ਤੋਂ ਬਿਨਾਂ ਅਗੇਤਰ ਸਵੀਕਾਰ ਨਹੀਂ"
-
-#~ msgid "Malformed parenthesis expression"
-#~ msgstr "ਖਰਾਬ ਬਰੈਕਟ ਦਾ ਸਮੀਕਰਨ"
-
-#~ msgid "%s: base should be 2, 8, 10 or 16\n"
-#~ msgstr "%s: ਆਧਾਰ 2, 8, 10 ਜਾਂ 16 ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ\n"
-
-#~ msgid "%s: invalid display mode [%s]\n"
-#~ msgstr "%s: ਗਲਤ ਦਰਿਸ਼ ਢੰਗ [%s]\n"
-
-#~ msgid "%s: invalid mode [%s]\n"
-#~ msgstr "%s: ਗਲਤ ਢੰਗ [%s]\n"
-
-#~ msgid "%s: invalid trigonometric mode [%s]\n"
-#~ msgstr "%s: ਗਲਤ ਤਿਕੋਣ-ਮਿਤੀ ਢੰਗ [%s]\n"
-
-#~ msgid "%s: invalid syntax mode [%s]\n"
-#~ msgstr "%s: ਗਲਤ ਸੰਟੇਕਸ ਢੰਗ [%s]\n"
-
-#~ msgid "Activated no operator precedence mode"
-#~ msgstr "ਕੋਈ ਓਪਰੇਟਰ ਕਾਰਵਾਈ ਢੰਗ ਸਰਗਰਮ ਨਹੀਂ"
-
-#~ msgid "Activated expression mode with operator precedence"
-#~ msgstr "ਓਪਰੇਟਰ ਅਗੇਤਰ ਨਾਲ ਸਮੀਕਰਨ ਢੰਗ ਸਰਗਰਮ ਹੈ"
-
-#~ msgid "Set accuracy from 0 to %d numeric places."
-#~ msgid_plural "Set accuracy from 0 to %d numeric places."
-#~ msgstr[0] "0 ਤੋਂ %d ਸੰਖਿਆਤਮਕ ਸਥਾਨਾਂ ਤੱਕ ਸ਼ੁੱਧਤਾ ਦਿਓ"
-#~ msgstr[1] "0 ਤੋਂ %d ਸੰਖਿਆਤਮਕ ਸਥਾਨਾਂ ਤੱਕ ਸ਼ੁੱਧਤਾ ਦਿਓ"
-
-#~ msgid "Currently set to %d places."
-#~ msgid_plural "Currently set to %d places."
-#~ msgstr[0] "ਹੁਣ %d ਥਾਂ ਲਈ ਸੈੱਟ ਹੈ।"
-#~ msgstr[1] "ਹੁਣ %d ਥਾਂ ਲਈ ਸੈੱਟ ਹੈ।"
-
-#~ msgid "Bit editor activated. Click on bit values to toggle them."
-#~ msgstr "ਬਿੱਟ ਐਡੀਟਰ ਐਕਟਿਵ ਹੈ। ਬਿੱਟ ਮੁੱਲ ਬਦਲਣ ਵਾਸਤੇ ਉਨ੍ਹਾਂ ਉੱਤੇ ਕਲਿੱਕ ਕਰੋ।"
-
-#~ msgid ""
-#~ "Gcalctool is free software; you can redistribute it and/or modify\n"
-#~ "it under the terms of the GNU General Public License as published by\n"
-#~ "the Free Software Foundation; either version 2 of the License, or\n"
-#~ "(at your option) any later version.\n"
-#~ msgstr ""
-#~ "ਜੀ-ਕੈਲਕੁਲੇਟਰ ਇੱਕ ਮੁਫਤ ਸਾਫਟਵੇਅਰ ਹੈ, ਜਿਸ ਨੂੰ ਤੁਸੀਂ ਗਨੂ ਜਰਨਲ ਪਬਲਿਕ ਲਾਈਸੈਂਸ,\n"
-#~ "ਜਿਸ ਨੂੰ ਫਰੀ ਸਾਫਟਵੇਅਰ ਫਾਊਨਡੇਸ਼ਨ ਨੇ ਤਿਆਰ ਕੀਤਾ ਹੈ, ਦੇ ਵਰਜਨ 2 ਜਾਂ\n"
-#~ "ਨਵੇਂ ਦੀਆਂਸ਼ਰਤਾਂ (ਉਹ ਤੁਹਾਡੀ ਆਪਣੀ ਮਰਜ਼ੀ ਹੈ) ਅਧੀਨ ਵੰਡ ਅਤੇ/ਜਾਂ ਸੋਧ\n"
-#~ "ਸਕਦੇ ਹੋ।\n"
-
-#~ msgid ""
-#~ "Gcalctool is distributed in the hope that it will be useful,\n"
-#~ "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-#~ "GNU General Public License for more details.\n"
-#~ msgstr ""
-#~ "ਜੀ-ਕੈਲਕੁਲੇਟਰ ਨੂੰ ਇਹ ਮੰਨ ਕੇ ਵੰਡਿਆ ਜਾ ਰਿਹਾ ਹੈ ਕਿ ਇਹ ਫਾਇਦੇਮੰਦ\n"
-#~ "ਰਹੇਗਾ, ਪਰ ਇਸ ਦੀ ਕੋਈ ਵਾਰੰਟੀ ਨਹੀਂ ਲਈ ਜਾ ਰਹੀ ਹੈ, ਕਿਸੇ ਖਾਸ ਕੰਮ ਲਈ\n"
-#~ "ਅਨੁਕੂਲ ਹੋਣ ਜਾਂ ਠੀਕ ਤਰ੍ਹਾਂ ਕੰਮ ਕਰਨ ਦੀ ਵੀ ਕੋਈ ਗਾਰੰਟੀ ਨਹੀਂ ਹੈ। ਹੋਰ ਵੇਰਵੇ\n"
-#~ "ਲਈ ਗਨੂ ਜਰਨਲਪਬਲਿਕ ਲਾਇਸੈਂਸ ਨੂੰ ਪੜ੍ਹੋ।\n"
-
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License\n"
-#~ "along with Gcalctool; if not, write to the Free Software Foundation, "
-#~ "Inc.,\n"
-#~ "51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA\n"
-#~ msgstr ""
-#~ "ਜੀ-ਕੈਲਕੁਲੇਟਰ ਨਾਲ ਤੁਸੀਂ ਗਨੂ ਜਰਨਲ ਪਬਲਿਕ ਲਾਇਸੈਂਸ ਦੀ ਨਕਲ ਪ੍ਰਾਪਤ ਕਰੋਗੇ\n"
-#~ "ਜੇਕਰ ਤੁਹਾਨੂੰ ਨਹੀਂ ਮਿਲੀ ਹੈ ਤਾਂ ਫਰੀ ਸਾਫਟਵੇਅਰ ਫਾਊਨਡੇਸ਼ਨ, 51 ਫਰਾਕਲਿੰਨ\n"
-#~ "ਸਟਰੀਟ, ਪੰਜਵੀਂ ਮੰਜ਼ਲ,ਬੋਸਟਨ, ਐਮ ਏ 02110-1301, ਅਮਰੀਕਾ ਨੂੰ ਲਿਖੋ।\n"
-
-#~ msgid "Changing Modes Clears Calculation"
-#~ msgstr "ਢੰਗ ਬਦਲਣ ਨਾਲ ਗਣਨਾ ਸਾਫ਼ ਹੋਵੇਗੀ"
-
-#~ msgid ""
-#~ "When you change modes, the current calculation will be cleared, and the "
-#~ "base will be reset to decimal."
-#~ msgstr ""
-#~ "ਜਦੋਂ ਤੁਸੀਂ ਢੰਗ ਤਬਦੀਲ ਕਰੋਗੇ ਤਾਂ ਮੌਜੂਦਾ ਗਣਨਾ ਨੂੰ ਸਾਫ਼ ਕਰ ਦਿੱਤੇ ਜਾਵੇਗਾ, ਅਤੇ ਅਧਾਰ ਨੂੰ ਦਸ਼ਮਲਵ ਲਈ "
-#~ "ਸੈੱਟ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ।"
-
-#~ msgid "_Do not warn me again"
-#~ msgstr "ਮੈਨੂੰ ਮੁੜ ਚੇਤਾਵਨੀ ਨਾ ਦਿਓ(_D)"
-
-#~ msgid "C_hange Mode"
-#~ msgstr "ਢੰਗ ਤਬਦੀਲ(_h)"
-
-#~ msgid "Clipboard contained malformed calculation"
-#~ msgstr "ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਨਿਕਾਰਾ ਗਣਨਾ ਹੈ"
-
-#~ msgid "."
-#~ msgstr "."
-
-#~ msgid "10 to the x"
-#~ msgstr "x ਲਈ 10"
-
-#~ msgid "10x"
-#~ msgstr "10x"
-
-#~ msgid "16 bit unsigned integer"
-#~ msgstr "16-bit ਚਿੰਨ-ਰਹਿਤ ਪੂਰਨ ਅੰਕ"
-
-#~ msgid "<i>x</i><sup><i>y</i></sup>"
-#~ msgstr "<i>x</i><sup><i>y</i></sup>"
-
-#~ msgid "A_rithmetic Precedence"
-#~ msgstr "ਹਿਸਾਬ ਤਰਜੀਹ(_r)"
-
-#~ msgid "Bitwise AND"
-#~ msgstr "ਬਿੱਟਵਾਈਸ  AND"
-
-#~ msgid "Bitwise NOT"
-#~ msgstr "ਬਿੱਟਵਾਈਸ NOT"
-
-#~ msgid "Bitwise OR"
-#~ msgstr "ਬਿੱਟਵਾਈਸ OR"
-
-#~ msgid "Bitwise XNOR"
-#~ msgstr "ਬਿੱਟਵਾਈਸ XNOR"
-
-#~ msgid "Bitwise XOR"
-#~ msgstr "ਬਿੱਟਵਾਈਸ XOR"
-
-#~ msgid "Constants"
-#~ msgstr "ਸਥਿਰ ਅੰਕ"
-
-#~ msgid "E to the x"
-#~ msgstr "x ਦੀ E"
-
-#~ msgid "Hexadecimal digit B"
-#~ msgstr "ਹੈਕਸਾਡੈਸੀਮਲ ਅੰਕ B"
-
-#~ msgid "Hexadecimal digit C"
-#~ msgstr "ਹੈਕਸਾਡੈਸੀਮਲ ਅੰਕ C"
-
-#~ msgid "Hexadecimal digit D"
-#~ msgstr "ਹੈਕਸਾਡੈਸੀਮਲ ਅੰਕ D"
-
-#~ msgid "Hexadecimal digit E"
-#~ msgstr "ਹੈਕਸਾਡੈਸੀਮਲ ਅੰਕ E"
-
-#~ msgid "Hexadecimal digit F"
-#~ msgstr "ਹੈਕਸਾਡੈਸੀਮਲ ਅੰਕ F"
-
-#~ msgid "Log<sub>10</sub>"
-#~ msgstr "Log<sub>10</sub>"
-
-#~ msgid "Show Bit Editor"
-#~ msgstr "ਬਿੱਟ ਐਡੀਟਰ ਵੇਖੋ"
-
-#~ msgid "Show Bit _Editor"
-#~ msgstr "ਬਿੱਟ ਐਡੀਟਰ ਵੇਖੋ(_E)"
-
-#~ msgid "Show bit editor"
-#~ msgstr "ਬਿੱਟ ਐਡੀਟਰ ਵੇਖੋ"
-
-#~ msgid "Ten to the x"
-#~ msgstr "10 ਦੀ ਘਾਤ x"
-
-#~ msgid "Use Arithmetic Precedence"
-#~ msgstr "ਹਿਸਾਬੀ ਤਰੀਕਾ ਵਰਤੋਂ"
-
-#~ msgid "Use Left-right Precedence"
-#~ msgstr "ਖੱਬੇ-ਤੋਂ-ਸੱਜੇ ਤਰਜੀਹ ਵਰਤੋਂ"
-
-#~ msgid "User-defined functions"
-#~ msgstr "ਯੂਜ਼ਰ ਵਲੋਂ ਪ੍ਰਭਾਸ਼ਿਤ ਕੰਮ"
-
-#~ msgid "X to the y"
-#~ msgstr "X ਦੀ ਘਾਤ y"
-
-#~ msgid "_Left-to-right Precedence"
-#~ msgstr "ਖੱਬੇ-ਤੋਂ-ਸੱਜੇ ਤਰਜੀਹ(_L)"
-
-#~ msgid "e<sup>x</sup>"
-#~ msgstr "e<sup>x</sup>"
-
-#~ msgid "ex"
-#~ msgstr "ex"
-
-#~ msgid "xy"
-#~ msgstr "xy"
-
-#~ msgid "Expression"
-#~ msgstr "ਸਮੀਕਰਨ"
-
-#~ msgid "/"
-#~ msgstr "/"
-
-#~ msgid "*"
-#~ msgstr "*"
-
-#~ msgid "Chs"
-#~ msgstr "Chs"
-
-#~ msgid "-"
-#~ msgstr "-"
-
-#~ msgid "Sqrt"
-#~ msgstr "ਵ-ਮੂਲ"
-
-#~ msgid "Recip"
-#~ msgstr "ਉਲਟਾ"
-
-#~ msgid "^2"
-#~ msgstr "^2"
-
-#~ msgid "&amp;16"
-#~ msgstr "&amp;16"
-
-#~ msgid "&amp;32"
-#~ msgstr "&amp;32"
-
-#~ msgid "32 bit unsigned integer"
-#~ msgstr "32-bit ਚਿੰਨ-ਰਹਿਤ ਪੂਰਨ ਅੰਕ"
-
-#~ msgid " Mod "
-#~ msgstr " Mod "
-
-#~ msgid "e"
-#~ msgstr "e"
-
-#~ msgid "e^"
-#~ msgstr "e^"
-
-#~ msgid "^"
-#~ msgstr "^"
-
-#~ msgid "!"
-#~ msgstr "!"
-
-#~ msgid "Or"
-#~ msgstr "Or"
-
-#~ msgid " Or "
-#~ msgstr " Or "
-
-#~ msgid "And"
-#~ msgstr "And"
-
-#~ msgid "Not"
-#~ msgstr "Not"
-
-#~ msgid "~"
-#~ msgstr "~"
-
-#~ msgid "Xor"
-#~ msgstr "Xor"
-
-#~ msgid " Xor "
-#~ msgstr " Xor"
-
-#~ msgid "Xnor"
-#~ msgstr "Xnor"
-
-#~ msgid " Xnor "
-#~ msgstr " Xnor"
-
-#~ msgid "Numeric stack error"
-#~ msgstr "ਸੰਖਿਆਤਮਕ ਸਟਾਕ ਗਲਤੀ"
-
-#~ msgid "Operand stack error"
-#~ msgstr "ਕ੍ਰਿਆਤਮਿਕ ਸਟਾਕ ਗਲਤੀ"
-
-#~ msgid "calculator"
-#~ msgstr "ਕੈਲਕੂਲੇਟਰ"
-
-#~ msgid "%s: invalid bitcalc choice [%s]\n"
-#~ msgstr "%s: ਗਲਤ bitcalc ਚੋਣ [%s]\n"
-
-#~ msgid "2 places"
-#~ msgstr "2 ਥਾਂ"
-
-#~ msgid "3 places"
-#~ msgstr "3 ਥਾਂ"
-
-#~ msgid "4 places"
-#~ msgstr "4 ਥਾਂ"
-
-#~ msgid "5 places"
-#~ msgstr "5 ਥਾਂ"
-
-#~ msgid "6 places"
-#~ msgstr "6 ਥਾਂ"
-
-#~ msgid "7 places"
-#~ msgstr "7 ਥਾਂ"
-
-#~ msgid "8 places"
-#~ msgstr "8 ਥਾਂ"
-
-#~ msgid "9 places"
-#~ msgstr "9 ਥਾਂ"
-
-#~ msgid "Show Bitcalculating _Extension"
-#~ msgstr "ਬਿੱਟ-ਗਣਨਾ ਐਕਸ਼ਟੇਸ਼ਨ ਵੇਖਾਓ(_E)"
-
-#~ msgid "Show bitcalculating extension"
-#~ msgstr "ਬਿੱਟ-ਗਣਨਾ ਐਕਸ਼ਟੇਸ਼ਨ ਵੇਖਾਓ"
-
-#~ msgid "0 significant places"
-#~ msgstr "0 ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "1 significant place"
-#~ msgstr "1 ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "2 significant places"
-#~ msgstr "2 ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "3 significant places"
-#~ msgstr "3 ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "4 significant places"
-#~ msgstr "4 ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "5 significant places"
-#~ msgstr "5 ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "6 significant places"
-#~ msgstr "6 ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "7 significant places"
-#~ msgstr "7 ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "8 significant places"
-#~ msgstr "8 ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "9 significant places"
-#~ msgstr "9 ਮਹੱਤਵਪੂਰਨ ਥਾਂ"
-
-#~ msgid "_Other (10) ..."
-#~ msgstr "ਹੋਰ (10) (_O)..."
-
-#~ msgid "Set other precision"
-#~ msgstr "ਹੋਰ ਸ਼ੁੱਧਤਾ ਦਿਓ"
-
-#~ msgid "Note:"
-#~ msgstr "ਸੂਚਨਾ:"
-
-#~ msgid ""
-#~ "Set accuracy from 0 to %d numeric places. Currently set to %d places. [a]"
-#~ msgstr "0 ਤੋਂ %d ਅੰਕਾਂ ਤੱਕ ਸ਼ੁੱਧਤਾ ਦਿਓ। ਮੌਜੂਦਾ %d ਥਾਂਵਾਂ ਲਈ ਦਿੱਤਾ ਹੈ। [a]"
-
-#~ msgid "Accuracy value out of range"
-#~ msgstr "ਸ਼ੁੱਧਤਾ ਮੁੱਲ ਸੀਮਾ ਤੋਂ ਬਾਹਰ ਹੈ"
-
-#~ msgid "Perform calculations"
-#~ msgstr "ਗਣਨਾ ਕਰੋ"

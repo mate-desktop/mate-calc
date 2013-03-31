@@ -1,109 +1,116 @@
-# Danish translation of mate-calc.
-# Copyright (C) 2003-2012 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-calc package.
-# Ole Laursen <olau@hardworking.dk>, 2003, 04.
-# Martin Willemoes Hansen <mwh@sysrq.dk>, 2004, 05.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Kenneth Nielsen <k.nielsen81@gmail.com>, 2011.
 # Lasse Bang Mikkelsen <lbm@fatalerror.dk>, 2006.
 # Peter Bach <bach.peter@gmail.com>, 2007.
-# Kenneth Nielsen <k.nielsen81@gmail.com>, 2011.
-# Ask Hjorth Larsen <asklarsen@gmail.com>, 2008, 09, 10, 11, 12.
-#
-# Husk at tilføje dig i credit-listen (besked id "translator-credits")
-#
-# Økonomiske begreber
-# -------------------
-#
-# asset ~ aktiv
-# depreciation ~ afskrivning (nedvurdering?)
-# compounding ~ rentetilskrivning
-# interest rate ~ rentesats
-# principal ~ hovedstol
-# place ~ ciffer eller bit (bemærk bitshift-operationerne hvor det bør være bit)
-# word (programmeringstilstand) ~ word (datatype af variabel længde i mate-calc, i normal sprogbrug er en word dog 2 byte)
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-15 06:32+0200\n"
-"PO-Revision-Date: 2012-10-12 17:35+0200\n"
-"Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
-"Language-Team: Dansk <dansk@dansk-gruppen.dk>\n"
-"Language: da\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2013-03-24 20:10+0100\n"
+"PO-Revision-Date: 2013-03-24 19:28+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Danish (http://www.transifex.com/projects/p/MATE/language/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-
-#. Accessible name for the inverse button
-#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:24
-msgid "Inverse"
-msgstr "Reciprok"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Accessible name for the factorize button
-#: ../data/buttons-advanced.ui.h:4 ../data/buttons-programming.ui.h:2
+#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:8
 msgid "Factorize"
 msgstr "Faktorisér"
 
-#. Accessible name for the factorial button
-#: ../data/buttons-advanced.ui.h:6 ../data/buttons-programming.ui.h:22
-msgid "Factorial"
-msgstr "Fakultet"
-
 #. Label on the solve button (clicking this solves the displayed calculation)
-#: ../data/buttons-advanced.ui.h:8 ../data/buttons-basic.ui.h:2
-#: ../data/buttons-financial.ui.h:76 ../data/buttons-programming.ui.h:6
+#: ../data/buttons-advanced.ui.h:4 ../data/buttons-basic.ui.h:2
+#: ../data/buttons-financial.ui.h:76 ../data/buttons-programming.ui.h:12
 msgid "="
 msgstr "="
 
+#: ../data/buttons-advanced.ui.h:5 ../data/buttons-basic.ui.h:3
+#: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
+msgid "Clear"
+msgstr "Nulstil"
+
 #. Accessible name for the subscript mode button
-#: ../data/buttons-advanced.ui.h:10 ../data/buttons-programming.ui.h:8
+#: ../data/buttons-advanced.ui.h:7 ../data/buttons-programming.ui.h:15
 msgid "Subscript"
 msgstr "Sænket"
 
 #. Accessible name for the superscript mode button
-#: ../data/buttons-advanced.ui.h:12 ../data/buttons-programming.ui.h:10
+#: ../data/buttons-advanced.ui.h:9 ../data/buttons-programming.ui.h:17
 msgid "Superscript"
 msgstr "Hævet"
 
 #. Accessible name for the scientific exponent button
-#: ../data/buttons-advanced.ui.h:14
+#: ../data/buttons-advanced.ui.h:11
 msgid "Scientific Exponent"
 msgstr "Videnskabelig eksponent"
 
 #. Accessible name for the memory button
 #. Accessible name for the memory value button
 #. Tooltip for the memory button
-#: ../data/buttons-advanced.ui.h:16 ../data/buttons-financial.ui.h:72
-#: ../src/math-buttons.c:222
+#: ../data/buttons-advanced.ui.h:13 ../data/buttons-financial.ui.h:72
+#: ../src/math-buttons.c:232
 msgid "Memory"
 msgstr "Hukommelse"
 
 #. The label on the memory button
-#: ../data/buttons-advanced.ui.h:18 ../data/buttons-financial.ui.h:74
-#: ../data/buttons-programming.ui.h:14
+#: ../data/buttons-advanced.ui.h:15 ../data/buttons-financial.ui.h:74
+#: ../data/buttons-programming.ui.h:21
 msgid "x"
 msgstr "x"
 
-#. Accessible name for the absolute value button
-#: ../data/buttons-advanced.ui.h:20 ../data/buttons-programming.ui.h:4
-msgid "Absolute Value"
-msgstr "Absolut værdi"
-
 #. Accessible name for the exponentiation (x to the power of y) button
-#: ../data/buttons-advanced.ui.h:22 ../data/buttons-basic.ui.h:4
-#: ../data/buttons-financial.ui.h:98 ../data/buttons-programming.ui.h:26
+#: ../data/buttons-advanced.ui.h:17 ../data/buttons-basic.ui.h:5
+#: ../data/buttons-financial.ui.h:100 ../data/buttons-programming.ui.h:33
 msgid "Exponent"
 msgstr "Eksponent"
 
+#: ../data/buttons-advanced.ui.h:18 ../data/buttons-basic.ui.h:6
+#: ../data/buttons-financial.ui.h:98
+msgid "Undo"
+msgstr "Fortryd"
+
+#: ../data/buttons-advanced.ui.h:19
+msgid "acos"
+msgstr ""
+
+#: ../data/buttons-advanced.ui.h:20
+msgid "asin"
+msgstr ""
+
+#: ../data/buttons-advanced.ui.h:21
+msgid "atan"
+msgstr ""
+
 #. Accessible name for the store value button
-#: ../data/buttons-advanced.ui.h:24 ../data/buttons-programming.ui.h:12
+#: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:19
 msgid "Store"
 msgstr "Gem"
 
+#. Accessible name for the inverse button
+#: ../data/buttons-advanced.ui.h:25 ../data/buttons-programming.ui.h:31
+msgid "Inverse"
+msgstr "Reciprok"
+
+#. Accessible name for the factorial button
+#: ../data/buttons-advanced.ui.h:27 ../data/buttons-programming.ui.h:29
+msgid "Factorial"
+msgstr "Fakultet"
+
+#. Accessible name for the absolute value button
+#: ../data/buttons-advanced.ui.h:29 ../data/buttons-programming.ui.h:10
+msgid "Absolute Value"
+msgstr "Absolut værdi"
+
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
-#: ../data/buttons-financial.ui.h:2 ../src/math-buttons.c:246
+#: ../data/buttons-financial.ui.h:2 ../src/math-buttons.c:256
 msgid "Compounding Term"
 msgstr "Rentetilskrivningstermin"
 
@@ -128,10 +135,7 @@ msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr ""
-"Udregner antallet af nødvendige rentetilskrivningsperioder til at øge en "
-"investering af den aktuelle værdi til en fremtidig værdi, med en fastholdt "
-"rentesats per rentetilskrivningsperiode."
+msgstr "Udregner antallet af nødvendige rentetilskrivningsperioder til at øge en investering af den aktuelle værdi til en fremtidig værdi, med en fastholdt rentesats per rentetilskrivningsperiode."
 
 #. Periodic Interest Rate Dialog: Label before future value input
 #: ../data/buttons-financial.ui.h:12
@@ -148,16 +152,13 @@ msgstr "Dobbeltmindskende afskrivning"
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
-msgstr ""
-"Udregner rådighedsbeløbet for afskrivning på et aktiv for en angivet "
-"tidsperiode ved brug af den dobbeltmindskende balancemetode."
+msgstr "Udregner rådighedsbeløbet for afskrivning på et aktiv for en angivet tidsperiode ved brug af den dobbeltmindskende balancemetode."
 
 #. Gross Profit Margin Dialog: Label before cost input
 #: ../data/buttons-financial.ui.h:18
 msgid "C_ost:"
 msgstr "_Pris:"
 
-# ?
 #. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
 #: ../data/buttons-financial.ui.h:20
 msgid "_Life:"
@@ -170,7 +171,7 @@ msgstr "_Periode:"
 
 #. Title of Future Value dialog
 #. Tooltip for the future value button
-#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.c:252
+#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.c:262
 msgid "Future Value"
 msgstr "Fremtidig værdi"
 
@@ -180,10 +181,7 @@ msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
-msgstr ""
-"Udregner den fremtidige værdi af en investering baseret på en række lige "
-"store betalinger med periodisk rentesats over antallet af betalingsperioder "
-"i terminen."
+msgstr "Udregner den fremtidige værdi af en investering baseret på en række lige store betalinger med periodisk rentesats over antallet af betalingsperioder i terminen."
 
 #. Payment Period Dialog: Label before periodic payment input
 #: ../data/buttons-financial.ui.h:28
@@ -197,7 +195,7 @@ msgstr "_Antal perioder:"
 
 #. Title of Gross Profit Margin dialog
 #. Tooltip for the gross profit margin button
-#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:273
+#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:283
 msgid "Gross Profit Margin"
 msgstr "Margen for bruttofortjeneste"
 
@@ -206,9 +204,7 @@ msgstr "Margen for bruttofortjeneste"
 msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
-msgstr ""
-"Udregner videresælgelsesprisen på et produkt, baseret på produktets pris og "
-"den ønskede bruttoprofitmargen."
+msgstr "Udregner videresælgelsesprisen på et produkt, baseret på produktets pris og den ønskede bruttoprofitmargen."
 
 #. Gross Profit Margin Dialog: Label before margin input
 #: ../data/buttons-financial.ui.h:36
@@ -217,7 +213,7 @@ msgstr "_Margen:"
 
 #. Title of Periodic Payment dialog
 #. Tooltip for the periodic payment button
-#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:270
+#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:280
 msgid "Periodic Payment"
 msgstr "Periodisk betaling"
 
@@ -226,9 +222,7 @@ msgstr "Periodisk betaling"
 msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
-msgstr ""
-"Udregner størrelsen for den periodiske betaling af et lån, hvor betalinger "
-"udføres ved slutningen af hver betalingsperiode. "
+msgstr "Udregner størrelsen for den periodiske betaling af et lån, hvor betalinger udføres ved slutningen af hver betalingsperiode. "
 
 #. Periodic Payment Dialog: Label before principal input
 #: ../data/buttons-financial.ui.h:42
@@ -242,7 +236,7 @@ msgstr "_Termin:"
 
 #. Title of Present Value dialog
 #. Tooltip for the present value button
-#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:267
+#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:277
 msgid "Present Value"
 msgstr "Nuværende værdi"
 
@@ -252,14 +246,11 @@ msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr ""
-"Udregner den aktuelle værdi af en investering baseret på en række ens "
-"betalinger med discount på periodisk rentesats over antallet af "
-"betalingsperioder i terminen. "
+msgstr "Udregner den aktuelle værdi af en investering baseret på en række ens betalinger med discount på periodisk rentesats over antallet af betalingsperioder i terminen. "
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
-#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.c:264
+#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.c:274
 msgid "Periodic Interest Rate"
 msgstr "Periodisk rentesats"
 
@@ -268,9 +259,7 @@ msgstr "Periodisk rentesats"
 msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
-msgstr ""
-"Udregner den periodiske rente, der er nødvendig for at øge en investering "
-"til en fremtidig værdi, over antallet af rentetilskrivningsperioder. "
+msgstr "Udregner den periodiske rente, der er nødvendig for at øge en investering til en fremtidig værdi, over antallet af rentetilskrivningsperioder. "
 
 #. Title of Straight-Line Depreciation dialog
 #: ../data/buttons-financial.ui.h:54
@@ -294,11 +283,7 @@ msgid ""
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr ""
-"Udregner den retlinjede afskrivning af et aktiv for én periode. Den "
-"retlinjede afskrivningsmetode deler den afskrivbare pris jævnt over det "
-"brugbare liv af et aktiv. Det brugbare liv er antallet er perioder, typisk "
-"år, over hvilke et aktiv afskrives. "
+msgstr "Udregner den retlinjede afskrivning af et aktiv for én periode. Den retlinjede afskrivningsmetode deler den afskrivbare pris jævnt over det brugbare liv af et aktiv. Det brugbare liv er antallet er perioder, typisk år, over hvilke et aktiv afskrives. "
 
 #. Title of Sum-of-the-Years'-Digits Depreciation dialog
 #: ../data/buttons-financial.ui.h:62
@@ -309,17 +294,11 @@ msgstr "Summen af årenes cifre-afskrivning"
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
-"accelerates the rate of depreciation, so that more depreciation expense "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
+" accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
-msgstr ""
-"Udregner rådighedsbeløbet for afskrivningen på et aktiv for en angivet "
-"tidsperiode, ved brug af \"summen af årenes cifre\"-metoden. Denne "
-"afskrivningsmetode accelererer afskrivningsraten, således at større "
-"afskrivningsudgifter finder sted i tidligere perioder end i de senere. Det "
-"brugbare liv er antallet af perioder, typisk år, hvorover et aktiv "
-"afskrives. "
+msgstr "Udregner rådighedsbeløbet for afskrivningen på et aktiv for en angivet tidsperiode, ved brug af \"summen af årenes cifre\"-metoden. Denne afskrivningsmetode accelererer afskrivningsraten, således at større afskrivningsudgifter finder sted i tidligere perioder end i de senere. Det brugbare liv er antallet af perioder, typisk år, hvorover et aktiv afskrives. "
 
 #. Title of Payment Period dialog
 #: ../data/buttons-financial.ui.h:66
@@ -335,95 +314,123 @@ msgstr "Fremtidig _værdi:"
 #: ../data/buttons-financial.ui.h:70
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest "
-"rate."
-msgstr ""
-"Udregner antallet af betalingsperioder, som er nødvendige under terminen for "
-"en almindelig annuitet, for at akkumulere en fremtidig værdi, ved en "
-"periodisk rentesats."
+"of an ordinary annuity, to accumulate a future value, at a periodic interest"
+" rate."
+msgstr "Udregner antallet af betalingsperioder, som er nødvendige under terminen for en almindelig annuitet, for at akkumulere en fremtidig værdi, ved en periodisk rentesats."
 
-#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
-#: ../data/buttons-financial.ui.h:78
+#. Calculates the number of compounding periods necessary to increase an
+#. investment of present value pv to a future value of fv, at a fixed interest
+#. rate of int per compounding period. See also:
+#. http://en.wikipedia.org/wiki/Compound_interest
+#: ../data/buttons-financial.ui.h:79
 msgid "Ctrm"
 msgstr "Sams"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:80
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the double-declining balance method. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:81
 msgid "Ddb"
 msgstr "Dm"
 
-#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
-#: ../data/buttons-financial.ui.h:82
+#. Calculates the future value of an investment based on a series of equal
+#. payments, each of amount pmt, at a periodic interest rate of int, over the
+#. number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Future_value
+#: ../data/buttons-financial.ui.h:83
 msgid "Fv"
 msgstr "Fv"
 
-#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
-#: ../data/buttons-financial.ui.h:84
+#. Calculates the number of payment periods that are necessary during the term
+#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
+#. interest rate of int. Each payment is equal to amount pmt. See also:
+#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#: ../data/buttons-financial.ui.h:85
 msgid "Term"
 msgstr "Termin"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:86
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the Sum-Of-The-Years'-Digits method. This method of
+#. depreciation accelerates the rate of depreciation, so that more
+#. depreciation expense occurs in earlier periods than in later ones. The
+#. depreciable cost is cost - salvage. The useful life is the number of
+#. periods, typically years, over which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:87
 msgid "Syd"
 msgstr "Sum"
 
-#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:88
+#. Calculates the straight-line depreciation of an asset for one period. The
+#. depreciable cost is cost - salvage. The straight-line method of
+#. depreciation divides the depreciable cost evenly over the useful life of an
+#. asset. The useful life is the number of periods, typically years, over
+#. which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:89
 msgid "Sln"
 msgstr "Rlj"
 
-#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
-#: ../data/buttons-financial.ui.h:90
+#. Calculates the periodic interest necessary to increase an investment of
+#. present value pv to a future value of fv, over the number of compounding
+#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#: ../data/buttons-financial.ui.h:91
 msgid "Rate"
 msgstr "Sats"
 
-#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
-#: ../data/buttons-financial.ui.h:92
+#. Calculates the present value of an investment based on a series of equal
+#. payments, each of amount pmt, discounted at a periodic interest rate of
+#. int, over the number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Present_value
+#: ../data/buttons-financial.ui.h:93
 msgid "Pv"
 msgstr "Nv"
 
-#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
-#: ../data/buttons-financial.ui.h:94
+#. Calculates the amount of the periodic payment of a loan, where payments are
+#. made at the end of each payment period. See also:
+#. http://en.wikipedia.org/wiki/Amortization_schedule
+#: ../data/buttons-financial.ui.h:95
 msgid "Pmt"
 msgstr "Bet"
 
-#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
-#: ../data/buttons-financial.ui.h:96
+#. Calculates the resale price of a product, based on the product cost and the
+#. wanted gross profit margin. See also:
+#. http://en.wikipedia.org/wiki/Gross_profit_margin
+#: ../data/buttons-financial.ui.h:97
 msgid "Gpm"
 msgstr "Bpm"
 
+#. Title of insert character code dialog
+#. Tooltip for the insert character code button
+#: ../data/buttons-programming.ui.h:2 ../src/math-buttons.c:235
+msgid "Insert Character Code"
+msgstr "Indsæt tegnkode"
+
+#. Insert ASCII dialog: Button to insert selected character
+#: ../data/buttons-programming.ui.h:4
+msgid "_Insert"
+msgstr "_Indsæt"
+
+#. Insert ASCII dialog: Label before character entry
+#: ../data/buttons-programming.ui.h:6
+msgid "Ch_aracter:"
+msgstr "_Tegn:"
+
 #. Accessible name for the shift left button
 #. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:16 ../src/math-buttons.c:240
+#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
 msgid "Shift Left"
 msgstr "Forskyd til venstre"
 
 #. Accessible name for the shift right button
 #. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:18 ../src/math-buttons.c:243
+#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
 msgid "Shift Right"
 msgstr "Forskyd til højre"
 
 #. Accessible name for the insert character button
-#: ../data/buttons-programming.ui.h:20
+#: ../data/buttons-programming.ui.h:27
 msgid "Insert Character"
 msgstr "Indsæt tegn"
-
-#. Title of insert character code dialog
-#. Tooltip for the insert character code button
-#: ../data/buttons-programming.ui.h:28 ../src/math-buttons.c:225
-msgid "Insert Character Code"
-msgstr "Indsæt tegnkode"
-
-#. Insert ASCII dialog: Label before character entry
-#: ../data/buttons-programming.ui.h:30
-msgid "Ch_aracter:"
-msgstr "_Tegn:"
-
-#. Insert ASCII dialog: Button to insert selected character
-#: ../data/buttons-programming.ui.h:32
-msgid "_Insert"
-msgstr "_Indsæt"
 
 #. Word size combo: 8 bits
 #: ../data/preferences.ui.h:2
@@ -446,8 +453,7 @@ msgid "64-bit"
 msgstr "64-bit"
 
 #. Title of preferences dialog
-#: ../data/preferences.ui.h:9 ../src/mate-calc.c:522
-#: ../src/math-preferences.c:231
+#: ../data/preferences.ui.h:9 ../src/math-preferences.c:238
 msgid "Preferences"
 msgstr "Indstillinger"
 
@@ -476,111 +482,114 @@ msgstr "Vis afsluttende _nuller"
 msgid "Show _thousands separators"
 msgstr "Vis _tusinde-adskillere"
 
+#: ../data/mate-calc.desktop.in.h:1
+msgid "MATE Calculator"
+msgstr ""
+
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:243
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
 msgid "Calculator"
 msgstr "Lommeregner"
 
-#: ../data/mate-calc.desktop.in.h:2
+#: ../data/mate-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Udfør aritmetiske, videnskabelige eller finansielle udregninger"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:1
+#: ../data/org.mate.calc.gschema.xml.in.h:1
 msgid "Accuracy value"
 msgstr "Værdi for nøjagtighed"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:2
+#: ../data/org.mate.calc.gschema.xml.in.h:2
 msgid "The number of digits displayed after the numeric point"
 msgstr "Antallet af cifre, der vises efter kommaet"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:3
+#: ../data/org.mate.calc.gschema.xml.in.h:3
 msgid "Word size"
 msgstr "Word-størrelse"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:4
+#: ../data/org.mate.calc.gschema.xml.in.h:4
 msgid "The size of the words used in bitwise operations"
 msgstr "Størrelsen af word, der bruges i bitvise operationer"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:5
+#: ../data/org.mate.calc.gschema.xml.in.h:5
 msgid "Numeric Base"
 msgstr "Numerisk grundtal"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:6
+#: ../data/org.mate.calc.gschema.xml.in.h:6
 msgid "The numeric base"
 msgstr "Numerisk grundtal"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:7
+#: ../data/org.mate.calc.gschema.xml.in.h:7
 msgid "Show Thousands Separators"
 msgstr "Vis tusinde-adskillere"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:8
+#: ../data/org.mate.calc.gschema.xml.in.h:8
 msgid "Indicates whether thousands separators are shown in large numbers."
 msgstr "Angiver om tusindtalsseparatorer vises i store tal."
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:9
+#: ../data/org.mate.calc.gschema.xml.in.h:9
 msgid "Show Trailing Zeroes"
 msgstr "Vis afsluttende nuller"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:10
+#: ../data/org.mate.calc.gschema.xml.in.h:10
 msgid ""
 "Indicates whether any trailing zeroes after the numeric point should be "
 "shown in the display value."
-msgstr ""
-"Angiver om nuller, der følger efter kommaet, skal indgå i den viste værdi."
+msgstr "Angiver om nuller, der følger efter kommaet, skal indgå i den viste værdi."
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:11
+#: ../data/org.mate.calc.gschema.xml.in.h:11
 msgid "Number format"
 msgstr "Talformat"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:12
+#: ../data/org.mate.calc.gschema.xml.in.h:12
 msgid "The format to display numbers in"
 msgstr "Formatet som tal vises i"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:13
+#: ../data/org.mate.calc.gschema.xml.in.h:13
 msgid "Angle units"
 msgstr "Vinkelenheder"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:14
+#: ../data/org.mate.calc.gschema.xml.in.h:14
 msgid "The angle units to use"
 msgstr "Vinkelenhed, der skal bruges"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:15
+#: ../data/org.mate.calc.gschema.xml.in.h:15
 msgid "Button mode"
 msgstr "Knaptilstand"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:16
+#: ../data/org.mate.calc.gschema.xml.in.h:16
 msgid "The button mode"
 msgstr "Knaptilstanden"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:17
+#: ../data/org.mate.calc.gschema.xml.in.h:17
 msgid "Source currency"
 msgstr "Kildevaluta"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:18
+#: ../data/org.mate.calc.gschema.xml.in.h:18
 msgid "Currency of the current calculation"
 msgstr "Valuta for den aktuelle beregning"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:19
+#: ../data/org.mate.calc.gschema.xml.in.h:19
 msgid "Target currency"
 msgstr "Målvaluta"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:20
+#: ../data/org.mate.calc.gschema.xml.in.h:20
 msgid "Currency to convert the current calculation into"
 msgstr "Valuta, som den aktuelle beregning skal konverteres til"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:21
+#: ../data/org.mate.calc.gschema.xml.in.h:21
 msgid "Source units"
 msgstr "Kildeenheder"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:22
+#: ../data/org.mate.calc.gschema.xml.in.h:22
 msgid "Units of the current calculation"
 msgstr "Enheder for den aktuelle beregning"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:23
+#: ../data/org.mate.calc.gschema.xml.in.h:23
 msgid "Target units"
 msgstr "Målenheder"
 
-#: ../data/org.mate.mate-calc.gschema.xml.in.h:24
+#: ../data/org.mate.calc.gschema.xml.in.h:24
 msgid "Units to convert the current calculation into"
 msgstr "Den aktuelle beregning skal omregnes til disse enheder"
 
@@ -804,7 +813,6 @@ msgstr "Tunesiske dinarer"
 msgid "New Turkish Lira"
 msgstr "Nye tyrkiske lira"
 
-# vist Trinidad og Tobago
 #: ../src/currency-manager.c:85
 msgid "T&T Dollar (TTD)"
 msgstr "T&T dollar (TTD)"
@@ -835,11 +843,10 @@ msgstr "Fejl: Antallet af perioder skal være positivt"
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr ""
-"Brug:\n"
-"  %s — Foretag matematiske udregninger"
+msgstr "Brug:\n  %s — Foretag matematiske udregninger"
 
-#. Description on mate-calc command-line help options displayed on command-line
+#. Description on mate-calc command-line help options displayed on command-
+#. line
 #: ../src/mate-calc.c:87
 #, c-format
 msgid ""
@@ -848,36 +855,21 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr ""
-"Hjælpetilvalg:\n"
-"  -v, --version                   Vis versionsnummeret\n"
-"  -h, -?, --help                  Vis hjælpetilvalg\n"
-"  --help-all                      Vis alle hjælpetilvalg\n"
-"  --help-gtk                      Vis GTK+-tilvalg"
+msgstr "Hjælpetilvalg:\n  -v, --version                   Vis versionsnummeret\n  -h, -?, --help                  Vis hjælpetilvalg\n  --help-all                      Vis alle hjælpetilvalg\n  --help-gtk                      Vis GTK+-tilvalg"
 
-#. Description on mate-calc command-line GTK+ options displayed on command-line
+#. Description on mate-calc command-line GTK+ options displayed on command-
+#. line
 #: ../src/mate-calc.c:98
 #, c-format
 msgid ""
 "GTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window "
-"manager\n"
-"  --name=NAME                     Program name as used by the window "
-"manager\n"
+"  --class=CLASS                   Program class as used by the window manager\n"
+"  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr ""
-"GTK+-tilvalg:\n"
-"  --class=KLASSE                  Programklasse, som den bruges af\n"
-"                                    vindueshåndteringen\n"
-"  --name=NAVN                     Programnavnet, som det bruges af\n"
-"                                    vindueshåndteringen\n"
-"  --screen=SKÆRM                  X-skærm, der skal bruges\n"
-"  --sync                          Gør X-kald synkrone\n"
-"  --gtk-module=MODULER            Indlæs ekstra GTK+-moduler\n"
-"  --g-fatal-warnings              Gør alle advarsler fatale"
+msgstr "GTK+-tilvalg:\n  --class=KLASSE                  Programklasse, som den bruges af\n                                    vindueshåndteringen\n  --name=NAVN                     Programnavnet, som det bruges af\n                                    vindueshåndteringen\n  --screen=SKÆRM                  X-skærm, der skal bruges\n  --sync                          Gør X-kald synkrone\n  --gtk-module=MODULER            Indlæs ekstra GTK+-moduler\n  --g-fatal-warnings              Gør alle advarsler fatale"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -885,9 +877,7 @@ msgstr ""
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr ""
-"Programtilvalg:\n"
-"  -s, --solve <ligning>           Løs den givne ligning"
+msgstr "Programtilvalg:\n  -s, --solve <ligning>           Løs den givne ligning"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:156
@@ -901,388 +891,303 @@ msgstr "Argumentet --solve kræver en ligning, der skal løses"
 msgid "Unknown argument '%s'"
 msgstr "Ukendt argument \"%s\""
 
-#. Translators: Error message displayed when unable to launch help browser
-#: ../src/mate-calc.c:358
-msgid "Unable to open help file"
-msgstr "Kan ikke åbne hjælpefil"
-
-#. The translator credits. Please translate this with your name(s).
-#: ../src/mate-calc.c:390
-msgid "translator-credits"
-msgstr ""
-"Ole Laursen\n"
-"Martin Willemoes Hansen\n"
-"Lasse Bang Mikkelsen\n"
-"Peter Bach\n"
-"Ask Hjorth Larsen\n"
-"\n"
-"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
-"Mere info: http://www.dansk-gruppen.dk"
-
-#. The license this software is under (GPL2+)
-#: ../src/mate-calc.c:393
-msgid ""
-"Gcalctool is free software; you can redistribute it and/or modify\n"
-"it under the terms of the GNU General Public License as published by\n"
-"the Free Software Foundation; either version 2 of the License, or\n"
-"(at your option) any later version.\n"
-"\n"
-"Gcalctool is distributed in the hope that it will be useful,\n"
-"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License\n"
-"along with Gcalctool; if not, write to the Free Software Foundation, Inc.,\n"
-"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
-"Gcalctool er fri software. Du kan redistribuere og/eller modificere det\n"
-"under de betingelserne som er angivet i GNU General Public License, som\n"
-"er udgivet af Free Software Foundation. Enten version 2 af licensen\n"
-"eller (efter eget valg) enhver senere version.\n"
-"\n"
-"Gcalctool distribueres i håb om at det vil vise sig nyttigt, men UDEN "
-"NOGEN \n"
-"FORM FOR GARANTI, uden selv de underforståede garantier omkring \n"
-"SALGBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere detaljer kan \n"
-"læses i GNU General Public License.\n"
-"\n"
-"Du skulle have modtaget en kopi af GNU General Public License sammen med\n"
-"Gcalctool. Hvis ikke, så skriv til Free software Foundation, Inc.,\n"
-"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-
-#. Program name in the about dialog
-#: ../src/mate-calc.c:410
-msgid "Gcalctool"
-msgstr "Lommeregner"
-
-#. Copyright notice in the about dialog
-#: ../src/mate-calc.c:414
-msgid "© 1986–2010 The Gcalctool authors"
-msgstr "© 1986–2010 Forfatterne af Gcalctool"
-
-#. Short description in the about dialog
-#: ../src/mate-calc.c:418
-msgid "Calculator with financial and scientific modes."
-msgstr "Lommeregner med finansiel og videnskabelig tilstand."
-
-#: ../src/mate-calc.c:515
-msgid "Basic"
-msgstr "Basalt"
-
-#: ../src/mate-calc.c:516
-msgid "Advanced"
-msgstr "Avanceret"
-
-#: ../src/mate-calc.c:517
-msgid "Financial"
-msgstr "Finansiel"
-
-#: ../src/mate-calc.c:518
-msgid "Programming"
-msgstr "Programmering"
-
-#: ../src/mate-calc.c:519
-msgid "Mode"
-msgstr "Tilstand"
-
-#: ../src/mate-calc.c:526
-msgid "About Calculator"
-msgstr "Om Lommeregner"
-
-#: ../src/mate-calc.c:527
-msgid "Help"
-msgstr "Hjælp"
-
-#: ../src/mate-calc.c:528
-msgid "Quit"
-msgstr "Afslut"
-
 #. Tooltip for the Pi button
-#: ../src/math-buttons.c:94
+#: ../src/math-buttons.c:95
 msgid "Pi [Ctrl+P]"
 msgstr "Pi [Ctrl+P]"
 
 #. Tooltip for the Euler's Number button
-#: ../src/math-buttons.c:97
+#: ../src/math-buttons.c:98
 msgid "Euler’s Number"
 msgstr "Eulers tal"
 
 #. Tooltip for the subscript button
-#: ../src/math-buttons.c:102
+#: ../src/math-buttons.c:103
 msgid "Subscript mode [Alt]"
 msgstr "Sænket skrifttilstand [Alt]"
 
 #. Tooltip for the superscript button
-#: ../src/math-buttons.c:105
+#: ../src/math-buttons.c:106
 msgid "Superscript mode [Ctrl]"
 msgstr "Hævet skrifttilstand [Ctrl]"
 
 #. Tooltip for the scientific exponent button
-#: ../src/math-buttons.c:108
+#: ../src/math-buttons.c:109
 msgid "Scientific exponent [Ctrl+E]"
 msgstr "Videnskabelig eksponent [Ctrl+E]"
 
 #. Tooltip for the add button
-#: ../src/math-buttons.c:111
+#: ../src/math-buttons.c:112
 msgid "Add [+]"
 msgstr "Læg til [+]"
 
 #. Tooltip for the subtract button
-#: ../src/math-buttons.c:114
+#: ../src/math-buttons.c:115
 msgid "Subtract [-]"
 msgstr "Træk fra [-]"
 
 #. Tooltip for the multiply button
-#: ../src/math-buttons.c:117
+#: ../src/math-buttons.c:118
 msgid "Multiply [*]"
 msgstr "Multiplicér [*]"
 
 #. Tooltip for the divide button
-#: ../src/math-buttons.c:120
+#: ../src/math-buttons.c:121
 msgid "Divide [/]"
 msgstr "Dividér [/]"
 
 #. Tooltip for the modulus divide button
-#: ../src/math-buttons.c:123
+#: ../src/math-buttons.c:124
 msgid "Modulus divide"
 msgstr "Modulo-division"
 
 #. Tooltip for the additional functions button
-#: ../src/math-buttons.c:126
+#: ../src/math-buttons.c:127
 msgid "Additional Functions"
 msgstr "Flere funktioner"
 
 #. Tooltip for the exponent button
-#: ../src/math-buttons.c:129
+#: ../src/math-buttons.c:130
 msgid "Exponent [^ or **]"
 msgstr "Eksponent [^ eller **]"
 
 #. Tooltip for the square button
-#: ../src/math-buttons.c:132
+#: ../src/math-buttons.c:133
 msgid "Square [Ctrl+2]"
 msgstr "Kvadrat [Ctrl+2]"
 
 #. Tooltip for the percentage button
-#: ../src/math-buttons.c:135
+#: ../src/math-buttons.c:136
 msgid "Percentage [%]"
 msgstr "Procent [%]"
 
 #. Tooltip for the factorial button
-#: ../src/math-buttons.c:138
+#: ../src/math-buttons.c:139
 msgid "Factorial [!]"
 msgstr "Fakultet [!]"
 
 #. Tooltip for the absolute value button
-#: ../src/math-buttons.c:141
+#: ../src/math-buttons.c:142
 msgid "Absolute value [|]"
 msgstr "Absolut værdi [|]"
 
 #. Tooltip for the complex argument component button
-#: ../src/math-buttons.c:144
+#: ../src/math-buttons.c:145
 msgid "Complex argument"
 msgstr "Komplekst argument"
 
 #. Tooltip for the complex conjugate button
-#: ../src/math-buttons.c:147
+#: ../src/math-buttons.c:148
 msgid "Complex conjugate"
 msgstr "Kompleks konjugeret"
 
 #. Tooltip for the root button
-#: ../src/math-buttons.c:150
+#: ../src/math-buttons.c:151
 msgid "Root [Ctrl+R]"
 msgstr "Rod [Ctrl+R]"
 
 #. Tooltip for the square root button
-#: ../src/math-buttons.c:153
+#: ../src/math-buttons.c:154
 msgid "Square root [Ctrl+R]"
 msgstr "Kvadratrod [Ctrl+R]"
 
 #. Tooltip for the logarithm button
-#: ../src/math-buttons.c:156
+#: ../src/math-buttons.c:157
 msgid "Logarithm"
 msgstr "Logaritme"
 
 #. Tooltip for the natural logarithm button
-#: ../src/math-buttons.c:159
+#: ../src/math-buttons.c:160
 msgid "Natural Logarithm"
 msgstr "Naturlig logaritme"
 
 #. Tooltip for the sine button
-#: ../src/math-buttons.c:162
+#: ../src/math-buttons.c:163
 msgid "Sine"
 msgstr "Sinus"
 
 #. Tooltip for the cosine button
-#: ../src/math-buttons.c:165
+#: ../src/math-buttons.c:166
 msgid "Cosine"
 msgstr "Cosinus"
 
 #. Tooltip for the tangent button
-#: ../src/math-buttons.c:168
+#: ../src/math-buttons.c:169
 msgid "Tangent"
 msgstr "Tangens"
 
 #. Tooltip for the hyperbolic sine button
-#: ../src/math-buttons.c:171
+#: ../src/math-buttons.c:172
 msgid "Hyperbolic Sine"
 msgstr "Sinushyperbolsk"
 
 #. Tooltip for the hyperbolic cosine button
-#: ../src/math-buttons.c:174
+#: ../src/math-buttons.c:175
 msgid "Hyperbolic Cosine"
 msgstr "Cosinushyperbolsk"
 
 #. Tooltip for the hyperbolic tangent button
-#: ../src/math-buttons.c:177
+#: ../src/math-buttons.c:178
 msgid "Hyperbolic Tangent"
 msgstr "Tangenshyperbolsk"
 
+#. Tooltip for the inverse sine button
+#: ../src/math-buttons.c:181
+msgid "Inverse Sine"
+msgstr ""
+
+#. Tooltip for the inverse cosine button
+#: ../src/math-buttons.c:184
+msgid "Inverse Cosine"
+msgstr ""
+
+#. Tooltip for the inverse tangent button
+#: ../src/math-buttons.c:187
+msgid "Inverse Tangent"
+msgstr ""
+
 #. Tooltip for the inverse button
-#: ../src/math-buttons.c:180
+#: ../src/math-buttons.c:190
 msgid "Inverse [Ctrl+I]"
 msgstr "Reciprok [Ctrl+I]"
 
 #. Tooltip for the boolean AND button
-#: ../src/math-buttons.c:183
+#: ../src/math-buttons.c:193
 msgid "Boolean AND"
 msgstr "Boolesk OG"
 
 #. Tooltip for the boolean OR button
-#: ../src/math-buttons.c:186
+#: ../src/math-buttons.c:196
 msgid "Boolean OR"
 msgstr "Boolesk ELLER"
 
 #. Tooltip for the exclusive OR button
-#: ../src/math-buttons.c:189
+#: ../src/math-buttons.c:199
 msgid "Boolean Exclusive OR"
 msgstr "Boolesk eksklusiv ELLER"
 
 #. Tooltip for the boolean NOT button
-#: ../src/math-buttons.c:192
+#: ../src/math-buttons.c:202
 msgid "Boolean NOT"
 msgstr "Boolesk IKKE"
 
 #. Tooltip for the integer component button
-#: ../src/math-buttons.c:195 ../src/math-buttons.c:983
+#: ../src/math-buttons.c:205 ../src/math-buttons.c:994
 msgid "Integer Component"
 msgstr "Heltalsdel"
 
 #. Tooltip for the fractional component button
-#: ../src/math-buttons.c:198 ../src/math-buttons.c:985
+#: ../src/math-buttons.c:208 ../src/math-buttons.c:996
 msgid "Fractional Component"
 msgstr "Decimaldel"
 
 #. Tooltip for the real component button
-#: ../src/math-buttons.c:201
+#: ../src/math-buttons.c:211
 msgid "Real Component"
 msgstr "Realdel"
 
 #. Tooltip for the imaginary component button
-#: ../src/math-buttons.c:204
+#: ../src/math-buttons.c:214
 msgid "Imaginary Component"
 msgstr "Imaginærdel"
 
 #. Tooltip for the ones' complement button
-#: ../src/math-buttons.c:207
+#: ../src/math-buttons.c:217
 msgid "Ones' Complement"
 msgstr "1'er-komplement"
 
 #. Tooltip for the two's complement button
-#: ../src/math-buttons.c:210
+#: ../src/math-buttons.c:220
 msgid "Two's Complement"
 msgstr "2'er-komplement"
 
 #. Tooltip for the truncate button
-#: ../src/math-buttons.c:213
+#: ../src/math-buttons.c:223
 msgid "Truncate"
 msgstr "Trunkér"
 
 #. Tooltip for the start group button
-#: ../src/math-buttons.c:216
+#: ../src/math-buttons.c:226
 msgid "Start Group [(]"
 msgstr "Start gruppe [(]"
 
 #. Tooltip for the end group button
-#: ../src/math-buttons.c:219
+#: ../src/math-buttons.c:229
 msgid "End Group [)]"
 msgstr "Afslut gruppe [)]"
 
 #. Tooltip for the solve button
-#: ../src/math-buttons.c:228
+#: ../src/math-buttons.c:238
 msgid "Calculate Result"
 msgstr "Beregn resultat"
 
 #. Tooltip for the factor button
-#: ../src/math-buttons.c:231
+#: ../src/math-buttons.c:241
 msgid "Factorize [Ctrl+F]"
 msgstr "Faktorisér [Ctrl+F]"
 
 #. Tooltip for the clear button
-#: ../src/math-buttons.c:234
+#: ../src/math-buttons.c:244
 msgid "Clear Display [Escape]"
 msgstr "Ryd skærm [Escape]"
 
 #. Tooltip for the undo button
-#: ../src/math-buttons.c:237
+#: ../src/math-buttons.c:247
 msgid "Undo [Ctrl+Z]"
 msgstr "Fortryd [Ctrl+Z]"
 
 #. Tooltip for the double declining depreciation button
-#: ../src/math-buttons.c:249
+#: ../src/math-buttons.c:259
 msgid "Double Declining Depreciation"
 msgstr "Dobbeltmindskende afskrivning"
 
-# ..term?
 #. Tooltip for the financial term button
-#: ../src/math-buttons.c:255
+#: ../src/math-buttons.c:265
 msgid "Financial Term"
 msgstr "Finansiel term"
 
 #. Tooltip for the sum of the years digits depreciation button
-#: ../src/math-buttons.c:258
+#: ../src/math-buttons.c:268
 msgid "Sum of the Years Digits Depreciation"
 msgstr "Summen af årenes cifre-afskrivning"
 
 #. Tooltip for the straight line depreciation button
-#: ../src/math-buttons.c:261
+#: ../src/math-buttons.c:271
 msgid "Straight Line Depreciation"
 msgstr "Retlinjet afskrivning"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: ../src/math-buttons.c:601
+#: ../src/math-buttons.c:611
 msgid "Binary"
 msgstr "Binær"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: ../src/math-buttons.c:605
+#: ../src/math-buttons.c:615
 msgid "Octal"
 msgstr "Oktal"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: ../src/math-buttons.c:609
+#: ../src/math-buttons.c:619
 msgid "Decimal"
 msgstr "Titalssystem"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: ../src/math-buttons.c:613
+#: ../src/math-buttons.c:623
 msgid "Hexadecimal"
 msgstr "Heksadecimal"
 
-# right og left shift er bitvise operatorer, der forskyder N bit til højre eller venstre.  Places og bit er derfor det samme i denne sammenhæng
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: ../src/math-buttons.c:894 ../src/math-buttons.c:937
+#: ../src/math-buttons.c:905 ../src/math-buttons.c:948
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
 msgstr[0] "_%d bit"
 msgstr[1] "_%d bit"
 
-# right og left shift er bitvise operatorer, der forskyder N bit til højre eller venstre.  Places og bit er derfor det samme i denne sammenhæng
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: ../src/math-buttons.c:898 ../src/math-buttons.c:941
+#: ../src/math-buttons.c:909 ../src/math-buttons.c:952
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
@@ -1290,26 +1195,27 @@ msgstr[0] "%d bit"
 msgstr[1] "%d bit"
 
 #. Tooltip for the round button
-#: ../src/math-buttons.c:987
+#: ../src/math-buttons.c:998
 msgid "Round"
 msgstr "Afrund"
 
 #. Tooltip for the floor button
-#: ../src/math-buttons.c:989
+#: ../src/math-buttons.c:1000
 msgid "Floor"
 msgstr "Gulv"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:991
+#: ../src/math-buttons.c:1002
 msgid "Ceiling"
 msgstr "Loft"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:993
+#: ../src/math-buttons.c:1004
 msgid "Sign"
 msgstr "Fortegn"
 
-#. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
+#. Label that is displayed between the two conversion combo boxes, e.g.
+#. "[degrees] in [radians]"
 #: ../src/math-converter.c:412
 msgid " in "
 msgstr " i "
@@ -1329,138 +1235,224 @@ msgstr "Ingen fortrydelseshistorik"
 msgid "No redo history"
 msgstr "Ingen fortrydelseshistorik"
 
-#: ../src/math-equation.c:944
+#: ../src/math-equation.c:948
 msgid "No sane value to store"
 msgstr "Ingen gyldig værdi til at lagre"
 
-#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
-#: ../src/math-equation.c:1226
+#. Error displayed to user when they perform a bitwise operation on numbers
+#. greater than the current word
+#: ../src/math-equation.c:1230
 msgid "Overflow. Try a bigger word size"
 msgstr "Overløb. Prøv at øge word-størrelsen"
 
 #. Error displayed to user when they an unknown variable is entered
-#: ../src/math-equation.c:1231
+#: ../src/math-equation.c:1235
 #, c-format
 msgid "Unknown variable '%s'"
 msgstr "Ukendt variabel \"%s\""
 
 #. Error displayed to user when an unknown function is entered
-#: ../src/math-equation.c:1236
+#: ../src/math-equation.c:1240
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr "Funktionen \"%s\" er ikke defineret"
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: ../src/math-equation.c:1241
+#: ../src/math-equation.c:1245
 msgid "Unknown conversion"
 msgstr "Ukendt konvertering"
 
 #. Uncategorized error. Show error token to user
-#: ../src/math-equation.c:1249
+#: ../src/math-equation.c:1253
 #, c-format
 msgid "Malformed expression at token '%s'"
 msgstr "Misdannet udtryk ved symbolet \"%s\""
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: ../src/math-equation.c:1252 ../src/math-equation.c:1257
+#: ../src/math-equation.c:1256 ../src/math-equation.c:1261
 msgid "Malformed expression"
 msgstr "Misdannet udtryk"
 
-#: ../src/math-equation.c:1271
+#: ../src/math-equation.c:1275
 msgid "Calculating"
 msgstr "Udregner"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1387
+#: ../src/math-equation.c:1394
 msgid "Need an integer to factorize"
 msgstr "Kræver et heltal at faktorisere"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1459
+#: ../src/math-equation.c:1470
 msgid "No sane value to bitwise shift"
 msgstr "Ingen gyldig værdi til at udføre bitvis-skift"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1490
+#: ../src/math-equation.c:1501
 msgid "Displayed value not an integer"
 msgstr "Den viste værdi er ikke et heltal"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1915
+#: ../src/math-equation.c:1926
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
 #. Label on close button in preferences dialog
-#: ../src/math-preferences.c:235
+#: ../src/math-preferences.c:242
 msgid "_Close"
 msgstr "_Luk"
 
-#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
-#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
-#: ../src/math-preferences.c:245 ../src/unit-manager.c:54
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
+#. calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
+#. grads
+#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "Grader"
 
-#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
-#: ../src/math-preferences.c:249 ../src/unit-manager.c:55
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
+#. calculations
+#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "Radianer"
 
-#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
-#: ../src/math-preferences.c:253 ../src/unit-manager.c:56
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
+#. calculations
+#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "Nygrader"
 
-#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
-#: ../src/math-preferences.c:263
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
+#. number 1.234×10^99)
+#: ../src/math-preferences.c:270
 msgid "Automatic"
 msgstr "Automatisk"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:267
+#: ../src/math-preferences.c:274
 msgid "Fixed"
 msgstr "Fast"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:271
+#: ../src/math-preferences.c:278
 msgid "Scientific"
 msgstr "Videnskabelig"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:275
+#: ../src/math-preferences.c:282
 msgid "Engineering"
 msgstr "Ingeniør"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:286
+#: ../src/math-preferences.c:293
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "Vis %d _decimaler"
 
-#. Translators: Error displayed when boolean AND attempted on non-integer values
+#. Translators: Error message displayed when unable to launch help browser
+#: ../src/math-window.c:198
+msgid "Unable to open help file"
+msgstr "Kan ikke åbne hjælpefil"
+
+#. The translator credits. Please translate this with your name(s).
+#: ../src/math-window.c:225
+msgid "translator-credits"
+msgstr "Ole Laursen\nMartin Willemoes Hansen\nLasse Bang Mikkelsen\nPeter Bach\nAsk Hjorth Larsen\n\nDansk-gruppen <dansk@dansk-gruppen.dk>\nMere info: http://www.dansk-gruppen.dk"
+
+#. The license this software is under (GPL2+)
+#: ../src/math-window.c:232
+msgid ""
+"mate-calc is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"mate-calc is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
+"151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr ""
+
+#: ../src/math-window.c:247
+msgid "mate-calc"
+msgstr "Lommeregner"
+
+#: ../src/math-window.c:251
+msgid "Calculator with financial and scientific modes."
+msgstr "Lommeregner med finansiel og videnskabelig tilstand."
+
+#. Calculator menu
+#: ../src/math-window.c:354
+msgid "_Calculator"
+msgstr "_Lommeregner"
+
+#. Mode menu
+#: ../src/math-window.c:356
+msgid "_Mode"
+msgstr "_Tilstand"
+
+#. Help menu label
+#: ../src/math-window.c:358
+msgid "_Help"
+msgstr "_Hjælp"
+
+#. Basic menu label
+#: ../src/math-window.c:360
+msgid "_Basic"
+msgstr "_Basalt"
+
+#. Advanced menu label
+#: ../src/math-window.c:362
+msgid "_Advanced"
+msgstr "_Avanceret"
+
+#. Financial menu label
+#: ../src/math-window.c:364
+msgid "_Financial"
+msgstr "_Finansiel"
+
+#. Programming menu label
+#: ../src/math-window.c:366
+msgid "_Programming"
+msgstr "_Programmering"
+
+#. Help>Contents menu label
+#: ../src/math-window.c:368
+msgid "_Contents"
+msgstr "_Indhold"
+
+#. Translators: Error displayed when boolean AND attempted on non-integer
+#. values
 #: ../src/mp-binary.c:115
 msgid "Boolean AND is only defined for positive integers"
 msgstr "Boolesk OG er kun defineret for naturlige tal"
 
-#. Translators: Error displayed when boolean OR attempted on non-integer values
+#. Translators: Error displayed when boolean OR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:128
 msgid "Boolean OR is only defined for positive integers"
 msgstr "Boolesk ELLER er kun defineret for naturlige tal"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:141
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "Boolesk XOR er kun defineret for naturlige tal"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
 #: ../src/mp-binary.c:156
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "Boolesk IKKE er kun defineret for naturlige tal"
 
 #. Translators: Error displayed when bit shift attempted on non-integer values
-#: ../src/mp-binary.c:187
+#: ../src/mp-binary.c:190
 msgid "Shift is only possible on integer values"
 msgstr "Bitvis forskydning er kun mulig på heltalsværdier"
 
@@ -1483,7 +1475,8 @@ msgstr "Division med nul er ikke defineret"
 msgid "Logarithm of zero is undefined"
 msgstr "Logaritmen til nul er ikke defineret"
 
-#. Translators: Error displayed when attempted to raise 0 to a negative exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. exponent
 #: ../src/mp.c:1680 ../src/mp.c:1994
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "Potenser af nul er ikke defineret for negative eksponenter"
@@ -1504,12 +1497,14 @@ msgstr "Negative rødder af nul er ikke defineret"
 msgid "nth root of negative number is undefined for even n"
 msgstr "n'te rod af et negativt tal er ikke defineret for lige n"
 
-#. Translators: Error displayed when attempted take the factorial of a fractional number
+#. Translators: Error displayed when attempted take the factorial of a
+#. fractional number
 #: ../src/mp.c:1934
 msgid "Factorial is only defined for natural numbers"
 msgstr "Fakultet er kun defineret for naturlige tal"
 
-#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
+#. Translators: Error displayed when attemping to do a modulus division on
+#. non-integer numbers
 #: ../src/mp.c:1954
 msgid "Modulus division is only defined for integers"
 msgstr "Modulo-division er kun defineret for heltal"
@@ -1517,10 +1512,9 @@ msgstr "Modulo-division er kun defineret for heltal"
 #. Translators: Error displayed when tangent value is undefined
 #: ../src/mp-trigonometric.c:310
 msgid ""
-"Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
-msgstr ""
-"Tangens er ikke defineret for vinkler, der er multipla af π (180°) fra π∕2 "
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
 "(90°)"
+msgstr "Tangens er ikke defineret for vinkler, der er multipla af π (180°) fra π∕2 (90°)"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: ../src/mp-trigonometric.c:355
@@ -1532,12 +1526,14 @@ msgstr "Arcussinus er ikke defineret for værdier uden for [-1, 1]"
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
 msgstr "Arcuscosinus er ikke defineret for værdier uden for [-1, 1]"
 
-#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
+#. Translators: Error displayed when inverse hyperbolic cosine value is
+#. undefined
 #: ../src/mp-trigonometric.c:591
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
 msgstr "Areacosinushyperbolsk er ikke defineret for værdier mindre end et"
 
-#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
+#. Translators: Error displayed when inverse hyperbolic tangent value is
+#. undefined
 #: ../src/mp-trigonometric.c:615
 msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
 msgstr "Areatangenshyperbolsk er ikke defineret for værdier uden for [-1, 1]"
@@ -1624,7 +1620,6 @@ msgstr "au"
 msgid "Nautical Miles"
 msgstr "Sømil"
 
-# I følge denne side. http://www.jmarcussen.dk/maritim/mart/distancer.html#dest450
 #: ../src/unit-manager.c:60
 #, c-format
 msgctxt "unit-format"
@@ -1835,7 +1830,6 @@ msgstr "hektar,hektar,ha"
 msgid "Acres"
 msgstr "Acre"
 
-# right og left shift er bitvise operatorer, der forskyder N bit til højre eller venstre.  Places og bit er derfor det samme i denne sammenhæng
 #: ../src/unit-manager.c:74
 #, c-format
 msgctxt "unit-format"
@@ -1977,7 +1971,6 @@ msgctxt "unit-format"
 msgid "%s mL"
 msgstr "%s mL"
 
-# ikke sikker på om det er nødvendigt at gentage.  Måske kan man skrive et andet antal muligheder?
 #: ../src/unit-manager.c:83
 msgctxt "unit-symbols"
 msgid "millilitre,millilitres,milliliter,milliliters,mL,cm³"
@@ -2270,1531 +2263,9 @@ msgstr "Temperatur"
 msgid "Currency"
 msgstr "Valuta"
 
-#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
+#. Translators: result of currency conversion, %s is the symbol, %%s is the
+#. placeholder for amount, i.e.: USD100
 #: ../src/unit-manager.c:137
 #, c-format
 msgid "%s%%s"
 msgstr "%s %%s"
-
-#~ msgid "<i>x</i>"
-#~ msgstr "<i>x</i>"
-
-#~ msgid "_Calculator"
-#~ msgstr "_Lommeregner"
-
-#~ msgid "_Mode"
-#~ msgstr "_Tilstand"
-
-#~ msgid "_Basic"
-#~ msgstr "_Basalt"
-
-#~ msgid "_Advanced"
-#~ msgstr "_Avanceret"
-
-#~ msgid "_Financial"
-#~ msgstr "_Finansiel"
-
-#~ msgid "_Programming"
-#~ msgstr "_Programmering"
-
-#~ msgid "_Contents"
-#~ msgstr "_Indhold"
-
-#~ msgctxt "unit-format"
-#~ msgid "%s˚C"
-#~ msgstr "%s˚C"
-
-#~ msgctxt "unit-format"
-#~ msgid "%s˚F"
-#~ msgstr "%s˚F"
-
-#~ msgctxt "unit-format"
-#~ msgid "%s˚K"
-#~ msgstr "%s˚K"
-
-#~ msgctxt "unit-symbols"
-#~ msgid "degK,˚K"
-#~ msgstr "gradK,˚K"
-
-#~ msgctxt "unit-format"
-#~ msgid "%s˚R"
-#~ msgstr "%s˚R"
-
-#~ msgid "&#x2190; R"
-#~ msgstr "&#x2190; R"
-
-#~ msgid "&#x2192; R"
-#~ msgstr "&#x2192; R"
-
-#~ msgid "Recall"
-#~ msgstr "Hent"
-
-#~ msgid "Undo"
-#~ msgstr "Fortryd"
-
-#~ msgid "Assign Variable"
-#~ msgstr "Tildel variabel"
-
-#~ msgid "Insert Variable"
-#~ msgstr "Indsæt variabel"
-
-#~ msgid "No variables defined"
-#~ msgstr "Ingen variable defineret"
-
-#~ msgid "Display Mode"
-#~ msgstr "Visningstilstand"
-
-#~ msgid "Indicates whether the memory register window is initially displayed."
-#~ msgstr ""
-#~ "Angiver om vinduet for hukommelsesregistre skal vises til at begynde med."
-
-#~ msgid "Show Registers"
-#~ msgstr "Vis registre"
-
-#~ msgid ""
-#~ "The initial calculator mode. Valid values are \"BASIC\", \"FINANCIAL\", "
-#~ "\"LOGICAL\", \"SCIENTIFIC\" and \"PROGRAMMING\""
-#~ msgstr ""
-#~ "Lommeregnerens begyndelsestilstand. Gyldige værdier er \"BASIC\", "
-#~ "\"FINANCIAL\", \"LOGICAL\", \"SCIENTIFIC\" og \"PROGRAMMING\""
-
-#~ msgid ""
-#~ "The initial trigonometric type. Valid values are \"DEG\" (degrees), \"GRAD"
-#~ "\" (gradians) and \"RAD\" (radians)."
-#~ msgstr ""
-#~ "Den trigonometriske type ved start. Gyldige værdier er \"DEG\" (degrees), "
-#~ "\"GRAD\" (gradians) og \"RAD\" (radians)."
-
-#~ msgid "The initial x-coordinate for the window"
-#~ msgstr "Vinduets start-x-koordinat"
-
-#~ msgid "The initial y-coordinate for the window"
-#~ msgstr "Vinduets start-y-koordinat"
-
-#~ msgid ""
-#~ "The number of pixels to place the window from the left of the screen."
-#~ msgstr ""
-#~ "Pixelpositionen, hvor vinduet placeres, målt fra venstre side af skærmen."
-
-#~ msgid "The number of pixels to place the window from the top of the screen."
-#~ msgstr "Pixelpositionen, hvor vinduet placeres, målt fra toppen af skærmen."
-
-#~ msgid "Trigonometric type"
-#~ msgstr "Trigonometrisk type"
-
-#~ msgid ""
-#~ "Converts between different currencies. Enter the amount and the currency "
-#~ "you want to convert from on the upper row, and the currency you want to "
-#~ "convert to on the lower row, and the amount will be displayed on the "
-#~ "lower row."
-#~ msgstr ""
-#~ "Omregner mellem forskellige valutaer. Indtast beløbet samt den valuta, du "
-#~ "vil konvertere fra i øvre række, og valuaten du vil konvertere til i "
-#~ "nedre række. Dermed vil det omregnede beløb blive vist i nedre række."
-
-#~ msgid "Currency Conversion"
-#~ msgstr "Valutaomregning"
-
-#~ msgid "&#xA4;$&#x20AC;"
-#~ msgstr "&#xA4;$&#x20AC;"
-
-#~ msgid "10 places"
-#~ msgstr "10 bit"
-
-#~ msgid "11 places"
-#~ msgstr "11 bit"
-
-#~ msgid "12 places"
-#~ msgstr "12 bit"
-
-#~ msgid "13 places"
-#~ msgstr "13 bit"
-
-#~ msgid "14 places"
-#~ msgstr "14 bit"
-
-#~ msgid "15 places"
-#~ msgstr "15 bit"
-
-#~ msgid "Base 16"
-#~ msgstr "Grundtal 16"
-
-#~ msgid "Base 2"
-#~ msgstr "Grundtal 2"
-
-#~ msgid "Base 8"
-#~ msgstr "Grundtal 8"
-
-#~ msgid "Calculate result [=]"
-#~ msgstr "Beregn resultat [=]"
-
-#~ msgid "Clr"
-#~ msgstr "Nuls"
-
-#~ msgid "Display _Format:"
-#~ msgstr "Visnings_format:"
-
-#~ msgid "Factorize into prime numbers (Ctrl+F)"
-#~ msgstr "Primtalsfaktorisér (Ctrl+F)"
-
-#~ msgid "Insert ASCII Value"
-#~ msgstr "Indsæt ASCII-værdi"
-
-#~ msgid "Insert character"
-#~ msgstr "Indsæt tegn"
-
-#~ msgid "Numeric point [. or ,]"
-#~ msgstr "Decimalkomma [. eller ,]"
-
-#~ msgid "Random number"
-#~ msgstr "Tilfældigt tal"
-
-#~ msgid "Recall value"
-#~ msgstr "Hent værdi"
-
-#~ msgid "Result Region"
-#~ msgstr "Resultatregion"
-
-#~ msgid "Shift left [<]"
-#~ msgstr "Forskyd til venstre [<]"
-
-#~ msgid "Shift right [>]"
-#~ msgstr "Forskyd til højre [>]"
-
-#~ msgid "Store value"
-#~ msgstr "Gem værdi"
-
-#~ msgid "Truncate value"
-#~ msgstr "Trunkér værdi"
-
-#~ msgid "_2 places"
-#~ msgstr "_2 bit"
-
-#~ msgid "_3 places"
-#~ msgstr "_3 bit"
-
-#~ msgid "_4 places"
-#~ msgstr "_4 bit"
-
-#~ msgid "_5 places"
-#~ msgstr "_5 bit"
-
-#~ msgid "_6 places"
-#~ msgstr "_6 bit"
-
-#~ msgid "_7 places"
-#~ msgstr "_7 bit"
-
-#~ msgid "_8 places"
-#~ msgstr "_8 bit"
-
-#~ msgid "_9 places"
-#~ msgstr "_9 bit"
-
-#~ msgid "_Scientific"
-#~ msgstr "_Videnskabelig"
-
-#~ msgid "_View"
-#~ msgstr "_Vis"
-
-#~ msgid "No redo steps"
-#~ msgstr "Ingen omgør-trin"
-
-#~ msgid "Calculator — Advanced"
-#~ msgstr "Lommeregner — Avanceret"
-
-#~ msgid "Calculator — Financial"
-#~ msgstr "Lommeregner — Finansiel"
-
-#~ msgid "Calculator — Scientific"
-#~ msgstr "Lommeregner — Videnskabelig"
-
-#~ msgid "Calculator — Programming"
-#~ msgstr "Lommeregner — Programmering"
-
-#~ msgid "Error loading user interface"
-#~ msgstr "Fejl under indlæsning af brugergrænseflade"
-
-#~ msgid ""
-#~ "A required file is missing or damaged. Please check your installation.\n"
-#~ "\n"
-#~ "%s"
-#~ msgstr ""
-#~ "En påkrævet fil mangler eller er beskadiget - kontrollér venligst din "
-#~ "installation.\n"
-#~ "\n"
-#~ "%s"
-
-#~ msgid ""
-#~ "You don't have any recent currency rates. Should some be downloaded now?"
-#~ msgstr "Du har ingen opdaterede valutakurser. Vil du hente nogle nu?"
-
-#~ msgid ""
-#~ "Currency rates could not be downloaded. You may receive inaccurate "
-#~ "results, or you may not receive any results at all."
-#~ msgstr ""
-#~ "Kunne ikke hente nogen valutakurser. Du vil måske få upræcise resultater, "
-#~ "eller ingen resultater overhovedet."
-
-#~ msgid "Logarithm of negative values is undefined"
-#~ msgstr "Logaritmen af et negativt tal er ikke defineret"
-
-#~ msgid "The power of negative numbers is only defined for integer exponents"
-#~ msgstr "Potenser af negative tal er kun defineret for heltalseksponenter"
-
-#~ msgid "Square root is undefined for negative values"
-#~ msgstr "Kvadratroden er ikke defineret for negative tal"
-
-#~ msgid "%"
-#~ msgstr "%"
-
-#~ msgid "&#x221A;"
-#~ msgstr "&#x221A;"
-
-#~ msgid "&#xB1;"
-#~ msgstr "&#xB1;"
-
-#~ msgid "&#xD7;"
-#~ msgstr "&#xD7;"
-
-#~ msgid "&#xF7;"
-#~ msgstr "&#xF7;"
-
-#~ msgid "("
-#~ msgstr "("
-
-#~ msgid "(Ln)"
-#~ msgstr "(Ln)"
-
-#~ msgid "(Set accuracy from 0 to N numeric places [A])"
-#~ msgstr "(Indstil nøjagtigheden fra 0 til 9 cifre [A])"
-
-#~ msgid "(X^Y)"
-#~ msgstr "(X^Y)"
-
-#~ msgid "(cos)"
-#~ msgstr "(cos)"
-
-#~ msgid "(log)"
-#~ msgstr "(log)"
-
-#~ msgid "(log2)"
-#~ msgstr "(log2)"
-
-#~ msgid "(sin)"
-#~ msgstr "(sin)"
-
-#~ msgid "(tan)"
-#~ msgstr "(tan)"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "+"
-#~ msgstr "+"
-
-#~ msgid "0"
-#~ msgstr "0"
-
-#~ msgid "1"
-#~ msgstr "1"
-
-#~ msgid "1's"
-#~ msgstr "1'er"
-
-#~ msgid "1/<i>x</i>"
-#~ msgstr "1/<i>x</i>"
-
-#~ msgid "1/x"
-#~ msgstr "1/x"
-
-#~ msgid "15"
-#~ msgstr "15"
-
-#~ msgid "2"
-#~ msgstr "2"
-
-#~ msgid "2's"
-#~ msgstr "2'er"
-
-#~ msgid "2's complement [Z]"
-#~ msgstr "2'er-komplement [Z]"
-
-#~ msgid "3"
-#~ msgstr "3"
-
-#~ msgid "31"
-#~ msgstr "31"
-
-#~ msgid "32"
-#~ msgstr "32"
-
-#~ msgid "4"
-#~ msgstr "4"
-
-#~ msgid "47"
-#~ msgstr "47"
-
-#~ msgid "5"
-#~ msgstr "5"
-
-#~ msgid "6"
-#~ msgstr "6"
-
-#~ msgid "63"
-#~ msgstr "63"
-
-#~ msgid "7"
-#~ msgstr "7"
-
-#~ msgid "8"
-#~ msgstr "8"
-
-#~ msgid "9"
-#~ msgstr "9"
-
-#~ msgid "<"
-#~ msgstr "<"
-
-#~ msgid "<i>x</i><sup>2</sup>"
-#~ msgstr "<i>x</i><sup>2</sup>"
-
-#~ msgid ""
-#~ "<small><i><b>Note:</b> All constant values are specified in the decimal "
-#~ "numeric base.</i></small>"
-#~ msgstr ""
-#~ "<small><i><b>NB:</b> Alle konstanter angives i decimaltal.</i></small>"
-
-#~ msgid "<span weight=\"bold\">R0</span>"
-#~ msgstr "<span weight=\"bold\">R0</span>"
-
-#~ msgid "<span weight=\"bold\">R1</span>"
-#~ msgstr "<span weight=\"bold\">R1</span>"
-
-#~ msgid "<span weight=\"bold\">R2</span>"
-#~ msgstr "<span weight=\"bold\">R2</span>"
-
-#~ msgid "<span weight=\"bold\">R3</span>"
-#~ msgstr "<span weight=\"bold\">R3</span>"
-
-#~ msgid "<span weight=\"bold\">R4</span>"
-#~ msgstr "<span weight=\"bold\">R4</span>"
-
-#~ msgid "<span weight=\"bold\">R5</span>"
-#~ msgstr "<span weight=\"bold\">R5</span>"
-
-#~ msgid "<span weight=\"bold\">R6</span>"
-#~ msgstr "<span weight=\"bold\">R6</span>"
-
-#~ msgid "<span weight=\"bold\">R7</span>"
-#~ msgstr "<span weight=\"bold\">R7</span>"
-
-#~ msgid "<span weight=\"bold\">R8</span>"
-#~ msgstr "<span weight=\"bold\">R8</span>"
-
-#~ msgid "<span weight=\"bold\">R9</span>"
-#~ msgstr "<span weight=\"bold\">R9</span>"
-
-#~ msgid ">"
-#~ msgstr ">"
-
-#~ msgid "A"
-#~ msgstr "A"
-
-#~ msgid "AND"
-#~ msgstr "AND"
-
-#~ msgid "Abs"
-#~ msgstr "Abs"
-
-#~ msgid "Acc"
-#~ msgstr "Nøj"
-
-#~ msgid "Add"
-#~ msgstr "Læg til"
-
-#~ msgid "B"
-#~ msgstr "B"
-
-#~ msgid "Backspace"
-#~ msgstr "Slet"
-
-#~ msgid "Bitwise AND [&]"
-#~ msgstr "Bitvis AND (og) [&]"
-
-#~ msgid "Bitwise NOT [~]"
-#~ msgstr "Bitvis NOT (ikke) [~]"
-
-#~ msgid "Bitwise OR [|]"
-#~ msgstr "Bitvis OR (eller) [|]"
-
-#~ msgid "Bitwise XNOR [{]"
-#~ msgstr "Bitvis XNOR (eksklusiv hverken-eller) [{]"
-
-#~ msgid "Bitwise XOR [x]"
-#~ msgstr "Bitvis XOR (eksklusiv eller) [x]"
-
-#~ msgid "Bksp"
-#~ msgstr "Bak"
-
-#~ msgid "C"
-#~ msgstr "C"
-
-#~ msgid "CE"
-#~ msgstr "Ryd"
-
-#~ msgid "Change Sign [C]"
-#~ msgstr "Skift fortegn [C]"
-
-#~ msgid "Change sign"
-#~ msgstr "Skift fortegn"
-
-#~ msgid "Clear displayed value and any partial calculation [Shift Delete]"
-#~ msgstr "Slet den viste værdi og alle delvise beregninger [Skift Del]"
-
-#~ msgid "Clear entry"
-#~ msgstr "Ryd"
-
-#~ msgid "Click a _value or description to edit it:"
-#~ msgstr "Klik på en _værdi eller beskrivelse for at ændre den:"
-
-#~ msgid "Compounding term"
-#~ msgstr "Rentetilskrivningstermin"
-
-#~ msgid "Compounding term [m]"
-#~ msgstr "Rentetilskrivningstermin [m]"
-
-#~ msgid "Con"
-#~ msgstr "Kon"
-
-#~ msgid "Constants [#]"
-#~ msgstr "Konstanter [#]"
-
-#~ msgid "Copy selection"
-#~ msgstr "Kopiér markering"
-
-#~ msgid "D"
-#~ msgstr "D"
-
-#~ msgid "Divide"
-#~ msgstr "Dividér"
-
-#~ msgid "Double-declining depreciation"
-#~ msgstr "Dobbeltmindskende afskrivning"
-
-#~ msgid "Double-declining depreciation [D]"
-#~ msgstr "Dobbeltmindskende afskrivning [D]"
-
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "E_ng"
-#~ msgstr "I_ng"
-
-#~ msgid "Edit Constants"
-#~ msgstr "Redigér konstanter"
-
-#~ msgid "Edit Constants..."
-#~ msgstr "Redigér konstanter..."
-
-#~ msgid "Edit Functions..."
-#~ msgstr "Redigér funktioner..."
-
-#~ msgid "End group of calculations [)]"
-#~ msgstr "Afslut beregningsgruppe [)]"
-
-#~ msgid "Enter an exponential number [E]"
-#~ msgstr "Indtast et tal eksponentielt [E]"
-
-#~ msgid "Exch"
-#~ msgstr "Omb"
-
-#~ msgid "Exchange displayed value with memory register [X]"
-#~ msgstr "Ombyt vist værdi med hukommelsesregistret [X]"
-
-#~ msgid "Exchange with register"
-#~ msgstr "Ombyt med register"
-
-#~ msgid "Exp"
-#~ msgstr "Exp"
-
-#~ msgid "F"
-#~ msgstr "F"
-
-#~ msgid "Factorial of displayed value [!]"
-#~ msgstr "Fakultet af den viste værdi [!]"
-
-#~ msgid "Fractional portion of displayed value [:]"
-#~ msgstr "Decimaldelen af den viste værdi [:]"
-
-#~ msgid "Fun"
-#~ msgstr "Fun"
-
-#~ msgid "Future value [v]"
-#~ msgstr "Fremtidig værdi [v]"
-
-#~ msgid "Gross Profit Margin [I]"
-#~ msgstr "Bruttoprofitmargen [I]"
-
-#~ msgid "Gross Profit Margin [g]"
-#~ msgstr "Bruttoprofitmargen [g]"
-
-#~ msgid "H_yp"
-#~ msgstr "H_yp"
-
-#~ msgid "He_x"
-#~ msgstr "He_x"
-
-#~ msgid "Insert ASCII value"
-#~ msgstr "Indsæt ASCII-værdi"
-
-#~ msgid "Int"
-#~ msgstr "Helt"
-
-#~ msgid "Integer portion of displayed value [i]"
-#~ msgstr "Heltalsdelen af den viste værdi [i]"
-
-#~ msgid "Left bracket"
-#~ msgstr "Venstreparantes"
-
-#~ msgid "Makes the bitwise functions use 16 bit mode"
-#~ msgstr "Får de bitvise funktioner til at bruge 16-bit-tilstand"
-
-#~ msgid "Makes the bitwise functions use 32 bit mode"
-#~ msgstr "Får de bitvise funktioner til at bruge 32-bit-tilstand"
-
-#~ msgid "Makes the bitwise functions use 64 bit mode"
-#~ msgstr "Får de bitvise funktioner til at bruge 64-bit-tilstand"
-
-#~ msgid "Memory Registers"
-#~ msgstr "Hukommelsesregistre"
-
-#~ msgid "Mod"
-#~ msgstr "Mod"
-
-#~ msgid "Multiply"
-#~ msgstr "Multiplicér"
-
-#~ msgid "NOT"
-#~ msgstr "NOT"
-
-#~ msgid "Numeric 0"
-#~ msgstr "Tallet 0"
-
-#~ msgid "Numeric 1"
-#~ msgstr "Tallet 1"
-
-#~ msgid "Numeric 2"
-#~ msgstr "Tallet 2"
-
-#~ msgid "Numeric 3"
-#~ msgstr "Tallet 3"
-
-#~ msgid "Numeric 4"
-#~ msgstr "Tallet 4"
-
-#~ msgid "Numeric 5"
-#~ msgstr "Tallet 5"
-
-#~ msgid "Numeric 6"
-#~ msgstr "Tallet 6"
-
-#~ msgid "Numeric 7"
-#~ msgstr "Tallet 7"
-
-#~ msgid "Numeric 8"
-#~ msgstr "Tallet 8"
-
-#~ msgid "Numeric 9"
-#~ msgstr "Tallet 9"
-
-#~ msgid "OR"
-#~ msgstr "OR"
-
-#~ msgid "Paste selection"
-#~ msgstr "Indsæt markering"
-
-#~ msgid "Payment period"
-#~ msgstr "Betalingsperiode"
-
-#~ msgid "Payment period [t]"
-#~ msgstr "Betalingsperiode [t]"
-
-#~ msgid "Percentage"
-#~ msgstr "Procent"
-
-#~ msgid "Periodic interest rate"
-#~ msgstr "Periodisk rentesats"
-
-#~ msgid "Periodic interest rate [T]"
-#~ msgstr "Periodisk rentesats [T]"
-
-#~ msgid "Periodic payment"
-#~ msgstr "Periodisk betaling"
-
-#~ msgid "Periodic payment [P]"
-#~ msgstr "Periodisk betaling [P]"
-
-#~ msgid "Present value"
-#~ msgstr "Nuværende værdi"
-
-#~ msgid "Present value [p]"
-#~ msgstr "Nuværende værdi [p]"
-
-#~ msgid "Quit the calculator"
-#~ msgstr "Afslut lommeregneren"
-
-#~ msgid "Random number in the range 0.0 to 1.0 [?]"
-#~ msgstr "Tilfældigt tal i intervallet 0,0 til 1,0 [?]"
-
-#~ msgid "Reciprocal"
-#~ msgstr "Reciprok"
-
-#~ msgid "Reciprocal [r]"
-#~ msgstr "Reciprok [r]"
-
-#~ msgid "Redo"
-#~ msgstr "Omgør"
-
-#~ msgid "Remove rightmost character from displayed value [Backspace]"
-#~ msgstr "Fjern tegnet længst til højre i den viste værdi [Slettetast]"
-
-#~ msgid "Retrieve from register"
-#~ msgstr "Hent fra register"
-
-#~ msgid "Retrieve memory register to display [R]"
-#~ msgstr "Hent værdien fra hukommelsesregistret [R]"
-
-#~ msgid "Right bracket"
-#~ msgstr "Højreparantes"
-
-#~ msgid "Set Precision"
-#~ msgstr "Sæt præcision"
-
-#~ msgid "Set display type to engineering format"
-#~ msgstr "Sæt fremvisningstypen til ingeniørformat"
-
-#~ msgid "Set display type to fixed-point format"
-#~ msgstr "Sæt fremvisningstypen til fast format"
-
-#~ msgid "Set display type to scientific format"
-#~ msgstr "Sæt fremvisningstypen til videnskabeligt format"
-
-#~ msgid "Set hyperbolic option for trigonometric functions"
-#~ msgstr "Benyt hyperbolsk udgave af trigonometriske funktioner"
-
-#~ msgid "Set inverse option for trigonometric functions"
-#~ msgstr "Benyt invers udgave af trigonometriske funktioner"
-
-#~ msgid "Set numeric base to binary (base 2)"
-#~ msgstr "Sæt grundtal til binær (grundtal 2)"
-
-#~ msgid "Set numeric base to decimal (base 10)"
-#~ msgstr "Sæt grundtal til decimal (grundtal 10)"
-
-#~ msgid "Set numeric base to octal (base 8)"
-#~ msgstr "Sæt grundtal til oktal (grundtal 8)"
-
-#~ msgid "Set trigonometric type to degrees"
-#~ msgstr "Sæt trigonomisk enhed til grader"
-
-#~ msgid "Set trigonometric type to gradians"
-#~ msgstr "Sæt trigonomisk enhed til nygrader"
-
-#~ msgid "Set trigonometric type to radians"
-#~ msgstr "Sæt trigonomisk enhed til radianer"
-
-#~ msgid "Show T_housands Separator"
-#~ msgstr "Vis _tusinde-adskiller"
-
-#~ msgid "Show _Trailing Zeroes"
-#~ msgstr "Vis _afsluttende nuller"
-
-#~ msgid "Show help contents"
-#~ msgstr "Vis hjælpindholdet"
-
-#~ msgid "Show memory registers"
-#~ msgstr "Vis hukommelsesregistre"
-
-#~ msgid "Show the About Gcalctool dialog"
-#~ msgstr "Vis om-lommeregner-vinduet"
-
-#~ msgid "Significant _places:"
-#~ msgstr "Betydende _cifre:"
-
-#~ msgid "Square"
-#~ msgstr "Kvadrat"
-
-#~ msgid "Start group of calculations [(]"
-#~ msgstr "Påbegynd beregningsgruppe [(]"
-
-#~ msgid "Store displayed value in memory register [S]"
-#~ msgstr "Gem den viste værdi i hukommelsesregistret [S]"
-
-#~ msgid "Store to register"
-#~ msgstr "Gem i register"
-
-#~ msgid "Straight-line depreciation"
-#~ msgstr "Retlinjet afskrivning"
-
-#~ msgid "Straight-line depreciation [l]"
-#~ msgstr "Retlinjet afskrivning [l]"
-
-#~ msgid "Subtract"
-#~ msgstr "Træk fra"
-
-#~ msgid "Sum-of-the years'-digits depreciation"
-#~ msgstr "Summen af årenes cifre-afskrivning"
-
-#~ msgid "Sum-of-the years'-digits depreciation [Y]"
-#~ msgstr "Summen af årenes cifre-afskrivning [Y]"
-
-#~ msgid "Sum-of-the years'-digits depreciation [y]"
-#~ msgstr "Summen af årenes cifre-afskrivning [y]"
-
-#~ msgid "Truncate displayed value to the chosen word size ([)"
-#~ msgstr "Trunkér den viste værdi til den valgte word-størrelse ([)"
-
-#~ msgid "User-defined functions [F]"
-#~ msgstr "Brugerdefinerede funktioner [F]"
-
-#~ msgid "XNOR"
-#~ msgstr "XNOR"
-
-#~ msgid "XOR"
-#~ msgstr "XOR"
-
-#~ msgid "_Dec"
-#~ msgstr "_Dec"
-
-#~ msgid "_Edit"
-#~ msgstr "_Redigér"
-
-#~ msgid "_Insert ASCII value..."
-#~ msgstr "_Indsæt ASCII-værdi..."
-
-#~ msgid "_Inv"
-#~ msgstr "_Inv"
-
-#~ msgid "_Memory Registers"
-#~ msgstr "Huko_mmelsesregistre"
-
-#~ msgid "_Redo"
-#~ msgstr "_Omgør"
-
-#~ msgid "_Sci"
-#~ msgstr "_Vid"
-
-#~ msgid "_Set"
-#~ msgstr "_Sæt"
-
-#~ msgid "_Undo"
-#~ msgstr "_Fortryd"
-
-#~ msgid "register 0"
-#~ msgstr "register 0"
-
-#~ msgid "register 1"
-#~ msgstr "register 1"
-
-#~ msgid "register 2"
-#~ msgstr "register 2"
-
-#~ msgid "register 3"
-#~ msgstr "register 3"
-
-#~ msgid "register 4"
-#~ msgstr "register 4"
-
-#~ msgid "register 5"
-#~ msgstr "register 5"
-
-#~ msgid "register 6"
-#~ msgstr "register 6"
-
-#~ msgid "register 7"
-#~ msgstr "register 7"
-
-#~ msgid "register 8"
-#~ msgstr "register 8"
-
-#~ msgid "register 9"
-#~ msgstr "register 9"
-
-#~ msgid "%s: accuracy should be in the range 0-%d\n"
-#~ msgstr "%s: nøjagtighed skal være i intervallet 0-%d\n"
-
-#~ msgid "Malformed function"
-#~ msgstr "Misdannet funktion"
-
-#~ msgid "No sane value to convert"
-#~ msgstr "Ingen gyldig værdi til at konvertere"
-
-#~ msgid "Invalid number for the current base"
-#~ msgstr "Ugyldigt tal til den nuværende base"
-
-#~ msgid "Invalid modulus operation"
-#~ msgstr "Ugyldig modulusoperation"
-
-#~ msgid "Calculator [%s]"
-#~ msgstr "Lommeregner [%s]"
-
-#~ msgid "Calculator [%s] - Advanced"
-#~ msgstr "Lommeregner [%s] - Avanceret"
-
-#~ msgid "Calculator [%s] - Financial"
-#~ msgstr "Lommeregner [%s] - Finansiel"
-
-#~ msgid "Calculator [%s] - Scientific"
-#~ msgstr "Lommeregner [%s] - Videnskabelig"
-
-#~ msgid "Calculator [%s] - Programming"
-#~ msgstr "Lommeregner [%s] - Programmering"
-
-#~ msgid "_Other (%d) ..."
-#~ msgstr "_Andet (%d) ..."
-
-#~ msgid "Set accuracy from 0 to %d numeric place. [A]"
-#~ msgid_plural "Set accuracy from 0 to %d numeric places. [A]"
-#~ msgstr[0] "Sæt nøjagtigheden fra 0 til %d ciffer. [A]"
-#~ msgstr[1] "Sæt nøjagtigheden fra 0 til %d cifre. [A]"
-
-#~ msgid "sin<sup>−1</sup>"
-#~ msgstr "sin<sup>−1</sup>"
-
-#~ msgid "sinh"
-#~ msgstr "sinh"
-
-#~ msgid "sinh<sup>−1</sup>"
-#~ msgstr "sinh<sup>−1</sup>"
-
-#~ msgid "Sine [k]"
-#~ msgstr "Sinus [k]"
-
-#~ msgid "Hyperbolic Inverse Sine [K]"
-#~ msgstr "Areasinushyperbolsk [K]"
-
-#~ msgid "cos<sup>−1</sup>"
-#~ msgstr "cos<sup>−1</sup>"
-
-#~ msgid "cosh"
-#~ msgstr "cosh"
-
-#~ msgid "cosh<sup>−1</sup>"
-#~ msgstr "cosh<sup>−1</sup>"
-
-#~ msgid "Inverse Cosine [J]"
-#~ msgstr "Arcuscosinus [J]"
-
-#~ msgid "Hyperbolic Inverse Cosine [J]"
-#~ msgstr "Areacosinushyperbolsk [J]"
-
-#~ msgid "tan"
-#~ msgstr "tan"
-
-#~ msgid "tan<sup>−1</sup>"
-#~ msgstr "tan<sup>−1</sup>"
-
-#~ msgid "tanh"
-#~ msgstr "tanh"
-
-#~ msgid "tanh<sup>−1</sup>"
-#~ msgstr "tanh<sup>−1</sup>"
-
-#~ msgid "Inverse Tangent [W]"
-#~ msgstr "Arcustangens [W]"
-
-#~ msgid "Hyperbolic Inverse Tangent [W]"
-#~ msgstr "Areatangenshyperbolsk [W]"
-
-#~ msgid "ln"
-#~ msgstr "ln"
-
-#~ msgid "e<sup><i>x</i></sup>"
-#~ msgstr "e<sup><i>x</i></sup>"
-
-#~ msgid "e to the power of the displayed value [N]"
-#~ msgstr "e opløftet til den viste værdi [N]"
-
-#~ msgid "log"
-#~ msgstr "log"
-
-#~ msgid "10<sup><i>x</i></sup>"
-#~ msgstr "10<sup><i>x</i></sup>"
-
-#~ msgid "10 to the power of displayed value [G]"
-#~ msgstr "10 opløftet til den viste værdi [G]"
-
-#~ msgid "log<sub>2</sub>"
-#~ msgstr "log<sub>2</sub>"
-
-#~ msgid "2<sup><i>x</i></sup>"
-#~ msgstr "2<sup><i>x</i></sup>"
-
-#~ msgid "Base 2 logarithm [h]"
-#~ msgstr "2-talslogaritme [h]"
-
-#~ msgid "2 to the power of the displayed value [H]"
-#~ msgstr "2 opløftet til den viste værdi [H]"
-
-#~ msgid "x<sup><i>y</i></sup>"
-#~ msgstr "x<sup><i>y</i></sup>"
-
-#~ msgid "x<sup>1/<i>y</i></sup>"
-#~ msgstr "x<sup>1/<i>y</i></sup>"
-
-#~ msgid "Raise displayed value to the power of y [o]"
-#~ msgstr "Opløft den viste værdi i den y'te potens [o]"
-
-#~ msgid "Raise displayed value to the power of reciprocal y [O]"
-#~ msgstr "Opløft den viste værdi i den reciprok y'te potens [O]"
-
-#~ msgid "R"
-#~ msgstr "R"
-
-#~ msgid "No."
-#~ msgstr "Nr."
-
-#~ msgid "Reset to _Default (%d)"
-#~ msgstr "Gendan _standard (%d)"
-
-#~ msgid "Negative X and non-integer Y not supported"
-#~ msgstr "Negativ x og y som ikke er heltal er ikke understøttet"
-
-#~ msgid "Tangent is infinite"
-#~ msgstr "Tangens er uendelig"
-
-#~ msgid "Kilometer-to-mile conversion factor"
-#~ msgstr "Omregningsfaktor for kilometer til mil"
-
-#~ msgid "square root of 2"
-#~ msgstr "kvadratroden af 2"
-
-#~ msgid "π"
-#~ msgstr "π"
-
-#~ msgid "Centimeter-to-inch conversion factor"
-#~ msgstr "Omregningsfaktor for centimeter til tomme"
-
-#~ msgid "degrees in a radian"
-#~ msgstr "grader i en radian"
-
-#~ msgid "2 ^ 20"
-#~ msgstr "2 ^ 20"
-
-#~ msgid "Gram-to-ounce conversion factor"
-#~ msgstr "Omregningsfaktor for gram til unser (ounce)"
-
-#~ msgid "Kilojoule-to-British-thermal-unit conversion factor"
-#~ msgstr "Omregningsfaktor for kilojoule til Britisk-termisk-enhed"
-
-#~ msgid "Cubic-centimeter-to-cubic-inch conversion factor"
-#~ msgstr "Omregningsfaktor for kubikcentimeter til kubiktommer"
-
-#~ msgid "Too long number"
-#~ msgstr "Tallet er for langt"
-
-#~ msgid "Math operation error"
-#~ msgstr "Beregningsoperations-fejl"
-
-#~ msgid "Sinh"
-#~ msgstr "Sinh"
-
-#~ msgid "Cos"
-#~ msgstr "Cos"
-
-#~ msgid "Cosh"
-#~ msgstr "Cosh"
-
-#~ msgid "Tan"
-#~ msgstr "Tan"
-
-#~ msgid "Tanh"
-#~ msgstr "Tanh"
-
-#~ msgid "Log"
-#~ msgstr "Log"
-
-#~ msgid "Error, cannot calculate cosine"
-#~ msgstr "Fejl, kunne ikke beregne cosinus"
-
-#~ msgid "&16"
-#~ msgstr "&16"
-
-#~ msgid "&32"
-#~ msgstr "&32"
-
-#~ msgid "16-bit unsigned integer value of display (])"
-#~ msgstr "16 bit-heltalsværdi uden fortegn af vist værdi (])"
-
-#~ msgid "32-bit unsigned integer value of display ([)"
-#~ msgstr "32 bit-heltalsværdi uden fortegn af vist værdi ([)"
-
-#~ msgid "±"
-#~ msgstr "±"
-
-#~ msgid "×"
-#~ msgstr "×"
-
-#~ msgid "÷"
-#~ msgstr "÷"
-
-#~ msgid "−"
-#~ msgstr "−"
-
-#~ msgid "√"
-#~ msgstr "√"
-
-#~ msgid ""
-#~ "%1$s version %2$s\n"
-#~ "\n"
-#~ "Usage: %3$s: [-u] [-?] [-v] [-h]\n"
-#~ msgstr ""
-#~ "%1$s version %2$s\n"
-#~ "\n"
-#~ "Brug: %3$s: [-u] [-?] [-v] [-h]\n"
-
-#~ msgid "pi"
-#~ msgstr "pi"
-
-#~ msgid "%s: %s as next argument.\n"
-#~ msgstr "%s: %s som næste parameter.\n"
-
-#~ msgid ""
-#~ "%s version %s\n"
-#~ "\n"
-#~ msgstr ""
-#~ "%s version %s\n"
-#~ "\n"
-
-#~ msgid "Usage: %s: [-E] [-u] [-a accuracy] "
-#~ msgstr "Brug: %s: [-E] [-u] [-a nøjagtighed] "
-
-#~ msgid "\t\t [-?] [-v] [-h]\n"
-#~ msgstr "\t\t [-?] [-v] [-h]\n"
-
-#~ msgid "-a needs accuracy value"
-#~ msgstr "-a behøver nøjagtighedsværdi"
-
-#~ msgid "%s: base should be 2, 8, 10 or 16\n"
-#~ msgstr "%s: grundtallet skal være 2, 8, 10 eller 16\n"
-
-#~ msgid "%s: invalid display mode [%s]\n"
-#~ msgstr "%s: ugyldig visnings-tilstand [%s]\n"
-
-#~ msgid "%s: invalid mode [%s]\n"
-#~ msgstr "%s: ugyldig tilstand [%s]\n"
-
-#~ msgid "%s: invalid trigonometric mode [%s]\n"
-#~ msgstr "%s: ugyldig trigonometrisk tilstand [%s]\n"
-
-#~ msgid "Currently set to %d place."
-#~ msgid_plural "Currently set to %d places."
-#~ msgstr[0] "På nuværende tidspunkt sat til %d ciffer."
-#~ msgstr[1] "På nuværende tidspunkt sat til %d cifre."
-
-#~ msgid "Bit editor activated. Click on bit values to toggle them."
-#~ msgstr "Bit-redigering aktiveret. Klik på bit-værdier for at ændre dem."
-
-#~ msgid ""
-#~ "Gcalctool is free software; you can redistribute it and/or modify\n"
-#~ "it under the terms of the GNU General Public License as published by\n"
-#~ "the Free Software Foundation; either version 2 of the License, or\n"
-#~ "(at your option) any later version.\n"
-#~ msgstr ""
-#~ "Gcalctool er fri software; du kan redistribuere det og/eller ændre\n"
-#~ "det under betingelserne for GNU General Public License som er\n"
-#~ "udgivet af Free Software Foundation; enten version 2 af licensen,\n"
-#~ "eller (efter eget valg) enhver senere version.\n"
-
-#~ msgid ""
-#~ "Gcalctool is distributed in the hope that it will be useful,\n"
-#~ "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-#~ "GNU General Public License for more details.\n"
-#~ msgstr ""
-#~ "Gcalctool er distribueret i håb om at det vil være nyttigt,\n"
-#~ "men UDEN NOGEN GARANTI; ikke engang implicit garanti\n"
-#~ "om at det er SALGBART eller PASSER ET BESTEMT FORMÅL.\n"
-#~ "Se GNU General Public License for flere detaljer.\n"
-
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License\n"
-#~ "along with Gcalctool; if not, write to the Free Software Foundation, "
-#~ "Inc.,\n"
-#~ "51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA\n"
-#~ msgstr ""
-#~ "Du skulle have modtaget en kopi af GNU General Public License\n"
-#~ "sammen med Gcalctool; hvis ikke, skriv da til Free Software Foundation\n"
-#~ ", Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA\n"
-
-#~ msgid "Changing Modes Clears Calculation"
-#~ msgstr "Tilstandsændring rydder beregningen"
-
-#~ msgid ""
-#~ "When you change modes, the current calculation will be cleared, and the "
-#~ "base will be reset to decimal."
-#~ msgstr ""
-#~ "Når du ændrer tilstand, vil den nuværende beregning blive slettet og "
-#~ "basen sat til decimal."
-
-#~ msgid "_Do not warn me again"
-#~ msgstr "_Advar mig ikke igen"
-
-#~ msgid "C_hange Mode"
-#~ msgstr "_Skift tilstand"
-
-#~ msgid "."
-#~ msgstr ","
-
-#~ msgid "10 to the x"
-#~ msgstr "10 opløftet til x"
-
-#~ msgid "10x"
-#~ msgstr "10x"
-
-#~ msgid "16 bit unsigned integer"
-#~ msgstr "16 bit-heltalsværdi uden fortegn"
-
-#~ msgid "<i>x</i><sup><i>y</i></sup>"
-#~ msgstr "<i>x</i><sup><i>y</i></sup>"
-
-#~ msgid "Bitwise AND"
-#~ msgstr "Bitvis AND"
-
-#~ msgid "Bitwise NOT"
-#~ msgstr "Bitvis NOT"
-
-#~ msgid "Bitwise OR"
-#~ msgstr "Bitvis OR"
-
-#~ msgid "Bitwise XNOR"
-#~ msgstr "Bitvis XNOR"
-
-#~ msgid "Bitwise XOR"
-#~ msgstr "Bitvis XOR"
-
-#~ msgid "Constants"
-#~ msgstr "Konstanter"
-
-# Gad vide hvad E er.  Eulers tal hedder jo e.
-#~ msgid "E to the x"
-#~ msgstr "E opløftet til x"
-
-#~ msgid "Log<sub>10</sub>"
-#~ msgstr "Log<sub>10</sub>"
-
-#~ msgid "Show Bit Editor"
-#~ msgstr "Vis bitredigering"
-
-#~ msgid "Show Bit _Editor"
-#~ msgstr "Vis bit_redigering"
-
-#~ msgid "Show bit editor"
-#~ msgstr "Vis bitredigering"
-
-#~ msgid "Ten to the x"
-#~ msgstr "Ti opløftet til x"
-
-#~ msgid "User-defined functions"
-#~ msgstr "Brugerdefinerede funktioner"
-
-#~ msgid "X to the y"
-#~ msgstr "X opløftet til y"
-
-#~ msgid "e<sup>x</sup>"
-#~ msgstr "e<sup>x</sup>"
-
-#~ msgid "ex"
-#~ msgstr "ex"
-
-#~ msgid "xy"
-#~ msgstr "xy"
-
-#~ msgid "Cleared display, prefix without an operator is not allowed"
-#~ msgstr "Ryddede visningen, præfiks uden en operator er ikke tilladt"
-
-#~ msgid "Malformed parenthesis expression"
-#~ msgstr "Misdannet parentesudtryk"
-
-#~ msgid "%s: invalid syntax mode [%s]\n"
-#~ msgstr "%s: ugyldig syntakstilstand [%s]\n"
-
-#~ msgid "Activated no operator precedence mode"
-#~ msgstr "Aktiverede ingen-operatorprioritet-tilstanden"
-
-#~ msgid "Activated expression mode with operator precedence"
-#~ msgstr "Aktiverede udtrykstilstanden med operatorprioritet"
-
-#~ msgid "Clipboard contained malformed calculation"
-#~ msgstr "Udklipsholder indeholder misdannede beregninger"
-
-#~ msgid "A_rithmetic Precedence"
-#~ msgstr "A_ritmetisk præcedens"
-
-#~ msgid "Use Arithmetic Precedence"
-#~ msgstr "Benyt aritmetiskprioritet"
-
-#~ msgid "Use Left-right Precedence"
-#~ msgstr "Brug venstre-til-højre præcedens"
-
-#~ msgid "_Left-to-right Precedence"
-#~ msgstr "_Venstre-til-højre præcedens"
-
-#~ msgid "Expression"
-#~ msgstr "Udtryk"
-
-#~ msgid "/"
-#~ msgstr "/"
-
-#~ msgid "*"
-#~ msgstr "*"
-
-#~ msgid "Chs"
-#~ msgstr "Skf"
-
-#~ msgid "-"
-#~ msgstr "-"
-
-#~ msgid "Sqrt"
-#~ msgstr "Rod"
-
-#~ msgid "Recip"
-#~ msgstr "Recip"
-
-#~ msgid "^2"
-#~ msgstr "^2"
-
-#~ msgid "&amp;16"
-#~ msgstr "&amp;16"
-
-#~ msgid "&amp;32"
-#~ msgstr "&amp;32"
-
-#~ msgid "32 bit unsigned integer"
-#~ msgstr "16 bit-heltalsværdi uden fortegn"
-
-#~ msgid " Mod "
-#~ msgstr " Mod "
-
-#~ msgid "e"
-#~ msgstr "e"
-
-#~ msgid "e^"
-#~ msgstr "e^"
-
-#~ msgid "^"
-#~ msgstr "^"
-
-#~ msgid "!"
-#~ msgstr "!"
-
-#~ msgid "Or"
-#~ msgstr "Or"
-
-#~ msgid " Or "
-#~ msgstr " Or "
-
-#~ msgid "And"
-#~ msgstr "And"
-
-#~ msgid "Not"
-#~ msgstr "Not"
-
-#~ msgid "~"
-#~ msgstr "~"
-
-#~ msgid "Xor"
-#~ msgstr "Xor"
-
-#~ msgid " Xor "
-#~ msgstr " Xor "
-
-#~ msgid "Xnor"
-#~ msgstr "Xnor"
-
-#~ msgid " Xnor "
-#~ msgstr " Xnor "
-
-#~ msgid "Numeric stack error"
-#~ msgstr "Fejl i talstak"
-
-#~ msgid "Operand stack error"
-#~ msgstr "Fejl i operandstak"
-
-#~ msgid "calculator"
-#~ msgstr "lommeregner"
-
-#~ msgid "%s: invalid bitcalc choice [%s]\n"
-#~ msgstr "%s: ugyldig bitberegningsvalg [%s]\n"
-
-#~ msgid "Show Bitcalculating _Extension"
-#~ msgstr "Vis bitberegnings_udvidelse"
-
-#~ msgid "Show bitcalculating extension"
-#~ msgstr "Vis bitberegningsudvidelse"
-
-#~ msgid "_Other (10) ..."
-#~ msgstr "_Andet (10) ..."
-
-#~ msgid "Set other precision"
-#~ msgstr "Sæt anden præcision"
-
-#~ msgid "Note:"
-#~ msgstr "Bemærkning:"
-
-#~ msgid "Accuracy value out of range"
-#~ msgstr "Nøjagtighedsværdi tilhøre ikke interval"
-
-#~ msgid "Perform calculations"
-#~ msgstr "Udfør beregninger"
-
-#~ msgid "Previous expression"
-#~ msgstr "Forrige udtryk"
-
-#~ msgid "∕"
-#~ msgstr "∕"
-
-#~ msgid "+/-"
-#~ msgstr "+/-"
-
-#~ msgid "*10^"
-#~ msgstr "*10^"
-
-#~ msgid "acosh"
-#~ msgstr "acosh"
-
-#~ msgid "acos"
-#~ msgstr "acos"
-
-#~ msgid "and"
-#~ msgstr "and"
-
-#~ msgid "asinh"
-#~ msgstr "asinh"
-
-#~ msgid "asin"
-#~ msgstr "asin"
-
-#~ msgid "atanh"
-#~ msgstr "atanh"
-
-#~ msgid "atan"
-#~ msgstr "atan"
-
-#~ msgid "cbrt"
-#~ msgstr "kbrd"
-
-#~ msgid "clr"
-#~ msgstr "ryd"
-
-#~ msgid "ddb"
-#~ msgstr "ddb"
-
-#~ msgid "frac"
-#~ msgstr "frak"
-
-#~ msgid "fv"
-#~ msgstr "fv"
-
-#~ msgid "not"
-#~ msgstr "not"
-
-#~ msgid "or"
-#~ msgstr "or"
-
-#~ msgid "pv"
-#~ msgstr "nv"
-
-#~ msgid "rand"
-#~ msgstr "tilf"
-
-#~ msgid "rate"
-#~ msgstr "sats"
-
-#~ msgid "rcl"
-#~ msgstr "hent"
-
-#~ msgid "sln"
-#~ msgstr "rkl"
-
-#~ msgid "sto"
-#~ msgstr "gem"
-
-#~ msgid "xnor"
-#~ msgstr "xnor"
-
-#~ msgid "xor"
-#~ msgstr "xor"
-
-#~ msgid "_Copy"
-#~ msgstr "_Kopiér"
-
-#~ msgid "_About"
-#~ msgstr "_Om"
-
-#~ msgid "_Basic mode"
-#~ msgstr "_Basis tilstand"
-
-#~ msgid "Basic mode"
-#~ msgstr "Basis tilstand"
-
-#~ msgid "_Advanced mode"
-#~ msgstr "_Avanceret tilstand"
-
-#~ msgid "Advanced mode"
-#~ msgstr "Avanceret tilstand"
-
-#~ msgid "_Financial mode"
-#~ msgstr "_Finansiel tilstand"
-
-#~ msgid "_Scientific mode"
-#~ msgstr "Viden_skabelig tilstand"
-
-#~ msgid "Basic Mode"
-#~ msgstr "Grundlæggende-tilstand"
-
-#~ msgid "BASIC"
-#~ msgstr "GRUNDLÆGGENDE"
-
-#~ msgid "FINANCIAL"
-#~ msgstr "FINANSIEL"
-
-#~ msgid "SCIENTIFIC"
-#~ msgstr "VIDENSKABELIG"
-
-#~ msgid "kilometers per hour or miles per hour"
-#~ msgstr "kilometer pr. time eller engelske mil pr. time"
-
-#~ msgid "/Calculator/_Quit"
-#~ msgstr "/Lommeregner/_Afslut"
-
-#~ msgid "/Edit/sep1"
-#~ msgstr "/Redigér/sep1"
-
-#~ msgid "/Edit/_Insert ASCII Value..."
-#~ msgstr "/Redigér/_Indsæt ASCII-værdi..."
-
-#~ msgid "/View/_Basic Mode"
-#~ msgstr "/_Vis/_Basis tilstand"
-
-#~ msgid "/View/_Financial Mode"
-#~ msgstr "/_Vis/_Finansiel tilstand"
-
-#~ msgid "/View/_Scientific Mode"
-#~ msgstr "/Vis/_Videnskabelig tilstand"
-
-#~ msgid "/View/sep1"
-#~ msgstr "/Vis/sep1"
-
-#~ msgid "/View/Show _Trailing Zeroes"
-#~ msgstr "/Vis/Vis _afsluttende nuller"
-
-#~ msgid "/View/sep2"
-#~ msgstr "/Vis/sep2"
-
-#~ msgid "/View/_Memory Registers"
-#~ msgstr "/Vis/_Hukommelsesregistre"
-
-#~ msgid "/sep1"
-#~ msgstr "/sep1"
