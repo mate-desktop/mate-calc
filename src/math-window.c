@@ -18,6 +18,7 @@
 
 // gtk3 hack
 #if !GLIB_CHECK_VERSION (3, 0, 0)
+
 	#ifndef GDK_KEY_F1
 		#define GDK_KEY_F1 GDK_F1
 	#endif
@@ -29,6 +30,12 @@
 	#ifndef GDK_KEY_Z
 		#define GDK_KEY_Z GDK_z
 	#endif
+
+#else // gtk 3.0.0
+	
+	#define gtk_vbox_new(x,y) \
+		gtk_box_new(GTK_ORIENTATION_VERTICAL, y)
+
 #endif
 
 enum {
