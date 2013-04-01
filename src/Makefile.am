@@ -3,7 +3,7 @@ noinst_PROGRAMS = test-mp test-mp-equation
 
 TESTS = test-mp test-mp-equation
 
-INCLUDES = \
+AM_CPPFLAGS = \
 	-DUI_DIR=\""$(datadir)/mate-calc"\" \
 	-DVERSION=\""$(VERSION)"\" \
 	-DLOCALE_DIR=\""$(localedir)"\" \
