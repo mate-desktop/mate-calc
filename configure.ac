@@ -2,7 +2,7 @@ dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.62)
 AC_INIT([mate-calc], [1.6.0], [http://mate-desktop.org])
 
-AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-bzip2])
+AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-xz])
 AC_CONFIG_HEADERS(config.h)
 AM_MAINTAINER_MODE
 MATE_MAINTAINER_MODE_DEFINES
@@ -21,7 +21,6 @@ dnl ###########################################################################
 
 GLIB_REQUIRED=2.30
 GIO_REQUIRED=2.25.10
-GTK_REQUIRED=2.18.0
 
 AC_MSG_CHECKING([which gtk+ version to compile against])
 AC_ARG_WITH([gtk],
