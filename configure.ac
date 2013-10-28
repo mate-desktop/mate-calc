@@ -1,6 +1,6 @@
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.62)
-AC_INIT([mate-calc], [1.6.0], [http://mate-desktop.org])
+AC_INIT([mate-calc], [1.7.0], [http://mate-desktop.org])
 
 AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-xz])
 AC_CONFIG_HEADERS(config.h)
