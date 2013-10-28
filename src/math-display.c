@@ -326,7 +326,11 @@ create_gui(MathDisplay *display)
     int i;
     GtkStyle *style;
 
+#if GTK_CHECK_VERSION (3, 2, 0)
+    main_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
+#else
     main_box = gtk_vbox_new(FALSE, 0);
+#endif
     gtk_container_add(GTK_CONTAINER(display), main_box);
 
     g_signal_connect(display, "key-press-event", G_CALLBACK(key_press_cb), display);
@@ -350,7 +354,11 @@ create_gui(MathDisplay *display)
     g_signal_connect(display->priv->text_view, "key-press-event", G_CALLBACK(display_key_press_cb), display);
     gtk_box_pack_start(GTK_BOX(main_box), display->priv->text_view, TRUE, TRUE, 0);
 
+#if GTK_CHECK_VERSION (3, 2, 0)
+    info_box = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 6);
+#else
     info_box = gtk_hbox_new(FALSE, 6);
+#endif
     gtk_box_pack_start(GTK_BOX(main_box), info_box, FALSE, TRUE, 0);
 
     info_view = gtk_text_view_new();
