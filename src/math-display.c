@@ -69,6 +69,9 @@ display_key_press_cb(GtkWidget *widget, GdkEventKey *event, MathDisplay *display
     /* Treat keypad keys as numbers even when numlock is off */
     switch(event->keyval)
     {
+    case GDK_KEY_KP_Delete: /* Period without numlock */
+        new_keyval = GDK_KEY_KP_Decimal;
+        break;
     case GDK_KEY_KP_Insert:
         new_keyval = GDK_KEY_0;
         break;
