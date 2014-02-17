@@ -1,31 +1,58 @@
-.\" Copyright (c) 1987-2008 - Sun Microsystems, Inc.
-.TH mate-calc 1 "17 June 2009"
-.SH NAME
-mate-calc \- a desktop calculator
-.SH SYNOPSIS
-.B mate-calc
-[
-.I OPTION
-] ...
-.SH DESCRIPTION
-.B mate-calc
-is the official calculator of the MATE desktop environment.
-.SH OPTIONS
+.\" Man page for mate-calc
+.TH MATE-CALC 1 "1 February 2014" "MATE Desktop Environment"
+.\" Please adjust this date when revising the manpage.
+.\"
+.SH "NAME"
+mate-calc \- (mate-calculator) \- The MATE Desktop Environment Calculator
+.SH "SYNOPSIS"
+.B mate-calc [OPTIONS...] [FILES...]
+.SH "DESCRIPTION"
+\fBmate-calc\fR is the official calculator for the MATE Desktop Environment. It has been designed to be used with either the mouse or the keyboard. It is visually similar to a lot of hand-held calculators.
+.PP
+This manual page briefly documents the \fBmate-calc\fR command.
+.SH "OPTIONS"
 .TP
-.B \-s, \-\-solve
+\fB\-s, \-\-solve\fR <equation>
 Solve the equation provided following this option.
 .TP
-.B \-u, \-\-unittest
-Run the unit tests.
-.TP
-.B \-v, \-\-version
+\fB\-\-version\fR
 Output version information and exit.
 .TP
-.B \-h, \-?, \-\-help
-Prints the command line options.
-.SH SEE ALSO
-.PD 0
-.TP 18
-.B mate-calc-cmd
-.sp
-.LP
+\fB\-h, \-?, \-\-help\fR
+Print standard command line options.
+.TP
+\fB\-\-help\-all\fR
+Print all command line options.
+.P
+This program also accepts the standard GTK options.
+.SH "EXAMPLES"
+\fBmate-calc \-s 4*10.5\fR
+.RS 4
+Multiply 4 by 10.5
+.RE
+.PP
+\fBmate-calc \-s 21+21\fR
+.RS 4
+Add 21 plus 21
+.RE
+.PP
+\fBmate-calc \-\-solve '((5.25×4)×2)'\fR
+.RS 4
+Multiply 5.25 by 4 and their product by 2
+.RE
+.PP
+\fBmate-calc
+.RS 4
+Open the Calculator GUI.
+.SH "BUGS"
+.SS Should you encounter any bugs, they may be reported at: 
+http://github.com/mate-desktop/mate-calc/issues
+.SH "AUTHORS"
+.SS This Man Page has been written for the MATE Desktop Environment by:
+Adam Erdman <hekel@archlinux.info> (2014)
+.SH "SEE ALSO"
+.SS
+mate-calc documentation can be found from the "Help" menu, or by pressing the F1 key. 
+Further information may also be available at: http://wiki.mate-desktop.org/docs
+.P
+.BR mate-calc-cmd (1)
