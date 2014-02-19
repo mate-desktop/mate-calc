@@ -2,7 +2,7 @@ dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.62)
 AC_INIT([mate-calc], [1.7.1], [http://mate-desktop.org])
 
-AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-xz])
+AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-xz check-news])
 AC_CONFIG_HEADERS(config.h)
 AM_MAINTAINER_MODE
 MATE_MAINTAINER_MODE_DEFINES
