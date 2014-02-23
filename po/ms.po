@@ -11,9 +11,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-24 20:10+0100\n"
-"PO-Revision-Date: 2013-08-02 13:22+0000\n"
+"PO-Revision-Date: 2013-08-12 16:38+0000\n"
 "Last-Translator: abuyop <abuyop@gmail.com>\n"
 "Language-Team: Malay (http://www.transifex.com/projects/p/MATE/language/ms/)\n"
 "MIME-Version: 1.0\n"
@@ -36,7 +36,7 @@ msgstr "="
 #: ../data/buttons-advanced.ui.h:5 ../data/buttons-basic.ui.h:3
 #: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
 msgid "Clear"
-msgstr "Kosong"
+msgstr "Kosongkan"
 
 #. Accessible name for the subscript mode button
 #: ../data/buttons-advanced.ui.h:7 ../data/buttons-programming.ui.h:15
@@ -234,7 +234,7 @@ msgstr "_Prinsipal:"
 #. Periodic Interest Rate Dialog: Label before term input
 #: ../data/buttons-financial.ui.h:44
 msgid "_Term:"
-msgstr "_Terma:"
+msgstr "_Tempoh:"
 
 #. Title of Present Value dialog
 #. Tooltip for the present value button
@@ -248,7 +248,7 @@ msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr "Kira nilai semasa bagi pelaburan berasaskan siri pembayaran sekata yang didiskaunkan pada kadar faedah berkala melalui bilangan tempoh pembayaran didalam terma. "
+msgstr "Kira nilai semasa bagi pelaburan berasaskan siri pembayaran sekata yang didiskaunkan pada kadar faedah berkala melalui bilangan tempoh pembayaran didalam tempoh. "
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
@@ -410,7 +410,7 @@ msgstr "Masukkan Kod Aksara"
 #. Insert ASCII dialog: Button to insert selected character
 #: ../data/buttons-programming.ui.h:4
 msgid "_Insert"
-msgstr "Sel_it"
+msgstr "S_isip"
 
 #. Insert ASCII dialog: Label before character entry
 #: ../data/buttons-programming.ui.h:6
@@ -531,7 +531,7 @@ msgstr "Menunjukkan sama ada pemisah ribu dipaparkan dalam nombor besar."
 
 #: ../data/org.mate.calc.gschema.xml.in.h:9
 msgid "Show Trailing Zeroes"
-msgstr "Papar Rentetan Kosong"
+msgstr "Tunjuk Rentetan Kosong"
 
 #: ../data/org.mate.calc.gschema.xml.in.h:10
 msgid ""
@@ -565,7 +565,7 @@ msgstr "Mod butang"
 
 #: ../data/org.mate.calc.gschema.xml.in.h:17
 msgid "Source currency"
-msgstr "Sumber matawang"
+msgstr "Matawang sumber"
 
 #: ../data/org.mate.calc.gschema.xml.in.h:18
 msgid "Currency of the current calculation"
@@ -845,7 +845,7 @@ msgstr "Ralat: bilangan tempoh mesti positif"
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr "Penggunaan:\n  %s — lakukan kiraan matematik"
+msgstr "Penggunaan:\n  %s — buat pengiraan matematik"
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
@@ -857,7 +857,7 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr "Pilihan Bantuan:\n  -v, --version                   Papar versi keluaran\n  -h, -?, --help                  Papar pilihan bantuan\n  --help-all                      Papar semua pilihan bantuan\n  --help-gtk                      Papar pilihan GTK+"
+msgstr "Pilihan Bantuan:\n  -v, --version                 Tunjuk versi keluaran\n  -h, -?, --help                  Tunjukr pilihan bantuan\n  --help-all                      Tunjukr semua pilihan bantuan\n  --help-gtk                     Tunjuk pilihan GTK+"
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
@@ -891,7 +891,7 @@ msgstr "Hujah --solve memerlukan persamaan untuk diselesaikan"
 #: ../src/mate-calc.c:166
 #, c-format
 msgid "Unknown argument '%s'"
-msgstr "Hujah '%s' tidak diketahui"
+msgstr "Argumen '%s' tidak diketahui"
 
 #. Tooltip for the Pi button
 #: ../src/math-buttons.c:95
@@ -906,12 +906,12 @@ msgstr "Nombor Euler"
 #. Tooltip for the subscript button
 #: ../src/math-buttons.c:103
 msgid "Subscript mode [Alt]"
-msgstr "Mode subskrip [Alt]"
+msgstr "Mod subskrip [Alt]"
 
 #. Tooltip for the superscript button
 #: ../src/math-buttons.c:106
 msgid "Superscript mode [Ctrl]"
-msgstr "Mode superskrip [Ctrl]"
+msgstr "Mod superskrip [Ctrl]"
 
 #. Tooltip for the scientific exponent button
 #: ../src/math-buttons.c:109
@@ -976,12 +976,12 @@ msgstr "Nilai mutlak [|]"
 #. Tooltip for the complex argument component button
 #: ../src/math-buttons.c:145
 msgid "Complex argument"
-msgstr "Huraian kompleks"
+msgstr "Argumen kompleks"
 
 #. Tooltip for the complex conjugate button
 #: ../src/math-buttons.c:148
 msgid "Complex conjugate"
-msgstr "Knjugat kompleks"
+msgstr "Konjugat kompleks"
 
 #. Tooltip for the root button
 #: ../src/math-buttons.c:151
@@ -1076,22 +1076,22 @@ msgstr "Boolean NOT"
 #. Tooltip for the integer component button
 #: ../src/math-buttons.c:205 ../src/math-buttons.c:994
 msgid "Integer Component"
-msgstr "Komponen interger"
+msgstr "Komponen Interger"
 
 #. Tooltip for the fractional component button
 #: ../src/math-buttons.c:208 ../src/math-buttons.c:996
 msgid "Fractional Component"
-msgstr "Komponen pecahan"
+msgstr "Komponen Pecahan"
 
 #. Tooltip for the real component button
 #: ../src/math-buttons.c:211
 msgid "Real Component"
-msgstr "Komponen nyata"
+msgstr "Komponen Nyata"
 
 #. Tooltip for the imaginary component button
 #: ../src/math-buttons.c:214
 msgid "Imaginary Component"
-msgstr "Komponen khayal"
+msgstr "Komponen Khayalan"
 
 #. Tooltip for the ones' complement button
 #: ../src/math-buttons.c:217
@@ -1106,7 +1106,7 @@ msgstr "Dua Pelengkap"
 #. Tooltip for the truncate button
 #: ../src/math-buttons.c:223
 msgid "Truncate"
-msgstr "Singkatkan"
+msgstr "Pangkas"
 
 #. Tooltip for the start group button
 #: ../src/math-buttons.c:226
@@ -1121,12 +1121,12 @@ msgstr "Akhir kumpulan [)]"
 #. Tooltip for the solve button
 #: ../src/math-buttons.c:238
 msgid "Calculate Result"
-msgstr "Kira hasil"
+msgstr "Kira Hasil"
 
 #. Tooltip for the factor button
 #: ../src/math-buttons.c:241
 msgid "Factorize [Ctrl+F]"
-msgstr "Memfaktorkan [Ctrl+F]"
+msgstr "Faktorkan [Ctrl+F]"
 
 #. Tooltip for the clear button
 #: ../src/math-buttons.c:244
@@ -1136,7 +1136,7 @@ msgstr "Kosong Paparan [Escape]"
 #. Tooltip for the undo button
 #: ../src/math-buttons.c:247
 msgid "Undo [Ctrl+Z]"
-msgstr "Ulang buat [Ctrl+Z]"
+msgstr "Buat Asal [Ctrl+Z]"
 
 #. Tooltip for the double declining depreciation button
 #: ../src/math-buttons.c:259
@@ -1146,7 +1146,7 @@ msgstr "Susut Nilai Penurunan Berganda"
 #. Tooltip for the financial term button
 #: ../src/math-buttons.c:265
 msgid "Financial Term"
-msgstr "Terma kewangan"
+msgstr "Terma Kewangan"
 
 #. Tooltip for the sum of the years digits depreciation button
 #: ../src/math-buttons.c:268
@@ -1228,12 +1228,12 @@ msgstr "Tukar unti pertukaran"
 #. Error shown when trying to undo with no undo history
 #: ../src/math-equation.c:459
 msgid "No undo history"
-msgstr "Tiada sejarah buat asal"
+msgstr "Tiada buat asal sejarah"
 
 #. Error shown when trying to redo with no redo history
 #: ../src/math-equation.c:486
 msgid "No redo history"
-msgstr "Tiada sejarah buat asal"
+msgstr "Tiada buat semula sejarah"
 
 #: ../src/math-equation.c:948
 msgid "No sane value to store"
@@ -1260,7 +1260,7 @@ msgstr "Fungsi '%s' tidak ditakrif"
 #. Error displayed to user when an conversion with unknown units is attempted
 #: ../src/math-equation.c:1245
 msgid "Unknown conversion"
-msgstr "Pertukaran tidak diketahui"
+msgstr "Penukaran tidak diketahui"
 
 #. Uncategorized error. Show error token to user
 #: ../src/math-equation.c:1253
@@ -1272,7 +1272,7 @@ msgstr "Ungkapan cacat pada token '%s'"
 #. Error displayed to user when they enter an invalid calculation
 #: ../src/math-equation.c:1256 ../src/math-equation.c:1261
 msgid "Malformed expression"
-msgstr "Ungkapan punah"
+msgstr "Ungkapan cacat"
 
 #: ../src/math-equation.c:1275
 msgid "Calculating"
@@ -1354,12 +1354,12 @@ msgstr "Papar %d tempat _perpuluhan"
 #. Translators: Error message displayed when unable to launch help browser
 #: ../src/math-window.c:198
 msgid "Unable to open help file"
-msgstr "Tidak dapat membuka fail bantuan"
+msgstr "Tidak dapat buka fail bantuan"
 
 #. The translator credits. Please translate this with your name(s).
 #: ../src/math-window.c:225
 msgid "translator-credits"
-msgstr "Hasbullah Bin Pit <sebol@my-penguin.org>, Merlimau.\nPuretech <terjemah.puretech@gmail.com>"
+msgstr "Hasbullah Bin Pit <sebol@my-penguin.org>, Merlimau.\nPuretech <terjemah.puretech@gmail.com>\nAbuyop <abuyop@gmail.com>"
 
 #. The license this software is under (GPL2+)
 #: ../src/math-window.c:232
@@ -1459,7 +1459,7 @@ msgstr "Shift hanya mungkin untuk nilai integer"
 #. Translators: Error display when attempting to take argument of zero
 #: ../src/mp.c:148
 msgid "Argument not defined for zero"
-msgstr "Hujah tidak ditakrifkan untuk sifar"
+msgstr "Argumen tidak ditakrifkan untuk sifar"
 
 #: ../src/mp.c:299
 msgid "Overflow: the result couldn't be calculated"
@@ -1468,34 +1468,34 @@ msgstr "Melimpah: keputusan tidak dapat dikira"
 #. Translators: Error displayed attempted to divide by zero
 #: ../src/mp.c:644 ../src/mp.c:676 ../src/mp.c:1605
 msgid "Division by zero is undefined"
-msgstr "Pembahagian oleh kosong tidak ditakrif"
+msgstr "Pembahagian dengan sifar tidak ditakrif"
 
 #. Translators: Error displayed when attempting to take logarithm of zero
 #: ../src/mp.c:1276 ../src/mp.c:1313
 msgid "Logarithm of zero is undefined"
-msgstr "Logartima kosong tidak ditakrif"
+msgstr "Logartima sifar tidak ditakrif"
 
 #. Translators: Error displayed when attempted to raise 0 to a negative
 #. exponent
 #: ../src/mp.c:1680 ../src/mp.c:1994
 msgid "The power of zero is undefined for a negative exponent"
-msgstr "Kuasa kosong tidak ditakrif untuk eksponen negatif"
+msgstr "Kuasa sifar tidak ditakrif untuk eksponen negatif"
 
 #: ../src/mp.c:1704
 msgid "Reciprocal of zero is undefined"
-msgstr "Angka salingan kosong tidak ditakrif"
+msgstr "Angka salingan sifar tidak ditakrif"
 
 #: ../src/mp.c:1789
 msgid "Root must be non-zero"
-msgstr "Kuasa mesti bukan kosong"
+msgstr "Kuasa mesti bukan sifar"
 
 #: ../src/mp.c:1807
 msgid "Negative root of zero is undefined"
-msgstr "Kuasa negatif kosong tidak ditakrif"
+msgstr "Kuasa negatif sifar tidak ditakrif"
 
 #: ../src/mp.c:1813
 msgid "nth root of negative number is undefined for even n"
-msgstr "nombor kuasa negatif ke-n tidak ditakrif untuk n bernilai genap"
+msgstr "Nombor kuasa negatif ke-n tidak ditakrif untuk n bernilai genap"
 
 #. Translators: Error displayed when attempted take the factorial of a
 #. fractional number
