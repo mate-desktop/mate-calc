@@ -433,7 +433,7 @@ math_converter_init(MathConverter *converter)
     gtk_box_pack_start(GTK_BOX(hbox), swap_button, FALSE, TRUE, 0);
 
     converter->priv->result_label = gtk_label_new("");
-    gtk_misc_set_alignment(GTK_MISC(converter->priv->result_label), 1.0, 0.5);
+    gtk_widget_set_halign (converter->priv->result_label, GTK_ALIGN_END);
     gtk_widget_set_sensitive(converter->priv->result_label, FALSE);
     gtk_widget_show(converter->priv->result_label);
     gtk_box_pack_start(GTK_BOX(converter), converter->priv->result_label, TRUE, TRUE, 0);
