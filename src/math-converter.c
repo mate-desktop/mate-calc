@@ -33,7 +33,7 @@ struct MathConverterPrivate
 };
 
 
-G_DEFINE_TYPE (MathConverter, math_converter, GTK_TYPE_HBOX);
+G_DEFINE_TYPE (MathConverter, math_converter, GTK_TYPE_BOX);
 
 static void display_changed_cb(MathEquation *equation, GParamSpec *spec, MathConverter *converter);
 static void update_from_model(MathConverter *converter);
@@ -390,6 +390,8 @@ math_converter_init(MathConverter *converter)
     converter->priv = G_TYPE_INSTANCE_GET_PRIVATE(converter, math_converter_get_type(), MathConverterPrivate);
 
     gtk_box_set_spacing(GTK_BOX(converter), 6);
+    gtk_orientable_set_orientation (GTK_ORIENTABLE (converter),
+                                    GTK_ORIENTATION_HORIZONTAL);
 
     hbox = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 0);
     gtk_widget_show(hbox);
