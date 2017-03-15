@@ -3,17 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006.
-# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008, 2009.
-# Sandeep Shedmake <sshedmak@redhat.com>, 2008-2009,2012.
+# Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006
+# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008-2009
+# sandeeps <sshedmak@redhat.com>, 2008-2009,2012
+# Vaibhav S Dalvi <vaibhav.dlv@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2013-03-24 20:10+0100\n"
-"PO-Revision-Date: 2013-03-24 19:30+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-15 14:46+0300\n"
+"PO-Revision-Date: 2017-03-15 11:48+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Marathi (http://www.transifex.com/mate/MATE/language/mr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -78,15 +79,15 @@ msgstr "क्रिया मागे घ्या"
 
 #: ../data/buttons-advanced.ui.h:19
 msgid "acos"
-msgstr ""
+msgstr "acos"
 
 #: ../data/buttons-advanced.ui.h:20
 msgid "asin"
-msgstr ""
+msgstr "asin"
 
 #: ../data/buttons-advanced.ui.h:21
 msgid "atan"
-msgstr ""
+msgstr "atan"
 
 #. Accessible name for the store value button
 #: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:19
@@ -159,12 +160,12 @@ msgstr "Calculates the depreciation allowance on an asset for a specified period
 msgid "C_ost:"
 msgstr "किंमत (_o):"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:20
 msgid "_Life:"
 msgstr "कार्यकाळ (_L):"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:22
 msgid "_Period:"
 msgstr "नियतकाल (_P):"
@@ -266,12 +267,12 @@ msgstr "Calculates the periodic interest necessary to increase an investment to 
 msgid "Straight-Line Depreciation"
 msgstr "सरळ रेषेतील घसरण"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:56
 msgid "_Cost:"
 msgstr "किंमत (_C):"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:58
 msgid "_Salvage:"
 msgstr "वाचवलेला मालमत्ता (_S):"
@@ -285,12 +286,12 @@ msgid ""
 "typically years, over which an asset is depreciated. "
 msgstr "Calculates the straight-line depreciation of an asset for one period. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. "
 
-#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "सम-ऑफ-दि-यिअर्स्-डिजिट्स् डेप्रिकेशन"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
@@ -350,12 +351,7 @@ msgid "Term"
 msgstr "Term"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. time, using the Sum-Of-The-Years
 #: ../data/buttons-financial.ui.h:87
 msgid "Syd"
 msgstr "Syd"
@@ -416,16 +412,14 @@ msgid "Ch_aracter:"
 msgstr "अक्षर (_a):"
 
 #. Accessible name for the shift left button
-#. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
-msgid "Shift Left [<<]"
-msgstr "शिफ्ट डावी [<<]"
+#: ../data/buttons-programming.ui.h:23
+msgid "Shift Left"
+msgstr "शिफ्ट डावी"
 
 #. Accessible name for the shift right button
-#. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
-msgid "Shift Right [>>]"
-msgstr "शिफ्ट उजवी [>>]"
+#: ../data/buttons-programming.ui.h:25
+msgid "Shift Right"
+msgstr "शिफ्ट उजवी"
 
 #. Accessible name for the insert character button
 #: ../data/buttons-programming.ui.h:27
@@ -482,116 +476,31 @@ msgstr "शेवटचे शून्य दाखवा (_z)"
 msgid "Show _thousands separators"
 msgstr "हजारो विभाजन दाखवा (_t)"
 
-#: ../data/mate-calc.desktop.in.h:1
-msgid "MATE Calculator"
+#: ../data/mate-calc.appdata.xml.in.h:1
+msgid "MATE Desktop calculator"
 msgstr ""
 
+#: ../data/mate-calc.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Calc is a powerful graphical calculator with financial, logical and"
+" scientific modes. It uses a multiple precision package to do its arithmetic"
+" to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
+"Calc and part of the MATE Desktop Environment. If you would like to know "
+"more about MATE and MATE Calc, please visit the project's home page. </p>"
+msgstr ""
+
+#: ../data/mate-calc.desktop.in.h:1
+msgid "MATE Calculator"
+msgstr "मेट गणनयंत्र"
+
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
 msgid "Calculator"
 msgstr "गणनयंत्र"
 
 #: ../data/mate-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "अंकगणित, शास्त्रीय किंवा वित्तीय गणना चालवून पहा"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:1
-msgid "Accuracy value"
-msgstr "अचूकपणा मूल्य"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:2
-msgid "The number of digits displayed after the numeric point"
-msgstr "न्युमेरिक पॉइंटनंतर दाखवण्याजोगी अंकांची संख्या"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:3
-msgid "Word size"
-msgstr "शब्दाचे आकार"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:4
-msgid "The size of the words used in bitwise operations"
-msgstr "बिटवाइज कार्यांमध्ये वापरण्याजोगी शब्दांचे आकार"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:5
-msgid "Numeric Base"
-msgstr "न्यूमेरीक बेस्"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:6
-msgid "The numeric base"
-msgstr "न्यूमेरीक बेस्"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:7
-msgid "Show Thousands Separators"
-msgstr "हजार विभाजक दाखवा"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:8
-msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr "हजाराचे विभाजक मोठ्या क्रमांकात दाखवले जाते का, ते दर्शवतो."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:9
-msgid "Show Trailing Zeroes"
-msgstr "शेवटचे शून्य दाखवा"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:10
-msgid ""
-"Indicates whether any trailing zeroes after the numeric point should be "
-"shown in the display value."
-msgstr "डिस्पले मूल्यमध्ये न्युमेरिक पॉइंटनंतरचे कोणतेहि ट्रैलिंग झिरोज् निर्देशीत करते."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:11
-msgid "Number format"
-msgstr "अंक रूपण"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:12
-msgid "The format to display numbers in"
-msgstr "दाखण्याजोगी क्रमांक"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:13
-msgid "Angle units"
-msgstr "कोन युनिट्स्"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:14
-msgid "The angle units to use"
-msgstr "The angle units to use"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:15
-msgid "Button mode"
-msgstr "बटन मोड"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:16
-msgid "The button mode"
-msgstr "बटन मोड"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:17
-msgid "Source currency"
-msgstr "स्रोत चलन"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:18
-msgid "Currency of the current calculation"
-msgstr "सध्याचे गणनाचे चलन"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:19
-msgid "Target currency"
-msgstr "लक्ष्य चलन"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:20
-msgid "Currency to convert the current calculation into"
-msgstr "सध्याची गणना रूपांतरीत करण्यासाठी चलन"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:21
-msgid "Source units"
-msgstr "स्रोत युनिट्स्"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:22
-msgid "Units of the current calculation"
-msgstr "सध्याच्या गणनाचे युनिट"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:23
-msgid "Target units"
-msgstr "लक्ष्य युनिट्स्"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:24
-msgid "Units to convert the current calculation into"
-msgstr "सध्याची गणना रूपांतरीत करण्यासाठी युनिट्स्"
 
 #: ../src/currency-manager.c:30
 msgid "UAE Dirham"
@@ -1034,17 +943,17 @@ msgstr "हायपरबोलिक टँजेंट"
 #. Tooltip for the inverse sine button
 #: ../src/math-buttons.c:181
 msgid "Inverse Sine"
-msgstr ""
+msgstr "इंवर्स साइन"
 
 #. Tooltip for the inverse cosine button
 #: ../src/math-buttons.c:184
 msgid "Inverse Cosine"
-msgstr ""
+msgstr "इंवर्स कोसाइन"
 
 #. Tooltip for the inverse tangent button
 #: ../src/math-buttons.c:187
 msgid "Inverse Tangent"
-msgstr ""
+msgstr "इंवर्स टांजेंट"
 
 #. Tooltip for the inverse button
 #: ../src/math-buttons.c:190
@@ -1136,6 +1045,16 @@ msgstr "डिस्पले [एस्केप] नष्ट करा"
 msgid "Undo [Ctrl+Z]"
 msgstr "पूर्ववत् करा [Ctrl+Z]"
 
+#. Tooltip for the shift left button
+#: ../src/math-buttons.c:250
+msgid "Shift Left [<<]"
+msgstr ""
+
+#. Tooltip for the shift right button
+#: ../src/math-buttons.c:253
+msgid "Shift Right [>>]"
+msgstr ""
+
 #. Tooltip for the double declining depreciation button
 #: ../src/math-buttons.c:259
 msgid "Double Declining Depreciation"
@@ -1216,12 +1135,12 @@ msgstr "साइन"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: ../src/math-converter.c:412
+#: ../src/math-converter.c:414
 msgid " in "
 msgstr " in "
 
 #. Tooltip for swap conversion button
-#: ../src/math-converter.c:427
+#: ../src/math-converter.c:429
 msgid "Switch conversion units"
 msgstr "रूपांतरन युनिट्स् बदला"
 
@@ -1279,23 +1198,23 @@ msgid "Calculating"
 msgstr "गणन करत आहे"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1394
+#: ../src/math-equation.c:1390
 msgid "Need an integer to factorize"
 msgstr "फॅक्टोराइज करण्यासाठी इंटिजर आवश्यक"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1470
+#: ../src/math-equation.c:1462
 msgid "No sane value to bitwise shift"
 msgstr "बिटवाइज शिफ्टकरीता सेन मूल्य नाही"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1501
+#: ../src/math-equation.c:1493
 msgid "Displayed value not an integer"
 msgstr "दाखवलेले मूल्य इंटिजर नाही"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1926
+#: ../src/math-equation.c:1918
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1352,17 +1271,17 @@ msgid "Show %d decimal _places"
 msgstr "%d डेसिमल ठिकाण दाखवा (_p)"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:198
+#: ../src/math-window.c:211
 msgid "Unable to open help file"
 msgstr "मदत फाइल उघडण्यास अशक्य"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:225
+#: ../src/math-window.c:238
 msgid "translator-credits"
 msgstr "संदिप शेडमाके <sandeep.shedmake@gmail.com>, 2008, 2009. संदिप शेडमाके <sshedmak@redhat.com>, 2009."
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:232
+#: ../src/math-window.c:245
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1377,53 +1296,53 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
+msgstr "mate-calc is free software; you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation; either version 2 of the License, or\n(at your option) any later version.\n\nmate-calc is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with mate-calc; if not, write to the Free Software Foundation, Inc.,\n151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
-#: ../src/math-window.c:247
+#: ../src/math-window.c:260
 msgid "mate-calc"
 msgstr "mate-calc"
 
-#: ../src/math-window.c:251
+#: ../src/math-window.c:264
 msgid "Calculator with financial and scientific modes."
 msgstr "वित्तीय व शास्त्रीय पध्दतीचे गणनयंत्र."
 
 #. Calculator menu
-#: ../src/math-window.c:354
+#: ../src/math-window.c:367
 msgid "_Calculator"
 msgstr "गणनयंत्र (_C)"
 
 #. Mode menu
-#: ../src/math-window.c:356
+#: ../src/math-window.c:369
 msgid "_Mode"
-msgstr ""
+msgstr "मोड (_M)"
 
 #. Help menu label
-#: ../src/math-window.c:358
+#: ../src/math-window.c:371
 msgid "_Help"
 msgstr "मदत (_H)"
 
 #. Basic menu label
-#: ../src/math-window.c:360
+#: ../src/math-window.c:373
 msgid "_Basic"
 msgstr "मुलभूत (_B)"
 
 #. Advanced menu label
-#: ../src/math-window.c:362
+#: ../src/math-window.c:375
 msgid "_Advanced"
 msgstr "प्रगत (_A)"
 
 #. Financial menu label
-#: ../src/math-window.c:364
+#: ../src/math-window.c:377
 msgid "_Financial"
 msgstr "वित्तिय (_F)"
 
 #. Programming menu label
-#: ../src/math-window.c:366
+#: ../src/math-window.c:379
 msgid "_Programming"
 msgstr "प्रोग्रामींग (_P)"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:368
+#: ../src/math-window.c:381
 msgid "_Contents"
 msgstr "अनुक्रम (_C)"
 

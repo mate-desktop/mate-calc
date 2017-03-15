@@ -9,19 +9,19 @@
 # Djihed Afifi <djihed@gmail.com>, 2006
 # Khaled Hosny <khaledhosny@eglug.org>, 2006-2010
 # mauron, 2013
-# moceap <moceap@hotmail.com>, 2013
-# moceap <moceap@hotmail.com>, 2013
+# Mosaab Alzoubi <moceap@hotmail.com>, 2013
+# Mosaab Alzoubi <moceap@hotmail.com>, 2013
 # noureddin <noureddin@barid.com>, 2012
 # noureddin <noureddin@barid.com>, 2012
 # Usama Akkad <uahello@gmail.com>, 2010-2011
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2013-03-24 20:10+0100\n"
-"PO-Revision-Date: 2013-10-05 18:48+0000\n"
-"Last-Translator: mauron\n"
-"Language-Team: Arabic (http://www.transifex.com/projects/p/MATE/language/ar/)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-15 14:46+0300\n"
+"PO-Revision-Date: 2017-03-15 11:48+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Arabic (http://www.transifex.com/mate/MATE/language/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -167,12 +167,12 @@ msgstr "يقومُ بحساب بدل الاستهلاك على الأصول لد
 msgid "C_ost:"
 msgstr "ال_كُلفة:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:20
 msgid "_Life:"
 msgstr "المُدّة الكاملة:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:22
 msgid "_Period:"
 msgstr "الدّ_ورة:"
@@ -274,12 +274,12 @@ msgstr "يقومُ بحساب الرّبح الدّوري الضّروري لز�
 msgid "Straight-Line Depreciation"
 msgstr "الاستهلاك الثّابت"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:56
 msgid "_Cost:"
 msgstr "الكُ_لفة:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:58
 msgid "_Salvage:"
 msgstr "المُ_سترَد:"
@@ -293,12 +293,12 @@ msgid ""
 "typically years, over which an asset is depreciated. "
 msgstr "يقومُ بحساب الاستهلاك الثّابت للأصل في فترة واحدة. تُقسّم طريقة الاستهلاك الثّابت كُلفة الاستهلاك بالتّساوي على العمر الإنتاجي للأصل. حيث يتمثّل العمر الإنتاجي بعدد الفترات، سنوات غالبًا، و فوقها الرّصيد المُستَهلك."
 
-#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "مجمُوع الاستهلاك السّنوي"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
@@ -358,12 +358,7 @@ msgid "Term"
 msgstr "دورة الدّفع"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. time, using the Sum-Of-The-Years
 #: ../data/buttons-financial.ui.h:87
 msgid "Syd"
 msgstr "مجمُوع الاستهلاك السّنوي"
@@ -424,14 +419,12 @@ msgid "Ch_aracter:"
 msgstr "الم_حرف:"
 
 #. Accessible name for the shift left button
-#. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
+#: ../data/buttons-programming.ui.h:23
 msgid "Shift Left"
 msgstr "نقل لليسار"
 
 #. Accessible name for the shift right button
-#. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
+#: ../data/buttons-programming.ui.h:25
 msgid "Shift Right"
 msgstr "نقل لليمين"
 
@@ -490,116 +483,31 @@ msgstr "أظهر الأ_صفار الذّيلية"
 msgid "Show _thousands separators"
 msgstr "أظهر ال_فواصل الألفية"
 
+#: ../data/mate-calc.appdata.xml.in.h:1
+msgid "MATE Desktop calculator"
+msgstr ""
+
+#: ../data/mate-calc.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Calc is a powerful graphical calculator with financial, logical and"
+" scientific modes. It uses a multiple precision package to do its arithmetic"
+" to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
+"Calc and part of the MATE Desktop Environment. If you would like to know "
+"more about MATE and MATE Calc, please visit the project's home page. </p>"
+msgstr ""
+
 #: ../data/mate-calc.desktop.in.h:1
 msgid "MATE Calculator"
 msgstr "حاسبة متّة"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
 msgid "Calculator"
 msgstr "الحاسِبة"
 
 #: ../data/mate-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "أجرِ حساباتك الرّياضية و العلمية و الاقتصادية"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:1
-msgid "Accuracy value"
-msgstr "درجة الدّقة"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:2
-msgid "The number of digits displayed after the numeric point"
-msgstr "عدد الأرقام الظاهرة بعد النّقطة الرّقمية"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:3
-msgid "Word size"
-msgstr "حجم الكلمة"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:4
-msgid "The size of the words used in bitwise operations"
-msgstr "حجم الكلمات المستخدمة في العمليات البتّية"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:5
-msgid "Numeric Base"
-msgstr "أساسٌ رقمي"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:6
-msgid "The numeric base"
-msgstr "الأساس الرّقمي"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:7
-msgid "Show Thousands Separators"
-msgstr "أظهر الفواصل الألفية"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:8
-msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr "للدلالة على إظهار الفواصل الألفية في الأعداد الكبيرة."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:9
-msgid "Show Trailing Zeroes"
-msgstr "أظهر الأصفار الذّيلية"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:10
-msgid ""
-"Indicates whether any trailing zeroes after the numeric point should be "
-"shown in the display value."
-msgstr "للدلالة على إظهار الأصفار الذّيلية بعد الفاصلة الرّقمية في القيمة المعروضة."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:11
-msgid "Number format"
-msgstr "صيغة الأرقام"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:12
-msgid "The format to display numbers in"
-msgstr "صيغة عرض الأرقام"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:13
-msgid "Angle units"
-msgstr "وحدات الزّوايا"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:14
-msgid "The angle units to use"
-msgstr "وحدات الزّوايا المُستخدمة"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:15
-msgid "Button mode"
-msgstr "نمط الزّر"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:16
-msgid "The button mode"
-msgstr "نمط الزّر"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:17
-msgid "Source currency"
-msgstr "العُملة المصدر"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:18
-msgid "Currency of the current calculation"
-msgstr "عملة الحساب الحالي"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:19
-msgid "Target currency"
-msgstr "العملة الهدف"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:20
-msgid "Currency to convert the current calculation into"
-msgstr "العملة التي يحول الحساب الحالي لها"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:21
-msgid "Source units"
-msgstr "الوحدة المصدر"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:22
-msgid "Units of the current calculation"
-msgstr "وحدة الحساب الحالي"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:23
-msgid "Target units"
-msgstr "الوحدة الهدف"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:24
-msgid "Units to convert the current calculation into"
-msgstr "الوحدة التي يحوّل الحساب الحالي إليها"
 
 #: ../src/currency-manager.c:30
 msgid "UAE Dirham"
@@ -1144,6 +1052,16 @@ msgstr "امسح المعروض [Escape]"
 msgid "Undo [Ctrl+Z]"
 msgstr "تراجَع [Ctrl+Z]"
 
+#. Tooltip for the shift left button
+#: ../src/math-buttons.c:250
+msgid "Shift Left [<<]"
+msgstr ""
+
+#. Tooltip for the shift right button
+#: ../src/math-buttons.c:253
+msgid "Shift Right [>>]"
+msgstr ""
+
 #. Tooltip for the double declining depreciation button
 #: ../src/math-buttons.c:259
 msgid "Double Declining Depreciation"
@@ -1232,12 +1150,12 @@ msgstr "الإشارة"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: ../src/math-converter.c:412
+#: ../src/math-converter.c:414
 msgid " in "
 msgstr "إلى"
 
 #. Tooltip for swap conversion button
-#: ../src/math-converter.c:427
+#: ../src/math-converter.c:429
 msgid "Switch conversion units"
 msgstr "بدّل بين وحدات التحويل"
 
@@ -1295,23 +1213,23 @@ msgid "Calculating"
 msgstr "يجري الحساب"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1394
+#: ../src/math-equation.c:1390
 msgid "Need an integer to factorize"
 msgstr "تحتاج لعددٍ صحيح لتحليله إلى عوامله"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1470
+#: ../src/math-equation.c:1462
 msgid "No sane value to bitwise shift"
 msgstr "القيمة غير صالحةٍ لتحويلها"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1501
+#: ../src/math-equation.c:1493
 msgid "Displayed value not an integer"
 msgstr "اعرض قيمةً بدلًا من العدد الصحيح"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1926
+#: ../src/math-equation.c:1918
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1368,17 +1286,17 @@ msgid "Show %d decimal _places"
 msgstr "أظهر %d خا_نة عُشرية"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:198
+#: ../src/math-window.c:211
 msgid "Unable to open help file"
 msgstr "تعذّر فتح ملفِ المُساعدة"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:225
+#: ../src/math-window.c:238
 msgid "translator-credits"
 msgstr "يوسف رفه\t<yousef@raffah.com>\nيزيد دلندة\t<yazo1624@yahoo.co.uk>\nجهاد عفيفي\t<djihed@gmail.com>\nصهيب عفيفي\t<sohaibafifi@gmail.com>\nأنس عفيف عماد\t<anas.e87@gmail.com>\nخالد حسني\t<khaledhosny@eglug.org>\nمصعب الزعبي\t<moceap@hotmail.com>\n\nمراجعة و إتمام بواسطة عيون العرب http://arabeyes.org و مجتمع لينكس العربي http://linuxac.org عام 1434 بإشراف مصعب الزعبي moceap@hotmail.com"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:232
+#: ../src/math-window.c:245
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1395,51 +1313,51 @@ msgid ""
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr "حاسبة متّة برنامج حر، يمكنك توزيعه و/أو تعديله حسب بنود رخصة جنو العمومية كما \nنشرتها مؤسسة البرامج الحرة، الإصدار الثاني أو أي إصدار أحدث (حسب رغبتك).\n\nتوزع حاسبة متّة على أمل أن تكون مفيدةً، ولكن دون أي ضمانات، بما في ذلك ضمانات \nقابلية البرنامج للتسويق أو الملاءمة لغرض معين. انظر نص رخصة جنو العمومية \nلمزيد من التفاصيل.\n\nمن المفترض أنك تلقيت نسخة من رخصة جنو العمومية مع هذا البرنامج؛ إذا لم يحدث \nهذا فاكتب إلى مؤسسة البرمجيات الحرة\n 151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
-#: ../src/math-window.c:247
+#: ../src/math-window.c:260
 msgid "mate-calc"
 msgstr "حاسبةُ متّة"
 
-#: ../src/math-window.c:251
+#: ../src/math-window.c:264
 msgid "Calculator with financial and scientific modes."
 msgstr "ألة حاسبة ذات خصائص علميّة و اقتصادية."
 
 #. Calculator menu
-#: ../src/math-window.c:354
+#: ../src/math-window.c:367
 msgid "_Calculator"
 msgstr "حاس_بة"
 
 #. Mode menu
-#: ../src/math-window.c:356
+#: ../src/math-window.c:369
 msgid "_Mode"
 msgstr "الو_ضع"
 
 #. Help menu label
-#: ../src/math-window.c:358
+#: ../src/math-window.c:371
 msgid "_Help"
 msgstr "م_ساعدة"
 
 #. Basic menu label
-#: ../src/math-window.c:360
+#: ../src/math-window.c:373
 msgid "_Basic"
 msgstr "_أساسي"
 
 #. Advanced menu label
-#: ../src/math-window.c:362
+#: ../src/math-window.c:375
 msgid "_Advanced"
 msgstr "مُ_تقدم"
 
 #. Financial menu label
-#: ../src/math-window.c:364
+#: ../src/math-window.c:377
 msgid "_Financial"
 msgstr "_مصرفي"
 
 #. Programming menu label
-#: ../src/math-window.c:366
+#: ../src/math-window.c:379
 msgid "_Programming"
 msgstr "برم_جي"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:368
+#: ../src/math-window.c:381
 msgid "_Contents"
 msgstr "الم_حتويات"
 

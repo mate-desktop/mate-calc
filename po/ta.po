@@ -3,21 +3,22 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Dinesh Nadarajah <n_dinesh@yahoo.com>, 2003.
-# Dr.T.vasudevan <agnihot3@gmail.com>, 2009.
-# Dr,T,Vasudevan <agnihot3@gmail.com>, 2010-2011.
-# Dr.T.Vasudevan <agnihot3@gmail.com>, 2007,2009-2012.
-# Felix <ifelix25@gmail.com>, 2006.
-# I. Felix <ifelix@redhat.com>, 2009.
-# Jayaradha N <jaya@pune.redhat.com>, 2004.
+# Dinesh Nadarajah <n_dinesh@yahoo.com>, 2003
+# Dr.T.vasudevan <agnihot3@gmail.com>, 2009
+# Dr,T,Vasudevan <agnihot3@gmail.com>, 2010-2011
+# Dr.T.Vasudevan <agnihot3@gmail.com>, 2007,2009-2012
+# Felix I <ifelix25@gmail.com>, 2006
+# I. Felix <ifelix@redhat.com>, 2009
+# Jayaradha N <jaya@pune.redhat.com>, 2004
+# Maurious Paul Vincent <paulmaurious@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2013-03-24 20:10+0100\n"
-"PO-Revision-Date: 2013-03-24 19:27+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-15 14:46+0300\n"
+"PO-Revision-Date: 2017-03-15 11:48+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Tamil (http://www.transifex.com/mate/MATE/language/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -82,15 +83,15 @@ msgstr "மறை"
 
 #: ../data/buttons-advanced.ui.h:19
 msgid "acos"
-msgstr ""
+msgstr "acos"
 
 #: ../data/buttons-advanced.ui.h:20
 msgid "asin"
-msgstr ""
+msgstr "asin"
 
 #: ../data/buttons-advanced.ui.h:21
 msgid "atan"
-msgstr ""
+msgstr "atan"
 
 #. Accessible name for the store value button
 #: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:19
@@ -163,12 +164,12 @@ msgstr "குறிப்பிட்ட காலத்துக்கு ச�
 msgid "C_ost:"
 msgstr "செலவு (_o):"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:20
 msgid "_Life:"
 msgstr "வாழ்வு (_L):"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:22
 msgid "_Period:"
 msgstr "காலம் (_P):"
@@ -270,12 +271,12 @@ msgstr "மறு முதலீட்டு முறையில் ஒரு
 msgid "Straight-Line Depreciation"
 msgstr "நேர்-கோடு குறைமானம்"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:56
 msgid "_Cost:"
 msgstr "செலவு (_C):"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:58
 msgid "_Salvage:"
 msgstr "_S காத்தல்:"
@@ -289,12 +290,12 @@ msgid ""
 "typically years, over which an asset is depreciated. "
 msgstr "நேர்கோட்டு முறையில் ஒரு கால அளவுக்கு தேய்மானத்தை கணக்கிடுகிறது. சொத்தின் வாழ்நாள் முழுதும் ஒரே அளவு தேய்மானம் கணக்கிடப்படும். சொத்து எவ்வளவு வருடங்கள் உபயோகப்படும் என்பதுதான் வாழ்நாளாக கணக்கிடப்படும். "
 
-#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "மொத்த-வருட-இலக்கம் குறைமானம் "
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
@@ -354,12 +355,7 @@ msgid "Term"
 msgstr "உறுப்பு"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. time, using the Sum-Of-The-Years
 #: ../data/buttons-financial.ui.h:87
 msgid "Syd"
 msgstr "Syd"
@@ -420,16 +416,14 @@ msgid "Ch_aracter:"
 msgstr "_a எழுத்து:"
 
 #. Accessible name for the shift left button
-#. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
-msgid "Shift Left [<<]"
-msgstr "இடது பக்கம் நகர்த்துக. [<<]"
+#: ../data/buttons-programming.ui.h:23
+msgid "Shift Left"
+msgstr "இடது பக்கம் நகர்த்துக."
 
 #. Accessible name for the shift right button
-#. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
-msgid "Shift Right [>>]"
-msgstr "வலது பக்கம் நகர்த்துக [>>]"
+#: ../data/buttons-programming.ui.h:25
+msgid "Shift Right"
+msgstr "வலது பக்கம் நகர்த்துக"
 
 #. Accessible name for the insert character button
 #: ../data/buttons-programming.ui.h:27
@@ -486,116 +480,31 @@ msgstr "_z பின் வரும் பூஜ்ஜியங்களை க
 msgid "Show _thousands separators"
 msgstr "_t ஆயிரம் பிரிப்பான்களை காட்டு"
 
-#: ../data/mate-calc.desktop.in.h:1
-msgid "MATE Calculator"
+#: ../data/mate-calc.appdata.xml.in.h:1
+msgid "MATE Desktop calculator"
 msgstr ""
 
+#: ../data/mate-calc.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Calc is a powerful graphical calculator with financial, logical and"
+" scientific modes. It uses a multiple precision package to do its arithmetic"
+" to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
+"Calc and part of the MATE Desktop Environment. If you would like to know "
+"more about MATE and MATE Calc, please visit the project's home page. </p>"
+msgstr ""
+
+#: ../data/mate-calc.desktop.in.h:1
+msgid "MATE Calculator"
+msgstr "MATE கணிப்பான்"
+
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
 msgid "Calculator"
 msgstr "கணிப்பான்"
 
 #: ../data/mate-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "கணித, அறிவியல் அல்லது பொருளாதார கணக்குகளை செய்கிறது."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:1
-msgid "Accuracy value"
-msgstr "துல்லிய மதிப்பு "
-
-#: ../data/org.mate.calc.gschema.xml.in.h:2
-msgid "The number of digits displayed after the numeric point"
-msgstr "புள்ளிக்கு பிறகு காட்ட வேண்டிய எண்களின் எண்ணிக்கை."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:3
-msgid "Word size"
-msgstr "சொல் அளவு"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:4
-msgid "The size of the words used in bitwise operations"
-msgstr "பிட்வைஸ் செயல்பாடுகளில் பயன்படுத்த சொல் அளவு. "
-
-#: ../data/org.mate.calc.gschema.xml.in.h:5
-msgid "Numeric Base"
-msgstr "எண்வகை அடித்தளம் "
-
-#: ../data/org.mate.calc.gschema.xml.in.h:6
-msgid "The numeric base"
-msgstr "எண்வகை அடித்தளம் "
-
-#: ../data/org.mate.calc.gschema.xml.in.h:7
-msgid "Show Thousands Separators"
-msgstr "ஆயிரம் பிரிப்பான்களை காட்டு"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:8
-msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr "ஆயிரம் பிரிப்பிகள் பெரிய எண்களாக காட்டப்பட வேண்டுமா என காட்டுகிறது."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:9
-msgid "Show Trailing Zeroes"
-msgstr "பின் வரும் பூஜ்ஜியங்களை காட்டு"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:10
-msgid ""
-"Indicates whether any trailing zeroes after the numeric point should be "
-"shown in the display value."
-msgstr "எண் புள்ளிக்கு பிறகு வரும் பூஜ்ஜியங்கள் காட்சி மதிப்பில் காட்டப்பட வேண்டுமா என காட்டுகிறது."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:11
-msgid "Number format"
-msgstr "எண் ஒழுங்கு"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:12
-msgid "The format to display numbers in"
-msgstr "எண்களை காட்ட ஒழுங்கு "
-
-#: ../data/org.mate.calc.gschema.xml.in.h:13
-msgid "Angle units"
-msgstr "கோண அலகுகள்:"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:14
-msgid "The angle units to use"
-msgstr "பயன்படுத்த வேண்டிய கோண அலகுகள்"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:15
-msgid "Button mode"
-msgstr "பொத்தான் பாங்கு"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:16
-msgid "The button mode"
-msgstr "பொத்தான் பாங்கு"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:17
-msgid "Source currency"
-msgstr "மூல பணம்"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:18
-msgid "Currency of the current calculation"
-msgstr "நடப்பு கணக்கீட்டின் நாணயம் "
-
-#: ../data/org.mate.calc.gschema.xml.in.h:19
-msgid "Target currency"
-msgstr "இலக்கு பணம்"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:20
-msgid "Currency to convert the current calculation into"
-msgstr "நடப்பு கணக்கீட்டை மாற்ற வேண்டிய நாணயம் "
-
-#: ../data/org.mate.calc.gschema.xml.in.h:21
-msgid "Source units"
-msgstr "மூல அலகுகள்"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:22
-msgid "Units of the current calculation"
-msgstr "நடப்பு கணக்கீட்டின் அலகுகள் "
-
-#: ../data/org.mate.calc.gschema.xml.in.h:23
-msgid "Target units"
-msgstr "இலக்கு அலகுகள்:"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:24
-msgid "Units to convert the current calculation into"
-msgstr "நடப்பு கணக்கீட்டின் மாற்ற வேண்டிய அலகுகள் "
 
 #: ../src/currency-manager.c:30
 msgid "UAE Dirham"
@@ -1038,17 +947,17 @@ msgstr "ஹைபர்போலிக் டான்ஜென்ட்"
 #. Tooltip for the inverse sine button
 #: ../src/math-buttons.c:181
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Sine-ஐ தலைகீழாக்கு"
 
 #. Tooltip for the inverse cosine button
 #: ../src/math-buttons.c:184
 msgid "Inverse Cosine"
-msgstr ""
+msgstr "Cosine-ஐ தலைகீழாக்கு"
 
 #. Tooltip for the inverse tangent button
 #: ../src/math-buttons.c:187
 msgid "Inverse Tangent"
-msgstr ""
+msgstr "Tangent-ஐ தலைகீழாக்கு"
 
 #. Tooltip for the inverse button
 #: ../src/math-buttons.c:190
@@ -1140,6 +1049,16 @@ msgstr "காட்சியை துடை [Escape]"
 msgid "Undo [Ctrl+Z]"
 msgstr "செயல் தவிர்  [Ctrl+Z]"
 
+#. Tooltip for the shift left button
+#: ../src/math-buttons.c:250
+msgid "Shift Left [<<]"
+msgstr ""
+
+#. Tooltip for the shift right button
+#: ../src/math-buttons.c:253
+msgid "Shift Right [>>]"
+msgstr ""
+
 #. Tooltip for the double declining depreciation button
 #: ../src/math-buttons.c:259
 msgid "Double Declining Depreciation"
@@ -1220,12 +1139,12 @@ msgstr "கையொப்பம்"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: ../src/math-converter.c:412
+#: ../src/math-converter.c:414
 msgid " in "
 msgstr " உள்ளே "
 
 #. Tooltip for swap conversion button
-#: ../src/math-converter.c:427
+#: ../src/math-converter.c:429
 msgid "Switch conversion units"
 msgstr "மாற்றும் அலகை மாற்று"
 
@@ -1270,7 +1189,7 @@ msgstr "தெரியாத மதிப்பு மாற்றம்"
 #: ../src/math-equation.c:1253
 #, c-format
 msgid "Malformed expression at token '%s'"
-msgstr ""
+msgstr "'%s'-ல் தவறான கோவை இடம்பெற்றுள்ளது"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
@@ -1283,23 +1202,23 @@ msgid "Calculating"
 msgstr "கணக்கிடுகிறது"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1394
+#: ../src/math-equation.c:1390
 msgid "Need an integer to factorize"
 msgstr "காரணிப்படுத்த பகாவெண் தேவை"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1470
+#: ../src/math-equation.c:1462
 msgid "No sane value to bitwise shift"
 msgstr "பிட் வைஸ் மாற்றலுக்கு சேன் (sane) மதிப்பு இல்லை"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1501
+#: ../src/math-equation.c:1493
 msgid "Displayed value not an integer"
 msgstr "காட்டப்பட்ட மதிப்பு முழு எண் இல்லை."
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1926
+#: ../src/math-equation.c:1918
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1356,17 +1275,17 @@ msgid "Show %d decimal _places"
 msgstr "_p %d தசம இடங்களை காட்டு"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:198
+#: ../src/math-window.c:211
 msgid "Unable to open help file"
 msgstr "உதவி கோப்பினை திறக்க முடியவில்லை"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:225
+#: ../src/math-window.c:238
 msgid "translator-credits"
 msgstr "மொழிபெயர்ப்பாளர் சன்மானம்"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:232
+#: ../src/math-window.c:245
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1381,53 +1300,53 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
+msgstr "mate-கணிப்பான் ஓர் இலவச மென் பொருளாகும்.நீங்கள் இலவச மென் பொருள் அமைப்பினால் வெளியிடப்பட்ட ஜிஎன்யு பொது அனுமதிக்கான விதிகளின் படி இந்த 2ம் பதிப்பையோ அல்லது அடுத்த பதிப்புகளையோ நீங்கள் (விருப்பப்படி) மாற்றலாம். அல்லது மீண்டும் பறிமாறலாம். mate-கணிப்பான் உபயோகப்படும் என்ற எதிர்பார்ப்புடன் வெளியிடப்படுகிறது. ஆனால் விற்க தகுதி, குறிப்பிட்ட செயலுக்கான தகுதி உள்பட எந்த உத்திரவாதமும் அளிக்கப்படவில்லை. மேற் கொண்டு விவரங்களுக்கு ஜிஎன்யு பொது அனுமதிக்கான விதிகளை பார்க்கவும் mate-கணிப்பான் உடன் ஜிஎன்யு பொது அனுமதிக்கான விதிகளின் பிரதி உங்களுக்கு கிடைத்திருக்க வேண்டும். இல்லையானால் கீழ் கண்ட முகவரிக்கு கடிதம் எழுதவும். Free Software Foundation, Inc., 151 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA"
 
-#: ../src/math-window.c:247
+#: ../src/math-window.c:260
 msgid "mate-calc"
 msgstr "ஜி கால்கடூல்"
 
-#: ../src/math-window.c:251
+#: ../src/math-window.c:264
 msgid "Calculator with financial and scientific modes."
 msgstr "கணிப்பானுடன் நிதி தொடர்பான மற்றும் அறிவியல் பாங்குகள்."
 
 #. Calculator menu
-#: ../src/math-window.c:354
+#: ../src/math-window.c:367
 msgid "_Calculator"
 msgstr "கணிப்பி (_C)"
 
 #. Mode menu
-#: ../src/math-window.c:356
+#: ../src/math-window.c:369
 msgid "_Mode"
 msgstr "_M மோட்"
 
 #. Help menu label
-#: ../src/math-window.c:358
+#: ../src/math-window.c:371
 msgid "_Help"
 msgstr "உதவி (_H)"
 
 #. Basic menu label
-#: ../src/math-window.c:360
+#: ../src/math-window.c:373
 msgid "_Basic"
 msgstr "அடிப்படை (_B)"
 
 #. Advanced menu label
-#: ../src/math-window.c:362
+#: ../src/math-window.c:375
 msgid "_Advanced"
 msgstr "மேம்பட்ட  (_A)"
 
 #. Financial menu label
-#: ../src/math-window.c:364
+#: ../src/math-window.c:377
 msgid "_Financial"
 msgstr "நிதிநிலை (_F)"
 
 #. Programming menu label
-#: ../src/math-window.c:366
+#: ../src/math-window.c:379
 msgid "_Programming"
 msgstr "நிரலாக்கம் (_P)"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:368
+#: ../src/math-window.c:381
 msgid "_Contents"
 msgstr "உள்ளடக்கங்கள் (_C)"
 

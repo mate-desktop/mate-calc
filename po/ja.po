@@ -3,18 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
-# Nishio Futoshi <fut_nis@d3.dion.ne.jp>, 2010.
-# Satoru SATOH <ss@gnome.gr.jp>, 2006.
-# Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2010,2012.
+# ABE Tsunehiko, 2014
+# ABE Tsunehiko, 2014
+# KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003
+# Nishio Futoshi <fut_nis@d3.dion.ne.jp>, 2010
+# Satoru SATOH <ss@gnome.gr.jp>, 2006
+# Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2010,2012
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2013-03-24 20:10+0100\n"
-"PO-Revision-Date: 2013-03-24 19:35+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/projects/p/MATE/language/ja/)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-15 14:46+0300\n"
+"PO-Revision-Date: 2017-03-15 11:48+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Japanese (http://www.transifex.com/mate/MATE/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -79,15 +81,15 @@ msgstr "元に戻します"
 
 #: ../data/buttons-advanced.ui.h:19
 msgid "acos"
-msgstr ""
+msgstr "acos"
 
 #: ../data/buttons-advanced.ui.h:20
 msgid "asin"
-msgstr ""
+msgstr "asin"
 
 #: ../data/buttons-advanced.ui.h:21
 msgid "atan"
-msgstr ""
+msgstr "atan"
 
 #. Accessible name for the store value button
 #: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:19
@@ -160,12 +162,12 @@ msgstr "指定した期間に対する資産の減価償却費を(二倍)定率�
 msgid "C_ost:"
 msgstr "原価(_O):"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:20
 msgid "_Life:"
 msgstr "耐用年数(_L):"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:22
 msgid "_Period:"
 msgstr "期間(_P):"
@@ -267,12 +269,12 @@ msgstr "投資額の将来価値を上げる際に必要となる複利計算期
 msgid "Straight-Line Depreciation"
 msgstr "定額法による減価償却費"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:56
 msgid "_Cost:"
 msgstr "原価(_C):"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:58
 msgid "_Salvage:"
 msgstr "残存価額(_S):"
@@ -286,12 +288,12 @@ msgid ""
 "typically years, over which an asset is depreciated. "
 msgstr "指定した期間に対する資産の減価償却費を定額法 (Straight-Line Depreciation Method) を用いて計算します。この償却法は毎年の減価償却費を平準化できるという特徴があります。耐用年数は一般的に年数で指定し、経過年数との差額で求めます。"
 
-#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "級数法による減価償却費"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
@@ -351,12 +353,7 @@ msgid "Term"
 msgstr "期間"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. time, using the Sum-Of-The-Years
 #: ../data/buttons-financial.ui.h:87
 msgid "Syd"
 msgstr "Syd"
@@ -417,14 +414,12 @@ msgid "Ch_aracter:"
 msgstr "文字(_A):"
 
 #. Accessible name for the shift left button
-#. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
+#: ../data/buttons-programming.ui.h:23
 msgid "Shift Left"
 msgstr "左シフト"
 
 #. Accessible name for the shift right button
-#. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
+#: ../data/buttons-programming.ui.h:25
 msgid "Shift Right"
 msgstr "右シフト"
 
@@ -483,116 +478,31 @@ msgstr "有効桁数で表示(_Z)"
 msgid "Show _thousands separators"
 msgstr "3桁ごとの区切りを表示(_T)"
 
-#: ../data/mate-calc.desktop.in.h:1
-msgid "MATE Calculator"
+#: ../data/mate-calc.appdata.xml.in.h:1
+msgid "MATE Desktop calculator"
 msgstr ""
 
+#: ../data/mate-calc.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Calc is a powerful graphical calculator with financial, logical and"
+" scientific modes. It uses a multiple precision package to do its arithmetic"
+" to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
+"Calc and part of the MATE Desktop Environment. If you would like to know "
+"more about MATE and MATE Calc, please visit the project's home page. </p>"
+msgstr ""
+
+#: ../data/mate-calc.desktop.in.h:1
+msgid "MATE Calculator"
+msgstr "MATE 電卓"
+
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
 msgid "Calculator"
 msgstr "電卓"
 
 #: ../data/mate-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "算術/科学/財務の計算を行います"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:1
-msgid "Accuracy value"
-msgstr "精度"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:2
-msgid "The number of digits displayed after the numeric point"
-msgstr "小数点以降に表示する桁数"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:3
-msgid "Word size"
-msgstr "Wordサイズ"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:4
-msgid "The size of the words used in bitwise operations"
-msgstr "ビット演算時のWordサイズ"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:5
-msgid "Numeric Base"
-msgstr "数値の基数"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:6
-msgid "The numeric base"
-msgstr "数値の基数"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:7
-msgid "Show Thousands Separators"
-msgstr "3桁ごとの区切りの表示"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:8
-msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr "大きな数の表示で1000の区切りを表示するかどうか示す。"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:9
-msgid "Show Trailing Zeroes"
-msgstr "末尾のゼロを表示"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:10
-msgid ""
-"Indicates whether any trailing zeroes after the numeric point should be "
-"shown in the display value."
-msgstr "小数点以降の数値を表示後に、ゼロを表示するかどうかを示す。"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:11
-msgid "Number format"
-msgstr "数値の表示書式"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:12
-msgid "The format to display numbers in"
-msgstr "数値を表示する書式"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:13
-msgid "Angle units"
-msgstr "角度の単位"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:14
-msgid "The angle units to use"
-msgstr "使用する角度の単位"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:15
-msgid "Button mode"
-msgstr "ボタンモード"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:16
-msgid "The button mode"
-msgstr "ボタンモード"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:17
-msgid "Source currency"
-msgstr "元の通貨"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:18
-msgid "Currency of the current calculation"
-msgstr "通貨計算で使用する通貨"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:19
-msgid "Target currency"
-msgstr "変換後の通貨"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:20
-msgid "Currency to convert the current calculation into"
-msgstr "現在の計算結果の変換先の通貨"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:21
-msgid "Source units"
-msgstr "元の単位"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:22
-msgid "Units of the current calculation"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:23
-msgid "Target units"
-msgstr "変換後の単位"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:24
-msgid "Units to convert the current calculation into"
-msgstr ""
 
 #: ../src/currency-manager.c:30
 msgid "UAE Dirham"
@@ -1035,17 +945,17 @@ msgstr "双曲線正接の算出"
 #. Tooltip for the inverse sine button
 #: ../src/math-buttons.c:181
 msgid "Inverse Sine"
-msgstr ""
+msgstr "逆正弦"
 
 #. Tooltip for the inverse cosine button
 #: ../src/math-buttons.c:184
 msgid "Inverse Cosine"
-msgstr ""
+msgstr "逆余弦"
 
 #. Tooltip for the inverse tangent button
 #: ../src/math-buttons.c:187
 msgid "Inverse Tangent"
-msgstr ""
+msgstr "逆正接"
 
 #. Tooltip for the inverse button
 #: ../src/math-buttons.c:190
@@ -1137,6 +1047,16 @@ msgstr "表示のクリア [Escape]"
 msgid "Undo [Ctrl+Z]"
 msgstr "元に戻す [Ctrl+Z]"
 
+#. Tooltip for the shift left button
+#: ../src/math-buttons.c:250
+msgid "Shift Left [<<]"
+msgstr ""
+
+#. Tooltip for the shift right button
+#: ../src/math-buttons.c:253
+msgid "Shift Right [>>]"
+msgstr ""
+
 #. Tooltip for the double declining depreciation button
 #: ../src/math-buttons.c:259
 msgid "Double Declining Depreciation"
@@ -1215,12 +1135,12 @@ msgstr "符号"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: ../src/math-converter.c:412
+#: ../src/math-converter.c:414
 msgid " in "
 msgstr " in "
 
 #. Tooltip for swap conversion button
-#: ../src/math-converter.c:427
+#: ../src/math-converter.c:429
 msgid "Switch conversion units"
 msgstr "単位変換を切り替える"
 
@@ -1265,7 +1185,7 @@ msgstr "変換方法が分かりません"
 #: ../src/math-equation.c:1253
 #, c-format
 msgid "Malformed expression at token '%s'"
-msgstr ""
+msgstr "'%s' は解釈できない表現です"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
@@ -1278,23 +1198,23 @@ msgid "Calculating"
 msgstr "計算中"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1394
+#: ../src/math-equation.c:1390
 msgid "Need an integer to factorize"
 msgstr "因数分解は整数のみです"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1470
+#: ../src/math-equation.c:1462
 msgid "No sane value to bitwise shift"
 msgstr "ビット単位でシフトする値が正しくありません"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1501
+#: ../src/math-equation.c:1493
 msgid "Displayed value not an integer"
 msgstr "整数以外の値を表示します"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1926
+#: ../src/math-equation.c:1918
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1351,17 +1271,17 @@ msgid "Show %d decimal _places"
 msgstr "小数点以下第 %d 位まで表示 (_P)"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:198
+#: ../src/math-window.c:211
 msgid "Unable to open help file"
 msgstr "ヘルプを開けません"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:225
+#: ../src/math-window.c:238
 msgid "translator-credits"
-msgstr "相花 毅 <takeshi.aihana@gmail.com>\n佐藤 暁 <ss@gnome.gr.jp>\nKAMAGASAKO Masatoshi <emerald@gnome.gr.jp>\nNishio Futoshi <fut_nis@d3.dion.ne.jp>\n草野 貴之 <AE5T-KSN@asahi-net.or.jp>\n日本MATEユーザー会 <http://www.gnome.gr.jp/>\nLaunchpad Contributions:\n  Fumihito YOSHIDA https://launchpad.net/~hito\n  Shushi Kurose https://launchpad.net/~kurokuro\n  vbk https://launchpad.net/~vbkaisetsu"
+msgstr "相花 毅 <takeshi.aihana@gmail.com>\n佐藤 暁 <ss@gnome.gr.jp>\nKAMAGASAKO Masatoshi <emerald@gnome.gr.jp>\nNishio Futoshi <fut_nis@d3.dion.ne.jp>\n草野 貴之 <AE5T-KSN@asahi-net.or.jp>\n日本GNOMEユーザー会 <http://www.gnome.gr.jp/>\nLaunchpad Contributions:\n  Fumihito YOSHIDA https://launchpad.net/~hito\n  Shushi Kurose https://launchpad.net/~kurokuro\n  vbk https://launchpad.net/~vbkaisetsu"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:232
+#: ../src/math-window.c:245
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1376,53 +1296,53 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
+msgstr "MATE 電卓はフリーソフトウェアです。フリーソフトウェア財団が提供する\nGNU 一般公衆利用許諾契約書の第二版、あるいはそれ以降の版が定める\n条項の下で本プログラムを再頒布または変更することができます。\n\nMATE 電卓は有用とは思いますが、その頒布にあたっては市場性及び\n特定の目的、その適合性についての暗黙の保証を含めて、いかなる保証も\n行ないません。詳細については GNU 一般公衆利用許諾契約書をご覧ください。\n\nあなたは、本プログラムと一緒に GNU 一般公衆利用許諾契約書の写しを\n受け取っているはずです。そうでない場合は、Free Software Foundation, Inc., \n151 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA まで連絡してください。"
 
-#: ../src/math-window.c:247
+#: ../src/math-window.c:260
 msgid "mate-calc"
 msgstr "mate-calc"
 
-#: ../src/math-window.c:251
+#: ../src/math-window.c:264
 msgid "Calculator with financial and scientific modes."
 msgstr "財務と科学計算のモードを持つ電卓です。"
 
 #. Calculator menu
-#: ../src/math-window.c:354
+#: ../src/math-window.c:367
 msgid "_Calculator"
 msgstr "電卓(_C)"
 
 #. Mode menu
-#: ../src/math-window.c:356
+#: ../src/math-window.c:369
 msgid "_Mode"
 msgstr "モード(_M)"
 
 #. Help menu label
-#: ../src/math-window.c:358
+#: ../src/math-window.c:371
 msgid "_Help"
 msgstr "ヘルプ(_H)"
 
 #. Basic menu label
-#: ../src/math-window.c:360
+#: ../src/math-window.c:373
 msgid "_Basic"
 msgstr "基本(_B)"
 
 #. Advanced menu label
-#: ../src/math-window.c:362
+#: ../src/math-window.c:375
 msgid "_Advanced"
 msgstr "拡張(_A)"
 
 #. Financial menu label
-#: ../src/math-window.c:364
+#: ../src/math-window.c:377
 msgid "_Financial"
 msgstr "財務(_F)"
 
 #. Programming menu label
-#: ../src/math-window.c:366
+#: ../src/math-window.c:379
 msgid "_Programming"
 msgstr "プログラミング(_P)"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:368
+#: ../src/math-window.c:381
 msgid "_Contents"
 msgstr "目次(_C)"
 
@@ -1546,7 +1466,7 @@ msgstr "%s 度"
 #: ../src/unit-manager.c:54
 msgctxt "unit-symbols"
 msgid "degree,degrees,deg"
-msgstr ""
+msgstr "度, deg"
 
 #: ../src/unit-manager.c:55
 #, c-format
@@ -1557,7 +1477,7 @@ msgstr "%s ラジアン"
 #: ../src/unit-manager.c:55
 msgctxt "unit-symbols"
 msgid "radian,radians,rad"
-msgstr ""
+msgstr "ラジアン, rad"
 
 #: ../src/unit-manager.c:56
 #, c-format
@@ -1568,7 +1488,7 @@ msgstr "%s グラード"
 #: ../src/unit-manager.c:56
 msgctxt "unit-symbols"
 msgid "gradian,gradians,grad"
-msgstr ""
+msgstr "グラジアン, grad"
 
 #: ../src/unit-manager.c:57
 msgid "Parsecs"
@@ -1578,12 +1498,12 @@ msgstr "パーセク"
 #, c-format
 msgctxt "unit-format"
 msgid "%s pc"
-msgstr ""
+msgstr "%s パーセク"
 
 #: ../src/unit-manager.c:57
 msgctxt "unit-symbols"
 msgid "parsec,parsecs,pc"
-msgstr ""
+msgstr "パーセク, pc"
 
 #: ../src/unit-manager.c:58
 msgid "Light Years"
@@ -1593,12 +1513,12 @@ msgstr "光年"
 #, c-format
 msgctxt "unit-format"
 msgid "%s ly"
-msgstr ""
+msgstr "%s 光年"
 
 #: ../src/unit-manager.c:58
 msgctxt "unit-symbols"
 msgid "lightyear,lightyears,ly"
-msgstr ""
+msgstr "光年, ly"
 
 #: ../src/unit-manager.c:59
 msgid "Astronomical Units"
@@ -1608,12 +1528,12 @@ msgstr "天文単位"
 #, c-format
 msgctxt "unit-format"
 msgid "%s au"
-msgstr ""
+msgstr "%s 天文単位"
 
 #: ../src/unit-manager.c:59
 msgctxt "unit-symbols"
 msgid "au"
-msgstr ""
+msgstr "天文単位, au"
 
 #: ../src/unit-manager.c:60
 msgid "Nautical Miles"
@@ -1623,12 +1543,12 @@ msgstr "海里"
 #, c-format
 msgctxt "unit-format"
 msgid "%s nmi"
-msgstr ""
+msgstr "%s 海里"
 
 #: ../src/unit-manager.c:60
 msgctxt "unit-symbols"
 msgid "nmi"
-msgstr ""
+msgstr "海里, nmi"
 
 #: ../src/unit-manager.c:61
 msgid "Miles"
@@ -1638,12 +1558,12 @@ msgstr "マイル"
 #, c-format
 msgctxt "unit-format"
 msgid "%s mi"
-msgstr ""
+msgstr "%s マイル"
 
 #: ../src/unit-manager.c:61
 msgctxt "unit-symbols"
 msgid "mile,miles,mi"
-msgstr ""
+msgstr "マイル, mi"
 
 #: ../src/unit-manager.c:62
 msgid "Kilometers"
@@ -1653,12 +1573,12 @@ msgstr "キロメートル"
 #, c-format
 msgctxt "unit-format"
 msgid "%s km"
-msgstr ""
+msgstr "%s キロメートル"
 
 #: ../src/unit-manager.c:62
 msgctxt "unit-symbols"
 msgid "kilometer,kilometers,km,kms"
-msgstr ""
+msgstr "キロメートル, km"
 
 #: ../src/unit-manager.c:63
 msgid "Cables"
@@ -1668,12 +1588,12 @@ msgstr "鏈"
 #, c-format
 msgctxt "unit-format"
 msgid "%s cb"
-msgstr ""
+msgstr "%s ケーブル"
 
 #: ../src/unit-manager.c:63
 msgctxt "unit-symbols"
 msgid "cable,cables,cb"
-msgstr ""
+msgstr "ケーブル, cb"
 
 #: ../src/unit-manager.c:64
 msgid "Fathoms"
@@ -1683,12 +1603,12 @@ msgstr "ファゾム"
 #, c-format
 msgctxt "unit-format"
 msgid "%s ftm"
-msgstr ""
+msgstr "%s ファゾム"
 
 #: ../src/unit-manager.c:64
 msgctxt "unit-symbols"
 msgid "fathom,fathoms,ftm"
-msgstr ""
+msgstr "ファゾム, 尋, ftm"
 
 #: ../src/unit-manager.c:65
 msgid "Meters"
@@ -1698,12 +1618,12 @@ msgstr "メートル"
 #, c-format
 msgctxt "unit-format"
 msgid "%s m"
-msgstr ""
+msgstr "%s メートル"
 
 #: ../src/unit-manager.c:65
 msgctxt "unit-symbols"
 msgid "meter,meters,m"
-msgstr ""
+msgstr "メートル, m"
 
 #: ../src/unit-manager.c:66
 msgid "Yards"
@@ -1713,12 +1633,12 @@ msgstr "ヤード"
 #, c-format
 msgctxt "unit-format"
 msgid "%s yd"
-msgstr ""
+msgstr "%s ヤード"
 
 #: ../src/unit-manager.c:66
 msgctxt "unit-symbols"
 msgid "yard,yards,yd"
-msgstr ""
+msgstr "ヤード,yd"
 
 #: ../src/unit-manager.c:67
 msgid "Feet"
@@ -1728,12 +1648,12 @@ msgstr "フィート"
 #, c-format
 msgctxt "unit-format"
 msgid "%s ft"
-msgstr ""
+msgstr "%s フィート"
 
 #: ../src/unit-manager.c:67
 msgctxt "unit-symbols"
 msgid "foot,feet,ft"
-msgstr ""
+msgstr "フィート,ft"
 
 #: ../src/unit-manager.c:68
 msgid "Inches"
@@ -1748,7 +1668,7 @@ msgstr "%s in"
 #: ../src/unit-manager.c:68
 msgctxt "unit-symbols"
 msgid "inch,inches,in"
-msgstr ""
+msgstr "インチ,in"
 
 #: ../src/unit-manager.c:69
 msgid "Centimeters"
@@ -1763,7 +1683,7 @@ msgstr "%s cm"
 #: ../src/unit-manager.c:69
 msgctxt "unit-symbols"
 msgid "centimeter,centimeters,cm,cms"
-msgstr ""
+msgstr "センチメートル,cm"
 
 #: ../src/unit-manager.c:70
 msgid "Millimeters"
@@ -1778,7 +1698,7 @@ msgstr "%s mm"
 #: ../src/unit-manager.c:70
 msgctxt "unit-symbols"
 msgid "millimeter,millimeters,mm"
-msgstr ""
+msgstr "ミリメートル,mm"
 
 #: ../src/unit-manager.c:71
 msgid "Micrometers"
@@ -1793,7 +1713,7 @@ msgstr "%s μm"
 #: ../src/unit-manager.c:71
 msgctxt "unit-symbols"
 msgid "micrometer,micrometers,um"
-msgstr ""
+msgstr "マイクロメートル,um"
 
 #: ../src/unit-manager.c:72
 msgid "Nanometers"
@@ -1803,12 +1723,12 @@ msgstr "ナノメートル"
 #, c-format
 msgctxt "unit-format"
 msgid "%s nm"
-msgstr ""
+msgstr "%s nm"
 
 #: ../src/unit-manager.c:72
 msgctxt "unit-symbols"
 msgid "nanometer,nanometers,nm"
-msgstr ""
+msgstr "ナノメートル,nm"
 
 #: ../src/unit-manager.c:73
 msgid "Hectares"
@@ -1818,12 +1738,12 @@ msgstr "ヘクタール"
 #, c-format
 msgctxt "unit-format"
 msgid "%s ha"
-msgstr ""
+msgstr "%s ヘクタール"
 
 #: ../src/unit-manager.c:73
 msgctxt "unit-symbols"
 msgid "hectare,hectares,ha"
-msgstr ""
+msgstr "ヘクタール,ha"
 
 #: ../src/unit-manager.c:74
 msgid "Acres"
@@ -1838,7 +1758,7 @@ msgstr "%s エーカー"
 #: ../src/unit-manager.c:74
 msgctxt "unit-symbols"
 msgid "acre,acres"
-msgstr ""
+msgstr "エーカー"
 
 #: ../src/unit-manager.c:75
 msgid "Square Meters"
@@ -1908,12 +1828,12 @@ msgstr "ガロン"
 #, c-format
 msgctxt "unit-format"
 msgid "%s gal"
-msgstr ""
+msgstr "%s ガロン"
 
 #: ../src/unit-manager.c:79
 msgctxt "unit-symbols"
 msgid "gallon,gallons,gal"
-msgstr ""
+msgstr "ガロン,gal"
 
 #: ../src/unit-manager.c:80
 msgid "Litres"
@@ -1928,7 +1848,7 @@ msgstr "%s L"
 #: ../src/unit-manager.c:80
 msgctxt "unit-symbols"
 msgid "litre,litres,liter,liters,L"
-msgstr ""
+msgstr "リットル,リッター,L"
 
 #: ../src/unit-manager.c:81
 msgid "Quarts"
@@ -1938,12 +1858,12 @@ msgstr "クォート"
 #, c-format
 msgctxt "unit-format"
 msgid "%s qt"
-msgstr ""
+msgstr "%s クォート"
 
 #: ../src/unit-manager.c:81
 msgctxt "unit-symbols"
 msgid "quart,quarts,qt"
-msgstr ""
+msgstr "クォート,qt"
 
 #: ../src/unit-manager.c:82
 msgid "Pints"
@@ -1953,12 +1873,12 @@ msgstr "パイント"
 #, c-format
 msgctxt "unit-format"
 msgid "%s pt"
-msgstr ""
+msgstr "%s パイント"
 
 #: ../src/unit-manager.c:82
 msgctxt "unit-symbols"
 msgid "pint,pints,pt"
-msgstr ""
+msgstr "パイント,pt"
 
 #: ../src/unit-manager.c:83
 msgid "Millilitres"
@@ -1973,7 +1893,7 @@ msgstr "%s mL"
 #: ../src/unit-manager.c:83
 msgctxt "unit-symbols"
 msgid "millilitre,millilitres,milliliter,milliliters,mL,cm³"
-msgstr ""
+msgstr "ミリリットル,ミリリッター,mL,cm³"
 
 #: ../src/unit-manager.c:84
 msgid "Microlitres"
@@ -1988,7 +1908,7 @@ msgstr "%s μL"
 #: ../src/unit-manager.c:84
 msgctxt "unit-symbols"
 msgid "mm³,μL,uL"
-msgstr ""
+msgstr "立方ミリメートル,マイクロリットル,mm³,μL,uL"
 
 #: ../src/unit-manager.c:85
 msgid "Tonnes"
@@ -2003,7 +1923,7 @@ msgstr "%s t"
 #: ../src/unit-manager.c:85
 msgctxt "unit-symbols"
 msgid "tonne,tonnes"
-msgstr ""
+msgstr "トン"
 
 #: ../src/unit-manager.c:86
 msgid "Kilograms"
@@ -2018,7 +1938,7 @@ msgstr "%s kg"
 #: ../src/unit-manager.c:86
 msgctxt "unit-symbols"
 msgid "kilogram,kilograms,kilogramme,kilogrammes,kg,kgs"
-msgstr ""
+msgstr "キログラム,kg,kgs"
 
 #: ../src/unit-manager.c:87
 msgid "Pounds"
@@ -2033,7 +1953,7 @@ msgstr "%s lb"
 #: ../src/unit-manager.c:87
 msgctxt "unit-symbols"
 msgid "pound,pounds,lb"
-msgstr ""
+msgstr "パウンド,ポンド,lb"
 
 #: ../src/unit-manager.c:88
 msgid "Ounces"
@@ -2048,7 +1968,7 @@ msgstr "%s oz"
 #: ../src/unit-manager.c:88
 msgctxt "unit-symbols"
 msgid "ounce,ounces,oz"
-msgstr ""
+msgstr "オンス,oz"
 
 #: ../src/unit-manager.c:89
 msgid "Grams"
@@ -2063,7 +1983,7 @@ msgstr "%s g"
 #: ../src/unit-manager.c:89
 msgctxt "unit-symbols"
 msgid "gram,grams,gramme,grammes,g"
-msgstr ""
+msgstr "グラム,g"
 
 #: ../src/unit-manager.c:90
 msgid "Years"
@@ -2078,7 +1998,7 @@ msgstr "%s 年"
 #: ../src/unit-manager.c:90
 msgctxt "unit-symbols"
 msgid "year,years"
-msgstr ""
+msgstr "年"
 
 #: ../src/unit-manager.c:91
 msgid "Days"
@@ -2093,7 +2013,7 @@ msgstr "%s 日"
 #: ../src/unit-manager.c:91
 msgctxt "unit-symbols"
 msgid "day,days"
-msgstr ""
+msgstr "日"
 
 #: ../src/unit-manager.c:92
 msgid "Hours"
@@ -2103,12 +2023,12 @@ msgstr "時間"
 #, c-format
 msgctxt "unit-format"
 msgid "%s hours"
-msgstr ""
+msgstr "%s 時間"
 
 #: ../src/unit-manager.c:92
 msgctxt "unit-symbols"
 msgid "hour,hours"
-msgstr ""
+msgstr "時間"
 
 #: ../src/unit-manager.c:93
 msgid "Minutes"
@@ -2123,7 +2043,7 @@ msgstr "%s 分"
 #: ../src/unit-manager.c:93
 msgctxt "unit-symbols"
 msgid "minute,minutes"
-msgstr ""
+msgstr "分"
 
 #: ../src/unit-manager.c:94
 msgid "Seconds"
@@ -2138,7 +2058,7 @@ msgstr "%s 秒"
 #: ../src/unit-manager.c:94
 msgctxt "unit-symbols"
 msgid "second,seconds,s"
-msgstr ""
+msgstr "秒,s"
 
 #: ../src/unit-manager.c:95
 msgid "Milliseconds"
@@ -2153,7 +2073,7 @@ msgstr "%s ミリ秒"
 #: ../src/unit-manager.c:95
 msgctxt "unit-symbols"
 msgid "millisecond,milliseconds,ms"
-msgstr ""
+msgstr "ミリ秒,ms"
 
 #: ../src/unit-manager.c:96
 msgid "Microseconds"
@@ -2168,7 +2088,7 @@ msgstr "%s μ秒"
 #: ../src/unit-manager.c:96
 msgctxt "unit-symbols"
 msgid "microsecond,microseconds,us,μs"
-msgstr ""
+msgstr "マイクロ秒,us,μs"
 
 #: ../src/unit-manager.c:97
 msgid "Celsius"
@@ -2183,7 +2103,7 @@ msgstr "%s ℃"
 #: ../src/unit-manager.c:97
 msgctxt "unit-symbols"
 msgid "degC,˚C"
-msgstr ""
+msgstr "摂氏,˚C"
 
 #: ../src/unit-manager.c:98
 msgid "Farenheit"
@@ -2198,7 +2118,7 @@ msgstr "%s ˚F"
 #: ../src/unit-manager.c:98
 msgctxt "unit-symbols"
 msgid "degF,˚F"
-msgstr ""
+msgstr "華氏,˚F"
 
 #: ../src/unit-manager.c:99
 msgid "Kelvin"
@@ -2228,7 +2148,7 @@ msgstr "%s ˚R"
 #: ../src/unit-manager.c:100
 msgctxt "unit-symbols"
 msgid "degR,˚R,˚Ra"
-msgstr ""
+msgstr "蘭氏,˚R,˚Ra"
 
 #: ../src/unit-manager.c:109
 msgid "Angle"

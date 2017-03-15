@@ -3,17 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Carlos <crolidge@gmail.com>, 2013.
-# Duarte Loreto <happyguy_pt@hotmail.com>, 2003-2012.
-# Sérgio Marques <smarquespt@gmail.com>, 2012.
+# crolidge, 2013
+# crolidge, 2014
+# Duarte Loreto <happyguy_pt@hotmail.com>, 2003-2012
+# Sérgio Marques <smarquespt@gmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2013-03-24 20:10+0100\n"
-"PO-Revision-Date: 2013-03-25 21:49+0000\n"
-"Last-Translator: Carlos <crolidge@gmail.com>\n"
-"Language-Team: Portuguese (http://www.transifex.com/projects/p/MATE/language/pt/)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-15 14:46+0300\n"
+"PO-Revision-Date: 2017-03-15 11:48+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Portuguese (http://www.transifex.com/mate/MATE/language/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,7 +24,7 @@ msgstr ""
 #. Accessible name for the factorize button
 #: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:8
 msgid "Factorize"
-msgstr "Factorizar"
+msgstr "Fatorizar"
 
 #. Label on the solve button (clicking this solves the displayed calculation)
 #: ../data/buttons-advanced.ui.h:4 ../data/buttons-basic.ui.h:2
@@ -69,7 +70,7 @@ msgstr "x"
 #: ../data/buttons-advanced.ui.h:17 ../data/buttons-basic.ui.h:5
 #: ../data/buttons-financial.ui.h:100 ../data/buttons-programming.ui.h:33
 msgid "Exponent"
-msgstr "Exponente"
+msgstr "Expoente"
 
 #: ../data/buttons-advanced.ui.h:18 ../data/buttons-basic.ui.h:6
 #: ../data/buttons-financial.ui.h:98
@@ -101,7 +102,7 @@ msgstr "Inverso"
 #. Accessible name for the factorial button
 #: ../data/buttons-advanced.ui.h:27 ../data/buttons-programming.ui.h:29
 msgid "Factorial"
-msgstr "Factorial"
+msgstr "Fatorial"
 
 #. Accessible name for the absolute value button
 #: ../data/buttons-advanced.ui.h:29 ../data/buttons-programming.ui.h:10
@@ -122,7 +123,7 @@ msgstr "C_alcular"
 #. Periodic Interest Rate Dialog: Label before present value input
 #: ../data/buttons-financial.ui.h:6
 msgid "Present _Value:"
-msgstr "_Valor Actual:"
+msgstr "_Valor Atual:"
 
 #. Payment Period Dialog: Label before periodic interest rate input
 #: ../data/buttons-financial.ui.h:8
@@ -135,7 +136,7 @@ msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr "Calcula o número de períodos de juro composto necessários para aumentar o investimento de um valor actual para um valor futuro, a uma taxa de juro fixa por período de juro composto."
+msgstr "Calcula o número de períodos de juro composto necessários para aumentar o investimento de um valor atual para um valor futuro, a uma taxa de juro fixa por período de juro composto."
 
 #. Periodic Interest Rate Dialog: Label before future value input
 #: ../data/buttons-financial.ui.h:12
@@ -152,19 +153,19 @@ msgstr "Amortização de Duplo-Declínio"
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
-msgstr "Calcula o valor da amortização de um activo durante um período de tempo específico, utilizando o método de equilíbrio de duplo declínio."
+msgstr "Calcula o valor da amortização de um ativo durante um período de tempo específico, utilizando o método de equilíbrio de duplo declínio."
 
 #. Gross Profit Margin Dialog: Label before cost input
 #: ../data/buttons-financial.ui.h:18
 msgid "C_ost:"
 msgstr "C_usto:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:20
 msgid "_Life:"
 msgstr "_Vida:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:22
 msgid "_Period:"
 msgstr "_Período:"
@@ -222,7 +223,7 @@ msgstr "Pagamento Periódico"
 msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
-msgstr "Calcula o montante do pagamento periódico de um empréstimo, em que os pagamentos são realizados no final de cada período (postecipados). "
+msgstr "Calcula o montante do pagamento periódico de um empréstimo, em que os pagamentos são realizados no final de cada período de pagamento. "
 
 #. Periodic Payment Dialog: Label before principal input
 #: ../data/buttons-financial.ui.h:42
@@ -238,7 +239,7 @@ msgstr "_Prazo:"
 #. Tooltip for the present value button
 #: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:277
 msgid "Present Value"
-msgstr "Valor Actual"
+msgstr "Valor Atual"
 
 #. Present Value Dialog: Description of calculation
 #: ../data/buttons-financial.ui.h:48
@@ -246,7 +247,7 @@ msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr "Calcula o valor actual de um investimento baseado numa série de pagamentos iguais descontados a uma taxa de juro periódica sobre o número de períodos de pagamento do prazo. "
+msgstr "Calcula o valor atual de um investimento baseado numa série de pagamentos iguais descontados a uma taxa de juro periódica sobre o número de períodos de pagamento do prazo. "
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
@@ -266,12 +267,12 @@ msgstr "Calcula o juro periódico necessário para aumentar um investimento para
 msgid "Straight-Line Depreciation"
 msgstr "Amortização Constante"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:56
 msgid "_Cost:"
 msgstr "_Custo:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:58
 msgid "_Salvage:"
 msgstr "Valor _Residual:"
@@ -285,12 +286,12 @@ msgid ""
 "typically years, over which an asset is depreciated. "
 msgstr "Calcula o montante da amortização constante de um activo para um período. O método de amortização constante divide o custo da amortização de forma igual sobre a vida útil do activo. A vida útil é o número de períodos, tipicamente anos, durante os quais o activo é amortizado. "
 
-#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "Amortização por Soma dos Dígitos dos Anos"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
@@ -350,12 +351,7 @@ msgid "Term"
 msgstr "Pp"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. time, using the Sum-Of-The-Years
 #: ../data/buttons-financial.ui.h:87
 msgid "Syd"
 msgstr "Asa"
@@ -416,16 +412,14 @@ msgid "Ch_aracter:"
 msgstr "C_aracter:"
 
 #. Accessible name for the shift left button
-#. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
-msgid "Shift Left [<<]"
-msgstr "Deslocar à Esquerda [<<]"
+#: ../data/buttons-programming.ui.h:23
+msgid "Shift Left"
+msgstr "Deslocar à Esquerda"
 
 #. Accessible name for the shift right button
-#. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
-msgid "Shift Right [>>]"
-msgstr "Deslocar à Direita [>>]"
+#: ../data/buttons-programming.ui.h:25
+msgid "Shift Right"
+msgstr "Deslocar à Direita"
 
 #. Accessible name for the insert character button
 #: ../data/buttons-programming.ui.h:27
@@ -460,34 +454,47 @@ msgstr "Preferências"
 #. Preferences dialog: Label for angle unit combo box
 #: ../data/preferences.ui.h:11
 msgid "_Angle units:"
-msgstr "_Unidades do ângulo:"
+msgstr "_Unidades de ângulo:"
 
 #. Preferences dialog: Label for display format combo box
 #: ../data/preferences.ui.h:13
 msgid "Number _Format:"
-msgstr "_Formato do Número:"
+msgstr "_Formato de Número:"
 
 #. Preferences dialog: label for word size combo box
 #: ../data/preferences.ui.h:15
 msgid "Word _size:"
-msgstr "_Tamanho da word:"
+msgstr "_Tamanho da palavra:"
 
 #. Preferences dialog: label for show trailing zeroes check button
 #: ../data/preferences.ui.h:17
 msgid "Show trailing _zeroes"
-msgstr "Apresentar _zeros no final"
+msgstr "Mostrar _zeros no final"
 
 #. Preferences dialog: label for show thousands separator check button
 #: ../data/preferences.ui.h:19
 msgid "Show _thousands separators"
-msgstr "Apresentar o separador de _milhares"
+msgstr "Mostrar o separador de _milhares"
+
+#: ../data/mate-calc.appdata.xml.in.h:1
+msgid "MATE Desktop calculator"
+msgstr ""
+
+#: ../data/mate-calc.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Calc is a powerful graphical calculator with financial, logical and"
+" scientific modes. It uses a multiple precision package to do its arithmetic"
+" to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
+"Calc and part of the MATE Desktop Environment. If you would like to know "
+"more about MATE and MATE Calc, please visit the project's home page. </p>"
+msgstr ""
 
 #: ../data/mate-calc.desktop.in.h:1
 msgid "MATE Calculator"
 msgstr "Calculadora MATE"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
 msgid "Calculator"
 msgstr "Calculadora"
 
@@ -495,107 +502,9 @@ msgstr "Calculadora"
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Realize cálculos aritméticos, científicos ou financeiros"
 
-#: ../data/org.mate.calc.gschema.xml.in.h:1
-msgid "Accuracy value"
-msgstr "Valor de precisão"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:2
-msgid "The number of digits displayed after the numeric point"
-msgstr "O número de dígitos apresentados após o separador decimal"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:3
-msgid "Word size"
-msgstr "Tamanho da word"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:4
-msgid "The size of the words used in bitwise operations"
-msgstr "O tamanho das words utilizadas em operações de bits"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:5
-msgid "Numeric Base"
-msgstr "Base Numérica"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:6
-msgid "The numeric base"
-msgstr "A base numérica"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:7
-msgid "Show Thousands Separators"
-msgstr "Apresentar o Separador de Milhares"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:8
-msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr "Indica se os separadores dos milhares são apresentados em números grandes."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:9
-msgid "Show Trailing Zeroes"
-msgstr "Apresentar Zeros Após Separador Decimal"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:10
-msgid ""
-"Indicates whether any trailing zeroes after the numeric point should be "
-"shown in the display value."
-msgstr "Indica se deverão ser visíveis quaisquer zeros após o separador decimal no valor apresentado."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:11
-msgid "Number format"
-msgstr "Formato do número"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:12
-msgid "The format to display numbers in"
-msgstr "O formato em que apresentar os números"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:13
-msgid "Angle units"
-msgstr "Unidades de ângulo"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:14
-msgid "The angle units to use"
-msgstr "As unidades de ângulo a utilizar"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:15
-msgid "Button mode"
-msgstr "Modo de botão"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:16
-msgid "The button mode"
-msgstr "O modo de botão"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:17
-msgid "Source currency"
-msgstr "Moeda de origem"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:18
-msgid "Currency of the current calculation"
-msgstr "Moeda do cálculo actual"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:19
-msgid "Target currency"
-msgstr "Moeda de destino"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:20
-msgid "Currency to convert the current calculation into"
-msgstr "Moeda em que converter o cálculo actual"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:21
-msgid "Source units"
-msgstr "Unidades de origem"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:22
-msgid "Units of the current calculation"
-msgstr "Unidades do cálculo actual"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:23
-msgid "Target units"
-msgstr "Unidades de destino"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:24
-msgid "Units to convert the current calculation into"
-msgstr "Unidades em que converter o cálculo actual"
-
 #: ../src/currency-manager.c:30
 msgid "UAE Dirham"
-msgstr "Dirham dos Emirados"
+msgstr "Dirham dos EAU"
 
 #: ../src/currency-manager.c:31
 msgid "Australian Dollar"
@@ -835,7 +744,7 @@ msgstr "Rand Sul-Africano"
 
 #: ../src/financial.c:70
 msgid "Error: the number of periods must be positive"
-msgstr "Erro: o número de períodos tem de ser positivo"
+msgstr "Erro: o número de períodos deve ser positivo"
 
 #. Description on how to use mate-calc displayed on command-line
 #: ../src/mate-calc.c:79
@@ -869,7 +778,7 @@ msgid ""
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr "Opções GTK+:\n  --class=CLASS                   Classe da aplicação tal como utilizada pelo gestor de janelas\n  --name=NAME                     Nome da aplicação tal como utilizada pelo gestor de janelas\n  --screen=SCREEN                 Ecrã X a utilizar\n  --sync                          Realizar as invocações X sincronamente\n  --gtk-module=MODULES            Ler módulos GTK+ adicionais\n  --g-fatal-warnings              Tornar todos os avisos em erros fatais"
+msgstr "Opções GTK+:\n  --class=CLASS                   Classe da aplicação tal como utilizada pelo gestor de janelas\n  --name=NAME                     Nome da aplicação tal como utilizada pelo gestor de janelas\n  --screen=SCREEN                 Ecrã X a utilizar\n  --sync                          Realizar as invocações X síncronas\n  --gtk-module=MODULES            Ler módulos GTK+ adicionais\n  --g-fatal-warnings              Tornar todos os avisos em erros fatais"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -949,7 +858,7 @@ msgstr "Funções Adicionais"
 #. Tooltip for the exponent button
 #: ../src/math-buttons.c:130
 msgid "Exponent [^ or **]"
-msgstr "Exponente [^ ou **]"
+msgstr "Expoente [^ ou **]"
 
 #. Tooltip for the square button
 #: ../src/math-buttons.c:133
@@ -994,12 +903,12 @@ msgstr "Raiz quadrada [Ctrl+R]"
 #. Tooltip for the logarithm button
 #: ../src/math-buttons.c:157
 msgid "Logarithm"
-msgstr "Logarítmo"
+msgstr "Logaritmo"
 
 #. Tooltip for the natural logarithm button
 #: ../src/math-buttons.c:160
 msgid "Natural Logarithm"
-msgstr "Logarítmo Natural"
+msgstr "Logaritmo Natural"
 
 #. Tooltip for the sine button
 #: ../src/math-buttons.c:163
@@ -1079,7 +988,7 @@ msgstr "Porção Inteira"
 #. Tooltip for the fractional component button
 #: ../src/math-buttons.c:208 ../src/math-buttons.c:996
 msgid "Fractional Component"
-msgstr "Porção Fraccionária"
+msgstr "Porção Fracionária"
 
 #. Tooltip for the real component button
 #: ../src/math-buttons.c:211
@@ -1135,6 +1044,16 @@ msgstr "Limpar o Ecrã [Escape]"
 #: ../src/math-buttons.c:247
 msgid "Undo [Ctrl+Z]"
 msgstr "Desfazer [Ctrl+Z]"
+
+#. Tooltip for the shift left button
+#: ../src/math-buttons.c:250
+msgid "Shift Left [<<]"
+msgstr ""
+
+#. Tooltip for the shift right button
+#: ../src/math-buttons.c:253
+msgid "Shift Right [>>]"
+msgstr ""
 
 #. Tooltip for the double declining depreciation button
 #: ../src/math-buttons.c:259
@@ -1216,12 +1135,12 @@ msgstr "Sinal"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: ../src/math-converter.c:412
+#: ../src/math-converter.c:414
 msgid " in "
 msgstr " em "
 
 #. Tooltip for swap conversion button
-#: ../src/math-converter.c:427
+#: ../src/math-converter.c:429
 msgid "Switch conversion units"
 msgstr "Alterar as unidades de conversão"
 
@@ -1243,7 +1162,7 @@ msgstr "Nenhum valor lógico a armazenar"
 #. greater than the current word
 #: ../src/math-equation.c:1230
 msgid "Overflow. Try a bigger word size"
-msgstr "Excedeu o tamanho. Tente um tamanho de word maior"
+msgstr "Extravasou. Tente um tamanho de palavra maior"
 
 #. Error displayed to user when they an unknown variable is entered
 #: ../src/math-equation.c:1235
@@ -1279,23 +1198,23 @@ msgid "Calculating"
 msgstr "A Calcular"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1394
+#: ../src/math-equation.c:1390
 msgid "Need an integer to factorize"
 msgstr "É necessário um inteiro para factorizar"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1470
+#: ../src/math-equation.c:1462
 msgid "No sane value to bitwise shift"
 msgstr "Nenhum valor lógico para fazer deslocamento de bits"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1501
+#: ../src/math-equation.c:1493
 msgid "Displayed value not an integer"
 msgstr "O valor apresentado não é um inteiro"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1926
+#: ../src/math-equation.c:1918
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1349,20 +1268,20 @@ msgstr "Engenharia"
 #: ../src/math-preferences.c:293
 #, c-format
 msgid "Show %d decimal _places"
-msgstr "Apresentar %d _casas decimais"
+msgstr "Mostrar %d _casas decimais"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:198
+#: ../src/math-window.c:211
 msgid "Unable to open help file"
 msgstr "Incapaz de abrir o ficheiro de ajuda"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:225
+#: ../src/math-window.c:238
 msgid "translator-credits"
-msgstr "Duarte Loreto <happyguy_pt@hotmail.com>"
+msgstr "Duarte Loreto <happyguy_pt@hotmail.com>\nCarlos Moreira <crolidge@hotmail.com>"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:232
+#: ../src/math-window.c:245
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1377,53 +1296,53 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr "mate-calc é uma aplicação grátis; pode redisribuí-la e/ou alterá-la sob os\ntermos da Licença Pública Geral GNU, tal como publicada pela Free Software\nFoundation; ou a versão 2 da Licença ou, (à sua discrição) qualquer versão\nposterior.\n\nmate-calc é distribuída na expectativa de que será útil, mas SEM QUALQUER\nGARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE ou ADEQUAÇÃO A\nUM PROPÓSITO ESPECÍFICO.  Consulte a Licença Pública Genérica GNU para mais\ndetalhes.\n\nDeverá ter recebido uma cópia da Licença Pública Genérica GNU juntamente\ncom o mate-calc; caso contrário, escreva para Free Software Foundation,\nInc., 151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr "mate-calc é uma aplicação grátis; pode redisribuí-la e/ou alterá-la sob os\ntermos da Licença Pública Geral GNU, tal como publicada pela Free Software\nFoundation; ou a versão 2 da Licença, ou (à sua discrição) qualquer versão\nposterior.\n\nmate-calc é distribuída na expetativa de que será útil, mas SEM QUALQUER\nGARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE ou ADEQUAÇÃO A\nUM PROPÓSITO ESPECÍFICO.  Consulte a Licença Pública Genérica GNU para mais\ninformações.\n\nDeverá ter recebido uma cópia da Licença Pública Genérica GNU juntamente\ncom o mate-calc; caso contrário, escreva para Free Software Foundation,\nInc., 151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 
-#: ../src/math-window.c:247
+#: ../src/math-window.c:260
 msgid "mate-calc"
 msgstr "mate-calc"
 
-#: ../src/math-window.c:251
+#: ../src/math-window.c:264
 msgid "Calculator with financial and scientific modes."
 msgstr "Calculadora com modos financeiro e científico."
 
 #. Calculator menu
-#: ../src/math-window.c:354
+#: ../src/math-window.c:367
 msgid "_Calculator"
 msgstr "_Calculadora"
 
 #. Mode menu
-#: ../src/math-window.c:356
+#: ../src/math-window.c:369
 msgid "_Mode"
 msgstr "_Modo"
 
 #. Help menu label
-#: ../src/math-window.c:358
+#: ../src/math-window.c:371
 msgid "_Help"
 msgstr "_Ajuda"
 
 #. Basic menu label
-#: ../src/math-window.c:360
+#: ../src/math-window.c:373
 msgid "_Basic"
 msgstr "_Básico"
 
 #. Advanced menu label
-#: ../src/math-window.c:362
+#: ../src/math-window.c:375
 msgid "_Advanced"
 msgstr "_Avançado"
 
 #. Financial menu label
-#: ../src/math-window.c:364
+#: ../src/math-window.c:377
 msgid "_Financial"
 msgstr "_Financeiro"
 
 #. Programming menu label
-#: ../src/math-window.c:366
+#: ../src/math-window.c:379
 msgid "_Programming"
 msgstr "_Programação"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:368
+#: ../src/math-window.c:381
 msgid "_Contents"
 msgstr "_Conteúdo"
 
@@ -1479,7 +1398,7 @@ msgstr "O logaritmo de zero é indefinido"
 #. exponent
 #: ../src/mp.c:1680 ../src/mp.c:1994
 msgid "The power of zero is undefined for a negative exponent"
-msgstr "A potência de zero é indefinida para expoentes negativos"
+msgstr "A potência de zero é indefinida num expoente negativo"
 
 #: ../src/mp.c:1704
 msgid "Reciprocal of zero is undefined"
@@ -1547,7 +1466,7 @@ msgstr "%s graus"
 #: ../src/unit-manager.c:54
 msgctxt "unit-symbols"
 msgid "degree,degrees,deg"
-msgstr "grau,graus,grau"
+msgstr "grau,graus,gra"
 
 #: ../src/unit-manager.c:55
 #, c-format
@@ -1624,12 +1543,12 @@ msgstr "Milhas Náuticas"
 #, c-format
 msgctxt "unit-format"
 msgid "%s nmi"
-msgstr "%s nmi"
+msgstr "%s mln"
 
 #: ../src/unit-manager.c:60
 msgctxt "unit-symbols"
 msgid "nmi"
-msgstr "nmi"
+msgstr "mln"
 
 #: ../src/unit-manager.c:61
 msgid "Miles"
@@ -1804,7 +1723,7 @@ msgstr "Nonometros"
 #, c-format
 msgctxt "unit-format"
 msgid "%s nm"
-msgstr "%s mn"
+msgstr "%s nm"
 
 #: ../src/unit-manager.c:72
 msgctxt "unit-symbols"
@@ -1888,7 +1807,7 @@ msgstr "mm²"
 
 #: ../src/unit-manager.c:78
 msgid "Cubic Meters"
-msgstr "Metro Cúbico"
+msgstr "Metros Cúbicos"
 
 #: ../src/unit-manager.c:78
 #, c-format
@@ -2173,7 +2092,7 @@ msgstr "microssegundo,microssegundos,us,μs"
 
 #: ../src/unit-manager.c:97
 msgid "Celsius"
-msgstr "Célcios"
+msgstr "Celsius"
 
 #: ../src/unit-manager.c:97
 #, c-format

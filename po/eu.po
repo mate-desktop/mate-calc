@@ -3,19 +3,19 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Andoni Sáenz de Santamaría Zabala <andonisz@ibercom.com>, 2003.
-# Asier Iturralde Sarasola <asier.iturralde@gmail.com>, 2012.
-# Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>, 2011.
-# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2003-2011.
-# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2007, 2008.
+# Andoni Sáenz de Santamaría Zabala <andonisz@ibercom.com>, 2003
+# Asier Iturralde Sarasola <asier.iturralde@gmail.com>, 2012,2014
+# Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>, 2011
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2003-2011
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2007-2008
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2013-03-24 20:10+0100\n"
-"PO-Revision-Date: 2013-03-24 19:32+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: Basque (http://www.transifex.com/projects/p/MATE/language/eu/)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-15 14:46+0300\n"
+"PO-Revision-Date: 2017-03-15 11:48+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Basque (http://www.transifex.com/mate/MATE/language/eu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -161,12 +161,12 @@ msgstr "Aktibo baten denboraldi jakin bateko amortizazio-esleipen aritmetikoki b
 msgid "C_ost:"
 msgstr "K_ostua:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:20
 msgid "_Life:"
 msgstr "_Bizitza:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:22
 msgid "_Period:"
 msgstr "_Denboraldia:"
@@ -268,12 +268,12 @@ msgstr "Kapitalizazio-denboraldi kopuru batean zehar inbertsio bat etorkizuneko 
 msgid "Straight-Line Depreciation"
 msgstr "Amortizazio lineala"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:56
 msgid "_Cost:"
 msgstr "K_ostua:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:58
 msgid "_Salvage:"
 msgstr "_Salbamendua:"
@@ -287,12 +287,12 @@ msgid ""
 "typically years, over which an asset is depreciated. "
 msgstr "Denboraldi bateko amortizazio lineala kalkulatzen du. Amortizazio linealaren metodoak zati berdinetan zatitzen du kostu amortizagarria aktibo baten bizitza erabilgarrian zehar. Bizitza erabilgarria aktibo bat amortizatzeko denboraldien kopurua da (normalean urteetan zehazten da). "
 
-#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "Urteen digituen baturaren amortizazioa"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
@@ -352,12 +352,7 @@ msgid "Term"
 msgstr "Epealdia"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. time, using the Sum-Of-The-Years
 #: ../data/buttons-financial.ui.h:87
 msgid "Syd"
 msgstr "Syd"
@@ -418,16 +413,14 @@ msgid "Ch_aracter:"
 msgstr "_Karakterea:"
 
 #. Accessible name for the shift left button
-#. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
-msgid "Shift Left [<<]"
-msgstr "Lerratu ezkerrera [<<]"
+#: ../data/buttons-programming.ui.h:23
+msgid "Shift Left"
+msgstr "Lerratu ezkerrera"
 
 #. Accessible name for the shift right button
-#. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
-msgid "Shift Right [>>]"
-msgstr "Lerratu eskuinera [>>]"
+#: ../data/buttons-programming.ui.h:25
+msgid "Shift Right"
+msgstr "Lerratu eskuinera"
 
 #. Accessible name for the insert character button
 #: ../data/buttons-programming.ui.h:27
@@ -484,116 +477,31 @@ msgstr "Erakutsi amaierako _zeroak"
 msgid "Show _thousands separators"
 msgstr "Erakutsi _milakoen bereizleak"
 
-#: ../data/mate-calc.desktop.in.h:1
-msgid "MATE Calculator"
+#: ../data/mate-calc.appdata.xml.in.h:1
+msgid "MATE Desktop calculator"
 msgstr ""
 
+#: ../data/mate-calc.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Calc is a powerful graphical calculator with financial, logical and"
+" scientific modes. It uses a multiple precision package to do its arithmetic"
+" to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
+"Calc and part of the MATE Desktop Environment. If you would like to know "
+"more about MATE and MATE Calc, please visit the project's home page. </p>"
+msgstr ""
+
+#: ../data/mate-calc.desktop.in.h:1
+msgid "MATE Calculator"
+msgstr "MATE kalkulagailua"
+
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
 msgid "Calculator"
 msgstr "Kalkulagailua"
 
 #: ../data/mate-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Egin kalkulu aritmetikoak, zientifikoak edo finantzarioak"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:1
-msgid "Accuracy value"
-msgstr "Zehaztasun-balioa"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:2
-msgid "The number of digits displayed after the numeric point"
-msgstr "Zenbaki-puntuaren ondoren bistaratuko den digitu kopurua"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:3
-msgid "Word size"
-msgstr "Hitz-tamaina"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:4
-msgid "The size of the words used in bitwise operations"
-msgstr "Bit mailako eragiketetan erabiltzen diren hitzen tamaina"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:5
-msgid "Numeric Base"
-msgstr "Zenbaki-oinarria"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:6
-msgid "The numeric base"
-msgstr "Zenbaki-oinarria"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:7
-msgid "Show Thousands Separators"
-msgstr "Erakutsi milakoen bereizlea"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:8
-msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr "Zenbaki handietan milakoen bereizleak erakutsi behar diren edo ez zehazten du."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:9
-msgid "Show Trailing Zeroes"
-msgstr "Erakutsi amaierako zeroak"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:10
-msgid ""
-"Indicates whether any trailing zeroes after the numeric point should be "
-"shown in the display value."
-msgstr "Bistaratzeko balioan zenbaki-puntuaren ondoren amaierako zerorik erakutsi behar den edo ez zehazten du."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:11
-msgid "Number format"
-msgstr "Zenbakien formatua"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:12
-msgid "The format to display numbers in"
-msgstr "Zenbakiak bistaratzeko formatua"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:13
-msgid "Angle units"
-msgstr "Angelu-unitateak"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:14
-msgid "The angle units to use"
-msgstr "Angeluen unitateak erabiltzeko"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:15
-msgid "Button mode"
-msgstr "Botoien modua"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:16
-msgid "The button mode"
-msgstr "Botoien modua"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:17
-msgid "Source currency"
-msgstr "Iturburuko dibisa"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:18
-msgid "Currency of the current calculation"
-msgstr "Uneko kalkuluaren dibisa"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:19
-msgid "Target currency"
-msgstr "Helburuko dibisa"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:20
-msgid "Currency to convert the current calculation into"
-msgstr "Dibisa uneko kalkulua horra bihurtzeko"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:21
-msgid "Source units"
-msgstr "Iturburuko unitateak"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:22
-msgid "Units of the current calculation"
-msgstr "Uneko kalkuluaren unitateak"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:23
-msgid "Target units"
-msgstr "Helburuko unitateak"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:24
-msgid "Units to convert the current calculation into"
-msgstr "Unitateak uneko kalkulua horra bihurtzeko"
 
 #: ../src/currency-manager.c:30
 msgid "UAE Dirham"
@@ -1138,6 +1046,16 @@ msgstr "Garbitu pantaila [Ihes]"
 msgid "Undo [Ctrl+Z]"
 msgstr "Desegin [Ktrl+Z]"
 
+#. Tooltip for the shift left button
+#: ../src/math-buttons.c:250
+msgid "Shift Left [<<]"
+msgstr ""
+
+#. Tooltip for the shift right button
+#: ../src/math-buttons.c:253
+msgid "Shift Right [>>]"
+msgstr ""
+
 #. Tooltip for the double declining depreciation button
 #: ../src/math-buttons.c:259
 msgid "Double Declining Depreciation"
@@ -1218,12 +1136,12 @@ msgstr "Zeinua"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: ../src/math-converter.c:412
+#: ../src/math-converter.c:414
 msgid " in "
 msgstr " honela "
 
 #. Tooltip for swap conversion button
-#: ../src/math-converter.c:427
+#: ../src/math-converter.c:429
 msgid "Switch conversion units"
 msgstr "Trukatu bihurketako unitateak"
 
@@ -1281,23 +1199,23 @@ msgid "Calculating"
 msgstr "Kalkulatzen"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1394
+#: ../src/math-equation.c:1390
 msgid "Need an integer to factorize"
 msgstr "Osoko zenbaki bat behar da faktorizatzeko"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1470
+#: ../src/math-equation.c:1462
 msgid "No sane value to bitwise shift"
 msgstr "Ez dago zentzuzko baliorik bit mailan desplazatzeko"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1501
+#: ../src/math-equation.c:1493
 msgid "Displayed value not an integer"
 msgstr "Bistaratutako balioa ez da osoko bat"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1926
+#: ../src/math-equation.c:1918
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1354,17 +1272,17 @@ msgid "Show %d decimal _places"
 msgstr "Erakutsi dezimalen %d _posizio"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:198
+#: ../src/math-window.c:211
 msgid "Unable to open help file"
 msgstr "Ezin da Laguntza-fitxategia ireki"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:225
+#: ../src/math-window.c:238
 msgid "translator-credits"
 msgstr "Andoni Sáenz de Santamaría Zabala <andonisz@ibercom.com>\nIñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\nHizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:232
+#: ../src/math-window.c:245
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1381,51 +1299,51 @@ msgid ""
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr ""
 
-#: ../src/math-window.c:247
+#: ../src/math-window.c:260
 msgid "mate-calc"
 msgstr "mate-calc"
 
-#: ../src/math-window.c:251
+#: ../src/math-window.c:264
 msgid "Calculator with financial and scientific modes."
 msgstr "Modu finantzarioa eta zientifikoa dituen kalkulagailua."
 
 #. Calculator menu
-#: ../src/math-window.c:354
+#: ../src/math-window.c:367
 msgid "_Calculator"
 msgstr "_Kalkulagailua"
 
 #. Mode menu
-#: ../src/math-window.c:356
+#: ../src/math-window.c:369
 msgid "_Mode"
 msgstr "_Modua"
 
 #. Help menu label
-#: ../src/math-window.c:358
+#: ../src/math-window.c:371
 msgid "_Help"
 msgstr "_Laguntza"
 
 #. Basic menu label
-#: ../src/math-window.c:360
+#: ../src/math-window.c:373
 msgid "_Basic"
 msgstr "_Oinarrizkoa"
 
 #. Advanced menu label
-#: ../src/math-window.c:362
+#: ../src/math-window.c:375
 msgid "_Advanced"
 msgstr "_Aurreratua"
 
 #. Financial menu label
-#: ../src/math-window.c:364
+#: ../src/math-window.c:377
 msgid "_Financial"
 msgstr "_Finantzarioa"
 
 #. Programming menu label
-#: ../src/math-window.c:366
+#: ../src/math-window.c:379
 msgid "_Programming"
 msgstr "_Programazioa"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:368
+#: ../src/math-window.c:381
 msgid "_Contents"
 msgstr "_Edukia"
 

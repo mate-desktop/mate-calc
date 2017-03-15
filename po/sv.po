@@ -3,16 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Christian Rose <menthos@menthos.com>, 2002-2005.
-# Daniel Nylander <po@danielnylander.se>, 2006-2011.
+# Christian Rose <menthos@menthos.com>, 2002-2005
+# Daniel Nylander <po@danielnylander.se>, 2006-2011
+# Erik, 2014
+# Patrik Nilsson <asavartzeth@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2013-03-24 20:10+0100\n"
-"PO-Revision-Date: 2013-03-24 19:36+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: Swedish (http://www.transifex.com/projects/p/MATE/language/sv/)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-15 14:46+0300\n"
+"PO-Revision-Date: 2017-03-15 11:48+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Swedish (http://www.transifex.com/mate/MATE/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -43,7 +45,7 @@ msgstr "Nedsänkt"
 #. Accessible name for the superscript mode button
 #: ../data/buttons-advanced.ui.h:9 ../data/buttons-programming.ui.h:17
 msgid "Superscript"
-msgstr "Överskrift"
+msgstr "Upphöjd"
 
 #. Accessible name for the scientific exponent button
 #: ../data/buttons-advanced.ui.h:11
@@ -77,15 +79,15 @@ msgstr "Ångra"
 
 #: ../data/buttons-advanced.ui.h:19
 msgid "acos"
-msgstr ""
+msgstr "acos"
 
 #: ../data/buttons-advanced.ui.h:20
 msgid "asin"
-msgstr ""
+msgstr "asin"
 
 #: ../data/buttons-advanced.ui.h:21
 msgid "atan"
-msgstr ""
+msgstr "atan"
 
 #. Accessible name for the store value button
 #: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:19
@@ -95,7 +97,7 @@ msgstr "Lagra"
 #. Accessible name for the inverse button
 #: ../data/buttons-advanced.ui.h:25 ../data/buttons-programming.ui.h:31
 msgid "Inverse"
-msgstr "Inversad"
+msgstr "Invers"
 
 #. Accessible name for the factorial button
 #: ../data/buttons-advanced.ui.h:27 ../data/buttons-programming.ui.h:29
@@ -105,7 +107,7 @@ msgstr "Fakultet"
 #. Accessible name for the absolute value button
 #: ../data/buttons-advanced.ui.h:29 ../data/buttons-programming.ui.h:10
 msgid "Absolute Value"
-msgstr "Absolutvärde"
+msgstr "Absolutbelopp"
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
@@ -158,12 +160,12 @@ msgstr "Beräknar avskrivningskostnaden för ett objekt för en angiven tidsperi
 msgid "C_ost:"
 msgstr "K_ostnad:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:20
 msgid "_Life:"
 msgstr "_Livslängd:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:22
 msgid "_Period:"
 msgstr "_Period:"
@@ -265,12 +267,12 @@ msgstr "Beräknar den periodiska ränta som behövs för att öka en investering
 msgid "Straight-Line Depreciation"
 msgstr "Linjär avskrivning"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:56
 msgid "_Cost:"
 msgstr "_Kostnad:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:58
 msgid "_Salvage:"
 msgstr "_Salvage:"
@@ -284,12 +286,12 @@ msgid ""
 "typically years, over which an asset is depreciated. "
 msgstr "Beräknar den linjära avskrivningen för ett objekt under en period. Den linjära metoden för avskrivning delar upp den avskrivna kostnaden jämnt över den användbara livslängden för objektet. Den användbara livslängden är antalet perioder, oftast år, över vilket ett objekt skrivs av."
 
-#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "Degressiv avskrivning"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
@@ -349,12 +351,7 @@ msgid "Term"
 msgstr "Period"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. time, using the Sum-Of-The-Years
 #: ../data/buttons-financial.ui.h:87
 msgid "Syd"
 msgstr "Dgrav"
@@ -415,14 +412,12 @@ msgid "Ch_aracter:"
 msgstr "T_ecken:"
 
 #. Accessible name for the shift left button
-#. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
+#: ../data/buttons-programming.ui.h:23
 msgid "Shift Left"
 msgstr "Skifta vänster"
 
 #. Accessible name for the shift right button
-#. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
+#: ../data/buttons-programming.ui.h:25
 msgid "Shift Right"
 msgstr "Skifta höger"
 
@@ -481,116 +476,31 @@ msgstr "Visa efterliggande _nollor"
 msgid "Show _thousands separators"
 msgstr "Visa tusentalsa_vgränsare"
 
-#: ../data/mate-calc.desktop.in.h:1
-msgid "MATE Calculator"
+#: ../data/mate-calc.appdata.xml.in.h:1
+msgid "MATE Desktop calculator"
 msgstr ""
 
+#: ../data/mate-calc.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Calc is a powerful graphical calculator with financial, logical and"
+" scientific modes. It uses a multiple precision package to do its arithmetic"
+" to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
+"Calc and part of the MATE Desktop Environment. If you would like to know "
+"more about MATE and MATE Calc, please visit the project's home page. </p>"
+msgstr ""
+
+#: ../data/mate-calc.desktop.in.h:1
+msgid "MATE Calculator"
+msgstr "MATE Kalkylatorn"
+
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
 msgid "Calculator"
 msgstr "Kalkylator"
 
 #: ../data/mate-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Utför aritmetiska, vetenskapliga eller finansiella beräkningar"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:1
-msgid "Accuracy value"
-msgstr "Noggrannhetsvärde"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:2
-msgid "The number of digits displayed after the numeric point"
-msgstr "Antalet siffror visade efter den numeriska punkten"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:3
-msgid "Word size"
-msgstr "Ordstorlek"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:4
-msgid "The size of the words used in bitwise operations"
-msgstr "Storleken för orden som används i bitvisa operationer"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:5
-msgid "Numeric Base"
-msgstr "Numerisk bas"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:6
-msgid "The numeric base"
-msgstr "Numeriska basen"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:7
-msgid "Show Thousands Separators"
-msgstr "Visa tusentalsavgränsare"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:8
-msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr "Indikerar huruvida tusentalsavgränsningar visas i större tal."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:9
-msgid "Show Trailing Zeroes"
-msgstr "Visa eftersläpande nollor"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:10
-msgid ""
-"Indicates whether any trailing zeroes after the numeric point should be "
-"shown in the display value."
-msgstr "Indikerar huruvida eventuella efterliggande nollor efter talpunkten ska visas i visningsvärdet."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:11
-msgid "Number format"
-msgstr "Talformat"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:12
-msgid "The format to display numbers in"
-msgstr "Formatet att visa tal i"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:13
-msgid "Angle units"
-msgstr "Vinkelenheter"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:14
-msgid "The angle units to use"
-msgstr "Vinkelenheterna att använda"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:15
-msgid "Button mode"
-msgstr "Knappläge"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:16
-msgid "The button mode"
-msgstr "Knappläget"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:17
-msgid "Source currency"
-msgstr "Källvaluta"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:18
-msgid "Currency of the current calculation"
-msgstr "Valuta för aktuell beräkning"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:19
-msgid "Target currency"
-msgstr "Målvaluta"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:20
-msgid "Currency to convert the current calculation into"
-msgstr "Valuta att konvertera den aktuell beräkningen till"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:21
-msgid "Source units"
-msgstr "Källenheter"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:22
-msgid "Units of the current calculation"
-msgstr "Enheter för aktuell beräkning"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:23
-msgid "Target units"
-msgstr "Målenheter"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:24
-msgid "Units to convert the current calculation into"
-msgstr "Enheter att konvertera den aktuell beräkningen till"
 
 #: ../src/currency-manager.c:30
 msgid "UAE Dirham"
@@ -650,7 +560,7 @@ msgstr "Tjeckisk koruna"
 
 #: ../src/currency-manager.c:44
 msgid "Danish Krone"
-msgstr "Dansk krone"
+msgstr "Danska kronor"
 
 #: ../src/currency-manager.c:45
 msgid "Algerian Dinar"
@@ -746,7 +656,7 @@ msgstr "Malaysisk ringgit"
 
 #: ../src/currency-manager.c:68
 msgid "Norwegian Krone"
-msgstr "Norsk krone"
+msgstr "Norska kronor"
 
 #: ../src/currency-manager.c:69
 msgid "Nepalese Rupee"
@@ -794,7 +704,7 @@ msgstr "Saudisk riyal"
 
 #: ../src/currency-manager.c:80
 msgid "Swedish Krona"
-msgstr "Svensk krona"
+msgstr "Svenska kronor"
 
 #: ../src/currency-manager.c:81
 msgid "Singapore Dollar"
@@ -903,12 +813,12 @@ msgstr "Eulers nummer"
 #. Tooltip for the subscript button
 #: ../src/math-buttons.c:103
 msgid "Subscript mode [Alt]"
-msgstr "Subscript-läge [Alt]"
+msgstr "Nedsänkta tecken [Alt]"
 
 #. Tooltip for the superscript button
 #: ../src/math-buttons.c:106
 msgid "Superscript mode [Ctrl]"
-msgstr "Superscript-läge [Ctrl]"
+msgstr "Upphöjda tecken [Ctrl]"
 
 #. Tooltip for the scientific exponent button
 #: ../src/math-buttons.c:109
@@ -968,7 +878,7 @@ msgstr "Fakultet [!]"
 #. Tooltip for the absolute value button
 #: ../src/math-buttons.c:142
 msgid "Absolute value [|]"
-msgstr "Absolutvärde [|]"
+msgstr "Absolutbelopp [|]"
 
 #. Tooltip for the complex argument component button
 #: ../src/math-buttons.c:145
@@ -1013,7 +923,7 @@ msgstr "Cosinus"
 #. Tooltip for the tangent button
 #: ../src/math-buttons.c:169
 msgid "Tangent"
-msgstr "Tangent"
+msgstr "Tangens"
 
 #. Tooltip for the hyperbolic sine button
 #: ../src/math-buttons.c:172
@@ -1033,22 +943,22 @@ msgstr "Hyperbolisk tangent"
 #. Tooltip for the inverse sine button
 #: ../src/math-buttons.c:181
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Inverterad sinus"
 
 #. Tooltip for the inverse cosine button
 #: ../src/math-buttons.c:184
 msgid "Inverse Cosine"
-msgstr ""
+msgstr "Inverterad cosinus"
 
 #. Tooltip for the inverse tangent button
 #: ../src/math-buttons.c:187
 msgid "Inverse Tangent"
-msgstr ""
+msgstr "Inverterad tangens"
 
 #. Tooltip for the inverse button
 #: ../src/math-buttons.c:190
 msgid "Inverse [Ctrl+I]"
-msgstr "Inversad [Ctrl+I]"
+msgstr "Invers [Ctrl+I]"
 
 #. Tooltip for the boolean AND button
 #: ../src/math-buttons.c:193
@@ -1135,6 +1045,16 @@ msgstr "Töm skärmen [Escape]"
 msgid "Undo [Ctrl+Z]"
 msgstr "Ångra [Ctrl+Z]"
 
+#. Tooltip for the shift left button
+#: ../src/math-buttons.c:250
+msgid "Shift Left [<<]"
+msgstr ""
+
+#. Tooltip for the shift right button
+#: ../src/math-buttons.c:253
+msgid "Shift Right [>>]"
+msgstr ""
+
 #. Tooltip for the double declining depreciation button
 #: ../src/math-buttons.c:259
 msgid "Double Declining Depreciation"
@@ -1215,12 +1135,12 @@ msgstr "Tecken"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: ../src/math-converter.c:412
+#: ../src/math-converter.c:414
 msgid " in "
 msgstr " i "
 
 #. Tooltip for swap conversion button
-#: ../src/math-converter.c:427
+#: ../src/math-converter.c:429
 msgid "Switch conversion units"
 msgstr "Byt konverteringsenheter"
 
@@ -1265,7 +1185,7 @@ msgstr "Okänd konvertering"
 #: ../src/math-equation.c:1253
 #, c-format
 msgid "Malformed expression at token '%s'"
-msgstr ""
+msgstr "Felaktigt uttryck vid '%s'"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
@@ -1278,23 +1198,23 @@ msgid "Calculating"
 msgstr "Beräknar"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1394
+#: ../src/math-equation.c:1390
 msgid "Need an integer to factorize"
 msgstr "Behöver ett heltal att faktorisera"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1470
+#: ../src/math-equation.c:1462
 msgid "No sane value to bitwise shift"
 msgstr "Inget vettigt värde att göra bitvis skifte"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1501
+#: ../src/math-equation.c:1493
 msgid "Displayed value not an integer"
 msgstr "Visat värde är inte ett heltal"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1926
+#: ../src/math-equation.c:1918
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1351,17 +1271,17 @@ msgid "Show %d decimal _places"
 msgstr "Visa %d decimal_platser"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:198
+#: ../src/math-window.c:211
 msgid "Unable to open help file"
 msgstr "Kunde inte öppna hjälpfilen"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:225
+#: ../src/math-window.c:238
 msgid "translator-credits"
 msgstr "Daniel Nylander <po@danielnylander.se>\nChristian Rose\n\nSkicka synpunkter på översättningen till\n<tp-sv@listor.tp-sv.se>."
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:232
+#: ../src/math-window.c:245
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1376,53 +1296,53 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
+msgstr "mate-calc är fri programvara. Du får distribuera och/eller \nmodifiera den så länge du följer GNU General Public License \nsom publiceras av Free Software Foundation. Antingen version 2 \nav licensen eller (om du vill) valfri efterföljande version.\n\nmate-calc distribueras med förhoppning om att det ska komma till \nnytta, men HELT UTAN GARANTIER. Se GNU General Public License \nför mer information.\n\nDu ska ha fått en kopia av GNU General Public License tillsammans \nmed mate-calc, om inte, skriv till Free Software Foundation, Inc., \n151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
-#: ../src/math-window.c:247
+#: ../src/math-window.c:260
 msgid "mate-calc"
 msgstr "mate-calc"
 
-#: ../src/math-window.c:251
+#: ../src/math-window.c:264
 msgid "Calculator with financial and scientific modes."
 msgstr "Kalkylator med finansiella och vetenskapliga lägen."
 
 #. Calculator menu
-#: ../src/math-window.c:354
+#: ../src/math-window.c:367
 msgid "_Calculator"
 msgstr "_Kalkylator"
 
 #. Mode menu
-#: ../src/math-window.c:356
+#: ../src/math-window.c:369
 msgid "_Mode"
 msgstr "_Läge"
 
 #. Help menu label
-#: ../src/math-window.c:358
+#: ../src/math-window.c:371
 msgid "_Help"
 msgstr "_Hjälp"
 
 #. Basic menu label
-#: ../src/math-window.c:360
+#: ../src/math-window.c:373
 msgid "_Basic"
 msgstr "_Grundläggande"
 
 #. Advanced menu label
-#: ../src/math-window.c:362
+#: ../src/math-window.c:375
 msgid "_Advanced"
 msgstr "_Avancerad"
 
 #. Financial menu label
-#: ../src/math-window.c:364
+#: ../src/math-window.c:377
 msgid "_Financial"
 msgstr "_Finansiell"
 
 #. Programming menu label
-#: ../src/math-window.c:366
+#: ../src/math-window.c:379
 msgid "_Programming"
 msgstr "_Programmering"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:368
+#: ../src/math-window.c:381
 msgid "_Contents"
 msgstr "_Innehåll"
 

@@ -3,16 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Eskild Hustvedt <i18n@zerodogg.org>, 2007.
-# Sigurd Gartman <sigurd-translate@brogar.org>, 2003,2005.
+# Allan Nordhøy <epost@anotheragency.no>, 2016
+# Eskild Hustvedt <i18n@zerodogg.org>, 2007
+# Sigurd Gartman <sigurd-translate@brogar.org>, 2003,2005
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2013-03-24 20:10+0100\n"
-"PO-Revision-Date: 2013-03-24 19:33+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: Norwegian Bokmål (http://www.transifex.com/projects/p/MATE/language/nb/)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-15 14:46+0300\n"
+"PO-Revision-Date: 2017-03-15 11:48+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Norwegian Bokmål (http://www.transifex.com/mate/MATE/language/nb/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -77,15 +78,15 @@ msgstr "Angre"
 
 #: ../data/buttons-advanced.ui.h:19
 msgid "acos"
-msgstr ""
+msgstr "acos"
 
 #: ../data/buttons-advanced.ui.h:20
 msgid "asin"
-msgstr ""
+msgstr "asin"
 
 #: ../data/buttons-advanced.ui.h:21
 msgid "atan"
-msgstr ""
+msgstr "atan"
 
 #. Accessible name for the store value button
 #: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:19
@@ -134,7 +135,7 @@ msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr ""
+msgstr "Regner ut antallet nødvendige rentetilskrivningsperioder for å øke en investering fra aktuell verdi til fremtidig verdi, med en fastsatt rentesats per rentetilskrivningsperiode."
 
 #. Periodic Interest Rate Dialog: Label before future value input
 #: ../data/buttons-financial.ui.h:12
@@ -151,19 +152,19 @@ msgstr "Dobbelt degressiv avskrivning"
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
-msgstr ""
+msgstr "Regner ut avskrivningstall på et aktivum for en angitt tidsperiode ved bruk av dobbeltminskende balanseringsmetode."
 
 #. Gross Profit Margin Dialog: Label before cost input
 #: ../data/buttons-financial.ui.h:18
 msgid "C_ost:"
 msgstr "K_ost:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:20
 msgid "_Life:"
 msgstr "_Livstid"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:22
 msgid "_Period:"
 msgstr "_Periode:"
@@ -180,7 +181,7 @@ msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
-msgstr ""
+msgstr "Regner ut fremtidig verdii på en investering basert på en rekke like betalinger rabattert med en periodisk rentesats over antall betalingsperioder i terminen."
 
 #. Payment Period Dialog: Label before periodic payment input
 #: ../data/buttons-financial.ui.h:28
@@ -196,14 +197,14 @@ msgstr "A_ntall perioder:"
 #. Tooltip for the gross profit margin button
 #: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:283
 msgid "Gross Profit Margin"
-msgstr ""
+msgstr "Margin for bruttofortjeneste"
 
 #. Gross Profit Margin Dialog: Description of calculation
 #: ../data/buttons-financial.ui.h:34
 msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
-msgstr ""
+msgstr "Regner ut vidresalgsprisen på et produkt, basert på produktkostnad og ønsket brutto profittmargin."
 
 #. Gross Profit Margin Dialog: Label before margin input
 #: ../data/buttons-financial.ui.h:36
@@ -245,7 +246,7 @@ msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr ""
+msgstr "Regner ut aktuell verdi på en investering basert på en rekke like betalinger rabattert med en periodisk rentesats over antall betalingsperioder i terminen."
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
@@ -258,19 +259,19 @@ msgstr "Periodisk renterate"
 msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
-msgstr ""
+msgstr "Regner ut periodisk rente som trengs for å øke en investering til fremtidig verdi, over antallet rentetilskrivningsperioder."
 
 #. Title of Straight-Line Depreciation dialog
 #: ../data/buttons-financial.ui.h:54
 msgid "Straight-Line Depreciation"
 msgstr "Lineær avskrivning"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:56
 msgid "_Cost:"
 msgstr "_Kost:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:58
 msgid "_Salvage:"
 msgstr "Re_stverdi:"
@@ -282,14 +283,14 @@ msgid ""
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr ""
+msgstr "Regner ut om rettlijet avskrivning på en kommoditet i en periode. Den rettlinjede metoden deler den avskrivbare prisen jevnt over det brukbare livsløpet til kommoditeten. Brukbart livsløp er antallet perioder, typisk år, det tar før en kommoditet skriver seg ned i verdi."
 
-#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "Avskriving av summen av årenes sifre"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
@@ -297,7 +298,7 @@ msgid ""
 " accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
-msgstr ""
+msgstr "Regner ut avskrivningstall på et aktivum for en angitt tidsperiode ved bruk av \"summen-av-årenes\"-siffermetode. Denne metoden for avregning aksellererer avskrivningsraten, slik at mer av avregningskostnaden inntreffer i tidligere perioder snarere enn senere. Det brukbare livsløpet er et antall perioder, typisk år det tar før en kommoditet skriver seg ned i verdi."
 
 #. Title of Payment Period dialog
 #: ../data/buttons-financial.ui.h:66
@@ -315,7 +316,7 @@ msgid ""
 "Calculates the number of payment periods that are necessary during the term "
 "of an ordinary annuity, to accumulate a future value, at a periodic interest"
 " rate."
-msgstr ""
+msgstr "Regner ut antallet betalingsperioder som er nødvendig under perioden for alminnelig annuitet, for å akkumulere en fremtidig verdie, ved en periodisk rentesats."
 
 #. Calculates the number of compounding periods necessary to increase an
 #. investment of present value pv to a future value of fv, at a fixed interest
@@ -349,12 +350,7 @@ msgid "Term"
 msgstr "Term"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. time, using the Sum-Of-The-Years
 #: ../data/buttons-financial.ui.h:87
 msgid "Syd"
 msgstr "Sum"
@@ -396,7 +392,7 @@ msgstr "Bet"
 #. http://en.wikipedia.org/wiki/Gross_profit_margin
 #: ../data/buttons-financial.ui.h:97
 msgid "Gpm"
-msgstr ""
+msgstr "Bruttofortjeneste"
 
 #. Title of insert character code dialog
 #. Tooltip for the insert character code button
@@ -415,14 +411,12 @@ msgid "Ch_aracter:"
 msgstr "_Tegn:"
 
 #. Accessible name for the shift left button
-#. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
+#: ../data/buttons-programming.ui.h:23
 msgid "Shift Left"
 msgstr "Skift til venstre"
 
 #. Accessible name for the shift right button
-#. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
+#: ../data/buttons-programming.ui.h:25
 msgid "Shift Right"
 msgstr "Skift til høyre"
 
@@ -481,116 +475,31 @@ msgstr "Vis etterfølgende _nuller"
 msgid "Show _thousands separators"
 msgstr "Vis _tusenskilletegn"
 
-#: ../data/mate-calc.desktop.in.h:1
-msgid "MATE Calculator"
+#: ../data/mate-calc.appdata.xml.in.h:1
+msgid "MATE Desktop calculator"
 msgstr ""
 
+#: ../data/mate-calc.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Calc is a powerful graphical calculator with financial, logical and"
+" scientific modes. It uses a multiple precision package to do its arithmetic"
+" to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
+"Calc and part of the MATE Desktop Environment. If you would like to know "
+"more about MATE and MATE Calc, please visit the project's home page. </p>"
+msgstr ""
+
+#: ../data/mate-calc.desktop.in.h:1
+msgid "MATE Calculator"
+msgstr "MATE-kalkulator"
+
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
 msgid "Calculator"
 msgstr "Kalkulator"
 
 #: ../data/mate-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Utfør aritmetiske, vitenskapelige eller finansielle utregninger"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:1
-msgid "Accuracy value"
-msgstr "Verdi for nøyaktighet"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:2
-msgid "The number of digits displayed after the numeric point"
-msgstr "Antall tall vist etter komma"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:3
-msgid "Word size"
-msgstr "Størrelse på ord"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:4
-msgid "The size of the words used in bitwise operations"
-msgstr "Størrelse på ord som brukes i bitvise operasjoner"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:5
-msgid "Numeric Base"
-msgstr "Tallbase"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:6
-msgid "The numeric base"
-msgstr "Tallbase"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:7
-msgid "Show Thousands Separators"
-msgstr "Vis tusenskilletegn"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:8
-msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr "Indikerer om tusenskilletegn skal vises i store tall."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:9
-msgid "Show Trailing Zeroes"
-msgstr "Vis etterfølgende nuller"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:10
-msgid ""
-"Indicates whether any trailing zeroes after the numeric point should be "
-"shown in the display value."
-msgstr "Indikerer om etterfølgende nulltall etter komma skal vises."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:11
-msgid "Number format"
-msgstr "Tallformat"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:12
-msgid "The format to display numbers in"
-msgstr "Format for visning av tall"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:13
-msgid "Angle units"
-msgstr "Enheter for vinkel"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:14
-msgid "The angle units to use"
-msgstr "Enhet som skal brukes for vinkel"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:15
-msgid "Button mode"
-msgstr "Knappemodus"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:16
-msgid "The button mode"
-msgstr "Knappemodus"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:17
-msgid "Source currency"
-msgstr "Kildevaluta"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:18
-msgid "Currency of the current calculation"
-msgstr "Valuta for aktiv utregning"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:19
-msgid "Target currency"
-msgstr "Målvaluta"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:20
-msgid "Currency to convert the current calculation into"
-msgstr "Valuta aktiv utregning skal konverteres til"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:21
-msgid "Source units"
-msgstr "Kildeenheter"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:22
-msgid "Units of the current calculation"
-msgstr "Enheter for aktiv utregning"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:23
-msgid "Target units"
-msgstr "Målenheter"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:24
-msgid "Units to convert the current calculation into"
-msgstr "Enheter aktiv utregning skal konverteres til"
 
 #: ../src/currency-manager.c:30
 msgid "UAE Dirham"
@@ -868,7 +777,7 @@ msgid ""
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr ""
+msgstr "GTK+valg:\n--class=KLASSE Programklasse, som brukt av\nvindushåndteringen\n--name=NAVN Programnavn, som brukt av\nvindushåndteringen\n--screen=SKJERM X-skjerm som skal brukes\n--sync Gjør X-kall synkrone\n--gtk-module=MODULER Last inn ekstra GTK+moduler\n--g-fatal-warnings Gjør alle advarsler fatale"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -1033,17 +942,17 @@ msgstr "Hyperbolsk tangent"
 #. Tooltip for the inverse sine button
 #: ../src/math-buttons.c:181
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Omvendt sinus"
 
 #. Tooltip for the inverse cosine button
 #: ../src/math-buttons.c:184
 msgid "Inverse Cosine"
-msgstr ""
+msgstr "Omvendt kosinus"
 
 #. Tooltip for the inverse tangent button
 #: ../src/math-buttons.c:187
 msgid "Inverse Tangent"
-msgstr ""
+msgstr "Omvendt tangens"
 
 #. Tooltip for the inverse button
 #: ../src/math-buttons.c:190
@@ -1128,12 +1037,22 @@ msgstr "Faktoriser [Ctrl+F]"
 #. Tooltip for the clear button
 #: ../src/math-buttons.c:244
 msgid "Clear Display [Escape]"
-msgstr "Tøm skjermen [Escape]"
+msgstr "Tøm skjermen [Esc]"
 
 #. Tooltip for the undo button
 #: ../src/math-buttons.c:247
 msgid "Undo [Ctrl+Z]"
 msgstr "Angre [Ctrl+Z]"
+
+#. Tooltip for the shift left button
+#: ../src/math-buttons.c:250
+msgid "Shift Left [<<]"
+msgstr ""
+
+#. Tooltip for the shift right button
+#: ../src/math-buttons.c:253
+msgid "Shift Right [>>]"
+msgstr ""
 
 #. Tooltip for the double declining depreciation button
 #: ../src/math-buttons.c:259
@@ -1215,12 +1134,12 @@ msgstr "Tegn"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: ../src/math-converter.c:412
+#: ../src/math-converter.c:414
 msgid " in "
 msgstr " i "
 
 #. Tooltip for swap conversion button
-#: ../src/math-converter.c:427
+#: ../src/math-converter.c:429
 msgid "Switch conversion units"
 msgstr "Bytt konverteringsenheter"
 
@@ -1265,7 +1184,7 @@ msgstr "Ukjent konvertering"
 #: ../src/math-equation.c:1253
 #, c-format
 msgid "Malformed expression at token '%s'"
-msgstr ""
+msgstr "Vanskapt uttrykk ved symbolet '%s'"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
@@ -1278,23 +1197,23 @@ msgid "Calculating"
 msgstr "Beregner"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1394
+#: ../src/math-equation.c:1390
 msgid "Need an integer to factorize"
 msgstr "Trenger et heltall for å faktorisere"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1470
+#: ../src/math-equation.c:1462
 msgid "No sane value to bitwise shift"
 msgstr "Ingen verdi å bruke til bitvis skift"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1501
+#: ../src/math-equation.c:1493
 msgid "Displayed value not an integer"
 msgstr "Vist verdi er ikke et heltall"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1926
+#: ../src/math-equation.c:1918
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,Æ,Ø,Å"
 
@@ -1351,17 +1270,17 @@ msgid "Show %d decimal _places"
 msgstr "Vis %d desimal_plasser"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:198
+#: ../src/math-window.c:211
 msgid "Unable to open help file"
 msgstr "Kan ikke åpne hjelpfil"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:225
+#: ../src/math-window.c:238
 msgid "translator-credits"
-msgstr "Kjartan Maraas <kmaraas@gnome.org>\nEspen Stefansen <libbe AT stefansen DOT net>\nEskild Hustvedt <i18n@zerodogg.org>"
+msgstr "Kjartan Maraas <kmaraas@gnome.org>\nEspen Stefansen <libbe AT stefansen DOT net>\nEskild Hustvedt <i18n@zerodogg.org>\nAllan Nordhøy <epost@anotheragency.no>"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:232
+#: ../src/math-window.c:245
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1376,53 +1295,53 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
+msgstr "mate-calc er fri programvare. Du kan dele og/eller endre det\nunder de betingelsene angitt i GNU General Public License,\nutgitt av Free Software Foundation. Enten version 2 av lisensen\neller (etter eget valg) enhver senere versjon.\n\n\nmate-calc distribueres i håp om, at det vil vise seg å være nyttig, men UTEN NOEN \nFORM FOR GARANTI, uten selv underforståtte garantier omkring \nSALGBARHET eller EGNETHET TIL ET BESTEMT FORMÅL. Yderligere detaljer står det å lese om i\nGNU General Public License.\n\nDu skal ha mottatt en kopi av GNU General Public License sammen med\nmate-calc. Hvis ikke, skriv til Free software Foundation, Inc.,\n151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
-#: ../src/math-window.c:247
+#: ../src/math-window.c:260
 msgid "mate-calc"
 msgstr "mate-calc"
 
-#: ../src/math-window.c:251
+#: ../src/math-window.c:264
 msgid "Calculator with financial and scientific modes."
 msgstr "Kalkulator med finans- og vitenskapelig modus."
 
 #. Calculator menu
-#: ../src/math-window.c:354
+#: ../src/math-window.c:367
 msgid "_Calculator"
 msgstr "_Kalkulator"
 
 #. Mode menu
-#: ../src/math-window.c:356
+#: ../src/math-window.c:369
 msgid "_Mode"
 msgstr "_Modus"
 
 #. Help menu label
-#: ../src/math-window.c:358
+#: ../src/math-window.c:371
 msgid "_Help"
 msgstr "_Hjelp"
 
 #. Basic menu label
-#: ../src/math-window.c:360
+#: ../src/math-window.c:373
 msgid "_Basic"
 msgstr "_Grunnleggende"
 
 #. Advanced menu label
-#: ../src/math-window.c:362
+#: ../src/math-window.c:375
 msgid "_Advanced"
 msgstr "_Avansert"
 
 #. Financial menu label
-#: ../src/math-window.c:364
+#: ../src/math-window.c:377
 msgid "_Financial"
 msgstr "_Finansiell"
 
 #. Programming menu label
-#: ../src/math-window.c:366
+#: ../src/math-window.c:379
 msgid "_Programming"
 msgstr "_Programmering"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:368
+#: ../src/math-window.c:381
 msgid "_Contents"
 msgstr "_Innhold"
 

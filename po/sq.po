@@ -4,15 +4,16 @@
 # 
 # Translators:
 # Alban <nofbname@gmail.com>, 2012
-# ard1t <ardit.dani@gmail.com>, 2014
+# Ardit Dani <ardit.dani@gmail.com>, 2014
+# Indrit Bashkimi <indrit.bashkimi@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-24 20:10+0100\n"
-"PO-Revision-Date: 2014-01-16 15:03+0000\n"
-"Last-Translator: ard1t <ardit.dani@gmail.com>\n"
-"Language-Team: Albanian (http://www.transifex.com/projects/p/MATE/language/sq/)\n"
+"POT-Creation-Date: 2017-03-15 14:46+0300\n"
+"PO-Revision-Date: 2017-03-15 11:48+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Albanian (http://www.transifex.com/mate/MATE/language/sq/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -158,12 +159,12 @@ msgstr ""
 msgid "C_ost:"
 msgstr ""
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:20
 msgid "_Life:"
 msgstr ""
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:22
 msgid "_Period:"
 msgstr ""
@@ -265,12 +266,12 @@ msgstr ""
 msgid "Straight-Line Depreciation"
 msgstr ""
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:56
 msgid "_Cost:"
 msgstr ""
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:58
 msgid "_Salvage:"
 msgstr ""
@@ -284,12 +285,12 @@ msgid ""
 "typically years, over which an asset is depreciated. "
 msgstr ""
 
-#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr ""
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
@@ -349,12 +350,7 @@ msgid "Term"
 msgstr "Termi"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. time, using the Sum-Of-The-Years
 #: ../data/buttons-financial.ui.h:87
 msgid "Syd"
 msgstr "Syd"
@@ -415,14 +411,12 @@ msgid "Ch_aracter:"
 msgstr "Gërm_a:"
 
 #. Accessible name for the shift left button
-#. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
+#: ../data/buttons-programming.ui.h:23
 msgid "Shift Left"
 msgstr ""
 
 #. Accessible name for the shift right button
-#. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
+#: ../data/buttons-programming.ui.h:25
 msgid "Shift Right"
 msgstr ""
 
@@ -481,116 +475,31 @@ msgstr ""
 msgid "Show _thousands separators"
 msgstr ""
 
+#: ../data/mate-calc.appdata.xml.in.h:1
+msgid "MATE Desktop calculator"
+msgstr ""
+
+#: ../data/mate-calc.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Calc is a powerful graphical calculator with financial, logical and"
+" scientific modes. It uses a multiple precision package to do its arithmetic"
+" to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
+"Calc and part of the MATE Desktop Environment. If you would like to know "
+"more about MATE and MATE Calc, please visit the project's home page. </p>"
+msgstr ""
+
 #: ../data/mate-calc.desktop.in.h:1
 msgid "MATE Calculator"
 msgstr "MATE Llogaritës"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
 msgid "Calculator"
 msgstr "Makinë llogaritëse"
 
 #: ../data/mate-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Kryen llogari aritmetikore, shkencore ose financiare"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:1
-msgid "Accuracy value"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:2
-msgid "The number of digits displayed after the numeric point"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:3
-msgid "Word size"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:4
-msgid "The size of the words used in bitwise operations"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:5
-msgid "Numeric Base"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:6
-msgid "The numeric base"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:7
-msgid "Show Thousands Separators"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:8
-msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:9
-msgid "Show Trailing Zeroes"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:10
-msgid ""
-"Indicates whether any trailing zeroes after the numeric point should be "
-"shown in the display value."
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:11
-msgid "Number format"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:12
-msgid "The format to display numbers in"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:13
-msgid "Angle units"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:14
-msgid "The angle units to use"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:15
-msgid "Button mode"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:16
-msgid "The button mode"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:17
-msgid "Source currency"
-msgstr "Burimi, valutë"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:18
-msgid "Currency of the current calculation"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:19
-msgid "Target currency"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:20
-msgid "Currency to convert the current calculation into"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:21
-msgid "Source units"
-msgstr "Burimi njësive"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:22
-msgid "Units of the current calculation"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:23
-msgid "Target units"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:24
-msgid "Units to convert the current calculation into"
-msgstr ""
 
 #: ../src/currency-manager.c:30
 msgid "UAE Dirham"
@@ -893,12 +802,12 @@ msgstr ""
 #. Tooltip for the Pi button
 #: ../src/math-buttons.c:95
 msgid "Pi [Ctrl+P]"
-msgstr ""
+msgstr "Pi [Ctrl+P]"
 
 #. Tooltip for the Euler's Number button
 #: ../src/math-buttons.c:98
 msgid "Euler’s Number"
-msgstr ""
+msgstr "Numri i Eulerit"
 
 #. Tooltip for the subscript button
 #: ../src/math-buttons.c:103
@@ -993,7 +902,7 @@ msgstr ""
 #. Tooltip for the logarithm button
 #: ../src/math-buttons.c:157
 msgid "Logarithm"
-msgstr ""
+msgstr "Logaritmi"
 
 #. Tooltip for the natural logarithm button
 #: ../src/math-buttons.c:160
@@ -1003,17 +912,17 @@ msgstr ""
 #. Tooltip for the sine button
 #: ../src/math-buttons.c:163
 msgid "Sine"
-msgstr ""
+msgstr "Sinus"
 
 #. Tooltip for the cosine button
 #: ../src/math-buttons.c:166
 msgid "Cosine"
-msgstr ""
+msgstr "Kosinus"
 
 #. Tooltip for the tangent button
 #: ../src/math-buttons.c:169
 msgid "Tangent"
-msgstr ""
+msgstr "Tangjent"
 
 #. Tooltip for the hyperbolic sine button
 #: ../src/math-buttons.c:172
@@ -1118,7 +1027,7 @@ msgstr ""
 #. Tooltip for the solve button
 #: ../src/math-buttons.c:238
 msgid "Calculate Result"
-msgstr ""
+msgstr "Llogarit rezultatin"
 
 #. Tooltip for the factor button
 #: ../src/math-buttons.c:241
@@ -1133,6 +1042,16 @@ msgstr ""
 #. Tooltip for the undo button
 #: ../src/math-buttons.c:247
 msgid "Undo [Ctrl+Z]"
+msgstr ""
+
+#. Tooltip for the shift left button
+#: ../src/math-buttons.c:250
+msgid "Shift Left [<<]"
+msgstr ""
+
+#. Tooltip for the shift right button
+#: ../src/math-buttons.c:253
+msgid "Shift Right [>>]"
 msgstr ""
 
 #. Tooltip for the double declining depreciation button
@@ -1215,12 +1134,12 @@ msgstr ""
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: ../src/math-converter.c:412
+#: ../src/math-converter.c:414
 msgid " in "
 msgstr ""
 
 #. Tooltip for swap conversion button
-#: ../src/math-converter.c:427
+#: ../src/math-converter.c:429
 msgid "Switch conversion units"
 msgstr ""
 
@@ -1275,26 +1194,26 @@ msgstr "Shprehje e keqformuar"
 
 #: ../src/math-equation.c:1275
 msgid "Calculating"
-msgstr ""
+msgstr "Duke llogaritur"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1394
+#: ../src/math-equation.c:1390
 msgid "Need an integer to factorize"
 msgstr ""
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1470
+#: ../src/math-equation.c:1462
 msgid "No sane value to bitwise shift"
 msgstr ""
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1501
+#: ../src/math-equation.c:1493
 msgid "Displayed value not an integer"
 msgstr ""
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1926
+#: ../src/math-equation.c:1918
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1351,17 +1270,17 @@ msgid "Show %d decimal _places"
 msgstr ""
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:198
+#: ../src/math-window.c:211
 msgid "Unable to open help file"
 msgstr ""
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:225
+#: ../src/math-window.c:238
 msgid "translator-credits"
 msgstr "Laurent Dhima <laurenti@alblinux.net>"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:232
+#: ../src/math-window.c:245
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1378,51 +1297,51 @@ msgid ""
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr ""
 
-#: ../src/math-window.c:247
+#: ../src/math-window.c:260
 msgid "mate-calc"
 msgstr "mate-calc"
 
-#: ../src/math-window.c:251
+#: ../src/math-window.c:264
 msgid "Calculator with financial and scientific modes."
 msgstr "Makinë llogaritëse me modalitete finance dhe shkencore."
 
 #. Calculator menu
-#: ../src/math-window.c:354
+#: ../src/math-window.c:367
 msgid "_Calculator"
 msgstr "_Kalkulator (llogaritës)"
 
 #. Mode menu
-#: ../src/math-window.c:356
+#: ../src/math-window.c:369
 msgid "_Mode"
-msgstr ""
+msgstr "_Modaliteti"
 
 #. Help menu label
-#: ../src/math-window.c:358
+#: ../src/math-window.c:371
 msgid "_Help"
 msgstr "_Ndihmë"
 
 #. Basic menu label
-#: ../src/math-window.c:360
+#: ../src/math-window.c:373
 msgid "_Basic"
 msgstr "_Bazë"
 
 #. Advanced menu label
-#: ../src/math-window.c:362
+#: ../src/math-window.c:375
 msgid "_Advanced"
 msgstr "_Përparuar"
 
 #. Financial menu label
-#: ../src/math-window.c:364
+#: ../src/math-window.c:377
 msgid "_Financial"
 msgstr "_Financor"
 
 #. Programming menu label
-#: ../src/math-window.c:366
+#: ../src/math-window.c:379
 msgid "_Programming"
 msgstr ""
 
 #. Help>Contents menu label
-#: ../src/math-window.c:368
+#: ../src/math-window.c:381
 msgid "_Contents"
 msgstr "_Përmbajtja"
 
@@ -1467,12 +1386,12 @@ msgstr ""
 #. Translators: Error displayed attempted to divide by zero
 #: ../src/mp.c:644 ../src/mp.c:676 ../src/mp.c:1605
 msgid "Division by zero is undefined"
-msgstr ""
+msgstr "Pjesëtimi me zero është i papërcaktuar"
 
 #. Translators: Error displayed when attempting to take logarithm of zero
 #: ../src/mp.c:1276 ../src/mp.c:1313
 msgid "Logarithm of zero is undefined"
-msgstr ""
+msgstr "Logaritmi i zeros është i papërcaktuar"
 
 #. Translators: Error displayed when attempted to raise 0 to a negative
 #. exponent
@@ -1486,11 +1405,11 @@ msgstr ""
 
 #: ../src/mp.c:1789
 msgid "Root must be non-zero"
-msgstr ""
+msgstr "Rrënja duhet të mos jetë zero"
 
 #: ../src/mp.c:1807
 msgid "Negative root of zero is undefined"
-msgstr ""
+msgstr "Rrënja negative e zeros është e papërcaktuar"
 
 #: ../src/mp.c:1813
 msgid "nth root of negative number is undefined for even n"
@@ -1541,7 +1460,7 @@ msgstr ""
 #, c-format
 msgctxt "unit-format"
 msgid "%s degrees"
-msgstr ""
+msgstr "%s gradë"
 
 #: ../src/unit-manager.c:54
 msgctxt "unit-symbols"
@@ -1587,7 +1506,7 @@ msgstr ""
 
 #: ../src/unit-manager.c:58
 msgid "Light Years"
-msgstr ""
+msgstr "Vite dritë"
 
 #: ../src/unit-manager.c:58
 #, c-format
@@ -1632,7 +1551,7 @@ msgstr ""
 
 #: ../src/unit-manager.c:61
 msgid "Miles"
-msgstr ""
+msgstr "Milje"
 
 #: ../src/unit-manager.c:61
 #, c-format
@@ -1647,13 +1566,13 @@ msgstr ""
 
 #: ../src/unit-manager.c:62
 msgid "Kilometers"
-msgstr ""
+msgstr "Kilometra"
 
 #: ../src/unit-manager.c:62
 #, c-format
 msgctxt "unit-format"
 msgid "%s km"
-msgstr ""
+msgstr "%s km"
 
 #: ../src/unit-manager.c:62
 msgctxt "unit-symbols"
@@ -1692,18 +1611,18 @@ msgstr ""
 
 #: ../src/unit-manager.c:65
 msgid "Meters"
-msgstr ""
+msgstr "Metra"
 
 #: ../src/unit-manager.c:65
 #, c-format
 msgctxt "unit-format"
 msgid "%s m"
-msgstr ""
+msgstr "%s m"
 
 #: ../src/unit-manager.c:65
 msgctxt "unit-symbols"
 msgid "meter,meters,m"
-msgstr ""
+msgstr "metër,metra,m"
 
 #: ../src/unit-manager.c:66
 msgid "Yards"
@@ -1752,13 +1671,13 @@ msgstr ""
 
 #: ../src/unit-manager.c:69
 msgid "Centimeters"
-msgstr ""
+msgstr "Centimetra"
 
 #: ../src/unit-manager.c:69
 #, c-format
 msgctxt "unit-format"
 msgid "%s cm"
-msgstr ""
+msgstr "%s cm"
 
 #: ../src/unit-manager.c:69
 msgctxt "unit-symbols"
@@ -1767,18 +1686,18 @@ msgstr ""
 
 #: ../src/unit-manager.c:70
 msgid "Millimeters"
-msgstr ""
+msgstr "Milimetra"
 
 #: ../src/unit-manager.c:70
 #, c-format
 msgctxt "unit-format"
 msgid "%s mm"
-msgstr ""
+msgstr "%s mm"
 
 #: ../src/unit-manager.c:70
 msgctxt "unit-symbols"
 msgid "millimeter,millimeters,mm"
-msgstr ""
+msgstr "milimetër,milimetra,mm"
 
 #: ../src/unit-manager.c:71
 msgid "Micrometers"
@@ -1788,7 +1707,7 @@ msgstr ""
 #, c-format
 msgctxt "unit-format"
 msgid "%s μm"
-msgstr ""
+msgstr "%s μm"
 
 #: ../src/unit-manager.c:71
 msgctxt "unit-symbols"
@@ -1803,7 +1722,7 @@ msgstr ""
 #, c-format
 msgctxt "unit-format"
 msgid "%s nm"
-msgstr ""
+msgstr "%s nm"
 
 #: ../src/unit-manager.c:72
 msgctxt "unit-symbols"
@@ -1848,12 +1767,12 @@ msgstr ""
 #, c-format
 msgctxt "unit-format"
 msgid "%s m²"
-msgstr ""
+msgstr "%s m²"
 
 #: ../src/unit-manager.c:75
 msgctxt "unit-symbols"
 msgid "m²"
-msgstr ""
+msgstr "m²"
 
 #: ../src/unit-manager.c:76
 msgid "Square Centimeters"
@@ -1863,12 +1782,12 @@ msgstr ""
 #, c-format
 msgctxt "unit-format"
 msgid "%s cm²"
-msgstr ""
+msgstr "%s cm²"
 
 #: ../src/unit-manager.c:76
 msgctxt "unit-symbols"
 msgid "cm²"
-msgstr ""
+msgstr "cm²"
 
 #: ../src/unit-manager.c:77
 msgid "Square Millimeters"
@@ -1878,12 +1797,12 @@ msgstr ""
 #, c-format
 msgctxt "unit-format"
 msgid "%s mm²"
-msgstr ""
+msgstr "%s mm²"
 
 #: ../src/unit-manager.c:77
 msgctxt "unit-symbols"
 msgid "mm²"
-msgstr ""
+msgstr "mm²"
 
 #: ../src/unit-manager.c:78
 msgid "Cubic Meters"
@@ -1893,12 +1812,12 @@ msgstr ""
 #, c-format
 msgctxt "unit-format"
 msgid "%s m³"
-msgstr ""
+msgstr "%s m³"
 
 #: ../src/unit-manager.c:78
 msgctxt "unit-symbols"
 msgid "m³"
-msgstr ""
+msgstr "m³"
 
 #: ../src/unit-manager.c:79
 msgid "Gallons"
@@ -1917,7 +1836,7 @@ msgstr ""
 
 #: ../src/unit-manager.c:80
 msgid "Litres"
-msgstr ""
+msgstr "Litra"
 
 #: ../src/unit-manager.c:80
 #, c-format
@@ -2058,7 +1977,7 @@ msgstr ""
 #, c-format
 msgctxt "unit-format"
 msgid "%s g"
-msgstr ""
+msgstr "%s g"
 
 #: ../src/unit-manager.c:89
 msgctxt "unit-symbols"
@@ -2067,28 +1986,28 @@ msgstr ""
 
 #: ../src/unit-manager.c:90
 msgid "Years"
-msgstr ""
+msgstr "Vite"
 
 #: ../src/unit-manager.c:90
 #, c-format
 msgctxt "unit-format"
 msgid "%s years"
-msgstr ""
+msgstr "%s vite"
 
 #: ../src/unit-manager.c:90
 msgctxt "unit-symbols"
 msgid "year,years"
-msgstr ""
+msgstr "vit,vite"
 
 #: ../src/unit-manager.c:91
 msgid "Days"
-msgstr ""
+msgstr "Ditë"
 
 #: ../src/unit-manager.c:91
 #, c-format
 msgctxt "unit-format"
 msgid "%s days"
-msgstr ""
+msgstr "%s ditë"
 
 #: ../src/unit-manager.c:91
 msgctxt "unit-symbols"
@@ -2097,13 +2016,13 @@ msgstr ""
 
 #: ../src/unit-manager.c:92
 msgid "Hours"
-msgstr ""
+msgstr "Orë"
 
 #: ../src/unit-manager.c:92
 #, c-format
 msgctxt "unit-format"
 msgid "%s hours"
-msgstr ""
+msgstr "%s orë"
 
 #: ../src/unit-manager.c:92
 msgctxt "unit-symbols"
@@ -2112,13 +2031,13 @@ msgstr ""
 
 #: ../src/unit-manager.c:93
 msgid "Minutes"
-msgstr ""
+msgstr "Minuta"
 
 #: ../src/unit-manager.c:93
 #, c-format
 msgctxt "unit-format"
 msgid "%s minutes"
-msgstr ""
+msgstr "%s minuta"
 
 #: ../src/unit-manager.c:93
 msgctxt "unit-symbols"
@@ -2127,18 +2046,18 @@ msgstr ""
 
 #: ../src/unit-manager.c:94
 msgid "Seconds"
-msgstr ""
+msgstr "Sekonda"
 
 #: ../src/unit-manager.c:94
 #, c-format
 msgctxt "unit-format"
 msgid "%s s"
-msgstr ""
+msgstr "%s s"
 
 #: ../src/unit-manager.c:94
 msgctxt "unit-symbols"
 msgid "second,seconds,s"
-msgstr ""
+msgstr "sekondë,sekonda,s"
 
 #: ../src/unit-manager.c:95
 msgid "Milliseconds"
@@ -2148,7 +2067,7 @@ msgstr ""
 #, c-format
 msgctxt "unit-format"
 msgid "%s ms"
-msgstr ""
+msgstr "%s ms"
 
 #: ../src/unit-manager.c:95
 msgctxt "unit-symbols"
@@ -2163,7 +2082,7 @@ msgstr ""
 #, c-format
 msgctxt "unit-format"
 msgid "%s μs"
-msgstr ""
+msgstr "%s μs"
 
 #: ../src/unit-manager.c:96
 msgctxt "unit-symbols"
@@ -2172,13 +2091,13 @@ msgstr ""
 
 #: ../src/unit-manager.c:97
 msgid "Celsius"
-msgstr ""
+msgstr "Celsius"
 
 #: ../src/unit-manager.c:97
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚C"
-msgstr ""
+msgstr "%s ˚C"
 
 #: ../src/unit-manager.c:97
 msgctxt "unit-symbols"
@@ -2193,7 +2112,7 @@ msgstr ""
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚F"
-msgstr ""
+msgstr "%s ˚F"
 
 #: ../src/unit-manager.c:98
 msgctxt "unit-symbols"
@@ -2202,18 +2121,18 @@ msgstr ""
 
 #: ../src/unit-manager.c:99
 msgid "Kelvin"
-msgstr ""
+msgstr "Kelvin"
 
 #: ../src/unit-manager.c:99
 #, c-format
 msgctxt "unit-format"
 msgid "%s K"
-msgstr ""
+msgstr "%s K"
 
 #: ../src/unit-manager.c:99
 msgctxt "unit-symbols"
 msgid "K"
-msgstr ""
+msgstr "K"
 
 #: ../src/unit-manager.c:100
 msgid "Rankine"
@@ -2223,7 +2142,7 @@ msgstr ""
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚R"
-msgstr ""
+msgstr "%s ˚R"
 
 #: ../src/unit-manager.c:100
 msgctxt "unit-symbols"
@@ -2232,11 +2151,11 @@ msgstr ""
 
 #: ../src/unit-manager.c:109
 msgid "Angle"
-msgstr ""
+msgstr "Kënd"
 
 #: ../src/unit-manager.c:110
 msgid "Length"
-msgstr ""
+msgstr "Gjatësi"
 
 #: ../src/unit-manager.c:111
 msgid "Area"
@@ -2244,23 +2163,23 @@ msgstr ""
 
 #: ../src/unit-manager.c:112
 msgid "Volume"
-msgstr ""
+msgstr "Vëllim"
 
 #: ../src/unit-manager.c:113
 msgid "Weight"
-msgstr ""
+msgstr "Peshë"
 
 #: ../src/unit-manager.c:114
 msgid "Duration"
-msgstr ""
+msgstr "Kohëzgjatje"
 
 #: ../src/unit-manager.c:115
 msgid "Temperature"
-msgstr ""
+msgstr "Temperaturë"
 
 #: ../src/unit-manager.c:127
 msgid "Currency"
-msgstr ""
+msgstr "Valutë"
 
 #. Translators: result of currency conversion, %s is the symbol, %%s is the
 #. placeholder for amount, i.e.: USD100

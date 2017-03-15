@@ -3,18 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Krishna Babu K <kkrothap@redhat.com>, 2008-2009.
-# Prajasakti Localisation Team <localisation@prajasakti.com>, 2005.
-# Praveen Illa <mail2ipn@gmail.com>, 2011-2012.
-# Sasi Bhushan Boddepalli <sasi@swecha.net>, 2012.
+# Krishnababu Krothapalli <kkrothap@redhat.com>, 2008-2009
+# Prajasakti Localisation Team <localisation@prajasakti.com>, 2005
+# ప్రవీణ్ ఇళ్ళ <mail2ipn@gmail.com>, 2011-2012
+# Sasi Bhushan Boddepalli <sasi@swecha.net>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2013-03-24 20:10+0100\n"
-"PO-Revision-Date: 2013-03-24 19:27+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-15 14:46+0300\n"
+"PO-Revision-Date: 2017-03-15 11:48+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Telugu (http://www.transifex.com/mate/MATE/language/te/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -160,12 +160,12 @@ msgstr "double-declining మిగులు పద్దతిని వుప�
 msgid "C_ost:"
 msgstr "ధర (_o):"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:20
 msgid "_Life:"
 msgstr "జీవితంకాలం (_L):"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:22
 msgid "_Period:"
 msgstr "వ్యవధి (_P):"
@@ -267,12 +267,12 @@ msgstr "కౌంపౌండింగ్ ఆవృతాల నందు, భ�
 msgid "Straight-Line Depreciation"
 msgstr "సరళ-రేఖ తరుగుదల"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:56
 msgid "_Cost:"
 msgstr "ధర (_C):"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:58
 msgid "_Salvage:"
 msgstr "ఉద్ధరణశుల్కం (_S):"
@@ -286,12 +286,12 @@ msgid ""
 "typically years, over which an asset is depreciated. "
 msgstr "ఒక ఆస్థి యొక్క స్ట్రైల్-లైన్ తరుగుదలను వొక కాలానికి లెక్కిస్తుంది. తరుగుదల యొక్క స్ట్రైట్-లైన్ విధానము అస్తియొక్క వుపయోగకర జీవితకాలమునందు తరుగుదల ధరను సరిమానంలో విభజించుతుంది. ఉపయోగకర జీవిత కాలం అంటే, వొక ఆస్తి యెన్ని సమయాలు సాధారణంగా సంవత్సరాలు, తరుగుచేయబడుతుందో."
 
-#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "Sum-Of-The-Years'-Digits తరుగుదల"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
@@ -351,12 +351,7 @@ msgid "Term"
 msgstr "కాలం"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. time, using the Sum-Of-The-Years
 #: ../data/buttons-financial.ui.h:87
 msgid "Syd"
 msgstr "Syd"
@@ -417,14 +412,12 @@ msgid "Ch_aracter:"
 msgstr "అక్షరం (_a):"
 
 #. Accessible name for the shift left button
-#. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
+#: ../data/buttons-programming.ui.h:23
 msgid "Shift Left"
 msgstr "Shift Left"
 
 #. Accessible name for the shift right button
-#. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
+#: ../data/buttons-programming.ui.h:25
 msgid "Shift Right"
 msgstr "Shift Right"
 
@@ -483,116 +476,31 @@ msgstr "చివరి సున్నాలను చూపించు (_z)"
 msgid "Show _thousands separators"
 msgstr "వేలను వేరు చేయువాటిని చూపించు (_t)"
 
+#: ../data/mate-calc.appdata.xml.in.h:1
+msgid "MATE Desktop calculator"
+msgstr ""
+
+#: ../data/mate-calc.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Calc is a powerful graphical calculator with financial, logical and"
+" scientific modes. It uses a multiple precision package to do its arithmetic"
+" to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
+"Calc and part of the MATE Desktop Environment. If you would like to know "
+"more about MATE and MATE Calc, please visit the project's home page. </p>"
+msgstr ""
+
 #: ../data/mate-calc.desktop.in.h:1
 msgid "MATE Calculator"
 msgstr ""
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
 msgid "Calculator"
 msgstr "గణన పరికరం"
 
 #: ../data/mate-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "బీజీయ, శాస్త్రీయ లేదా ఆర్ధిక గణనలను ప్రదర్శించు"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:1
-msgid "Accuracy value"
-msgstr "ఖచ్చితత్వపు విలువ"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:2
-msgid "The number of digits displayed after the numeric point"
-msgstr "సంఖ్యా బిందువు తర్వాత ప్రదర్శించబడే అంకెల సంఖ్య"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:3
-msgid "Word size"
-msgstr "పద పరిమాణం"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:4
-msgid "The size of the words used in bitwise operations"
-msgstr "బిట్‌వైజ్ పరిక్రియలలో ఉపయోగించు పదముల పరిమాణము"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:5
-msgid "Numeric Base"
-msgstr "సంఖ్యామానం"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:6
-msgid "The numeric base"
-msgstr "సంఖ్యామానం"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:7
-msgid "Show Thousands Separators"
-msgstr "వేలను వేరు చేయువాటిని చూపించు"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:8
-msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr "పెద్ద సంఖ్యలనందు వేలను వేరుచేయునది చూపబడాలో లేదో సూచిస్తుంది."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:9
-msgid "Show Trailing Zeroes"
-msgstr "చివరి సున్నాలను చూపించు"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:10
-msgid ""
-"Indicates whether any trailing zeroes after the numeric point should be "
-"shown in the display value."
-msgstr "ప్రదర్శిత విలువనందు సంఖ్యా బిందువు తర్వాత ఏమైనా సున్నాలను చూపాలేమో సూచిస్తుంది."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:11
-msgid "Number format"
-msgstr "సంఖ్యా రూపం"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:12
-msgid "The format to display numbers in"
-msgstr "సంఖ్యలలో ప్రదర్శించవలసిన ఫార్మేటు"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:13
-msgid "Angle units"
-msgstr "కోణ ప్రమాణాలు"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:14
-msgid "The angle units to use"
-msgstr "వాడాల్సిన కోణ ప్రమాణాలు"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:15
-msgid "Button mode"
-msgstr "బటన్ విధం"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:16
-msgid "The button mode"
-msgstr "బటన్ విధం"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:17
-msgid "Source currency"
-msgstr "మూల ద్రవ్యం"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:18
-msgid "Currency of the current calculation"
-msgstr "ప్రస్తుత లెక్క యొక్క ద్రవ్యం"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:19
-msgid "Target currency"
-msgstr "లక్ష్య ద్రవ్యం"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:20
-msgid "Currency to convert the current calculation into"
-msgstr "ప్రస్తుత లెక్కని ఇందులోకి మార్చుటకు ద్రవ్యం"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:21
-msgid "Source units"
-msgstr "మూల ప్రమాణాలు"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:22
-msgid "Units of the current calculation"
-msgstr "ప్రస్తుత గణనం యొక్క ప్రమాణాలు"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:23
-msgid "Target units"
-msgstr "లక్ష్య ప్రమాణాలు"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:24
-msgid "Units to convert the current calculation into"
-msgstr "ప్రస్తుత లెక్కని ఇందులోకి మార్చుటకు ప్రమాణాలు"
 
 #: ../src/currency-manager.c:30
 msgid "UAE Dirham"
@@ -1137,6 +1045,16 @@ msgstr "ప్రదర్శకాన్ని శుభ్రపరుచు [
 msgid "Undo [Ctrl+Z]"
 msgstr "రద్దుచేయి [Ctrl+Z]"
 
+#. Tooltip for the shift left button
+#: ../src/math-buttons.c:250
+msgid "Shift Left [<<]"
+msgstr ""
+
+#. Tooltip for the shift right button
+#: ../src/math-buttons.c:253
+msgid "Shift Right [>>]"
+msgstr ""
+
 #. Tooltip for the double declining depreciation button
 #: ../src/math-buttons.c:259
 msgid "Double Declining Depreciation"
@@ -1217,12 +1135,12 @@ msgstr "చిహ్నం"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: ../src/math-converter.c:412
+#: ../src/math-converter.c:414
 msgid " in "
 msgstr " in "
 
 #. Tooltip for swap conversion button
-#: ../src/math-converter.c:427
+#: ../src/math-converter.c:429
 msgid "Switch conversion units"
 msgstr "పరివర్తక ప్రమాణాలను మార్చు"
 
@@ -1280,23 +1198,23 @@ msgid "Calculating"
 msgstr "లెక్కిస్తున్నది"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1394
+#: ../src/math-equation.c:1390
 msgid "Need an integer to factorize"
 msgstr "కారణాంకాలు కట్టుటకు ఒక పూర్ణాంకం అవసరం"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1470
+#: ../src/math-equation.c:1462
 msgid "No sane value to bitwise shift"
 msgstr "బిట్ వారీ షిఫ్ట్‍ చేయుటకు ఏ స్థిరచిత్త విలువలేదు"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1501
+#: ../src/math-equation.c:1493
 msgid "Displayed value not an integer"
 msgstr "ప్రదర్శించబడిన విలువ పూర్ణాంకం కాదు"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1926
+#: ../src/math-equation.c:1918
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1353,17 +1271,17 @@ msgid "Show %d decimal _places"
 msgstr "%d దశాంశ స్థానాలను చూపించు (_p)"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:198
+#: ../src/math-window.c:211
 msgid "Unable to open help file"
 msgstr "సహాయ ఫైలు తెరువలేకపోయింది"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:225
+#: ../src/math-window.c:238
 msgid "translator-credits"
 msgstr "Krishna Babu K <kkrothap@redhat.com> 2008, 2009.\nPraveen Illa <mail2ipn@gmail.com>, 2011."
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:232
+#: ../src/math-window.c:245
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1380,51 +1298,51 @@ msgid ""
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr ""
 
-#: ../src/math-window.c:247
+#: ../src/math-window.c:260
 msgid "mate-calc"
 msgstr "గ్నూగణనపరికరం"
 
-#: ../src/math-window.c:251
+#: ../src/math-window.c:264
 msgid "Calculator with financial and scientific modes."
 msgstr "ఆర్థిక మరియు శాస్త్రీయ విధములున్న గణన పరికరం."
 
 #. Calculator menu
-#: ../src/math-window.c:354
+#: ../src/math-window.c:367
 msgid "_Calculator"
 msgstr "గణనపరికరం (_C)"
 
 #. Mode menu
-#: ../src/math-window.c:356
+#: ../src/math-window.c:369
 msgid "_Mode"
 msgstr ""
 
 #. Help menu label
-#: ../src/math-window.c:358
+#: ../src/math-window.c:371
 msgid "_Help"
 msgstr "సహాయం (_H)"
 
 #. Basic menu label
-#: ../src/math-window.c:360
+#: ../src/math-window.c:373
 msgid "_Basic"
 msgstr "ప్రాథమిక (_B)"
 
 #. Advanced menu label
-#: ../src/math-window.c:362
+#: ../src/math-window.c:375
 msgid "_Advanced"
 msgstr "ఆధునిక (_A)"
 
 #. Financial menu label
-#: ../src/math-window.c:364
+#: ../src/math-window.c:377
 msgid "_Financial"
 msgstr "ఆర్థికగణని (_F)"
 
 #. Programming menu label
-#: ../src/math-window.c:366
+#: ../src/math-window.c:379
 msgid "_Programming"
 msgstr "ప్రోగ్రామింగ్ (_P)"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:368
+#: ../src/math-window.c:381
 msgid "_Contents"
 msgstr "సారములు (_C)"
 

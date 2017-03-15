@@ -3,25 +3,25 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Aron Xu <happyaron.xu@gmail.com>, 2009-2010.
-# Funda Wang <fundawang@linux.net.cn>, 2003-2004.
-# Haonan Yu <rebuilty@gmail.com>, 2013.
-# Lele Long <schemacs@gmail.com>, 2011.
-# Shaodong Di <gnuyhlfh@gmail.com>, 2008.
-# Tao Wang <dancefire@gmail.com>, 2010.
-# Tao Wei <weitao1979@gmail.com>, 2010.
-# vicwjb <vicwjb@gmail.com>, 2010.
-# YunQiang Su <wzssyqa@gmail.com>, 2011.
-# 朱涛 <bill_zt@sina.com>, 2010.
-# 甘露(Gan Lu) <rhythm.gan@gmail.com>, 2009.
+# Aron Xu <happyaron.xu@gmail.com>, 2009-2010
+# Funda Wang <fundawang@linux.net.cn>, 2003-2004
+# nyanyh <rebuilty@gmail.com>, 2013
+# Lele Long <schemacs@gmail.com>, 2011
+# Shaodong Di <gnuyhlfh@gmail.com>, 2008
+# Tao Wang <dancefire@gmail.com>, 2010
+# Tao Wei <weitao1979@gmail.com>, 2010
+# vicwjb <vicwjb@gmail.com>, 2010
+# YunQiang Su <wzssyqa@gmail.com>, 2011
+# 朱涛 <bill_zt@sina.com>, 2010
+# 甘 露 <rhythm.gan@gmail.com>, 2009
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2013-03-24 20:10+0100\n"
-"PO-Revision-Date: 2013-03-26 14:49+0000\n"
-"Last-Translator: rebuilty <rebuilty@gmail.com>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/MATE/language/zh_CN/)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-15 14:46+0300\n"
+"PO-Revision-Date: 2017-03-15 11:48+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/mate/MATE/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -167,12 +167,12 @@ msgstr "计算某一资产在指定期间的折旧提成，使用加倍余额递
 msgid "C_ost:"
 msgstr "成本(_O)："
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:20
 msgid "_Life:"
 msgstr "年限(_L)："
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:22
 msgid "_Period:"
 msgstr "期(_P)："
@@ -274,12 +274,12 @@ msgstr "计算某投资增加到某一未来值需要的每期利率，按复合
 msgid "Straight-Line Depreciation"
 msgstr "直线折旧"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:56
 msgid "_Cost:"
 msgstr "成本(_C)："
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:58
 msgid "_Salvage:"
 msgstr "残值(_S)："
@@ -293,12 +293,12 @@ msgid ""
 "typically years, over which an asset is depreciated. "
 msgstr "计算一个期间某资产的直线折旧。直线折旧法在某资产可用年限内均分折旧成本。可用年限指该资产折旧的期数，典型情况下为年。"
 
-#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "年数总和法折旧"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
@@ -358,12 +358,7 @@ msgid "Term"
 msgstr "期数"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. time, using the Sum-Of-The-Years
 #: ../data/buttons-financial.ui.h:87
 msgid "Syd"
 msgstr "Syd"
@@ -424,16 +419,14 @@ msgid "Ch_aracter:"
 msgstr "字符(_A)："
 
 #. Accessible name for the shift left button
-#. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
-msgid "Shift Left [<<]"
-msgstr "左移 [<<]"
+#: ../data/buttons-programming.ui.h:23
+msgid "Shift Left"
+msgstr "左移"
 
 #. Accessible name for the shift right button
-#. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
-msgid "Shift Right [>>]"
-msgstr "右移 [>>]"
+#: ../data/buttons-programming.ui.h:25
+msgid "Shift Right"
+msgstr "右移"
 
 #. Accessible name for the insert character button
 #: ../data/buttons-programming.ui.h:27
@@ -490,116 +483,31 @@ msgstr "显示末位零(_Z)"
 msgid "Show _thousands separators"
 msgstr "显示千位分隔符(_T)"
 
+#: ../data/mate-calc.appdata.xml.in.h:1
+msgid "MATE Desktop calculator"
+msgstr ""
+
+#: ../data/mate-calc.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Calc is a powerful graphical calculator with financial, logical and"
+" scientific modes. It uses a multiple precision package to do its arithmetic"
+" to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
+"Calc and part of the MATE Desktop Environment. If you would like to know "
+"more about MATE and MATE Calc, please visit the project's home page. </p>"
+msgstr ""
+
 #: ../data/mate-calc.desktop.in.h:1
 msgid "MATE Calculator"
 msgstr "MATE 计算器"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
 msgid "Calculator"
 msgstr "计算器"
 
 #: ../data/mate-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "执行算术、科学或财务计算"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:1
-msgid "Accuracy value"
-msgstr "精确度"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:2
-msgid "The number of digits displayed after the numeric point"
-msgstr "小数点后显示的数字位数"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:3
-msgid "Word size"
-msgstr "字长"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:4
-msgid "The size of the words used in bitwise operations"
-msgstr "位运算所用字长"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:5
-msgid "Numeric Base"
-msgstr "进位制"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:6
-msgid "The numeric base"
-msgstr "进位制"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:7
-msgid "Show Thousands Separators"
-msgstr "显示千位分隔符"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:8
-msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr "设置是否在大数中显示千位分隔符。"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:9
-msgid "Show Trailing Zeroes"
-msgstr "显示末位零"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:10
-msgid ""
-"Indicates whether any trailing zeroes after the numeric point should be "
-"shown in the display value."
-msgstr "表明是否在数值中小数点后显示末位零。"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:11
-msgid "Number format"
-msgstr "数字格式"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:12
-msgid "The format to display numbers in"
-msgstr "显示数字使用的格式"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:13
-msgid "Angle units"
-msgstr "角度单位"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:14
-msgid "The angle units to use"
-msgstr "使用角度单位"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:15
-msgid "Button mode"
-msgstr "按钮模式"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:16
-msgid "The button mode"
-msgstr "按钮模式"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:17
-msgid "Source currency"
-msgstr "起始货币"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:18
-msgid "Currency of the current calculation"
-msgstr "当前计算的货币"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:19
-msgid "Target currency"
-msgstr "目标货币"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:20
-msgid "Currency to convert the current calculation into"
-msgstr "转换到的货币单位"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:21
-msgid "Source units"
-msgstr "起始单位"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:22
-msgid "Units of the current calculation"
-msgstr "当前计量的单位"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:23
-msgid "Target units"
-msgstr "目标单位"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:24
-msgid "Units to convert the current calculation into"
-msgstr "转换到的计量单位"
 
 #: ../src/currency-manager.c:30
 msgid "UAE Dirham"
@@ -1144,6 +1052,16 @@ msgstr "清除显示 [Escape]"
 msgid "Undo [Ctrl+Z]"
 msgstr "撤销 [Ctrl+Z]"
 
+#. Tooltip for the shift left button
+#: ../src/math-buttons.c:250
+msgid "Shift Left [<<]"
+msgstr ""
+
+#. Tooltip for the shift right button
+#: ../src/math-buttons.c:253
+msgid "Shift Right [>>]"
+msgstr ""
+
 #. Tooltip for the double declining depreciation button
 #: ../src/math-buttons.c:259
 msgid "Double Declining Depreciation"
@@ -1222,12 +1140,12 @@ msgstr "符号"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: ../src/math-converter.c:412
+#: ../src/math-converter.c:414
 msgid " in "
 msgstr " 换算为 "
 
 #. Tooltip for swap conversion button
-#: ../src/math-converter.c:427
+#: ../src/math-converter.c:429
 msgid "Switch conversion units"
 msgstr "转换单位"
 
@@ -1285,23 +1203,23 @@ msgid "Calculating"
 msgstr "计算"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1394
+#: ../src/math-equation.c:1390
 msgid "Need an integer to factorize"
 msgstr "分解因式运算需要一个整数"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1470
+#: ../src/math-equation.c:1462
 msgid "No sane value to bitwise shift"
 msgstr "没有正常数值可用于移位"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1501
+#: ../src/math-equation.c:1493
 msgid "Displayed value not an integer"
 msgstr "显示的值不是整数"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1926
+#: ../src/math-equation.c:1918
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1358,17 +1276,17 @@ msgid "Show %d decimal _places"
 msgstr "显示 %d 个十进制位(_P)"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:198
+#: ../src/math-window.c:211
 msgid "Unable to open help file"
 msgstr "无法打开帮助文件"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:225
+#: ../src/math-window.c:238
 msgid "translator-credits"
 msgstr "Funda Wang <fundawang@linux.net.cn>, 2003, 2004\nShaodong Di <gnuyhlfh@gmail.com>, 2008\n甘露 <rhythm.gan@gmail.com>, 2009\nAron Xu <aronxu@gnome.org>, 2009, 2010\narccos <boyermoore@gmail.com>, 2010\nYunQiang Su <wzssyqa@gmail.com>, 2010\nTao Wei <weitao1979@gmail.com>, 2010\nvicwjb <vicwjb@gmail.com>, 2010\nTao Wang <dancefire@gmail.com>, 2010\n朱涛 <bill_zt@sina.com>, 2010"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:232
+#: ../src/math-window.c:245
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1385,51 +1303,51 @@ msgid ""
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr "mate-calc 是自由软件；您可以在自由软件基金会发布的 GNU 通用公共许可证的条款下重新分发和（或）修改它。\\n您可以选择使用 GPL 第二版， 或\\n(按照您的意愿)任何更新的版本。\\n\\n mate-calc 分发的目的是希望它物有所用， 但是没有任何担保；没有对其适销性和某一特定目的下的\\n适用性的任何哪怕是暗示的担保。 请查阅 GNU 通用公共许可证以获得更多信息。\\n\\n你应该已经跟 mate-calc 一起收到一份 GNU 通用公共许可证的副本； \\n如果没有，请写信至：Free Software Foundation, Inc.,\\n 151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
-#: ../src/math-window.c:247
+#: ../src/math-window.c:260
 msgid "mate-calc"
 msgstr "mate-calc"
 
-#: ../src/math-window.c:251
+#: ../src/math-window.c:264
 msgid "Calculator with financial and scientific modes."
 msgstr "带有财务和科学模式的计算器。"
 
 #. Calculator menu
-#: ../src/math-window.c:354
+#: ../src/math-window.c:367
 msgid "_Calculator"
 msgstr "计算器(_C)"
 
 #. Mode menu
-#: ../src/math-window.c:356
+#: ../src/math-window.c:369
 msgid "_Mode"
 msgstr "模式(_M)"
 
 #. Help menu label
-#: ../src/math-window.c:358
+#: ../src/math-window.c:371
 msgid "_Help"
 msgstr "帮助(_H)"
 
 #. Basic menu label
-#: ../src/math-window.c:360
+#: ../src/math-window.c:373
 msgid "_Basic"
 msgstr "基本(_B)"
 
 #. Advanced menu label
-#: ../src/math-window.c:362
+#: ../src/math-window.c:375
 msgid "_Advanced"
 msgstr "高级(_A)"
 
 #. Financial menu label
-#: ../src/math-window.c:364
+#: ../src/math-window.c:377
 msgid "_Financial"
 msgstr "财务(_F)"
 
 #. Programming menu label
-#: ../src/math-window.c:366
+#: ../src/math-window.c:379
 msgid "_Programming"
 msgstr "编程(_P)"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:368
+#: ../src/math-window.c:381
 msgid "_Contents"
 msgstr "内容(_C)"
 

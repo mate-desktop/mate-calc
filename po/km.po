@@ -3,16 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Khoem Sokhem <khoemsokhem@khmeros.info>, 2012.
-# Seng Sutha <sutha@khmeros.info>, 2012.
+# Bunhann Thou <bunhann@gmail.com>, 2015
+# Khoem Sokhem <khoemsokhem@khmeros.info>, 2012
+# Seng Sutha <sutha@khmeros.info>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2013-03-24 20:10+0100\n"
-"PO-Revision-Date: 2013-03-24 19:36+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-15 14:46+0300\n"
+"PO-Revision-Date: 2017-03-15 11:48+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Khmer (http://www.transifex.com/mate/MATE/language/km/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,7 +34,7 @@ msgstr "="
 #: ../data/buttons-advanced.ui.h:5 ../data/buttons-basic.ui.h:3
 #: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
 msgid "Clear"
-msgstr ""
+msgstr "លុប"
 
 #. Accessible name for the subscript mode button
 #: ../data/buttons-advanced.ui.h:7 ../data/buttons-programming.ui.h:15
@@ -73,7 +74,7 @@ msgstr "និទស្សន្ត"
 #: ../data/buttons-advanced.ui.h:18 ../data/buttons-basic.ui.h:6
 #: ../data/buttons-financial.ui.h:98
 msgid "Undo"
-msgstr ""
+msgstr "មិនធ្វើវិញ"
 
 #: ../data/buttons-advanced.ui.h:19
 msgid "acos"
@@ -158,12 +159,12 @@ msgstr "គណនា​ប្រាក់​ឧបត្ថម្ភ​រំល
 msgid "C_ost:"
 msgstr "ថ្លៃ ៖"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:20
 msgid "_Life:"
 msgstr "អាយុកាល ៖"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:22
 msgid "_Period:"
 msgstr "អំឡុង​ពេល ៖"
@@ -265,12 +266,12 @@ msgstr "គណនា​ការ​ប្រាក់​​តាម​អំឡ
 msgid "Straight-Line Depreciation"
 msgstr "រំលោះ​បន្ទាត់​ត្រង់"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:56
 msgid "_Cost:"
 msgstr "តម្លៃ ៖"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:58
 msgid "_Salvage:"
 msgstr "សង្គ្រោះ ៖"
@@ -284,12 +285,12 @@ msgid ""
 "typically years, over which an asset is depreciated. "
 msgstr "គណនា​ការ​រំលោះ​តាម​​បន្ទាត់​ត្រង់​នៃ​ទ្រព្យសកម្ម​សម្រាប់​អំឡុង​ពេល​មួយ ។ វិធីសាស្ត្រ​​តាម​បន្ទាត់​ត្រង់​ក្នុង​ការ​​​ចែក​ការ​រំលោះ​​តម្លៃ​ដែល​អាច​​បញ្ចុះ​​ស្មើ​ៗ​គ្នា ដែល​ជា​ប្រយោជន៍​អាយុកាល​របស់​ទ្រព្យសកម្ម ។ អាយុកាល​ដែល​​មាន​ប្រយោជន៍​ជា​ចំនួន​នៃ​អំឡុង​ពេល  ឆ្នាំ លើ​ទ្រព្យសកម្ម​ដែល​ត្រូវ​បាន​បញ្ចុះ​តម្លៃ ។"
 
-#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "ផល​បូក​នៃ​ឆ្នាំ តួលេខ រំលោះ"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
@@ -349,12 +350,7 @@ msgid "Term"
 msgstr "រយៈពេល"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. time, using the Sum-Of-The-Years
 #: ../data/buttons-financial.ui.h:87
 msgid "Syd"
 msgstr "Syd"
@@ -415,14 +411,12 @@ msgid "Ch_aracter:"
 msgstr "តួ​អក្សរ ៖"
 
 #. Accessible name for the shift left button
-#. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
+#: ../data/buttons-programming.ui.h:23
 msgid "Shift Left"
 msgstr "អង្កិល​​ឆ្វេង"
 
 #. Accessible name for the shift right button
-#. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
+#: ../data/buttons-programming.ui.h:25
 msgid "Shift Right"
 msgstr "អង្កិល​ស្ដាំ"
 
@@ -481,116 +475,31 @@ msgstr "បង្ហាញ ០ ខាង​ចុង"
 msgid "Show _thousands separators"
 msgstr "បង្ហាញ​សញ្ញា​បំបែក​ខ្ទង់​ពាន់"
 
-#: ../data/mate-calc.desktop.in.h:1
-msgid "MATE Calculator"
+#: ../data/mate-calc.appdata.xml.in.h:1
+msgid "MATE Desktop calculator"
 msgstr ""
 
+#: ../data/mate-calc.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Calc is a powerful graphical calculator with financial, logical and"
+" scientific modes. It uses a multiple precision package to do its arithmetic"
+" to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
+"Calc and part of the MATE Desktop Environment. If you would like to know "
+"more about MATE and MATE Calc, please visit the project's home page. </p>"
+msgstr ""
+
+#: ../data/mate-calc.desktop.in.h:1
+msgid "MATE Calculator"
+msgstr "ម៉ាស៊ីនគិតលេខ MATE"
+
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
 msgid "Calculator"
 msgstr "ម៉ាស៊ីន​គិត​លេខ"
 
 #: ../data/mate-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "អនុវត្ត​ការ​គណនា​គណិតវិទ្យា វិទ្យាសាស្ត្រ ឬ​ហិរញ្ញវត្ថុ"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:1
-msgid "Accuracy value"
-msgstr "តម្លៃ​កម្រិត​ត្រឹមត្រូវ"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:2
-msgid "The number of digits displayed after the numeric point"
-msgstr "ចំនួន​លេខ​បាន​បង្ហាញ​បន្ទាប់​ពី​ចំណុច​ជា​លេខ"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:3
-msgid "Word size"
-msgstr "ទំហំ​ពាក្យ"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:4
-msgid "The size of the words used in bitwise operations"
-msgstr "ទំហំ​របស់​ឃ្លា​បាន​ប្រើ​នៅ​ក្នុង​ប្រតិបត្តិការ​ឈ្នាប់"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:5
-msgid "Numeric Base"
-msgstr "គោល​ជា​លេខ"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:6
-msgid "The numeric base"
-msgstr "គោល​ជា​លេខ"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:7
-msgid "Show Thousands Separators"
-msgstr "បង្ហាញ​សញ្ញា​បំបែក​ខ្ទង់ពាន់"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:8
-msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr "បង្ហាញ​ថា​តើ​សញ្ញា​បំបែក​ខ្ទង់ពាន់​ត្រូវ​បាន​បង្ហាញ​នៅ​ក្នុង​ចំនួន​ធំ​ ។"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:9
-msgid "Show Trailing Zeroes"
-msgstr "បង្ហាញ ០ ខាងចុង"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:10
-msgid ""
-"Indicates whether any trailing zeroes after the numeric point should be "
-"shown in the display value."
-msgstr "បង្ហាញ​ថា​តើ​ ០ ខាងចុង នៅ​បន្ទាប់​ពី​ចំណុច​ជា​លេខ​គួរ​តែ​ត្រូវ​បាន​បង្ហាញ​នៅ​តម្លៃ​ទិដ្ឋភាព ។"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:11
-msgid "Number format"
-msgstr "ទ្រង់ទ្រាយ​លេខ"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:12
-msgid "The format to display numbers in"
-msgstr "ទ្រង់ទ្រាយ​ត្រូវ​បង្ហាញ​ចំនួន​នៅ​ក្នុង"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:13
-msgid "Angle units"
-msgstr "ឯកតា​មុំ"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:14
-msgid "The angle units to use"
-msgstr "ឯកតា​មុំ​ត្រូវ​ប្រើ"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:15
-msgid "Button mode"
-msgstr "របៀប​ប៊ូតុង"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:16
-msgid "The button mode"
-msgstr "របៀប​ប៊ូតុង"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:17
-msgid "Source currency"
-msgstr "រូបិយប័ណ្ណ​ប្រភព"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:18
-msgid "Currency of the current calculation"
-msgstr "គណនា​រូបិយប័ណ្ណ​បច្ចុប្បន្ន"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:19
-msgid "Target currency"
-msgstr "រូបិយប័ណ្ណ​គោលដៅ"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:20
-msgid "Currency to convert the current calculation into"
-msgstr "រូបិយប័ណ្ណ​ត្រូវ​បម្លែង​គណនា​បច្ចុប្បន្ន​ទៅ​ជា"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:21
-msgid "Source units"
-msgstr "ឯកតា​ប្រភព"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:22
-msgid "Units of the current calculation"
-msgstr "ឯកតា​ក្នុង​ការ​គណនា​បច្ចុប្បន្ន"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:23
-msgid "Target units"
-msgstr "ឯកតា​គោលដៅ"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:24
-msgid "Units to convert the current calculation into"
-msgstr "ឯកតា​ត្រូវ​បម្លែង​គណនា​បច្ចុប្បន្ន​ទៅ​ជា"
 
 #: ../src/currency-manager.c:30
 msgid "UAE Dirham"
@@ -1135,6 +1044,16 @@ msgstr "សម្អាត​ទិដ្ឋភាព [Escape]"
 msgid "Undo [Ctrl+Z]"
 msgstr "មិន​ធ្វើ​វិញ [Ctrl+Z]"
 
+#. Tooltip for the shift left button
+#: ../src/math-buttons.c:250
+msgid "Shift Left [<<]"
+msgstr ""
+
+#. Tooltip for the shift right button
+#: ../src/math-buttons.c:253
+msgid "Shift Right [>>]"
+msgstr ""
+
 #. Tooltip for the double declining depreciation button
 #: ../src/math-buttons.c:259
 msgid "Double Declining Depreciation"
@@ -1213,12 +1132,12 @@ msgstr "ចុះហត្ថលេខា"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: ../src/math-converter.c:412
+#: ../src/math-converter.c:414
 msgid " in "
 msgstr "ក្នុង"
 
 #. Tooltip for swap conversion button
-#: ../src/math-converter.c:427
+#: ../src/math-converter.c:429
 msgid "Switch conversion units"
 msgstr "ប្ដូរ​ឯកតា​ការ​បម្លែង"
 
@@ -1276,23 +1195,23 @@ msgid "Calculating"
 msgstr "ការ​គណនា"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1394
+#: ../src/math-equation.c:1390
 msgid "Need an integer to factorize"
 msgstr "ត្រូវ​ការ​លេខគត់​ដើម្បី​ដាក់​កត្តា"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1470
+#: ../src/math-equation.c:1462
 msgid "No sane value to bitwise shift"
 msgstr "គ្មាន​តម្លៃ​សមស្រប​ ដើម្បី​​ប្ដូរ​​ឈ្នាប់​ឡើយ"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1501
+#: ../src/math-equation.c:1493
 msgid "Displayed value not an integer"
 msgstr "គ្មាន​តម្លៃ​លេខគត់​​​ដែល​បាន​បង្ហាញ​ឡើយ"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1926
+#: ../src/math-equation.c:1918
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1349,17 +1268,17 @@ msgid "Show %d decimal _places"
 msgstr "បង្ហាញ​​ការ​ដាក់​ទសភាគ %d"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:198
+#: ../src/math-window.c:211
 msgid "Unable to open help file"
 msgstr "មិន​អាច​បើក​ឯកសារ​ជំនួយ​បាន​ទេ"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:225
+#: ../src/math-window.c:238
 msgid "translator-credits"
 msgstr "ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត្ថា, ចាន់ សម្បត្តិរតនៈ, សុខ សុភា"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:232
+#: ../src/math-window.c:245
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1376,51 +1295,51 @@ msgid ""
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr ""
 
-#: ../src/math-window.c:247
+#: ../src/math-window.c:260
 msgid "mate-calc"
 msgstr ""
 
-#: ../src/math-window.c:251
+#: ../src/math-window.c:264
 msgid "Calculator with financial and scientific modes."
 msgstr "ម៉ាស៊ីន​គិតលេខ​ដែល​មាន​របៀប​វិទ្យាសាស្ត្រ និង​​របៀប​ហិរញ្ញវត្ថុ"
 
 #. Calculator menu
-#: ../src/math-window.c:354
+#: ../src/math-window.c:367
 msgid "_Calculator"
 msgstr "ម៉ាស៊ីន​គិតលេខ"
 
 #. Mode menu
-#: ../src/math-window.c:356
+#: ../src/math-window.c:369
 msgid "_Mode"
 msgstr "របៀប"
 
 #. Help menu label
-#: ../src/math-window.c:358
+#: ../src/math-window.c:371
 msgid "_Help"
 msgstr "ជំនួយ"
 
 #. Basic menu label
-#: ../src/math-window.c:360
+#: ../src/math-window.c:373
 msgid "_Basic"
 msgstr "ជា​គោល"
 
 #. Advanced menu label
-#: ../src/math-window.c:362
+#: ../src/math-window.c:375
 msgid "_Advanced"
 msgstr "កម្រិត​ខ្ពស់"
 
 #. Financial menu label
-#: ../src/math-window.c:364
+#: ../src/math-window.c:377
 msgid "_Financial"
 msgstr "ហិរញ្ញវត្ថុ"
 
 #. Programming menu label
-#: ../src/math-window.c:366
+#: ../src/math-window.c:379
 msgid "_Programming"
 msgstr "ការ​សរសេរ​កម្មវិធី"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:368
+#: ../src/math-window.c:381
 msgid "_Contents"
 msgstr "មាតិកា"
 

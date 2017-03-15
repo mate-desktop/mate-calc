@@ -1,1878 +1,2187 @@
-# translation of mate-calc.HEAD.po to Azerbaijani Turkish
-# Copyright (C) 2003 Mətin Əmirov
-# This file is distributed under the same license as the Gcalctool package.
-# Mətin Əmirov <metin@karegen.com>, 2003, 2004.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Mətin Əmirov <metin@karegen.com>, 2003-2004
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc.HEAD\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-08 08:10-0700\n"
-"PO-Revision-Date: 2004-02-14 15:22+0200\n"
-"Last-Translator: Mətin Əmirov <metin@karegen.com>\n"
-"Language-Team: Azerbaijani Turkish <translation-team-az@lists.sourceforge."
-"net>\n"
+"POT-Creation-Date: 2017-03-15 14:46+0300\n"
+"PO-Revision-Date: 2017-03-15 11:48+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Azerbaijani (http://www.transifex.com/mate/MATE/language/az/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.0.2\n"
+"Language: az\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#  Strings for each base value.
-#. Strings for each base value.
-#: mate-calc/calctool.c:41
-msgid "_Bin"
-msgstr "_Bin"
-
-#: mate-calc/calctool.c:41
-msgid "_Oct"
-msgstr "_Oct"
-
-#: mate-calc/calctool.c:41
-msgid "_Dec"
-msgstr "_Dec"
-
-#: mate-calc/calctool.c:41
-msgid "He_x"
-msgstr "He_x"
-
-#. Tooltips for each base value.
-#: mate-calc/calctool.c:45
-msgid "Set numeric base to binary (base 2)"
-msgstr "Ədədi kökü cütə çevir (kök 2)"
-
-#: mate-calc/calctool.c:46
-msgid "Set numeric base to octal (base 8)"
-msgstr "Ədədi kökü səkkizliyə çevir (kök 8)"
-
-#: mate-calc/calctool.c:47
-msgid "Set numeric base to decimal (base 10)"
-msgstr "Ədədi kökü onluğa çevir (kök 10)"
-
-#: mate-calc/calctool.c:48
-msgid "Set numeric base to hexadecimal (base 16)"
-msgstr "Ədədi kökü on altılığa çevir (kök 16)"
-
-#. Strings for each display mode value.
-#: mate-calc/calctool.c:59
-msgid "E_ng"
-msgstr "E_ng"
-
-#: mate-calc/calctool.c:59
-msgid "_Fix"
-msgstr "_Fix"
-
-#: mate-calc/calctool.c:59
-msgid "_Sci"
-msgstr "_Sci"
-
-#. Tooltips for each display mode value.
-#: mate-calc/calctool.c:63
-msgid "Set display type to engineering format"
-msgstr "Displey növünü mühəndis formatına keçir"
-
-#: mate-calc/calctool.c:64
-msgid "Set display type to fixed-point format"
-msgstr "Displey növünü sabit nöqtə formatına keçir"
-
-#: mate-calc/calctool.c:65
-msgid "Set display type to scientific format"
-msgstr "Displey növünü elmi formata keçir"
-
-#: mate-calc/calctool.c:68
-msgid "Set hyperbolic option for trigonometric functions"
-msgstr "Triqonometrik funksiyalar üçün hiperbolik seçim müəyyən et"
-
-#: mate-calc/calctool.c:69
-msgid "Set inverse option for trigonometric functions"
-msgstr "Triqonometrik funksiyalar üçün tərs seçim müəyyən et"
-
-#. Mode titles to be added to the titlebar.
-#: mate-calc/calctool.c:72 mate-calc/gtk.c:351
-#, fuzzy
-msgid "Basic"
-msgstr "Sadə Mod"
-
-#: mate-calc/calctool.c:72 mate-calc/gtk.c:353
-#, fuzzy
-msgid "Advanced"
-msgstr "Sadə Mod"
-
-#: mate-calc/calctool.c:72 mate-calc/gtk.c:355
-#, fuzzy
-msgid "Financial"
-msgstr "Maliyyə Modu"
-
-#: mate-calc/calctool.c:73 mate-calc/gtk.c:357
-#, fuzzy
-msgid "Scientific"
-msgstr "Elmi Mod"
-
-#: mate-calc/calctool.c:73
-msgid "Expression"
+#. Accessible name for the factorize button
+#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:8
+msgid "Factorize"
 msgstr ""
 
-#  Strings for each trig type value.
-#. Strings for each trig type value.
-#: mate-calc/calctool.c:77
-msgid "De_grees"
-msgstr "_Dərəcələr"
-
-#: mate-calc/calctool.c:77
-msgid "Gr_adians"
-msgstr "_Gradianlar"
-
-#: mate-calc/calctool.c:77
-msgid "_Radians"
-msgstr "_Radianlar"
-
-#. Tooltips for each trig type value.
-#: mate-calc/calctool.c:81
-msgid "Set trigonometric type to degrees"
-msgstr "Triqonometrik qiyməti dərəcəyə çevir"
-
-#: mate-calc/calctool.c:82
-msgid "Set trigonometric type to gradians"
-msgstr "Triqonometrik qiyməti qradianlara çevir"
-
-#: mate-calc/calctool.c:83
-msgid "Set trigonometric type to radians"
-msgstr "Triqonometrik qiyməti radianlara çevir"
-
-#: mate-calc/calctool.c:134
-msgid "7"
-msgstr "7"
-
-#: mate-calc/calctool.c:136
-msgid "Numeric 7"
-msgstr "Ədədi 7"
-
-#: mate-calc/calctool.c:146
-msgid "8"
-msgstr "8"
-
-#: mate-calc/calctool.c:148
-msgid "Numeric 8"
-msgstr "Ədədi 8"
-
-#: mate-calc/calctool.c:158
-msgid "9"
-msgstr "9"
-
-#: mate-calc/calctool.c:160
-msgid "Numeric 9"
-msgstr "Ədədi 8"
-
-#: mate-calc/calctool.c:170 mate-calc/calctool.c:178
-msgid "/"
-msgstr "/"
-
-#: mate-calc/calctool.c:171
-msgid "Divide"
-msgstr "Bölünsün"
-
-#: mate-calc/calctool.c:182
-msgid "("
-msgstr "("
-
-#: mate-calc/calctool.c:183
-msgid "Start group of calculations"
-msgstr "Hesablamalar qrupunu başlat"
-
-#: mate-calc/calctool.c:184
-msgid "Left bracket"
-msgstr "Sol mötərizə"
-
-#: mate-calc/calctool.c:194
-#, fuzzy
-msgid "Bksp"
-msgstr "Bsp"
-
-#: mate-calc/calctool.c:195
-msgid "Remove rightmost character from displayed value"
-msgstr "Göstərilən qiymətdən rightmost hərfini çıxart"
-
-#: mate-calc/calctool.c:196
-msgid "Backspace"
-msgstr "Backspace"
-
-#: mate-calc/calctool.c:206
-msgid "CE"
-msgstr "CE"
-
-#: mate-calc/calctool.c:207
-msgid "Clear displayed value"
-msgstr "Göstərilən qiyməti təmizlə"
-
-#: mate-calc/calctool.c:208
-msgid "Clear entry"
-msgstr "Girişi təmizlə"
-
-#: mate-calc/calctool.c:218
-msgid "Clr"
-msgstr "Clr"
-
-#: mate-calc/calctool.c:219
-msgid "Clear displayed value and any partial calculation"
-msgstr "Göstərilən qiyməti və yarıda qalmış hesablamanı sil"
-
-#: mate-calc/calctool.c:220
-msgid "Clear"
-msgstr "Təmizlə"
-
-#: mate-calc/calctool.c:232
-msgid "4"
-msgstr "4"
-
-#: mate-calc/calctool.c:234
-msgid "Numeric 4"
-msgstr "Ədədi 4"
-
-#: mate-calc/calctool.c:244
-msgid "5"
-msgstr "5"
-
-#: mate-calc/calctool.c:246
-msgid "Numeric 5"
-msgstr "Ədədi 5"
-
-#: mate-calc/calctool.c:256
-msgid "6"
-msgstr "6"
-
-#: mate-calc/calctool.c:258
-msgid "Numeric 6"
-msgstr "Ədədi 6"
-
-#: mate-calc/calctool.c:268 mate-calc/calctool.c:276
-msgid "*"
-msgstr "*"
-
-#: mate-calc/calctool.c:269
-msgid "Multiply"
-msgstr "Vurulsun"
-
-#: mate-calc/calctool.c:280
-msgid ")"
-msgstr ")"
-
-#: mate-calc/calctool.c:281
-msgid "End group of calculations"
-msgstr "Hesablamalar qrupunu bitir"
-
-#: mate-calc/calctool.c:282
-msgid "Right bracket"
-msgstr "Sağ mötərizə"
-
-#: mate-calc/calctool.c:292
-msgid "+/-"
-msgstr "+/-"
-
-#: mate-calc/calctool.c:293
-#, fuzzy
-msgid "Change sign [c]"
-msgstr "İşarəni dəyiş"
-
-#: mate-calc/calctool.c:300
-#, fuzzy
-msgid "Chs"
-msgstr "Cos"
-
-#: mate-calc/calctool.c:304
-msgid "Int"
-msgstr "Int"
-
-#: mate-calc/calctool.c:305
-#, fuzzy
-msgid "Integer portion of displayed value [i]"
-msgstr "Göstərilən qiymətin interger qismi"
-
-#: mate-calc/calctool.c:306
-msgid "Integer portion"
-msgstr "İnterger qismi"
-
-#: mate-calc/calctool.c:316
-msgid "Sto"
-msgstr "Sto"
-
-#: mate-calc/calctool.c:317
-#, fuzzy
-msgid "Store displayed value in memory register [S]"
-msgstr "Göstərilən qiyməti yaddaş qeydində saxla"
-
-#: mate-calc/calctool.c:318
-msgid "Store to register"
-msgstr "Qeydə yaz"
-
-#: mate-calc/calctool.c:330
-msgid "1"
-msgstr "1"
-
-#: mate-calc/calctool.c:332
-msgid "Numeric 1"
-msgstr "Ədədi 1"
-
-#: mate-calc/calctool.c:342
-msgid "2"
-msgstr "2"
-
-#: mate-calc/calctool.c:344
-msgid "Numeric 2"
-msgstr "Ədədi 2"
-
-#: mate-calc/calctool.c:354
-msgid "3"
-msgstr "3"
-
-#: mate-calc/calctool.c:356
-msgid "Numeric 3"
-msgstr "Ədədi 3"
-
-#: mate-calc/calctool.c:366
-msgid "-"
-msgstr "-"
-
-#: mate-calc/calctool.c:367
-msgid "Subtract"
-msgstr "Çıxılsın"
-
-#: mate-calc/calctool.c:378
-msgid "%"
-msgstr "%"
-
-#: mate-calc/calctool.c:379
-msgid "Percentage"
-msgstr "Faiz"
-
-#: mate-calc/calctool.c:390
-msgid "Sqrt"
-msgstr "Sqrt"
-
-#: mate-calc/calctool.c:391
-#, fuzzy
-msgid "Square root [s]"
-msgstr "Kvadrat kök"
-
-#: mate-calc/calctool.c:402
-msgid "Frac"
-msgstr "Frac"
-
-#: mate-calc/calctool.c:403
-#, fuzzy
-msgid "Fractional portion of displayed value [:]"
-msgstr "Göstərilən qiymətin fraktional qismi"
-
-#: mate-calc/calctool.c:404
-msgid "Fractional portion"
-msgstr "Fraktional qismi"
-
-#: mate-calc/calctool.c:414
-msgid "Rcl"
-msgstr "Rcl"
-
-#: mate-calc/calctool.c:415
-#, fuzzy
-msgid "Retrieve memory register to display [R]"
-msgstr "Göstəriləvək yaddaş qeydini al"
-
-#: mate-calc/calctool.c:416
-msgid "Retrieve from register"
-msgstr "Qeyddən al"
-
-#: mate-calc/calctool.c:428
-msgid "0"
-msgstr "0"
-
-#: mate-calc/calctool.c:430
-msgid "Numeric 0"
-msgstr "Ədədi 0"
-
-#: mate-calc/calctool.c:440
-msgid "."
-msgstr "."
-
-#: mate-calc/calctool.c:441
-msgid "Numeric point"
-msgstr "Ədədi nöqtə"
-
-#: mate-calc/calctool.c:452
+#. Label on the solve button (clicking this solves the displayed calculation)
+#: ../data/buttons-advanced.ui.h:4 ../data/buttons-basic.ui.h:2
+#: ../data/buttons-financial.ui.h:76 ../data/buttons-programming.ui.h:12
 msgid "="
 msgstr "="
 
-#: mate-calc/calctool.c:453
-msgid "Calculate result"
-msgstr "Nəticəni hesabla"
+#: ../data/buttons-advanced.ui.h:5 ../data/buttons-basic.ui.h:3
+#: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
+msgid "Clear"
+msgstr "Təmizlə"
 
-#: mate-calc/calctool.c:464
-msgid "+"
-msgstr "+"
-
-#: mate-calc/calctool.c:465
-msgid "Add"
-msgstr "Əlavə Et"
-
-#: mate-calc/calctool.c:476
-msgid "1/<i>x</i>"
-msgstr "1/<i>x</i>"
-
-#: mate-calc/calctool.c:477
-#, fuzzy
-msgid "Reciprocal [r]"
-msgstr "Reciprocal"
-
-#: mate-calc/calctool.c:484
-#, fuzzy
-msgid "Recip"
-msgstr "Reciprocal"
-
-#: mate-calc/calctool.c:488
-msgid "<i>x</i><sup>2</sup>"
-msgstr "<i>x</i><sup>2</sup>"
-
-#: mate-calc/calctool.c:489
-#, fuzzy
-msgid "Square [@]"
-msgstr "Kvadrat"
-
-#: mate-calc/calctool.c:496
-#, fuzzy
-msgid "^2"
-msgstr "2"
-
-#: mate-calc/calctool.c:500
-msgid "Abs"
-msgstr "Abs"
-
-#: mate-calc/calctool.c:501
-#, fuzzy
-msgid "Absolute value [u]"
-msgstr "Absolut qiymət"
-
-#: mate-calc/calctool.c:512
-msgid "Exch"
-msgstr "Exch"
-
-#: mate-calc/calctool.c:513
-#, fuzzy
-msgid "Exchange displayed value with memory register [X]"
-msgstr "Göstərilən qiyməti yaddaş qeydi ilə dəyişdir"
-
-#: mate-calc/calctool.c:514
-msgid "Exchange with register"
-msgstr "Qeyd ilə dəyişdir"
-
-#: mate-calc/calctool.c:540
-msgid "Ctrm"
-msgstr "Ctrm"
-
-#: mate-calc/calctool.c:541
-#, fuzzy
-msgid "Compounding term [m]"
-msgstr "Kompound termini"
-
-#: mate-calc/calctool.c:552
-msgid "Ddb"
-msgstr "Ddb"
-
-#: mate-calc/calctool.c:553
-#, fuzzy
-msgid "Double-declining depreciation [d]"
-msgstr "Cüt-rədd kiçiltilməsi"
-
-#: mate-calc/calctool.c:564
-msgid "Fv"
-msgstr "Fv"
-
-#: mate-calc/calctool.c:565
-#, fuzzy
-msgid "Future value [v]"
-msgstr "Gələcəkdəki qiymət"
-
-#: mate-calc/calctool.c:576
-msgid "Pmt"
-msgstr "Pmt"
-
-#: mate-calc/calctool.c:577
-#, fuzzy
-msgid "Periodic payment [P]"
-msgstr "Dövri ödəmə"
-
-#: mate-calc/calctool.c:588
-msgid "Pv"
-msgstr "Pv"
-
-#: mate-calc/calctool.c:589
-#, fuzzy
-msgid "Present value [p]"
-msgstr "İndiki qiymət"
-
-#: mate-calc/calctool.c:600
-msgid "Rate"
-msgstr "Rate"
-
-#: mate-calc/calctool.c:601
-#, fuzzy
-msgid "Periodic interest rate [T]"
-msgstr "Dövri  tələb dərəcəsi"
-
-#: mate-calc/calctool.c:612
-msgid "Sln"
-msgstr "Sln"
-
-#: mate-calc/calctool.c:613
-#, fuzzy
-msgid "Straight-line depreciation [l]"
-msgstr "Düz-xətt kiçiltilməsi"
-
-#: mate-calc/calctool.c:624
-msgid "Syd"
-msgstr "Syd"
-
-#: mate-calc/calctool.c:625
-#, fuzzy
-msgid "Sum-of-the years'-digits depreciation [Y]"
-msgstr "İlin ədədinin-ədədi kiçiltilməsi"
-
-#: mate-calc/calctool.c:638
-msgid "Term"
-msgstr "Term"
-
-#: mate-calc/calctool.c:639
-#, fuzzy
-msgid "Payment period [T]"
-msgstr "Ödəmə dövrü"
-
-#: mate-calc/calctool.c:750
-msgid "<"
-msgstr "<"
-
-#: mate-calc/calctool.c:751
-msgid "Shift displayed value 1-15 places to the left"
-msgstr "Göstərilən qiyməti 1-15 yer sola keçirt"
-
-#: mate-calc/calctool.c:752
-msgid "Shift left"
-msgstr "Sola shift"
-
-#: mate-calc/calctool.c:762
-msgid ">"
-msgstr ">"
-
-#: mate-calc/calctool.c:763
-msgid "Shift displayed value 1-15 places to the right"
-msgstr "Göstərilən qiyməti 1-15 yer sağa keçirt"
-
-#: mate-calc/calctool.c:764
-msgid "Shift right"
-msgstr "Sağa shift"
-
-#: mate-calc/calctool.c:774
-msgid "&amp;16"
-msgstr "&amp;16"
-
-#: mate-calc/calctool.c:775
-#, fuzzy
-msgid "16-bit unsigned integer value of display (])"
-msgstr "Displeyin 316-bit işarəsiz tam ədəd qiyməti"
-
-#: mate-calc/calctool.c:776
-msgid "16 bit unsigned integer"
-msgstr "16-bit işarəsiz ədəd"
-
-#. 16-bit unsigned integer value
-#: mate-calc/calctool.c:782 mate-calc/syntax_translation.c:73
-msgid "u16"
+#. Accessible name for the subscript mode button
+#: ../data/buttons-advanced.ui.h:7 ../data/buttons-programming.ui.h:15
+msgid "Subscript"
 msgstr ""
 
-#: mate-calc/calctool.c:786
-msgid "&amp;32"
-msgstr "&amp;32"
-
-#: mate-calc/calctool.c:787
-#, fuzzy
-msgid "32-bit unsigned integer value of display ([)"
-msgstr "Displeyin 32-bit işarəsiz tam ədəd qiyməti"
-
-#: mate-calc/calctool.c:788
-msgid "32 bit unsigned integer"
-msgstr "32-bit işarəsiz ədəd"
-
-#. 32-bit unsigned integer value
-#: mate-calc/calctool.c:794 mate-calc/syntax_translation.c:74
-msgid "u32"
+#. Accessible name for the superscript mode button
+#: ../data/buttons-advanced.ui.h:9 ../data/buttons-programming.ui.h:17
+msgid "Superscript"
 msgstr ""
 
-#: mate-calc/calctool.c:834
-msgid "Acc"
-msgstr "Acc"
-
-#: mate-calc/calctool.c:835
-#, fuzzy
-msgid "Set accuracy from 0 to 9 numeric places [a]"
-msgstr "Dəqiqliyi 0'dan 9'a qədər ədədi yerə müəyyən et"
-
-#: mate-calc/calctool.c:836
-msgid "Accuracy"
-msgstr "Dəqiqlik"
-
-#: mate-calc/calctool.c:848
-msgid "Con"
-msgstr "Con"
-
-#: mate-calc/calctool.c:849
-#, fuzzy
-msgid "Constants [#]"
-msgstr "Sabitlər"
-
-#: mate-calc/calctool.c:860
-msgid "Fun"
-msgstr "Fun"
-
-#: mate-calc/calctool.c:861
-#, fuzzy
-msgid "User-defined functions [f]"
-msgstr "İstifadəçi tə'yinli funksiyalar"
-
-#: mate-calc/calctool.c:872
-msgid "Exp"
-msgstr "Exp"
-
-#: mate-calc/calctool.c:873
-#, fuzzy
-msgid "Enter an exponential number [e]"
-msgstr "Eksponental ədəd gir"
-
-#: mate-calc/calctool.c:874
-msgid "Exponential"
-msgstr "Eksponental"
-
-#: mate-calc/calctool.c:880
-msgid "*10^"
+#. Accessible name for the scientific exponent button
+#: ../data/buttons-advanced.ui.h:11
+msgid "Scientific Exponent"
 msgstr ""
 
-#: mate-calc/calctool.c:884
-msgid "e<sup><i>x</i></sup>"
-msgstr "e<sup><i>x</i></sup>"
-
-#: mate-calc/calctool.c:885
-#, fuzzy
-msgid "e to the power of displayed value [{]"
-msgstr "göstərilən qiymətin qüvvətinə e"
-
-#: mate-calc/calctool.c:886
-msgid "E to the x"
-msgstr "x'ə E"
-
-#: mate-calc/calctool.c:892
-#, fuzzy
-msgid "e^"
-msgstr "e"
-
-#: mate-calc/calctool.c:896
-msgid "10<sup><i>x</i></sup>"
-msgstr "10<sup><i>x</i></sup>"
-
-#: mate-calc/calctool.c:897
-#, fuzzy
-msgid "10 to the power of displayed value [}]"
-msgstr "göstərilən qiymətin qüvvətinə 10"
-
-#: mate-calc/calctool.c:898
-msgid "Ten to the x"
-msgstr "x'ə on"
-
-#: mate-calc/calctool.c:904
-msgid "10^"
+#. Accessible name for the memory button
+#. Accessible name for the memory value button
+#. Tooltip for the memory button
+#: ../data/buttons-advanced.ui.h:13 ../data/buttons-financial.ui.h:72
+#: ../src/math-buttons.c:232
+msgid "Memory"
 msgstr ""
 
-#: mate-calc/calctool.c:908
-msgid "<i>x</i><sup><i>y</i></sup>"
-msgstr "<i>x</i><sup><i>y</i></sup>"
-
-#: mate-calc/calctool.c:909
-#, fuzzy
-msgid "Raise displayed value to the power of y [^]"
-msgstr "Göstərilən qiyməti y-nin üstünə al"
-
-#: mate-calc/calctool.c:910
-msgid "X to the y"
-msgstr "X üstü y"
-
-#: mate-calc/calctool.c:916
-msgid "^"
+#. The label on the memory button
+#: ../data/buttons-advanced.ui.h:15 ../data/buttons-financial.ui.h:74
+#: ../data/buttons-programming.ui.h:21
+msgid "x"
 msgstr ""
 
-#: mate-calc/calctool.c:920
-msgid "<i>x</i>!"
-msgstr "<i>x</i>!"
-
-#: mate-calc/calctool.c:921
-#, fuzzy
-msgid "Factorial of displayed value [!]"
-msgstr "Göstərilən qiymətin faktorialı"
-
-#: mate-calc/calctool.c:922
-msgid "Factorial"
-msgstr "Faktorial"
-
-#: mate-calc/calctool.c:928
-msgid "!"
+#. Accessible name for the exponentiation (x to the power of y) button
+#: ../data/buttons-advanced.ui.h:17 ../data/buttons-basic.ui.h:5
+#: ../data/buttons-financial.ui.h:100 ../data/buttons-programming.ui.h:33
+msgid "Exponent"
 msgstr ""
 
-#: mate-calc/calctool.c:932
-msgid "Rand"
-msgstr "Rand"
-
-#: mate-calc/calctool.c:933
-#, fuzzy
-msgid "Random number in the range 0.0 to 1.0 [?]"
-msgstr "0.0 ilə 1.0 arasında rast gələn ədəd"
-
-#: mate-calc/calctool.c:934
-msgid "Random number"
-msgstr "Rast gələn ədəd"
-
-#: mate-calc/calctool.c:946
-msgid "D"
-msgstr "D"
-
-#: mate-calc/calctool.c:947
-msgid "Hexadecimal digit D"
-msgstr "Altılı ədəd D"
-
-#: mate-calc/calctool.c:958
-msgid "E"
-msgstr "E"
-
-#: mate-calc/calctool.c:959
-msgid "Hexadecimal digit E"
-msgstr "Altılı ədəd E"
-
-#: mate-calc/calctool.c:970 mate-calc/gtk.c:1708
-msgid "F"
-msgstr "F"
-
-#: mate-calc/calctool.c:971
-msgid "Hexadecimal digit F"
-msgstr "Altılı ədəd F"
-
-#: mate-calc/calctool.c:982
-msgid "Cos"
-msgstr "Cos"
-
-#: mate-calc/calctool.c:983
-#, fuzzy
-msgid "Cosine [J]"
-msgstr "Cosine"
-
-#: mate-calc/calctool.c:994
-msgid "Sin"
-msgstr "Sin"
-
-#: mate-calc/calctool.c:995
-#, fuzzy
-msgid "Sine [K]"
-msgstr "Sine"
-
-#: mate-calc/calctool.c:1006
-msgid "Tan"
-msgstr "Tan"
-
-#: mate-calc/calctool.c:1007
-#, fuzzy
-msgid "Tangent [L]"
-msgstr "Tangent"
-
-#: mate-calc/calctool.c:1018
-msgid "Ln"
-msgstr "Ln"
-
-#: mate-calc/calctool.c:1019
-#, fuzzy
-msgid "Natural log [N]"
-msgstr "Təbii loqaritma"
-
-#: mate-calc/calctool.c:1030
-msgid "Log"
-msgstr "Log"
-
-#: mate-calc/calctool.c:1031
-#, fuzzy
-msgid "Base 10 log [G]"
-msgstr "Onluq loqaritma"
-
-#: mate-calc/calctool.c:1044
-msgid "A"
-msgstr "A"
-
-#: mate-calc/calctool.c:1045
-msgid "Hexadecimal digit A"
-msgstr "Altılı ədəd A"
-
-#: mate-calc/calctool.c:1056
-msgid "B"
-msgstr "B"
-
-#: mate-calc/calctool.c:1057
-msgid "Hexadecimal digit B"
-msgstr "Altılı ədəd B"
-
-#: mate-calc/calctool.c:1068 mate-calc/gtk.c:1700
-msgid "C"
-msgstr "C"
-
-#: mate-calc/calctool.c:1069
-msgid "Hexadecimal digit C"
-msgstr "Altılı ədəd C"
-
-#: mate-calc/calctool.c:1080
-msgid "Or"
-msgstr "Or"
-
-#: mate-calc/calctool.c:1081
-msgid "Bitwise OR"
+#: ../data/buttons-advanced.ui.h:18 ../data/buttons-basic.ui.h:6
+#: ../data/buttons-financial.ui.h:98
+msgid "Undo"
 msgstr ""
 
-#: mate-calc/calctool.c:1088
-#, fuzzy
-msgid " Or "
-msgstr "Or"
-
-#: mate-calc/calctool.c:1092
-msgid "And"
-msgstr "And"
-
-#: mate-calc/calctool.c:1093
-msgid "Bitwise AND [&]"
-msgstr ""
-
-#: mate-calc/calctool.c:1100
-#, fuzzy
-msgid " And "
-msgstr "And"
-
-#: mate-calc/calctool.c:1104
-msgid "Not"
-msgstr "Not"
-
-#: mate-calc/calctool.c:1105
-msgid "Bitwise NOT [~]"
-msgstr ""
-
-#: mate-calc/calctool.c:1112
-msgid "~"
-msgstr ""
-
-#: mate-calc/calctool.c:1116
-msgid "Xor"
-msgstr "Xor"
-
-#: mate-calc/calctool.c:1117
-msgid "Bitwise XOR [x]"
-msgstr ""
-
-#: mate-calc/calctool.c:1124
-#, fuzzy
-msgid " Xor "
-msgstr "Xor"
-
-#: mate-calc/calctool.c:1128
-msgid "Xnor"
-msgstr "Xnor"
-
-#: mate-calc/calctool.c:1129
-msgid "Bitwise XNOR [n]"
-msgstr ""
-
-#: mate-calc/calctool.c:1136
-#, fuzzy
-msgid " Xnor "
-msgstr "Xnor"
-
-#: mate-calc/calctool.c:1258
-msgid "Kilometer-to-mile conversion factor"
-msgstr ""
-
-#: mate-calc/calctool.c:1259
-msgid "square root of 2"
-msgstr "2'nin kvadrat kökü"
-
-#: mate-calc/calctool.c:1260
-msgid "e"
-msgstr "e"
-
-#. PI
-#: mate-calc/calctool.c:1261 mate-calc/syntax_translation.c:58
-msgid "pi"
-msgstr "pi"
-
-#: mate-calc/calctool.c:1262
-msgid "Centimeter-to-inch conversion factor"
-msgstr ""
-
-#: mate-calc/calctool.c:1263
-msgid "degrees in a radian"
-msgstr "radiandakı dərəcə"
-
-#: mate-calc/calctool.c:1264
-msgid "2 ^ 20"
-msgstr "2 ^ 20"
-
-#: mate-calc/calctool.c:1265
-msgid "Gram-to-ounce conversion factor"
-msgstr ""
-
-#: mate-calc/calctool.c:1267
-#, fuzzy
-msgid "Kilojoule-to-British-thermal-unit conversion factor"
-msgstr "kilojoul ya da İngilis istilik vahidləri"
-
-#: mate-calc/calctool.c:1269
-#, fuzzy
-msgid "Cubic-centimeter-to-cubic-inch conversion factor"
-msgstr "kvadrat santimetr ya da kvadrat inç"
-
-#. THIS ROUTINE IS CALLED WHEN AN ERROR CONDITION IS ENCOUNTERED, AND
-#. *  AFTER A MESSAGE HAS BEEN WRITTEN TO STDERR.
-#.
-#: mate-calc/calctool.c:1280 mate-calc/display.c:267 mate-calc/mp.c:1966
-#: mate-calc/mpmath.c:412 mate-calc/mpmath.c:451 mate-calc/mpmath.c:506
-msgid "Error"
-msgstr "Xəta"
-
-#: mate-calc/functions.c:339
-msgid "Previous expression"
-msgstr ""
-
-#: mate-calc/functions.c:419
-msgid "Malformed expression"
-msgstr ""
-
-#: mate-calc/functions.c:630 mate-calc/functions.c:1006
-msgid "No sane value to convert"
-msgstr ""
-
-#: mate-calc/functions.c:729 mate-calc/functions.c:1083
-#: mate-calc/functions.c:1311
-msgid "No sane value to store"
-msgstr ""
-
-#: mate-calc/functions.c:857
-msgid "Malformed function"
-msgstr ""
-
-#: mate-calc/functions.c:1036
-msgid "Cleared display, prefix without an operator is not allowed"
-msgstr ""
-
-#: mate-calc/functions.c:1060
-msgid "Malformed parenthesis expression"
-msgstr ""
-
-#: mate-calc/functions.c:1359
-msgid "Numeric stack error"
-msgstr "Ədədi stack xətası"
-
-#: mate-calc/functions.c:1380
-msgid "Operand stack error"
-msgstr "Operand stack xətası"
-
-#: mate-calc/get.c:153
-msgid "-a needs accuracy value"
-msgstr "-a'nın dəqiqlik qiymətinə ehtiyacı var"
-
-#: mate-calc/get.c:157 mate-calc/get.c:311
-#, fuzzy, c-format
-msgid "%s: accuracy should be in the range 0-%d\n"
-msgstr "%s: dəqiqlik 0 ilə 9 arasında olmalıdır\n"
-
-#: mate-calc/get.c:182
-#, c-format
-msgid "%s: %s as next argument.\n"
-msgstr "%s: növbəti arqument olaraq %st.\n"
-
-#  No calculator error initially.
-#  Not entering an exponent number.
-#  No pending arithmetic operation.
-#  No User supplied title line.
-#. No calculator error initially.
-#. Not entering an exponent number.
-#. No pending arithmetic operation.
-#. No User supplied title line.
-#: mate-calc/get.c:269
-msgid "calculator"
-msgstr "hesaplayıcı"
-
-#: mate-calc/get.c:331
-#, c-format
-msgid "%s: base should be 2, 8, 10 or 16\n"
-msgstr "%s: kök 2, 8, 10 ya da 16 olmalıdır\n"
-
-#: mate-calc/get.c:346
-#, c-format
-msgid "%s: invalid display mode [%s]\n"
-msgstr "%s: hökmsüz göstəriş modu [%s]\n"
-
-#: mate-calc/get.c:361
-#, c-format
-msgid "%s: invalid mode [%s]\n"
-msgstr "%s: hökmsüz mod [%s]\n"
-
-#: mate-calc/get.c:375
-#, c-format
-msgid "%s: invalid trigonometric mode [%s]\n"
-msgstr "%s: hökmsüz triqonometrik mod [%s]\n"
-
-#: mate-calc/get.c:393
-#, fuzzy, c-format
-msgid "%s: invalid syntax mode [%s]\n"
-msgstr "%s: hökmsüz mod [%s]\n"
-
-#: mate-calc/get.c:440
-#, c-format
-msgid ""
-"%s version %s\n"
-"\n"
-msgstr ""
-"%s buraxılış %s\n"
-"\n"
-
-#: mate-calc/get.c:441
-#, c-format
-msgid "Usage: %s: [-D] [-E] [-a accuracy] "
-msgstr "İstifadə: %s: [-D] [-E] [-a accuracy] "
-
-#: mate-calc/get.c:442
-msgid "\t\t [-?] [-v] [-?]\n"
-msgstr "\t\t [-?] [-v] [-?]\n"
-
-#  translators: R is the short form of register used inter alia
-#  in popup menus
-#. translators: R is the short form of register used inter alia
-#. in popup menus
-#: mate-calc/graphics.c:61 mate-calc/gtk.c:1488 mate-calc/gtk.c:1620
-msgid "R"
-msgstr "R"
-
-#: mate-calc/gtk.c:226
-#, fuzzy
-msgid "_Calculator"
-msgstr "/_Hesaplayıcı"
-
-#: mate-calc/gtk.c:227
-#, fuzzy
-msgid "_Edit"
-msgstr "/_Düzəlt"
-
-#: mate-calc/gtk.c:228
-#, fuzzy
-msgid "_View"
-msgstr "/_Nümayişlər"
-
-#: mate-calc/gtk.c:229
-#, fuzzy
-msgid "_Help"
-msgstr "/_Yardım"
-
-#  No calculator error initially.
-#  Not entering an exponent number.
-#  No pending arithmetic operation.
-#  No User supplied title line.
-#: mate-calc/gtk.c:232
-#, fuzzy
-msgid "Quit the calculator"
-msgstr "hesaplayıcı"
-
-#: mate-calc/gtk.c:235
-msgid "Copy selection"
-msgstr ""
-
-#: mate-calc/gtk.c:237
-msgid "Paste selection"
-msgstr ""
-
-#: mate-calc/gtk.c:238
-#, fuzzy
-msgid "_Insert ASCII Value..."
-msgstr "ASCII Qiymət Daxil Et"
-
-#: mate-calc/gtk.c:239
-#, fuzzy
-msgid "Insert ASCII value"
-msgstr "ASCII Qiymət Daxil Et"
-
-#: mate-calc/gtk.c:243
-#, fuzzy
-msgid "Show help contents"
-msgstr "/Yardım/_Məzmun"
-
-#: mate-calc/gtk.c:246
-msgid "Show the About Gcalctool dialog"
-msgstr ""
-
-#: mate-calc/gtk.c:248 mate-calc/gtk.c:279
-#, fuzzy
-msgid "_1 place"
-msgstr "/1 yer"
-
-#: mate-calc/gtk.c:249 mate-calc/gtk.c:280
-#, fuzzy
-msgid "1 place"
-msgstr "/1 yer"
-
-#: mate-calc/gtk.c:250 mate-calc/gtk.c:281
-#, fuzzy
-msgid "_2 places"
-msgstr "/2 yer"
-
-#: mate-calc/gtk.c:251 mate-calc/gtk.c:282
-#, fuzzy
-msgid "2 places"
-msgstr "/2 yer"
-
-#: mate-calc/gtk.c:252 mate-calc/gtk.c:283
-#, fuzzy
-msgid "_3 places"
-msgstr "/3 yer"
-
-#: mate-calc/gtk.c:253 mate-calc/gtk.c:284
-#, fuzzy
-msgid "3 places"
-msgstr "/3 yer"
-
-#: mate-calc/gtk.c:254 mate-calc/gtk.c:285
-#, fuzzy
-msgid "_4 places"
-msgstr "/4 yer"
-
-#: mate-calc/gtk.c:255 mate-calc/gtk.c:286
-#, fuzzy
-msgid "4 places"
-msgstr "/4 yer"
-
-#: mate-calc/gtk.c:256 mate-calc/gtk.c:287
-#, fuzzy
-msgid "_5 places"
-msgstr "/5 yer"
-
-#: mate-calc/gtk.c:257 mate-calc/gtk.c:288
-#, fuzzy
-msgid "5 places"
-msgstr "/5 yer"
-
-#: mate-calc/gtk.c:258 mate-calc/gtk.c:289
-#, fuzzy
-msgid "_6 places"
-msgstr "/6 yer"
-
-#: mate-calc/gtk.c:259 mate-calc/gtk.c:290
-#, fuzzy
-msgid "6 places"
-msgstr "/6 yer"
-
-#: mate-calc/gtk.c:260 mate-calc/gtk.c:291
-#, fuzzy
-msgid "_7 places"
-msgstr "/7 yer"
-
-#: mate-calc/gtk.c:261 mate-calc/gtk.c:292
-#, fuzzy
-msgid "7 places"
-msgstr "/7 yer"
-
-#: mate-calc/gtk.c:262 mate-calc/gtk.c:293
-#, fuzzy
-msgid "_8 places"
-msgstr "/8 yer"
-
-#: mate-calc/gtk.c:263 mate-calc/gtk.c:294
-#, fuzzy
-msgid "8 places"
-msgstr "/8 yer"
-
-#: mate-calc/gtk.c:264 mate-calc/gtk.c:295
-#, fuzzy
-msgid "_9 places"
-msgstr "/9 yer"
-
-#: mate-calc/gtk.c:265 mate-calc/gtk.c:296
-#, fuzzy
-msgid "9 places"
-msgstr "/9 yer"
-
-#: mate-calc/gtk.c:266 mate-calc/gtk.c:267 mate-calc/gtk.c:297
-#: mate-calc/gtk.c:298
-#, fuzzy
-msgid "10 places"
-msgstr "/10 yer"
-
-#: mate-calc/gtk.c:268 mate-calc/gtk.c:269 mate-calc/gtk.c:299
-#: mate-calc/gtk.c:300
-#, fuzzy
-msgid "11 places"
-msgstr "/11 yer"
-
-#: mate-calc/gtk.c:270 mate-calc/gtk.c:271 mate-calc/gtk.c:301
-#: mate-calc/gtk.c:302
-#, fuzzy
-msgid "12 places"
-msgstr "/12 yer"
-
-#: mate-calc/gtk.c:272 mate-calc/gtk.c:273 mate-calc/gtk.c:303
-#: mate-calc/gtk.c:304
-#, fuzzy
-msgid "13 places"
-msgstr "/13 yer"
-
-#: mate-calc/gtk.c:274 mate-calc/gtk.c:275 mate-calc/gtk.c:305
-#: mate-calc/gtk.c:306
-#, fuzzy
-msgid "14 places"
-msgstr "/14 yer"
-
-#: mate-calc/gtk.c:276 mate-calc/gtk.c:277 mate-calc/gtk.c:307
-#: mate-calc/gtk.c:308
-#, fuzzy
-msgid "15 places"
-msgstr "/15 yer"
-
-#: mate-calc/gtk.c:312 mate-calc/gtk.c:318
-#, fuzzy
-msgid "Show _Trailing Zeroes"
-msgstr "/_Sondakı Sıfırları Göstər"
-
-#: mate-calc/gtk.c:313 mate-calc/gtk.c:319
-#, fuzzy
-msgid "Show trailing zeroes"
-msgstr "/_Sondakı Sıfırları Göstər"
-
-#: mate-calc/gtk.c:314
-#, fuzzy
-msgid "Show T_housands Separator"
-msgstr "/Nümayişlər/_Minlik Ayırıcılarını Göstər"
-
-#: mate-calc/gtk.c:315
-#, fuzzy
-msgid "Show thousands separator"
-msgstr "/Nümayişlər/_Minlik Ayırıcılarını Göstər"
-
-#: mate-calc/gtk.c:316
-#, fuzzy
-msgid "_Memory Registers"
-msgstr "Yaddaş Qeydləri"
-
-#: mate-calc/gtk.c:317
-#, fuzzy
-msgid "Show memory registers"
-msgstr "Yaddaş Qeydləri"
-
-#: mate-calc/gtk.c:320
-msgid "_Use Arithmetic Precedence"
-msgstr ""
-
-#: mate-calc/gtk.c:321
-msgid "Use Arithmetic Precedence"
-msgstr ""
-
-#: mate-calc/gtk.c:325
-#, fuzzy
-msgid "_0 significant places"
-msgstr "/0 mühüm yer"
-
-#: mate-calc/gtk.c:326
-#, fuzzy
-msgid "0 significant places"
-msgstr "/0 mühüm yer"
-
-#: mate-calc/gtk.c:327
-#, fuzzy
-msgid "_1 significant place"
-msgstr "/1 mühüm yer"
-
-#: mate-calc/gtk.c:328
-#, fuzzy
-msgid "1 significant place"
-msgstr "/1 mühüm yer"
-
-#: mate-calc/gtk.c:329
-#, fuzzy
-msgid "_2 significant places"
-msgstr "/2 mühüm yer"
-
-#: mate-calc/gtk.c:330
-#, fuzzy
-msgid "2 significant places"
-msgstr "/2 mühüm yer"
-
-#: mate-calc/gtk.c:331
-#, fuzzy
-msgid "_3 significant places"
-msgstr "/3 mühüm yer"
-
-#: mate-calc/gtk.c:332
-#, fuzzy
-msgid "3 significant places"
-msgstr "/3 mühüm yer"
-
-#: mate-calc/gtk.c:333
-#, fuzzy
-msgid "_4 significant places"
-msgstr "/4 mühüm yer"
-
-#: mate-calc/gtk.c:334
-#, fuzzy
-msgid "4 significant places"
-msgstr "/4 mühüm yer"
-
-#: mate-calc/gtk.c:335
-#, fuzzy
-msgid "_5 significant places"
-msgstr "/5 mühüm yer"
-
-#: mate-calc/gtk.c:336
-#, fuzzy
-msgid "5 significant places"
-msgstr "/5 mühüm yer"
-
-#: mate-calc/gtk.c:337
-#, fuzzy
-msgid "_6 significant places"
-msgstr "/6 mühüm yer"
-
-#: mate-calc/gtk.c:338
-#, fuzzy
-msgid "6 significant places"
-msgstr "/6 mühüm yer"
-
-#: mate-calc/gtk.c:339
-#, fuzzy
-msgid "_7 significant places"
-msgstr "/7 mühüm yer"
-
-#: mate-calc/gtk.c:340
-#, fuzzy
-msgid "7 significant places"
-msgstr "/7 mühüm yer"
-
-#: mate-calc/gtk.c:341
-#, fuzzy
-msgid "_8 significant places"
-msgstr "/8 mühüm yer"
-
-#: mate-calc/gtk.c:342
-#, fuzzy
-msgid "8 significant places"
-msgstr "/8 mühüm yer"
-
-#: mate-calc/gtk.c:343
-#, fuzzy
-msgid "_9 significant places"
-msgstr "/9 mühüm yer"
-
-#: mate-calc/gtk.c:344
-#, fuzzy
-msgid "9 significant places"
-msgstr "/9 mühüm yer"
-
-#: mate-calc/gtk.c:345
-msgid "_Other (10) ..."
-msgstr ""
-
-#: mate-calc/gtk.c:346
-msgid "Set other precision"
-msgstr ""
-
-#: mate-calc/gtk.c:350
-#, fuzzy
-msgid "_Basic"
-msgstr "Sadə Mod"
-
-#: mate-calc/gtk.c:352
-#, fuzzy
-msgid "_Advanced"
-msgstr "Sadə Mod"
-
-#: mate-calc/gtk.c:354
-#, fuzzy
-msgid "_Financial"
-msgstr "Maliyyə Modu"
-
-#: mate-calc/gtk.c:356
-#, fuzzy
-msgid "_Scientific"
-msgstr "Elmi Mod"
-
-#: mate-calc/gtk.c:516
-#, fuzzy
-msgid "translator-credits"
-msgstr ""
-"Mətin Əmirov <metin@karegen.com>\n"
-"\n"
-"Tərcümə işləri üzrə yazışma siyahısı ünvanımız:\n"
-"<translation-team-az@lists.sourceforge.net>"
-
-#: mate-calc/gtk.c:519
-msgid "Gcalctool"
-msgstr "Gcalctool"
-
-#: mate-calc/gtk.c:522
-msgid "Calculator with financial and scientific modes."
-msgstr "Maliyyə və elmi modları olan hesablayıcı."
-
-#: mate-calc/gtk.c:776
-msgid "Insert ASCII Value"
-msgstr "ASCII Qiymət Daxil Et"
-
-#: mate-calc/gtk.c:791
-msgid "Ch_aracter:"
-msgstr "Hə_rf:"
-
-#: mate-calc/gtk.c:816
-msgid "_Insert"
-msgstr "_Daxil Et"
-
-#: mate-calc/gtk.c:895
-msgid "Edit Constants"
-msgstr "Sabitləri Dəyişdir"
-
-#: mate-calc/gtk.c:895
-msgid "Edit Functions"
-msgstr "Funksiyaları Dəyişdir"
-
-#: mate-calc/gtk.c:919
-msgid "Note:"
-msgstr "Qeyd:"
-
-#: mate-calc/gtk.c:920
-msgid "All constant values are specified in the decimal numeric base."
-msgstr "Bütün sabit qiymətlər onluq ədədlər bazasında müəyyən edilir"
-
-#: mate-calc/gtk.c:930
-msgid "Click a _value or description to edit it:"
-msgstr "Dəyişdirmək istədiyiniz _qiyməti ya da izahatı tıqlayın"
-
-#: mate-calc/gtk.c:953
-msgid "No."
-msgstr "No."
-
-#: mate-calc/gtk.c:955
-msgid "Value"
-msgstr "Qiymət"
-
-#: mate-calc/gtk.c:957
-msgid "Description"
-msgstr "İzahat"
-
-#: mate-calc/gtk.c:1067
-msgid "_Do not warn me again"
-msgstr ""
-
-#: mate-calc/gtk.c:1073
-msgid ""
-"<big><b>Changing Modes Clears Calculation</b></big>\n"
-"\n"
-"When you change modes, the current calculation will be cleared, and the base "
-"will be reset to decimal."
-msgstr ""
-
-#: mate-calc/gtk.c:1112
-msgid "C_hange Mode"
-msgstr ""
-
-#: mate-calc/gtk.c:1149
-msgid "Set Precision"
-msgstr ""
-
-#: mate-calc/gtk.c:1164
-#, fuzzy
-msgid "Significant _places:"
-msgstr "/0 mühüm yer"
-
-#: mate-calc/gtk.c:1190
-msgid "_Set"
-msgstr ""
-
-#: mate-calc/gtk.c:1296 mate-calc/gtk.c:1298 mate-calc.desktop.in.h:1
-msgid "Calculator"
-msgstr "Hesaplayıcı"
-
-#  Make Hyp and Inv trigonometric check boxes.
-#. Make Hyp and Inv trigonometric check boxes.
-#: mate-calc/gtk.c:1556
-msgid "_Inv"
-msgstr "_Inv"
-
-#: mate-calc/gtk.c:1564
-msgid "H_yp"
-msgstr "H_yp"
-
-#: mate-calc/gtk.c:1612
-msgid "Memory Registers"
-msgstr "Yaddaş Qeydləri"
-
-#: mate-calc/gtk.c:1689
-msgid "Edit Constants..."
-msgstr "Sabitləri Dəyişdir..."
-
-#: mate-calc/gtk.c:1689
-msgid "Edit Functions..."
-msgstr "Funksiyaları Dəyişdir..."
-
-#: mate-calc/gtk.c:1858
-msgid "Clipboard contained malformed calculation"
-msgstr ""
-
-#: mate-calc/gtk.c:2126
-#, c-format
-msgid "Other (%d) ..."
-msgstr ""
-
-#: mate-calc/gtk.c:2137
-#, fuzzy, c-format
-msgid ""
-"Set accuracy from 0 to %d numeric places. Currently set to %d places. [a]"
-msgstr "Dəqiqliyi 0'dan 9'a qədər ədədi yerə müəyyən et"
-
-#: mate-calc/gtk.c:2368
-msgid "Activated no operator precedence mode"
-msgstr ""
-
-#: mate-calc/gtk.c:2378
-msgid "Activated expression mode with operator precedence"
-msgstr ""
-
-#: mate-calc/gtk.c:2594
-msgid "Accuracy value out of range"
-msgstr ""
-
-#: mate-calc/mp.c:3349
-msgid "Negative X and non-integer Y not supported"
-msgstr ""
-
-#: mate-calc/mpmath.c:248
-msgid "Error, cannot calculate cosine"
-msgstr ""
-
-#. Absolute value
-#: mate-calc/syntax_translation.c:36
-#, fuzzy
-msgid "abs"
-msgstr "Abs"
-
-#. Inversion of hyperbolic cosine
-#: mate-calc/syntax_translation.c:37
-msgid "acosh"
-msgstr ""
-
-#. Inversion of cosine
-#: mate-calc/syntax_translation.c:38
+#: ../data/buttons-advanced.ui.h:19
 msgid "acos"
 msgstr ""
 
-#. Bitwise AND
-#: mate-calc/syntax_translation.c:39
-#, fuzzy
-msgid "and"
-msgstr "Rand"
-
-#. Inversion of hyperbolic sine
-#: mate-calc/syntax_translation.c:40
-msgid "asinh"
-msgstr ""
-
-#. Hyperbolic sine
-#: mate-calc/syntax_translation.c:41
+#: ../data/buttons-advanced.ui.h:20
 msgid "asin"
 msgstr ""
 
-#. Inversion of hyperbolic tangent
-#: mate-calc/syntax_translation.c:42
-msgid "atanh"
-msgstr ""
-
-#. Inversion of tangent
-#: mate-calc/syntax_translation.c:43
+#: ../data/buttons-advanced.ui.h:21
 msgid "atan"
 msgstr ""
 
-#. Cubic root
-#: mate-calc/syntax_translation.c:44
-msgid "cbrt"
+#. Accessible name for the store value button
+#: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:19
+msgid "Store"
 msgstr ""
 
-#. Change sign
-#: mate-calc/syntax_translation.c:45
-msgid "chs"
+#. Accessible name for the inverse button
+#: ../data/buttons-advanced.ui.h:25 ../data/buttons-programming.ui.h:31
+msgid "Inverse"
 msgstr ""
 
-#. Clear (display)
-#: mate-calc/syntax_translation.c:46
-#, fuzzy
-msgid "clr"
-msgstr "Clr"
+#. Accessible name for the factorial button
+#: ../data/buttons-advanced.ui.h:27 ../data/buttons-programming.ui.h:29
+msgid "Factorial"
+msgstr "Faktorial"
 
-#. Hyperbolic cosine
-#: mate-calc/syntax_translation.c:47
-msgid "cosh"
+#. Accessible name for the absolute value button
+#: ../data/buttons-advanced.ui.h:29 ../data/buttons-programming.ui.h:10
+msgid "Absolute Value"
 msgstr ""
 
-#. Cosine
-#: mate-calc/syntax_translation.c:48
-#, fuzzy
-msgid "cos"
-msgstr "Cos"
-
-#. Double-declining deprecation
-#: mate-calc/syntax_translation.c:49
-#, fuzzy
-msgid "ddb"
-msgstr "Əlavə Et"
-
-#. x*10^y
-#: mate-calc/syntax_translation.c:50
-#, fuzzy
-msgid "exp"
-msgstr "Exp"
-
-#. Fraction of a decimal number
-#: mate-calc/syntax_translation.c:51
-#, fuzzy
-msgid "frac"
-msgstr "Frac"
-
-#. Future value
-#: mate-calc/syntax_translation.c:52
-msgid "fv"
+#. Title of Compounding Term dialog
+#. Tooltip for the compounding term button
+#: ../data/buttons-financial.ui.h:2 ../src/math-buttons.c:256
+msgid "Compounding Term"
 msgstr ""
 
-#. Integer part of a decimal number
-#: mate-calc/syntax_translation.c:53
-#, fuzzy
-msgid "int"
-msgstr "Int"
-
-#. Natural logarithm
-#: mate-calc/syntax_translation.c:54
-#, fuzzy
-msgid "ln"
-msgstr "Sln"
-
-#. Logarithm with 10 as a base number
-#: mate-calc/syntax_translation.c:55
-#, fuzzy
-msgid "log"
-msgstr "Log"
-
-#. Bitwise NOT
-#: mate-calc/syntax_translation.c:56
-#, fuzzy
-msgid "not"
-msgstr "Int"
-
-#. Bitwise OR
-#: mate-calc/syntax_translation.c:57
-#, fuzzy
-msgid "or"
-msgstr "Xor"
-
-#. Periodic payment
-#: mate-calc/syntax_translation.c:59
-#, fuzzy
-msgid "pmt"
-msgstr "Pmt"
-
-#. Present value
-#: mate-calc/syntax_translation.c:60
-msgid "pv"
+#. Payment Period Dialog: Button to calculate result
+#: ../data/buttons-financial.ui.h:4
+msgid "C_alculate"
 msgstr ""
 
-#. A random number
-#: mate-calc/syntax_translation.c:61
-#, fuzzy
-msgid "rand"
-msgstr "Rand"
-
-#. Periodic interest rate
-#: mate-calc/syntax_translation.c:62
-#, fuzzy
-msgid "rate"
-msgstr "Rate"
-
-#. Recall number from memory register
-#: mate-calc/syntax_translation.c:63
-#, fuzzy
-msgid "rcl"
-msgstr "Rcl"
-
-#. Hyperbolic sine
-#: mate-calc/syntax_translation.c:64
-msgid "sinh"
+#. Periodic Interest Rate Dialog: Label before present value input
+#: ../data/buttons-financial.ui.h:6
+msgid "Present _Value:"
 msgstr ""
 
-#. Sine
-#: mate-calc/syntax_translation.c:65
-#, fuzzy
-msgid "sin"
-msgstr "Cosine"
-
-#. Straight-line depreciation
-#: mate-calc/syntax_translation.c:66
-#, fuzzy
-msgid "sln"
-msgstr "Sln"
-
-#. Square root
-#: mate-calc/syntax_translation.c:67
-#, fuzzy
-msgid "sqrt"
-msgstr "Sqrt"
-
-#. Store number at memory register
-#: mate-calc/syntax_translation.c:68
-#, fuzzy
-msgid "sto"
-msgstr "Sto"
-
-#. Sum-of-the years'-digits depreciation
-#: mate-calc/syntax_translation.c:69
-#, fuzzy
-msgid "syd"
-msgstr "Syd"
-
-#. Hyperbolic tangent
-#: mate-calc/syntax_translation.c:70
-msgid "tanh"
+#. Payment Period Dialog: Label before periodic interest rate input
+#: ../data/buttons-financial.ui.h:8
+msgid "Periodic Interest _Rate:"
 msgstr ""
 
-#. Tangent
-#: mate-calc/syntax_translation.c:71
-#, fuzzy
-msgid "tan"
-msgstr "Tan"
+#. Compounding Term Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:10
+msgid ""
+"Calculates the number of compounding periods necessary to increase an "
+"investment of present value to a future value, at a fixed interest rate per "
+"compounding period."
+msgstr ""
 
-#. Payment period
-#: mate-calc/syntax_translation.c:72
-#, fuzzy
-msgid "term"
+#. Periodic Interest Rate Dialog: Label before future value input
+#: ../data/buttons-financial.ui.h:12
+msgid "_Future Value:"
+msgstr ""
+
+#. Title of Double-Declining Depreciation dialog
+#: ../data/buttons-financial.ui.h:14
+msgid "Double-Declining Depreciation"
+msgstr ""
+
+#. Double-Declining Depreciation Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:16
+msgid ""
+"Calculates the depreciation allowance on an asset for a specified period of "
+"time, using the double-declining balance method."
+msgstr ""
+
+#. Gross Profit Margin Dialog: Label before cost input
+#: ../data/buttons-financial.ui.h:18
+msgid "C_ost:"
+msgstr ""
+
+#. Sum-of-the-Years
+#: ../data/buttons-financial.ui.h:20
+msgid "_Life:"
+msgstr ""
+
+#. Sum-of-the-Years
+#: ../data/buttons-financial.ui.h:22
+msgid "_Period:"
+msgstr ""
+
+#. Title of Future Value dialog
+#. Tooltip for the future value button
+#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.c:262
+msgid "Future Value"
+msgstr ""
+
+#. Future Value Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:26
+msgid ""
+"Calculates the future value of an investment based on a series of equal "
+"payments at a periodic interest rate over the number of payment periods in "
+"the term."
+msgstr ""
+
+#. Payment Period Dialog: Label before periodic payment input
+#: ../data/buttons-financial.ui.h:28
+msgid "_Periodic Payment:"
+msgstr ""
+
+#. Present Value Dialog: Label before number of periods input
+#: ../data/buttons-financial.ui.h:30
+msgid "_Number of Periods:"
+msgstr ""
+
+#. Title of Gross Profit Margin dialog
+#. Tooltip for the gross profit margin button
+#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:283
+msgid "Gross Profit Margin"
+msgstr ""
+
+#. Gross Profit Margin Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:34
+msgid ""
+"Calculates the resale price of a product, based on the product cost and the "
+"wanted gross profit margin."
+msgstr ""
+
+#. Gross Profit Margin Dialog: Label before margin input
+#: ../data/buttons-financial.ui.h:36
+msgid "_Margin:"
+msgstr ""
+
+#. Title of Periodic Payment dialog
+#. Tooltip for the periodic payment button
+#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:280
+msgid "Periodic Payment"
+msgstr ""
+
+#. Periodic Payment Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:40
+msgid ""
+"Calculates the amount of the periodic payment of a loan, where payments are "
+"made at the end of each payment period. "
+msgstr ""
+
+#. Periodic Payment Dialog: Label before principal input
+#: ../data/buttons-financial.ui.h:42
+msgid "_Principal:"
+msgstr ""
+
+#. Periodic Interest Rate Dialog: Label before term input
+#: ../data/buttons-financial.ui.h:44
+msgid "_Term:"
+msgstr ""
+
+#. Title of Present Value dialog
+#. Tooltip for the present value button
+#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:277
+msgid "Present Value"
+msgstr ""
+
+#. Present Value Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:48
+msgid ""
+"Calculates the present value of an investment based on a series of equal "
+"payments discounted at a periodic interest rate over the number of payment "
+"periods in the term. "
+msgstr ""
+
+#. Title of Periodic Interest Rate dialog
+#. Tooltip for the periodic interest rate button
+#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.c:274
+msgid "Periodic Interest Rate"
+msgstr ""
+
+#. Periodic Interest Rate Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:52
+msgid ""
+"Calculates the periodic interest necessary to increase an investment to a "
+"future value, over the number of compounding periods. "
+msgstr ""
+
+#. Title of Straight-Line Depreciation dialog
+#: ../data/buttons-financial.ui.h:54
+msgid "Straight-Line Depreciation"
+msgstr ""
+
+#. Sum-of-the-Years
+#: ../data/buttons-financial.ui.h:56
+msgid "_Cost:"
+msgstr ""
+
+#. Sum-of-the-Years
+#: ../data/buttons-financial.ui.h:58
+msgid "_Salvage:"
+msgstr ""
+
+#. Straight-Line Depreciation Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:60
+msgid ""
+"Calculates the straight-line depreciation of an asset for one period. The "
+"straight-line method of depreciation divides the depreciable cost evenly "
+"over the useful life of an asset. The useful life is the number of periods, "
+"typically years, over which an asset is depreciated. "
+msgstr ""
+
+#. Title of Sum-of-the-Years
+#: ../data/buttons-financial.ui.h:62
+msgid "Sum-of-the-Years'-Digits Depreciation"
+msgstr ""
+
+#. Sum-of-the-Years
+#: ../data/buttons-financial.ui.h:64
+msgid ""
+"Calculates the depreciation allowance on an asset for a specified period of "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
+" accelerates the rate of depreciation, so that more depreciation expense "
+"occurs in earlier periods than in later ones. The useful life is the number "
+"of periods, typically years, over which an asset is depreciated. "
+msgstr ""
+
+#. Title of Payment Period dialog
+#: ../data/buttons-financial.ui.h:66
+msgid "Payment Period"
+msgstr ""
+
+#. Payment Period Dialog: Label before future value input
+#: ../data/buttons-financial.ui.h:68
+msgid "Future _Value:"
+msgstr ""
+
+#. Payment Period Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:70
+msgid ""
+"Calculates the number of payment periods that are necessary during the term "
+"of an ordinary annuity, to accumulate a future value, at a periodic interest"
+" rate."
+msgstr ""
+
+#. Calculates the number of compounding periods necessary to increase an
+#. investment of present value pv to a future value of fv, at a fixed interest
+#. rate of int per compounding period. See also:
+#. http://en.wikipedia.org/wiki/Compound_interest
+#: ../data/buttons-financial.ui.h:79
+msgid "Ctrm"
 msgstr "Ctrm"
 
-#. Bitwise XNOR
-#: mate-calc/syntax_translation.c:75
-#, fuzzy
-msgid "xnor"
-msgstr "Xnor"
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the double-declining balance method. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:81
+msgid "Ddb"
+msgstr "Ddb"
 
-#. Bitwise XOR
-#: mate-calc/syntax_translation.c:76
-#, fuzzy
-msgid "xor"
-msgstr "Xor"
+#. Calculates the future value of an investment based on a series of equal
+#. payments, each of amount pmt, at a periodic interest rate of int, over the
+#. number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Future_value
+#: ../data/buttons-financial.ui.h:83
+msgid "Fv"
+msgstr "Fv"
 
-#: mate-calc.desktop.in.h:2
-msgid "Perform calculations"
-msgstr "Hesablamalar edin"
+#. Calculates the number of payment periods that are necessary during the term
+#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
+#. interest rate of int. Each payment is equal to amount pmt. See also:
+#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#: ../data/buttons-financial.ui.h:85
+msgid "Term"
+msgstr "Term"
 
-#, fuzzy
-#~ msgid "_Copy"
-#~ msgstr "/Düzəlt/_Koçürt"
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the Sum-Of-The-Years
+#: ../data/buttons-financial.ui.h:87
+msgid "Syd"
+msgstr "Syd"
 
-#, fuzzy
-#~ msgid "_Paste"
-#~ msgstr "/Düzəlt/_Yapışdır"
+#. Calculates the straight-line depreciation of an asset for one period. The
+#. depreciable cost is cost - salvage. The straight-line method of
+#. depreciation divides the depreciable cost evenly over the useful life of an
+#. asset. The useful life is the number of periods, typically years, over
+#. which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:89
+msgid "Sln"
+msgstr "Sln"
 
-#, fuzzy
-#~ msgid "_Contents"
-#~ msgstr "Sabitlər"
+#. Calculates the periodic interest necessary to increase an investment of
+#. present value pv to a future value of fv, over the number of compounding
+#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#: ../data/buttons-financial.ui.h:91
+msgid "Rate"
+msgstr "Rate"
 
-#, fuzzy
-#~ msgid "_About"
-#~ msgstr "/Yardım/_Haqqında"
+#. Calculates the present value of an investment based on a series of equal
+#. payments, each of amount pmt, discounted at a periodic interest rate of
+#. int, over the number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Present_value
+#: ../data/buttons-financial.ui.h:93
+msgid "Pv"
+msgstr "Pv"
 
-#, fuzzy
-#~ msgid "ans"
-#~ msgstr "Tan"
+#. Calculates the amount of the periodic payment of a loan, where payments are
+#. made at the end of each payment period. See also:
+#. http://en.wikipedia.org/wiki/Amortization_schedule
+#: ../data/buttons-financial.ui.h:95
+msgid "Pmt"
+msgstr "Pmt"
 
-#, fuzzy
-#~ msgid "Basic mode"
-#~ msgstr "Sadə Mod"
+#. Calculates the resale price of a product, based on the product cost and the
+#. wanted gross profit margin. See also:
+#. http://en.wikipedia.org/wiki/Gross_profit_margin
+#: ../data/buttons-financial.ui.h:97
+msgid "Gpm"
+msgstr ""
 
-#, fuzzy
-#~ msgid "Advanced mode"
-#~ msgstr "Sadə Mod"
+#. Title of insert character code dialog
+#. Tooltip for the insert character code button
+#: ../data/buttons-programming.ui.h:2 ../src/math-buttons.c:235
+msgid "Insert Character Code"
+msgstr ""
 
-#, fuzzy
-#~ msgid "Financial mode"
-#~ msgstr "Maliyyə Modu"
+#. Insert ASCII dialog: Button to insert selected character
+#: ../data/buttons-programming.ui.h:4
+msgid "_Insert"
+msgstr "_Daxil Et"
 
-#, fuzzy
-#~ msgid "Scientific mode"
-#~ msgstr "Elmi Mod"
+#. Insert ASCII dialog: Label before character entry
+#: ../data/buttons-programming.ui.h:6
+msgid "Ch_aracter:"
+msgstr "Hə_rf:"
 
-#~ msgid "BASIC"
-#~ msgstr "SADƏ"
+#. Accessible name for the shift left button
+#: ../data/buttons-programming.ui.h:23
+msgid "Shift Left"
+msgstr ""
 
-#~ msgid "FINANCIAL"
-#~ msgstr "MALİYYƏ"
+#. Accessible name for the shift right button
+#: ../data/buttons-programming.ui.h:25
+msgid "Shift Right"
+msgstr ""
 
-#~ msgid "SCIENTIFIC"
-#~ msgstr "ELMİ"
+#. Accessible name for the insert character button
+#: ../data/buttons-programming.ui.h:27
+msgid "Insert Character"
+msgstr ""
 
-#, fuzzy
-#~ msgid "SCIENTIFIC_EXP"
-#~ msgstr "ELMİ"
+#. Word size combo: 8 bits
+#: ../data/preferences.ui.h:2
+msgid "8-bit"
+msgstr ""
 
-#~ msgid "Logical OR"
-#~ msgstr "Məntiqi OR"
+#. Word size combo: 16 bits
+#: ../data/preferences.ui.h:4
+msgid "16-bit"
+msgstr ""
 
-#~ msgid "Logical AND"
-#~ msgstr "Məntiqi AND"
+#. Word size combo: 32 bits
+#: ../data/preferences.ui.h:6
+msgid "32-bit"
+msgstr ""
 
-#~ msgid "Logical NOT"
-#~ msgstr "Məntiqi NOT"
+#. Word size combo: 64 bits
+#: ../data/preferences.ui.h:8
+msgid "64-bit"
+msgstr ""
 
-#~ msgid "Logical XOR"
-#~ msgstr "Məntiqi XOR"
+#. Title of preferences dialog
+#: ../data/preferences.ui.h:9 ../src/math-preferences.c:238
+msgid "Preferences"
+msgstr ""
 
-#~ msgid "Logical XNOR"
-#~ msgstr "Məntiqi XNOR"
+#. Preferences dialog: Label for angle unit combo box
+#: ../data/preferences.ui.h:11
+msgid "_Angle units:"
+msgstr ""
 
-#~ msgid "kilometers per hour or miles per hour"
-#~ msgstr "kilometr/saat ya da mil/saat"
+#. Preferences dialog: Label for display format combo box
+#: ../data/preferences.ui.h:13
+msgid "Number _Format:"
+msgstr ""
 
-#~ msgid "centimeters or inches"
-#~ msgstr "santimetr ya da inç"
+#. Preferences dialog: label for word size combo box
+#: ../data/preferences.ui.h:15
+msgid "Word _size:"
+msgstr ""
 
-#~ msgid "grams or ounces"
-#~ msgstr "gram ya da unsiya"
+#. Preferences dialog: label for show trailing zeroes check button
+#: ../data/preferences.ui.h:17
+msgid "Show trailing _zeroes"
+msgstr ""
 
-#~ msgid "/Calculator/_Quit"
-#~ msgstr "/Hesaplayıcı/Ç_ıx"
+#. Preferences dialog: label for show thousands separator check button
+#: ../data/preferences.ui.h:19
+msgid "Show _thousands separators"
+msgstr ""
 
-#~ msgid "/Edit/sep1"
-#~ msgstr "/Düzəlt/sep1"
+#: ../data/mate-calc.appdata.xml.in.h:1
+msgid "MATE Desktop calculator"
+msgstr ""
 
-#~ msgid "/Edit/_Insert ASCII Value..."
-#~ msgstr "/Düzəlt/_ASCII Qiymət Daxil Et"
+#: ../data/mate-calc.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Calc is a powerful graphical calculator with financial, logical and"
+" scientific modes. It uses a multiple precision package to do its arithmetic"
+" to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
+"Calc and part of the MATE Desktop Environment. If you would like to know "
+"more about MATE and MATE Calc, please visit the project's home page. </p>"
+msgstr ""
 
-#~ msgid "/View/_Basic Mode"
-#~ msgstr "/Nümayişlər/_Sadə Mod"
+#: ../data/mate-calc.desktop.in.h:1
+msgid "MATE Calculator"
+msgstr ""
 
-#~ msgid "/View/_Financial Mode"
-#~ msgstr "/Nümayişlər/_Maliyyə Modu"
+#. Title of main window
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
+msgid "Calculator"
+msgstr "Hesaplayıcı"
 
-#~ msgid "/View/_Scientific Mode"
-#~ msgstr "/Nümayişlər/_Elmi Mod"
+#: ../data/mate-calc.desktop.in.h:3
+msgid "Perform arithmetic, scientific or financial calculations"
+msgstr ""
 
-#~ msgid "/View/sep1"
-#~ msgstr "/Nümayişlər/sep1"
+#: ../src/currency-manager.c:30
+msgid "UAE Dirham"
+msgstr ""
 
-#~ msgid "/View/Show _Trailing Zeroes"
-#~ msgstr "/Nümayişlər/_Sondakı Sıfırları Göstər"
+#: ../src/currency-manager.c:31
+msgid "Australian Dollar"
+msgstr ""
 
-#~ msgid "/View/sep2"
-#~ msgstr "/Nümayişlər/sep2"
+#: ../src/currency-manager.c:32
+msgid "Bulgarian Lev"
+msgstr ""
 
-#~ msgid "/View/_Memory Registers"
-#~ msgstr "/Nümayişlər/_Yaddaş Qeydləri"
+#: ../src/currency-manager.c:33
+msgid "Bahraini Dinar"
+msgstr ""
 
-#~ msgid "/sep1"
-#~ msgstr "/sep1"
+#: ../src/currency-manager.c:34
+msgid "Brunei Dollar"
+msgstr ""
+
+#: ../src/currency-manager.c:35
+msgid "Brazilian Real"
+msgstr ""
+
+#: ../src/currency-manager.c:36
+msgid "Botswana Pula"
+msgstr ""
+
+#: ../src/currency-manager.c:37
+msgid "Canadian Dollar"
+msgstr ""
+
+#: ../src/currency-manager.c:38
+msgid "CFA Franc"
+msgstr ""
+
+#: ../src/currency-manager.c:39
+msgid "Swiss Franc"
+msgstr ""
+
+#: ../src/currency-manager.c:40
+msgid "Chilean Peso"
+msgstr ""
+
+#: ../src/currency-manager.c:41
+msgid "Chinese Yuan"
+msgstr ""
+
+#: ../src/currency-manager.c:42
+msgid "Colombian Peso"
+msgstr ""
+
+#: ../src/currency-manager.c:43
+msgid "Czech Koruna"
+msgstr ""
+
+#: ../src/currency-manager.c:44
+msgid "Danish Krone"
+msgstr ""
+
+#: ../src/currency-manager.c:45
+msgid "Algerian Dinar"
+msgstr ""
+
+#: ../src/currency-manager.c:46
+msgid "Estonian Kroon"
+msgstr ""
+
+#: ../src/currency-manager.c:47
+msgid "Euro"
+msgstr ""
+
+#: ../src/currency-manager.c:48
+msgid "Pound Sterling"
+msgstr ""
+
+#: ../src/currency-manager.c:49
+msgid "Hong Kong Dollar"
+msgstr ""
+
+#: ../src/currency-manager.c:50
+msgid "Croatian Kuna"
+msgstr ""
+
+#: ../src/currency-manager.c:51
+msgid "Hungarian Forint"
+msgstr ""
+
+#: ../src/currency-manager.c:52
+msgid "Indonesian Rupiah"
+msgstr ""
+
+#: ../src/currency-manager.c:53
+msgid "Israeli New Shekel"
+msgstr ""
+
+#: ../src/currency-manager.c:54
+msgid "Indian Rupee"
+msgstr ""
+
+#: ../src/currency-manager.c:55
+msgid "Iranian Rial"
+msgstr ""
+
+#: ../src/currency-manager.c:56
+msgid "Icelandic Krona"
+msgstr ""
+
+#: ../src/currency-manager.c:57
+msgid "Japanese Yen"
+msgstr ""
+
+#: ../src/currency-manager.c:58
+msgid "South Korean Won"
+msgstr ""
+
+#: ../src/currency-manager.c:59
+msgid "Kuwaiti Dinar"
+msgstr ""
+
+#: ../src/currency-manager.c:60
+msgid "Kazakhstani Tenge"
+msgstr ""
+
+#: ../src/currency-manager.c:61
+msgid "Sri Lankan Rupee"
+msgstr ""
+
+#: ../src/currency-manager.c:62
+msgid "Lithuanian Litas"
+msgstr ""
+
+#: ../src/currency-manager.c:63
+msgid "Latvian Lats"
+msgstr ""
+
+#: ../src/currency-manager.c:64
+msgid "Libyan Dinar"
+msgstr ""
+
+#: ../src/currency-manager.c:65
+msgid "Mauritian Rupee"
+msgstr ""
+
+#: ../src/currency-manager.c:66
+msgid "Mexican Peso"
+msgstr ""
+
+#: ../src/currency-manager.c:67
+msgid "Malaysian Ringgit"
+msgstr ""
+
+#: ../src/currency-manager.c:68
+msgid "Norwegian Krone"
+msgstr ""
+
+#: ../src/currency-manager.c:69
+msgid "Nepalese Rupee"
+msgstr ""
+
+#: ../src/currency-manager.c:70
+msgid "New Zealand Dollar"
+msgstr ""
+
+#: ../src/currency-manager.c:71
+msgid "Omani Rial"
+msgstr ""
+
+#: ../src/currency-manager.c:72
+msgid "Peruvian Nuevo Sol"
+msgstr ""
+
+#: ../src/currency-manager.c:73
+msgid "Philippine Peso"
+msgstr ""
+
+#: ../src/currency-manager.c:74
+msgid "Pakistani Rupee"
+msgstr ""
+
+#: ../src/currency-manager.c:75
+msgid "Polish Zloty"
+msgstr ""
+
+#: ../src/currency-manager.c:76
+msgid "Qatari Riyal"
+msgstr ""
+
+#: ../src/currency-manager.c:77
+msgid "New Romanian Leu"
+msgstr ""
+
+#: ../src/currency-manager.c:78
+msgid "Russian Rouble"
+msgstr ""
+
+#: ../src/currency-manager.c:79
+msgid "Saudi Riyal"
+msgstr ""
+
+#: ../src/currency-manager.c:80
+msgid "Swedish Krona"
+msgstr ""
+
+#: ../src/currency-manager.c:81
+msgid "Singapore Dollar"
+msgstr ""
+
+#: ../src/currency-manager.c:82
+msgid "Thai Baht"
+msgstr ""
+
+#: ../src/currency-manager.c:83
+msgid "Tunisian Dinar"
+msgstr ""
+
+#: ../src/currency-manager.c:84
+msgid "New Turkish Lira"
+msgstr ""
+
+#: ../src/currency-manager.c:85
+msgid "T&T Dollar (TTD)"
+msgstr ""
+
+#: ../src/currency-manager.c:86
+msgid "US Dollar"
+msgstr ""
+
+#: ../src/currency-manager.c:87
+msgid "Uruguayan Peso"
+msgstr ""
+
+#: ../src/currency-manager.c:88
+msgid "Venezuelan Bolívar"
+msgstr ""
+
+#: ../src/currency-manager.c:89
+msgid "South African Rand"
+msgstr ""
+
+#: ../src/financial.c:70
+msgid "Error: the number of periods must be positive"
+msgstr ""
+
+#. Description on how to use mate-calc displayed on command-line
+#: ../src/mate-calc.c:79
+#, c-format
+msgid ""
+"Usage:\n"
+"  %s — Perform mathematical calculations"
+msgstr ""
+
+#. Description on mate-calc command-line help options displayed on command-
+#. line
+#: ../src/mate-calc.c:87
+#, c-format
+msgid ""
+"Help Options:\n"
+"  -v, --version                   Show release version\n"
+"  -h, -?, --help                  Show help options\n"
+"  --help-all                      Show all help options\n"
+"  --help-gtk                      Show GTK+ options"
+msgstr ""
+
+#. Description on mate-calc command-line GTK+ options displayed on command-
+#. line
+#: ../src/mate-calc.c:98
+#, c-format
+msgid ""
+"GTK+ Options:\n"
+"  --class=CLASS                   Program class as used by the window manager\n"
+"  --name=NAME                     Program name as used by the window manager\n"
+"  --screen=SCREEN                 X screen to use\n"
+"  --sync                          Make X calls synchronous\n"
+"  --gtk-module=MODULES            Load additional GTK+ modules\n"
+"  --g-fatal-warnings              Make all warnings fatal"
+msgstr ""
+
+#. Description on mate-calc application options displayed on command-line
+#: ../src/mate-calc.c:112
+#, c-format
+msgid ""
+"Application Options:\n"
+"  -s, --solve <equation>          Solve the given equation"
+msgstr ""
+
+#. Error printed to stderr when user uses --solve argument without an equation
+#: ../src/mate-calc.c:156
+#, c-format
+msgid "Argument --solve requires an equation to solve"
+msgstr ""
+
+#. Error printed to stderr when user provides an unknown command-line argument
+#: ../src/mate-calc.c:166
+#, c-format
+msgid "Unknown argument '%s'"
+msgstr ""
+
+#. Tooltip for the Pi button
+#: ../src/math-buttons.c:95
+msgid "Pi [Ctrl+P]"
+msgstr ""
+
+#. Tooltip for the Euler's Number button
+#: ../src/math-buttons.c:98
+msgid "Euler’s Number"
+msgstr ""
+
+#. Tooltip for the subscript button
+#: ../src/math-buttons.c:103
+msgid "Subscript mode [Alt]"
+msgstr ""
+
+#. Tooltip for the superscript button
+#: ../src/math-buttons.c:106
+msgid "Superscript mode [Ctrl]"
+msgstr ""
+
+#. Tooltip for the scientific exponent button
+#: ../src/math-buttons.c:109
+msgid "Scientific exponent [Ctrl+E]"
+msgstr ""
+
+#. Tooltip for the add button
+#: ../src/math-buttons.c:112
+msgid "Add [+]"
+msgstr ""
+
+#. Tooltip for the subtract button
+#: ../src/math-buttons.c:115
+msgid "Subtract [-]"
+msgstr ""
+
+#. Tooltip for the multiply button
+#: ../src/math-buttons.c:118
+msgid "Multiply [*]"
+msgstr ""
+
+#. Tooltip for the divide button
+#: ../src/math-buttons.c:121
+msgid "Divide [/]"
+msgstr ""
+
+#. Tooltip for the modulus divide button
+#: ../src/math-buttons.c:124
+msgid "Modulus divide"
+msgstr ""
+
+#. Tooltip for the additional functions button
+#: ../src/math-buttons.c:127
+msgid "Additional Functions"
+msgstr ""
+
+#. Tooltip for the exponent button
+#: ../src/math-buttons.c:130
+msgid "Exponent [^ or **]"
+msgstr ""
+
+#. Tooltip for the square button
+#: ../src/math-buttons.c:133
+msgid "Square [Ctrl+2]"
+msgstr ""
+
+#. Tooltip for the percentage button
+#: ../src/math-buttons.c:136
+msgid "Percentage [%]"
+msgstr ""
+
+#. Tooltip for the factorial button
+#: ../src/math-buttons.c:139
+msgid "Factorial [!]"
+msgstr ""
+
+#. Tooltip for the absolute value button
+#: ../src/math-buttons.c:142
+msgid "Absolute value [|]"
+msgstr ""
+
+#. Tooltip for the complex argument component button
+#: ../src/math-buttons.c:145
+msgid "Complex argument"
+msgstr ""
+
+#. Tooltip for the complex conjugate button
+#: ../src/math-buttons.c:148
+msgid "Complex conjugate"
+msgstr ""
+
+#. Tooltip for the root button
+#: ../src/math-buttons.c:151
+msgid "Root [Ctrl+R]"
+msgstr ""
+
+#. Tooltip for the square root button
+#: ../src/math-buttons.c:154
+msgid "Square root [Ctrl+R]"
+msgstr ""
+
+#. Tooltip for the logarithm button
+#: ../src/math-buttons.c:157
+msgid "Logarithm"
+msgstr ""
+
+#. Tooltip for the natural logarithm button
+#: ../src/math-buttons.c:160
+msgid "Natural Logarithm"
+msgstr ""
+
+#. Tooltip for the sine button
+#: ../src/math-buttons.c:163
+msgid "Sine"
+msgstr ""
+
+#. Tooltip for the cosine button
+#: ../src/math-buttons.c:166
+msgid "Cosine"
+msgstr ""
+
+#. Tooltip for the tangent button
+#: ../src/math-buttons.c:169
+msgid "Tangent"
+msgstr ""
+
+#. Tooltip for the hyperbolic sine button
+#: ../src/math-buttons.c:172
+msgid "Hyperbolic Sine"
+msgstr ""
+
+#. Tooltip for the hyperbolic cosine button
+#: ../src/math-buttons.c:175
+msgid "Hyperbolic Cosine"
+msgstr ""
+
+#. Tooltip for the hyperbolic tangent button
+#: ../src/math-buttons.c:178
+msgid "Hyperbolic Tangent"
+msgstr ""
+
+#. Tooltip for the inverse sine button
+#: ../src/math-buttons.c:181
+msgid "Inverse Sine"
+msgstr ""
+
+#. Tooltip for the inverse cosine button
+#: ../src/math-buttons.c:184
+msgid "Inverse Cosine"
+msgstr ""
+
+#. Tooltip for the inverse tangent button
+#: ../src/math-buttons.c:187
+msgid "Inverse Tangent"
+msgstr ""
+
+#. Tooltip for the inverse button
+#: ../src/math-buttons.c:190
+msgid "Inverse [Ctrl+I]"
+msgstr ""
+
+#. Tooltip for the boolean AND button
+#: ../src/math-buttons.c:193
+msgid "Boolean AND"
+msgstr ""
+
+#. Tooltip for the boolean OR button
+#: ../src/math-buttons.c:196
+msgid "Boolean OR"
+msgstr ""
+
+#. Tooltip for the exclusive OR button
+#: ../src/math-buttons.c:199
+msgid "Boolean Exclusive OR"
+msgstr ""
+
+#. Tooltip for the boolean NOT button
+#: ../src/math-buttons.c:202
+msgid "Boolean NOT"
+msgstr ""
+
+#. Tooltip for the integer component button
+#: ../src/math-buttons.c:205 ../src/math-buttons.c:994
+msgid "Integer Component"
+msgstr ""
+
+#. Tooltip for the fractional component button
+#: ../src/math-buttons.c:208 ../src/math-buttons.c:996
+msgid "Fractional Component"
+msgstr ""
+
+#. Tooltip for the real component button
+#: ../src/math-buttons.c:211
+msgid "Real Component"
+msgstr ""
+
+#. Tooltip for the imaginary component button
+#: ../src/math-buttons.c:214
+msgid "Imaginary Component"
+msgstr ""
+
+#. Tooltip for the ones' complement button
+#: ../src/math-buttons.c:217
+msgid "Ones' Complement"
+msgstr ""
+
+#. Tooltip for the two's complement button
+#: ../src/math-buttons.c:220
+msgid "Two's Complement"
+msgstr ""
+
+#. Tooltip for the truncate button
+#: ../src/math-buttons.c:223
+msgid "Truncate"
+msgstr ""
+
+#. Tooltip for the start group button
+#: ../src/math-buttons.c:226
+msgid "Start Group [(]"
+msgstr ""
+
+#. Tooltip for the end group button
+#: ../src/math-buttons.c:229
+msgid "End Group [)]"
+msgstr ""
+
+#. Tooltip for the solve button
+#: ../src/math-buttons.c:238
+msgid "Calculate Result"
+msgstr ""
+
+#. Tooltip for the factor button
+#: ../src/math-buttons.c:241
+msgid "Factorize [Ctrl+F]"
+msgstr ""
+
+#. Tooltip for the clear button
+#: ../src/math-buttons.c:244
+msgid "Clear Display [Escape]"
+msgstr ""
+
+#. Tooltip for the undo button
+#: ../src/math-buttons.c:247
+msgid "Undo [Ctrl+Z]"
+msgstr ""
+
+#. Tooltip for the shift left button
+#: ../src/math-buttons.c:250
+msgid "Shift Left [<<]"
+msgstr ""
+
+#. Tooltip for the shift right button
+#: ../src/math-buttons.c:253
+msgid "Shift Right [>>]"
+msgstr ""
+
+#. Tooltip for the double declining depreciation button
+#: ../src/math-buttons.c:259
+msgid "Double Declining Depreciation"
+msgstr ""
+
+#. Tooltip for the financial term button
+#: ../src/math-buttons.c:265
+msgid "Financial Term"
+msgstr ""
+
+#. Tooltip for the sum of the years digits depreciation button
+#: ../src/math-buttons.c:268
+msgid "Sum of the Years Digits Depreciation"
+msgstr ""
+
+#. Tooltip for the straight line depreciation button
+#: ../src/math-buttons.c:271
+msgid "Straight Line Depreciation"
+msgstr ""
+
+#. Number display mode combo: Binary, e.g. 10011010010₂
+#: ../src/math-buttons.c:611
+msgid "Binary"
+msgstr ""
+
+#. Number display mode combo: Octal, e.g. 2322₈
+#: ../src/math-buttons.c:615
+msgid "Octal"
+msgstr ""
+
+#. Number display mode combo: Decimal, e.g. 1234
+#: ../src/math-buttons.c:619
+msgid "Decimal"
+msgstr ""
+
+#. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
+#: ../src/math-buttons.c:623
+msgid "Hexadecimal"
+msgstr ""
+
+#. Left Shift Popup: Menu item to shift left by n places (n < 10)
+#. Right Shift Popup: Menu item to shift right by n places (n < 10)
+#: ../src/math-buttons.c:905 ../src/math-buttons.c:948
+#, c-format
+msgid "_%d place"
+msgid_plural "_%d places"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Left Shift Popup: Menu item to shift left by n places (n >= 10)
+#. Right Shift Popup: Menu item to shift right by n places (n >= 10)
+#: ../src/math-buttons.c:909 ../src/math-buttons.c:952
+#, c-format
+msgid "%d place"
+msgid_plural "%d places"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Tooltip for the round button
+#: ../src/math-buttons.c:998
+msgid "Round"
+msgstr ""
+
+#. Tooltip for the floor button
+#: ../src/math-buttons.c:1000
+msgid "Floor"
+msgstr ""
+
+#. Tooltip for the ceiling button
+#: ../src/math-buttons.c:1002
+msgid "Ceiling"
+msgstr ""
+
+#. Tooltip for the ceiling button
+#: ../src/math-buttons.c:1004
+msgid "Sign"
+msgstr ""
+
+#. Label that is displayed between the two conversion combo boxes, e.g.
+#. "[degrees] in [radians]"
+#: ../src/math-converter.c:414
+msgid " in "
+msgstr ""
+
+#. Tooltip for swap conversion button
+#: ../src/math-converter.c:429
+msgid "Switch conversion units"
+msgstr ""
+
+#. Error shown when trying to undo with no undo history
+#: ../src/math-equation.c:459
+msgid "No undo history"
+msgstr ""
+
+#. Error shown when trying to redo with no redo history
+#: ../src/math-equation.c:486
+msgid "No redo history"
+msgstr ""
+
+#: ../src/math-equation.c:948
+msgid "No sane value to store"
+msgstr ""
+
+#. Error displayed to user when they perform a bitwise operation on numbers
+#. greater than the current word
+#: ../src/math-equation.c:1230
+msgid "Overflow. Try a bigger word size"
+msgstr ""
+
+#. Error displayed to user when they an unknown variable is entered
+#: ../src/math-equation.c:1235
+#, c-format
+msgid "Unknown variable '%s'"
+msgstr ""
+
+#. Error displayed to user when an unknown function is entered
+#: ../src/math-equation.c:1240
+#, c-format
+msgid "Function '%s' is not defined"
+msgstr ""
+
+#. Error displayed to user when an conversion with unknown units is attempted
+#: ../src/math-equation.c:1245
+msgid "Unknown conversion"
+msgstr ""
+
+#. Uncategorized error. Show error token to user
+#: ../src/math-equation.c:1253
+#, c-format
+msgid "Malformed expression at token '%s'"
+msgstr ""
+
+#. Unknown error.
+#. Error displayed to user when they enter an invalid calculation
+#: ../src/math-equation.c:1256 ../src/math-equation.c:1261
+msgid "Malformed expression"
+msgstr ""
+
+#: ../src/math-equation.c:1275
+msgid "Calculating"
+msgstr ""
+
+#. Error displayed when trying to factorize a non-integer value
+#: ../src/math-equation.c:1390
+msgid "Need an integer to factorize"
+msgstr ""
+
+#. This message is displayed in the status bar when a bit
+#. shift operation is performed and the display does not contain a number
+#: ../src/math-equation.c:1462
+msgid "No sane value to bitwise shift"
+msgstr ""
+
+#. Message displayed when cannot toggle bit in display
+#: ../src/math-equation.c:1493
+msgid "Displayed value not an integer"
+msgstr ""
+
+#. Digits localized for the given language
+#: ../src/math-equation.c:1918
+msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
+msgstr ""
+
+#. Label on close button in preferences dialog
+#: ../src/math-preferences.c:242
+msgid "_Close"
+msgstr ""
+
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
+#. calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
+#. grads
+#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
+msgid "Degrees"
+msgstr ""
+
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
+#. calculations
+#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
+msgid "Radians"
+msgstr ""
+
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
+#. calculations
+#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
+msgid "Gradians"
+msgstr ""
+
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
+#. number 1.234×10^99)
+#: ../src/math-preferences.c:270
+msgid "Automatic"
+msgstr ""
+
+#. Number display mode combo: Fixed, e.g. 1234
+#: ../src/math-preferences.c:274
+msgid "Fixed"
+msgstr ""
+
+#. Number display mode combo: Scientific, e.g. 1.234×10^3
+#: ../src/math-preferences.c:278
+msgid "Scientific"
+msgstr ""
+
+#. Number display mode combo: Engineering, e.g. 1.234k
+#: ../src/math-preferences.c:282
+msgid "Engineering"
+msgstr ""
+
+#. Label used in preferences dialog.  The %d is replaced by a spinbutton
+#: ../src/math-preferences.c:293
+#, c-format
+msgid "Show %d decimal _places"
+msgstr ""
+
+#. Translators: Error message displayed when unable to launch help browser
+#: ../src/math-window.c:211
+msgid "Unable to open help file"
+msgstr ""
+
+#. The translator credits. Please translate this with your name(s).
+#: ../src/math-window.c:238
+msgid "translator-credits"
+msgstr ""
+
+#. The license this software is under (GPL2+)
+#: ../src/math-window.c:245
+msgid ""
+"mate-calc is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"mate-calc is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
+"151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr ""
+
+#: ../src/math-window.c:260
+msgid "mate-calc"
+msgstr "mate-calc"
+
+#: ../src/math-window.c:264
+msgid "Calculator with financial and scientific modes."
+msgstr "Maliyyə və elmi modları olan hesablayıcı."
+
+#. Calculator menu
+#: ../src/math-window.c:367
+msgid "_Calculator"
+msgstr ""
+
+#. Mode menu
+#: ../src/math-window.c:369
+msgid "_Mode"
+msgstr ""
+
+#. Help menu label
+#: ../src/math-window.c:371
+msgid "_Help"
+msgstr ""
+
+#. Basic menu label
+#: ../src/math-window.c:373
+msgid "_Basic"
+msgstr ""
+
+#. Advanced menu label
+#: ../src/math-window.c:375
+msgid "_Advanced"
+msgstr ""
+
+#. Financial menu label
+#: ../src/math-window.c:377
+msgid "_Financial"
+msgstr ""
+
+#. Programming menu label
+#: ../src/math-window.c:379
+msgid "_Programming"
+msgstr ""
+
+#. Help>Contents menu label
+#: ../src/math-window.c:381
+msgid "_Contents"
+msgstr ""
+
+#. Translators: Error displayed when boolean AND attempted on non-integer
+#. values
+#: ../src/mp-binary.c:115
+msgid "Boolean AND is only defined for positive integers"
+msgstr ""
+
+#. Translators: Error displayed when boolean OR attempted on non-integer
+#. values
+#: ../src/mp-binary.c:128
+msgid "Boolean OR is only defined for positive integers"
+msgstr ""
+
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
+#: ../src/mp-binary.c:141
+msgid "Boolean XOR is only defined for positive integers"
+msgstr ""
+
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
+#: ../src/mp-binary.c:156
+msgid "Boolean NOT is only defined for positive integers"
+msgstr ""
+
+#. Translators: Error displayed when bit shift attempted on non-integer values
+#: ../src/mp-binary.c:190
+msgid "Shift is only possible on integer values"
+msgstr ""
+
+#. Translators: Error display when attempting to take argument of zero
+#: ../src/mp.c:148
+msgid "Argument not defined for zero"
+msgstr ""
+
+#: ../src/mp.c:299
+msgid "Overflow: the result couldn't be calculated"
+msgstr ""
+
+#. Translators: Error displayed attempted to divide by zero
+#: ../src/mp.c:644 ../src/mp.c:676 ../src/mp.c:1605
+msgid "Division by zero is undefined"
+msgstr ""
+
+#. Translators: Error displayed when attempting to take logarithm of zero
+#: ../src/mp.c:1276 ../src/mp.c:1313
+msgid "Logarithm of zero is undefined"
+msgstr ""
+
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. exponent
+#: ../src/mp.c:1680 ../src/mp.c:1994
+msgid "The power of zero is undefined for a negative exponent"
+msgstr ""
+
+#: ../src/mp.c:1704
+msgid "Reciprocal of zero is undefined"
+msgstr ""
+
+#: ../src/mp.c:1789
+msgid "Root must be non-zero"
+msgstr ""
+
+#: ../src/mp.c:1807
+msgid "Negative root of zero is undefined"
+msgstr ""
+
+#: ../src/mp.c:1813
+msgid "nth root of negative number is undefined for even n"
+msgstr ""
+
+#. Translators: Error displayed when attempted take the factorial of a
+#. fractional number
+#: ../src/mp.c:1934
+msgid "Factorial is only defined for natural numbers"
+msgstr ""
+
+#. Translators: Error displayed when attemping to do a modulus division on
+#. non-integer numbers
+#: ../src/mp.c:1954
+msgid "Modulus division is only defined for integers"
+msgstr ""
+
+#. Translators: Error displayed when tangent value is undefined
+#: ../src/mp-trigonometric.c:310
+msgid ""
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
+"(90°)"
+msgstr ""
+
+#. Translators: Error displayed when inverse sine value is undefined
+#: ../src/mp-trigonometric.c:355
+msgid "Inverse sine is undefined for values outside [-1, 1]"
+msgstr ""
+
+#. Translators: Error displayed when inverse cosine value is undefined
+#: ../src/mp-trigonometric.c:372
+msgid "Inverse cosine is undefined for values outside [-1, 1]"
+msgstr ""
+
+#. Translators: Error displayed when inverse hyperbolic cosine value is
+#. undefined
+#: ../src/mp-trigonometric.c:591
+msgid "Inverse hyperbolic cosine is undefined for values less than one"
+msgstr ""
+
+#. Translators: Error displayed when inverse hyperbolic tangent value is
+#. undefined
+#: ../src/mp-trigonometric.c:615
+msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
+msgstr ""
+
+#: ../src/unit-manager.c:54
+#, c-format
+msgctxt "unit-format"
+msgid "%s degrees"
+msgstr ""
+
+#: ../src/unit-manager.c:54
+msgctxt "unit-symbols"
+msgid "degree,degrees,deg"
+msgstr ""
+
+#: ../src/unit-manager.c:55
+#, c-format
+msgctxt "unit-format"
+msgid "%s radians"
+msgstr ""
+
+#: ../src/unit-manager.c:55
+msgctxt "unit-symbols"
+msgid "radian,radians,rad"
+msgstr ""
+
+#: ../src/unit-manager.c:56
+#, c-format
+msgctxt "unit-format"
+msgid "%s gradians"
+msgstr ""
+
+#: ../src/unit-manager.c:56
+msgctxt "unit-symbols"
+msgid "gradian,gradians,grad"
+msgstr ""
+
+#: ../src/unit-manager.c:57
+msgid "Parsecs"
+msgstr ""
+
+#: ../src/unit-manager.c:57
+#, c-format
+msgctxt "unit-format"
+msgid "%s pc"
+msgstr ""
+
+#: ../src/unit-manager.c:57
+msgctxt "unit-symbols"
+msgid "parsec,parsecs,pc"
+msgstr ""
+
+#: ../src/unit-manager.c:58
+msgid "Light Years"
+msgstr ""
+
+#: ../src/unit-manager.c:58
+#, c-format
+msgctxt "unit-format"
+msgid "%s ly"
+msgstr ""
+
+#: ../src/unit-manager.c:58
+msgctxt "unit-symbols"
+msgid "lightyear,lightyears,ly"
+msgstr ""
+
+#: ../src/unit-manager.c:59
+msgid "Astronomical Units"
+msgstr ""
+
+#: ../src/unit-manager.c:59
+#, c-format
+msgctxt "unit-format"
+msgid "%s au"
+msgstr ""
+
+#: ../src/unit-manager.c:59
+msgctxt "unit-symbols"
+msgid "au"
+msgstr ""
+
+#: ../src/unit-manager.c:60
+msgid "Nautical Miles"
+msgstr ""
+
+#: ../src/unit-manager.c:60
+#, c-format
+msgctxt "unit-format"
+msgid "%s nmi"
+msgstr ""
+
+#: ../src/unit-manager.c:60
+msgctxt "unit-symbols"
+msgid "nmi"
+msgstr ""
+
+#: ../src/unit-manager.c:61
+msgid "Miles"
+msgstr ""
+
+#: ../src/unit-manager.c:61
+#, c-format
+msgctxt "unit-format"
+msgid "%s mi"
+msgstr ""
+
+#: ../src/unit-manager.c:61
+msgctxt "unit-symbols"
+msgid "mile,miles,mi"
+msgstr ""
+
+#: ../src/unit-manager.c:62
+msgid "Kilometers"
+msgstr ""
+
+#: ../src/unit-manager.c:62
+#, c-format
+msgctxt "unit-format"
+msgid "%s km"
+msgstr ""
+
+#: ../src/unit-manager.c:62
+msgctxt "unit-symbols"
+msgid "kilometer,kilometers,km,kms"
+msgstr ""
+
+#: ../src/unit-manager.c:63
+msgid "Cables"
+msgstr ""
+
+#: ../src/unit-manager.c:63
+#, c-format
+msgctxt "unit-format"
+msgid "%s cb"
+msgstr ""
+
+#: ../src/unit-manager.c:63
+msgctxt "unit-symbols"
+msgid "cable,cables,cb"
+msgstr ""
+
+#: ../src/unit-manager.c:64
+msgid "Fathoms"
+msgstr ""
+
+#: ../src/unit-manager.c:64
+#, c-format
+msgctxt "unit-format"
+msgid "%s ftm"
+msgstr ""
+
+#: ../src/unit-manager.c:64
+msgctxt "unit-symbols"
+msgid "fathom,fathoms,ftm"
+msgstr ""
+
+#: ../src/unit-manager.c:65
+msgid "Meters"
+msgstr ""
+
+#: ../src/unit-manager.c:65
+#, c-format
+msgctxt "unit-format"
+msgid "%s m"
+msgstr ""
+
+#: ../src/unit-manager.c:65
+msgctxt "unit-symbols"
+msgid "meter,meters,m"
+msgstr ""
+
+#: ../src/unit-manager.c:66
+msgid "Yards"
+msgstr ""
+
+#: ../src/unit-manager.c:66
+#, c-format
+msgctxt "unit-format"
+msgid "%s yd"
+msgstr ""
+
+#: ../src/unit-manager.c:66
+msgctxt "unit-symbols"
+msgid "yard,yards,yd"
+msgstr ""
+
+#: ../src/unit-manager.c:67
+msgid "Feet"
+msgstr ""
+
+#: ../src/unit-manager.c:67
+#, c-format
+msgctxt "unit-format"
+msgid "%s ft"
+msgstr ""
+
+#: ../src/unit-manager.c:67
+msgctxt "unit-symbols"
+msgid "foot,feet,ft"
+msgstr ""
+
+#: ../src/unit-manager.c:68
+msgid "Inches"
+msgstr ""
+
+#: ../src/unit-manager.c:68
+#, c-format
+msgctxt "unit-format"
+msgid "%s in"
+msgstr ""
+
+#: ../src/unit-manager.c:68
+msgctxt "unit-symbols"
+msgid "inch,inches,in"
+msgstr ""
+
+#: ../src/unit-manager.c:69
+msgid "Centimeters"
+msgstr ""
+
+#: ../src/unit-manager.c:69
+#, c-format
+msgctxt "unit-format"
+msgid "%s cm"
+msgstr ""
+
+#: ../src/unit-manager.c:69
+msgctxt "unit-symbols"
+msgid "centimeter,centimeters,cm,cms"
+msgstr ""
+
+#: ../src/unit-manager.c:70
+msgid "Millimeters"
+msgstr ""
+
+#: ../src/unit-manager.c:70
+#, c-format
+msgctxt "unit-format"
+msgid "%s mm"
+msgstr ""
+
+#: ../src/unit-manager.c:70
+msgctxt "unit-symbols"
+msgid "millimeter,millimeters,mm"
+msgstr ""
+
+#: ../src/unit-manager.c:71
+msgid "Micrometers"
+msgstr ""
+
+#: ../src/unit-manager.c:71
+#, c-format
+msgctxt "unit-format"
+msgid "%s μm"
+msgstr ""
+
+#: ../src/unit-manager.c:71
+msgctxt "unit-symbols"
+msgid "micrometer,micrometers,um"
+msgstr ""
+
+#: ../src/unit-manager.c:72
+msgid "Nanometers"
+msgstr ""
+
+#: ../src/unit-manager.c:72
+#, c-format
+msgctxt "unit-format"
+msgid "%s nm"
+msgstr ""
+
+#: ../src/unit-manager.c:72
+msgctxt "unit-symbols"
+msgid "nanometer,nanometers,nm"
+msgstr ""
+
+#: ../src/unit-manager.c:73
+msgid "Hectares"
+msgstr ""
+
+#: ../src/unit-manager.c:73
+#, c-format
+msgctxt "unit-format"
+msgid "%s ha"
+msgstr ""
+
+#: ../src/unit-manager.c:73
+msgctxt "unit-symbols"
+msgid "hectare,hectares,ha"
+msgstr ""
+
+#: ../src/unit-manager.c:74
+msgid "Acres"
+msgstr ""
+
+#: ../src/unit-manager.c:74
+#, c-format
+msgctxt "unit-format"
+msgid "%s acres"
+msgstr ""
+
+#: ../src/unit-manager.c:74
+msgctxt "unit-symbols"
+msgid "acre,acres"
+msgstr ""
+
+#: ../src/unit-manager.c:75
+msgid "Square Meters"
+msgstr ""
+
+#: ../src/unit-manager.c:75
+#, c-format
+msgctxt "unit-format"
+msgid "%s m²"
+msgstr ""
+
+#: ../src/unit-manager.c:75
+msgctxt "unit-symbols"
+msgid "m²"
+msgstr ""
+
+#: ../src/unit-manager.c:76
+msgid "Square Centimeters"
+msgstr ""
+
+#: ../src/unit-manager.c:76
+#, c-format
+msgctxt "unit-format"
+msgid "%s cm²"
+msgstr ""
+
+#: ../src/unit-manager.c:76
+msgctxt "unit-symbols"
+msgid "cm²"
+msgstr ""
+
+#: ../src/unit-manager.c:77
+msgid "Square Millimeters"
+msgstr ""
+
+#: ../src/unit-manager.c:77
+#, c-format
+msgctxt "unit-format"
+msgid "%s mm²"
+msgstr ""
+
+#: ../src/unit-manager.c:77
+msgctxt "unit-symbols"
+msgid "mm²"
+msgstr ""
+
+#: ../src/unit-manager.c:78
+msgid "Cubic Meters"
+msgstr ""
+
+#: ../src/unit-manager.c:78
+#, c-format
+msgctxt "unit-format"
+msgid "%s m³"
+msgstr ""
+
+#: ../src/unit-manager.c:78
+msgctxt "unit-symbols"
+msgid "m³"
+msgstr ""
+
+#: ../src/unit-manager.c:79
+msgid "Gallons"
+msgstr ""
+
+#: ../src/unit-manager.c:79
+#, c-format
+msgctxt "unit-format"
+msgid "%s gal"
+msgstr ""
+
+#: ../src/unit-manager.c:79
+msgctxt "unit-symbols"
+msgid "gallon,gallons,gal"
+msgstr ""
+
+#: ../src/unit-manager.c:80
+msgid "Litres"
+msgstr ""
+
+#: ../src/unit-manager.c:80
+#, c-format
+msgctxt "unit-format"
+msgid "%s L"
+msgstr ""
+
+#: ../src/unit-manager.c:80
+msgctxt "unit-symbols"
+msgid "litre,litres,liter,liters,L"
+msgstr ""
+
+#: ../src/unit-manager.c:81
+msgid "Quarts"
+msgstr ""
+
+#: ../src/unit-manager.c:81
+#, c-format
+msgctxt "unit-format"
+msgid "%s qt"
+msgstr ""
+
+#: ../src/unit-manager.c:81
+msgctxt "unit-symbols"
+msgid "quart,quarts,qt"
+msgstr ""
+
+#: ../src/unit-manager.c:82
+msgid "Pints"
+msgstr ""
+
+#: ../src/unit-manager.c:82
+#, c-format
+msgctxt "unit-format"
+msgid "%s pt"
+msgstr ""
+
+#: ../src/unit-manager.c:82
+msgctxt "unit-symbols"
+msgid "pint,pints,pt"
+msgstr ""
+
+#: ../src/unit-manager.c:83
+msgid "Millilitres"
+msgstr ""
+
+#: ../src/unit-manager.c:83
+#, c-format
+msgctxt "unit-format"
+msgid "%s mL"
+msgstr ""
+
+#: ../src/unit-manager.c:83
+msgctxt "unit-symbols"
+msgid "millilitre,millilitres,milliliter,milliliters,mL,cm³"
+msgstr ""
+
+#: ../src/unit-manager.c:84
+msgid "Microlitres"
+msgstr ""
+
+#: ../src/unit-manager.c:84
+#, c-format
+msgctxt "unit-format"
+msgid "%s μL"
+msgstr ""
+
+#: ../src/unit-manager.c:84
+msgctxt "unit-symbols"
+msgid "mm³,μL,uL"
+msgstr ""
+
+#: ../src/unit-manager.c:85
+msgid "Tonnes"
+msgstr ""
+
+#: ../src/unit-manager.c:85
+#, c-format
+msgctxt "unit-format"
+msgid "%s T"
+msgstr ""
+
+#: ../src/unit-manager.c:85
+msgctxt "unit-symbols"
+msgid "tonne,tonnes"
+msgstr ""
+
+#: ../src/unit-manager.c:86
+msgid "Kilograms"
+msgstr ""
+
+#: ../src/unit-manager.c:86
+#, c-format
+msgctxt "unit-format"
+msgid "%s kg"
+msgstr ""
+
+#: ../src/unit-manager.c:86
+msgctxt "unit-symbols"
+msgid "kilogram,kilograms,kilogramme,kilogrammes,kg,kgs"
+msgstr ""
+
+#: ../src/unit-manager.c:87
+msgid "Pounds"
+msgstr ""
+
+#: ../src/unit-manager.c:87
+#, c-format
+msgctxt "unit-format"
+msgid "%s lb"
+msgstr ""
+
+#: ../src/unit-manager.c:87
+msgctxt "unit-symbols"
+msgid "pound,pounds,lb"
+msgstr ""
+
+#: ../src/unit-manager.c:88
+msgid "Ounces"
+msgstr ""
+
+#: ../src/unit-manager.c:88
+#, c-format
+msgctxt "unit-format"
+msgid "%s oz"
+msgstr ""
+
+#: ../src/unit-manager.c:88
+msgctxt "unit-symbols"
+msgid "ounce,ounces,oz"
+msgstr ""
+
+#: ../src/unit-manager.c:89
+msgid "Grams"
+msgstr ""
+
+#: ../src/unit-manager.c:89
+#, c-format
+msgctxt "unit-format"
+msgid "%s g"
+msgstr ""
+
+#: ../src/unit-manager.c:89
+msgctxt "unit-symbols"
+msgid "gram,grams,gramme,grammes,g"
+msgstr ""
+
+#: ../src/unit-manager.c:90
+msgid "Years"
+msgstr ""
+
+#: ../src/unit-manager.c:90
+#, c-format
+msgctxt "unit-format"
+msgid "%s years"
+msgstr ""
+
+#: ../src/unit-manager.c:90
+msgctxt "unit-symbols"
+msgid "year,years"
+msgstr ""
+
+#: ../src/unit-manager.c:91
+msgid "Days"
+msgstr ""
+
+#: ../src/unit-manager.c:91
+#, c-format
+msgctxt "unit-format"
+msgid "%s days"
+msgstr ""
+
+#: ../src/unit-manager.c:91
+msgctxt "unit-symbols"
+msgid "day,days"
+msgstr ""
+
+#: ../src/unit-manager.c:92
+msgid "Hours"
+msgstr ""
+
+#: ../src/unit-manager.c:92
+#, c-format
+msgctxt "unit-format"
+msgid "%s hours"
+msgstr ""
+
+#: ../src/unit-manager.c:92
+msgctxt "unit-symbols"
+msgid "hour,hours"
+msgstr ""
+
+#: ../src/unit-manager.c:93
+msgid "Minutes"
+msgstr ""
+
+#: ../src/unit-manager.c:93
+#, c-format
+msgctxt "unit-format"
+msgid "%s minutes"
+msgstr ""
+
+#: ../src/unit-manager.c:93
+msgctxt "unit-symbols"
+msgid "minute,minutes"
+msgstr ""
+
+#: ../src/unit-manager.c:94
+msgid "Seconds"
+msgstr ""
+
+#: ../src/unit-manager.c:94
+#, c-format
+msgctxt "unit-format"
+msgid "%s s"
+msgstr ""
+
+#: ../src/unit-manager.c:94
+msgctxt "unit-symbols"
+msgid "second,seconds,s"
+msgstr ""
+
+#: ../src/unit-manager.c:95
+msgid "Milliseconds"
+msgstr ""
+
+#: ../src/unit-manager.c:95
+#, c-format
+msgctxt "unit-format"
+msgid "%s ms"
+msgstr ""
+
+#: ../src/unit-manager.c:95
+msgctxt "unit-symbols"
+msgid "millisecond,milliseconds,ms"
+msgstr ""
+
+#: ../src/unit-manager.c:96
+msgid "Microseconds"
+msgstr ""
+
+#: ../src/unit-manager.c:96
+#, c-format
+msgctxt "unit-format"
+msgid "%s μs"
+msgstr ""
+
+#: ../src/unit-manager.c:96
+msgctxt "unit-symbols"
+msgid "microsecond,microseconds,us,μs"
+msgstr ""
+
+#: ../src/unit-manager.c:97
+msgid "Celsius"
+msgstr ""
+
+#: ../src/unit-manager.c:97
+#, c-format
+msgctxt "unit-format"
+msgid "%s ˚C"
+msgstr ""
+
+#: ../src/unit-manager.c:97
+msgctxt "unit-symbols"
+msgid "degC,˚C"
+msgstr ""
+
+#: ../src/unit-manager.c:98
+msgid "Farenheit"
+msgstr ""
+
+#: ../src/unit-manager.c:98
+#, c-format
+msgctxt "unit-format"
+msgid "%s ˚F"
+msgstr ""
+
+#: ../src/unit-manager.c:98
+msgctxt "unit-symbols"
+msgid "degF,˚F"
+msgstr ""
+
+#: ../src/unit-manager.c:99
+msgid "Kelvin"
+msgstr ""
+
+#: ../src/unit-manager.c:99
+#, c-format
+msgctxt "unit-format"
+msgid "%s K"
+msgstr ""
+
+#: ../src/unit-manager.c:99
+msgctxt "unit-symbols"
+msgid "K"
+msgstr ""
+
+#: ../src/unit-manager.c:100
+msgid "Rankine"
+msgstr ""
+
+#: ../src/unit-manager.c:100
+#, c-format
+msgctxt "unit-format"
+msgid "%s ˚R"
+msgstr ""
+
+#: ../src/unit-manager.c:100
+msgctxt "unit-symbols"
+msgid "degR,˚R,˚Ra"
+msgstr ""
+
+#: ../src/unit-manager.c:109
+msgid "Angle"
+msgstr ""
+
+#: ../src/unit-manager.c:110
+msgid "Length"
+msgstr ""
+
+#: ../src/unit-manager.c:111
+msgid "Area"
+msgstr ""
+
+#: ../src/unit-manager.c:112
+msgid "Volume"
+msgstr ""
+
+#: ../src/unit-manager.c:113
+msgid "Weight"
+msgstr ""
+
+#: ../src/unit-manager.c:114
+msgid "Duration"
+msgstr ""
+
+#: ../src/unit-manager.c:115
+msgid "Temperature"
+msgstr ""
+
+#: ../src/unit-manager.c:127
+msgid "Currency"
+msgstr ""
+
+#. Translators: result of currency conversion, %s is the symbol, %%s is the
+#. placeholder for amount, i.e.: USD100
+#: ../src/unit-manager.c:137
+#, c-format
+msgid "%s%%s"
+msgstr ""

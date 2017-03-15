@@ -5,23 +5,23 @@
 # Translators:
 # Copyright (C) Free Software Foundation, 2003
 # Fotis Tsamis <ftsamis@gmail.com>, 2010
-# frerisp <petrosfreris@gmail.com>, 2013
-# ioza1964 <ioza1964@yahoo.gr>, 2012
-# ioza1964 <ioza1964@yahoo.gr>, 2012
+# Petros Freris (Πέτρος Φρέρης) <petrosfreris@gmail.com>, 2013
+# ioza1964, 2012
+# ioza1964, 2012
 # Jennie Petoumenou <epetoumenou@gmail.com>, 2009-2010
 # Kostas Papadimas <pkst@gnome.org>, 2003-2004,2006,2008
 # Michael Kotsarinis <mk73628@gmail.com>, 2011
 # Nikos Charonitakis <frolix68@yahoo.gr>, 2003
-# frerisp <petrosfreris@gmail.com>, 2013
+# Petros Freris (Πέτρος Φρέρης) <petrosfreris@gmail.com>, 2013
 # Simos Xenitellis <simos@gnome.org>, 2010
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2013-03-24 20:10+0100\n"
-"PO-Revision-Date: 2013-05-12 09:03+0000\n"
-"Last-Translator: frerisp <petrosfreris@gmail.com>\n"
-"Language-Team: Greek (http://www.transifex.com/projects/p/MATE/language/el/)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-15 14:46+0300\n"
+"PO-Revision-Date: 2017-03-15 11:48+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Greek (http://www.transifex.com/mate/MATE/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -167,12 +167,12 @@ msgstr "Υπολογίζει την απόσβεση ενός στοιχείου
 msgid "C_ost:"
 msgstr "_Κόστος:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:20
 msgid "_Life:"
 msgstr "_Ζωή:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:22
 msgid "_Period:"
 msgstr "Πε_ρίοδος:"
@@ -274,12 +274,12 @@ msgstr "Υπολογίζει το περιοδικό επιτόκιο που α�
 msgid "Straight-Line Depreciation"
 msgstr "Σταθερή απόσβεση"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:56
 msgid "_Cost:"
 msgstr "_Κόστος:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:58
 msgid "_Salvage:"
 msgstr "_Υπολειμματική αξία:"
@@ -293,12 +293,12 @@ msgid ""
 "typically years, over which an asset is depreciated. "
 msgstr "Υπολογίζει τη σταθερή απόσβεση ενός στοιχείου ενεργητικού για συγκεκριμένη περίοδο. Στη σταθερή μέθοδο απόσβεσης, η αποσβεστέα αξία διαιρείται δια της ωφέλιμης ζωής του στοιχείου ενεργητικού. Η ωφέλιμη ζωή είναι ο αριθμός των περιόδων, συνήθως ετών, κατά τη διάρκεια των οποίων συντελείται η απόσβεση."
 
-#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "Απόσβεση με συντελεστή τα έτη ζωής"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
@@ -358,12 +358,7 @@ msgid "Term"
 msgstr "Term"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. time, using the Sum-Of-The-Years
 #: ../data/buttons-financial.ui.h:87
 msgid "Syd"
 msgstr "Syd"
@@ -424,14 +419,12 @@ msgid "Ch_aracter:"
 msgstr "Χα_ρακτήρας:"
 
 #. Accessible name for the shift left button
-#. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
+#: ../data/buttons-programming.ui.h:23
 msgid "Shift Left"
 msgstr "Μετατόπιση αριστερά"
 
 #. Accessible name for the shift right button
-#. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
+#: ../data/buttons-programming.ui.h:25
 msgid "Shift Right"
 msgstr "Μετατόπιση δεξιά"
 
@@ -490,116 +483,31 @@ msgstr "Εμφάνιση _μηδενικών στο τέλος"
 msgid "Show _thousands separators"
 msgstr "Εμφάνιση διαχωριστικού _χιλιάδων"
 
+#: ../data/mate-calc.appdata.xml.in.h:1
+msgid "MATE Desktop calculator"
+msgstr ""
+
+#: ../data/mate-calc.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Calc is a powerful graphical calculator with financial, logical and"
+" scientific modes. It uses a multiple precision package to do its arithmetic"
+" to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
+"Calc and part of the MATE Desktop Environment. If you would like to know "
+"more about MATE and MATE Calc, please visit the project's home page. </p>"
+msgstr ""
+
 #: ../data/mate-calc.desktop.in.h:1
 msgid "MATE Calculator"
 msgstr "Αριθμομηχανή MATE"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
 msgid "Calculator"
 msgstr "Αριθμομηχανή"
 
 #: ../data/mate-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Εκτελεί αριθμητικούς, επιστημονικούς ή εμπορικούς υπολογισμούς"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:1
-msgid "Accuracy value"
-msgstr "Τιμή ακρίβειας"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:2
-msgid "The number of digits displayed after the numeric point"
-msgstr "Ο αριθμός των ψηφίων που εμφανίζονται μετά την υποδιαστολή"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:3
-msgid "Word size"
-msgstr "Μήκος λέξης"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:4
-msgid "The size of the words used in bitwise operations"
-msgstr "Το μέγεθος των λέξεων που χρησιμοποιούνται στους υπολογισμούς κατά bit"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:5
-msgid "Numeric Base"
-msgstr "Αριθμητική βάση"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:6
-msgid "The numeric base"
-msgstr "Η αριθμητική βάση"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:7
-msgid "Show Thousands Separators"
-msgstr "Εμφάνιση διαχωριστικού χιλιάδων"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:8
-msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr "Καθορίζει το αν θα εμφανίζεται το διαχωριστικό χιλιάδων στους μεγάλους αριθμούς."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:9
-msgid "Show Trailing Zeroes"
-msgstr "Εμφάνιση μηδενικών στο τέλος"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:10
-msgid ""
-"Indicates whether any trailing zeroes after the numeric point should be "
-"shown in the display value."
-msgstr "Καθορίζει το αν θα εμφανίζονται στην οθόνη μηδενικά στο τέλος του κλασματικού μέρους των δεκαδικών αριθμών."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:11
-msgid "Number format"
-msgstr "Μορφή αριθμών"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:12
-msgid "The format to display numbers in"
-msgstr "Η μορφή στην οποία θα εμφανίζονται οι αριθμοί"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:13
-msgid "Angle units"
-msgstr "Μονάδες γωνιών"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:14
-msgid "The angle units to use"
-msgstr "Οι μονάδες γωνιών που θα χρησιμοποιούνται"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:15
-msgid "Button mode"
-msgstr "Λειτουργία με κουμπιά"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:16
-msgid "The button mode"
-msgstr "Η κατάσταση λειτουργίας με κουμπιά"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:17
-msgid "Source currency"
-msgstr "Νόμισμα πηγής"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:18
-msgid "Currency of the current calculation"
-msgstr "Νόμισμα του τρέχοντος υπολογισμού"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:19
-msgid "Target currency"
-msgstr "Νόμισμα προορισμού"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:20
-msgid "Currency to convert the current calculation into"
-msgstr "Νόμισμα στο οποίο θα μετατραπεί ο τρέχων υπολογισμός"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:21
-msgid "Source units"
-msgstr "Μονάδες προέλευσης"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:22
-msgid "Units of the current calculation"
-msgstr "Μονάδες του τρέχοντος υπολογισμού"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:23
-msgid "Target units"
-msgstr "Μονάδες προορισμού"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:24
-msgid "Units to convert the current calculation into"
-msgstr "Μονάδες στις οποίες θα μετατραπεί ο τρέχων υπολογισμός"
 
 #: ../src/currency-manager.c:30
 msgid "UAE Dirham"
@@ -1144,6 +1052,16 @@ msgstr "Εκκαθάριση οθόνης [Escape]"
 msgid "Undo [Ctrl+Z]"
 msgstr "Αναίρεση [Ctrl+Z]"
 
+#. Tooltip for the shift left button
+#: ../src/math-buttons.c:250
+msgid "Shift Left [<<]"
+msgstr ""
+
+#. Tooltip for the shift right button
+#: ../src/math-buttons.c:253
+msgid "Shift Right [>>]"
+msgstr ""
+
 #. Tooltip for the double declining depreciation button
 #: ../src/math-buttons.c:259
 msgid "Double Declining Depreciation"
@@ -1224,12 +1142,12 @@ msgstr "Πρόσημο"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: ../src/math-converter.c:412
+#: ../src/math-converter.c:414
 msgid " in "
 msgstr " σε "
 
 #. Tooltip for swap conversion button
-#: ../src/math-converter.c:427
+#: ../src/math-converter.c:429
 msgid "Switch conversion units"
 msgstr "Αλλαγή μονάδων μετατροπής"
 
@@ -1287,23 +1205,23 @@ msgid "Calculating"
 msgstr "Υπολογισμός"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1394
+#: ../src/math-equation.c:1390
 msgid "Need an integer to factorize"
 msgstr "Απαιτείται ακέραιος για την παραγοντοποίηση"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1470
+#: ../src/math-equation.c:1462
 msgid "No sane value to bitwise shift"
 msgstr "Δε δόθηκε θεμιτή τιμή για τη μετατόπιση κατά bit."
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1501
+#: ../src/math-equation.c:1493
 msgid "Displayed value not an integer"
 msgstr "Η εμφανιζόμενη τιμή δεν είναι ακέραια"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1926
+#: ../src/math-equation.c:1918
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1360,17 +1278,17 @@ msgid "Show %d decimal _places"
 msgstr "Εμφάνιση %d δεκαδικών _ψηφίων"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:198
+#: ../src/math-window.c:211
 msgid "Unable to open help file"
 msgstr "Αδύνατο το άνοιγμα του αρχείου βοήθειας"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:225
+#: ../src/math-window.c:238
 msgid "translator-credits"
 msgstr "Κώστας Παπαδήμας <pkst@gnome.org>\nΤζένη Πετούμενου <epetoumenou@gmail.com>\nΦώτης Τσάμης <ftsamis@gmail.com>\nΜιχάλης Κοτσαρίνης <mk73628@gmail.com>"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:232
+#: ../src/math-window.c:245
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1387,51 +1305,51 @@ msgid ""
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr "Το mate-calc είναι ελεύθερο λογισμικό. Επιτρέπεται η αναδιανομή ή/και \nτροποποίησή του υπό τους όρους της Γενικής Άδειας Δημόσιας Χρήσης \nGNU GPL, όπως αυτή έχει δημοσιευτεί από το Ίδρυμα Ελεύθερου \nΛογισμικού — είτε της έκδοσης 2 της Άδειας, είτε (κατ' επιλογήν \nσας) οποιασδήποτε μεταγενέστερης έκδοσης. \n\nΤο mate-calc διανέμεται με την ελπίδα ότι θα αποδειχθεί χρήσιμο, \nπαρόλα αυτά ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ — χωρίς ούτε και την σιωπηρή \nεγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΕΙΔΙΚΟ ΣΚΟΠΟ. \nΓια περισσότερες λεπτομέρειες ανατρέξτε στη Γενική Άδεια Δημόσιας \nΧρήσης GNU.\n\nΘα πρέπει να έχετε λάβει ένα αντίγραφο της Γενικής Άδειας Δημόσιας \nΧρήσης GNU μαζί με το Gcalctool. Αν όχι, γράψτε στο Free Software \nFoundation, Inc., 151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, \nUSA"
 
-#: ../src/math-window.c:247
+#: ../src/math-window.c:260
 msgid "mate-calc"
 msgstr "mate-calc"
 
-#: ../src/math-window.c:251
+#: ../src/math-window.c:264
 msgid "Calculator with financial and scientific modes."
 msgstr "Αριθμομηχανή με εμπορικές και επιστημονικές λειτουργίες."
 
 #. Calculator menu
-#: ../src/math-window.c:354
+#: ../src/math-window.c:367
 msgid "_Calculator"
 msgstr "Αρ_ιθμομηχανή"
 
 #. Mode menu
-#: ../src/math-window.c:356
+#: ../src/math-window.c:369
 msgid "_Mode"
 msgstr "_Λειτουργία"
 
 #. Help menu label
-#: ../src/math-window.c:358
+#: ../src/math-window.c:371
 msgid "_Help"
 msgstr "Βοή_θεια"
 
 #. Basic menu label
-#: ../src/math-window.c:360
+#: ../src/math-window.c:373
 msgid "_Basic"
 msgstr "_Βασική"
 
 #. Advanced menu label
-#: ../src/math-window.c:362
+#: ../src/math-window.c:375
 msgid "_Advanced"
 msgstr "Π_ροχωρημένη"
 
 #. Financial menu label
-#: ../src/math-window.c:364
+#: ../src/math-window.c:377
 msgid "_Financial"
 msgstr "Ε_μπορική"
 
 #. Programming menu label
-#: ../src/math-window.c:366
+#: ../src/math-window.c:379
 msgid "_Programming"
 msgstr "_Προγραμματιστική"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:368
+#: ../src/math-window.c:381
 msgid "_Contents"
 msgstr "_Περιεχόμενα"
 

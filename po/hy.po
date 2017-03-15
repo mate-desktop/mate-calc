@@ -3,16 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Davit <davidmayilyan@gmail.com>, 2010.
-# Narine <training@instigate.am>, 2010.
+# Davit <davidmayilyan@gmail.com>, 2010
+# Narine <training@instigate.am>, 2010
+# Siranush <ss.m.95@mail.ru>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2013-03-24 20:10+0100\n"
-"PO-Revision-Date: 2013-03-24 19:20+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-15 14:46+0300\n"
+"PO-Revision-Date: 2017-03-15 11:48+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Armenian (http://www.transifex.com/mate/MATE/language/hy/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,7 +23,7 @@ msgstr ""
 #. Accessible name for the factorize button
 #: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:8
 msgid "Factorize"
-msgstr ""
+msgstr "ֆակտորիզացնել"
 
 #. Label on the solve button (clicking this solves the displayed calculation)
 #: ../data/buttons-advanced.ui.h:4 ../data/buttons-basic.ui.h:2
@@ -56,19 +57,19 @@ msgstr "Գիտական մեկնաբան"
 #: ../data/buttons-advanced.ui.h:13 ../data/buttons-financial.ui.h:72
 #: ../src/math-buttons.c:232
 msgid "Memory"
-msgstr ""
+msgstr "Հիշողություն"
 
 #. The label on the memory button
 #: ../data/buttons-advanced.ui.h:15 ../data/buttons-financial.ui.h:74
 #: ../data/buttons-programming.ui.h:21
 msgid "x"
-msgstr ""
+msgstr "x"
 
 #. Accessible name for the exponentiation (x to the power of y) button
 #: ../data/buttons-advanced.ui.h:17 ../data/buttons-basic.ui.h:5
 #: ../data/buttons-financial.ui.h:100 ../data/buttons-programming.ui.h:33
 msgid "Exponent"
-msgstr ""
+msgstr "էքսպոնենտ"
 
 #: ../data/buttons-advanced.ui.h:18 ../data/buttons-basic.ui.h:6
 #: ../data/buttons-financial.ui.h:98
@@ -77,15 +78,15 @@ msgstr "Ետարկել"
 
 #: ../data/buttons-advanced.ui.h:19
 msgid "acos"
-msgstr ""
+msgstr "acos"
 
 #: ../data/buttons-advanced.ui.h:20
 msgid "asin"
-msgstr ""
+msgstr "asin"
 
 #: ../data/buttons-advanced.ui.h:21
 msgid "atan"
-msgstr ""
+msgstr "atan"
 
 #. Accessible name for the store value button
 #: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:19
@@ -111,7 +112,7 @@ msgstr "Բացարձակ Արժեք"
 #. Tooltip for the compounding term button
 #: ../data/buttons-financial.ui.h:2 ../src/math-buttons.c:256
 msgid "Compounding Term"
-msgstr ""
+msgstr "Բաղադրման ժամկետ"
 
 #. Payment Period Dialog: Button to calculate result
 #: ../data/buttons-financial.ui.h:4
@@ -134,7 +135,7 @@ msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr ""
+msgstr "Հաշվարկման թվերի բաղադրման ժամանակաշրջանները անհրաժեշտ է մեծացնել ներդրումային ներկա արժեքից ապագա արժեքի ֆիքսված տոկոսադրուքով մեկ շրջանի ժամանակահատվածում։"
 
 #. Periodic Interest Rate Dialog: Label before future value input
 #: ../data/buttons-financial.ui.h:12
@@ -144,26 +145,26 @@ msgstr "_Ապագա Արժեք."
 #. Title of Double-Declining Depreciation dialog
 #: ../data/buttons-financial.ui.h:14
 msgid "Double-Declining Depreciation"
-msgstr ""
+msgstr "Կրկնակի-Նվազող արժեզրկում"
 
 #. Double-Declining Depreciation Dialog: Description of calculation
 #: ../data/buttons-financial.ui.h:16
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
-msgstr ""
+msgstr "Ամորտիզացիոն մասհանումները հաշվարկել ակտիվի համար սահմանված ժամկետում, օգտագործելով կրկնակի նվազող մնացորդի մեթոդը։"
 
 #. Gross Profit Margin Dialog: Label before cost input
 #: ../data/buttons-financial.ui.h:18
 msgid "C_ost:"
 msgstr "Ա_րժեք"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:20
 msgid "_Life:"
-msgstr ""
+msgstr "_Կյանք։"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:22
 msgid "_Period:"
 msgstr "_ժամանակահատված."
@@ -180,7 +181,7 @@ msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
-msgstr ""
+msgstr "Հաշվարկել ներդրումների ապագա արժեքը, որը հիմնված է մի շարք հավասար վճարումների վրա պարբերական տոկոսադրույքով մի շարք վճարային ժամանակաշրջանների ժամկետով։"
 
 #. Payment Period Dialog: Label before periodic payment input
 #: ../data/buttons-financial.ui.h:28
@@ -190,20 +191,20 @@ msgstr "_Պարբերական Վճարում."
 #. Present Value Dialog: Label before number of periods input
 #: ../data/buttons-financial.ui.h:30
 msgid "_Number of Periods:"
-msgstr ""
+msgstr "Ժամանակաշրջանների քանակը"
 
 #. Title of Gross Profit Margin dialog
 #. Tooltip for the gross profit margin button
 #: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:283
 msgid "Gross Profit Margin"
-msgstr ""
+msgstr "Համախառն շահույթի մարժան"
 
 #. Gross Profit Margin Dialog: Description of calculation
 #: ../data/buttons-financial.ui.h:34
 msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
-msgstr ""
+msgstr "Հաշվարկել ապրանքի վաճառքի գինը արտադրանքի արժեքի և համախառն շահույթի հիման վրա։"
 
 #. Gross Profit Margin Dialog: Label before margin input
 #: ../data/buttons-financial.ui.h:36
@@ -226,12 +227,12 @@ msgstr "Հաշվում է պարբերական մուծումների այն ք�
 #. Periodic Payment Dialog: Label before principal input
 #: ../data/buttons-financial.ui.h:42
 msgid "_Principal:"
-msgstr ""
+msgstr "_Սկզբունքային:"
 
 #. Periodic Interest Rate Dialog: Label before term input
 #: ../data/buttons-financial.ui.h:44
 msgid "_Term:"
-msgstr ""
+msgstr "_Տերմին:"
 
 #. Title of Present Value dialog
 #. Tooltip for the present value button
@@ -245,7 +246,7 @@ msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr ""
+msgstr "Հաշվարկել ներդրումների ներկայիս արժեքը հիմնված մի շարք վճարումների զեղչերի վրա պարբերական տոկոսադրույքով մի շարք վճարային ժամանակաշրջանների ժամկետով։"
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
@@ -258,22 +259,22 @@ msgstr "Պարբերական Տոկոսադրույք"
 msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
-msgstr ""
+msgstr "Հաշվել պարբերական տոկոսները անհրաժեշտության դեպքում ներդրումների ապագա արժեքը բարդ ժամանակահատվածների թվթվ։"
 
 #. Title of Straight-Line Depreciation dialog
 #: ../data/buttons-financial.ui.h:54
 msgid "Straight-Line Depreciation"
-msgstr ""
+msgstr "ՈՒղիղ֊Գծով Արժեզրկում"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:56
 msgid "_Cost:"
 msgstr "_Արժեք."
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:58
 msgid "_Salvage:"
-msgstr ""
+msgstr "_Գույքափրկում։"
 
 #. Straight-Line Depreciation Dialog: Description of calculation
 #: ../data/buttons-financial.ui.h:60
@@ -282,14 +283,14 @@ msgid ""
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr ""
+msgstr "Հաշվել ակտիվի ուղիղ գծի արժեզրկումը մեկ պարբերության համար։ ՈՒղիղ գծի մեթոդը մաշվածությունը բաժանում է ամորտիզացվող ծախսերը հավասարաչափ ակտիվի օգտակար կյանքի։"
 
-#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
 msgid "Sum-of-the-Years'-Digits Depreciation"
-msgstr ""
+msgstr "Գումարել-Տարվա-Թվանշանների Ամորտիզացիան"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
@@ -297,7 +298,7 @@ msgid ""
 " accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
-msgstr ""
+msgstr "Հաշվել ամորտիզացիոն մասհանումները ակտիվի վրա սահմանված ժամկետի համար, օգտագործելով  Sum-of-the-Years'- մեթոդը։ \nԱմորտիզացիայի այս մեթոդն արագացնում է գնազրկման արագությունը այնպես, որ ավելի մաշվածություն ծախսը տեղի է ունենում ավելի վաղ ժամանակաշրջաններում քան ավելի ուշ։ Օգտակար կյանքը հանդիսանում է ժամանակաշրջանների քանակը, բնորոշիչ տարիները, որի շուրջ ակտիվը արժեզրկվել է:"
 
 #. Title of Payment Period dialog
 #: ../data/buttons-financial.ui.h:66
@@ -315,7 +316,7 @@ msgid ""
 "Calculates the number of payment periods that are necessary during the term "
 "of an ordinary annuity, to accumulate a future value, at a periodic interest"
 " rate."
-msgstr ""
+msgstr "Հաշվարկել վճարային ժամանակաշրջանների քանակը, որը անհրաժեշտ է հասարակ տարեվճարների ժամկետի ընթացքում, կուտակել ապագա արժեքը մի պարբերական տոկոսադրույքով։"
 
 #. Calculates the number of compounding periods necessary to increase an
 #. investment of present value pv to a future value of fv, at a fixed interest
@@ -323,14 +324,14 @@ msgstr ""
 #. http://en.wikipedia.org/wiki/Compound_interest
 #: ../data/buttons-financial.ui.h:79
 msgid "Ctrm"
-msgstr ""
+msgstr "Ctrm"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
 #. time, using the double-declining balance method. See also:
 #. http://en.wikipedia.org/wiki/Depreciation
 #: ../data/buttons-financial.ui.h:81
 msgid "Ddb"
-msgstr ""
+msgstr "Ddb"
 
 #. Calculates the future value of an investment based on a series of equal
 #. payments, each of amount pmt, at a periodic interest rate of int, over the
@@ -346,18 +347,13 @@ msgstr "Աա"
 #. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
 #: ../data/buttons-financial.ui.h:85
 msgid "Term"
-msgstr ""
+msgstr "Տերմին"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. time, using the Sum-Of-The-Years
 #: ../data/buttons-financial.ui.h:87
 msgid "Syd"
-msgstr ""
+msgstr "Syd"
 
 #. Calculates the straight-line depreciation of an asset for one period. The
 #. depreciable cost is cost - salvage. The straight-line method of
@@ -367,14 +363,14 @@ msgstr ""
 #. http://en.wikipedia.org/wiki/Depreciation
 #: ../data/buttons-financial.ui.h:89
 msgid "Sln"
-msgstr ""
+msgstr "Sln"
 
 #. Calculates the periodic interest necessary to increase an investment of
 #. present value pv to a future value of fv, over the number of compounding
 #. periods in term. See also: http://en.wikipedia.org/wiki/Interest
 #: ../data/buttons-financial.ui.h:91
 msgid "Rate"
-msgstr ""
+msgstr "Գնահատեք"
 
 #. Calculates the present value of an investment based on a series of equal
 #. payments, each of amount pmt, discounted at a periodic interest rate of
@@ -382,14 +378,14 @@ msgstr ""
 #. http://en.wikipedia.org/wiki/Present_value
 #: ../data/buttons-financial.ui.h:93
 msgid "Pv"
-msgstr ""
+msgstr "Pv"
 
 #. Calculates the amount of the periodic payment of a loan, where payments are
 #. made at the end of each payment period. See also:
 #. http://en.wikipedia.org/wiki/Amortization_schedule
 #: ../data/buttons-financial.ui.h:95
 msgid "Pmt"
-msgstr ""
+msgstr "Pmt"
 
 #. Calculates the resale price of a product, based on the product cost and the
 #. wanted gross profit margin. See also:
@@ -402,7 +398,7 @@ msgstr "Հշգ"
 #. Tooltip for the insert character code button
 #: ../data/buttons-programming.ui.h:2 ../src/math-buttons.c:235
 msgid "Insert Character Code"
-msgstr ""
+msgstr "Մուտքագրել սիմվոլային ծածկագիրը"
 
 #. Insert ASCII dialog: Button to insert selected character
 #: ../data/buttons-programming.ui.h:4
@@ -415,16 +411,14 @@ msgid "Ch_aracter:"
 msgstr "Ն_իշ"
 
 #. Accessible name for the shift left button
-#. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
+#: ../data/buttons-programming.ui.h:23
 msgid "Shift Left"
-msgstr ""
+msgstr "Տեղաշարժ Ձախ"
 
 #. Accessible name for the shift right button
-#. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
+#: ../data/buttons-programming.ui.h:25
 msgid "Shift Right"
-msgstr ""
+msgstr "Տեղաշարժ Աջ"
 
 #. Accessible name for the insert character button
 #: ../data/buttons-programming.ui.h:27
@@ -434,7 +428,7 @@ msgstr "Ներմուծել Սիմվոլ"
 #. Word size combo: 8 bits
 #: ../data/preferences.ui.h:2
 msgid "8-bit"
-msgstr ""
+msgstr "8-բիտ"
 
 #. Word size combo: 16 bits
 #: ../data/preferences.ui.h:4
@@ -454,17 +448,17 @@ msgstr "64-բիտ"
 #. Title of preferences dialog
 #: ../data/preferences.ui.h:9 ../src/math-preferences.c:238
 msgid "Preferences"
-msgstr ""
+msgstr "Հատկություններ"
 
 #. Preferences dialog: Label for angle unit combo box
 #: ../data/preferences.ui.h:11
 msgid "_Angle units:"
-msgstr ""
+msgstr "_Անկյան միավոր․"
 
 #. Preferences dialog: Label for display format combo box
 #: ../data/preferences.ui.h:13
 msgid "Number _Format:"
-msgstr ""
+msgstr "Համարակալման _Ձևաչափ։"
 
 #. Preferences dialog: label for word size combo box
 #: ../data/preferences.ui.h:15
@@ -481,12 +475,25 @@ msgstr "Ցույց տալ աջից _զրոները"
 msgid "Show _thousands separators"
 msgstr "Ցույց տալ _հազարների բաժանիչը"
 
-#: ../data/mate-calc.desktop.in.h:1
-msgid "MATE Calculator"
+#: ../data/mate-calc.appdata.xml.in.h:1
+msgid "MATE Desktop calculator"
 msgstr ""
 
+#: ../data/mate-calc.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Calc is a powerful graphical calculator with financial, logical and"
+" scientific modes. It uses a multiple precision package to do its arithmetic"
+" to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
+"Calc and part of the MATE Desktop Environment. If you would like to know "
+"more about MATE and MATE Calc, please visit the project's home page. </p>"
+msgstr ""
+
+#: ../data/mate-calc.desktop.in.h:1
+msgid "MATE Calculator"
+msgstr "MATE Հաշվիչ"
+
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
 msgid "Calculator"
 msgstr "Հաշվիչ"
 
@@ -494,347 +501,249 @@ msgstr "Հաշվիչ"
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Կատարել թվաբանական, գիտական կամ ֆինանսական հաշվարկներ"
 
-#: ../data/org.mate.calc.gschema.xml.in.h:1
-msgid "Accuracy value"
-msgstr "Ճշտության արժեքը"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:2
-msgid "The number of digits displayed after the numeric point"
-msgstr "Ստորակետից հետո ցույց տրվող թվերի քանակը"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:3
-msgid "Word size"
-msgstr "Բառի չափս"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:4
-msgid "The size of the words used in bitwise operations"
-msgstr "Բիտ-առ-բիտ գործողությունների բառերի չափսը64։"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:5
-msgid "Numeric Base"
-msgstr "Թվային Հիմք"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:6
-msgid "The numeric base"
-msgstr "Թվային Հիմք"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:7
-msgid "Show Thousands Separators"
-msgstr "Ցույց տալ Հազար Բաժանիչներ"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:8
-msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr "Ցույց է տալիս հազարների տարանջատիչները ցույց են տրվում մեծ թվերում, թե ոչ"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:9
-msgid "Show Trailing Zeroes"
-msgstr "Ցույց տալ Աջից Զրոները"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:10
-msgid ""
-"Indicates whether any trailing zeroes after the numeric point should be "
-"shown in the display value."
-msgstr "Ցույց է տալիս արդյոք տասնորդական կետից հետո զրոներ ցույց տալ, թե ոչ"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:11
-msgid "Number format"
-msgstr "Տասնորդական ֆորմատ"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:12
-msgid "The format to display numbers in"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:13
-msgid "Angle units"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:14
-msgid "The angle units to use"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:15
-msgid "Button mode"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:16
-msgid "The button mode"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:17
-msgid "Source currency"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:18
-msgid "Currency of the current calculation"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:19
-msgid "Target currency"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:20
-msgid "Currency to convert the current calculation into"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:21
-msgid "Source units"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:22
-msgid "Units of the current calculation"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:23
-msgid "Target units"
-msgstr ""
-
-#: ../data/org.mate.calc.gschema.xml.in.h:24
-msgid "Units to convert the current calculation into"
-msgstr ""
-
 #: ../src/currency-manager.c:30
 msgid "UAE Dirham"
-msgstr ""
+msgstr "ԱՄԷ Դիրհամ"
 
 #: ../src/currency-manager.c:31
 msgid "Australian Dollar"
-msgstr ""
+msgstr "Ավստրալիական Դոլար"
 
 #: ../src/currency-manager.c:32
 msgid "Bulgarian Lev"
-msgstr ""
+msgstr "Բուլղարական Լեվ"
 
 #: ../src/currency-manager.c:33
 msgid "Bahraini Dinar"
-msgstr ""
+msgstr "Բահրեյնյան Դինար"
 
 #: ../src/currency-manager.c:34
 msgid "Brunei Dollar"
-msgstr ""
+msgstr "Բրունեյի Դոլար"
 
 #: ../src/currency-manager.c:35
 msgid "Brazilian Real"
-msgstr ""
+msgstr "Բրազիլիական Ռեալ"
 
 #: ../src/currency-manager.c:36
 msgid "Botswana Pula"
-msgstr ""
+msgstr "Բոթսվանայի Պուլա"
 
 #: ../src/currency-manager.c:37
 msgid "Canadian Dollar"
-msgstr ""
+msgstr "Կանադական Դոլար"
 
 #: ../src/currency-manager.c:38
 msgid "CFA Franc"
-msgstr ""
+msgstr " CFA ֆրանկ"
 
 #: ../src/currency-manager.c:39
 msgid "Swiss Franc"
-msgstr ""
+msgstr "Շվեյցարական ֆրանկ"
 
 #: ../src/currency-manager.c:40
 msgid "Chilean Peso"
-msgstr ""
+msgstr "Չիլիի Պեսո"
 
 #: ../src/currency-manager.c:41
 msgid "Chinese Yuan"
-msgstr ""
+msgstr "Չինական Յուան"
 
 #: ../src/currency-manager.c:42
 msgid "Colombian Peso"
-msgstr ""
+msgstr "Կոլումբիական Պեսո"
 
 #: ../src/currency-manager.c:43
 msgid "Czech Koruna"
-msgstr ""
+msgstr "Չեխիայի Կրոն"
 
 #: ../src/currency-manager.c:44
 msgid "Danish Krone"
-msgstr ""
+msgstr "Դանիական Կրոնա"
 
 #: ../src/currency-manager.c:45
 msgid "Algerian Dinar"
-msgstr ""
+msgstr "Ալժիրյան Դինար"
 
 #: ../src/currency-manager.c:46
 msgid "Estonian Kroon"
-msgstr ""
+msgstr "Էստոնական Կրուն"
 
 #: ../src/currency-manager.c:47
 msgid "Euro"
-msgstr ""
+msgstr "Եվրո"
 
 #: ../src/currency-manager.c:48
 msgid "Pound Sterling"
-msgstr ""
+msgstr "ֆունտ ստեռլինգ"
 
 #: ../src/currency-manager.c:49
 msgid "Hong Kong Dollar"
-msgstr ""
+msgstr "Հոնգ Կոնգի Դոլար"
 
 #: ../src/currency-manager.c:50
 msgid "Croatian Kuna"
-msgstr ""
+msgstr "Խորվաթական Կունա"
 
 #: ../src/currency-manager.c:51
 msgid "Hungarian Forint"
-msgstr ""
+msgstr "Հունգարական ֆորինտ"
 
 #: ../src/currency-manager.c:52
 msgid "Indonesian Rupiah"
-msgstr ""
+msgstr "Ինդոնեզական Ռուպի"
 
 #: ../src/currency-manager.c:53
 msgid "Israeli New Shekel"
-msgstr ""
+msgstr "Իսրայելական Նոր Շեքել"
 
 #: ../src/currency-manager.c:54
 msgid "Indian Rupee"
-msgstr ""
+msgstr "Հնդկական Ռուփի"
 
 #: ../src/currency-manager.c:55
 msgid "Iranian Rial"
-msgstr ""
+msgstr "Իրանական Ռիալ"
 
 #: ../src/currency-manager.c:56
 msgid "Icelandic Krona"
-msgstr ""
+msgstr "Իսլանդական Կրոնա"
 
 #: ../src/currency-manager.c:57
 msgid "Japanese Yen"
-msgstr ""
+msgstr "Ճապոնական Յեն"
 
 #: ../src/currency-manager.c:58
 msgid "South Korean Won"
-msgstr ""
+msgstr "Հարավային Կորեայի Won"
 
 #: ../src/currency-manager.c:59
 msgid "Kuwaiti Dinar"
-msgstr ""
+msgstr "Քուվեյթի Դինար"
 
 #: ../src/currency-manager.c:60
 msgid "Kazakhstani Tenge"
-msgstr ""
+msgstr "Ղազախստանի Տանգե"
 
 #: ../src/currency-manager.c:61
 msgid "Sri Lankan Rupee"
-msgstr ""
+msgstr "Շրի Լանկայի Ռուփի"
 
 #: ../src/currency-manager.c:62
 msgid "Lithuanian Litas"
-msgstr ""
+msgstr "Լիտվիական Լիտա"
 
 #: ../src/currency-manager.c:63
 msgid "Latvian Lats"
-msgstr ""
+msgstr "Լատվիական Լատ"
 
 #: ../src/currency-manager.c:64
 msgid "Libyan Dinar"
-msgstr ""
+msgstr "Լիբիական Դինար"
 
 #: ../src/currency-manager.c:65
 msgid "Mauritian Rupee"
-msgstr ""
+msgstr "Մավրիկիական Ռուփի"
 
 #: ../src/currency-manager.c:66
 msgid "Mexican Peso"
-msgstr ""
+msgstr "Մեքսիկական Պեսո"
 
 #: ../src/currency-manager.c:67
 msgid "Malaysian Ringgit"
-msgstr ""
+msgstr "Մալազիական Ռինգիտ"
 
 #: ../src/currency-manager.c:68
 msgid "Norwegian Krone"
-msgstr ""
+msgstr "Նորվեգիական Կրոնա"
 
 #: ../src/currency-manager.c:69
 msgid "Nepalese Rupee"
-msgstr ""
+msgstr "Նեպալական Ռուփի"
 
 #: ../src/currency-manager.c:70
 msgid "New Zealand Dollar"
-msgstr ""
+msgstr "Նոր Զելանդիական Դոլար"
 
 #: ../src/currency-manager.c:71
 msgid "Omani Rial"
-msgstr ""
+msgstr "Օմանի Ռիալ"
 
 #: ../src/currency-manager.c:72
 msgid "Peruvian Nuevo Sol"
-msgstr ""
+msgstr "Պերուական Նուեվո Սոլ"
 
 #: ../src/currency-manager.c:73
 msgid "Philippine Peso"
-msgstr ""
+msgstr "Ֆիլիպինյան Պեսո"
 
 #: ../src/currency-manager.c:74
 msgid "Pakistani Rupee"
-msgstr ""
+msgstr "Պակիստանական ռուփի"
 
 #: ../src/currency-manager.c:75
 msgid "Polish Zloty"
-msgstr ""
+msgstr "Լեհական Զլոտի"
 
 #: ../src/currency-manager.c:76
 msgid "Qatari Riyal"
-msgstr ""
+msgstr "Qatari Riyal"
 
 #: ../src/currency-manager.c:77
 msgid "New Romanian Leu"
-msgstr ""
+msgstr "Նոր ռումինական Լեու"
 
 #: ../src/currency-manager.c:78
 msgid "Russian Rouble"
-msgstr ""
+msgstr "Ռուսական Ռուբլի"
 
 #: ../src/currency-manager.c:79
 msgid "Saudi Riyal"
-msgstr ""
+msgstr "Սաուդյան Ռիալ"
 
 #: ../src/currency-manager.c:80
 msgid "Swedish Krona"
-msgstr ""
+msgstr "Շվեդիական Կրոնա"
 
 #: ../src/currency-manager.c:81
 msgid "Singapore Dollar"
-msgstr ""
+msgstr "Սինգապուրի Դոլար"
 
 #: ../src/currency-manager.c:82
 msgid "Thai Baht"
-msgstr ""
+msgstr "Թայլանդական Բաթ"
 
 #: ../src/currency-manager.c:83
 msgid "Tunisian Dinar"
-msgstr ""
+msgstr "Թունիսի Դինար"
 
 #: ../src/currency-manager.c:84
 msgid "New Turkish Lira"
-msgstr ""
+msgstr "Նոր Թուրքական Լիրա"
 
 #: ../src/currency-manager.c:85
 msgid "T&T Dollar (TTD)"
-msgstr ""
+msgstr "T&T Դոլար (TTD)"
 
 #: ../src/currency-manager.c:86
 msgid "US Dollar"
-msgstr ""
+msgstr "ԱՄՆ Դոլար"
 
 #: ../src/currency-manager.c:87
 msgid "Uruguayan Peso"
-msgstr ""
+msgstr "Ուրուգվական Պեսո"
 
 #: ../src/currency-manager.c:88
 msgid "Venezuelan Bolívar"
-msgstr ""
+msgstr "Վենեսուելական Բոլիվար"
 
 #: ../src/currency-manager.c:89
 msgid "South African Rand"
-msgstr ""
+msgstr "Հարավային Աֆրիկյան Ռանդ"
 
 #: ../src/financial.c:70
 msgid "Error: the number of periods must be positive"
-msgstr ""
+msgstr "Սխալը․ Ժամանակաշրջանների քանակը դրական պիտի լինի"
 
 #. Description on how to use mate-calc displayed on command-line
 #: ../src/mate-calc.c:79
@@ -876,7 +785,7 @@ msgstr "GTK+ Կարգավորումներ.\n  --class=CLASS             Պատո
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr ""
+msgstr "Դիմումի Ընտրանքներ։\n-s, --solve <equation> Լուծել տրված հավասարումը"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:156
@@ -893,7 +802,7 @@ msgstr "Անհայտ արգումենտ '%s'"
 #. Tooltip for the Pi button
 #: ../src/math-buttons.c:95
 msgid "Pi [Ctrl+P]"
-msgstr ""
+msgstr "Pi [Ctrl+P]"
 
 #. Tooltip for the Euler's Number button
 #: ../src/math-buttons.c:98
@@ -903,17 +812,17 @@ msgstr "Էյլերի թիվը"
 #. Tooltip for the subscript button
 #: ../src/math-buttons.c:103
 msgid "Subscript mode [Alt]"
-msgstr ""
+msgstr "Ձեռագիր ռեժիմ [Alt]"
 
 #. Tooltip for the superscript button
 #: ../src/math-buttons.c:106
 msgid "Superscript mode [Ctrl]"
-msgstr ""
+msgstr "Վերտողային ռեժիմ [Ctrl]"
 
 #. Tooltip for the scientific exponent button
 #: ../src/math-buttons.c:109
 msgid "Scientific exponent [Ctrl+E]"
-msgstr ""
+msgstr "Գիտական աստիճանացույց [Ctrl + E]"
 
 #. Tooltip for the add button
 #: ../src/math-buttons.c:112
@@ -948,7 +857,7 @@ msgstr "Լրացուցիչ Ֆունկցիաները"
 #. Tooltip for the exponent button
 #: ../src/math-buttons.c:130
 msgid "Exponent [^ or **]"
-msgstr ""
+msgstr "էքսպոնենտ [^ or **]"
 
 #. Tooltip for the square button
 #: ../src/math-buttons.c:133
@@ -963,7 +872,7 @@ msgstr "Տոկոս [%]"
 #. Tooltip for the factorial button
 #: ../src/math-buttons.c:139
 msgid "Factorial [!]"
-msgstr ""
+msgstr "Ֆակտորիալ [!]"
 
 #. Tooltip for the absolute value button
 #: ../src/math-buttons.c:142
@@ -973,17 +882,17 @@ msgstr "Բացարձակ արժեք [|]"
 #. Tooltip for the complex argument component button
 #: ../src/math-buttons.c:145
 msgid "Complex argument"
-msgstr ""
+msgstr "Կոմպլեքս արգումենտ"
 
 #. Tooltip for the complex conjugate button
 #: ../src/math-buttons.c:148
 msgid "Complex conjugate"
-msgstr ""
+msgstr "Համալիրը կցորդում"
 
 #. Tooltip for the root button
 #: ../src/math-buttons.c:151
 msgid "Root [Ctrl+R]"
-msgstr ""
+msgstr "Արմատ [Ctrl+R]"
 
 #. Tooltip for the square root button
 #: ../src/math-buttons.c:154
@@ -993,7 +902,7 @@ msgstr "Քառակուսի արմատ [Ctrl+R]"
 #. Tooltip for the logarithm button
 #: ../src/math-buttons.c:157
 msgid "Logarithm"
-msgstr ""
+msgstr "Լոգարիթմ"
 
 #. Tooltip for the natural logarithm button
 #: ../src/math-buttons.c:160
@@ -1033,17 +942,17 @@ msgstr "Հիպերբոլիկ Տանգենս"
 #. Tooltip for the inverse sine button
 #: ../src/math-buttons.c:181
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Հակադարձ Սինուս"
 
 #. Tooltip for the inverse cosine button
 #: ../src/math-buttons.c:184
 msgid "Inverse Cosine"
-msgstr ""
+msgstr "Հակադարձ Կոսինուս"
 
 #. Tooltip for the inverse tangent button
 #: ../src/math-buttons.c:187
 msgid "Inverse Tangent"
-msgstr ""
+msgstr "Հակադարձ Տանգենս"
 
 #. Tooltip for the inverse button
 #: ../src/math-buttons.c:190
@@ -1053,22 +962,22 @@ msgstr "Հակադարձ Սինուս [Ctrl+I]"
 #. Tooltip for the boolean AND button
 #: ../src/math-buttons.c:193
 msgid "Boolean AND"
-msgstr ""
+msgstr "Տրամաբանական ԵՎ"
 
 #. Tooltip for the boolean OR button
 #: ../src/math-buttons.c:196
 msgid "Boolean OR"
-msgstr ""
+msgstr "Տրամաբանական ԿԱՄ"
 
 #. Tooltip for the exclusive OR button
 #: ../src/math-buttons.c:199
 msgid "Boolean Exclusive OR"
-msgstr ""
+msgstr "Բուլյան Բացառող ԿԱՄ"
 
 #. Tooltip for the boolean NOT button
 #: ../src/math-buttons.c:202
 msgid "Boolean NOT"
-msgstr ""
+msgstr "Տրամաբանական ՈՉ"
 
 #. Tooltip for the integer component button
 #: ../src/math-buttons.c:205 ../src/math-buttons.c:994
@@ -1083,22 +992,22 @@ msgstr "Կոտորակային Կոմպոնենտ"
 #. Tooltip for the real component button
 #: ../src/math-buttons.c:211
 msgid "Real Component"
-msgstr ""
+msgstr "Իրական Բաղադրիչ"
 
 #. Tooltip for the imaginary component button
 #: ../src/math-buttons.c:214
 msgid "Imaginary Component"
-msgstr ""
+msgstr "Երևակայական Բաղադրիչ"
 
 #. Tooltip for the ones' complement button
 #: ../src/math-buttons.c:217
 msgid "Ones' Complement"
-msgstr ""
+msgstr "Մեկի' Համալրում"
 
 #. Tooltip for the two's complement button
 #: ../src/math-buttons.c:220
 msgid "Two's Complement"
-msgstr ""
+msgstr "Երկուսի Լրացում"
 
 #. Tooltip for the truncate button
 #: ../src/math-buttons.c:223
@@ -1113,7 +1022,7 @@ msgstr "Գործողությունների խմբի սկիզբ [(]"
 #. Tooltip for the end group button
 #: ../src/math-buttons.c:229
 msgid "End Group [)]"
-msgstr ""
+msgstr "Խմբի Ավարտ [)]"
 
 #. Tooltip for the solve button
 #: ../src/math-buttons.c:238
@@ -1123,7 +1032,7 @@ msgstr "Հաշվել Արդյունքը"
 #. Tooltip for the factor button
 #: ../src/math-buttons.c:241
 msgid "Factorize [Ctrl+F]"
-msgstr ""
+msgstr "Վերլուծել արտադրիչների [Ctrl+F]"
 
 #. Tooltip for the clear button
 #: ../src/math-buttons.c:244
@@ -1133,12 +1042,22 @@ msgstr "Ջնջել Display [Escape]"
 #. Tooltip for the undo button
 #: ../src/math-buttons.c:247
 msgid "Undo [Ctrl+Z]"
+msgstr "Հետադարձել [Ctrl +Z]"
+
+#. Tooltip for the shift left button
+#: ../src/math-buttons.c:250
+msgid "Shift Left [<<]"
+msgstr ""
+
+#. Tooltip for the shift right button
+#: ../src/math-buttons.c:253
+msgid "Shift Right [>>]"
 msgstr ""
 
 #. Tooltip for the double declining depreciation button
 #: ../src/math-buttons.c:259
 msgid "Double Declining Depreciation"
-msgstr ""
+msgstr "Կրկնապատկիր Նվաղող Ամորտիզացիա"
 
 #. Tooltip for the financial term button
 #: ../src/math-buttons.c:265
@@ -1148,12 +1067,12 @@ msgstr "Ֆինանսական Տերմին"
 #. Tooltip for the sum of the years digits depreciation button
 #: ../src/math-buttons.c:268
 msgid "Sum of the Years Digits Depreciation"
-msgstr ""
+msgstr "Գումարել Տարի Թվանշանների Ամորտիզացիան"
 
 #. Tooltip for the straight line depreciation button
 #: ../src/math-buttons.c:271
 msgid "Straight Line Depreciation"
-msgstr ""
+msgstr "Ուղիղ Գծի Ամորտիզացիան"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
 #: ../src/math-buttons.c:611
@@ -1168,7 +1087,7 @@ msgstr "Ութական"
 #. Number display mode combo: Decimal, e.g. 1234
 #: ../src/math-buttons.c:619
 msgid "Decimal"
-msgstr ""
+msgstr "Տասական"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
 #: ../src/math-buttons.c:623
@@ -1201,28 +1120,28 @@ msgstr "Մոտարկում"
 #. Tooltip for the floor button
 #: ../src/math-buttons.c:1000
 msgid "Floor"
-msgstr ""
+msgstr "Հատակ"
 
 #. Tooltip for the ceiling button
 #: ../src/math-buttons.c:1002
 msgid "Ceiling"
-msgstr ""
+msgstr " Առաստաղ"
 
 #. Tooltip for the ceiling button
 #: ../src/math-buttons.c:1004
 msgid "Sign"
-msgstr ""
+msgstr "Ստորագրել"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: ../src/math-converter.c:412
+#: ../src/math-converter.c:414
 msgid " in "
-msgstr ""
+msgstr "դյմ"
 
 #. Tooltip for swap conversion button
-#: ../src/math-converter.c:427
+#: ../src/math-converter.c:429
 msgid "Switch conversion units"
-msgstr ""
+msgstr "Անջատել փոխարկման միավորները"
 
 #. Error shown when trying to undo with no undo history
 #: ../src/math-equation.c:459
@@ -1254,7 +1173,7 @@ msgstr "Անհայտ փոփոխական '%s'"
 #: ../src/math-equation.c:1240
 #, c-format
 msgid "Function '%s' is not defined"
-msgstr ""
+msgstr "Ֆունկցիան '%s' սահմանված չէ"
 
 #. Error displayed to user when an conversion with unknown units is attempted
 #: ../src/math-equation.c:1245
@@ -1265,7 +1184,7 @@ msgstr "Անհայտ փոխարկում"
 #: ../src/math-equation.c:1253
 #, c-format
 msgid "Malformed expression at token '%s'"
-msgstr ""
+msgstr "Աղավաղված արտահայտության նշան '%s'"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
@@ -1275,33 +1194,33 @@ msgstr "Սխալ ձևակերպված արտահայտություն"
 
 #: ../src/math-equation.c:1275
 msgid "Calculating"
-msgstr ""
+msgstr "Հաշվարկում"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1394
+#: ../src/math-equation.c:1390
 msgid "Need an integer to factorize"
-msgstr ""
+msgstr "Ամբողջ թիվը պետք է վերլուծել արտադրիչների"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1470
+#: ../src/math-equation.c:1462
 msgid "No sane value to bitwise shift"
 msgstr "Բիտ-առ-բիտ գործողության կատարման համար թիվը ճիշտ չէ"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1501
+#: ../src/math-equation.c:1493
 msgid "Displayed value not an integer"
-msgstr ""
+msgstr "Ցուցադրեց արժեք աչ ամբողջաթիվ"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1926
+#: ../src/math-equation.c:1918
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
-msgstr ""
+msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
 #. Label on close button in preferences dialog
 #: ../src/math-preferences.c:242
 msgid "_Close"
-msgstr ""
+msgstr "_Փակել"
 
 #. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
 #. calculations
@@ -1327,7 +1246,7 @@ msgstr "Գռադիաններ"
 #. number 1.234×10^99)
 #: ../src/math-preferences.c:270
 msgid "Automatic"
-msgstr ""
+msgstr "Ավտոմատ"
 
 #. Number display mode combo: Fixed, e.g. 1234
 #: ../src/math-preferences.c:274
@@ -1342,26 +1261,26 @@ msgstr "Գիտական"
 #. Number display mode combo: Engineering, e.g. 1.234k
 #: ../src/math-preferences.c:282
 msgid "Engineering"
-msgstr ""
+msgstr "Ճարտարագիտություն"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
 #: ../src/math-preferences.c:293
 #, c-format
 msgid "Show %d decimal _places"
-msgstr ""
+msgstr "Ցույց տալ %d տասնորդական _վայրերը"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:198
+#: ../src/math-window.c:211
 msgid "Unable to open help file"
 msgstr "Օգնության ֆայլը չհաջողվեց բացել"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:225
+#: ../src/math-window.c:238
 msgid "translator-credits"
 msgstr "Launchpad Contributions:\n  Davit Mayilyan https://launchpad.net/~davidmayilyan"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:232
+#: ../src/math-window.c:245
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1376,53 +1295,53 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
+msgstr "mate-calc ազատ ծրագրային ապահովում է; դուք յարող եք այն վերաբաշխել և/կամ փոփոխել\nայն GNU Համընդհանուր Հանրային Արտունագրի պայմանների տակ է, հրատարակված\nԱզատ Ծրագրային Ապահովման Հիմնադրամի կողմից, ինչպես նաև Արտոնագրի 2 տարբերակը, կամ\n(ձեր տարբերակը) ցանկացած ավելի ուշ տարբերակը.։\n\nmate-calc տարածվել է այն հույսով, որ այն օգտակար կլինի\nբայց ԱՌԱՆՑ ՈՐԵՎԷ ԵՐԱՇԽԻՔՆԵՐԻ; առանց նույնիսկ ենթադրյալ երաշխիքի\nՎԱՃԱՌՔԻ կամ ՊԻՏԱՆԵԼԻՈՒԹՅԱՆ ՈՐՈՇԱԿԻ ՆՊԱՏԱԿԻ ՀԱՄԱՐ։ Տես\nGNU Համընդհանուր Հանրային Արտունագիր լրացուցիչ մանրամասների համար։\n\nԴուք պետք է ընդունեք GNU Համընդհանուր Հանրային Արտոնագրի պատճենը\nmate-calc հետ միասին; եթե ոչ,ապա գրել Ազատ Ծրագրային Ապահովման Հիմնադրամ։ Հասցե․\n151 Franklin Փողոց, Հինգերորդ Հարկ, Boston, MA 02110-1301, ԱՄՆ"
 
-#: ../src/math-window.c:247
+#: ../src/math-window.c:260
 msgid "mate-calc"
 msgstr "mate-calc"
 
-#: ../src/math-window.c:251
+#: ../src/math-window.c:264
 msgid "Calculator with financial and scientific modes."
 msgstr "Հաշվիչ գիտական և ֆինանսական ռեժիմներով։"
 
 #. Calculator menu
-#: ../src/math-window.c:354
+#: ../src/math-window.c:367
 msgid "_Calculator"
 msgstr "_Հաշվիչ"
 
 #. Mode menu
-#: ../src/math-window.c:356
+#: ../src/math-window.c:369
 msgid "_Mode"
 msgstr "_Ռեժիմ"
 
 #. Help menu label
-#: ../src/math-window.c:358
+#: ../src/math-window.c:371
 msgid "_Help"
 msgstr "_Ձեռնարկ"
 
 #. Basic menu label
-#: ../src/math-window.c:360
+#: ../src/math-window.c:373
 msgid "_Basic"
 msgstr "Հ_իմնական"
 
 #. Advanced menu label
-#: ../src/math-window.c:362
+#: ../src/math-window.c:375
 msgid "_Advanced"
 msgstr "_Ընդլայնված"
 
 #. Financial menu label
-#: ../src/math-window.c:364
+#: ../src/math-window.c:377
 msgid "_Financial"
 msgstr "_Ֆինանսական"
 
 #. Programming menu label
-#: ../src/math-window.c:366
+#: ../src/math-window.c:379
 msgid "_Programming"
 msgstr "_Ծրագրավորման"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:368
+#: ../src/math-window.c:381
 msgid "_Contents"
 msgstr "_Բովանդակություն"
 
@@ -1430,841 +1349,841 @@ msgstr "_Բովանդակություն"
 #. values
 #: ../src/mp-binary.c:115
 msgid "Boolean AND is only defined for positive integers"
-msgstr ""
+msgstr "Բուլյան ԵՎ  սահմանվում է միայն դրական ամբողջ թվերի համար"
 
 #. Translators: Error displayed when boolean OR attempted on non-integer
 #. values
 #: ../src/mp-binary.c:128
 msgid "Boolean OR is only defined for positive integers"
-msgstr ""
+msgstr "Բուլյան ԿԱՄ  սահմանվում է միայն դրական ամբողջ թվերի համար"
 
 #. Translators: Error displayed when boolean XOR attempted on non-integer
 #. values
 #: ../src/mp-binary.c:141
 msgid "Boolean XOR is only defined for positive integers"
-msgstr ""
+msgstr "Բուլյան XOR  սահմանվում է միայն դրական ամբողջ թվերի համար"
 
 #. Translators: Error displayed when boolean XOR attempted on non-integer
 #. values
 #: ../src/mp-binary.c:156
 msgid "Boolean NOT is only defined for positive integers"
-msgstr ""
+msgstr "Բուլյան ՈՉ սահմանվում է միայն դրական ամբողջ թվերի համար"
 
 #. Translators: Error displayed when bit shift attempted on non-integer values
 #: ../src/mp-binary.c:190
 msgid "Shift is only possible on integer values"
-msgstr ""
+msgstr "Տեղափոխություն հնարավաոր է միայն ամբողջ արժեքների վրա"
 
 #. Translators: Error display when attempting to take argument of zero
 #: ../src/mp.c:148
 msgid "Argument not defined for zero"
-msgstr ""
+msgstr "Արգումենտը չի սահմանվում զրո"
 
 #: ../src/mp.c:299
 msgid "Overflow: the result couldn't be calculated"
-msgstr ""
+msgstr "Գերլցում․ արդյունքն չի կարող հաշվարկվել"
 
 #. Translators: Error displayed attempted to divide by zero
 #: ../src/mp.c:644 ../src/mp.c:676 ../src/mp.c:1605
 msgid "Division by zero is undefined"
-msgstr ""
+msgstr "Զրոյի վրա բաժանումը սահմանված չէ"
 
 #. Translators: Error displayed when attempting to take logarithm of zero
 #: ../src/mp.c:1276 ../src/mp.c:1313
 msgid "Logarithm of zero is undefined"
-msgstr ""
+msgstr "Զրոյի լոգարիթմը սահմանված չէ"
 
 #. Translators: Error displayed when attempted to raise 0 to a negative
 #. exponent
 #: ../src/mp.c:1680 ../src/mp.c:1994
 msgid "The power of zero is undefined for a negative exponent"
-msgstr ""
+msgstr "Զրոյի աստիճանը սահմանված չէ բացասական էքսպոնենտի համար"
 
 #: ../src/mp.c:1704
 msgid "Reciprocal of zero is undefined"
-msgstr ""
+msgstr "Փոխադարձ զրո սահմանված չէ"
 
 #: ../src/mp.c:1789
 msgid "Root must be non-zero"
-msgstr ""
+msgstr "Արմատը պետք է լինեն ոչ զրոյական"
 
 #: ../src/mp.c:1807
 msgid "Negative root of zero is undefined"
-msgstr ""
+msgstr "Զրոյի բացասական արմատը սահմանված չէ"
 
 #: ../src/mp.c:1813
 msgid "nth root of negative number is undefined for even n"
-msgstr ""
+msgstr "n֊րդ աստիճանի արմատը սահմանված չէ բացասական թվերի համար"
 
 #. Translators: Error displayed when attempted take the factorial of a
 #. fractional number
 #: ../src/mp.c:1934
 msgid "Factorial is only defined for natural numbers"
-msgstr ""
+msgstr "Ֆակտորիալը սահմանված է միայն բնական բվերի համար"
 
 #. Translators: Error displayed when attemping to do a modulus division on
 #. non-integer numbers
 #: ../src/mp.c:1954
 msgid "Modulus division is only defined for integers"
-msgstr ""
+msgstr "Մոդուլի բաժանումը սահմանվում է միայն ամբողջ թվերի համար"
 
 #. Translators: Error displayed when tangent value is undefined
 #: ../src/mp-trigonometric.c:310
 msgid ""
 "Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
 "(90°)"
-msgstr ""
+msgstr "Տանգենսը սահմանված չէ անկյունների համար որոնք ընկած են π (180°)֊ից π∕2 (90°)"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: ../src/mp-trigonometric.c:355
 msgid "Inverse sine is undefined for values outside [-1, 1]"
-msgstr ""
+msgstr "Սինուսի հակադարձը սահմանված չէ [-1, 1] ինտերվալից դուրս"
 
 #. Translators: Error displayed when inverse cosine value is undefined
 #: ../src/mp-trigonometric.c:372
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
-msgstr ""
+msgstr "Կոսինուսի հակադարձը սահմանված չէ [-1, 1] ինտերվալից դուրս"
 
 #. Translators: Error displayed when inverse hyperbolic cosine value is
 #. undefined
 #: ../src/mp-trigonometric.c:591
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
-msgstr ""
+msgstr "Հիպերբոլային կոսինուսի հակադարձը  սահմանված չէ մեկից փոքր արժեքների համար"
 
 #. Translators: Error displayed when inverse hyperbolic tangent value is
 #. undefined
 #: ../src/mp-trigonometric.c:615
 msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
-msgstr ""
+msgstr "Հիպեբոլիկ տանգենսի հակադարձը սահմանված չէ  [-1, 1] ինտերվալից դուրս գտնվող արժեքներում"
 
 #: ../src/unit-manager.c:54
 #, c-format
 msgctxt "unit-format"
 msgid "%s degrees"
-msgstr ""
+msgstr "%s աստիճաններ"
 
 #: ../src/unit-manager.c:54
 msgctxt "unit-symbols"
 msgid "degree,degrees,deg"
-msgstr ""
+msgstr "աստիճան, աստիճաններ, աստ․"
 
 #: ../src/unit-manager.c:55
 #, c-format
 msgctxt "unit-format"
 msgid "%s radians"
-msgstr ""
+msgstr "%s ռադիաններ"
 
 #: ../src/unit-manager.c:55
 msgctxt "unit-symbols"
 msgid "radian,radians,rad"
-msgstr ""
+msgstr "ռռադիան, ադիաններ, ռադ․"
 
 #: ../src/unit-manager.c:56
 #, c-format
 msgctxt "unit-format"
 msgid "%s gradians"
-msgstr ""
+msgstr "%s գռադիաններ"
 
 #: ../src/unit-manager.c:56
 msgctxt "unit-symbols"
 msgid "gradian,gradians,grad"
-msgstr ""
+msgstr "գռադիան, գռադիաններ, գռադ․"
 
 #: ../src/unit-manager.c:57
 msgid "Parsecs"
-msgstr ""
+msgstr "Պարսեկ"
 
 #: ../src/unit-manager.c:57
 #, c-format
 msgctxt "unit-format"
 msgid "%s pc"
-msgstr ""
+msgstr "%s պս"
 
 #: ../src/unit-manager.c:57
 msgctxt "unit-symbols"
 msgid "parsec,parsecs,pc"
-msgstr ""
+msgstr "պարսեկ, պարսեկներ, պս"
 
 #: ../src/unit-manager.c:58
 msgid "Light Years"
-msgstr ""
+msgstr "Լուսնային Տարիներ"
 
 #: ../src/unit-manager.c:58
 #, c-format
 msgctxt "unit-format"
 msgid "%s ly"
-msgstr ""
+msgstr "%s լտ"
 
 #: ../src/unit-manager.c:58
 msgctxt "unit-symbols"
 msgid "lightyear,lightyears,ly"
-msgstr ""
+msgstr "լուսատարի, լուսատարիներ, լտ"
 
 #: ../src/unit-manager.c:59
 msgid "Astronomical Units"
-msgstr ""
+msgstr "Աստղագիտական Միավորներ"
 
 #: ../src/unit-manager.c:59
 #, c-format
 msgctxt "unit-format"
 msgid "%s au"
-msgstr ""
+msgstr "%s ամ"
 
 #: ../src/unit-manager.c:59
 msgctxt "unit-symbols"
 msgid "au"
-msgstr ""
+msgstr "ամ"
 
 #: ../src/unit-manager.c:60
 msgid "Nautical Miles"
-msgstr ""
+msgstr "Ծովային Մղոն"
 
 #: ../src/unit-manager.c:60
 #, c-format
 msgctxt "unit-format"
 msgid "%s nmi"
-msgstr ""
+msgstr "%s ծմղ"
 
 #: ../src/unit-manager.c:60
 msgctxt "unit-symbols"
 msgid "nmi"
-msgstr ""
+msgstr "ծմղ"
 
 #: ../src/unit-manager.c:61
 msgid "Miles"
-msgstr ""
+msgstr "Մղոն"
 
 #: ../src/unit-manager.c:61
 #, c-format
 msgctxt "unit-format"
 msgid "%s mi"
-msgstr ""
+msgstr "%s մղ"
 
 #: ../src/unit-manager.c:61
 msgctxt "unit-symbols"
 msgid "mile,miles,mi"
-msgstr ""
+msgstr "մղոն, մղոններ, մղ"
 
 #: ../src/unit-manager.c:62
 msgid "Kilometers"
-msgstr ""
+msgstr " Կիլոմետր"
 
 #: ../src/unit-manager.c:62
 #, c-format
 msgctxt "unit-format"
 msgid "%s km"
-msgstr ""
+msgstr "%s կմ"
 
 #: ../src/unit-manager.c:62
 msgctxt "unit-symbols"
 msgid "kilometer,kilometers,km,kms"
-msgstr ""
+msgstr "կիլոմետր, կիլոմետրեր,  կմ֊ներ"
 
 #: ../src/unit-manager.c:63
 msgid "Cables"
-msgstr ""
+msgstr "Մալուխներ"
 
 #: ../src/unit-manager.c:63
 #, c-format
 msgctxt "unit-format"
 msgid "%s cb"
-msgstr ""
+msgstr "%s մլ"
 
 #: ../src/unit-manager.c:63
 msgctxt "unit-symbols"
 msgid "cable,cables,cb"
-msgstr ""
+msgstr "մալուխ, մալուխներ, մլ"
 
 #: ../src/unit-manager.c:64
 msgid "Fathoms"
-msgstr ""
+msgstr "Խորաչափ"
 
 #: ../src/unit-manager.c:64
 #, c-format
 msgctxt "unit-format"
 msgid "%s ftm"
-msgstr ""
+msgstr "%s խչ"
 
 #: ../src/unit-manager.c:64
 msgctxt "unit-symbols"
 msgid "fathom,fathoms,ftm"
-msgstr ""
+msgstr "խորաչափ, խորաչափեր, խչփ"
 
 #: ../src/unit-manager.c:65
 msgid "Meters"
-msgstr ""
+msgstr "Մետրեր"
 
 #: ../src/unit-manager.c:65
 #, c-format
 msgctxt "unit-format"
 msgid "%s m"
-msgstr ""
+msgstr "%s մ"
 
 #: ../src/unit-manager.c:65
 msgctxt "unit-symbols"
 msgid "meter,meters,m"
-msgstr ""
+msgstr "մետր, մետրեր, մ"
 
 #: ../src/unit-manager.c:66
 msgid "Yards"
-msgstr ""
+msgstr "Յարդ"
 
 #: ../src/unit-manager.c:66
 #, c-format
 msgctxt "unit-format"
 msgid "%s yd"
-msgstr ""
+msgstr "%s յդ"
 
 #: ../src/unit-manager.c:66
 msgctxt "unit-symbols"
 msgid "yard,yards,yd"
-msgstr ""
+msgstr "յարդ, յարդեր, յդ"
 
 #: ../src/unit-manager.c:67
 msgid "Feet"
-msgstr ""
+msgstr "Ոտնաչափ"
 
 #: ../src/unit-manager.c:67
 #, c-format
 msgctxt "unit-format"
 msgid "%s ft"
-msgstr ""
+msgstr "%s ոչ"
 
 #: ../src/unit-manager.c:67
 msgctxt "unit-symbols"
 msgid "foot,feet,ft"
-msgstr ""
+msgstr "ոտնաչափ, ոտնաչափեր, ոչ "
 
 #: ../src/unit-manager.c:68
 msgid "Inches"
-msgstr ""
+msgstr "Դյույմ"
 
 #: ../src/unit-manager.c:68
 #, c-format
 msgctxt "unit-format"
 msgid "%s in"
-msgstr ""
+msgstr "%s դյմ"
 
 #: ../src/unit-manager.c:68
 msgctxt "unit-symbols"
 msgid "inch,inches,in"
-msgstr ""
+msgstr "դույմ, դույմեր, դյմ"
 
 #: ../src/unit-manager.c:69
 msgid "Centimeters"
-msgstr ""
+msgstr "Սանտիմետր"
 
 #: ../src/unit-manager.c:69
 #, c-format
 msgctxt "unit-format"
 msgid "%s cm"
-msgstr ""
+msgstr "%s սմ"
 
 #: ../src/unit-manager.c:69
 msgctxt "unit-symbols"
 msgid "centimeter,centimeters,cm,cms"
-msgstr ""
+msgstr "սանտիմետր, սանտիմետրեր, սմ֊ներ"
 
 #: ../src/unit-manager.c:70
 msgid "Millimeters"
-msgstr ""
+msgstr "Միլիմետր"
 
 #: ../src/unit-manager.c:70
 #, c-format
 msgctxt "unit-format"
 msgid "%s mm"
-msgstr ""
+msgstr "%s մմ"
 
 #: ../src/unit-manager.c:70
 msgctxt "unit-symbols"
 msgid "millimeter,millimeters,mm"
-msgstr ""
+msgstr "միլիմետր, միլիմետրեր, մմ"
 
 #: ../src/unit-manager.c:71
 msgid "Micrometers"
-msgstr ""
+msgstr "Միկրոմետր"
 
 #: ../src/unit-manager.c:71
 #, c-format
 msgctxt "unit-format"
 msgid "%s μm"
-msgstr ""
+msgstr "%s մկմ"
 
 #: ../src/unit-manager.c:71
 msgctxt "unit-symbols"
 msgid "micrometer,micrometers,um"
-msgstr ""
+msgstr "միկրոմետր,միկրոմետրեր, մմ"
 
 #: ../src/unit-manager.c:72
 msgid "Nanometers"
-msgstr ""
+msgstr "Նանոմետր"
 
 #: ../src/unit-manager.c:72
 #, c-format
 msgctxt "unit-format"
 msgid "%s nm"
-msgstr ""
+msgstr "%s նմ"
 
 #: ../src/unit-manager.c:72
 msgctxt "unit-symbols"
 msgid "nanometer,nanometers,nm"
-msgstr ""
+msgstr "նանոմետր, նանոմետրեր, նմ"
 
 #: ../src/unit-manager.c:73
 msgid "Hectares"
-msgstr ""
+msgstr "Հեկտար"
 
 #: ../src/unit-manager.c:73
 #, c-format
 msgctxt "unit-format"
 msgid "%s ha"
-msgstr ""
+msgstr "%s հա"
 
 #: ../src/unit-manager.c:73
 msgctxt "unit-symbols"
 msgid "hectare,hectares,ha"
-msgstr ""
+msgstr "հեկտար, հեկտարներ, հա"
 
 #: ../src/unit-manager.c:74
 msgid "Acres"
-msgstr ""
+msgstr "Ակրի"
 
 #: ../src/unit-manager.c:74
 #, c-format
 msgctxt "unit-format"
 msgid "%s acres"
-msgstr ""
+msgstr "%s ակրի"
 
 #: ../src/unit-manager.c:74
 msgctxt "unit-symbols"
 msgid "acre,acres"
-msgstr ""
+msgstr "ակրի, ակրներ"
 
 #: ../src/unit-manager.c:75
 msgid "Square Meters"
-msgstr ""
+msgstr "Քառակուսի Մետր"
 
 #: ../src/unit-manager.c:75
 #, c-format
 msgctxt "unit-format"
 msgid "%s m²"
-msgstr ""
+msgstr "%s մ²"
 
 #: ../src/unit-manager.c:75
 msgctxt "unit-symbols"
 msgid "m²"
-msgstr ""
+msgstr "մ²"
 
 #: ../src/unit-manager.c:76
 msgid "Square Centimeters"
-msgstr ""
+msgstr "Սանտիմետր Քառակուսի"
 
 #: ../src/unit-manager.c:76
 #, c-format
 msgctxt "unit-format"
 msgid "%s cm²"
-msgstr ""
+msgstr "%s սմ²"
 
 #: ../src/unit-manager.c:76
 msgctxt "unit-symbols"
 msgid "cm²"
-msgstr ""
+msgstr "սմ²"
 
 #: ../src/unit-manager.c:77
 msgid "Square Millimeters"
-msgstr ""
+msgstr "Միլիմետր Քառակուսի"
 
 #: ../src/unit-manager.c:77
 #, c-format
 msgctxt "unit-format"
 msgid "%s mm²"
-msgstr ""
+msgstr "%s մմ²"
 
 #: ../src/unit-manager.c:77
 msgctxt "unit-symbols"
 msgid "mm²"
-msgstr ""
+msgstr "մմ²"
 
 #: ../src/unit-manager.c:78
 msgid "Cubic Meters"
-msgstr ""
+msgstr "Մետր Խորանարդ"
 
 #: ../src/unit-manager.c:78
 #, c-format
 msgctxt "unit-format"
 msgid "%s m³"
-msgstr ""
+msgstr "%s մ³"
 
 #: ../src/unit-manager.c:78
 msgctxt "unit-symbols"
 msgid "m³"
-msgstr ""
+msgstr "մ³"
 
 #: ../src/unit-manager.c:79
 msgid "Gallons"
-msgstr ""
+msgstr "Գալոն"
 
 #: ../src/unit-manager.c:79
 #, c-format
 msgctxt "unit-format"
 msgid "%s gal"
-msgstr ""
+msgstr "%s գալ"
 
 #: ../src/unit-manager.c:79
 msgctxt "unit-symbols"
 msgid "gallon,gallons,gal"
-msgstr ""
+msgstr "գալոն, գալոններ, գալ"
 
 #: ../src/unit-manager.c:80
 msgid "Litres"
-msgstr ""
+msgstr "Լիտր"
 
 #: ../src/unit-manager.c:80
 #, c-format
 msgctxt "unit-format"
 msgid "%s L"
-msgstr ""
+msgstr "%s  Լ"
 
 #: ../src/unit-manager.c:80
 msgctxt "unit-symbols"
 msgid "litre,litres,liter,liters,L"
-msgstr ""
+msgstr "լիտր, լիտրեր, լիտր, լիտրեր, Լ"
 
 #: ../src/unit-manager.c:81
 msgid "Quarts"
-msgstr ""
+msgstr "Կվարտաներ"
 
 #: ../src/unit-manager.c:81
 #, c-format
 msgctxt "unit-format"
 msgid "%s qt"
-msgstr ""
+msgstr "%s կտ"
 
 #: ../src/unit-manager.c:81
 msgctxt "unit-symbols"
 msgid "quart,quarts,qt"
-msgstr ""
+msgstr "կվարտա, կվարտաներ, կտ"
 
 #: ../src/unit-manager.c:82
 msgid "Pints"
-msgstr ""
+msgstr "Պինտա"
 
 #: ../src/unit-manager.c:82
 #, c-format
 msgctxt "unit-format"
 msgid "%s pt"
-msgstr ""
+msgstr "%s պտ"
 
 #: ../src/unit-manager.c:82
 msgctxt "unit-symbols"
 msgid "pint,pints,pt"
-msgstr ""
+msgstr "պինտա, պինտաներ, պտ"
 
 #: ../src/unit-manager.c:83
 msgid "Millilitres"
-msgstr ""
+msgstr "Միլիլիտր"
 
 #: ../src/unit-manager.c:83
 #, c-format
 msgctxt "unit-format"
 msgid "%s mL"
-msgstr ""
+msgstr "%s mL"
 
 #: ../src/unit-manager.c:83
 msgctxt "unit-symbols"
 msgid "millilitre,millilitres,milliliter,milliliters,mL,cm³"
-msgstr ""
+msgstr "միլիլիտր,միլիլիտրեր,միլիլիտր,միլիլիտրեր,մԼ, սմ³"
 
 #: ../src/unit-manager.c:84
 msgid "Microlitres"
-msgstr ""
+msgstr "Միկրոլիտր"
 
 #: ../src/unit-manager.c:84
 #, c-format
 msgctxt "unit-format"
 msgid "%s μL"
-msgstr ""
+msgstr "%s μL"
 
 #: ../src/unit-manager.c:84
 msgctxt "unit-symbols"
 msgid "mm³,μL,uL"
-msgstr ""
+msgstr "mm³,μL,uL"
 
 #: ../src/unit-manager.c:85
 msgid "Tonnes"
-msgstr ""
+msgstr "Տոննա"
 
 #: ../src/unit-manager.c:85
 #, c-format
 msgctxt "unit-format"
 msgid "%s T"
-msgstr ""
+msgstr "%s T"
 
 #: ../src/unit-manager.c:85
 msgctxt "unit-symbols"
 msgid "tonne,tonnes"
-msgstr ""
+msgstr "տոննա, տոննաներ"
 
 #: ../src/unit-manager.c:86
 msgid "Kilograms"
-msgstr ""
+msgstr "Կիլոգրամ"
 
 #: ../src/unit-manager.c:86
 #, c-format
 msgctxt "unit-format"
 msgid "%s kg"
-msgstr ""
+msgstr "%s կգ"
 
 #: ../src/unit-manager.c:86
 msgctxt "unit-symbols"
 msgid "kilogram,kilograms,kilogramme,kilogrammes,kg,kgs"
-msgstr ""
+msgstr "կիլոգրամ, կիլոգրամներ,կիլոգրամ,կիլոգրամներ,կգ, կգ֊ներ"
 
 #: ../src/unit-manager.c:87
 msgid "Pounds"
-msgstr ""
+msgstr "ֆունտ"
 
 #: ../src/unit-manager.c:87
 #, c-format
 msgctxt "unit-format"
 msgid "%s lb"
-msgstr ""
+msgstr "%s lb"
 
 #: ../src/unit-manager.c:87
 msgctxt "unit-symbols"
 msgid "pound,pounds,lb"
-msgstr ""
+msgstr "ֆունտ, ֆունտեր․ դրամ"
 
 #: ../src/unit-manager.c:88
 msgid "Ounces"
-msgstr ""
+msgstr "Ունցիա"
 
 #: ../src/unit-manager.c:88
 #, c-format
 msgctxt "unit-format"
 msgid "%s oz"
-msgstr ""
+msgstr "%s ունց"
 
 #: ../src/unit-manager.c:88
 msgctxt "unit-symbols"
 msgid "ounce,ounces,oz"
-msgstr ""
+msgstr "ունցիա, ունցիաներ, ունց"
 
 #: ../src/unit-manager.c:89
 msgid "Grams"
-msgstr ""
+msgstr "Գրամ"
 
 #: ../src/unit-manager.c:89
 #, c-format
 msgctxt "unit-format"
 msgid "%s g"
-msgstr ""
+msgstr "%s գ"
 
 #: ../src/unit-manager.c:89
 msgctxt "unit-symbols"
 msgid "gram,grams,gramme,grammes,g"
-msgstr ""
+msgstr "գրամ, գրամներ, գրամ, գրամներ, գ"
 
 #: ../src/unit-manager.c:90
 msgid "Years"
-msgstr ""
+msgstr "Տարիներ"
 
 #: ../src/unit-manager.c:90
 #, c-format
 msgctxt "unit-format"
 msgid "%s years"
-msgstr ""
+msgstr "%s տարիներ"
 
 #: ../src/unit-manager.c:90
 msgctxt "unit-symbols"
 msgid "year,years"
-msgstr ""
+msgstr "տարի,տարիներ"
 
 #: ../src/unit-manager.c:91
 msgid "Days"
-msgstr ""
+msgstr "Օրեր"
 
 #: ../src/unit-manager.c:91
 #, c-format
 msgctxt "unit-format"
 msgid "%s days"
-msgstr ""
+msgstr "%s օրեր"
 
 #: ../src/unit-manager.c:91
 msgctxt "unit-symbols"
 msgid "day,days"
-msgstr ""
+msgstr "օր,օրեր"
 
 #: ../src/unit-manager.c:92
 msgid "Hours"
-msgstr ""
+msgstr "ժամեր"
 
 #: ../src/unit-manager.c:92
 #, c-format
 msgctxt "unit-format"
 msgid "%s hours"
-msgstr ""
+msgstr "%s ժամեր"
 
 #: ../src/unit-manager.c:92
 msgctxt "unit-symbols"
 msgid "hour,hours"
-msgstr ""
+msgstr "ժամ, ժամեր"
 
 #: ../src/unit-manager.c:93
 msgid "Minutes"
-msgstr ""
+msgstr "Րոպեներ"
 
 #: ../src/unit-manager.c:93
 #, c-format
 msgctxt "unit-format"
 msgid "%s minutes"
-msgstr ""
+msgstr "%s րոպեներ"
 
 #: ../src/unit-manager.c:93
 msgctxt "unit-symbols"
 msgid "minute,minutes"
-msgstr ""
+msgstr "րոպե,րոպեներ"
 
 #: ../src/unit-manager.c:94
 msgid "Seconds"
-msgstr ""
+msgstr "Վայրկյաններ"
 
 #: ../src/unit-manager.c:94
 #, c-format
 msgctxt "unit-format"
 msgid "%s s"
-msgstr ""
+msgstr "%s s"
 
 #: ../src/unit-manager.c:94
 msgctxt "unit-symbols"
 msgid "second,seconds,s"
-msgstr ""
+msgstr "վայրկյան,վայրկյաններ,s"
 
 #: ../src/unit-manager.c:95
 msgid "Milliseconds"
-msgstr ""
+msgstr "Միլիվայրկյաններ"
 
 #: ../src/unit-manager.c:95
 #, c-format
 msgctxt "unit-format"
 msgid "%s ms"
-msgstr ""
+msgstr "%s մվ"
 
 #: ../src/unit-manager.c:95
 msgctxt "unit-symbols"
 msgid "millisecond,milliseconds,ms"
-msgstr ""
+msgstr "միլիվայրկյան, միլիվայրկյաններ, մվ"
 
 #: ../src/unit-manager.c:96
 msgid "Microseconds"
-msgstr ""
+msgstr "Միկրովայրկյաններ"
 
 #: ../src/unit-manager.c:96
 #, c-format
 msgctxt "unit-format"
 msgid "%s μs"
-msgstr ""
+msgstr "%s μs"
 
 #: ../src/unit-manager.c:96
 msgctxt "unit-symbols"
 msgid "microsecond,microseconds,us,μs"
-msgstr ""
+msgstr "միկրովարկյան, միկրովարկյաններ, մկվ"
 
 #: ../src/unit-manager.c:97
 msgid "Celsius"
-msgstr ""
+msgstr "Ըստ Ցելսիուսի"
 
 #: ../src/unit-manager.c:97
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚C"
-msgstr ""
+msgstr "%s ˚C"
 
 #: ../src/unit-manager.c:97
 msgctxt "unit-symbols"
 msgid "degC,˚C"
-msgstr ""
+msgstr "աստC,˚C"
 
 #: ../src/unit-manager.c:98
 msgid "Farenheit"
-msgstr ""
+msgstr "Ֆարենհեյթ"
 
 #: ../src/unit-manager.c:98
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚F"
-msgstr ""
+msgstr "%s ˚F"
 
 #: ../src/unit-manager.c:98
 msgctxt "unit-symbols"
 msgid "degF,˚F"
-msgstr ""
+msgstr "աստF,˚F"
 
 #: ../src/unit-manager.c:99
 msgid "Kelvin"
-msgstr ""
+msgstr "Ըստ Կելվինի"
 
 #: ../src/unit-manager.c:99
 #, c-format
 msgctxt "unit-format"
 msgid "%s K"
-msgstr ""
+msgstr "%s K"
 
 #: ../src/unit-manager.c:99
 msgctxt "unit-symbols"
 msgid "K"
-msgstr ""
+msgstr "K"
 
 #: ../src/unit-manager.c:100
 msgid "Rankine"
-msgstr ""
+msgstr "Rankine"
 
 #: ../src/unit-manager.c:100
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚R"
-msgstr ""
+msgstr "%s ˚R"
 
 #: ../src/unit-manager.c:100
 msgctxt "unit-symbols"
 msgid "degR,˚R,˚Ra"
-msgstr ""
+msgstr "աստR,˚R,˚Ra"
 
 #: ../src/unit-manager.c:109
 msgid "Angle"
-msgstr ""
+msgstr "Անկյուն"
 
 #: ../src/unit-manager.c:110
 msgid "Length"
-msgstr ""
+msgstr "Երկարություն"
 
 #: ../src/unit-manager.c:111
 msgid "Area"
-msgstr ""
+msgstr "Մակերես"
 
 #: ../src/unit-manager.c:112
 msgid "Volume"
-msgstr ""
+msgstr "Ծավալ"
 
 #: ../src/unit-manager.c:113
 msgid "Weight"
-msgstr ""
+msgstr "Քաշ"
 
 #: ../src/unit-manager.c:114
 msgid "Duration"
-msgstr ""
+msgstr "Տևողություն"
 
 #: ../src/unit-manager.c:115
 msgid "Temperature"
-msgstr ""
+msgstr "Ջերմաստիճան"
 
 #: ../src/unit-manager.c:127
 msgid "Currency"
-msgstr ""
+msgstr "Արտարժույթ"
 
 #. Translators: result of currency conversion, %s is the symbol, %%s is the
 #. placeholder for amount, i.e.: USD100
 #: ../src/unit-manager.c:137
 #, c-format
 msgid "%s%%s"
-msgstr ""
+msgstr "%s%%s"

@@ -3,18 +3,22 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Adi Roiban https://launchpad.net/~adiroiban, 2008-2009.
-# Daniel Șerbănescu <cyber19rider@gmail.com>, 2010.
-# laurion <me_lawr@yahoo.com>, 2010.
-# Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2009-2011.
+# Adi Roiban https://launchpad.net/~adiroiban, 2008-2009
+# corneliu.e <corneliueva@yahoo.com>, 2016
+# Daniel <danny3@tutanota.com>, 2015-2016
+# Daniel Șerbănescu <cyber19rider@gmail.com>, 2010
+# Laurentiu Archip, 2016
+# laurion <me_lawr@yahoo.com>, 2010
+# Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2009-2011
+# Polihron Alexandru (APoliTech) <ppolihron@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2013-03-24 20:10+0100\n"
-"PO-Revision-Date: 2013-03-24 19:34+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-15 14:46+0300\n"
+"PO-Revision-Date: 2017-03-15 11:48+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Romanian (http://www.transifex.com/mate/MATE/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -79,15 +83,15 @@ msgstr "Anulează ultima acțiune"
 
 #: ../data/buttons-advanced.ui.h:19
 msgid "acos"
-msgstr ""
+msgstr "acos"
 
 #: ../data/buttons-advanced.ui.h:20
 msgid "asin"
-msgstr ""
+msgstr "asin"
 
 #: ../data/buttons-advanced.ui.h:21
 msgid "atan"
-msgstr ""
+msgstr "atan"
 
 #. Accessible name for the store value button
 #: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:19
@@ -160,12 +164,12 @@ msgstr "Calculează indemnizația de amortizare pe un activ pentru o anumită pe
 msgid "C_ost:"
 msgstr "C_ost:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:20
 msgid "_Life:"
 msgstr "_Viață:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:22
 msgid "_Period:"
 msgstr "_Perioadă:"
@@ -267,12 +271,12 @@ msgstr "Calculează dobânda periodică necesară pentru a crește o investiție
 msgid "Straight-Line Depreciation"
 msgstr "Amortizare în linie dreaptă"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:56
 msgid "_Cost:"
 msgstr "_Cost:"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:58
 msgid "_Salvage:"
 msgstr "_Valoare reziduală:"
@@ -286,12 +290,12 @@ msgid ""
 "typically years, over which an asset is depreciated. "
 msgstr "Calculează amortizarea în linie dreaptă a unui activ pentru o perioadă. Metoda în linie dreaptă de amortizare a costurilor împarte costurile amortizabile în mod egal pe durata de viață utilă a unui activ. Durata de viață utilă este numărul de perioade, de obicei de ani, peste care un activ se amortizează."
 
-#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "Amortizare prin metoda sumei cifrelor anilor („SOFTY”)"
 
-#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#. Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:64
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
@@ -351,12 +355,7 @@ msgid "Term"
 msgstr "TrmR"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. time, using the Sum-Of-The-Years
 #: ../data/buttons-financial.ui.h:87
 msgid "Syd"
 msgstr "Sca"
@@ -417,14 +416,12 @@ msgid "Ch_aracter:"
 msgstr "C_aracter:"
 
 #. Accessible name for the shift left button
-#. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:23 ../src/math-buttons.c:250
+#: ../data/buttons-programming.ui.h:23
 msgid "Shift Left"
 msgstr "Deplasează la stânga"
 
 #. Accessible name for the shift right button
-#. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:25 ../src/math-buttons.c:253
+#: ../data/buttons-programming.ui.h:25
 msgid "Shift Right"
 msgstr "Deplasează la dreapta"
 
@@ -483,116 +480,31 @@ msgstr "Arată _zerouri după virgulă"
 msgid "Show _thousands separators"
 msgstr "Arată separa_torii miilor"
 
-#: ../data/mate-calc.desktop.in.h:1
-msgid "MATE Calculator"
+#: ../data/mate-calc.appdata.xml.in.h:1
+msgid "MATE Desktop calculator"
 msgstr ""
 
+#: ../data/mate-calc.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Calc is a powerful graphical calculator with financial, logical and"
+" scientific modes. It uses a multiple precision package to do its arithmetic"
+" to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
+"Calc and part of the MATE Desktop Environment. If you would like to know "
+"more about MATE and MATE Calc, please visit the project's home page. </p>"
+msgstr ""
+
+#: ../data/mate-calc.desktop.in.h:1
+msgid "MATE Calculator"
+msgstr "Calculator MATE"
+
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:518
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
 msgid "Calculator"
 msgstr "Calculator"
 
 #: ../data/mate-calc.desktop.in.h:3
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Efectuează calcule aritmetice, științifice și financiare"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:1
-msgid "Accuracy value"
-msgstr "Valoarea preciziei"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:2
-msgid "The number of digits displayed after the numeric point"
-msgstr "Numărul de cifre afișate după virgulă"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:3
-msgid "Word size"
-msgstr "Dimensiunea cuvântului"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:4
-msgid "The size of the words used in bitwise operations"
-msgstr "Dimensiunea cuvintelor folosite în operațiile binare"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:5
-msgid "Numeric Base"
-msgstr "Bază numerică"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:6
-msgid "The numeric base"
-msgstr "Baza numerică"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:7
-msgid "Show Thousands Separators"
-msgstr "Afișează separatorii de mii"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:8
-msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr "Indică dacă se afișează separatorii de mii în numere mari."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:9
-msgid "Show Trailing Zeroes"
-msgstr "Afișează zerouri după virgulă"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:10
-msgid ""
-"Indicates whether any trailing zeroes after the numeric point should be "
-"shown in the display value."
-msgstr "Indică dacă se afișează zerouri după virgulă."
-
-#: ../data/org.mate.calc.gschema.xml.in.h:11
-msgid "Number format"
-msgstr "Format număr"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:12
-msgid "The format to display numbers in"
-msgstr "Formatul în care se afișează numerele"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:13
-msgid "Angle units"
-msgstr "Unități unghi"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:14
-msgid "The angle units to use"
-msgstr "Unitățile de măsurare a unghiului de utilizat"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:15
-msgid "Button mode"
-msgstr "Mod buton"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:16
-msgid "The button mode"
-msgstr "Mod buton"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:17
-msgid "Source currency"
-msgstr "Monedă sursă"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:18
-msgid "Currency of the current calculation"
-msgstr "Moneda calculului curent"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:19
-msgid "Target currency"
-msgstr "Monedă destinație"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:20
-msgid "Currency to convert the current calculation into"
-msgstr "Moneda în care să se convertească calculul curent"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:21
-msgid "Source units"
-msgstr "Unități sursă"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:22
-msgid "Units of the current calculation"
-msgstr "Unitățile calculului curent"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:23
-msgid "Target units"
-msgstr "Unități destinație"
-
-#: ../data/org.mate.calc.gschema.xml.in.h:24
-msgid "Units to convert the current calculation into"
-msgstr "Unitățile în care să se convertească calculul curent"
 
 #: ../src/currency-manager.c:30
 msgid "UAE Dirham"
@@ -628,7 +540,7 @@ msgstr "Dolar canadian"
 
 #: ../src/currency-manager.c:38
 msgid "CFA Franc"
-msgstr ""
+msgstr "Franc CFA"
 
 #: ../src/currency-manager.c:39
 msgid "Swiss Franc"
@@ -836,7 +748,7 @@ msgstr "Rand sud african"
 
 #: ../src/financial.c:70
 msgid "Error: the number of periods must be positive"
-msgstr ""
+msgstr "Eroare: numărul perioadelor trebuie să fie pozitiv"
 
 #. Description on how to use mate-calc displayed on command-line
 #: ../src/mate-calc.c:79
@@ -1035,17 +947,17 @@ msgstr "Tangentă hiperbolică"
 #. Tooltip for the inverse sine button
 #: ../src/math-buttons.c:181
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Inversa sinusului"
 
 #. Tooltip for the inverse cosine button
 #: ../src/math-buttons.c:184
 msgid "Inverse Cosine"
-msgstr ""
+msgstr "Inversa cosinusului"
 
 #. Tooltip for the inverse tangent button
 #: ../src/math-buttons.c:187
 msgid "Inverse Tangent"
-msgstr ""
+msgstr "Inversa tangentei"
 
 #. Tooltip for the inverse button
 #: ../src/math-buttons.c:190
@@ -1137,6 +1049,16 @@ msgstr "Șterge afișajul [Escape]"
 msgid "Undo [Ctrl+Z]"
 msgstr "Anulează [Ctrl+Z]"
 
+#. Tooltip for the shift left button
+#: ../src/math-buttons.c:250
+msgid "Shift Left [<<]"
+msgstr ""
+
+#. Tooltip for the shift right button
+#: ../src/math-buttons.c:253
+msgid "Shift Right [>>]"
+msgstr ""
+
 #. Tooltip for the double declining depreciation button
 #: ../src/math-buttons.c:259
 msgid "Double Declining Depreciation"
@@ -1219,14 +1141,14 @@ msgstr "Semn"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: ../src/math-converter.c:412
+#: ../src/math-converter.c:414
 msgid " in "
 msgstr " în "
 
 #. Tooltip for swap conversion button
-#: ../src/math-converter.c:427
+#: ../src/math-converter.c:429
 msgid "Switch conversion units"
-msgstr ""
+msgstr "Schimbare unități de conversie"
 
 #. Error shown when trying to undo with no undo history
 #: ../src/math-equation.c:459
@@ -1269,7 +1191,7 @@ msgstr "Conversie necunoscută"
 #: ../src/math-equation.c:1253
 #, c-format
 msgid "Malformed expression at token '%s'"
-msgstr ""
+msgstr "Expresie de formă greșită la simbolul „%s”"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
@@ -1279,26 +1201,26 @@ msgstr "Expresie eronată"
 
 #: ../src/math-equation.c:1275
 msgid "Calculating"
-msgstr ""
+msgstr "Se calculează"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1394
+#: ../src/math-equation.c:1390
 msgid "Need an integer to factorize"
 msgstr "Este nevoie de un întreg pentru factorizare"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1470
+#: ../src/math-equation.c:1462
 msgid "No sane value to bitwise shift"
 msgstr "Nu este valoare bună pentru deplasare binară"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1501
+#: ../src/math-equation.c:1493
 msgid "Displayed value not an integer"
 msgstr "Valoarea afișată nu este un întreg"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1926
+#: ../src/math-equation.c:1918
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1355,17 +1277,17 @@ msgid "Show %d decimal _places"
 msgstr "Arată %d cifre du_pă virgulă"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:198
+#: ../src/math-window.c:211
 msgid "Unable to open help file"
 msgstr "Nu s-a putut deschide fișierul de ajutor"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:225
+#: ../src/math-window.c:238
 msgid "translator-credits"
-msgstr "Mișu Moldovan <dumol@mate.ro>\nLucian Adrian Grijincu <lucian.grijincu@gmail.com>\nDaniel Șerbănescu <cyber19rider@gmail.com>\n\nLaunchpad Contributions:\n  Adi Roiban https://launchpad.net/~adiroiban\n  Adrian Harabulă https://launchpad.net/~opensoft\n  Ionuț Jula https://launchpad.net/~ionutjula\n  Lucian Adrian Grijincu https://launchpad.net/~lucian.grijincu\n  Mircea MITU https://launchpad.net/~mache\n  Mișu Moldovan https://launchpad.net/~dumol-mate"
+msgstr "Mișu Moldovan <dumol@mate.ro>\nLucian Adrian Grijincu <lucian.grijincu@gmail.com>\nDaniel Alămiță <danny3@tutanota.com>\nDaniel Șerbănescu <cyber19rider@gmail.com>\n\nLaunchpad Contributions:\n  Adi Roiban https://launchpad.net/~adiroiban\n  Adrian Harabulă https://launchpad.net/~opensoft\n  Ionuț Jula https://launchpad.net/~ionutjula\n  Lucian Adrian Grijincu https://launchpad.net/~lucian.grijincu\n  Mircea MITU https://launchpad.net/~mache\n  Mișu Moldovan https://launchpad.net/~dumol-mate"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:232
+#: ../src/math-window.c:245
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1380,53 +1302,53 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
+msgstr " mate-calc este un program liber; poate fi redistribuit și/sau modificat\n în conformitate cu termenii Licenței Publice Generale GNU așa cum este ea publicată de \nFundația pentru Software Liber; fie versiunea a 2-a a Lecenței, \nsau (după cum vei alege) orice versiune ulterioară. \n\nMate-calc este distribuit cu speranța că va fi folositor,\ndar FĂRĂ NICI O GARANȚIE; chiar fără garanția implicită că\npoate fi VÂNDUT sau că ESTE POTRIVIT PENRU UN ANUMIT SCOP. \nVezi Licența Publică Generală GNU pentru mai multe detalii. \n\nAr trebui să fi primit o copie a Licenței Publice Generale GNU\nîmpreună cu mate-calc; dacă nu ai primit, contactează\nFree Software Foundation, Inc.,\n151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
-#: ../src/math-window.c:247
+#: ../src/math-window.c:260
 msgid "mate-calc"
 msgstr "mate-calc"
 
-#: ../src/math-window.c:251
+#: ../src/math-window.c:264
 msgid "Calculator with financial and scientific modes."
 msgstr "Calculator cu mod financiar și științific."
 
 #. Calculator menu
-#: ../src/math-window.c:354
+#: ../src/math-window.c:367
 msgid "_Calculator"
 msgstr "_Calculator"
 
 #. Mode menu
-#: ../src/math-window.c:356
+#: ../src/math-window.c:369
 msgid "_Mode"
 msgstr "_Mod"
 
 #. Help menu label
-#: ../src/math-window.c:358
+#: ../src/math-window.c:371
 msgid "_Help"
 msgstr "_Ajutor"
 
 #. Basic menu label
-#: ../src/math-window.c:360
+#: ../src/math-window.c:373
 msgid "_Basic"
 msgstr "_Standard"
 
 #. Advanced menu label
-#: ../src/math-window.c:362
+#: ../src/math-window.c:375
 msgid "_Advanced"
 msgstr "_Avansat"
 
 #. Financial menu label
-#: ../src/math-window.c:364
+#: ../src/math-window.c:377
 msgid "_Financial"
 msgstr "_Financiar"
 
 #. Programming menu label
-#: ../src/math-window.c:366
+#: ../src/math-window.c:379
 msgid "_Programming"
 msgstr "_Programare"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:368
+#: ../src/math-window.c:381
 msgid "_Contents"
 msgstr "_Conținut"
 
@@ -1627,12 +1549,12 @@ msgstr "Mile marine"
 #, c-format
 msgctxt "unit-format"
 msgid "%s nmi"
-msgstr ""
+msgstr "%s nmi"
 
 #: ../src/unit-manager.c:60
 msgctxt "unit-symbols"
 msgid "nmi"
-msgstr ""
+msgstr "nmi"
 
 #: ../src/unit-manager.c:61
 msgid "Miles"
@@ -1812,7 +1734,7 @@ msgstr "%s nm"
 #: ../src/unit-manager.c:72
 msgctxt "unit-symbols"
 msgid "nanometer,nanometers,nm"
-msgstr ""
+msgstr "nanometru,nanometri,nm"
 
 #: ../src/unit-manager.c:73
 msgid "Hectares"
@@ -1846,7 +1768,7 @@ msgstr "acru,acri,ac"
 
 #: ../src/unit-manager.c:75
 msgid "Square Meters"
-msgstr ""
+msgstr "Metri pătrați"
 
 #: ../src/unit-manager.c:75
 #, c-format
@@ -1861,7 +1783,7 @@ msgstr "m²"
 
 #: ../src/unit-manager.c:76
 msgid "Square Centimeters"
-msgstr ""
+msgstr "Centimetri pătrați"
 
 #: ../src/unit-manager.c:76
 #, c-format
@@ -1876,7 +1798,7 @@ msgstr "cm²"
 
 #: ../src/unit-manager.c:77
 msgid "Square Millimeters"
-msgstr ""
+msgstr "Milimetri pătrați"
 
 #: ../src/unit-manager.c:77
 #, c-format
@@ -1981,7 +1903,7 @@ msgstr "mililitru, mililitri,ml,cm³"
 
 #: ../src/unit-manager.c:84
 msgid "Microlitres"
-msgstr ""
+msgstr "Microlitri"
 
 #: ../src/unit-manager.c:84
 #, c-format
@@ -2172,7 +2094,7 @@ msgstr "%s μs"
 #: ../src/unit-manager.c:96
 msgctxt "unit-symbols"
 msgid "microsecond,microseconds,us,μs"
-msgstr ""
+msgstr "microsecundă,microsecunde,us,μs"
 
 #: ../src/unit-manager.c:97
 msgid "Celsius"
@@ -2182,7 +2104,7 @@ msgstr "Celsius"
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚C"
-msgstr ""
+msgstr "%s ˚C"
 
 #: ../src/unit-manager.c:97
 msgctxt "unit-symbols"
@@ -2197,7 +2119,7 @@ msgstr "Farenheit"
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚F"
-msgstr ""
+msgstr "%s ˚F"
 
 #: ../src/unit-manager.c:98
 msgctxt "unit-symbols"
@@ -2212,12 +2134,12 @@ msgstr "Kelvin"
 #, c-format
 msgctxt "unit-format"
 msgid "%s K"
-msgstr ""
+msgstr "%s K"
 
 #: ../src/unit-manager.c:99
 msgctxt "unit-symbols"
 msgid "K"
-msgstr ""
+msgstr "K"
 
 #: ../src/unit-manager.c:100
 msgid "Rankine"
@@ -2227,12 +2149,12 @@ msgstr "Rankine"
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚R"
-msgstr ""
+msgstr "%s ˚R"
 
 #: ../src/unit-manager.c:100
 msgctxt "unit-symbols"
 msgid "degR,˚R,˚Ra"
-msgstr ""
+msgstr "degR,˚R,˚Ra"
 
 #: ../src/unit-manager.c:109
 msgid "Angle"
