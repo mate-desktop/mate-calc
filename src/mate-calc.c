@@ -189,10 +189,6 @@ int main(int argc, char **argv)
     gchar *source_currency, *target_currency;
     gchar *source_units, *target_units;
 
-#if !GLIB_CHECK_VERSION (2, 36, 0)
-    g_type_init();
-#endif
-
     setlocale(LC_ALL, "");
     bindtextdomain(GETTEXT_PACKAGE, LOCALE_DIR);
     bind_textdomain_codeset(GETTEXT_PACKAGE, "UTF-8");

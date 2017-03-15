@@ -74,9 +74,6 @@ main(int argc, char **argv)
     /* Seed random number generator. */
     srand48((long) time((time_t *) 0));
 
-#if !GLIB_CHECK_VERSION (2, 36, 0)
-    g_type_init ();
-#endif
     setlocale(LC_ALL, "");
 
     result_serializer = mp_serializer_new(MP_DISPLAY_FORMAT_AUTOMATIC, 10, 9);

@@ -229,9 +229,6 @@ int
 main (int argc, char **argv)
 {
     setlocale(LC_ALL, "C");
-#if !GLIB_CHECK_VERSION (2, 36, 0)
-    g_type_init ();
-#endif
 
     test_mp();
     test_numbers();
