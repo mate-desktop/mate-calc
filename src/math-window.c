@@ -198,11 +198,20 @@ static void redo_cb(GtkWidget *widget, MathWindow *window)
 
 static void help_cb(GtkWidget *widget, MathWindow *window)
 {
+#if GTK_CHECK_VERSION (3, 22, 0)
+    GError *error = NULL;
+
+    gtk_show_uri_on_window(GTK_WINDOW(window),
+                           "help:mate-calc",
+                           gtk_get_current_event_time(),
+                           &error);
+#else
     GdkScreen  *screen;
     GError *error = NULL;
 
     screen = gtk_widget_get_screen(GTK_WIDGET(window));
     gtk_show_uri(screen, "help:mate-calc", gtk_get_current_event_time(), &error);
+#endif
 
     if (error != NULL)
     {
