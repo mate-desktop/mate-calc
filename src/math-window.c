@@ -248,7 +248,7 @@ static void about_cb(GtkWidget* widget, MathWindow* window)
 
     char copyright[] = \
         "Copyright \xc2\xa9 1986–2010 The GCalctool authors\n"
-        "Copyright \xc2\xa9 2011-2017 MATE developers";
+        "Copyright \xc2\xa9 2011-2018 MATE developers";
 
     /* The license this software is under (GPL2+) */
     char* license = _("mate-calc is free software; you can redistribute it and/or modify\n"
