@@ -19,9 +19,9 @@ dnl ###########################################################################
 dnl Dependencies
 dnl ###########################################################################
 
-GLIB_REQUIRED=2.36.0
+GLIB_REQUIRED=2.50.0
 GIO_REQUIRED=2.36.0
-GTK_REQUIRED=3.14.0
+GTK_REQUIRED=3.22.0
 
 PKG_CHECK_MODULES(MATE_CALC, [
     gtk+-3.0 >= $GTK_REQUIRED
