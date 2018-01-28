@@ -162,7 +162,7 @@ make_variable_entry(MathVariablePopup *popup, const gchar *name, const MPNumber 
 
         button = gtk_button_new();
         g_object_set_data(G_OBJECT(button), "variable_name", g_strdup(name));
-        image = gtk_image_new_from_stock(GTK_STOCK_SAVE, GTK_ICON_SIZE_BUTTON);
+        image = gtk_image_new_from_icon_name("document-save", GTK_ICON_SIZE_BUTTON);
         gtk_container_add(GTK_CONTAINER(button), image);
         gtk_box_pack_start(GTK_BOX(hbox), button, FALSE, TRUE, 0);
         g_signal_connect(G_OBJECT(button), "clicked", G_CALLBACK(save_variable_cb), popup);
@@ -171,7 +171,7 @@ make_variable_entry(MathVariablePopup *popup, const gchar *name, const MPNumber 
 
         button = gtk_button_new();
         g_object_set_data(G_OBJECT(button), "variable_name", g_strdup(name));
-        image = gtk_image_new_from_stock(GTK_STOCK_DELETE, GTK_ICON_SIZE_BUTTON);
+        image = gtk_image_new_from_icon_name("edit-delete", GTK_ICON_SIZE_BUTTON);
         gtk_container_add(GTK_CONTAINER(button), image);
         gtk_box_pack_start(GTK_BOX(hbox), button, FALSE, TRUE, 0);
         g_signal_connect(G_OBJECT(button), "clicked", G_CALLBACK(delete_variable_cb), popup);
@@ -225,7 +225,7 @@ math_variable_popup_set_property(GObject      *object,
         self->priv->add_variable_button = gtk_button_new();
         gtk_widget_set_sensitive(self->priv->add_variable_button, FALSE);
         g_signal_connect(G_OBJECT(self->priv->add_variable_button), "clicked", G_CALLBACK(add_variable_cb), self);
-        image = gtk_image_new_from_stock(GTK_STOCK_ADD, GTK_ICON_SIZE_BUTTON);
+        image = gtk_image_new_from_icon_name("list-add", GTK_ICON_SIZE_BUTTON);
         gtk_container_add(GTK_CONTAINER(self->priv->add_variable_button), image);
         gtk_box_pack_start(GTK_BOX(entry), self->priv->add_variable_button, FALSE, TRUE, 0);
         gtk_widget_show(image);
