@@ -3,10 +3,11 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Adolfo Jayme Barrientos, 2013
+# Adolfo Jayme-Barrientos, 2013
 # Daniel Mustieles <inactive+leo@transifex.com>, 2011-2012
 # Francisco Javier F. Serrador <serrador@openshine.com>, 2006
 # Germán Poo Caamaño <gpoo@ubiobio.cl>, 2003
+# Joel Barrios <darkshram@gmail.com>, 2017
 # Jorge González <jorgegonz@svn.gnome.org>, 2007-2011
 # Jorge González <jorgegonz@svn.mate.org>, 2007-2010
 # Lluís Tusquellas <lutusq@gmail.com>, 2013
@@ -15,9 +16,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-15 14:46+0300\n"
-"PO-Revision-Date: 2017-09-15 14:27+0000\n"
-"Last-Translator: Tasio Leiva <leiva.tasio@gmail.com>\n"
+"POT-Creation-Date: 2017-11-28 10:11+0100\n"
+"PO-Revision-Date: 2017-12-14 22:06+0000\n"
+"Last-Translator: Joel Barrios <darkshram@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/mate/MATE/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -482,7 +483,7 @@ msgstr "Mostrar los separadores de _millares"
 
 #: ../data/mate-calc.appdata.xml.in.h:1
 msgid "MATE Desktop calculator"
-msgstr ""
+msgstr "Calculadora del Escritorio MATE"
 
 #: ../data/mate-calc.appdata.xml.in.h:2
 msgid ""
@@ -498,7 +499,7 @@ msgid "MATE Calculator"
 msgstr "Calculadora de MATE"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:540
 msgid "Calculator"
 msgstr "Calculadora"
 
@@ -1052,12 +1053,12 @@ msgstr "Deshacer [Ctrl+Z]"
 #. Tooltip for the shift left button
 #: ../src/math-buttons.c:250
 msgid "Shift Left [<<]"
-msgstr ""
+msgstr "Cambiar Izquierdo [<<]"
 
 #. Tooltip for the shift right button
 #: ../src/math-buttons.c:253
 msgid "Shift Right [>>]"
-msgstr ""
+msgstr "Cambiar Derecho [>>]"
 
 #. Tooltip for the double declining depreciation button
 #: ../src/math-buttons.c:259
@@ -1275,17 +1276,17 @@ msgid "Show %d decimal _places"
 msgstr "Mostrar %d deci_males"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:211
+#: ../src/math-window.c:220
 msgid "Unable to open help file"
 msgstr "No se pudo abrir el archivo de ayuda"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:238
+#: ../src/math-window.c:247
 msgid "translator-credits"
 msgstr "Adolfo Jayme Barrientos <fitoschido@ubuntu.com>, 2013\nJorge González <jorgegonz@svn.gnome.org>, 2007-2009\nFrancisco Javier F. Serrador <serrador@cvs.gnome.org>, 2006\nGermán Poo-Caamaño <gpoo@ubiobio.cl>, 2003"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:245
+#: ../src/math-window.c:254
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1302,51 +1303,51 @@ msgid ""
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr "mate-calc es software libre, puede redistribuirlo y / o modificarlo\nbajo los términos de la Licencia Pública General de GNU según la publica\nla Free Software Foundation, ya sea la versión 2 de la Licencia, o \n(a su elección) cualquier otra versión posterior \n\nmate-calc se distribuye con la esperanza de que será útil, pero SIN\nNINGUNA GARANTÍA; sin siquiera la garantía implícita de COMERCIALIZACIÓN\no IDONEIDAD PARA UN PROPÓSITO PARTICULAR. Vea la Licencia Pública\nGeneral de GNU para más detalles.\n\nDebería haber recibido una copia de la Licencia Pública General de GNU \njunto con su mate-calc;. Si no, escriba a la Free Software Foundation, Inc.,\nFranklin Street n.º 501, 5.º piso, Boston, MA 02110-1301, EE. UU."
 
-#: ../src/math-window.c:260
+#: ../src/math-window.c:269
 msgid "mate-calc"
 msgstr "mate-calc"
 
-#: ../src/math-window.c:264
+#: ../src/math-window.c:273
 msgid "Calculator with financial and scientific modes."
 msgstr "Calculadora con modos científico y financiero."
 
 #. Calculator menu
-#: ../src/math-window.c:367
+#: ../src/math-window.c:376
 msgid "_Calculator"
 msgstr "_Calculadora"
 
 #. Mode menu
-#: ../src/math-window.c:369
+#: ../src/math-window.c:378
 msgid "_Mode"
 msgstr "_Modo"
 
 #. Help menu label
-#: ../src/math-window.c:371
+#: ../src/math-window.c:380
 msgid "_Help"
 msgstr "Ay_uda"
 
 #. Basic menu label
-#: ../src/math-window.c:373
+#: ../src/math-window.c:382
 msgid "_Basic"
 msgstr "_Básico"
 
 #. Advanced menu label
-#: ../src/math-window.c:375
+#: ../src/math-window.c:384
 msgid "_Advanced"
 msgstr "_Avanzado"
 
 #. Financial menu label
-#: ../src/math-window.c:377
+#: ../src/math-window.c:386
 msgid "_Financial"
 msgstr "_Financiero"
 
 #. Programming menu label
-#: ../src/math-window.c:379
+#: ../src/math-window.c:388
 msgid "_Programming"
 msgstr "_Programador"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:381
+#: ../src/math-window.c:390
 msgid "_Contents"
 msgstr "Índ_ice"
 

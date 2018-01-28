@@ -5,6 +5,7 @@
 # Translators:
 # ABE Tsunehiko, 2014
 # ABE Tsunehiko, 2014
+# IWAI, Masaharu <iwaim.sub@gmail.com>, 2018
 # KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003
 # Nishio Futoshi <fut_nis@d3.dion.ne.jp>, 2010
 # Satoru SATOH <ss@gnome.gr.jp>, 2006
@@ -13,9 +14,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-15 14:46+0300\n"
-"PO-Revision-Date: 2017-09-19 11:50+0000\n"
-"Last-Translator: monsta <monsta@inbox.ru>\n"
+"POT-Creation-Date: 2017-11-28 10:11+0100\n"
+"PO-Revision-Date: 2018-01-22 14:41+0000\n"
+"Last-Translator: IWAI, Masaharu <iwaim.sub@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/mate/MATE/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -77,7 +78,7 @@ msgstr "指数"
 #: ../data/buttons-advanced.ui.h:18 ../data/buttons-basic.ui.h:6
 #: ../data/buttons-financial.ui.h:98
 msgid "Undo"
-msgstr "元に戻します"
+msgstr "元に戻す"
 
 #: ../data/buttons-advanced.ui.h:19
 msgid "acos"
@@ -480,7 +481,7 @@ msgstr "3桁ごとの区切りを表示(_T)"
 
 #: ../data/mate-calc.appdata.xml.in.h:1
 msgid "MATE Desktop calculator"
-msgstr ""
+msgstr "MATE デスクトップ・電卓"
 
 #: ../data/mate-calc.appdata.xml.in.h:2
 msgid ""
@@ -496,7 +497,7 @@ msgid "MATE Calculator"
 msgstr "MATE 電卓"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:540
 msgid "Calculator"
 msgstr "電卓"
 
@@ -1271,17 +1272,17 @@ msgid "Show %d decimal _places"
 msgstr "小数点以下第 %d 位まで表示 (_P)"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:211
+#: ../src/math-window.c:220
 msgid "Unable to open help file"
 msgstr "ヘルプを開けません"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:238
+#: ../src/math-window.c:247
 msgid "translator-credits"
 msgstr "相花 毅 <takeshi.aihana@gmail.com>\n佐藤 暁 <ss@gnome.gr.jp>\nKAMAGASAKO Masatoshi <emerald@gnome.gr.jp>\nNishio Futoshi <fut_nis@d3.dion.ne.jp>\n草野 貴之 <AE5T-KSN@asahi-net.or.jp>\n日本GNOMEユーザー会 <http://www.gnome.gr.jp/>\nLaunchpad Contributions:\n  Fumihito YOSHIDA https://launchpad.net/~hito\n  Shushi Kurose https://launchpad.net/~kurokuro\n  vbk https://launchpad.net/~vbkaisetsu"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:245
+#: ../src/math-window.c:254
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1298,51 +1299,51 @@ msgid ""
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr "MATE 電卓はフリーソフトウェアです。フリーソフトウェア財団が提供する\nGNU 一般公衆利用許諾契約書の第二版、あるいはそれ以降の版が定める\n条項の下で本プログラムを再頒布または変更することができます。\n\nMATE 電卓は有用とは思いますが、その頒布にあたっては市場性及び\n特定の目的、その適合性についての暗黙の保証を含めて、いかなる保証も\n行ないません。詳細については GNU 一般公衆利用許諾契約書をご覧ください。\n\nあなたは、本プログラムと一緒に GNU 一般公衆利用許諾契約書の写しを\n受け取っているはずです。そうでない場合は、Free Software Foundation, Inc., \n151 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA まで連絡してください。"
 
-#: ../src/math-window.c:260
+#: ../src/math-window.c:269
 msgid "mate-calc"
 msgstr "mate-calc"
 
-#: ../src/math-window.c:264
+#: ../src/math-window.c:273
 msgid "Calculator with financial and scientific modes."
 msgstr "財務と科学計算のモードを持つ電卓です。"
 
 #. Calculator menu
-#: ../src/math-window.c:367
+#: ../src/math-window.c:376
 msgid "_Calculator"
 msgstr "電卓(_C)"
 
 #. Mode menu
-#: ../src/math-window.c:369
+#: ../src/math-window.c:378
 msgid "_Mode"
 msgstr "モード(_M)"
 
 #. Help menu label
-#: ../src/math-window.c:371
+#: ../src/math-window.c:380
 msgid "_Help"
 msgstr "ヘルプ(_H)"
 
 #. Basic menu label
-#: ../src/math-window.c:373
+#: ../src/math-window.c:382
 msgid "_Basic"
 msgstr "基本(_B)"
 
 #. Advanced menu label
-#: ../src/math-window.c:375
+#: ../src/math-window.c:384
 msgid "_Advanced"
 msgstr "拡張(_A)"
 
 #. Financial menu label
-#: ../src/math-window.c:377
+#: ../src/math-window.c:386
 msgid "_Financial"
 msgstr "財務(_F)"
 
 #. Programming menu label
-#: ../src/math-window.c:379
+#: ../src/math-window.c:388
 msgid "_Programming"
 msgstr "プログラミング(_P)"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:381
+#: ../src/math-window.c:390
 msgid "_Contents"
 msgstr "目次(_C)"
 

@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Andras Timar <timar at mate dot hu>, 2003
+# Balázs Meskó <meskobalazs@gmail.com>, 2018
 # Falu <info@falu.me>, 2017
 # Gabor Kelemen <kelemeng at mate dot hu>, 2005-2012
 # István Szőllősi <szollosi.istv4n@gmail.com>, 2014
@@ -15,9 +16,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-15 14:46+0300\n"
-"PO-Revision-Date: 2017-09-19 11:50+0000\n"
-"Last-Translator: Zoltán Rápolthy <real_zolee@hotmail.com>\n"
+"POT-Creation-Date: 2017-11-28 10:11+0100\n"
+"PO-Revision-Date: 2018-01-20 18:00+0000\n"
+"Last-Translator: Balázs Meskó <meskobalazs@gmail.com>\n"
 "Language-Team: Hungarian (http://www.transifex.com/mate/MATE/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -498,7 +499,7 @@ msgid "MATE Calculator"
 msgstr "MATE számológép"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:540
 msgid "Calculator"
 msgstr "Számológép"
 
@@ -700,7 +701,7 @@ msgstr "Új román lej"
 
 #: ../src/currency-manager.c:78
 msgid "Russian Rouble"
-msgstr "orosz rubel"
+msgstr "Orosz rubel"
 
 #: ../src/currency-manager.c:79
 msgid "Saudi Riyal"
@@ -768,7 +769,7 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr "Súgólehetőségek:\n  -v, --version                   Verziószám megjelenítése\n  -h, -?, --help                  Súgólehetőségek megjelenítése\n  --help-all                      Minden súgólehetőség megjelenítése\n  --help-gtk                      GTK+ beállítások megjelenítése"
+msgstr "Súgókapcsolók:\n  -v, --version                   Verziószám megjelenítése\n  -h, -?, --help                  Súgólehetőségek megjelenítése\n  --help-all                      Minden súgólehetőség megjelenítése\n  --help-gtk                      GTK+ beállítások megjelenítése"
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
@@ -782,7 +783,7 @@ msgid ""
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr "GTK+ beállításai\n  --class=OSZTÁLY                 A program osztálya, ahogy az ablakkezelő használja\n  --name=NÉV                      A programnév, ahogy az ablakkezelő használja\n  --display=MEGJELENÍTŐ           Használandó X-megjelenítő\n  --screen=KÉPERNYŐ               Használandó X-képernyő\n  --sync                          Legyenek szinkron X-hívások\n  --gtk-module=MODULOK            További GTK+ modulok betöltése\n  --g-fatal-warnings              Minden figyelmeztetés végzetes legyen"
+msgstr "GTK+ kapcsolók:\n  --class=OSZTÁLY                 A program osztálya, ahogy az ablakkezelő használja\n  --name=NÉV                      A programnév, ahogy az ablakkezelő használja\n  --display=MEGJELENÍTŐ           Használandó X-megjelenítő\n  --screen=KÉPERNYŐ               Használandó X-képernyő\n  --sync                          Legyenek szinkron X-hívások\n  --gtk-module=MODULOK            További GTK+ modulok betöltése\n  --g-fatal-warnings              Minden figyelmeztetés végzetes legyen"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -790,7 +791,7 @@ msgstr "GTK+ beállításai\n  --class=OSZTÁLY                 A program osztá
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr "Alkalmazás kapcsolói:\n  -s, --solve <egyenlet>          A megadott egyenlet megoldása"
+msgstr "Alkalmazáskapcsolók:\n  -s, --solve <egyenlet>          A megadott egyenlet megoldása"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:156
@@ -932,32 +933,32 @@ msgstr "Tangens"
 #. Tooltip for the hyperbolic sine button
 #: ../src/math-buttons.c:172
 msgid "Hyperbolic Sine"
-msgstr "Szinusz hiperbolikusz"
+msgstr "Hiperbolikus szinusz"
 
 #. Tooltip for the hyperbolic cosine button
 #: ../src/math-buttons.c:175
 msgid "Hyperbolic Cosine"
-msgstr "Koszinusz hiperbolikusz"
+msgstr "Hiperbolikus koszinusz"
 
 #. Tooltip for the hyperbolic tangent button
 #: ../src/math-buttons.c:178
 msgid "Hyperbolic Tangent"
-msgstr "Tangens hiperbolikusz"
+msgstr "Hiperbolikus tangens"
 
 #. Tooltip for the inverse sine button
 #: ../src/math-buttons.c:181
 msgid "Inverse Sine"
-msgstr "arcus sinus"
+msgstr "Arkusz szinusz"
 
 #. Tooltip for the inverse cosine button
 #: ../src/math-buttons.c:184
 msgid "Inverse Cosine"
-msgstr "arcus cosinus"
+msgstr "Arkusz koszinusz"
 
 #. Tooltip for the inverse tangent button
 #: ../src/math-buttons.c:187
 msgid "Inverse Tangent"
-msgstr "arcus tangens"
+msgstr "Arkusz tangens"
 
 #. Tooltip for the inverse button
 #: ../src/math-buttons.c:190
@@ -987,7 +988,7 @@ msgstr "Logikai NEM"
 #. Tooltip for the integer component button
 #: ../src/math-buttons.c:205 ../src/math-buttons.c:994
 msgid "Integer Component"
-msgstr "Egész rész"
+msgstr "Egészrész"
 
 #. Tooltip for the fractional component button
 #: ../src/math-buttons.c:208 ../src/math-buttons.c:996
@@ -1052,12 +1053,12 @@ msgstr "Visszavonás [Ctrl+Z]"
 #. Tooltip for the shift left button
 #: ../src/math-buttons.c:250
 msgid "Shift Left [<<]"
-msgstr "Shift Bal [<<]"
+msgstr "Eltolás balra [<<]"
 
 #. Tooltip for the shift right button
 #: ../src/math-buttons.c:253
 msgid "Shift Right [>>]"
-msgstr "Shift Jobb [>>]"
+msgstr "Eltolás jobbra [>>]"
 
 #. Tooltip for the double declining depreciation button
 #: ../src/math-buttons.c:259
@@ -1189,7 +1190,7 @@ msgstr "Ismeretlen konverzió"
 #: ../src/math-equation.c:1253
 #, c-format
 msgid "Malformed expression at token '%s'"
-msgstr "Hibás kifejezés a(z) '%s' token-nél"
+msgstr "Hibás kifejezés a(z) „%s” jelnél"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
@@ -1210,7 +1211,7 @@ msgstr "A faktorizáláshoz egész szám szükséges"
 #. shift operation is performed and the display does not contain a number
 #: ../src/math-equation.c:1462
 msgid "No sane value to bitwise shift"
-msgstr "Nincs ép érték a bitenkénti eltoláshoz"
+msgstr "Nincs értelmes érték a bitenkénti eltoláshoz"
 
 #. Message displayed when cannot toggle bit in display
 #: ../src/math-equation.c:1493
@@ -1275,17 +1276,17 @@ msgid "Show %d decimal _places"
 msgstr "%d decimális _hely megjelenítése"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:211
+#: ../src/math-window.c:220
 msgid "Unable to open help file"
 msgstr "A súgófájl nem nyitható meg"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:238
+#: ../src/math-window.c:247
 msgid "translator-credits"
-msgstr "Dvornik László <dvornik at mate dot hu>\nKelemen Gábor <kelemeng at mate dot hu>\nTímár András <timar at mate dot hu>"
+msgstr "Dvornik László<dvornik at mate dot hu>\nKelemen Gábor<kelemeng at mate dot hu>\nTímár András<timar at mate dot hu>\nMeskó Balázs <mesko.balazs at fsf dot hu>"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:245
+#: ../src/math-window.c:254
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1300,53 +1301,53 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr "mate-calc egy ingyenes szoftver; továbbadhatod és/vagy módosíthatod\na GNU Genereal Public Licence feltételei alatt, amelyet publikálta\na Free Software Foundation; vagy a licenc második verzióját vagy\n(választásod szerint) bármelyik későbbi verzióját.\n\nmate-calc-ot abban a reményben terjesztjük, hogy hasznos lesz, \nde GARANCIA NÉLKÜL, anélkül, hogy a hallgatólagos garancia\nKÖZREADÁSRA vagy ADOTT CÉLRA. Lásd a\nGNU General Public License-et további részletekért."
+msgstr "A mate-calc szabad szoftver; terjeszthető illetve módosítható a Free Software\nFoundation által kiadott GNU General Public License dokumentumában leírtak;\nakár a licenc 2-es, akár (tetszőleges) későbbi változata szerint.\n\nA mate-calc abban a reményben kerül közreadásra, hogy hasznos lesz, de minden\negyéb GARANCIA NÉLKÜL, az ELADHATÓSÁGRA vagy VALAMELY CÉLRA VALÓ\nALKALMAZHATÓSÁGRA való származtatott garanciát is beleértve. További\nrészleteket a GNU General Public License tartalmaz.\n\nA felhasználónak a programmal együtt meg kell kapnia a GNU General Public\nLicense egy példányát; ha mégsem kapta meg, akkor ezt a Free Software\nFoundationnak küldött levélben jelezze (cím: Free Software Foundation Inc.,\n59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.)"
 
-#: ../src/math-window.c:260
+#: ../src/math-window.c:269
 msgid "mate-calc"
 msgstr "mate-calc"
 
-#: ../src/math-window.c:264
+#: ../src/math-window.c:273
 msgid "Calculator with financial and scientific modes."
 msgstr "Számológép pénzügyi és tudományos üzemmódokkal."
 
 #. Calculator menu
-#: ../src/math-window.c:367
+#: ../src/math-window.c:376
 msgid "_Calculator"
 msgstr "Számoló_gép"
 
 #. Mode menu
-#: ../src/math-window.c:369
+#: ../src/math-window.c:378
 msgid "_Mode"
 msgstr "_Mód"
 
 #. Help menu label
-#: ../src/math-window.c:371
+#: ../src/math-window.c:380
 msgid "_Help"
 msgstr "_Súgó"
 
 #. Basic menu label
-#: ../src/math-window.c:373
+#: ../src/math-window.c:382
 msgid "_Basic"
 msgstr "_Alap"
 
 #. Advanced menu label
-#: ../src/math-window.c:375
+#: ../src/math-window.c:384
 msgid "_Advanced"
 msgstr "_Speciális"
 
 #. Financial menu label
-#: ../src/math-window.c:377
+#: ../src/math-window.c:386
 msgid "_Financial"
 msgstr "_Pénzügyi"
 
 #. Programming menu label
-#: ../src/math-window.c:379
+#: ../src/math-window.c:388
 msgid "_Programming"
 msgstr "_Programozói"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:381
+#: ../src/math-window.c:390
 msgid "_Contents"
 msgstr "_Tartalom"
 
