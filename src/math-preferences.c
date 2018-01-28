@@ -238,8 +238,8 @@ create_gui(MathPreferencesDialog *dialog)
                          _("Preferences"));
     gtk_container_set_border_width(GTK_CONTAINER(dialog), 8);
     gtk_dialog_add_button(GTK_DIALOG(dialog),
-                          /* Label on close button in preferences dialog */
-                          _("_Close"), 0);
+                          /* Icon name on close button in preferences dialog */
+                          "gtk-close", GTK_RESPONSE_CLOSE);
     g_signal_connect(dialog, "response", G_CALLBACK(preferences_response_cb), NULL);
     g_signal_connect(dialog, "delete-event", G_CALLBACK(preferences_dialog_delete_cb), NULL);
     gtk_box_pack_start(GTK_BOX(gtk_dialog_get_content_area(GTK_DIALOG(dialog))), GET_WIDGET(dialog->priv->ui, "preferences_table"), TRUE, TRUE, 0);
