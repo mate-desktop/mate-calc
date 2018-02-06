@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-28 10:11+0100\n"
-"PO-Revision-Date: 2017-12-01 11:56+0000\n"
-"Last-Translator: Pilar Embid <embid.mar@gmail.com>\n"
+"POT-Creation-Date: 2018-02-06 15:01+0300\n"
+"PO-Revision-Date: 2018-02-06 12:05+0000\n"
+"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
 "Language-Team: Catalan (Valencian) (http://www.transifex.com/mate/MATE/language/ca%40valencia/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -493,7 +493,7 @@ msgid "MATE Calculator"
 msgstr "Calculadora del MATE"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:540
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:533
 msgid "Calculator"
 msgstr "Calculadora"
 
@@ -1217,11 +1217,6 @@ msgstr "El valor mostrat no és un enter"
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
-#. Label on close button in preferences dialog
-#: ../src/math-preferences.c:242
-msgid "_Close"
-msgstr "_Tanca"
-
 #. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
@@ -1270,17 +1265,17 @@ msgid "Show %d decimal _places"
 msgstr "Mostra %d _posicions decimals"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:220
+#: ../src/math-window.c:212
 msgid "Unable to open help file"
 msgstr "No s'ha pogut obrir el fitxer d'ajuda"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:247
+#: ../src/math-window.c:239
 msgid "translator-credits"
 msgstr "Blanca Biosca <b_biosca@hotmail.com>\nJosep Puigdemont <josep.puigdemont@gmail.com>\nJoan Duran <jodufi@gmail.com>\nEquip LliureX: Pilar Embid <embid.mar@gmail.com>"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:254
+#: ../src/math-window.c:246
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1297,51 +1292,51 @@ msgid ""
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr "El mate-calc és programari lliure; podeu redistribuir-lo i/o modificar-lo\nsota els termes de la Llicència pública general de GNU tal com publica la\nFree Software Foundation; tant en la versió 2 de la llicència, o (a la\nvostra opció) una versió posterior. El mate-calc es distribueix amb l'esperança que siga útil, però\nSENSE CAP GARANTIA; fins i tot sense la garantia implícita de\nCOMERCIALITZACIÓ o ADEQUACIÓ A UN ÚS CONCRET. Per a més detalls vegeu la\nLlicència pública general de GNU.\nHeu d'haver rebut una còpia de la Llicència pública general de GNU\namb mate-calc; si no és així, escriviu a la Free Software Foundation, \nInc., 151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
-#: ../src/math-window.c:269
+#: ../src/math-window.c:261
 msgid "mate-calc"
 msgstr "mate-calc"
 
-#: ../src/math-window.c:273
+#: ../src/math-window.c:265
 msgid "Calculator with financial and scientific modes."
 msgstr "Calculadora amb mode financer i científic."
 
 #. Calculator menu
-#: ../src/math-window.c:376
+#: ../src/math-window.c:369
 msgid "_Calculator"
 msgstr "_Calculadora"
 
 #. Mode menu
-#: ../src/math-window.c:378
+#: ../src/math-window.c:371
 msgid "_Mode"
 msgstr "_Mode"
 
 #. Help menu label
-#: ../src/math-window.c:380
+#: ../src/math-window.c:373
 msgid "_Help"
 msgstr "A_juda"
 
 #. Basic menu label
-#: ../src/math-window.c:382
+#: ../src/math-window.c:375
 msgid "_Basic"
 msgstr "_Bàsic"
 
 #. Advanced menu label
-#: ../src/math-window.c:384
+#: ../src/math-window.c:377
 msgid "_Advanced"
 msgstr "_Avançat"
 
 #. Financial menu label
-#: ../src/math-window.c:386
+#: ../src/math-window.c:379
 msgid "_Financial"
 msgstr "_Financer"
 
 #. Programming menu label
-#: ../src/math-window.c:388
+#: ../src/math-window.c:381
 msgid "_Programming"
 msgstr "_Programació"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:390
+#: ../src/math-window.c:383
 msgid "_Contents"
 msgstr "_Continguts"
 

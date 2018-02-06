@@ -13,9 +13,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-28 10:11+0100\n"
-"PO-Revision-Date: 2017-10-16 12:32+0000\n"
-"Last-Translator: Ján Ďanovský <dagsoftware@yahoo.com>\n"
+"POT-Creation-Date: 2018-02-06 15:01+0300\n"
+"PO-Revision-Date: 2018-02-06 12:05+0000\n"
+"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
 "Language-Team: Slovak (http://www.transifex.com/mate/MATE/language/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -496,7 +496,7 @@ msgid "MATE Calculator"
 msgstr "MATE kalkulačka"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:540
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:533
 msgid "Calculator"
 msgstr "Kalkulačka"
 
@@ -1222,11 +1222,6 @@ msgstr "Zobrazená hodnota nie je celé číslo"
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
-#. Label on close button in preferences dialog
-#: ../src/math-preferences.c:242
-msgid "_Close"
-msgstr "Za_vrieť"
-
 #. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
@@ -1275,17 +1270,17 @@ msgid "Show %d decimal _places"
 msgstr "Zobraziť %d _desatinných miest"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:220
+#: ../src/math-window.c:212
 msgid "Unable to open help file"
 msgstr "Nie je možné otvoriť súbor s pomocníkom"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:247
+#: ../src/math-window.c:239
 msgid "translator-credits"
 msgstr "Marcel Telka <marcel@telka.sk>\nPeter Tuhársky <tuharsky@misbb.sk>\nRobert Hartl <hartl.robert@gmail.com>\nJán Ďanovský <dagsoftware@yahoo.com>"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:254
+#: ../src/math-window.c:246
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1302,51 +1297,51 @@ msgid ""
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr "mate-calc je slobodný softvér; môžete ho šíriť a upravovať podľa\nustanovení GNU General Public License, vydávanej Free Software \nFoundation, a to buď vo verzii 2 tejto licencie alebo (podľa vlastného\nuváženia) v akejkoľvek neskoršej verzii.\n\nTento program je šírený v nádeji, že bude užitočný, avšak BEZ\nAKEJKOĽVEK ZÁRUKY; neposkytujú sa ani odvodené záruky PREDAJNOSTI\nalebo VHODNOSTI PRE URČITÝ ÚČEL. Ďalšie podrobnosti hľadajte v GNU\nGeneral Public License.\n\nKópiu GNU General Public License by ste mali obdržať spolu s týmto\nprogramom. Ak sa tak nestalo, napíšte si o ňu Free Software Foundation,\n151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 
-#: ../src/math-window.c:269
+#: ../src/math-window.c:261
 msgid "mate-calc"
 msgstr "mate-calc"
 
-#: ../src/math-window.c:273
+#: ../src/math-window.c:265
 msgid "Calculator with financial and scientific modes."
 msgstr "Kalkulačka s finančným a vedeckým režimom."
 
 #. Calculator menu
-#: ../src/math-window.c:376
+#: ../src/math-window.c:369
 msgid "_Calculator"
 msgstr "_Kalkulačka"
 
 #. Mode menu
-#: ../src/math-window.c:378
+#: ../src/math-window.c:371
 msgid "_Mode"
 msgstr "_Režim"
 
 #. Help menu label
-#: ../src/math-window.c:380
+#: ../src/math-window.c:373
 msgid "_Help"
 msgstr "_Pomocník"
 
 #. Basic menu label
-#: ../src/math-window.c:382
+#: ../src/math-window.c:375
 msgid "_Basic"
 msgstr "_Základný"
 
 #. Advanced menu label
-#: ../src/math-window.c:384
+#: ../src/math-window.c:377
 msgid "_Advanced"
 msgstr "_Rozšírený"
 
 #. Financial menu label
-#: ../src/math-window.c:386
+#: ../src/math-window.c:379
 msgid "_Financial"
 msgstr "_Finančný"
 
 #. Programming menu label
-#: ../src/math-window.c:388
+#: ../src/math-window.c:381
 msgid "_Programming"
 msgstr "_Programátorský"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:390
+#: ../src/math-window.c:383
 msgid "_Contents"
 msgstr "Ob_sah"
 

@@ -12,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-28 10:11+0100\n"
-"PO-Revision-Date: 2017-09-19 11:50+0000\n"
-"Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
+"POT-Creation-Date: 2018-02-06 15:01+0300\n"
+"PO-Revision-Date: 2018-02-06 12:05+0000\n"
+"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
 "Language-Team: Danish (http://www.transifex.com/mate/MATE/language/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -495,7 +495,7 @@ msgid "MATE Calculator"
 msgstr "Mate-lommeregner"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:540
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:533
 msgid "Calculator"
 msgstr "Lommeregner"
 
@@ -1219,11 +1219,6 @@ msgstr "Den viste værdi er ikke et heltal"
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
-#. Label on close button in preferences dialog
-#: ../src/math-preferences.c:242
-msgid "_Close"
-msgstr "_Luk"
-
 #. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
@@ -1272,17 +1267,17 @@ msgid "Show %d decimal _places"
 msgstr "Vis %d _decimaler"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:220
+#: ../src/math-window.c:212
 msgid "Unable to open help file"
 msgstr "Kan ikke åbne hjælpefil"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:247
+#: ../src/math-window.c:239
 msgid "translator-credits"
 msgstr "Ole Laursen\nMartin Willemoes Hansen\nLasse Bang Mikkelsen\nPeter Bach\nAsk Hjorth Larsen\n\nDansk-gruppen <dansk@dansk-gruppen.dk>\nMere info: http://www.dansk-gruppen.dk"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:254
+#: ../src/math-window.c:246
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1299,51 +1294,51 @@ msgid ""
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr "mate-calc er et frit program. Du kan redistribuere og/eller modificere det\nunder de betingelserne som er angivet i GNU General Public License, som\ner udgivet af Free Software Foundation. Enten version 2 af licensen\neller (efter eget valg) enhver senere version.\n\nmate-calc distribueres i håb om, at det vil vise sig nyttigt, men UDEN NOGEN \nFORM FOR GARANTI, uden selv de underforståede garantier omkring \nSALGBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere detaljer kan \nlæses i GNU General Public License.\n\nDu skulle have modtaget en kopi af GNU General Public License sammen med\nmate-calc. Hvis ikke, så skriv til Free software Foundation, Inc.,\n151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
-#: ../src/math-window.c:269
+#: ../src/math-window.c:261
 msgid "mate-calc"
 msgstr "Lommeregner"
 
-#: ../src/math-window.c:273
+#: ../src/math-window.c:265
 msgid "Calculator with financial and scientific modes."
 msgstr "Lommeregner med finansiel og videnskabelig tilstand."
 
 #. Calculator menu
-#: ../src/math-window.c:376
+#: ../src/math-window.c:369
 msgid "_Calculator"
 msgstr "_Lommeregner"
 
 #. Mode menu
-#: ../src/math-window.c:378
+#: ../src/math-window.c:371
 msgid "_Mode"
 msgstr "_Tilstand"
 
 #. Help menu label
-#: ../src/math-window.c:380
+#: ../src/math-window.c:373
 msgid "_Help"
 msgstr "_Hjælp"
 
 #. Basic menu label
-#: ../src/math-window.c:382
+#: ../src/math-window.c:375
 msgid "_Basic"
 msgstr "_Basalt"
 
 #. Advanced menu label
-#: ../src/math-window.c:384
+#: ../src/math-window.c:377
 msgid "_Advanced"
 msgstr "_Avanceret"
 
 #. Financial menu label
-#: ../src/math-window.c:386
+#: ../src/math-window.c:379
 msgid "_Financial"
 msgstr "_Finansiel"
 
 #. Programming menu label
-#: ../src/math-window.c:388
+#: ../src/math-window.c:381
 msgid "_Programming"
 msgstr "_Programmering"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:390
+#: ../src/math-window.c:383
 msgid "_Contents"
 msgstr "_Indhold"
 

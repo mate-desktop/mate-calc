@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-28 10:11+0100\n"
-"PO-Revision-Date: 2017-09-19 11:50+0000\n"
+"POT-Creation-Date: 2018-02-06 15:01+0300\n"
+"PO-Revision-Date: 2018-02-06 12:05+0000\n"
 "Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
 "Language-Team: Occitan (post 1500) (http://www.transifex.com/mate/MATE/language/oc/)\n"
 "MIME-Version: 1.0\n"
@@ -493,7 +493,7 @@ msgid "MATE Calculator"
 msgstr ""
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:540
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:533
 msgid "Calculator"
 msgstr "Calculadoira"
 
@@ -1217,11 +1217,6 @@ msgstr "La valor afichada es pas un entièr"
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
-#. Label on close button in preferences dialog
-#: ../src/math-preferences.c:242
-msgid "_Close"
-msgstr "_Tampar"
-
 #. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
@@ -1270,17 +1265,17 @@ msgid "Show %d decimal _places"
 msgstr "Afichar %d de_cimalas"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:220
+#: ../src/math-window.c:212
 msgid "Unable to open help file"
 msgstr "Impossible de dobrir lo fichièr d'ajuda"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:247
+#: ../src/math-window.c:239
 msgid "translator-credits"
 msgstr "Cédric Valmary <cvalmary@yahoo.fr>"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:254
+#: ../src/math-window.c:246
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1297,51 +1292,51 @@ msgid ""
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr ""
 
-#: ../src/math-window.c:269
+#: ../src/math-window.c:261
 msgid "mate-calc"
 msgstr "mate-calc"
 
-#: ../src/math-window.c:273
+#: ../src/math-window.c:265
 msgid "Calculator with financial and scientific modes."
 msgstr "Calculadoira amb de mòdes financièrs e scientifics."
 
 #. Calculator menu
-#: ../src/math-window.c:376
+#: ../src/math-window.c:369
 msgid "_Calculator"
 msgstr "Calc_uladoira"
 
 #. Mode menu
-#: ../src/math-window.c:378
+#: ../src/math-window.c:371
 msgid "_Mode"
 msgstr ""
 
 #. Help menu label
-#: ../src/math-window.c:380
+#: ../src/math-window.c:373
 msgid "_Help"
 msgstr "_Ajuda"
 
 #. Basic menu label
-#: ../src/math-window.c:382
+#: ../src/math-window.c:375
 msgid "_Basic"
 msgstr "_Basic"
 
 #. Advanced menu label
-#: ../src/math-window.c:384
+#: ../src/math-window.c:377
 msgid "_Advanced"
 msgstr "_Avançat"
 
 #. Financial menu label
-#: ../src/math-window.c:386
+#: ../src/math-window.c:379
 msgid "_Financial"
 msgstr "_Financièr"
 
 #. Programming menu label
-#: ../src/math-window.c:388
+#: ../src/math-window.c:381
 msgid "_Programming"
 msgstr ""
 
 #. Help>Contents menu label
-#: ../src/math-window.c:390
+#: ../src/math-window.c:383
 msgid "_Contents"
 msgstr "_Ensenhador"
 

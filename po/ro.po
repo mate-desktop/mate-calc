@@ -16,9 +16,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-28 10:11+0100\n"
-"PO-Revision-Date: 2017-09-19 11:50+0000\n"
-"Last-Translator: Daniel <danny3@tutanota.com>\n"
+"POT-Creation-Date: 2018-02-06 15:01+0300\n"
+"PO-Revision-Date: 2018-02-06 12:05+0000\n"
+"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
 "Language-Team: Romanian (http://www.transifex.com/mate/MATE/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -499,7 +499,7 @@ msgid "MATE Calculator"
 msgstr "Calculator MATE"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:540
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:533
 msgid "Calculator"
 msgstr "Calculator"
 
@@ -1225,11 +1225,6 @@ msgstr "Valoarea afișată nu este un întreg"
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
-#. Label on close button in preferences dialog
-#: ../src/math-preferences.c:242
-msgid "_Close"
-msgstr "În_chide"
-
 #. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
@@ -1278,17 +1273,17 @@ msgid "Show %d decimal _places"
 msgstr "Arată %d cifre du_pă virgulă"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:220
+#: ../src/math-window.c:212
 msgid "Unable to open help file"
 msgstr "Nu s-a putut deschide fișierul de ajutor"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:247
+#: ../src/math-window.c:239
 msgid "translator-credits"
 msgstr "Mișu Moldovan <dumol@mate.ro>\nLucian Adrian Grijincu <lucian.grijincu@gmail.com>\nDaniel Alămiță <danny3@tutanota.com>\nDaniel Șerbănescu <cyber19rider@gmail.com>\n\nLaunchpad Contributions:\n  Adi Roiban https://launchpad.net/~adiroiban\n  Adrian Harabulă https://launchpad.net/~opensoft\n  Ionuț Jula https://launchpad.net/~ionutjula\n  Lucian Adrian Grijincu https://launchpad.net/~lucian.grijincu\n  Mircea MITU https://launchpad.net/~mache\n  Mișu Moldovan https://launchpad.net/~dumol-mate"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:254
+#: ../src/math-window.c:246
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1305,51 +1300,51 @@ msgid ""
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr " mate-calc este un program liber; poate fi redistribuit și/sau modificat\n în conformitate cu termenii Licenței Publice Generale GNU așa cum este ea publicată de \nFundația pentru Software Liber; fie versiunea a 2-a a Lecenței, \nsau (după cum vei alege) orice versiune ulterioară. \n\nMate-calc este distribuit cu speranța că va fi folositor,\ndar FĂRĂ NICI O GARANȚIE; chiar fără garanția implicită că\npoate fi VÂNDUT sau că ESTE POTRIVIT PENRU UN ANUMIT SCOP. \nVezi Licența Publică Generală GNU pentru mai multe detalii. \n\nAr trebui să fi primit o copie a Licenței Publice Generale GNU\nîmpreună cu mate-calc; dacă nu ai primit, contactează\nFree Software Foundation, Inc.,\n151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
-#: ../src/math-window.c:269
+#: ../src/math-window.c:261
 msgid "mate-calc"
 msgstr "mate-calc"
 
-#: ../src/math-window.c:273
+#: ../src/math-window.c:265
 msgid "Calculator with financial and scientific modes."
 msgstr "Calculator cu mod financiar și științific."
 
 #. Calculator menu
-#: ../src/math-window.c:376
+#: ../src/math-window.c:369
 msgid "_Calculator"
 msgstr "_Calculator"
 
 #. Mode menu
-#: ../src/math-window.c:378
+#: ../src/math-window.c:371
 msgid "_Mode"
 msgstr "_Mod"
 
 #. Help menu label
-#: ../src/math-window.c:380
+#: ../src/math-window.c:373
 msgid "_Help"
 msgstr "_Ajutor"
 
 #. Basic menu label
-#: ../src/math-window.c:382
+#: ../src/math-window.c:375
 msgid "_Basic"
 msgstr "_Standard"
 
 #. Advanced menu label
-#: ../src/math-window.c:384
+#: ../src/math-window.c:377
 msgid "_Advanced"
 msgstr "_Avansat"
 
 #. Financial menu label
-#: ../src/math-window.c:386
+#: ../src/math-window.c:379
 msgid "_Financial"
 msgstr "_Financiar"
 
 #. Programming menu label
-#: ../src/math-window.c:388
+#: ../src/math-window.c:381
 msgid "_Programming"
 msgstr "_Programare"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:390
+#: ../src/math-window.c:383
 msgid "_Contents"
 msgstr "_Conținut"
 

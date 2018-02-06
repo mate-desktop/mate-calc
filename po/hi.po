@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-28 10:11+0100\n"
-"PO-Revision-Date: 2017-09-19 11:50+0000\n"
+"POT-Creation-Date: 2018-02-06 15:01+0300\n"
+"PO-Revision-Date: 2018-02-06 12:05+0000\n"
 "Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
 "Language-Team: Hindi (http://www.transifex.com/mate/MATE/language/hi/)\n"
 "MIME-Version: 1.0\n"
@@ -497,7 +497,7 @@ msgid "MATE Calculator"
 msgstr "माटे कैल्क्यलेटर"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:540
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:533
 msgid "Calculator"
 msgstr "गणक"
 
@@ -1221,11 +1221,6 @@ msgstr "दिखाया गया मान पूर्णांक नह�
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
-#. Label on close button in preferences dialog
-#: ../src/math-preferences.c:242
-msgid "_Close"
-msgstr "बंद करें (_C)"
-
 #. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
@@ -1274,17 +1269,17 @@ msgid "Show %d decimal _places"
 msgstr "%d दशमलव स्थान तक दिखाएँ (_p)"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:220
+#: ../src/math-window.c:212
 msgid "Unable to open help file"
 msgstr "मदद फाइल खोलने में त्रुटि"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:247
+#: ../src/math-window.c:239
 msgid "translator-credits"
 msgstr "राजेश रंजन (rranajn@redhat.com, rajeshkajha@yahoo.com)"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:254
+#: ../src/math-window.c:246
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1301,51 +1296,51 @@ msgid ""
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr "माटे-कैल्क मुक्त सॉफ्टवेयर है; फ्री सॉफ्टवेयर फाउंडेशन द्वारा प्रकाशित गनू  जनरल पब्लिक लाइसेंस के दुसरे संस्करण या (आप के विकल्प पर) बाद के संस्करणों के शर्तों के तहत आप इस कार्यक्रम का पुनर्वितरण या/व संशोधन कर सकते हैं।\n\nमाटे-कैल्क इस आशा से वितरित किया जाता है के ये उपयोगी होगा पर बिना कोई वारंटी के; और नाही व्यापारिकता या विषय विशेष के लिए उपयुक्तता कि कोई  निहित वारंटी है। अधिक जानकारी के लिए गनु जनरल पब्लिक लाइसेंस पढ़ें ।\n\nआप को माटे-कैल्क के साथ ग्नू जनरल पब्लिक लाइसेंस कि एक प्रतिलिपि मिली होगी। अगर ना मिली हो, तो इस पते पर लिखें  Free Software Foundation, Inc., 151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 
-#: ../src/math-window.c:269
+#: ../src/math-window.c:261
 msgid "mate-calc"
 msgstr "जिकेल्कटूल"
 
-#: ../src/math-window.c:273
+#: ../src/math-window.c:265
 msgid "Calculator with financial and scientific modes."
 msgstr "वित्त और वैज्ञानिक मोड वाला गणक"
 
 #. Calculator menu
-#: ../src/math-window.c:376
+#: ../src/math-window.c:369
 msgid "_Calculator"
 msgstr "गणक (_C)"
 
 #. Mode menu
-#: ../src/math-window.c:378
+#: ../src/math-window.c:371
 msgid "_Mode"
 msgstr "_मोड़"
 
 #. Help menu label
-#: ../src/math-window.c:380
+#: ../src/math-window.c:373
 msgid "_Help"
 msgstr "मदद (_H)"
 
 #. Basic menu label
-#: ../src/math-window.c:382
+#: ../src/math-window.c:375
 msgid "_Basic"
 msgstr "मौलिक (_B)"
 
 #. Advanced menu label
-#: ../src/math-window.c:384
+#: ../src/math-window.c:377
 msgid "_Advanced"
 msgstr "उन्नत (_A)"
 
 #. Financial menu label
-#: ../src/math-window.c:386
+#: ../src/math-window.c:379
 msgid "_Financial"
 msgstr "वित्तिय (_F)"
 
 #. Programming menu label
-#: ../src/math-window.c:388
+#: ../src/math-window.c:381
 msgid "_Programming"
 msgstr "प्रोग्रामिंग (_P)"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:390
+#: ../src/math-window.c:383
 msgid "_Contents"
 msgstr "विषय सूची (_C)"
 
