@@ -197,6 +197,8 @@ int main(int argc, char **argv)
     /* Seed random number generator. */
     srand48((long) time((time_t *) 0));
 
+    gtk_init(&argc, &argv);
+
     g_settings_var = g_settings_new ("org.mate.calc");
     accuracy = g_settings_get_int(g_settings_var, "accuracy");
     word_size = g_settings_get_int(g_settings_var, "word-size");
@@ -228,8 +230,6 @@ int main(int argc, char **argv)
     g_free(target_units);
 
     get_options(argc, argv);
-
-    gtk_init(&argc, &argv);
 
     //gtk_window_set_default_icon_name("accessories-calculator");
 
