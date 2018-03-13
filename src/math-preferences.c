@@ -240,6 +240,9 @@ create_gui(MathPreferencesDialog *dialog)
     gtk_dialog_add_button(GTK_DIALOG(dialog),
                           /* Icon name on close button in preferences dialog */
                           "gtk-close", GTK_RESPONSE_CLOSE);
+
+    gtk_window_set_icon_name (GTK_WINDOW(dialog), "accessories-calculator");
+
     g_signal_connect(dialog, "response", G_CALLBACK(preferences_response_cb), NULL);
     g_signal_connect(dialog, "delete-event", G_CALLBACK(preferences_dialog_delete_cb), NULL);
     gtk_box_pack_start(GTK_BOX(gtk_dialog_get_content_area(GTK_DIALOG(dialog))), GET_WIDGET(dialog->priv->ui, "preferences_table"), TRUE, TRUE, 0);
