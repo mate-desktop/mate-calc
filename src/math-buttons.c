@@ -839,29 +839,14 @@ shift_cb(GtkWidget *widget, MathButtons *buttons)
     math_equation_shift(buttons->priv->equation, GPOINTER_TO_INT(g_object_get_data(G_OBJECT(widget), "shiftcount")));
 }
 
-
-static void
-button_menu_position_func(GtkMenu *menu, gint *x, gint *y,
-                          gboolean *push_in, gpointer user_data)
-{
-    GtkWidget *button = user_data;
-    GtkAllocation allocation;
-    GdkPoint loc;
-    gint border;
-  
-    gdk_window_get_origin(gtk_widget_get_window(button), &loc.x, &loc.y);
-    border = gtk_container_get_border_width(GTK_CONTAINER(button));
-    gtk_widget_get_allocation(button, &allocation);
-    *x = loc.x + allocation.x + border;
-    *y = loc.y + allocation.y + border;
-}
-
-
 static void
 popup_button_menu(GtkWidget *widget, GtkMenu *menu)
 {
-    gtk_menu_popup(menu, NULL, NULL,
-                   button_menu_position_func, widget, 1, gtk_get_current_event_time());
+    gtk_menu_popup_at_widget (menu,
+                              widget,
+                              GDK_GRAVITY_SOUTH_WEST,
+                              GDK_GRAVITY_NORTH_WEST,
+                              NULL);
 }
 
 
