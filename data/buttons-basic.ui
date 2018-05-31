@@ -1,48 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.20.4 -->
 <interface>
-  <requires lib="gtk+" version="2.16"/>
-  <!-- interface-naming-policy toplevel-contextual -->
+  <requires lib="gtk+" version="3.22"/>
   <object class="GtkWindow" id="window1">
     <property name="can_focus">False</property>
     <child>
-      <object class="GtkTable" id="button_panel">
+      <object class="GtkGrid" id="button_panel">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
-        <property name="n_rows">4</property>
-        <property name="n_columns">6</property>
-        <property name="homogeneous">True</property>
+        <property name="row_homogeneous">True</property>
+        <property name="column_homogeneous">True</property>
         <child>
           <object class="GtkButton" id="calc_4_button">
             <property name="label">4</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">False</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
             <signal name="clicked" handler="digit_cb" swapped="no"/>
           </object>
           <packing>
+            <property name="left_attach">0</property>
             <property name="top_attach">1</property>
-            <property name="bottom_attach">2</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="calc_7_button">
-            <property name="label">7</property>
-            <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="receives_default">False</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
-            <property name="focus_on_click">False</property>
-            <signal name="clicked" handler="digit_cb" swapped="no"/>
-          </object>
-          <packing>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
           </packing>
         </child>
         <child>
@@ -50,17 +30,14 @@
             <property name="label">8</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">False</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
             <signal name="clicked" handler="digit_cb" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">1</property>
-            <property name="right_attach">2</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="top_attach">0</property>
           </packing>
         </child>
         <child>
@@ -68,17 +45,14 @@
             <property name="label">9</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">False</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
             <signal name="clicked" handler="digit_cb" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">2</property>
-            <property name="right_attach">3</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="top_attach">0</property>
           </packing>
         </child>
         <child>
@@ -86,19 +60,14 @@
             <property name="label">5</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">False</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
             <signal name="clicked" handler="digit_cb" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">1</property>
-            <property name="right_attach">2</property>
             <property name="top_attach">1</property>
-            <property name="bottom_attach">2</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
           </packing>
         </child>
         <child>
@@ -106,19 +75,14 @@
             <property name="label">6</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">False</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
             <signal name="clicked" handler="digit_cb" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">2</property>
-            <property name="right_attach">3</property>
             <property name="top_attach">1</property>
-            <property name="bottom_attach">2</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
           </packing>
         </child>
         <child>
@@ -126,35 +90,14 @@
             <property name="label">÷</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">False</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">3</property>
-            <property name="right_attach">4</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="calc_1_button">
-            <property name="label">1</property>
-            <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="receives_default">False</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
-            <property name="focus_on_click">False</property>
-            <signal name="clicked" handler="digit_cb" swapped="no"/>
-          </object>
-          <packing>
-            <property name="top_attach">2</property>
-            <property name="bottom_attach">3</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="top_attach">0</property>
           </packing>
         </child>
         <child>
@@ -162,38 +105,14 @@
             <property name="label">2</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">False</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
             <signal name="clicked" handler="digit_cb" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">1</property>
-            <property name="right_attach">2</property>
             <property name="top_attach">2</property>
-            <property name="bottom_attach">3</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="calc_0_button">
-            <property name="label">0</property>
-            <property name="width_request">50</property>
-            <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="receives_default">False</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
-            <property name="focus_on_click">False</property>
-            <signal name="clicked" handler="digit_cb" swapped="no"/>
-          </object>
-          <packing>
-            <property name="top_attach">3</property>
-            <property name="bottom_attach">4</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
           </packing>
         </child>
         <child>
@@ -201,19 +120,14 @@
             <property name="label" comments="Label is set in gtk.c to comply with LC flags">.</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">False</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
             <signal name="clicked" handler="numeric_point_cb" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">1</property>
-            <property name="right_attach">2</property>
             <property name="top_attach">3</property>
-            <property name="bottom_attach">4</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
           </packing>
         </child>
         <child>
@@ -221,19 +135,14 @@
             <property name="label">%</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
+            <property name="receives_default">True</property>
+            <property name="use_underline">True</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">2</property>
-            <property name="right_attach">3</property>
             <property name="top_attach">3</property>
-            <property name="bottom_attach">4</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
           </packing>
         </child>
         <child>
@@ -241,19 +150,14 @@
             <property name="label">3</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">False</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
             <signal name="clicked" handler="digit_cb" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">2</property>
-            <property name="right_attach">3</property>
             <property name="top_attach">2</property>
-            <property name="bottom_attach">3</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
           </packing>
         </child>
         <child>
@@ -261,19 +165,14 @@
             <property name="label">×</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">False</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">3</property>
-            <property name="right_attach">4</property>
             <property name="top_attach">1</property>
-            <property name="bottom_attach">2</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
           </packing>
         </child>
         <child>
@@ -281,19 +180,14 @@
             <property name="label">−</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">False</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
             <signal name="clicked" handler="subtract_cb" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">3</property>
-            <property name="right_attach">4</property>
             <property name="top_attach">2</property>
-            <property name="bottom_attach">3</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
           </packing>
         </child>
         <child>
@@ -301,19 +195,14 @@
             <property name="label">+</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">False</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">3</property>
-            <property name="right_attach">4</property>
             <property name="top_attach">3</property>
-            <property name="bottom_attach">4</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
           </packing>
         </child>
         <child>
@@ -321,19 +210,15 @@
             <property name="label" translatable="yes" comments="Label on the solve button (clicking this solves the displayed calculation)">=</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">False</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
             <signal name="clicked" handler="solve_cb" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">4</property>
-            <property name="right_attach">6</property>
             <property name="top_attach">3</property>
-            <property name="bottom_attach">4</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="width">2</property>
           </packing>
         </child>
         <child>
@@ -341,19 +226,14 @@
             <property name="label">(</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
+            <property name="receives_default">True</property>
+            <property name="use_underline">True</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">4</property>
-            <property name="right_attach">5</property>
             <property name="top_attach">1</property>
-            <property name="bottom_attach">2</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
           </packing>
         </child>
         <child>
@@ -361,19 +241,14 @@
             <property name="label">)</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
+            <property name="receives_default">True</property>
+            <property name="use_underline">True</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">5</property>
-            <property name="right_attach">6</property>
             <property name="top_attach">1</property>
-            <property name="bottom_attach">2</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
           </packing>
         </child>
         <child>
@@ -381,16 +256,13 @@
             <property name="label" translatable="yes">Clear</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
-            <property name="use_action_appearance">False</property>
             <property name="focus_on_click">False</property>
+            <property name="receives_default">True</property>
             <signal name="clicked" handler="clear_cb" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">5</property>
-            <property name="right_attach">6</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="top_attach">0</property>
           </packing>
         </child>
         <child>
@@ -398,33 +270,52 @@
             <property name="label">√</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
+            <property name="receives_default">True</property>
+            <property name="use_underline">True</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">5</property>
-            <property name="right_attach">6</property>
             <property name="top_attach">2</property>
-            <property name="bottom_attach">3</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_undo_button">
+            <property name="label" translatable="yes">Undo</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">True</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="undo_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">4</property>
+            <property name="top_attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_7_button">
+            <property name="label">7</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="digit_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">0</property>
           </packing>
         </child>
         <child>
           <object class="GtkButton" id="calc_x_squared_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
-            <property name="use_action_appearance">False</property>
             <property name="focus_on_click">False</property>
-            <child internal-child="accessible">
-              <object class="AtkObject" id="calc_x_squared_button-atkobject">
-                <property name="AtkObject::accessible-name" translatable="yes" comments="Accessible name for the exponentiation (x to the power of y) button">Exponent</property>
-              </object>
-            </child>
+            <property name="receives_default">True</property>
             <signal name="clicked" handler="button_cb" swapped="no"/>
             <child>
               <object class="GtkLabel" id="x_squared_label">
@@ -434,35 +325,52 @@
                 <property name="use_markup">True</property>
               </object>
             </child>
+            <child internal-child="accessible">
+              <object class="AtkObject" id="calc_x_squared_button-atkobject">
+                <property name="AtkObject::accessible-name" translatable="yes" comments="Accessible name for the exponentiation (x to the power of y) button">Exponent</property>
+              </object>
+            </child>
           </object>
           <packing>
             <property name="left_attach">4</property>
-            <property name="right_attach">5</property>
             <property name="top_attach">2</property>
-            <property name="bottom_attach">3</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="calc_undo_button">
-            <property name="label" translatable="yes">Undo</property>
+          <object class="GtkButton" id="calc_1_button">
+            <property name="label">1</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
             <property name="focus_on_click">False</property>
-            <signal name="clicked" handler="undo_cb" swapped="no"/>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="digit_cb" swapped="no"/>
           </object>
           <packing>
-            <property name="left_attach">4</property>
-            <property name="right_attach">5</property>
-            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-            <property name="y_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
+            <property name="left_attach">0</property>
+            <property name="top_attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_0_button">
+            <property name="label">0</property>
+            <property name="width_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="digit_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">3</property>
           </packing>
         </child>
       </object>
+    </child>
+    <child type="titlebar">
+      <placeholder/>
     </child>
   </object>
 </interface>
