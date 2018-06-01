@@ -584,6 +584,19 @@ load_mode(MathButtons *buttons, ButtonMode mode)
             gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(widget), TRUE);
     }
 
+    /* put the icon name "process-stop" in the buttons
+       button1, button3, button5, button7, button9,
+       button11, button13, button15, button17, button19
+       taken from buttons-financial.ui */
+    for (i = 1; i < 20; i++) {
+        if (i % 2) {
+            widget = GET_WIDGET (builder, g_strdup_printf ("button%d",i));
+            if (GTK_IS_BUTTON(widget))
+                gtk_button_set_image (GTK_BUTTON (widget),
+                                      gtk_image_new_from_icon_name ("process-stop", GTK_ICON_SIZE_BUTTON));
+        }
+    }
+
     if (mode == PROGRAMMING) {
         GtkListStore *model;
         GtkTreeIter iter;
