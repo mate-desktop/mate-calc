@@ -1,31 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Algimantas Margevičius <margevicius.algimantas@gmail.com>, 2012
-# aurisc4 <aurisc4@gmail.com>, 2010
-# Džiugas Grėbliūnas <dziugas.grebliunas@gmail.com>, 2014,2017
-# Gediminas Paulauskas <menesis@delfi.lt>, 2003
-# Gintautas Miliauskas <gintas@akl.lt>, 2006-2008
-# brennus <jonas.ska@gmail.com>, 2014
-# Justina Klingaitė <justina.klingaite@gmail.com>, 2005
-# Moo, 2015,2017
-# Rimas Kudelis <rq@akl.lt>, 2010
-# Žygimantas Beručka <zygis@gnome.org>, 2004-2006, 2012
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-06 15:01+0300\n"
-"PO-Revision-Date: 2018-02-06 12:05+0000\n"
-"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
-"Language-Team: Lithuanian (http://www.transifex.com/mate/MATE/language/lt/)\n"
+"POT-Creation-Date: 2018-03-16 15:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Moo, 2018\n"
+"Language-Team: Lithuanian (https://www.transifex.com/mate/teams/13566/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: lt\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);\n"
 
 #. Accessible name for the factorize button
 #: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:8
@@ -142,7 +133,10 @@ msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr "Skaičiuojamas sudėtinių periodų skaičius, reikalingas esamosios vertės padidinimui iki būsimosios vertės, esant fiksuotai palūkanų sudėtinio periodo metu."
+msgstr ""
+"Skaičiuojamas sudėtinių periodų skaičius, reikalingas esamosios vertės "
+"padidinimui iki būsimosios vertės, esant fiksuotai palūkanų sudėtinio "
+"periodo metu."
 
 #. Periodic Interest Rate Dialog: Label before future value input
 #: ../data/buttons-financial.ui.h:12
@@ -159,7 +153,9 @@ msgstr "Dvigubai mažėjančios vertės nusidėvėjimas"
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
-msgstr "Skaičiuojamas turto nusidėvėjimas per nurodytą laiko periodą dvigubai mažėjančios vertės būdu."
+msgstr ""
+"Skaičiuojamas turto nusidėvėjimas per nurodytą laiko periodą dvigubai "
+"mažėjančios vertės būdu."
 
 #. Gross Profit Margin Dialog: Label before cost input
 #: ../data/buttons-financial.ui.h:18
@@ -188,7 +184,9 @@ msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
-msgstr "Skaičiuojama investicijos būsimoji vertė vienodų mokėjimų su periodine palūkanų norma per tam tikrą mokėjimo periodų skaičių pagrindu."
+msgstr ""
+"Skaičiuojama investicijos būsimoji vertė vienodų mokėjimų su periodine "
+"palūkanų norma per tam tikrą mokėjimo periodų skaičių pagrindu."
 
 #. Payment Period Dialog: Label before periodic payment input
 #: ../data/buttons-financial.ui.h:28
@@ -211,7 +209,9 @@ msgstr "Bendras grynasis pelnas"
 msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
-msgstr "Skaičiuojama produkto pardavimo kaina, remiantis produkto kaštais ir pageidaujama bendro grynojo pelno norma."
+msgstr ""
+"Skaičiuojama produkto pardavimo kaina, remiantis produkto kaštais ir "
+"pageidaujama bendro grynojo pelno norma."
 
 #. Gross Profit Margin Dialog: Label before margin input
 #: ../data/buttons-financial.ui.h:36
@@ -229,7 +229,9 @@ msgstr "Periodinis mokėjimas"
 msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
-msgstr "Suskaičiuoja paskolos periodinių mokėjimų skaičių, jei mokama kiekvieno mokėjimo periodo pabaigoje."
+msgstr ""
+"Suskaičiuoja paskolos periodinių mokėjimų skaičių, jei mokama kiekvieno "
+"mokėjimo periodo pabaigoje."
 
 #. Periodic Payment Dialog: Label before principal input
 #: ../data/buttons-financial.ui.h:42
@@ -253,7 +255,10 @@ msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr "Skaičiuojama esamoji investicijos vertė, remiantis eile vienodų mokėjimų, diskontuotų periodine palūkanų norma per tam tikrą termino mokėjimo periodų skaičių."
+msgstr ""
+"Skaičiuojama esamoji investicijos vertė, remiantis eile vienodų mokėjimų, "
+"diskontuotų periodine palūkanų norma per tam tikrą termino mokėjimo periodų "
+"skaičių."
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
@@ -266,7 +271,9 @@ msgstr "Periodinė palūkanų norma"
 msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
-msgstr "Skaičiuojama periodinė palūkanų norma, reikalinga padidinti investicijai iki būsimosios vertės per sudėtinių periodų skaičių."
+msgstr ""
+"Skaičiuojama periodinė palūkanų norma, reikalinga padidinti investicijai iki"
+" būsimosios vertės per sudėtinių periodų skaičių."
 
 #. Title of Straight-Line Depreciation dialog
 #: ../data/buttons-financial.ui.h:54
@@ -290,7 +297,11 @@ msgid ""
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr "Skaičiuojamas turto nusidėvėjimas per nurodytą laiko periodą tiesioginio nusidėvėjimo būdu. Naudojant šį būdą, nusidėvėjimo kaštai išdalinami lygiomis dalimis visam laikotarpiui. Dažniausiai naudojamas laikotarpis yra periodų (paprastai metų) skaičius, per kuriuos turtas nusidėvi."
+msgstr ""
+"Skaičiuojamas turto nusidėvėjimas per nurodytą laiko periodą tiesioginio "
+"nusidėvėjimo būdu. Naudojant šį būdą, nusidėvėjimo kaštai išdalinami "
+"lygiomis dalimis visam laikotarpiui. Dažniausiai naudojamas laikotarpis yra "
+"periodų (paprastai metų) skaičius, per kuriuos turtas nusidėvi."
 
 #. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
@@ -305,7 +316,11 @@ msgid ""
 " accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
-msgstr "Skaičiuojamas turto nusidėvėjimas per nurodytą laiko periodą metų skaičiaus būdu. Naudojant šį būdą, ankstesniesiems periodams suskaičiuojamas didesnis nusidėvėjimas negu vėlesniesiems. Dažniausiai naudojamas laikotarpis yra periodų (paprastai metų) skaičius, per kuriuos turtas nusidėvi. "
+msgstr ""
+"Skaičiuojamas turto nusidėvėjimas per nurodytą laiko periodą metų skaičiaus "
+"būdu. Naudojant šį būdą, ankstesniesiems periodams suskaičiuojamas didesnis "
+"nusidėvėjimas negu vėlesniesiems. Dažniausiai naudojamas laikotarpis yra "
+"periodų (paprastai metų) skaičius, per kuriuos turtas nusidėvi. "
 
 #. Title of Payment Period dialog
 #: ../data/buttons-financial.ui.h:66
@@ -323,7 +338,9 @@ msgid ""
 "Calculates the number of payment periods that are necessary during the term "
 "of an ordinary annuity, to accumulate a future value, at a periodic interest"
 " rate."
-msgstr "Skaičiuojamas termino mokėjimo periodų skaičius, kurio reiks paprastojo anuiteto būdu sukaupti būsimąją vertę esant periodinei palūkanų normai."
+msgstr ""
+"Skaičiuojamas termino mokėjimo periodų skaičius, kurio reiks paprastojo "
+"anuiteto būdu sukaupti būsimąją vertę esant periodinei palūkanų normai."
 
 #. Calculates the number of compounding periods necessary to increase an
 #. investment of present value pv to a future value of fv, at a fixed interest
@@ -493,7 +510,14 @@ msgid ""
 " to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
 "Calc and part of the MATE Desktop Environment. If you would like to know "
 "more about MATE and MATE Calc, please visit the project's home page. </p>"
-msgstr "<p> MATE skaičiuotuvas yra galingas grafinis skaičiuotuvas su finansine, logine ir moksline veiksena. Savo aritmetinių skaičiavimų atlikimui šis skaičiuotuvas naudoja kelis tikslumo paketus, kad tokiu būdu suteiktų jums aukštą tikslumo laipsnį. </p> <p> MATE skaičiuotuvas yra GNOME skaičiuotuvo atšaka ir dalis MATE darbalaukio aplinkos. Jeigu jūs norėtumėte daugiau sužinoti apie MATE ir MATE skaičiuotuvą, prašome aplankyti mūsų projekto internetinę svetainę. </p>"
+msgstr ""
+"<p> MATE skaičiuotuvas yra galingas grafinis skaičiuotuvas su finansine, "
+"logine ir moksline veiksena. Savo aritmetinių skaičiavimų atlikimui šis "
+"skaičiuotuvas naudoja kelis tikslumo paketus, kad tokiu būdu suteiktų jums "
+"aukštą tikslumo laipsnį. </p> <p> MATE skaičiuotuvas yra GNOME skaičiuotuvo "
+"atšaka ir dalis MATE darbalaukio aplinkos. Jeigu jūs norėtumėte daugiau "
+"sužinoti apie MATE ir MATE skaičiuotuvą, prašome aplankyti mūsų projekto "
+"internetinę svetainę. </p>"
 
 #: ../data/mate-calc.desktop.in.h:1
 msgid "MATE Calculator"
@@ -758,7 +782,9 @@ msgstr "Klaida, pasikartojimų skaičius turi būti teigiamas"
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr "Naudojimas:\n  %s - Vykdyti matematinius skaičiavimus"
+msgstr ""
+"Naudojimas:\n"
+"  %s - Vykdyti matematinius skaičiavimus"
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
@@ -770,7 +796,12 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr "Pagalbos parametrai:\n  -v, --version                   Rodyti programos versiją\n  -h, -?, --help                  Rodyti pagalbos parametrus\n  --help-all                      Rodyti visas pagalbos parametrus\n  --help-gtk                      Rodyti GTK+ parametrus"
+msgstr ""
+"Pagalbos parametrai:\n"
+"  -v, --version                   Rodyti programos versiją\n"
+"  -h, -?, --help                  Rodyti pagalbos parametrus\n"
+"  --help-all                      Rodyti visas pagalbos parametrus\n"
+"  --help-gtk                      Rodyti GTK+ parametrus"
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
@@ -784,7 +815,14 @@ msgid ""
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr "GTK+ parametrai:\n  --class=KLASĖ                   Programos klasė, kurią naudoja langų tvarkytuvė\n  --name=VARDAS                     Programos pavadinimas, kurį naudoja langų tvarkytuvė\n  --screen=EKRANAS                 Naudojamas X ekranas\n  --sync                          Padaryti X užklausas sinchroniškas\n  --gtk-module=MODULIAI            Įkelti papildomus GTK+ modulius\n  --g-fatal-warnings              Visi įspėjimai yra \"lemtingi\""
+msgstr ""
+"GTK+ parametrai:\n"
+"  --class=KLASĖ                   Programos klasė, kurią naudoja langų tvarkytuvė\n"
+"  --name=VARDAS                     Programos pavadinimas, kurį naudoja langų tvarkytuvė\n"
+"  --screen=EKRANAS                 Naudojamas X ekranas\n"
+"  --sync                          Padaryti X užklausas sinchroniškas\n"
+"  --gtk-module=MODULIAI            Įkelti papildomus GTK+ modulius\n"
+"  --g-fatal-warnings              Visi įspėjimai yra \"lemtingi\""
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -792,7 +830,9 @@ msgstr "GTK+ parametrai:\n  --class=KLASĖ                   Programos klasė, k
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr "Programos parametrai:\n  -s, --solve <equation>          Išspręsti duotą lygtį"
+msgstr ""
+"Programos parametrai:\n"
+"  -s, --solve <equation>          Išspręsti duotą lygtį"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:156
@@ -1084,17 +1124,17 @@ msgstr "Tiesiogiai proporcingas nusidėvėjimas"
 #. Number display mode combo: Binary, e.g. 10011010010₂
 #: ../src/math-buttons.c:611
 msgid "Binary"
-msgstr "Dvejetainė"
+msgstr "Dvejetainis"
 
 #. Number display mode combo: Octal, e.g. 2322₈
 #: ../src/math-buttons.c:615
 msgid "Octal"
-msgstr "Aštuonetainis"
+msgstr "Aštuntainis"
 
 #. Number display mode combo: Decimal, e.g. 1234
 #: ../src/math-buttons.c:619
 msgid "Decimal"
-msgstr "Dešimtainė"
+msgstr "Dešimtainis"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
 #: ../src/math-buttons.c:623
@@ -1107,9 +1147,10 @@ msgstr "Šešioliktainis"
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] "_%d vieta"
-msgstr[1] "_%d vietos"
+msgstr[0] "_%d vietą"
+msgstr[1] "_%d vietas"
 msgstr[2] "_%d vietų"
+msgstr[3] "_%d vietą"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
@@ -1117,9 +1158,10 @@ msgstr[2] "_%d vietų"
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] "%d vieta"
-msgstr[1] "%d vietos"
+msgstr[0] "%d vietą"
+msgstr[1] "%d vietas"
 msgstr[2] "%d vietų"
+msgstr[3] "%d vietą"
 
 #. Tooltip for the round button
 #: ../src/math-buttons.c:998
@@ -1230,45 +1272,45 @@ msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
 #. grads
-#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
+#: ../src/math-preferences.c:255 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "Laipsniai"
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
+#: ../src/math-preferences.c:259 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "Radianai"
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
+#: ../src/math-preferences.c:263 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "Gradientai"
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
 #. number 1.234×10^99)
-#: ../src/math-preferences.c:270
+#: ../src/math-preferences.c:273
 msgid "Automatic"
 msgstr "Automatinis"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:274
+#: ../src/math-preferences.c:277
 msgid "Fixed"
 msgstr "Fiks"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:278
+#: ../src/math-preferences.c:281
 msgid "Scientific"
 msgstr "Mokslinis"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:282
+#: ../src/math-preferences.c:285
 msgid "Engineering"
 msgstr "Inžinerinis"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:293
+#: ../src/math-preferences.c:296
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "Rodyti %d dešimtainių _pozicijų"
@@ -1281,7 +1323,17 @@ msgstr "Nepavyko atverti žinyno failo"
 #. The translator credits. Please translate this with your name(s).
 #: ../src/math-window.c:239
 msgid "translator-credits"
-msgstr "Algimantas Markevičius <margevicius.algimantas@gmail.com>\nAurimas Černius <aurisc4@gmail.com>\nRimas Kudelis <rq@akl.lt>\nŽygimantas Beručka <uid0@akl.lt>\nJustina Klingaitė <justina.klingaite@gmail.com>\nGintautas Miliauskas <gintas@akl.lt>\nTomas Kuliavas <tokul@users.sourceforge.net>\nGediminas Paulauskas <menesis@chatsubo.lt>"
+msgstr ""
+"Vertėjai:\n"
+"Algimantas Margevičius <margevicius.algimantas@gmail.com>\n"
+"Aurimas Černius <aurisc4@gmail.com>\n"
+"Rimas Kudelis <rq@akl.lt>\n"
+"Žygimantas Beručka <uid0@akl.lt>\n"
+"Justina Klingaitė <justina.klingaite@gmail.com>\n"
+"Gintautas Miliauskas <gintas@akl.lt>\n"
+"Tomas Kuliavas <tokul@users.sourceforge.net>\n"
+"Gediminas Paulauskas <menesis@chatsubo.lt>\n"
+"Moo"
 
 #. The license this software is under (GPL2+)
 #: ../src/math-window.c:246
@@ -1299,7 +1351,20 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr "mate-calc yra nemokama programa, ją galima platinti ir/arba modifikuoti\npagal GNU General Public License reikalavimus, kuriuos paskelbė\nFree Software Foundation; naudotina licencijos versija 2, arba\n(jūsų pasirinkimu) bet kuri vėlesnė versija.\n\nmate-calc yra platinamas tikintis, jog ji bus naudinga,\nbet BE JOKIŲ GARANTIJŲ; netgi be numanomų TINKAMUMO\n PREKYBAI ar KONKREČIAM TIKSLUI garantijų. Daugiau\nsmulkmenų rasite GNU General Public License.\n\nJūs turėtumėte gauti GNU General Public License kopiją\nkartu su mate-calc; jei ne, parašykite Free Software Foundation, Inc.,\n151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr ""
+"mate-calc yra nemokama programa, ją galima platinti ir/arba modifikuoti\n"
+"pagal GNU General Public License reikalavimus, kuriuos paskelbė\n"
+"Free Software Foundation; naudotina licencijos versija 2, arba\n"
+"(jūsų pasirinkimu) bet kuri vėlesnė versija.\n"
+"\n"
+"mate-calc yra platinamas tikintis, jog ji bus naudinga,\n"
+"bet BE JOKIŲ GARANTIJŲ; netgi be numanomų TINKAMUMO\n"
+" PREKYBAI ar KONKREČIAM TIKSLUI garantijų. Daugiau\n"
+"smulkmenų rasite GNU General Public License.\n"
+"\n"
+"Jūs turėtumėte gauti GNU General Public License kopiją\n"
+"kartu su mate-calc; jei ne, parašykite Free Software Foundation, Inc.,\n"
+"151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
 #: ../src/math-window.c:261
 msgid "mate-calc"
@@ -1365,7 +1430,8 @@ msgstr "Loginis ARBA apibrėžtas tik teigiamiems sveikiems skaičiams"
 #. values
 #: ../src/mp-binary.c:141
 msgid "Boolean XOR is only defined for positive integers"
-msgstr "Loginė griežta disjunkcija apibrėžta tik teigiamiems sveikiems skaičiams"
+msgstr ""
+"Loginė griežta disjunkcija apibrėžta tik teigiamiems sveikiems skaičiams"
 
 #. Translators: Error displayed when boolean XOR attempted on non-integer
 #. values
@@ -1436,7 +1502,8 @@ msgstr "Dalyba su liekana apibrėžta tik sveikiems skaičiams"
 msgid ""
 "Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
 "(90°)"
-msgstr "Tangentas neapibrėžtas kampams, kurie yra π (180°) kartotiniai nuo π∕2 (90°)"
+msgstr ""
+"Tangentas neapibrėžtas kampams, kurie yra π (180°) kartotiniai nuo π∕2 (90°)"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: ../src/mp-trigonometric.c:355
@@ -1452,7 +1519,9 @@ msgstr "Arkkosinusas neapibrėžtas reikšmėms už intervalo [-1, 1]"
 #. undefined
 #: ../src/mp-trigonometric.c:591
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
-msgstr "Hiperbolinis arkkosinusas neapibrėžtas reikšmėms, mažesnėms arba lygioms vienetui"
+msgstr ""
+"Hiperbolinis arkkosinusas neapibrėžtas reikšmėms, mažesnėms arba lygioms "
+"vienetui"
 
 #. Translators: Error displayed when inverse hyperbolic tangent value is
 #. undefined
@@ -2095,7 +2164,7 @@ msgstr "mikrosekundė,mikrosekundės,us,μs"
 
 #: ../src/unit-manager.c:97
 msgid "Celsius"
-msgstr "Celcijaus"
+msgstr "Celsijaus"
 
 #: ../src/unit-manager.c:97
 #, c-format
@@ -2167,7 +2236,7 @@ msgstr "Plotas"
 
 #: ../src/unit-manager.c:112
 msgid "Volume"
-msgstr "Reikšmė"
+msgstr "Garsis"
 
 #: ../src/unit-manager.c:113
 msgid "Weight"
@@ -2183,7 +2252,7 @@ msgstr "Temperatūra"
 
 #: ../src/unit-manager.c:127
 msgid "Currency"
-msgstr "Valiutų"
+msgstr "Valiuta"
 
 #. Translators: result of currency conversion, %s is the symbol, %%s is the
 #. placeholder for amount, i.e.: USD100

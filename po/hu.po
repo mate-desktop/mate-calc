@@ -1,25 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Andras Timar <timar at mate dot hu>, 2003
-# Balázs Meskó <meskobalazs@gmail.com>, 2018
-# Falu <info@falu.me>, 2017
-# Gabor Kelemen <kelemeng at mate dot hu>, 2005-2012
-# István Szőllősi <szollosi.istv4n@gmail.com>, 2014
-# Laszlo Dvornik <dvornik at mate dot hu>, 2004
-# Mate ORY <orymate at gmail d0t com>, 2006
-# Rezső Páder <rezso@rezso.net>, 2013
-# Zoltán Rápolthy <real_zolee@hotmail.com>, 2017
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-06 15:01+0300\n"
-"PO-Revision-Date: 2018-02-06 12:05+0000\n"
-"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
-"Language-Team: Hungarian (http://www.transifex.com/mate/MATE/language/hu/)\n"
+"POT-Creation-Date: 2018-03-16 15:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Zoltán Rápolthy <real_zolee@hotmail.com>, 2018\n"
+"Language-Team: Hungarian (https://www.transifex.com/mate/teams/13566/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,7 +32,7 @@ msgstr "="
 #: ../data/buttons-advanced.ui.h:5 ../data/buttons-basic.ui.h:3
 #: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
 msgid "Clear"
-msgstr "Törlés"
+msgstr "Leürítés"
 
 #. Accessible name for the subscript mode button
 #: ../data/buttons-advanced.ui.h:7 ../data/buttons-programming.ui.h:15
@@ -141,7 +133,10 @@ msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr "Kiszámítja egy befektetés jelenértékének adott jövőértékre növeléséhez szükséges kamatszámítási időszakok számát, rögzített kamatszámítási időszakonkénti kamatláb mellett."
+msgstr ""
+"Kiszámítja egy befektetés jelenértékének adott jövőértékre növeléséhez "
+"szükséges kamatszámítási időszakok számát, rögzített kamatszámítási "
+"időszakonkénti kamatláb mellett."
 
 #. Periodic Interest Rate Dialog: Label before future value input
 #: ../data/buttons-financial.ui.h:12
@@ -158,7 +153,9 @@ msgstr "Progresszív értékcsökkenési leírás"
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
-msgstr "Kiszámítja egy eszköz értékcsökkenési leírását egy megadott időszakra a kétszeresen csökkenő egyenleg módszer használatával."
+msgstr ""
+"Kiszámítja egy eszköz értékcsökkenési leírását egy megadott időszakra a "
+"kétszeresen csökkenő egyenleg módszer használatával."
 
 #. Gross Profit Margin Dialog: Label before cost input
 #: ../data/buttons-financial.ui.h:18
@@ -187,7 +184,10 @@ msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
-msgstr "Egyenlő kifizetések sorozata alapján, az időszakra vonatkozó kamatláb mellett kiszámítja egy befektetés jövőértékét a periódus fizetési időszakai folyamán."
+msgstr ""
+"Egyenlő kifizetések sorozata alapján, az időszakra vonatkozó kamatláb "
+"mellett kiszámítja egy befektetés jövőértékét a periódus fizetési időszakai "
+"folyamán."
 
 #. Payment Period Dialog: Label before periodic payment input
 #: ../data/buttons-financial.ui.h:28
@@ -210,7 +210,9 @@ msgstr "Bruttó haszon"
 msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
-msgstr "Kiszámítja egy termék viszonteladói árát a termék költsége és a kívánt bruttó haszon alapján."
+msgstr ""
+"Kiszámítja egy termék viszonteladói árát a termék költsége és a kívánt "
+"bruttó haszon alapján."
 
 #. Gross Profit Margin Dialog: Label before margin input
 #: ../data/buttons-financial.ui.h:36
@@ -228,7 +230,9 @@ msgstr "Rendszeres pénzáramlás"
 msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
-msgstr "Egy kölcsön rendszeres törlesztőrészletét számítja ki, ahol a törlesztések az egyes fizetési időszakok végén történnek."
+msgstr ""
+"Egy kölcsön rendszeres törlesztőrészletét számítja ki, ahol a törlesztések "
+"az egyes fizetési időszakok végén történnek."
 
 #. Periodic Payment Dialog: Label before principal input
 #: ../data/buttons-financial.ui.h:42
@@ -252,7 +256,10 @@ msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr "Az időszakra vonatkozó kamatláb mellett diszkontált egyenlő kifizetések sorozata alapján kiszámítja egy befektetés jelenértékét a periódus fizetési időszakai során."
+msgstr ""
+"Az időszakra vonatkozó kamatláb mellett diszkontált egyenlő kifizetések "
+"sorozata alapján kiszámítja egy befektetés jelenértékét a periódus fizetési "
+"időszakai során."
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
@@ -265,7 +272,9 @@ msgstr "Időszakra vonatkozó kamatláb"
 msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
-msgstr "Kiszámítja egy befektetés jövőértékre növeléséhez a kamatszámítási időszakok alatt szükséges időszakra vonatkozó kamatlábat."
+msgstr ""
+"Kiszámítja egy befektetés jövőértékre növeléséhez a kamatszámítási időszakok"
+" alatt szükséges időszakra vonatkozó kamatlábat."
 
 #. Title of Straight-Line Depreciation dialog
 #: ../data/buttons-financial.ui.h:54
@@ -289,7 +298,11 @@ msgid ""
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr "Kiszámítja egy eszköz lineáris értékcsökkenését egy periódusra. A lineáris értékcsökkenési leírás egyenlően osztja el az értékcsökkenési költséget az eszköz hasznos élettartama alatt. A hasznos élettartam azon periódusok, általában évek száma, amelyek alatt az eszköz elavul."
+msgstr ""
+"Kiszámítja egy eszköz lineáris értékcsökkenését egy periódusra. A lineáris "
+"értékcsökkenési leírás egyenlően osztja el az értékcsökkenési költséget az "
+"eszköz hasznos élettartama alatt. A hasznos élettartam azon periódusok, "
+"általában évek száma, amelyek alatt az eszköz elavul."
 
 #. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
@@ -304,7 +317,13 @@ msgid ""
 " accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
-msgstr "Kiszámítja egy eszköz értékcsökkenési leírását egy megadott időszakra az évek száma módszer használatával. Ez az értékcsökkenési mód gyorsítja az értékcsökkenés sebességét, így a korábbi időszakok során több értékcsökkenési kiadás lép fel, mint a későbbiekben. A hasznos élettartam az időszakok, jellemzően évek száma, amelyek során az eszköz értékcsökkenése bekövetkezik."
+msgstr ""
+"Kiszámítja egy eszköz értékcsökkenési leírását egy megadott időszakra az "
+"évek száma módszer használatával. Ez az értékcsökkenési mód gyorsítja az "
+"értékcsökkenés sebességét, így a korábbi időszakok során több "
+"értékcsökkenési kiadás lép fel, mint a későbbiekben. A hasznos élettartam az"
+" időszakok, jellemzően évek száma, amelyek során az eszköz értékcsökkenése "
+"bekövetkezik."
 
 #. Title of Payment Period dialog
 #: ../data/buttons-financial.ui.h:66
@@ -322,7 +341,10 @@ msgid ""
 "Calculates the number of payment periods that are necessary during the term "
 "of an ordinary annuity, to accumulate a future value, at a periodic interest"
 " rate."
-msgstr "Kiszámítja egy szokásos annuitás periódusa alatt egy jövőérték összegyűjtéséhez szükséges fizetési időszakok számát, az időszakra vonatkozó kamatláb mellett."
+msgstr ""
+"Kiszámítja egy szokásos annuitás periódusa alatt egy jövőérték "
+"összegyűjtéséhez szükséges fizetési időszakok számát, az időszakra vonatkozó"
+" kamatláb mellett."
 
 #. Calculates the number of compounding periods necessary to increase an
 #. investment of present value pv to a future value of fv, at a fixed interest
@@ -492,7 +514,13 @@ msgid ""
 " to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
 "Calc and part of the MATE Desktop Environment. If you would like to know "
 "more about MATE and MATE Calc, please visit the project's home page. </p>"
-msgstr "<p> A MATE Számológép egy hatékony grafikus számológép pénzügyi, logikai és tudományos üzemmódokkal. A számtanhoz egy többrétű precíziós csomagot használ a nagy fokú pontosság érdekében. </p> <p> A MATE Számológép a GNOME Számológép származéka és része a MATE asztali környezetnek. Ha szeretne többet megtudni a MATE-ról és a MATE Számológépről, kérjük, látogasson el a projekt honlapjára. </p>"
+msgstr ""
+"<p> A MATE Számológép egy hatékony grafikus számológép pénzügyi, logikai és "
+"tudományos üzemmódokkal. A számtanhoz egy többrétű precíziós csomagot "
+"használ a nagy fokú pontosság érdekében. </p> <p> A MATE Számológép a GNOME "
+"Számológép származéka és része a MATE asztali környezetnek. Ha szeretne "
+"többet megtudni a MATE-ról és a MATE Számológépről, kérjük, látogasson el a "
+"projekt honlapjára. </p>"
 
 #: ../data/mate-calc.desktop.in.h:1
 msgid "MATE Calculator"
@@ -757,7 +785,9 @@ msgstr "Hiba: a periódusok számának pozitívnak kell lennie"
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr "Használat:\n  %s – Matematikai számítások végrehajtása"
+msgstr ""
+"Használat:\n"
+"  %s – Matematikai számítások végrehajtása"
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
@@ -769,7 +799,12 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr "Súgókapcsolók:\n  -v, --version                   Verziószám megjelenítése\n  -h, -?, --help                  Súgólehetőségek megjelenítése\n  --help-all                      Minden súgólehetőség megjelenítése\n  --help-gtk                      GTK+ beállítások megjelenítése"
+msgstr ""
+"Súgókapcsolók:\n"
+"  -v, --version                   Verziószám megjelenítése\n"
+"  -h, -?, --help                  Súgólehetőségek megjelenítése\n"
+"  --help-all                      Minden súgólehetőség megjelenítése\n"
+"  --help-gtk                      GTK+ beállítások megjelenítése"
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
@@ -783,7 +818,15 @@ msgid ""
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr "GTK+ kapcsolók:\n  --class=OSZTÁLY                 A program osztálya, ahogy az ablakkezelő használja\n  --name=NÉV                      A programnév, ahogy az ablakkezelő használja\n  --display=MEGJELENÍTŐ           Használandó X-megjelenítő\n  --screen=KÉPERNYŐ               Használandó X-képernyő\n  --sync                          Legyenek szinkron X-hívások\n  --gtk-module=MODULOK            További GTK+ modulok betöltése\n  --g-fatal-warnings              Minden figyelmeztetés végzetes legyen"
+msgstr ""
+"GTK+ kapcsolók:\n"
+"  --class=OSZTÁLY                 A program osztálya, ahogy az ablakkezelő használja\n"
+"  --name=NÉV                      A programnév, ahogy az ablakkezelő használja\n"
+"  --display=MEGJELENÍTŐ           Használandó X-megjelenítő\n"
+"  --screen=KÉPERNYŐ               Használandó X-képernyő\n"
+"  --sync                          Legyenek szinkron X-hívások\n"
+"  --gtk-module=MODULOK            További GTK+ modulok betöltése\n"
+"  --g-fatal-warnings              Minden figyelmeztetés végzetes legyen"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -791,7 +834,9 @@ msgstr "GTK+ kapcsolók:\n  --class=OSZTÁLY                 A program osztálya
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr "Alkalmazáskapcsolók:\n  -s, --solve <egyenlet>          A megadott egyenlet megoldása"
+msgstr ""
+"Alkalmazáskapcsolók:\n"
+"  -s, --solve <egyenlet>          A megadott egyenlet megoldása"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:156
@@ -918,12 +963,12 @@ msgstr "Természetes alapú logaritmus"
 #. Tooltip for the sine button
 #: ../src/math-buttons.c:163
 msgid "Sine"
-msgstr "Szinusz"
+msgstr "Sinus"
 
 #. Tooltip for the cosine button
 #: ../src/math-buttons.c:166
 msgid "Cosine"
-msgstr "Koszinusz"
+msgstr "Cosinus"
 
 #. Tooltip for the tangent button
 #: ../src/math-buttons.c:169
@@ -1083,22 +1128,22 @@ msgstr "Lineáris értékcsökkenési leírás"
 #. Number display mode combo: Binary, e.g. 10011010010₂
 #: ../src/math-buttons.c:611
 msgid "Binary"
-msgstr "Bináris"
+msgstr "Kettes (bináris)"
 
 #. Number display mode combo: Octal, e.g. 2322₈
 #: ../src/math-buttons.c:615
 msgid "Octal"
-msgstr "Oktális"
+msgstr "Nyolcas (oktális)"
 
 #. Number display mode combo: Decimal, e.g. 1234
 #: ../src/math-buttons.c:619
 msgid "Decimal"
-msgstr "Decimális"
+msgstr "Tizes (decimális)"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
 #: ../src/math-buttons.c:623
 msgid "Hexadecimal"
-msgstr "Hexadecimális"
+msgstr "Tizenhatos (hexadecimális)"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
@@ -1227,45 +1272,45 @@ msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
 #. grads
-#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
+#: ../src/math-preferences.c:255 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "Fok"
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
+#: ../src/math-preferences.c:259 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "Radián"
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
+#: ../src/math-preferences.c:263 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "Gradián"
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
 #. number 1.234×10^99)
-#: ../src/math-preferences.c:270
+#: ../src/math-preferences.c:273
 msgid "Automatic"
 msgstr "Automatikus"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:274
+#: ../src/math-preferences.c:277
 msgid "Fixed"
 msgstr "Rögzített"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:278
+#: ../src/math-preferences.c:281
 msgid "Scientific"
 msgstr "Tudományos mód"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:282
+#: ../src/math-preferences.c:285
 msgid "Engineering"
 msgstr "Műszaki"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:293
+#: ../src/math-preferences.c:296
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "%d decimális _hely megjelenítése"
@@ -1278,7 +1323,15 @@ msgstr "A súgófájl nem nyitható meg"
 #. The translator credits. Please translate this with your name(s).
 #: ../src/math-window.c:239
 msgid "translator-credits"
-msgstr "Dvornik László<dvornik at mate dot hu>\nKelemen Gábor<kelemeng at mate dot hu>\nTímár András<timar at mate dot hu>\nMeskó Balázs <mesko.balazs at fsf dot hu>"
+msgstr ""
+"Dvornik László<dvornik at mate dot hu>\n"
+"Kelemen Gábor<kelemeng at mate dot hu>\n"
+"Tímár András<timar at mate dot hu>\n"
+"Rezső Páder<rezso at rezso dot net>\n"
+"Kalman „KAMI” Szalai<kami911 at gmail dot com>\n"
+"Falu<info at falu dot me>\n"
+"Zoltán Rápolthy<real_zolee at hotmail dot com>\n"
+"Meskó Balázs <mesko.balazs at fsf dot hu>"
 
 #. The license this software is under (GPL2+)
 #: ../src/math-window.c:246
@@ -1296,7 +1349,20 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr "A mate-calc szabad szoftver; terjeszthető illetve módosítható a Free Software\nFoundation által kiadott GNU General Public License dokumentumában leírtak;\nakár a licenc 2-es, akár (tetszőleges) későbbi változata szerint.\n\nA mate-calc abban a reményben kerül közreadásra, hogy hasznos lesz, de minden\negyéb GARANCIA NÉLKÜL, az ELADHATÓSÁGRA vagy VALAMELY CÉLRA VALÓ\nALKALMAZHATÓSÁGRA való származtatott garanciát is beleértve. További\nrészleteket a GNU General Public License tartalmaz.\n\nA felhasználónak a programmal együtt meg kell kapnia a GNU General Public\nLicense egy példányát; ha mégsem kapta meg, akkor ezt a Free Software\nFoundationnak küldött levélben jelezze (cím: Free Software Foundation Inc.,\n59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.)"
+msgstr ""
+"A mate-calc szabad szoftver; terjeszthető illetve módosítható a Free Software\n"
+"Foundation által kiadott GNU General Public License dokumentumában leírtak;\n"
+"akár a licenc 2-es, akár (tetszőleges) későbbi változata szerint.\n"
+"\n"
+"A mate-calc abban a reményben kerül közreadásra, hogy hasznos lesz, de minden\n"
+"egyéb GARANCIA NÉLKÜL, az ELADHATÓSÁGRA vagy VALAMELY CÉLRA VALÓ\n"
+"ALKALMAZHATÓSÁGRA való származtatott garanciát is beleértve. További\n"
+"részleteket a GNU General Public License tartalmaz.\n"
+"\n"
+"A felhasználónak a programmal együtt meg kell kapnia a GNU General Public\n"
+"License egy példányát; ha mégsem kapta meg, akkor ezt a Free Software\n"
+"Foundationnak küldött levélben jelezze (cím: Free Software Foundation Inc.,\n"
+"59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.)"
 
 #: ../src/math-window.c:261
 msgid "mate-calc"
@@ -1309,7 +1375,7 @@ msgstr "Számológép pénzügyi és tudományos üzemmódokkal."
 #. Calculator menu
 #: ../src/math-window.c:369
 msgid "_Calculator"
-msgstr "Számoló_gép"
+msgstr "_Számológép"
 
 #. Mode menu
 #: ../src/math-window.c:371
@@ -1433,29 +1499,39 @@ msgstr "A maradékos osztás csak egészekre van meghatározva"
 msgid ""
 "Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
 "(90°)"
-msgstr "A tangens nincs meghatározva π∕2 (90°) és π (180°) közötti szögek többszöröseire"
+msgstr ""
+"A tangens nincs meghatározva π∕2 (90°) és π (180°) közötti szögek "
+"többszöröseire"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: ../src/mp-trigonometric.c:355
 msgid "Inverse sine is undefined for values outside [-1, 1]"
-msgstr "Az inverz szinusz nincs meghatározva a [-1, 1] intervallumon kívüli értékekre"
+msgstr ""
+"Az inverz szinusz nincs meghatározva a [-1, 1] intervallumon kívüli "
+"értékekre"
 
 #. Translators: Error displayed when inverse cosine value is undefined
 #: ../src/mp-trigonometric.c:372
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
-msgstr "Az inverz koszinusz nincs meghatározva a [-1, 1] intervallumon kívüli értékekre"
+msgstr ""
+"Az inverz koszinusz nincs meghatározva a [-1, 1] intervallumon kívüli "
+"értékekre"
 
 #. Translators: Error displayed when inverse hyperbolic cosine value is
 #. undefined
 #: ../src/mp-trigonometric.c:591
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
-msgstr "Az inverz hiperbolikus koszinusz nincs meghatározva az egynél kisebb értékekre"
+msgstr ""
+"Az inverz hiperbolikus koszinusz nincs meghatározva az egynél kisebb "
+"értékekre"
 
 #. Translators: Error displayed when inverse hyperbolic tangent value is
 #. undefined
 #: ../src/mp-trigonometric.c:615
 msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
-msgstr "Az inverz hiperbolikus tangens nincs meghatározva a [-1, 1] intervallumon kívüli értékekre"
+msgstr ""
+"Az inverz hiperbolikus tangens nincs meghatározva a [-1, 1] intervallumon "
+"kívüli értékekre"
 
 #: ../src/unit-manager.c:54
 #, c-format
@@ -2092,7 +2168,7 @@ msgstr "mikromásodperc,us,μs"
 
 #: ../src/unit-manager.c:97
 msgid "Celsius"
-msgstr "Celsius"
+msgstr "Celsius fok"
 
 #: ../src/unit-manager.c:97
 #, c-format
@@ -2164,7 +2240,7 @@ msgstr "Terület"
 
 #: ../src/unit-manager.c:112
 msgid "Volume"
-msgstr "Térfogat"
+msgstr "Hangerő"
 
 #: ../src/unit-manager.c:113
 msgid "Weight"

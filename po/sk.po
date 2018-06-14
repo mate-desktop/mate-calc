@@ -1,27 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Dušan Kazik <prescott66@gmail.com>, 2017
-# Ján Ďanovský <dagsoftware@yahoo.com>, 2013-2014,2016-2017
-# Marcel Telka <marcel@telka.sk>, 2003-2005,2008
-# Ondrej Mosnáček <omosnacek@gmail.com>, 2011
-# Peter Tuharsky <tuharsky@misbb.sk>, 2007
-# Robert Hartl <hartl.robert@gmail.com>, 2010
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-06 15:01+0300\n"
-"PO-Revision-Date: 2018-02-06 12:05+0000\n"
-"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
-"Language-Team: Slovak (http://www.transifex.com/mate/MATE/language/sk/)\n"
+"POT-Creation-Date: 2018-03-16 15:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Pavol Šimo <palo.simo@gmail.com>, 2018\n"
+"Language-Team: Slovak (https://www.transifex.com/mate/teams/13566/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: sk\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 
 #. Accessible name for the factorize button
 #: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:8
@@ -37,7 +32,7 @@ msgstr "="
 #: ../data/buttons-advanced.ui.h:5 ../data/buttons-basic.ui.h:3
 #: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
 msgid "Clear"
-msgstr "Vymazať"
+msgstr "Vyprázdniť"
 
 #. Accessible name for the subscript mode button
 #: ../data/buttons-advanced.ui.h:7 ../data/buttons-programming.ui.h:15
@@ -138,7 +133,9 @@ msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr "Vypočíta počet období, ktoré sú potrebné na navýšenie investície súčasnej hodnoty na budúcu hodnoty pri pevnom úročení za obdobie."
+msgstr ""
+"Vypočíta počet období, ktoré sú potrebné na navýšenie investície súčasnej "
+"hodnoty na budúcu hodnoty pri pevnom úročení za obdobie."
 
 #. Periodic Interest Rate Dialog: Label before future value input
 #: ../data/buttons-financial.ui.h:12
@@ -155,7 +152,9 @@ msgstr "Dvojitá odpisová metóda s klesajúcim zostatkom (DDB)"
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
-msgstr "Vypočíta amortizačnú čiastku majetku za dané časové obdobie dvojitou odpisovou metóda s klesajúcim zostatkom."
+msgstr ""
+"Vypočíta amortizačnú čiastku majetku za dané časové obdobie dvojitou "
+"odpisovou metóda s klesajúcim zostatkom."
 
 #. Gross Profit Margin Dialog: Label before cost input
 #: ../data/buttons-financial.ui.h:18
@@ -184,7 +183,9 @@ msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
-msgstr "Vypočíta budúcu hodnotu investície na základe postupnosti rovnakých splátok pri pravidelnom úročení počas niekoľkých platobných období."
+msgstr ""
+"Vypočíta budúcu hodnotu investície na základe postupnosti rovnakých splátok "
+"pri pravidelnom úročení počas niekoľkých platobných období."
 
 #. Payment Period Dialog: Label before periodic payment input
 #: ../data/buttons-financial.ui.h:28
@@ -207,7 +208,9 @@ msgstr "Hrubá marža"
 msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
-msgstr "Vypočíta predajnú cenu výrobku na základe výrobných nákladov a požadovanej hrubej marže."
+msgstr ""
+"Vypočíta predajnú cenu výrobku na základe výrobných nákladov a požadovanej "
+"hrubej marže."
 
 #. Gross Profit Margin Dialog: Label before margin input
 #: ../data/buttons-financial.ui.h:36
@@ -225,7 +228,9 @@ msgstr "Pravidelná spátka"
 msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
-msgstr "Vypočíta výšku pravidelnej splátky pôžičky, kde sú platby uskutočňované na konci každého platobného obdobia"
+msgstr ""
+"Vypočíta výšku pravidelnej splátky pôžičky, kde sú platby uskutočňované na "
+"konci každého platobného obdobia"
 
 #. Periodic Payment Dialog: Label before principal input
 #: ../data/buttons-financial.ui.h:42
@@ -249,7 +254,9 @@ msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr "Vypočíta súčasnú hodnotu investície na základe rovnakých platieb odpočítavaných pravidelným úročením v danom počte splátok v danom období."
+msgstr ""
+"Vypočíta súčasnú hodnotu investície na základe rovnakých platieb "
+"odpočítavaných pravidelným úročením v danom počte splátok v danom období."
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
@@ -262,7 +269,9 @@ msgstr "Úroková sadzba za obdobie"
 msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
-msgstr "Vypočíta pravidelné úročenie potrebné na navýšenie investície na budúcu hodnotu počas niekoľkých období."
+msgstr ""
+"Vypočíta pravidelné úročenie potrebné na navýšenie investície na budúcu "
+"hodnotu počas niekoľkých období."
 
 #. Title of Straight-Line Depreciation dialog
 #: ../data/buttons-financial.ui.h:54
@@ -286,7 +295,11 @@ msgid ""
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr "Vypočíta rovnomerné odpisy majetku za jedno obdobie. Rovnomerná metóda odpisovania delí odpisovateľné náklady rovnomerne počas praktickej životnosti majetku. Praktická životnosť je počet období, zvyčajne rokov, počas ktorých sa majetok odpisuje."
+msgstr ""
+"Vypočíta rovnomerné odpisy majetku za jedno obdobie. Rovnomerná metóda "
+"odpisovania delí odpisovateľné náklady rovnomerne počas praktickej "
+"životnosti majetku. Praktická životnosť je počet období, zvyčajne rokov, "
+"počas ktorých sa majetok odpisuje."
 
 #. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
@@ -301,7 +314,12 @@ msgid ""
 " accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
-msgstr "Vypočíta amortizačnú čiastku majetku za dané časové obdobie metódou Sum-of-the-Years'-Digits (zrýchlené odpisovanie). Táto metóda odpisov zrýchľuje odpisovanie, takže v skoršom období sa odpisujú väčšie čiastky ako v neskoršom. Praktická životnosť je počet období, zvyčajne rokov, počas ktorých sa majetok odpisuje."
+msgstr ""
+"Vypočíta amortizačnú čiastku majetku za dané časové obdobie metódou Sum-of-"
+"the-Years'-Digits (zrýchlené odpisovanie). Táto metóda odpisov zrýchľuje "
+"odpisovanie, takže v skoršom období sa odpisujú väčšie čiastky ako v "
+"neskoršom. Praktická životnosť je počet období, zvyčajne rokov, počas "
+"ktorých sa majetok odpisuje."
 
 #. Title of Payment Period dialog
 #: ../data/buttons-financial.ui.h:66
@@ -319,7 +337,9 @@ msgid ""
 "Calculates the number of payment periods that are necessary during the term "
 "of an ordinary annuity, to accumulate a future value, at a periodic interest"
 " rate."
-msgstr "Vypočíta počet splátkových období, ktoré sú potrebné počas ročného splátkového obdobia na navýšenie budúcej hodnoty pri pravidelnom úročení"
+msgstr ""
+"Vypočíta počet splátkových období, ktoré sú potrebné počas ročného "
+"splátkového obdobia na navýšenie budúcej hodnoty pri pravidelnom úročení"
 
 #. Calculates the number of compounding periods necessary to increase an
 #. investment of present value pv to a future value of fv, at a fixed interest
@@ -489,7 +509,12 @@ msgid ""
 " to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
 "Calc and part of the MATE Desktop Environment. If you would like to know "
 "more about MATE and MATE Calc, please visit the project's home page. </p>"
-msgstr "<p> MATE Calc je výkonná grafická kalkulačka s finančnými, logickými a vedeckými režimami. Používa viacero presných balíčkov pre svoju aritmetiku, aby poskytla vysoký stupeň presnosti. </p> <p> MATE Calc je fork GNOME Calc a je súčasťou pracovného prostredia MATE. Ak by ste sa chceli dozvedieť viac o MATE a MATE Calc, navštívte domovskú stránku projektu. </p>"
+msgstr ""
+"<p> MATE Calc je výkonná grafická kalkulačka s finančnými, logickými a "
+"vedeckými režimami. Používa viacero presných balíčkov pre svoju aritmetiku, "
+"aby poskytla vysoký stupeň presnosti. </p> <p> MATE Calc je fork GNOME Calc "
+"a je súčasťou pracovného prostredia MATE. Ak by ste sa chceli dozvedieť viac"
+" o MATE a MATE Calc, navštívte domovskú stránku projektu. </p>"
 
 #: ../data/mate-calc.desktop.in.h:1
 msgid "MATE Calculator"
@@ -754,7 +779,9 @@ msgstr "Chyba: počet období musí byť kladný"
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr "Použitie:\n  %s - Vykonať matematické výpočty"
+msgstr ""
+"Použitie:\n"
+"  %s - Vykonať matematické výpočty"
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
@@ -766,7 +793,12 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr "Možnosti pomocníka:\n  -v, --version                   Zobrazí verziu vydania\n  -h, -?, --help                  Zobrazí možnosti pomocníka \n  --help-all                      Zobrazí všetky možnosti pomocníka\n  --help-gtk                      Zobrazí možnosti GTK+"
+msgstr ""
+"Možnosti pomocníka:\n"
+"  -v, --version                   Zobrazí verziu vydania\n"
+"  -h, -?, --help                  Zobrazí možnosti pomocníka \n"
+"  --help-all                      Zobrazí všetky možnosti pomocníka\n"
+"  --help-gtk                      Zobrazí možnosti GTK+"
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
@@ -780,7 +812,14 @@ msgid ""
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr "Možnosti GTK+:\n  --class=TRIEDA                  Trieda programu použitá v správcovi okien\n  --name=NÁZOV                    Názov programu použitý v správcovi okien\n  --screen=OBRAZOVKA              Obrazovka X, ktorá sa má použiť\n  --sync                          Volania X budú synchrónne\n  --gtk-module=MODULY             Načíta prídavné moduly GTK+\n  --g-fatal-warnings              Všetky varovania budú kritické"
+msgstr ""
+"Možnosti GTK+:\n"
+"  --class=TRIEDA                  Trieda programu použitá v správcovi okien\n"
+"  --name=NÁZOV                    Názov programu použitý v správcovi okien\n"
+"  --screen=OBRAZOVKA              Obrazovka X, ktorá sa má použiť\n"
+"  --sync                          Volania X budú synchrónne\n"
+"  --gtk-module=MODULY             Načíta prídavné moduly GTK+\n"
+"  --g-fatal-warnings              Všetky varovania budú kritické"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -788,7 +827,9 @@ msgstr "Možnosti GTK+:\n  --class=TRIEDA                  Trieda programu použ
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr "Možnosti programu:\n  -s, --solve <rovnica>           Vyrieši zadanú rovnicu"
+msgstr ""
+"Možnosti programu:\n"
+"  -s, --solve <rovnica>           Vyrieši zadanú rovnicu"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:156
@@ -1080,22 +1121,22 @@ msgstr "Lineárna amortizácia"
 #. Number display mode combo: Binary, e.g. 10011010010₂
 #: ../src/math-buttons.c:611
 msgid "Binary"
-msgstr "Dvojkový"
+msgstr "dvojkovú"
 
 #. Number display mode combo: Octal, e.g. 2322₈
 #: ../src/math-buttons.c:615
 msgid "Octal"
-msgstr "Osmičkový"
+msgstr "osmičkovú"
 
 #. Number display mode combo: Decimal, e.g. 1234
 #: ../src/math-buttons.c:619
 msgid "Decimal"
-msgstr "Desiatkový"
+msgstr "desiatkovú"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
 #: ../src/math-buttons.c:623
 msgid "Hexadecimal"
-msgstr "Šestnástkový"
+msgstr "šesťnástkovú"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
@@ -1103,9 +1144,10 @@ msgstr "Šestnástkový"
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] "o _%d miest"
-msgstr[1] "o _%d miesto"
-msgstr[2] "o _%d miesta"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
@@ -1113,9 +1155,10 @@ msgstr[2] "o _%d miesta"
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] "o %d miest"
-msgstr[1] "o %d miesto"
-msgstr[2] "o %d miesta"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #. Tooltip for the round button
 #: ../src/math-buttons.c:998
@@ -1226,45 +1269,45 @@ msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
 #. grads
-#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
+#: ../src/math-preferences.c:255 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "Stupne"
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
+#: ../src/math-preferences.c:259 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "Radiány"
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
+#: ../src/math-preferences.c:263 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "Gradiány"
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
 #. number 1.234×10^99)
-#: ../src/math-preferences.c:270
+#: ../src/math-preferences.c:273
 msgid "Automatic"
-msgstr "Automatický"
+msgstr "Automaticky"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:274
+#: ../src/math-preferences.c:277
 msgid "Fixed"
 msgstr "Fixný"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:278
+#: ../src/math-preferences.c:281
 msgid "Scientific"
 msgstr "Vedecký"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:282
+#: ../src/math-preferences.c:285
 msgid "Engineering"
 msgstr "Inžiniersky"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:293
+#: ../src/math-preferences.c:296
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "Zobraziť %d _desatinných miest"
@@ -1272,12 +1315,16 @@ msgstr "Zobraziť %d _desatinných miest"
 #. Translators: Error message displayed when unable to launch help browser
 #: ../src/math-window.c:212
 msgid "Unable to open help file"
-msgstr "Nie je možné otvoriť súbor s pomocníkom"
+msgstr "Nepodarilo sa otvoriť súbor pomocníka"
 
 #. The translator credits. Please translate this with your name(s).
 #: ../src/math-window.c:239
 msgid "translator-credits"
-msgstr "Marcel Telka <marcel@telka.sk>\nPeter Tuhársky <tuharsky@misbb.sk>\nRobert Hartl <hartl.robert@gmail.com>\nJán Ďanovský <dagsoftware@yahoo.com>"
+msgstr ""
+"Stanislav Višňovský\n"
+"Marcel Telka <marcel@telka.sk>\n"
+"Tibor Kaputa <tibbbi2@gmail.com>\n"
+"Dušan Kazik <prescott66@gmail.com>"
 
 #. The license this software is under (GPL2+)
 #: ../src/math-window.c:246
@@ -1295,7 +1342,20 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr "mate-calc je slobodný softvér; môžete ho šíriť a upravovať podľa\nustanovení GNU General Public License, vydávanej Free Software \nFoundation, a to buď vo verzii 2 tejto licencie alebo (podľa vlastného\nuváženia) v akejkoľvek neskoršej verzii.\n\nTento program je šírený v nádeji, že bude užitočný, avšak BEZ\nAKEJKOĽVEK ZÁRUKY; neposkytujú sa ani odvodené záruky PREDAJNOSTI\nalebo VHODNOSTI PRE URČITÝ ÚČEL. Ďalšie podrobnosti hľadajte v GNU\nGeneral Public License.\n\nKópiu GNU General Public License by ste mali obdržať spolu s týmto\nprogramom. Ak sa tak nestalo, napíšte si o ňu Free Software Foundation,\n151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+"mate-calc je slobodný softvér; môžete ho šíriť a upravovať podľa\n"
+"ustanovení GNU General Public License, vydávanej Free Software \n"
+"Foundation, a to buď vo verzii 2 tejto licencie alebo (podľa vlastného\n"
+"uváženia) v akejkoľvek neskoršej verzii.\n"
+"\n"
+"Tento program je šírený v nádeji, že bude užitočný, avšak BEZ\n"
+"AKEJKOĽVEK ZÁRUKY; neposkytujú sa ani odvodené záruky PREDAJNOSTI\n"
+"alebo VHODNOSTI PRE URČITÝ ÚČEL. Ďalšie podrobnosti hľadajte v GNU\n"
+"General Public License.\n"
+"\n"
+"Kópiu GNU General Public License by ste mali obdržať spolu s týmto\n"
+"programom. Ak sa tak nestalo, napíšte si o ňu Free Software Foundation,\n"
+"151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 
 #: ../src/math-window.c:261
 msgid "mate-calc"
@@ -1432,7 +1492,8 @@ msgstr "Zvyšok po delení je definovaný len pre celé čísla"
 msgid ""
 "Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
 "(90°)"
-msgstr "Tangens nie je definovaný pre uhly, ktoré sú násobkami π (180°) od π∕2 (90°)"
+msgstr ""
+"Tangens nie je definovaný pre uhly, ktoré sú násobkami π (180°) od π∕2 (90°)"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: ../src/mp-trigonometric.c:355
@@ -1448,13 +1509,16 @@ msgstr "Inverzný kosínus nie je definovaný pre hodnoty mimo interval [-1, 1]"
 #. undefined
 #: ../src/mp-trigonometric.c:591
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
-msgstr "Inverzný hyperbolický kosínus nie je definovaný pre hodnoty menšie ako jedna"
+msgstr ""
+"Inverzný hyperbolický kosínus nie je definovaný pre hodnoty menšie ako jedna"
 
 #. Translators: Error displayed when inverse hyperbolic tangent value is
 #. undefined
 #: ../src/mp-trigonometric.c:615
 msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
-msgstr "Inverzný hyperbolický tangens nie je definovaný pre hodnoty mimo interval [-1, 1]"
+msgstr ""
+"Inverzný hyperbolický tangens nie je definovaný pre hodnoty mimo interval "
+"[-1, 1]"
 
 #: ../src/unit-manager.c:54
 #, c-format
@@ -2091,7 +2155,7 @@ msgstr "mikrosekunda,mikrosekundy,mikrosekúnd,μs"
 
 #: ../src/unit-manager.c:97
 msgid "Celsius"
-msgstr "Stupne Celzia"
+msgstr "stupne Celzia"
 
 #: ../src/unit-manager.c:97
 #, c-format
@@ -2163,7 +2227,7 @@ msgstr "Plocha"
 
 #: ../src/unit-manager.c:112
 msgid "Volume"
-msgstr "Objem"
+msgstr "Hlasitosť"
 
 #: ../src/unit-manager.c:113
 msgid "Weight"

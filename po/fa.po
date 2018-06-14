@@ -1,26 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# sir_hawell <arash.cordi@gmail.com>, 2014
-# Arash Mousavi <mousavi.arash@gmail.com>, 2011
-# Meelad Zakaria <meelad@farsiweb.info>, 2004-2006
-# Mohammadreza Abdollahzadeh <morealaz@gmail.com>, 2014
-# Roozbeh Pournader <roozbeh@farsiweb.info>, 2003,2006
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-06 15:01+0300\n"
-"PO-Revision-Date: 2018-02-06 12:05+0000\n"
-"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
-"Language-Team: Persian (http://www.transifex.com/mate/MATE/language/fa/)\n"
+"POT-Creation-Date: 2018-03-16 15:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Mahdi Pourghasem <mahdipourghasem@gmail.com>, 2018\n"
+"Language-Team: Persian (https://www.transifex.com/mate/teams/13566/fa/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fa\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Accessible name for the factorize button
 #: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:8
@@ -450,7 +446,7 @@ msgstr "۶۴ بیت"
 #. Title of preferences dialog
 #: ../data/preferences.ui.h:9 ../src/math-preferences.c:238
 msgid "Preferences"
-msgstr "ترجیحات"
+msgstr "تنظیمات"
 
 #. Preferences dialog: Label for angle unit combo box
 #: ../data/preferences.ui.h:11
@@ -753,7 +749,9 @@ msgstr "خطا: تعداد دوره‌ها باید مثبت باشند"
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr "Usage:\n  %s — Perform mathematical calculations"
+msgstr ""
+"Usage:\n"
+"  %s — Perform mathematical calculations"
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
@@ -765,7 +763,12 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr "Help Options:\n  -v, --version                   Show release version\n  -h, -?, --help                  Show help options\n  --help-all                      Show all help options\n  --help-gtk                      Show GTK+ options"
+msgstr ""
+"Help Options:\n"
+"  -v, --version                   Show release version\n"
+"  -h, -?, --help                  Show help options\n"
+"  --help-all                      Show all help options\n"
+"  --help-gtk                      Show GTK+ options"
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
@@ -779,7 +782,14 @@ msgid ""
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr "GTK+ Options:\n  --class=CLASS                   Program class as used by the window manager\n  --name=NAME                     Program name as used by the window manager\n  --screen=SCREEN                 X screen to use\n  --sync                          Make X calls synchronous\n  --gtk-module=MODULES            Load additional GTK+ modules\n  --g-fatal-warnings              Make all warnings fatal"
+msgstr ""
+"GTK+ Options:\n"
+"  --class=CLASS                   Program class as used by the window manager\n"
+"  --name=NAME                     Program name as used by the window manager\n"
+"  --screen=SCREEN                 X screen to use\n"
+"  --sync                          Make X calls synchronous\n"
+"  --gtk-module=MODULES            Load additional GTK+ modules\n"
+"  --g-fatal-warnings              Make all warnings fatal"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -787,7 +797,9 @@ msgstr "GTK+ Options:\n  --class=CLASS                   Program class as used b
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr "Application Options:\n  -s, --solve <equation>          Solve the given equation"
+msgstr ""
+"Application Options:\n"
+"  -s, --solve <equation>          Solve the given equation"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:156
@@ -1102,7 +1114,8 @@ msgstr "شانزده‌شانزدهی‏"
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] "_‏%Id رقم"
+msgstr[0] ""
+msgstr[1] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
@@ -1110,7 +1123,8 @@ msgstr[0] "_‏%Id رقم"
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] "%Id رقم"
+msgstr[0] ""
+msgstr[1] ""
 
 #. Tooltip for the round button
 #: ../src/math-buttons.c:998
@@ -1221,45 +1235,45 @@ msgstr "۰,۱,۲,۳,۴,۵,۶,۷,۸,۹,A,B,C,D,E,F"
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
 #. grads
-#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
+#: ../src/math-preferences.c:255 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "درجه"
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
+#: ../src/math-preferences.c:259 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "رادیان"
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
+#: ../src/math-preferences.c:263 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "گرادیان"
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
 #. number 1.234×10^99)
-#: ../src/math-preferences.c:270
+#: ../src/math-preferences.c:273
 msgid "Automatic"
 msgstr "خودکار"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:274
+#: ../src/math-preferences.c:277
 msgid "Fixed"
 msgstr "ثابت"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:278
+#: ../src/math-preferences.c:281
 msgid "Scientific"
 msgstr "علمی"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:282
+#: ../src/math-preferences.c:285
 msgid "Engineering"
 msgstr "مهندسی"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:293
+#: ../src/math-preferences.c:296
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "نمایش %Id رقم _اعشاری"
@@ -1272,7 +1286,7 @@ msgstr "نمی‌توان پرونده‌ی راهنما را باز کرد"
 #. The translator credits. Please translate this with your name(s).
 #: ../src/math-window.c:239
 msgid "translator-credits"
-msgstr "آرش موسوی <mousavi.arash@gmail.com>\nروزبه پورنادر <roozbeh@farsiweb.info> \nمیلاد زکریا <meelad@farsiweb.info>"
+msgstr "محمدرضا حاجیانپور <psyringe@protonmail.com>"
 
 #. The license this software is under (GPL2+)
 #: ../src/math-window.c:246
@@ -1427,7 +1441,9 @@ msgstr "باقیمانده تقسیم تنها برای اعداد صحیح تع
 msgid ""
 "Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
 "(90°)"
-msgstr "تانژانت برای زاویه‌هایی که ضریبی از n ر(180°) از طریق π∕2 ر(90°) هستند تعریف نشده است"
+msgstr ""
+"تانژانت برای زاویه‌هایی که ضریبی از n ر(180°) از طریق π∕2 ر(90°) هستند تعریف"
+" نشده است"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: ../src/mp-trigonometric.c:355
@@ -2158,7 +2174,7 @@ msgstr "محیط"
 
 #: ../src/unit-manager.c:112
 msgid "Volume"
-msgstr "حجم"
+msgstr "بلندی صدا"
 
 #: ../src/unit-manager.c:113
 msgid "Weight"

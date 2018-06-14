@@ -1,18 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Ivica  Kolić <ikoli@yahoo.com>, 2013
-# Tomislav Krznar <tomislav.krznar@gmail.com>, 2014
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-06 15:01+0300\n"
-"PO-Revision-Date: 2018-02-06 12:05+0000\n"
-"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
-"Language-Team: Croatian (http://www.transifex.com/mate/MATE/language/hr/)\n"
+"POT-Creation-Date: 2018-03-16 15:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Elvis M. Lukšić <meluksic@yahoo.com>, 2018\n"
+"Language-Team: Croatian (https://www.transifex.com/mate/teams/13566/hr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -369,7 +368,7 @@ msgstr "Sln"
 #. periods in term. See also: http://en.wikipedia.org/wiki/Interest
 #: ../data/buttons-financial.ui.h:91
 msgid "Rate"
-msgstr "Stopa"
+msgstr "Protok"
 
 #. Calculates the present value of an investment based on a series of equal
 #. payments, each of amount pmt, discounted at a periodic interest rate of
@@ -447,7 +446,7 @@ msgstr "64-bit"
 #. Title of preferences dialog
 #: ../data/preferences.ui.h:9 ../src/math-preferences.c:238
 msgid "Preferences"
-msgstr "Osobitosti"
+msgstr "Prilagodbe"
 
 #. Preferences dialog: Label for angle unit combo box
 #: ../data/preferences.ui.h:11
@@ -1076,22 +1075,22 @@ msgstr ""
 #. Number display mode combo: Binary, e.g. 10011010010₂
 #: ../src/math-buttons.c:611
 msgid "Binary"
-msgstr ""
+msgstr "Binarni"
 
 #. Number display mode combo: Octal, e.g. 2322₈
 #: ../src/math-buttons.c:615
 msgid "Octal"
-msgstr ""
+msgstr "Oktalni"
 
 #. Number display mode combo: Decimal, e.g. 1234
 #: ../src/math-buttons.c:619
 msgid "Decimal"
-msgstr ""
+msgstr "Decimalni"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
 #: ../src/math-buttons.c:623
 msgid "Hexadecimal"
-msgstr ""
+msgstr "Heksadecimalni"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
@@ -1222,45 +1221,45 @@ msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
 #. grads
-#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
+#: ../src/math-preferences.c:255 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "Stupnjevi"
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
+#: ../src/math-preferences.c:259 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "Radijani"
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
+#: ../src/math-preferences.c:263 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr ""
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
 #. number 1.234×10^99)
-#: ../src/math-preferences.c:270
+#: ../src/math-preferences.c:273
 msgid "Automatic"
 msgstr "Automatski"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:274
+#: ../src/math-preferences.c:277
 msgid "Fixed"
 msgstr ""
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:278
+#: ../src/math-preferences.c:281
 msgid "Scientific"
 msgstr "Znanstveni način"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:282
+#: ../src/math-preferences.c:285
 msgid "Engineering"
 msgstr ""
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:293
+#: ../src/math-preferences.c:296
 #, c-format
 msgid "Show %d decimal _places"
 msgstr ""
@@ -1273,7 +1272,30 @@ msgstr "Nije moguće otvoriti datoteku pomoći"
 #. The translator credits. Please translate this with your name(s).
 #: ../src/math-window.c:239
 msgid "translator-credits"
-msgstr "Prijevod na Transifexu:\n  Mislav E. Lukšić <meluksic@yahoo.com>\n  Ivica Kolić <ikoli@yahoo.com>\n\nRanije prevoditeljske zasluge:\n  lokalizacija@linux.hr\n  Danijel Studen <dstuden@vuka.hr>\n  Denis Lackovic <delacko@linux.hr>\n  Robert Sedak <robert.sedak@sk.t-com.hr>\n  Vedran Vyroubal <vedran.vyroubal@inet.hr>\n  Miroslav Sabljić <civija@ubuntu-hr.org>\n\nPrinosi na Launchpadu:\n  Ante Karamatić https://launchpad.net/~ivoks\n  Bojan Sudarević https://launchpad.net/~sudarevic\n  Danijel Šnajder https://launchpad.net/~phantomlord\n  Krešo Kunjas https://launchpad.net/~deresh\n  Launchpad Translations Administrators https://launchpad.net/~rosetta-admins\n  Miroslav Sabljić https://launchpad.net/~civija\n  Valentin Vidic https://launchpad.net/~vvidic\n  alja https://launchpad.net/~alja\n  civix https://launchpad.net/~civix\n  young https://launchpad.net/~davorin-sego"
+msgstr ""
+"Prijevod na Transifexu:\n"
+"  Mislav E. Lukšić <meluksic@yahoo.com>\n"
+"  Ivica Kolić <ikoli@yahoo.com>\n"
+"\n"
+"Ranije prevoditeljske zasluge:\n"
+"  lokalizacija@linux.hr\n"
+"  Danijel Studen <dstuden@vuka.hr>\n"
+"  Denis Lackovic <delacko@linux.hr>\n"
+"  Robert Sedak <robert.sedak@sk.t-com.hr>\n"
+"  Vedran Vyroubal <vedran.vyroubal@inet.hr>\n"
+"  Miroslav Sabljić <civija@ubuntu-hr.org>\n"
+"\n"
+"Prinosi na Launchpadu:\n"
+"  Ante Karamatić https://launchpad.net/~ivoks\n"
+"  Bojan Sudarević https://launchpad.net/~sudarevic\n"
+"  Danijel Šnajder https://launchpad.net/~phantomlord\n"
+"  Krešo Kunjas https://launchpad.net/~deresh\n"
+"  Launchpad Translations Administrators https://launchpad.net/~rosetta-admins\n"
+"  Miroslav Sabljić https://launchpad.net/~civija\n"
+"  Valentin Vidic https://launchpad.net/~vvidic\n"
+"  alja https://launchpad.net/~alja\n"
+"  civix https://launchpad.net/~civix\n"
+"  young https://launchpad.net/~davorin-sego"
 
 #. The license this software is under (GPL2+)
 #: ../src/math-window.c:246
@@ -2087,7 +2109,7 @@ msgstr "mikrosekunda,mikrosekunde,us,μs"
 
 #: ../src/unit-manager.c:97
 msgid "Celsius"
-msgstr "Celzijus"
+msgstr "Celzij"
 
 #: ../src/unit-manager.c:97
 #, c-format
@@ -2159,7 +2181,7 @@ msgstr ""
 
 #: ../src/unit-manager.c:112
 msgid "Volume"
-msgstr ""
+msgstr "Glasnoća"
 
 #: ../src/unit-manager.c:113
 msgid "Weight"

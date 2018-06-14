@@ -1,18 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Ge'ez Frontier Foundation <locales@geez.org>, 2002
-# samson <sambelet@yahoo.com>, 2013-2017
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-06 15:01+0300\n"
-"PO-Revision-Date: 2018-02-06 12:05+0000\n"
-"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
-"Language-Team: Amharic (http://www.transifex.com/mate/MATE/language/am/)\n"
+"POT-Creation-Date: 2018-03-16 15:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2018\n"
+"Language-Team: Amharic (https://www.transifex.com/mate/teams/13566/am/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,17 +32,17 @@ msgstr "="
 #: ../data/buttons-advanced.ui.h:5 ../data/buttons-basic.ui.h:3
 #: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
 msgid "Clear"
-msgstr "ማጽጃ "
+msgstr "ማጽጃ"
 
 #. Accessible name for the subscript mode button
 #: ../data/buttons-advanced.ui.h:7 ../data/buttons-programming.ui.h:15
 msgid "Subscript"
-msgstr "በትንንሽ ፊደል መጻፊያ"
+msgstr "በትንንሽ ፊደል ዝቅ ብሎ መጻፊያ"
 
 #. Accessible name for the superscript mode button
 #: ../data/buttons-advanced.ui.h:9 ../data/buttons-programming.ui.h:17
 msgid "Superscript"
-msgstr "በ ትንሽ ከፍ ብሎ መጻፊያ"
+msgstr "በ ትንሽ ፊደል ከፍ ብሎ መጻፊያ"
 
 #. Accessible name for the scientific exponent button
 #: ../data/buttons-advanced.ui.h:11
@@ -73,7 +72,7 @@ msgstr "Exponent"
 #: ../data/buttons-advanced.ui.h:18 ../data/buttons-basic.ui.h:6
 #: ../data/buttons-financial.ui.h:98
 msgid "Undo"
-msgstr "መተው "
+msgstr "መተው"
 
 #: ../data/buttons-advanced.ui.h:19
 msgid "acos"
@@ -369,7 +368,7 @@ msgstr "Sln"
 #. periods in term. See also: http://en.wikipedia.org/wiki/Interest
 #: ../data/buttons-financial.ui.h:91
 msgid "Rate"
-msgstr "Rate"
+msgstr "መጠን "
 
 #. Calculates the present value of an investment based on a series of equal
 #. payments, each of amount pmt, discounted at a periodic interest rate of
@@ -447,7 +446,7 @@ msgstr "64-ቢት "
 #. Title of preferences dialog
 #: ../data/preferences.ui.h:9 ../src/math-preferences.c:238
 msgid "Preferences"
-msgstr "ምርጫዎች "
+msgstr "ምርጫዎች"
 
 #. Preferences dialog: Label for angle unit combo box
 #: ../data/preferences.ui.h:11
@@ -911,17 +910,17 @@ msgstr ""
 #. Tooltip for the sine button
 #: ../src/math-buttons.c:163
 msgid "Sine"
-msgstr "Sine"
+msgstr "ሳይን"
 
 #. Tooltip for the cosine button
 #: ../src/math-buttons.c:166
 msgid "Cosine"
-msgstr "Cosine"
+msgstr "ኮሳይን"
 
 #. Tooltip for the tangent button
 #: ../src/math-buttons.c:169
 msgid "Tangent"
-msgstr "Tangent"
+msgstr "ታንጀንት"
 
 #. Tooltip for the hyperbolic sine button
 #: ../src/math-buttons.c:172
@@ -1099,8 +1098,8 @@ msgstr ""
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] "_%d ቦታ"
-msgstr[1] "_%d ቦታዎች "
+msgstr[0] ""
+msgstr[1] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
@@ -1108,8 +1107,8 @@ msgstr[1] "_%d ቦታዎች "
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] "%d ቦታ "
-msgstr[1] "%d ቦታዎች "
+msgstr[0] ""
+msgstr[1] ""
 
 #. Tooltip for the round button
 #: ../src/math-buttons.c:998
@@ -1220,45 +1219,45 @@ msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
 #. grads
-#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
+#: ../src/math-preferences.c:255 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr ""
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
+#: ../src/math-preferences.c:259 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr ""
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
+#: ../src/math-preferences.c:263 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr ""
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
 #. number 1.234×10^99)
-#: ../src/math-preferences.c:270
+#: ../src/math-preferences.c:273
 msgid "Automatic"
 msgstr "ራሱ በራሱ "
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:274
+#: ../src/math-preferences.c:277
 msgid "Fixed"
 msgstr "የተወሰነ "
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:278
+#: ../src/math-preferences.c:281
 msgid "Scientific"
 msgstr ""
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:282
+#: ../src/math-preferences.c:285
 msgid "Engineering"
 msgstr ""
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:293
+#: ../src/math-preferences.c:296
 #, c-format
 msgid "Show %d decimal _places"
 msgstr ""
@@ -1266,12 +1265,12 @@ msgstr ""
 #. Translators: Error message displayed when unable to launch help browser
 #: ../src/math-window.c:212
 msgid "Unable to open help file"
-msgstr ""
+msgstr "የ እርዳታ ፋይል መክፈት አልተቻለም"
 
 #. The translator credits. Please translate this with your name(s).
 #: ../src/math-window.c:239
 msgid "translator-credits"
-msgstr "ምስጋና ለተርጓሚዎች "
+msgstr "Samson-Belete-Belayineh"
 
 #. The license this software is under (GPL2+)
 #: ../src/math-window.c:246
@@ -1302,7 +1301,7 @@ msgstr ""
 #. Calculator menu
 #: ../src/math-window.c:369
 msgid "_Calculator"
-msgstr "_መደመሪያ "
+msgstr "_ማስሊያ"
 
 #. Mode menu
 #: ../src/math-window.c:371
@@ -1312,7 +1311,7 @@ msgstr "_ዘዴ "
 #. Help menu label
 #: ../src/math-window.c:373
 msgid "_Help"
-msgstr "_እርዳታ "
+msgstr "_እርዳታ"
 
 #. Basic menu label
 #: ../src/math-window.c:375
@@ -1337,7 +1336,7 @@ msgstr ""
 #. Help>Contents menu label
 #: ../src/math-window.c:383
 msgid "_Contents"
-msgstr "_ይዞታዎች "
+msgstr "_ይዞታዎች"
 
 #. Translators: Error displayed when boolean AND attempted on non-integer
 #. values
@@ -2169,11 +2168,11 @@ msgstr "የሚፈጀው ጊዜ "
 
 #: ../src/unit-manager.c:115
 msgid "Temperature"
-msgstr ""
+msgstr "የ አየር ንብረት "
 
 #: ../src/unit-manager.c:127
 msgid "Currency"
-msgstr "ገንዘብ "
+msgstr "ገንዘብ"
 
 #. Translators: result of currency conversion, %s is the symbol, %%s is the
 #. placeholder for amount, i.e.: USD100

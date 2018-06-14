@@ -1,28 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Aron Xu <happyaron.xu@gmail.com>, 2009-2010
-# Funda Wang <fundawang@linux.net.cn>, 2003-2004
-# nyanyh <rebuilty@gmail.com>, 2013
-# Lele Long <schemacs@gmail.com>, 2011
-# liushuyu011 <liushuyu011@gmail.com>, 2017
-# Shaodong Di <gnuyhlfh@gmail.com>, 2008
-# Tao Wang <dancefire@gmail.com>, 2010
-# Tao Wei <weitao1979@gmail.com>, 2010
-# vicwjb <vicwjb@gmail.com>, 2010
-# YunQiang Su <wzssyqa@gmail.com>, 2011
-# 朱涛 <bill_zt@sina.com>, 2010
-# 甘 露 <rhythm.gan@gmail.com>, 2009
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-06 15:01+0300\n"
-"PO-Revision-Date: 2018-02-06 12:05+0000\n"
-"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/mate/MATE/language/zh_CN/)\n"
+"POT-Creation-Date: 2018-03-16 15:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Wylmer Wang, 2018\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/mate/teams/13566/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -43,7 +32,7 @@ msgstr "="
 #: ../data/buttons-advanced.ui.h:5 ../data/buttons-basic.ui.h:3
 #: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
 msgid "Clear"
-msgstr "清屏"
+msgstr "清除"
 
 #. Accessible name for the subscript mode button
 #: ../data/buttons-advanced.ui.h:7 ../data/buttons-programming.ui.h:15
@@ -307,7 +296,8 @@ msgid ""
 " accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
-msgstr "计算某一资产在指定期间的折旧提成，使用年数总和法。该折旧方法会加速折旧率，因此前期比后期发生更多折旧费用。可用年限指该资产折旧的周期(通常为年)数。"
+msgstr ""
+"计算某一资产在指定期间的折旧提成，使用年数总和法。该折旧方法会加速折旧率，因此前期比后期发生更多折旧费用。可用年限指该资产折旧的周期(通常为年)数。"
 
 #. Title of Payment Period dialog
 #: ../data/buttons-financial.ui.h:66
@@ -495,7 +485,10 @@ msgid ""
 " to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
 "Calc and part of the MATE Desktop Environment. If you would like to know "
 "more about MATE and MATE Calc, please visit the project's home page. </p>"
-msgstr "<p> MATE 计算器是一款带有逻辑、科学以及金融计算功能的功能强大的图形计算器。它使用了一个多精度计算软件包来带给您更为精确的数值。</p> <p> MATE 计算器是 GNOME 计算器的一个分支，并且现在是 MATE 桌面环境的一部分。如果您了解更多有关 MATE 计算器的信息请访问项目主页。</p>"
+msgstr ""
+"<p> MATE 计算器是一款带有逻辑、科学以及金融计算功能的功能强大的图形计算器。它使用了一个多精度计算软件包来带给您更为精确的数值。</p> <p>"
+" MATE 计算器是 GNOME 计算器的一个分支，并且现在是 MATE 桌面环境的一部分。如果您了解更多有关 MATE "
+"计算器的信息请访问项目主页。</p>"
 
 #: ../data/mate-calc.desktop.in.h:1
 msgid "MATE Calculator"
@@ -760,7 +753,9 @@ msgstr "错误：周期必须为正数"
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr "用法：\n  %s - 执行数学计算"
+msgstr ""
+"用法：\n"
+"  %s - 执行数学计算"
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
@@ -772,7 +767,12 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr "帮助选项：\n  -v, --version\t显示程序版本\n  -h, -?, --help\t显示帮助选项\n  -help-all\t\t显示所有帮助选项\n  -help-gtk\t\t显示 GTK+ 选项"
+msgstr ""
+"帮助选项：\n"
+"  -v, --version\t显示程序版本\n"
+"  -h, -?, --help\t显示帮助选项\n"
+"  -help-all\t\t显示所有帮助选项\n"
+"  -help-gtk\t\t显示 GTK+ 选项"
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
@@ -786,7 +786,14 @@ msgid ""
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr "GTK+ 选项：\n  --class=类                     窗口管理器所用的程序类\n  --name=名称                    窗口管理器所用的程序名\n  --screen=屏幕                  要使用的 X 屏幕\n  --sync                         同步 X 调用\n  --gtk-module=模块              加载额外的 GTK+ 模块\n  --g-fatal-warnings             给出所有重要警告"
+msgstr ""
+"GTK+ 选项：\n"
+"  --class=类                     窗口管理器所用的程序类\n"
+"  --name=名称                    窗口管理器所用的程序名\n"
+"  --screen=屏幕                  要使用的 X 屏幕\n"
+"  --sync                         同步 X 调用\n"
+"  --gtk-module=模块              加载额外的 GTK+ 模块\n"
+"  --g-fatal-warnings             给出所有重要警告"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -794,7 +801,9 @@ msgstr "GTK+ 选项：\n  --class=类                     窗口管理器所用�
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr "程序选项：\n  -s，--solve <方程>              求解给出的方程"
+msgstr ""
+"程序选项：\n"
+"  -s，--solve <方程>              求解给出的方程"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:156
@@ -1228,45 +1237,45 @@ msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
 #. grads
-#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
+#: ../src/math-preferences.c:255 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "角度(_G)"
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
+#: ../src/math-preferences.c:259 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "弧度"
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
+#: ../src/math-preferences.c:263 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "百分度"
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
 #. number 1.234×10^99)
-#: ../src/math-preferences.c:270
+#: ../src/math-preferences.c:273
 msgid "Automatic"
 msgstr "自动"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:274
+#: ../src/math-preferences.c:277
 msgid "Fixed"
 msgstr "定点数"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:278
+#: ../src/math-preferences.c:281
 msgid "Scientific"
 msgstr "科学"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:282
+#: ../src/math-preferences.c:285
 msgid "Engineering"
 msgstr "工程"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:293
+#: ../src/math-preferences.c:296
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "显示 %d 个十进制位(_P)"
@@ -1279,7 +1288,17 @@ msgstr "无法打开帮助文件"
 #. The translator credits. Please translate this with your name(s).
 #: ../src/math-window.c:239
 msgid "translator-credits"
-msgstr "Funda Wang <fundawang@linux.net.cn>, 2003, 2004\nShaodong Di <gnuyhlfh@gmail.com>, 2008\n甘露 <rhythm.gan@gmail.com>, 2009\nAron Xu <aronxu@gnome.org>, 2009, 2010\narccos <boyermoore@gmail.com>, 2010\nYunQiang Su <wzssyqa@gmail.com>, 2010\nTao Wei <weitao1979@gmail.com>, 2010\nvicwjb <vicwjb@gmail.com>, 2010\nTao Wang <dancefire@gmail.com>, 2010\n朱涛 <bill_zt@sina.com>, 2010"
+msgstr ""
+"Christopher Meng <i@cicku.me>, 2012-2013\n"
+"ravix <dr.neemous@gmail.com>, 2013\n"
+"Dianjin Wang <1132321739qq@gmail.com>, 2012\n"
+"Cravix <dr.neemous@gmail.com>, 2013\n"
+"nyanyh <rebuilty@gmail.com>, 2013\n"
+"liulitchi <xingzuo88@qq.com>, 2013\n"
+"玉堂白鹤 <yjwork@qq.com>, 2015\n"
+"Mingye Wang <arthur200126@gmail.com>, 2015-2016\n"
+"白铭骢 <jeffbai@aosc.xyz>, 2015-2016\n"
+"刘子兴 <liushuyu@aosc.xyz>, 2015-2016"
 
 #. The license this software is under (GPL2+)
 #: ../src/math-window.c:246
@@ -1297,7 +1316,13 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr "mate-calc 是自由软件；您可以在自由软件基金会发布的 GNU 通用公共许可证的条款下重新分发和（或）修改它。\\n您可以选择使用 GPL 第二版， 或\\n(按照您的意愿)任何更新的版本。\\n\\n mate-calc 分发的目的是希望它物有所用， 但是没有任何担保；没有对其适销性和某一特定目的下的\\n适用性的任何哪怕是暗示的担保。 请查阅 GNU 通用公共许可证以获得更多信息。\\n\\n你应该已经跟 mate-calc 一起收到一份 GNU 通用公共许可证的副本； \\n如果没有，请写信至：Free Software Foundation, Inc.,\\n 151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr ""
+"mate-calc 是自由软件；您可以在自由软件基金会发布的 GNU 通用公共许可证的条款下重新分发和（或）修改它。\\n您可以选择使用 GPL "
+"第二版， 或\\n(按照您的意愿)任何更新的版本。\\n\\n mate-calc 分发的目的是希望它物有所用， "
+"但是没有任何担保；没有对其适销性和某一特定目的下的\\n适用性的任何哪怕是暗示的担保。 请查阅 GNU "
+"通用公共许可证以获得更多信息。\\n\\n你应该已经跟 mate-calc 一起收到一份 GNU 通用公共许可证的副本； "
+"\\n如果没有，请写信至：Free Software Foundation, Inc.,\\n 151 Franklin Street, Fifth "
+"Floor, Boston, MA 02110-1301, USA"
 
 #: ../src/math-window.c:261
 msgid "mate-calc"
@@ -1310,7 +1335,7 @@ msgstr "带有财务和科学模式的计算器。"
 #. Calculator menu
 #: ../src/math-window.c:369
 msgid "_Calculator"
-msgstr "计算器(_C)"
+msgstr "计算器（_C）"
 
 #. Mode menu
 #: ../src/math-window.c:371
@@ -1320,7 +1345,7 @@ msgstr "模式(_M)"
 #. Help menu label
 #: ../src/math-window.c:373
 msgid "_Help"
-msgstr "帮助(_H)"
+msgstr "帮助（_H）"
 
 #. Basic menu label
 #: ../src/math-window.c:375
@@ -1345,7 +1370,7 @@ msgstr "编程(_P)"
 #. Help>Contents menu label
 #: ../src/math-window.c:383
 msgid "_Contents"
-msgstr "内容(_C)"
+msgstr "目录(_C)"
 
 #. Translators: Error displayed when boolean AND attempted on non-integer
 #. values
@@ -2093,7 +2118,7 @@ msgstr "microsecond,microseconds,us,μs"
 
 #: ../src/unit-manager.c:97
 msgid "Celsius"
-msgstr "摄氏度"
+msgstr "摄氏温标"
 
 #: ../src/unit-manager.c:97
 #, c-format
@@ -2123,7 +2148,7 @@ msgstr "degF,˚F"
 
 #: ../src/unit-manager.c:99
 msgid "Kelvin"
-msgstr "开尔文"
+msgstr "开氏温标"
 
 #: ../src/unit-manager.c:99
 #, c-format
@@ -2165,7 +2190,7 @@ msgstr "面积"
 
 #: ../src/unit-manager.c:112
 msgid "Volume"
-msgstr "体积"
+msgstr "音量"
 
 #: ../src/unit-manager.c:113
 msgid "Weight"

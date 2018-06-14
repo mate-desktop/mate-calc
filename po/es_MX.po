@@ -1,16 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-06 15:01+0300\n"
-"PO-Revision-Date: 2018-02-06 12:05+0000\n"
-"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
-"Language-Team: Spanish (Mexico) (http://www.transifex.com/mate/MATE/language/es_MX/)\n"
+"POT-Creation-Date: 2018-03-16 15:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Luis Armando Medina <lamedina@gmail.com>, 2018\n"
+"Language-Team: Spanish (Mexico) (https://www.transifex.com/mate/teams/13566/es_MX/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -54,7 +55,7 @@ msgstr ""
 #: ../data/buttons-advanced.ui.h:13 ../data/buttons-financial.ui.h:72
 #: ../src/math-buttons.c:232
 msgid "Memory"
-msgstr ""
+msgstr "Memoria"
 
 #. The label on the memory button
 #: ../data/buttons-advanced.ui.h:15 ../data/buttons-financial.ui.h:74
@@ -445,7 +446,7 @@ msgstr ""
 #. Title of preferences dialog
 #: ../data/preferences.ui.h:9 ../src/math-preferences.c:238
 msgid "Preferences"
-msgstr ""
+msgstr "Preferencias"
 
 #. Preferences dialog: Label for angle unit combo box
 #: ../data/preferences.ui.h:11
@@ -919,7 +920,7 @@ msgstr ""
 #. Tooltip for the tangent button
 #: ../src/math-buttons.c:169
 msgid "Tangent"
-msgstr ""
+msgstr "Tangente"
 
 #. Tooltip for the hyperbolic sine button
 #: ../src/math-buttons.c:172
@@ -1218,45 +1219,45 @@ msgstr ""
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
 #. grads
-#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
+#: ../src/math-preferences.c:255 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr ""
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
+#: ../src/math-preferences.c:259 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr ""
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
+#: ../src/math-preferences.c:263 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr ""
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
 #. number 1.234×10^99)
-#: ../src/math-preferences.c:270
+#: ../src/math-preferences.c:273
 msgid "Automatic"
 msgstr ""
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:274
+#: ../src/math-preferences.c:277
 msgid "Fixed"
 msgstr ""
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:278
+#: ../src/math-preferences.c:281
 msgid "Scientific"
 msgstr ""
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:282
+#: ../src/math-preferences.c:285
 msgid "Engineering"
 msgstr ""
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:293
+#: ../src/math-preferences.c:296
 #, c-format
 msgid "Show %d decimal _places"
 msgstr ""
@@ -1269,7 +1270,14 @@ msgstr ""
 #. The translator credits. Please translate this with your name(s).
 #: ../src/math-window.c:239
 msgid "translator-credits"
-msgstr "Luis Armando Medina <lamedina@gmail.com>, 2016\nJorge González <jorgegonz@svn.gnome.org>, 2007-2010\nFrancisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003-2006\nPablo Gonzalo del Campo <pablodc@bigfoot.com>, 2000-2004\nCarlos Perelló Marín <carlos@gnome-db.org>, 2000, 2002\nIsmael Olea <ismael@olea.org>, 2001\nJorge Carrasquilla Soares <jorge@conectiva.com.br>, 2000"
+msgstr ""
+"Luis Armando Medina A. <contacto@luisarmandomedina.com>, 2016\n"
+"Jorge González <jorgegonz@svn.gnome.org>, 2007-2010\n"
+"Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003-2006\n"
+"Pablo Gonzalo del Campo <pablodc@bigfoot.com>, 2000-2004\n"
+"Carlos Perelló Marín <carlos@gnome-db.org>, 2000, 2002\n"
+"Ismael Olea <ismael@olea.org>, 2001\n"
+"Jorge Carrasquilla Soares <jorge@conectiva.com.br>, 2000"
 
 #. The license this software is under (GPL2+)
 #: ../src/math-window.c:246
@@ -1300,7 +1308,7 @@ msgstr ""
 #. Calculator menu
 #: ../src/math-window.c:369
 msgid "_Calculator"
-msgstr ""
+msgstr "_Calculadora"
 
 #. Mode menu
 #: ../src/math-window.c:371
@@ -2083,7 +2091,7 @@ msgstr ""
 
 #: ../src/unit-manager.c:97
 msgid "Celsius"
-msgstr ""
+msgstr "Centígrados"
 
 #: ../src/unit-manager.c:97
 #, c-format
@@ -2113,7 +2121,7 @@ msgstr ""
 
 #: ../src/unit-manager.c:99
 msgid "Kelvin"
-msgstr ""
+msgstr "Kelvin"
 
 #: ../src/unit-manager.c:99
 #, c-format
@@ -2124,7 +2132,7 @@ msgstr ""
 #: ../src/unit-manager.c:99
 msgctxt "unit-symbols"
 msgid "K"
-msgstr ""
+msgstr "K"
 
 #: ../src/unit-manager.c:100
 msgid "Rankine"

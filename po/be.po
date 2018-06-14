@@ -1,19 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Ales Nyakhaychyk <nab@mail.by>, 2003-2004
-# booxter <ihar.hrachyshka@gmail.com>, 2011,2014-2015
-# booxter <ihar.hrachyshka@gmail.com>, 2011
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-06 15:01+0300\n"
-"PO-Revision-Date: 2018-02-06 12:05+0000\n"
-"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
-"Language-Team: Belarusian (http://www.transifex.com/mate/MATE/language/be/)\n"
+"POT-Creation-Date: 2018-03-16 15:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Mihail Varantsou <meequz@gmail.com>, 2018\n"
+"Language-Team: Belarusian (https://www.transifex.com/mate/teams/13566/be/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -751,7 +749,9 @@ msgstr ""
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr "Правілы карыстання:\n  %s — Праграма для матыматычных разлікаў"
+msgstr ""
+"Правілы карыстання:\n"
+"  %s — Праграма для матыматычных разлікаў"
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
@@ -763,7 +763,12 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr "Даведачныя параметры:\n  -v, --version                   Паказаць версію выдання\n  -h, -?, --help                  Паказаць спіс даведачных параметраў\n  --help-all                      Паказаць спіс усіх даведачных параметраў\n  --help-gtk                      Паказаць параметры GTK+"
+msgstr ""
+"Даведачныя параметры:\n"
+"  -v, --version                   Паказаць версію выдання\n"
+"  -h, -?, --help                  Паказаць спіс даведачных параметраў\n"
+"  --help-all                      Паказаць спіс усіх даведачных параметраў\n"
+"  --help-gtk                      Паказаць параметры GTK+"
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
@@ -777,7 +782,14 @@ msgid ""
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr "Параметры GTK+:\n  --class=КЛАС                    Клас праграмы для кіраўніка вокнаў\n  --name=НАЗВА                    Назва праграмы для кіраўніка вокнаў\n  --screen=ЭКРАН                  Патрэбны экран X-сістэмы\n  --sync                          Сінхронна выконваць запыты X-сістэмы\n  --gtk-module=МОДУЛІ             Загрузка дадатковых модуляў GTK+\n  --g-fatal-warnings              Лічыць усе перасцярогі непапраўнымі"
+msgstr ""
+"Параметры GTK+:\n"
+"  --class=КЛАС                    Клас праграмы для кіраўніка вокнаў\n"
+"  --name=НАЗВА                    Назва праграмы для кіраўніка вокнаў\n"
+"  --screen=ЭКРАН                  Патрэбны экран X-сістэмы\n"
+"  --sync                          Сінхронна выконваць запыты X-сістэмы\n"
+"  --gtk-module=МОДУЛІ             Загрузка дадатковых модуляў GTK+\n"
+"  --g-fatal-warnings              Лічыць усе перасцярогі непапраўнымі"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -785,7 +797,9 @@ msgstr "Параметры GTK+:\n  --class=КЛАС                    Клас
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr "Уласныя параметры праграмы:\n  -s, --solve <раўнанне>         Рашыць раўнанне"
+msgstr ""
+"Уласныя параметры праграмы:\n"
+"  -s, --solve <раўнанне>         Рашыць раўнанне"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:156
@@ -1082,7 +1096,7 @@ msgstr "Двайковы"
 #. Number display mode combo: Octal, e.g. 2322₈
 #: ../src/math-buttons.c:615
 msgid "Octal"
-msgstr "Васмярковы"
+msgstr "Васьмярковы"
 
 #. Number display mode combo: Decimal, e.g. 1234
 #: ../src/math-buttons.c:619
@@ -1225,45 +1239,45 @@ msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
 #. grads
-#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
+#: ../src/math-preferences.c:255 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "Градусы"
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
+#: ../src/math-preferences.c:259 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "Радыяны"
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
+#: ../src/math-preferences.c:263 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "Грады"
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
 #. number 1.234×10^99)
-#: ../src/math-preferences.c:270
+#: ../src/math-preferences.c:273
 msgid "Automatic"
 msgstr "Аўтаматычны"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:274
+#: ../src/math-preferences.c:277
 msgid "Fixed"
 msgstr "Фіксаваны"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:278
+#: ../src/math-preferences.c:281
 msgid "Scientific"
 msgstr "Навуковы"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:282
+#: ../src/math-preferences.c:285
 msgid "Engineering"
 msgstr "Інжынерны"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:293
+#: ../src/math-preferences.c:296
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "Паказваць %d разрадаў пасля _коскі"
@@ -1271,12 +1285,14 @@ msgstr "Паказваць %d разрадаў пасля _коскі"
 #. Translators: Error message displayed when unable to launch help browser
 #: ../src/math-window.c:212
 msgid "Unable to open help file"
-msgstr "Не выйшла адкрыць даведачны файл"
+msgstr "Не выйшла адкрыць файл даведкі"
 
 #. The translator credits. Please translate this with your name(s).
 #: ../src/math-window.c:239
 msgid "translator-credits"
-msgstr "Алесь Няхайчык <nab@mail.by>\nIhar Hrachyshka <ihar.hrachyshka@gmail.com>\nМіхаіл Варанцоў <meequz@gmail.com>"
+msgstr ""
+"Belarusian Language Linux Team <i18n@mova.org>\n"
+"Mikhas Varantsou <meequz@gmail.com> 2014-2016"
 
 #. The license this software is under (GPL2+)
 #: ../src/math-window.c:246
@@ -1342,7 +1358,7 @@ msgstr "_Для праграмавання"
 #. Help>Contents menu label
 #: ../src/math-window.c:383
 msgid "_Contents"
-msgstr ""
+msgstr "_Змесціва"
 
 #. Translators: Error displayed when boolean AND attempted on non-integer
 #. values
@@ -1360,7 +1376,8 @@ msgstr "Булева аперацыя \"ЦІ\" мае сэнс толькі дл
 #. values
 #: ../src/mp-binary.c:141
 msgid "Boolean XOR is only defined for positive integers"
-msgstr "Булева аперацыя строгага \"Ці\" мае сэнс толькі для неадмоўных цэлых лікаў"
+msgstr ""
+"Булева аперацыя строгага \"Ці\" мае сэнс толькі для неадмоўных цэлых лікаў"
 
 #. Translators: Error displayed when boolean XOR attempted on non-integer
 #. values
@@ -1431,7 +1448,8 @@ msgstr "Дзяленне па модулю вызначана толькі дл�
 msgid ""
 "Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
 "(90°)"
-msgstr "Тангенс не вызначаны для вуглоў з перыядам π (180°), пачынаючы з π∕2 (90°)"
+msgstr ""
+"Тангенс не вызначаны для вуглоў з перыядам π (180°), пачынаючы з π∕2 (90°)"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: ../src/mp-trigonometric.c:355
@@ -1447,13 +1465,16 @@ msgstr "Адваротны косінус не вызначаны для зна�
 #. undefined
 #: ../src/mp-trigonometric.c:591
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
-msgstr "Адваротны гіпербалічны косінус не вызначаны для значэнняў, меншых за адзінку"
+msgstr ""
+"Адваротны гіпербалічны косінус не вызначаны для значэнняў, меншых за адзінку"
 
 #. Translators: Error displayed when inverse hyperbolic tangent value is
 #. undefined
 #: ../src/mp-trigonometric.c:615
 msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
-msgstr "Адваротны гіпербалічны тангенс не вызначаны для значэнняў па-за дыяпазонам [-1, 1]"
+msgstr ""
+"Адваротны гіпербалічны тангенс не вызначаны для значэнняў па-за дыяпазонам "
+"[-1, 1]"
 
 #: ../src/unit-manager.c:54
 #, c-format
@@ -1655,7 +1676,7 @@ msgstr "фут,футы,футаў"
 
 #: ../src/unit-manager.c:68
 msgid "Inches"
-msgstr "Цаля"
+msgstr "Цалі"
 
 #: ../src/unit-manager.c:68
 #, c-format
@@ -1685,7 +1706,7 @@ msgstr "сантыметр,сантыметры,сантыметраў,см"
 
 #: ../src/unit-manager.c:70
 msgid "Millimeters"
-msgstr "Міліметр"
+msgstr "Міліметры"
 
 #: ../src/unit-manager.c:70
 #, c-format
@@ -2090,7 +2111,7 @@ msgstr "мікрасекунда,мікрасекунды,мікрасекунд
 
 #: ../src/unit-manager.c:97
 msgid "Celsius"
-msgstr "Градус Цэльсія"
+msgstr "Паводле Цэльсія"
 
 #: ../src/unit-manager.c:97
 #, c-format
@@ -2120,7 +2141,7 @@ msgstr "˚F"
 
 #: ../src/unit-manager.c:99
 msgid "Kelvin"
-msgstr "Градус Кельвіна"
+msgstr "Паводле Кельвіна"
 
 #: ../src/unit-manager.c:99
 #, c-format
@@ -2131,7 +2152,7 @@ msgstr "%s K"
 #: ../src/unit-manager.c:99
 msgctxt "unit-symbols"
 msgid "K"
-msgstr "K"
+msgstr "К"
 
 #: ../src/unit-manager.c:100
 msgid "Rankine"
@@ -2162,7 +2183,7 @@ msgstr "Плошча"
 
 #: ../src/unit-manager.c:112
 msgid "Volume"
-msgstr "Аб'ём"
+msgstr "Гучнасць"
 
 #: ../src/unit-manager.c:113
 msgid "Weight"

@@ -1,20 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Marcin Kralka <marcink96@gmail.com>, 2013
-# Piotr Drąg <piotrdrag@gmail.com>, 2017
-# Piotr Strębski <strebski@gmail.com>, 2017
-# Przemek P <ppjg@dami.pl>, 2017
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-06 15:01+0300\n"
-"PO-Revision-Date: 2018-02-06 12:05+0000\n"
-"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
-"Language-Team: Polish (http://www.transifex.com/mate/MATE/language/pl/)\n"
+"POT-Creation-Date: 2018-03-16 15:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Marcin GTriderXC <gtriderxc@yahoo.com>, 2018\n"
+"Language-Team: Polish (https://www.transifex.com/mate/teams/13566/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -102,7 +99,7 @@ msgstr "Odwróć"
 #. Accessible name for the factorial button
 #: ../data/buttons-advanced.ui.h:27 ../data/buttons-programming.ui.h:29
 msgid "Factorial"
-msgstr "Silnia"
+msgstr "Część ułamkowa"
 
 #. Accessible name for the absolute value button
 #: ../data/buttons-advanced.ui.h:29 ../data/buttons-programming.ui.h:10
@@ -136,7 +133,10 @@ msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr "Oblicza liczbę okresów kapitalizacji wymaganą do zwiększenia wartości inwestycji do danej wartości przy danej stałej stopie procentowej w okresie kapitalizacji."
+msgstr ""
+"Oblicza liczbę okresów kapitalizacji wymaganą do zwiększenia wartości "
+"inwestycji do danej wartości przy danej stałej stopie procentowej w okresie "
+"kapitalizacji."
 
 #. Periodic Interest Rate Dialog: Label before future value input
 #: ../data/buttons-financial.ui.h:12
@@ -153,7 +153,9 @@ msgstr "Amortyzacja metodą podwójnie malejącego salda"
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
-msgstr "Oblicza odpisy amortyzacji środka trwałego w danym okresie metodą podwójnie malejącego salda."
+msgstr ""
+"Oblicza odpisy amortyzacji środka trwałego w danym okresie metodą podwójnie "
+"malejącego salda."
 
 #. Gross Profit Margin Dialog: Label before cost input
 #: ../data/buttons-financial.ui.h:18
@@ -182,7 +184,9 @@ msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
-msgstr "Oblicza przyszłą wartość wkładu na podstawie serii równych wpłat przy zadanej stopie procentowej i liczbie wpłat w okresie oszczędzania."
+msgstr ""
+"Oblicza przyszłą wartość wkładu na podstawie serii równych wpłat przy "
+"zadanej stopie procentowej i liczbie wpłat w okresie oszczędzania."
 
 #. Payment Period Dialog: Label before periodic payment input
 #: ../data/buttons-financial.ui.h:28
@@ -205,7 +209,9 @@ msgstr "Marża zysku brutto"
 msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
-msgstr "Oblicza cenę odsprzedaży produktu na podstawie kosztu produktu i docelowej marży zysku brutto."
+msgstr ""
+"Oblicza cenę odsprzedaży produktu na podstawie kosztu produktu i docelowej "
+"marży zysku brutto."
 
 #. Gross Profit Margin Dialog: Label before margin input
 #: ../data/buttons-financial.ui.h:36
@@ -223,7 +229,9 @@ msgstr "Płatność okresowa"
 msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
-msgstr "Oblicza sumę okresowej spłaty pożyczki, gdy spłaty dokonywane się na końcu każdego okresu spłaty. "
+msgstr ""
+"Oblicza sumę okresowej spłaty pożyczki, gdy spłaty dokonywane się na końcu "
+"każdego okresu spłaty. "
 
 #. Periodic Payment Dialog: Label before principal input
 #: ../data/buttons-financial.ui.h:42
@@ -247,7 +255,9 @@ msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr "Oblicza aktualną wartość inwestycji na podstawie serii równych wpłat i danej okresowej stopy procentowej w danym okresie. "
+msgstr ""
+"Oblicza aktualną wartość inwestycji na podstawie serii równych wpłat i danej"
+" okresowej stopy procentowej w danym okresie. "
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
@@ -260,7 +270,9 @@ msgstr "Okresowa stopa zwrotu"
 msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
-msgstr "Oblicza stopę procentową wymaganą do zwiększenia wartości inwestycji do danej wartości w danej liczbie okresów kapitalizacji. "
+msgstr ""
+"Oblicza stopę procentową wymaganą do zwiększenia wartości inwestycji do "
+"danej wartości w danej liczbie okresów kapitalizacji. "
 
 #. Title of Straight-Line Depreciation dialog
 #: ../data/buttons-financial.ui.h:54
@@ -284,7 +296,11 @@ msgid ""
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr "Oblicza liniową amortyzację środka trwałego dla jednego okresu. W metodzie amortyzacji liniowej amortyzowany koszt dzielony jest równo na czas używania środka. Czas ten to liczba okresów, zwykle lat, w ciągu których amortyzowany jest środek trwały. "
+msgstr ""
+"Oblicza liniową amortyzację środka trwałego dla jednego okresu. W metodzie "
+"amortyzacji liniowej amortyzowany koszt dzielony jest równo na czas używania"
+" środka. Czas ten to liczba okresów, zwykle lat, w ciągu których "
+"amortyzowany jest środek trwały. "
 
 #. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
@@ -299,7 +315,12 @@ msgid ""
 " accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
-msgstr "Oblicza odpisy amortyzacji środka trwałego w danym okresie metodą sumy cyfr wszystkich lat amortyzacji. Metoda ta przyspiesza amortyzację, tak aby większe odpisy następowały we wcześniejszych okresach. Czas życia środka trwałego to liczba okresów, zwykle lat, w czasie których dokonuje się amortyzacja. "
+msgstr ""
+"Oblicza odpisy amortyzacji środka trwałego w danym okresie metodą sumy cyfr "
+"wszystkich lat amortyzacji. Metoda ta przyspiesza amortyzację, tak aby "
+"większe odpisy następowały we wcześniejszych okresach. Czas życia środka "
+"trwałego to liczba okresów, zwykle lat, w czasie których dokonuje się "
+"amortyzacja. "
 
 #. Title of Payment Period dialog
 #: ../data/buttons-financial.ui.h:66
@@ -317,7 +338,10 @@ msgid ""
 "Calculates the number of payment periods that are necessary during the term "
 "of an ordinary annuity, to accumulate a future value, at a periodic interest"
 " rate."
-msgstr "Oblicza liczbę okresów płatności, które są wymagane do zgromadzenia przyszłej wartości w czasie płatności renty zwykłej przy okresowej stopie procentowej."
+msgstr ""
+"Oblicza liczbę okresów płatności, które są wymagane do zgromadzenia "
+"przyszłej wartości w czasie płatności renty zwykłej przy okresowej stopie "
+"procentowej."
 
 #. Calculates the number of compounding periods necessary to increase an
 #. investment of present value pv to a future value of fv, at a fixed interest
@@ -487,7 +511,11 @@ msgid ""
 " to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
 "Calc and part of the MATE Desktop Environment. If you would like to know "
 "more about MATE and MATE Calc, please visit the project's home page. </p>"
-msgstr "<p> MATE Calc to potężny kalkulator graficzny o trybach finansowych, logicznych i naukowych. </p><p> MATE Calc to odgałęzienie GNOME Calc i część środowiska MATE Desktop. Jeśli chcesz dowiedzieć się więcej o MATE i MATE Calc, odwiedź stronę główną projektu. </p>"
+msgstr ""
+"<p> MATE Calc to potężny kalkulator graficzny o trybach finansowych, "
+"logicznych i naukowych. </p><p> MATE Calc to odgałęzienie GNOME Calc i część"
+" środowiska MATE Desktop. Jeśli chcesz dowiedzieć się więcej o MATE i MATE "
+"Calc, odwiedź stronę główną projektu. </p>"
 
 #: ../data/mate-calc.desktop.in.h:1
 msgid "MATE Calculator"
@@ -752,7 +780,9 @@ msgstr "Błąd: liczba okresów musi być dodatnia"
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr "Użycie:\n  %s — wykonywanie obliczeń matematycznych"
+msgstr ""
+"Użycie:\n"
+"  %s — wykonywanie obliczeń matematycznych"
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
@@ -764,7 +794,12 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr "Opcje pomocy:\n  -v, --version                   Wyświetla wersję wydania\n  -h, -?, --help                  Wyświetla opcje pomocy\n  --help-all                      Wyświetla wszystkie opcje pomocy\n  --help-gtk                      Wyświetla opcje biblioteki GTK+"
+msgstr ""
+"Opcje pomocy:\n"
+"  -v, --version                   Wyświetla wersję wydania\n"
+"  -h, -?, --help                  Wyświetla opcje pomocy\n"
+"  --help-all                      Wyświetla wszystkie opcje pomocy\n"
+"  --help-gtk                      Wyświetla opcje biblioteki GTK+"
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
@@ -778,7 +813,14 @@ msgid ""
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr "Opcje GTK+:\n  --class=KLASA                   Klasa programu używana przez menedżera okien\n  --name=NAZWA                    Nazwa programu używana przez menedżera okien\n  --screen=EKRAN                  Używany ekran X\n  --sync                          Synchroniczne wywołania X\n  --gtk-module=MODUŁY             Wczytuje dodatkowe moduły biblioteki GTK+\n  --g-fatal-warnings              Wszystkie ostrzeżenia są krytyczne"
+msgstr ""
+"Opcje GTK+:\n"
+"  --class=KLASA                   Klasa programu używana przez menedżera okien\n"
+"  --name=NAZWA                    Nazwa programu używana przez menedżera okien\n"
+"  --screen=EKRAN                  Używany ekran X\n"
+"  --sync                          Synchroniczne wywołania X\n"
+"  --gtk-module=MODUŁY             Wczytuje dodatkowe moduły biblioteki GTK+\n"
+"  --g-fatal-warnings              Wszystkie ostrzeżenia są krytyczne"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -786,7 +828,9 @@ msgstr "Opcje GTK+:\n  --class=KLASA                   Klasa programu używana p
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr "Dodatkowe opcje:\n  -s, --solve <równanie>          Rozwiązuje podane równanie"
+msgstr ""
+"Dodatkowe opcje:\n"
+"  -s, --solve <równanie>          Rozwiązuje podane równanie"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:156
@@ -918,7 +962,7 @@ msgstr "Sinus"
 #. Tooltip for the cosine button
 #: ../src/math-buttons.c:166
 msgid "Cosine"
-msgstr "Cosinus"
+msgstr "Kosinus"
 
 #. Tooltip for the tangent button
 #: ../src/math-buttons.c:169
@@ -1078,22 +1122,22 @@ msgstr "Amortyzacja liniowa"
 #. Number display mode combo: Binary, e.g. 10011010010₂
 #: ../src/math-buttons.c:611
 msgid "Binary"
-msgstr "Binarny"
+msgstr "Binarnie"
 
 #. Number display mode combo: Octal, e.g. 2322₈
 #: ../src/math-buttons.c:615
 msgid "Octal"
-msgstr "Ósemkowy"
+msgstr "Oktalnie"
 
 #. Number display mode combo: Decimal, e.g. 1234
 #: ../src/math-buttons.c:619
 msgid "Decimal"
-msgstr "Dziesiętny"
+msgstr "Dziesiętnie"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
 #: ../src/math-buttons.c:623
 msgid "Hexadecimal"
-msgstr "Szesnastkowy"
+msgstr "Heksadecymalnie"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
@@ -1226,45 +1270,45 @@ msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
 #. grads
-#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
+#: ../src/math-preferences.c:255 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "Stopnie"
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
+#: ../src/math-preferences.c:259 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "Radiany"
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
+#: ../src/math-preferences.c:263 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "Gradiany"
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
 #. number 1.234×10^99)
-#: ../src/math-preferences.c:270
+#: ../src/math-preferences.c:273
 msgid "Automatic"
 msgstr "Automatyczny"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:274
+#: ../src/math-preferences.c:277
 msgid "Fixed"
 msgstr "Stały"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:278
+#: ../src/math-preferences.c:281
 msgid "Scientific"
 msgstr "Naukowy"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:282
+#: ../src/math-preferences.c:285
 msgid "Engineering"
 msgstr "Inżynierski"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:293
+#: ../src/math-preferences.c:296
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "Wyświetlanie %d _miejsc po przecinku"
@@ -1277,7 +1321,16 @@ msgstr "Nie można otworzyć pliku pomocy"
 #. The translator credits. Please translate this with your name(s).
 #: ../src/math-window.c:239
 msgid "translator-credits"
-msgstr "Tłumacze środowiska MATE, 2012-2013, 2017\n\nArtur Flinta, 2003-2006\nWadim Dziedzic, 2007-2009\nTomasz Dominikowski, 2008-2010\nPiotr Drąg, 2009-2012\nAviary.pl, 2007-2012"
+msgstr ""
+"Tłumacze środowiska MATE, 2014-2018\n"
+"\n"
+"Zbigniew Chyla, 2002-2003\n"
+"Artur Flinta, 2003-2005\n"
+"Wadim Dziedzic, 2007-2009\n"
+"Tomasz Dominikowski, 2008-2009\n"
+"Joanna Mazgaj, 2009\n"
+"Piotr Drąg, 2010\n"
+"Aviary.pl, 2007-2010"
 
 #. The license this software is under (GPL2+)
 #: ../src/math-window.c:246
@@ -1295,7 +1348,12 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr "Kalkulator MATE jest wolnym oprogramowaniem; można go rozprowadzać dalej i/lub modyfikować na warunkach Powszechnej Licencji Publicznej GNU, wydanej przez Fundację Wolnego Oprogramowania - według wersji drugiej tej Licencji lub którejś z późniejszych wersji. \n\nKalkulator MATE rozpowszechniany jest z nadzieją, iż będzie on użyteczny - jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej gwarancji PRZYDATNOŚCI HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną GNU. \n\nZ pewnością wraz z kalkulatorem MATE dostarczono także egzemplarz Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie - proszę napisać do Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+"Kalkulator MATE jest wolnym oprogramowaniem; można go rozprowadzać dalej i/lub modyfikować na warunkach Powszechnej Licencji Publicznej GNU, wydanej przez Fundację Wolnego Oprogramowania - według wersji drugiej tej Licencji lub którejś z późniejszych wersji. \n"
+"\n"
+"Kalkulator MATE rozpowszechniany jest z nadzieją, iż będzie on użyteczny - jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej gwarancji PRZYDATNOŚCI HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną GNU. \n"
+"\n"
+"Z pewnością wraz z kalkulatorem MATE dostarczono także egzemplarz Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie - proszę napisać do Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 
 #: ../src/math-window.c:261
 msgid "mate-calc"
@@ -1318,7 +1376,7 @@ msgstr "_Tryb"
 #. Help menu label
 #: ../src/math-window.c:373
 msgid "_Help"
-msgstr "Pomo_c"
+msgstr "P_omoc"
 
 #. Basic menu label
 #: ../src/math-window.c:375
@@ -1413,7 +1471,8 @@ msgstr "Ujemny pierwiastek z zera jest nieokreślony"
 
 #: ../src/mp.c:1813
 msgid "nth root of negative number is undefined for even n"
-msgstr "Pierwiastek arytmetyczny liczby ujemnej jest nieokreślony dla parzystego n"
+msgstr ""
+"Pierwiastek arytmetyczny liczby ujemnej jest nieokreślony dla parzystego n"
 
 #. Translators: Error displayed when attempted take the factorial of a
 #. fractional number
@@ -1432,7 +1491,9 @@ msgstr "Dzielenie modulo jest określone tylko dla liczb całkowitych"
 msgid ""
 "Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
 "(90°)"
-msgstr "Tangens jest nieokreślony dla kątów, które są wielokrotnościami liczby π (180°) z π∕2 (90°)"
+msgstr ""
+"Tangens jest nieokreślony dla kątów, które są wielokrotnościami liczby π "
+"(180°) z π∕2 (90°)"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: ../src/mp-trigonometric.c:355
@@ -1448,13 +1509,16 @@ msgstr "Odwrotny cosinus jest nieokreślony dla wartości spoza [-1, 1]"
 #. undefined
 #: ../src/mp-trigonometric.c:591
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
-msgstr "Odwrotny cosinus hiperboliczny jest nieokreślony dla wartości mniejszych od jeden"
+msgstr ""
+"Odwrotny cosinus hiperboliczny jest nieokreślony dla wartości mniejszych od "
+"jeden"
 
 #. Translators: Error displayed when inverse hyperbolic tangent value is
 #. undefined
 #: ../src/mp-trigonometric.c:615
 msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
-msgstr "Odwrotny tangens hiperboliczny jest nieokreślony dla wartości spoza [-1, 1]"
+msgstr ""
+"Odwrotny tangens hiperboliczny jest nieokreślony dla wartości spoza [-1, 1]"
 
 #: ../src/unit-manager.c:54
 #, c-format
@@ -2091,7 +2155,7 @@ msgstr "mikrosekunda,mikrosekundy,us,μs"
 
 #: ../src/unit-manager.c:97
 msgid "Celsius"
-msgstr "Stopień Celsjusza"
+msgstr "Celsjusza"
 
 #: ../src/unit-manager.c:97
 #, c-format
@@ -2121,7 +2185,7 @@ msgstr "stF,˚F"
 
 #: ../src/unit-manager.c:99
 msgid "Kelvin"
-msgstr "Kelvin"
+msgstr "Kelwina"
 
 #: ../src/unit-manager.c:99
 #, c-format
@@ -2163,7 +2227,7 @@ msgstr "Obszar"
 
 #: ../src/unit-manager.c:112
 msgid "Volume"
-msgstr "Objętość"
+msgstr "Głośność"
 
 #: ../src/unit-manager.c:113
 msgid "Weight"

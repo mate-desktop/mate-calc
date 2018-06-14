@@ -1,16 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-06 15:01+0300\n"
-"PO-Revision-Date: 2018-02-06 12:05+0000\n"
-"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
-"Language-Team: Dzongkha (http://www.transifex.com/mate/MATE/language/dz/)\n"
+"POT-Creation-Date: 2018-03-16 15:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2018\n"
+"Language-Team: Dzongkha (https://www.transifex.com/mate/teams/13566/dz/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,12 +37,12 @@ msgstr "བསལ།"
 #. Accessible name for the subscript mode button
 #: ../data/buttons-advanced.ui.h:7 ../data/buttons-programming.ui.h:15
 msgid "Subscript"
-msgstr ""
+msgstr "འོག་ཡིག"
 
 #. Accessible name for the superscript mode button
 #: ../data/buttons-advanced.ui.h:9 ../data/buttons-programming.ui.h:17
 msgid "Superscript"
-msgstr ""
+msgstr "སྟེང་ཡིག"
 
 #. Accessible name for the scientific exponent button
 #: ../data/buttons-advanced.ui.h:11
@@ -54,7 +55,7 @@ msgstr ""
 #: ../data/buttons-advanced.ui.h:13 ../data/buttons-financial.ui.h:72
 #: ../src/math-buttons.c:232
 msgid "Memory"
-msgstr ""
+msgstr "དྲན་ཚད།"
 
 #. The label on the memory button
 #: ../data/buttons-advanced.ui.h:15 ../data/buttons-financial.ui.h:74
@@ -445,7 +446,7 @@ msgstr ""
 #. Title of preferences dialog
 #: ../data/preferences.ui.h:9 ../src/math-preferences.c:238
 msgid "Preferences"
-msgstr ""
+msgstr "དགའ་གདམ་ཚུ།"
 
 #. Preferences dialog: Label for angle unit combo box
 #: ../data/preferences.ui.h:11
@@ -1216,45 +1217,45 @@ msgstr ""
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
 #. grads
-#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
+#: ../src/math-preferences.c:255 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr ""
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
+#: ../src/math-preferences.c:259 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr ""
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
+#: ../src/math-preferences.c:263 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr ""
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
 #. number 1.234×10^99)
-#: ../src/math-preferences.c:270
+#: ../src/math-preferences.c:273
 msgid "Automatic"
 msgstr ""
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:274
+#: ../src/math-preferences.c:277
 msgid "Fixed"
 msgstr ""
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:278
+#: ../src/math-preferences.c:281
 msgid "Scientific"
 msgstr "ཚན་རིག་གི"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:282
+#: ../src/math-preferences.c:285
 msgid "Engineering"
 msgstr ""
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:293
+#: ../src/math-preferences.c:296
 #, c-format
 msgid "Show %d decimal _places"
 msgstr ""
@@ -1267,7 +1268,10 @@ msgstr ""
 #. The translator credits. Please translate this with your name(s).
 #: ../src/math-window.c:239
 msgid "translator-credits"
-msgstr "ཨའི་ཌི་ཨར་སི་གི་མ་དངུལ་རྒྱབ་སྐྱོར་ཐོག་ལས་ བརྡ་དོན་འཕྲུལ་རིག་ལས་ཁུངས་ནང་ སྐད་བསྒྱུར་འབད་ཡི། ཁ་གསལ་གྱི་དོན་ལུ་ འབྲེལ་བ་འཐབ་ས་: <pema_geyleg@druknet.bt>/<pgeyleg@dit.gov.bt>"
+msgstr ""
+"ཨའི་ཌི་ཨར་སི་གི་མ་དངུལ་རྒྱབ་སྐྱོར་ཐོག་ལས་ བརྡ་དོན་འཕྲུལ་རིག་ལས་ཁུངས་ནང་ "
+"སྐད་བསྒྱུར་འབད་ཡི། ཁ་གསལ་གྱི་དོན་ལུ་ འབྲེལ་བ་འཐབ་ས་: "
+"<pema_geyleg@druknet.bt>/<pgeyleg@dit.gov.bt>(_c)"
 
 #. The license this software is under (GPL2+)
 #: ../src/math-window.c:246
@@ -1308,7 +1312,7 @@ msgstr ""
 #. Help menu label
 #: ../src/math-window.c:373
 msgid "_Help"
-msgstr "གྲོགས་རམ། (_H)"
+msgstr "གྲོགས་རམ།(_H)"
 
 #. Basic menu label
 #: ../src/math-window.c:375
@@ -1333,7 +1337,7 @@ msgstr ""
 #. Help>Contents menu label
 #: ../src/math-window.c:383
 msgid "_Contents"
-msgstr "ནང་དོན་ཚུ། (_C)"
+msgstr "ནང་དོན།(_C)"
 
 #. Translators: Error displayed when boolean AND attempted on non-integer
 #. values
@@ -1646,7 +1650,7 @@ msgstr ""
 
 #: ../src/unit-manager.c:68
 msgid "Inches"
-msgstr ""
+msgstr "ཨིན་ཅེསི་"
 
 #: ../src/unit-manager.c:68
 #, c-format
@@ -1676,7 +1680,7 @@ msgstr ""
 
 #: ../src/unit-manager.c:70
 msgid "Millimeters"
-msgstr ""
+msgstr "མི་ལི་མི་ཊརསི་"
 
 #: ../src/unit-manager.c:70
 #, c-format
@@ -2081,7 +2085,7 @@ msgstr ""
 
 #: ../src/unit-manager.c:97
 msgid "Celsius"
-msgstr ""
+msgstr "སེལ་ཤི་ཡཱསི།"
 
 #: ../src/unit-manager.c:97
 #, c-format
@@ -2111,7 +2115,7 @@ msgstr ""
 
 #: ../src/unit-manager.c:99
 msgid "Kelvin"
-msgstr ""
+msgstr "ཀེལ་བིན།"
 
 #: ../src/unit-manager.c:99
 #, c-format
@@ -2153,7 +2157,7 @@ msgstr ""
 
 #: ../src/unit-manager.c:112
 msgid "Volume"
-msgstr ""
+msgstr "སྦུང་ཚད།"
 
 #: ../src/unit-manager.c:113
 msgid "Weight"

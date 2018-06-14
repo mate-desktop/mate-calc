@@ -1,21 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-06 15:01+0300\n"
-"PO-Revision-Date: 2018-02-06 12:05+0000\n"
-"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
-"Language-Team: Breton (http://www.transifex.com/mate/MATE/language/br/)\n"
+"POT-Creation-Date: 2018-03-16 15:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Denis ARNAUD <denisarnuad@hotmail.com>, 2018\n"
+"Language-Team: Breton (https://www.transifex.com/mate/teams/13566/br/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: br\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=5; plural=((n%10 == 1) && (n%100 != 11) && (n%100 !=71) && (n%100 !=91) ? 0 :(n%10 == 2) && (n%100 != 12) && (n%100 !=72) && (n%100 !=92) ? 1 :(n%10 ==3 || n%10==4 || n%10==9) && (n%100 < 10 || n% 100 > 19) && (n%100 < 70 || n%100 > 79) && (n%100 < 90 || n%100 > 99) ? 2 :(n != 0 && n % 1000000 == 0) ? 3 : 4);\n"
 
 #. Accessible name for the factorize button
 #: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:8
@@ -36,7 +37,7 @@ msgstr ""
 #. Accessible name for the subscript mode button
 #: ../data/buttons-advanced.ui.h:7 ../data/buttons-programming.ui.h:15
 msgid "Subscript"
-msgstr ""
+msgstr "Isskript"
 
 #. Accessible name for the superscript mode button
 #: ../data/buttons-advanced.ui.h:9 ../data/buttons-programming.ui.h:17
@@ -54,7 +55,7 @@ msgstr ""
 #: ../data/buttons-advanced.ui.h:13 ../data/buttons-financial.ui.h:72
 #: ../src/math-buttons.c:232
 msgid "Memory"
-msgstr ""
+msgstr "Memor"
 
 #. The label on the memory button
 #: ../data/buttons-advanced.ui.h:15 ../data/buttons-financial.ui.h:74
@@ -71,7 +72,7 @@ msgstr ""
 #: ../data/buttons-advanced.ui.h:18 ../data/buttons-basic.ui.h:6
 #: ../data/buttons-financial.ui.h:98
 msgid "Undo"
-msgstr ""
+msgstr "Dizober"
 
 #: ../data/buttons-advanced.ui.h:19
 msgid "acos"
@@ -400,7 +401,7 @@ msgstr ""
 #. Insert ASCII dialog: Button to insert selected character
 #: ../data/buttons-programming.ui.h:4
 msgid "_Insert"
-msgstr ""
+msgstr "_Enlakaat"
 
 #. Insert ASCII dialog: Label before character entry
 #: ../data/buttons-programming.ui.h:6
@@ -1099,6 +1100,9 @@ msgid "_%d place"
 msgid_plural "_%d places"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
@@ -1108,6 +1112,9 @@ msgid "%d place"
 msgid_plural "%d places"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
 
 #. Tooltip for the round button
 #: ../src/math-buttons.c:998
@@ -1218,45 +1225,45 @@ msgstr ""
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
 #. grads
-#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
+#: ../src/math-preferences.c:255 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr ""
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
+#: ../src/math-preferences.c:259 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr ""
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
+#: ../src/math-preferences.c:263 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr ""
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
 #. number 1.234×10^99)
-#: ../src/math-preferences.c:270
+#: ../src/math-preferences.c:273
 msgid "Automatic"
 msgstr ""
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:274
+#: ../src/math-preferences.c:277
 msgid "Fixed"
 msgstr ""
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:278
+#: ../src/math-preferences.c:281
 msgid "Scientific"
 msgstr ""
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:282
+#: ../src/math-preferences.c:285
 msgid "Engineering"
 msgstr ""
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:293
+#: ../src/math-preferences.c:296
 #, c-format
 msgid "Show %d decimal _places"
 msgstr ""
@@ -1335,7 +1342,7 @@ msgstr ""
 #. Help>Contents menu label
 #: ../src/math-window.c:383
 msgid "_Contents"
-msgstr ""
+msgstr "Endal_c'hadoù"
 
 #. Translators: Error displayed when boolean AND attempted on non-integer
 #. values
@@ -2083,7 +2090,7 @@ msgstr ""
 
 #: ../src/unit-manager.c:97
 msgid "Celsius"
-msgstr ""
+msgstr "Celsius"
 
 #: ../src/unit-manager.c:97
 #, c-format
@@ -2113,7 +2120,7 @@ msgstr ""
 
 #: ../src/unit-manager.c:99
 msgid "Kelvin"
-msgstr ""
+msgstr "Kelvin"
 
 #: ../src/unit-manager.c:99
 #, c-format

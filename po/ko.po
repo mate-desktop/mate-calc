@@ -1,20 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Changwoo Ryu <cwryu@debian.org>, 2004-2010
-# ganadist <ganadist@gmail.com>, 2003,2005
-# 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2016-2017
-# ganadist <ganadist@gmail.com>, 2003,2005
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-06 15:01+0300\n"
-"PO-Revision-Date: 2018-02-06 12:05+0000\n"
-"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
-"Language-Team: Korean (http://www.transifex.com/mate/MATE/language/ko/)\n"
+"POT-Creation-Date: 2018-03-16 15:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2018\n"
+"Language-Team: Korean (https://www.transifex.com/mate/teams/13566/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -75,7 +72,7 @@ msgstr "지수"
 #: ../data/buttons-advanced.ui.h:18 ../data/buttons-basic.ui.h:6
 #: ../data/buttons-financial.ui.h:98
 msgid "Undo"
-msgstr "되돌리기 "
+msgstr "취소"
 
 #: ../data/buttons-advanced.ui.h:19
 msgid "acos"
@@ -284,7 +281,9 @@ msgid ""
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr "정액 감가상각 방법을 이용해 지정한 기간 동안 자산의 감가상각을 계산합니다. 정액 감가상각 방법에서는 자산의 취득 원가를 내용 연수로 균등하게 나눕니다. 내용 연수는 자산의 감가상각을 계산하는 기간이 몇 회 되었느냐를 뜻하고, 보통 연 단위입니다."
+msgstr ""
+"정액 감가상각 방법을 이용해 지정한 기간 동안 자산의 감가상각을 계산합니다. 정액 감가상각 방법에서는 자산의 취득 원가를 내용 연수로 "
+"균등하게 나눕니다. 내용 연수는 자산의 감가상각을 계산하는 기간이 몇 회 되었느냐를 뜻하고, 보통 연 단위입니다."
 
 #. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
@@ -299,7 +298,10 @@ msgid ""
 " accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
-msgstr "연수합계 방법을 이용해 지정한 기간 동안 자산의 감가 상각을 계산합니다. 이 감가상각 방법에서는 감가 상각 속도가 점차 변하는데, 초기의 감가상각 비용이 나중의 감가상각보다 더 많습니다. 내용 연수는 자산의 감가상각을 계산하는 기간이 몇 회 되었느냐를 뜻하고, 보통 연 단위입니다."
+msgstr ""
+"연수합계 방법을 이용해 지정한 기간 동안 자산의 감가 상각을 계산합니다. 이 감가상각 방법에서는 감가 상각 속도가 점차 변하는데, 초기의"
+" 감가상각 비용이 나중의 감가상각보다 더 많습니다. 내용 연수는 자산의 감가상각을 계산하는 기간이 몇 회 되었느냐를 뜻하고, 보통 연 "
+"단위입니다."
 
 #. Title of Payment Period dialog
 #: ../data/buttons-financial.ui.h:66
@@ -487,7 +489,10 @@ msgid ""
 " to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
 "Calc and part of the MATE Desktop Environment. If you would like to know "
 "more about MATE and MATE Calc, please visit the project's home page. </p>"
-msgstr "<p> 마테 계산기는 금융, 로직, 과학 모드를 지원하는 강력한 계산기입니다. 높은 정밀도를 위해서 다중 정밀 패키지를 사용합니다.</p> <p> 마테 계산기는 그놈 계산기의 포크이며 마테 데스크톱 환경의 일부입니다. 마테와 마테 계산기에 관해 더 알고자 하시면 , 마테 프로젝트의 홈페이지를 방문해보세요.</p>"
+msgstr ""
+"<p> 마테 계산기는 금융, 로직, 과학 모드를 지원하는 강력한 계산기입니다. 높은 정밀도를 위해서 다중 정밀 패키지를 "
+"사용합니다.</p> <p> 마테 계산기는 그놈 계산기의 포크이며 마테 데스크톱 환경의 일부입니다. 마테와 마테 계산기에 관해 더 알고자 "
+"하시면 , 마테 프로젝트의 홈페이지를 방문해보세요.</p>"
 
 #: ../data/mate-calc.desktop.in.h:1
 msgid "MATE Calculator"
@@ -752,7 +757,9 @@ msgstr "오류: 기간은 0보다 커야 합니다"
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr "사용법:\n  %s — 수학 계산을 합니다"
+msgstr ""
+"사용법:\n"
+"  %s — 수학 계산을 합니다"
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
@@ -764,7 +771,12 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr "도움말 옵션:\n  -v, --version                   릴리스 버전을 표시합니다\n  -h, -?, --help                  도움말 옵션을 표시합니다\n  --help-all                      모든 도움말 옵션을 표시합니다\n  --help-gtk                      GTK+ 옵션을 표시합니다"
+msgstr ""
+"도움말 옵션:\n"
+"  -v, --version                   릴리스 버전을 표시합니다\n"
+"  -h, -?, --help                  도움말 옵션을 표시합니다\n"
+"  --help-all                      모든 도움말 옵션을 표시합니다\n"
+"  --help-gtk                      GTK+ 옵션을 표시합니다"
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
@@ -778,7 +790,14 @@ msgid ""
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr "GTK+ 옵션:\n  --class=CLASS                   창 관리자가 사용하는 프로그램 클래스\n  --name=NAME                     창 관리자가 사용하는 프로그램 이름\n  --screen=SCREEN                 사용할 X 스크린\n  --sync                          동기식 X 호출 사용\n  --gtk-module=MODULES            추가 GTK+ 모듈 읽어들이기\n  --g-fatal-warnings              모든 경고를 치명적으로 취급"
+msgstr ""
+"GTK+ 옵션:\n"
+"  --class=CLASS                   창 관리자가 사용하는 프로그램 클래스\n"
+"  --name=NAME                     창 관리자가 사용하는 프로그램 이름\n"
+"  --screen=SCREEN                 사용할 X 스크린\n"
+"  --sync                          동기식 X 호출 사용\n"
+"  --gtk-module=MODULES            추가 GTK+ 모듈 읽어들이기\n"
+"  --g-fatal-warnings              모든 경고를 치명적으로 취급"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -786,7 +805,9 @@ msgstr "GTK+ 옵션:\n  --class=CLASS                   창 관리자가 사용�
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr "프로그램 옵션\n  -s, --solve <equation>          주어진 식을 풉니다"
+msgstr ""
+"프로그램 옵션\n"
+"  -s, --solve <equation>          주어진 식을 풉니다"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:156
@@ -1088,7 +1109,7 @@ msgstr "8진수"
 #. Number display mode combo: Decimal, e.g. 1234
 #: ../src/math-buttons.c:619
 msgid "Decimal"
-msgstr "십진수"
+msgstr "10진수"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
 #: ../src/math-buttons.c:623
@@ -1101,7 +1122,7 @@ msgstr "16진수"
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] "_%d번"
+msgstr[0] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
@@ -1109,7 +1130,7 @@ msgstr[0] "_%d번"
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] "%d번"
+msgstr[0] ""
 
 #. Tooltip for the round button
 #: ../src/math-buttons.c:998
@@ -1220,45 +1241,45 @@ msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
 #. grads
-#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
+#: ../src/math-preferences.c:255 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "육십분"
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
+#: ../src/math-preferences.c:259 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "라디안"
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
+#: ../src/math-preferences.c:263 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "그라디안"
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
 #. number 1.234×10^99)
-#: ../src/math-preferences.c:270
+#: ../src/math-preferences.c:273
 msgid "Automatic"
 msgstr "자동"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:274
+#: ../src/math-preferences.c:277
 msgid "Fixed"
 msgstr "고정"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:278
+#: ../src/math-preferences.c:281
 msgid "Scientific"
 msgstr "과학"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:282
+#: ../src/math-preferences.c:285
 msgid "Engineering"
 msgstr "공학"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:293
+#: ../src/math-preferences.c:296
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "%d자리 십진수 표시(_P)"
@@ -1271,7 +1292,13 @@ msgstr "도움말 파일을 열 수 없습니다"
 #. The translator credits. Please translate this with your name(s).
 #: ../src/math-window.c:239
 msgid "translator-credits"
-msgstr "차영호 <ganadist at gmail dot com>\n류창우 <cwryu@debian.org>\nMATE Desktop Environment Team <https://www.transifex.com/mate/teams/13566/ko/>"
+msgstr ""
+"Elex https://launchpad.net/~mysticzizone\n"
+"Valmantas Palikša https://launchpad.net/~walmis\n"
+"Yoo Duk Nam https://launchpad.net/~yoo2001818\n"
+"onlyeriko https://launchpad.net/~onlyeriko\n"
+"Seong-ho Cho <darkcircle.0426@gmail.com>\n"
+"MATE Desktop Environment Team <https://www.transifex.com/mate/teams/13566/ko/>"
 
 #. The license this software is under (GPL2+)
 #: ../src/math-window.c:246
@@ -1289,7 +1316,12 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr "계산기는 자유 소프트웨어로 자유 소프트웨어 재단의 GNU GPL 버전 2나 그 이후 버전(사용자 선택)에 따라 재배포하고 수정할 수 있습니다. 계산기는 유용하기를 바라면서 배포되지만 \"어떠한 보증도 없습니다.\" 심지어 \"상품성이나 특정 목적에 적합성\"에 대한 묵시적 보증도 없습니다. 더 자세한 내용은 GNU GPL을 보십시오. GNU GPL 사본이 계산기꾸러미에 포함되어 있어야 합니다. 없다면 자유 소프트웨어 재단 151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA 으로 알려주세요."
+msgstr ""
+"계산기는 자유 소프트웨어로 자유 소프트웨어 재단의 GNU GPL 버전 2나 그 이후 버전(사용자 선택)에 따라 재배포하고 수정할 수 "
+"있습니다. 계산기는 유용하기를 바라면서 배포되지만 \"어떠한 보증도 없습니다.\" 심지어 \"상품성이나 특정 목적에 적합성\"에 대한 "
+"묵시적 보증도 없습니다. 더 자세한 내용은 GNU GPL을 보십시오. GNU GPL 사본이 계산기꾸러미에 포함되어 있어야 합니다. 없다면"
+" 자유 소프트웨어 재단 151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA 으로"
+" 알려주세요."
 
 #: ../src/math-window.c:261
 msgid "mate-calc"
@@ -2085,7 +2117,7 @@ msgstr "microsecond,microseconds,us,μs,마이크로초"
 
 #: ../src/unit-manager.c:97
 msgid "Celsius"
-msgstr "섭씨"
+msgstr "섭"
 
 #: ../src/unit-manager.c:97
 #, c-format
@@ -2157,7 +2189,7 @@ msgstr "면적"
 
 #: ../src/unit-manager.c:112
 msgid "Volume"
-msgstr "부피"
+msgstr "음량"
 
 #: ../src/unit-manager.c:113
 msgid "Weight"
