@@ -1,20 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Changwoo Ryu <cwryu@debian.org>, 2004-2010
-# ganadist <ganadist@gmail.com>, 2003,2005
-# 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2016-2017
-# ganadist <ganadist@gmail.com>, 2003,2005
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-06 15:01+0300\n"
-"PO-Revision-Date: 2018-02-06 12:05+0000\n"
-"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
-"Language-Team: Korean (http://www.transifex.com/mate/MATE/language/ko/)\n"
+"POT-Creation-Date: 2018-06-14 15:15+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2018\n"
+"Language-Team: Korean (https://www.transifex.com/mate/teams/13566/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,92 +19,92 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Accessible name for the factorize button
-#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:8
+#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:9
 msgid "Factorize"
 msgstr "인수 분해"
 
 #. Label on the solve button (clicking this solves the displayed calculation)
 #: ../data/buttons-advanced.ui.h:4 ../data/buttons-basic.ui.h:2
-#: ../data/buttons-financial.ui.h:76 ../data/buttons-programming.ui.h:12
+#: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
 msgid "="
 msgstr "="
 
 #: ../data/buttons-advanced.ui.h:5 ../data/buttons-basic.ui.h:3
-#: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
+#: ../data/buttons-financial.ui.h:78 ../data/buttons-programming.ui.h:14
 msgid "Clear"
 msgstr "지우기"
 
-#. Accessible name for the subscript mode button
-#: ../data/buttons-advanced.ui.h:7 ../data/buttons-programming.ui.h:15
-msgid "Subscript"
-msgstr "아래 첨자"
-
-#. Accessible name for the superscript mode button
-#: ../data/buttons-advanced.ui.h:9 ../data/buttons-programming.ui.h:17
-msgid "Superscript"
-msgstr "위 첨자"
-
 #. Accessible name for the scientific exponent button
-#: ../data/buttons-advanced.ui.h:11
+#: ../data/buttons-advanced.ui.h:7
 msgid "Scientific Exponent"
 msgstr "과학 지수"
+
+#. The label on the memory button
+#: ../data/buttons-advanced.ui.h:9 ../data/buttons-financial.ui.h:73
+#: ../data/buttons-programming.ui.h:18
+msgid "x"
+msgstr "x"
 
 #. Accessible name for the memory button
 #. Accessible name for the memory value button
 #. Tooltip for the memory button
-#: ../data/buttons-advanced.ui.h:13 ../data/buttons-financial.ui.h:72
+#: ../data/buttons-advanced.ui.h:11 ../data/buttons-financial.ui.h:75
 #: ../src/math-buttons.c:232
 msgid "Memory"
 msgstr "메모리"
 
-#. The label on the memory button
-#: ../data/buttons-advanced.ui.h:15 ../data/buttons-financial.ui.h:74
-#: ../data/buttons-programming.ui.h:21
-msgid "x"
-msgstr "x"
-
 #. Accessible name for the exponentiation (x to the power of y) button
-#: ../data/buttons-advanced.ui.h:17 ../data/buttons-basic.ui.h:5
-#: ../data/buttons-financial.ui.h:100 ../data/buttons-programming.ui.h:33
+#: ../data/buttons-advanced.ui.h:13 ../data/buttons-basic.ui.h:6
+#: ../data/buttons-financial.ui.h:100 ../data/buttons-programming.ui.h:32
 msgid "Exponent"
 msgstr "지수"
 
-#: ../data/buttons-advanced.ui.h:18 ../data/buttons-basic.ui.h:6
-#: ../data/buttons-financial.ui.h:98
+#: ../data/buttons-advanced.ui.h:14 ../data/buttons-basic.ui.h:4
+#: ../data/buttons-financial.ui.h:101
 msgid "Undo"
-msgstr "되돌리기 "
+msgstr "취소"
 
-#: ../data/buttons-advanced.ui.h:19
-msgid "acos"
-msgstr "acos"
-
-#: ../data/buttons-advanced.ui.h:20
+#: ../data/buttons-advanced.ui.h:15
 msgid "asin"
 msgstr "asin"
 
-#: ../data/buttons-advanced.ui.h:21
+#: ../data/buttons-advanced.ui.h:16
 msgid "atan"
 msgstr "atan"
 
+#: ../data/buttons-advanced.ui.h:17
+msgid "acos"
+msgstr "acos"
+
 #. Accessible name for the store value button
-#: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:19
+#: ../data/buttons-advanced.ui.h:19 ../data/buttons-programming.ui.h:20
 msgid "Store"
 msgstr "저장"
 
 #. Accessible name for the inverse button
-#: ../data/buttons-advanced.ui.h:25 ../data/buttons-programming.ui.h:31
+#: ../data/buttons-advanced.ui.h:21 ../data/buttons-programming.ui.h:30
 msgid "Inverse"
 msgstr "역 삼각함수"
 
 #. Accessible name for the factorial button
-#: ../data/buttons-advanced.ui.h:27 ../data/buttons-programming.ui.h:29
+#: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:28
 msgid "Factorial"
 msgstr "팩토리얼"
 
 #. Accessible name for the absolute value button
-#: ../data/buttons-advanced.ui.h:29 ../data/buttons-programming.ui.h:10
+#: ../data/buttons-advanced.ui.h:25 ../data/buttons-programming.ui.h:11
 msgid "Absolute Value"
 msgstr "절대값"
+
+#. Accessible name for the superscript mode button
+#: ../data/buttons-advanced.ui.h:27 ../data/buttons-programming.ui.h:16
+msgid "Superscript"
+msgstr "위 첨자"
+
+#. Accessible name for the subscript mode button
+#: ../data/buttons-advanced.ui.h:29 ../data/buttons-programming.ui.h:34
+msgid "Subscript"
+msgstr "아래 첨자"
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
@@ -115,69 +112,78 @@ msgstr "절대값"
 msgid "Compounding Term"
 msgstr "복리 기간"
 
+#: ../data/buttons-financial.ui.h:3 ../data/buttons-programming.ui.h:3
+msgid "_Cancel"
+msgstr "취소(_C)"
+
 #. Payment Period Dialog: Button to calculate result
-#: ../data/buttons-financial.ui.h:4
+#: ../data/buttons-financial.ui.h:5
 msgid "C_alculate"
 msgstr "계산(_A)"
 
-#. Periodic Interest Rate Dialog: Label before present value input
-#: ../data/buttons-financial.ui.h:6
-msgid "Present _Value:"
-msgstr "현재 가치(_V):"
-
-#. Payment Period Dialog: Label before periodic interest rate input
-#: ../data/buttons-financial.ui.h:8
-msgid "Periodic Interest _Rate:"
-msgstr "정기 이율(_R):"
-
 #. Compounding Term Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:10
+#: ../data/buttons-financial.ui.h:7
 msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
 msgstr "각 복리 기간마다 이자율이 고정되어 있을 때, 투자금을 미래 가치로 올리는 데 필요한 복리 기간을 계산합니다."
 
+#. Payment Period Dialog: Label before periodic interest rate input
+#: ../data/buttons-financial.ui.h:9
+msgid "Periodic Interest _Rate:"
+msgstr "정기 이율(_R):"
+
 #. Periodic Interest Rate Dialog: Label before future value input
-#: ../data/buttons-financial.ui.h:12
+#: ../data/buttons-financial.ui.h:11
 msgid "_Future Value:"
 msgstr "미래 가치(_F):"
 
+#. Periodic Interest Rate Dialog: Label before present value input
+#: ../data/buttons-financial.ui.h:13
+msgid "Present _Value:"
+msgstr "현재 가치(_V):"
+
 #. Title of Double-Declining Depreciation dialog
-#: ../data/buttons-financial.ui.h:14
+#: ../data/buttons-financial.ui.h:15
 msgid "Double-Declining Depreciation"
 msgstr "이중 감가상각"
 
 #. Double-Declining Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:16
+#: ../data/buttons-financial.ui.h:17
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
 msgstr "이중 감가상각 방법을 이용해 지정한 기간 동안 자산의 감가상각을 계산합니다."
 
-#. Gross Profit Margin Dialog: Label before cost input
-#: ../data/buttons-financial.ui.h:18
-msgid "C_ost:"
-msgstr "취득 원가(_O):"
-
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:20
+#: ../data/buttons-financial.ui.h:19
 msgid "_Life:"
 msgstr "내용 연수(_L):"
 
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:22
+#: ../data/buttons-financial.ui.h:21
 msgid "_Period:"
 msgstr "기간(_P):"
 
+#. Gross Profit Margin Dialog: Label before cost input
+#: ../data/buttons-financial.ui.h:23
+msgid "C_ost:"
+msgstr "취득 원가(_O):"
+
 #. Title of Future Value dialog
 #. Tooltip for the future value button
-#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.c:262
+#: ../data/buttons-financial.ui.h:25 ../src/math-buttons.c:262
 msgid "Future Value"
 msgstr "미래 가치"
 
+#. Present Value Dialog: Label before number of periods input
+#: ../data/buttons-financial.ui.h:27
+msgid "_Number of Periods:"
+msgstr "기간 수(_N):"
+
 #. Future Value Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:26
+#: ../data/buttons-financial.ui.h:29
 msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
@@ -185,64 +191,59 @@ msgid ""
 msgstr "동일한 이율의 이자가 일정 기간 동안 있을 때 투자금의 미래 가치를 계산합니다."
 
 #. Payment Period Dialog: Label before periodic payment input
-#: ../data/buttons-financial.ui.h:28
+#: ../data/buttons-financial.ui.h:31
 msgid "_Periodic Payment:"
 msgstr "정기 상환(_P):"
 
-#. Present Value Dialog: Label before number of periods input
-#: ../data/buttons-financial.ui.h:30
-msgid "_Number of Periods:"
-msgstr "기간 수(_N):"
-
 #. Title of Gross Profit Margin dialog
 #. Tooltip for the gross profit margin button
-#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:283
+#: ../data/buttons-financial.ui.h:33 ../src/math-buttons.c:283
 msgid "Gross Profit Margin"
 msgstr "총 이익률"
 
 #. Gross Profit Margin Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:34
+#: ../data/buttons-financial.ui.h:35
 msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
 msgstr "제품의 취득 원가와 희망하는 총 이익률에 따라 제품의 판매 가격을 계산합니다."
 
 #. Gross Profit Margin Dialog: Label before margin input
-#: ../data/buttons-financial.ui.h:36
+#: ../data/buttons-financial.ui.h:37
 msgid "_Margin:"
 msgstr "이익(_M):"
 
 #. Title of Periodic Payment dialog
 #. Tooltip for the periodic payment button
-#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:280
+#: ../data/buttons-financial.ui.h:39 ../src/math-buttons.c:280
 msgid "Periodic Payment"
 msgstr "정기 상환"
 
 #. Periodic Payment Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:40
+#: ../data/buttons-financial.ui.h:41
 msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
 msgstr "대출의 정기 이자를 계산합니다. 이자는 각 이자 기간의 마지막에 지불합니다."
 
-#. Periodic Payment Dialog: Label before principal input
-#: ../data/buttons-financial.ui.h:42
-msgid "_Principal:"
-msgstr "원금(_P):"
-
 #. Periodic Interest Rate Dialog: Label before term input
-#: ../data/buttons-financial.ui.h:44
+#: ../data/buttons-financial.ui.h:43
 msgid "_Term:"
 msgstr "대출 기간(_T):"
 
+#. Periodic Payment Dialog: Label before principal input
+#: ../data/buttons-financial.ui.h:45
+msgid "_Principal:"
+msgstr "원금(_P):"
+
 #. Title of Present Value dialog
 #. Tooltip for the present value button
-#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:277
+#: ../data/buttons-financial.ui.h:47 ../src/math-buttons.c:277
 msgid "Present Value"
 msgstr "현재 가치"
 
 #. Present Value Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:48
+#: ../data/buttons-financial.ui.h:49
 msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
@@ -251,68 +252,73 @@ msgstr "일정 기간의 이자 지급 기간만큼 할인한 지급액을 기�
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
-#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.c:274
+#: ../data/buttons-financial.ui.h:51 ../src/math-buttons.c:274
 msgid "Periodic Interest Rate"
 msgstr "정기 이율"
 
 #. Periodic Interest Rate Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:52
+#: ../data/buttons-financial.ui.h:53
 msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
 msgstr "정해진 복리 기간 동안 투자금을 미래 가치로 올리는 데 필요한 정기 이자율을 계산합니다."
 
 #. Title of Straight-Line Depreciation dialog
-#: ../data/buttons-financial.ui.h:54
+#: ../data/buttons-financial.ui.h:55
 msgid "Straight-Line Depreciation"
 msgstr "정액 감가상각"
 
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:56
+#: ../data/buttons-financial.ui.h:57
 msgid "_Cost:"
 msgstr "비용(_C):"
 
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:58
+#: ../data/buttons-financial.ui.h:59
 msgid "_Salvage:"
 msgstr "잔존 가치(_S):"
 
 #. Straight-Line Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:60
+#: ../data/buttons-financial.ui.h:61
 msgid ""
 "Calculates the straight-line depreciation of an asset for one period. The "
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr "정액 감가상각 방법을 이용해 지정한 기간 동안 자산의 감가상각을 계산합니다. 정액 감가상각 방법에서는 자산의 취득 원가를 내용 연수로 균등하게 나눕니다. 내용 연수는 자산의 감가상각을 계산하는 기간이 몇 회 되었느냐를 뜻하고, 보통 연 단위입니다."
+msgstr ""
+"정액 감가상각 방법을 이용해 지정한 기간 동안 자산의 감가상각을 계산합니다. 정액 감가상각 방법에서는 자산의 취득 원가를 내용 연수로 "
+"균등하게 나눕니다. 내용 연수는 자산의 감가상각을 계산하는 기간이 몇 회 되었느냐를 뜻하고, 보통 연 단위입니다."
 
 #. Title of Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:62
+#: ../data/buttons-financial.ui.h:63
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "연수합계 감가상각"
 
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:64
+#: ../data/buttons-financial.ui.h:65
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
 " accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
-msgstr "연수합계 방법을 이용해 지정한 기간 동안 자산의 감가 상각을 계산합니다. 이 감가상각 방법에서는 감가 상각 속도가 점차 변하는데, 초기의 감가상각 비용이 나중의 감가상각보다 더 많습니다. 내용 연수는 자산의 감가상각을 계산하는 기간이 몇 회 되었느냐를 뜻하고, 보통 연 단위입니다."
+msgstr ""
+"연수합계 방법을 이용해 지정한 기간 동안 자산의 감가 상각을 계산합니다. 이 감가상각 방법에서는 감가 상각 속도가 점차 변하는데, 초기의"
+" 감가상각 비용이 나중의 감가상각보다 더 많습니다. 내용 연수는 자산의 감가상각을 계산하는 기간이 몇 회 되었느냐를 뜻하고, 보통 연 "
+"단위입니다."
 
 #. Title of Payment Period dialog
-#: ../data/buttons-financial.ui.h:66
+#: ../data/buttons-financial.ui.h:67
 msgid "Payment Period"
 msgstr "상환 주기"
 
 #. Payment Period Dialog: Label before future value input
-#: ../data/buttons-financial.ui.h:68
+#: ../data/buttons-financial.ui.h:69
 msgid "Future _Value:"
 msgstr "미래 가치(_V):"
 
 #. Payment Period Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:70
+#: ../data/buttons-financial.ui.h:71
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
 "of an ordinary annuity, to accumulate a future value, at a periodic interest"
@@ -323,14 +329,14 @@ msgstr "대출 기간 동안 정해진 이자로 정해진 미래 가치를 달�
 #. investment of present value pv to a future value of fv, at a fixed interest
 #. rate of int per compounding period. See also:
 #. http://en.wikipedia.org/wiki/Compound_interest
-#: ../data/buttons-financial.ui.h:79
+#: ../data/buttons-financial.ui.h:80
 msgid "Ctrm"
 msgstr "Ctrm"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
 #. time, using the double-declining balance method. See also:
 #. http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:81
+#: ../data/buttons-financial.ui.h:82
 msgid "Ddb"
 msgstr "Ddb"
 
@@ -338,7 +344,7 @@ msgstr "Ddb"
 #. payments, each of amount pmt, at a periodic interest rate of int, over the
 #. number of payment periods in the term. See also:
 #. http://en.wikipedia.org/wiki/Future_value
-#: ../data/buttons-financial.ui.h:83
+#: ../data/buttons-financial.ui.h:84
 msgid "Fv"
 msgstr "Fv"
 
@@ -346,13 +352,13 @@ msgstr "Fv"
 #. of an ordinary annuity, to accumulate a future value of fv, at a periodic
 #. interest rate of int. Each payment is equal to amount pmt. See also:
 #. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
-#: ../data/buttons-financial.ui.h:85
+#: ../data/buttons-financial.ui.h:86
 msgid "Term"
 msgstr "Term"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
 #. time, using the Sum-Of-The-Years
-#: ../data/buttons-financial.ui.h:87
+#: ../data/buttons-financial.ui.h:88
 msgid "Syd"
 msgstr "Syd"
 
@@ -362,14 +368,14 @@ msgstr "Syd"
 #. asset. The useful life is the number of periods, typically years, over
 #. which an asset is depreciated. See also:
 #. http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:89
+#: ../data/buttons-financial.ui.h:90
 msgid "Sln"
 msgstr "Sln"
 
 #. Calculates the periodic interest necessary to increase an investment of
 #. present value pv to a future value of fv, over the number of compounding
 #. periods in term. See also: http://en.wikipedia.org/wiki/Interest
-#: ../data/buttons-financial.ui.h:91
+#: ../data/buttons-financial.ui.h:92
 msgid "Rate"
 msgstr "Rate"
 
@@ -377,21 +383,21 @@ msgstr "Rate"
 #. payments, each of amount pmt, discounted at a periodic interest rate of
 #. int, over the number of payment periods in the term. See also:
 #. http://en.wikipedia.org/wiki/Present_value
-#: ../data/buttons-financial.ui.h:93
+#: ../data/buttons-financial.ui.h:94
 msgid "Pv"
 msgstr "Pv"
 
 #. Calculates the amount of the periodic payment of a loan, where payments are
 #. made at the end of each payment period. See also:
 #. http://en.wikipedia.org/wiki/Amortization_schedule
-#: ../data/buttons-financial.ui.h:95
+#: ../data/buttons-financial.ui.h:96
 msgid "Pmt"
 msgstr "Pmt"
 
 #. Calculates the resale price of a product, based on the product cost and the
 #. wanted gross profit margin. See also:
 #. http://en.wikipedia.org/wiki/Gross_profit_margin
-#: ../data/buttons-financial.ui.h:97
+#: ../data/buttons-financial.ui.h:98
 msgid "Gpm"
 msgstr "Gpm"
 
@@ -402,27 +408,27 @@ msgid "Insert Character Code"
 msgstr "문자 코드 입력"
 
 #. Insert ASCII dialog: Button to insert selected character
-#: ../data/buttons-programming.ui.h:4
+#: ../data/buttons-programming.ui.h:5
 msgid "_Insert"
 msgstr "넣기(_I)"
 
 #. Insert ASCII dialog: Label before character entry
-#: ../data/buttons-programming.ui.h:6
+#: ../data/buttons-programming.ui.h:7
 msgid "Ch_aracter:"
 msgstr "문자(_A):"
 
 #. Accessible name for the shift left button
-#: ../data/buttons-programming.ui.h:23
+#: ../data/buttons-programming.ui.h:22
 msgid "Shift Left"
 msgstr "왼쪽으로 쉬프트"
 
 #. Accessible name for the shift right button
-#: ../data/buttons-programming.ui.h:25
+#: ../data/buttons-programming.ui.h:24
 msgid "Shift Right"
 msgstr "오른쪽으로 쉬프트"
 
 #. Accessible name for the insert character button
-#: ../data/buttons-programming.ui.h:27
+#: ../data/buttons-programming.ui.h:26
 msgid "Insert Character"
 msgstr "문자 입력"
 
@@ -451,28 +457,32 @@ msgstr "64비트"
 msgid "Preferences"
 msgstr "기본 설정"
 
+#: ../data/preferences.ui.h:10
+msgid "_Close"
+msgstr "닫기(_C)"
+
 #. Preferences dialog: Label for angle unit combo box
-#: ../data/preferences.ui.h:11
+#: ../data/preferences.ui.h:12
 msgid "_Angle units:"
 msgstr "각도 단위(_A):"
 
 #. Preferences dialog: Label for display format combo box
-#: ../data/preferences.ui.h:13
+#: ../data/preferences.ui.h:14
 msgid "Number _Format:"
 msgstr "숫자 형식(_F):"
 
 #. Preferences dialog: label for word size combo box
-#: ../data/preferences.ui.h:15
+#: ../data/preferences.ui.h:16
 msgid "Word _size:"
 msgstr "워드 크기(_S):"
 
 #. Preferences dialog: label for show trailing zeroes check button
-#: ../data/preferences.ui.h:17
+#: ../data/preferences.ui.h:18
 msgid "Show trailing _zeroes"
 msgstr "마지막 0 표시(_Z)"
 
 #. Preferences dialog: label for show thousands separator check button
-#: ../data/preferences.ui.h:19
+#: ../data/preferences.ui.h:20
 msgid "Show _thousands separators"
 msgstr "천단위 자리수 구분 표시(_T)"
 
@@ -487,14 +497,17 @@ msgid ""
 " to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
 "Calc and part of the MATE Desktop Environment. If you would like to know "
 "more about MATE and MATE Calc, please visit the project's home page. </p>"
-msgstr "<p> 마테 계산기는 금융, 로직, 과학 모드를 지원하는 강력한 계산기입니다. 높은 정밀도를 위해서 다중 정밀 패키지를 사용합니다.</p> <p> 마테 계산기는 그놈 계산기의 포크이며 마테 데스크톱 환경의 일부입니다. 마테와 마테 계산기에 관해 더 알고자 하시면 , 마테 프로젝트의 홈페이지를 방문해보세요.</p>"
+msgstr ""
+"<p> 마테 계산기는 금융, 로직, 과학 모드를 지원하는 강력한 계산기입니다. 높은 정밀도를 위해서 다중 정밀 패키지를 "
+"사용합니다.</p> <p> 마테 계산기는 그놈 계산기의 포크이며 마테 데스크톱 환경의 일부입니다. 마테와 마테 계산기에 관해 더 알고자 "
+"하시면 , 마테 프로젝트의 홈페이지를 방문해보세요.</p>"
 
 #: ../data/mate-calc.desktop.in.h:1
 msgid "MATE Calculator"
 msgstr "마테 계산기 "
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:533
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:562
 msgid "Calculator"
 msgstr "계산기"
 
@@ -752,7 +765,9 @@ msgstr "오류: 기간은 0보다 커야 합니다"
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr "사용법:\n  %s — 수학 계산을 합니다"
+msgstr ""
+"사용법:\n"
+"  %s — 수학 계산을 합니다"
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
@@ -764,7 +779,12 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr "도움말 옵션:\n  -v, --version                   릴리스 버전을 표시합니다\n  -h, -?, --help                  도움말 옵션을 표시합니다\n  --help-all                      모든 도움말 옵션을 표시합니다\n  --help-gtk                      GTK+ 옵션을 표시합니다"
+msgstr ""
+"도움말 옵션:\n"
+"  -v, --version                   릴리스 버전을 표시합니다\n"
+"  -h, -?, --help                  도움말 옵션을 표시합니다\n"
+"  --help-all                      모든 도움말 옵션을 표시합니다\n"
+"  --help-gtk                      GTK+ 옵션을 표시합니다"
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
@@ -778,7 +798,14 @@ msgid ""
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr "GTK+ 옵션:\n  --class=CLASS                   창 관리자가 사용하는 프로그램 클래스\n  --name=NAME                     창 관리자가 사용하는 프로그램 이름\n  --screen=SCREEN                 사용할 X 스크린\n  --sync                          동기식 X 호출 사용\n  --gtk-module=MODULES            추가 GTK+ 모듈 읽어들이기\n  --g-fatal-warnings              모든 경고를 치명적으로 취급"
+msgstr ""
+"GTK+ 옵션:\n"
+"  --class=CLASS                   창 관리자가 사용하는 프로그램 클래스\n"
+"  --name=NAME                     창 관리자가 사용하는 프로그램 이름\n"
+"  --screen=SCREEN                 사용할 X 스크린\n"
+"  --sync                          동기식 X 호출 사용\n"
+"  --gtk-module=MODULES            추가 GTK+ 모듈 읽어들이기\n"
+"  --g-fatal-warnings              모든 경고를 치명적으로 취급"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -786,7 +813,9 @@ msgstr "GTK+ 옵션:\n  --class=CLASS                   창 관리자가 사용�
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr "프로그램 옵션\n  -s, --solve <equation>          주어진 식을 풉니다"
+msgstr ""
+"프로그램 옵션\n"
+"  -s, --solve <equation>          주어진 식을 풉니다"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:156
@@ -981,12 +1010,12 @@ msgid "Boolean NOT"
 msgstr "불리언 NOT"
 
 #. Tooltip for the integer component button
-#: ../src/math-buttons.c:205 ../src/math-buttons.c:994
+#: ../src/math-buttons.c:205 ../src/math-buttons.c:992
 msgid "Integer Component"
 msgstr "정수 부분"
 
 #. Tooltip for the fractional component button
-#: ../src/math-buttons.c:208 ../src/math-buttons.c:996
+#: ../src/math-buttons.c:208 ../src/math-buttons.c:994
 msgid "Fractional Component"
 msgstr "분수 부분"
 
@@ -1076,58 +1105,58 @@ msgid "Straight Line Depreciation"
 msgstr "정액 감가상각"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: ../src/math-buttons.c:611
+#: ../src/math-buttons.c:624
 msgid "Binary"
 msgstr "2진수"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: ../src/math-buttons.c:615
+#: ../src/math-buttons.c:628
 msgid "Octal"
 msgstr "8진수"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: ../src/math-buttons.c:619
+#: ../src/math-buttons.c:632
 msgid "Decimal"
-msgstr "십진수"
+msgstr "10진수"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: ../src/math-buttons.c:623
+#: ../src/math-buttons.c:636
 msgid "Hexadecimal"
 msgstr "16진수"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: ../src/math-buttons.c:905 ../src/math-buttons.c:948
+#: ../src/math-buttons.c:903 ../src/math-buttons.c:946
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] "_%d번"
+msgstr[0] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: ../src/math-buttons.c:909 ../src/math-buttons.c:952
+#: ../src/math-buttons.c:907 ../src/math-buttons.c:950
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] "%d번"
+msgstr[0] ""
 
 #. Tooltip for the round button
-#: ../src/math-buttons.c:998
+#: ../src/math-buttons.c:996
 msgid "Round"
 msgstr "반올림"
 
 #. Tooltip for the floor button
-#: ../src/math-buttons.c:1000
+#: ../src/math-buttons.c:998
 msgid "Floor"
 msgstr "내림"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:1002
+#: ../src/math-buttons.c:1000
 msgid "Ceiling"
 msgstr "올림"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:1004
+#: ../src/math-buttons.c:1002
 msgid "Sign"
 msgstr "부호"
 
@@ -1220,45 +1249,45 @@ msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
 #. grads
-#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
+#: ../src/math-preferences.c:255 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "육십분"
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
+#: ../src/math-preferences.c:259 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "라디안"
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
+#: ../src/math-preferences.c:263 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "그라디안"
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
 #. number 1.234×10^99)
-#: ../src/math-preferences.c:270
+#: ../src/math-preferences.c:273
 msgid "Automatic"
 msgstr "자동"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:274
+#: ../src/math-preferences.c:277
 msgid "Fixed"
 msgstr "고정"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:278
+#: ../src/math-preferences.c:281
 msgid "Scientific"
 msgstr "과학"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:282
+#: ../src/math-preferences.c:285
 msgid "Engineering"
 msgstr "공학"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:293
+#: ../src/math-preferences.c:296
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "%d자리 십진수 표시(_P)"
@@ -1271,7 +1300,13 @@ msgstr "도움말 파일을 열 수 없습니다"
 #. The translator credits. Please translate this with your name(s).
 #: ../src/math-window.c:239
 msgid "translator-credits"
-msgstr "차영호 <ganadist at gmail dot com>\n류창우 <cwryu@debian.org>\nMATE Desktop Environment Team <https://www.transifex.com/mate/teams/13566/ko/>"
+msgstr ""
+"Elex https://launchpad.net/~mysticzizone\n"
+"Valmantas Palikša https://launchpad.net/~walmis\n"
+"Yoo Duk Nam https://launchpad.net/~yoo2001818\n"
+"onlyeriko https://launchpad.net/~onlyeriko\n"
+"Seong-ho Cho <darkcircle.0426@gmail.com>\n"
+"MATE Desktop Environment Team <https://www.transifex.com/mate/teams/13566/ko/>"
 
 #. The license this software is under (GPL2+)
 #: ../src/math-window.c:246
@@ -1289,7 +1324,12 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr "계산기는 자유 소프트웨어로 자유 소프트웨어 재단의 GNU GPL 버전 2나 그 이후 버전(사용자 선택)에 따라 재배포하고 수정할 수 있습니다. 계산기는 유용하기를 바라면서 배포되지만 \"어떠한 보증도 없습니다.\" 심지어 \"상품성이나 특정 목적에 적합성\"에 대한 묵시적 보증도 없습니다. 더 자세한 내용은 GNU GPL을 보십시오. GNU GPL 사본이 계산기꾸러미에 포함되어 있어야 합니다. 없다면 자유 소프트웨어 재단 151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA 으로 알려주세요."
+msgstr ""
+"계산기는 자유 소프트웨어로 자유 소프트웨어 재단의 GNU GPL 버전 2나 그 이후 버전(사용자 선택)에 따라 재배포하고 수정할 수 "
+"있습니다. 계산기는 유용하기를 바라면서 배포되지만 \"어떠한 보증도 없습니다.\" 심지어 \"상품성이나 특정 목적에 적합성\"에 대한 "
+"묵시적 보증도 없습니다. 더 자세한 내용은 GNU GPL을 보십시오. GNU GPL 사본이 계산기꾸러미에 포함되어 있어야 합니다. 없다면"
+" 자유 소프트웨어 재단 151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA 으로"
+" 알려주세요."
 
 #: ../src/math-window.c:261
 msgid "mate-calc"
@@ -1300,44 +1340,72 @@ msgid "Calculator with financial and scientific modes."
 msgstr "재무 및 과학 모드가 지원되는 계산기."
 
 #. Calculator menu
-#: ../src/math-window.c:369
+#: ../src/math-window.c:395
 msgid "_Calculator"
 msgstr "계산기(_C)"
 
 #. Mode menu
-#: ../src/math-window.c:371
+#: ../src/math-window.c:397
 msgid "_Mode"
 msgstr "종류(_M)"
 
 #. Help menu label
-#: ../src/math-window.c:373
+#: ../src/math-window.c:399
 msgid "_Help"
 msgstr "도움말(_H)"
 
 #. Basic menu label
-#: ../src/math-window.c:375
+#: ../src/math-window.c:401
 msgid "_Basic"
 msgstr "기본(_B)"
 
 #. Advanced menu label
-#: ../src/math-window.c:377
+#: ../src/math-window.c:403
 msgid "_Advanced"
 msgstr "고급(_A)"
 
 #. Financial menu label
-#: ../src/math-window.c:379
+#: ../src/math-window.c:405
 msgid "_Financial"
 msgstr "재무(_F)"
 
 #. Programming menu label
-#: ../src/math-window.c:381
+#: ../src/math-window.c:407
 msgid "_Programming"
 msgstr "프로그래밍(_P)"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:383
+#: ../src/math-window.c:409
 msgid "_Contents"
 msgstr "콘텐츠(_C)"
+
+#: ../src/math-window.c:412
+msgid "_Copy"
+msgstr "복사(_C)"
+
+#: ../src/math-window.c:414
+msgid "_Paste"
+msgstr "붙여넣기(_P)"
+
+#: ../src/math-window.c:416
+msgid "_Undo"
+msgstr "실행 취소(_U)"
+
+#: ../src/math-window.c:418
+msgid "_Redo"
+msgstr "재실행(_R)"
+
+#: ../src/math-window.c:421
+msgid "_Preferences"
+msgstr "기본 설정(_P)"
+
+#: ../src/math-window.c:423
+msgid "_Quit"
+msgstr "끝내기(_Q)"
+
+#: ../src/math-window.c:440
+msgid "_About"
+msgstr "정보(_A)"
 
 #. Translators: Error displayed when boolean AND attempted on non-integer
 #. values
@@ -2085,7 +2153,7 @@ msgstr "microsecond,microseconds,us,μs,마이크로초"
 
 #: ../src/unit-manager.c:97
 msgid "Celsius"
-msgstr "섭씨"
+msgstr "섭"
 
 #: ../src/unit-manager.c:97
 #, c-format
@@ -2157,7 +2225,7 @@ msgstr "면적"
 
 #: ../src/unit-manager.c:112
 msgid "Volume"
-msgstr "부피"
+msgstr "음량"
 
 #: ../src/unit-manager.c:113
 msgid "Weight"

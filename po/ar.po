@@ -1,27 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Ahmad M. Zawawi <azawawi@emirates.net.ae>, 2003
-# Anas Afif Emad <anas.e87@gmail.com>, 2008
-# Arafat Medini <lumina@silverpen.de>, 2003
-# Djihed Afifi <djihed@gmail.com>, 2006
-# Khaled Hosny <khaledhosny@eglug.org>, 2006-2010
-# mauron, 2013
-# Mosaab Alzoubi <moceap@hotmail.com>, 2013
-# Mosaab Alzoubi <moceap@hotmail.com>, 2013
-# noureddin <noureddin@barid.com>, 2012
-# noureddin <noureddin@barid.com>, 2012
-# Usama Akkad <uahello@gmail.com>, 2010-2011
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-06 15:01+0300\n"
-"PO-Revision-Date: 2018-02-06 12:05+0000\n"
-"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
-"Language-Team: Arabic (http://www.transifex.com/mate/MATE/language/ar/)\n"
+"POT-Creation-Date: 2018-06-14 15:15+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: mauron, 2018\n"
+"Language-Team: Arabic (https://www.transifex.com/mate/teams/13566/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,92 +19,92 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #. Accessible name for the factorize button
-#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:8
+#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:9
 msgid "Factorize"
 msgstr "حلّل"
 
 #. Label on the solve button (clicking this solves the displayed calculation)
 #: ../data/buttons-advanced.ui.h:4 ../data/buttons-basic.ui.h:2
-#: ../data/buttons-financial.ui.h:76 ../data/buttons-programming.ui.h:12
+#: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
 msgid "="
 msgstr "="
 
 #: ../data/buttons-advanced.ui.h:5 ../data/buttons-basic.ui.h:3
-#: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
+#: ../data/buttons-financial.ui.h:78 ../data/buttons-programming.ui.h:14
 msgid "Clear"
-msgstr "امسح"
-
-#. Accessible name for the subscript mode button
-#: ../data/buttons-advanced.ui.h:7 ../data/buttons-programming.ui.h:15
-msgid "Subscript"
-msgstr "مُنخفض"
-
-#. Accessible name for the superscript mode button
-#: ../data/buttons-advanced.ui.h:9 ../data/buttons-programming.ui.h:17
-msgid "Superscript"
-msgstr "مُرتفع"
+msgstr "مسح"
 
 #. Accessible name for the scientific exponent button
-#: ../data/buttons-advanced.ui.h:11
+#: ../data/buttons-advanced.ui.h:7
 msgid "Scientific Exponent"
 msgstr "أُسٌ علمي"
+
+#. The label on the memory button
+#: ../data/buttons-advanced.ui.h:9 ../data/buttons-financial.ui.h:73
+#: ../data/buttons-programming.ui.h:18
+msgid "x"
+msgstr "س"
 
 #. Accessible name for the memory button
 #. Accessible name for the memory value button
 #. Tooltip for the memory button
-#: ../data/buttons-advanced.ui.h:13 ../data/buttons-financial.ui.h:72
+#: ../data/buttons-advanced.ui.h:11 ../data/buttons-financial.ui.h:75
 #: ../src/math-buttons.c:232
 msgid "Memory"
 msgstr "الذاكرة"
 
-#. The label on the memory button
-#: ../data/buttons-advanced.ui.h:15 ../data/buttons-financial.ui.h:74
-#: ../data/buttons-programming.ui.h:21
-msgid "x"
-msgstr "س"
-
 #. Accessible name for the exponentiation (x to the power of y) button
-#: ../data/buttons-advanced.ui.h:17 ../data/buttons-basic.ui.h:5
-#: ../data/buttons-financial.ui.h:100 ../data/buttons-programming.ui.h:33
+#: ../data/buttons-advanced.ui.h:13 ../data/buttons-basic.ui.h:6
+#: ../data/buttons-financial.ui.h:100 ../data/buttons-programming.ui.h:32
 msgid "Exponent"
 msgstr "أس"
 
-#: ../data/buttons-advanced.ui.h:18 ../data/buttons-basic.ui.h:6
-#: ../data/buttons-financial.ui.h:98
+#: ../data/buttons-advanced.ui.h:14 ../data/buttons-basic.ui.h:4
+#: ../data/buttons-financial.ui.h:101
 msgid "Undo"
 msgstr "تراجَع"
 
-#: ../data/buttons-advanced.ui.h:19
-msgid "acos"
-msgstr "التّجيب العكسي"
-
-#: ../data/buttons-advanced.ui.h:20
+#: ../data/buttons-advanced.ui.h:15
 msgid "asin"
 msgstr "الجيب العكسي"
 
-#: ../data/buttons-advanced.ui.h:21
+#: ../data/buttons-advanced.ui.h:16
 msgid "atan"
 msgstr "الظّل العكسي"
 
+#: ../data/buttons-advanced.ui.h:17
+msgid "acos"
+msgstr "التّجيب العكسي"
+
 #. Accessible name for the store value button
-#: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:19
+#: ../data/buttons-advanced.ui.h:19 ../data/buttons-programming.ui.h:20
 msgid "Store"
 msgstr "احفظ"
 
 #. Accessible name for the inverse button
-#: ../data/buttons-advanced.ui.h:25 ../data/buttons-programming.ui.h:31
+#: ../data/buttons-advanced.ui.h:21 ../data/buttons-programming.ui.h:30
 msgid "Inverse"
 msgstr "مقلوب"
 
 #. Accessible name for the factorial button
-#: ../data/buttons-advanced.ui.h:27 ../data/buttons-programming.ui.h:29
+#: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:28
 msgid "Factorial"
 msgstr "عاملي"
 
 #. Accessible name for the absolute value button
-#: ../data/buttons-advanced.ui.h:29 ../data/buttons-programming.ui.h:10
+#: ../data/buttons-advanced.ui.h:25 ../data/buttons-programming.ui.h:11
 msgid "Absolute Value"
 msgstr "القيمة المُطلقة"
+
+#. Accessible name for the superscript mode button
+#: ../data/buttons-advanced.ui.h:27 ../data/buttons-programming.ui.h:16
+msgid "Superscript"
+msgstr "مُرتفع"
+
+#. Accessible name for the subscript mode button
+#: ../data/buttons-advanced.ui.h:29 ../data/buttons-programming.ui.h:34
+msgid "Subscript"
+msgstr "مخطوط منخفض"
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
@@ -122,222 +112,247 @@ msgstr "القيمة المُطلقة"
 msgid "Compounding Term"
 msgstr "الرّبح المُركّب"
 
+#: ../data/buttons-financial.ui.h:3 ../data/buttons-programming.ui.h:3
+msgid "_Cancel"
+msgstr "أل_غ"
+
 #. Payment Period Dialog: Button to calculate result
-#: ../data/buttons-financial.ui.h:4
+#: ../data/buttons-financial.ui.h:5
 msgid "C_alculate"
 msgstr "ا_حسُب"
 
-#. Periodic Interest Rate Dialog: Label before present value input
-#: ../data/buttons-financial.ui.h:6
-msgid "Present _Value:"
-msgstr "القيمة ال_حالية:"
-
-#. Payment Period Dialog: Label before periodic interest rate input
-#: ../data/buttons-financial.ui.h:8
-msgid "Periodic Interest _Rate:"
-msgstr "معدل الرّبح ال_دّوري:"
-
 #. Compounding Term Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:10
+#: ../data/buttons-financial.ui.h:7
 msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr "يقومُ بحساب عدد الفترات المرّكبة و الضرورية للوصول من القيمة الحالية إلى القيمة المُستقبلية استثماريًا بربحٍ دوري. "
+msgstr ""
+"يقومُ بحساب عدد الفترات المرّكبة و الضرورية للوصول من القيمة الحالية إلى "
+"القيمة المُستقبلية استثماريًا بربحٍ دوري. "
+
+#. Payment Period Dialog: Label before periodic interest rate input
+#: ../data/buttons-financial.ui.h:9
+msgid "Periodic Interest _Rate:"
+msgstr "معدل الرّبح ال_دّوري:"
 
 #. Periodic Interest Rate Dialog: Label before future value input
-#: ../data/buttons-financial.ui.h:12
+#: ../data/buttons-financial.ui.h:11
 msgid "_Future Value:"
 msgstr "القيمة المُ_ستقبلية:"
 
+#. Periodic Interest Rate Dialog: Label before present value input
+#: ../data/buttons-financial.ui.h:13
+msgid "Present _Value:"
+msgstr "القيمة ال_حالية:"
+
 #. Title of Double-Declining Depreciation dialog
-#: ../data/buttons-financial.ui.h:14
+#: ../data/buttons-financial.ui.h:15
 msgid "Double-Declining Depreciation"
 msgstr "الاستهلاك المُتناقص المُزدوج"
 
 #. Double-Declining Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:16
+#: ../data/buttons-financial.ui.h:17
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
-msgstr "يقومُ بحساب بدل الاستهلاك على الأصول لدورة زمنية مُحدّدة، باستخدام طريقة الرّصيد المُتناقص المُزدوج."
-
-#. Gross Profit Margin Dialog: Label before cost input
-#: ../data/buttons-financial.ui.h:18
-msgid "C_ost:"
-msgstr "ال_كُلفة:"
+msgstr ""
+"يقومُ بحساب بدل الاستهلاك على الأصول لدورة زمنية مُحدّدة، باستخدام طريقة "
+"الرّصيد المُتناقص المُزدوج."
 
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:20
+#: ../data/buttons-financial.ui.h:19
 msgid "_Life:"
 msgstr "المُدّة الكاملة:"
 
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:22
+#: ../data/buttons-financial.ui.h:21
 msgid "_Period:"
 msgstr "الدّ_ورة:"
 
+#. Gross Profit Margin Dialog: Label before cost input
+#: ../data/buttons-financial.ui.h:23
+msgid "C_ost:"
+msgstr "ال_كُلفة:"
+
 #. Title of Future Value dialog
 #. Tooltip for the future value button
-#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.c:262
+#: ../data/buttons-financial.ui.h:25 ../src/math-buttons.c:262
 msgid "Future Value"
 msgstr "القيمة المُستقبلية"
 
+#. Present Value Dialog: Label before number of periods input
+#: ../data/buttons-financial.ui.h:27
+msgid "_Number of Periods:"
+msgstr "ع_دد الدّورات:"
+
 #. Future Value Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:26
+#: ../data/buttons-financial.ui.h:29
 msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
-msgstr "يقومُ بحساب القيمة المُستقبلية لعملية استثمارية بناء على سلسلة من الدّفعات المتساوية بُمعدّل ربحٍ دوري على عددٍ من الدّورات الدّفعية ضمن الأجل."
+msgstr ""
+"يقومُ بحساب القيمة المُستقبلية لعملية استثمارية بناء على سلسلة من الدّفعات "
+"المتساوية بُمعدّل ربحٍ دوري على عددٍ من الدّورات الدّفعية ضمن الأجل."
 
 #. Payment Period Dialog: Label before periodic payment input
-#: ../data/buttons-financial.ui.h:28
+#: ../data/buttons-financial.ui.h:31
 msgid "_Periodic Payment:"
 msgstr "الدّفع ال_دّوري:"
 
-#. Present Value Dialog: Label before number of periods input
-#: ../data/buttons-financial.ui.h:30
-msgid "_Number of Periods:"
-msgstr "ع_دد الدّورات:"
-
 #. Title of Gross Profit Margin dialog
 #. Tooltip for the gross profit margin button
-#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:283
+#: ../data/buttons-financial.ui.h:33 ../src/math-buttons.c:283
 msgid "Gross Profit Margin"
 msgstr "هامش الرّبح الإجمالي"
 
 #. Gross Profit Margin Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:34
+#: ../data/buttons-financial.ui.h:35
 msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
-msgstr "يقومُ بحساب سعر إعادة المبيع للمنتج ، اعتمادًا على كُلفة المنتج و هامش الربح الإجمالي المطلوب."
+msgstr ""
+"يقومُ بحساب سعر إعادة المبيع للمنتج ، اعتمادًا على كُلفة المنتج و هامش الربح"
+" الإجمالي المطلوب."
 
 #. Gross Profit Margin Dialog: Label before margin input
-#: ../data/buttons-financial.ui.h:36
+#: ../data/buttons-financial.ui.h:37
 msgid "_Margin:"
 msgstr "ال_هامش:"
 
 #. Title of Periodic Payment dialog
 #. Tooltip for the periodic payment button
-#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:280
+#: ../data/buttons-financial.ui.h:39 ../src/math-buttons.c:280
 msgid "Periodic Payment"
 msgstr "الدّفع الدّوري"
 
 #. Periodic Payment Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:40
+#: ../data/buttons-financial.ui.h:41
 msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
 msgstr "يحسب مقدار الدفع الدوري لقرض، حيث الدفعات تؤدى في نهاية كل دورة دفع."
 
-#. Periodic Payment Dialog: Label before principal input
-#: ../data/buttons-financial.ui.h:42
-msgid "_Principal:"
-msgstr "رأس الم_ال:"
-
 #. Periodic Interest Rate Dialog: Label before term input
-#: ../data/buttons-financial.ui.h:44
+#: ../data/buttons-financial.ui.h:43
 msgid "_Term:"
 msgstr "الأ_جل:"
 
+#. Periodic Payment Dialog: Label before principal input
+#: ../data/buttons-financial.ui.h:45
+msgid "_Principal:"
+msgstr "رأس الم_ال:"
+
 #. Title of Present Value dialog
 #. Tooltip for the present value button
-#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:277
+#: ../data/buttons-financial.ui.h:47 ../src/math-buttons.c:277
 msgid "Present Value"
 msgstr "القيمة الحالية"
 
 #. Present Value Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:48
+#: ../data/buttons-financial.ui.h:49
 msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr "يقومُ بحساب القيمة الحالية لعملية استثمارية بناء على سلسلة من الدّفعات المتساوية بُمعدّل ربحٍ دوري على عددٍ من الدّورات الدّفعية ضمن الأجل."
+msgstr ""
+"يقومُ بحساب القيمة الحالية لعملية استثمارية بناء على سلسلة من الدّفعات "
+"المتساوية بُمعدّل ربحٍ دوري على عددٍ من الدّورات الدّفعية ضمن الأجل."
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
-#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.c:274
+#: ../data/buttons-financial.ui.h:51 ../src/math-buttons.c:274
 msgid "Periodic Interest Rate"
 msgstr "معدّل الرّبح الدّوري"
 
 #. Periodic Interest Rate Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:52
+#: ../data/buttons-financial.ui.h:53
 msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
-msgstr "يقومُ بحساب الرّبح الدّوري الضّروري لزيادة القيمة المُستقبلية استثماريًا، أكثر من عدد الدّوريات المُركّبة."
+msgstr ""
+"يقومُ بحساب الرّبح الدّوري الضّروري لزيادة القيمة المُستقبلية استثماريًا، "
+"أكثر من عدد الدّوريات المُركّبة."
 
 #. Title of Straight-Line Depreciation dialog
-#: ../data/buttons-financial.ui.h:54
+#: ../data/buttons-financial.ui.h:55
 msgid "Straight-Line Depreciation"
 msgstr "الاستهلاك الثّابت"
 
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:56
+#: ../data/buttons-financial.ui.h:57
 msgid "_Cost:"
 msgstr "الكُ_لفة:"
 
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:58
+#: ../data/buttons-financial.ui.h:59
 msgid "_Salvage:"
 msgstr "المُ_سترَد:"
 
 #. Straight-Line Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:60
+#: ../data/buttons-financial.ui.h:61
 msgid ""
 "Calculates the straight-line depreciation of an asset for one period. The "
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr "يقومُ بحساب الاستهلاك الثّابت للأصل في فترة واحدة. تُقسّم طريقة الاستهلاك الثّابت كُلفة الاستهلاك بالتّساوي على العمر الإنتاجي للأصل. حيث يتمثّل العمر الإنتاجي بعدد الفترات، سنوات غالبًا، و فوقها الرّصيد المُستَهلك."
+msgstr ""
+"يقومُ بحساب الاستهلاك الثّابت للأصل في فترة واحدة. تُقسّم طريقة الاستهلاك "
+"الثّابت كُلفة الاستهلاك بالتّساوي على العمر الإنتاجي للأصل. حيث يتمثّل العمر"
+" الإنتاجي بعدد الفترات، سنوات غالبًا، و فوقها الرّصيد المُستَهلك."
 
 #. Title of Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:62
+#: ../data/buttons-financial.ui.h:63
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "مجمُوع الاستهلاك السّنوي"
 
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:64
+#: ../data/buttons-financial.ui.h:65
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
 " accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
-msgstr "يقومُ بحساب استهلاك الأصل في فترة مُحدّدة من الزّمن، و ذلك باستخدام طريقة مجمُوع الاستهلاك السّنوي. حيث تعتبر هذه الطّريقة التّسارع في مُعدّل الاستهلاك، أي أنّ الاستهلاك الأكبر يحدث في الفترات السّابقة. حيث يتمثّل العمر الإنتاجي بعدد الفترات، سنوات غالبًا، و فوقها الرّصيد المُستَهلك."
+msgstr ""
+"يقومُ بحساب استهلاك الأصل في فترة مُحدّدة من الزّمن، و ذلك باستخدام طريقة "
+"مجمُوع الاستهلاك السّنوي. حيث تعتبر هذه الطّريقة التّسارع في مُعدّل "
+"الاستهلاك، أي أنّ الاستهلاك الأكبر يحدث في الفترات السّابقة. حيث يتمثّل "
+"العمر الإنتاجي بعدد الفترات، سنوات غالبًا، و فوقها الرّصيد المُستَهلك."
 
 #. Title of Payment Period dialog
-#: ../data/buttons-financial.ui.h:66
+#: ../data/buttons-financial.ui.h:67
 msgid "Payment Period"
 msgstr "دورة الدّفع"
 
 #. Payment Period Dialog: Label before future value input
-#: ../data/buttons-financial.ui.h:68
+#: ../data/buttons-financial.ui.h:69
 msgid "Future _Value:"
 msgstr "القيمة المُ_ستقبلية:"
 
 #. Payment Period Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:70
+#: ../data/buttons-financial.ui.h:71
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
 "of an ordinary annuity, to accumulate a future value, at a periodic interest"
 " rate."
-msgstr "يقوم بحساب عدد الدّورات الرّبحية الضّرورية ضمن المعاش العادي، بما يراكم القيمة المُستقبلية، و ذلك خلال معدّل الحصة الدّورية."
+msgstr ""
+"يقوم بحساب عدد الدّورات الرّبحية الضّرورية ضمن المعاش العادي، بما يراكم "
+"القيمة المُستقبلية، و ذلك خلال معدّل الحصة الدّورية."
 
 #. Calculates the number of compounding periods necessary to increase an
 #. investment of present value pv to a future value of fv, at a fixed interest
 #. rate of int per compounding period. See also:
 #. http://en.wikipedia.org/wiki/Compound_interest
-#: ../data/buttons-financial.ui.h:79
+#: ../data/buttons-financial.ui.h:80
 msgid "Ctrm"
 msgstr "ممرك"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
 #. time, using the double-declining balance method. See also:
 #. http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:81
+#: ../data/buttons-financial.ui.h:82
 msgid "Ddb"
 msgstr "الاستهلاك المُتناقص المُزدوج"
 
@@ -345,7 +360,7 @@ msgstr "الاستهلاك المُتناقص المُزدوج"
 #. payments, each of amount pmt, at a periodic interest rate of int, over the
 #. number of payment periods in the term. See also:
 #. http://en.wikipedia.org/wiki/Future_value
-#: ../data/buttons-financial.ui.h:83
+#: ../data/buttons-financial.ui.h:84
 msgid "Fv"
 msgstr "القيمة المُستقبلية"
 
@@ -353,13 +368,13 @@ msgstr "القيمة المُستقبلية"
 #. of an ordinary annuity, to accumulate a future value of fv, at a periodic
 #. interest rate of int. Each payment is equal to amount pmt. See also:
 #. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
-#: ../data/buttons-financial.ui.h:85
+#: ../data/buttons-financial.ui.h:86
 msgid "Term"
 msgstr "دورة الدّفع"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
 #. time, using the Sum-Of-The-Years
-#: ../data/buttons-financial.ui.h:87
+#: ../data/buttons-financial.ui.h:88
 msgid "Syd"
 msgstr "مجمُوع الاستهلاك السّنوي"
 
@@ -369,14 +384,14 @@ msgstr "مجمُوع الاستهلاك السّنوي"
 #. asset. The useful life is the number of periods, typically years, over
 #. which an asset is depreciated. See also:
 #. http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:89
+#: ../data/buttons-financial.ui.h:90
 msgid "Sln"
 msgstr "الاستهلاك الثّابت"
 
 #. Calculates the periodic interest necessary to increase an investment of
 #. present value pv to a future value of fv, over the number of compounding
 #. periods in term. See also: http://en.wikipedia.org/wiki/Interest
-#: ../data/buttons-financial.ui.h:91
+#: ../data/buttons-financial.ui.h:92
 msgid "Rate"
 msgstr "معدّل الرّبح الدّوري"
 
@@ -384,21 +399,21 @@ msgstr "معدّل الرّبح الدّوري"
 #. payments, each of amount pmt, discounted at a periodic interest rate of
 #. int, over the number of payment periods in the term. See also:
 #. http://en.wikipedia.org/wiki/Present_value
-#: ../data/buttons-financial.ui.h:93
+#: ../data/buttons-financial.ui.h:94
 msgid "Pv"
 msgstr "القيمة الحالية"
 
 #. Calculates the amount of the periodic payment of a loan, where payments are
 #. made at the end of each payment period. See also:
 #. http://en.wikipedia.org/wiki/Amortization_schedule
-#: ../data/buttons-financial.ui.h:95
+#: ../data/buttons-financial.ui.h:96
 msgid "Pmt"
 msgstr "الدّفع الدّوري"
 
 #. Calculates the resale price of a product, based on the product cost and the
 #. wanted gross profit margin. See also:
 #. http://en.wikipedia.org/wiki/Gross_profit_margin
-#: ../data/buttons-financial.ui.h:97
+#: ../data/buttons-financial.ui.h:98
 msgid "Gpm"
 msgstr "هامش الرّبح الإجمالي"
 
@@ -409,27 +424,27 @@ msgid "Insert Character Code"
 msgstr "أدرِج رمز المِحرف"
 
 #. Insert ASCII dialog: Button to insert selected character
-#: ../data/buttons-programming.ui.h:4
+#: ../data/buttons-programming.ui.h:5
 msgid "_Insert"
 msgstr "_أدرج"
 
 #. Insert ASCII dialog: Label before character entry
-#: ../data/buttons-programming.ui.h:6
+#: ../data/buttons-programming.ui.h:7
 msgid "Ch_aracter:"
 msgstr "الم_حرف:"
 
 #. Accessible name for the shift left button
-#: ../data/buttons-programming.ui.h:23
+#: ../data/buttons-programming.ui.h:22
 msgid "Shift Left"
 msgstr "نقل لليسار"
 
 #. Accessible name for the shift right button
-#: ../data/buttons-programming.ui.h:25
+#: ../data/buttons-programming.ui.h:24
 msgid "Shift Right"
 msgstr "نقل لليمين"
 
 #. Accessible name for the insert character button
-#: ../data/buttons-programming.ui.h:27
+#: ../data/buttons-programming.ui.h:26
 msgid "Insert Character"
 msgstr "أدرِج محرِفًا"
 
@@ -456,30 +471,34 @@ msgstr "64 بت"
 #. Title of preferences dialog
 #: ../data/preferences.ui.h:9 ../src/math-preferences.c:238
 msgid "Preferences"
-msgstr "التّفضيلات"
+msgstr "تفضيلات"
+
+#: ../data/preferences.ui.h:10
+msgid "_Close"
+msgstr "_إغلاق"
 
 #. Preferences dialog: Label for angle unit combo box
-#: ../data/preferences.ui.h:11
+#: ../data/preferences.ui.h:12
 msgid "_Angle units:"
 msgstr "وحدات ال_زّوايا:"
 
 #. Preferences dialog: Label for display format combo box
-#: ../data/preferences.ui.h:13
+#: ../data/preferences.ui.h:14
 msgid "Number _Format:"
 msgstr "_صيغة الأرقام:"
 
 #. Preferences dialog: label for word size combo box
-#: ../data/preferences.ui.h:15
+#: ../data/preferences.ui.h:16
 msgid "Word _size:"
 msgstr "حجم ال_كلمة:"
 
 #. Preferences dialog: label for show trailing zeroes check button
-#: ../data/preferences.ui.h:17
+#: ../data/preferences.ui.h:18
 msgid "Show trailing _zeroes"
 msgstr "أظهر الأ_صفار الذّيلية"
 
 #. Preferences dialog: label for show thousands separator check button
-#: ../data/preferences.ui.h:19
+#: ../data/preferences.ui.h:20
 msgid "Show _thousands separators"
 msgstr "أظهر ال_فواصل الألفية"
 
@@ -501,7 +520,7 @@ msgid "MATE Calculator"
 msgstr "حاسبة متّة"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:533
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:562
 msgid "Calculator"
 msgstr "الحاسِبة"
 
@@ -759,7 +778,9 @@ msgstr "خطأ: الرّقم الدّال على زمن يجب أن يكون م�
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr "الاستخدام:\n  %s — يؤدّي حسابات رياضية"
+msgstr ""
+"الاستخدام:\n"
+"  %s — يؤدّي حسابات رياضية"
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
@@ -771,7 +792,12 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr "خيارات المساعدة:\n  -v, --version                   أظهر رقم الإصدارة\n  -h, -?, --help                  أظهر خيارات المساعدة\n  --help-all                      أظهر كلّ خيارات المساعدة\n  --help-gtk                     أظهر خيارات جتك+"
+msgstr ""
+"خيارات المساعدة:\n"
+"  -v, --version                   أظهر رقم الإصدارة\n"
+"  -h, -?, --help                  أظهر خيارات المساعدة\n"
+"  --help-all                      أظهر كلّ خيارات المساعدة\n"
+"  --help-gtk                     أظهر خيارات جتك+"
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
@@ -785,7 +811,14 @@ msgid ""
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr "خيارات جتك+:\n  --class=CLASS                   فئة البرنامج في مدير النّوافذ\n  --name=NAME                    اسم البرنامج في مدير النّوافذ\n  --screen=SCREEN                 شاشة خادوم X لاستخدامها\n  --sync                          مزامنة استدعاءات خادوم X\n  --gtk-module=MODULES            تحميل وحدات جتك+ إضافية\n  --g-fatal-warnings              جعل جميع التّحذيرات خطيرة"
+msgstr ""
+"خيارات جتك+:\n"
+"  --class=CLASS                   فئة البرنامج في مدير النّوافذ\n"
+"  --name=NAME                    اسم البرنامج في مدير النّوافذ\n"
+"  --screen=SCREEN                 شاشة خادوم X لاستخدامها\n"
+"  --sync                          مزامنة استدعاءات خادوم X\n"
+"  --gtk-module=MODULES            تحميل وحدات جتك+ إضافية\n"
+"  --g-fatal-warnings              جعل جميع التّحذيرات خطيرة"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -793,7 +826,9 @@ msgstr "خيارات جتك+:\n  --class=CLASS                   فئة البر
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr "خيارات التّطبيق:\n  -s, --solve <معادلة>          لحلّ المُعادلة المعطاة"
+msgstr ""
+"خيارات التّطبيق:\n"
+"  -s, --solve <معادلة>          لحلّ المُعادلة المعطاة"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:156
@@ -925,7 +960,7 @@ msgstr "جيب"
 #. Tooltip for the cosine button
 #: ../src/math-buttons.c:166
 msgid "Cosine"
-msgstr "تجيب"
+msgstr "جيب تمام"
 
 #. Tooltip for the tangent button
 #: ../src/math-buttons.c:169
@@ -988,12 +1023,12 @@ msgid "Boolean NOT"
 msgstr "\"ليس\" منطقية"
 
 #. Tooltip for the integer component button
-#: ../src/math-buttons.c:205 ../src/math-buttons.c:994
+#: ../src/math-buttons.c:205 ../src/math-buttons.c:992
 msgid "Integer Component"
 msgstr "الجزء الصّحيح"
 
 #. Tooltip for the fractional component button
-#: ../src/math-buttons.c:208 ../src/math-buttons.c:996
+#: ../src/math-buttons.c:208 ../src/math-buttons.c:994
 msgid "Fractional Component"
 msgstr "الجزء الكسري"
 
@@ -1083,68 +1118,68 @@ msgid "Straight Line Depreciation"
 msgstr "الاستهلاك الثّابت"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: ../src/math-buttons.c:611
+#: ../src/math-buttons.c:624
 msgid "Binary"
-msgstr "ثُنائي"
+msgstr "ثنائي"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: ../src/math-buttons.c:615
+#: ../src/math-buttons.c:628
 msgid "Octal"
-msgstr "ثُماني"
+msgstr "ثماني"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: ../src/math-buttons.c:619
+#: ../src/math-buttons.c:632
 msgid "Decimal"
-msgstr "عُشري"
+msgstr "عشري"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: ../src/math-buttons.c:623
+#: ../src/math-buttons.c:636
 msgid "Hexadecimal"
-msgstr "ست عُشري"
+msgstr "ستّة عشر"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: ../src/math-buttons.c:905 ../src/math-buttons.c:948
+#: ../src/math-buttons.c:903 ../src/math-buttons.c:946
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] "_لا خانات"
-msgstr[1] "خانة _واحدة"
-msgstr[2] "خان_تين"
-msgstr[3] "_%d خانات"
-msgstr[4] "_%d خانة"
-msgstr[5] "_%d خانة"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: ../src/math-buttons.c:909 ../src/math-buttons.c:952
+#: ../src/math-buttons.c:907 ../src/math-buttons.c:950
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] "لا خانات"
-msgstr[1] "خانة واحدة"
-msgstr[2] "خانتين"
-msgstr[3] "%d خانات"
-msgstr[4] "%d خانة"
-msgstr[5] "%d خانة"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #. Tooltip for the round button
-#: ../src/math-buttons.c:998
+#: ../src/math-buttons.c:996
 msgid "Round"
 msgstr "الدّورة"
 
 #. Tooltip for the floor button
-#: ../src/math-buttons.c:1000
+#: ../src/math-buttons.c:998
 msgid "Floor"
 msgstr "الحد الأدنى"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:1002
+#: ../src/math-buttons.c:1000
 msgid "Ceiling"
 msgstr "الحد الأعلى"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:1004
+#: ../src/math-buttons.c:1002
 msgid "Sign"
 msgstr "الإشارة"
 
@@ -1237,45 +1272,45 @@ msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
 #. grads
-#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
+#: ../src/math-preferences.c:255 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "درجات"
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
+#: ../src/math-preferences.c:259 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "قُطريات (راديان)"
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
+#: ../src/math-preferences.c:263 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "ميولات (غراد)"
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
 #. number 1.234×10^99)
-#: ../src/math-preferences.c:270
+#: ../src/math-preferences.c:273
 msgid "Automatic"
 msgstr "تلقائي"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:274
+#: ../src/math-preferences.c:277
 msgid "Fixed"
 msgstr "ثابت"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:278
+#: ../src/math-preferences.c:281
 msgid "Scientific"
 msgstr "علمي"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:282
+#: ../src/math-preferences.c:285
 msgid "Engineering"
 msgstr "هندسة"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:293
+#: ../src/math-preferences.c:296
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "أظهر %d خا_نة عُشرية"
@@ -1288,7 +1323,9 @@ msgstr "تعذّر فتح ملفِ المُساعدة"
 #. The translator credits. Please translate this with your name(s).
 #: ../src/math-window.c:239
 msgid "translator-credits"
-msgstr "يوسف رفه\t<yousef@raffah.com>\nيزيد دلندة\t<yazo1624@yahoo.co.uk>\nجهاد عفيفي\t<djihed@gmail.com>\nصهيب عفيفي\t<sohaibafifi@gmail.com>\nأنس عفيف عماد\t<anas.e87@gmail.com>\nخالد حسني\t<khaledhosny@eglug.org>\nمصعب الزعبي\t<moceap@hotmail.com>\n\nمراجعة و إتمام بواسطة عيون العرب http://arabeyes.org و مجتمع لينكس العربي http://linuxac.org عام 1434 بإشراف مصعب الزعبي moceap@hotmail.com"
+msgstr ""
+"فريق عيون العرب للترجمة http://www.arabeyes.org :\n"
+"مصعب الزعبي\t<moceap@hotmail.com>"
 
 #. The license this software is under (GPL2+)
 #: ../src/math-window.c:246
@@ -1306,7 +1343,17 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr "حاسبة متّة برنامج حر، يمكنك توزيعه و/أو تعديله حسب بنود رخصة جنو العمومية كما \nنشرتها مؤسسة البرامج الحرة، الإصدار الثاني أو أي إصدار أحدث (حسب رغبتك).\n\nتوزع حاسبة متّة على أمل أن تكون مفيدةً، ولكن دون أي ضمانات، بما في ذلك ضمانات \nقابلية البرنامج للتسويق أو الملاءمة لغرض معين. انظر نص رخصة جنو العمومية \nلمزيد من التفاصيل.\n\nمن المفترض أنك تلقيت نسخة من رخصة جنو العمومية مع هذا البرنامج؛ إذا لم يحدث \nهذا فاكتب إلى مؤسسة البرمجيات الحرة\n 151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr ""
+"حاسبة متّة برنامج حر، يمكنك توزيعه و/أو تعديله حسب بنود رخصة جنو العمومية كما \n"
+"نشرتها مؤسسة البرامج الحرة، الإصدار الثاني أو أي إصدار أحدث (حسب رغبتك).\n"
+"\n"
+"توزع حاسبة متّة على أمل أن تكون مفيدةً، ولكن دون أي ضمانات، بما في ذلك ضمانات \n"
+"قابلية البرنامج للتسويق أو الملاءمة لغرض معين. انظر نص رخصة جنو العمومية \n"
+"لمزيد من التفاصيل.\n"
+"\n"
+"من المفترض أنك تلقيت نسخة من رخصة جنو العمومية مع هذا البرنامج؛ إذا لم يحدث \n"
+"هذا فاكتب إلى مؤسسة البرمجيات الحرة\n"
+" 151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
 #: ../src/math-window.c:261
 msgid "mate-calc"
@@ -1317,44 +1364,72 @@ msgid "Calculator with financial and scientific modes."
 msgstr "ألة حاسبة ذات خصائص علميّة و اقتصادية."
 
 #. Calculator menu
-#: ../src/math-window.c:369
+#: ../src/math-window.c:395
 msgid "_Calculator"
-msgstr "حاس_بة"
+msgstr "_حاسبة"
 
 #. Mode menu
-#: ../src/math-window.c:371
+#: ../src/math-window.c:397
 msgid "_Mode"
 msgstr "الو_ضع"
 
 #. Help menu label
-#: ../src/math-window.c:373
+#: ../src/math-window.c:399
 msgid "_Help"
-msgstr "م_ساعدة"
+msgstr "_مساعدة"
 
 #. Basic menu label
-#: ../src/math-window.c:375
+#: ../src/math-window.c:401
 msgid "_Basic"
 msgstr "_أساسي"
 
 #. Advanced menu label
-#: ../src/math-window.c:377
+#: ../src/math-window.c:403
 msgid "_Advanced"
 msgstr "مُ_تقدم"
 
 #. Financial menu label
-#: ../src/math-window.c:379
+#: ../src/math-window.c:405
 msgid "_Financial"
 msgstr "_مصرفي"
 
 #. Programming menu label
-#: ../src/math-window.c:381
+#: ../src/math-window.c:407
 msgid "_Programming"
 msgstr "برم_جي"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:383
+#: ../src/math-window.c:409
 msgid "_Contents"
 msgstr "الم_حتويات"
+
+#: ../src/math-window.c:412
+msgid "_Copy"
+msgstr "ا_نسخ"
+
+#: ../src/math-window.c:414
+msgid "_Paste"
+msgstr "ا_لصق"
+
+#: ../src/math-window.c:416
+msgid "_Undo"
+msgstr "_تراجع"
+
+#: ../src/math-window.c:418
+msgid "_Redo"
+msgstr "أ_عِد"
+
+#: ../src/math-window.c:421
+msgid "_Preferences"
+msgstr "ال_تّفضيلات"
+
+#: ../src/math-window.c:423
+msgid "_Quit"
+msgstr "_خروج"
+
+#: ../src/math-window.c:440
+msgid "_About"
+msgstr "_عنْ"
 
 #. Translators: Error displayed when boolean AND attempted on non-integer
 #. values
@@ -2143,7 +2218,7 @@ msgstr "%s كـ"
 #: ../src/unit-manager.c:99
 msgctxt "unit-symbols"
 msgid "K"
-msgstr "كلفن،كـ"
+msgstr "كب"
 
 #: ../src/unit-manager.c:100
 msgid "Rankine"
@@ -2174,7 +2249,7 @@ msgstr "المساحة"
 
 #: ../src/unit-manager.c:112
 msgid "Volume"
-msgstr "الحجم"
+msgstr "حجم الصوت"
 
 #: ../src/unit-manager.c:113
 msgid "Weight"

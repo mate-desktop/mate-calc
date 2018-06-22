@@ -1,23 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# ABE Tsunehiko, 2014
-# ABE Tsunehiko, 2014
-# IWAI, Masaharu <iwaim.sub@gmail.com>, 2018
-# KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003
-# Nishio Futoshi <fut_nis@d3.dion.ne.jp>, 2010
-# Satoru SATOH <ss@gnome.gr.jp>, 2006
-# Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2010,2012
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-06 15:01+0300\n"
-"PO-Revision-Date: 2018-02-06 12:05+0000\n"
-"Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
-"Language-Team: Japanese (http://www.transifex.com/mate/MATE/language/ja/)\n"
+"POT-Creation-Date: 2018-06-14 15:15+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen., 2018\n"
+"Language-Team: Japanese (https://www.transifex.com/mate/teams/13566/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,92 +19,92 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Accessible name for the factorize button
-#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:8
+#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:9
 msgid "Factorize"
 msgstr "因数分解"
 
 #. Label on the solve button (clicking this solves the displayed calculation)
 #: ../data/buttons-advanced.ui.h:4 ../data/buttons-basic.ui.h:2
-#: ../data/buttons-financial.ui.h:76 ../data/buttons-programming.ui.h:12
+#: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
 msgid "="
 msgstr "="
 
 #: ../data/buttons-advanced.ui.h:5 ../data/buttons-basic.ui.h:3
-#: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
+#: ../data/buttons-financial.ui.h:78 ../data/buttons-programming.ui.h:14
 msgid "Clear"
 msgstr "クリア"
 
-#. Accessible name for the subscript mode button
-#: ../data/buttons-advanced.ui.h:7 ../data/buttons-programming.ui.h:15
-msgid "Subscript"
-msgstr "下付き数字"
-
-#. Accessible name for the superscript mode button
-#: ../data/buttons-advanced.ui.h:9 ../data/buttons-programming.ui.h:17
-msgid "Superscript"
-msgstr "上付き数字"
-
 #. Accessible name for the scientific exponent button
-#: ../data/buttons-advanced.ui.h:11
+#: ../data/buttons-advanced.ui.h:7
 msgid "Scientific Exponent"
 msgstr "科学的指数"
+
+#. The label on the memory button
+#: ../data/buttons-advanced.ui.h:9 ../data/buttons-financial.ui.h:73
+#: ../data/buttons-programming.ui.h:18
+msgid "x"
+msgstr "x"
 
 #. Accessible name for the memory button
 #. Accessible name for the memory value button
 #. Tooltip for the memory button
-#: ../data/buttons-advanced.ui.h:13 ../data/buttons-financial.ui.h:72
+#: ../data/buttons-advanced.ui.h:11 ../data/buttons-financial.ui.h:75
 #: ../src/math-buttons.c:232
 msgid "Memory"
 msgstr "メモリー"
 
-#. The label on the memory button
-#: ../data/buttons-advanced.ui.h:15 ../data/buttons-financial.ui.h:74
-#: ../data/buttons-programming.ui.h:21
-msgid "x"
-msgstr "x"
-
 #. Accessible name for the exponentiation (x to the power of y) button
-#: ../data/buttons-advanced.ui.h:17 ../data/buttons-basic.ui.h:5
-#: ../data/buttons-financial.ui.h:100 ../data/buttons-programming.ui.h:33
+#: ../data/buttons-advanced.ui.h:13 ../data/buttons-basic.ui.h:6
+#: ../data/buttons-financial.ui.h:100 ../data/buttons-programming.ui.h:32
 msgid "Exponent"
 msgstr "指数"
 
-#: ../data/buttons-advanced.ui.h:18 ../data/buttons-basic.ui.h:6
-#: ../data/buttons-financial.ui.h:98
+#: ../data/buttons-advanced.ui.h:14 ../data/buttons-basic.ui.h:4
+#: ../data/buttons-financial.ui.h:101
 msgid "Undo"
 msgstr "元に戻す"
 
-#: ../data/buttons-advanced.ui.h:19
-msgid "acos"
-msgstr "acos"
-
-#: ../data/buttons-advanced.ui.h:20
+#: ../data/buttons-advanced.ui.h:15
 msgid "asin"
 msgstr "asin"
 
-#: ../data/buttons-advanced.ui.h:21
+#: ../data/buttons-advanced.ui.h:16
 msgid "atan"
 msgstr "atan"
 
+#: ../data/buttons-advanced.ui.h:17
+msgid "acos"
+msgstr "acos"
+
 #. Accessible name for the store value button
-#: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:19
+#: ../data/buttons-advanced.ui.h:19 ../data/buttons-programming.ui.h:20
 msgid "Store"
 msgstr "保存"
 
 #. Accessible name for the inverse button
-#: ../data/buttons-advanced.ui.h:25 ../data/buttons-programming.ui.h:31
+#: ../data/buttons-advanced.ui.h:21 ../data/buttons-programming.ui.h:30
 msgid "Inverse"
 msgstr "逆関数"
 
 #. Accessible name for the factorial button
-#: ../data/buttons-advanced.ui.h:27 ../data/buttons-programming.ui.h:29
+#: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:28
 msgid "Factorial"
 msgstr "階乗"
 
 #. Accessible name for the absolute value button
-#: ../data/buttons-advanced.ui.h:29 ../data/buttons-programming.ui.h:10
+#: ../data/buttons-advanced.ui.h:25 ../data/buttons-programming.ui.h:11
 msgid "Absolute Value"
 msgstr "絶対値"
+
+#. Accessible name for the superscript mode button
+#: ../data/buttons-advanced.ui.h:27 ../data/buttons-programming.ui.h:16
+msgid "Superscript"
+msgstr "上付き数字"
+
+#. Accessible name for the subscript mode button
+#: ../data/buttons-advanced.ui.h:29 ../data/buttons-programming.ui.h:34
+msgid "Subscript"
+msgstr "下付き数字"
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
@@ -118,69 +112,79 @@ msgstr "絶対値"
 msgid "Compounding Term"
 msgstr "複利計算期"
 
+#: ../data/buttons-financial.ui.h:3 ../data/buttons-programming.ui.h:3
+msgid "_Cancel"
+msgstr "キャンセル(_C)"
+
 #. Payment Period Dialog: Button to calculate result
-#: ../data/buttons-financial.ui.h:4
+#: ../data/buttons-financial.ui.h:5
 msgid "C_alculate"
 msgstr "計算する(_A)"
 
-#. Periodic Interest Rate Dialog: Label before present value input
-#: ../data/buttons-financial.ui.h:6
-msgid "Present _Value:"
-msgstr "現在価値(_V):"
-
-#. Payment Period Dialog: Label before periodic interest rate input
-#: ../data/buttons-financial.ui.h:8
-msgid "Periodic Interest _Rate:"
-msgstr "定期利率(_R):"
-
 #. Compounding Term Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:10
+#: ../data/buttons-financial.ui.h:7
 msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
 msgstr "現在の投資額をある将来価値に増額するのに必要な複利計算期の年数を固定金利に基づいて計算します。"
 
+#. Payment Period Dialog: Label before periodic interest rate input
+#: ../data/buttons-financial.ui.h:9
+msgid "Periodic Interest _Rate:"
+msgstr "定期利率(_R):"
+
 #. Periodic Interest Rate Dialog: Label before future value input
-#: ../data/buttons-financial.ui.h:12
+#: ../data/buttons-financial.ui.h:11
 msgid "_Future Value:"
 msgstr "将来価値(_F):"
 
+#. Periodic Interest Rate Dialog: Label before present value input
+#: ../data/buttons-financial.ui.h:13
+msgid "Present _Value:"
+msgstr "現在価値(_V):"
+
 #. Title of Double-Declining Depreciation dialog
-#: ../data/buttons-financial.ui.h:14
+#: ../data/buttons-financial.ui.h:15
 msgid "Double-Declining Depreciation"
 msgstr "定率法による減価償却費"
 
 #. Double-Declining Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:16
+#: ../data/buttons-financial.ui.h:17
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
-msgstr "指定した期間に対する資産の減価償却費を(二倍)定率法 (Double-Declining Balance Method) を用いて計算します。"
-
-#. Gross Profit Margin Dialog: Label before cost input
-#: ../data/buttons-financial.ui.h:18
-msgid "C_ost:"
-msgstr "原価(_O):"
+msgstr ""
+"指定した期間に対する資産の減価償却費を(二倍)定率法 (Double-Declining Balance Method) を用いて計算します。"
 
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:20
+#: ../data/buttons-financial.ui.h:19
 msgid "_Life:"
 msgstr "耐用年数(_L):"
 
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:22
+#: ../data/buttons-financial.ui.h:21
 msgid "_Period:"
 msgstr "期間(_P):"
 
+#. Gross Profit Margin Dialog: Label before cost input
+#: ../data/buttons-financial.ui.h:23
+msgid "C_ost:"
+msgstr "原価(_O):"
+
 #. Title of Future Value dialog
 #. Tooltip for the future value button
-#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.c:262
+#: ../data/buttons-financial.ui.h:25 ../src/math-buttons.c:262
 msgid "Future Value"
 msgstr "将来価値"
 
+#. Present Value Dialog: Label before number of periods input
+#: ../data/buttons-financial.ui.h:27
+msgid "_Number of Periods:"
+msgstr "期間(_N):"
+
 #. Future Value Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:26
+#: ../data/buttons-financial.ui.h:29
 msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
@@ -188,64 +192,59 @@ msgid ""
 msgstr "一定額で積み立てを行った場合の投資額の将来価値を、定期利率に基づいて計算します。"
 
 #. Payment Period Dialog: Label before periodic payment input
-#: ../data/buttons-financial.ui.h:28
+#: ../data/buttons-financial.ui.h:31
 msgid "_Periodic Payment:"
 msgstr "定期支払額(_P):"
 
-#. Present Value Dialog: Label before number of periods input
-#: ../data/buttons-financial.ui.h:30
-msgid "_Number of Periods:"
-msgstr "期間(_N):"
-
 #. Title of Gross Profit Margin dialog
 #. Tooltip for the gross profit margin button
-#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:283
+#: ../data/buttons-financial.ui.h:33 ../src/math-buttons.c:283
 msgid "Gross Profit Margin"
 msgstr "売上総利益"
 
 #. Gross Profit Margin Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:34
+#: ../data/buttons-financial.ui.h:35
 msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
 msgstr "製品の再販売価格をその原価と売上総利益率に基づいて計算します。"
 
 #. Gross Profit Margin Dialog: Label before margin input
-#: ../data/buttons-financial.ui.h:36
+#: ../data/buttons-financial.ui.h:37
 msgid "_Margin:"
 msgstr "利幅(_M):"
 
 #. Title of Periodic Payment dialog
 #. Tooltip for the periodic payment button
-#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:280
+#: ../data/buttons-financial.ui.h:39 ../src/math-buttons.c:280
 msgid "Periodic Payment"
 msgstr "定期支払額"
 
 #. Periodic Payment Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:40
+#: ../data/buttons-financial.ui.h:41
 msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
 msgstr "ローンの定期支払い額を計算します (返済期間の最終日に支払いを行うものとします)。"
 
-#. Periodic Payment Dialog: Label before principal input
-#: ../data/buttons-financial.ui.h:42
-msgid "_Principal:"
-msgstr "資本金(_P):"
-
 #. Periodic Interest Rate Dialog: Label before term input
-#: ../data/buttons-financial.ui.h:44
+#: ../data/buttons-financial.ui.h:43
 msgid "_Term:"
 msgstr "期間(_T):"
 
+#. Periodic Payment Dialog: Label before principal input
+#: ../data/buttons-financial.ui.h:45
+msgid "_Principal:"
+msgstr "資本金(_P):"
+
 #. Title of Present Value dialog
 #. Tooltip for the present value button
-#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:277
+#: ../data/buttons-financial.ui.h:47 ../src/math-buttons.c:277
 msgid "Present Value"
 msgstr "現在価値"
 
 #. Present Value Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:48
+#: ../data/buttons-financial.ui.h:49
 msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
@@ -254,68 +253,72 @@ msgstr "将来価値を一定の割引率を使って現在時点まで割り戻
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
-#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.c:274
+#: ../data/buttons-financial.ui.h:51 ../src/math-buttons.c:274
 msgid "Periodic Interest Rate"
 msgstr "定期利率"
 
 #. Periodic Interest Rate Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:52
+#: ../data/buttons-financial.ui.h:53
 msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
 msgstr "投資額の将来価値を上げる際に必要となる複利計算期の定期利率を計算します。"
 
 #. Title of Straight-Line Depreciation dialog
-#: ../data/buttons-financial.ui.h:54
+#: ../data/buttons-financial.ui.h:55
 msgid "Straight-Line Depreciation"
 msgstr "定額法による減価償却費"
 
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:56
+#: ../data/buttons-financial.ui.h:57
 msgid "_Cost:"
 msgstr "原価(_C):"
 
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:58
+#: ../data/buttons-financial.ui.h:59
 msgid "_Salvage:"
 msgstr "残存価額(_S):"
 
 #. Straight-Line Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:60
+#: ../data/buttons-financial.ui.h:61
 msgid ""
 "Calculates the straight-line depreciation of an asset for one period. The "
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr "指定した期間に対する資産の減価償却費を定額法 (Straight-Line Depreciation Method) を用いて計算します。この償却法は毎年の減価償却費を平準化できるという特徴があります。耐用年数は一般的に年数で指定し、経過年数との差額で求めます。"
+msgstr ""
+"指定した期間に対する資産の減価償却費を定額法 (Straight-Line Depreciation Method) "
+"を用いて計算します。この償却法は毎年の減価償却費を平準化できるという特徴があります。耐用年数は一般的に年数で指定し、経過年数との差額で求めます。"
 
 #. Title of Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:62
+#: ../data/buttons-financial.ui.h:63
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "級数法による減価償却費"
 
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:64
+#: ../data/buttons-financial.ui.h:65
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
 " accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
-msgstr "指定した期間に対する資産の減価償却費を級数法 (Sum-Of-The-Years'-Digits Method) を用いて計算します。これは加速度的減価償却法の一種で、償却期間の初期に重み付けして減価償却が行われるため、償却期間の後期より初期により大きな減価償却費が計上されます。耐用年数は一般的に年数で指定し、償却年数と同義です。"
+msgstr ""
+"指定した期間に対する資産の減価償却費を級数法 (Sum-Of-The-Years'-Digits Method) "
+"を用いて計算します。これは加速度的減価償却法の一種で、償却期間の初期に重み付けして減価償却が行われるため、償却期間の後期より初期により大きな減価償却費が計上されます。耐用年数は一般的に年数で指定し、償却年数と同義です。"
 
 #. Title of Payment Period dialog
-#: ../data/buttons-financial.ui.h:66
+#: ../data/buttons-financial.ui.h:67
 msgid "Payment Period"
 msgstr "返済期間"
 
 #. Payment Period Dialog: Label before future value input
-#: ../data/buttons-financial.ui.h:68
+#: ../data/buttons-financial.ui.h:69
 msgid "Future _Value:"
 msgstr "将来価値(_V):"
 
 #. Payment Period Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:70
+#: ../data/buttons-financial.ui.h:71
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
 "of an ordinary annuity, to accumulate a future value, at a periodic interest"
@@ -326,14 +329,14 @@ msgstr "普通年金の受領期間内に将来価値を積み立てる際に必
 #. investment of present value pv to a future value of fv, at a fixed interest
 #. rate of int per compounding period. See also:
 #. http://en.wikipedia.org/wiki/Compound_interest
-#: ../data/buttons-financial.ui.h:79
+#: ../data/buttons-financial.ui.h:80
 msgid "Ctrm"
 msgstr "Ctrm"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
 #. time, using the double-declining balance method. See also:
 #. http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:81
+#: ../data/buttons-financial.ui.h:82
 msgid "Ddb"
 msgstr "Ddb"
 
@@ -341,7 +344,7 @@ msgstr "Ddb"
 #. payments, each of amount pmt, at a periodic interest rate of int, over the
 #. number of payment periods in the term. See also:
 #. http://en.wikipedia.org/wiki/Future_value
-#: ../data/buttons-financial.ui.h:83
+#: ../data/buttons-financial.ui.h:84
 msgid "Fv"
 msgstr "Fv"
 
@@ -349,13 +352,13 @@ msgstr "Fv"
 #. of an ordinary annuity, to accumulate a future value of fv, at a periodic
 #. interest rate of int. Each payment is equal to amount pmt. See also:
 #. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
-#: ../data/buttons-financial.ui.h:85
+#: ../data/buttons-financial.ui.h:86
 msgid "Term"
 msgstr "期間"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
 #. time, using the Sum-Of-The-Years
-#: ../data/buttons-financial.ui.h:87
+#: ../data/buttons-financial.ui.h:88
 msgid "Syd"
 msgstr "Syd"
 
@@ -365,14 +368,14 @@ msgstr "Syd"
 #. asset. The useful life is the number of periods, typically years, over
 #. which an asset is depreciated. See also:
 #. http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:89
+#: ../data/buttons-financial.ui.h:90
 msgid "Sln"
 msgstr "Sln"
 
 #. Calculates the periodic interest necessary to increase an investment of
 #. present value pv to a future value of fv, over the number of compounding
 #. periods in term. See also: http://en.wikipedia.org/wiki/Interest
-#: ../data/buttons-financial.ui.h:91
+#: ../data/buttons-financial.ui.h:92
 msgid "Rate"
 msgstr "利率"
 
@@ -380,21 +383,21 @@ msgstr "利率"
 #. payments, each of amount pmt, discounted at a periodic interest rate of
 #. int, over the number of payment periods in the term. See also:
 #. http://en.wikipedia.org/wiki/Present_value
-#: ../data/buttons-financial.ui.h:93
+#: ../data/buttons-financial.ui.h:94
 msgid "Pv"
 msgstr "Pv"
 
 #. Calculates the amount of the periodic payment of a loan, where payments are
 #. made at the end of each payment period. See also:
 #. http://en.wikipedia.org/wiki/Amortization_schedule
-#: ../data/buttons-financial.ui.h:95
+#: ../data/buttons-financial.ui.h:96
 msgid "Pmt"
 msgstr "Pmt"
 
 #. Calculates the resale price of a product, based on the product cost and the
 #. wanted gross profit margin. See also:
 #. http://en.wikipedia.org/wiki/Gross_profit_margin
-#: ../data/buttons-financial.ui.h:97
+#: ../data/buttons-financial.ui.h:98
 msgid "Gpm"
 msgstr "売上"
 
@@ -405,27 +408,27 @@ msgid "Insert Character Code"
 msgstr "文字コードの挿入"
 
 #. Insert ASCII dialog: Button to insert selected character
-#: ../data/buttons-programming.ui.h:4
+#: ../data/buttons-programming.ui.h:5
 msgid "_Insert"
 msgstr "挿入する(_I)"
 
 #. Insert ASCII dialog: Label before character entry
-#: ../data/buttons-programming.ui.h:6
+#: ../data/buttons-programming.ui.h:7
 msgid "Ch_aracter:"
 msgstr "文字(_A):"
 
 #. Accessible name for the shift left button
-#: ../data/buttons-programming.ui.h:23
+#: ../data/buttons-programming.ui.h:22
 msgid "Shift Left"
 msgstr "左シフト"
 
 #. Accessible name for the shift right button
-#: ../data/buttons-programming.ui.h:25
+#: ../data/buttons-programming.ui.h:24
 msgid "Shift Right"
 msgstr "右シフト"
 
 #. Accessible name for the insert character button
-#: ../data/buttons-programming.ui.h:27
+#: ../data/buttons-programming.ui.h:26
 msgid "Insert Character"
 msgstr "文字の挿入"
 
@@ -454,28 +457,32 @@ msgstr "64ビット"
 msgid "Preferences"
 msgstr "設定"
 
+#: ../data/preferences.ui.h:10
+msgid "_Close"
+msgstr "閉じる(_C)"
+
 #. Preferences dialog: Label for angle unit combo box
-#: ../data/preferences.ui.h:11
+#: ../data/preferences.ui.h:12
 msgid "_Angle units:"
 msgstr "角度の単位(_A):"
 
 #. Preferences dialog: Label for display format combo box
-#: ../data/preferences.ui.h:13
+#: ../data/preferences.ui.h:14
 msgid "Number _Format:"
 msgstr "数字の書式(_F):"
 
 #. Preferences dialog: label for word size combo box
-#: ../data/preferences.ui.h:15
+#: ../data/preferences.ui.h:16
 msgid "Word _size:"
 msgstr "Wordサイズ(_S)"
 
 #. Preferences dialog: label for show trailing zeroes check button
-#: ../data/preferences.ui.h:17
+#: ../data/preferences.ui.h:18
 msgid "Show trailing _zeroes"
 msgstr "有効桁数で表示(_Z)"
 
 #. Preferences dialog: label for show thousands separator check button
-#: ../data/preferences.ui.h:19
+#: ../data/preferences.ui.h:20
 msgid "Show _thousands separators"
 msgstr "3桁ごとの区切りを表示(_T)"
 
@@ -497,7 +504,7 @@ msgid "MATE Calculator"
 msgstr "MATE 電卓"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:533
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:562
 msgid "Calculator"
 msgstr "電卓"
 
@@ -755,7 +762,9 @@ msgstr "エラー: 期間は正でなくてはなりません"
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr "使用方法:\n  %s - 数学的な計算を実行する。"
+msgstr ""
+"使用方法:\n"
+"  %s - 数学的な計算を実行する。"
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
@@ -767,7 +776,12 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr "ヘルプオプション:\n  -v, --version                   リリースバージョンを表示\n  -h, -?, --help                  ヘルプオプションを表示\n  --help-all                      すべてのヘルプオプションを表示\n  --help-gtk                      GTK+のオプションを表示"
+msgstr ""
+"ヘルプオプション:\n"
+"  -v, --version                   リリースバージョンを表示\n"
+"  -h, -?, --help                  ヘルプオプションを表示\n"
+"  --help-all                      すべてのヘルプオプションを表示\n"
+"  --help-gtk                      GTK+のオプションを表示"
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
@@ -781,7 +795,14 @@ msgid ""
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr "GTK+オプション:\n  --class=CLASS                   ウィンドウマネジャーが使用するプログラムのクラス\n  --name=NAME                     ウィンドウマネジャーが使用するプログラム名\n  --screen=SCREEN                 使用するXのスクリーン\n  --sync                          Xを同期して呼び出す\n  --gtk-module=MODULES            追加呼び出しを行うGTK+モジュール\n  --g-fatal-warnings              すべての警告を致命的とみなす"
+msgstr ""
+"GTK+オプション:\n"
+"  --class=CLASS                   ウィンドウマネジャーが使用するプログラムのクラス\n"
+"  --name=NAME                     ウィンドウマネジャーが使用するプログラム名\n"
+"  --screen=SCREEN                 使用するXのスクリーン\n"
+"  --sync                          Xを同期して呼び出す\n"
+"  --gtk-module=MODULES            追加呼び出しを行うGTK+モジュール\n"
+"  --g-fatal-warnings              すべての警告を致命的とみなす"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -789,7 +810,9 @@ msgstr "GTK+オプション:\n  --class=CLASS                   ウィンドウ�
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr "アプリケーションのオプション:\n  -s, --solve <equation>          与えられた方程式を解く"
+msgstr ""
+"アプリケーションのオプション:\n"
+"  -s, --solve <equation>          与えられた方程式を解く"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:156
@@ -916,17 +939,17 @@ msgstr "自然対数"
 #. Tooltip for the sine button
 #: ../src/math-buttons.c:163
 msgid "Sine"
-msgstr "正弦の算出"
+msgstr "正弦 (サイン)"
 
 #. Tooltip for the cosine button
 #: ../src/math-buttons.c:166
 msgid "Cosine"
-msgstr "余弦の算出"
+msgstr "余弦 (コサイン)"
 
 #. Tooltip for the tangent button
 #: ../src/math-buttons.c:169
 msgid "Tangent"
-msgstr "正接の算出"
+msgstr "正接 (タンジェント)"
 
 #. Tooltip for the hyperbolic sine button
 #: ../src/math-buttons.c:172
@@ -984,12 +1007,12 @@ msgid "Boolean NOT"
 msgstr "真偽値の否定"
 
 #. Tooltip for the integer component button
-#: ../src/math-buttons.c:205 ../src/math-buttons.c:994
+#: ../src/math-buttons.c:205 ../src/math-buttons.c:992
 msgid "Integer Component"
 msgstr "整数部"
 
 #. Tooltip for the fractional component button
-#: ../src/math-buttons.c:208 ../src/math-buttons.c:996
+#: ../src/math-buttons.c:208 ../src/math-buttons.c:994
 msgid "Fractional Component"
 msgstr "端数"
 
@@ -1051,12 +1074,12 @@ msgstr "元に戻す [Ctrl+Z]"
 #. Tooltip for the shift left button
 #: ../src/math-buttons.c:250
 msgid "Shift Left [<<]"
-msgstr ""
+msgstr "左シフト [<<]"
 
 #. Tooltip for the shift right button
 #: ../src/math-buttons.c:253
 msgid "Shift Right [>>]"
-msgstr ""
+msgstr "右シフト [>>]"
 
 #. Tooltip for the double declining depreciation button
 #: ../src/math-buttons.c:259
@@ -1079,58 +1102,58 @@ msgid "Straight Line Depreciation"
 msgstr "定額法による減価償却費"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: ../src/math-buttons.c:611
+#: ../src/math-buttons.c:624
 msgid "Binary"
 msgstr "2進数"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: ../src/math-buttons.c:615
+#: ../src/math-buttons.c:628
 msgid "Octal"
 msgstr "8進数"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: ../src/math-buttons.c:619
+#: ../src/math-buttons.c:632
 msgid "Decimal"
 msgstr "10進数"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: ../src/math-buttons.c:623
+#: ../src/math-buttons.c:636
 msgid "Hexadecimal"
 msgstr "16進数"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: ../src/math-buttons.c:905 ../src/math-buttons.c:948
+#: ../src/math-buttons.c:903 ../src/math-buttons.c:946
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] "_%d 個"
+msgstr[0] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: ../src/math-buttons.c:909 ../src/math-buttons.c:952
+#: ../src/math-buttons.c:907 ../src/math-buttons.c:950
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] "%d 個"
+msgstr[0] ""
 
 #. Tooltip for the round button
-#: ../src/math-buttons.c:998
+#: ../src/math-buttons.c:996
 msgid "Round"
 msgstr "数値の丸め込み"
 
 #. Tooltip for the floor button
-#: ../src/math-buttons.c:1000
+#: ../src/math-buttons.c:998
 msgid "Floor"
 msgstr "切り捨て"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:1002
+#: ../src/math-buttons.c:1000
 msgid "Ceiling"
 msgstr "切り上げ"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:1004
+#: ../src/math-buttons.c:1002
 msgid "Sign"
 msgstr "符号"
 
@@ -1223,45 +1246,45 @@ msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
 #. grads
-#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
+#: ../src/math-preferences.c:255 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "度"
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
+#: ../src/math-preferences.c:259 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "ラジアン"
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
+#: ../src/math-preferences.c:263 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "グラード"
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
 #. number 1.234×10^99)
-#: ../src/math-preferences.c:270
+#: ../src/math-preferences.c:273
 msgid "Automatic"
 msgstr "自動"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:274
+#: ../src/math-preferences.c:277
 msgid "Fixed"
 msgstr "固定小数点"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:278
+#: ../src/math-preferences.c:281
 msgid "Scientific"
 msgstr "科学"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:282
+#: ../src/math-preferences.c:285
 msgid "Engineering"
 msgstr "工学"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:293
+#: ../src/math-preferences.c:296
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "小数点以下第 %d 位まで表示 (_P)"
@@ -1269,12 +1292,23 @@ msgstr "小数点以下第 %d 位まで表示 (_P)"
 #. Translators: Error message displayed when unable to launch help browser
 #: ../src/math-window.c:212
 msgid "Unable to open help file"
-msgstr "ヘルプを開けません"
+msgstr "ヘルプを表示できません"
 
 #. The translator credits. Please translate this with your name(s).
 #: ../src/math-window.c:239
 msgid "translator-credits"
-msgstr "相花 毅 <takeshi.aihana@gmail.com>\n佐藤 暁 <ss@gnome.gr.jp>\nKAMAGASAKO Masatoshi <emerald@gnome.gr.jp>\nNishio Futoshi <fut_nis@d3.dion.ne.jp>\n草野 貴之 <AE5T-KSN@asahi-net.or.jp>\n日本GNOMEユーザー会 <http://www.gnome.gr.jp/>\nLaunchpad Contributions:\n  Fumihito YOSHIDA https://launchpad.net/~hito\n  Shushi Kurose https://launchpad.net/~kurokuro\n  vbk https://launchpad.net/~vbkaisetsu"
+msgstr ""
+"相花 毅 <takeshi.aihana@gmail.com>\n"
+"佐藤 暁 <ss@gnome.gr.jp>\n"
+"KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>\n"
+"Akira TAGOH <tagoh@gnome.gr.jp>\n"
+"Yukihiro Nakai <nakai@gnome.gr.jp>\n"
+"Yuusuke Tahara <tahara@gnome.gr.jp>\n"
+"Akira Higuchi <a-higuti@math.sci.hokudai.ac.jp>\n"
+"やまね ひでき <henrich@debian.or.jp>\n"
+"草野 貴之 <AE5T-KSN@asahi-net.or.jp>\n"
+"松澤 二郎 <jmatsuzawa@gnome.org>\n"
+"日本GNOMEユーザー会 http://www.gnome.gr.jp/"
 
 #. The license this software is under (GPL2+)
 #: ../src/math-window.c:246
@@ -1292,7 +1326,18 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr "MATE 電卓はフリーソフトウェアです。フリーソフトウェア財団が提供する\nGNU 一般公衆利用許諾契約書の第二版、あるいはそれ以降の版が定める\n条項の下で本プログラムを再頒布または変更することができます。\n\nMATE 電卓は有用とは思いますが、その頒布にあたっては市場性及び\n特定の目的、その適合性についての暗黙の保証を含めて、いかなる保証も\n行ないません。詳細については GNU 一般公衆利用許諾契約書をご覧ください。\n\nあなたは、本プログラムと一緒に GNU 一般公衆利用許諾契約書の写しを\n受け取っているはずです。そうでない場合は、Free Software Foundation, Inc., \n151 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA まで連絡してください。"
+msgstr ""
+"MATE 電卓はフリーソフトウェアです。フリーソフトウェア財団が提供する\n"
+"GNU 一般公衆利用許諾契約書の第二版、あるいはそれ以降の版が定める\n"
+"条項の下で本プログラムを再頒布または変更することができます。\n"
+"\n"
+"MATE 電卓は有用とは思いますが、その頒布にあたっては市場性及び\n"
+"特定の目的、その適合性についての暗黙の保証を含めて、いかなる保証も\n"
+"行ないません。詳細については GNU 一般公衆利用許諾契約書をご覧ください。\n"
+"\n"
+"あなたは、本プログラムと一緒に GNU 一般公衆利用許諾契約書の写しを\n"
+"受け取っているはずです。そうでない場合は、Free Software Foundation, Inc., \n"
+"151 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA まで連絡してください。"
 
 #: ../src/math-window.c:261
 msgid "mate-calc"
@@ -1303,44 +1348,72 @@ msgid "Calculator with financial and scientific modes."
 msgstr "財務と科学計算のモードを持つ電卓です。"
 
 #. Calculator menu
-#: ../src/math-window.c:369
+#: ../src/math-window.c:395
 msgid "_Calculator"
-msgstr "電卓(_C)"
+msgstr "計算機(_C)"
 
 #. Mode menu
-#: ../src/math-window.c:371
+#: ../src/math-window.c:397
 msgid "_Mode"
 msgstr "モード(_M)"
 
 #. Help menu label
-#: ../src/math-window.c:373
+#: ../src/math-window.c:399
 msgid "_Help"
 msgstr "ヘルプ(_H)"
 
 #. Basic menu label
-#: ../src/math-window.c:375
+#: ../src/math-window.c:401
 msgid "_Basic"
 msgstr "基本(_B)"
 
 #. Advanced menu label
-#: ../src/math-window.c:377
+#: ../src/math-window.c:403
 msgid "_Advanced"
 msgstr "拡張(_A)"
 
 #. Financial menu label
-#: ../src/math-window.c:379
+#: ../src/math-window.c:405
 msgid "_Financial"
 msgstr "財務(_F)"
 
 #. Programming menu label
-#: ../src/math-window.c:381
+#: ../src/math-window.c:407
 msgid "_Programming"
 msgstr "プログラミング(_P)"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:383
+#: ../src/math-window.c:409
 msgid "_Contents"
 msgstr "目次(_C)"
+
+#: ../src/math-window.c:412
+msgid "_Copy"
+msgstr "コピー(_C)"
+
+#: ../src/math-window.c:414
+msgid "_Paste"
+msgstr "貼り付け(_P)"
+
+#: ../src/math-window.c:416
+msgid "_Undo"
+msgstr "元に戻す(_U)"
+
+#: ../src/math-window.c:418
+msgid "_Redo"
+msgstr "やり直す(_R)"
+
+#: ../src/math-window.c:421
+msgid "_Preferences"
+msgstr "設定(_P)"
+
+#: ../src/math-window.c:423
+msgid "_Quit"
+msgstr "終了 (_Q)"
+
+#: ../src/math-window.c:440
+msgid "_About"
+msgstr "情報(_A)"
 
 #. Translators: Error displayed when boolean AND attempted on non-integer
 #. values
@@ -2160,7 +2233,7 @@ msgstr "面積"
 
 #: ../src/unit-manager.c:112
 msgid "Volume"
-msgstr "体積"
+msgstr "音量"
 
 #: ../src/unit-manager.c:113
 msgid "Weight"
