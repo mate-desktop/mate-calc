@@ -416,14 +416,14 @@ math_equation_copy(MathEquation *equation)
 {
     GtkTextIter start, end;
     gchar *text;
-  
+
     g_return_if_fail(equation != NULL);
 
     if (!gtk_text_buffer_get_selection_bounds(GTK_TEXT_BUFFER(equation), &start, &end))
         gtk_text_buffer_get_bounds(GTK_TEXT_BUFFER(equation), &start, &end);
 
     text = gtk_text_buffer_get_text(GTK_TEXT_BUFFER(equation), &start, &end, FALSE);
-    gtk_clipboard_set_text(gtk_clipboard_get(GDK_NONE), text, -1);
+    gtk_clipboard_set_text(gtk_clipboard_get(GDK_NONE), g_str_to_ascii (text, "C"), -1);
     g_free(text);
 }
 
