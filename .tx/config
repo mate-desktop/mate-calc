@@ -3,7 +3,15 @@ host = https://www.transifex.com
  
 [MATE.1-20--mate-calc]
 file_filter = po/<lang>.po
-source_file = po/mate-calc.pot
+source_file = mate-calc.pot
 source_lang = en
 type = PO
 minimum_perc = 2
+
+[MATE.1-20--mate-calc-user-quide]
+file_filter = help/<lang>/<lang>.po
+source_file = help/mate-calc.pot
+source_lang = en
+type = PO
+minimum_perc = 2
+
