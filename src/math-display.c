@@ -342,7 +342,6 @@ create_gui(MathDisplay *display)
     /* TEMP: Disabled for now as GTK+ doesn't properly render a right aligned right margin, see bug #482688 */
     /*gtk_text_view_set_right_margin(GTK_TEXT_VIEW(display->priv->text_view), 6);*/
     gtk_text_view_set_justification(GTK_TEXT_VIEW(display->priv->text_view), GTK_JUSTIFY_RIGHT);
-    gtk_widget_ensure_style(display->priv->text_view);
     font_desc = pango_font_description_copy(gtk_widget_get_style(display->priv->text_view)->font_desc);
     pango_font_description_set_size(font_desc, 16 * PANGO_SCALE);
     gtk_widget_modify_font(display->priv->text_view, font_desc);
