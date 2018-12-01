@@ -360,10 +360,13 @@ static GtkWidget *gtk_image_menu_item_new_from_icon (const gchar   *icon_name,
                                                      const gchar   *label_name,
                                                      GtkAccelGroup *accel_group)
 {
+    gchar *concat = g_strconcat (label_name, "     ", NULL);
     GtkWidget *box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
     GtkWidget *icon = gtk_image_new_from_icon_name (icon_name, GTK_ICON_SIZE_MENU);
-    GtkWidget *label = gtk_accel_label_new (g_strconcat (label_name, "     ", NULL));
+    GtkWidget *label = gtk_accel_label_new (concat);
     GtkWidget *menu_item = gtk_menu_item_new ();
+
+    g_free (concat);
 
     gtk_container_add (GTK_CONTAINER (box), icon);
 
