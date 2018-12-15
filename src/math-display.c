@@ -34,7 +34,7 @@ struct MathDisplayPrivate
     GtkWidget *spinner;
 };
 
-G_DEFINE_TYPE (MathDisplay, math_display, GTK_TYPE_VIEWPORT);
+G_DEFINE_TYPE_WITH_PRIVATE (MathDisplay, math_display, GTK_TYPE_VIEWPORT);
 
 #define GET_WIDGET(ui, name)  GTK_WIDGET(gtk_builder_get_object(ui, name))
 
@@ -434,8 +434,6 @@ math_display_class_init(MathDisplayClass *klass)
     object_class->get_property = math_display_get_property;
     object_class->set_property = math_display_set_property;
 
-    g_type_class_add_private(klass, sizeof(MathDisplayPrivate));
-
     g_object_class_install_property(object_class,
                                     PROP_EQUATION,
                                     g_param_spec_object("equation",
@@ -449,5 +447,5 @@ math_display_class_init(MathDisplayClass *klass)
 static void 
 math_display_init(MathDisplay *display)
 {
-    display->priv = G_TYPE_INSTANCE_GET_PRIVATE(display, math_display_get_type(), MathDisplayPrivate);
+    display->priv = math_display_get_instance_private (display);
 }
