@@ -3,14 +3,25 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2018
+# ogalho Carlos Dias Martins <ogalho@gmail.com>, 2018
+# MS <manuelarodsilva@gmail.com>, 2018
+# Sérgio Marques <smarquespt@gmail.com>, 2018
+# alfalb_mansil, 2018
+# Carlos Moreira, 2018
+# Stefano Karapetsas <stefano@karapetsas.com>, 2018
+# José Vieira <jvieira33@sapo.pt>, 2018
+# Rui <xymarior@yandex.com>, 2018
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-16 15:10+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: José Vieira <jvieira33@sapo.pt>, 2018\n"
+"PO-Revision-Date: 2018-03-11 16:33+0000\n"
+"Last-Translator: Rui <xymarior@yandex.com>, 2018\n"
 "Language-Team: Portuguese (https://www.transifex.com/mate/teams/13566/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -298,10 +309,10 @@ msgid ""
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
 msgstr ""
-"Calcula o montante da amortização constante de um activo para um período. O "
+"Calcula o montante da amortização constante de um ativo para um período. O "
 "método de amortização constante divide o custo da amortização de forma igual"
-" sobre a vida útil do activo. A vida útil é o número de períodos, "
-"tipicamente anos, durante os quais o activo é amortizado. "
+" sobre a vida útil do ativo. A vida útil é o número de períodos, tipicamente"
+" anos, durante os quais o ativo é amortizado. "
 
 #. Title of Sum-of-the-Years
 #: ../data/buttons-financial.ui.h:62
@@ -317,11 +328,11 @@ msgid ""
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
 msgstr ""
-"Calcula o valor da amortização de um activo durante um período de tempo "
+"Calcula o valor da amortização de um ativo durante um período de tempo "
 "específico, utilizando o método de Soma dos Dígitos dos Anos. Este método de"
 " amortização acelera a taxa de amortização, pelo que ocorre maior despesa de"
 " amortização nos períodos iniciais do que nos finais. A vida útil é o número"
-" de períodos, tipicamente anos, durante o qual o activo é amortizado. "
+" de períodos, tipicamente anos, durante o qual o ativo é amortizado. "
 
 #. Title of Payment Period dialog
 #: ../data/buttons-financial.ui.h:66
@@ -424,7 +435,7 @@ msgstr "Mlb"
 #. Tooltip for the insert character code button
 #: ../data/buttons-programming.ui.h:2 ../src/math-buttons.c:235
 msgid "Insert Character Code"
-msgstr "Inserir Código de Caracter"
+msgstr "Inserir Código de Caractere"
 
 #. Insert ASCII dialog: Button to insert selected character
 #: ../data/buttons-programming.ui.h:4
@@ -434,7 +445,7 @@ msgstr "_Inserir"
 #. Insert ASCII dialog: Label before character entry
 #: ../data/buttons-programming.ui.h:6
 msgid "Ch_aracter:"
-msgstr "C_aracter:"
+msgstr "C_aractere:"
 
 #. Accessible name for the shift left button
 #: ../data/buttons-programming.ui.h:23
@@ -449,7 +460,7 @@ msgstr "Deslocar à Direita"
 #. Accessible name for the insert character button
 #: ../data/buttons-programming.ui.h:27
 msgid "Insert Character"
-msgstr "Inserir Caracter"
+msgstr "Inserir Caractere"
 
 #. Word size combo: 8 bits
 #: ../data/preferences.ui.h:2
@@ -517,7 +528,7 @@ msgstr ""
 "lógica e ciência. Usa um pacote de decisão múltipla na processo aritmético "
 "para obtenção dum alto nível de precisão.</p> <p> O MATE Calc é uma "
 "ramificação do GNOME Calc e é parte do Ambiente de Trabalho MATE. Para saber"
-" mais sobre o MATE e o MATE Calc, viste a página do projecto. </p>"
+" mais sobre o MATE e o MATE Calc, viste a página do projeto. </p>"
 
 #: ../data/mate-calc.desktop.in.h:1
 msgid "MATE Calculator"
@@ -919,7 +930,7 @@ msgstr "Percentagem [%]"
 #. Tooltip for the factorial button
 #: ../src/math-buttons.c:139
 msgid "Factorial [!]"
-msgstr "Factorial [!]"
+msgstr "Fatorial [!]"
 
 #. Tooltip for the absolute value button
 #: ../src/math-buttons.c:142
@@ -1079,7 +1090,7 @@ msgstr "Calcular o Resultado"
 #. Tooltip for the factor button
 #: ../src/math-buttons.c:241
 msgid "Factorize [Ctrl+F]"
-msgstr "Factorizar [Ctrl+F]"
+msgstr "Fatorizar [Ctrl+F]"
 
 #. Tooltip for the clear button
 #: ../src/math-buttons.c:244
@@ -1147,8 +1158,8 @@ msgstr "Hexadecimal"
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "_%d local"
+msgstr[1] "_%d locais"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
@@ -1156,8 +1167,8 @@ msgstr[1] ""
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d local"
+msgstr[1] "%d locais"
 
 #. Tooltip for the round button
 #: ../src/math-buttons.c:998
@@ -1246,7 +1257,7 @@ msgstr "A Calcular"
 #. Error displayed when trying to factorize a non-integer value
 #: ../src/math-equation.c:1390
 msgid "Need an integer to factorize"
-msgstr "É necessário um inteiro para factorizar"
+msgstr "É necessário um inteiro para fatorizar"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
@@ -1474,7 +1485,7 @@ msgstr "A enésima raíz de um número negativo é indefinida para um n par"
 #. fractional number
 #: ../src/mp.c:1934
 msgid "Factorial is only defined for natural numbers"
-msgstr "Factorial apenas está definido para números naturais"
+msgstr "Fatorial apenas está definido para números naturais"
 
 #. Translators: Error displayed when attemping to do a modulus division on
 #. non-integer numbers
