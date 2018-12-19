@@ -141,7 +141,7 @@ unit_convert_from(Unit *unit, const MPNumber *x, MPNumber *z)
 {
     g_return_val_if_fail(unit != NULL, FALSE);
     g_return_val_if_fail(x != NULL, FALSE);
-    g_return_val_if_fail(x != NULL, FALSE);
+    g_return_val_if_fail(z != NULL, FALSE);
 
     if (unit->priv->from_function)
         return solve_function(unit->priv->from_function, x, z);
