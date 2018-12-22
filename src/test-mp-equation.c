@@ -187,7 +187,6 @@ static void
 test_equations()
 {
     memset(&options, 0, sizeof(options));
-    options.base = 10;
     options.wordlen = 32;
     options.angle_units = MP_DEGREES;
     options.variable_is_defined = variable_is_defined;  
