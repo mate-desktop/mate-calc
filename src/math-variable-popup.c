@@ -27,7 +27,7 @@ struct MathVariablePopupPrivate
     GtkWidget *add_variable_button;
 };
 
-G_DEFINE_TYPE (MathVariablePopup, math_variable_popup, GTK_TYPE_WINDOW);
+G_DEFINE_TYPE_WITH_PRIVATE (MathVariablePopup, math_variable_popup, GTK_TYPE_WINDOW);
 
 MathVariablePopup *
 math_variable_popup_new(MathEquation *equation)
@@ -276,8 +276,6 @@ math_variable_popup_class_init(MathVariablePopupClass *klass)
     object_class->get_property = math_variable_popup_get_property;
     object_class->set_property = math_variable_popup_set_property;
 
-    g_type_class_add_private(klass, sizeof(MathVariablePopupPrivate));
-
     g_object_class_install_property(object_class,
                                     PROP_EQUATION,
                                     g_param_spec_object("equation",
@@ -291,7 +289,7 @@ math_variable_popup_class_init(MathVariablePopupClass *klass)
 static void
 math_variable_popup_init(MathVariablePopup *popup)
 {
-    popup->priv = G_TYPE_INSTANCE_GET_PRIVATE(popup, math_variable_popup_get_type(), MathVariablePopupPrivate);
+    popup->priv = math_variable_popup_get_instance_private (popup);
 
     gtk_window_set_decorated(GTK_WINDOW(popup), FALSE);
     gtk_window_set_skip_taskbar_hint(GTK_WINDOW(popup), TRUE);
