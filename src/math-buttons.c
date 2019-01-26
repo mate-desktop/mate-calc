@@ -58,7 +58,7 @@ struct MathButtonsPrivate
     GtkWidget *character_code_entry;
 };
 
-G_DEFINE_TYPE (MathButtons, math_buttons, GTK_TYPE_BOX);
+G_DEFINE_TYPE_WITH_PRIVATE (MathButtons, math_buttons, GTK_TYPE_BOX);
 
 #define UI_BASIC_FILE       UI_DIR "/buttons-basic.ui"
 #define UI_ADVANCED_FILE    UI_DIR "/buttons-advanced.ui"
@@ -1331,8 +1331,6 @@ math_buttons_class_init(MathButtonsClass *klass)
     object_class->get_property = math_buttons_get_property;
     object_class->set_property = math_buttons_set_property;
 
-    g_type_class_add_private(klass, sizeof(MathButtonsPrivate));
-
     button_mode_type = g_enum_register_static("ButtonMode", button_mode_values);
 
     g_object_class_install_property(object_class,
@@ -1363,7 +1361,7 @@ math_buttons_class_init(MathButtonsClass *klass)
 static void
 math_buttons_init(MathButtons *buttons)
 {
-    buttons->priv = G_TYPE_INSTANCE_GET_PRIVATE(buttons, math_buttons_get_type(), MathButtonsPrivate);
+    buttons->priv = math_buttons_get_instance_private (buttons);
     gtk_box_set_spacing(GTK_BOX(buttons), 6);
     gtk_orientable_set_orientation (GTK_ORIENTABLE (buttons),
                                     GTK_ORIENTATION_VERTICAL);
