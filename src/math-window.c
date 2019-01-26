@@ -48,7 +48,7 @@ struct MathWindowPrivate
     GtkWidget *mode_programming_menu_item;
 };
 
-G_DEFINE_TYPE (MathWindow, math_window, GTK_TYPE_WINDOW);
+G_DEFINE_TYPE_WITH_PRIVATE (MathWindow, math_window, GTK_TYPE_WINDOW);
 
 enum
 {
@@ -536,8 +536,6 @@ math_window_class_init(MathWindowClass *klass)
     object_class->get_property = math_window_get_property;
     object_class->set_property = math_window_set_property;
 
-    g_type_class_add_private(klass, sizeof(MathWindowPrivate));
-
     g_object_class_install_property(object_class,
                                     PROP_EQUATION,
                                     g_param_spec_object("equation",
@@ -559,7 +557,7 @@ math_window_class_init(MathWindowClass *klass)
 static void
 math_window_init(MathWindow *window)
 {
-    window->priv = G_TYPE_INSTANCE_GET_PRIVATE(window, math_window_get_type(), MathWindowPrivate);
+    window->priv = math_window_get_instance_private (window);
     gtk_window_set_title(GTK_WINDOW(window),
                          /* Title of main window */
                          _("Calculator"));
