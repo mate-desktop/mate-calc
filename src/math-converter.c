@@ -33,7 +33,7 @@ struct MathConverterPrivate
 };
 
 
-G_DEFINE_TYPE (MathConverter, math_converter, GTK_TYPE_BOX);
+G_DEFINE_TYPE_WITH_PRIVATE (MathConverter, math_converter, GTK_TYPE_BOX);
 
 static void display_changed_cb(MathEquation *equation, GParamSpec *spec, MathConverter *converter);
 static void update_from_model(MathConverter *converter);
@@ -288,8 +288,6 @@ math_converter_get_conversion(MathConverter *converter, Unit **from_unit, Unit *
 static void
 math_converter_class_init(MathConverterClass *klass)
 {
-    g_type_class_add_private(klass, sizeof(MathConverterPrivate));
-
     signals[CHANGED] =
         g_signal_new("changed",
                      G_TYPE_FROM_CLASS (klass),
@@ -387,7 +385,7 @@ math_converter_init(MathConverter *converter)
     GtkWidget *hbox, *label, *swap_button;
     GtkCellRenderer *renderer;
 
-    converter->priv = G_TYPE_INSTANCE_GET_PRIVATE(converter, math_converter_get_type(), MathConverterPrivate);
+    converter->priv = math_converter_get_instance_private (converter);
 
     gtk_box_set_spacing(GTK_BOX(converter), 6);
     gtk_orientable_set_orientation (GTK_ORIENTABLE (converter),
