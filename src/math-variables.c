@@ -22,7 +22,7 @@ struct MathVariablesPrivate
     MpSerializer *serializer;
 };
 
-G_DEFINE_TYPE (MathVariables, math_variables, G_TYPE_OBJECT);
+G_DEFINE_TYPE_WITH_PRIVATE (MathVariables, math_variables, G_TYPE_OBJECT);
 
 
 MathVariables *
@@ -163,14 +163,13 @@ math_variables_delete(MathVariables *variables, const char *name)
 static void
 math_variables_class_init (MathVariablesClass *klass)
 {
-    g_type_class_add_private (klass, sizeof (MathVariablesPrivate));
 }
 
 
 static void
 math_variables_init(MathVariables *variables)
 {
-    variables->priv = G_TYPE_INSTANCE_GET_PRIVATE (variables, math_variables_get_type(), MathVariablesPrivate);
+    variables->priv = math_variables_get_instance_private (variables);
     variables->priv->registers = g_hash_table_new_full(g_str_hash, g_str_equal, g_free, g_free);
     variables->priv->file_name = g_build_filename(g_get_user_data_dir(), "mate-calc", "registers", NULL);
     variables->priv->serializer = mp_serializer_new(MP_DISPLAY_FORMAT_SCIENTIFIC, 10, 50);
