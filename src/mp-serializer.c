@@ -42,7 +42,7 @@ struct MpSerializerPrivate
 };
 
 
-G_DEFINE_TYPE(MpSerializer, mp_serializer, G_TYPE_OBJECT);
+G_DEFINE_TYPE_WITH_PRIVATE (MpSerializer, mp_serializer, G_TYPE_OBJECT);
 
 MpSerializer *
 mp_serializer_new(MpDisplayFormat format, int base, int trailing_digits)
@@ -559,8 +559,6 @@ mp_serializer_class_init(MpSerializerClass *klass)
     object_class->get_property = mp_serializer_get_property;
     object_class->set_property = mp_serializer_set_property;
 
-    g_type_class_add_private(klass, sizeof(MpSerializerPrivate));
-
     g_object_class_install_property(object_class,
                                     PROP_SHOW_THOUSANDS_SEPARATORS,
                                     g_param_spec_boolean("show-thousands-separators",
@@ -597,7 +595,7 @@ static void
 mp_serializer_init(MpSerializer *serializer)
 {
     gchar *radix, *tsep;
-    serializer->priv = G_TYPE_INSTANCE_GET_PRIVATE(serializer, mp_serializer_get_type(), MpSerializerPrivate);
+    serializer->priv = mp_serializer_get_instance_private (serializer);
 
     radix = nl_langinfo(RADIXCHAR);
     serializer->priv->radix = radix ? g_utf8_get_char(g_locale_to_utf8(radix, -1, NULL, NULL, NULL)) : '.';
