@@ -99,7 +99,7 @@ struct CurrencyManagerPrivate
     GList *currencies;
 };
 
-G_DEFINE_TYPE (CurrencyManager, currency_manager, G_TYPE_OBJECT);
+G_DEFINE_TYPE_WITH_PRIVATE (CurrencyManager, currency_manager, G_TYPE_OBJECT);
 
 
 enum {
@@ -606,8 +606,6 @@ currency_manager_get_value(CurrencyManager *manager, const gchar *currency)
 static void
 currency_manager_class_init(CurrencyManagerClass *klass)
 {
-    g_type_class_add_private(klass, sizeof(CurrencyManagerPrivate));
-
     signals[UPDATED] =
         g_signal_new("updated",
                      G_TYPE_FROM_CLASS (klass),
@@ -622,5 +620,5 @@ currency_manager_class_init(CurrencyManagerClass *klass)
 static void
 currency_manager_init(CurrencyManager *manager)
 {
-    manager->priv = G_TYPE_INSTANCE_GET_PRIVATE(manager, currency_manager_get_type(), CurrencyManagerPrivate);
+    manager->priv = currency_manager_get_instance_private (manager);
 }
