@@ -103,7 +103,7 @@ typedef struct {
     gchar *error;
 } SolveData;
 
-G_DEFINE_TYPE (MathEquation, math_equation, GTK_TYPE_TEXT_BUFFER);
+G_DEFINE_TYPE_WITH_PRIVATE (MathEquation, math_equation, GTK_TYPE_TEXT_BUFFER);
 
 
 MathEquation *
@@ -1669,8 +1669,6 @@ math_equation_class_init(MathEquationClass *klass)
     object_class->set_property = math_equation_set_property;
     object_class->constructed = math_equation_constructed;
 
-    g_type_class_add_private(klass, sizeof(MathEquationPrivate));
-  
     number_mode_type = g_enum_register_static("NumberMode", number_mode_values);
     number_format_type = math_mp_display_format_get_type();
     angle_unit_type = g_enum_register_static("AngleUnit", angle_unit_values);
@@ -1923,7 +1921,7 @@ math_equation_init(MathEquation *equation)
     gboolean use_default_digits = TRUE;
     int i;
 
-    equation->priv = G_TYPE_INSTANCE_GET_PRIVATE(equation, math_equation_get_type(), MathEquationPrivate);
+    equation->priv = math_equation_get_instance_private (equation);
 
     g_signal_connect(equation, "insert-text", G_CALLBACK(pre_insert_text_cb), equation);
     g_signal_connect(equation, "delete-range", G_CALLBACK(pre_delete_range_cb), equation);  
