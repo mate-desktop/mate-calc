@@ -326,8 +326,6 @@ create_gui(MathDisplay *display)
 {
     GtkWidget *info_view, *info_box, *main_box;
     PangoFontDescription *font_desc;
-    int i;
-    GtkStyle *style;
 
     main_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
     gtk_container_add(GTK_CONTAINER(display), main_box);
@@ -368,10 +366,6 @@ create_gui(MathDisplay *display)
 
     display->priv->spinner = gtk_spinner_new();
     gtk_box_pack_end(GTK_BOX(info_box), display->priv->spinner, FALSE, FALSE, 0);
-    style = gtk_widget_get_style(info_view);
-    for (i = 0; i < 5; i++) {
-        gtk_widget_modify_bg(GTK_WIDGET(display), i, &style->base[i]);
-    }
 
     gtk_widget_show(info_box);
     gtk_widget_show(info_view);
