@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-14 15:15+0200\n"
+"POT-Creation-Date: 2019-02-09 20:37+0100\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
 "Last-Translator: Daniel <danny3@tutanota.com>, 2018\n"
 "Language-Team: Romanian (https://www.transifex.com/mate/teams/13566/ro/)\n"
@@ -487,7 +487,7 @@ msgid "64-bit"
 msgstr "64 biți"
 
 #. Title of preferences dialog
-#: ../data/preferences.ui.h:9 ../src/math-preferences.c:238
+#: ../data/preferences.ui.h:9 ../src/math-preferences.c:239
 msgid "Preferences"
 msgstr "Preferințe"
 
@@ -544,7 +544,7 @@ msgid "MATE Calculator"
 msgstr "Calculator MATE"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:562
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:563
 msgid "Calculator"
 msgstr "Calculator"
 
@@ -1203,12 +1203,12 @@ msgstr "Semn"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: ../src/math-converter.c:414
+#: ../src/math-converter.c:412
 msgid " in "
 msgstr " în "
 
 #. Tooltip for swap conversion button
-#: ../src/math-converter.c:429
+#: ../src/math-converter.c:427
 msgid "Switch conversion units"
 msgstr "Schimbare unități de conversie"
 
@@ -1282,7 +1282,7 @@ msgid "Displayed value not an integer"
 msgstr "Valoarea afișată nu este un întreg"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1918
+#: ../src/math-equation.c:1916
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1290,45 +1290,45 @@ msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
 #. grads
-#: ../src/math-preferences.c:255 ../src/unit-manager.c:54
+#: ../src/math-preferences.c:256 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "Grade"
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:259 ../src/unit-manager.c:55
+#: ../src/math-preferences.c:260 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "Radiani"
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:263 ../src/unit-manager.c:56
+#: ../src/math-preferences.c:264 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "Gradiani"
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
 #. number 1.234×10^99)
-#: ../src/math-preferences.c:273
+#: ../src/math-preferences.c:274
 msgid "Automatic"
 msgstr "Automat"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:277
+#: ../src/math-preferences.c:278
 msgid "Fixed"
 msgstr "Fix"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:281
+#: ../src/math-preferences.c:282
 msgid "Scientific"
 msgstr "Științific"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:285
+#: ../src/math-preferences.c:286
 msgid "Engineering"
 msgstr "Ingineresc"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:296
+#: ../src/math-preferences.c:297
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "Arată %d cifre du_pă virgulă"
@@ -1384,70 +1384,70 @@ msgid "Calculator with financial and scientific modes."
 msgstr "Calculator cu mod financiar și științific."
 
 #. Calculator menu
-#: ../src/math-window.c:395
+#: ../src/math-window.c:398
 msgid "_Calculator"
 msgstr "_Calculator"
 
 #. Mode menu
-#: ../src/math-window.c:397
+#: ../src/math-window.c:400
 msgid "_Mode"
 msgstr "_Mod"
 
 #. Help menu label
-#: ../src/math-window.c:399
+#: ../src/math-window.c:402
 msgid "_Help"
 msgstr "_Ajutor"
 
 #. Basic menu label
-#: ../src/math-window.c:401
+#: ../src/math-window.c:404
 msgid "_Basic"
 msgstr "_Standard"
 
 #. Advanced menu label
-#: ../src/math-window.c:403
+#: ../src/math-window.c:406
 msgid "_Advanced"
 msgstr "_Avansat"
 
 #. Financial menu label
-#: ../src/math-window.c:405
+#: ../src/math-window.c:408
 msgid "_Financial"
 msgstr "_Financiar"
 
 #. Programming menu label
-#: ../src/math-window.c:407
+#: ../src/math-window.c:410
 msgid "_Programming"
 msgstr "_Programare"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:409
+#: ../src/math-window.c:412
 msgid "_Contents"
 msgstr "_Conținut"
 
-#: ../src/math-window.c:412
+#: ../src/math-window.c:415
 msgid "_Copy"
 msgstr "_Copiază"
 
-#: ../src/math-window.c:414
+#: ../src/math-window.c:417
 msgid "_Paste"
 msgstr "_Lipește"
 
-#: ../src/math-window.c:416
+#: ../src/math-window.c:419
 msgid "_Undo"
 msgstr "Anulea_ză"
 
-#: ../src/math-window.c:418
+#: ../src/math-window.c:421
 msgid "_Redo"
 msgstr "_Refă"
 
-#: ../src/math-window.c:421
+#: ../src/math-window.c:424
 msgid "_Preferences"
 msgstr "_Preferințe"
 
-#: ../src/math-window.c:423
+#: ../src/math-window.c:426
 msgid "_Quit"
 msgstr "_Închide"
 
-#: ../src/math-window.c:440
+#: ../src/math-window.c:443
 msgid "_About"
 msgstr "_Despre"
 
