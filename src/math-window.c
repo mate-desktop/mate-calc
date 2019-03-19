@@ -223,53 +223,58 @@ static void help_cb(GtkWidget *widget, MathWindow *window)
 
 static void about_cb(GtkWidget* widget, MathWindow* window)
 {
-    char* authors[] = {
+    const char* authors[] = {
         "Rich Burridge <rich.burridge@sun.com>",
         "Robert Ancell <robert.ancell@gmail.com>",
         "Klaus Niederkrüger <kniederk@umpa.ens-lyon.fr>",
         NULL
     };
 
-    char* documenters[] = {
-        "Sun Microsystems",
+    const char* documenters[] = {
+        N_("Sun Microsystems"),
+        N_("MATE Documentation Team"),
         NULL
     };
 
-    /* The translator credits. Please translate this with your name(s). */
-    char* translator_credits = _("translator-credits");
-
-    char copyright[] = \
-        "Copyright \xc2\xa9 1986–2010 The GCalctool authors\n"
-        "Copyright \xc2\xa9 2011-2019 MATE developers";
-
     /* The license this software is under (GPL2+) */
-    char* license = _("mate-calc is free software; you can redistribute it and/or modify\n"
-        "it under the terms of the GNU General Public License as published by\n"
-        "the Free Software Foundation; either version 2 of the License, or\n"
-        "(at your option) any later version.\n"
-        "\n"
-        "mate-calc is distributed in the hope that it will be useful,\n"
-        "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-        "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-        "GNU General Public License for more details.\n"
-        "\n"
-        "You should have received a copy of the GNU General Public License\n"
-        "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
-        "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA");
+    const char* license[] = {
+        N_("MATE Calculator is free software; you can redistribute it and/or modify "
+           "it under the terms of the GNU General Public License as published by "
+           "the Free Software Foundation; either version 2 of the License, or "
+           "(at your option) any later version."),
+        N_("MATE Calculator is distributed in the hope that it will be useful, "
+           "but WITHOUT ANY WARRANTY; without even the implied warranty of "
+           "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the "
+           "GNU General Public License for more details."),
+        N_("You should have received a copy of the GNU General Public License "
+           "along with MATE Calculator; if not, write to the Free Software Foundation, Inc., "
+           "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA")
+    };
+
+    char *license_trans = g_strjoin ("\n\n", _(license[0]), _(license[1]), _(license[2]), NULL);
+    const char **p;
+
+    for (p = documenters; *p; ++p)
+        *p = _(*p);
 
     gtk_show_about_dialog(GTK_WINDOW(window),
-        "name", _("mate-calc"),
+        "program-name", _("MATE Calculator"),
         "version", VERSION,
-        "copyright", copyright,
-        "license", license,
+        "title", _("About MATE Calculator"),
+        "copyright", _("Copyright \xc2\xa9 1986–2010 The GCalctool authors\n"
+                       "Copyright \xc2\xa9 2011-2019 MATE developers"),
+        "license", license_trans,
         "comments", _("Calculator with financial and scientific modes."),
         "authors", authors,
         "documenters", documenters,
-        "translator_credits", translator_credits,
+        "translator_credits", _("translator-credits"),
+        "wrap-license", TRUE,
+        "website", "http://mate-desktop.org",
         "icon-name", "accessories-calculator",
         "logo-icon-name", "accessories-calculator",
-        "website", "http://mate-desktop.org",
         NULL);
+
+    g_free (license_trans);
 }
 
 static void
