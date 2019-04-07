@@ -27,10 +27,10 @@ typedef enum
     P_Percentage=8,
     /* UnaryMinus and Power must have same precedence. */
     P_UnaryMinus=9,
-    P_Power=10,
-    P_Factorial=11,
-    P_Function=12,
-    P_NumberVariable=13,
+    P_Power=9,
+    P_Function=9,
+    P_Factorial=10,
+    P_NumberVariable=11,
     /* P_Depth should be always at the bottom. It stops node jumping off the current depth level. */
     P_Depth
 } Precedence;
