@@ -18,7 +18,7 @@ static int
 variable_is_defined(ParserState *state, const char *name)
 {
     /* FIXME: Make more generic */
-    if (strcmp(name, "e") == 0 || strcmp(name, "i") == 0 || strcmp(name, "π") == 0)
+    if (strcmp(name, "e") == 0 || strcmp(name, "i") == 0 || strcmp(name, "π") == 0 || strcmp(name, "pi") == 0)
         return 1;
     if (state->options->variable_is_defined)
         return state->options->variable_is_defined(name, state->options->callback_data);
@@ -35,7 +35,7 @@ get_variable(ParserState *state, const char *name, MPNumber *z)
         mp_get_eulers(z);
     else if (strcmp(name, "i") == 0)
         mp_get_i(z);
-    else if (strcmp(name, "π") == 0)
+    else if (strcmp(name, "π") == 0 || strcmp(name, "pi") == 0)
         mp_get_pi(z);
     else if (state->options->get_variable)
         result = state->options->get_variable(name, z, state->options->callback_data);
@@ -49,7 +49,7 @@ static void
 set_variable(ParserState *state, const char *name, const MPNumber *x)
 {
     // Reserved words, e, π, mod, and, or, xor, not, abs, log, ln, sqrt, int, frac, sin, cos, ...
-    if (strcmp(name, "e") == 0 || strcmp(name, "i") == 0 || strcmp(name, "π") == 0)
+    if (strcmp(name, "e") == 0 || strcmp(name, "i") == 0 || strcmp(name, "π") == 0 || strcmp(name, "pi") == 0)
         return; // FALSE
 
     if (state->options->set_variable)
