@@ -131,20 +131,24 @@ get_options(int argc, char *argv[])
         if (strcmp(arg, "-v") == 0 ||
             strcmp(arg, "--version") == 0) {
             version(progname);
+            g_free(progname);
             exit(0);
         }
         else if (strcmp(arg, "-h") == 0 ||
                  strcmp(arg, "-?") == 0 ||
                  strcmp(arg, "--help") == 0) {
             usage(progname, TRUE, FALSE);
+            g_free(progname);
             exit(0);
         }
         else if (strcmp(arg, "--help-all") == 0) {
             usage(progname, TRUE, TRUE);
+            g_free(progname);
             exit(0);
         }
         else if (strcmp(arg, "--help-gtk") == 0) {
             usage(progname, FALSE, TRUE);
+            g_free(progname);
             exit(0);
         }
         else if (strcmp(arg, "-s") == 0 ||
@@ -155,6 +159,7 @@ get_options(int argc, char *argv[])
                         /* Error printed to stderr when user uses --solve argument without an equation */
                         _("Argument --solve requires an equation to solve"));
                 fprintf(stderr, "\n");
+                g_free(progname);
                 exit(1);
             }
             else
@@ -166,9 +171,12 @@ get_options(int argc, char *argv[])
                     _("Unknown argument '%s'"), arg);
             fprintf(stderr, "\n");
             usage(progname, TRUE, FALSE);
+            g_free(progname);
             exit(1);
         }
     }
+
+    g_free(progname);
 }
 
 static void
