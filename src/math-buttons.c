@@ -388,7 +388,7 @@ update_bit_panel(MathButtons *buttons)
     for (i = 0; i < MAXBITS; i++) {
         const gchar *label;
 
-        if (bits & (1LL << (MAXBITS-i-1)))
+        if (bits & (1LLU << (MAXBITS-i-1)))
             label = " 1";
         else
             label = " 0";
