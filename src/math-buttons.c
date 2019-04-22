@@ -511,7 +511,7 @@ load_mode(MathButtons *buttons, ButtonMode mode)
     }
   
     if (*panel)
-        return *panel;
+        goto out;
 
     builder = *builder_ptr = gtk_builder_new();
     // FIXME: Show dialog if failed to load
@@ -663,6 +663,7 @@ load_mode(MathButtons *buttons, ButtonMode mode)
 
     display_changed_cb(buttons->priv->equation, NULL, buttons);
   
+out:
     return *panel;
 }
 
