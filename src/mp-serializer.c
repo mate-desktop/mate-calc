@@ -352,14 +352,19 @@ mp_cast_to_exponential_string(MpSerializer *serializer, const MPNumber *x, gbool
 gchar *
 mp_serializer_to_string(MpSerializer *serializer, const MPNumber *x)
 {
+    MPNumber cmp, xcmp;
     gchar *s0;
     int n_digits = 0;
-
+    mp_set_from_integer(10, &cmp);
+    mp_xpowy_integer(&cmp, -(serializer->priv->trailing_digits), &cmp);
+    mp_real_component(x, &xcmp);
+    mp_abs(&xcmp, &xcmp);
     switch(serializer->priv->format) {
     default:
     case MP_DISPLAY_FORMAT_AUTOMATIC:
         s0 = mp_cast_to_string(serializer, x, &n_digits);
-        if (n_digits <= serializer->priv->leading_digits)
+        if ((n_digits <= serializer->priv->leading_digits &&
+            mp_is_greater_equal(&xcmp, &cmp)) || mp_is_complex(x))
             return s0;
         else {
             g_free (s0);
