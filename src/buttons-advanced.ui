@@ -952,6 +952,7 @@
           <object class="GtkButton" id="calc_const_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
             <property name="receives_default">True</property>
             <signal name="clicked" handler="const_cb" swapped="no"/>
             <child>
