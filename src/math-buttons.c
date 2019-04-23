@@ -45,6 +45,7 @@ struct MathButtonsPrivate
     GtkWidget *shift_left_menu, *shift_right_menu;
 
     GtkWidget *function_menu;
+    GtkWidget *const_menu;
 
     GList *superscript_toggles;
     GList *subscript_toggles;
@@ -125,6 +126,9 @@ static ButtonData button_data[] = {
     {"function",           NULL, FUNCTION,
       /* Tooltip for the additional functions button */
       N_("Additional Functions")},
+    {"const",           NULL, FUNCTION,
+      /* Tooltip for the additional constant button */
+      N_("Additional constants")},
     {"x_pow_y",            "^", FUNCTION,
       /* Tooltip for the exponent button */
       N_("Exponent [^ or **]")},
@@ -1021,6 +1025,63 @@ function_cb(GtkWidget *widget, MathButtons *buttons)
     popup_button_menu(widget, GTK_MENU(buttons->priv->function_menu));  
 }
 
+static void
+insert_const_cb(GtkWidget *widget, MathButtons *buttons)
+{
+    math_equation_insert(buttons->priv->equation, g_object_get_data(G_OBJECT(widget), "const"));
+}
+
+
+void const_cb(GtkWidget *widget, MathButtons *buttons);
+G_MODULE_EXPORT
+void
+const_cb(GtkWidget *widget, MathButtons *buttons)
+{
+    if (!buttons->priv->const_menu) {
+        gint i;
+        GtkWidget *menu;
+        struct 
+        {
+            gchar *name, *constant;
+        } constants[] = 
+        {
+            { /* Tooltip for the c₀ component button */
+              N_("Velocity of Light"), "c₀" },
+            { /* Tooltip for the μ₀ component button */
+              N_("Magnetic constant"), "μ₀" },
+            { /* Tooltip for the ε₀ button */
+              N_("Electric constant"), "ε₀" },
+            { /* Tooltip for the G button */
+              N_("Newtonian constant of gravitation"), "G" },
+            { /* Tooltip for the h button */
+              N_("Planck constant"), "h" },
+            { /* Tooltip for the ｅ button */
+              N_("Elementary charge"), "ｅ" },
+            { /* Tooltip for the mₑ button */
+              N_("Electron mass"), "mₑ" },
+            { /* Tooltip for the mₚ button */
+              N_("Proton mass"), "mₚ" },
+            { /* Tooltip for the Nₐ button */
+              N_("Avogrado constant"), "Nₐ" },
+            { NULL, NULL }
+        };
+
+        menu = buttons->priv->const_menu = gtk_menu_new();
+        gtk_menu_set_reserve_toggle_size(GTK_MENU(menu), FALSE);
+
+        for (i = 0; constants[i].name != NULL; i++) {
+            GtkWidget *item;
+          
+            item = gtk_menu_item_new_with_label(_(constants[i].name));
+            g_object_set_data(G_OBJECT(item), "const", g_strdup(constants[i].constant));
+            gtk_menu_shell_append(GTK_MENU_SHELL(menu), item);
+            g_signal_connect(item, "activate", G_CALLBACK(insert_const_cb), buttons);
+            gtk_widget_show(item);
+        }
+    }
+
+    popup_button_menu(widget, GTK_MENU(buttons->priv->const_menu));  
+}
 
 void factorize_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
