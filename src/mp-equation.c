@@ -18,7 +18,19 @@ static int
 variable_is_defined(ParserState *state, const char *name)
 {
     /* FIXME: Make more generic */
-    if (strcmp(name, "e") == 0 || strcmp(name, "i") == 0 || strcmp(name, "π") == 0 || strcmp(name, "pi") == 0)
+    if (strcmp(name, "e") == 0 ||
+        strcmp(name, "i") == 0 ||
+        strcmp(name, "π") == 0 ||
+        strcmp(name, "pi") == 0 ||
+        strcmp(name, "c₀") == 0 ||
+        strcmp(name, "μ₀") == 0 ||
+        strcmp(name, "ε₀") == 0 ||
+        strcmp(name, "G") == 0 ||
+        strcmp(name, "h") == 0 ||
+        strcmp(name, "ｅ") == 0 ||
+        strcmp(name, "mₑ") == 0 ||
+        strcmp(name, "mₚ") == 0 ||
+        strcmp(name, "Nₐ") == 0)
         return 1;
     if (state->options->variable_is_defined)
         return state->options->variable_is_defined(name, state->options->callback_data);
@@ -37,6 +49,24 @@ get_variable(ParserState *state, const char *name, MPNumber *z)
         mp_get_i(z);
     else if (strcmp(name, "π") == 0 || strcmp(name, "pi") == 0)
         mp_get_pi(z);
+    else if (strcmp(name, "c₀") == 0)
+        mp_set_from_string("299792458", 10, z); /* velocity of light */
+    else if (strcmp(name, "μ₀") == 0)
+        mp_set_from_string("0.0000012566370614", 10, z); /* magnetic constant */
+    else if (strcmp(name, "ε₀") == 0)
+        mp_set_from_string("0.000000000008854187817", 10, z); /* electric constant */
+    else if (strcmp(name, "G") == 0)
+        mp_set_from_string("0.0000000000667310", 10, z); /* Newtonian constant of gravitation */
+    else if (strcmp(name, "h") == 0)
+        mp_set_from_string("0.000000000000000000000000000000000662606876", 10, z); /* Planck constant */
+    else if (strcmp(name, "ｅ") == 0)
+        mp_set_from_string("0.0000000000000000001602176462", 10, z); /* elementary charge */
+    else if (strcmp(name, "mₑ") == 0)
+        mp_set_from_string("0.000000000000000000000000000000910938188", 10, z); /* electron mass */
+    else if (strcmp(name, "mₚ") == 0)
+        mp_set_from_string("0.00000000000000000000000000167262158", 10, z); /* proton mass */
+    else if (strcmp(name, "Nₐ") == 0)
+        mp_set_from_string("602214199000000000000000", 10, z); /* Avogrado constant */ 
     else if (state->options->get_variable)
         result = state->options->get_variable(name, z, state->options->callback_data);
     else
@@ -49,7 +79,19 @@ static void
 set_variable(ParserState *state, const char *name, const MPNumber *x)
 {
     // Reserved words, e, π, mod, and, or, xor, not, abs, log, ln, sqrt, int, frac, sin, cos, ...
-    if (strcmp(name, "e") == 0 || strcmp(name, "i") == 0 || strcmp(name, "π") == 0 || strcmp(name, "pi") == 0)
+    if (strcmp(name, "e") == 0 ||
+        strcmp(name, "i") == 0 ||
+        strcmp(name, "π") == 0 ||
+        strcmp(name, "pi") == 0 ||
+        strcmp(name, "c₀") == 0 ||
+        strcmp(name, "μ₀") == 0 ||
+        strcmp(name, "ε₀") == 0 ||
+        strcmp(name, "G") == 0 ||
+        strcmp(name, "h") == 0 ||
+        strcmp(name, "ｅ") == 0 ||
+        strcmp(name, "mₑ") == 0 ||
+        strcmp(name, "mₚ") == 0 ||
+        strcmp(name, "Nₐ") == 0)
         return; // FALSE
 
     if (state->options->set_variable)
