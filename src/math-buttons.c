@@ -1042,28 +1042,28 @@ const_cb(GtkWidget *widget, MathButtons *buttons)
         GtkWidget *menu;
         struct 
         {
-            gchar *name, *constant;
+            gchar *name, *constant, *tooltip;
         } constants[] = 
         {
             { /* Tooltip for the c₀ component button */
-              N_("Velocity of Light"), "c₀" },
+              N_("Velocity of Light"), "c₀", N_("299,792,458 m/s") },
             { /* Tooltip for the μ₀ component button */
-              N_("Magnetic constant"), "μ₀" },
+              N_("Magnetic constant"), "μ₀", N_("1.2566370614×10⁻⁶ N/A²") },
             { /* Tooltip for the ε₀ button */
-              N_("Electric constant"), "ε₀" },
+              N_("Electric constant"), "ε₀", N_("8.85418782×10⁻¹² s⁴A²/m³kg") },
             { /* Tooltip for the G button */
-              N_("Newtonian constant of gravitation"), "G" },
+              N_("Newtonian constant of gravitation"), "G",  N_("6.67408×10⁻¹¹ m³/(s²kg)") },
             { /* Tooltip for the h button */
-              N_("Planck constant"), "h" },
+              N_("Planck constant"), "h", N_("6.62607004×10⁻³⁴ m²kg/s") },
             { /* Tooltip for the ｅ button */
-              N_("Elementary charge"), "ｅ" },
+              N_("Elementary charge"), "ｅ", N_("1.6021766208(98)×10⁻¹⁹ C") },
             { /* Tooltip for the mₑ button */
-              N_("Electron mass"), "mₑ" },
+              N_("Electron mass"), "mₑ", N_("9.10938356×10⁻³¹ kg") },
             { /* Tooltip for the mₚ button */
-              N_("Proton mass"), "mₚ" },
+              N_("Proton mass"), "mₚ", N_("1.672621898(21)×10⁻²⁷ kg") },
             { /* Tooltip for the Nₐ button */
-              N_("Avogrado constant"), "Nₐ" },
-            { NULL, NULL }
+              N_("Avogrado constant"), "Nₐ", N_("6.02214086×10²³ mol⁻¹") },
+            { NULL, NULL, NULL }
         };
 
         menu = buttons->priv->const_menu = gtk_menu_new();
@@ -1073,6 +1073,7 @@ const_cb(GtkWidget *widget, MathButtons *buttons)
             GtkWidget *item;
           
             item = gtk_menu_item_new_with_label(_(constants[i].name));
+            gtk_widget_set_tooltip_text(item, _(constants[i].tooltip));
             g_object_set_data(G_OBJECT(item), "const", g_strdup(constants[i].constant));
             gtk_menu_shell_append(GTK_MENU_SHELL(menu), item);
             g_signal_connect(item, "activate", G_CALLBACK(insert_const_cb), buttons);
