@@ -54,19 +54,19 @@ get_variable(ParserState *state, const char *name, MPNumber *z)
     else if (strcmp(name, "μ₀") == 0)
         mp_set_from_string("0.0000012566370614", 10, z); /* magnetic constant */
     else if (strcmp(name, "ε₀") == 0)
-        mp_set_from_string("0.000000000008854187817", 10, z); /* electric constant */
+        mp_set_from_string("0.00000000000885418782", 10, z); /* electric constant */
     else if (strcmp(name, "G") == 0)
-        mp_set_from_string("0.0000000000667310", 10, z); /* Newtonian constant of gravitation */
+        mp_set_from_string("0.0000000000667408", 10, z); /* Newtonian constant of gravitation */
     else if (strcmp(name, "h") == 0)
-        mp_set_from_string("0.000000000000000000000000000000000662606876", 10, z); /* Planck constant */
+        mp_set_from_string("0.000000000000000000000000000000000662607004", 10, z); /* Planck constant */
     else if (strcmp(name, "ｅ") == 0)
-        mp_set_from_string("0.0000000000000000001602176462", 10, z); /* elementary charge */
+        mp_set_from_string("0.00000000000000000016021766208", 10, z); /* elementary charge */
     else if (strcmp(name, "mₑ") == 0)
-        mp_set_from_string("0.000000000000000000000000000000910938188", 10, z); /* electron mass */
+        mp_set_from_string("0.000000000000000000000000000000910938356", 10, z); /* electron mass */
     else if (strcmp(name, "mₚ") == 0)
-        mp_set_from_string("0.00000000000000000000000000167262158", 10, z); /* proton mass */
+        mp_set_from_string("0.000000000000000000000000001672621898", 10, z); /* proton mass */
     else if (strcmp(name, "Nₐ") == 0)
-        mp_set_from_string("602214199000000000000000", 10, z); /* Avogrado constant */ 
+        mp_set_from_string("602214086000000000000000", 10, z); /* Avogrado constant */ 
     else if (state->options->get_variable)
         result = state->options->get_variable(name, z, state->options->callback_data);
     else
