@@ -7,8 +7,8 @@
     <property name="border_width">6</property>
     <property name="title" translatable="yes" comments="Title of insert character code dialog">Insert Character Code</property>
     <property name="resizable">False</property>
-    <property name="type_hint">dialog</property>
     <property name="icon_name">accessories-calculator</property>
+    <property name="type_hint">dialog</property>
     <signal name="delete-event" handler="character_code_dialog_delete_cb" swapped="no"/>
     <signal name="response" handler="character_code_dialog_response_cb" swapped="no"/>
     <child>
@@ -2052,6 +2052,9 @@
                 <property name="receives_default">True</property>
                 <property name="use_underline">True</property>
                 <signal name="clicked" handler="solve_cb" swapped="no"/>
+                <style>
+                  <class name="suggested-action"/>
+                </style>
               </object>
               <packing>
                 <property name="left_attach">6</property>
