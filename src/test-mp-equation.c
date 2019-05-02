@@ -28,6 +28,8 @@ static int passes = 0;
 #  define  __attribute__(x)  /*NOTHING*/
 #endif
 
+#define test(X, Y, Z) Test(X, Y, Z, 9)
+
 static void pass(const char *format, ...) __attribute__((format(printf, 1, 2)));
 static void fail(const char *format, ...) __attribute__((format(printf, 1, 2)));
 
@@ -72,7 +74,7 @@ error_code_to_string(MPErrorCode error)
 
 
 static void
-test(char *expression, char *expected, int expected_error)
+Test(char *expression, char *expected, int expected_error, int trailing_digits)
 {
     MPErrorCode error;
     MPNumber result;
@@ -83,7 +85,7 @@ test(char *expression, char *expected, int expected_error)
         char *result_str;
         MpSerializer *serializer;
 
-        serializer = mp_serializer_new(MP_DISPLAY_FORMAT_FIXED, options.base, 9);
+        serializer = mp_serializer_new(MP_DISPLAY_FORMAT_FIXED, options.base, trailing_digits);
         result_str = mp_serializer_to_string(serializer, &result);
         g_object_unref(serializer);
 
@@ -315,6 +317,18 @@ test_equations()
     test("π", "3.141592654", 0);
     test("pi", "3.141592654", 0);
     test("e", "2.718281828", 0);
+
+    /* Physical constants */
+
+    test("c₀", "299792458", 0);
+    Test("μ₀", "0.0000012566370614", 0, 16);
+    Test("ε₀", "0.00000000000885418782", 0, 20);
+    Test("G",  "0.0000000000667408", 0, 16);
+    Test("h",  "0.000000000000000000000000000000000662607004", 0, 42);
+    Test("ｅ", "0.00000000000000000016021766208", 0, 29);
+    Test("mₑ", "0.000000000000000000000000000000910938356", 0, 39);
+    Test("mₚ", "0.000000000000000000000000001672621898", 0, 36);
+    test("Nₐ", "602214086000000000000000", 0);
 
     test("z=99", "99", 0);
     test("longname=99", "99", 0);
