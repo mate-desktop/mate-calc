@@ -60,10 +60,10 @@ struct MathButtonsPrivate
 
 G_DEFINE_TYPE_WITH_PRIVATE (MathButtons, math_buttons, GTK_TYPE_BOX);
 
-#define UI_BASIC_FILE       UI_DIR "/buttons-basic.ui"
-#define UI_ADVANCED_FILE    UI_DIR "/buttons-advanced.ui"
-#define UI_FINANCIAL_FILE   UI_DIR "/buttons-financial.ui"
-#define UI_PROGRAMMING_FILE UI_DIR "/buttons-programming.ui"
+#define UI_BASIC_RESOURCE_PATH       "/org/mate/calculator/ui/buttons-basic.ui"
+#define UI_ADVANCED_RESOURCE_PATH    "/org/mate/calculator/ui/buttons-advanced.ui"
+#define UI_FINANCIAL_RESOURCE_PATH   "/org/mate/calculator/ui/buttons-financial.ui"
+#define UI_PROGRAMMING_RESOURCE_PATH "/org/mate/calculator/ui/buttons-programming.ui"
 
 #define GET_WIDGET(ui, name) \
           GTK_WIDGET(gtk_builder_get_object((ui), (name)))
@@ -478,7 +478,7 @@ load_mode(MathButtons *buttons, ButtonMode mode)
     GtkBuilder *builder, **builder_ptr;
     gint i;
     gchar *name;
-    const gchar *builder_file;
+    const gchar *path;
     static gchar *objects[] = { "button_panel", "character_code_dialog", "currency_dialog",
                                 "ctrm_dialog", "ddb_dialog", "fv_dialog", "gpm_dialog",
                                 "pmt_dialog", "pv_dialog", "rate_dialog", "sln_dialog",
@@ -490,22 +490,22 @@ load_mode(MathButtons *buttons, ButtonMode mode)
     default:
     case BASIC:
         builder_ptr = &buttons->priv->basic_ui;
-        builder_file = UI_BASIC_FILE;
+        path = UI_BASIC_RESOURCE_PATH;
         panel = &buttons->priv->bas_panel;
         break;
     case ADVANCED:
         builder_ptr = &buttons->priv->advanced_ui;
-        builder_file = UI_ADVANCED_FILE;
+        path = UI_ADVANCED_RESOURCE_PATH;
         panel = &buttons->priv->adv_panel;
         break;
     case FINANCIAL:
         builder_ptr = &buttons->priv->financial_ui;
-        builder_file = UI_FINANCIAL_FILE;
+        path = UI_FINANCIAL_RESOURCE_PATH;
         panel = &buttons->priv->fin_panel;
         break;
     case PROGRAMMING:
         builder_ptr = &buttons->priv->programming_ui;
-        builder_file = UI_PROGRAMMING_FILE;
+        path = UI_PROGRAMMING_RESOURCE_PATH;
         panel = &buttons->priv->prog_panel;
         break;
     }
@@ -515,7 +515,7 @@ load_mode(MathButtons *buttons, ButtonMode mode)
 
     builder = *builder_ptr = gtk_builder_new();
     // FIXME: Show dialog if failed to load
-    gtk_builder_add_objects_from_file(builder, builder_file, objects, &error);
+    gtk_builder_add_objects_from_resource(builder, path, objects, &error);
     if (error) {
         g_warning("Error loading button UI: %s", error->message);
         g_clear_error(&error);

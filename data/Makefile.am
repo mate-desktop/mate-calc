@@ -1,11 +1,3 @@
-uidir = $(datadir)/mate-calc
-ui_DATA = \
-	preferences.ui \
-	buttons-basic.ui \
-	buttons-advanced.ui \
-	buttons-financial.ui \
-	buttons-programming.ui
-
 @INTLTOOL_XML_RULE@
 appdatadir = $(datadir)/metainfo
 appdata_in_files = mate-calc.appdata.xml.in
@@ -22,7 +14,6 @@ Utilities_DATA = $(Utilities_in_files:.desktop.in=.desktop)
 man1_MANS = mate-calc.1 mate-calc-cmd.1
 
 EXTRA_DIST = \
-	$(ui_DATA) \
 	org.mate.calc.gschema.xml.in \
 	mate-calc.desktop.in \
 	$(appdata_in_files) \

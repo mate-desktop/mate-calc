@@ -28,7 +28,7 @@ struct MathPreferencesDialogPrivate
 
 G_DEFINE_TYPE_WITH_PRIVATE (MathPreferencesDialog, math_preferences, GTK_TYPE_DIALOG);
 
-#define UI_DIALOGS_FILE  UI_DIR "/preferences.ui"
+#define UI_DIALOGS_RESOURCE_PATH "/org/mate/calculator/ui/preferences.ui"
 #define GET_WIDGET(ui, name) \
           GTK_WIDGET(gtk_builder_get_object(ui, name))
 
@@ -229,7 +229,7 @@ create_gui(MathPreferencesDialog *dialog)
 
     // FIXME: Handle errors
     dialog->priv->ui = gtk_builder_new();
-    gtk_builder_add_objects_from_file(dialog->priv->ui, UI_DIALOGS_FILE, objects, &error);
+    gtk_builder_add_objects_from_resource(dialog->priv->ui, UI_DIALOGS_RESOURCE_PATH, objects, &error);
     if (error)
         g_warning("Error loading preferences UI: %s", error->message);
     g_clear_error(&error);
