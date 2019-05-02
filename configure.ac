@@ -49,6 +49,24 @@ dnl ###########################################################################
 IT_PROG_INTLTOOL([0.35.0])
 AC_SUBST(GETTEXT_PACKAGE, mate-calc)
 
+# **********************
+# GLIB_COMPILE_RESOURCES
+# **********************
+AC_ARG_VAR([GLIB_COMPILE_RESOURCES],[glib-compile-resources bin])
+AC_PATH_PROG([GLIB_COMPILE_RESOURCES],[glib-compile-resources],[])
+if test -z "$GLIB_COMPILE_RESOURCES"; then
+  AC_MSG_ERROR([glib-compile-resources not found])
+fi
+
+# *******
+# XMLLINT
+# *******
+AC_ARG_VAR([XMLLINT],[xmllint bin])
+AC_PATH_PROG([XMLLINT],[xmllint],[])
+if test -z "$XMLLINT"; then
+  AC_MSG_ERROR([xmllint not found])
+fi
+
 dnl ###########################################################################
 dnl Documentation
 dnl ###########################################################################
