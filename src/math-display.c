@@ -320,12 +320,49 @@ status_changed_cb(MathEquation *equation, GParamSpec *spec, MathDisplay *display
     }
 }
 
+static void _text_view_override_font (GtkWidget *widget, PangoFontDescription *font)
+{
+    GtkCssProvider *provider;
+    gchar          *css;
+    gchar          *family;
+    gchar          *weight;
+    gchar          *size;
+    const gchar    *style;
+
+    family = g_strdup_printf ("font-family: %s;", pango_font_description_get_family (font));
+    weight = g_strdup_printf ("font-weight: %d;", pango_font_description_get_weight (font));
+    if (pango_font_description_get_style (font) == PANGO_STYLE_NORMAL)
+        style = "font-style: normal;";
+    else if (pango_font_description_get_style (font) == PANGO_STYLE_ITALIC)
+        style = "font-style: italic;";
+    else
+        style = "font-style: oblique;";
+
+    size = g_strdup_printf ("font-size: %d%s;",
+                             pango_font_description_get_size (font) / PANGO_SCALE,
+                             pango_font_description_get_size_is_absolute (font) ? "px" : "pt");
+    css = g_strdup_printf ("textview { %s %s %s %s }", family, weight, style, size);
+
+    provider = gtk_css_provider_new ();
+    gtk_css_provider_load_from_data (provider, css, -1, NULL);
+    g_free (css);
+    g_free (family);
+    g_free (weight);
+    g_free (size);
+
+    gtk_style_context_add_provider (gtk_widget_get_style_context (widget),
+                                    GTK_STYLE_PROVIDER (provider),
+                                    GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+    g_object_unref (provider);
+}
 
 static void
 create_gui(MathDisplay *display)
 {
     GtkWidget *info_view, *info_box, *main_box;
     PangoFontDescription *font_desc;
+    GtkStyleContext *context;
+    GtkStateFlags state;
 
     main_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
     gtk_container_add(GTK_CONTAINER(display), main_box);
@@ -340,9 +377,11 @@ create_gui(MathDisplay *display)
     /* TEMP: Disabled for now as GTK+ doesn't properly render a right aligned right margin, see bug #482688 */
     /*gtk_text_view_set_right_margin(GTK_TEXT_VIEW(display->priv->text_view), 6);*/
     gtk_text_view_set_justification(GTK_TEXT_VIEW(display->priv->text_view), GTK_JUSTIFY_RIGHT);
-    font_desc = pango_font_description_copy(gtk_widget_get_style(display->priv->text_view)->font_desc);
+    context = gtk_widget_get_style_context (display->priv->text_view);
+    state = gtk_widget_get_state_flags (GTK_WIDGET (display->priv->text_view));
+    gtk_style_context_get (context, state, GTK_STYLE_PROPERTY_FONT, &font_desc, NULL);
     pango_font_description_set_size(font_desc, 16 * PANGO_SCALE);
-    gtk_widget_modify_font(display->priv->text_view, font_desc);
+    _text_view_override_font (display->priv->text_view, font_desc);
     pango_font_description_free(font_desc);
     gtk_widget_set_name(display->priv->text_view, "displayitem");
     atk_object_set_role(gtk_widget_get_accessible(display->priv->text_view), ATK_ROLE_EDITBAR);
