@@ -4,19 +4,20 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Walter Cheuk <wwycheuk@gmail.com>, 2018
-# Stefano Karapetsas <stefano@karapetsas.com>, 2018
-# 趙惟倫 <bluebat@member.fsf.org>, 2018
-# Jeff Huang <s8321414@gmail.com>, 2018
+# Walter Cheuk <wwycheuk@gmail.com>, 2019
+# Stefano Karapetsas <stefano@karapetsas.com>, 2019
+# 趙惟倫 <bluebat@member.fsf.org>, 2019
+# Woodman Tuen <wmtuen@gmail.com>, 2019
+# Jeff Huang <s8321414@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-09 20:37+0100\n"
-"PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: Jeff Huang <s8321414@gmail.com>, 2018\n"
+"POT-Creation-Date: 2019-03-20 09:59+0100\n"
+"PO-Revision-Date: 2019-03-13 11:55+0000\n"
+"Last-Translator: Jeff Huang <s8321414@gmail.com>, 2019\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/mate/teams/13566/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -505,12 +506,12 @@ msgstr ""
 "MATE Calc 是一個 GNOME Calc 的分支以及 MATE 桌面環境的一部份。若您想要知道更多關於 MATE 與 MATE Calc "
 "的資訊，請拜訪專案首頁。 </p>"
 
-#: ../data/mate-calc.desktop.in.h:1
+#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:261
 msgid "MATE Calculator"
 msgstr "MATE 計算機"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:563
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:568
 msgid "Calculator"
 msgstr "計算機"
 
@@ -1132,7 +1133,7 @@ msgstr "16 進位"
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] "_%d 個位"
+msgstr[0] "_%d位數"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
@@ -1140,7 +1141,7 @@ msgstr[0] "_%d 個位"
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] "%d 個位"
+msgstr[0] "%d 位數"
 
 #. Tooltip for the round button
 #: ../src/math-buttons.c:996
@@ -1299,8 +1300,60 @@ msgstr "顯示小數點後 %d 位數(_P)"
 msgid "Unable to open help file"
 msgstr "無法開啟求助檔案"
 
-#. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:239
+#: ../src/math-window.c:234
+msgid "Sun Microsystems"
+msgstr "昇陽電腦"
+
+#: ../src/math-window.c:235
+msgid "MATE Documentation Team"
+msgstr "MATE 文件團隊"
+
+#: ../src/math-window.c:241
+msgid ""
+"MATE Calculator is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"MATE 計算機為自由軟體；您可依據自由軟體基金會所發表的 GNU 通用公共授權\n"
+"條款規定，就本程式再為散布與／或修改；無論您依據的是本授權的第二版或\n"
+"（您自行選擇的）任一日後發行的版本。"
+
+#: ../src/math-window.c:245
+msgid ""
+"MATE Calculator is distributed in the hope that it will be useful, but "
+"WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
+" more details."
+msgstr ""
+"MATE 計算機係基於使用目的而加以散布，然而不負任何擔保責任；亦無對適售性或特定目的適用性所為的默示性擔保。詳情請參照 GNU 通用公共授權。"
+
+#: ../src/math-window.c:249
+msgid ""
+"You should have received a copy of the GNU General Public License along with"
+" MATE Calculator; if not, write to the Free Software Foundation, Inc., 151 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr ""
+"您應該已收到附於 MATE 計算機的 GNU 通用公共授權的副本。如果沒有，請寫信至：Free Software Foundation, Inc., "
+"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA"
+
+#: ../src/math-window.c:263
+msgid "About MATE Calculator"
+msgstr "關於 MATE 計算機"
+
+#: ../src/math-window.c:264
+msgid ""
+"Copyright © 1986–2010 The GCalctool authors\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
+"Copyright © 1986–2010 GCalctool 作者\n"
+"Copyright © 2011–2019 MATE 開發者"
+
+#: ../src/math-window.c:267
+msgid "Calculator with financial and scientific modes."
+msgstr "附有財務及科學計算模式的計算機。"
+
+#: ../src/math-window.c:270
 msgid "translator-credits"
 msgstr ""
 "黃柏諺 <s8321414@yahoo.com.tw>,2013-14\n"
@@ -1310,109 +1363,71 @@ msgstr ""
 "  fetag https://launchpad.net/~coolfire\n"
 "Walter Cheuk <wwycheuk@gmail.com>, 2016."
 
-#. The license this software is under (GPL2+)
-#: ../src/math-window.c:246
-msgid ""
-"mate-calc is free software; you can redistribute it and/or modify\n"
-"it under the terms of the GNU General Public License as published by\n"
-"the Free Software Foundation; either version 2 of the License, or\n"
-"(at your option) any later version.\n"
-"\n"
-"mate-calc is distributed in the hope that it will be useful,\n"
-"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License\n"
-"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
-"151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
-"mate-calc 為自由軟體；您可依據自由軟體基金會所發表\n"
-"的 GNU 通用公共授權條款規定，就本程式再為散布與／或修改；\n"
-"無論您依據的是本授權的第二版或（您自行選擇的）任一日後發行的版本。\n"
-"\n"
-"mate-calc 係基於使用目的而加以散布，\n"
-"然而不負任何擔保責任；\n"
-"亦無對適售性或特定目的適用性所為的默示性擔保。\n"
-"詳情請參照 GNU 通用公共授權。\n"
-"\n"
-"您應已收到附於本程式的 GNU 通用公共授權的副本；如果沒有，請寫信至\n"
-"Free Software Foundation, Inc.,\n"
-"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-
-#: ../src/math-window.c:261
-msgid "mate-calc"
-msgstr "計算機"
-
-#: ../src/math-window.c:265
-msgid "Calculator with financial and scientific modes."
-msgstr "附有財務及科學計算模式的計算機。"
-
 #. Calculator menu
-#: ../src/math-window.c:398
+#: ../src/math-window.c:403
 msgid "_Calculator"
 msgstr "計算機(_C)"
 
 #. Mode menu
-#: ../src/math-window.c:400
+#: ../src/math-window.c:405
 msgid "_Mode"
 msgstr "模式(_M)"
 
 #. Help menu label
-#: ../src/math-window.c:402
+#: ../src/math-window.c:407
 msgid "_Help"
 msgstr "說明(_H)"
 
 #. Basic menu label
-#: ../src/math-window.c:404
+#: ../src/math-window.c:409
 msgid "_Basic"
 msgstr "基本模式(_B)"
 
 #. Advanced menu label
-#: ../src/math-window.c:406
+#: ../src/math-window.c:411
 msgid "_Advanced"
 msgstr "進階模式(_A)"
 
 #. Financial menu label
-#: ../src/math-window.c:408
+#: ../src/math-window.c:413
 msgid "_Financial"
 msgstr "財務計算模式(_F)"
 
 #. Programming menu label
-#: ../src/math-window.c:410
+#: ../src/math-window.c:415
 msgid "_Programming"
 msgstr "軟體開發(_P)"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:412
+#: ../src/math-window.c:417
 msgid "_Contents"
 msgstr "內容(_C)"
 
-#: ../src/math-window.c:415
+#: ../src/math-window.c:420
 msgid "_Copy"
 msgstr "複製(_C)"
 
-#: ../src/math-window.c:417
+#: ../src/math-window.c:422
 msgid "_Paste"
 msgstr "貼上(_P)"
 
-#: ../src/math-window.c:419
+#: ../src/math-window.c:424
 msgid "_Undo"
 msgstr "復原(_U)"
 
-#: ../src/math-window.c:421
+#: ../src/math-window.c:426
 msgid "_Redo"
 msgstr "重做(_R)"
 
-#: ../src/math-window.c:424
+#: ../src/math-window.c:429
 msgid "_Preferences"
 msgstr "偏好設定(_P)"
 
-#: ../src/math-window.c:426
+#: ../src/math-window.c:431
 msgid "_Quit"
 msgstr "結束(_Q)"
 
-#: ../src/math-window.c:443
+#: ../src/math-window.c:448
 msgid "_About"
 msgstr "關於(_A)"
 

@@ -4,21 +4,23 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# jeremy shields <jeremy.shields@orange.fr>, 2018
-# mauron, 2018
-# Stefano Karapetsas <stefano@karapetsas.com>, 2018
-# Étienne Deparis <etienne@depar.is>, 2018
-# Tubuntu <tubuntu@testimonium.be>, 2018
-# Charles Monzat <c.monzat@laposte.net>, 2018
+# jeremy shields <jeremy.shields@orange.fr>, 2019
+# Laurent Napias <tamplan+transifex@free.fr>, 2019
+# Tubuntu <tubuntu@testimonium.be>, 2019
+# mauron, 2019
+# Stefano Karapetsas <stefano@karapetsas.com>, 2019
+# Charles Monzat <c.monzat@laposte.net>, 2019
+# Étienne Deparis <etienne@depar.is>, 2019
+# Wolfgang Ulbrich <mate@raveit.de>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-09 20:37+0100\n"
-"PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: Charles Monzat <c.monzat@laposte.net>, 2018\n"
+"POT-Creation-Date: 2019-03-20 09:59+0100\n"
+"PO-Revision-Date: 2019-03-13 11:55+0000\n"
+"Last-Translator: Wolfgang Ulbrich <mate@raveit.de>, 2019\n"
 "Language-Team: French (https://www.transifex.com/mate/teams/13566/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -538,12 +540,12 @@ msgstr ""
 " en savoir plus au sujet de MATE et de la calculatrice MATE, veuillez "
 "visiter la page d'accueil du projet. </p>"
 
-#: ../data/mate-calc.desktop.in.h:1
+#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:261
 msgid "MATE Calculator"
 msgstr "Calculatrice de MATE"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:563
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:568
 msgid "Calculator"
 msgstr "Calculatrice"
 
@@ -1166,8 +1168,8 @@ msgstr "Hexadecimal"
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] "_%d position"
-msgstr[1] "_%d positions"
+msgstr[0] ""
+msgstr[1] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
@@ -1175,8 +1177,8 @@ msgstr[1] "_%d positions"
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] "%d position"
-msgstr[1] "%d positions"
+msgstr[0] ""
+msgstr[1] ""
 
 #. Tooltip for the round button
 #: ../src/math-buttons.c:996
@@ -1335,14 +1337,58 @@ msgstr "Afficher %d dé_cimales"
 msgid "Unable to open help file"
 msgstr "Impossible d'ouvrir le fichier d'aide"
 
-#. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:239
+#: ../src/math-window.c:234
+msgid "Sun Microsystems"
+msgstr "Sun Microsystems"
+
+#: ../src/math-window.c:235
+msgid "MATE Documentation Team"
+msgstr "Équipe de documentation MATE"
+
+#: ../src/math-window.c:241
+msgid ""
+"MATE Calculator is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+
+#: ../src/math-window.c:245
+msgid ""
+"MATE Calculator is distributed in the hope that it will be useful, but "
+"WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
+" more details."
+msgstr ""
+
+#: ../src/math-window.c:249
+msgid ""
+"You should have received a copy of the GNU General Public License along with"
+" MATE Calculator; if not, write to the Free Software Foundation, Inc., 151 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr ""
+
+#: ../src/math-window.c:263
+msgid "About MATE Calculator"
+msgstr ""
+
+#: ../src/math-window.c:264
+msgid ""
+"Copyright © 1986–2010 The GCalctool authors\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
+
+#: ../src/math-window.c:267
+msgid "Calculator with financial and scientific modes."
+msgstr "Calculatrice avec des modes financiers et scientifiques."
+
+#: ../src/math-window.c:270
 msgid "translator-credits"
 msgstr ""
-"Contributeurs au projet MATE :\n"
+"Contributeurs au projet MATE :\n"
 "Voir https://www.transifex.com/mate/teams/13566/fr/\n"
 "\n"
-"Contributeurs au projet GNOME :\n"
+"Contributeurs au projet GNOME :\n"
 "Vincent Renardias <vincent@ldsol.com>, 1998-2000.\n"
 "Joaquim Fellmann <joaquim@hrnet.fr>, 2000.\n"
 "Christophe Merlet <redfox@redfoxcenter.org>, 2000-2006.\n"
@@ -1354,108 +1400,71 @@ msgstr ""
 "Claude Paroz <claude@2xlibre.net>, 2008-2010.\n"
 "Gérard Baylard <gerard dot b at bbox dot fr>, 2010"
 
-#. The license this software is under (GPL2+)
-#: ../src/math-window.c:246
-msgid ""
-"mate-calc is free software; you can redistribute it and/or modify\n"
-"it under the terms of the GNU General Public License as published by\n"
-"the Free Software Foundation; either version 2 of the License, or\n"
-"(at your option) any later version.\n"
-"\n"
-"mate-calc is distributed in the hope that it will be useful,\n"
-"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License\n"
-"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
-"151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
-"mate-calc est un logiciel libre ; vous pouvez le redistribuer et/ou le \n"
-"modifier selon les termes de la Licence Publique Générale GNU, telle que publiée par la Free Software Foundation ; version 2 de la licence, ou\n"
-"(à votre discrétion) toute version ultérieure.\n"
-"\n"
-"mate-calc est distribué dans l'espoir qu'il vous sera utile,\n"
-"mais SANS AUCUNE GARANTIE ; sans même la garantie implicite de\n"
-"VALEUR MARCHANDE ou D'ADÉQUATION À UN BESOIN PARTICULIER.  Consultez la Licence Publique Générale GNU pour plus de détails.\n"
-"\n"
-"Vous devez avoir reçu une copie de la Licence Publique Générale GNU\n"
-"en même temps que mate-calc ; si ce n'est pas le cas, écrivez à la Free Software Foundation, Inc.,\n"
-"151 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA"
-
-#: ../src/math-window.c:261
-msgid "mate-calc"
-msgstr "mate-calc"
-
-#: ../src/math-window.c:265
-msgid "Calculator with financial and scientific modes."
-msgstr "Calculatrice avec des modes financiers et scientifiques."
-
 #. Calculator menu
-#: ../src/math-window.c:398
+#: ../src/math-window.c:403
 msgid "_Calculator"
 msgstr "_Calculatrice"
 
 #. Mode menu
-#: ../src/math-window.c:400
+#: ../src/math-window.c:405
 msgid "_Mode"
 msgstr "_Mode"
 
 #. Help menu label
-#: ../src/math-window.c:402
+#: ../src/math-window.c:407
 msgid "_Help"
 msgstr "_Aide"
 
 #. Basic menu label
-#: ../src/math-window.c:404
+#: ../src/math-window.c:409
 msgid "_Basic"
 msgstr "_Basique"
 
 #. Advanced menu label
-#: ../src/math-window.c:406
+#: ../src/math-window.c:411
 msgid "_Advanced"
 msgstr "_Avancé"
 
 #. Financial menu label
-#: ../src/math-window.c:408
+#: ../src/math-window.c:413
 msgid "_Financial"
 msgstr "_Financier"
 
 #. Programming menu label
-#: ../src/math-window.c:410
+#: ../src/math-window.c:415
 msgid "_Programming"
 msgstr "_Programmation"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:412
+#: ../src/math-window.c:417
 msgid "_Contents"
 msgstr "_Sommaire"
 
-#: ../src/math-window.c:415
+#: ../src/math-window.c:420
 msgid "_Copy"
 msgstr "_Copier"
 
-#: ../src/math-window.c:417
+#: ../src/math-window.c:422
 msgid "_Paste"
 msgstr "C_oller"
 
-#: ../src/math-window.c:419
+#: ../src/math-window.c:424
 msgid "_Undo"
 msgstr "A_nnuler"
 
-#: ../src/math-window.c:421
+#: ../src/math-window.c:426
 msgid "_Redo"
-msgstr "_Restaurer"
+msgstr "_Recommencer"
 
-#: ../src/math-window.c:424
+#: ../src/math-window.c:429
 msgid "_Preferences"
 msgstr "_Préférences"
 
-#: ../src/math-window.c:426
+#: ../src/math-window.c:431
 msgid "_Quit"
 msgstr "_Quitter"
 
-#: ../src/math-window.c:443
+#: ../src/math-window.c:448
 msgid "_About"
 msgstr "_À propos"
 

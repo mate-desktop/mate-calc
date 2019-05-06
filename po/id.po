@@ -4,23 +4,23 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# hpiece 8 <hpiece8@gmail.com>, 2018
-# Muhammad Herdiansyah <herdiansyah@openmailbox.org>, 2018
-# Kukuh Syafaat <syafaatkukuh@gmail.com>, 2018
-# Stefano Karapetsas <stefano@karapetsas.com>, 2018
-# Ibnu Daru Aji, 2018
-# Willy Sudiarto Raharjo <willysr@slackware-id.org>, 2018
-# La Ode Muh. Fadlun Akbar <fadlun.net@gmail.com>, 2018
-# Andika Triwidada <andika@gmail.com>, 2018
+# La Ode Muh. Fadlun Akbar <fadlun.net@gmail.com>, 2019
+# hpiece 8 <hpiece8@gmail.com>, 2019
+# Muhammad Herdiansyah <herdiansyah@openmailbox.org>, 2019
+# Ibnu Daru Aji, 2019
+# Stefano Karapetsas <stefano@karapetsas.com>, 2019
+# Willy Sudiarto Raharjo <willysr@slackware-id.org>, 2019
+# Kukuh Syafaat <syafaatkukuh@gmail.com>, 2019
+# Wolfgang Ulbrich <mate@raveit.de>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-09 20:37+0100\n"
-"PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: Andika Triwidada <andika@gmail.com>, 2018\n"
+"POT-Creation-Date: 2019-03-20 09:59+0100\n"
+"PO-Revision-Date: 2019-03-13 11:55+0000\n"
+"Last-Translator: Wolfgang Ulbrich <mate@raveit.de>, 2019\n"
 "Language-Team: Indonesian (https://www.transifex.com/mate/teams/13566/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -539,12 +539,12 @@ msgstr ""
 "lingkungan destop MATE. Bila Anda ingin tahu lebih banyak tentang MATE dan "
 "Kalkulator MATE, silakan kunjungi laman beranda proyek. </p>"
 
-#: ../data/mate-calc.desktop.in.h:1
+#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:261
 msgid "MATE Calculator"
 msgstr "MATE Calculator"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:563
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:568
 msgid "Calculator"
 msgstr "Kalkulator"
 
@@ -1167,7 +1167,7 @@ msgstr "Heksadesimal"
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] "_%d posisi"
+msgstr[0] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
@@ -1175,7 +1175,7 @@ msgstr[0] "_%d posisi"
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] "%d posisi"
+msgstr[0] ""
 
 #. Tooltip for the round button
 #: ../src/math-buttons.c:996
@@ -1334,8 +1334,52 @@ msgstr "Tam_pilkan %d angka di belakang koma"
 msgid "Unable to open help file"
 msgstr "Tidak dapat membuka berkas bantuan"
 
-#. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:239
+#: ../src/math-window.c:234
+msgid "Sun Microsystems"
+msgstr "Sun Microsystems"
+
+#: ../src/math-window.c:235
+msgid "MATE Documentation Team"
+msgstr ""
+
+#: ../src/math-window.c:241
+msgid ""
+"MATE Calculator is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+
+#: ../src/math-window.c:245
+msgid ""
+"MATE Calculator is distributed in the hope that it will be useful, but "
+"WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
+" more details."
+msgstr ""
+
+#: ../src/math-window.c:249
+msgid ""
+"You should have received a copy of the GNU General Public License along with"
+" MATE Calculator; if not, write to the Free Software Foundation, Inc., 151 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr ""
+
+#: ../src/math-window.c:263
+msgid "About MATE Calculator"
+msgstr ""
+
+#: ../src/math-window.c:264
+msgid ""
+"Copyright © 1986–2010 The GCalctool authors\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
+
+#: ../src/math-window.c:267
+msgid "Calculator with financial and scientific modes."
+msgstr "Kalkulator dengan model keuangan dan ilmuwan"
+
+#: ../src/math-window.c:270
 msgid "translator-credits"
 msgstr ""
 "Mohammad DAMT <mdamt@bisnisweb.com>\n"
@@ -1344,109 +1388,71 @@ msgstr ""
 "Tim MATE Indonesia <http://id.mate.org>\n"
 "Kukuh Syafaat <syafaatkukuh@gmail.com>, 2017."
 
-#. The license this software is under (GPL2+)
-#: ../src/math-window.c:246
-msgid ""
-"mate-calc is free software; you can redistribute it and/or modify\n"
-"it under the terms of the GNU General Public License as published by\n"
-"the Free Software Foundation; either version 2 of the License, or\n"
-"(at your option) any later version.\n"
-"\n"
-"mate-calc is distributed in the hope that it will be useful,\n"
-"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License\n"
-"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
-"151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
-"mate-calc adalah perangkat lunak bebas; Anda boleh mendistribusikannya dan/atau memodifikasi\n"
-"dibawah aturan dari GNU General Public License seperti yang dipublikasikan oleh\n"
-"Free Software Foundation; baik versi 2 dari Lisensi, atau (sesuai pilihan Anda)\n"
-"versi lain yang lebih baru.\n"
-"\n"
-"mate-calc didistribusikan dengan harapan akan bermanfaat,\n"
-"tetapi TANPA GARANSI; tanpa garansi untuk DIPERDAGANGKAN atau LAYAK UNTUK TUJUAN TERTENTU.\n"
-"Lihat GNU General Public License.\n"
-"\n"
-"Anda seharusnya mendapatkan salinan dari GNU General Public License\n"
-"bersama dengan mate-calc; jika tidak, tulis ke Free Software Foundation, Inc.\n"
-"151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-
-#: ../src/math-window.c:261
-msgid "mate-calc"
-msgstr "mate-calc"
-
-#: ../src/math-window.c:265
-msgid "Calculator with financial and scientific modes."
-msgstr "Kalkulator dengan model keuangan dan ilmuwan"
-
 #. Calculator menu
-#: ../src/math-window.c:398
+#: ../src/math-window.c:403
 msgid "_Calculator"
 msgstr "_Kalkulator"
 
 #. Mode menu
-#: ../src/math-window.c:400
+#: ../src/math-window.c:405
 msgid "_Mode"
 msgstr "_Mode"
 
 #. Help menu label
-#: ../src/math-window.c:402
+#: ../src/math-window.c:407
 msgid "_Help"
 msgstr "_Bantuan"
 
 #. Basic menu label
-#: ../src/math-window.c:404
+#: ../src/math-window.c:409
 msgid "_Basic"
 msgstr "_Dasar"
 
 #. Advanced menu label
-#: ../src/math-window.c:406
+#: ../src/math-window.c:411
 msgid "_Advanced"
 msgstr "L_anjutan"
 
 #. Financial menu label
-#: ../src/math-window.c:408
+#: ../src/math-window.c:413
 msgid "_Financial"
 msgstr "_Finansial"
 
 #. Programming menu label
-#: ../src/math-window.c:410
+#: ../src/math-window.c:415
 msgid "_Programming"
 msgstr "_Pemrograman"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:412
+#: ../src/math-window.c:417
 msgid "_Contents"
 msgstr "_Isi"
 
-#: ../src/math-window.c:415
+#: ../src/math-window.c:420
 msgid "_Copy"
 msgstr "_Salin"
 
-#: ../src/math-window.c:417
+#: ../src/math-window.c:422
 msgid "_Paste"
 msgstr "Tem_pel"
 
-#: ../src/math-window.c:419
+#: ../src/math-window.c:424
 msgid "_Undo"
 msgstr "_Tak Jadi"
 
-#: ../src/math-window.c:421
+#: ../src/math-window.c:426
 msgid "_Redo"
 msgstr "_Jadi Lagi"
 
-#: ../src/math-window.c:424
+#: ../src/math-window.c:429
 msgid "_Preferences"
 msgstr "_Preferensi"
 
-#: ../src/math-window.c:426
+#: ../src/math-window.c:431
 msgid "_Quit"
 msgstr "_Keluar"
 
-#: ../src/math-window.c:443
+#: ../src/math-window.c:448
 msgid "_About"
 msgstr "_Tentang"
 

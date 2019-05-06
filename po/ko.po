@@ -4,19 +4,20 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Seong-ho Cho <darkcircle.0426@gmail.com>, 2018
-# Stefano Karapetsas <stefano@karapetsas.com>, 2018
-# Alan Lee <bkrhlim@aol.com>, 2018
-# 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2018
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2019
+# Stefano Karapetsas <stefano@karapetsas.com>, 2019
+# Alan Lee <bkrhlim@aol.com>, 2019
+# Wolfgang Ulbrich <mate@raveit.de>, 2019
+# 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-09 20:37+0100\n"
-"PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2018\n"
+"POT-Creation-Date: 2019-03-20 09:59+0100\n"
+"PO-Revision-Date: 2019-03-13 11:55+0000\n"
+"Last-Translator: 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2019\n"
 "Language-Team: Korean (https://www.transifex.com/mate/teams/13566/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -508,12 +509,12 @@ msgstr ""
 "사용합니다.</p> <p> 마테 계산기는 그놈 계산기의 포크이며 마테 데스크톱 환경의 일부입니다. 마테와 마테 계산기에 관해 더 알고자 "
 "하시면 , 마테 프로젝트의 홈페이지를 방문해보세요.</p>"
 
-#: ../data/mate-calc.desktop.in.h:1
+#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:261
 msgid "MATE Calculator"
 msgstr "마테 계산기 "
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:563
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:568
 msgid "Calculator"
 msgstr "계산기"
 
@@ -1303,8 +1304,61 @@ msgstr "%d자리 십진수 표시(_P)"
 msgid "Unable to open help file"
 msgstr "도움말 파일을 열 수 없습니다"
 
-#. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:239
+#: ../src/math-window.c:234
+msgid "Sun Microsystems"
+msgstr "Sun Microsystems"
+
+#: ../src/math-window.c:235
+msgid "MATE Documentation Team"
+msgstr "MATE 문서 팀"
+
+#: ../src/math-window.c:241
+msgid ""
+"MATE Calculator is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"MATE 계산기는 자유 소프트웨어 입니다. 자유 소프트웨어 재단이 발표한 GNU 일반 공중 사용 허가서 버전 2 또는 (선택에 따라) 그"
+" 이상의 버전의 조항에 의거하여 재배포하거나 수정할 수 있습니다."
+
+#: ../src/math-window.c:245
+msgid ""
+"MATE Calculator is distributed in the hope that it will be useful, but "
+"WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
+" more details."
+msgstr ""
+"MATE 계산기는 유용하게 사용될 수 있으리라는 희망에서 배포되고 있지만, 특정한 목적에 맞는 적합성 여부나 판매용으로 사용할 수 "
+"있으리라는 묵시적인 보증을 포함한 어떠한 형태의 보증도 제공하지 않습니다. 보다 자세한 사항에 대해서는 GNU 일반 공중 사용 허가서를 "
+"참고하시기 바랍니다."
+
+#: ../src/math-window.c:249
+msgid ""
+"You should have received a copy of the GNU General Public License along with"
+" MATE Calculator; if not, write to the Free Software Foundation, Inc., 151 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr ""
+"GNU 일반 공중 사용 허가서 사본을 MATE 계산기와 함께 받아야 합니다. 못받으셨다면 Free Software Foundation, "
+"Inc., 151 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA에 요청하세요."
+
+#: ../src/math-window.c:263
+msgid "About MATE Calculator"
+msgstr "MATE 계산기 소개"
+
+#: ../src/math-window.c:264
+msgid ""
+"Copyright © 1986–2010 The GCalctool authors\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
+"Copyright © 1986–2010 The GCalctool authors\n"
+"Copyright © 2011-2019 MATE developers"
+
+#: ../src/math-window.c:267
+msgid "Calculator with financial and scientific modes."
+msgstr "재무 및 과학 모드가 지원되는 계산기."
+
+#: ../src/math-window.c:270
 msgid "translator-credits"
 msgstr ""
 "Elex https://launchpad.net/~mysticzizone\n"
@@ -1314,102 +1368,71 @@ msgstr ""
 "Seong-ho Cho <darkcircle.0426@gmail.com>\n"
 "MATE Desktop Environment Team <https://www.transifex.com/mate/teams/13566/ko/>"
 
-#. The license this software is under (GPL2+)
-#: ../src/math-window.c:246
-msgid ""
-"mate-calc is free software; you can redistribute it and/or modify\n"
-"it under the terms of the GNU General Public License as published by\n"
-"the Free Software Foundation; either version 2 of the License, or\n"
-"(at your option) any later version.\n"
-"\n"
-"mate-calc is distributed in the hope that it will be useful,\n"
-"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License\n"
-"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
-"151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
-"계산기는 자유 소프트웨어로 자유 소프트웨어 재단의 GNU GPL 버전 2나 그 이후 버전(사용자 선택)에 따라 재배포하고 수정할 수 "
-"있습니다. 계산기는 유용하기를 바라면서 배포되지만 \"어떠한 보증도 없습니다.\" 심지어 \"상품성이나 특정 목적에 적합성\"에 대한 "
-"묵시적 보증도 없습니다. 더 자세한 내용은 GNU GPL을 보십시오. GNU GPL 사본이 계산기꾸러미에 포함되어 있어야 합니다. 없다면"
-" 자유 소프트웨어 재단 151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA 으로"
-" 알려주세요."
-
-#: ../src/math-window.c:261
-msgid "mate-calc"
-msgstr "계산기"
-
-#: ../src/math-window.c:265
-msgid "Calculator with financial and scientific modes."
-msgstr "재무 및 과학 모드가 지원되는 계산기."
-
 #. Calculator menu
-#: ../src/math-window.c:398
+#: ../src/math-window.c:403
 msgid "_Calculator"
 msgstr "계산기(_C)"
 
 #. Mode menu
-#: ../src/math-window.c:400
+#: ../src/math-window.c:405
 msgid "_Mode"
 msgstr "종류(_M)"
 
 #. Help menu label
-#: ../src/math-window.c:402
+#: ../src/math-window.c:407
 msgid "_Help"
 msgstr "도움말(_H)"
 
 #. Basic menu label
-#: ../src/math-window.c:404
+#: ../src/math-window.c:409
 msgid "_Basic"
 msgstr "기본(_B)"
 
 #. Advanced menu label
-#: ../src/math-window.c:406
+#: ../src/math-window.c:411
 msgid "_Advanced"
 msgstr "고급(_A)"
 
 #. Financial menu label
-#: ../src/math-window.c:408
+#: ../src/math-window.c:413
 msgid "_Financial"
 msgstr "재무(_F)"
 
 #. Programming menu label
-#: ../src/math-window.c:410
+#: ../src/math-window.c:415
 msgid "_Programming"
 msgstr "프로그래밍(_P)"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:412
+#: ../src/math-window.c:417
 msgid "_Contents"
 msgstr "콘텐츠(_C)"
 
-#: ../src/math-window.c:415
+#: ../src/math-window.c:420
 msgid "_Copy"
 msgstr "복사(_C)"
 
-#: ../src/math-window.c:417
+#: ../src/math-window.c:422
 msgid "_Paste"
 msgstr "붙여넣기(_P)"
 
-#: ../src/math-window.c:419
+#: ../src/math-window.c:424
 msgid "_Undo"
 msgstr "실행 취소(_U)"
 
-#: ../src/math-window.c:421
+#: ../src/math-window.c:426
 msgid "_Redo"
 msgstr "재실행(_R)"
 
-#: ../src/math-window.c:424
+#: ../src/math-window.c:429
 msgid "_Preferences"
 msgstr "기본 설정(_P)"
 
-#: ../src/math-window.c:426
+#: ../src/math-window.c:431
 msgid "_Quit"
 msgstr "끝내기(_Q)"
 
-#: ../src/math-window.c:443
+#: ../src/math-window.c:448
 msgid "_About"
 msgstr "정보(_A)"
 
@@ -2231,7 +2254,7 @@ msgstr "면적"
 
 #: ../src/unit-manager.c:112
 msgid "Volume"
-msgstr "음량"
+msgstr "볼륨"
 
 #: ../src/unit-manager.c:113
 msgid "Weight"
