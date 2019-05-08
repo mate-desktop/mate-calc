@@ -248,7 +248,7 @@ static void about_cb(GtkWidget* widget, MathWindow* window)
            "GNU General Public License for more details."),
         N_("You should have received a copy of the GNU General Public License "
            "along with MATE Calculator; if not, write to the Free Software Foundation, Inc., "
-           "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA")
+           "51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.")
     };
 
     char *license_trans = g_strjoin ("\n\n", _(license[0]), _(license[1]), _(license[2]), NULL);
