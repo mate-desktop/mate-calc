@@ -94,6 +94,7 @@ requires:
     # Useful URL: https://src.fedoraproject.org/cgit/rpms/mate-calc.git
     - clang
     - clang-analyzer
+    - cppcheck-htmlreport
     - bison
     - desktop-file-utils
     - flex
@@ -156,7 +157,9 @@ build_scripts:
 
 after_scripts:
   - if [ ${DISTRO_NAME} == "fedora" ];then
-  -   ./gen-index -i https://github.com/${OWNER_NAME}/mate-icon-theme/raw/master/mate/16x16/apps/accessories-calculator.png
+  -   cppcheck --xml --output-file=cppcheck.xml --enable=warning,style,performance,portability,information,missingInclude .
+  -   cppcheck-htmlreport --title=${REPO_NAME} --file=cppcheck.xml --report-dir=cppcheck-htmlreport
+  -   ./gen-index -l 20 -i https://github.com/${OWNER_NAME}/mate-icon-theme/raw/master/mate/16x16/apps/accessories-calculator.png
   - fi
   - make distcheck
 
