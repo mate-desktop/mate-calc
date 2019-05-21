@@ -45,8 +45,8 @@ AC_CHECK_LIB(m, log)
 dnl ###########################################################################
 dnl Internationalization
 dnl ###########################################################################
-
-IT_PROG_INTLTOOL([0.35.0])
+AM_GNU_GETTEXT_VERSION([0.19.8])
+AM_GNU_GETTEXT([external])
 AC_SUBST(GETTEXT_PACKAGE, mate-calc)
 
 # **********************

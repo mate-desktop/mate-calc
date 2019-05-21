@@ -1,7 +1,8 @@
-@INTLTOOL_XML_RULE@
 appdatadir = $(datadir)/metainfo
 appdata_in_files = mate-calc.appdata.xml.in
 appdata_DATA = $(appdata_in_files:.xml.in=.xml)
+$(appdata_DATA): $(appdata_in_files)
+	$(AM_V_GEN) $(MSGFMT) --xml --template $< -d $(top_srcdir)/po -o $@
 
 gsettings_SCHEMAS = org.mate.calc.gschema.xml
 @GSETTINGS_RULES@
@@ -9,12 +10,13 @@ gsettings_SCHEMAS = org.mate.calc.gschema.xml
 Utilitiesdir = $(datadir)/applications
 Utilities_in_files = mate-calc.desktop.in
 Utilities_DATA = $(Utilities_in_files:.desktop.in=.desktop)
-@INTLTOOL_DESKTOP_RULE@
+$(Utilities_DATA): $(Utilities_in_files)
+	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
 
 man1_MANS = mate-calc.1 mate-calc-cmd.1
 
 EXTRA_DIST = \
-	org.mate.calc.gschema.xml.in \
+	org.mate.calc.gschema.xml \
 	mate-calc.desktop.in \
 	$(appdata_in_files) \
 	$(man1_MANS)
