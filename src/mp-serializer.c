@@ -183,6 +183,8 @@ mp_cast_to_string(MpSerializer *serializer, const MPNumber *x, int *n_digits)
             g_string_assign(string, "");
             force_sign = FALSE;
         }
+        else if (!mp_is_negative(&x_im))
+            g_string_append(string, "+");
 
         s = g_string_sized_new(1024);
         mp_cast_to_string_real(serializer, &x_im, 10, force_sign, &n_complex_digits, s);
@@ -363,8 +365,8 @@ mp_serializer_to_string(MpSerializer *serializer, const MPNumber *x)
     default:
     case MP_DISPLAY_FORMAT_AUTOMATIC:
         s0 = mp_cast_to_string(serializer, x, &n_digits);
-        if ((n_digits <= serializer->priv->leading_digits &&
-            mp_is_greater_equal(&xcmp, &cmp)) || mp_is_complex(x))
+        if (n_digits <= serializer->priv->leading_digits &&
+            mp_is_greater_equal(&xcmp, &cmp))
             return s0;
         else {
             g_free (s0);
