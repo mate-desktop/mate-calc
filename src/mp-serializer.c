@@ -183,8 +183,6 @@ mp_cast_to_string(MpSerializer *serializer, const MPNumber *x, int *n_digits)
             g_string_assign(string, "");
             force_sign = FALSE;
         }
-        else if (!mp_is_negative(&x_im))
-            g_string_append(string, "+");
 
         s = g_string_sized_new(1024);
         mp_cast_to_string_real(serializer, &x_im, 10, force_sign, &n_complex_digits, s);
@@ -315,6 +313,8 @@ mp_cast_to_exponential_string(MpSerializer *serializer, const MPNumber *x, gbool
 
         if (strcmp(string->str, "0") == 0)
             g_string_assign(string, "");
+        else if (!mp_is_negative(&x_im))
+            g_string_append(string, "+");
 
         s = g_string_sized_new(1024);
         exponent = mp_cast_to_exponential_string_real(serializer, &x_im, s, eng_format, &n_complex_digits);
