@@ -175,7 +175,7 @@ mp_cast_to_string(MpSerializer *serializer, const MPNumber *x, int *n_digits)
         GString *s;
         gboolean force_sign = TRUE;
         MPNumber x_im;
-        int n_complex_digits;
+        int n_complex_digits = 0;
 
         mp_imaginary_component(x, &x_im);
 
@@ -313,6 +313,8 @@ mp_cast_to_exponential_string(MpSerializer *serializer, const MPNumber *x, gbool
 
         if (strcmp(string->str, "0") == 0)
             g_string_assign(string, "");
+        else if (!mp_is_negative(&x_im))
+            g_string_append(string, "+");
 
         s = g_string_sized_new(1024);
         exponent = mp_cast_to_exponential_string_real(serializer, &x_im, s, eng_format, &n_complex_digits);
@@ -363,8 +365,8 @@ mp_serializer_to_string(MpSerializer *serializer, const MPNumber *x)
     default:
     case MP_DISPLAY_FORMAT_AUTOMATIC:
         s0 = mp_cast_to_string(serializer, x, &n_digits);
-        if ((n_digits <= serializer->priv->leading_digits &&
-            mp_is_greater_equal(&xcmp, &cmp)) || mp_is_complex(x))
+        if (n_digits <= serializer->priv->leading_digits &&
+            mp_is_greater_equal(&xcmp, &cmp))
             return s0;
         else {
             g_free (s0);
