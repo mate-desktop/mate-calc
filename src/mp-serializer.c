@@ -175,7 +175,7 @@ mp_cast_to_string(MpSerializer *serializer, const MPNumber *x, int *n_digits)
         GString *s;
         gboolean force_sign = TRUE;
         MPNumber x_im;
-        int n_complex_digits;
+        int n_complex_digits = 0;
 
         mp_imaginary_component(x, &x_im);
 
