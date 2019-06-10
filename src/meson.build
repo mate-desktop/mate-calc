@@ -86,3 +86,9 @@ executable('test-mp', test_mp_src, include_directories: top_inc,
 
 executable('test-mp-equation', test_mp_eq_src, include_directories: top_inc,
     dependencies: deps, link_args: '-lm')
+
+install_data(	'buttons-advanced.ui',
+                'buttons-basic.ui',
+                'buttons-financial.ui',
+                'preferences.ui',
+                install_dir: join_paths([pkgdatadir, 'uidir']))

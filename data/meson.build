@@ -1,9 +1,3 @@
-install_data(	'buttons-advanced.ui',
-                'buttons-basic.ui',
-                'buttons-financial.ui',
-                'preferences.ui',
-                install_dir: join_paths([pkgdatadir, 'uidir']))
-
 msgfmt = find_program('msgfmt')
 
 custom_target('desktop-file',
