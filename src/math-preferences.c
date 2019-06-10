@@ -14,7 +14,6 @@
 #include "math-preferences.h"
 #include "utility.h"
 
-G_DEFINE_TYPE (MathPreferencesDialog, math_preferences, GTK_TYPE_DIALOG);
 
 enum {
     PROP_0,
@@ -27,7 +26,9 @@ struct MathPreferencesDialogPrivate
     GtkBuilder *ui;
 };
 
-#define UI_DIALOGS_FILE  UI_DIR "/preferences.ui"
+G_DEFINE_TYPE_WITH_PRIVATE (MathPreferencesDialog, math_preferences, GTK_TYPE_DIALOG);
+
+#define UI_DIALOGS_RESOURCE_PATH "/org/mate/calculator/ui/preferences.ui"
 #define GET_WIDGET(ui, name) \
           GTK_WIDGET(gtk_builder_get_object(ui, name))
 
@@ -228,7 +229,7 @@ create_gui(MathPreferencesDialog *dialog)
 
     // FIXME: Handle errors
     dialog->priv->ui = gtk_builder_new();
-    gtk_builder_add_objects_from_file(dialog->priv->ui, UI_DIALOGS_FILE, objects, &error);
+    gtk_builder_add_objects_from_resource(dialog->priv->ui, UI_DIALOGS_RESOURCE_PATH, objects, &error);
     if (error)
         g_warning("Error loading preferences UI: %s", error->message);
     g_clear_error(&error);
@@ -238,8 +239,11 @@ create_gui(MathPreferencesDialog *dialog)
                          _("Preferences"));
     gtk_container_set_border_width(GTK_CONTAINER(dialog), 8);
     gtk_dialog_add_button(GTK_DIALOG(dialog),
-                          /* Label on close button in preferences dialog */
-                          _("_Close"), 0);
+                          /* Icon name on close button in preferences dialog */
+                          "gtk-close", GTK_RESPONSE_CLOSE);
+
+    gtk_window_set_icon_name (GTK_WINDOW(dialog), "accessories-calculator");
+
     g_signal_connect(dialog, "response", G_CALLBACK(preferences_response_cb), NULL);
     g_signal_connect(dialog, "delete-event", G_CALLBACK(preferences_dialog_delete_cb), NULL);
     gtk_box_pack_start(GTK_BOX(gtk_dialog_get_content_area(GTK_DIALOG(dialog))), GET_WIDGET(dialog->priv->ui, "preferences_table"), TRUE, TRUE, 0);
@@ -383,8 +387,6 @@ math_preferences_class_init(MathPreferencesDialogClass *klass)
     object_class->get_property = math_preferences_get_property;
     object_class->set_property = math_preferences_set_property;
 
-    g_type_class_add_private(klass, sizeof(MathPreferencesDialogPrivate));
-
     g_object_class_install_property(object_class,
                                     PROP_EQUATION,
                                     g_param_spec_object("equation",
@@ -398,5 +400,5 @@ math_preferences_class_init(MathPreferencesDialogClass *klass)
 static void
 math_preferences_init(MathPreferencesDialog *dialog)
 {
-    dialog->priv = G_TYPE_INSTANCE_GET_PRIVATE(dialog, math_preferences_get_type(), MathPreferencesDialogPrivate);
+    dialog->priv = math_preferences_get_instance_private (dialog);
 }

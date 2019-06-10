@@ -20,7 +20,7 @@ struct UnitCategoryPrivate
     GList *units;
 };
 
-G_DEFINE_TYPE (UnitCategory, unit_category, G_TYPE_OBJECT);
+G_DEFINE_TYPE_WITH_PRIVATE (UnitCategory, unit_category, G_TYPE_OBJECT);
 
 
 UnitCategory *
@@ -125,12 +125,11 @@ unit_category_convert(UnitCategory *category, const MPNumber *x, Unit *x_units, 
 static void
 unit_category_class_init(UnitCategoryClass *klass)
 {
-    g_type_class_add_private(klass, sizeof(UnitCategoryPrivate));
 }
 
 
 static void
 unit_category_init(UnitCategory *category)
 {
-    category->priv = G_TYPE_INSTANCE_GET_PRIVATE(category, unit_category_get_type(), UnitCategoryPrivate);
+    category->priv = unit_category_get_instance_private (category);
 }

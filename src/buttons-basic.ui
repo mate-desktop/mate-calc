@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.22"/>
+  <object class="GtkWindow" id="window1">
+    <property name="can_focus">False</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkGrid" id="button_panel">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="row_homogeneous">True</property>
+        <property name="column_homogeneous">True</property>
+        <child>
+          <object class="GtkButton" id="calc_4_button">
+            <property name="label">4</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="digit_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_8_button">
+            <property name="label">8</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="digit_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="top_attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_9_button">
+            <property name="label">9</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="digit_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">2</property>
+            <property name="top_attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_5_button">
+            <property name="label">5</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="digit_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="top_attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_6_button">
+            <property name="label">6</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="digit_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">2</property>
+            <property name="top_attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_divide_button">
+            <property name="label">÷</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="button_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">3</property>
+            <property name="top_attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_2_button">
+            <property name="label">2</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="digit_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="top_attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_numeric_point_button">
+            <property name="label" comments="Label is set in gtk.c to comply with LC flags">.</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="numeric_point_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="top_attach">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_percentage_button">
+            <property name="label">%</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">True</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="button_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">2</property>
+            <property name="top_attach">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_3_button">
+            <property name="label">3</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="digit_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">2</property>
+            <property name="top_attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_multiply_button">
+            <property name="label">×</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="button_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">3</property>
+            <property name="top_attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_subtract_button">
+            <property name="label">−</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="subtract_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">3</property>
+            <property name="top_attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_add_button">
+            <property name="label">+</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="button_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">3</property>
+            <property name="top_attach">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_result_button">
+            <property name="label" translatable="yes" comments="Label on the solve button (clicking this solves the displayed calculation)">=</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="solve_cb" swapped="no"/>
+            <style>
+              <class name="suggested-action"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left_attach">4</property>
+            <property name="top_attach">3</property>
+            <property name="width">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_start_group_button">
+            <property name="label">(</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">True</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="button_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">4</property>
+            <property name="top_attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_end_group_button">
+            <property name="label">)</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">True</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="button_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">5</property>
+            <property name="top_attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_clear_button">
+            <property name="label" translatable="yes">Clear</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="clear_cb" swapped="no"/>
+            <style>
+              <class name="destructive-action"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left_attach">5</property>
+            <property name="top_attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_square_root_button">
+            <property name="label">√</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">True</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="button_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">5</property>
+            <property name="top_attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_undo_button">
+            <property name="label" translatable="yes">Undo</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">True</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="undo_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">4</property>
+            <property name="top_attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_7_button">
+            <property name="label">7</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="digit_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_x_squared_button">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="button_cb" swapped="no"/>
+            <child>
+              <object class="GtkLabel" id="x_squared_label">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label">&lt;i&gt;x&lt;/i&gt;&lt;sup&gt;&lt;i&gt;2&lt;/i&gt;&lt;/sup&gt;</property>
+                <property name="use_markup">True</property>
+              </object>
+            </child>
+            <child internal-child="accessible">
+              <object class="AtkObject" id="calc_x_squared_button-atkobject">
+                <property name="AtkObject::accessible-name" translatable="yes" comments="Accessible name for the exponentiation (x to the power of y) button">Exponent</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="left_attach">4</property>
+            <property name="top_attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_1_button">
+            <property name="label">1</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="digit_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="calc_0_button">
+            <property name="label">0</property>
+            <property name="width_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="focus_on_click">False</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="digit_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">3</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

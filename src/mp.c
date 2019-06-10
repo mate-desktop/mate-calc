@@ -1231,7 +1231,7 @@ static void
 mp_ln_real(const MPNumber *x, MPNumber *z)
 {
     int e, k;
-    float rx, rlx;
+    double rx, rlx;
     MPNumber t1, t2;
 
     /* LOOP TO GET APPROXIMATE LN(X) USING SINGLE-PRECISION */
@@ -1250,10 +1250,10 @@ mp_ln_real(const MPNumber *x, MPNumber *z)
         /* REMOVE EXPONENT TO AVOID FLOATING-POINT OVERFLOW */
         e = t1.exponent;
         t1.exponent = 0;
-        rx = mp_cast_to_float(&t1);
+        rx = mp_cast_to_double(&t1);
         t1.exponent = e;
-        rlx = log(rx) + (float)e * log((float)MP_BASE);
-        mp_set_from_float(-(double)rlx, &t2);
+        rlx = log(rx) + e * log(MP_BASE);
+        mp_set_from_double(-(double)rlx, &t2);
 
         /* UPDATE Z AND COMPUTE ACCURATE EXP OF APPROXIMATE LOG */
         mp_subtract(z, &t2, z);

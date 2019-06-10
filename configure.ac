@@ -1,6 +1,6 @@
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.62)
-AC_INIT([mate-calc], [1.19.0], [http://mate-desktop.org])
+AC_INIT([mate-calc], [1.23.0], [http://mate-desktop.org])
 
 AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-xz check-news])
 AC_CONFIG_HEADERS(config.h)
@@ -19,9 +19,9 @@ dnl ###########################################################################
 dnl Dependencies
 dnl ###########################################################################
 
-GLIB_REQUIRED=2.36.0
+GLIB_REQUIRED=2.50.0
 GIO_REQUIRED=2.36.0
-GTK_REQUIRED=3.14.0
+GTK_REQUIRED=3.22.0
 
 PKG_CHECK_MODULES(MATE_CALC, [
     gtk+-3.0 >= $GTK_REQUIRED
@@ -48,6 +48,24 @@ dnl ###########################################################################
 
 IT_PROG_INTLTOOL([0.35.0])
 AC_SUBST(GETTEXT_PACKAGE, mate-calc)
+
+# **********************
+# GLIB_COMPILE_RESOURCES
+# **********************
+AC_ARG_VAR([GLIB_COMPILE_RESOURCES],[glib-compile-resources bin])
+AC_PATH_PROG([GLIB_COMPILE_RESOURCES],[glib-compile-resources],[])
+if test -z "$GLIB_COMPILE_RESOURCES"; then
+  AC_MSG_ERROR([glib-compile-resources not found])
+fi
+
+# *******
+# XMLLINT
+# *******
+AC_ARG_VAR([XMLLINT],[xmllint bin])
+AC_PATH_PROG([XMLLINT],[xmllint],[])
+if test -z "$XMLLINT"; then
+  AC_MSG_ERROR([xmllint not found])
+fi
 
 dnl ###########################################################################
 dnl Documentation

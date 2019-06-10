@@ -1,18 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# A S Alam <aalam@users.sf.net>, 2004-2012
-# Jaswinder Singh Phulewala <jaswindersinghra@yahoo.com>, 2004
+# Stefano Karapetsas <stefano@karapetsas.com>, 2018
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-15 14:46+0300\n"
-"PO-Revision-Date: 2017-03-15 11:48+0000\n"
-"Last-Translator: monsta <monsta@inbox.ru>\n"
-"Language-Team: Panjabi (Punjabi) (http://www.transifex.com/mate/MATE/language/pa/)\n"
+"POT-Creation-Date: 2019-02-09 20:37+0100\n"
+"PO-Revision-Date: 2018-03-11 16:33+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2018\n"
+"Language-Team: Panjabi (Punjabi) (https://www.transifex.com/mate/teams/13566/pa/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,92 +22,92 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Accessible name for the factorize button
-#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:8
+#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:9
 msgid "Factorize"
 msgstr "ਗੁਣਨਖੰਡ"
 
 #. Label on the solve button (clicking this solves the displayed calculation)
 #: ../data/buttons-advanced.ui.h:4 ../data/buttons-basic.ui.h:2
-#: ../data/buttons-financial.ui.h:76 ../data/buttons-programming.ui.h:12
+#: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
 msgid "="
 msgstr "="
 
 #: ../data/buttons-advanced.ui.h:5 ../data/buttons-basic.ui.h:3
-#: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
+#: ../data/buttons-financial.ui.h:78 ../data/buttons-programming.ui.h:14
 msgid "Clear"
 msgstr "ਸਾਫ਼"
 
-#. Accessible name for the subscript mode button
-#: ../data/buttons-advanced.ui.h:7 ../data/buttons-programming.ui.h:15
-msgid "Subscript"
-msgstr "ਪ੍ਹੈਰ 'ਚ"
-
-#. Accessible name for the superscript mode button
-#: ../data/buttons-advanced.ui.h:9 ../data/buttons-programming.ui.h:17
-msgid "Superscript"
-msgstr "ਘਾਤ"
-
 #. Accessible name for the scientific exponent button
-#: ../data/buttons-advanced.ui.h:11
+#: ../data/buttons-advanced.ui.h:7
 msgid "Scientific Exponent"
 msgstr "ਵਿਗਿਆਨਿਕ ਭਾਗ"
+
+#. The label on the memory button
+#: ../data/buttons-advanced.ui.h:9 ../data/buttons-financial.ui.h:73
+#: ../data/buttons-programming.ui.h:18
+msgid "x"
+msgstr "x"
 
 #. Accessible name for the memory button
 #. Accessible name for the memory value button
 #. Tooltip for the memory button
-#: ../data/buttons-advanced.ui.h:13 ../data/buttons-financial.ui.h:72
+#: ../data/buttons-advanced.ui.h:11 ../data/buttons-financial.ui.h:75
 #: ../src/math-buttons.c:232
 msgid "Memory"
 msgstr "ਮੈਮੋਰੀ"
 
-#. The label on the memory button
-#: ../data/buttons-advanced.ui.h:15 ../data/buttons-financial.ui.h:74
-#: ../data/buttons-programming.ui.h:21
-msgid "x"
-msgstr "x"
-
 #. Accessible name for the exponentiation (x to the power of y) button
-#: ../data/buttons-advanced.ui.h:17 ../data/buttons-basic.ui.h:5
-#: ../data/buttons-financial.ui.h:100 ../data/buttons-programming.ui.h:33
+#: ../data/buttons-advanced.ui.h:13 ../data/buttons-basic.ui.h:6
+#: ../data/buttons-financial.ui.h:100 ../data/buttons-programming.ui.h:32
 msgid "Exponent"
 msgstr "ਐਕਸਪੋਨੈਟ"
 
-#: ../data/buttons-advanced.ui.h:18 ../data/buttons-basic.ui.h:6
-#: ../data/buttons-financial.ui.h:98
+#: ../data/buttons-advanced.ui.h:14 ../data/buttons-basic.ui.h:4
+#: ../data/buttons-financial.ui.h:101
 msgid "Undo"
 msgstr "ਵਾਪਿਸ"
 
-#: ../data/buttons-advanced.ui.h:19
-msgid "acos"
-msgstr ""
-
-#: ../data/buttons-advanced.ui.h:20
+#: ../data/buttons-advanced.ui.h:15
 msgid "asin"
 msgstr ""
 
-#: ../data/buttons-advanced.ui.h:21
+#: ../data/buttons-advanced.ui.h:16
 msgid "atan"
 msgstr ""
 
+#: ../data/buttons-advanced.ui.h:17
+msgid "acos"
+msgstr ""
+
 #. Accessible name for the store value button
-#: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:19
+#: ../data/buttons-advanced.ui.h:19 ../data/buttons-programming.ui.h:20
 msgid "Store"
 msgstr "ਸਟੋਰ"
 
 #. Accessible name for the inverse button
-#: ../data/buttons-advanced.ui.h:25 ../data/buttons-programming.ui.h:31
+#: ../data/buttons-advanced.ui.h:21 ../data/buttons-programming.ui.h:30
 msgid "Inverse"
 msgstr "ਉਲਟ"
 
 #. Accessible name for the factorial button
-#: ../data/buttons-advanced.ui.h:27 ../data/buttons-programming.ui.h:29
+#: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:28
 msgid "Factorial"
 msgstr "ਫੈਕਟੋਰੀਅਲ"
 
 #. Accessible name for the absolute value button
-#: ../data/buttons-advanced.ui.h:29 ../data/buttons-programming.ui.h:10
+#: ../data/buttons-advanced.ui.h:25 ../data/buttons-programming.ui.h:11
 msgid "Absolute Value"
 msgstr "ਅਸਲੀ ਮੁੱਲ"
+
+#. Accessible name for the superscript mode button
+#: ../data/buttons-advanced.ui.h:27 ../data/buttons-programming.ui.h:16
+msgid "Superscript"
+msgstr "ਘਾਤ"
+
+#. Accessible name for the subscript mode button
+#: ../data/buttons-advanced.ui.h:29 ../data/buttons-programming.ui.h:34
+msgid "Subscript"
+msgstr "ਪ੍ਹੈਰ 'ਚ"
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
@@ -113,222 +115,251 @@ msgstr "ਅਸਲੀ ਮੁੱਲ"
 msgid "Compounding Term"
 msgstr "ਮਿਸ਼ਰਣ ਪਦ"
 
+#: ../data/buttons-financial.ui.h:3 ../data/buttons-programming.ui.h:3
+msgid "_Cancel"
+msgstr "ਰੱਦ ਕਰੋ(_C)"
+
 #. Payment Period Dialog: Button to calculate result
-#: ../data/buttons-financial.ui.h:4
+#: ../data/buttons-financial.ui.h:5
 msgid "C_alculate"
 msgstr "ਗਣਨਾ(_a)"
 
-#. Periodic Interest Rate Dialog: Label before present value input
-#: ../data/buttons-financial.ui.h:6
-msgid "Present _Value:"
-msgstr "ਮੌਜੂਦਾ ਮੁੱਲ(_V):"
-
-#. Payment Period Dialog: Label before periodic interest rate input
-#: ../data/buttons-financial.ui.h:8
-msgid "Periodic Interest _Rate:"
-msgstr "ਮਿਆਦੀ ਵਿਆਜ ਦਰ(_R):"
-
 #. Compounding Term Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:10
+#: ../data/buttons-financial.ui.h:7
 msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr "ਮਿਸ਼ਰਤ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਕਰਦਾ ਹੈ, ਜੋ ਕਿ ਮੌਜੂਦ ਮੁੱਲ ਦੇ ਵੱਧਦੀ ਲਗਾਈ ਪੂੰਜੀ ਦੇ ਭਵਿੱਖ ਦੇ ਮੁੱਲ ਹੈ, ਜੋ ਕਿ ਸਥਿਰ ਵਿਆਜ ਰੇਟ ਪ੍ਰਤੀ ਮਿਸ਼ਰਤ ਸਮੇਂ ਲਈ ਹੈ।"
+msgstr ""
+"ਮਿਸ਼ਰਤ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਕਰਦਾ ਹੈ, ਜੋ ਕਿ ਮੌਜੂਦ ਮੁੱਲ ਦੇ ਵੱਧਦੀ ਲਗਾਈ ਪੂੰਜੀ ਦੇ ਭਵਿੱਖ "
+"ਦੇ ਮੁੱਲ ਹੈ, ਜੋ ਕਿ ਸਥਿਰ ਵਿਆਜ ਰੇਟ ਪ੍ਰਤੀ ਮਿਸ਼ਰਤ ਸਮੇਂ ਲਈ ਹੈ।"
+
+#. Payment Period Dialog: Label before periodic interest rate input
+#: ../data/buttons-financial.ui.h:9
+msgid "Periodic Interest _Rate:"
+msgstr "ਮਿਆਦੀ ਵਿਆਜ ਦਰ(_R):"
 
 #. Periodic Interest Rate Dialog: Label before future value input
-#: ../data/buttons-financial.ui.h:12
+#: ../data/buttons-financial.ui.h:11
 msgid "_Future Value:"
 msgstr "ਭਵਿੱਖਤ ਮੁੱਲ(_F):"
 
+#. Periodic Interest Rate Dialog: Label before present value input
+#: ../data/buttons-financial.ui.h:13
+msgid "Present _Value:"
+msgstr "ਮੌਜੂਦਾ ਮੁੱਲ(_V):"
+
 #. Title of Double-Declining Depreciation dialog
-#: ../data/buttons-financial.ui.h:14
+#: ../data/buttons-financial.ui.h:15
 msgid "Double-Declining Depreciation"
 msgstr "ਮੁੱਲ ਵਿੱਚ ਦੁੱਗਣੀ ਕਮੀ"
 
 #. Double-Declining Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:16
+#: ../data/buttons-financial.ui.h:17
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
-msgstr "ਖਾਸ ਦਿੱਤੇ ਸਮੇਂ ਲਈ ਜਾਇਦਾਦ ਲਈ ਨੁਕਸਾਨ ਦੀ ਗਿਣਤੀ ਹੈ, ਜੋ ਕਿ ਦੂਹਰਾ-ਘਟਣ ਬਕਾਇਆ ਢੰਗ ਨਾਲ ਹੈ। "
-
-#. Gross Profit Margin Dialog: Label before cost input
-#: ../data/buttons-financial.ui.h:18
-msgid "C_ost:"
-msgstr "ਕੀਮਤ(_o):"
+msgstr ""
+"ਖਾਸ ਦਿੱਤੇ ਸਮੇਂ ਲਈ ਜਾਇਦਾਦ ਲਈ ਨੁਕਸਾਨ ਦੀ ਗਿਣਤੀ ਹੈ, ਜੋ ਕਿ ਦੂਹਰਾ-ਘਟਣ ਬਕਾਇਆ ਢੰਗ "
+"ਨਾਲ ਹੈ। "
 
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:20
+#: ../data/buttons-financial.ui.h:19
 msgid "_Life:"
 msgstr "ਉਮਰ(_L):"
 
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:22
+#: ../data/buttons-financial.ui.h:21
 msgid "_Period:"
 msgstr "ਪੀਰੀਅਡ(_P):"
 
+#. Gross Profit Margin Dialog: Label before cost input
+#: ../data/buttons-financial.ui.h:23
+msgid "C_ost:"
+msgstr "ਕੀਮਤ(_o):"
+
 #. Title of Future Value dialog
 #. Tooltip for the future value button
-#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.c:262
+#: ../data/buttons-financial.ui.h:25 ../src/math-buttons.c:262
 msgid "Future Value"
 msgstr "ਭਵਿੱਖਤ ਮੁੱਲ"
 
+#. Present Value Dialog: Label before number of periods input
+#: ../data/buttons-financial.ui.h:27
+msgid "_Number of Periods:"
+msgstr "ਪੀਰੀਅਡ ਦੀ ਗਿਣਤੀ(_N):"
+
 #. Future Value Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:26
+#: ../data/buttons-financial.ui.h:29
 msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
-msgstr "ਨਿਯਮਤ ਵਿਆਜ ਦਰ ਉੱਤੇ ਬਰਾਬਰ ਦੀਆਂ ਕਿਸ਼ਤਾਂ ਦੀ ਲੜੀ ਉੱਤੇ ਲਗਾਈ ਪੂੰਜੀ ਉੱਤੇ ਭਵਿੱਖ ਮੁੱਲ ਦੀ ਗਿਣਤੀ ਕਰਦਾ ਹੈ, ਜੋ ਕਿ ਸਮੇਂ ਵਿੱਚ ਕਿਸ਼ਤ ਸਮੇਂ ਉੱਤੇ ਨਿਰਭਰ ਹੈ।"
+msgstr ""
+"ਨਿਯਮਤ ਵਿਆਜ ਦਰ ਉੱਤੇ ਬਰਾਬਰ ਦੀਆਂ ਕਿਸ਼ਤਾਂ ਦੀ ਲੜੀ ਉੱਤੇ ਲਗਾਈ ਪੂੰਜੀ ਉੱਤੇ ਭਵਿੱਖ ਮੁੱਲ"
+" ਦੀ ਗਿਣਤੀ ਕਰਦਾ ਹੈ, ਜੋ ਕਿ ਸਮੇਂ ਵਿੱਚ ਕਿਸ਼ਤ ਸਮੇਂ ਉੱਤੇ ਨਿਰਭਰ ਹੈ।"
 
 #. Payment Period Dialog: Label before periodic payment input
-#: ../data/buttons-financial.ui.h:28
+#: ../data/buttons-financial.ui.h:31
 msgid "_Periodic Payment:"
 msgstr "ਮਿਆਦੀ ਅਦਾਇਗੀ(_P):"
 
-#. Present Value Dialog: Label before number of periods input
-#: ../data/buttons-financial.ui.h:30
-msgid "_Number of Periods:"
-msgstr "ਪੀਰੀਅਡ ਦੀ ਗਿਣਤੀ(_N):"
-
 #. Title of Gross Profit Margin dialog
 #. Tooltip for the gross profit margin button
-#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:283
+#: ../data/buttons-financial.ui.h:33 ../src/math-buttons.c:283
 msgid "Gross Profit Margin"
 msgstr "ਸ਼ੁੱਧ ਨਫ਼ਾ ਅੰਤਰ"
 
 #. Gross Profit Margin Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:34
+#: ../data/buttons-financial.ui.h:35
 msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
-msgstr "ਪਰੋਡੱਕਟ ਦਾ ਮੁੜ-ਵੇਚ ਮੁੱਲ ਕੱਢਦਾ ਹੈ, ਜੋ ਕਿ ਪਰੋਡੱਕਟ ਕੀਮਤ ਅਤੇ ਚਾਹੀਦੇ ਕੁੱਲ ਫਾਇਦੇ ਦੇ ਅੰਤਰ ਉੱਤੇ ਅਧਾਰਿਤ ਹੈ।"
+msgstr ""
+"ਪਰੋਡੱਕਟ ਦਾ ਮੁੜ-ਵੇਚ ਮੁੱਲ ਕੱਢਦਾ ਹੈ, ਜੋ ਕਿ ਪਰੋਡੱਕਟ ਕੀਮਤ ਅਤੇ ਚਾਹੀਦੇ ਕੁੱਲ ਫਾਇਦੇ "
+"ਦੇ ਅੰਤਰ ਉੱਤੇ ਅਧਾਰਿਤ ਹੈ।"
 
 #. Gross Profit Margin Dialog: Label before margin input
-#: ../data/buttons-financial.ui.h:36
+#: ../data/buttons-financial.ui.h:37
 msgid "_Margin:"
 msgstr "ਦਰ ਅੰਤਰ(_M):"
 
 #. Title of Periodic Payment dialog
 #. Tooltip for the periodic payment button
-#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:280
+#: ../data/buttons-financial.ui.h:39 ../src/math-buttons.c:280
 msgid "Periodic Payment"
 msgstr "ਮਿਆਦੀ ਅਦਾਇਗੀ"
 
 #. Periodic Payment Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:40
+#: ../data/buttons-financial.ui.h:41
 msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
-msgstr "ਨਿਯਮਤ ਲੋਨ ਦੀ ਅਦਾਇਗੀ ਦੀ ਮਾਤਰਾ ਗਿਣਤੀ ਹੈ, ਜਿੱਥੇ ਅਦਾਇਗੀ ਨੂੰ ਹਰੇਕ ਅਦਾਇਗੀ ਸਮੇਂ ਦੇ ਅੰਤ ਉੱਤੇ ਕੀਤਾ ਜਾਂਦਾ ਹੈ।"
-
-#. Periodic Payment Dialog: Label before principal input
-#: ../data/buttons-financial.ui.h:42
-msgid "_Principal:"
-msgstr "ਮੂਲ(_P):"
+msgstr ""
+"ਨਿਯਮਤ ਲੋਨ ਦੀ ਅਦਾਇਗੀ ਦੀ ਮਾਤਰਾ ਗਿਣਤੀ ਹੈ, ਜਿੱਥੇ ਅਦਾਇਗੀ ਨੂੰ ਹਰੇਕ ਅਦਾਇਗੀ ਸਮੇਂ ਦੇ "
+"ਅੰਤ ਉੱਤੇ ਕੀਤਾ ਜਾਂਦਾ ਹੈ।"
 
 #. Periodic Interest Rate Dialog: Label before term input
-#: ../data/buttons-financial.ui.h:44
+#: ../data/buttons-financial.ui.h:43
 msgid "_Term:"
 msgstr "ਟਰਮ(_T):"
 
+#. Periodic Payment Dialog: Label before principal input
+#: ../data/buttons-financial.ui.h:45
+msgid "_Principal:"
+msgstr "ਮੂਲ(_P):"
+
 #. Title of Present Value dialog
 #. Tooltip for the present value button
-#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:277
+#: ../data/buttons-financial.ui.h:47 ../src/math-buttons.c:277
 msgid "Present Value"
 msgstr "ਮੌਜੂਦਾ ਮੁੱਲ"
 
 #. Present Value Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:48
+#: ../data/buttons-financial.ui.h:49
 msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr "ਲਗਾਈ ਪੂੰਜੀ ਲਈ ਮੌਜੂਦਾ ਮੁੱਲ ਕੱਢਦਾ ਹੈ, ਜੋ ਕਿ ਨਾ ਸਬੰਧਤ ਬਰਾਬਰ ਅਦਾਇਗੀ ਦੀ ਲੜੀ ਉੱਤੇ ਅਧਾਰਿਤ ਹੈ, ਜੋ ਕਿ ਨਿਯਮਤਕ ਵਿਆਜ ਦਰ ਸੀਮਿਤ ਸਮੇਂ ਵਿੱਚ ਕਿਸ਼ਤ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਮੁਤਾਬਕ ਹੈ।"
+msgstr ""
+"ਲਗਾਈ ਪੂੰਜੀ ਲਈ ਮੌਜੂਦਾ ਮੁੱਲ ਕੱਢਦਾ ਹੈ, ਜੋ ਕਿ ਨਾ ਸਬੰਧਤ ਬਰਾਬਰ ਅਦਾਇਗੀ ਦੀ ਲੜੀ ਉੱਤੇ "
+"ਅਧਾਰਿਤ ਹੈ, ਜੋ ਕਿ ਨਿਯਮਤਕ ਵਿਆਜ ਦਰ ਸੀਮਿਤ ਸਮੇਂ ਵਿੱਚ ਕਿਸ਼ਤ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਮੁਤਾਬਕ "
+"ਹੈ।"
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
-#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.c:274
+#: ../data/buttons-financial.ui.h:51 ../src/math-buttons.c:274
 msgid "Periodic Interest Rate"
 msgstr "ਮਿਆਦੀ ਵਿਆਜ ਦਰ"
 
 #. Periodic Interest Rate Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:52
+#: ../data/buttons-financial.ui.h:53
 msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
-msgstr "ਨਿਯਮਤ ਵਿਆਜ ਦੀ ਗਿਣਤੀ ਕਰਦਾ ਹੈ, ਜੋ ਕਿ ਭਵਿੱਖ ਮੁੱਲ ਲਈ ਲਗਾਈ ਪੂੰਜੀ ਵਧਾਉਣ ਲਈ ਲਾਜ਼ਮੀ ਹੈ, ਜੋ ਕਿ ਮਿਸ਼ਰਤ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਮੁਤਾਬਕ ਹੈ।"
+msgstr ""
+"ਨਿਯਮਤ ਵਿਆਜ ਦੀ ਗਿਣਤੀ ਕਰਦਾ ਹੈ, ਜੋ ਕਿ ਭਵਿੱਖ ਮੁੱਲ ਲਈ ਲਗਾਈ ਪੂੰਜੀ ਵਧਾਉਣ ਲਈ ਲਾਜ਼ਮੀ "
+"ਹੈ, ਜੋ ਕਿ ਮਿਸ਼ਰਤ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਮੁਤਾਬਕ ਹੈ।"
 
 #. Title of Straight-Line Depreciation dialog
-#: ../data/buttons-financial.ui.h:54
+#: ../data/buttons-financial.ui.h:55
 msgid "Straight-Line Depreciation"
 msgstr "ਮੁੱਲ ਵਿੱਚ ਸਰਲ-ਰੇਖੀ ਕਮੀ"
 
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:56
+#: ../data/buttons-financial.ui.h:57
 msgid "_Cost:"
 msgstr "ਕੀਮਤ(_C):"
 
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:58
+#: ../data/buttons-financial.ui.h:59
 msgid "_Salvage:"
 msgstr "ਛੋਟ(_S):"
 
 #. Straight-Line Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:60
+#: ../data/buttons-financial.ui.h:61
 msgid ""
 "Calculates the straight-line depreciation of an asset for one period. The "
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr "ਜਾਇਦਾਦ ਲਈ ਇੱਕ ਸਮੇਂ ਲਈ ਸਿੱਧੇ ਅਵਲੋਕਣ ਦੀ ਗਿਣਤੀ ਕਰਦਾ ਹੈ। ਅਵਲੋਕਣ ਲਈ ਸਿੱਧਾ ਢੰਗ ਅਵਲੋਕਣ ਕੀਮਤ ਨੂੰ ਜਾਇਦਾਦ ਦੀ ਫਾਇਦੇਮੰਦ ਉਮਰ ਨੂੰ ਬਰਾਬਰ ਰੂਪ ਵਿੱਚ ਵੰਡਣ ਨਾਲ ਤਿਆਰ ਕੀਤਾ ਜਾਂਦਾ ਹੈ। ਫਾਇਦੇਮੰਦ ਉਮਰ ਸਮੇਂ ਦੀ ਗਿਣਤੀ, ਸਾਲਾਂ ਵਿੱਚ, ਹੈ, ਜਿਸ ਦੌਰਾਨ ਜਾਇਦਾਦ ਦਾ ਅਵਲੋਕਣ ਹੁੰਦਾ ਹੈ।"
+msgstr ""
+"ਜਾਇਦਾਦ ਲਈ ਇੱਕ ਸਮੇਂ ਲਈ ਸਿੱਧੇ ਅਵਲੋਕਣ ਦੀ ਗਿਣਤੀ ਕਰਦਾ ਹੈ। ਅਵਲੋਕਣ ਲਈ ਸਿੱਧਾ ਢੰਗ "
+"ਅਵਲੋਕਣ ਕੀਮਤ ਨੂੰ ਜਾਇਦਾਦ ਦੀ ਫਾਇਦੇਮੰਦ ਉਮਰ ਨੂੰ ਬਰਾਬਰ ਰੂਪ ਵਿੱਚ ਵੰਡਣ ਨਾਲ ਤਿਆਰ ਕੀਤਾ"
+" ਜਾਂਦਾ ਹੈ। ਫਾਇਦੇਮੰਦ ਉਮਰ ਸਮੇਂ ਦੀ ਗਿਣਤੀ, ਸਾਲਾਂ ਵਿੱਚ, ਹੈ, ਜਿਸ ਦੌਰਾਨ ਜਾਇਦਾਦ ਦਾ "
+"ਅਵਲੋਕਣ ਹੁੰਦਾ ਹੈ।"
 
 #. Title of Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:62
+#: ../data/buttons-financial.ui.h:63
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "ਸਲਾਨਾ ਅੰਕਾਂ ਦੇ ਜੋਡ਼ ਵਿੱਚ ਕਮੀ"
 
 #. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:64
+#: ../data/buttons-financial.ui.h:65
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
 " accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
-msgstr "ਖਾਸ ਦਿੱਤੇ ਸਮੇਂ ਲਈ ਜਾਇਦਾਦ ਲਈ ਨੁਕਸਾਨ ਦੀ ਗਿਣਤੀ ਹੈ, ਜੋ ਕਿ ਸਾਲਾਂ-ਦੇ-ਜੋੜ-ਅੰਕ ਢੰਗ ਨਾਲ ਹੈ। ਨੁਕਸਾਨ ਦਾ ਇਹ ਢੰਗ ਘਟਣ ਦੀ ਦਰ ਨਾਲ ਹੈ, ਇਸਕਰਕੇ ਸ਼ੁਰੂ ਆਲੇ ਸਮੇਂ ਵਿੱਚ ਹੋਣ ਵਾਲਾ ਖ਼ਰਚ ਬਾਅਦ ਵਾਲੇ ਸਮੇਂ ਨਾਲ ਵੱਧ ਹੁੰਦਾ ਹੈ। ਫਾਇਦੇਮੰਦ ਉਮਰ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਹੈ, ਆਮ ਤੌਰ ਉੱਤੇ ਸਾਲਾਂ, ਜਿੰਨ੍ਹਾਂ ਲਈ ਜਾਇਦਾਦ ਦਾ ਨੁਕਸਾਨ ਹੁੰਦਾ ਹੈ।"
+msgstr ""
+"ਖਾਸ ਦਿੱਤੇ ਸਮੇਂ ਲਈ ਜਾਇਦਾਦ ਲਈ ਨੁਕਸਾਨ ਦੀ ਗਿਣਤੀ ਹੈ, ਜੋ ਕਿ ਸਾਲਾਂ-ਦੇ-ਜੋੜ-ਅੰਕ ਢੰਗ "
+"ਨਾਲ ਹੈ। ਨੁਕਸਾਨ ਦਾ ਇਹ ਢੰਗ ਘਟਣ ਦੀ ਦਰ ਨਾਲ ਹੈ, ਇਸਕਰਕੇ ਸ਼ੁਰੂ ਆਲੇ ਸਮੇਂ ਵਿੱਚ ਹੋਣ "
+"ਵਾਲਾ ਖ਼ਰਚ ਬਾਅਦ ਵਾਲੇ ਸਮੇਂ ਨਾਲ ਵੱਧ ਹੁੰਦਾ ਹੈ। ਫਾਇਦੇਮੰਦ ਉਮਰ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਹੈ, ਆਮ"
+" ਤੌਰ ਉੱਤੇ ਸਾਲਾਂ, ਜਿੰਨ੍ਹਾਂ ਲਈ ਜਾਇਦਾਦ ਦਾ ਨੁਕਸਾਨ ਹੁੰਦਾ ਹੈ।"
 
 #. Title of Payment Period dialog
-#: ../data/buttons-financial.ui.h:66
+#: ../data/buttons-financial.ui.h:67
 msgid "Payment Period"
 msgstr "ਅਦਾਇਗੀ ਮਿਆਦ"
 
 #. Payment Period Dialog: Label before future value input
-#: ../data/buttons-financial.ui.h:68
+#: ../data/buttons-financial.ui.h:69
 msgid "Future _Value:"
 msgstr "ਭਵਿੱਖਤ ਮੁੱਲ(_V):"
 
 #. Payment Period Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:70
+#: ../data/buttons-financial.ui.h:71
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
 "of an ordinary annuity, to accumulate a future value, at a periodic interest"
 " rate."
-msgstr "ਕਿਸ਼ਤ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਕਰਦਾ ਹੈ, ਜੋ ਕਿ ਆਮ ਪੂੰਜੀ ਦੇ ਸਮੇਂ ਦੌਰਾਨ ਲਾਜ਼ਮੀ ਹੈ, ਤਾਂ ਕਿ ਭਵਿੱਖ ਮੁੱਲ ਨੂੰ, ਨਿਯਮਤ ਵਿਆਜ ਰੇਟ ਨਾਲ ਕੱਢਿਆ ਜਾ ਸਕੇ।"
+msgstr ""
+"ਕਿਸ਼ਤ ਸਮੇਂ ਦੀ ਗਿਣਤੀ ਕਰਦਾ ਹੈ, ਜੋ ਕਿ ਆਮ ਪੂੰਜੀ ਦੇ ਸਮੇਂ ਦੌਰਾਨ ਲਾਜ਼ਮੀ ਹੈ, ਤਾਂ ਕਿ "
+"ਭਵਿੱਖ ਮੁੱਲ ਨੂੰ, ਨਿਯਮਤ ਵਿਆਜ ਰੇਟ ਨਾਲ ਕੱਢਿਆ ਜਾ ਸਕੇ।"
 
 #. Calculates the number of compounding periods necessary to increase an
 #. investment of present value pv to a future value of fv, at a fixed interest
 #. rate of int per compounding period. See also:
 #. http://en.wikipedia.org/wiki/Compound_interest
-#: ../data/buttons-financial.ui.h:79
+#: ../data/buttons-financial.ui.h:80
 msgid "Ctrm"
 msgstr "Ctrm"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
 #. time, using the double-declining balance method. See also:
 #. http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:81
+#: ../data/buttons-financial.ui.h:82
 msgid "Ddb"
 msgstr "Ddb"
 
@@ -336,7 +367,7 @@ msgstr "Ddb"
 #. payments, each of amount pmt, at a periodic interest rate of int, over the
 #. number of payment periods in the term. See also:
 #. http://en.wikipedia.org/wiki/Future_value
-#: ../data/buttons-financial.ui.h:83
+#: ../data/buttons-financial.ui.h:84
 msgid "Fv"
 msgstr "Fv"
 
@@ -344,13 +375,13 @@ msgstr "Fv"
 #. of an ordinary annuity, to accumulate a future value of fv, at a periodic
 #. interest rate of int. Each payment is equal to amount pmt. See also:
 #. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
-#: ../data/buttons-financial.ui.h:85
+#: ../data/buttons-financial.ui.h:86
 msgid "Term"
 msgstr "ਪਦ"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
 #. time, using the Sum-Of-The-Years
-#: ../data/buttons-financial.ui.h:87
+#: ../data/buttons-financial.ui.h:88
 msgid "Syd"
 msgstr "Syd"
 
@@ -360,14 +391,14 @@ msgstr "Syd"
 #. asset. The useful life is the number of periods, typically years, over
 #. which an asset is depreciated. See also:
 #. http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:89
+#: ../data/buttons-financial.ui.h:90
 msgid "Sln"
 msgstr "Sln"
 
 #. Calculates the periodic interest necessary to increase an investment of
 #. present value pv to a future value of fv, over the number of compounding
 #. periods in term. See also: http://en.wikipedia.org/wiki/Interest
-#: ../data/buttons-financial.ui.h:91
+#: ../data/buttons-financial.ui.h:92
 msgid "Rate"
 msgstr "ਦਰ"
 
@@ -375,21 +406,21 @@ msgstr "ਦਰ"
 #. payments, each of amount pmt, discounted at a periodic interest rate of
 #. int, over the number of payment periods in the term. See also:
 #. http://en.wikipedia.org/wiki/Present_value
-#: ../data/buttons-financial.ui.h:93
+#: ../data/buttons-financial.ui.h:94
 msgid "Pv"
 msgstr "Pv"
 
 #. Calculates the amount of the periodic payment of a loan, where payments are
 #. made at the end of each payment period. See also:
 #. http://en.wikipedia.org/wiki/Amortization_schedule
-#: ../data/buttons-financial.ui.h:95
+#: ../data/buttons-financial.ui.h:96
 msgid "Pmt"
 msgstr "Pmt"
 
 #. Calculates the resale price of a product, based on the product cost and the
 #. wanted gross profit margin. See also:
 #. http://en.wikipedia.org/wiki/Gross_profit_margin
-#: ../data/buttons-financial.ui.h:97
+#: ../data/buttons-financial.ui.h:98
 msgid "Gpm"
 msgstr "Gpm"
 
@@ -400,27 +431,27 @@ msgid "Insert Character Code"
 msgstr "ਅੱਖਰ ਕੋਡ ਸ਼ਾਮਲ"
 
 #. Insert ASCII dialog: Button to insert selected character
-#: ../data/buttons-programming.ui.h:4
+#: ../data/buttons-programming.ui.h:5
 msgid "_Insert"
 msgstr "ਸ਼ਾਮਲ(_i)"
 
 #. Insert ASCII dialog: Label before character entry
-#: ../data/buttons-programming.ui.h:6
+#: ../data/buttons-programming.ui.h:7
 msgid "Ch_aracter:"
 msgstr "ਅੱਖਰ(_a):"
 
 #. Accessible name for the shift left button
-#: ../data/buttons-programming.ui.h:23
+#: ../data/buttons-programming.ui.h:22
 msgid "Shift Left"
 msgstr "ਖੱਬੀ ਸਿਫ਼ਟ"
 
 #. Accessible name for the shift right button
-#: ../data/buttons-programming.ui.h:25
+#: ../data/buttons-programming.ui.h:24
 msgid "Shift Right"
 msgstr "ਸੱਜੀ ਸਿਫ਼ਟ"
 
 #. Accessible name for the insert character button
-#: ../data/buttons-programming.ui.h:27
+#: ../data/buttons-programming.ui.h:26
 msgid "Insert Character"
 msgstr "ਅੱਖਰ ਸ਼ਾਮਲ"
 
@@ -445,32 +476,36 @@ msgid "64-bit"
 msgstr "64-ਬਿੱਟ"
 
 #. Title of preferences dialog
-#: ../data/preferences.ui.h:9 ../src/math-preferences.c:238
+#: ../data/preferences.ui.h:9 ../src/math-preferences.c:239
 msgid "Preferences"
 msgstr "ਮੇਰੀ ਪਸੰਦ"
 
+#: ../data/preferences.ui.h:10
+msgid "_Close"
+msgstr "ਬੰਦ ਕਰੋ(_C)"
+
 #. Preferences dialog: Label for angle unit combo box
-#: ../data/preferences.ui.h:11
+#: ../data/preferences.ui.h:12
 msgid "_Angle units:"
 msgstr "ਕੋਣ ਇਕਾਈ(_A):"
 
 #. Preferences dialog: Label for display format combo box
-#: ../data/preferences.ui.h:13
+#: ../data/preferences.ui.h:14
 msgid "Number _Format:"
 msgstr "ਨੰਬਰ ਫਾਰਮੈਟ(_F):"
 
 #. Preferences dialog: label for word size combo box
-#: ../data/preferences.ui.h:15
+#: ../data/preferences.ui.h:16
 msgid "Word _size:"
 msgstr "ਵਰਲਡ ਸਾਈਜ਼(_s):"
 
 #. Preferences dialog: label for show trailing zeroes check button
-#: ../data/preferences.ui.h:17
+#: ../data/preferences.ui.h:18
 msgid "Show trailing _zeroes"
 msgstr "ਪਿਛਲੀ ਸਿਫ਼ਰਾਂ ਵੇਖੋ(_z)"
 
 #. Preferences dialog: label for show thousands separator check button
-#: ../data/preferences.ui.h:19
+#: ../data/preferences.ui.h:20
 msgid "Show _thousands separators"
 msgstr "ਹਜ਼ਾਰ ਵੱਖਰੇਵਾਂ ਵੇਖੋ(_t)"
 
@@ -492,7 +527,7 @@ msgid "MATE Calculator"
 msgstr ""
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:531
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:563
 msgid "Calculator"
 msgstr "ਕੈਲਕੂਲੇਟਰ"
 
@@ -750,7 +785,9 @@ msgstr "ਗਲਤੀ: ਅੰਤਰਾਲ ਦੀ ਗਿਣਤੀ ਰਿਣਾਤ�
 msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
-msgstr "ਵਰਤੋਂ:\n  %s — Perform mathematical calculations"
+msgstr ""
+"ਵਰਤੋਂ:\n"
+"  %s — Perform mathematical calculations"
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
@@ -762,7 +799,12 @@ msgid ""
 "  -h, -?, --help                  Show help options\n"
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
-msgstr "ਮੱਦਦ ਚੋਣਾਂ:\n  -v, --version                   Show release version\n  -h, -?, --help                  Show help options\n  --help-all                      Show all help options\n  --help-gtk                      Show GTK+ options"
+msgstr ""
+"ਮੱਦਦ ਚੋਣਾਂ:\n"
+"  -v, --version                   Show release version\n"
+"  -h, -?, --help                  Show help options\n"
+"  --help-all                      Show all help options\n"
+"  --help-gtk                      Show GTK+ options"
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
@@ -776,7 +818,14 @@ msgid ""
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
-msgstr "GTK+ ਚੋਣਾਂ:\n  --class=CLASS                   Program class as used by the window manager\n  --name=NAME                     Program name as used by the window manager\n  --screen=SCREEN                 X screen to use\n  --sync                          Make X calls synchronous\n  --gtk-module=MODULES            Load additional GTK+ modules\n  --g-fatal-warnings              Make all warnings fatal"
+msgstr ""
+"GTK+ ਚੋਣਾਂ:\n"
+"  --class=CLASS                   Program class as used by the window manager\n"
+"  --name=NAME                     Program name as used by the window manager\n"
+"  --screen=SCREEN                 X screen to use\n"
+"  --sync                          Make X calls synchronous\n"
+"  --gtk-module=MODULES            Load additional GTK+ modules\n"
+"  --g-fatal-warnings              Make all warnings fatal"
 
 #. Description on mate-calc application options displayed on command-line
 #: ../src/mate-calc.c:112
@@ -784,7 +833,9 @@ msgstr "GTK+ ਚੋਣਾਂ:\n  --class=CLASS                   Program class a
 msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
-msgstr "Application Options:\n  -s, --solve <equation>          Solve the given equation"
+msgstr ""
+"Application Options:\n"
+"  -s, --solve <equation>          Solve the given equation"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: ../src/mate-calc.c:156
@@ -979,12 +1030,12 @@ msgid "Boolean NOT"
 msgstr "ਬੁਲੀਅਨ NOT"
 
 #. Tooltip for the integer component button
-#: ../src/math-buttons.c:205 ../src/math-buttons.c:994
+#: ../src/math-buttons.c:205 ../src/math-buttons.c:992
 msgid "Integer Component"
 msgstr "ਪੂਰਨ ਅੰਕ ਵਾਲਾ ਹਿੱਸਾ"
 
 #. Tooltip for the fractional component button
-#: ../src/math-buttons.c:208 ../src/math-buttons.c:996
+#: ../src/math-buttons.c:208 ../src/math-buttons.c:994
 msgid "Fractional Component"
 msgstr "ਗੁਣਨਖੰਡ ਭਾਗ"
 
@@ -1074,71 +1125,71 @@ msgid "Straight Line Depreciation"
 msgstr "ਸਰਲ-ਰੇਖੀ ਕਮੀ"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: ../src/math-buttons.c:611
+#: ../src/math-buttons.c:624
 msgid "Binary"
 msgstr "ਬਾਈਨਰੀ"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: ../src/math-buttons.c:615
+#: ../src/math-buttons.c:628
 msgid "Octal"
 msgstr "ਉਕਟਿਲ"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: ../src/math-buttons.c:619
+#: ../src/math-buttons.c:632
 msgid "Decimal"
 msgstr "ਦਸ਼ਮਲਵ"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: ../src/math-buttons.c:623
+#: ../src/math-buttons.c:636
 msgid "Hexadecimal"
-msgstr "ਹੈਕਸਾਡੈਸੀਮਲ"
+msgstr "ਹੈਕਸਾ-ਡੇਸੀਮਲ"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: ../src/math-buttons.c:905 ../src/math-buttons.c:948
+#: ../src/math-buttons.c:903 ../src/math-buttons.c:946
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] "_%d ਥਾਂ"
-msgstr[1] "_%d ਥਾਵਾਂ"
+msgstr[0] ""
+msgstr[1] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: ../src/math-buttons.c:909 ../src/math-buttons.c:952
+#: ../src/math-buttons.c:907 ../src/math-buttons.c:950
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] "%d ਥਾਂ"
-msgstr[1] "%d ਥਾਵਾਂ"
+msgstr[0] ""
+msgstr[1] ""
 
 #. Tooltip for the round button
-#: ../src/math-buttons.c:998
+#: ../src/math-buttons.c:996
 msgid "Round"
 msgstr "ਰਾਊਂਡ"
 
 #. Tooltip for the floor button
-#: ../src/math-buttons.c:1000
+#: ../src/math-buttons.c:998
 msgid "Floor"
 msgstr "ਫਲੋਰ"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:1002
+#: ../src/math-buttons.c:1000
 msgid "Ceiling"
 msgstr "ਸਿਲਿੰਗ"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:1004
+#: ../src/math-buttons.c:1002
 msgid "Sign"
 msgstr "ਸਾਈਨ"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: ../src/math-converter.c:414
+#: ../src/math-converter.c:412
 msgid " in "
 msgstr " ਵਿੱਚ "
 
 #. Tooltip for swap conversion button
-#: ../src/math-converter.c:429
+#: ../src/math-converter.c:427
 msgid "Switch conversion units"
 msgstr "ਬਦਲਣ ਯੂਨਿਟਾਂ ਪਲਟਾਓ"
 
@@ -1212,74 +1263,73 @@ msgid "Displayed value not an integer"
 msgstr "ਵੇਖਾਇਆ ਮੁੱਲ ਪੂਰਨ ਅੰਕ ਨਹੀਂ ਹੈ"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1918
+#: ../src/math-equation.c:1916
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
-
-#. Label on close button in preferences dialog
-#: ../src/math-preferences.c:242
-msgid "_Close"
-msgstr "ਬੰਦ ਕਰੋ(_C)"
 
 #. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
 #. grads
-#: ../src/math-preferences.c:252 ../src/unit-manager.c:54
+#: ../src/math-preferences.c:256 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "ਡਿਗਰੀ"
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:256 ../src/unit-manager.c:55
+#: ../src/math-preferences.c:260 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "ਰੇਡੀਅਨ"
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:260 ../src/unit-manager.c:56
+#: ../src/math-preferences.c:264 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "ਗਰੇਡੀਅਨ"
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
 #. number 1.234×10^99)
-#: ../src/math-preferences.c:270
+#: ../src/math-preferences.c:274
 msgid "Automatic"
 msgstr "ਆਟੋਮੈਟਿਕ"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:274
+#: ../src/math-preferences.c:278
 msgid "Fixed"
 msgstr "ਸਥਿਰ"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:278
+#: ../src/math-preferences.c:282
 msgid "Scientific"
 msgstr "ਵਿਗਿਆਨਿਕ"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:282
+#: ../src/math-preferences.c:286
 msgid "Engineering"
 msgstr "ਇੰਜਿਨਅਰਿੰਗ"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:293
+#: ../src/math-preferences.c:297
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "%d ਦਸ਼ਮਲਵ ਅੰਕਾਂ ਤੱਕ ਵੇਖੋ(_p)"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:211
+#: ../src/math-window.c:212
 msgid "Unable to open help file"
 msgstr "ਮੱਦਦ ਫਾਇਲ ਖੋਲ੍ਹਣ ਲਈ ਅਸਮਰੱਥ"
 
 #. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:238
+#: ../src/math-window.c:239
 msgid "translator-credits"
-msgstr "ਜਸਵਿੰਦਰ ਸਿੰਘ ਫੂਲੇਵਾਲਾ (jaswinderphulewala@yahoo.com) ੨੦੦੪\nਅਮਨਪਰੀਤ ਸਿੰਘ ਆਲਮ ੨੦੦੪-੨੦੧੦\nPunjabi OpenSource Team\nhttp://www.satluj.com/"
+msgstr ""
+"ਜਸਵਿੰਦਰ ਸਿੰਘ ਫੂਲੇਵਾਲਾ ੨੦੦੪\n"
+"ਅਮਨਪਰੀਤ ਸਿੰਘ ਆਲਮਵਾਲਾ ੨੦੦੪-੨੦੧੦\n"
+"ਪੰਜਾਬੀ ਓਪਨ ਸੋਰਸ ਟੀਮ (POST)\n"
+"http://www.satluj.com"
 
 #. The license this software is under (GPL2+)
-#: ../src/math-window.c:245
+#: ../src/math-window.c:246
 msgid ""
 "mate-calc is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -1296,53 +1346,81 @@ msgid ""
 "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 msgstr ""
 
-#: ../src/math-window.c:260
+#: ../src/math-window.c:261
 msgid "mate-calc"
 msgstr "ਜੀ-ਕੈਲਕੁਲੇਟਰ"
 
-#: ../src/math-window.c:264
+#: ../src/math-window.c:265
 msgid "Calculator with financial and scientific modes."
 msgstr "ਆਰਥਿਕ ਅਤੇ ਵਿਗਿਆਨਿਕ ਢੰਗਾਂ ਵਾਲਾ ਕੈਲਕੂਲੇਟਰ ਹੈ।"
 
 #. Calculator menu
-#: ../src/math-window.c:367
+#: ../src/math-window.c:398
 msgid "_Calculator"
 msgstr "ਕੈਲਕੂਲੇਟਰ(_C)"
 
 #. Mode menu
-#: ../src/math-window.c:369
+#: ../src/math-window.c:400
 msgid "_Mode"
 msgstr "ਮੋਡ(_M)"
 
 #. Help menu label
-#: ../src/math-window.c:371
+#: ../src/math-window.c:402
 msgid "_Help"
 msgstr "ਮੱਦਦ(_H)"
 
 #. Basic menu label
-#: ../src/math-window.c:373
+#: ../src/math-window.c:404
 msgid "_Basic"
 msgstr "ਮੁੱਢਲਾ(_B)"
 
 #. Advanced menu label
-#: ../src/math-window.c:375
+#: ../src/math-window.c:406
 msgid "_Advanced"
 msgstr "ਤਕਨੀਕੀ(_A)"
 
 #. Financial menu label
-#: ../src/math-window.c:377
+#: ../src/math-window.c:408
 msgid "_Financial"
 msgstr "ਵਿੱਤੀ(_F)"
 
 #. Programming menu label
-#: ../src/math-window.c:379
+#: ../src/math-window.c:410
 msgid "_Programming"
 msgstr "ਪਰੋਗਾਰਮਿੰਗ(_P)"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:381
+#: ../src/math-window.c:412
 msgid "_Contents"
 msgstr "ਸਮੱਗਰੀ(_C)"
+
+#: ../src/math-window.c:415
+msgid "_Copy"
+msgstr "ਕਾਪੀ ਕਰੋ(_C)"
+
+#: ../src/math-window.c:417
+msgid "_Paste"
+msgstr "ਚੇਪੋ(_P)"
+
+#: ../src/math-window.c:419
+msgid "_Undo"
+msgstr "ਵਾਪਿਸ(_U)"
+
+#: ../src/math-window.c:421
+msgid "_Redo"
+msgstr "ਪਰਤਾਉ(_R)"
+
+#: ../src/math-window.c:424
+msgid "_Preferences"
+msgstr "ਮੇਰੀ ਪਸੰਦ(_P)"
+
+#: ../src/math-window.c:426
+msgid "_Quit"
+msgstr "ਬਾਹਰ(_Q)"
+
+#: ../src/math-window.c:443
+msgid "_About"
+msgstr "ਇਸ ਬਾਰੇ(_A)"
 
 #. Translators: Error displayed when boolean AND attempted on non-integer
 #. values

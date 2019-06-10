@@ -45,6 +45,7 @@ struct MathButtonsPrivate
     GtkWidget *shift_left_menu, *shift_right_menu;
 
     GtkWidget *function_menu;
+    GtkWidget *const_menu;
 
     GList *superscript_toggles;
     GList *subscript_toggles;
@@ -58,12 +59,12 @@ struct MathButtonsPrivate
     GtkWidget *character_code_entry;
 };
 
-G_DEFINE_TYPE (MathButtons, math_buttons, GTK_TYPE_BOX);
+G_DEFINE_TYPE_WITH_PRIVATE (MathButtons, math_buttons, GTK_TYPE_BOX);
 
-#define UI_BASIC_FILE       UI_DIR "/buttons-basic.ui"
-#define UI_ADVANCED_FILE    UI_DIR "/buttons-advanced.ui"
-#define UI_FINANCIAL_FILE   UI_DIR "/buttons-financial.ui"
-#define UI_PROGRAMMING_FILE UI_DIR "/buttons-programming.ui"
+#define UI_BASIC_RESOURCE_PATH       "/org/mate/calculator/ui/buttons-basic.ui"
+#define UI_ADVANCED_RESOURCE_PATH    "/org/mate/calculator/ui/buttons-advanced.ui"
+#define UI_FINANCIAL_RESOURCE_PATH   "/org/mate/calculator/ui/buttons-financial.ui"
+#define UI_PROGRAMMING_RESOURCE_PATH "/org/mate/calculator/ui/buttons-programming.ui"
 
 #define GET_WIDGET(ui, name) \
           GTK_WIDGET(gtk_builder_get_object((ui), (name)))
@@ -125,6 +126,9 @@ static ButtonData button_data[] = {
     {"function",           NULL, FUNCTION,
       /* Tooltip for the additional functions button */
       N_("Additional Functions")},
+    {"const",           NULL, FUNCTION,
+      /* Tooltip for the additional constant button */
+      N_("Additional constants")},
     {"x_pow_y",            "^", FUNCTION,
       /* Tooltip for the exponent button */
       N_("Exponent [^ or **]")},
@@ -388,7 +392,7 @@ update_bit_panel(MathButtons *buttons)
     for (i = 0; i < MAXBITS; i++) {
         const gchar *label;
 
-        if (bits & (1LL << (MAXBITS-i-1)))
+        if (bits & (1LLU << (MAXBITS-i-1)))
             label = " 1";
         else
             label = " 0";
@@ -478,7 +482,7 @@ load_mode(MathButtons *buttons, ButtonMode mode)
     GtkBuilder *builder, **builder_ptr;
     gint i;
     gchar *name;
-    const gchar *builder_file;
+    const gchar *path;
     static gchar *objects[] = { "button_panel", "character_code_dialog", "currency_dialog",
                                 "ctrm_dialog", "ddb_dialog", "fv_dialog", "gpm_dialog",
                                 "pmt_dialog", "pv_dialog", "rate_dialog", "sln_dialog",
@@ -490,32 +494,32 @@ load_mode(MathButtons *buttons, ButtonMode mode)
     default:
     case BASIC:
         builder_ptr = &buttons->priv->basic_ui;
-        builder_file = UI_BASIC_FILE;
+        path = UI_BASIC_RESOURCE_PATH;
         panel = &buttons->priv->bas_panel;
         break;
     case ADVANCED:
         builder_ptr = &buttons->priv->advanced_ui;
-        builder_file = UI_ADVANCED_FILE;
+        path = UI_ADVANCED_RESOURCE_PATH;
         panel = &buttons->priv->adv_panel;
         break;
     case FINANCIAL:
         builder_ptr = &buttons->priv->financial_ui;
-        builder_file = UI_FINANCIAL_FILE;
+        path = UI_FINANCIAL_RESOURCE_PATH;
         panel = &buttons->priv->fin_panel;
         break;
     case PROGRAMMING:
         builder_ptr = &buttons->priv->programming_ui;
-        builder_file = UI_PROGRAMMING_FILE;
+        path = UI_PROGRAMMING_RESOURCE_PATH;
         panel = &buttons->priv->prog_panel;
         break;
     }
   
     if (*panel)
-        return *panel;
+        goto out;
 
     builder = *builder_ptr = gtk_builder_new();
     // FIXME: Show dialog if failed to load
-    gtk_builder_add_objects_from_file(builder, builder_file, objects, &error);
+    gtk_builder_add_objects_from_resource(builder, path, objects, &error);
     if (error) {
         g_warning("Error loading button UI: %s", error->message);
         g_clear_error(&error);
@@ -584,6 +588,19 @@ load_mode(MathButtons *buttons, ButtonMode mode)
             gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(widget), TRUE);
     }
 
+    /* put the icon name "process-stop" in the buttons
+       button1, button3, button5, button7, button9,
+       button11, button13, button15, button17, button19
+       taken from buttons-financial.ui */
+    for (i = 1; i < 20; i++) {
+        if (i % 2) {
+            widget = GET_WIDGET (builder, g_strdup_printf ("button%d",i));
+            if (GTK_IS_BUTTON(widget))
+                gtk_button_set_image (GTK_BUTTON (widget),
+                                      gtk_image_new_from_icon_name ("process-stop", GTK_ICON_SIZE_BUTTON));
+        }
+    }
+
     if (mode == PROGRAMMING) {
         GtkListStore *model;
         GtkTreeIter iter;
@@ -650,6 +667,7 @@ load_mode(MathButtons *buttons, ButtonMode mode)
 
     display_changed_cb(buttons->priv->equation, NULL, buttons);
   
+out:
     return *panel;
 }
 
@@ -839,29 +857,14 @@ shift_cb(GtkWidget *widget, MathButtons *buttons)
     math_equation_shift(buttons->priv->equation, GPOINTER_TO_INT(g_object_get_data(G_OBJECT(widget), "shiftcount")));
 }
 
-
-static void
-button_menu_position_func(GtkMenu *menu, gint *x, gint *y,
-                          gboolean *push_in, gpointer user_data)
-{
-    GtkWidget *button = user_data;
-    GtkAllocation allocation;
-    GdkPoint loc;
-    gint border;
-  
-    gdk_window_get_origin(gtk_widget_get_window(button), &loc.x, &loc.y);
-    border = gtk_container_get_border_width(GTK_CONTAINER(button));
-    gtk_widget_get_allocation(button, &allocation);
-    *x = loc.x + allocation.x + border;
-    *y = loc.y + allocation.y + border;
-}
-
-
 static void
 popup_button_menu(GtkWidget *widget, GtkMenu *menu)
 {
-    gtk_menu_popup(menu, NULL, NULL,
-                   button_menu_position_func, widget, 1, gtk_get_current_event_time());
+    gtk_menu_popup_at_widget (menu,
+                              widget,
+                              GDK_GRAVITY_SOUTH_WEST,
+                              GDK_GRAVITY_NORTH_WEST,
+                              NULL);
 }
 
 
@@ -1022,6 +1025,64 @@ function_cb(GtkWidget *widget, MathButtons *buttons)
     popup_button_menu(widget, GTK_MENU(buttons->priv->function_menu));  
 }
 
+static void
+insert_const_cb(GtkWidget *widget, MathButtons *buttons)
+{
+    math_equation_insert(buttons->priv->equation, g_object_get_data(G_OBJECT(widget), "const"));
+}
+
+
+void const_cb(GtkWidget *widget, MathButtons *buttons);
+G_MODULE_EXPORT
+void
+const_cb(GtkWidget *widget, MathButtons *buttons)
+{
+    if (!buttons->priv->const_menu) {
+        gint i;
+        GtkWidget *menu;
+        struct 
+        {
+            gchar *name, *constant, *tooltip;
+        } constants[] = 
+        {
+            { /* Tooltip for the c₀ component button */
+              N_("Velocity of Light"), "c₀", N_("299,792,458 m/s") },
+            { /* Tooltip for the μ₀ component button */
+              N_("Magnetic constant"), "μ₀", N_("1.2566370614×10⁻⁶ N/A²") },
+            { /* Tooltip for the ε₀ button */
+              N_("Electric constant"), "ε₀", N_("8.85418782×10⁻¹² s⁴A²/m³kg") },
+            { /* Tooltip for the G button */
+              N_("Newtonian constant of gravitation"), "G",  N_("6.67408×10⁻¹¹ m³/(s²kg)") },
+            { /* Tooltip for the h button */
+              N_("Planck constant"), "h", N_("6.62607004×10⁻³⁴ m²kg/s") },
+            { /* Tooltip for the ｅ button */
+              N_("Elementary charge"), "ｅ", N_("1.6021766208(98)×10⁻¹⁹ C") },
+            { /* Tooltip for the mₑ button */
+              N_("Electron mass"), "mₑ", N_("9.10938356×10⁻³¹ kg") },
+            { /* Tooltip for the mₚ button */
+              N_("Proton mass"), "mₚ", N_("1.672621898(21)×10⁻²⁷ kg") },
+            { /* Tooltip for the Nₐ button */
+              N_("Avogrado constant"), "Nₐ", N_("6.02214086×10²³ mol⁻¹") },
+            { NULL, NULL, NULL }
+        };
+
+        menu = buttons->priv->const_menu = gtk_menu_new();
+        gtk_menu_set_reserve_toggle_size(GTK_MENU(menu), FALSE);
+
+        for (i = 0; constants[i].name != NULL; i++) {
+            GtkWidget *item;
+          
+            item = gtk_menu_item_new_with_label(_(constants[i].name));
+            gtk_widget_set_tooltip_text(item, _(constants[i].tooltip));
+            g_object_set_data(G_OBJECT(item), "const", g_strdup(constants[i].constant));
+            gtk_menu_shell_append(GTK_MENU_SHELL(menu), item);
+            g_signal_connect(item, "activate", G_CALLBACK(insert_const_cb), buttons);
+            gtk_widget_show(item);
+        }
+    }
+
+    popup_button_menu(widget, GTK_MENU(buttons->priv->const_menu));  
+}
 
 void factorize_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
@@ -1333,8 +1394,6 @@ math_buttons_class_init(MathButtonsClass *klass)
     object_class->get_property = math_buttons_get_property;
     object_class->set_property = math_buttons_set_property;
 
-    g_type_class_add_private(klass, sizeof(MathButtonsPrivate));
-
     button_mode_type = g_enum_register_static("ButtonMode", button_mode_values);
 
     g_object_class_install_property(object_class,
@@ -1365,7 +1424,7 @@ math_buttons_class_init(MathButtonsClass *klass)
 static void
 math_buttons_init(MathButtons *buttons)
 {
-    buttons->priv = G_TYPE_INSTANCE_GET_PRIVATE(buttons, math_buttons_get_type(), MathButtonsPrivate);
+    buttons->priv = math_buttons_get_instance_private (buttons);
     gtk_box_set_spacing(GTK_BOX(buttons), 6);
     gtk_orientable_set_orientation (GTK_ORIENTABLE (buttons),
                                     GTK_ORIENTATION_VERTICAL);

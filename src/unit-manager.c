@@ -20,7 +20,7 @@ struct UnitManagerPrivate
     GList *categories;
 };
 
-G_DEFINE_TYPE (UnitManager, unit_manager, G_TYPE_OBJECT);
+G_DEFINE_TYPE_WITH_PRIVATE (UnitManager, unit_manager, G_TYPE_OBJECT);
 
 
 static UnitManager *default_unit_manager = NULL;
@@ -257,12 +257,11 @@ unit_manager_convert_by_symbol(UnitManager *manager, const MPNumber *x, const ch
 static void
 unit_manager_class_init(UnitManagerClass *klass)
 {
-    g_type_class_add_private(klass, sizeof(UnitManagerPrivate));
 }
 
 
 static void
 unit_manager_init(UnitManager *manager)
 {
-    manager->priv = G_TYPE_INSTANCE_GET_PRIVATE(manager, unit_manager_get_type(), UnitManagerPrivate);
+    manager->priv = unit_manager_get_instance_private (manager);
 }

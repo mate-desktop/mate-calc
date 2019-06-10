@@ -1,4 +1,65 @@
+### mate-calc 1.23.0
+
+### mate-calc 1.22.0
+
+  * Translations update
+  * Initialize Travis CI support
+  * math-window: update copyright year to 2019
+  * Increase accuracy range to 15
+  * math-display: avoid deprecated 'gtk_widget_modify_bg'
+  * currency-manager: avoid deprecated 'g_type_class_add_private'
+  * currency: avoid deprecated 'g_type_class_add_private'
+  * math-equation: avoid deprecated 'g_type_class_add_private'
+  * unit-manager: avoid deprecated 'g_type_class_add_private'
+  * unit-category: avoid deprecated 'g_type_class_add_private'
+  * unit: avoid deprecated 'g_type_class_add_private'
+  * mp-serializer: avoid deprecated 'g_type_class_add_private'
+  * math-variable-popup: avoid deprecated 'g_type_class_add_private'
+  * math-preferences: avoid deprecated 'g_type_class_add_private'
+  * math-variables: avoid deprecated 'g_type_class_add_private'
+  * math-converter: avoid deprecated 'g_type_class_add_private'
+  * math-buttons: avoid deprecated 'g_type_class_add_private'
+  * math-window: avoid deprecated 'g_type_class_add_private'
+  * Remove dublicated assignment
+  * disable deprecation warnings for distcheck
+  * math-display: avoid deprecated 'g_type_class_add_private'
+  * math-window: Fix memory leak
+  * math-display.c: avoid deprecated 'gtk_widget_ensure_style' (#66)
+  * data: update appdata directory
+  * ui files: add missing icons in titles to dialogs
+  * buttons-programming.ui: Fix buttons
+  * Use make functions for HELP_LINGUAS
+  * Write equation using MathML
+  * Fix application name
+  * Fix repeated words
+  * tx: add help for user-guide to transifex config
+  * Copy equation as ASCII text
+
+### mate-calc 1.21.0
+
+  * Translations update
+  * UI: avoid deprecated GtkButton:use-stock
+  * UI: drop all deprecated elements
+  * replace deprecated gtk_menu_popup
+  * math-preferences: add window icon to Preferences dialog
+  * Init gtk before math_equation_new; fix #44
+  * avoid deprecated gtk_image_menu_item_new_from_stock
+
+### mate-calc 1.20.0
+
+  * Translations update
+  * Add icon image on close button in preferences dialog
+  * avoid deprecated GtkStock
+  * building: bump required glib and gtk+ versions
+  * add missing window icon to About dialog
+  * update copyright year to 2018
+
 ### mate-calc 1.19.0
+
+  * Translations update
+  * math-window: don't use deprecated gtk_show_uri
+  * Restore Polish translation credits from GNOME
+  * update copyright year to 2017
 
 ### mate-calc 1.18.0
 

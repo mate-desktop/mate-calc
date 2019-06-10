@@ -27,7 +27,7 @@ struct UnitPrivate
     MpSerializer *serializer;
 };
 
-G_DEFINE_TYPE (Unit, unit, G_TYPE_OBJECT);
+G_DEFINE_TYPE_WITH_PRIVATE (Unit, unit, G_TYPE_OBJECT);
 
 
 Unit *
@@ -141,7 +141,7 @@ unit_convert_from(Unit *unit, const MPNumber *x, MPNumber *z)
 {
     g_return_val_if_fail(unit != NULL, FALSE);
     g_return_val_if_fail(x != NULL, FALSE);
-    g_return_val_if_fail(x != NULL, FALSE);
+    g_return_val_if_fail(z != NULL, FALSE);
 
     if (unit->priv->from_function)
         return solve_function(unit->priv->from_function, x, z);
@@ -199,14 +199,13 @@ unit_format(Unit *unit, MPNumber *x)
 static void
 unit_class_init(UnitClass *klass)
 {
-    g_type_class_add_private(klass, sizeof(UnitPrivate));
 }
 
 
 static void
 unit_init(Unit *unit)
 {
-    unit->priv = G_TYPE_INSTANCE_GET_PRIVATE(unit, unit_get_type(), UnitPrivate);
+    unit->priv = unit_get_instance_private (unit);
     unit->priv->serializer = mp_serializer_new(MP_DISPLAY_FORMAT_AUTOMATIC, 10, 2);
     mp_serializer_set_leading_digits(unit->priv->serializer, 6);
 }

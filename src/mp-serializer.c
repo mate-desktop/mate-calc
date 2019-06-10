@@ -42,7 +42,7 @@ struct MpSerializerPrivate
 };
 
 
-G_DEFINE_TYPE(MpSerializer, mp_serializer, G_TYPE_OBJECT);
+G_DEFINE_TYPE_WITH_PRIVATE (MpSerializer, mp_serializer, G_TYPE_OBJECT);
 
 MpSerializer *
 mp_serializer_new(MpDisplayFormat format, int base, int trailing_digits)
@@ -175,7 +175,7 @@ mp_cast_to_string(MpSerializer *serializer, const MPNumber *x, int *n_digits)
         GString *s;
         gboolean force_sign = TRUE;
         MPNumber x_im;
-        int n_complex_digits;
+        int n_complex_digits = 0;
 
         mp_imaginary_component(x, &x_im);
 
@@ -313,6 +313,8 @@ mp_cast_to_exponential_string(MpSerializer *serializer, const MPNumber *x, gbool
 
         if (strcmp(string->str, "0") == 0)
             g_string_assign(string, "");
+        else if (!mp_is_negative(&x_im))
+            g_string_append(string, "+");
 
         s = g_string_sized_new(1024);
         exponent = mp_cast_to_exponential_string_real(serializer, &x_im, s, eng_format, &n_complex_digits);
@@ -352,14 +354,19 @@ mp_cast_to_exponential_string(MpSerializer *serializer, const MPNumber *x, gbool
 gchar *
 mp_serializer_to_string(MpSerializer *serializer, const MPNumber *x)
 {
+    MPNumber cmp, xcmp;
     gchar *s0;
     int n_digits = 0;
-
+    mp_set_from_integer(10, &cmp);
+    mp_xpowy_integer(&cmp, -(serializer->priv->trailing_digits), &cmp);
+    mp_real_component(x, &xcmp);
+    mp_abs(&xcmp, &xcmp);
     switch(serializer->priv->format) {
     default:
     case MP_DISPLAY_FORMAT_AUTOMATIC:
         s0 = mp_cast_to_string(serializer, x, &n_digits);
-        if (n_digits <= serializer->priv->leading_digits)
+        if (n_digits <= serializer->priv->leading_digits &&
+            mp_is_greater_equal(&xcmp, &cmp))
             return s0;
         else {
             g_free (s0);
@@ -559,8 +566,6 @@ mp_serializer_class_init(MpSerializerClass *klass)
     object_class->get_property = mp_serializer_get_property;
     object_class->set_property = mp_serializer_set_property;
 
-    g_type_class_add_private(klass, sizeof(MpSerializerPrivate));
-
     g_object_class_install_property(object_class,
                                     PROP_SHOW_THOUSANDS_SEPARATORS,
                                     g_param_spec_boolean("show-thousands-separators",
@@ -597,7 +602,7 @@ static void
 mp_serializer_init(MpSerializer *serializer)
 {
     gchar *radix, *tsep;
-    serializer->priv = G_TYPE_INSTANCE_GET_PRIVATE(serializer, mp_serializer_get_type(), MpSerializerPrivate);
+    serializer->priv = mp_serializer_get_instance_private (serializer);
 
     radix = nl_langinfo(RADIXCHAR);
     serializer->priv->radix = radix ? g_utf8_get_char(g_locale_to_utf8(radix, -1, NULL, NULL, NULL)) : '.';

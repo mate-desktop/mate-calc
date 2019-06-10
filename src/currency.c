@@ -23,7 +23,7 @@ struct CurrencyPrivate
     MPNumber value;
 };
 
-G_DEFINE_TYPE (Currency, currency, G_TYPE_OBJECT);
+G_DEFINE_TYPE_WITH_PRIVATE (Currency, currency, G_TYPE_OBJECT);
 
 
 Currency *
@@ -85,12 +85,11 @@ currency_get_value(Currency *currency)
 static void
 currency_class_init(CurrencyClass *klass)
 {
-    g_type_class_add_private(klass, sizeof(CurrencyPrivate));
 }
 
 
 static void
 currency_init(Currency *currency)
 {
-    currency->priv = G_TYPE_INSTANCE_GET_PRIVATE(currency, currency_get_type(), CurrencyPrivate);
+    currency->priv = currency_get_instance_private (currency);
 }

@@ -27,7 +27,7 @@ struct MathVariablePopupPrivate
     GtkWidget *add_variable_button;
 };
 
-G_DEFINE_TYPE (MathVariablePopup, math_variable_popup, GTK_TYPE_WINDOW);
+G_DEFINE_TYPE_WITH_PRIVATE (MathVariablePopup, math_variable_popup, GTK_TYPE_WINDOW);
 
 MathVariablePopup *
 math_variable_popup_new(MathEquation *equation)
@@ -162,7 +162,7 @@ make_variable_entry(MathVariablePopup *popup, const gchar *name, const MPNumber 
 
         button = gtk_button_new();
         g_object_set_data(G_OBJECT(button), "variable_name", g_strdup(name));
-        image = gtk_image_new_from_stock(GTK_STOCK_SAVE, GTK_ICON_SIZE_BUTTON);
+        image = gtk_image_new_from_icon_name("document-save", GTK_ICON_SIZE_BUTTON);
         gtk_container_add(GTK_CONTAINER(button), image);
         gtk_box_pack_start(GTK_BOX(hbox), button, FALSE, TRUE, 0);
         g_signal_connect(G_OBJECT(button), "clicked", G_CALLBACK(save_variable_cb), popup);
@@ -171,7 +171,7 @@ make_variable_entry(MathVariablePopup *popup, const gchar *name, const MPNumber 
 
         button = gtk_button_new();
         g_object_set_data(G_OBJECT(button), "variable_name", g_strdup(name));
-        image = gtk_image_new_from_stock(GTK_STOCK_DELETE, GTK_ICON_SIZE_BUTTON);
+        image = gtk_image_new_from_icon_name("edit-delete", GTK_ICON_SIZE_BUTTON);
         gtk_container_add(GTK_CONTAINER(button), image);
         gtk_box_pack_start(GTK_BOX(hbox), button, FALSE, TRUE, 0);
         g_signal_connect(G_OBJECT(button), "clicked", G_CALLBACK(delete_variable_cb), popup);
@@ -225,7 +225,7 @@ math_variable_popup_set_property(GObject      *object,
         self->priv->add_variable_button = gtk_button_new();
         gtk_widget_set_sensitive(self->priv->add_variable_button, FALSE);
         g_signal_connect(G_OBJECT(self->priv->add_variable_button), "clicked", G_CALLBACK(add_variable_cb), self);
-        image = gtk_image_new_from_stock(GTK_STOCK_ADD, GTK_ICON_SIZE_BUTTON);
+        image = gtk_image_new_from_icon_name("list-add", GTK_ICON_SIZE_BUTTON);
         gtk_container_add(GTK_CONTAINER(self->priv->add_variable_button), image);
         gtk_box_pack_start(GTK_BOX(entry), self->priv->add_variable_button, FALSE, TRUE, 0);
         gtk_widget_show(image);
@@ -276,8 +276,6 @@ math_variable_popup_class_init(MathVariablePopupClass *klass)
     object_class->get_property = math_variable_popup_get_property;
     object_class->set_property = math_variable_popup_set_property;
 
-    g_type_class_add_private(klass, sizeof(MathVariablePopupPrivate));
-
     g_object_class_install_property(object_class,
                                     PROP_EQUATION,
                                     g_param_spec_object("equation",
@@ -291,7 +289,7 @@ math_variable_popup_class_init(MathVariablePopupClass *klass)
 static void
 math_variable_popup_init(MathVariablePopup *popup)
 {
-    popup->priv = G_TYPE_INSTANCE_GET_PRIVATE(popup, math_variable_popup_get_type(), MathVariablePopupPrivate);
+    popup->priv = math_variable_popup_get_instance_private (popup);
 
     gtk_window_set_decorated(GTK_WINDOW(popup), FALSE);
     gtk_window_set_skip_taskbar_hint(GTK_WINDOW(popup), TRUE);

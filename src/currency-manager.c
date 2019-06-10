@@ -99,7 +99,7 @@ struct CurrencyManagerPrivate
     GList *currencies;
 };
 
-G_DEFINE_TYPE (CurrencyManager, currency_manager, G_TYPE_OBJECT);
+G_DEFINE_TYPE_WITH_PRIVATE (CurrencyManager, currency_manager, G_TYPE_OBJECT);
 
 
 enum {
@@ -292,57 +292,59 @@ load_imf_rates(CurrencyManager *manager)
         const gchar *name, *symbol;
     } name_map[] = 
     {
+        {"Algerian dinar",	"DZD"},
+        {"Australian dollar",   "AUD"},
+        {"Bahrain Dinar",	"BHD"},
+        {"Bolivar Fuerte",	"VEF"},
+        {"Botswana pula",	"BWP"},
+        {"Brazilian real",	"BRL"},
+        {"Brunei dollar",	"BND"},
+        {"Canadian dollar",     "CAD"},
+        {"Chilean peso",        "CLP"},
+        {"Chinese yuan",        "CNY"},
+        {"Colombian peso",	"COP"},
+        {"Czech koruna",        "CZK"},
+        {"Danish krone",        "DKK"},
         {"Euro",                "EUR"},
-        {"Japanese Yen",        "JPY"},
-        {"U.K. Pound Sterling", "GBP"},
-        {"U.S. Dollar",         "USD"},
-        {"Algerian Dinar",      "DZD"},
-        {"Australian Dollar",   "AUD"},
-        {"Bahrain Dinar",       "BHD"},
-        {"Botswana Pula",       "BWP"},
-        {"Brazilian Real",      "BRL"},
-        {"Brunei Dollar",       "BND"},
-        {"Canadian Dollar",     "CAD"},
-        {"Chilean Peso",        "CLP"},
-        {"Chinese Yuan",        "CNY"},
-        {"Colombian Peso",      "COP"},
-        {"Czech Koruna",        "CZK"},
-        {"Danish Krone",        "DKK"},
         {"Hungarian Forint",    "HUF"},
         {"Icelandic Krona",     "ISK"},
-        {"Indian Rupee",        "INR"},
+        {"Indian rupee",        "INR"},
         {"Indonesian Rupiah",   "IDR"},
         {"Iranian Rial",        "IRR"},
-        {"Israeli New Sheqel",  "ILS"},
+        {"Israeli New Shekel",  "ILS"},
+        {"Japanese yen",        "JPY"},
         {"Kazakhstani Tenge",   "KZT"},
-        {"Korean Won",          "KRW"},
-        {"Kuwaiti Dinar",       "KWD"},
+        {"Korean won",          "KRW"},
+        {"Kuwaiti dinar",	"KWD"},
         {"Libyan Dinar",        "LYD"},
-        {"Malaysian Ringgit",   "MYR"},
-        {"Mauritian Rupee",     "MUR"},
-        {"Mexican Peso",        "MXN"},
-        {"Nepalese Rupee",      "NPR"},
-        {"New Zealand Dollar",  "NZD"},
-        {"Norwegian Krone",     "NOK"},
-        {"Rial Omani",          "OMR"},
-        {"Pakistani Rupee",     "PKR"},
+        {"Malaysian ringgit",   "MYR"},
+        {"Mauritian rupee",     "MUR"},
+        {"Mexican peso",        "MXN"},
+        {"Nepalese Rupee",	"NPR"},
+        {"New Zealand dollar",  "NZD"},
+        {"Norwegian krone",     "NOK"},
         {"Nuevo Sol",           "PEN"},
-        {"Philippine Peso",     "PHP"},
-        {"Polish Zloty",        "PLN"},
-        {"Qatar Riyal",         "QAR"},
-        {"Russian Ruble",       "RUB"},
-        {"Saudi Arabian Riyal", "SAR"},
-        {"Singapore Dollar",    "SGD"},
-        {"South African Rand",  "ZAR"},
+        {"Omani rial",		"OMR"},
+        {"Pakistani Rupee",     "PKR"},
+        {"Peruvian sol",	"PEN"},
+        {"Philippine peso",     "PHP"},
+        {"Polish zloty",        "PLN"},
+        {"Qatari riyal",        "QAR"},
+        {"Rial Omani",          "OMR"},
+        {"Russian ruble",	"RUB"},
+        {"Saudi Arabian riyal", "SAR"},
+        {"Singapore dollar",    "SGD"},
+        {"South African rand",  "ZAR"},
         {"Sri Lanka Rupee",     "LKR"},
-        {"Swedish Krona",       "SEK"},
-        {"Swiss Franc",         "CHF"},
-        {"Thai Baht",           "THB"},
-        {"Trinidad And Tobago Dollar", "TTD"},
-        {"Tunisian Dinar",      "TND"},
-        {"U.A.E. Dirham",       "AED"},
-        {"Peso Uruguayo",       "UYU"},
-        {"Bolivar Fuerte",      "VEF"},
+        {"Swedish krona",	"SEK"},
+        {"Swiss franc",         "CHF"},
+        {"Thai baht",           "THB"},
+        {"Trinidadian dollar",  "TTD"},
+        {"Tunisian Dinar",	"TND"},
+        {"U.A.E. dirham",	"AED"},
+        {"U.K. pound",          "GBP"},
+        {"Uruguayan peso",	"UYU"},
+        {"U.S. dollar",         "USD"},
         {NULL, NULL}
     };
 
@@ -606,8 +608,6 @@ currency_manager_get_value(CurrencyManager *manager, const gchar *currency)
 static void
 currency_manager_class_init(CurrencyManagerClass *klass)
 {
-    g_type_class_add_private(klass, sizeof(CurrencyManagerPrivate));
-
     signals[UPDATED] =
         g_signal_new("updated",
                      G_TYPE_FROM_CLASS (klass),
@@ -622,5 +622,5 @@ currency_manager_class_init(CurrencyManagerClass *klass)
 static void
 currency_manager_init(CurrencyManager *manager)
 {
-    manager->priv = G_TYPE_INSTANCE_GET_PRIVATE(manager, currency_manager_get_type(), CurrencyManagerPrivate);
+    manager->priv = currency_manager_get_instance_private (manager);
 }

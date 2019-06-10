@@ -4,12 +4,17 @@ noinst_PROGRAMS = test-mp test-mp-equation
 TESTS = test-mp test-mp-equation
 
 AM_CPPFLAGS = \
-	-DUI_DIR=\""$(datadir)/mate-calc"\" \
 	-DVERSION=\""$(VERSION)"\" \
 	-DLOCALE_DIR=\""$(localedir)"\" \
 	-DGETTEXT_PACKAGE=\"$(GETTEXT_PACKAGE)\" \
 	$(WARN_CFLAGS) \
 	$(MATE_CALC_CFLAGS)
+
+BUILT_SOURCES = \
+	mate-calc-resources.c \
+	mate-calc-resources.h
+
+nodist_mate_calc_SOURCES= $(BUILT_SOURCES)
 
 mate_calc_SOURCES = \
 	mate-calc.c \
@@ -151,7 +156,8 @@ test_mp_equation_LDADD = \
 
 CLEANFILES = \
 	mp-enums.c \
-	mp-enums.h
+	mp-enums.h \
+	$(BUILT_SOURCES)
 
 # Generate enum types
 mp-enums.h: mp-enums.h.template mp-serializer.h
@@ -164,6 +170,11 @@ mp-enums.c: mp-enums.c.template mp-enums.h mp-serializer.h
 math-serializer.c: mp-enums.h
 math-equation.c: mp-enums.h
 
+# Generate resources
+mate-calc-resources.h mate-calc-resources.c: org.mate.calculator.gresource.xml Makefile $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies --sourcedir $(srcdir) $(srcdir)/org.mate.calculator.gresource.xml)
+	$(AM_V_GEN) XMLLINT=$(XMLLINT) $(GLIB_COMPILE_RESOURCES) --target $@ --sourcedir $(srcdir) --generate --c-name calculator $<
+
+
 # Install a symlink between mate-calc and mate-calculator
 install-exec-hook:
 	test -e "$(DESTDIR)$(bindir)/mate-calculator" \
@@ -175,8 +186,14 @@ uninstall-local:
 	&& rm -f "$(DESTDIR)$(bindir)/mate-calculator"
 
 EXTRA_DIST = \
+	buttons-advanced.ui \
+	buttons-basic.ui \
+	buttons-financial.ui \
+	buttons-programming.ui \
 	mp-enums.c.template \
-	mp-enums.h.template
+	mp-enums.h.template \
+	org.mate.calculator.gresource.xml \
+	preferences.ui
 
 DISTCLEANFILES = \
 	Makefile.in

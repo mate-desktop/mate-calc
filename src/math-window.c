@@ -48,7 +48,7 @@ struct MathWindowPrivate
     GtkWidget *mode_programming_menu_item;
 };
 
-G_DEFINE_TYPE (MathWindow, math_window, GTK_TYPE_WINDOW);
+G_DEFINE_TYPE_WITH_PRIVATE (MathWindow, math_window, GTK_TYPE_WINDOW);
 
 enum
 {
@@ -109,7 +109,7 @@ math_window_critical_error(MathWindow *window, const gchar *title, const gchar *
                                     "%s", title);
     gtk_message_dialog_format_secondary_text(GTK_MESSAGE_DIALOG(dialog),
                                              "%s", contents);
-    gtk_dialog_add_buttons(GTK_DIALOG(dialog), GTK_STOCK_QUIT, GTK_RESPONSE_ACCEPT, NULL);
+    gtk_dialog_add_buttons(GTK_DIALOG(dialog), "gtk-quit", GTK_RESPONSE_ACCEPT, NULL);
 
     gtk_dialog_run(GTK_DIALOG(dialog));
 
@@ -198,20 +198,12 @@ static void redo_cb(GtkWidget *widget, MathWindow *window)
 
 static void help_cb(GtkWidget *widget, MathWindow *window)
 {
-#if GTK_CHECK_VERSION (3, 22, 0)
     GError *error = NULL;
 
     gtk_show_uri_on_window(GTK_WINDOW(window),
                            "help:mate-calc",
                            gtk_get_current_event_time(),
                            &error);
-#else
-    GdkScreen  *screen;
-    GError *error = NULL;
-
-    screen = gtk_widget_get_screen(GTK_WIDGET(window));
-    gtk_show_uri(screen, "help:mate-calc", gtk_get_current_event_time(), &error);
-#endif
 
     if (error != NULL)
     {
@@ -231,52 +223,58 @@ static void help_cb(GtkWidget *widget, MathWindow *window)
 
 static void about_cb(GtkWidget* widget, MathWindow* window)
 {
-    char* authors[] = {
+    const char* authors[] = {
         "Rich Burridge <rich.burridge@sun.com>",
         "Robert Ancell <robert.ancell@gmail.com>",
         "Klaus Niederkrüger <kniederk@umpa.ens-lyon.fr>",
         NULL
     };
 
-    char* documenters[] = {
-        "Sun Microsystems",
+    const char* documenters[] = {
+        N_("Sun Microsystems"),
+        N_("MATE Documentation Team"),
         NULL
     };
 
-    /* The translator credits. Please translate this with your name(s). */
-    char* translator_credits = _("translator-credits");
-
-    char copyright[] = \
-        "Copyright \xc2\xa9 1986–2010 The GCalctool authors\n"
-        "Copyright \xc2\xa9 2011-2017 MATE developers";
-
     /* The license this software is under (GPL2+) */
-    char* license = _("mate-calc is free software; you can redistribute it and/or modify\n"
-        "it under the terms of the GNU General Public License as published by\n"
-        "the Free Software Foundation; either version 2 of the License, or\n"
-        "(at your option) any later version.\n"
-        "\n"
-        "mate-calc is distributed in the hope that it will be useful,\n"
-        "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-        "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-        "GNU General Public License for more details.\n"
-        "\n"
-        "You should have received a copy of the GNU General Public License\n"
-        "along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
-        "151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA");
+    const char* license[] = {
+        N_("MATE Calculator is free software; you can redistribute it and/or modify "
+           "it under the terms of the GNU General Public License as published by "
+           "the Free Software Foundation; either version 2 of the License, or "
+           "(at your option) any later version."),
+        N_("MATE Calculator is distributed in the hope that it will be useful, "
+           "but WITHOUT ANY WARRANTY; without even the implied warranty of "
+           "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the "
+           "GNU General Public License for more details."),
+        N_("You should have received a copy of the GNU General Public License "
+           "along with MATE Calculator; if not, write to the Free Software Foundation, Inc., "
+           "51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.")
+    };
+
+    char *license_trans = g_strjoin ("\n\n", _(license[0]), _(license[1]), _(license[2]), NULL);
+    const char **p;
+
+    for (p = documenters; *p; ++p)
+        *p = _(*p);
 
     gtk_show_about_dialog(GTK_WINDOW(window),
-        "name", _("mate-calc"),
+        "program-name", _("MATE Calculator"),
         "version", VERSION,
-        "copyright", copyright,
-        "license", license,
+        "title", _("About MATE Calculator"),
+        "copyright", _("Copyright \xc2\xa9 1986–2010 The GCalctool authors\n"
+                       "Copyright \xc2\xa9 2011-2019 MATE developers"),
+        "license", license_trans,
         "comments", _("Calculator with financial and scientific modes."),
         "authors", authors,
         "documenters", documenters,
-        "translator_credits", translator_credits,
-        "logo-icon-name", "accessories-calculator",
+        "translator_credits", _("translator-credits"),
+        "wrap-license", TRUE,
         "website", "http://mate-desktop.org",
+        "icon-name", "accessories-calculator",
+        "logo-icon-name", "accessories-calculator",
         NULL);
+
+    g_free (license_trans);
 }
 
 static void
@@ -330,6 +328,7 @@ static GtkWidget *add_menu(GtkWidget *menu_bar, const gchar *name)
     gtk_menu_shell_append(GTK_MENU_SHELL(menu_bar), menu_item);
     gtk_widget_show(menu_item);
     menu = gtk_menu_new();
+    gtk_menu_set_reserve_toggle_size(GTK_MENU(menu),FALSE);
     gtk_menu_item_set_submenu(GTK_MENU_ITEM(menu_item), menu);
 
     return menu;
@@ -362,6 +361,34 @@ static GtkWidget *radio_menu_item_new(GSList **group, const gchar *name)
     return menu_item;
 }
 
+static GtkWidget *gtk_image_menu_item_new_from_icon (const gchar   *icon_name,
+                                                     const gchar   *label_name,
+                                                     GtkAccelGroup *accel_group)
+{
+    gchar *concat = g_strconcat (label_name, "     ", NULL);
+    GtkWidget *box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
+    GtkWidget *icon = gtk_image_new_from_icon_name (icon_name, GTK_ICON_SIZE_MENU);
+    GtkWidget *label = gtk_accel_label_new (concat);
+    GtkWidget *menu_item = gtk_menu_item_new ();
+
+    g_free (concat);
+
+    gtk_container_add (GTK_CONTAINER (box), icon);
+
+    gtk_label_set_use_underline (GTK_LABEL (label), TRUE);
+    gtk_label_set_xalign (GTK_LABEL (label), 0.0);
+
+    gtk_accel_label_set_accel_widget (GTK_ACCEL_LABEL (label), menu_item);
+
+    gtk_box_pack_end (GTK_BOX (box), label, TRUE, TRUE, 0);
+
+    gtk_container_add (GTK_CONTAINER (menu_item), box);
+
+    gtk_widget_show_all (menu_item);
+
+    return menu_item;
+}
+
 static void create_menu(MathWindow* window)
 {
     GtkAccelGroup* accel_group;
@@ -390,17 +417,20 @@ static void create_menu(MathWindow* window)
     #define HELP_CONTENTS_LABEL _("_Contents")
 
     menu = add_menu(window->priv->menu_bar, CALCULATOR_MENU_LABEL);
-    add_menu_item(menu, gtk_image_menu_item_new_from_stock(GTK_STOCK_COPY, accel_group), G_CALLBACK(copy_cb), window);
-    add_menu_item(menu, gtk_image_menu_item_new_from_stock(GTK_STOCK_PASTE, accel_group), G_CALLBACK(paste_cb), window);
-    menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_stock(GTK_STOCK_UNDO, accel_group), G_CALLBACK(undo_cb), window);
+    menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("edit-copy",_("_Copy"), accel_group), G_CALLBACK(copy_cb), window);
+    gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_C, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
+    menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("edit-paste",_("_Paste"), accel_group), G_CALLBACK(paste_cb), window);
+    gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_V, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
+    menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("edit-undo",_("_Undo"), accel_group), G_CALLBACK(undo_cb), window);
     gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_Z, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
-    menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_stock(GTK_STOCK_REDO, accel_group), G_CALLBACK(redo_cb), window);
+    menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("edit-redo",_("_Redo"), accel_group), G_CALLBACK(redo_cb), window);
     gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_Z, GDK_CONTROL_MASK | GDK_SHIFT_MASK, GTK_ACCEL_VISIBLE);
     add_menu_item(menu, gtk_separator_menu_item_new(), NULL, NULL);
-    add_menu_item(menu, gtk_image_menu_item_new_from_stock(GTK_STOCK_PREFERENCES, accel_group), G_CALLBACK(show_preferences_cb), window);
+    add_menu_item(menu, gtk_image_menu_item_new_from_icon("preferences-desktop",_("_Preferences"), accel_group), G_CALLBACK(show_preferences_cb), window);
     add_menu_item(menu, gtk_separator_menu_item_new(), NULL, NULL);
-    menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_stock(GTK_STOCK_QUIT, accel_group), G_CALLBACK(quit_cb), window);
-    gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_W, GDK_CONTROL_MASK, 0);
+    menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("application-exit",_("_Quit"), accel_group), G_CALLBACK(quit_cb), window);
+    gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_Q, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
+    gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_W, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
 
     menu = add_menu(window->priv->menu_bar, MODE_MENU_LABEL);
     window->priv->mode_basic_menu_item = add_menu_item(menu, radio_menu_item_new(&group, MODE_BASIC_LABEL), G_CALLBACK(mode_changed_cb), window);
@@ -413,9 +443,9 @@ static void create_menu(MathWindow* window)
     g_object_set_data(G_OBJECT(window->priv->mode_programming_menu_item), "calcmode", GINT_TO_POINTER(PROGRAMMING));
 
     menu = add_menu(window->priv->menu_bar, HELP_MENU_LABEL);
-    menu_item = add_menu_item(menu, gtk_menu_item_new_with_mnemonic(HELP_CONTENTS_LABEL), G_CALLBACK(help_cb), window);
+    menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("help-browser", HELP_CONTENTS_LABEL, accel_group), G_CALLBACK(help_cb), window);
     gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_F1, 0, GTK_ACCEL_VISIBLE);
-    add_menu_item(menu, gtk_image_menu_item_new_from_stock(GTK_STOCK_ABOUT, accel_group), G_CALLBACK(about_cb), window);
+    add_menu_item(menu, gtk_image_menu_item_new_from_icon("help-about",_("_About"), accel_group), G_CALLBACK(about_cb), window);
 }
 
 static void
@@ -511,8 +541,6 @@ math_window_class_init(MathWindowClass *klass)
     object_class->get_property = math_window_get_property;
     object_class->set_property = math_window_set_property;
 
-    g_type_class_add_private(klass, sizeof(MathWindowPrivate));
-
     g_object_class_install_property(object_class,
                                     PROP_EQUATION,
                                     g_param_spec_object("equation",
@@ -534,7 +562,7 @@ math_window_class_init(MathWindowClass *klass)
 static void
 math_window_init(MathWindow *window)
 {
-    window->priv = G_TYPE_INSTANCE_GET_PRIVATE(window, math_window_get_type(), MathWindowPrivate);
+    window->priv = math_window_get_instance_private (window);
     gtk_window_set_title(GTK_WINDOW(window),
                          /* Title of main window */
                          _("Calculator"));

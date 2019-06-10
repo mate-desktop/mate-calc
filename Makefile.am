@@ -15,6 +15,9 @@ DISTCLEANFILES = \
 	omf.make \
 	xmldocs.make
 
+DISTCHECK_CONFIGURE_FLAGS = \
+	CFLAGS='-Wno-deprecated-declarations'
+
 EXTRA_DIST = \
 	autogen.sh
 
