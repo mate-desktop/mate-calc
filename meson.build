@@ -7,10 +7,12 @@ conf = configuration_data()
 
 top_inc = include_directories('.')
 
-deps = [ dependency('gtk+-3.0', version : '>=3.22'),
-	dependency('libxml-2.0'),
-	dependency('gmodule-2.0'),
-	dependency('glib-2.0')]
+deps = [ 
+    dependency('gtk+-3.0', version : '>=3.22'),
+    dependency('libxml-2.0'),
+    dependency('gmodule-2.0'),
+    dependency('glib-2.0')
+]
 
 datadir = join_paths([ get_option('prefix'),
                        get_option('datadir') ])

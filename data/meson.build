@@ -1,8 +1,8 @@
 install_data(	'buttons-advanced.ui',
-				'buttons-basic.ui',
-				'buttons-financial.ui',
-				'preferences.ui',
-				install_dir: join_paths([pkgdatadir, 'uidir']))
+                'buttons-basic.ui',
+                'buttons-financial.ui',
+                'preferences.ui',
+                install_dir: join_paths([pkgdatadir, 'uidir']))
 
 msgfmt = find_program('msgfmt')
 
@@ -22,4 +22,4 @@ custom_target('appdata',
 
 cs = gnome.compile_schemas()
 install_data(	'org.mate.calc.gschema.xml.in',
-				install_dir: schemadir)
+                install_dir: schemadir)
