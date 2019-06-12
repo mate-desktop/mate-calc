@@ -15,5 +15,5 @@ custom_target('appdata',
               command: [msgfmt, '--xml', '-d', '../po', '--template', '@INPUT@', '-o', '@OUTPUT@'])
 
 cs = gnome.compile_schemas()
-install_data(	'org.mate.calc.gschema.xml.in',
+install_data(	'org.mate.calc.gschema.xml',
                 install_dir: schemadir)
