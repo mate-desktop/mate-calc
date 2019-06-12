@@ -1,4 +1,4 @@
-project('mate-calc','c', version: '1.19.0', meson_version: '>=0.36.0')
+project('mate-calc','c', version: '1.23.0', meson_version: '>=0.36.0')
 
 i18n = import('i18n')
 gnome = import('gnome')
@@ -44,3 +44,5 @@ subdir('src')
 subdir('po')
 subdir('data')
 subdir('help')
+
+meson.add_install_script('meson-postinstall.sh')

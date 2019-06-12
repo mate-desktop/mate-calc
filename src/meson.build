@@ -9,6 +9,20 @@ enums += gnome.mkenums('types',
     c_template: 'mp-enums.c.template',
     h_template: 'mp-enums.h.template')
 
+ui_files = files(
+    'buttons-advanced.ui',
+    'buttons-basic.ui',
+    'buttons-financial.ui',
+    'preferences.ui'
+)
+
+ui_resources = gnome.compile_resources(
+    'ui_resources',
+    'org.mate.calculator.gresource.xml',
+    source_dir: 'src'
+)
+
+
 src += [
     'mate-calc.c',
     'currency-manager.c',
@@ -35,7 +49,8 @@ src += [
     'unit-category.c',
     'unit-manager.c',
     'unit.c',
-    enums
+    enums,
+    ui_resources
 ]
 
 test_mp_src += [
@@ -87,8 +102,3 @@ executable('test-mp', test_mp_src, include_directories: top_inc,
 executable('test-mp-equation', test_mp_eq_src, include_directories: top_inc,
     dependencies: deps, link_args: '-lm')
 
-install_data(	'buttons-advanced.ui',
-                'buttons-basic.ui',
-                'buttons-financial.ui',
-                'preferences.ui',
-                install_dir: join_paths([pkgdatadir, 'uidir']))
