@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2010 Robin Sonefors
  * Copyright (C) 2008-2011 Robert Ancell.
- * 
+ *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
  * Foundation, either version 2 of the License, or (at your option) any later
@@ -263,7 +263,7 @@ mp_cast_to_exponential_string_real(MpSerializer *serializer, const MPNumber *x, 
     fixed = mp_cast_to_string(serializer, &mantissa, n_digits);
     g_string_append(string, fixed);
     g_free(fixed);
-  
+
     return exponent;
 }
 
@@ -273,7 +273,7 @@ append_exponent(GString *string, int exponent)
 {
     const gchar *super_digits[] = {"⁰", "¹", "²", "³", "⁴", "⁵", "⁶", "⁷", "⁸", "⁹"};
     gchar *super_value, *c;
-  
+
     if (exponent == 0)
         return;
 
@@ -593,7 +593,7 @@ mp_serializer_class_init(MpSerializerClass *klass)
                                     g_param_spec_int("base",
                                                      "base",
                                                      "Default number base",
-                                                     2, 16, 10, 
+                                                     2, 16, 10,
                                                      G_PARAM_READWRITE));
 }
 

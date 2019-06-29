@@ -288,7 +288,7 @@ mp_cast_to_int(const MPNumber *x)
 {
     int i;
     int64_t z = 0, v;
-  
+
     /* |x| <= 1 */
     if (x->sign == 0 || x->exponent <= 0)
         return 0;
@@ -299,7 +299,7 @@ mp_cast_to_int(const MPNumber *x)
 
         t = z;
         z = z * MP_BASE + x->fraction[i];
-      
+
         /* Check for overflow */
         if (z <= t)
             return 0;
@@ -329,7 +329,7 @@ mp_cast_to_unsigned_int(const MPNumber *x)
 {
     int i;
     uint64_t z = 0, v;
-  
+
     /* x <= 1 */
     if (x->sign <= 0 || x->exponent <= 0)
         return 0;
@@ -340,7 +340,7 @@ mp_cast_to_unsigned_int(const MPNumber *x)
 
         t = z;
         z = z * MP_BASE + x->fraction[i];
-      
+
         /* Check for overflow */
         if (z <= t)
             return 0;

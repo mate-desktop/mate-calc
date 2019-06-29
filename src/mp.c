@@ -211,8 +211,8 @@ mp_imaginary_component(const MPNumber *x, MPNumber *z)
     z->sign = x->im_sign;
     z->exponent = x->im_exponent;
     memcpy(z->fraction, x->im_fraction, sizeof(int) * MP_SIZE);
-  
-    /* Clear (old) imaginary component */   
+
+    /* Clear (old) imaginary component */
     z->im_sign = 0;
     z->im_exponent = 0;
     memset(z->im_fraction, 0, sizeof(int) * MP_SIZE);
@@ -234,7 +234,7 @@ mp_add_real(const MPNumber *x, int y_sign, const MPNumber *y, MPNumber *z)
         z->sign = y_sign;
         return;
     }
-    /* x + 0 = x */ 
+    /* x + 0 = x */
     else if (mp_is_zero(y)) {
         mp_set_from_mp(x, z);
         return;
@@ -458,7 +458,7 @@ mp_sgn(const MPNumber *x, MPNumber *z)
     else if (mp_is_negative(x))
         mp_set_from_integer(-1, z);
     else
-        mp_set_from_integer(1, z);  
+        mp_set_from_integer(1, z);
 }
 
 void
@@ -837,7 +837,7 @@ bool
 mp_is_integer(const MPNumber *x)
 {
     MPNumber t1, t2, t3;
-    
+
     if (mp_is_complex(x))
         return false;
 
@@ -1306,7 +1306,7 @@ void
 mp_logarithm(int64_t n, const MPNumber *x, MPNumber *z)
 {
     MPNumber t1, t2;
-    
+
     /* log(0) undefined */
     if (mp_is_zero(x)) {
         /* Translators: Error displayed when attempting to take logarithm of zero */
@@ -1336,7 +1336,7 @@ mp_multiply_real(const MPNumber *x, const MPNumber *y, MPNumber *z)
     int c, i, xi;
     MPNumber r;
 
-    /* x*0 = 0*y = 0 */    
+    /* x*0 = 0*y = 0 */
     if (x->sign == 0 || y->sign == 0) {
         mp_set_from_integer(0, z);
         return;
@@ -1421,7 +1421,7 @@ mp_multiply_real(const MPNumber *x, const MPNumber *y, MPNumber *z)
     /* Clear complex part */
     z->im_sign = 0;
     z->im_exponent = 0;
-    memset(z->im_fraction, 0, sizeof(int) * MP_SIZE);    
+    memset(z->im_fraction, 0, sizeof(int) * MP_SIZE);
 
     /* NORMALIZE AND ROUND RESULT */
     // FIXME: Use stack variable because of mp_normalize brokeness
@@ -1448,11 +1448,11 @@ mp_multiply(const MPNumber *x, const MPNumber *y, MPNumber *z)
         mp_imaginary_component(x, &im_x);
         mp_real_component(y, &real_y);
         mp_imaginary_component(y, &im_y);
-    
+
         mp_multiply_real(&real_x, &real_y, &t1);
         mp_multiply_real(&im_x, &im_y, &t2);
         mp_subtract(&t1, &t2, &real_z);
-    
+
         mp_multiply_real(&real_x, &im_y, &t1);
         mp_multiply_real(&im_x, &real_y, &t2);
         mp_add(&t1, &t2, &im_z);
@@ -1577,7 +1577,7 @@ mp_multiply_integer_real(const MPNumber *x, int64_t y, MPNumber *z)
 
     z->im_sign = 0;
     z->im_exponent = 0;
-    memset(z->im_fraction, 0, sizeof(int) * MP_SIZE);    
+    memset(z->im_fraction, 0, sizeof(int) * MP_SIZE);
     mp_normalize(z);
 }
 
@@ -1673,7 +1673,7 @@ mp_pwr(const MPNumber *x, const MPNumber *y, MPNumber *z)
         return;
     }*/
 
-    /* 0^y = 0, 0^-y undefined */  
+    /* 0^y = 0, 0^-y undefined */
     if (mp_is_zero(x)) {
         mp_set_from_integer(0, z);
         if (y->sign < 0)
@@ -1750,7 +1750,7 @@ mp_reciprocal_real(const MPNumber *x, MPNumber *z)
 
 void
 mp_reciprocal(const MPNumber *x, MPNumber *z)
-{    
+{
     if (mp_is_complex(x)) {
         MPNumber t1, t2;
         MPNumber real_x, im_x;
@@ -2007,7 +2007,7 @@ mp_xpowy_integer(const MPNumber *x, int64_t n, MPNumber *z)
         mp_set_from_integer(0, z);
         return;
     }
-  
+
     /* x^1 = x */
     if (n == 1) {
         mp_set_from_mp(x, z);

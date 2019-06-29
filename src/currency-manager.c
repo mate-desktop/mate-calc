@@ -274,7 +274,7 @@ download_file(CurrencyManager *manager, gchar *uri, gchar *filename, GAsyncReady
 
     g_file_copy_async(source, dest, G_FILE_COPY_OVERWRITE, G_PRIORITY_DEFAULT, NULL, NULL, NULL, callback, manager);
     g_object_unref(source);
-    g_object_unref(dest); 
+    g_object_unref(dest);
 }
 
 
@@ -287,10 +287,10 @@ load_imf_rates(CurrencyManager *manager)
     GError *error = NULL;
     int i;
     gboolean result, in_data = FALSE;
-    struct 
+    struct
     {
         const gchar *name, *symbol;
-    } name_map[] = 
+    } name_map[] =
     {
         {"Algerian dinar",	"DZD"},
         {"Australian dollar",   "AUD"},
@@ -365,7 +365,7 @@ load_imf_rates(CurrencyManager *manager)
         gchar *line, **tokens;
 
         line = g_strchug(lines[i]);
-      
+
         /* Start after first blank line, stop on next */
         if (line[0] == '\0') {
             if (!in_data) {
@@ -494,7 +494,7 @@ load_ecb_rates(CurrencyManager *manager)
     if (!document)
         g_warning("Couldn't parse ECB rate file %s", filename);
     g_free (filename);
-    if (!document)    
+    if (!document)
         return;
 
     xpath_ctx = xmlXPathNewContext(document);
@@ -564,7 +564,7 @@ load_rates(CurrencyManager *manager)
     loaded_rates = TRUE;
 
     g_signal_emit(manager, signals[UPDATED], 0);
-  
+
     return TRUE;
 }
 

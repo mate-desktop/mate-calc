@@ -477,7 +477,7 @@ math_display_class_init(MathDisplayClass *klass)
 }
 
 
-static void 
+static void
 math_display_init(MathDisplay *display)
 {
     display->priv = math_display_get_instance_private (display);

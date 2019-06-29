@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2008-2011 Robert Ancell.
- * 
+ *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
  * Foundation, either version 2 of the License, or (at your option) any later
@@ -125,25 +125,25 @@ test_conversions()
     options.wordlen = 32;
     options.angle_units = MP_DEGREES;
     options.convert = do_convert;
-  
+
     /* Angle units */
     //test("π radians in degrees", "180", 0);
     test("100 gradians in degrees", "90", 0);
 
     /* Length */
-    test("1 meter in mm", "1000", 0);  
+    test("1 meter in mm", "1000", 0);
     test("1m in mm", "1000", 0);
     test("1 inch in cm", "2.54", 0);
 
     /* Area */
     test("1m² in mm²", "1000000", 0);
-  
+
     /* Volume */
-    test("1m³ in mm³", "1000000000", 0);  
+    test("1m³ in mm³", "1000000000", 0);
 
     /* Weight */
     test("1 kg in pounds", "2.204622622", 0);
-  
+
     /* Duration */
     test("1 minute in seconds", "60", 0);
     test("1s in ms", "1000", 0);
@@ -176,7 +176,7 @@ get_variable(const char *name, MPNumber *z, void *data)
         mp_set_from_integer (3, z);
         return 1;
     }
-    return 0;  
+    return 0;
 }
 
 
@@ -191,7 +191,7 @@ test_equations()
     memset(&options, 0, sizeof(options));
     options.wordlen = 32;
     options.angle_units = MP_DEGREES;
-    options.variable_is_defined = variable_is_defined;  
+    options.variable_is_defined = variable_is_defined;
     options.get_variable = get_variable;
     options.set_variable = set_variable;
 
@@ -251,7 +251,7 @@ test_equations()
     test("١٢٣٤٥٦٧٨٩٠", "1234567890", 0);
     test("۱۲۳۴۵۶۷۸۹۰", "1234567890", 0);
 
-/*    
+/*
     //test("2A", "2000000000000000", 0);
     test("2T", "2000000000000", 0);
     test("2G", "2000000000", 0);
@@ -291,7 +291,7 @@ test_equations()
     test("2y", "6", 0);
     test("y2", "", PARSER_ERR_INVALID);
     test("y 2", "", PARSER_ERR_INVALID);
-    test("2z", "", PARSER_ERR_UNKNOWN_VARIABLE);  
+    test("2z", "", PARSER_ERR_UNKNOWN_VARIABLE);
     test("z2", "", PARSER_ERR_UNKNOWN_VARIABLE);
     test("z 2", "", PARSER_ERR_UNKNOWN_VARIABLE);
     test("z(2)", "", PARSER_ERR_UNKNOWN_VARIABLE);
@@ -445,7 +445,7 @@ test_equations()
     test("8 mod 7", "1", 0);
     test("−1 mod 7", "6", 0);
 
-    test("sgn 0", "0", 0);  
+    test("sgn 0", "0", 0);
     test("sgn 3", "1", 0);
     test("sgn −3", "−1", 0);
     test("⌊3⌋", "3", 0);
@@ -561,16 +561,16 @@ test_equations()
     test("i", "i", 0);
     test("−i", "−i", 0);
     test("2i", "2i", 0);
-    test("1+i", "1+i", 0);  
+    test("1+i", "1+i", 0);
     test("i+1", "1+i", 0);
-    test("1−i", "1−i", 0);  
+    test("1−i", "1−i", 0);
     test("i−1", "−1+i", 0);
     test("i×i", "−1", 0);
     test("i÷i", "1", 0);
     test("1÷i", "−i", 0);
     test("|i|", "1", 0);
     test("|3+4i|", "5", 0);
-    test("arg 0", "", PARSER_ERR_MP);  
+    test("arg 0", "", PARSER_ERR_MP);
     test("arg 1", "0", 0);
     test("arg (1+i)", "45", 0);
     test("arg i", "90", 0);
@@ -597,9 +597,9 @@ test_equations()
     test("1 and 1", "1", 0);
     test("3 and 5", "1", 0);
 
-    test("0 or 0", "0", 0);  
+    test("0 or 0", "0", 0);
     test("1 or 0", "1", 0);
-    test("0 or 1", "1", 0);  
+    test("0 or 1", "1", 0);
     test("1 or 1", "1", 0);
     test("3 or 5", "7", 0);
 

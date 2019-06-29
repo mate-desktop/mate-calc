@@ -29,17 +29,17 @@ solve(const char *equation)
     MPEquationOptions options;
     MPNumber z;
     gchar *result_str = NULL;
-    
+
     memset(&options, 0, sizeof(options));
     options.base = 10;
     options.wordlen = 32;
     options.angle_units = MP_DEGREES;
-    
+
     ret = mp_equation_parse(equation, &options, &z, NULL);
 
     if (ret == PARSER_ERR_MP)
         fprintf(stderr, "Error %s\n", mp_get_error());
-    else if (ret)        
+    else if (ret)
         fprintf(stderr, "Error %d\n", ret);
     else {
         result_str = mp_serializer_to_string(result_serializer, &z);

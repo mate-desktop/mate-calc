@@ -43,7 +43,7 @@ enum {
     PROP_SOURCE_CURRENCY,
     PROP_TARGET_CURRENCY,
     PROP_SOURCE_UNITS,
-    PROP_TARGET_UNITS,  
+    PROP_TARGET_UNITS,
     PROP_SERIALIZER
 };
 
@@ -84,7 +84,7 @@ struct MathEquationPrivate
     GList *undo_stack;        /* History of expression mode states */
     GList *redo_stack;
     gboolean in_undo_operation;
-  
+
     gboolean in_reformat;
 
     gboolean in_delete;
@@ -124,7 +124,7 @@ static void
 get_ans_offsets(MathEquation *equation, gint *start, gint *end)
 {
     GtkTextIter iter;
-  
+
     if (!equation->priv->ans_start) {
         *start = *end = -1;
         return;
@@ -268,7 +268,7 @@ reformat_separators(MathEquation *equation)
                 offset--;
             }
             else
-                last_is_tsep = TRUE;            
+                last_is_tsep = TRUE;
         }
         else {
             in_number = in_radix = FALSE;
@@ -319,7 +319,7 @@ get_current_state(MathEquation *equation)
     state->can_super_minus = equation->priv->can_super_minus;
     state->entered_multiply = equation->priv->state.entered_multiply;
     state->status = g_strdup(equation->priv->state.status);
-  
+
     return state;
 }
 
@@ -353,7 +353,7 @@ math_equation_push_undo_stack(MathEquation *equation)
     equation->priv->redo_stack = NULL;
 
     state = get_current_state(equation);
-    equation->priv->undo_stack = g_list_prepend(equation->priv->undo_stack, state);  
+    equation->priv->undo_stack = g_list_prepend(equation->priv->undo_stack, state);
 }
 
 
@@ -382,7 +382,7 @@ static void
 apply_state(MathEquation *equation, MathEquationState *state)
 {
     GtkTextIter cursor;
-  
+
     /* Disable undo detection */
     equation->priv->in_undo_operation = TRUE;
 
@@ -765,7 +765,7 @@ math_equation_set_status(MathEquation *equation, const gchar *status)
 
     g_free(equation->priv->state.status);
     equation->priv->state.status = g_strdup(status);
-    g_object_notify(G_OBJECT(equation), "status");    
+    g_object_notify(G_OBJECT(equation), "status");
 }
 
 
@@ -790,7 +790,7 @@ math_equation_is_result(MathEquation *equation)
 {
     char *text;
     gboolean result;
-  
+
     g_return_val_if_fail(equation != NULL, FALSE);
 
     text = math_equation_get_equation(equation);
@@ -839,7 +839,7 @@ math_equation_get_equation(MathEquation *equation)
         next_is_digit = g_unichar_isdigit(g_utf8_get_char(g_utf8_next_char(read_iter)));
 
         /* Replace ans text with variable */
-        if (offset == ans_start) { 
+        if (offset == ans_start) {
              g_string_append(eq_text, "ans");
              read_iter = g_utf8_offset_to_pointer(read_iter, ans_end - ans_start - 1);
              offset += ans_end - ans_start - 1;
@@ -940,7 +940,7 @@ void
 math_equation_store(MathEquation *equation, const gchar *name)
 {
     MPNumber t;
-  
+
     g_return_if_fail(equation != NULL);
     g_return_if_fail(name != NULL);
 
@@ -1109,7 +1109,7 @@ variable_is_defined(const char *name, void *data)
     for (c = lower_name; *c; c++)
         *c = tolower(*c);
 
-    if (strcmp(lower_name, "rand") == 0 || 
+    if (strcmp(lower_name, "rand") == 0 ||
         strcmp(lower_name, "ans") == 0) {
         g_free(lower_name);
         return 1;
@@ -1579,7 +1579,7 @@ math_equation_get_property(GObject    *object,
         g_value_set_string(value, self->priv->state.status);
         break;
     case PROP_DISPLAY:
-        text = math_equation_get_display(self);      
+        text = math_equation_get_display(self);
         g_value_set_string(value, text);
         g_free(text);
         break;
@@ -1736,7 +1736,7 @@ math_equation_class_init(MathEquationClass *klass)
                                     g_param_spec_int("base",
                                                      "base",
                                                      "Default number base (derived from number-format)",
-                                                     2, 16, 10, 
+                                                     2, 16, 10,
                                                      G_PARAM_READWRITE));
     g_object_class_install_property(object_class,
                                     PROP_WORD_SIZE,
@@ -1800,10 +1800,10 @@ pre_insert_text_cb(MathEquation  *equation,
 {
     gunichar c;
     gint cursor;
-  
+
     if (equation->priv->in_reformat)
         return;
-  
+
     /* If following a delete then have already pushed undo stack (GtkTextBuffer
        doesn't indicate replace operations so we have to infer them) */
     if (!equation->priv->in_delete)
@@ -1826,7 +1826,7 @@ pre_insert_text_cb(MathEquation  *equation,
 
         offset = gtk_text_iter_get_offset(location);
         get_ans_offsets(equation, &ans_start, &ans_end);
-      
+
         /* Inserted inside ans */
         if (offset > ans_start && offset < ans_end)
             clear_ans(equation, TRUE);
@@ -1837,7 +1837,7 @@ pre_insert_text_cb(MathEquation  *equation,
 static gboolean
 on_delete(MathEquation *equation)
 {
-    equation->priv->in_delete = FALSE;  
+    equation->priv->in_delete = FALSE;
     return FALSE;
 }
 
@@ -1847,7 +1847,7 @@ pre_delete_range_cb(MathEquation  *equation,
                     GtkTextIter   *start,
                     GtkTextIter   *end,
                     gpointer       user_data)
-{  
+{
     if (equation->priv->in_reformat)
         return;
 
@@ -1863,7 +1863,7 @@ pre_delete_range_cb(MathEquation  *equation,
         start_offset = gtk_text_iter_get_offset(start);
         end_offset = gtk_text_iter_get_offset(end);
         get_ans_offsets(equation, &ans_start, &ans_end);
-      
+
         /* Deleted part of ans */
         if (start_offset < ans_end && end_offset > ans_start)
             clear_ans(equation, TRUE);
@@ -1924,7 +1924,7 @@ math_equation_init(MathEquation *equation)
     equation->priv = math_equation_get_instance_private (equation);
 
     g_signal_connect(equation, "insert-text", G_CALLBACK(pre_insert_text_cb), equation);
-    g_signal_connect(equation, "delete-range", G_CALLBACK(pre_delete_range_cb), equation);  
+    g_signal_connect(equation, "delete-range", G_CALLBACK(pre_delete_range_cb), equation);
     g_signal_connect_after(equation, "insert-text", G_CALLBACK(insert_text_cb), equation);
     g_signal_connect_after(equation, "delete-range", G_CALLBACK(delete_range_cb), equation);
 
