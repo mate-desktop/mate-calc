@@ -35,7 +35,7 @@ G_DEFINE_TYPE_WITH_PRIVATE (MathPreferencesDialog, math_preferences, GTK_TYPE_DI
 
 MathPreferencesDialog *
 math_preferences_dialog_new(MathEquation *equation)
-{  
+{
     return g_object_new(math_preferences_get_type(), "equation", equation, NULL);
 }
 
@@ -210,7 +210,7 @@ word_size_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *di
 static void
 angle_unit_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
 {
-    set_combo_box_from_int(GET_WIDGET(dialog->priv->ui, "angle_unit_combobox"), math_equation_get_angle_units(equation));  
+    set_combo_box_from_int(GET_WIDGET(dialog->priv->ui, "angle_unit_combobox"), math_equation_get_angle_units(equation));
     g_settings_set_enum(g_settings_var, "angle-units", math_equation_get_angle_units(equation));
 }
 

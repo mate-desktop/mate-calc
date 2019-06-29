@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 1987-2008 Sun Microsystems, Inc. All Rights Reserved.
  * Copyright (C) 2008-2011 Robert Ancell.
- * 
+ *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
  * Foundation, either version 2 of the License, or (at your option) any later
@@ -419,7 +419,7 @@ mp_atan(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
             break;
 
         q *= 2;
-        
+
         /* t = t / (√(t² + 1) + 1) */
         mp_multiply(&t2, &t2, z);
         mp_add_integer(z, 1, z);

@@ -13,7 +13,7 @@
 
 #include "currency.h"
 #include "mp.h"
- 
+
 G_BEGIN_DECLS
 
 #define CURRENCY_MANAGER(obj) (G_TYPE_CHECK_INSTANCE_CAST ((obj), currency_manager_get_type(), CurrencyManager))

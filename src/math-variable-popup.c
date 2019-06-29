@@ -72,7 +72,7 @@ variable_name_changed_cb(GtkWidget *widget, MathVariablePopup *popup)
     const gchar *text = gtk_entry_get_text(GTK_ENTRY(popup->priv->variable_name_entry));
     gtk_widget_set_sensitive(popup->priv->add_variable_button, text[0] != '\0');
 }
-                         
+
 
 static void
 add_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
@@ -102,7 +102,7 @@ save_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
     MPNumber z;
 
     name = g_object_get_data(G_OBJECT(widget), "variable_name");
-    if (math_equation_get_number(popup->priv->equation, &z))    
+    if (math_equation_get_number(popup->priv->equation, &z))
         math_variables_set(math_equation_get_variables(popup->priv->equation), name, &z);
     else if (math_equation_is_result(popup->priv->equation))
         math_variables_set(math_equation_get_variables(popup->priv->equation), name, math_equation_get_answer(popup->priv->equation));
@@ -118,7 +118,7 @@ delete_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
 {
     const gchar *name;
 
-    name = g_object_get_data(G_OBJECT(widget), "variable_name");  
+    name = g_object_get_data(G_OBJECT(widget), "variable_name");
     math_variables_delete(math_equation_get_variables(popup->priv->equation), name);
 
     gtk_widget_destroy(gtk_widget_get_toplevel(widget));

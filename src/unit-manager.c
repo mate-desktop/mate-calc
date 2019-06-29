@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 1987-2008 Sun Microsystems, Inc. All Rights Reserved.
  * Copyright (C) 2008-2011 Robert Ancell.
- * 
+ *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
  * Foundation, either version 2 of the License, or (at your option) any later
@@ -175,7 +175,7 @@ UnitCategory *
 unit_manager_get_category(UnitManager *manager, const gchar *category)
 {
     GList *iter;
-  
+
     g_return_val_if_fail(manager != NULL, NULL);
     g_return_val_if_fail(category != NULL, NULL);
 
@@ -205,7 +205,7 @@ unit_manager_get_unit_by_name(UnitManager *manager, const gchar *name)
             return u;
     }
 
-    return NULL; 
+    return NULL;
 }
 
 
@@ -216,7 +216,7 @@ unit_manager_get_unit_by_symbol(UnitManager *manager, const gchar *symbol)
     Unit *u;
 
     g_return_val_if_fail(manager != NULL, NULL);
-    g_return_val_if_fail(symbol != NULL, NULL);  
+    g_return_val_if_fail(symbol != NULL, NULL);
 
     for (iter = manager->priv->categories; iter; iter = iter->next) {
         UnitCategory *c = iter->data;
@@ -225,7 +225,7 @@ unit_manager_get_unit_by_symbol(UnitManager *manager, const gchar *symbol)
             return u;
     }
 
-    return NULL; 
+    return NULL;
 }
 
 
@@ -249,7 +249,7 @@ unit_manager_convert_by_symbol(UnitManager *manager, const MPNumber *x, const ch
         if (x_units && z_units && unit_category_convert(c, x, x_units, z_units, z))
             return TRUE;
     }
-  
+
     return FALSE;
 }
 

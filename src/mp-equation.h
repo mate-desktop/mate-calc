@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2004-2008 Sami Pietila
  * Copyright (C) 2008-2011 Robert Ancell.
- * 
+ *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
  * Foundation, either version 2 of the License, or (at your option) any later
@@ -41,7 +41,7 @@ typedef struct {
 
     /* Data to pass to callbacks */
     void *callback_data;
-  
+
     /* Function to check if a variable is defined */
     int (*variable_is_defined)(const char *name, void *data);
 

@@ -136,7 +136,7 @@ update_from_model(MathConverter *converter)
             UnitCategory *category = iter->data;
             GtkTreeIter parent;
             const GList *unit_iter;
-          
+
             gtk_tree_store_append(from_model, &parent, NULL);
             gtk_tree_store_set(from_model, &parent, 0, unit_category_get_display_name(category), 1, category, -1);
 
@@ -198,14 +198,14 @@ iter_is_unit(GtkTreeModel *model, GtkTreeIter *iter, Unit *unit)
     Unit *u;
 
     gtk_tree_model_get(model, iter, 2, &u, -1);
-  
+
     if (!u)
         return FALSE;
 
     g_object_unref(u);
     if (u == unit)
         return TRUE;
-  
+
     return FALSE;
 }
 
@@ -217,7 +217,7 @@ set_active_unit(GtkComboBox *combo, GtkTreeIter *iter, Unit *unit)
     GtkTreeIter child_iter;
 
     model = gtk_combo_box_get_model(combo);
-  
+
     if (iter && iter_is_unit(model, iter, unit)) {
         gtk_combo_box_set_active_iter(combo, iter);
         return TRUE;
@@ -225,12 +225,12 @@ set_active_unit(GtkComboBox *combo, GtkTreeIter *iter, Unit *unit)
 
     if (!gtk_tree_model_iter_children(model, &child_iter, iter))
         return FALSE;
-  
+
     do {
         if (set_active_unit(combo, &child_iter, unit))
             return TRUE;
     } while (gtk_tree_model_iter_next(model, &child_iter));
-  
+
     return FALSE;
 }
 
@@ -327,7 +327,7 @@ from_combobox_changed_cb(GtkWidget *combo, MathConverter *converter)
     /* Select the first possible unit */
     gtk_combo_box_set_active(GTK_COMBO_BOX(converter->priv->to_combo), 0);
 
-    g_object_unref(category);  
+    g_object_unref(category);
     g_object_unref(unit);
 }
 
