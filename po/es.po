@@ -4,24 +4,25 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Tasio Leiva <leiva.tasio@gmail.com>, 2018
 # Fabian Rodriguez, 2018
 # Andres Sanchez <blackatze93@gmail.com>, 2018
 # elio <micta2003@hotmail.com>, 2018
-# Adolfo Jayme-Barrientos, 2018
+# Fito JB, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
 # Lluís Tusquellas <lutusq@gmail.com>, 2018
 # Emiliano Fascetti, 2018
-# Joel Barrios <darkshram@gmail.com>, 2018
+# Wolfgang Ulbrich <mate@raveit.de>, 2019
+# Joel Barrios <darkshram@gmail.com>, 2019
+# Toni Estévez <toni.estevez@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-09 20:37+0100\n"
+"POT-Creation-Date: 2019-03-20 09:59+0100\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: Joel Barrios <darkshram@gmail.com>, 2018\n"
+"Last-Translator: Toni Estévez <toni.estevez@gmail.com>, 2019\n"
 "Language-Team: Spanish (https://www.transifex.com/mate/teams/13566/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -43,7 +44,7 @@ msgstr "="
 #: ../data/buttons-advanced.ui.h:5 ../data/buttons-basic.ui.h:3
 #: ../data/buttons-financial.ui.h:78 ../data/buttons-programming.ui.h:14
 msgid "Clear"
-msgstr "Limpiar"
+msgstr "Borrar"
 
 #. Accessible name for the scientific exponent button
 #: ../data/buttons-advanced.ui.h:7
@@ -246,7 +247,7 @@ msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
 msgstr ""
-"Calcula la cantidad de pagos periódicos de un préstamo, donde los pagos se "
+"Calcula la cantidad de pagos periódicos de un prestamo, donde los pagos se "
 "realizan al final de cada periodo de pago."
 
 #. Periodic Interest Rate Dialog: Label before term input
@@ -336,9 +337,9 @@ msgstr ""
 "Calcula la depreciación de la subvención de un activo para un periodo de "
 "tiempo especificado, usando el método de «Sumatorio de los años-dígitos». "
 "Éste método de depreciación acelera la tasa de depreciación, de tal forma "
-"que los mayores gastos de depreciación suceden en los primeros años en lugar"
-" de en los últimos. La vida útil es el número de periodos, generalmente "
-"años, sobre los cuales se deprecia un activo."
+"que los mayores gastos de depreciación suceden en los primeros años en vez "
+"de en los últimos. La vida útil es el número de periodos, generalmente años,"
+" sobre los cuales se deprecia un activo."
 
 #. Title of Payment Period dialog
 #: ../data/buttons-financial.ui.h:67
@@ -446,7 +447,7 @@ msgstr "Insertar código de carácter"
 #. Insert ASCII dialog: Button to insert selected character
 #: ../data/buttons-programming.ui.h:5
 msgid "_Insert"
-msgstr "_Introducir"
+msgstr "_Insertar"
 
 #. Insert ASCII dialog: Label before character entry
 #: ../data/buttons-programming.ui.h:7
@@ -515,7 +516,7 @@ msgstr "_Tamaño de palabra:"
 #. Preferences dialog: label for show trailing zeroes check button
 #: ../data/preferences.ui.h:18
 msgid "Show trailing _zeroes"
-msgstr "Mostrar los c_eros excedentes"
+msgstr "Mostrar los c_eros finales"
 
 #. Preferences dialog: label for show thousands separator check button
 #: ../data/preferences.ui.h:20
@@ -524,7 +525,7 @@ msgstr "Mostrar los separadores de _millares"
 
 #: ../data/mate-calc.appdata.xml.in.h:1
 msgid "MATE Desktop calculator"
-msgstr "Calculadora del Escritorio MATE"
+msgstr "Calculadora del escritorio MATE"
 
 #: ../data/mate-calc.appdata.xml.in.h:2
 msgid ""
@@ -534,19 +535,19 @@ msgid ""
 "Calc and part of the MATE Desktop Environment. If you would like to know "
 "more about MATE and MATE Calc, please visit the project's home page. </p>"
 msgstr ""
-"<p> MATE Calc es una potente calculadora gráfica con modo financiero, lógico"
-" y científico. Utiliza un paquete de precisión múltiple para llevar a cabo "
-"su aritmética con un alto nivel de precisión. </p> <p> MATE Calc es un fork "
-"de GNOME Calc y parte de MATE Desktop Environment. Si te gustaría saber más "
-"sobre MATE y MATE Calc, no dudes en visitar la página oficial del proyecto. "
-"</p>"
+"<p> Calculadora de MATE es una potente calculadora gráfica con modo "
+"financiero, lógico y científico. Usa un paquete de precisión múltiple para "
+"llevar a cabo su aritmética con un alto nivel de precisión. </p> <p> "
+"Calculadora de MATE es una bifurcación de Calculadora de GNOME y parte del "
+"escritorio MATE. Si quiere saber más sobre MATE y Calculadora de MATE, "
+"visite la página oficial del proyecto. </p>"
 
-#: ../data/mate-calc.desktop.in.h:1
+#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:261
 msgid "MATE Calculator"
 msgstr "Calculadora de MATE"
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:563
+#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:568
 msgid "Calculator"
 msgstr "Calculadora"
 
@@ -843,7 +844,7 @@ msgstr ""
 "  --name=NOMBRE                   Nombre del programa como se usa por el gestor de ventanas\n"
 "  --screen=PANTALLA               Pantalla X que usar\n"
 "  --sync                          Hacer que las llamadas las X sean síncronas\n"
-"  --gtk-module=MÓDULOS            Cargar módulos GTK+ adicionales\n"
+"  --gtk-module=MÓDULOS            Cargar módulos de GTK+ adicionales\n"
 "  --g-fatal-warnings              Hacer que todos los avisos sean fatales"
 
 #. Description on mate-calc application options displayed on command-line
@@ -1086,12 +1087,12 @@ msgstr "Truncar"
 #. Tooltip for the start group button
 #: ../src/math-buttons.c:226
 msgid "Start Group [(]"
-msgstr "Inicio de bloque [(]"
+msgstr "Inicio de grupo [(]"
 
 #. Tooltip for the end group button
 #: ../src/math-buttons.c:229
 msgid "End Group [)]"
-msgstr "Fin de bloque [)]"
+msgstr "Fin de grupo [)]"
 
 #. Tooltip for the solve button
 #: ../src/math-buttons.c:238
@@ -1106,7 +1107,7 @@ msgstr "Factorizar [Ctrl+F]"
 #. Tooltip for the clear button
 #: ../src/math-buttons.c:244
 msgid "Clear Display [Escape]"
-msgstr "Limpiar la pantalla [Escape]"
+msgstr "Borrar la pantalla [Esc]"
 
 #. Tooltip for the undo button
 #: ../src/math-buttons.c:247
@@ -1170,7 +1171,7 @@ msgstr "Hexadecimal"
 msgid "_%d place"
 msgid_plural "_%d places"
 msgstr[0] "_%d lugar"
-msgstr[1] "_%d lugares"
+msgstr[1] "_%d posiciones"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
@@ -1179,7 +1180,7 @@ msgstr[1] "_%d lugares"
 msgid "%d place"
 msgid_plural "%d places"
 msgstr[0] "%d lugar"
-msgstr[1] "%d lugares"
+msgstr[1] "%d posiciones"
 
 #. Tooltip for the round button
 #: ../src/math-buttons.c:996
@@ -1210,17 +1211,17 @@ msgstr " en "
 #. Tooltip for swap conversion button
 #: ../src/math-converter.c:427
 msgid "Switch conversion units"
-msgstr "Intercambiar unidades de conversión"
+msgstr "Cambiar unidades de conversión"
 
 #. Error shown when trying to undo with no undo history
 #: ../src/math-equation.c:459
 msgid "No undo history"
-msgstr "No hay histórico de acciones deshechas"
+msgstr "No hay historial de deshacer"
 
 #. Error shown when trying to redo with no redo history
 #: ../src/math-equation.c:486
 msgid "No redo history"
-msgstr "No hay histórico de acciones rehechas"
+msgstr "No hay historial de rehacer"
 
 #: ../src/math-equation.c:948
 msgid "No sane value to store"
@@ -1336,120 +1337,139 @@ msgstr "Mostrar %d deci_males"
 #. Translators: Error message displayed when unable to launch help browser
 #: ../src/math-window.c:212
 msgid "Unable to open help file"
-msgstr "No se pudo abrir el archivo de ayuda"
+msgstr "No se puede abrir el archivo de ayuda"
 
-#. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:239
+#: ../src/math-window.c:234
+msgid "Sun Microsystems"
+msgstr "Sun Microsystems"
+
+#: ../src/math-window.c:235
+msgid "MATE Documentation Team"
+msgstr "Equipo de Documentación de MATE"
+
+#: ../src/math-window.c:241
+msgid ""
+"MATE Calculator is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"Calculadora de MATE es software libre: puede redistribuirlo y/o modificarlo "
+"bajo los términos de la Licencia Pública General de GNU publicada por la "
+"Free Software Foundation, ya sea la versión 2 de la Licencia como (a su "
+"elección) cualquier versión posterior."
+
+#: ../src/math-window.c:245
+msgid ""
+"MATE Calculator is distributed in the hope that it will be useful, but "
+"WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
+" more details."
+msgstr ""
+"Calculadora de MATE se distribuye con la esperanza de que será útil, pero "
+"SIN NINGUNA GARANTÍA; ni siquiera la garantía implícita de COMERCIALIZACIÓN "
+"o IDONEIDAD PARA UN PROPÓSITO PARTICULAR. Consulte la Licencia Pública "
+"General de GNU para más detalles."
+
+#: ../src/math-window.c:249
+msgid ""
+"You should have received a copy of the GNU General Public License along with"
+" MATE Calculator; if not, write to the Free Software Foundation, Inc., 151 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr ""
+"Debería haber recibido una copia de la Licencia Pública General de GNU junto"
+" con Calculadora de MATE; si no es así, escriba a la Free Software "
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, "
+"USA."
+
+#: ../src/math-window.c:263
+msgid "About MATE Calculator"
+msgstr "Acerca de Calculadora de MATE"
+
+#: ../src/math-window.c:264
+msgid ""
+"Copyright © 1986–2010 The GCalctool authors\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
+"Copyright  © 1986–2010 Los autores de GCalctool\n"
+"Copyright  © 2011-2019 Los desarrolladores de MATE"
+
+#: ../src/math-window.c:267
+msgid "Calculator with financial and scientific modes."
+msgstr "Calculadora con modos científico y financiero."
+
+#: ../src/math-window.c:270
 msgid "translator-credits"
 msgstr ""
 "Jorge González <jorgegonz@svn.gnome.org>, 2007-2010\n"
 "Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003-2006\n"
 "Pablo Gonzalo del Campo <pablodc@bigfoot.com>, 2002-2003"
 
-#. The license this software is under (GPL2+)
-#: ../src/math-window.c:246
-msgid ""
-"mate-calc is free software; you can redistribute it and/or modify\n"
-"it under the terms of the GNU General Public License as published by\n"
-"the Free Software Foundation; either version 2 of the License, or\n"
-"(at your option) any later version.\n"
-"\n"
-"mate-calc is distributed in the hope that it will be useful,\n"
-"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License\n"
-"along with mate-calc; if not, write to the Free Software Foundation, Inc.,\n"
-"151 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
-"mate-calc es software libre, puede redistribuirlo y / o modificarlo\n"
-"bajo los términos de la Licencia Pública General de GNU según la publica\n"
-"la Free Software Foundation, ya sea la versión 2 de la Licencia, o \n"
-"(a su elección) cualquier otra versión posterior \n"
-"\n"
-"mate-calc se distribuye con la esperanza de que será útil, pero SIN\n"
-"NINGUNA GARANTÍA; sin siquiera la garantía implícita de COMERCIALIZACIÓN\n"
-"o IDONEIDAD PARA UN PROPÓSITO PARTICULAR. Vea la Licencia Pública\n"
-"General de GNU para más detalles.\n"
-"\n"
-"Debería haber recibido una copia de la Licencia Pública General de GNU \n"
-"junto con su mate-calc;. Si no, escriba a la Free Software Foundation, Inc.,\n"
-"Franklin Street n.º 501, 5.º piso, Boston, MA 02110-1301, EE. UU."
-
-#: ../src/math-window.c:261
-msgid "mate-calc"
-msgstr "mate-calc"
-
-#: ../src/math-window.c:265
-msgid "Calculator with financial and scientific modes."
-msgstr "Calculadora con modos científico y financiero."
-
 #. Calculator menu
-#: ../src/math-window.c:398
+#: ../src/math-window.c:403
 msgid "_Calculator"
 msgstr "_Calculadora"
 
 #. Mode menu
-#: ../src/math-window.c:400
+#: ../src/math-window.c:405
 msgid "_Mode"
 msgstr "_Modo"
 
 #. Help menu label
-#: ../src/math-window.c:402
+#: ../src/math-window.c:407
 msgid "_Help"
 msgstr "Ay_uda"
 
 #. Basic menu label
-#: ../src/math-window.c:404
+#: ../src/math-window.c:409
 msgid "_Basic"
 msgstr "_Básico"
 
 #. Advanced menu label
-#: ../src/math-window.c:406
+#: ../src/math-window.c:411
 msgid "_Advanced"
 msgstr "_Avanzado"
 
 #. Financial menu label
-#: ../src/math-window.c:408
+#: ../src/math-window.c:413
 msgid "_Financial"
 msgstr "_Financiero"
 
 #. Programming menu label
-#: ../src/math-window.c:410
+#: ../src/math-window.c:415
 msgid "_Programming"
 msgstr "_Programador"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:412
+#: ../src/math-window.c:417
 msgid "_Contents"
 msgstr "_Contenido"
 
-#: ../src/math-window.c:415
+#: ../src/math-window.c:420
 msgid "_Copy"
 msgstr "_Copiar"
 
-#: ../src/math-window.c:417
+#: ../src/math-window.c:422
 msgid "_Paste"
 msgstr "_Pegar"
 
-#: ../src/math-window.c:419
+#: ../src/math-window.c:424
 msgid "_Undo"
 msgstr "_Deshacer"
 
-#: ../src/math-window.c:421
+#: ../src/math-window.c:426
 msgid "_Redo"
 msgstr "_Rehacer"
 
-#: ../src/math-window.c:424
+#: ../src/math-window.c:429
 msgid "_Preferences"
 msgstr "Preferencias"
 
-#: ../src/math-window.c:426
+#: ../src/math-window.c:431
 msgid "_Quit"
 msgstr "_Salir"
 
-#: ../src/math-window.c:443
+#: ../src/math-window.c:448
 msgid "_About"
 msgstr "_Acerca de"
 
@@ -1480,7 +1500,7 @@ msgstr "El NO lógico solo está definido para números enteros positivos"
 #. Translators: Error displayed when bit shift attempted on non-integer values
 #: ../src/mp-binary.c:190
 msgid "Shift is only possible on integer values"
-msgstr "El desplazamiento sólo es posible en valores enteros"
+msgstr "El desplazamiento solo es posible en valores enteros"
 
 #. Translators: Error display when attempting to take argument of zero
 #: ../src/mp.c:148
@@ -1489,7 +1509,7 @@ msgstr "El argumento no está definido para cero"
 
 #: ../src/mp.c:299
 msgid "Overflow: the result couldn't be calculated"
-msgstr "Desbordamiento: no se pudo calcular el resultado"
+msgstr "Desbordamiento: no se ha podido calcular el resultado"
 
 #. Translators: Error displayed attempted to divide by zero
 #: ../src/mp.c:644 ../src/mp.c:676 ../src/mp.c:1605
@@ -1528,13 +1548,13 @@ msgstr ""
 #. fractional number
 #: ../src/mp.c:1934
 msgid "Factorial is only defined for natural numbers"
-msgstr "El factorial sólo está definido para números naturales"
+msgstr "El factorial solo está definido para números naturales"
 
 #. Translators: Error displayed when attemping to do a modulus division on
 #. non-integer numbers
 #: ../src/mp.c:1954
 msgid "Modulus division is only defined for integers"
-msgstr "La división modular sólo está definida para enteros"
+msgstr "La división modular solo está definida para enteros"
 
 #. Translators: Error displayed when tangent value is undefined
 #: ../src/mp-trigonometric.c:310
