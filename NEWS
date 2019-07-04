@@ -1,5 +1,31 @@
 ### mate-calc 1.23.0
 
+  * tx: sync with transifex
+  * Remove trailing whitespaces
+  * Migrate from intltools into gettext
+  * mp-serializer: fix scientific presentation of complex numbers
+  * [ci] Add cppcheck html report
+  * Avoid deprecated 'gtk_widget_get_style' and 'gtk_widget_modify_font'
+  * Fix FSF address
+  * test-mp-equation: add tests for physical constants
+  * mp-equation: update values from physical constants to match with tooltip values in math-buttons.c
+  * Add unit tooltips to physical constants
+  * dont focus on click
+  * mp-equation: add pre-defined physical constants
+  * buttons-ui: add destructive-action style to 'clear' button
+  * buttons-ui: add style class "suggested-action" to result button
+  * Use gresources for UI files
+  * Unit tests: pi constant, ln (e^iπ)
+  * currency-manager: Update name_map in load_imf_rates
+  * math-buttons: Fix cppcheck warning: Identical inner 'return'
+  * mp: Fix calculate result ln(e^(i*π))
+  * display small numbers in scientific notation
+  * mate-calc: Fix memory leak
+  * math-buttons: avoid shifting signed 64-bit value by 63 bits
+  * Add support for "pi" in addition to "π"
+  * [ci] enable clang analyzer
+  * i18n about dialog
+
 ### mate-calc 1.22.0
 
   * Translations update
