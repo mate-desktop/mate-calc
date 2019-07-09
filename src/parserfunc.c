@@ -866,7 +866,8 @@ pf_do_not(ParseNode* self)
     {
         set_error(self->state, PARSER_ERR_OVERFLOW, NULL);
         free(ans);
-        ans = NULL;
+        free(val);
+        return NULL;
     }
     mp_not(val, self->state->options->wordlen, ans);
     free(val);

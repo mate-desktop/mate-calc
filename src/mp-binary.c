@@ -152,7 +152,7 @@ mp_not(const MPNumber *x, int wordlen, MPNumber *z)
 
     if (!mp_is_positive_integer(x))
     {
-        /* Translators: Error displayed when boolean XOR attempted on non-integer values */
+        /* Translators: Error displayed when boolean NOT attempted on non-integer values */
         mperr(_("Boolean NOT is only defined for positive integers"));
     }
 
