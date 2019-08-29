@@ -16,13 +16,12 @@ $(Utilities_DATA): $(Utilities_in_files)
 man1_MANS = mate-calc.1 mate-calc-cmd.1
 
 EXTRA_DIST = \
-	org.mate.calc.gschema.xml \
 	mate-calc.desktop.in \
 	$(appdata_in_files) \
+	$(gsettings_SCHEMAS) \
 	$(man1_MANS)
 
 DISTCLEANFILES = \
 	Makefile.in \
 	mate-calc.desktop \
-	$(appdata_DATA) \
-	$(gsettings_SCHEMAS)
+	$(appdata_DATA)
