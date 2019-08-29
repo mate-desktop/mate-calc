@@ -162,22 +162,6 @@ mp_not(const MPNumber *x, int wordlen, MPNumber *z)
 
 
 void
-mp_mask(const MPNumber *x, int wordlen, MPNumber *z)
-{
-    char *text;
-    size_t len, offset;
-
-    /* Convert to a hexadecimal string and use last characters */
-    text = to_hex_string(x);
-    len = strlen(text);
-    offset = wordlen / 4;
-    offset = len > offset ? len - offset: 0;
-    mp_set_from_string(text + offset, 16, z);
-    g_free(text);
-}
-
-
-void
 mp_shift(const MPNumber *x, int count, MPNumber *z)
 {
     int i;
