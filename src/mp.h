@@ -315,9 +315,6 @@ void   mp_xnor(const MPNumber *x, const MPNumber *y, int wordlen, MPNumber *z);
 /* Sets z = boolean NOT for each bit in x and z for word of length 'wordlen' */
 void   mp_not(const MPNumber *x, int wordlen, MPNumber *z);
 
-/* Sets z = x masked to 'wordlen' bits */
-void   mp_mask(const MPNumber *x, int wordlen, MPNumber *z);
-
 /* Sets z = x shifted by 'count' bits.  Positive shift increases the value, negative decreases */
 void   mp_shift(const MPNumber *x, int count, MPNumber *z);
 
