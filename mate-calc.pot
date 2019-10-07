@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mate-calc 1.23.0\n"
 "Report-Msgid-Bugs-To: http://mate-desktop.org\n"
-"POT-Creation-Date: 2019-07-03 15:06+0200\n"
+"POT-Creation-Date: 2019-10-07 16:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -534,6 +534,10 @@ msgstr ""
 
 #: data/mate-calc.desktop.in:7
 msgid "accessories-calculator"
+msgstr ""
+
+#: data/mate-calc.desktop.in:11
+msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
 msgstr ""
 
 #: data/org.mate.calc.gschema.xml:25
@@ -1613,13 +1617,13 @@ msgstr ""
 msgid "Boolean XOR is only defined for positive integers"
 msgstr ""
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#. Translators: Error displayed when boolean NOT attempted on non-integer values
 #: src/mp-binary.c:156
 msgid "Boolean NOT is only defined for positive integers"
 msgstr ""
 
 #. Translators: Error displayed when bit shift attempted on non-integer values
-#: src/mp-binary.c:190
+#: src/mp-binary.c:174
 msgid "Shift is only possible on integer values"
 msgstr ""
 
