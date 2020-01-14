@@ -1062,7 +1062,7 @@ const_cb(GtkWidget *widget, MathButtons *buttons)
             { /* Tooltip for the mₚ button */
               N_("Proton mass"), "mₚ", N_("1.672621898(21)×10⁻²⁷ kg") },
             { /* Tooltip for the Nₐ button */
-              N_("Avogrado constant"), "Nₐ", N_("6.02214086×10²³ mol⁻¹") },
+              N_("Avogadro constant"), "Nₐ", N_("6.02214086×10²³ mol⁻¹") },
             { NULL, NULL, NULL }
         };
 

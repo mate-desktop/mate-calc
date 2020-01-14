@@ -66,7 +66,7 @@ get_variable(ParserState *state, const char *name, MPNumber *z)
     else if (strcmp(name, "mₚ") == 0)
         mp_set_from_string("0.000000000000000000000000001672621898", 10, z); /* proton mass */
     else if (strcmp(name, "Nₐ") == 0)
-        mp_set_from_string("602214086000000000000000", 10, z); /* Avogrado constant */
+        mp_set_from_string("602214086000000000000000", 10, z); /* Avogadro constant */
     else if (state->options->get_variable)
         result = state->options->get_variable(name, z, state->options->callback_data);
     else
