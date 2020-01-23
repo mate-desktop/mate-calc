@@ -119,7 +119,6 @@ math_equation_get_variables(MathEquation *equation)
     return equation->priv->variables;
 }
 
-
 static void
 get_ans_offsets(MathEquation *equation, gint *start, gint *end)
 {
@@ -975,12 +974,14 @@ math_equation_set_number(MathEquation *equation, const MPNumber *x)
 {
     char *text;
     GtkTextIter start, end;
+    MathEquationState *state = get_current_state(equation);
 
     g_return_if_fail(equation != NULL);
     g_return_if_fail(x != NULL);
 
     /* Show the number in the user chosen format */
     text = mp_serializer_to_string(equation->priv->serializer, x);
+    g_signal_emit_by_name(equation, "history", state->expression, x, 10, 0);
     gtk_text_buffer_set_text(GTK_TEXT_BUFFER(equation), text, -1);
     mp_set_from_mp(x, &equation->priv->state.ans);
 
@@ -990,6 +991,7 @@ math_equation_set_number(MathEquation *equation, const MPNumber *x)
     equation->priv->ans_start = gtk_text_buffer_create_mark(GTK_TEXT_BUFFER(equation), NULL, &start, FALSE);
     equation->priv->ans_end = gtk_text_buffer_create_mark(GTK_TEXT_BUFFER(equation), NULL, &end, TRUE);
     gtk_text_buffer_apply_tag(GTK_TEXT_BUFFER(equation), equation->priv->ans_tag, &start, &end);
+
     g_free(text);
 }
 
@@ -1082,7 +1084,6 @@ math_equation_insert_exponent(MathEquation *equation)
     math_equation_insert(equation, "×10");
     math_equation_set_number_mode(equation, SUPERSCRIPT);
 }
-
 
 void
 math_equation_insert_subtract(MathEquation *equation)
@@ -1788,8 +1789,19 @@ math_equation_class_init(MathEquationClass *klass)
                                                         "Serializer",
                                                         MP_TYPE_SERIALIZER,
                                                         G_PARAM_READABLE));
-}
 
+    GType param_types[4] = {G_TYPE_STRING, G_TYPE_POINTER, G_TYPE_INT};
+    g_signal_newv("history",
+			G_TYPE_FROM_CLASS(klass),
+			G_SIGNAL_RUN_LAST,
+			0,
+			NULL,
+			NULL,
+			NULL,
+			G_TYPE_NONE,
+			3,
+			param_types);
+}
 
 static void
 pre_insert_text_cb(MathEquation  *equation,

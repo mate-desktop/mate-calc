@@ -13,6 +13,7 @@
 #include <gdk/gdkkeysyms.h>
 
 #include "math-display.h"
+#include "math-history-view.h"
 
 enum {
     PROP_0,
@@ -23,6 +24,9 @@ struct MathDisplayPrivate
 {
     /* Equation being displayed */
     MathEquation *equation;
+    
+    /* History view */
+    MathHistoryView *history;
 
     /* Display widget */
     GtkWidget *text_view;
@@ -296,7 +300,6 @@ display_key_press_cb(GtkWidget *widget, GdkEventKey *event, MathDisplay *display
     return FALSE;
 }
 
-
 static gboolean
 key_press_cb(MathDisplay *display, GdkEventKey *event)
 {
@@ -304,7 +307,6 @@ key_press_cb(MathDisplay *display, GdkEventKey *event)
     g_signal_emit_by_name(display->priv->text_view, "key-press-event", event, &result);
     return result;
 }
-
 
 static void
 status_changed_cb(MathEquation *equation, GParamSpec *spec, MathDisplay *display)
@@ -357,6 +359,25 @@ static void _text_view_override_font (GtkWidget *widget, PangoFontDescription *f
 }
 
 static void
+update_history_cb (MathEquation *equation, char *answer, MPNumber *number, int number_base, gpointer data)
+{   /* Recieves signal emitted by a MathEquation object for updating history-view */
+    MathDisplay *display = MATH_DISPLAY(data);
+    math_history_insert_entry (display->priv->history, answer, number, number_base); /* Sends current equation and answer for updating History-View */
+}
+
+void
+math_display_display_text (MathDisplay *display, char *prev_eq)
+{
+   math_equation_set(display->priv->equation, prev_eq);
+}
+
+void
+math_display_insert_text (MathDisplay *display, char *answer)
+{
+    math_equation_insert(display->priv->equation, answer);
+}
+
+static void
 create_gui(MathDisplay *display)
 {
     GtkWidget *info_view, *info_box, *main_box;
@@ -364,11 +385,15 @@ create_gui(MathDisplay *display)
     GtkStyleContext *context;
     GtkStateFlags state;
 
+    g_signal_connect(display->priv->equation, "history", G_CALLBACK(update_history_cb), display);
+
     main_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
     gtk_container_add(GTK_CONTAINER(display), main_box);
 
     g_signal_connect(display, "key-press-event", G_CALLBACK(key_press_cb), display);
 
+    display->priv->history = math_history_view_new(display, main_box);
+    
     display->priv->text_view = gtk_text_view_new_with_buffer(GTK_TEXT_BUFFER(display->priv->equation));
     gtk_text_view_set_wrap_mode(GTK_TEXT_VIEW(display->priv->text_view), GTK_WRAP_WORD);
     gtk_text_view_set_accepts_tab(GTK_TEXT_VIEW(display->priv->text_view), FALSE);
@@ -405,6 +430,8 @@ create_gui(MathDisplay *display)
 
     display->priv->spinner = gtk_spinner_new();
     gtk_box_pack_end(GTK_BOX(info_box), display->priv->spinner, FALSE, FALSE, 0);
+
+    gtk_widget_grab_focus(GTK_WIDGET(display->priv->text_view));
 
     gtk_widget_show(info_box);
     gtk_widget_show(info_view);

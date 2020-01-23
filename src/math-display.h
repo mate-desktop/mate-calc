@@ -41,6 +41,12 @@ MathDisplay *math_display_new_with_equation(MathEquation *equation);
 
 MathEquation *math_display_get_equation(MathDisplay *display);
 
+void 
+math_display_display_text(MathDisplay *display, char *prev_eq);
+
+void
+math_display_insert_text(MathDisplay *display, char *answer);
+
 G_END_DECLS
 
 #endif /* MATH_DISPLAY_H */
