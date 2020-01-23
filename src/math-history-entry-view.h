@@ -39,12 +39,6 @@ GType math_history_entry_view_get_type(void);
 MathHistoryEntryView *
 math_history_entry_view_new(char *equation, MPNumber *number, MathDisplay *display, int number_base);
 
-gboolean
-onclick_answer(GtkWidget *widget, GdkEventButton *eventbutton, gpointer data);
-
-gboolean
-onclick_equation(GtkWidget *widget, GdkEventButton *eventbutton, gpointer data);
-
 G_END_DECLS
 
 #endif /* MATH_HISTORY_ENTRY_VIEW_H */

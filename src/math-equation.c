@@ -981,7 +981,7 @@ math_equation_set_number(MathEquation *equation, const MPNumber *x)
 
     /* Show the number in the user chosen format */
     text = mp_serializer_to_string(equation->priv->serializer, x);
-    g_signal_emit_by_name(equation, "history", state->expression, x, 10, 0);
+    g_signal_emit_by_name(equation, "history", state->expression, x, mp_serializer_get_base(equation->priv->serializer));
     gtk_text_buffer_set_text(GTK_TEXT_BUFFER(equation), text, -1);
     mp_set_from_mp(x, &equation->priv->state.ans);
 
@@ -1790,7 +1790,7 @@ math_equation_class_init(MathEquationClass *klass)
                                                         MP_TYPE_SERIALIZER,
                                                         G_PARAM_READABLE));
 
-    GType param_types[4] = {G_TYPE_STRING, G_TYPE_POINTER, G_TYPE_INT};
+    GType param_types[3] = {G_TYPE_STRING, G_TYPE_POINTER, G_TYPE_INT};
     g_signal_newv("history",
 			G_TYPE_FROM_CLASS(klass),
 			G_SIGNAL_RUN_LAST,

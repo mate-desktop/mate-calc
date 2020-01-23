@@ -28,8 +28,8 @@ struct MathHistoryEntryViewPrivate
 
 G_DEFINE_TYPE_WITH_PRIVATE (MathHistoryEntryView, math_history_entry_view, GTK_TYPE_LIST_BOX_ROW);
 
-gboolean
-onclick_answer (GtkWidget *widget, GdkEventButton *eventbutton, gpointer data)
+static gboolean
+answer_clicked_cb (GtkWidget *widget, GdkEventButton *eventbutton, gpointer data)
 {   /* Callback function for button-press-event on ans_eventbox */
     GtkEventBox *event = (GtkEventBox*) widget;
     MathHistoryEntryView *view = MATH_HISTORY_ENTRY_VIEW(data);
@@ -48,8 +48,8 @@ onclick_answer (GtkWidget *widget, GdkEventButton *eventbutton, gpointer data)
     return TRUE;
 }
 
-gboolean
-onclick_equation (GtkWidget *widget, GdkEventButton *eventbutton, gpointer data)
+static gboolean
+equation_clicked_cb (GtkWidget *widget, GdkEventButton *eventbutton, gpointer data)
 {   /* Callback function for button-press-event on eq_eventbox */
     GtkEventBox *event = (GtkEventBox*) widget;
     MathHistoryEntryView *view = MATH_HISTORY_ENTRY_VIEW(data);
@@ -58,7 +58,7 @@ onclick_equation (GtkWidget *widget, GdkEventButton *eventbutton, gpointer data)
         if (GTK_IS_BIN(event))
         {
             GtkLabel *equation_label = (GtkLabel*) gtk_bin_get_child(GTK_BIN(event));
-            char *prev_equation = gtk_label_get_text(equation_label);
+            const char *prev_equation = gtk_label_get_text(equation_label);
             if (prev_equation  != NULL)
             {
                 math_display_display_text (view->priv->display, prev_equation); /* Appends selected answer from history-view to current equation in editbar */
@@ -96,8 +96,8 @@ math_history_entry_view_new(char *equation, MPNumber *number, MathDisplay *displ
     gtk_container_add(GTK_CONTAINER(view->priv->ans_eventbox), view->priv->answer_label);
     gtk_widget_set_events(view->priv->eq_eventbox, GDK_BUTTON_PRESS_MASK);
     gtk_widget_set_events(view->priv->ans_eventbox, GDK_BUTTON_PRESS_MASK);
-    g_signal_connect(view->priv->eq_eventbox, "button_press_event", G_CALLBACK(onclick_equation), view); /* Calls onclick_equation on clicking on equation_label */
-    g_signal_connect(view->priv->ans_eventbox, "button_press_event", G_CALLBACK(onclick_answer), view); /* Calls onclick_answer on clicking on answer_label */
+    g_signal_connect(view->priv->eq_eventbox, "button_press_event", G_CALLBACK(equation_clicked_cb), view); /* Calls onclick_equation on clicking on equation_label */
+    g_signal_connect(view->priv->ans_eventbox, "button_press_event", G_CALLBACK(answer_clicked_cb), view); /* Calls onclick_answer on clicking on answer_label */
     gtk_widget_set_size_request(view->priv->equation_label, 10, 10);
     gtk_widget_set_size_request(view->priv->answer_label, 10, 10);
     gtk_label_set_selectable(GTK_LABEL(view->priv->equation_label), TRUE);

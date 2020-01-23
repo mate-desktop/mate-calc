@@ -366,7 +366,7 @@ update_history_cb (MathEquation *equation, char *answer, MPNumber *number, int n
 }
 
 void
-math_display_display_text (MathDisplay *display, char *prev_eq)
+math_display_display_text (MathDisplay *display, const char *prev_eq)
 {
    math_equation_set(display->priv->equation, prev_eq);
 }
