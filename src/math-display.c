@@ -399,8 +399,7 @@ create_gui(MathDisplay *display)
     gtk_text_view_set_accepts_tab(GTK_TEXT_VIEW(display->priv->text_view), FALSE);
     gtk_text_view_set_pixels_above_lines(GTK_TEXT_VIEW(display->priv->text_view), 8);
     gtk_text_view_set_pixels_below_lines(GTK_TEXT_VIEW(display->priv->text_view), 2);
-    /* TEMP: Disabled for now as GTK+ doesn't properly render a right aligned right margin, see bug #482688 */
-    /*gtk_text_view_set_right_margin(GTK_TEXT_VIEW(display->priv->text_view), 6);*/
+    gtk_text_view_set_right_margin(GTK_TEXT_VIEW(display->priv->text_view), 6);
     gtk_text_view_set_justification(GTK_TEXT_VIEW(display->priv->text_view), GTK_JUSTIFY_RIGHT);
     context = gtk_widget_get_style_context (display->priv->text_view);
     state = gtk_widget_get_state_flags (GTK_WIDGET (display->priv->text_view));
@@ -412,19 +411,17 @@ create_gui(MathDisplay *display)
     atk_object_set_role(gtk_widget_get_accessible(display->priv->text_view), ATK_ROLE_EDITBAR);
   //FIXME:<property name="AtkObject::accessible-description" translatable="yes" comments="Accessible description for the area in which results are displayed">Result Region</property>
     g_signal_connect(display->priv->text_view, "key-press-event", G_CALLBACK(display_key_press_cb), display);
-    gtk_box_pack_start(GTK_BOX(main_box), display->priv->text_view, TRUE, TRUE, 0);
+    gtk_box_pack_start(GTK_BOX(main_box), display->priv->text_view, FALSE, TRUE, 0);
 
     info_box = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 6);
     gtk_box_pack_start(GTK_BOX(main_box), info_box, FALSE, TRUE, 0);
 
     info_view = gtk_text_view_new();
     gtk_text_view_set_wrap_mode(GTK_TEXT_VIEW(info_view), GTK_WRAP_WORD);
-    gtk_widget_set_can_focus(info_view, TRUE); // FIXME: This should be FALSE but it locks the cursor inside the main view for some reason
-    gtk_text_view_set_cursor_visible(GTK_TEXT_VIEW(info_view), FALSE); // FIXME: Just here so when incorrectly gets focus doesn't look editable
+    gtk_widget_set_can_focus(info_view, FALSE);
     gtk_text_view_set_editable(GTK_TEXT_VIEW(info_view), FALSE);
     gtk_text_view_set_justification(GTK_TEXT_VIEW(info_view), GTK_JUSTIFY_RIGHT);
-    /* TEMP: Disabled for now as GTK+ doesn't properly render a right aligned right margin, see bug #482688 */
-    /*gtk_text_view_set_right_margin(GTK_TEXT_VIEW(info_view), 6);*/
+    gtk_text_view_set_right_margin(GTK_TEXT_VIEW(info_view), 6);
     gtk_box_pack_start(GTK_BOX(info_box), info_view, TRUE, TRUE, 0);
     display->priv->info_buffer = gtk_text_view_get_buffer(GTK_TEXT_VIEW(info_view));
 

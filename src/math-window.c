@@ -459,7 +459,7 @@ create_gui(MathWindow *window)
     gtk_widget_show(main_vbox);
 
     window->priv->menu_bar = gtk_menu_bar_new();
-    gtk_box_pack_start(GTK_BOX(main_vbox), window->priv->menu_bar, TRUE, TRUE, 0);
+    gtk_box_pack_start(GTK_BOX(main_vbox), window->priv->menu_bar, FALSE, TRUE, 0);
     gtk_widget_show(window->priv->menu_bar);
 
     create_menu(window);
@@ -469,6 +469,7 @@ create_gui(MathWindow *window)
     gtk_box_pack_start(GTK_BOX(main_vbox), vbox, TRUE, TRUE, 0);
     gtk_widget_show(vbox);
 
+    //TODO move display out of scrolled window to make history view independent from it
     scrolled_window = gtk_scrolled_window_new(NULL, NULL);
     gtk_scrolled_window_set_policy(GTK_SCROLLED_WINDOW(scrolled_window), GTK_POLICY_AUTOMATIC, GTK_POLICY_NEVER);
     gtk_scrolled_window_set_shadow_type(GTK_SCROLLED_WINDOW(scrolled_window), GTK_SHADOW_IN);
@@ -485,7 +486,7 @@ create_gui(MathWindow *window)
     window->priv->buttons = math_buttons_new(window->priv->equation);
     g_signal_connect(window->priv->buttons, "notify::mode", G_CALLBACK(button_mode_changed_cb), window);
     button_mode_changed_cb(window->priv->buttons, NULL, window);
-    gtk_box_pack_start(GTK_BOX(vbox), GTK_WIDGET(window->priv->buttons), TRUE, TRUE, 0);
+    gtk_box_pack_start(GTK_BOX(vbox), GTK_WIDGET(window->priv->buttons), FALSE, TRUE, 0);
     gtk_widget_show(GTK_WIDGET(window->priv->buttons));
 }
 
@@ -568,7 +569,7 @@ math_window_init(MathWindow *window)
                          _("Calculator"));
     gtk_window_set_icon_name(GTK_WINDOW(window), "accessories-calculator");
     gtk_window_set_role(GTK_WINDOW(window), "mate-calc");
-    gtk_window_set_resizable(GTK_WINDOW(window), FALSE);
+    gtk_window_set_resizable(GTK_WINDOW(window), TRUE);
     g_signal_connect_after(G_OBJECT(window), "key-press-event", G_CALLBACK(key_press_cb), NULL);
     g_signal_connect(G_OBJECT(window), "delete-event", G_CALLBACK(delete_cb), NULL);
 }
