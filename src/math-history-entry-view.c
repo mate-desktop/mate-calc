@@ -1,11 +1,15 @@
 /*
- * Copyright (C) 2008-2011 Robert Ancell
+ * Copyright (C) 2020 MATE developers
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
  * Foundation, either version 2 of the License, or (at your option) any later
  * version. See http://www.gnu.org/copyleft/gpl.html the full text of the
  * license.
+ *
+ *
+ * Authors: Johannes Unruh <johannes.unruh@fau.de>
+ *
  */
 
 #include <string.h>
@@ -76,7 +80,7 @@ math_history_entry_view_new(char *equation, MPNumber *number, MathDisplay *displ
     view->priv->display = display;
     view->priv->answer = number;
     view->priv->prev_equation = equation;
-	MpSerializer *serializer = mp_serializer_new(MP_DISPLAY_FORMAT_AUTOMATIC, number_base, 9);
+    MpSerializer *serializer = mp_serializer_new(MP_DISPLAY_FORMAT_AUTOMATIC, number_base, 9);
     MpSerializer *ans_serializer = mp_serializer_new(MP_DISPLAY_FORMAT_AUTOMATIC, number_base, 4);
     view->priv->prev_answer = mp_serializer_to_string(serializer, view->priv->answer);
     char *answer_text = mp_serializer_to_string(ans_serializer, view->priv->answer);
