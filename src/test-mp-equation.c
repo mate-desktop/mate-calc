@@ -118,7 +118,7 @@ do_convert(const MPNumber *x, const char *x_units, const char *z_units, MPNumber
 
 
 static void
-test_conversions()
+test_conversions(void)
 {
     memset(&options, 0, sizeof(options));
     options.base = 10;
@@ -186,7 +186,7 @@ set_variable(const char *name, const MPNumber *x, void *data)
 }
 
 static void
-test_equations()
+test_equations(void)
 {
     memset(&options, 0, sizeof(options));
     options.wordlen = 32;

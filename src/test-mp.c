@@ -97,7 +97,7 @@ test_integer(int number)
 
 
 static void
-test_numbers()
+test_numbers(void)
 {
     printf("base=%d\n", MP_BASE);
     test_integer(0);
@@ -141,7 +141,7 @@ try(const char *string, bool result, bool expected)
 
 
 static void
-test_mp()
+test_mp(void)
 {
     MPNumber zero, one, minus_one;
 
