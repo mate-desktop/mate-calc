@@ -88,7 +88,7 @@ test_integer(int number)
 
 
 static void
-test_numbers()
+test_numbers(void)
 {
     test_integer(0);
     test_integer(1);
@@ -131,7 +131,7 @@ try(const char *string, bool result, bool expected)
 
 
 static void
-test_mp()
+test_mp(void)
 {
     MPNumber zero = mp_new();
     MPNumber one = mp_new();

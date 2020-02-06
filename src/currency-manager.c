@@ -167,7 +167,7 @@ currency_manager_get_currency(CurrencyManager *manager, const gchar *name)
 
 
 static char *
-get_imf_rate_filepath()
+get_imf_rate_filepath(void)
 {
     return g_build_filename(g_get_user_cache_dir (),
                             "mate-calc",
@@ -177,7 +177,7 @@ get_imf_rate_filepath()
 
 
 static char *
-get_ecb_rate_filepath()
+get_ecb_rate_filepath(void)
 {
     return g_build_filename(g_get_user_cache_dir (),
                             "mate-calc",
