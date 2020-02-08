@@ -484,7 +484,7 @@ mp_cast_to_double(const MPNumber *x)
     /* LHS SHOULD BE .LE. 0.5 BUT ALLOW FOR SOME ERROR IN DLOG */
     if (ret_val <= 0. ||
         ((d__1 = (double) ((float) x->exponent) - (log(ret_val) / log((double)
-                ((float) MP_BASE)) + .5), abs(d__1)) > .6)) {
+                ((float) MP_BASE)) + .5), fabs(d__1)) > .6)) {
         /*  FOLLOWING MESSAGE INDICATES THAT X IS TOO LARGE OR SMALL -
          *  TRY USING MPCMDE INSTEAD.
          */

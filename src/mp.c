@@ -1098,8 +1098,8 @@ mp_gcd(int64_t *k, int64_t *l)
 {
     int64_t i, j;
 
-    i = abs(*k);
-    j = abs(*l);
+    i = labs(*k);
+    j = labs(*l);
     if (j == 0) {
         /* IF J = 0 RETURN (1, 0) UNLESS I = 0, THEN (0, 0) */
         *k = 1;
