@@ -1,6 +1,20 @@
+### mate-calc 1.24.0
+
+  * Translations update
+  * Fix typo: 'Avogadro' instead 'Avogrado'
+  * Update copyright to 2020
+  * fixes precedence of functions i.e. the result of -ln(1) and add according tests
+  * desktop file: add missing hints for translators
+  * fix typo in keywords in desktop file
+  * mate-calc.desktop.in: Add missing Keywords
+  * Do not remove org.mate.calc.gschema.xml on make distclean
+  * The function 'mp_mask' is never used
+  * sets the required version for gettext (0.19.8)
+  * parserfunc: Return NULL on NOT operation overflow
+
 ### mate-calc 1.23.0
 
-  * tx: sync with transifex
+  * Translations update
   * Remove trailing whitespaces
   * Migrate from intltools into gettext
   * mp-serializer: fix scientific presentation of complex numbers
