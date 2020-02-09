@@ -1,23 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR MATE Desktop Environment team
+# This file is distributed under the same license as the mate-calc package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Seong-ho Cho <darkcircle.0426@gmail.com>, 2018
-# Stefano Karapetsas <stefano@karapetsas.com>, 2018
 # Alan Lee <bkrhlim@aol.com>, 2018
 # Wolfgang Ulbrich <mate@raveit.de>, 2019
 # 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2019
+# Stefano Karapetsas <stefano@karapetsas.com>, 2019
 # 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-20 09:59+0100\n"
+"Project-Id-Version: mate-calc 1.23.0\n"
+"Report-Msgid-Bugs-To: http://mate-desktop.org\n"
+"POT-Creation-Date: 2020-01-14 20:58+0100\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2019\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2019\n"
 "Language-Team: Korean (https://www.transifex.com/mate/teams/13566/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,231 +25,271 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Accessible name for the factorize button
-#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:9
+#: src/buttons-advanced.ui:27 src/buttons-programming.ui:1905
 msgid "Factorize"
 msgstr "인수 분해"
 
 #. Label on the solve button (clicking this solves the displayed calculation)
-#: ../data/buttons-advanced.ui.h:4 ../data/buttons-basic.ui.h:2
-#: ../data/buttons-financial.ui.h:77 ../data/buttons-programming.ui.h:13
+#: src/buttons-advanced.ui:270 src/buttons-basic.ui:213
+#: src/buttons-financial.ui:2100 src/buttons-programming.ui:2048
 msgid "="
 msgstr "="
 
-#: ../data/buttons-advanced.ui.h:5 ../data/buttons-basic.ui.h:3
-#: ../data/buttons-financial.ui.h:78 ../data/buttons-programming.ui.h:14
+#: src/buttons-advanced.ui:288 src/buttons-basic.ui:262
+#: src/buttons-financial.ui:2149 src/buttons-programming.ui:2066
 msgid "Clear"
 msgstr "지우기"
 
 #. Accessible name for the scientific exponent button
-#: ../data/buttons-advanced.ui.h:7
+#: src/buttons-advanced.ui:321
 msgid "Scientific Exponent"
 msgstr "과학 지수"
 
 #. The label on the memory button
-#: ../data/buttons-advanced.ui.h:9 ../data/buttons-financial.ui.h:73
-#: ../data/buttons-programming.ui.h:18
+#: src/buttons-advanced.ui:390 src/buttons-financial.ui:1867
+#: src/buttons-programming.ui:2319
 msgid "x"
 msgstr "x"
 
 #. Accessible name for the memory button
 #. Accessible name for the memory value button
 #. Tooltip for the memory button
-#: ../data/buttons-advanced.ui.h:11 ../data/buttons-financial.ui.h:75
-#: ../src/math-buttons.c:232
+#: src/buttons-advanced.ui:417 src/buttons-financial.ui:1894
+#: src/math-buttons.c:236
 msgid "Memory"
 msgstr "메모리"
 
 #. Accessible name for the exponentiation (x to the power of y) button
-#: ../data/buttons-advanced.ui.h:13 ../data/buttons-basic.ui.h:6
-#: ../data/buttons-financial.ui.h:100 ../data/buttons-programming.ui.h:32
+#: src/buttons-advanced.ui:503 src/buttons-basic.ui:339
+#: src/buttons-financial.ui:2331 src/buttons-programming.ui:2644
 msgid "Exponent"
 msgstr "지수"
 
-#: ../data/buttons-advanced.ui.h:14 ../data/buttons-basic.ui.h:4
-#: ../data/buttons-financial.ui.h:101
+#: src/buttons-advanced.ui:529 src/buttons-basic.ui:294
+#: src/buttons-financial.ui:2357
 msgid "Undo"
 msgstr "취소"
 
-#: ../data/buttons-advanced.ui.h:15
+#: src/buttons-advanced.ui:663
 msgid "asin"
 msgstr "asin"
 
-#: ../data/buttons-advanced.ui.h:16
+#: src/buttons-advanced.ui:677
 msgid "atan"
 msgstr "atan"
 
-#: ../data/buttons-advanced.ui.h:17
+#: src/buttons-advanced.ui:705
 msgid "acos"
 msgstr "acos"
 
 #. Accessible name for the store value button
-#: ../data/buttons-advanced.ui.h:19 ../data/buttons-programming.ui.h:20
+#: src/buttons-advanced.ui:764 src/buttons-programming.ui:2343
 msgid "Store"
 msgstr "저장"
 
 #. Accessible name for the inverse button
-#: ../data/buttons-advanced.ui.h:21 ../data/buttons-programming.ui.h:30
+#: src/buttons-advanced.ui:791 src/buttons-programming.ui:2618
 msgid "Inverse"
 msgstr "역 삼각함수"
 
 #. Accessible name for the factorial button
-#: ../data/buttons-advanced.ui.h:23 ../data/buttons-programming.ui.h:28
+#: src/buttons-advanced.ui:817 src/buttons-programming.ui:2591
 msgid "Factorial"
 msgstr "팩토리얼"
 
 #. Accessible name for the absolute value button
-#: ../data/buttons-advanced.ui.h:25 ../data/buttons-programming.ui.h:11
+#: src/buttons-advanced.ui:844 src/buttons-programming.ui:1947
 msgid "Absolute Value"
 msgstr "절대값"
 
 #. Accessible name for the superscript mode button
-#: ../data/buttons-advanced.ui.h:27 ../data/buttons-programming.ui.h:16
+#: src/buttons-advanced.ui:885 src/buttons-programming.ui:2279
 msgid "Superscript"
 msgstr "위 첨자"
 
 #. Accessible name for the subscript mode button
-#: ../data/buttons-advanced.ui.h:29 ../data/buttons-programming.ui.h:34
+#: src/buttons-advanced.ui:911 src/buttons-programming.ui:2715
 msgid "Subscript"
 msgstr "아래 첨자"
 
+#: src/buttons-advanced.ui:966
+msgid "const"
+msgstr ""
+
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
-#: ../data/buttons-financial.ui.h:2 ../src/math-buttons.c:256
+#: src/buttons-financial.ui:8 src/math-buttons.c:260
 msgid "Compounding Term"
 msgstr "복리 기간"
 
-#: ../data/buttons-financial.ui.h:3 ../data/buttons-programming.ui.h:3
+#: src/buttons-financial.ui:28 src/buttons-financial.ui:211
+#: src/buttons-financial.ui:394 src/buttons-financial.ui:577
+#: src/buttons-financial.ui:730 src/buttons-financial.ui:914
+#: src/buttons-financial.ui:1098 src/buttons-financial.ui:1282
+#: src/buttons-financial.ui:1466 src/buttons-financial.ui:1679
+#: src/buttons-programming.ui:29
 msgid "_Cancel"
 msgstr "취소(_C)"
 
+#. Compounding Term Dialog: Calculate button
+#. Double-Declining Depreciation Dialog: Calculate button
+#. Future Value Dialog: Calculate button
+#. Gross Profit Margin Dialog: Calculate button
+#. Periodic Payment Dialog: Calculate button
+#. Present Value Dialog: Calculate button
+#. Periodic Interest Rate Dialog: Calculate button
+#. Straight-Line Depreciation Dialog: Calculate button
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Calculate result button
 #. Payment Period Dialog: Button to calculate result
-#: ../data/buttons-financial.ui.h:5
+#: src/buttons-financial.ui:43 src/buttons-financial.ui:226
+#: src/buttons-financial.ui:409 src/buttons-financial.ui:592
+#: src/buttons-financial.ui:745 src/buttons-financial.ui:929
+#: src/buttons-financial.ui:1113 src/buttons-financial.ui:1297
+#: src/buttons-financial.ui:1481 src/buttons-financial.ui:1694
 msgid "C_alculate"
 msgstr "계산(_A)"
 
 #. Compounding Term Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:7
+#: src/buttons-financial.ui:122
 msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
 msgstr "각 복리 기간마다 이자율이 고정되어 있을 때, 투자금을 미래 가치로 올리는 데 필요한 복리 기간을 계산합니다."
 
+#. Compounding Term Dialog: Label before periodic interest rate input
+#. Future Value Dialog: Label before periodic interest rate input
+#. Periodic Payment Dialog: Label before periodic interest rate input
+#. Present Value Dialog: Label before periodic interest rate input
 #. Payment Period Dialog: Label before periodic interest rate input
-#: ../data/buttons-financial.ui.h:9
+#: src/buttons-financial.ui:136 src/buttons-financial.ui:486
+#: src/buttons-financial.ui:853 src/buttons-financial.ui:1037
+#: src/buttons-financial.ui:1799
 msgid "Periodic Interest _Rate:"
 msgstr "정기 이율(_R):"
 
+#. Compounding Term Dialog: Label before future value input
 #. Periodic Interest Rate Dialog: Label before future value input
-#: ../data/buttons-financial.ui.h:11
+#: src/buttons-financial.ui:150 src/buttons-financial.ui:1235
 msgid "_Future Value:"
 msgstr "미래 가치(_F):"
 
+#. Compounding Term Dialog: Label before present value input
 #. Periodic Interest Rate Dialog: Label before present value input
-#: ../data/buttons-financial.ui.h:13
+#: src/buttons-financial.ui:164 src/buttons-financial.ui:1207
 msgid "Present _Value:"
 msgstr "현재 가치(_V):"
 
 #. Title of Double-Declining Depreciation dialog
-#: ../data/buttons-financial.ui.h:15
+#: src/buttons-financial.ui:191
 msgid "Double-Declining Depreciation"
 msgstr "이중 감가상각"
 
 #. Double-Declining Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:17
+#: src/buttons-financial.ui:260
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
 msgstr "이중 감가상각 방법을 이용해 지정한 기간 동안 자산의 감가상각을 계산합니다."
 
-#. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:19
+#. Double-Declining Depreciation Dialog: Label before life input
+#. Straight-Line Depreciation Dialog: Label before life input
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#: src/buttons-financial.ui:319 src/buttons-financial.ui:1388
+#: src/buttons-financial.ui:1527
 msgid "_Life:"
 msgstr "내용 연수(_L):"
 
-#. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:21
+#. Double-Declining Depreciation Dialog: Label before period input
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#: src/buttons-financial.ui:333 src/buttons-financial.ui:1513
 msgid "_Period:"
 msgstr "기간(_P):"
 
+#. Double-Declining Depreciation Dialog: Label before cost input
 #. Gross Profit Margin Dialog: Label before cost input
-#: ../data/buttons-financial.ui.h:23
+#: src/buttons-financial.ui:347 src/buttons-financial.ui:670
 msgid "C_ost:"
 msgstr "취득 원가(_O):"
 
 #. Title of Future Value dialog
 #. Tooltip for the future value button
-#: ../data/buttons-financial.ui.h:25 ../src/math-buttons.c:262
+#: src/buttons-financial.ui:374 src/math-buttons.c:266
 msgid "Future Value"
 msgstr "미래 가치"
 
+#. Future Value Dialog: Label before number of periods input
 #. Present Value Dialog: Label before number of periods input
-#: ../data/buttons-financial.ui.h:27
+#: src/buttons-financial.ui:500 src/buttons-financial.ui:1023
 msgid "_Number of Periods:"
 msgstr "기간 수(_N):"
 
 #. Future Value Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:29
+#: src/buttons-financial.ui:516
 msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
 msgstr "동일한 이율의 이자가 일정 기간 동안 있을 때 투자금의 미래 가치를 계산합니다."
 
+#. Future Value Dialog: Label before periodic payment input
+#. Present Value Dialog: Label before periodic payment input
 #. Payment Period Dialog: Label before periodic payment input
-#: ../data/buttons-financial.ui.h:31
+#: src/buttons-financial.ui:530 src/buttons-financial.ui:1051
+#: src/buttons-financial.ui:1771
 msgid "_Periodic Payment:"
 msgstr "정기 상환(_P):"
 
 #. Title of Gross Profit Margin dialog
 #. Tooltip for the gross profit margin button
-#: ../data/buttons-financial.ui.h:33 ../src/math-buttons.c:283
+#: src/buttons-financial.ui:557 src/math-buttons.c:287
 msgid "Gross Profit Margin"
 msgstr "총 이익률"
 
 #. Gross Profit Margin Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:35
+#: src/buttons-financial.ui:626
 msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
 msgstr "제품의 취득 원가와 희망하는 총 이익률에 따라 제품의 판매 가격을 계산합니다."
 
 #. Gross Profit Margin Dialog: Label before margin input
-#: ../data/buttons-financial.ui.h:37
+#: src/buttons-financial.ui:684
 msgid "_Margin:"
 msgstr "이익(_M):"
 
 #. Title of Periodic Payment dialog
 #. Tooltip for the periodic payment button
-#: ../data/buttons-financial.ui.h:39 ../src/math-buttons.c:280
+#: src/buttons-financial.ui:710 src/math-buttons.c:284
 msgid "Periodic Payment"
 msgstr "정기 상환"
 
 #. Periodic Payment Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:41
+#: src/buttons-financial.ui:779
 msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
 msgstr "대출의 정기 이자를 계산합니다. 이자는 각 이자 기간의 마지막에 지불합니다."
 
+#. Periodic Payment Dialog: Label before term input
 #. Periodic Interest Rate Dialog: Label before term input
-#: ../data/buttons-financial.ui.h:43
+#: src/buttons-financial.ui:839 src/buttons-financial.ui:1221
 msgid "_Term:"
 msgstr "대출 기간(_T):"
 
 #. Periodic Payment Dialog: Label before principal input
-#: ../data/buttons-financial.ui.h:45
+#: src/buttons-financial.ui:867
 msgid "_Principal:"
 msgstr "원금(_P):"
 
 #. Title of Present Value dialog
 #. Tooltip for the present value button
-#: ../data/buttons-financial.ui.h:47 ../src/math-buttons.c:277
+#: src/buttons-financial.ui:894 src/math-buttons.c:281
 msgid "Present Value"
 msgstr "현재 가치"
 
 #. Present Value Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:49
+#: src/buttons-financial.ui:963
 msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
@@ -259,34 +298,36 @@ msgstr "일정 기간의 이자 지급 기간만큼 할인한 지급액을 기�
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
-#: ../data/buttons-financial.ui.h:51 ../src/math-buttons.c:274
+#: src/buttons-financial.ui:1078 src/math-buttons.c:278
 msgid "Periodic Interest Rate"
 msgstr "정기 이율"
 
 #. Periodic Interest Rate Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:53
+#: src/buttons-financial.ui:1147
 msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
 msgstr "정해진 복리 기간 동안 투자금을 미래 가치로 올리는 데 필요한 정기 이자율을 계산합니다."
 
 #. Title of Straight-Line Depreciation dialog
-#: ../data/buttons-financial.ui.h:55
+#: src/buttons-financial.ui:1262
 msgid "Straight-Line Depreciation"
 msgstr "정액 감가상각"
 
-#. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:57
+#. Straight-Line Depreciation Dialog: Label before cost input
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#: src/buttons-financial.ui:1329 src/buttons-financial.ui:1555
 msgid "_Cost:"
 msgstr "비용(_C):"
 
-#. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:59
+#. Straight-Line Depreciation Dialog: Label before salvage input
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#: src/buttons-financial.ui:1402 src/buttons-financial.ui:1541
 msgid "_Salvage:"
 msgstr "잔존 가치(_S):"
 
 #. Straight-Line Depreciation Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:61
+#: src/buttons-financial.ui:1418
 msgid ""
 "Calculates the straight-line depreciation of an asset for one period. The "
 "straight-line method of depreciation divides the depreciable cost evenly "
@@ -296,13 +337,13 @@ msgstr ""
 "정액 감가상각 방법을 이용해 지정한 기간 동안 자산의 감가상각을 계산합니다. 정액 감가상각 방법에서는 자산의 취득 원가를 내용 연수로 "
 "균등하게 나눕니다. 내용 연수는 자산의 감가상각을 계산하는 기간이 몇 회 되었느냐를 뜻하고, 보통 연 단위입니다."
 
-#. Title of Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:63
+#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#: src/buttons-financial.ui:1446
 msgid "Sum-of-the-Years'-Digits Depreciation"
 msgstr "연수합계 감가상각"
 
-#. Sum-of-the-Years
-#: ../data/buttons-financial.ui.h:65
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#: src/buttons-financial.ui:1631
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
@@ -315,17 +356,17 @@ msgstr ""
 "단위입니다."
 
 #. Title of Payment Period dialog
-#: ../data/buttons-financial.ui.h:67
+#: src/buttons-financial.ui:1659
 msgid "Payment Period"
 msgstr "상환 주기"
 
 #. Payment Period Dialog: Label before future value input
-#: ../data/buttons-financial.ui.h:69
+#: src/buttons-financial.ui:1785
 msgid "Future _Value:"
 msgstr "미래 가치(_V):"
 
 #. Payment Period Dialog: Description of calculation
-#: ../data/buttons-financial.ui.h:71
+#: src/buttons-financial.ui:1815
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
 "of an ordinary annuity, to accumulate a future value, at a periodic interest"
@@ -336,14 +377,14 @@ msgstr "대출 기간 동안 정해진 이자로 정해진 미래 가치를 달�
 #. investment of present value pv to a future value of fv, at a fixed interest
 #. rate of int per compounding period. See also:
 #. http://en.wikipedia.org/wiki/Compound_interest
-#: ../data/buttons-financial.ui.h:80
+#: src/buttons-financial.ui:2166
 msgid "Ctrm"
 msgstr "Ctrm"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
 #. time, using the double-declining balance method. See also:
 #. http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:82
+#: src/buttons-financial.ui:2181
 msgid "Ddb"
 msgstr "Ddb"
 
@@ -351,7 +392,7 @@ msgstr "Ddb"
 #. payments, each of amount pmt, at a periodic interest rate of int, over the
 #. number of payment periods in the term. See also:
 #. http://en.wikipedia.org/wiki/Future_value
-#: ../data/buttons-financial.ui.h:84
+#: src/buttons-financial.ui:2196
 msgid "Fv"
 msgstr "Fv"
 
@@ -359,13 +400,18 @@ msgstr "Fv"
 #. of an ordinary annuity, to accumulate a future value of fv, at a periodic
 #. interest rate of int. Each payment is equal to amount pmt. See also:
 #. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
-#: ../data/buttons-financial.ui.h:86
+#: src/buttons-financial.ui:2211
 msgid "Term"
 msgstr "Term"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years
-#: ../data/buttons-financial.ui.h:88
+#. time, using the Sum-Of-The-Years'-Digits method. This method of
+#. depreciation accelerates the rate of depreciation, so that more
+#. depreciation expense occurs in earlier periods than in later ones. The
+#. depreciable cost is cost - salvage. The useful life is the number of
+#. periods, typically years, over which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
+#: src/buttons-financial.ui:2226
 msgid "Syd"
 msgstr "Syd"
 
@@ -375,14 +421,14 @@ msgstr "Syd"
 #. asset. The useful life is the number of periods, typically years, over
 #. which an asset is depreciated. See also:
 #. http://en.wikipedia.org/wiki/Depreciation
-#: ../data/buttons-financial.ui.h:90
+#: src/buttons-financial.ui:2241
 msgid "Sln"
 msgstr "Sln"
 
 #. Calculates the periodic interest necessary to increase an investment of
 #. present value pv to a future value of fv, over the number of compounding
 #. periods in term. See also: http://en.wikipedia.org/wiki/Interest
-#: ../data/buttons-financial.ui.h:92
+#: src/buttons-financial.ui:2256
 msgid "Rate"
 msgstr "Rate"
 
@@ -390,384 +436,500 @@ msgstr "Rate"
 #. payments, each of amount pmt, discounted at a periodic interest rate of
 #. int, over the number of payment periods in the term. See also:
 #. http://en.wikipedia.org/wiki/Present_value
-#: ../data/buttons-financial.ui.h:94
+#: src/buttons-financial.ui:2271
 msgid "Pv"
 msgstr "Pv"
 
 #. Calculates the amount of the periodic payment of a loan, where payments are
 #. made at the end of each payment period. See also:
 #. http://en.wikipedia.org/wiki/Amortization_schedule
-#: ../data/buttons-financial.ui.h:96
+#: src/buttons-financial.ui:2286
 msgid "Pmt"
 msgstr "Pmt"
 
 #. Calculates the resale price of a product, based on the product cost and the
 #. wanted gross profit margin. See also:
 #. http://en.wikipedia.org/wiki/Gross_profit_margin
-#: ../data/buttons-financial.ui.h:98
+#: src/buttons-financial.ui:2301
 msgid "Gpm"
 msgstr "Gpm"
 
 #. Title of insert character code dialog
 #. Tooltip for the insert character code button
-#: ../data/buttons-programming.ui.h:2 ../src/math-buttons.c:235
+#: src/buttons-programming.ui:8 src/math-buttons.c:239
 msgid "Insert Character Code"
 msgstr "문자 코드 입력"
 
 #. Insert ASCII dialog: Button to insert selected character
-#: ../data/buttons-programming.ui.h:5
+#: src/buttons-programming.ui:44
 msgid "_Insert"
 msgstr "넣기(_I)"
 
 #. Insert ASCII dialog: Label before character entry
-#: ../data/buttons-programming.ui.h:7
+#: src/buttons-programming.ui:74
 msgid "Ch_aracter:"
 msgstr "문자(_A):"
 
 #. Accessible name for the shift left button
-#: ../data/buttons-programming.ui.h:22
+#: src/buttons-programming.ui:2482
 msgid "Shift Left"
 msgstr "왼쪽으로 쉬프트"
 
 #. Accessible name for the shift right button
-#: ../data/buttons-programming.ui.h:24
+#: src/buttons-programming.ui:2531
 msgid "Shift Right"
 msgstr "오른쪽으로 쉬프트"
 
 #. Accessible name for the insert character button
-#: ../data/buttons-programming.ui.h:26
+#: src/buttons-programming.ui:2550
 msgid "Insert Character"
 msgstr "문자 입력"
 
 #. Word size combo: 8 bits
-#: ../data/preferences.ui.h:2
+#: src/preferences.ui:40
 msgid "8-bit"
 msgstr "8비트"
 
 #. Word size combo: 16 bits
-#: ../data/preferences.ui.h:4
+#: src/preferences.ui:44
 msgid "16-bit"
 msgstr "16비트"
 
 #. Word size combo: 32 bits
-#: ../data/preferences.ui.h:6
+#: src/preferences.ui:48
 msgid "32-bit"
 msgstr "32비트"
 
 #. Word size combo: 64 bits
-#: ../data/preferences.ui.h:8
+#: src/preferences.ui:52
 msgid "64-bit"
 msgstr "64비트"
 
 #. Title of preferences dialog
-#: ../data/preferences.ui.h:9 ../src/math-preferences.c:239
+#: src/preferences.ui:60 src/math-preferences.c:239
 msgid "Preferences"
 msgstr "기본 설정"
 
-#: ../data/preferences.ui.h:10
+#: src/preferences.ui:80
 msgid "_Close"
 msgstr "닫기(_C)"
 
 #. Preferences dialog: Label for angle unit combo box
-#: ../data/preferences.ui.h:12
+#: src/preferences.ui:112
 msgid "_Angle units:"
 msgstr "각도 단위(_A):"
 
 #. Preferences dialog: Label for display format combo box
-#: ../data/preferences.ui.h:14
+#: src/preferences.ui:126
 msgid "Number _Format:"
 msgstr "숫자 형식(_F):"
 
 #. Preferences dialog: label for word size combo box
-#: ../data/preferences.ui.h:16
+#: src/preferences.ui:176
 msgid "Word _size:"
 msgstr "워드 크기(_S):"
 
 #. Preferences dialog: label for show trailing zeroes check button
-#: ../data/preferences.ui.h:18
+#: src/preferences.ui:199
 msgid "Show trailing _zeroes"
 msgstr "마지막 0 표시(_Z)"
 
 #. Preferences dialog: label for show thousands separator check button
-#: ../data/preferences.ui.h:20
+#: src/preferences.ui:215
 msgid "Show _thousands separators"
 msgstr "천단위 자리수 구분 표시(_T)"
 
-#: ../data/mate-calc.appdata.xml.in.h:1
+#: data/mate-calc.appdata.xml.in:7
+msgid "MATE Calc"
+msgstr ""
+
+#: data/mate-calc.appdata.xml.in:8
 msgid "MATE Desktop calculator"
 msgstr "마테 데스크톱 계산기 "
 
-#: ../data/mate-calc.appdata.xml.in.h:2
+#: data/mate-calc.appdata.xml.in:10
 msgid ""
-"<p> MATE Calc is a powerful graphical calculator with financial, logical and"
-" scientific modes. It uses a multiple precision package to do its arithmetic"
-" to give a high degree of accuracy. </p> <p> MATE Calc is a fork of GNOME "
-"Calc and part of the MATE Desktop Environment. If you would like to know "
-"more about MATE and MATE Calc, please visit the project's home page. </p>"
+"MATE Calc is a powerful graphical calculator with financial, logical and "
+"scientific modes. It uses a multiple precision package to do its arithmetic "
+"to give a high degree of accuracy."
 msgstr ""
-"<p> 마테 계산기는 금융, 로직, 과학 모드를 지원하는 강력한 계산기입니다. 높은 정밀도를 위해서 다중 정밀 패키지를 "
-"사용합니다.</p> <p> 마테 계산기는 그놈 계산기의 포크이며 마테 데스크톱 환경의 일부입니다. 마테와 마테 계산기에 관해 더 알고자 "
-"하시면 , 마테 프로젝트의 홈페이지를 방문해보세요.</p>"
 
-#: ../data/mate-calc.desktop.in.h:1 ../src/math-window.c:261
+#: data/mate-calc.appdata.xml.in:15
+msgid ""
+"MATE Calc is a fork of GNOME Calc and part of the MATE Desktop Environment. "
+"If you would like to know more about MATE and MATE Calc, please visit the "
+"project's home page."
+msgstr ""
+
+#: data/mate-calc.desktop.in:3 src/math-window.c:261
 msgid "MATE Calculator"
 msgstr "마테 계산기 "
 
 #. Title of main window
-#: ../data/mate-calc.desktop.in.h:2 ../src/math-window.c:568
+#: data/mate-calc.desktop.in:4 src/math-window.c:568
 msgid "Calculator"
 msgstr "계산기"
 
-#: ../data/mate-calc.desktop.in.h:3
+#: data/mate-calc.desktop.in:5
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "일반 연산, 과학, 재무용 계산을 합니다"
 
-#: ../src/currency-manager.c:30
+#. Translators: Do NOT translate or transliterate this text (this is an icon
+#. file name)!
+#: data/mate-calc.desktop.in:8
+msgid "accessories-calculator"
+msgstr ""
+
+#. Translators: Search terms to find this application. Do NOT translate or
+#. localize the semicolons! The list MUST also end with a semicolon!
+#: data/mate-calc.desktop.in:13
+msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
+msgstr ""
+
+#: data/org.mate.calc.gschema.xml:25
+msgid "Accuracy value"
+msgstr "유효 숫자"
+
+#: data/org.mate.calc.gschema.xml:26
+msgid "The number of digits displayed after the numeric point"
+msgstr "소수점 뒤에 표시할 숫자 개수"
+
+#: data/org.mate.calc.gschema.xml:31
+msgid "Word size"
+msgstr "워드 크기"
+
+#: data/org.mate.calc.gschema.xml:32
+msgid "The size of the words used in bitwise operations"
+msgstr "비트 처리 기능에서 사용할 워드 크기"
+
+#: data/org.mate.calc.gschema.xml:37
+msgid "Numeric Base"
+msgstr "진법"
+
+#: data/org.mate.calc.gschema.xml:38
+msgid "The numeric base"
+msgstr "진법"
+
+#: data/org.mate.calc.gschema.xml:42
+msgid "Show Thousands Separators"
+msgstr "천단위 자리수 구분 표시"
+
+#: data/org.mate.calc.gschema.xml:43
+msgid "Indicates whether thousands separators are shown in large numbers."
+msgstr "큰 수에서 천단위 자리수 표시를 사용할 지 여부."
+
+#: data/org.mate.calc.gschema.xml:47
+msgid "Show Trailing Zeroes"
+msgstr "마지막 0 표시"
+
+#: data/org.mate.calc.gschema.xml:48
+msgid ""
+"Indicates whether any trailing zeroes after the numeric point should be "
+"shown in the display value."
+msgstr "표시하는 값에서 소수점 뒤에 0을 표시할 지 여부."
+
+#: data/org.mate.calc.gschema.xml:52
+msgid "Number format"
+msgstr "숫자 형식"
+
+#: data/org.mate.calc.gschema.xml:53
+msgid "The format to display numbers in"
+msgstr "숫자를 표시할 형식"
+
+#: data/org.mate.calc.gschema.xml:57
+msgid "Angle units"
+msgstr "각도 단위"
+
+#: data/org.mate.calc.gschema.xml:58
+msgid "The angle units to use"
+msgstr "사용할 각도 단위"
+
+#: data/org.mate.calc.gschema.xml:62
+msgid "Button mode"
+msgstr "단추 모드"
+
+#: data/org.mate.calc.gschema.xml:63
+msgid "The button mode"
+msgstr "단추 모드"
+
+#: data/org.mate.calc.gschema.xml:67
+msgid "Source currency"
+msgstr "원본 통화"
+
+#: data/org.mate.calc.gschema.xml:68
+msgid "Currency of the current calculation"
+msgstr "현재 계산값의 통화 단위"
+
+#: data/org.mate.calc.gschema.xml:72
+msgid "Target currency"
+msgstr "대상 통화"
+
+#: data/org.mate.calc.gschema.xml:73
+msgid "Currency to convert the current calculation into"
+msgstr "현재 계산값을 변환할 통화 단위"
+
+#: data/org.mate.calc.gschema.xml:77
+msgid "Source units"
+msgstr "원본 단위"
+
+#: data/org.mate.calc.gschema.xml:78
+msgid "Units of the current calculation"
+msgstr "현재 계산값의 단위"
+
+#: data/org.mate.calc.gschema.xml:82
+msgid "Target units"
+msgstr "대상 단위"
+
+#: data/org.mate.calc.gschema.xml:83
+msgid "Units to convert the current calculation into"
+msgstr "현재 계산값을 변환할 대상 단위"
+
+#: src/currency-manager.c:30
 msgid "UAE Dirham"
 msgstr "아랍에미리트연합 디르함"
 
-#: ../src/currency-manager.c:31
+#: src/currency-manager.c:31
 msgid "Australian Dollar"
 msgstr "호주 달러"
 
-#: ../src/currency-manager.c:32
+#: src/currency-manager.c:32
 msgid "Bulgarian Lev"
 msgstr "불가리아 레프"
 
-#: ../src/currency-manager.c:33
+#: src/currency-manager.c:33
 msgid "Bahraini Dinar"
 msgstr "바레인 디나르"
 
-#: ../src/currency-manager.c:34
+#: src/currency-manager.c:34
 msgid "Brunei Dollar"
 msgstr "브루나이 달러"
 
-#: ../src/currency-manager.c:35
+#: src/currency-manager.c:35
 msgid "Brazilian Real"
 msgstr "브라질 레알"
 
-#: ../src/currency-manager.c:36
+#: src/currency-manager.c:36
 msgid "Botswana Pula"
 msgstr "보츠와나 풀라"
 
-#: ../src/currency-manager.c:37
+#: src/currency-manager.c:37
 msgid "Canadian Dollar"
 msgstr "캐나다 달러"
 
-#: ../src/currency-manager.c:38
+#: src/currency-manager.c:38
 msgid "CFA Franc"
 msgstr "CFA 프랑"
 
-#: ../src/currency-manager.c:39
+#: src/currency-manager.c:39
 msgid "Swiss Franc"
 msgstr "스위스 프랑"
 
-#: ../src/currency-manager.c:40
+#: src/currency-manager.c:40
 msgid "Chilean Peso"
 msgstr "칠레 페소"
 
-#: ../src/currency-manager.c:41
+#: src/currency-manager.c:41
 msgid "Chinese Yuan"
 msgstr "중국 위안"
 
-#: ../src/currency-manager.c:42
+#: src/currency-manager.c:42
 msgid "Colombian Peso"
 msgstr "콜롬비아 페소"
 
-#: ../src/currency-manager.c:43
+#: src/currency-manager.c:43
 msgid "Czech Koruna"
 msgstr "체코 코루나"
 
-#: ../src/currency-manager.c:44
+#: src/currency-manager.c:44
 msgid "Danish Krone"
 msgstr "덴마크 크로네"
 
-#: ../src/currency-manager.c:45
+#: src/currency-manager.c:45
 msgid "Algerian Dinar"
 msgstr "알제리 디나르"
 
-#: ../src/currency-manager.c:46
+#: src/currency-manager.c:46
 msgid "Estonian Kroon"
 msgstr "에스토니아 크룬"
 
-#: ../src/currency-manager.c:47
+#: src/currency-manager.c:47
 msgid "Euro"
 msgstr "유로"
 
-#: ../src/currency-manager.c:48
+#: src/currency-manager.c:48
 msgid "Pound Sterling"
 msgstr "영국 파운드"
 
-#: ../src/currency-manager.c:49
+#: src/currency-manager.c:49
 msgid "Hong Kong Dollar"
 msgstr "홍콩 달러"
 
-#: ../src/currency-manager.c:50
+#: src/currency-manager.c:50
 msgid "Croatian Kuna"
 msgstr "크로아티아 쿠나"
 
-#: ../src/currency-manager.c:51
+#: src/currency-manager.c:51
 msgid "Hungarian Forint"
 msgstr "헝가리 포린트"
 
-#: ../src/currency-manager.c:52
+#: src/currency-manager.c:52
 msgid "Indonesian Rupiah"
 msgstr "인도네시아 루피아"
 
-#: ../src/currency-manager.c:53
+#: src/currency-manager.c:53
 msgid "Israeli New Shekel"
 msgstr "이스라엘 셰켈 신화폐"
 
-#: ../src/currency-manager.c:54
+#: src/currency-manager.c:54
 msgid "Indian Rupee"
 msgstr "인도 루피"
 
-#: ../src/currency-manager.c:55
+#: src/currency-manager.c:55
 msgid "Iranian Rial"
 msgstr "이란 리알"
 
-#: ../src/currency-manager.c:56
+#: src/currency-manager.c:56
 msgid "Icelandic Krona"
 msgstr "아이슬랜드 크로나"
 
-#: ../src/currency-manager.c:57
+#: src/currency-manager.c:57
 msgid "Japanese Yen"
 msgstr "일본 엔"
 
-#: ../src/currency-manager.c:58
+#: src/currency-manager.c:58
 msgid "South Korean Won"
 msgstr "대한민국 원"
 
-#: ../src/currency-manager.c:59
+#: src/currency-manager.c:59
 msgid "Kuwaiti Dinar"
 msgstr "쿠웨이트 디나르"
 
-#: ../src/currency-manager.c:60
+#: src/currency-manager.c:60
 msgid "Kazakhstani Tenge"
 msgstr "카자흐스탄 텡게"
 
-#: ../src/currency-manager.c:61
+#: src/currency-manager.c:61
 msgid "Sri Lankan Rupee"
 msgstr "스리랑카 루피"
 
-#: ../src/currency-manager.c:62
+#: src/currency-manager.c:62
 msgid "Lithuanian Litas"
 msgstr "리투아니아 리타스"
 
-#: ../src/currency-manager.c:63
+#: src/currency-manager.c:63
 msgid "Latvian Lats"
 msgstr "라트비아 라트"
 
-#: ../src/currency-manager.c:64
+#: src/currency-manager.c:64
 msgid "Libyan Dinar"
 msgstr "리비아 디나르"
 
-#: ../src/currency-manager.c:65
+#: src/currency-manager.c:65
 msgid "Mauritian Rupee"
 msgstr "모리셔스 루피"
 
-#: ../src/currency-manager.c:66
+#: src/currency-manager.c:66
 msgid "Mexican Peso"
 msgstr "멕시코 페소"
 
-#: ../src/currency-manager.c:67
+#: src/currency-manager.c:67
 msgid "Malaysian Ringgit"
 msgstr "말레이시아 링깃"
 
-#: ../src/currency-manager.c:68
+#: src/currency-manager.c:68
 msgid "Norwegian Krone"
 msgstr "노르웨이 크로네"
 
-#: ../src/currency-manager.c:69
+#: src/currency-manager.c:69
 msgid "Nepalese Rupee"
 msgstr "네팔 루피"
 
-#: ../src/currency-manager.c:70
+#: src/currency-manager.c:70
 msgid "New Zealand Dollar"
 msgstr "뉴질랜드 달러"
 
-#: ../src/currency-manager.c:71
+#: src/currency-manager.c:71
 msgid "Omani Rial"
 msgstr "오만 리알"
 
-#: ../src/currency-manager.c:72
+#: src/currency-manager.c:72
 msgid "Peruvian Nuevo Sol"
 msgstr "페루 누에보솔"
 
-#: ../src/currency-manager.c:73
+#: src/currency-manager.c:73
 msgid "Philippine Peso"
 msgstr "필리핀 페소"
 
-#: ../src/currency-manager.c:74
+#: src/currency-manager.c:74
 msgid "Pakistani Rupee"
 msgstr "파키스탄 루피"
 
-#: ../src/currency-manager.c:75
+#: src/currency-manager.c:75
 msgid "Polish Zloty"
 msgstr "폴란드 즈워티"
 
-#: ../src/currency-manager.c:76
+#: src/currency-manager.c:76
 msgid "Qatari Riyal"
 msgstr "카타르 리얄"
 
-#: ../src/currency-manager.c:77
+#: src/currency-manager.c:77
 msgid "New Romanian Leu"
 msgstr "루마니아 레우 신화폐"
 
-#: ../src/currency-manager.c:78
+#: src/currency-manager.c:78
 msgid "Russian Rouble"
 msgstr "러시아 루블"
 
-#: ../src/currency-manager.c:79
+#: src/currency-manager.c:79
 msgid "Saudi Riyal"
 msgstr "사우디 리얄"
 
-#: ../src/currency-manager.c:80
+#: src/currency-manager.c:80
 msgid "Swedish Krona"
 msgstr "스웨덴 크로나"
 
-#: ../src/currency-manager.c:81
+#: src/currency-manager.c:81
 msgid "Singapore Dollar"
 msgstr "싱가포르 달러"
 
-#: ../src/currency-manager.c:82
+#: src/currency-manager.c:82
 msgid "Thai Baht"
 msgstr "태국 바트"
 
-#: ../src/currency-manager.c:83
+#: src/currency-manager.c:83
 msgid "Tunisian Dinar"
 msgstr "튀니지 디나르"
 
-#: ../src/currency-manager.c:84
+#: src/currency-manager.c:84
 msgid "New Turkish Lira"
 msgstr "터키 리라 신화폐"
 
-#: ../src/currency-manager.c:85
+#: src/currency-manager.c:85
 msgid "T&T Dollar (TTD)"
 msgstr "트리니다드토바고 달러(TTD)"
 
-#: ../src/currency-manager.c:86
+#: src/currency-manager.c:86
 msgid "US Dollar"
 msgstr "미국 달러"
 
-#: ../src/currency-manager.c:87
+#: src/currency-manager.c:87
 msgid "Uruguayan Peso"
 msgstr "우루과이 페소"
 
-#: ../src/currency-manager.c:88
+#: src/currency-manager.c:88
 msgid "Venezuelan Bolívar"
 msgstr "베네수엘라 볼리바르"
 
-#: ../src/currency-manager.c:89
+#: src/currency-manager.c:89
 msgid "South African Rand"
 msgstr "남아프리카공화국 랜드"
 
-#: ../src/financial.c:70
+#: src/financial.c:70
 msgid "Error: the number of periods must be positive"
 msgstr "오류: 기간은 0보다 커야 합니다"
 
 #. Description on how to use mate-calc displayed on command-line
-#: ../src/mate-calc.c:79
+#: src/mate-calc.c:79
 #, c-format
 msgid ""
 "Usage:\n"
@@ -778,7 +940,7 @@ msgstr ""
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
-#: ../src/mate-calc.c:87
+#: src/mate-calc.c:87
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -795,7 +957,7 @@ msgstr ""
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
-#: ../src/mate-calc.c:98
+#: src/mate-calc.c:98
 #, c-format
 msgid ""
 "GTK+ Options:\n"
@@ -815,7 +977,7 @@ msgstr ""
 "  --g-fatal-warnings              모든 경고를 치명적으로 취급"
 
 #. Description on mate-calc application options displayed on command-line
-#: ../src/mate-calc.c:112
+#: src/mate-calc.c:112
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -825,315 +987,320 @@ msgstr ""
 "  -s, --solve <equation>          주어진 식을 풉니다"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: ../src/mate-calc.c:156
+#: src/mate-calc.c:160
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "--solve 옵션에는 풀 식이 필요합니다"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: ../src/mate-calc.c:166
+#: src/mate-calc.c:171
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "알 수 없는 인수 '%s'"
 
 #. Tooltip for the Pi button
-#: ../src/math-buttons.c:95
+#: src/math-buttons.c:96
 msgid "Pi [Ctrl+P]"
 msgstr "Pi [Ctrl+P]"
 
 #. Tooltip for the Euler's Number button
-#: ../src/math-buttons.c:98
+#: src/math-buttons.c:99
 msgid "Euler’s Number"
 msgstr "오일러 수"
 
 #. Tooltip for the subscript button
-#: ../src/math-buttons.c:103
+#: src/math-buttons.c:104
 msgid "Subscript mode [Alt]"
 msgstr "아래 첨자 모드 [Alt]"
 
 #. Tooltip for the superscript button
-#: ../src/math-buttons.c:106
+#: src/math-buttons.c:107
 msgid "Superscript mode [Ctrl]"
 msgstr "위 첨자 모드 [Ctrl]"
 
 #. Tooltip for the scientific exponent button
-#: ../src/math-buttons.c:109
+#: src/math-buttons.c:110
 msgid "Scientific exponent [Ctrl+E]"
 msgstr "과학 지수 [Ctrl+E]"
 
 #. Tooltip for the add button
-#: ../src/math-buttons.c:112
+#: src/math-buttons.c:113
 msgid "Add [+]"
 msgstr "더하기 [+]"
 
 #. Tooltip for the subtract button
-#: ../src/math-buttons.c:115
+#: src/math-buttons.c:116
 msgid "Subtract [-]"
 msgstr "빼기 [-]"
 
 #. Tooltip for the multiply button
-#: ../src/math-buttons.c:118
+#: src/math-buttons.c:119
 msgid "Multiply [*]"
 msgstr "곱하기 [*]"
 
 #. Tooltip for the divide button
-#: ../src/math-buttons.c:121
+#: src/math-buttons.c:122
 msgid "Divide [/]"
 msgstr "나누기 [/]"
 
 #. Tooltip for the modulus divide button
-#: ../src/math-buttons.c:124
+#: src/math-buttons.c:125
 msgid "Modulus divide"
 msgstr "나머지 나누기"
 
 #. Tooltip for the additional functions button
-#: ../src/math-buttons.c:127
+#: src/math-buttons.c:128
 msgid "Additional Functions"
 msgstr "추가 기능"
 
+#. Tooltip for the additional constant button
+#: src/math-buttons.c:131
+msgid "Additional constants"
+msgstr ""
+
 #. Tooltip for the exponent button
-#: ../src/math-buttons.c:130
+#: src/math-buttons.c:134
 msgid "Exponent [^ or **]"
 msgstr "지수 [^ 또는 **]"
 
 #. Tooltip for the square button
-#: ../src/math-buttons.c:133
+#: src/math-buttons.c:137
 msgid "Square [Ctrl+2]"
 msgstr "제곱 [Ctrl+2]"
 
 #. Tooltip for the percentage button
-#: ../src/math-buttons.c:136
+#: src/math-buttons.c:140
 msgid "Percentage [%]"
 msgstr "퍼센트 [%]"
 
 #. Tooltip for the factorial button
-#: ../src/math-buttons.c:139
+#: src/math-buttons.c:143
 msgid "Factorial [!]"
 msgstr "팩토리얼 [!]"
 
 #. Tooltip for the absolute value button
-#: ../src/math-buttons.c:142
+#: src/math-buttons.c:146
 msgid "Absolute value [|]"
 msgstr "절대값 [|]"
 
 #. Tooltip for the complex argument component button
-#: ../src/math-buttons.c:145
+#: src/math-buttons.c:149
 msgid "Complex argument"
 msgstr "복소수 편각"
 
 #. Tooltip for the complex conjugate button
-#: ../src/math-buttons.c:148
+#: src/math-buttons.c:152
 msgid "Complex conjugate"
 msgstr "복소켤레"
 
 #. Tooltip for the root button
-#: ../src/math-buttons.c:151
+#: src/math-buttons.c:155
 msgid "Root [Ctrl+R]"
 msgstr "루트 [Ctrl+R]"
 
 #. Tooltip for the square root button
-#: ../src/math-buttons.c:154
+#: src/math-buttons.c:158
 msgid "Square root [Ctrl+R]"
 msgstr "제곱근 [Ctrl+R]"
 
 #. Tooltip for the logarithm button
-#: ../src/math-buttons.c:157
+#: src/math-buttons.c:161
 msgid "Logarithm"
 msgstr "로그"
 
 #. Tooltip for the natural logarithm button
-#: ../src/math-buttons.c:160
+#: src/math-buttons.c:164
 msgid "Natural Logarithm"
 msgstr "자연로그"
 
 #. Tooltip for the sine button
-#: ../src/math-buttons.c:163
+#: src/math-buttons.c:167
 msgid "Sine"
 msgstr "사인"
 
 #. Tooltip for the cosine button
-#: ../src/math-buttons.c:166
+#: src/math-buttons.c:170
 msgid "Cosine"
 msgstr "코사인"
 
 #. Tooltip for the tangent button
-#: ../src/math-buttons.c:169
+#: src/math-buttons.c:173
 msgid "Tangent"
 msgstr "탄젠트"
 
 #. Tooltip for the hyperbolic sine button
-#: ../src/math-buttons.c:172
+#: src/math-buttons.c:176
 msgid "Hyperbolic Sine"
 msgstr "하이퍼볼릭 사인"
 
 #. Tooltip for the hyperbolic cosine button
-#: ../src/math-buttons.c:175
+#: src/math-buttons.c:179
 msgid "Hyperbolic Cosine"
 msgstr "하이퍼볼릭 코사인"
 
 #. Tooltip for the hyperbolic tangent button
-#: ../src/math-buttons.c:178
+#: src/math-buttons.c:182
 msgid "Hyperbolic Tangent"
 msgstr "하이퍼볼릭 탄젠트"
 
 #. Tooltip for the inverse sine button
-#: ../src/math-buttons.c:181
+#: src/math-buttons.c:185
 msgid "Inverse Sine"
 msgstr "역사인"
 
 #. Tooltip for the inverse cosine button
-#: ../src/math-buttons.c:184
+#: src/math-buttons.c:188
 msgid "Inverse Cosine"
 msgstr "역코사인 "
 
 #. Tooltip for the inverse tangent button
-#: ../src/math-buttons.c:187
+#: src/math-buttons.c:191
 msgid "Inverse Tangent"
 msgstr "역탄젠트 "
 
 #. Tooltip for the inverse button
-#: ../src/math-buttons.c:190
+#: src/math-buttons.c:194
 msgid "Inverse [Ctrl+I]"
 msgstr "역 삼각함수 [Ctrl+I]"
 
 #. Tooltip for the boolean AND button
-#: ../src/math-buttons.c:193
+#: src/math-buttons.c:197
 msgid "Boolean AND"
 msgstr "불리언 AND"
 
 #. Tooltip for the boolean OR button
-#: ../src/math-buttons.c:196
+#: src/math-buttons.c:200
 msgid "Boolean OR"
 msgstr "불리언 OR"
 
 #. Tooltip for the exclusive OR button
-#: ../src/math-buttons.c:199
+#: src/math-buttons.c:203
 msgid "Boolean Exclusive OR"
 msgstr "불리언 XOR"
 
 #. Tooltip for the boolean NOT button
-#: ../src/math-buttons.c:202
+#: src/math-buttons.c:206
 msgid "Boolean NOT"
 msgstr "불리언 NOT"
 
 #. Tooltip for the integer component button
-#: ../src/math-buttons.c:205 ../src/math-buttons.c:992
+#: src/math-buttons.c:209 src/math-buttons.c:997
 msgid "Integer Component"
 msgstr "정수 부분"
 
 #. Tooltip for the fractional component button
-#: ../src/math-buttons.c:208 ../src/math-buttons.c:994
+#: src/math-buttons.c:212 src/math-buttons.c:999
 msgid "Fractional Component"
 msgstr "분수 부분"
 
 #. Tooltip for the real component button
-#: ../src/math-buttons.c:211
+#: src/math-buttons.c:215
 msgid "Real Component"
 msgstr "실수 부분"
 
 #. Tooltip for the imaginary component button
-#: ../src/math-buttons.c:214
+#: src/math-buttons.c:218
 msgid "Imaginary Component"
 msgstr "허수 부분"
 
 #. Tooltip for the ones' complement button
-#: ../src/math-buttons.c:217
+#: src/math-buttons.c:221
 msgid "Ones' Complement"
 msgstr "1의 보수"
 
 #. Tooltip for the two's complement button
-#: ../src/math-buttons.c:220
+#: src/math-buttons.c:224
 msgid "Two's Complement"
 msgstr "2의 보수"
 
 #. Tooltip for the truncate button
-#: ../src/math-buttons.c:223
+#: src/math-buttons.c:227
 msgid "Truncate"
 msgstr "자르기"
 
 #. Tooltip for the start group button
-#: ../src/math-buttons.c:226
+#: src/math-buttons.c:230
 msgid "Start Group [(]"
 msgstr "그룹 시작 [(]"
 
 #. Tooltip for the end group button
-#: ../src/math-buttons.c:229
+#: src/math-buttons.c:233
 msgid "End Group [)]"
 msgstr "그룹 끝 [)]"
 
 #. Tooltip for the solve button
-#: ../src/math-buttons.c:238
+#: src/math-buttons.c:242
 msgid "Calculate Result"
 msgstr "결과 계산"
 
 #. Tooltip for the factor button
-#: ../src/math-buttons.c:241
+#: src/math-buttons.c:245
 msgid "Factorize [Ctrl+F]"
 msgstr "소인수 분해 [Ctrl+F]"
 
 #. Tooltip for the clear button
-#: ../src/math-buttons.c:244
+#: src/math-buttons.c:248
 msgid "Clear Display [Escape]"
 msgstr "표시 값 지우기 [Escape]"
 
 #. Tooltip for the undo button
-#: ../src/math-buttons.c:247
+#: src/math-buttons.c:251
 msgid "Undo [Ctrl+Z]"
 msgstr "실행 취소 [Ctrl+Z]"
 
 #. Tooltip for the shift left button
-#: ../src/math-buttons.c:250
+#: src/math-buttons.c:254
 msgid "Shift Left [<<]"
 msgstr "왼쪽으로 이동 [<<]"
 
 #. Tooltip for the shift right button
-#: ../src/math-buttons.c:253
+#: src/math-buttons.c:257
 msgid "Shift Right [>>]"
 msgstr "오른쪽으로 이동 [>>]"
 
 #. Tooltip for the double declining depreciation button
-#: ../src/math-buttons.c:259
+#: src/math-buttons.c:263
 msgid "Double Declining Depreciation"
 msgstr "이중 감가상각"
 
 #. Tooltip for the financial term button
-#: ../src/math-buttons.c:265
+#: src/math-buttons.c:269
 msgid "Financial Term"
 msgstr "회계 기간"
 
 #. Tooltip for the sum of the years digits depreciation button
-#: ../src/math-buttons.c:268
+#: src/math-buttons.c:272
 msgid "Sum of the Years Digits Depreciation"
 msgstr "연수합계 감가상각"
 
 #. Tooltip for the straight line depreciation button
-#: ../src/math-buttons.c:271
+#: src/math-buttons.c:275
 msgid "Straight Line Depreciation"
 msgstr "정액 감가상각"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: ../src/math-buttons.c:624
+#: src/math-buttons.c:628
 msgid "Binary"
 msgstr "2진수"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: ../src/math-buttons.c:628
+#: src/math-buttons.c:632
 msgid "Octal"
 msgstr "8진수"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: ../src/math-buttons.c:632
+#: src/math-buttons.c:636
 msgid "Decimal"
 msgstr "10진수"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: ../src/math-buttons.c:636
+#: src/math-buttons.c:640
 msgid "Hexadecimal"
 msgstr "16진수"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: ../src/math-buttons.c:903 ../src/math-buttons.c:946
+#: src/math-buttons.c:908 src/math-buttons.c:951
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
@@ -1141,114 +1308,195 @@ msgstr[0] "_%d번 위치"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: ../src/math-buttons.c:907 ../src/math-buttons.c:950
+#: src/math-buttons.c:912 src/math-buttons.c:955
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
 msgstr[0] "%d번 위치"
 
 #. Tooltip for the round button
-#: ../src/math-buttons.c:996
+#: src/math-buttons.c:1001
 msgid "Round"
 msgstr "반올림"
 
 #. Tooltip for the floor button
-#: ../src/math-buttons.c:998
+#: src/math-buttons.c:1003
 msgid "Floor"
 msgstr "내림"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:1000
+#: src/math-buttons.c:1005
 msgid "Ceiling"
 msgstr "올림"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:1002
+#: src/math-buttons.c:1007
 msgid "Sign"
 msgstr "부호"
 
+#. Tooltip for the c₀ component button
+#: src/math-buttons.c:1049
+msgid "Velocity of Light"
+msgstr ""
+
+#: src/math-buttons.c:1049
+msgid "299,792,458 m/s"
+msgstr ""
+
+#. Tooltip for the μ₀ component button
+#: src/math-buttons.c:1051
+msgid "Magnetic constant"
+msgstr ""
+
+#: src/math-buttons.c:1051
+msgid "1.2566370614×10⁻⁶ N/A²"
+msgstr ""
+
+#. Tooltip for the ε₀ button
+#: src/math-buttons.c:1053
+msgid "Electric constant"
+msgstr ""
+
+#: src/math-buttons.c:1053
+msgid "8.85418782×10⁻¹² s⁴A²/m³kg"
+msgstr ""
+
+#. Tooltip for the G button
+#: src/math-buttons.c:1055
+msgid "Newtonian constant of gravitation"
+msgstr ""
+
+#: src/math-buttons.c:1055
+msgid "6.67408×10⁻¹¹ m³/(s²kg)"
+msgstr ""
+
+#. Tooltip for the h button
+#: src/math-buttons.c:1057
+msgid "Planck constant"
+msgstr ""
+
+#: src/math-buttons.c:1057
+msgid "6.62607004×10⁻³⁴ m²kg/s"
+msgstr ""
+
+#. Tooltip for the ｅ button
+#: src/math-buttons.c:1059
+msgid "Elementary charge"
+msgstr ""
+
+#: src/math-buttons.c:1059
+msgid "1.6021766208(98)×10⁻¹⁹ C"
+msgstr ""
+
+#. Tooltip for the mₑ button
+#: src/math-buttons.c:1061
+msgid "Electron mass"
+msgstr ""
+
+#: src/math-buttons.c:1061
+msgid "9.10938356×10⁻³¹ kg"
+msgstr ""
+
+#. Tooltip for the mₚ button
+#: src/math-buttons.c:1063
+msgid "Proton mass"
+msgstr ""
+
+#: src/math-buttons.c:1063
+msgid "1.672621898(21)×10⁻²⁷ kg"
+msgstr ""
+
+#. Tooltip for the Nₐ button
+#: src/math-buttons.c:1065
+msgid "Avogadro constant"
+msgstr ""
+
+#: src/math-buttons.c:1065
+msgid "6.02214086×10²³ mol⁻¹"
+msgstr ""
+
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: ../src/math-converter.c:412
+#: src/math-converter.c:412
 msgid " in "
 msgstr " -> "
 
 #. Tooltip for swap conversion button
-#: ../src/math-converter.c:427
+#: src/math-converter.c:427
 msgid "Switch conversion units"
 msgstr "변환 단위 바꾸기"
 
 #. Error shown when trying to undo with no undo history
-#: ../src/math-equation.c:459
+#: src/math-equation.c:459
 msgid "No undo history"
 msgstr "실행 취소 기록 없음"
 
 #. Error shown when trying to redo with no redo history
-#: ../src/math-equation.c:486
+#: src/math-equation.c:486
 msgid "No redo history"
 msgstr "다시 실행 기록 없음"
 
-#: ../src/math-equation.c:948
+#: src/math-equation.c:948
 msgid "No sane value to store"
 msgstr "제대로 된 값을 저장할 수 없습니다"
 
 #. Error displayed to user when they perform a bitwise operation on numbers
 #. greater than the current word
-#: ../src/math-equation.c:1230
+#: src/math-equation.c:1230
 msgid "Overflow. Try a bigger word size"
 msgstr "오버플로우. 워드 크기를 늘려 보십시오"
 
 #. Error displayed to user when they an unknown variable is entered
-#: ../src/math-equation.c:1235
+#: src/math-equation.c:1235
 #, c-format
 msgid "Unknown variable '%s'"
 msgstr "알 수 없는 변수 '%s'"
 
 #. Error displayed to user when an unknown function is entered
-#: ../src/math-equation.c:1240
+#: src/math-equation.c:1240
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr "'%s' 함수가 정의되지 않았습니다"
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: ../src/math-equation.c:1245
+#: src/math-equation.c:1245
 msgid "Unknown conversion"
 msgstr "변환 불가"
 
 #. Uncategorized error. Show error token to user
-#: ../src/math-equation.c:1253
+#: src/math-equation.c:1253
 #, c-format
 msgid "Malformed expression at token '%s'"
 msgstr "수식 형식이 틀렸습니다 (토큰 '%s')"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: ../src/math-equation.c:1256 ../src/math-equation.c:1261
+#: src/math-equation.c:1256 src/math-equation.c:1261
 msgid "Malformed expression"
 msgstr "수식 형식이 틀렸습니다"
 
-#: ../src/math-equation.c:1275
+#: src/math-equation.c:1275
 msgid "Calculating"
 msgstr "계산 중"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1390
+#: src/math-equation.c:1390
 msgid "Need an integer to factorize"
 msgstr "소인수 분해에는 정수 값이 필요합니다"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1462
+#: src/math-equation.c:1462
 msgid "No sane value to bitwise shift"
 msgstr "비트 쉬프트의 값이 올바르지 않습니다"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1493
+#: src/math-equation.c:1493
 msgid "Displayed value not an integer"
 msgstr "표시 중인 값이 정수가 아닙니다"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1916
+#: src/math-equation.c:1916
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1256,63 +1504,63 @@ msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 #. calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
 #. grads
-#: ../src/math-preferences.c:256 ../src/unit-manager.c:54
+#: src/math-preferences.c:256 src/unit-manager.c:54
 msgid "Degrees"
 msgstr "육십분"
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:260 ../src/unit-manager.c:55
+#: src/math-preferences.c:260 src/unit-manager.c:55
 msgid "Radians"
 msgstr "라디안"
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
 #. calculations
-#: ../src/math-preferences.c:264 ../src/unit-manager.c:56
+#: src/math-preferences.c:264 src/unit-manager.c:56
 msgid "Gradians"
 msgstr "그라디안"
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
 #. number 1.234×10^99)
-#: ../src/math-preferences.c:274
+#: src/math-preferences.c:274
 msgid "Automatic"
 msgstr "자동"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:278
+#: src/math-preferences.c:278
 msgid "Fixed"
 msgstr "고정"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:282
+#: src/math-preferences.c:282
 msgid "Scientific"
 msgstr "과학"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:286
+#: src/math-preferences.c:286
 msgid "Engineering"
 msgstr "공학"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:297
+#: src/math-preferences.c:297
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "%d자리 십진수 표시(_P)"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:212
+#: src/math-window.c:212
 msgid "Unable to open help file"
 msgstr "도움말 파일을 열 수 없습니다"
 
-#: ../src/math-window.c:234
+#: src/math-window.c:234
 msgid "Sun Microsystems"
 msgstr "Sun Microsystems"
 
-#: ../src/math-window.c:235
+#: src/math-window.c:235
 msgid "MATE Documentation Team"
 msgstr "MATE 문서 팀"
 
-#: ../src/math-window.c:241
+#: src/math-window.c:241
 msgid ""
 "MATE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -1322,7 +1570,7 @@ msgstr ""
 "MATE 계산기는 자유 소프트웨어 입니다. 자유 소프트웨어 재단이 발표한 GNU 일반 공중 사용 허가서 버전 2 또는 (선택에 따라) 그"
 " 이상의 버전의 조항에 의거하여 재배포하거나 수정할 수 있습니다."
 
-#: ../src/math-window.c:245
+#: src/math-window.c:245
 msgid ""
 "MATE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
@@ -1333,32 +1581,28 @@ msgstr ""
 "있으리라는 묵시적인 보증을 포함한 어떠한 형태의 보증도 제공하지 않습니다. 보다 자세한 사항에 대해서는 GNU 일반 공중 사용 허가서를 "
 "참고하시기 바랍니다."
 
-#: ../src/math-window.c:249
+#: src/math-window.c:249
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
-" MATE Calculator; if not, write to the Free Software Foundation, Inc., 151 "
-"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+" MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
-"GNU 일반 공중 사용 허가서 사본을 이 프로그램과 받아야 합니다. 못받으셨다면 Free Software Foundation, Inc.,"
-" 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA에 요청하세요."
 
-#: ../src/math-window.c:263
+#: src/math-window.c:263
 msgid "About MATE Calculator"
 msgstr "MATE 계산기"
 
-#: ../src/math-window.c:264
+#: src/math-window.c:264
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
-"Copyright © 2011-2019 MATE developers"
+"Copyright © 2011-2020 MATE developers"
 msgstr ""
-"Copyright © 1986–2010 The GCalctool authors\n"
-"Copyright © 2011-2019 MATE developers"
 
-#: ../src/math-window.c:267
+#: src/math-window.c:267
 msgid "Calculator with financial and scientific modes."
 msgstr "재무 및 과학 모드가 지원되는 계산기."
 
-#: ../src/math-window.c:270
+#: src/math-window.c:270
 msgid "translator-credits"
 msgstr ""
 "Elex https://launchpad.net/~mysticzizone\n"
@@ -1369,912 +1613,912 @@ msgstr ""
 "MATE Desktop Environment Team <https://www.transifex.com/mate/teams/13566/ko/>"
 
 #. Calculator menu
-#: ../src/math-window.c:403
+#: src/math-window.c:403
 msgid "_Calculator"
 msgstr "계산기(_C)"
 
 #. Mode menu
-#: ../src/math-window.c:405
+#: src/math-window.c:405
 msgid "_Mode"
 msgstr "종류(_M)"
 
 #. Help menu label
-#: ../src/math-window.c:407
+#: src/math-window.c:407
 msgid "_Help"
 msgstr "도움말(_H)"
 
 #. Basic menu label
-#: ../src/math-window.c:409
+#: src/math-window.c:409
 msgid "_Basic"
 msgstr "기본(_B)"
 
 #. Advanced menu label
-#: ../src/math-window.c:411
+#: src/math-window.c:411
 msgid "_Advanced"
 msgstr "고급(_A)"
 
 #. Financial menu label
-#: ../src/math-window.c:413
+#: src/math-window.c:413
 msgid "_Financial"
 msgstr "재무(_F)"
 
 #. Programming menu label
-#: ../src/math-window.c:415
+#: src/math-window.c:415
 msgid "_Programming"
 msgstr "프로그래밍(_P)"
 
 #. Help>Contents menu label
-#: ../src/math-window.c:417
+#: src/math-window.c:417
 msgid "_Contents"
 msgstr "콘텐츠(_C)"
 
-#: ../src/math-window.c:420
+#: src/math-window.c:420
 msgid "_Copy"
 msgstr "복사(_C)"
 
-#: ../src/math-window.c:422
+#: src/math-window.c:422
 msgid "_Paste"
 msgstr "붙여넣기(_P)"
 
-#: ../src/math-window.c:424
+#: src/math-window.c:424
 msgid "_Undo"
 msgstr "실행 취소(_U)"
 
-#: ../src/math-window.c:426
+#: src/math-window.c:426
 msgid "_Redo"
 msgstr "재실행(_R)"
 
-#: ../src/math-window.c:429
+#: src/math-window.c:429
 msgid "_Preferences"
 msgstr "기본 설정(_P)"
 
-#: ../src/math-window.c:431
+#: src/math-window.c:431
 msgid "_Quit"
 msgstr "끝내기(_Q)"
 
-#: ../src/math-window.c:448
+#: src/math-window.c:448
 msgid "_About"
 msgstr "정보(_A)"
 
 #. Translators: Error displayed when boolean AND attempted on non-integer
 #. values
-#: ../src/mp-binary.c:115
+#: src/mp-binary.c:115
 msgid "Boolean AND is only defined for positive integers"
 msgstr "불리언 AND는 양의 정수에 대해서만 정의됩니다"
 
 #. Translators: Error displayed when boolean OR attempted on non-integer
 #. values
-#: ../src/mp-binary.c:128
+#: src/mp-binary.c:128
 msgid "Boolean OR is only defined for positive integers"
 msgstr "불리언 OR는 양의 정수에 대해서만 정의됩니다"
 
 #. Translators: Error displayed when boolean XOR attempted on non-integer
 #. values
-#: ../src/mp-binary.c:141
+#: src/mp-binary.c:141
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "불리언 XOR는 양의 정수에 대해서만 정의됩니다"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. Translators: Error displayed when boolean NOT attempted on non-integer
 #. values
-#: ../src/mp-binary.c:156
+#: src/mp-binary.c:156
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "불리언 NOT은 양의 정수에 대해서만 정의됩니다"
 
 #. Translators: Error displayed when bit shift attempted on non-integer values
-#: ../src/mp-binary.c:190
+#: src/mp-binary.c:174
 msgid "Shift is only possible on integer values"
 msgstr "쉬프트는 정수 값에 대해서만 가능합니다"
 
 #. Translators: Error display when attempting to take argument of zero
-#: ../src/mp.c:148
+#: src/mp.c:148
 msgid "Argument not defined for zero"
 msgstr "편각은 0에 대해서 정의되지 않습니다"
 
-#: ../src/mp.c:299
+#: src/mp.c:299
 msgid "Overflow: the result couldn't be calculated"
 msgstr "오버플로우: 결과를 계산할 수 없습니다"
 
 #. Translators: Error displayed attempted to divide by zero
-#: ../src/mp.c:644 ../src/mp.c:676 ../src/mp.c:1605
+#: src/mp.c:644 src/mp.c:676 src/mp.c:1605
 msgid "Division by zero is undefined"
 msgstr "0으로 나누기는 정의되지 않습니다"
 
 #. Translators: Error displayed when attempting to take logarithm of zero
-#: ../src/mp.c:1276 ../src/mp.c:1313
+#: src/mp.c:1276 src/mp.c:1313
 msgid "Logarithm of zero is undefined"
 msgstr "0의 로그는 정의되지 않습니다"
 
 #. Translators: Error displayed when attempted to raise 0 to a negative
 #. exponent
-#: ../src/mp.c:1680 ../src/mp.c:1994
+#: src/mp.c:1680 src/mp.c:1994
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "0의 제곱은 음수 지수에 대해서는 정의되지 않습니다"
 
-#: ../src/mp.c:1704
+#: src/mp.c:1704
 msgid "Reciprocal of zero is undefined"
 msgstr "0의 역수는 정의되지 않습니다"
 
-#: ../src/mp.c:1789
+#: src/mp.c:1789
 msgid "Root must be non-zero"
 msgstr "제곱근은 0 제곱근이 아니어야 합니다"
 
-#: ../src/mp.c:1807
+#: src/mp.c:1807
 msgid "Negative root of zero is undefined"
 msgstr "0의 음수 제곱근은 정의되지 않습니다"
 
-#: ../src/mp.c:1813
+#: src/mp.c:1813
 msgid "nth root of negative number is undefined for even n"
 msgstr "짝수 n에 대해서 음수의 n번째 제곱근은 정의되지 않습니다"
 
 #. Translators: Error displayed when attempted take the factorial of a
 #. fractional number
-#: ../src/mp.c:1934
+#: src/mp.c:1934
 msgid "Factorial is only defined for natural numbers"
 msgstr "팩토리얼은 나누기는 자연수에 대해서만 정의됩니다"
 
 #. Translators: Error displayed when attemping to do a modulus division on
 #. non-integer numbers
-#: ../src/mp.c:1954
+#: src/mp.c:1954
 msgid "Modulus division is only defined for integers"
 msgstr "나머지 나누기는 정수에 대해서만 정의됩니다"
 
 #. Translators: Error displayed when tangent value is undefined
-#: ../src/mp-trigonometric.c:310
+#: src/mp-trigonometric.c:310
 msgid ""
 "Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
 "(90°)"
 msgstr "탄젠트는 π∕2(90°)에 π(180°) 배수를 더한 값에 대해서는 정의되지 않습니다"
 
 #. Translators: Error displayed when inverse sine value is undefined
-#: ../src/mp-trigonometric.c:355
+#: src/mp-trigonometric.c:355
 msgid "Inverse sine is undefined for values outside [-1, 1]"
 msgstr "역 사인은 [-1, 1] 밖의 값에 대해서는 정의되지 않습니다"
 
 #. Translators: Error displayed when inverse cosine value is undefined
-#: ../src/mp-trigonometric.c:372
+#: src/mp-trigonometric.c:372
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
 msgstr "역 코사인은 [-1, 1] 밖의 값에 대해서는 정의되지 않습니다"
 
 #. Translators: Error displayed when inverse hyperbolic cosine value is
 #. undefined
-#: ../src/mp-trigonometric.c:591
+#: src/mp-trigonometric.c:591
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
 msgstr "역 하이퍼 코사인은 1보다 작은 값에 대해서는 정의되지 않습니다"
 
 #. Translators: Error displayed when inverse hyperbolic tangent value is
 #. undefined
-#: ../src/mp-trigonometric.c:615
+#: src/mp-trigonometric.c:615
 msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
 msgstr "역 하이퍼 탄젠트는 [-1, 1] 밖의 값에 대해서는 정의되지 않습니다"
 
-#: ../src/unit-manager.c:54
+#: src/unit-manager.c:54
 #, c-format
 msgctxt "unit-format"
 msgid "%s degrees"
 msgstr "%s도"
 
-#: ../src/unit-manager.c:54
+#: src/unit-manager.c:54
 msgctxt "unit-symbols"
 msgid "degree,degrees,deg"
 msgstr "degree,degrees,deg,도"
 
-#: ../src/unit-manager.c:55
+#: src/unit-manager.c:55
 #, c-format
 msgctxt "unit-format"
 msgid "%s radians"
 msgstr "%s radians"
 
-#: ../src/unit-manager.c:55
+#: src/unit-manager.c:55
 msgctxt "unit-symbols"
 msgid "radian,radians,rad"
 msgstr "radian,radians,rad,라디안"
 
-#: ../src/unit-manager.c:56
+#: src/unit-manager.c:56
 #, c-format
 msgctxt "unit-format"
 msgid "%s gradians"
 msgstr "%s gradians"
 
-#: ../src/unit-manager.c:56
+#: src/unit-manager.c:56
 msgctxt "unit-symbols"
 msgid "gradian,gradians,grad"
 msgstr "gradian,gradians,grad,그라디안"
 
-#: ../src/unit-manager.c:57
+#: src/unit-manager.c:57
 msgid "Parsecs"
 msgstr "파섹"
 
-#: ../src/unit-manager.c:57
+#: src/unit-manager.c:57
 #, c-format
 msgctxt "unit-format"
 msgid "%s pc"
 msgstr "%s pc"
 
-#: ../src/unit-manager.c:57
+#: src/unit-manager.c:57
 msgctxt "unit-symbols"
 msgid "parsec,parsecs,pc"
 msgstr "parsec,parsecs,pc,파섹"
 
-#: ../src/unit-manager.c:58
+#: src/unit-manager.c:58
 msgid "Light Years"
 msgstr "광년"
 
-#: ../src/unit-manager.c:58
+#: src/unit-manager.c:58
 #, c-format
 msgctxt "unit-format"
 msgid "%s ly"
 msgstr "%s ly"
 
-#: ../src/unit-manager.c:58
+#: src/unit-manager.c:58
 msgctxt "unit-symbols"
 msgid "lightyear,lightyears,ly"
 msgstr "lightyear,lightyears,ly,광년"
 
-#: ../src/unit-manager.c:59
+#: src/unit-manager.c:59
 msgid "Astronomical Units"
 msgstr "천문학 단위"
 
-#: ../src/unit-manager.c:59
+#: src/unit-manager.c:59
 #, c-format
 msgctxt "unit-format"
 msgid "%s au"
 msgstr "%s au"
 
-#: ../src/unit-manager.c:59
+#: src/unit-manager.c:59
 msgctxt "unit-symbols"
 msgid "au"
 msgstr "au,천문단위"
 
-#: ../src/unit-manager.c:60
+#: src/unit-manager.c:60
 msgid "Nautical Miles"
 msgstr "해리"
 
-#: ../src/unit-manager.c:60
+#: src/unit-manager.c:60
 #, c-format
 msgctxt "unit-format"
 msgid "%s nmi"
 msgstr "%s 해리"
 
-#: ../src/unit-manager.c:60
+#: src/unit-manager.c:60
 msgctxt "unit-symbols"
 msgid "nmi"
 msgstr "nmi,해리"
 
-#: ../src/unit-manager.c:61
+#: src/unit-manager.c:61
 msgid "Miles"
 msgstr "마일"
 
-#: ../src/unit-manager.c:61
+#: src/unit-manager.c:61
 #, c-format
 msgctxt "unit-format"
 msgid "%s mi"
 msgstr "%s mi"
 
-#: ../src/unit-manager.c:61
+#: src/unit-manager.c:61
 msgctxt "unit-symbols"
 msgid "mile,miles,mi"
 msgstr "mile,miles,mi,마일"
 
-#: ../src/unit-manager.c:62
+#: src/unit-manager.c:62
 msgid "Kilometers"
 msgstr "킬로미터"
 
-#: ../src/unit-manager.c:62
+#: src/unit-manager.c:62
 #, c-format
 msgctxt "unit-format"
 msgid "%s km"
 msgstr "%s km"
 
-#: ../src/unit-manager.c:62
+#: src/unit-manager.c:62
 msgctxt "unit-symbols"
 msgid "kilometer,kilometers,km,kms"
 msgstr "kilometer,kilometers,km,kms,킬로미터"
 
-#: ../src/unit-manager.c:63
+#: src/unit-manager.c:63
 msgid "Cables"
 msgstr "케이블"
 
-#: ../src/unit-manager.c:63
+#: src/unit-manager.c:63
 #, c-format
 msgctxt "unit-format"
 msgid "%s cb"
 msgstr "%s cb"
 
-#: ../src/unit-manager.c:63
+#: src/unit-manager.c:63
 msgctxt "unit-symbols"
 msgid "cable,cables,cb"
 msgstr "cable,cables,cb,케이블"
 
-#: ../src/unit-manager.c:64
+#: src/unit-manager.c:64
 msgid "Fathoms"
 msgstr "패덤"
 
-#: ../src/unit-manager.c:64
+#: src/unit-manager.c:64
 #, c-format
 msgctxt "unit-format"
 msgid "%s ftm"
 msgstr "%s ftm"
 
-#: ../src/unit-manager.c:64
+#: src/unit-manager.c:64
 msgctxt "unit-symbols"
 msgid "fathom,fathoms,ftm"
 msgstr "fathom,fathoms,ftm,패덤"
 
-#: ../src/unit-manager.c:65
+#: src/unit-manager.c:65
 msgid "Meters"
 msgstr "미터"
 
-#: ../src/unit-manager.c:65
+#: src/unit-manager.c:65
 #, c-format
 msgctxt "unit-format"
 msgid "%s m"
 msgstr "%s m"
 
-#: ../src/unit-manager.c:65
+#: src/unit-manager.c:65
 msgctxt "unit-symbols"
 msgid "meter,meters,m"
 msgstr "meter,meters,m,미터"
 
-#: ../src/unit-manager.c:66
+#: src/unit-manager.c:66
 msgid "Yards"
 msgstr "야드"
 
-#: ../src/unit-manager.c:66
+#: src/unit-manager.c:66
 #, c-format
 msgctxt "unit-format"
 msgid "%s yd"
 msgstr "%s yd"
 
-#: ../src/unit-manager.c:66
+#: src/unit-manager.c:66
 msgctxt "unit-symbols"
 msgid "yard,yards,yd"
 msgstr "yard,yards,yd,야드"
 
-#: ../src/unit-manager.c:67
+#: src/unit-manager.c:67
 msgid "Feet"
 msgstr "피트"
 
-#: ../src/unit-manager.c:67
+#: src/unit-manager.c:67
 #, c-format
 msgctxt "unit-format"
 msgid "%s ft"
 msgstr "%s ft"
 
-#: ../src/unit-manager.c:67
+#: src/unit-manager.c:67
 msgctxt "unit-symbols"
 msgid "foot,feet,ft"
 msgstr "foot,feet,ft,피트"
 
-#: ../src/unit-manager.c:68
+#: src/unit-manager.c:68
 msgid "Inches"
 msgstr "인치"
 
-#: ../src/unit-manager.c:68
+#: src/unit-manager.c:68
 #, c-format
 msgctxt "unit-format"
 msgid "%s in"
 msgstr "%s in"
 
-#: ../src/unit-manager.c:68
+#: src/unit-manager.c:68
 msgctxt "unit-symbols"
 msgid "inch,inches,in"
 msgstr "inch,inches,in,인치"
 
-#: ../src/unit-manager.c:69
+#: src/unit-manager.c:69
 msgid "Centimeters"
 msgstr "센티미터"
 
-#: ../src/unit-manager.c:69
+#: src/unit-manager.c:69
 #, c-format
 msgctxt "unit-format"
 msgid "%s cm"
 msgstr "%s cm"
 
-#: ../src/unit-manager.c:69
+#: src/unit-manager.c:69
 msgctxt "unit-symbols"
 msgid "centimeter,centimeters,cm,cms"
 msgstr "centimeter,centimeters,cm,cms,센티미터"
 
-#: ../src/unit-manager.c:70
+#: src/unit-manager.c:70
 msgid "Millimeters"
 msgstr "밀리미터"
 
-#: ../src/unit-manager.c:70
+#: src/unit-manager.c:70
 #, c-format
 msgctxt "unit-format"
 msgid "%s mm"
 msgstr "%s mm"
 
-#: ../src/unit-manager.c:70
+#: src/unit-manager.c:70
 msgctxt "unit-symbols"
 msgid "millimeter,millimeters,mm"
 msgstr "millimeter,millimeters,mm,밀리미터"
 
-#: ../src/unit-manager.c:71
+#: src/unit-manager.c:71
 msgid "Micrometers"
 msgstr "마이크로미터"
 
-#: ../src/unit-manager.c:71
+#: src/unit-manager.c:71
 #, c-format
 msgctxt "unit-format"
 msgid "%s μm"
 msgstr "%s μm"
 
-#: ../src/unit-manager.c:71
+#: src/unit-manager.c:71
 msgctxt "unit-symbols"
 msgid "micrometer,micrometers,um"
 msgstr "micrometer,micrometers,um,마이크로미터"
 
-#: ../src/unit-manager.c:72
+#: src/unit-manager.c:72
 msgid "Nanometers"
 msgstr "나노미터"
 
-#: ../src/unit-manager.c:72
+#: src/unit-manager.c:72
 #, c-format
 msgctxt "unit-format"
 msgid "%s nm"
 msgstr "%s 해리"
 
-#: ../src/unit-manager.c:72
+#: src/unit-manager.c:72
 msgctxt "unit-symbols"
 msgid "nanometer,nanometers,nm"
 msgstr "nanometer,nanometers,nm,나노미터"
 
-#: ../src/unit-manager.c:73
+#: src/unit-manager.c:73
 msgid "Hectares"
 msgstr "헥타아르"
 
-#: ../src/unit-manager.c:73
+#: src/unit-manager.c:73
 #, c-format
 msgctxt "unit-format"
 msgid "%s ha"
 msgstr "%s ha"
 
-#: ../src/unit-manager.c:73
+#: src/unit-manager.c:73
 msgctxt "unit-symbols"
 msgid "hectare,hectares,ha"
 msgstr "hectare,hectares,ha,헥타아르"
 
-#: ../src/unit-manager.c:74
+#: src/unit-manager.c:74
 msgid "Acres"
 msgstr "에이커"
 
-#: ../src/unit-manager.c:74
+#: src/unit-manager.c:74
 #, c-format
 msgctxt "unit-format"
 msgid "%s acres"
 msgstr "%s에이커"
 
-#: ../src/unit-manager.c:74
+#: src/unit-manager.c:74
 msgctxt "unit-symbols"
 msgid "acre,acres"
 msgstr "acre,acres,에이커"
 
-#: ../src/unit-manager.c:75
+#: src/unit-manager.c:75
 msgid "Square Meters"
 msgstr "제곱미터"
 
-#: ../src/unit-manager.c:75
+#: src/unit-manager.c:75
 #, c-format
 msgctxt "unit-format"
 msgid "%s m²"
 msgstr "%s m²"
 
-#: ../src/unit-manager.c:75
+#: src/unit-manager.c:75
 msgctxt "unit-symbols"
 msgid "m²"
 msgstr "m²"
 
-#: ../src/unit-manager.c:76
+#: src/unit-manager.c:76
 msgid "Square Centimeters"
 msgstr "제곱센티미터"
 
-#: ../src/unit-manager.c:76
+#: src/unit-manager.c:76
 #, c-format
 msgctxt "unit-format"
 msgid "%s cm²"
 msgstr "%s cm²"
 
-#: ../src/unit-manager.c:76
+#: src/unit-manager.c:76
 msgctxt "unit-symbols"
 msgid "cm²"
 msgstr "cm²"
 
-#: ../src/unit-manager.c:77
+#: src/unit-manager.c:77
 msgid "Square Millimeters"
 msgstr "제곱밀리미터"
 
-#: ../src/unit-manager.c:77
+#: src/unit-manager.c:77
 #, c-format
 msgctxt "unit-format"
 msgid "%s mm²"
 msgstr "%s mm²"
 
-#: ../src/unit-manager.c:77
+#: src/unit-manager.c:77
 msgctxt "unit-symbols"
 msgid "mm²"
 msgstr "mm²"
 
-#: ../src/unit-manager.c:78
+#: src/unit-manager.c:78
 msgid "Cubic Meters"
 msgstr "입방미터"
 
-#: ../src/unit-manager.c:78
+#: src/unit-manager.c:78
 #, c-format
 msgctxt "unit-format"
 msgid "%s m³"
 msgstr "%s m³"
 
-#: ../src/unit-manager.c:78
+#: src/unit-manager.c:78
 msgctxt "unit-symbols"
 msgid "m³"
 msgstr "m³"
 
-#: ../src/unit-manager.c:79
+#: src/unit-manager.c:79
 msgid "Gallons"
 msgstr "갤런"
 
-#: ../src/unit-manager.c:79
+#: src/unit-manager.c:79
 #, c-format
 msgctxt "unit-format"
 msgid "%s gal"
 msgstr "%s gal"
 
-#: ../src/unit-manager.c:79
+#: src/unit-manager.c:79
 msgctxt "unit-symbols"
 msgid "gallon,gallons,gal"
 msgstr "gallon,gallons,gal,갤런"
 
-#: ../src/unit-manager.c:80
+#: src/unit-manager.c:80
 msgid "Litres"
 msgstr "리터"
 
-#: ../src/unit-manager.c:80
+#: src/unit-manager.c:80
 #, c-format
 msgctxt "unit-format"
 msgid "%s L"
 msgstr "%s L"
 
-#: ../src/unit-manager.c:80
+#: src/unit-manager.c:80
 msgctxt "unit-symbols"
 msgid "litre,litres,liter,liters,L"
 msgstr "litre,litres,liter,liters,L,리터"
 
-#: ../src/unit-manager.c:81
+#: src/unit-manager.c:81
 msgid "Quarts"
 msgstr "쿼트"
 
-#: ../src/unit-manager.c:81
+#: src/unit-manager.c:81
 #, c-format
 msgctxt "unit-format"
 msgid "%s qt"
 msgstr "%s qt"
 
-#: ../src/unit-manager.c:81
+#: src/unit-manager.c:81
 msgctxt "unit-symbols"
 msgid "quart,quarts,qt"
 msgstr "quart,quarts,qt,쿼트"
 
-#: ../src/unit-manager.c:82
+#: src/unit-manager.c:82
 msgid "Pints"
 msgstr "파인트"
 
-#: ../src/unit-manager.c:82
+#: src/unit-manager.c:82
 #, c-format
 msgctxt "unit-format"
 msgid "%s pt"
 msgstr "%s pt"
 
-#: ../src/unit-manager.c:82
+#: src/unit-manager.c:82
 msgctxt "unit-symbols"
 msgid "pint,pints,pt"
 msgstr "pint,pints,pt,파인트"
 
-#: ../src/unit-manager.c:83
+#: src/unit-manager.c:83
 msgid "Millilitres"
 msgstr "밀리리터"
 
-#: ../src/unit-manager.c:83
+#: src/unit-manager.c:83
 #, c-format
 msgctxt "unit-format"
 msgid "%s mL"
 msgstr "%s mL"
 
-#: ../src/unit-manager.c:83
+#: src/unit-manager.c:83
 msgctxt "unit-symbols"
 msgid "millilitre,millilitres,milliliter,milliliters,mL,cm³"
 msgstr "millilitre,millilitres,milliliter,milliliters,mL,cm³,밀리리터"
 
-#: ../src/unit-manager.c:84
+#: src/unit-manager.c:84
 msgid "Microlitres"
 msgstr "마이크로리터"
 
-#: ../src/unit-manager.c:84
+#: src/unit-manager.c:84
 #, c-format
 msgctxt "unit-format"
 msgid "%s μL"
 msgstr "%s μL"
 
-#: ../src/unit-manager.c:84
+#: src/unit-manager.c:84
 msgctxt "unit-symbols"
 msgid "mm³,μL,uL"
 msgstr "mm³,μL,uL,마이크로리터"
 
-#: ../src/unit-manager.c:85
+#: src/unit-manager.c:85
 msgid "Tonnes"
 msgstr "톤"
 
-#: ../src/unit-manager.c:85
+#: src/unit-manager.c:85
 #, c-format
 msgctxt "unit-format"
 msgid "%s T"
 msgstr "%s T"
 
-#: ../src/unit-manager.c:85
+#: src/unit-manager.c:85
 msgctxt "unit-symbols"
 msgid "tonne,tonnes"
 msgstr "tonne,tonnes,톤"
 
-#: ../src/unit-manager.c:86
+#: src/unit-manager.c:86
 msgid "Kilograms"
 msgstr "킬로그램"
 
-#: ../src/unit-manager.c:86
+#: src/unit-manager.c:86
 #, c-format
 msgctxt "unit-format"
 msgid "%s kg"
 msgstr "%s kg"
 
-#: ../src/unit-manager.c:86
+#: src/unit-manager.c:86
 msgctxt "unit-symbols"
 msgid "kilogram,kilograms,kilogramme,kilogrammes,kg,kgs"
 msgstr "kilogram,kilograms,kilogramme,kilogrammes,kg,kgs,킬로그램"
 
-#: ../src/unit-manager.c:87
+#: src/unit-manager.c:87
 msgid "Pounds"
 msgstr "파운드"
 
-#: ../src/unit-manager.c:87
+#: src/unit-manager.c:87
 #, c-format
 msgctxt "unit-format"
 msgid "%s lb"
 msgstr "%s lb"
 
-#: ../src/unit-manager.c:87
+#: src/unit-manager.c:87
 msgctxt "unit-symbols"
 msgid "pound,pounds,lb"
 msgstr "pound,pounds,lb,파운드"
 
-#: ../src/unit-manager.c:88
+#: src/unit-manager.c:88
 msgid "Ounces"
 msgstr "온스"
 
-#: ../src/unit-manager.c:88
+#: src/unit-manager.c:88
 #, c-format
 msgctxt "unit-format"
 msgid "%s oz"
 msgstr "%s oz"
 
-#: ../src/unit-manager.c:88
+#: src/unit-manager.c:88
 msgctxt "unit-symbols"
 msgid "ounce,ounces,oz"
 msgstr "ounce,ounces,oz,온스"
 
-#: ../src/unit-manager.c:89
+#: src/unit-manager.c:89
 msgid "Grams"
 msgstr "그램"
 
-#: ../src/unit-manager.c:89
+#: src/unit-manager.c:89
 #, c-format
 msgctxt "unit-format"
 msgid "%s g"
 msgstr "%s g"
 
-#: ../src/unit-manager.c:89
+#: src/unit-manager.c:89
 msgctxt "unit-symbols"
 msgid "gram,grams,gramme,grammes,g"
 msgstr "gram,grams,gramme,grammes,g,그램"
 
-#: ../src/unit-manager.c:90
+#: src/unit-manager.c:90
 msgid "Years"
 msgstr "년"
 
-#: ../src/unit-manager.c:90
+#: src/unit-manager.c:90
 #, c-format
 msgctxt "unit-format"
 msgid "%s years"
 msgstr "%s년"
 
-#: ../src/unit-manager.c:90
+#: src/unit-manager.c:90
 msgctxt "unit-symbols"
 msgid "year,years"
 msgstr "year,years,년"
 
-#: ../src/unit-manager.c:91
+#: src/unit-manager.c:91
 msgid "Days"
 msgstr "일"
 
-#: ../src/unit-manager.c:91
+#: src/unit-manager.c:91
 #, c-format
 msgctxt "unit-format"
 msgid "%s days"
 msgstr "%s일"
 
-#: ../src/unit-manager.c:91
+#: src/unit-manager.c:91
 msgctxt "unit-symbols"
 msgid "day,days"
 msgstr "day,days,일"
 
-#: ../src/unit-manager.c:92
+#: src/unit-manager.c:92
 msgid "Hours"
 msgstr "시간"
 
-#: ../src/unit-manager.c:92
+#: src/unit-manager.c:92
 #, c-format
 msgctxt "unit-format"
 msgid "%s hours"
 msgstr "%s시간"
 
-#: ../src/unit-manager.c:92
+#: src/unit-manager.c:92
 msgctxt "unit-symbols"
 msgid "hour,hours"
 msgstr "hour,hours,시간"
 
-#: ../src/unit-manager.c:93
+#: src/unit-manager.c:93
 msgid "Minutes"
 msgstr "분"
 
-#: ../src/unit-manager.c:93
+#: src/unit-manager.c:93
 #, c-format
 msgctxt "unit-format"
 msgid "%s minutes"
 msgstr "%s분"
 
-#: ../src/unit-manager.c:93
+#: src/unit-manager.c:93
 msgctxt "unit-symbols"
 msgid "minute,minutes"
 msgstr "minute,minutes,분"
 
-#: ../src/unit-manager.c:94
+#: src/unit-manager.c:94
 msgid "Seconds"
 msgstr "초"
 
-#: ../src/unit-manager.c:94
+#: src/unit-manager.c:94
 #, c-format
 msgctxt "unit-format"
 msgid "%s s"
 msgstr "%s s"
 
-#: ../src/unit-manager.c:94
+#: src/unit-manager.c:94
 msgctxt "unit-symbols"
 msgid "second,seconds,s"
 msgstr "second,seconds,s,초"
 
-#: ../src/unit-manager.c:95
+#: src/unit-manager.c:95
 msgid "Milliseconds"
 msgstr "밀리초"
 
-#: ../src/unit-manager.c:95
+#: src/unit-manager.c:95
 #, c-format
 msgctxt "unit-format"
 msgid "%s ms"
 msgstr "%s ms"
 
-#: ../src/unit-manager.c:95
+#: src/unit-manager.c:95
 msgctxt "unit-symbols"
 msgid "millisecond,milliseconds,ms"
 msgstr "millisecond,milliseconds,ms,밀리초"
 
-#: ../src/unit-manager.c:96
+#: src/unit-manager.c:96
 msgid "Microseconds"
 msgstr "마이크로초"
 
-#: ../src/unit-manager.c:96
+#: src/unit-manager.c:96
 #, c-format
 msgctxt "unit-format"
 msgid "%s μs"
 msgstr "%s μs"
 
-#: ../src/unit-manager.c:96
+#: src/unit-manager.c:96
 msgctxt "unit-symbols"
 msgid "microsecond,microseconds,us,μs"
 msgstr "microsecond,microseconds,us,μs,마이크로초"
 
-#: ../src/unit-manager.c:97
+#: src/unit-manager.c:97
 msgid "Celsius"
 msgstr "섭"
 
-#: ../src/unit-manager.c:97
+#: src/unit-manager.c:97
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚C"
 msgstr "%s ˚C"
 
-#: ../src/unit-manager.c:97
+#: src/unit-manager.c:97
 msgctxt "unit-symbols"
 msgid "degC,˚C"
 msgstr "degC,˚C,도C"
 
-#: ../src/unit-manager.c:98
+#: src/unit-manager.c:98
 msgid "Farenheit"
 msgstr "화씨"
 
-#: ../src/unit-manager.c:98
+#: src/unit-manager.c:98
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚F"
 msgstr "%s ˚F"
 
-#: ../src/unit-manager.c:98
+#: src/unit-manager.c:98
 msgctxt "unit-symbols"
 msgid "degF,˚F"
 msgstr "degF,˚F,도F"
 
-#: ../src/unit-manager.c:99
+#: src/unit-manager.c:99
 msgid "Kelvin"
 msgstr "켈빈"
 
-#: ../src/unit-manager.c:99
+#: src/unit-manager.c:99
 #, c-format
 msgctxt "unit-format"
 msgid "%s K"
 msgstr "%s K"
 
-#: ../src/unit-manager.c:99
+#: src/unit-manager.c:99
 msgctxt "unit-symbols"
 msgid "K"
 msgstr "K"
 
-#: ../src/unit-manager.c:100
+#: src/unit-manager.c:100
 msgid "Rankine"
 msgstr "란씨"
 
-#: ../src/unit-manager.c:100
+#: src/unit-manager.c:100
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚R"
 msgstr "%s ˚R"
 
-#: ../src/unit-manager.c:100
+#: src/unit-manager.c:100
 msgctxt "unit-symbols"
 msgid "degR,˚R,˚Ra"
 msgstr "degR,˚R,˚Ra,도R"
 
-#: ../src/unit-manager.c:109
+#: src/unit-manager.c:109
 msgid "Angle"
 msgstr "각도"
 
-#: ../src/unit-manager.c:110
+#: src/unit-manager.c:110
 msgid "Length"
 msgstr "길이"
 
-#: ../src/unit-manager.c:111
+#: src/unit-manager.c:111
 msgid "Area"
 msgstr "면적"
 
-#: ../src/unit-manager.c:112
+#: src/unit-manager.c:112
 msgid "Volume"
 msgstr "음량"
 
-#: ../src/unit-manager.c:113
+#: src/unit-manager.c:113
 msgid "Weight"
 msgstr "무게"
 
-#: ../src/unit-manager.c:114
+#: src/unit-manager.c:114
 msgid "Duration"
 msgstr "기간"
 
-#: ../src/unit-manager.c:115
+#: src/unit-manager.c:115
 msgid "Temperature"
 msgstr "온도"
 
-#: ../src/unit-manager.c:127
+#: src/unit-manager.c:127
 msgid "Currency"
 msgstr "통화"
 
 #. Translators: result of currency conversion, %s is the symbol, %%s is the
 #. placeholder for amount, i.e.: USD100
-#: ../src/unit-manager.c:137
+#: src/unit-manager.c:137
 #, c-format
 msgid "%s%%s"
 msgstr "%s%%s"
