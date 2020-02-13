@@ -49,6 +49,10 @@ MathDisplay *math_window_get_display(MathWindow *window);
 
 MathButtons *math_window_get_buttons(MathWindow *window);
 
+gboolean math_window_get_show_history(MathWindow *window);
+
+void math_window_set_show_history(MathWindow *window, gboolean visible);
+
 void math_window_critical_error(MathWindow *window, const gchar *title, const gchar *contents);
 
 G_END_DECLS

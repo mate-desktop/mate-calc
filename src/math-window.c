@@ -14,6 +14,7 @@
 #include <gdk/gdkkeysyms.h>
 
 #include "math-window.h"
+#include "math-history.h"
 #include "utility.h"
 
 // gtk3 hack
@@ -31,7 +32,8 @@
 
 enum {
     PROP_0,
-    PROP_EQUATION
+    PROP_EQUATION,
+    PROP_SHOW_HISTORY
 };
 
 struct MathWindowPrivate
@@ -39,13 +41,16 @@ struct MathWindowPrivate
     GtkWidget *menu_bar;
     MathEquation *equation;
     MathDisplay *display;
+    MathHistory *history;
     MathButtons *buttons;
     MathPreferencesDialog *preferences_dialog;
     gboolean right_aligned;
+    gboolean show_history;
     GtkWidget *mode_basic_menu_item;
     GtkWidget *mode_advanced_menu_item;
     GtkWidget *mode_financial_menu_item;
     GtkWidget *mode_programming_menu_item;
+    GtkWidget *view_history_menu_item;
 };
 
 G_DEFINE_TYPE_WITH_PRIVATE (MathWindow, math_window, GTK_TYPE_WINDOW);
@@ -93,6 +98,36 @@ math_window_get_buttons(MathWindow *window)
     return window->priv->buttons;
 }
 
+gboolean
+math_window_get_show_history(MathWindow *window)
+{
+    g_return_val_if_fail(window != NULL, FALSE);
+    return window->priv->show_history;
+}
+
+void
+math_window_set_show_history(MathWindow *window, gboolean visible)
+{
+    g_return_if_fail(window != NULL);
+
+    if (math_window_get_show_history(window) == visible)
+        return;
+
+    window->priv->show_history = visible;
+
+    if (visible)
+    {
+        gtk_widget_show(GTK_WIDGET(window->priv->history));
+        gtk_window_set_resizable(GTK_WINDOW(window), TRUE);
+    }
+    else
+    {
+        gtk_widget_hide(GTK_WIDGET(window->priv->history));
+        gtk_window_resize(GTK_WINDOW(window), 1, 1); //FIXME: is there a better way to shrink window size to its children?
+        gtk_window_set_resizable(GTK_WINDOW(window), FALSE);
+    }
+    g_object_notify(G_OBJECT(window), "show-history");
+}
 
 void
 math_window_critical_error(MathWindow *window, const gchar *title, const gchar *contents)
@@ -127,6 +162,22 @@ static void mode_changed_cb(GtkWidget *menu, MathWindow *window)
 
     mode = GPOINTER_TO_INT(g_object_get_data(G_OBJECT(menu), "calcmode"));
     math_buttons_set_mode(window->priv->buttons, mode);
+}
+
+static void history_check_toggled_cb(GtkWidget *menu, MathWindow *window)
+{
+    gboolean value;
+
+    value = gtk_check_menu_item_get_active(GTK_CHECK_MENU_ITEM(menu));
+    math_window_set_show_history(window, value);
+}
+
+static void show_history_cb(MathWindow *window, GParamSpec *spec)
+{
+    GtkWidget *menu = window->priv->view_history_menu_item;
+    gtk_check_menu_item_set_active(GTK_CHECK_MENU_ITEM(menu),
+                                   math_window_get_show_history(window));
+    g_settings_set_boolean(g_settings_var, "show-history", math_window_get_show_history(window));
 }
 
 static void show_preferences_cb(GtkMenuItem *menu, MathWindow *window)
@@ -356,6 +407,13 @@ static GtkWidget *add_menu(GtkWidget *menu_bar, const gchar *name)
     return menu;
 }
 
+static void
+update_history_cb (MathEquation *equation, char *answer, MPNumber *number, int number_base, gpointer data)
+{   /* Recieves signal emitted by a MathEquation object for updating history */
+    MathWindow *window = MATH_WINDOW(data);
+    math_history_insert_entry (window->priv->history, answer, number, number_base); /* Sends current equation and answer for updating History-View */
+}
+
 static void quit_cb(GtkWidget* widget, MathWindow* window)
 {
     g_signal_emit(window, signals[QUIT], 0);
@@ -425,6 +483,8 @@ static void create_menu(MathWindow* window)
     #define CALCULATOR_MENU_LABEL _("_Calculator")
     /* Mode menu */
     #define MODE_MENU_LABEL _("_Mode")
+    /* View menu */
+    #define VIEW_MENU_LABEL _("_View")
     /* Help menu label */
     #define HELP_MENU_LABEL _("_Help")
     /* Basic menu label */
@@ -435,6 +495,8 @@ static void create_menu(MathWindow* window)
     #define MODE_FINANCIAL_LABEL _("_Financial")
     /* Programming menu label */
     #define MODE_PROGRAMMING_LABEL _("_Programming")
+    /* History menu label */
+    #define VIEW_HISTORY_LABEL _("_History")
     /* Help>Contents menu label */
     #define HELP_CONTENTS_LABEL _("_Contents")
 
@@ -464,6 +526,10 @@ static void create_menu(MathWindow* window)
     window->priv->mode_programming_menu_item = add_menu_item(menu, radio_menu_item_new(&group, MODE_PROGRAMMING_LABEL), G_CALLBACK(mode_changed_cb), window);
     g_object_set_data(G_OBJECT(window->priv->mode_programming_menu_item), "calcmode", GINT_TO_POINTER(PROGRAMMING));
 
+    menu = add_menu(window->priv->menu_bar, VIEW_MENU_LABEL);
+    window->priv->view_history_menu_item = add_menu_item(menu, gtk_check_menu_item_new_with_mnemonic(VIEW_HISTORY_LABEL), G_CALLBACK(history_check_toggled_cb), window);
+    gtk_widget_add_accelerator(window->priv->view_history_menu_item, "activate", accel_group, GDK_KEY_H, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
+
     menu = add_menu(window->priv->menu_bar, HELP_MENU_LABEL);
     menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("help-browser", HELP_CONTENTS_LABEL, accel_group), G_CALLBACK(help_cb), window);
     gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_F1, 0, GTK_ACCEL_VISIBLE);
@@ -481,7 +547,7 @@ create_gui(MathWindow *window)
     gtk_widget_show(main_vbox);
 
     window->priv->menu_bar = gtk_menu_bar_new();
-    gtk_box_pack_start(GTK_BOX(main_vbox), window->priv->menu_bar, TRUE, TRUE, 0);
+    gtk_box_pack_start(GTK_BOX(main_vbox), window->priv->menu_bar, FALSE, FALSE, 0);
     gtk_widget_show(window->priv->menu_bar);
 
     create_menu(window);
@@ -491,10 +557,16 @@ create_gui(MathWindow *window)
     gtk_box_pack_start(GTK_BOX(main_vbox), vbox, TRUE, TRUE, 0);
     gtk_widget_show(vbox);
 
+    window->priv->history = math_history_new(window->priv->equation);
+    g_signal_connect(window->priv->equation, "history", G_CALLBACK(update_history_cb), window);
+    g_signal_connect(window, "notify::show-history", G_CALLBACK(show_history_cb), NULL);
+    show_history_cb(window, NULL);
+    gtk_box_pack_start(GTK_BOX(vbox), GTK_WIDGET(window->priv->history), TRUE, TRUE, 0);
+
     scrolled_window = gtk_scrolled_window_new(NULL, NULL);
     gtk_scrolled_window_set_policy(GTK_SCROLLED_WINDOW(scrolled_window), GTK_POLICY_AUTOMATIC, GTK_POLICY_NEVER);
     gtk_scrolled_window_set_shadow_type(GTK_SCROLLED_WINDOW(scrolled_window), GTK_SHADOW_IN);
-    gtk_box_pack_start(GTK_BOX(vbox), GTK_WIDGET(scrolled_window), TRUE, TRUE, 0);
+    gtk_box_pack_start(GTK_BOX(vbox), GTK_WIDGET(scrolled_window), FALSE, FALSE, 0);
     g_signal_connect(gtk_scrolled_window_get_hadjustment(GTK_SCROLLED_WINDOW(scrolled_window)), "changed", G_CALLBACK(scroll_changed_cb), window);
     g_signal_connect(gtk_scrolled_window_get_hadjustment(GTK_SCROLLED_WINDOW(scrolled_window)), "value-changed", G_CALLBACK(scroll_value_changed_cb), window);
     window->priv->right_aligned = TRUE;
@@ -507,7 +579,7 @@ create_gui(MathWindow *window)
     window->priv->buttons = math_buttons_new(window->priv->equation);
     g_signal_connect(window->priv->buttons, "notify::mode", G_CALLBACK(button_mode_changed_cb), window);
     button_mode_changed_cb(window->priv->buttons, NULL, window);
-    gtk_box_pack_start(GTK_BOX(vbox), GTK_WIDGET(window->priv->buttons), TRUE, TRUE, 0);
+    gtk_box_pack_start(GTK_BOX(vbox), GTK_WIDGET(window->priv->buttons), FALSE, FALSE, 0);
     gtk_widget_show(GTK_WIDGET(window->priv->buttons));
 }
 
@@ -526,6 +598,9 @@ math_window_set_property(GObject      *object,
     case PROP_EQUATION:
         self->priv->equation = g_value_get_object(value);
         create_gui(self);
+        break;
+    case PROP_SHOW_HISTORY:
+        math_window_set_show_history(self, g_value_get_boolean(value));
         break;
     default:
         G_OBJECT_WARN_INVALID_PROPERTY_ID(object, prop_id, pspec);
@@ -547,6 +622,9 @@ math_window_get_property(GObject    *object,
     switch (prop_id) {
     case PROP_EQUATION:
         g_value_set_object(value, self->priv->equation);
+        break;
+    case PROP_SHOW_HISTORY:
+        g_value_set_boolean(value, math_window_get_show_history(self));
         break;
     default:
         G_OBJECT_WARN_INVALID_PROPERTY_ID(object, prop_id, pspec);
@@ -570,6 +648,14 @@ math_window_class_init(MathWindowClass *klass)
                                                         "Equation being calculated",
                                                         math_equation_get_type(),
                                                         G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY));
+
+    g_object_class_install_property(object_class,
+                                    PROP_EQUATION,
+                                    g_param_spec_boolean("show-history",
+                                                         "show-history",
+                                                         "Show-history",
+                                                         FALSE,
+                                                         G_PARAM_READWRITE));
 
     signals[QUIT] = g_signal_new("quit",
                                  G_TYPE_FROM_CLASS (klass),

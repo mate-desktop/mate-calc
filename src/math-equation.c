@@ -975,9 +975,14 @@ math_equation_set_number(MathEquation *equation, const MPNumber *x)
 {
     char *text;
     GtkTextIter start, end;
+    MathEquationState *state;
 
     g_return_if_fail(equation != NULL);
     g_return_if_fail(x != NULL);
+
+    /* Notify history */
+    state = get_current_state(equation);
+    g_signal_emit_by_name(equation, "history", state->expression, x, mp_serializer_get_base(equation->priv->serializer));
 
     /* Show the number in the user chosen format */
     text = mp_serializer_to_string(equation->priv->serializer, x);
@@ -1788,8 +1793,19 @@ math_equation_class_init(MathEquationClass *klass)
                                                         "Serializer",
                                                         MP_TYPE_SERIALIZER,
                                                         G_PARAM_READABLE));
-}
 
+    GType param_types[3] = {G_TYPE_STRING, G_TYPE_POINTER, G_TYPE_INT};
+    g_signal_newv("history",
+                  G_TYPE_FROM_CLASS(klass),
+                  G_SIGNAL_RUN_LAST,
+                  0,
+                  NULL,
+                  NULL,
+                  NULL,
+                  G_TYPE_NONE,
+                  3,
+                  param_types);
+}
 
 static void
 pre_insert_text_cb(MathEquation  *equation,

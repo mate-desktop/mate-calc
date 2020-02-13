@@ -26,6 +26,10 @@ mate_calc_SOURCES = \
 	math-buttons.h \
 	math-converter.c \
 	math-converter.h \
+	math-history.c \
+	math-history.h \
+	math-history-entry.c \
+	math-history-entry.h \
 	math-display.c \
 	math-display.h \
 	math-equation.c \
@@ -194,6 +198,7 @@ EXTRA_DIST = \
 	mp-enums.c.template \
 	mp-enums.h.template \
 	org.mate.calculator.gresource.xml \
+	history-entry.ui \
 	preferences.ui
 
 DISTCLEANFILES = \
