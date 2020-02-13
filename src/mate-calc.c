@@ -190,7 +190,7 @@ int main(int argc, char **argv)
     MathEquation *equation;
     MathButtons *buttons;
     int accuracy = 9, word_size = 64, base = 10;
-    gboolean show_tsep = FALSE, show_zeroes = FALSE;
+    gboolean show_tsep = FALSE, show_zeroes = FALSE, show_hist = FALSE;
     MpDisplayFormat number_format;
     MPAngleUnit angle_units;
     ButtonMode button_mode;
@@ -213,6 +213,7 @@ int main(int argc, char **argv)
     base = g_settings_get_int(g_settings_var, "base");
     show_tsep = g_settings_get_boolean(g_settings_var, "show-thousands");
     show_zeroes = g_settings_get_boolean(g_settings_var, "show-zeroes");
+    show_hist = g_settings_get_boolean(g_settings_var, "show-history");
     number_format = g_settings_get_enum(g_settings_var, "number-format");
     angle_units = g_settings_get_enum(g_settings_var, "angle-units");
     button_mode = g_settings_get_enum(g_settings_var, "button-mode");
@@ -244,6 +245,7 @@ int main(int argc, char **argv)
     window = math_window_new(equation);
     buttons = math_window_get_buttons(window);
     g_signal_connect(G_OBJECT(window), "quit", G_CALLBACK(quit_cb), NULL);
+    math_window_set_show_history(window, show_hist);
     math_buttons_set_programming_base(buttons, base);
     math_buttons_set_mode(buttons, button_mode); // FIXME: We load the basic buttons even if we immediately switch to the next type
 
