@@ -221,15 +221,11 @@ static void help_cb(GtkWidget *widget, MathWindow *window)
     }
 }
 
+#define ABOUT_GROUP "About"
+#define EMAILIFY(string) (g_strdelimit ((string), "%", '@'))
+
 static void about_cb(GtkWidget* widget, MathWindow* window)
 {
-    const char* authors[] = {
-        "Rich Burridge <rich.burridge@sun.com>",
-        "Robert Ancell <robert.ancell@gmail.com>",
-        "Klaus Niederkrüger <kniederk@umpa.ens-lyon.fr>",
-        NULL
-    };
-
     const char* documenters[] = {
         N_("Sun Microsystems"),
         N_("MATE Documentation Team"),
@@ -252,6 +248,31 @@ static void about_cb(GtkWidget* widget, MathWindow* window)
     };
 
     char *license_trans = g_strjoin ("\n\n", _(license[0]), _(license[1]), _(license[2]), NULL);
+
+    GKeyFile *key_file;
+    GBytes *bytes;
+    const guint8 *data;
+    gsize data_len;
+    GError *error = NULL;
+    char **authors;
+    gsize n_authors = 0, i;
+
+    bytes = g_resources_lookup_data ("/org/mate/calculator/ui/mate-calc.about", G_RESOURCE_LOOKUP_FLAGS_NONE, &error);
+    g_assert_no_error (error);
+
+    data = g_bytes_get_data (bytes, &data_len);
+    key_file = g_key_file_new ();
+    g_key_file_load_from_data (key_file, (const char *) data, data_len, 0, &error);
+    g_assert_no_error (error);
+
+    authors = g_key_file_get_string_list (key_file, ABOUT_GROUP, "Authors", &n_authors, NULL);
+
+    g_key_file_free (key_file);
+    g_bytes_unref (bytes);
+
+    for (i = 0; i < n_authors; ++i)
+        authors[i] = EMAILIFY (authors[i]);
+
     const char **p;
 
     for (p = documenters; *p; ++p)
@@ -274,6 +295,7 @@ static void about_cb(GtkWidget* widget, MathWindow* window)
         "logo-icon-name", "accessories-calculator",
         NULL);
 
+    g_strfreev (authors);
     g_free (license_trans);
 }
 

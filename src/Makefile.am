@@ -190,6 +190,7 @@ EXTRA_DIST = \
 	buttons-basic.ui \
 	buttons-financial.ui \
 	buttons-programming.ui \
+	mate-calc.about \
 	mp-enums.c.template \
 	mp-enums.h.template \
 	org.mate.calculator.gresource.xml \
