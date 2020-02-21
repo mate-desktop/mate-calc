@@ -1,0 +1,121 @@
+##########################################################
+# THE FOLLOWING LINES IS USED BY docker-build
+##########################################################
+requires:
+  archlinux:
+    # Useful URL: https://git.archlinux.org/svntogit/community.git/tree/mate-calc
+    - clang
+    - gcc
+    - git
+    - gtk3
+    - intltool
+    - make
+    - mate-common
+    - which
+    - yelp-tools
+
+  debian:
+    # Useful URL: https://github.com/mate-desktop/debian-packages
+    # Useful URL: https://salsa.debian.org/debian-mate-team/mate-calc
+    - autopoint
+    - clang
+    - clang-tools
+    - cppcheck
+    - gcc
+    - git
+    - libatk1.0-dev
+    - libglib2.0-dev
+    - libgtk-3-dev
+    - libxml2-dev
+    - make
+    - mate-common
+    - yelp-tools
+
+  fedora:
+    # Useful URL: https://src.fedoraproject.org/cgit/rpms/mate-calc.git
+    - clang
+    - clang-analyzer
+    - cppcheck-htmlreport
+    - bison
+    - desktop-file-utils
+    - flex
+    - gcc
+    - git
+    - gtk3
+    - libxml2-devel
+    - make
+    - mate-common
+    - mate-desktop-devel
+    - redhat-rpm-config
+
+  ubuntu:
+    - autopoint
+    - clang
+    - clang-tools
+    - git
+    - libatk1.0-dev
+    - libglib2.0-dev
+    - libgtk-3-dev
+    - libxml2-dev
+    - make
+    - mate-common
+    - yelp-tools
+
+variables:
+  - CFLAGS="-Wall -Werror=format-security -Wredundant-decls"
+  - 'CHECKERS="
+    -enable-checker deadcode.DeadStores
+    -enable-checker alpha.deadcode.UnreachableCode
+    -enable-checker alpha.core.CastSize
+    -enable-checker alpha.core.CastToStruct
+    -enable-checker alpha.core.IdenticalExpr
+    -enable-checker alpha.core.SizeofPtr
+    -enable-checker alpha.security.ArrayBoundV2
+    -enable-checker alpha.security.MallocOverflow
+    -enable-checker alpha.security.ReturnPtrRange
+    -enable-checker alpha.unix.SimpleStream
+    -enable-checker alpha.unix.cstring.BufferOverlap
+    -enable-checker alpha.unix.cstring.NotNullTerminated
+    -enable-checker alpha.unix.cstring.OutOfBounds
+    -enable-checker alpha.core.FixedAddr
+    -enable-checker security.insecureAPI.strcpy"'
+
+before_scripts:
+  - if [ ${DISTRO_NAME} == "debian" ];then
+  -     curl -Ls -o debian.sh https://github.com/mate-desktop/mate-dev-scripts/raw/master/travis/debian.sh
+  -     bash ./debian.sh
+  - fi
+
+build_scripts:
+  - ./autogen.sh
+  - scan-build $CHECKERS ./configure
+  - if [ $CPU_COUNT -gt 1 ]; then
+  -     scan-build $CHECKERS --keep-cc -o html-report make -j $CPU_COUNT
+  - else
+  -     scan-build $CHECKERS --keep-cc -o html-report make
+  - fi
+  - if [ ${DISTRO_NAME} == "debian" ];then
+  -     cppcheck --enable=warning,style,performance,portability,information,missingInclude .
+  - fi
+
+after_scripts:
+  - if [ ${DISTRO_NAME} == "fedora" ];then
+  -   cppcheck --xml --output-file=cppcheck.xml --enable=warning,style,performance,portability,information,missingInclude .
+  -   cppcheck-htmlreport --title=${REPO_NAME} --file=cppcheck.xml --report-dir=cppcheck-htmlreport
+  -   ./gen-index -l 20 -i https://github.com/${OWNER_NAME}/mate-icon-theme/raw/master/mate/16x16/apps/accessories-calculator.png
+  - fi
+  - make distcheck
+
+releases:
+  draft: false
+  prerelease: false
+  checksum: true
+  file_glob: true
+  files: mate-calc-*.tar.xz
+  github_release:
+    tags: true
+    overwrite: true
+    base_version: 1.20.0
+    notify_servers:
+      - https://release.mate-desktop.org/release
+
