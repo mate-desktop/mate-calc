@@ -370,7 +370,6 @@ create_gui(MathDisplay *display)
     g_signal_connect(display, "key-press-event", G_CALLBACK(key_press_cb), display);
 
     display->priv->text_view = gtk_text_view_new_with_buffer(GTK_TEXT_BUFFER(display->priv->equation));
-    gtk_text_view_set_wrap_mode(GTK_TEXT_VIEW(display->priv->text_view), GTK_WRAP_WORD);
     gtk_text_view_set_accepts_tab(GTK_TEXT_VIEW(display->priv->text_view), FALSE);
     gtk_text_view_set_pixels_above_lines(GTK_TEXT_VIEW(display->priv->text_view), 8);
     gtk_text_view_set_pixels_below_lines(GTK_TEXT_VIEW(display->priv->text_view), 2);
@@ -393,7 +392,6 @@ create_gui(MathDisplay *display)
     gtk_box_pack_start(GTK_BOX(main_box), info_box, FALSE, TRUE, 0);
 
     info_view = gtk_text_view_new();
-    gtk_text_view_set_wrap_mode(GTK_TEXT_VIEW(info_view), GTK_WRAP_WORD);
     gtk_widget_set_can_focus(info_view, TRUE); // FIXME: This should be FALSE but it locks the cursor inside the main view for some reason
     gtk_text_view_set_cursor_visible(GTK_TEXT_VIEW(info_view), FALSE); // FIXME: Just here so when incorrectly gets focus doesn't look editable
     gtk_text_view_set_editable(GTK_TEXT_VIEW(info_view), FALSE);
