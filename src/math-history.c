@@ -52,7 +52,7 @@ scroll_bottom_cb(MathHistory *history, gpointer data)
 
 static gboolean
 check_history(MathHistory *history, char *equation)
-{ /* Checks if the last inserted calculation is the same as the current calculation to be inserted in history-history */
+{ /* Checks if the last inserted calculation is the same as the current calculation to be inserted in history */
     if (history->priv->items_count >= 1 && g_strcmp0(equation, history->priv->prev_equation)==0)
         return TRUE; /* returns true if last entered equation is the same as the current equation */
     else
@@ -61,7 +61,7 @@ check_history(MathHistory *history, char *equation)
 
 void
 math_history_insert_entry (MathHistory *history, char *equation, MPNumber *answer, int number_base)
-{   /* Inserts a new entry into the history-history listbox */
+{   /* Inserts a new entry into the history listbox */
     history->priv->entry = math_history_entry_new(history->priv->equation);
     gboolean check = check_history (history, equation);
     history->priv->prev_equation = g_strdup(equation);
