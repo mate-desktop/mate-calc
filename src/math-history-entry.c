@@ -98,8 +98,8 @@ math_history_entry_insert_entry(MathHistoryEntry *history_entry, char *equation,
     builder = gtk_builder_new();
     if(gtk_builder_add_from_resource (builder, UI_HISTORY_ENTRY_RESOURCE_PATH, &error) == 0)
     {
-        g_print("gtk_builder_add_from_resource FAILED\n");
-        g_print("%s\n",error->message);
+        g_warning("Error loading history-entry UI: %s", error->message);
+        g_clear_error(&error);
         return;
     }
     grid = GET_WIDGET(builder, "grid");
@@ -113,6 +113,7 @@ math_history_entry_insert_entry(MathHistoryEntry *history_entry, char *equation,
     gtk_label_set_text(GTK_LABEL(history_entry->priv->equation_label), history_entry->priv->equation_string);
     gtk_label_set_text(GTK_LABEL(history_entry->priv->answer_label), final_answer);
     gtk_builder_connect_signals(builder, history_entry);
+    g_free(final_answer);
 }
 
 static void
