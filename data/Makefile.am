@@ -11,7 +11,7 @@ Utilitiesdir = $(datadir)/applications
 Utilities_in_files = mate-calc.desktop.in
 Utilities_DATA = $(Utilities_in_files:.desktop.in=.desktop)
 $(Utilities_DATA): $(Utilities_in_files)
-	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
+	$(AM_V_GEN) $(MSGFMT) --desktop --keyword= --keyword=Name --keyword=GenericName --keyword=Comment --keyword=Keywords --template $< -d $(top_srcdir)/po -o $@
 
 man1_MANS = mate-calc.1 mate-calc-cmd.1
 
