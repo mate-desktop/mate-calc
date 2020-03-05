@@ -78,7 +78,7 @@ static void
 add_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
 {
     const gchar *name;
-    MPNumber z;
+    MPNumber z = mp_new();
 
     name = gtk_entry_get_text(GTK_ENTRY(popup->priv->variable_name_entry));
     if (name[0] == '\0')
@@ -92,6 +92,7 @@ add_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
         g_warning("Can't add variable %s, the display is not a number", name);
 
     gtk_widget_destroy(gtk_widget_get_toplevel(widget));
+    mp_clear(&z);
 }
 
 
@@ -99,7 +100,7 @@ static void
 save_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
 {
     const gchar *name;
-    MPNumber z;
+    MPNumber z = mp_new();
 
     name = g_object_get_data(G_OBJECT(widget), "variable_name");
     if (math_equation_get_number(popup->priv->equation, &z))
@@ -110,6 +111,7 @@ save_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
         g_warning("Can't save variable %s, the display is not a number", name);
 
     gtk_widget_destroy(gtk_widget_get_toplevel(widget));
+    mp_clear(&z);
 }
 
 

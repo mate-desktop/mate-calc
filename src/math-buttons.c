@@ -360,7 +360,7 @@ load_finc_dialogs(MathButtons *buttons)
 static void
 update_bit_panel(MathButtons *buttons)
 {
-    MPNumber x;
+    MPNumber x = mp_new();
     gboolean enabled;
     guint64 bits;
     int i;
@@ -373,14 +373,17 @@ update_bit_panel(MathButtons *buttons)
     enabled = math_equation_get_number(buttons->priv->equation, &x);
 
     if (enabled) {
-        MPNumber max, fraction;
+        MPNumber max = mp_new();
+        MPNumber fraction = mp_new();
 
         mp_set_from_unsigned_integer(G_MAXUINT64, &max);
         mp_fractional_part(&x, &fraction);
         if (mp_is_negative(&x) || mp_is_greater_than(&x, &max) || !mp_is_zero(&fraction))
             enabled = FALSE;
         else
-            bits = mp_cast_to_unsigned_int(&x);
+            bits = mp_to_unsigned_integer(&x);
+        mp_clear(&max);
+        mp_clear(&fraction);
     }
 
     gtk_widget_set_sensitive(buttons->priv->bit_panel, enabled);
@@ -422,6 +425,7 @@ update_bit_panel(MathButtons *buttons)
 
     gtk_label_set_text(GTK_LABEL(buttons->priv->base_label), label->str);
     g_string_free(label, TRUE);
+    mp_clear(&x);
 }
 
 
@@ -1177,6 +1181,7 @@ finc_response_cb(GtkWidget *widget, gint response_id, MathButtons *buttons)
     dialog = GPOINTER_TO_INT(g_object_get_data(G_OBJECT(widget), "finc_dialog"));
 
     for (i = 0; i < 4; i++) {
+        arg[i] = mp_new();
         if (finc_dialog_fields[dialog][i] == NULL) {
             continue;
         }
@@ -1187,6 +1192,10 @@ finc_response_cb(GtkWidget *widget, gint response_id, MathButtons *buttons)
     gtk_widget_grab_focus(GET_WIDGET(buttons->priv->financial_ui, finc_dialog_fields[dialog][0]));
 
     do_finc_expression(buttons->priv->equation, dialog, &arg[0], &arg[1], &arg[2], &arg[3]);
+
+    for (i = 0; i < 4; i++) {
+        mp_clear(&arg[i]);
+    }
 }
 
 
@@ -1200,7 +1209,7 @@ character_code_dialog_response_cb(GtkWidget *dialog, gint response_id, MathButto
     text = gtk_entry_get_text(GTK_ENTRY(buttons->priv->character_code_entry));
 
     if (response_id == GTK_RESPONSE_OK) {
-        MPNumber x;
+        MPNumber x = mp_new();
         int i = 0;
 
         mp_set_from_integer(0, &x);
@@ -1213,10 +1222,9 @@ character_code_dialog_response_cb(GtkWidget *dialog, gint response_id, MathButto
             else
                 break;
         }
-
         math_equation_insert_number(buttons->priv->equation, &x);
+        mp_clear(&x);
     }
-
     gtk_widget_hide(dialog);
 }
 

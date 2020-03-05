@@ -21,7 +21,7 @@
   <schema path="/org/mate/calc/" id="org.mate.calc" gettext-domain="mate-calc">
     <key type="i" name="accuracy">
       <default>9</default>
-      <range min="0" max="15"/>
+      <range min="0" max="100"/>
       <summary>Accuracy value</summary>
       <description>The number of digits displayed after the numeric point</description>
     </key>

@@ -300,6 +300,7 @@ get_current_state(MathEquation *equation)
     gint ans_start = -1, ans_end = -1;
 
     state = g_malloc0(sizeof(MathEquationState));
+    state->ans = mp_new();
 
     if (equation->priv->ans_start)
     {
@@ -939,7 +940,7 @@ math_equation_get_answer(MathEquation *equation)
 void
 math_equation_store(MathEquation *equation, const gchar *name)
 {
-    MPNumber t;
+    MPNumber t = mp_new();
 
     g_return_if_fail(equation != NULL);
     g_return_if_fail(name != NULL);
@@ -948,6 +949,7 @@ math_equation_store(MathEquation *equation, const gchar *name)
         math_equation_set_status(equation, _("No sane value to store"));
     else
         math_variables_set(equation->priv->variables, name, &t);
+    mp_clear(&t);
 }
 
 
@@ -1148,7 +1150,6 @@ get_variable(const char *name, MPNumber *z, void *data)
         else
             result = 0;
     }
-
     free(lower_name);
 
     return result;
@@ -1203,7 +1204,7 @@ math_equation_solve_real(gpointer data)
     gint n_brackets = 0, result;
     gchar *c, *text, *error_token;
     GString *equation_text;
-    MPNumber z;
+    MPNumber z = mp_new();
 
     text = math_equation_get_equation(equation);
     equation_text = g_string_new(text);
@@ -1227,6 +1228,7 @@ math_equation_solve_real(gpointer data)
     switch (result) {
         case PARSER_ERR_NONE:
             solvedata->number_result = g_slice_new(MPNumber);
+            *solvedata->number_result = mp_new();
             mp_set_from_mp(&z, solvedata->number_result);
             break;
 
@@ -1267,6 +1269,7 @@ math_equation_solve_real(gpointer data)
             break;
     }
     g_async_queue_push(equation->priv->queue, solvedata);
+    mp_clear(&z);
 
     return NULL;
 }
@@ -1302,6 +1305,7 @@ math_equation_look_for_answer(gpointer data)
     }
     else if (result->number_result != NULL) {
         math_equation_set_number(equation, result->number_result);
+        mp_clear(result->number_result);
         g_slice_free(MPNumber, result->number_result);
     }
     else if (result->text_result != NULL) {
@@ -1348,7 +1352,7 @@ math_equation_factorize_real(gpointer data)
 {
     GString *text;
     GList *factors, *factor;
-    MPNumber x;
+    MPNumber x = mp_new();
     MathEquation *equation = MATH_EQUATION(data);
     SolveData *result = g_slice_new0(SolveData);
 
@@ -1366,6 +1370,7 @@ math_equation_factorize_real(gpointer data)
         g_string_append(text, temp);
         if (factor->next)
             g_string_append(text, "×");
+        mp_clear(n);
         g_slice_free(MPNumber, n);
         g_free(temp);
     }
@@ -1374,6 +1379,7 @@ math_equation_factorize_real(gpointer data)
     result->text_result = g_strndup(text->str, text->len);
     g_async_queue_push(equation->priv->queue, result);
     g_string_free(text, TRUE);
+    mp_clear(&x);
 
     return NULL;
 }
@@ -1382,7 +1388,7 @@ math_equation_factorize_real(gpointer data)
 void
 math_equation_factorize(MathEquation *equation)
 {
-    MPNumber x;
+    MPNumber x = mp_new();
 
     g_return_if_fail(equation != NULL);
 
@@ -1393,9 +1399,10 @@ math_equation_factorize(MathEquation *equation)
     if (!math_equation_get_number(equation, &x) || !mp_is_integer(&x)) {
         /* Error displayed when trying to factorize a non-integer value */
         math_equation_set_status(equation, _("Need an integer to factorize"));
+        mp_clear(&x);
         return;
     }
-
+    mp_clear(&x);
     equation->priv->in_solve = true;
 
     g_thread_new("", math_equation_factorize_real, equation);
@@ -1456,7 +1463,7 @@ math_equation_clear(MathEquation *equation)
 void
 math_equation_shift(MathEquation *equation, gint count)
 {
-    MPNumber z;
+    MPNumber z = mp_new();
 
     g_return_if_fail(equation != NULL);
 
@@ -1470,13 +1477,14 @@ math_equation_shift(MathEquation *equation, gint count)
 
     mp_shift(&z, count, &z);
     math_equation_set_number(equation, &z);
+    mp_clear(&z);
 }
 
 
 void
 math_equation_toggle_bit(MathEquation *equation, guint bit)
 {
-    MPNumber x;
+    MPNumber x = mp_new();
     guint64 bits;
     gboolean result;
 
@@ -1484,18 +1492,20 @@ math_equation_toggle_bit(MathEquation *equation, guint bit)
 
     result = math_equation_get_number(equation, &x);
     if (result) {
-        MPNumber max;
+        MPNumber max = mp_new();
         mp_set_from_unsigned_integer(G_MAXUINT64, &max);
         if (mp_is_negative(&x) || mp_is_greater_than(&x, &max))
             result = FALSE;
         else
-            bits = mp_cast_to_unsigned_int(&x);
+            bits = mp_to_unsigned_integer(&x);
+        mp_clear(&max);
     }
 
     if (!result) {
         math_equation_set_status(equation,
                                  /* Message displayed when cannot toggle bit in display*/
                                  _("Displayed value not an integer"));
+        mp_clear(&x);
         return;
     }
 
@@ -1505,6 +1515,7 @@ math_equation_toggle_bit(MathEquation *equation, guint bit)
 
     // FIXME: Only do this if in ans format, otherwise set text in same format as previous number
     math_equation_set_number(equation, &x);
+    mp_clear(&x);
 }
 
 
@@ -1807,6 +1818,7 @@ math_equation_class_init(MathEquationClass *klass)
                   param_types);
 }
 
+
 static void
 pre_insert_text_cb(MathEquation  *equation,
                    GtkTextIter   *location,
@@ -1957,6 +1969,7 @@ math_equation_init(MathEquation *equation)
 
     equation->priv->variables = math_variables_new();
 
+    equation->priv->state.ans = mp_new();
     equation->priv->state.status = g_strdup("");
     equation->priv->word_size = 32;
     equation->priv->angle_units = MP_DEGREES;

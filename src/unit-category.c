@@ -106,18 +106,23 @@ unit_category_get_units(UnitCategory *category)
 gboolean
 unit_category_convert(UnitCategory *category, const MPNumber *x, Unit *x_units, Unit *z_units, MPNumber *z)
 {
-    MPNumber t;
-
     g_return_val_if_fail (category != NULL, FALSE);
     g_return_val_if_fail (x_units != NULL, FALSE);
     g_return_val_if_fail (z_units != NULL, FALSE);
     g_return_val_if_fail (z != NULL, FALSE);
 
+    MPNumber t = mp_new();
     if (!unit_convert_from(x_units, x, &t))
+    {
+        mp_clear(&t);
         return FALSE;
+    }
     if (!unit_convert_to(z_units, &t, z))
+    {
+        mp_clear(&t);
         return FALSE;
-
+    }
+    mp_clear(&t);
     return TRUE;
 }
 

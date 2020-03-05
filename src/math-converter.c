@@ -81,7 +81,8 @@ convert_equation(MathConverter *converter, const MPNumber *x, MPNumber *z)
 static void
 update_result_label(MathConverter *converter)
 {
-    MPNumber x, z;
+    MPNumber x = mp_new();
+    MPNumber z = mp_new();
     gboolean enabled;
 
     if (!converter->priv->result_label)
@@ -111,6 +112,8 @@ update_result_label(MathConverter *converter)
         g_object_unref(source_unit);
         g_object_unref(target_unit);
     }
+    mp_clear(&x);
+    mp_clear(&z);
 }
 
 
@@ -363,7 +366,8 @@ static void
 swap_button_clicked_cb(GtkButton *button, MathConverter *converter)
 {
     Unit *from_unit, *to_unit;
-    MPNumber x, z;
+    MPNumber x = mp_new();
+    MPNumber z = mp_new();
 
     if (math_equation_get_number(converter->priv->equation, &x) &&
         convert_equation(converter, &x, &z))
@@ -377,6 +381,8 @@ swap_button_clicked_cb(GtkButton *button, MathConverter *converter)
 
     g_object_unref(from_unit);
     g_object_unref(to_unit);
+    mp_clear(&x);
+    mp_clear(&z);
 }
 
 static void

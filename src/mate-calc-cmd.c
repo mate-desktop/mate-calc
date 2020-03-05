@@ -27,7 +27,7 @@ solve(const char *equation)
 {
     int ret;
     MPEquationOptions options;
-    MPNumber z;
+    MPNumber z = mp_new();
     gchar *result_str = NULL;
 
     memset(&options, 0, sizeof(options));
@@ -46,6 +46,7 @@ solve(const char *equation)
         printf("%s\n", result_str);
     }
     g_free(result_str);
+    mp_clear(&z);
 }
 
 
