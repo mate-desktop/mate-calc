@@ -31,7 +31,7 @@ pf_set_var(ParseNode* self)
     if(!val || !(self->state->set_variable))
     {
         if(val)
-            free(val);
+            mp_free(val);
         return NULL;
     }
     (*(self->state->set_variable))(self->state, self->left->token->string, val);
@@ -46,9 +46,8 @@ pf_convert_number(ParseNode* self)
     gchar* to;
     gint free_from = 0;
     gint free_to = 0;
-    MPNumber tmp;
-    MPNumber* ans;
-    ans = (MPNumber *) malloc(sizeof(MPNumber));
+    MPNumber tmp = mp_new();
+    MPNumber* ans = mp_new_ptr();
     if(self->left->value)
     {
         from = (gchar*) self->left->value;
@@ -66,20 +65,20 @@ pf_convert_number(ParseNode* self)
 
     if(mp_set_from_string(self->left->left->token->string, self->state->options->base, &tmp) != 0)
     {
-        free(ans);
+        mp_free(ans);
         ans = NULL;
         goto END_PF_CONVERT_NUMBER;
     }
     if(!(self->state->convert))
     {
-        free(ans);
+        mp_free(ans);
         ans = NULL;
         goto END_PF_CONVERT_NUMBER;
     }
     if(!(*(self->state->convert))(self->state, &tmp, from, to, ans))
     {
         set_error(self->state, PARSER_ERR_UNKNOWN_CONVERSION, NULL);
-        free(ans);
+        mp_free(ans);
         ans = NULL;
     }
 END_PF_CONVERT_NUMBER:
@@ -93,6 +92,7 @@ END_PF_CONVERT_NUMBER:
         g_free(self->right->value);
         self->right->value = NULL;
     }
+    mp_clear(&tmp);
     return ans;
 }
 
@@ -104,9 +104,8 @@ pf_convert_1(ParseNode* self )
     gchar* to;
     gint free_from = 0;
     gint free_to = 0;
-    MPNumber tmp;
-    MPNumber* ans;
-    ans = (MPNumber *) malloc(sizeof(MPNumber));
+    MPNumber tmp = mp_new();
+    MPNumber* ans = mp_new_ptr();
     if(self->left->value)
     {
         from = (gchar*) self->left->value;
@@ -124,13 +123,13 @@ pf_convert_1(ParseNode* self )
     mp_set_from_integer(1, &tmp);
     if(!(self->state->convert))
     {
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     if(!(*(self->state->convert))(self->state, &tmp, from, to, ans))
     {
         set_error(self->state, PARSER_ERR_UNKNOWN_CONVERSION, NULL);
-        free(ans);
+        mp_free(ans);
         ans = NULL;
     }
     if(free_from)
@@ -143,6 +142,7 @@ pf_convert_1(ParseNode* self )
         g_free(self->right->value);
         self->right->value = NULL;
     }
+    mp_clear(&tmp);
     return ans;
 }
 
@@ -170,11 +170,10 @@ pf_get_variable(ParseNode* self)
 
     const gchar *c, *next;
     gchar *buffer;
-    MPNumber value;
+    MPNumber value = mp_new();
 
-    MPNumber t;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber t = mp_new();
+    MPNumber* ans = mp_new_ptr();
 
     if(!(self->state->get_variable))
     {
@@ -227,11 +226,10 @@ pf_get_variable_with_power(ParseNode* self)
 
     const gchar *c, *next;
     gchar *buffer;
-    MPNumber value;
+    MPNumber value = mp_new();
 
-    MPNumber t;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber t = mp_new();
+    MPNumber* ans = mp_new_ptr();
     pow = super_atoi(((LexerToken*) self->value)->string);
 
     /* No need to free the memory. It is allocated and freed somewhere else. */
@@ -289,8 +287,7 @@ void*
 pf_apply_func(ParseNode* self)
 {
     MPNumber* val;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!(self->state->get_function))
     {
@@ -319,40 +316,38 @@ void*
 pf_apply_func_with_power(ParseNode* self)
 {
     MPNumber* val;
-    MPNumber* tmp;
-    MPNumber* ans;
+    MPNumber* tmp = mp_new_ptr();
+    MPNumber* ans = mp_new_ptr();
     gint pow;
-    tmp = (MPNumber*) malloc(sizeof(MPNumber));
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!(self->state->get_function))
     {
-        free(tmp);
-        free(ans);
-        free(val);
+        mp_free(tmp);
+        mp_free(ans);
+        mp_free(val);
         self->value = NULL;
         return NULL;
     }
     if(!val)
     {
-        free(tmp);
-        free(ans);
+        mp_free(tmp);
+        mp_free(ans);
         self->value = NULL;
         return NULL;
     }
     if(!(*(self->state->get_function))(self->state, self->token->string, val, tmp))
     {
-        free(tmp);
-        free(ans);
-        free(val);
+        mp_free(tmp);
+        mp_free(ans);
+        mp_free(val);
         self->value = NULL;
         set_error(self->state, PARSER_ERR_UNKNOWN_FUNCTION, self->token->string);
         return NULL;
     }
     pow = super_atoi(((LexerToken*) self->value)->string);
     mp_xpowy_integer(tmp, pow, ans);
-    free(val);
-    free(tmp);
+    mp_free(val);
+    mp_free(tmp);
     self->value = NULL;
     return ans;
 }
@@ -362,37 +357,35 @@ void*
 pf_apply_func_with_npower(ParseNode* self)
 {
     MPNumber* val;
-    MPNumber* tmp;
-    MPNumber* ans;
+    MPNumber* tmp = mp_new_ptr();
+    MPNumber* ans = mp_new_ptr();
     gint pow;
     gchar* inv_name;
     inv_name = (gchar*) malloc(sizeof(gchar) * strlen(self->token->string) + strlen("⁻¹") + 1);
     strcpy(inv_name, self->token->string);
     strcat(inv_name, "⁻¹");
-    tmp = (MPNumber*) malloc(sizeof(MPNumber));
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!val)
     {
-        free(tmp);
+        mp_free(tmp);
         free(inv_name);
-        free(ans);
+        mp_free(ans);
         self->value = NULL;
         return NULL;
     }
     if(!(self->state->get_function))
     {
-        free(tmp);
-        free(ans);
+        mp_free(tmp);
+        mp_free(ans);
         free(inv_name);
         self->value = NULL;
         return NULL;
     }
     if(!(*(self->state->get_function))(self->state, inv_name, val, tmp))
     {
-        free(tmp);
-        free(ans);
-        free(val);
+        mp_free(tmp);
+        mp_free(ans);
+        mp_free(val);
         free(inv_name);
         self->value = NULL;
         set_error(self->state, PARSER_ERR_UNKNOWN_FUNCTION, self->token->string);
@@ -400,8 +393,8 @@ pf_apply_func_with_npower(ParseNode* self)
     }
     pow = super_atoi(((LexerToken*) self->value)->string);
     mp_xpowy_integer(tmp, -pow, ans);
-    free(val);
-    free(tmp);
+    mp_free(val);
+    mp_free(tmp);
     free(inv_name);
     self->value = NULL;
     return ans;
@@ -413,18 +406,17 @@ pf_do_nth_root(ParseNode* self)
 {
     MPNumber* val;
     gint pow;
-    MPNumber* ans;
+    MPNumber* ans = mp_new_ptr();
     pow = sub_atoi(((LexerToken*) self->value)->string);
     self->value = NULL;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!val)
     {
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     mp_root(val, pow, ans);
-    free(val);
+    mp_free(val);
     return ans;
 }
 
@@ -433,8 +425,7 @@ void*
 pf_do_sqrt(ParseNode* self)
 {
     MPNumber* val;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!val)
     {
@@ -451,16 +442,15 @@ void*
 pf_do_root_3(ParseNode* self)
 {
     MPNumber* val;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!val)
     {
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     mp_root(val, 3, ans);
-    free(val);
+    mp_free(val);
     return ans;
 }
 
@@ -469,16 +459,15 @@ void*
 pf_do_root_4(ParseNode* self)
 {
     MPNumber* val;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!val)
     {
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     mp_root(val, 4, ans);
-    free(val);
+    mp_free(val);
     return ans;
 }
 
@@ -487,16 +476,15 @@ void*
 pf_do_floor(ParseNode* self)
 {
     MPNumber* val;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!val)
     {
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     mp_floor(val, ans);
-    free(val);
+    mp_free(val);
     return ans;
 }
 
@@ -504,16 +492,15 @@ pf_do_floor(ParseNode* self)
 void* pf_do_ceiling (ParseNode* self)
 {
     MPNumber* val;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!val)
     {
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     mp_ceiling(val, ans);
-    free(val);
+    mp_free(val);
     return ans;
 }
 
@@ -522,16 +509,15 @@ void*
 pf_do_round(ParseNode* self)
 {
     MPNumber* val;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!val)
     {
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     mp_round(val, ans);
-    free(val);
+    mp_free(val);
     return ans;
 }
 
@@ -540,16 +526,15 @@ void*
 pf_do_fraction(ParseNode* self)
 {
     MPNumber* val;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!val)
     {
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     mp_fractional_part(val, ans);
-    free(val);
+    mp_free(val);
     return ans;
 }
 
@@ -558,16 +543,15 @@ void*
 pf_do_abs(ParseNode* self)
 {
     MPNumber* val;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!val)
     {
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     mp_abs(val, ans);
-    free(val);
+    mp_free(val);
     return ans;
 }
 
@@ -577,22 +561,21 @@ pf_do_x_pow_y(ParseNode* self)
 {
     MPNumber* val;
     MPNumber* pow;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     val = (MPNumber*) (*(self->left->evaluate))(self->left);
     pow = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!val || !pow)
     {
         if(val)
-            free(val);
+            mp_free(val);
         if(pow)
-            free(pow);
-        free(ans);
+            mp_free(pow);
+        mp_free(ans);
         return NULL;
     }
     mp_xpowy(val, pow, ans);
-    free(val);
-    free(pow);
+    mp_free(val);
+    mp_free(pow);
     return ans;
 }
 
@@ -602,17 +585,16 @@ pf_do_x_pow_y_int(ParseNode* self)
 {
     MPNumber* val;
     gint pow;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     val = (MPNumber*) (*(self->left->evaluate))(self->left);
     pow = super_atoi(self->right->token->string);
     if(!val)
     {
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     mp_xpowy_integer(val, pow, ans);
-    free(val);
+    mp_free(val);
     return ans;
 }
 
@@ -621,16 +603,15 @@ void*
 pf_do_factorial(ParseNode* self)
 {
     MPNumber* val;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!val)
     {
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     mp_factorial(val, ans);
-    free(val);
+    mp_free(val);
     return ans;
 }
 
@@ -639,16 +620,15 @@ void*
 pf_unary_minus(ParseNode* self)
 {
     MPNumber* val;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!val)
     {
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     mp_invert_sign(val, ans);
-    free(val);
+    mp_free(val);
     return ans;
 }
 
@@ -658,22 +638,21 @@ pf_do_divide(ParseNode* self)
 {
     MPNumber* left;
     MPNumber* right;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     left = (MPNumber*) (*(self->left->evaluate))(self->left);
     right = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!left || !right)
     {
         if(left)
-            free(left);
+            mp_free(left);
         if(right)
-            free(right);
-        free(ans);
+            mp_free(right);
+        mp_free(ans);
         return NULL;
     }
     mp_divide(left, right, ans);
-    free(left);
-    free(right);
+    mp_free(left);
+    mp_free(right);
     return ans;
 }
 
@@ -683,22 +662,21 @@ pf_do_mod(ParseNode* self)
 {
     MPNumber* left;
     MPNumber* right;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     left = (MPNumber*) (*(self->left->evaluate))(self->left);
     right = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!left || !right)
     {
         if(left)
-            free(left);
+            mp_free(left);
         if(right)
-            free(right);
+            mp_free(right);
         free(ans);
         return NULL;
     }
     mp_modulus_divide(left, right, ans);
-    free(left);
-    free(right);
+    mp_free(left);
+    mp_free(right);
     return ans;
 }
 
@@ -708,22 +686,21 @@ pf_do_multiply(ParseNode* self)
 {
     MPNumber* left;
     MPNumber* right;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     left = (MPNumber*) (*(self->left->evaluate))(self->left);
     right = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!left || !right)
     {
         if(left)
-            free(left);
+            mp_free(left);
         if(right)
-            free(right);
-        free(ans);
+            mp_free(right);
+        mp_free(ans);
         return NULL;
     }
     mp_multiply(left, right, ans);
-    free(left);
-    free(right);
+    mp_free(left);
+    mp_free(right);
     return ans;
 }
 
@@ -733,22 +710,21 @@ pf_do_subtract(ParseNode* self)
 {
     MPNumber* left;
     MPNumber* right;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     left = (MPNumber*) (*(self->left->evaluate))(self->left);
     right = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!left || !right)
     {
         if(left)
-            free(left);
+            mp_free(left);
         if(right)
-            free (right);
+            mp_free(right);
         free(ans);
         return NULL;
     }
     mp_subtract(left, right, ans);
-    free(left);
-    free(right);
+    mp_free(left);
+    mp_free(right);
     return ans;
 }
 
@@ -758,22 +734,21 @@ pf_do_add(ParseNode* self)
 {
     MPNumber* left;
     MPNumber* right;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     left = (MPNumber*) (*(self->left->evaluate))(self->left);
     right = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!left || !right)
     {
         if(left)
-            free(left);
+            mp_free(left);
         if(right)
-            free(right);
+            mp_free(right);
         free(ans);
         return NULL;
     }
     mp_add(left, right, ans);
-    free(left);
-    free(right);
+    mp_free(left);
+    mp_free(right);
     return ans;
 }
 
@@ -781,26 +756,25 @@ pf_do_add(ParseNode* self)
 void*
 pf_do_add_percent(ParseNode* self)
 {
-    MPNumber* ans;
+    MPNumber* ans = mp_new_ptr();
     MPNumber* val;
     MPNumber* per;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
     val = (MPNumber*) (*(self->left->evaluate))(self->left);
     per = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!val || !per)
     {
         if(val)
-            free(val);
+            mp_free(val);
         if(per)
-            free(per);
-        free(ans);
+            mp_free(per);
+        mp_free(ans);
         return NULL;
     }
     mp_add_integer(per, 100, per);
     mp_divide_integer(per, 100, per);
     mp_multiply(val, per, ans);
-    free(val);
-    free(per);
+    mp_free(val);
+    mp_free(per);
     return ans;
 }
 
@@ -808,26 +782,25 @@ pf_do_add_percent(ParseNode* self)
 void*
 pf_do_subtract_percent(ParseNode* self)
 {
-    MPNumber* ans;
+    MPNumber* ans = mp_new_ptr();
     MPNumber* val;
     MPNumber* per;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
     val = (MPNumber*) (*(self->left->evaluate))(self->left);
     per = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!val || !per)
     {
         if(val)
-            free(val);
+            mp_free(val);
         if(per)
-            free(per);
+            mp_free(per);
         free(ans);
         return NULL;
     }
     mp_add_integer(per, -100, per);
     mp_divide_integer(per, -100, per);
     mp_multiply(val, per, ans);
-    free(val);
-    free(per);
+    mp_free(val);
+    mp_free(per);
     return ans;
 }
 
@@ -836,16 +809,15 @@ void*
 pf_do_percent(ParseNode* self)
 {
     MPNumber* val;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!val)
     {
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     mp_divide_integer(val, 100, ans);
-    free(val);
+    mp_free(val);
     return ans;
 }
 
@@ -854,23 +826,22 @@ void*
 pf_do_not(ParseNode* self)
 {
     MPNumber* val;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!val)
     {
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     if(!mp_is_overflow(val, self->state->options->wordlen))
     {
         set_error(self->state, PARSER_ERR_OVERFLOW, NULL);
-        free(ans);
-        free(val);
+        mp_free(ans);
+        mp_free(val);
         return NULL;
     }
     mp_not(val, self->state->options->wordlen, ans);
-    free(val);
+    mp_free(val);
     return ans;
 }
 
@@ -880,22 +851,21 @@ pf_do_and(ParseNode* self)
 {
     MPNumber* left;
     MPNumber* right;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     left = (MPNumber*) (*(self->left->evaluate))(self->left);
     right = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!left || !right)
     {
         if(left)
-            free(left);
+            mp_free(left);
         if(right)
-            free(right);
-        free(ans);
+            mp_free(right);
+        mp_free(ans);
         return NULL;
     }
     mp_and(left, right, ans);
-    free(left);
-    free(right);
+    mp_free(left);
+    mp_free(right);
     return ans;
 }
 
@@ -905,22 +875,21 @@ pf_do_or(ParseNode* self)
 {
     MPNumber* left;
     MPNumber* right;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     left = (MPNumber*) (*(self->left->evaluate))(self->left);
     right = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!left || !right)
     {
         if(left)
-            free(left);
+            mp_free(left);
         if(right)
-            free(right);
-        free(ans);
+            mp_free(right);
+        mp_free(ans);
         return NULL;
     }
     mp_or(left, right, ans);
-    free(left);
-    free(right);
+    mp_free(left);
+    mp_free(right);
     return ans;
 }
 
@@ -930,22 +899,21 @@ pf_do_xor(ParseNode* self)
 {
     MPNumber* left;
     MPNumber* right;
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     left = (MPNumber*) (*(self->left->evaluate))(self->left);
     right = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!left || !right)
     {
         if(left)
-            free(left);
+            mp_free(left);
         if(right)
-            free(right);
+            mp_free(right);
         free(ans);
         return NULL;
     }
     mp_xor(left, right, ans);
-    free(left);
-    free(right);
+    mp_free(left);
+    mp_free(right);
     return ans;
 }
 
@@ -953,13 +921,12 @@ pf_do_xor(ParseNode* self)
 void*
 pf_constant(ParseNode* self)
 {
-    MPNumber* ans;
-    ans = (MPNumber*) malloc(sizeof(MPNumber));
+    MPNumber* ans = mp_new_ptr();
     if(mp_set_from_string(self->token->string, self->state->options->base, ans) != 0)
     {
         /* This should never happen, as l_check_if_number() has already passed the string once. */
         /* If the code reaches this point, something is really wrong. X( */
-        free(ans);
+        mp_free(ans);
         set_error(self->state, PARSER_ERR_INVALID, self->token->string);
         return NULL;
     }

@@ -30,12 +30,13 @@ l_check_if_function(LexerState* state)
 static gboolean
 l_check_if_number(LexerState* state)
 {
-    MPNumber tmp;
+    MPNumber tmp = mp_new();
     int count = 0;
     gchar* text = pl_get_marked_substring(state->prelexer);
     if(mp_set_from_string(text, state->parent->options->base, &tmp) == 0)
     {
         free(text);
+        mp_clear(&tmp);
         return TRUE;
     }
     else
@@ -46,6 +47,7 @@ l_check_if_number(LexerState* state)
             if(mp_set_from_string(text, state->parent->options->base, &tmp) == 0)
             {
                 free(text);
+                mp_clear(&tmp);
                 return TRUE;
             }
             free(text);
@@ -57,6 +59,7 @@ l_check_if_number(LexerState* state)
         while(count--)
             pl_get_next_token (state->prelexer);
         free(text);
+        mp_clear(&tmp);
         return FALSE;
     }
 }

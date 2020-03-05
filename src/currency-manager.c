@@ -394,7 +394,7 @@ load_imf_rates(CurrencyManager *manager)
                 }
                 if (name_map[name_index].name) {
                     Currency *c = currency_manager_get_currency(manager, name_map[name_index].symbol);
-                    MPNumber value;
+                    MPNumber value = mp_new();
 
                     if (!c) {
                         g_debug ("Using IMF rate of %s for %s", tokens[value_index], name_map[name_index].symbol);
@@ -403,6 +403,7 @@ load_imf_rates(CurrencyManager *manager)
                     mp_set_from_string(tokens[value_index], 10, &value);
                     mp_reciprocal(&value, &value);
                     currency_set_value(c, &value);
+                    mp_clear(&value);
                 }
                 else
                     g_warning("Unknown currency '%s'", tokens[0]);
@@ -435,7 +436,8 @@ set_ecb_rate(CurrencyManager *manager, xmlNodePtr node, Currency *eur_rate)
     /* Use data if value and no rate currently defined */
     if (name && value && !currency_manager_get_currency(manager, name)) {
         Currency *c;
-        MPNumber r, v;
+        MPNumber r = mp_new();
+        MPNumber v = mp_new();
 
         g_debug ("Using ECB rate of %s for %s", value, name);
         c = add_currency(manager, name);
@@ -443,6 +445,8 @@ set_ecb_rate(CurrencyManager *manager, xmlNodePtr node, Currency *eur_rate)
         mp_set_from_mp(currency_get_value(eur_rate), &v);
         mp_multiply(&v, &r, &v);
         currency_set_value(c, &v);
+        mp_clear(&r);
+        mp_clear(&v);
     }
 
     if (name)
@@ -456,7 +460,8 @@ static void
 set_ecb_fixed_rate(CurrencyManager *manager, const gchar *name, const gchar *value, Currency *eur_rate)
 {
     Currency *c;
-    MPNumber r, v;
+    MPNumber r = mp_new();
+    MPNumber v = mp_new();
 
     g_debug ("Using ECB fixed rate of %s for %s", value, name);
     c = add_currency(manager, name);
@@ -464,6 +469,8 @@ set_ecb_fixed_rate(CurrencyManager *manager, const gchar *name, const gchar *val
     mp_set_from_mp(currency_get_value(eur_rate), &v);
     mp_divide(&v, &r, &v);
     currency_set_value(c, &v);
+    mp_clear(&r);
+    mp_clear(&v);
 }
 
 

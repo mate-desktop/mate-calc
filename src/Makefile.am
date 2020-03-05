@@ -50,7 +50,6 @@ mate_calc_SOURCES = \
 	mp-enums.h \
 	mp-equation.c \
 	mp-equation.h \
-	mp-private.h \
 	mp-serializer.c \
 	mp-serializer.h \
 	mp-trigonometric.c \
@@ -107,7 +106,10 @@ mate_calc_cmd_SOURCES = \
 
 mate_calc_cmd_LDADD = \
 	$(MATE_CALC_CMD_LIBS) \
-	-lm
+	-lm \
+	-lgmp \
+	-lmpfr \
+	-lmpc
 
 test_mp_SOURCES = \
 	test-mp.c \
@@ -122,7 +124,10 @@ test_mp_SOURCES = \
 
 test_mp_LDADD = \
 	$(MATE_CALC_CMD_LIBS) \
-	-lm
+	-lm \
+	-lgmp \
+	-lmpfr \
+	-lmpc
 
 test_mp_equation_SOURCES = \
 	test-mp-equation.c \
@@ -156,7 +161,10 @@ test_mp_equation_SOURCES = \
 
 test_mp_equation_LDADD = \
 	$(MATE_CALC_CMD_LIBS) \
-	-lm
+	-lm \
+	-lgmp \
+	-lmpfr \
+	-lmpc
 
 CLEANFILES = \
 	mp-enums.c \

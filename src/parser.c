@@ -276,8 +276,9 @@ p_parse(ParserState* state)
     ans = (MPNumber *) (*(state->root->evaluate))(state->root);
     if(ans)
     {
+        state->ret = mp_new();
         mp_set_from_mp(ans, &state->ret);
-        free(ans);
+        mp_free(ans);
         return PARSER_ERR_NONE;
     }
     return PARSER_ERR_INVALID;
@@ -330,10 +331,11 @@ p_check_variable(ParserState* state, gchar* name)
     {
         return FALSE;
     }
-
+    temp = mp_new();
     /* If defined, then get the variable */
     if((*(state->get_variable))(state, name, &temp))
     {
+        mp_clear(&temp);
         return TRUE;
     }
 
@@ -354,6 +356,7 @@ p_check_variable(ParserState* state, gchar* name)
         }
         free(buffer);
     }
+    mp_clear(&temp);
     if(!result)
     {
         return FALSE;

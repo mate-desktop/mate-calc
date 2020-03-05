@@ -56,10 +56,13 @@ mp_serializer_new(MpDisplayFormat format, int base, int trailing_digits)
 
 
 static void
-mp_cast_to_string_real(MpSerializer *serializer, const MPNumber *x, int base, gboolean force_sign, int *n_digits, GString *string)
+mp_to_string_real(MpSerializer *serializer, const MPNumber *x, int base, gboolean force_sign, int *n_digits, GString *string)
 {
     static gchar digits[] = "0123456789ABCDEF";
-    MPNumber number, integer_component, fractional_component, temp;
+    MPNumber number = mp_new();
+    MPNumber integer_component = mp_new();
+    MPNumber fractional_component = mp_new();
+    MPNumber temp = mp_new();
     int i, last_non_zero;
 
     if (mp_is_negative(x))
@@ -86,7 +89,9 @@ mp_cast_to_string_real(MpSerializer *serializer, const MPNumber *x, int base, gb
     mp_set_from_mp(&integer_component, &temp);
     i = 0;
     do {
-        MPNumber t, t2, t3;
+        MPNumber t = mp_new();
+        MPNumber t2 = mp_new();
+        MPNumber t3 = mp_new();
         int64_t d;
 
         if (serializer->priv->base == 10 && serializer->priv->show_tsep && i == serializer->priv->tsep_count) {
@@ -101,11 +106,21 @@ mp_cast_to_string_real(MpSerializer *serializer, const MPNumber *x, int base, gb
 
         mp_subtract(&temp, &t2, &t3);
 
-        d = mp_cast_to_int(&t3);
-        g_string_prepend_c(string, d < 16 ? digits[d] : '?');
+        d = mp_to_integer(&t3);
+        if (d < 16 && d >= 0)
+            g_string_prepend_c(string, digits[d]);
+        else
+        {   /* FIXME: Should show an overflow error message in fixed mode */
+            g_string_assign(string, "0");
+            *n_digits = serializer->priv->leading_digits+1;
+            break;
+        }
         (*n_digits)++;
 
         mp_set_from_mp(&t, &temp);
+        mp_clear(&t);
+        mp_clear(&t2);
+        mp_clear(&t3);
     } while (!mp_is_zero(&temp));
 
     last_non_zero = string->len;
@@ -116,17 +131,18 @@ mp_cast_to_string_real(MpSerializer *serializer, const MPNumber *x, int base, gb
     mp_set_from_mp(&fractional_component, &temp);
     for (i = serializer->priv->trailing_digits; i > 0 && !mp_is_zero(&temp); i--) {
         int d;
-        MPNumber digit;
+        MPNumber digit = mp_new();
 
         mp_multiply_integer(&temp, base, &temp);
         mp_floor(&temp, &digit);
-        d = mp_cast_to_int(&digit);
+        d = mp_to_integer(&digit);
 
         g_string_append_c(string, digits[d]);
 
         if(d != 0)
             last_non_zero = string->len;
         mp_subtract(&temp, &digit, &temp);
+        mp_clear(&digit);
     }
 
     /* Strip trailing zeroes */
@@ -157,24 +173,26 @@ mp_cast_to_string_real(MpSerializer *serializer, const MPNumber *x, int base, gb
             b -= d * multiplier;
         }
     }
+    mp_clear(&number); mp_clear(&integer_component); mp_clear(&fractional_component);
+    mp_clear(&temp);
 }
 
 
 static gchar *
-mp_cast_to_string(MpSerializer *serializer, const MPNumber *x, int *n_digits)
+mp_to_string(MpSerializer *serializer, const MPNumber *x, int *n_digits)
 {
     GString *string;
-    MPNumber x_real;
+    MPNumber x_real = mp_new();
     gchar *result;
 
     string = g_string_sized_new(1024);
 
     mp_real_component(x, &x_real);
-    mp_cast_to_string_real(serializer, &x_real, serializer->priv->base, FALSE, n_digits, string);
+    mp_to_string_real(serializer, &x_real, serializer->priv->base, FALSE, n_digits, string);
     if (mp_is_complex(x)) {
         GString *s;
         gboolean force_sign = TRUE;
-        MPNumber x_im;
+        MPNumber x_im = mp_new();
         int n_complex_digits = 0;
 
         mp_imaginary_component(x, &x_im);
@@ -185,7 +203,7 @@ mp_cast_to_string(MpSerializer *serializer, const MPNumber *x, int *n_digits)
         }
 
         s = g_string_sized_new(1024);
-        mp_cast_to_string_real(serializer, &x_im, 10, force_sign, &n_complex_digits, s);
+        mp_to_string_real(serializer, &x_im, 10, force_sign, &n_complex_digits, s);
         if (n_complex_digits > *n_digits)
             *n_digits = n_complex_digits;
         if (strcmp(s->str, "0") == 0 || strcmp(s->str, "+0") == 0 || strcmp(s->str, "−0") == 0) {
@@ -209,20 +227,28 @@ mp_cast_to_string(MpSerializer *serializer, const MPNumber *x, int *n_digits)
             g_string_append(string, "i");
         }
         g_string_free(s, TRUE);
+        mp_clear(&x_im);
     }
 
     result = g_strndup(string->str, string->len + 1);
     g_string_free(string, TRUE);
+    mp_clear(&x_real);
 
     return result;
 }
 
 
 static int
-mp_cast_to_exponential_string_real(MpSerializer *serializer, const MPNumber *x, GString *string, gboolean eng_format, int *n_digits)
+mp_to_exponential_string_real(MpSerializer *serializer, const MPNumber *x, GString *string, gboolean eng_format, int *n_digits)
 {
     gchar *fixed;
-    MPNumber t, z, base, base3, base10, base10inv, mantissa;
+    MPNumber t = mp_new();
+    MPNumber z = mp_new();
+    MPNumber base = mp_new();
+    MPNumber base3 = mp_new();
+    MPNumber base10 = mp_new();
+    MPNumber base10inv = mp_new();
+    MPNumber mantissa = mp_new();
     int exponent = 0;
 
     mp_abs(x, &z);
@@ -260,9 +286,11 @@ mp_cast_to_exponential_string_real(MpSerializer *serializer, const MPNumber *x, 
         }
     }
 
-    fixed = mp_cast_to_string(serializer, &mantissa, n_digits);
+    fixed = mp_to_string(serializer, &mantissa, n_digits);
     g_string_append(string, fixed);
     g_free(fixed);
+    mp_clear(&t); mp_clear(&z); mp_clear(&base); mp_clear(&base3); 
+    mp_clear(&base10); mp_clear(&base10inv); mp_clear(&mantissa);
 
     return exponent;
 }
@@ -291,22 +319,22 @@ append_exponent(GString *string, int exponent)
 
 
 static gchar *
-mp_cast_to_exponential_string(MpSerializer *serializer, const MPNumber *x, gboolean eng_format, int *n_digits)
+mp_to_exponential_string(MpSerializer *serializer, const MPNumber *x, gboolean eng_format, int *n_digits)
 {
     GString *string;
-    MPNumber x_real;
+    MPNumber x_real = mp_new();
     gchar *result;
     int exponent;
 
     string = g_string_sized_new(1024);
 
     mp_real_component(x, &x_real);
-    exponent = mp_cast_to_exponential_string_real(serializer, &x_real, string, eng_format, n_digits);
+    exponent = mp_to_exponential_string_real(serializer, &x_real, string, eng_format, n_digits);
     append_exponent(string, exponent);
 
     if (mp_is_complex(x)) {
         GString *s;
-        MPNumber x_im;
+        MPNumber x_im = mp_new();
         int n_complex_digits = 0;
 
         mp_imaginary_component(x, &x_im);
@@ -317,7 +345,7 @@ mp_cast_to_exponential_string(MpSerializer *serializer, const MPNumber *x, gbool
             g_string_append(string, "+");
 
         s = g_string_sized_new(1024);
-        exponent = mp_cast_to_exponential_string_real(serializer, &x_im, s, eng_format, &n_complex_digits);
+        exponent = mp_to_exponential_string_real(serializer, &x_im, s, eng_format, &n_complex_digits);
         if (n_complex_digits > *n_digits)
             *n_digits = n_complex_digits;
         if (strcmp(s->str, "0") == 0 || strcmp(s->str, "+0") == 0 || strcmp(s->str, "−0") == 0) {
@@ -341,11 +369,13 @@ mp_cast_to_exponential_string(MpSerializer *serializer, const MPNumber *x, gbool
             g_string_append(string, "i");
         }
         g_string_free(s, TRUE);
+        mp_clear(&x_im);
         append_exponent(string, exponent);
     }
 
     result = g_strndup(string->str, string->len + 1);
     g_string_free(string, TRUE);
+    mp_clear(&x_real);
 
     return result;
 }
@@ -354,31 +384,25 @@ mp_cast_to_exponential_string(MpSerializer *serializer, const MPNumber *x, gbool
 gchar *
 mp_serializer_to_string(MpSerializer *serializer, const MPNumber *x)
 {
-    MPNumber cmp, xcmp;
     gchar *s0;
     int n_digits = 0;
-    mp_set_from_integer(10, &cmp);
-    mp_xpowy_integer(&cmp, -(serializer->priv->trailing_digits), &cmp);
-    mp_real_component(x, &xcmp);
-    mp_abs(&xcmp, &xcmp);
     switch(serializer->priv->format) {
     default:
     case MP_DISPLAY_FORMAT_AUTOMATIC:
-        s0 = mp_cast_to_string(serializer, x, &n_digits);
-        if (n_digits <= serializer->priv->leading_digits &&
-            mp_is_greater_equal(&xcmp, &cmp))
+        s0 = mp_to_string(serializer, x, &n_digits);
+        if (n_digits <= serializer->priv->leading_digits)
             return s0;
         else {
             g_free (s0);
-            return mp_cast_to_exponential_string(serializer, x, FALSE, &n_digits);
+            return mp_to_exponential_string(serializer, x, FALSE, &n_digits);
         }
         break;
     case MP_DISPLAY_FORMAT_FIXED:
-        return mp_cast_to_string(serializer, x, &n_digits);
+        return mp_to_string(serializer, x, &n_digits);
     case MP_DISPLAY_FORMAT_SCIENTIFIC:
-        return mp_cast_to_exponential_string(serializer, x, FALSE, &n_digits);
+        return mp_to_exponential_string(serializer, x, FALSE, &n_digits);
     case MP_DISPLAY_FORMAT_ENGINEERING:
-        return mp_cast_to_exponential_string(serializer, x, TRUE, &n_digits);
+        return mp_to_exponential_string(serializer, x, TRUE, &n_digits);
     }
 }
 

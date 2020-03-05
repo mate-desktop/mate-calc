@@ -33,27 +33,21 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <glib.h>
+#include <glib/gi18n.h>
+#include <mpfr.h>
+#include <mpc.h>
 
-/* Size of the multiple precision values */
-#define MP_SIZE 1000
+/* If we're not using GNU C, elide __attribute__ */
+#ifndef __GNUC__
+#  define  __attribute__(x)  /*NOTHING*/
+#endif
 
-/* Base for numbers */
-#define MP_BASE 10000
+/* Precision of mpfr_t and mpc_t type objects */
+#define PRECISION 1000
 
-/* Object for a high precision floating point number representation
- *
- * x = sign * (MP_BASE^(exponent-1) + MP_BASE^(exponent-2) + ...)
- */
 typedef struct
 {
-   /* Sign (+1, -1) or 0 for the value zero */
-   int sign, im_sign;
-
-   /* Exponent (to base MP_BASE) */
-   int exponent, im_exponent;
-
-   /* Normalized fraction */
-   int fraction[MP_SIZE], im_fraction[MP_SIZE];
+    mpc_t num;
 } MPNumber;
 
 typedef enum
@@ -65,17 +59,28 @@ typedef enum
 
 /* Returns error string or NULL if no error */
 // FIXME: Global variable
-const char *mp_get_error(void);
+const char  *mp_get_error(void);
 
 /* Clear any current error */
-void mp_clear_error(void);
+void        mp_clear_error(void);
+
+void        mperr(const char *format, ...) __attribute__((format(printf, 1, 2)));
+
+/* Returns initialized MPNumber object */
+MPNumber    mp_new(void);
+
+MPNumber*   mp_new_ptr(void);
+
+void        mp_clear(MPNumber *z);
+
+void        mp_free(MPNumber *z);
 
 /* Returns:
  *  0 if x == y
  * <0 if x < y
  * >0 if x > y
  */
-int    mp_compare_mp_to_mp(const MPNumber *x, const MPNumber *y);
+int    mp_compare(const MPNumber *x, const MPNumber *y);
 
 /* Return true if the value is x == 0 */
 bool   mp_is_zero(const MPNumber *x);
@@ -134,9 +139,6 @@ void   mp_add(const MPNumber *x, const MPNumber *y, MPNumber *z);
 /* Sets z = x + y */
 void   mp_add_integer(const MPNumber *x, int64_t y, MPNumber *z);
 
-/* Sets z = x + numerator ÷ denominator */
-void   mp_add_fraction(const MPNumber *x, int64_t numerator, int64_t denominator, MPNumber *z);
-
 /* Sets z = x − y */
 void   mp_subtract(const MPNumber *x, const MPNumber *y, MPNumber *z);
 
@@ -145,9 +147,6 @@ void   mp_multiply(const MPNumber *x, const MPNumber *y, MPNumber *z);
 
 /* Sets z = x × y */
 void   mp_multiply_integer(const MPNumber *x, int64_t y, MPNumber *z);
-
-/* Sets z = x × numerator ÷ denominator */
-void   mp_multiply_fraction(const MPNumber *x, int64_t numerator, int64_t denominator, MPNumber *z);
 
 /* Sets z = x ÷ y */
 void   mp_divide(const MPNumber *x, const MPNumber *y, MPNumber *z);
@@ -217,6 +216,8 @@ void   mp_epowy(const MPNumber *x, MPNumber *z);
 /* Returns a list of all prime factors in x as MPNumbers */
 GList* mp_factorize(const MPNumber *x);
 
+GList* mp_factorize_unit64 (uint64_t n);
+
 /* Sets z = x */
 void   mp_set_from_mp(const MPNumber *x, MPNumber *z);
 
@@ -250,16 +251,16 @@ void   mp_set_from_random(MPNumber *z);
 bool   mp_set_from_string(const char *text, int default_base, MPNumber *z);
 
 /* Returns x as a native single-precision floating point number */
-float  mp_cast_to_float(const MPNumber *x);
+float  mp_to_float(const MPNumber *x);
 
 /* Returns x as a native double-precision floating point number */
-double mp_cast_to_double(const MPNumber *x);
+double mp_to_double(const MPNumber *x);
 
 /* Returns x as a native integer */
-int64_t mp_cast_to_int(const MPNumber *x);
+int64_t mp_to_integer(const MPNumber *x);
 
 /* Returns x as a native unsigned integer */
-uint64_t mp_cast_to_unsigned_int(const MPNumber *x);
+uint64_t mp_to_unsigned_integer(const MPNumber *x);
 
 /* Sets z = sin x */
 void   mp_sin(const MPNumber *x, MPAngleUnit unit, MPNumber *z);
@@ -323,5 +324,9 @@ void   mp_ones_complement(const MPNumber *x, int wordlen, MPNumber *z);
 
 /* Sets z to be the twos complement of x for word of length 'wordlen' */
 void   mp_twos_complement(const MPNumber *x, int wordlen, MPNumber *z);
+
+void convert_to_radians(const MPNumber *x, MPAngleUnit unit, MPNumber *z);
+
+void convert_from_radians(const MPNumber *x, MPAngleUnit unit, MPNumber *z);
 
 #endif /* MP_H */

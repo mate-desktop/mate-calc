@@ -45,7 +45,7 @@ solve(const char *equation)
 {
     MPEquationOptions options;
     MPErrorCode error;
-    MPNumber result;
+    MPNumber result = mp_new();
     char *result_str;
 
     memset(&options, 0, sizeof(options));
@@ -57,15 +57,18 @@ solve(const char *equation)
     error = mp_equation_parse(equation, &options, &result, NULL);
     if(error == PARSER_ERR_MP) {
         fprintf(stderr, "Error: %s\n", mp_get_error());
+        mp_clear(&result);
         exit(1);
     }
     else if(error != 0) {
         fprintf(stderr, "Error: %s\n", mp_error_code_to_string(error));
+        mp_clear(&result);
         exit(1);
     }
     else {
         result_str = mp_serializer_to_string(mp_serializer_new(MP_DISPLAY_FORMAT_AUTOMATIC, 10, 9), &result);
         printf("%s\n", result_str);
+        mp_clear(&result);
         exit(0);
     }
 }

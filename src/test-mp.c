@@ -15,7 +15,6 @@
 #include <locale.h>
 
 #include "mp.h"
-#include "mp-private.h"
 
 static int fails = 0;
 static int passes = 0;
@@ -58,48 +57,39 @@ static void fail(const char *format, ...)
 static void
 print_number(MPNumber *x)
 {
-    int i, j;
-
-    printf("sign=%d exponent=%d fraction=%d", x->sign, x->exponent, x->fraction[0]);
-    for (i = 1; i < MP_SIZE; i++) {
-        for (j = i; j < MP_SIZE && x->fraction[j] == 0; j++);
-        if (j == MP_SIZE) {
-            printf(",...");
-            break;
-        }
-        printf(",%d", x->fraction[i]);
-    }
+    mpc_out_str(stdout, 10, 5,  x->num, MPC_RNDNN);
 }
 
 static void
 test_string(const char *number)
 {
-    MPNumber t;
+    MPNumber t = mp_new();
 
     mp_set_from_string(number, 10, &t);
 
     printf("MPNumber(%s) -> {", number);
     print_number(&t);
     printf("}\n");
+    mp_clear(&t);
 }
 
 static void
 test_integer(int number)
 {
-    MPNumber t;
+    MPNumber t = mp_new();
 
     mp_set_from_integer(number, &t);
 
     printf("MPNumber(%d) -> {", number);
     print_number(&t);
     printf("}\n");
+    mp_clear(&t);
 }
 
 
 static void
 test_numbers()
 {
-    printf("base=%d\n", MP_BASE);
     test_integer(0);
     test_integer(1);
     test_integer(-1);
@@ -143,8 +133,9 @@ try(const char *string, bool result, bool expected)
 static void
 test_mp()
 {
-    MPNumber zero, one, minus_one;
-
+    MPNumber zero = mp_new();
+    MPNumber one = mp_new();
+    MPNumber minus_one = mp_new();
     mp_set_from_integer(0, &zero);
     mp_set_from_integer(1, &one);
     mp_set_from_integer(-1, &minus_one);
@@ -222,6 +213,8 @@ test_mp()
     try("mp_is_less_equal(-1, -1)", mp_is_less_equal (&minus_one, &minus_one), true);
     try("mp_is_less_equal(-1, 0)", mp_is_less_equal (&minus_one, &zero), true);
     try("mp_is_less_equal(-1, 1)", mp_is_less_equal (&minus_one, &one), true);
+
+    mp_clear(&zero); mp_clear(&one); mp_clear(&minus_one);
 }
 
 

@@ -12,7 +12,6 @@
 #include <stdio.h>
 
 #include "mp.h"
-#include "mp-private.h"
 #include "mp-serializer.h"
 
 // FIXME: Make dynamic
@@ -99,10 +98,15 @@ static int mp_bitwise_not(int v1, int dummy) { return v1 ^ 0xF; }
 bool
 mp_is_overflow (const MPNumber *x, int wordlen)
 {
-    MPNumber tmp1, tmp2;
+    bool is_overflow;
+    MPNumber tmp1 = mp_new();
+    MPNumber tmp2 = mp_new();
     mp_set_from_integer(2, &tmp1);
     mp_xpowy_integer(&tmp1, wordlen, &tmp2);
-    return mp_is_greater_than (&tmp2, x);
+    is_overflow = mp_is_greater_than (&tmp2, x);
+    mp_clear(&tmp1);
+    mp_clear(&tmp2);
+    return is_overflow;
 }
 
 
@@ -148,7 +152,9 @@ mp_xor(const MPNumber *x, const MPNumber *y, MPNumber *z)
 void
 mp_not(const MPNumber *x, int wordlen, MPNumber *z)
 {
-    MPNumber temp;
+    MPNumber temp = mp_new();
+
+    mp_set_from_integer(0, &temp);
 
     if (!mp_is_positive_integer(x))
     {
@@ -156,46 +162,45 @@ mp_not(const MPNumber *x, int wordlen, MPNumber *z)
         mperr(_("Boolean NOT is only defined for positive integers"));
     }
 
-    mp_set_from_integer(0, &temp);
     mp_bitwise(x, &temp, mp_bitwise_not, z, wordlen);
+    mp_clear(&temp);
 }
 
 
 void
 mp_shift(const MPNumber *x, int count, MPNumber *z)
 {
-    int i;
-    MPNumber multiplier;
-
-    mp_set_from_integer(1, &multiplier);
-
     if (!mp_is_integer(x)) {
         /* Translators: Error displayed when bit shift attempted on non-integer values */
         mperr(_("Shift is only possible on integer values"));
         return;
     }
 
+    MPNumber multiplier = mp_new();
+    mp_set_from_integer(1, &multiplier);
     if (count >= 0) {
-        for (i = 0; i < count; i++)
+        for (int i = 0; i < count; i++)
             mp_multiply_integer(&multiplier, 2, &multiplier);
         mp_multiply(x, &multiplier, z);
     }
     else {
-        for (i = 0; i < -count; i++)
+        for (int i = 0; i < -count; i++)
             mp_multiply_integer(&multiplier, 2, &multiplier);
         mp_divide(x, &multiplier, z);
         mp_floor(z, z);
     }
+    mp_clear(&multiplier);
 }
 
 
 void
 mp_ones_complement(const MPNumber *x, int wordlen, MPNumber *z)
 {
-    MPNumber t;
+    MPNumber t = mp_new();
     mp_set_from_integer(0, &t);
     mp_bitwise(x, &t, mp_bitwise_xor, z, wordlen);
     mp_not(z, wordlen, z);
+    mp_clear(&t);
 }
 
 

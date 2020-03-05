@@ -36,6 +36,7 @@ currency_new(const gchar *name,
     currency->priv->name = g_strdup(name);
     currency->priv->display_name = g_strdup(display_name);
     currency->priv->symbol = g_strdup(symbol);
+    currency->priv->value = mp_new();
 
     return currency;
 }

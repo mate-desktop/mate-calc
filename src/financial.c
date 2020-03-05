@@ -24,13 +24,18 @@ calc_ctrm(MathEquation *equation, MPNumber *t, MPNumber *pint, MPNumber *fv, MPN
  *
  *          RESULT = log(fv / pv) / log(1 + pint)
  */
-    MPNumber MP1, MP2, MP3, MP4;
+    MPNumber MP1 = mp_new();
+    MPNumber MP2 = mp_new();
+    MPNumber MP3 = mp_new();
+    MPNumber MP4 = mp_new();
 
     mp_divide(fv, pv, &MP1);
     mp_ln(&MP1, &MP2);
     mp_add_integer(pint, 1, &MP3);
     mp_ln(&MP3, &MP4);
     mp_divide(&MP2, &MP4, t);
+
+    mp_clear(&MP1); mp_clear(&MP2); mp_clear(&MP3); mp_clear(&MP4);
 }
 
 
@@ -54,10 +59,12 @@ calc_ddb(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *life, MP
 
     int i;
     int len;
-    MPNumber MPbv, MP1, MP2;
+    MPNumber MPbv = mp_new();
+    MPNumber MP1 = mp_new();
+    MPNumber MP2 = mp_new();
 
     mp_set_from_integer(0, &MPbv);
-    len = mp_cast_to_int(period);
+    len = mp_to_integer(period);
     for (i = 0; i < len; i++) {
         mp_subtract(cost, &MPbv, &MP1);
         mp_multiply_integer(&MP1, 2, &MP2);
@@ -70,6 +77,8 @@ calc_ddb(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *life, MP
         math_equation_set_status (equation, _("Error: the number of periods must be positive"));
         mp_set_from_integer(0, t);
     }
+
+    mp_clear(&MPbv); mp_clear(&MP1); mp_clear(&MP2);
 }
 
 
@@ -84,13 +93,18 @@ calc_fv(MathEquation *equation, MPNumber *t, MPNumber *pmt, MPNumber *pint, MPNu
  *          RESULT = pmt * (pow(1 + pint, n) - 1) / pint
  */
 
-    MPNumber MP1, MP2, MP3, MP4;
+    MPNumber MP1 = mp_new();
+    MPNumber MP2 = mp_new();
+    MPNumber MP3 = mp_new();
+    MPNumber MP4 = mp_new();
 
     mp_add_integer(pint, 1, &MP1);
     mp_xpowy(&MP1, n, &MP2);
     mp_add_integer(&MP2, -1, &MP3);
     mp_multiply(pmt, &MP3, &MP4);
     mp_divide(&MP4, pint, t);
+
+    mp_clear(&MP1); mp_clear(&MP2); mp_clear(&MP3); mp_clear(&MP4);
 }
 
 
@@ -104,11 +118,14 @@ calc_gpm(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *margin)
  *          RESULT = cost / (1 - margin)
  */
 
-    MPNumber MP1, MP2;
+    MPNumber MP1 = mp_new();
+    MPNumber MP2 = mp_new();
 
     mp_set_from_integer(1, &MP1);
     mp_subtract(&MP1, margin, &MP2);
     mp_divide(cost, &MP2, t);
+
+    mp_clear(&MP1); mp_clear(&MP2);
 }
 
 
@@ -123,7 +140,10 @@ calc_pmt(MathEquation *equation, MPNumber *t, MPNumber *prin, MPNumber *pint, MP
  *          RESULT = prin * (pint / (1 - pow(pint + 1, -1 * n)))
  */
 
-    MPNumber MP1, MP2, MP3, MP4;
+    MPNumber MP1 = mp_new();
+    MPNumber MP2 = mp_new();
+    MPNumber MP3 = mp_new();
+    MPNumber MP4 = mp_new();
 
     mp_add_integer(pint, 1, &MP1);
     mp_multiply_integer(n, -1, &MP2);
@@ -132,6 +152,8 @@ calc_pmt(MathEquation *equation, MPNumber *t, MPNumber *prin, MPNumber *pint, MP
     mp_add_integer(&MP4, 1, &MP1);
     mp_divide(pint, &MP1, &MP2);
     mp_multiply(prin, &MP2, t);
+
+    mp_clear(&MP1); mp_clear(&MP2); mp_clear(&MP3); mp_clear(&MP4);
 }
 
 
@@ -146,7 +168,10 @@ calc_pv(MathEquation *equation, MPNumber *t, MPNumber *pmt, MPNumber *pint, MPNu
  *          RESULT = pmt * (1 - pow(1 + pint, -1 * n)) / pint
  */
 
-    MPNumber MP1, MP2, MP3, MP4;
+    MPNumber MP1 = mp_new();
+    MPNumber MP2 = mp_new();
+    MPNumber MP3 = mp_new();
+    MPNumber MP4 = mp_new();
 
     mp_add_integer(pint, 1, &MP1);
     mp_multiply_integer(n, -1, &MP2);
@@ -155,6 +180,8 @@ calc_pv(MathEquation *equation, MPNumber *t, MPNumber *pmt, MPNumber *pint, MPNu
     mp_add_integer(&MP4, 1, &MP1);
     mp_divide(&MP1, pint, &MP2);
     mp_multiply(pmt, &MP2, t);
+
+    mp_clear(&MP1); mp_clear(&MP2); mp_clear(&MP3); mp_clear(&MP4);
 }
 
 
@@ -169,13 +196,18 @@ calc_rate(MathEquation *equation, MPNumber *t, MPNumber *fv, MPNumber *pv, MPNum
  *          RESULT = pow(fv / pv, 1 / n) - 1
  */
 
-    MPNumber MP1, MP2, MP3, MP4;
+    MPNumber MP1 = mp_new();
+    MPNumber MP2 = mp_new();
+    MPNumber MP3 = mp_new();
+    MPNumber MP4 = mp_new();
 
     mp_divide(fv, pv, &MP1);
     mp_set_from_integer(1, &MP2);
     mp_divide(&MP2, n, &MP3);
     mp_xpowy(&MP1, &MP3, &MP4);
     mp_add_integer(&MP4, -1, t);
+
+    mp_clear(&MP1); mp_clear(&MP2); mp_clear(&MP3); mp_clear(&MP4);
 }
 
 
@@ -190,9 +222,10 @@ calc_sln(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *salvage,
  *          RESULT = (cost - salvage) / life
  */
 
-    MPNumber MP1;
+    MPNumber MP1 = mp_new();
     mp_subtract(cost, salvage, &MP1);
     mp_divide(&MP1, life, t);
+    mp_clear(&MP1);
 }
 
 
@@ -209,7 +242,10 @@ calc_syd(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *salvage,
  *                   (life * (life + 1)) / 2
  */
 
-    MPNumber MP1, MP2, MP3, MP4;
+    MPNumber MP1 = mp_new();
+    MPNumber MP2 = mp_new();
+    MPNumber MP3 = mp_new();
+    MPNumber MP4 = mp_new();
 
     mp_subtract(life, period, &MP2);
     mp_add_integer(&MP2, 1, &MP3);
@@ -220,6 +256,8 @@ calc_syd(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *salvage,
     mp_divide(&MP3, &MP1, &MP2);
     mp_subtract(cost, salvage, &MP1);
     mp_multiply(&MP1, &MP2, t);
+
+    mp_clear(&MP1); mp_clear(&MP2); mp_clear(&MP3); mp_clear(&MP4);
 }
 
 
@@ -234,7 +272,10 @@ calc_term(MathEquation *equation, MPNumber *t, MPNumber *pmt, MPNumber *fv, MPNu
  *          RESULT = log(1 + (fv * pint / pmt)) / log(1 + pint)
  */
 
-    MPNumber MP1, MP2, MP3, MP4;
+    MPNumber MP1 = mp_new();
+    MPNumber MP2 = mp_new();
+    MPNumber MP3 = mp_new();
+    MPNumber MP4 = mp_new();
 
     mp_add_integer(pint, 1, &MP1);
     mp_ln(&MP1, &MP2);
@@ -243,13 +284,15 @@ calc_term(MathEquation *equation, MPNumber *t, MPNumber *pmt, MPNumber *fv, MPNu
     mp_add_integer(&MP3, 1, &MP4);
     mp_ln(&MP4, &MP1);
     mp_divide(&MP1, &MP2, t);
+
+    mp_clear(&MP1); mp_clear(&MP2); mp_clear(&MP3); mp_clear(&MP4);
 }
 
 
 void
 do_finc_expression(MathEquation *equation, int function, MPNumber *arg1, MPNumber *arg2, MPNumber *arg3, MPNumber *arg4)
 {
-    MPNumber result;
+    MPNumber result = mp_new();
     switch (function) {
      case FINC_CTRM_DIALOG:
        calc_ctrm(equation, &result, arg1, arg2, arg3);
@@ -283,4 +326,5 @@ do_finc_expression(MathEquation *equation, int function, MPNumber *arg1, MPNumbe
        break;
     }
     math_equation_set_number(equation, &result);
+    mp_clear(&result);
 }

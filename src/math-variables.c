@@ -59,10 +59,14 @@ registers_load(MathVariables *variables)
         value = g_strstrip(value);
 
         t = g_malloc(sizeof(MPNumber));
+        *t = mp_new();
         if (mp_set_from_string(value, 10, t) == 0)
             g_hash_table_insert(variables->priv->registers, g_strdup(name), t);
         else
+        {
+            mp_clear(t);
             g_free(t);
+        }
     }
     fclose(f);
 }
@@ -135,6 +139,7 @@ math_variables_set(MathVariables *variables, const char *name, const MPNumber *v
     g_return_if_fail(value != NULL);
 
     t = g_malloc(sizeof(MPNumber));
+    *t = mp_new();
     mp_set_from_mp(value, t);
     g_hash_table_insert(variables->priv->registers, g_strdup(name), t);
     registers_save(variables);

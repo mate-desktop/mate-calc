@@ -77,7 +77,7 @@ static void
 Test(char *expression, char *expected, int expected_error, int trailing_digits)
 {
     MPErrorCode error;
-    MPNumber result;
+    MPNumber result = mp_new();
 
     error = mp_equation_parse(expression, &options, &result, NULL);
 
@@ -107,6 +107,7 @@ Test(char *expression, char *expected, int expected_error, int trailing_digits)
             fail("'%s' -> error %s, expected error %s", expression,
                  error_code_to_string(error), error_code_to_string(expected_error));
     }
+    mp_clear(&result);
 }
 
 
@@ -425,7 +426,7 @@ test_equations()
     test("1!", "1", 0);
     test("5!", "120", 0);
     test("69!", "171122452428141311372468338881272839092270544893520369393648040923257279754140647424000000000000000", 0);
-    test("0.1!", "", PARSER_ERR_MP);
+    test("0.1!", "0.95135077", 0);
     test("−1!", "−1", 0);
     test("(−1)!", "", PARSER_ERR_MP);
     test("−(1!)", "−1", 0);
