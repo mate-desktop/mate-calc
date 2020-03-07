@@ -26,7 +26,10 @@ requires:
     - git
     - libatk1.0-dev
     - libglib2.0-dev
+    - libgmp-dev
     - libgtk-3-dev
+    - libmpc-dev
+    - libmpfr-dev
     - libxml2-dev
     - make
     - mate-common
@@ -42,11 +45,14 @@ requires:
     - flex
     - gcc
     - git
+    - gmp-devel
     - gtk3
+    - libmpc-devel
     - libxml2-devel
     - make
     - mate-common
     - mate-desktop-devel
+    - mpfr-devel
     - redhat-rpm-config
 
   ubuntu:
@@ -56,7 +62,10 @@ requires:
     - git
     - libatk1.0-dev
     - libglib2.0-dev
+    - libgmp-dev
     - libgtk-3-dev
+    - libmpc-dev
+    - libmpfr-dev
     - libxml2-dev
     - make
     - mate-common
