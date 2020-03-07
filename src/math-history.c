@@ -20,7 +20,6 @@ struct MathHistoryPrivate
 {
     MathEquation *equation;
 
-    MathHistoryEntry *entry;
     char *prev_equation;
     int items_count; /* Number of entries in history listbox */
     GtkWidget *listbox;
@@ -60,23 +59,25 @@ check_history(MathHistory *history, char *equation)
 }
 
 void
-math_history_insert_entry (MathHistory *history, char *equation, MPNumber *answer, int number_base)
-{   /* Inserts a new entry into the history listbox */
-    history->priv->entry = math_history_entry_new(history->priv->equation);
+math_history_insert_entry(MathHistory *history, char *equation, MPNumber *answer, int number_base)
+{
     gboolean check = check_history (history, equation);
-    history->priv->prev_equation = g_strdup(equation);
+
     if (!check)
     {
-        math_history_entry_insert_entry(history->priv->entry, equation, answer, number_base);
-        if (history->priv->entry != NULL)	
-        {
-            gtk_list_box_insert(GTK_LIST_BOX(history->priv->listbox), GTK_WIDGET(history->priv->entry), -1);
-            gtk_widget_set_can_focus(GTK_WIDGET(history->priv->entry), FALSE);
-            gtk_widget_show_all(GTK_WIDGET(history->priv->entry));	
+        MathHistoryEntry *entry = math_history_entry_new(history->priv->equation);
+        if (entry != NULL)	
+        {   /* Insert a new entry into the history listbox */
+            math_history_entry_insert_entry(entry, equation, answer, number_base);
+            gtk_list_box_insert(GTK_LIST_BOX(history->priv->listbox), GTK_WIDGET(entry), -1);
+            gtk_widget_set_can_focus(GTK_WIDGET(entry), FALSE);
+            gtk_widget_show_all(GTK_WIDGET(entry));
+            g_free(history->priv->prev_equation);
+            history->priv->prev_equation = g_strdup(equation);
             history->priv->items_count++;
+            g_signal_emit_by_name(history, "row-added");
         }
     }
-    g_signal_emit_by_name(history, "row-added");
 }
 
 static void
@@ -103,7 +104,7 @@ math_history_init(MathHistory *history)
     gtk_scrolled_window_set_placement(GTK_SCROLLED_WINDOW(history), GTK_CORNER_TOP_LEFT);
 
     history->priv->items_count = 0;
-    history->priv->prev_equation = "";
+    history->priv->prev_equation = g_strdup("");
     history->priv->listbox = gtk_list_box_new();    
     gtk_list_box_set_selection_mode(GTK_LIST_BOX(history->priv->listbox), GTK_SELECTION_NONE);
     gtk_widget_show(GTK_WIDGET(history->priv->listbox));
