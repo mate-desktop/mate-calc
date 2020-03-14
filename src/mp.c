@@ -383,7 +383,7 @@ void
 mp_logarithm(int64_t n, const MPNumber *x, MPNumber *z)
 {
     /* log(0) undefined */
-    if (mp_is_zero(x)) 
+    if (mp_is_zero(x))
     {
         /* Translators: Error displayed when attempting to take logarithm of zero */
         mperr(_("Logarithm of zero is undefined"));
@@ -525,19 +525,65 @@ mp_modulus_divide(const MPNumber *x, const MPNumber *y, MPNumber *z)
         return;
     }
 
-    mp_set_from_mp(x, z);
-    mp_divide(x, y, z);
-    mp_floor(z, z);
-    mp_multiply(z, y, z);
-    mp_subtract(x, z, z);
-
     MPNumber t1 = mp_new();
+    MPNumber t2 = mp_new();
+
+    mp_divide(x, y, &t1);
+    mp_floor(&t1, &t1);
+    mp_multiply(&t1, y, &t2);
+    mp_subtract(x, &t2, z);
+
     mp_set_from_integer(0, &t1);
     if ((mp_compare(y, &t1) < 0 && mp_compare(z, &t1) > 0) ||
         (mp_compare(y, &t1) > 0 && mp_compare(z, &t1) < 0))
         mp_add(z, y, z);
 
     mp_clear(&t1);
+    mp_clear(&t2);
+}
+
+
+void
+mp_modular_exponentiation(const MPNumber *x, const MPNumber *y, const MPNumber *p, MPNumber *z)
+{
+    MPNumber base_value = mp_new();
+    MPNumber exp_value = mp_new();
+    MPNumber ans = mp_new();
+    MPNumber two = mp_new();
+    MPNumber tmp = mp_new();
+
+    mp_set_from_integer(1, &ans);
+    mp_set_from_integer(2, &two);
+    mp_abs(y, &exp_value);
+
+    if (mp_is_negative(y))
+        mp_reciprocal(x, &base_value);
+    else
+        mp_set_from_mp(x, &base_value);
+
+    while (!mp_is_zero(&exp_value))
+    {
+        mp_modulus_divide(&exp_value, &two, &tmp);
+
+        bool is_even = mp_is_zero(&tmp);
+        if (!is_even)
+        {
+            mp_multiply(&ans, &base_value, &ans);
+            mp_modulus_divide(&ans, p, &ans);
+        }
+        mp_multiply(&base_value, &base_value, &base_value);
+        mp_modulus_divide(&base_value, p, &base_value);
+        mp_divide_integer(&exp_value, 2, &exp_value);
+        mp_floor(&exp_value, &exp_value);
+    }
+
+    mp_modulus_divide(&ans, p, z);
+
+    mp_clear(&base_value);
+	mp_clear(&exp_value);
+	mp_clear(&ans);
+	mp_clear(&two);
+    mp_clear(&tmp);
 }
 
 
@@ -655,7 +701,7 @@ mp_factorize(const MPNumber *x)
             list = g_list_append(list, factor);
             factor = g_slice_alloc0(sizeof(MPNumber));
             mpc_init2(factor->num, PRECISION);
-        } 
+        }
         else
         {
             mp_add_integer(&divisor, 2, &tmp);
@@ -668,8 +714,8 @@ mp_factorize(const MPNumber *x)
     {
         mp_set_from_mp(&value, factor);
         list = g_list_append(list, factor);
-    } 
-    else 
+    }
+    else
     {
         mpc_clear(factor->num);
         g_slice_free(MPNumber, factor);
@@ -719,7 +765,7 @@ mp_factorize_unit64(uint64_t n)
         mp_set_from_unsigned_integer(n, factor);
         list = g_list_append(list, factor);
     }
-    else 
+    else
     {
         mpc_clear(factor->num);
         g_slice_free(MPNumber, factor);

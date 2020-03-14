@@ -674,7 +674,26 @@ pf_do_mod(ParseNode* self)
         free(ans);
         return NULL;
     }
-    mp_modulus_divide(left, right, ans);
+    if (self->left->evaluate == pf_do_x_pow_y)
+    {
+        MPNumber* base_value = (MPNumber*) (*(self->left->left->evaluate))(self->left->left);
+        MPNumber* exponent = (MPNumber*) (*(self->left->right->evaluate))(self->left->right);
+        if(!base_value || !exponent)
+        {
+            if(base_value)
+                mp_free(base_value);
+            if(exponent)
+                mp_free(exponent);
+            free(ans);
+            return NULL;
+        }
+        mp_modular_exponentiation(base_value, exponent, right, ans);
+        mp_free(base_value);
+        mp_free(exponent);
+    }
+    else
+        mp_modulus_divide(left, right, ans);
+
     mp_free(left);
     mp_free(right);
     return ans;
@@ -752,7 +771,7 @@ pf_do_add(ParseNode* self)
     return ans;
 }
 
-/*Add (x) Percentage to value. */
+/* Add (x) Percentage to value. */
 void*
 pf_do_add_percent(ParseNode* self)
 {

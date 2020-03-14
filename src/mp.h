@@ -204,6 +204,9 @@ void   mp_factorial(const MPNumber *x, MPNumber *z);
 /* Sets z = x mod y */
 void   mp_modulus_divide(const MPNumber *x, const MPNumber *y, MPNumber *z);
 
+/* Sets z = x ^ y mod p */
+void mp_modular_exponentiation(const MPNumber *x, const MPNumber *y, const MPNumber *p, MPNumber *z);
+
 /* Sets z = x^y */
 void   mp_xpowy(const MPNumber *x, const MPNumber *y, MPNumber *z);
 
