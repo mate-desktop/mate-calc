@@ -44,8 +44,6 @@ GLIB_MKENUMS=`$PKG_CONFIG --variable=glib_mkenums glib-2.0`
 AC_SUBST(GLIB_MKENUMS)
 
 AC_CHECK_LIB(m, log)
-AC_CHECK_LIB(gmp, log)
-AC_CHECK_LIB(mpfr, log)
 AC_CHECK_LIB(mpc, log)
 
 dnl ###########################################################################
