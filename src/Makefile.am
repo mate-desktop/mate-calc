@@ -72,7 +72,7 @@ mate_calc_SOURCES = \
 	utility.h
 
 mate_calc_LDADD = \
-	$(MATE_CALC_LIBS)        
+	$(MATE_CALC_LIBS)
 
 mate_calc_cmd_SOURCES = \
 	mate-calc-cmd.c \
@@ -105,11 +105,7 @@ mate_calc_cmd_SOURCES = \
 	parser.h
 
 mate_calc_cmd_LDADD = \
-	$(MATE_CALC_CMD_LIBS) \
-	-lm \
-	-lgmp \
-	-lmpfr \
-	-lmpc
+	$(MATE_CALC_CMD_LIBS)
 
 test_mp_SOURCES = \
 	test-mp.c \
@@ -123,11 +119,7 @@ test_mp_SOURCES = \
 	mp-trigonometric.c
 
 test_mp_LDADD = \
-	$(MATE_CALC_CMD_LIBS) \
-	-lm \
-	-lgmp \
-	-lmpfr \
-	-lmpc
+	$(MATE_CALC_CMD_LIBS)
 
 test_mp_equation_SOURCES = \
 	test-mp-equation.c \
@@ -160,11 +152,7 @@ test_mp_equation_SOURCES = \
 	parser.h
 
 test_mp_equation_LDADD = \
-	$(MATE_CALC_CMD_LIBS) \
-	-lm \
-	-lgmp \
-	-lmpfr \
-	-lmpc
+	$(MATE_CALC_CMD_LIBS)
 
 CLEANFILES = \
 	mp-enums.c \
