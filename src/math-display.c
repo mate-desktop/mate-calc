@@ -398,6 +398,7 @@ create_gui(MathDisplay *display)
     gtk_text_view_set_cursor_visible(GTK_TEXT_VIEW(info_view), FALSE); // FIXME: Just here so when incorrectly gets focus doesn't look editable
     gtk_text_view_set_editable(GTK_TEXT_VIEW(info_view), FALSE);
     gtk_text_view_set_justification(GTK_TEXT_VIEW(info_view), GTK_JUSTIFY_RIGHT);
+    gtk_text_view_set_bottom_margin(GTK_TEXT_VIEW(info_view), 12);
     /* TEMP: Disabled for now as GTK+ doesn't properly render a right aligned right margin, see bug #482688 */
     /*gtk_text_view_set_right_margin(GTK_TEXT_VIEW(info_view), 6);*/
     gtk_box_pack_start(GTK_BOX(info_box), info_view, TRUE, TRUE, 0);
