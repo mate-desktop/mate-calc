@@ -174,6 +174,7 @@ function_is_defined(ParserState *state, const char *name)
         strcmp(lower_name, "sin⁻¹") == 0 || strcmp(lower_name, "cos⁻¹") == 0 || strcmp(lower_name, "tan⁻¹") == 0 ||
         strcmp(lower_name, "sinh") == 0 || strcmp(lower_name, "cosh") == 0 || strcmp(lower_name, "tanh") == 0 ||
         strcmp(lower_name, "sinh⁻¹") == 0 || strcmp(lower_name, "cosh⁻¹") == 0 || strcmp(lower_name, "tanh⁻¹") == 0 ||
+        strcmp(lower_name, "erf") == 0 || strcmp(lower_name, "zeta") == 0 ||
         strcmp(lower_name, "asinh") == 0 || strcmp(lower_name, "acosh") == 0 || strcmp(lower_name, "atanh") == 0 ||
         strcmp(lower_name, "ones") == 0 ||
         strcmp(lower_name, "twos") == 0) {
@@ -261,6 +262,10 @@ get_function(ParserState *state, const char *name, const MPNumber *x, MPNumber *
         mp_acosh(x, z);
     else if (strcmp(lower_name, "tanh⁻¹") == 0 || strcmp(lower_name, "atanh") == 0)
         mp_atanh(x, z);
+    else if (strcmp(lower_name, "erf") == 0)
+        mp_erf(x, z);
+    else if (strcmp(lower_name, "zeta") == 0)
+        mp_zeta(x, z);
     else if (strcmp(lower_name, "ones") == 0)
         mp_ones_complement(x, state->options->wordlen, z);
     else if (strcmp(lower_name, "twos") == 0)

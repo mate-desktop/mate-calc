@@ -298,6 +298,12 @@ void   mp_acosh(const MPNumber *x, MPNumber *z);
 /* Sets z = tanh⁻¹ x */
 void   mp_atanh(const MPNumber *x, MPNumber *z);
 
+/* Sets z to the value of the error function of x */
+void   mp_erf(const MPNumber *x, MPNumber *z);
+
+/* Sets z to the value of the Riemann Zeta function of x */
+void   mp_zeta(const MPNumber *x, MPNumber *z);
+
 /* Returns true if x is cannot be represented in a binary word of length 'wordlen' */
 bool   mp_is_overflow(const MPNumber *x, int wordlen);
 

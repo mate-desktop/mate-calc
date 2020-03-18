@@ -589,6 +589,14 @@ test_equations(void)
     options.angle_units = MP_GRADIANS;
     test("sin 100", "1", 0);
 
+    test("zeta 0", "−0.5", 0);
+    test("zeta 2", "1.644934067", 0);
+    test("zeta −2", "0", 0);
+
+    test("erf 0", "0", 0);
+    test("erf 1", "0.842700793", 0);
+    test("erf −1", "−0.842700793", 0);
+
     /* Complex numbers */
     options.angle_units = MP_DEGREES;
     test("i", "i", 0);
