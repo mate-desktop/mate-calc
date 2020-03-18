@@ -87,7 +87,7 @@ mp_sin(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
         mp_set_from_mp(x, z);
     else
         convert_to_radians(x, unit, z);
-    mpc_sin(z->num, z->num, MPC_RNDNN);    
+    mpc_sin(z->num, z->num, MPC_RNDNN);
 }
 
 
@@ -98,7 +98,7 @@ mp_cos(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
         mp_set_from_mp(x, z);
     else
         convert_to_radians(x, unit, z);
-    mpc_cos(z->num, z->num, MPC_RNDNN); 
+    mpc_cos(z->num, z->num, MPC_RNDNN);
 }
 
 
@@ -113,12 +113,15 @@ mp_tan(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
     mp_get_pi(&pi);
     mp_divide_integer(&pi, 2, &t1);
     mp_subtract(&x_radians, &t1, &t1);
-    mp_divide(&t1, &pi, &t1);    
+    mp_divide(&t1, &pi, &t1);
 
     if (mp_is_integer(&t1)) {
         /* Translators: Error displayed when tangent value is undefined */
         mperr(_("Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"));
         mp_set_from_integer(0, z);
+        mp_clear(&x_radians);
+        mp_clear(&pi);
+        mp_clear(&t1);
         return;
     }
 
@@ -146,6 +149,8 @@ mp_asin(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
         /* Translators: Error displayed when inverse sine value is undefined */
         mperr(_("Inverse sine is undefined for values outside [-1, 1]"));
         mp_set_from_integer(0, z);
+        mp_clear(&x_max);
+        mp_clear(&x_min);
         return;
     }
     mpc_asin(z->num, x->num, MPC_RNDNN);
@@ -169,6 +174,8 @@ mp_acos(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
         /* Translators: Error displayed when inverse sine value is undefined */
         mperr(_("Inverse cosine is undefined for values outside [-1, 1]"));
         mp_set_from_integer(0, z);
+        mp_clear(&x_max);
+        mp_clear(&x_min);
         return;
     }
     mpc_acos(z->num, x->num, MPC_RNDNN);
@@ -193,6 +200,8 @@ mp_atan(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
         /* Translators: Error displayed when inverse sine value is undefined */
         mperr(_("Arctangent function is undefined for values i and -i"));
         mp_set_from_integer(0, z);
+        mp_clear(&i);
+        mp_clear(&minus_i);
         return;
     }
     mpc_atan(z->num, x->num, MPC_RNDNN);
@@ -243,6 +252,7 @@ mp_acosh(const MPNumber *x, MPNumber *z)
         /* Translators: Error displayed when inverse hyperbolic cosine value is undefined */
         mperr(_("Inverse hyperbolic cosine is undefined for values less than one"));
         mp_set_from_integer(0, z);
+        mp_clear(&t);
         return;
     }
 
@@ -264,6 +274,8 @@ mp_atanh(const MPNumber *x, MPNumber *z)
          /* Translators: Error displayed when inverse hyperbolic tangent value is undefined */
         mperr(_("Inverse hyperbolic tangent is undefined for values outside (-1, 1)"));
         mp_set_from_integer(0, z);
+        mp_clear(&x_max);
+        mp_clear(&x_min);
         return;
     }
     mpc_atanh(z->num, x->num, MPC_RNDNN);
