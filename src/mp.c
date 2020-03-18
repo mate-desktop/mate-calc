@@ -583,6 +583,40 @@ mp_xpowy_integer(const MPNumber *x, int64_t n, MPNumber *z)
     mpc_pow_si(z->num, x->num, (long) n, MPC_RNDNN);
 }
 
+void
+mp_erf(const MPNumber *x, MPNumber *z)
+{
+    if (mp_is_complex(x))
+    {   /* Translators: Error displayed when error function (erf) value is undefined */
+        mperr(_("The error function is only defined for real numbers"));
+        mp_set_from_integer(0, z);
+        return;
+    }
+
+    mpfr_set_zero(mpc_imagref(z->num), MPFR_RNDN);
+    mpfr_erf(mpc_realref(z->num), mpc_realref(x->num), MPFR_RNDN);
+}
+
+void
+mp_zeta(const MPNumber *x, MPNumber *z)
+{
+    MPNumber one = mp_new();
+
+    mp_set_from_integer(1, &one);
+    if (mp_is_complex(x) || mp_compare(x, &one) == 0)
+    {   /* Translators: Error displayed when zeta function value is undefined */
+        mperr(_("The Riemann zeta function is only defined for real numbers ≠1"));
+        mp_set_from_integer(0, z);
+        mp_clear(&one);
+        return;
+    }
+
+    mpfr_set_zero(mpc_imagref(z->num), MPFR_RNDN);
+    mpfr_zeta(mpc_realref(z->num), mpc_realref(x->num), MPFR_RNDN);
+
+    mp_clear(&one);
+}
+
 GList*
 mp_factorize(const MPNumber *x)
 {
