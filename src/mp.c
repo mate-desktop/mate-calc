@@ -588,27 +588,27 @@ mp_factorize(const MPNumber *x)
 {
     GList *list = NULL;
     MPNumber *factor = g_slice_alloc0(sizeof(MPNumber));
-    MPNumber value = mp_new();
-    MPNumber tmp = mp_new();
-    MPNumber divisor = mp_new();
-    MPNumber root = mp_new();
-    MPNumber int_max = mp_new();
     mpc_init2(factor->num, PRECISION);
 
+    MPNumber value = mp_new();
     mp_abs(x, &value);
 
     if (mp_is_zero(&value))
     {
         mp_set_from_mp(&value, factor);
         list = g_list_append(list, factor);
+        mp_clear(&value);
         return list;
     }
 
+    MPNumber tmp = mp_new();
     mp_set_from_integer(1, &tmp);
     if (mp_is_equal(&value, &tmp))
     {
         mp_set_from_mp(x, factor);
         list = g_list_append(list, factor);
+        mp_clear(&value);
+        mp_clear(&tmp);
         return list;
     }
 
@@ -616,16 +616,20 @@ mp_factorize(const MPNumber *x)
     uint64_t num = 1;
     num = num << 63;
     num += (num - 1);
+    MPNumber int_max = mp_new();
     mp_set_from_unsigned_integer(num, &int_max);
     if (mp_is_less_equal(x, &int_max))
     {
         list = mp_factorize_unit64(mp_to_unsigned_integer(&value));
         if (mp_is_negative(x))
             mp_invert_sign(list->data, list->data);
+        mp_clear(&value);
+        mp_clear(&tmp);
         mp_clear(&int_max);
         return list;
     }
 
+    MPNumber divisor = mp_new();
     mp_set_from_integer(2, &divisor);
     while (TRUE)
     {
@@ -642,6 +646,7 @@ mp_factorize(const MPNumber *x)
             break;
     }
 
+    MPNumber root = mp_new();
     mp_set_from_integer(3, &divisor);
     mp_sqrt(&value, &root);
     while (mp_is_less_equal(&divisor, &root))
@@ -689,9 +694,9 @@ mp_factorize_unit64(uint64_t n)
 {
     GList *list = NULL;
     MPNumber *factor = g_slice_alloc0(sizeof(MPNumber));
-    MPNumber tmp = mp_new();
     mpc_init2(factor->num, PRECISION);
 
+    MPNumber tmp = mp_new();
     mp_set_from_unsigned_integer(2, &tmp);
     while (n % 2 == 0)
     {
