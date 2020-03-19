@@ -595,9 +595,15 @@ pf_do_x_pow_y_int(ParseNode* self)
     }
 
     if (self->right->token != NULL)
+    {
         pow = super_atoi(self->right->token->string);
+    }
     else
-        pow = mp_to_integer((MPNumber*) (*(self->right->evaluate))(self->right));
+    {
+        MPNumber* aux = (MPNumber*) (*(self->right->evaluate))(self->right);
+        pow = mp_to_integer(aux);
+        mp_free(aux);
+    }
 
     if(!val)
     {
