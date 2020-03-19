@@ -77,9 +77,12 @@ static void
 Test(char *expression, char *expected, int expected_error, int trailing_digits)
 {
     MPErrorCode error;
+    char *error_token = NULL;
     MPNumber result = mp_new();
 
-    error = mp_equation_parse(expression, &options, &result, NULL);
+    error = mp_equation_parse(expression, &options, &result, &error_token);
+    if (error_token)
+        g_free (error_token);
 
     if (error == 0) {
         char *result_str;
