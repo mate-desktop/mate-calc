@@ -72,7 +72,7 @@ mate_calc_SOURCES = \
 	utility.h
 
 mate_calc_LDADD = \
-	$(MATE_CALC_LIBS)        
+	$(MATE_CALC_LIBS)
 
 mate_calc_cmd_SOURCES = \
 	mate-calc-cmd.c \
@@ -203,6 +203,7 @@ EXTRA_DIST = \
 	buttons-financial.ui \
 	buttons-programming.ui \
 	mate-calc.about \
+	menu.ui \
 	mp-enums.c.template \
 	mp-enums.h.template \
 	org.mate.calculator.gresource.xml \
