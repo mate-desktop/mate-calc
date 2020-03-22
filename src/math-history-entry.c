@@ -20,13 +20,8 @@ struct MathHistoryEntryPrivate
 {
     MathEquation *equation;
 
-    MPNumber *answer; /* Stores answer in MPNumber object */
-    char *equation_string; /* Stores equation to be entered in history-entry */
-    char *answer_string; /* Stores answer to be entered in history-entry */
     GtkWidget *equation_label;
     GtkWidget *answer_label;
-    GtkWidget *equation_eventbox;
-    GtkWidget *answer_eventbox;
 };
 
 G_DEFINE_TYPE_WITH_PRIVATE (MathHistoryEntry, math_history_entry, GTK_TYPE_LIST_BOX_ROW);
@@ -43,58 +38,35 @@ math_history_entry_new(MathEquation *equation)
     return history_entry;
 }
 
-void answer_clicked_cb(GtkWidget *widget, GdkEventButton *eventbutton, gpointer data);
+void answer_clicked_cb(GtkWidget *widget, GdkEventButton *eventbutton, MathHistoryEntry *history_entry);
 G_MODULE_EXPORT
 void
-answer_clicked_cb (GtkWidget *widget, GdkEventButton *eventbutton, gpointer data)
-{   /* Callback function for button-press-event on answer_eventbox */
-    GtkEventBox *event = (GtkEventBox*) widget;
-    MathHistoryEntry *history_entry = MATH_HISTORY_ENTRY(data);
-    if (event != NULL)
-    {
-        if (GTK_IS_BIN(event))
-        {
-            GtkWidget *answer_label = gtk_bin_get_child(GTK_BIN(event));
-            char *answer = gtk_widget_get_tooltip_text(answer_label);
-            if (answer != NULL)
-                math_equation_insert(history_entry->priv->equation, answer);
-        }
-    }
+answer_clicked_cb (GtkWidget *widget, GdkEventButton *eventbutton, MathHistoryEntry *history_entry)
+{
+    const gchar *answer = gtk_widget_get_tooltip_text(history_entry->priv->answer_label);
+
+    if (answer != NULL)
+        math_equation_insert(history_entry->priv->equation, answer);
 }
-void equation_clicked_cb(GtkWidget *widget, GdkEventButton *eventbutton,  gpointer data);
+
+void equation_clicked_cb(GtkWidget *widget, GdkEventButton *eventbutton, MathHistoryEntry *history_entry);
 G_MODULE_EXPORT
 void
-equation_clicked_cb (GtkWidget *widget, GdkEventButton *eventbutton, gpointer data)
-{   /* Callback function for button-press-event on equation_eventbox */
-    GtkEventBox *event = (GtkEventBox*) widget;
-    MathHistoryEntry *history_entry = MATH_HISTORY_ENTRY(data);
-    if (event != NULL)
-    {
-        if (GTK_IS_BIN(event))
-        {
-            GtkLabel *equation_label = (GtkLabel*) gtk_bin_get_child(GTK_BIN(event));
-            const char *equation = gtk_label_get_text(equation_label);
-            if (equation  != NULL)
-                math_equation_set(history_entry->priv->equation, equation);
-        }
-    }
+equation_clicked_cb (GtkWidget *widget, GdkEventButton *eventbutton, MathHistoryEntry *history_entry)
+{
+    const gchar *equation = gtk_label_get_text(GTK_LABEL(history_entry->priv->equation_label));
+
+    if (equation != NULL)
+        math_equation_set(history_entry->priv->equation, equation);
 }
 
 void
-math_history_entry_insert_entry(MathHistoryEntry *history_entry, char *equation, MPNumber *number, int number_base)
+math_history_entry_insert_entry(MathHistoryEntry *history_entry, const gchar *equation, const gchar *answer_four_digits, const gchar *answer_nine_digits)
 {
     GtkBuilder *builder = NULL;
     GtkWidget *grid;
     GError *error = NULL;
-    char *final_answer;
-    MpSerializer *serializer_nine = mp_serializer_new(MP_DISPLAY_FORMAT_AUTOMATIC, number_base, 9);
-    MpSerializer *serializer_four = mp_serializer_new(MP_DISPLAY_FORMAT_AUTOMATIC, number_base, 4);
 
-    history_entry->priv->answer = number;
-    history_entry->priv->equation_string = equation;
-    history_entry->priv->answer_string = mp_serializer_to_string(serializer_nine, history_entry->priv->answer);
-    final_answer = mp_serializer_to_string(serializer_four, history_entry->priv->answer);
-    
     builder = gtk_builder_new();
     if(gtk_builder_add_from_resource (builder, UI_HISTORY_ENTRY_RESOURCE_PATH, &error) == 0)
     {
@@ -106,14 +78,12 @@ math_history_entry_insert_entry(MathHistoryEntry *history_entry, char *equation,
     gtk_container_add(GTK_CONTAINER(history_entry), grid);
     history_entry->priv->equation_label = GET_WIDGET(builder, "equation_label");
     history_entry->priv->answer_label = GET_WIDGET(builder, "answer_label");
-    history_entry->priv->equation_eventbox = GET_WIDGET(builder, "equation_eventbox");
-    history_entry->priv->answer_eventbox = GET_WIDGET(builder, "answer_eventbox");
-    gtk_widget_set_tooltip_text(history_entry->priv->equation_label, history_entry->priv->equation_string); 
-    gtk_widget_set_tooltip_text(history_entry->priv->answer_label, history_entry->priv->answer_string); 
-    gtk_label_set_text(GTK_LABEL(history_entry->priv->equation_label), history_entry->priv->equation_string);
-    gtk_label_set_text(GTK_LABEL(history_entry->priv->answer_label), final_answer);
+    gtk_widget_set_tooltip_text(history_entry->priv->equation_label, equation);
+    gtk_widget_set_tooltip_text(history_entry->priv->answer_label, answer_nine_digits);
+    gtk_label_set_text(GTK_LABEL(history_entry->priv->equation_label), equation);
+    gtk_label_set_text(GTK_LABEL(history_entry->priv->answer_label), answer_four_digits);
     gtk_builder_connect_signals(builder, history_entry);
-    g_free(final_answer);
+    g_object_unref(builder);
 }
 
 static void
@@ -125,6 +95,4 @@ static void
 math_history_entry_init(MathHistoryEntry *history_entry)
 {
     history_entry->priv = math_history_entry_get_instance_private(history_entry);
-    history_entry->priv->equation_string = "";
-    history_entry->priv->answer_string = "";
 }
