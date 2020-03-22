@@ -20,9 +20,9 @@ struct MathHistoryPrivate
 {
     MathEquation *equation;
 
-    MathHistoryEntry *entry;
-    char *prev_equation;
-    int items_count; /* Number of entries in history listbox */
+    gchar *last_answer;
+    gchar *last_equation;
+    int rows;
     GtkWidget *listbox;
 };
 
@@ -50,33 +50,54 @@ scroll_bottom_cb(MathHistory *history, gpointer data)
                                           - gtk_adjustment_get_page_size (adjustment));
 }
 
-static gboolean
-check_history(MathHistory *history, char *equation)
-{ /* Checks if the last inserted calculation is the same as the current calculation to be inserted in history */
-    if (history->priv->items_count >= 1 && g_strcmp0(equation, history->priv->prev_equation)==0)
-        return TRUE; /* returns true if last entered equation is the same as the current equation */
-    else
-        return FALSE;
+void
+math_history_insert_entry (MathHistory *history, char *equation, MPNumber *answer, int number_base)
+{
+    MathHistoryEntry *entry = math_history_entry_new(history->priv->equation);
+
+    MpSerializer *serializer_four = mp_serializer_new(MP_DISPLAY_FORMAT_AUTOMATIC, number_base, 4);
+    MpSerializer *serializer_nine = mp_serializer_new(MP_DISPLAY_FORMAT_AUTOMATIC, number_base, 9);
+
+    gchar *answer_four_digits = mp_serializer_to_string(serializer_four, answer);
+    gchar *answer_nine_digits = mp_serializer_to_string(serializer_nine, answer);
+
+    if (g_strcmp0(history->priv->last_answer, answer_nine_digits) == 0 &&
+        g_strcmp0(history->priv->last_equation, equation) == 0 &&
+        history->priv->rows >= 1)
+    {
+        g_free(answer_four_digits);
+        g_free(answer_nine_digits);
+        return;
+    }
+
+    math_history_entry_insert_entry(entry, equation, answer_four_digits, answer_nine_digits);
+
+    gtk_list_box_insert(GTK_LIST_BOX(history->priv->listbox), GTK_WIDGET(entry), -1);
+    gtk_widget_set_can_focus(GTK_WIDGET(entry), FALSE);
+    gtk_widget_show(GTK_WIDGET(entry));
+
+    g_free(history->priv->last_answer);
+    g_free(history->priv->last_equation);
+
+    history->priv->last_answer = g_strdup(answer_nine_digits);
+    history->priv->last_equation = g_strdup(equation);
+    history->priv->rows++;
+    g_signal_emit_by_name(history, "row-added");
+
+    g_free(answer_four_digits);
+    g_free(answer_nine_digits);
 }
 
 void
-math_history_insert_entry (MathHistory *history, char *equation, MPNumber *answer, int number_base)
-{   /* Inserts a new entry into the history listbox */
-    history->priv->entry = math_history_entry_new(history->priv->equation);
-    gboolean check = check_history (history, equation);
-    history->priv->prev_equation = g_strdup(equation);
-    if (!check)
-    {
-        math_history_entry_insert_entry(history->priv->entry, equation, answer, number_base);
-        if (history->priv->entry != NULL)	
-        {
-            gtk_list_box_insert(GTK_LIST_BOX(history->priv->listbox), GTK_WIDGET(history->priv->entry), -1);
-            gtk_widget_set_can_focus(GTK_WIDGET(history->priv->entry), FALSE);
-            gtk_widget_show_all(GTK_WIDGET(history->priv->entry));	
-            history->priv->items_count++;
-        }
-    }
-    g_signal_emit_by_name(history, "row-added");
+math_history_clear(MathHistory *history)
+{
+    GList *children, *iter;
+
+    history->priv->rows = 0;
+    children = gtk_container_get_children(GTK_CONTAINER(history->priv->listbox));
+    for (iter = children; iter != NULL; iter = g_list_next(iter))
+          gtk_widget_destroy(GTK_WIDGET(iter->data));
+    g_list_free(children);
 }
 
 static void
@@ -98,13 +119,16 @@ static void
 math_history_init(MathHistory *history)
 {
     history->priv = math_history_get_instance_private(history);
+
     gtk_scrolled_window_set_shadow_type(GTK_SCROLLED_WINDOW(history), GTK_SHADOW_IN);
     gtk_scrolled_window_set_policy(GTK_SCROLLED_WINDOW(history), GTK_POLICY_NEVER, GTK_POLICY_AUTOMATIC);
     gtk_scrolled_window_set_placement(GTK_SCROLLED_WINDOW(history), GTK_CORNER_TOP_LEFT);
 
-    history->priv->items_count = 0;
-    history->priv->prev_equation = "";
-    history->priv->listbox = gtk_list_box_new();    
+    history->priv->rows = 0;
+    history->priv->last_answer = g_strdup("");
+    history->priv->last_equation = g_strdup("");
+    history->priv->listbox = gtk_list_box_new();
+
     gtk_list_box_set_selection_mode(GTK_LIST_BOX(history->priv->listbox), GTK_SELECTION_NONE);
     gtk_widget_show(GTK_WIDGET(history->priv->listbox));
 

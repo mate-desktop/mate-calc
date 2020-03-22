@@ -180,6 +180,11 @@ static void show_history_cb(MathWindow *window, GParamSpec *spec)
     g_settings_set_boolean(g_settings_var, "show-history", math_window_get_show_history(window));
 }
 
+static void clear_history_cb(GtkMenuItem *menu, MathWindow *window)
+{
+    math_history_clear(window->priv->history);
+}
+
 static void show_preferences_cb(GtkMenuItem *menu, MathWindow *window)
 {
     if (!window->priv->preferences_dialog)
@@ -509,6 +514,8 @@ static void create_menu(MathWindow* window)
     gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_Z, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
     menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("edit-redo",_("_Redo"), accel_group), G_CALLBACK(redo_cb), window);
     gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_Z, GDK_CONTROL_MASK | GDK_SHIFT_MASK, GTK_ACCEL_VISIBLE);
+    menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("edit-clear",_("_Clear History"), accel_group), G_CALLBACK(clear_history_cb), window);
+    gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_Delete, GDK_CONTROL_MASK | GDK_SHIFT_MASK, GTK_ACCEL_VISIBLE);
     add_menu_item(menu, gtk_separator_menu_item_new(), NULL, NULL);
     add_menu_item(menu, gtk_image_menu_item_new_from_icon("preferences-desktop",_("_Preferences"), accel_group), G_CALLBACK(show_preferences_cb), window);
     add_menu_item(menu, gtk_separator_menu_item_new(), NULL, NULL);
