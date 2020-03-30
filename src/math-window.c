@@ -307,6 +307,7 @@ static void about_cb(GtkWidget* widget, MathWindow* window)
     GError *error = NULL;
     char **authors;
     gsize n_authors = 0, i;
+    gchar *comments = NULL;
 
     bytes = g_resources_lookup_data ("/org/mate/calculator/ui/mate-calc.about", G_RESOURCE_LOOKUP_FLAGS_NONE, &error);
     g_assert_no_error (error);
@@ -329,6 +330,9 @@ static void about_cb(GtkWidget* widget, MathWindow* window)
     for (p = documenters; *p; ++p)
         *p = _(*p);
 
+    comments = g_strdup_printf (_("Calculator with financial and scientific modes.\nUsing GNU MPFR %s and GNU MPC %s"),
+                                mpfr_get_version (), mpc_get_version ());
+
     gtk_show_about_dialog(GTK_WINDOW(window),
         "program-name", _("MATE Calculator"),
         "version", VERSION,
@@ -336,7 +340,7 @@ static void about_cb(GtkWidget* widget, MathWindow* window)
         "copyright", _("Copyright \xc2\xa9 1986–2010 The GCalctool authors\n"
                        "Copyright \xc2\xa9 2011-2020 MATE developers"),
         "license", license_trans,
-        "comments", _("Calculator with financial and scientific modes."),
+        "comments", comments,
         "authors", authors,
         "documenters", documenters,
         "translator_credits", _("translator-credits"),
@@ -346,6 +350,7 @@ static void about_cb(GtkWidget* widget, MathWindow* window)
         "logo-icon-name", "accessories-calculator",
         NULL);
 
+    g_free (comments);
     g_strfreev (authors);
     g_free (license_trans);
 }
