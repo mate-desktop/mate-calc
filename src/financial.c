@@ -35,7 +35,10 @@ calc_ctrm(MathEquation *equation, MPNumber *t, MPNumber *pint, MPNumber *fv, MPN
     mp_ln(&MP3, &MP4);
     mp_divide(&MP2, &MP4, t);
 
-    mp_clear(&MP1); mp_clear(&MP2); mp_clear(&MP3); mp_clear(&MP4);
+    mp_clear(&MP1);
+    mp_clear(&MP2);
+    mp_clear(&MP3);
+    mp_clear(&MP4);
 }
 
 
@@ -78,7 +81,9 @@ calc_ddb(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *life, MP
         mp_set_from_integer(0, t);
     }
 
-    mp_clear(&MPbv); mp_clear(&MP1); mp_clear(&MP2);
+    mp_clear(&MPbv);
+    mp_clear(&MP1);
+    mp_clear(&MP2);
 }
 
 
@@ -104,7 +109,10 @@ calc_fv(MathEquation *equation, MPNumber *t, MPNumber *pmt, MPNumber *pint, MPNu
     mp_multiply(pmt, &MP3, &MP4);
     mp_divide(&MP4, pint, t);
 
-    mp_clear(&MP1); mp_clear(&MP2); mp_clear(&MP3); mp_clear(&MP4);
+    mp_clear(&MP1);
+    mp_clear(&MP2);
+    mp_clear(&MP3);
+    mp_clear(&MP4);
 }
 
 
@@ -125,7 +133,8 @@ calc_gpm(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *margin)
     mp_subtract(&MP1, margin, &MP2);
     mp_divide(cost, &MP2, t);
 
-    mp_clear(&MP1); mp_clear(&MP2);
+    mp_clear(&MP1);
+    mp_clear(&MP2);
 }
 
 
@@ -153,7 +162,10 @@ calc_pmt(MathEquation *equation, MPNumber *t, MPNumber *prin, MPNumber *pint, MP
     mp_divide(pint, &MP1, &MP2);
     mp_multiply(prin, &MP2, t);
 
-    mp_clear(&MP1); mp_clear(&MP2); mp_clear(&MP3); mp_clear(&MP4);
+    mp_clear(&MP1);
+    mp_clear(&MP2);
+    mp_clear(&MP3);
+    mp_clear(&MP4);
 }
 
 
@@ -181,7 +193,10 @@ calc_pv(MathEquation *equation, MPNumber *t, MPNumber *pmt, MPNumber *pint, MPNu
     mp_divide(&MP1, pint, &MP2);
     mp_multiply(pmt, &MP2, t);
 
-    mp_clear(&MP1); mp_clear(&MP2); mp_clear(&MP3); mp_clear(&MP4);
+    mp_clear(&MP1);
+    mp_clear(&MP2);
+    mp_clear(&MP3);
+    mp_clear(&MP4);
 }
 
 
@@ -207,7 +222,10 @@ calc_rate(MathEquation *equation, MPNumber *t, MPNumber *fv, MPNumber *pv, MPNum
     mp_xpowy(&MP1, &MP3, &MP4);
     mp_add_integer(&MP4, -1, t);
 
-    mp_clear(&MP1); mp_clear(&MP2); mp_clear(&MP3); mp_clear(&MP4);
+    mp_clear(&MP1);
+    mp_clear(&MP2);
+    mp_clear(&MP3);
+    mp_clear(&MP4);
 }
 
 
@@ -257,7 +275,10 @@ calc_syd(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *salvage,
     mp_subtract(cost, salvage, &MP1);
     mp_multiply(&MP1, &MP2, t);
 
-    mp_clear(&MP1); mp_clear(&MP2); mp_clear(&MP3); mp_clear(&MP4);
+    mp_clear(&MP1);
+    mp_clear(&MP2);
+    mp_clear(&MP3);
+    mp_clear(&MP4);
 }
 
 
@@ -285,7 +306,10 @@ calc_term(MathEquation *equation, MPNumber *t, MPNumber *pmt, MPNumber *fv, MPNu
     mp_ln(&MP4, &MP1);
     mp_divide(&MP1, &MP2, t);
 
-    mp_clear(&MP1); mp_clear(&MP2); mp_clear(&MP3); mp_clear(&MP4);
+    mp_clear(&MP1);
+    mp_clear(&MP2);
+    mp_clear(&MP3);
+    mp_clear(&MP4);
 }
 
 
