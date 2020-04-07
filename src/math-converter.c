@@ -145,10 +145,10 @@ update_from_model(MathConverter *converter)
 
             for (unit_iter = unit_category_get_units(category); unit_iter; unit_iter = unit_iter->next) {
                 Unit *unit = unit_iter->data;
-                GtkTreeIter iter;
+                GtkTreeIter iter_new_row;
 
-                gtk_tree_store_append(from_model, &iter, &parent);
-                gtk_tree_store_set(from_model, &iter, 0, unit_get_display_name(unit), 1, category, 2, unit, -1);
+                gtk_tree_store_append(from_model, &iter_new_row, &parent);
+                gtk_tree_store_set(from_model, &iter_new_row, 0, unit_get_display_name(unit), 1, category, 2, unit, -1);
             }
         }
     }
