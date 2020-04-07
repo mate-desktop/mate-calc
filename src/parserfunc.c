@@ -671,7 +671,7 @@ pf_do_mod(ParseNode* self)
             mp_free(left);
         if(right)
             mp_free(right);
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     if (self->left->evaluate == pf_do_x_pow_y)
@@ -684,7 +684,7 @@ pf_do_mod(ParseNode* self)
                 mp_free(base_value);
             if(exponent)
                 mp_free(exponent);
-            free(ans);
+            mp_free(ans);
             return NULL;
         }
         mp_modular_exponentiation(base_value, exponent, right, ans);

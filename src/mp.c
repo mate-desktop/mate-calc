@@ -580,9 +580,9 @@ mp_modular_exponentiation(const MPNumber *x, const MPNumber *y, const MPNumber *
     mp_modulus_divide(&ans, p, z);
 
     mp_clear(&base_value);
-	mp_clear(&exp_value);
-	mp_clear(&ans);
-	mp_clear(&two);
+    mp_clear(&exp_value);
+    mp_clear(&ans);
+    mp_clear(&two);
     mp_clear(&tmp);
 }
 
