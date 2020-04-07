@@ -214,7 +214,9 @@ test_mp(void)
     try("mp_is_less_equal(-1, 0)", mp_is_less_equal (&minus_one, &zero), true);
     try("mp_is_less_equal(-1, 1)", mp_is_less_equal (&minus_one, &one), true);
 
-    mp_clear(&zero); mp_clear(&one); mp_clear(&minus_one);
+    mp_clear(&zero);
+    mp_clear(&one);
+    mp_clear(&minus_one);
 }
 
 

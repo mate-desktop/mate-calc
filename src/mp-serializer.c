@@ -173,7 +173,9 @@ mp_to_string_real(MpSerializer *serializer, const MPNumber *x, int base, gboolea
             b -= d * multiplier;
         }
     }
-    mp_clear(&number); mp_clear(&integer_component); mp_clear(&fractional_component);
+    mp_clear(&number);
+    mp_clear(&integer_component);
+    mp_clear(&fractional_component);
     mp_clear(&temp);
 }
 
@@ -289,8 +291,14 @@ mp_to_exponential_string_real(MpSerializer *serializer, const MPNumber *x, GStri
     fixed = mp_to_string(serializer, &mantissa, n_digits);
     g_string_append(string, fixed);
     g_free(fixed);
-    mp_clear(&t); mp_clear(&z); mp_clear(&base); mp_clear(&base3); 
-    mp_clear(&base10); mp_clear(&base10inv); mp_clear(&mantissa);
+
+    mp_clear(&t);
+    mp_clear(&z);
+    mp_clear(&base);
+    mp_clear(&base3);
+    mp_clear(&base10);
+    mp_clear(&base10inv);
+    mp_clear(&mantissa);
 
     return exponent;
 }

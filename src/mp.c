@@ -718,7 +718,10 @@ mp_factorize(const MPNumber *x)
         mp_invert_sign(list->data, list->data);
 
     /* MPNumbers in GList will be freed in math_equation_factorize_real */
-    mp_clear(&value); mp_clear(&tmp); mp_clear(&divisor); mp_clear(&root);
+    mp_clear(&value);
+    mp_clear(&tmp);
+    mp_clear(&divisor);
+    mp_clear(&root);
 
     return list;
 }
