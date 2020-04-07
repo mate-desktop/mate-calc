@@ -183,7 +183,7 @@ get_options(int argc, char *argv[])
 }
 
 static void
-quit_cb(MathWindow *window)
+quit_cb(MathWindow *win)
 {
     gtk_main_quit();
 }

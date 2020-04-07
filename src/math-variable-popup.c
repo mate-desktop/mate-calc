@@ -204,10 +204,10 @@ math_variable_popup_set_property(GObject      *object,
 
         names = math_variables_get_names(math_equation_get_variables(self->priv->equation));
         for (i = 0; names[i]; i++) {
-            MPNumber *value;
+            MPNumber *aux;
 
-            value = math_variables_get(math_equation_get_variables(self->priv->equation), names[i]);
-            entry = make_variable_entry(self, names[i], value, TRUE);
+            aux = math_variables_get(math_equation_get_variables(self->priv->equation), names[i]);
+            entry = make_variable_entry(self, names[i], aux, TRUE);
             gtk_widget_show(entry);
             gtk_box_pack_start(GTK_BOX(self->priv->vbox), entry, FALSE, TRUE, 0);
         }

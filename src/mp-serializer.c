@@ -159,7 +159,7 @@ mp_to_string_real(MpSerializer *serializer, const MPNumber *x, int base, gboolea
 
     /* Append base suffix if not in default base */
     if (base != serializer->priv->base) {
-        const gchar *digits[] = {"₀", "₁", "₂", "₃", "₄", "₅", "₆", "₇", "₈", "₉"};
+        const gchar *base_digits[] = {"₀", "₁", "₂", "₃", "₄", "₅", "₆", "₇", "₈", "₉"};
         int multiplier = 1;
         int b = base;
 
@@ -169,7 +169,7 @@ mp_to_string_real(MpSerializer *serializer, const MPNumber *x, int base, gboolea
             int d;
             multiplier /= 10;
             d = b / multiplier;
-            g_string_append(string, digits[d]);
+            g_string_append(string, base_digits[d]);
             b -= d * multiplier;
         }
     }
