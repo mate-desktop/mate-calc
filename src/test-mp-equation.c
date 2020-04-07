@@ -482,6 +482,11 @@ test_equations(void)
     test("8 mod 7", "1", 0);
     test("−1 mod 7", "6", 0);
 
+    test("123^456 mod 78", "27", 0);
+    test("2^2 mod 2", "0", 0);
+    test("1^0 mod 2", "1", 0);
+    test("2^1 mod 1", "0", 0);
+
     test("sgn 0", "0", 0);
     test("sgn 3", "1", 0);
     test("sgn −3", "−1", 0);
