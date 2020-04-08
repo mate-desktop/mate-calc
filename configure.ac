@@ -13,7 +13,7 @@ AC_PROG_CC
 AC_HEADER_STDC
 
 GLIB_GSETTINGS
-MATE_COMPILE_WARNINGS(maximum)
+MATE_COMPILE_WARNINGS
 
 dnl ###########################################################################
 dnl Dependencies
