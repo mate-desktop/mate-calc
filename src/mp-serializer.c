@@ -209,7 +209,10 @@ mp_to_string(MpSerializer *serializer, const MPNumber *x, int *n_digits)
         if (n_complex_digits > *n_digits)
             *n_digits = n_complex_digits;
         if (strcmp(s->str, "0") == 0 || strcmp(s->str, "+0") == 0 || strcmp(s->str, "−0") == 0) {
-            /* Ignore */
+            /* Ignore unless the real part was also zero and string was cleared*/
+            if (string->len == 0) {
+                g_string_append(string, "0");
+            }
         }
         else if (strcmp(s->str, "1") == 0) {
             g_string_append(string, "i");
