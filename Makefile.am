@@ -16,6 +16,7 @@ DISTCLEANFILES = \
 	xmldocs.make
 
 DISTCHECK_CONFIGURE_FLAGS = \
+	--enable-compile-warnings=no \
 	CFLAGS='-Wno-deprecated-declarations'
 
 EXTRA_DIST = \
