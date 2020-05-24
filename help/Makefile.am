@@ -37,3 +37,5 @@ HELP_LINGUAS = $(if $(IGNORE_HELP_LINGUAS), \
 
 DISTCLEANFILES = \
 	Makefile.in
+
+-include $(top_srcdir)/git.mk
