@@ -202,3 +202,5 @@ DISTCLEANFILES = \
 
 test: mate-calc
 	./mate-calc -u
+
+-include $(top_srcdir)/git.mk

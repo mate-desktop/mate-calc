@@ -25,3 +25,5 @@ DISTCLEANFILES = \
 	Makefile.in \
 	mate-calc.desktop \
 	$(appdata_DATA)
+
+-include $(top_srcdir)/git.mk
