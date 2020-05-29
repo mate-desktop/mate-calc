@@ -998,6 +998,7 @@ math_equation_set_number(MathEquation *equation, const MPNumber *x)
     equation->priv->ans_end = gtk_text_buffer_create_mark(GTK_TEXT_BUFFER(equation), NULL, &end, TRUE);
     gtk_text_buffer_apply_tag(GTK_TEXT_BUFFER(equation), equation->priv->ans_tag, &start, &end);
     g_free(text);
+    free_state(state);
 }
 
 
