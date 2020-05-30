@@ -44,6 +44,9 @@ math_history_entry_new(MathEquation *equation);
 void
 math_history_entry_insert_entry(MathHistoryEntry *history_entry, const gchar *equation, const gchar *answer_four_digits, const gchar *answer_nine_digits);
 
+gchar *
+math_history_entry_get_equation(MathHistoryEntry *history_entry);
+
 G_END_DECLS
 
 #endif /* MATH_HISTORY_ENTRY_VIEW_H */
