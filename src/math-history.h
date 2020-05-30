@@ -45,6 +45,15 @@ math_history_new(MathEquation *equation);
 void
 math_history_insert_entry(MathHistory *history, char *equation, MPNumber *answer, int number_base);
 
+gpointer
+math_history_get_entry_at(MathHistory *history, int index);
+
+void
+math_history_set_current(MathHistory *history, int value);
+
+int
+math_history_get_current(MathHistory *history);
+
 void
 math_history_clear(MathHistory *history);
 

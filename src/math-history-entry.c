@@ -88,6 +88,12 @@ math_history_entry_insert_entry(MathHistoryEntry *history_entry, const gchar *eq
     #undef get_widget
 }
 
+gchar *
+math_history_entry_get_equation(MathHistoryEntry *history_entry)
+{
+    return gtk_widget_get_tooltip_text(history_entry->priv->equation_label);
+}
+
 static void
 math_history_entry_class_init(MathHistoryEntryClass *klass)
 {

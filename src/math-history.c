@@ -22,6 +22,7 @@ struct MathHistoryPrivate
 
     gchar *last_answer;
     gchar *last_equation;
+    int current; /* 0 is the first entry, rows-1 the most recent entry */
     int rows;
     GtkWidget *listbox;
 };
@@ -82,6 +83,7 @@ math_history_insert_entry (MathHistory *history, char *equation, MPNumber *answe
     history->priv->last_answer = g_strdup(answer_nine_digits);
     history->priv->last_equation = g_strdup(equation);
     history->priv->rows++;
+    history->priv->current = history->priv->rows;
     g_signal_emit_by_name(history, "row-added");
 
     g_free(answer_four_digits);
@@ -94,10 +96,31 @@ math_history_clear(MathHistory *history)
     GList *children, *iter;
 
     history->priv->rows = 0;
+    history->priv->current = 0;
     children = gtk_container_get_children(GTK_CONTAINER(history->priv->listbox));
     for (iter = children; iter != NULL; iter = g_list_next(iter))
           gtk_widget_destroy(GTK_WIDGET(iter->data));
     g_list_free(children);
+}
+
+gpointer
+math_history_get_entry_at(MathHistory *history, int index)
+{
+    if (index >= 0 && index < history->priv->rows)
+        return MATH_HISTORY_ENTRY(gtk_list_box_get_row_at_index(GTK_LIST_BOX(history->priv->listbox), index));
+    return NULL;
+}
+
+void
+math_history_set_current(MathHistory *history, int value)
+{
+    history->priv->current = CLAMP (history->priv->current + value, 0, history->priv->rows - 1);
+}
+
+int
+math_history_get_current(MathHistory *history)
+{
+    return history->priv->current;
 }
 
 static void
@@ -124,6 +147,7 @@ math_history_init(MathHistory *history)
     gtk_scrolled_window_set_policy(GTK_SCROLLED_WINDOW(history), GTK_POLICY_NEVER, GTK_POLICY_AUTOMATIC);
     gtk_scrolled_window_set_placement(GTK_SCROLLED_WINDOW(history), GTK_CORNER_TOP_LEFT);
 
+    history->priv->current = 0;
     history->priv->rows = 0;
     history->priv->last_answer = g_strdup("");
     history->priv->last_equation = g_strdup("");

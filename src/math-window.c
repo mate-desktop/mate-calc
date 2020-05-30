@@ -202,7 +202,29 @@ key_press_cb(MathWindow *window, GdkEventKey *event)
     gboolean result;
     g_signal_emit_by_name(window->priv->display, "key-press-event", event, &result);
 
-    if (math_buttons_get_mode (window->priv->buttons) == PROGRAMMING && (event->state & GDK_CONTROL_MASK) == GDK_CONTROL_MASK) {
+    /* Keyboard navigation for history */
+    if ((event->state & GDK_MOD1_MASK) == GDK_MOD1_MASK && (event->keyval == GDK_KEY_Up || event->keyval == GDK_KEY_Down))
+    {
+        switch (event->keyval)
+        {
+            case GDK_KEY_Up:
+                math_history_set_current(window->priv->history, -1);
+                break;
+            case GDK_KEY_Down:
+                math_history_set_current(window->priv->history, 1);
+                break;
+        }
+
+        MathHistoryEntry *entry = math_history_get_entry_at(window->priv->history, math_history_get_current(window->priv->history));
+        if (entry)
+        {
+            gchar *equation_string = math_history_entry_get_equation(entry);
+            math_equation_set(window->priv->equation, equation_string);
+            g_free(equation_string);
+        }
+        return TRUE;
+    }
+    else if (math_buttons_get_mode (window->priv->buttons) == PROGRAMMING && (event->state & GDK_CONTROL_MASK) == GDK_CONTROL_MASK) {
         switch(event->keyval)
         {
         /* Binary */
@@ -540,7 +562,7 @@ static void create_menu(MathWindow* window)
 
     menu = add_menu(window->priv->menu_bar, VIEW_MENU_LABEL);
     window->priv->view_history_menu_item = add_menu_item(menu, gtk_check_menu_item_new_with_mnemonic(VIEW_HISTORY_LABEL), G_CALLBACK(history_check_toggled_cb), window);
-    gtk_widget_add_accelerator(window->priv->view_history_menu_item, "activate", accel_group, GDK_KEY_H, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
+    gtk_widget_add_accelerator(window->priv->view_history_menu_item, "activate", accel_group, GDK_KEY_H, GDK_CONTROL_MASK | GDK_SHIFT_MASK, GTK_ACCEL_VISIBLE);
 
     menu = add_menu(window->priv->menu_bar, HELP_MENU_LABEL);
     menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("help-browser", HELP_CONTENTS_LABEL, accel_group), G_CALLBACK(help_cb), window);
