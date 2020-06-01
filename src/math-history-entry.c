@@ -27,8 +27,6 @@ struct MathHistoryEntryPrivate
 G_DEFINE_TYPE_WITH_PRIVATE (MathHistoryEntry, math_history_entry, GTK_TYPE_LIST_BOX_ROW);
 
 #define UI_HISTORY_ENTRY_RESOURCE_PATH "/org/mate/calculator/ui/history-entry.ui"
-#define GET_WIDGET(ui, name) \
-          GTK_WIDGET(gtk_builder_get_object(ui, name))
 
 MathHistoryEntry *
 math_history_entry_new(MathEquation *equation)
@@ -63,6 +61,8 @@ equation_clicked_cb (GtkWidget *widget, GdkEventButton *eventbutton, MathHistory
 void
 math_history_entry_insert_entry(MathHistoryEntry *history_entry, const gchar *equation, const gchar *answer_four_digits, const gchar *answer_nine_digits)
 {
+    #define get_widget(x) GTK_WIDGET(gtk_builder_get_object(builder, x))
+
     GtkBuilder *builder = NULL;
     GtkWidget *grid;
     GError *error = NULL;
@@ -74,16 +74,18 @@ math_history_entry_insert_entry(MathHistoryEntry *history_entry, const gchar *eq
         g_clear_error(&error);
         return;
     }
-    grid = GET_WIDGET(builder, "grid");
+    grid = get_widget("grid");
     gtk_container_add(GTK_CONTAINER(history_entry), grid);
-    history_entry->priv->equation_label = GET_WIDGET(builder, "equation_label");
-    history_entry->priv->answer_label = GET_WIDGET(builder, "answer_label");
+    history_entry->priv->equation_label = get_widget("equation_label");
+    history_entry->priv->answer_label = get_widget("answer_label");
     gtk_widget_set_tooltip_text(history_entry->priv->equation_label, equation);
     gtk_widget_set_tooltip_text(history_entry->priv->answer_label, answer_nine_digits);
     gtk_label_set_text(GTK_LABEL(history_entry->priv->equation_label), equation);
     gtk_label_set_text(GTK_LABEL(history_entry->priv->answer_label), answer_four_digits);
     gtk_builder_connect_signals(builder, history_entry);
     g_object_unref(builder);
+
+    #undef get_widget
 }
 
 static void
