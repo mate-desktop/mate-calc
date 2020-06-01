@@ -36,8 +36,6 @@ struct MathDisplayPrivate
 
 G_DEFINE_TYPE_WITH_PRIVATE (MathDisplay, math_display, GTK_TYPE_VIEWPORT);
 
-#define GET_WIDGET(ui, name)  GTK_WIDGET(gtk_builder_get_object(ui, name))
-
 MathDisplay *
 math_display_new()
 {
