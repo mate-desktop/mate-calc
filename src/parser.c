@@ -1047,7 +1047,6 @@ variable(ParserState* state)
 
     if(token->token_type == T_FUNCTION)
     {
-        state->depth_level++;
         token_old = token;
         token = l_get_next_token(state->lexer);
         if(token->token_type == T_SUP_NUMBER)
