@@ -1,3 +1,37 @@
+### mate-calc 1.25.0
+
+  * Translations update
+  * math-history-entry: Reduce the macro scope and its argument number
+  * math-display: Remove unused macro
+  * math-equation: Fix memory leak
+  * Fix empty string return for canceling complex expressions
+  * build: silent build warnings for distcheck
+  * Remove -Wshadow warnings
+  * Use only one mp_clear statement per line
+  * use default MATE_COMPILE_WARNINGS level
+  * build: Remove redundant LDFLAGS
+  * Add modular exponentiation ability and add acccording tests
+  * test-mp-equation: Fix memory leak
+  * parserfunc: fix memory leak
+  * history-view: simplify code and add clear option
+  * math-buttons: add space character after inverse trig. functions
+  * math-window: show GNU MPFR and GNU MPC version in about dialog
+  * math-display.c: set bottom margin to 12 for gtk widget info_view
+  * clear MPNumbers before return
+  * add Riemann zeta function and Gauss error function
+  * parserfunc: fix crash when calculating nested pow
+  * Remove warnings: function declaration isn’t a prototype
+  * update complex number help-page
+  * unittest.c: replace tabs with spaces
+  * configure: check for mpfr version >= 4.0.2
+  * Port to GNU MPFR/MPC Library
+  * mate-calc.desktop: Do not collect the translation for Icon
+  * free variables
+  * add history view to show recent calculations.
+  * add option to enable/disable history (disabled by default).
+  * add possibility to resize mate-calc if history is enabled.
+  * Read authors (updated) from mate-calc.about
+
 ### mate-calc 1.24.0
 
   * Translations update
