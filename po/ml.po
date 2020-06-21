@@ -4,15 +4,15 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Stefano Karapetsas <stefano@karapetsas.com>, 2019
+# Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc 1.23.0\n"
+"Project-Id-Version: mate-calc 1.24.0\n"
 "Report-Msgid-Bugs-To: http://mate-desktop.org\n"
-"POT-Creation-Date: 2020-01-14 20:58+0100\n"
+"POT-Creation-Date: 2020-06-20 17:26+0200\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2019\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2020\n"
 "Language-Team: Malayalam (https://www.transifex.com/mate/teams/13566/ml/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -580,12 +580,12 @@ msgid ""
 "project's home page."
 msgstr ""
 
-#: data/mate-calc.desktop.in:3 src/math-window.c:261
+#: data/mate-calc.desktop.in:3 src/math-window.c:342
 msgid "MATE Calculator"
 msgstr ""
 
 #. Title of main window
-#: data/mate-calc.desktop.in:4 src/math-window.c:568
+#: data/mate-calc.desktop.in:4 src/math-window.c:688
 msgid "Calculator"
 msgstr "ഗണനി"
 
@@ -594,12 +594,6 @@ msgid "Perform arithmetic, scientific or financial calculations"
 msgstr ""
 "അരിതമെറ്റിക്, ശാസ്ത്രീയം അല്ലെങ്കില്‍ ധനകാര്യ സംബന്ധമായ കണക്കുകൂട്ടലുകള്‍ "
 "നടത്തുക"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: data/mate-calc.desktop.in:8
-msgid "accessories-calculator"
-msgstr ""
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
@@ -654,58 +648,66 @@ msgstr ""
 "കാണിക്കണമോയെന്നു് സൂചിപ്പിക്കുന്നു."
 
 #: data/org.mate.calc.gschema.xml:52
-msgid "Number format"
-msgstr "സംഖ്യ രീതി"
+msgid "Show History"
+msgstr "ചരിത്രം കാണിക്കുക"
 
 #: data/org.mate.calc.gschema.xml:53
-msgid "The format to display numbers in"
+msgid "Shows all recent calculations"
 msgstr ""
 
 #: data/org.mate.calc.gschema.xml:57
+msgid "Number format"
+msgstr "സംഖ്യ രീതി"
+
+#: data/org.mate.calc.gschema.xml:58
+msgid "The format to display numbers in"
+msgstr ""
+
+#: data/org.mate.calc.gschema.xml:62
 msgid "Angle units"
 msgstr "കോണ്‍ അളവ്"
 
-#: data/org.mate.calc.gschema.xml:58
+#: data/org.mate.calc.gschema.xml:63
 msgid "The angle units to use"
 msgstr "ഉപയോഗിക്കേണ്ട കോണ്‍ ഏകകം"
 
-#: data/org.mate.calc.gschema.xml:62
+#: data/org.mate.calc.gschema.xml:67
 msgid "Button mode"
 msgstr ""
 
-#: data/org.mate.calc.gschema.xml:63
+#: data/org.mate.calc.gschema.xml:68
 msgid "The button mode"
 msgstr ""
 
-#: data/org.mate.calc.gschema.xml:67
+#: data/org.mate.calc.gschema.xml:72
 msgid "Source currency"
 msgstr "സോഴ്സ് കറന്‍സി"
 
-#: data/org.mate.calc.gschema.xml:68
+#: data/org.mate.calc.gschema.xml:73
 msgid "Currency of the current calculation"
 msgstr "ഇപ്പോഴത്തെ കണക്കിന്റെ ഏകകം"
 
-#: data/org.mate.calc.gschema.xml:72
+#: data/org.mate.calc.gschema.xml:77
 msgid "Target currency"
 msgstr "ലക്ഷ്യ കറന്‍സി"
 
-#: data/org.mate.calc.gschema.xml:73
+#: data/org.mate.calc.gschema.xml:78
 msgid "Currency to convert the current calculation into"
 msgstr "ഇപ്പോഴുള്ള കണക്കുകൂട്ടല്‍ വേര്‍തിരിയ്ക്കേണ്ട കറന്‍സി"
 
-#: data/org.mate.calc.gschema.xml:77
+#: data/org.mate.calc.gschema.xml:82
 msgid "Source units"
 msgstr "ശ്രോതസ്സ് യൂണിറ്റുകള്‍"
 
-#: data/org.mate.calc.gschema.xml:78
+#: data/org.mate.calc.gschema.xml:83
 msgid "Units of the current calculation"
 msgstr "ഇപ്പോഴത്തെ കണക്കിന്റെ ഏകകം"
 
-#: data/org.mate.calc.gschema.xml:82
+#: data/org.mate.calc.gschema.xml:87
 msgid "Target units"
 msgstr "ടാര്‍ഗറ്റ് യൂണിറ്റുകള്‍"
 
-#: data/org.mate.calc.gschema.xml:83
+#: data/org.mate.calc.gschema.xml:88
 msgid "Units to convert the current calculation into"
 msgstr "ഇപ്പോഴത്തെ കണക്കു് വേര്‍തിരിയ്ക്കുവാനുള്ള യൂണിറ്റുകള്‍"
 
@@ -949,12 +951,12 @@ msgstr "വെനസ്വേലന്‍ ബോലിവര്‍"
 msgid "South African Rand"
 msgstr "ദക്ഷിണാഫ്രിക്കന്‍ റാന്റ്"
 
-#: src/financial.c:70
+#: src/financial.c:80
 msgid "Error: the number of periods must be positive"
 msgstr "പിശക്: പീരിയഡുകളുടെ എണ്ണം പോസിറ്റീവ്"
 
 #. Description on how to use mate-calc displayed on command-line
-#: src/mate-calc.c:79
+#: src/mate-calc.c:82
 #, c-format
 msgid ""
 "Usage:\n"
@@ -965,7 +967,7 @@ msgstr ""
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
-#: src/mate-calc.c:87
+#: src/mate-calc.c:90
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -982,7 +984,7 @@ msgstr ""
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
-#: src/mate-calc.c:98
+#: src/mate-calc.c:101
 #, c-format
 msgid ""
 "GTK+ Options:\n"
@@ -1002,7 +1004,7 @@ msgstr ""
 "  --g-fatal-warnings              എല്ലാ മുന്നറിയിപ്പുകളും പ്രാധാന്യമാക്കുക"
 
 #. Description on mate-calc application options displayed on command-line
-#: src/mate-calc.c:112
+#: src/mate-calc.c:115
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -1012,7 +1014,7 @@ msgstr ""
 "  -s, --solve <equation>          തന്നിരിക്കുന്ന സമവാക്യം പരിഹരിക്കുക"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: src/mate-calc.c:160
+#: src/mate-calc.c:163
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr ""
@@ -1020,7 +1022,7 @@ msgstr ""
 "ആവശ്യമുണ്ടു്"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: src/mate-calc.c:171
+#: src/mate-calc.c:174
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "അപരിചിതമായ ആര്‍ഗ്യുമെന്റ് '%s'"
@@ -1211,12 +1213,12 @@ msgid "Boolean NOT"
 msgstr "ബൂളിയന്‍ NOT"
 
 #. Tooltip for the integer component button
-#: src/math-buttons.c:209 src/math-buttons.c:997
+#: src/math-buttons.c:209 src/math-buttons.c:1001
 msgid "Integer Component"
 msgstr "പൂര്‍ണ്ണസംഖ്യയുടെ ഭാഗം"
 
 #. Tooltip for the fractional component button
-#: src/math-buttons.c:212 src/math-buttons.c:999
+#: src/math-buttons.c:212 src/math-buttons.c:1003
 msgid "Fractional Component"
 msgstr "ഭിന്നസംഖ്യാ ഘടകം"
 
@@ -1306,28 +1308,28 @@ msgid "Straight Line Depreciation"
 msgstr "നേര്‍രേഖാ വിലയിടിവു്"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: src/math-buttons.c:628
+#: src/math-buttons.c:632
 msgid "Binary"
 msgstr "ബൈനറി"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: src/math-buttons.c:632
+#: src/math-buttons.c:636
 msgid "Octal"
 msgstr "ഒക്റ്റല്‍"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: src/math-buttons.c:636
+#: src/math-buttons.c:640
 msgid "Decimal"
 msgstr "ഡെസിമല്‍"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: src/math-buttons.c:640
+#: src/math-buttons.c:644
 msgid "Hexadecimal"
 msgstr "ഹെക്സാ ഡെസിമല്‍"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: src/math-buttons.c:908 src/math-buttons.c:951
+#: src/math-buttons.c:912 src/math-buttons.c:955
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
@@ -1336,7 +1338,7 @@ msgstr[1] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: src/math-buttons.c:912 src/math-buttons.c:955
+#: src/math-buttons.c:916 src/math-buttons.c:959
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
@@ -1344,188 +1346,188 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. Tooltip for the round button
-#: src/math-buttons.c:1001
+#: src/math-buttons.c:1005
 msgid "Round"
 msgstr "വട്ടത്തില്‍"
 
 #. Tooltip for the floor button
-#: src/math-buttons.c:1003
+#: src/math-buttons.c:1007
 msgid "Floor"
 msgstr "ഫ്ലോര്‍"
 
 #. Tooltip for the ceiling button
-#: src/math-buttons.c:1005
+#: src/math-buttons.c:1009
 msgid "Ceiling"
 msgstr "സീലിങ്"
 
 #. Tooltip for the ceiling button
-#: src/math-buttons.c:1007
+#: src/math-buttons.c:1011
 msgid "Sign"
 msgstr "ചിഹ്നം"
 
 #. Tooltip for the c₀ component button
-#: src/math-buttons.c:1049
+#: src/math-buttons.c:1053
 msgid "Velocity of Light"
 msgstr ""
 
-#: src/math-buttons.c:1049
+#: src/math-buttons.c:1053
 msgid "299,792,458 m/s"
 msgstr ""
 
 #. Tooltip for the μ₀ component button
-#: src/math-buttons.c:1051
+#: src/math-buttons.c:1055
 msgid "Magnetic constant"
 msgstr ""
 
-#: src/math-buttons.c:1051
+#: src/math-buttons.c:1055
 msgid "1.2566370614×10⁻⁶ N/A²"
 msgstr ""
 
 #. Tooltip for the ε₀ button
-#: src/math-buttons.c:1053
+#: src/math-buttons.c:1057
 msgid "Electric constant"
 msgstr ""
 
-#: src/math-buttons.c:1053
+#: src/math-buttons.c:1057
 msgid "8.85418782×10⁻¹² s⁴A²/m³kg"
 msgstr ""
 
 #. Tooltip for the G button
-#: src/math-buttons.c:1055
+#: src/math-buttons.c:1059
 msgid "Newtonian constant of gravitation"
 msgstr ""
 
-#: src/math-buttons.c:1055
+#: src/math-buttons.c:1059
 msgid "6.67408×10⁻¹¹ m³/(s²kg)"
 msgstr ""
 
 #. Tooltip for the h button
-#: src/math-buttons.c:1057
+#: src/math-buttons.c:1061
 msgid "Planck constant"
 msgstr ""
 
-#: src/math-buttons.c:1057
+#: src/math-buttons.c:1061
 msgid "6.62607004×10⁻³⁴ m²kg/s"
 msgstr ""
 
 #. Tooltip for the ｅ button
-#: src/math-buttons.c:1059
+#: src/math-buttons.c:1063
 msgid "Elementary charge"
 msgstr ""
 
-#: src/math-buttons.c:1059
+#: src/math-buttons.c:1063
 msgid "1.6021766208(98)×10⁻¹⁹ C"
 msgstr ""
 
 #. Tooltip for the mₑ button
-#: src/math-buttons.c:1061
+#: src/math-buttons.c:1065
 msgid "Electron mass"
 msgstr ""
 
-#: src/math-buttons.c:1061
+#: src/math-buttons.c:1065
 msgid "9.10938356×10⁻³¹ kg"
 msgstr ""
 
 #. Tooltip for the mₚ button
-#: src/math-buttons.c:1063
+#: src/math-buttons.c:1067
 msgid "Proton mass"
 msgstr ""
 
-#: src/math-buttons.c:1063
+#: src/math-buttons.c:1067
 msgid "1.672621898(21)×10⁻²⁷ kg"
 msgstr ""
 
 #. Tooltip for the Nₐ button
-#: src/math-buttons.c:1065
+#: src/math-buttons.c:1069
 msgid "Avogadro constant"
 msgstr ""
 
-#: src/math-buttons.c:1065
+#: src/math-buttons.c:1069
 msgid "6.02214086×10²³ mol⁻¹"
 msgstr ""
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: src/math-converter.c:412
+#: src/math-converter.c:418
 msgid " in "
 msgstr " ല്‍ "
 
 #. Tooltip for swap conversion button
-#: src/math-converter.c:427
+#: src/math-converter.c:433
 msgid "Switch conversion units"
 msgstr "കണ്‍വേര്‍ഷന്‍ യൂണിറ്റുകള്‍ മാറ്റുക"
 
 #. Error shown when trying to undo with no undo history
-#: src/math-equation.c:459
+#: src/math-equation.c:460
 msgid "No undo history"
 msgstr "ആവശ്യമില്ലാത്തവയുടെ നാള്‍വഴി ലഭ്യമല്ല"
 
 #. Error shown when trying to redo with no redo history
-#: src/math-equation.c:486
+#: src/math-equation.c:487
 msgid "No redo history"
 msgstr "വീണ്ടും ചെയ്യുവാനുള്ളവയുടെ നാള്‍വഴി ലഭ്യമല്ല"
 
-#: src/math-equation.c:948
+#: src/math-equation.c:949
 msgid "No sane value to store"
 msgstr "സൂക്ഷിയ്ക്കാനായി യുക്തമായ വിലകളൊന്നുമില്ല"
 
 #. Error displayed to user when they perform a bitwise operation on numbers
 #. greater than the current word
-#: src/math-equation.c:1230
+#: src/math-equation.c:1238
 msgid "Overflow. Try a bigger word size"
 msgstr "കവിഞ്ഞൊഴുകി. വലിയ വ്യാപ്തിയുള്ള വേര്‍ഡ് വ്യാപ്തി ശ്രമിക്കുക"
 
 #. Error displayed to user when they an unknown variable is entered
-#: src/math-equation.c:1235
+#: src/math-equation.c:1243
 #, c-format
 msgid "Unknown variable '%s'"
 msgstr "വേരിയബിള്‍ '%s'അപരിചിതം"
 
 #. Error displayed to user when an unknown function is entered
-#: src/math-equation.c:1240
+#: src/math-equation.c:1248
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr "ഫംഗ്ഷന്‍ '%s' അപരിചിതം"
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: src/math-equation.c:1245
+#: src/math-equation.c:1253
 msgid "Unknown conversion"
 msgstr "അജ്ഞാത കണ്‍വേര്‍ഷന്‍"
 
 #. Uncategorized error. Show error token to user
-#: src/math-equation.c:1253
+#: src/math-equation.c:1261
 #, c-format
 msgid "Malformed expression at token '%s'"
 msgstr ""
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: src/math-equation.c:1256 src/math-equation.c:1261
+#: src/math-equation.c:1264 src/math-equation.c:1269
 msgid "Malformed expression"
 msgstr "തെറ്റായ എക്സ്‌പ്രഷന്‍"
 
-#: src/math-equation.c:1275
+#: src/math-equation.c:1284
 msgid "Calculating"
 msgstr "കണക്കുകൂട്ടുന്നു"
 
 #. Error displayed when trying to factorize a non-integer value
-#: src/math-equation.c:1390
+#: src/math-equation.c:1402
 msgid "Need an integer to factorize"
 msgstr "ഫാക്ടറൈസ് ചെയ്യുന്നതിനായി ഇന്റിജര്‍ ആവശ്യമുണ്ടു്"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: src/math-equation.c:1462
+#: src/math-equation.c:1475
 msgid "No sane value to bitwise shift"
 msgstr "ബിറ്റ്‌വൈസ് ഷിഫ്റ്റ് നടത്താന്‍ യുക്തമായ വിലകളൊന്നുമില്ല"
 
 #. Message displayed when cannot toggle bit in display
-#: src/math-equation.c:1493
+#: src/math-equation.c:1508
 msgid "Displayed value not an integer"
 msgstr "കാണിച്ച മൂല്ല്യം ഇന്റിജറല്ല"
 
 #. Digits localized for the given language
-#: src/math-equation.c:1916
+#: src/math-equation.c:1945
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1577,19 +1579,19 @@ msgid "Show %d decimal _places"
 msgstr "%d_ദശാംശ സ്ഥാനങ്ങള്‍ കാണിക്കു"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: src/math-window.c:212
+#: src/math-window.c:268
 msgid "Unable to open help file"
 msgstr "സഹായ ഫയല്‍ തുറക്കാന്‍ കഴിയുന്നില്ല"
 
-#: src/math-window.c:234
+#: src/math-window.c:286
 msgid "Sun Microsystems"
 msgstr ""
 
-#: src/math-window.c:235
+#: src/math-window.c:287
 msgid "MATE Documentation Team"
 msgstr ""
 
-#: src/math-window.c:241
+#: src/math-window.c:293
 msgid ""
 "MATE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -1597,7 +1599,7 @@ msgid ""
 "any later version."
 msgstr ""
 
-#: src/math-window.c:245
+#: src/math-window.c:297
 msgid ""
 "MATE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
@@ -1605,185 +1607,199 @@ msgid ""
 " more details."
 msgstr ""
 
-#: src/math-window.c:249
+#: src/math-window.c:301
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
 
-#: src/math-window.c:263
+#: src/math-window.c:338
+#, c-format
+msgid ""
+"Calculator with financial and scientific modes.\n"
+"Using GNU MPFR %s and GNU MPC %s"
+msgstr ""
+
+#: src/math-window.c:344
 msgid "About MATE Calculator"
 msgstr ""
 
-#: src/math-window.c:264
+#: src/math-window.c:345
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2020 MATE developers"
 msgstr ""
 
-#: src/math-window.c:267
-msgid "Calculator with financial and scientific modes."
-msgstr "ഫിനാന്‍ഷ്യലും ശാസ്ത്രീയ ദശകളുമുള്ള കാല്‍ക്കുലേറ്റര്‍"
-
-#: src/math-window.c:270
+#: src/math-window.c:351
 msgid "translator-credits"
 msgstr ""
 "അനി പീറ്റര്‍ <peter.ani@gmail.com>\n"
 "പ്രവീണ്‍ അരിമ്പ്രത്തൊടിയില്‍ <pravi.a@gmail.com>"
 
 #. Calculator menu
-#: src/math-window.c:403
+#: src/math-window.c:493
 msgid "_Calculator"
 msgstr "_ഗണനി"
 
 #. Mode menu
-#: src/math-window.c:405
+#: src/math-window.c:495
 msgid "_Mode"
 msgstr ""
 
+#. View menu
+#: src/math-window.c:497
+msgid "_View"
+msgstr "_കാഴ്ച"
+
 #. Help menu label
-#: src/math-window.c:407
+#: src/math-window.c:499
 msgid "_Help"
 msgstr "_സഹായം"
 
 #. Basic menu label
-#: src/math-window.c:409
+#: src/math-window.c:501
 msgid "_Basic"
 msgstr "_അടിസ്ഥാനമായ"
 
 #. Advanced menu label
-#: src/math-window.c:411
+#: src/math-window.c:503
 msgid "_Advanced"
 msgstr "_സങ്കീര്‍ണ്ണമായ"
 
 #. Financial menu label
-#: src/math-window.c:413
+#: src/math-window.c:505
 msgid "_Financial"
 msgstr "_ധനകാര്യം"
 
 #. Programming menu label
-#: src/math-window.c:415
+#: src/math-window.c:507
 msgid "_Programming"
 msgstr "_പ്രോഗ്രാമിങ്"
 
+#. History menu label
+#: src/math-window.c:509
+msgid "_History"
+msgstr ""
+
 #. Help>Contents menu label
-#: src/math-window.c:417
+#: src/math-window.c:511
 msgid "_Contents"
 msgstr "_ഉളളടക്കം"
 
-#: src/math-window.c:420
+#: src/math-window.c:514
 msgid "_Copy"
 msgstr "പകര്‍ത്തുക (_C)"
 
-#: src/math-window.c:422
+#: src/math-window.c:516
 msgid "_Paste"
 msgstr "ഒട്ടിയ്ക്കുക"
 
-#: src/math-window.c:424
+#: src/math-window.c:518
 msgid "_Undo"
 msgstr "വേണ്ട"
 
-#: src/math-window.c:426
+#: src/math-window.c:520
 msgid "_Redo"
 msgstr "വീണ്ടും"
 
-#: src/math-window.c:429
+#: src/math-window.c:522
+msgid "_Clear History"
+msgstr ""
+
+#: src/math-window.c:525
 msgid "_Preferences"
 msgstr "മുന്‍ഗണനകള്‍"
 
-#: src/math-window.c:431
+#: src/math-window.c:527
 msgid "_Quit"
 msgstr "പുറത്ത് കടക്കുക (_Q)"
 
-#: src/math-window.c:448
+#: src/math-window.c:548
 msgid "_About"
 msgstr "_സംബന്ധിച്ച്"
 
 #. Translators: Error displayed when boolean AND attempted on non-integer
 #. values
-#: src/mp-binary.c:115
+#: src/mp-binary.c:119
 msgid "Boolean AND is only defined for positive integers"
 msgstr "ബൂളിയന്‍ AND പോസിറ്റീവ് ഇന്റിജറുകള്‍ക്കു് മാത്രമുള്ളതാകുന്നു"
 
 #. Translators: Error displayed when boolean OR attempted on non-integer
 #. values
-#: src/mp-binary.c:128
+#: src/mp-binary.c:132
 msgid "Boolean OR is only defined for positive integers"
 msgstr "ബൂളിയന്‍ OR പോസിറ്റീവ് ഇന്റിജറുകള്‍ക്കു് മാത്രമുള്ളതാകുന്നു"
 
 #. Translators: Error displayed when boolean XOR attempted on non-integer
 #. values
-#: src/mp-binary.c:141
+#: src/mp-binary.c:145
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "ബൂളിയന്‍ XOR പോസിറ്റീവ് ഇന്റിജറുകള്‍ക്കു് മാത്രമുള്ളതാകുന്നു"
 
 #. Translators: Error displayed when boolean NOT attempted on non-integer
 #. values
-#: src/mp-binary.c:156
+#: src/mp-binary.c:162
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "ബൂളിയന്‍ NOT പോസിറ്റീവ് ഇന്റിജറുകള്‍ക്കു് മാത്രമുള്ളതാകുന്നു"
 
 #. Translators: Error displayed when bit shift attempted on non-integer values
-#: src/mp-binary.c:174
+#: src/mp-binary.c:175
 msgid "Shift is only possible on integer values"
 msgstr "ഇന്റിജര്‍ മൂല്ല്യങ്ങളില്‍ മാത്രമേ ഷിഫ്റ്റ് സാധ്യമാകൂ"
 
 #. Translators: Error display when attempting to take argument of zero
-#: src/mp.c:148
+#: src/mp.c:124
 msgid "Argument not defined for zero"
 msgstr "ആര്‍ഗ്യുമെന്റ് പൂജ്യമായി നിഷ്കര്‍ഷിച്ചിട്ടില്ല"
 
-#: src/mp.c:299
-msgid "Overflow: the result couldn't be calculated"
-msgstr "കവിഞ്ഞൊഴുക്ക്: ഫലം കണ്ടുപിടിയ്ക്കാനാകുന്നില്ല"
-
 #. Translators: Error displayed attempted to divide by zero
-#: src/mp.c:644 src/mp.c:676 src/mp.c:1605
+#: src/mp.c:245
 msgid "Division by zero is undefined"
 msgstr "പൂജ്യം കൊണ്ട് ഹരിയ്ക്കുക സാധ്യമല്ല"
 
 #. Translators: Error displayed when attempting to take logarithm of zero
-#: src/mp.c:1276 src/mp.c:1313
+#: src/mp.c:360 src/mp.c:389
 msgid "Logarithm of zero is undefined"
 msgstr "പൂജ്യത്തിന്റെ ലോഗരിതം നിര്‍വചിച്ചിട്ടില്ല"
 
-#. Translators: Error displayed when attempted to raise 0 to a negative
-#. exponent
-#: src/mp.c:1680 src/mp.c:1994
-msgid "The power of zero is undefined for a negative exponent"
-msgstr "ഒരു നെഗറ്റീവ് കോംപണന്റിനു് സീറോയുടെ പവര്‍ നിഷ്കര്‍ഷിച്ചിട്ടില്ല"
-
-#: src/mp.c:1704
-msgid "Reciprocal of zero is undefined"
-msgstr "പൂജ്യത്തിന്റെ റെസിപ്രോക്കല്‍ നിഷ്കര്‍ഷിച്ചിട്ടില്ല"
-
-#: src/mp.c:1789
-msgid "Root must be non-zero"
-msgstr "പരിഹാരം പൂജ്യമാകരുത്"
-
-#: src/mp.c:1807
-msgid "Negative root of zero is undefined"
-msgstr "പൂജ്യത്തിന്റെ നെഗറ്റിവ് വര്‍ഗ്ഗമൂലം നിര്‍വചിച്ചിട്ടില്ല"
-
-#: src/mp.c:1813
-msgid "nth root of negative number is undefined for even n"
-msgstr "ഈവന്‍ n-നും നെഗറ്റീവ് നംബറിന്റെ nth റൂട്ട് നിഷ്കര്‍ഷിച്ചിട്ടില്ല"
+#. Translators: Error displayed when attempting to take zeroth root
+#: src/mp.c:450
+msgid "The zeroth root of a number is undefined"
+msgstr ""
 
 #. Translators: Error displayed when attempted take the factorial of a
-#. fractional number
-#: src/mp.c:1934
-msgid "Factorial is only defined for natural numbers"
-msgstr "എണ്ണല്‍ സംഖ്യകള്‍ക്ക് മാത്രമേ ഫാക്റ്റോറിയല്‍ നിര്‍വചിച്ചിട്ടുള്ളു"
+#. negative or complex number
+#: src/mp.c:492
+msgid "Factorial is only defined for non-negative real numbers"
+msgstr ""
 
 #. Translators: Error displayed when attemping to do a modulus division on
 #. non-integer numbers
-#: src/mp.c:1954
+#: src/mp.c:523
 msgid "Modulus division is only defined for integers"
 msgstr "മോഡുലസ് ഡിവിഷന്‍ ഇന്റിജറുകള്‍ക്കു് മാത്രമേ നിഷ്കര്‍ഷിച്ചിട്ടുള്ളൂ"
 
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. re_exponent
+#: src/mp.c:596 src/mp.c:624
+msgid "The power of zero is undefined for a negative exponent"
+msgstr "ഒരു നെഗറ്റീവ് കോംപണന്റിനു് സീറോയുടെ പവര്‍ നിഷ്കര്‍ഷിച്ചിട്ടില്ല"
+
+#. Translators: Error displayed when error function (erf) value is undefined
+#: src/mp.c:637
+msgid "The error function is only defined for real numbers"
+msgstr ""
+
+#. Translators: Error displayed when zeta function value is undefined
+#: src/mp.c:654
+msgid "The Riemann zeta function is only defined for real numbers ≠1"
+msgstr ""
+
 #. Translators: Error displayed when tangent value is undefined
-#: src/mp-trigonometric.c:310
+#: src/mp-trigonometric.c:120
 msgid ""
 "Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
 "(90°)"
@@ -1792,22 +1808,27 @@ msgstr ""
 "ടാഞ്ചറ്റ് നിഷ്കര്‍ഷിച്ചിട്ടില്ല"
 
 #. Translators: Error displayed when inverse sine value is undefined
-#: src/mp-trigonometric.c:355
+#: src/mp-trigonometric.c:150
 msgid "Inverse sine is undefined for values outside [-1, 1]"
 msgstr ""
 "[-1, 1]-നു് പുറത്തുള്ള മൂല്ല്യങ്ങള്‍ക്കു് തിരിച്ചുള്ള സൈന്‍ "
 "നിഷ്കര്‍ഷിച്ചിട്ടില്ല"
 
-#. Translators: Error displayed when inverse cosine value is undefined
-#: src/mp-trigonometric.c:372
+#. Translators: Error displayed when inverse sine value is undefined
+#: src/mp-trigonometric.c:175
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
 msgstr ""
 "[-1, 1]-നു് പുറത്തുള്ള മൂല്ല്യങ്ങള്‍ക്കു് തിരിച്ചുള്ള കോസൈന്‍ "
 "നിഷ്കര്‍ഷിച്ചിട്ടില്ല"
 
+#. Translators: Error displayed when inverse sine value is undefined
+#: src/mp-trigonometric.c:201
+msgid "Arctangent function is undefined for values i and -i"
+msgstr ""
+
 #. Translators: Error displayed when inverse hyperbolic cosine value is
 #. undefined
-#: src/mp-trigonometric.c:591
+#: src/mp-trigonometric.c:253
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
 msgstr ""
 "ഒന്നില്‍ കുറഞ്ഞ മൂല്ല്യങ്ങള്‍ക്കു് തിരിച്ചുള്ള ഹൈപ്പര്‍ബോളിക് കോസൈന്‍ "
@@ -1815,11 +1836,9 @@ msgstr ""
 
 #. Translators: Error displayed when inverse hyperbolic tangent value is
 #. undefined
-#: src/mp-trigonometric.c:615
-msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
+#: src/mp-trigonometric.c:275
+msgid "Inverse hyperbolic tangent is undefined for values outside (-1, 1)"
 msgstr ""
-"[-1, 1]-നു് പുറത്തുള്ള മൂല്ല്യങ്ങള്‍ക്കു് തിരിച്ചുള്ള ഹൈപ്പര്‍ബോളിക് "
-"റ്റാഞ്ചന്റ് നിഷ്കര്‍ഷിച്ചിട്ടില്ല"
 
 #: src/unit-manager.c:54
 #, c-format

@@ -6,17 +6,17 @@
 # Translators:
 # alibacha19 <alibacha19@gmail.com>, 2018
 # mauron, 2018
-# مهدي السطيفي <chinoune.mehdi@gmail.com>, 2018
-# Stefano Karapetsas <stefano@karapetsas.com>, 2019
 # Mosaab Alzoubi <moceap@hotmail.com>, 2019
+# Stefano Karapetsas <stefano@karapetsas.com>, 2020
+# مهدي السطيفي <chinoune.mehdi@gmail.com>, 2020
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc 1.23.0\n"
+"Project-Id-Version: mate-calc 1.24.0\n"
 "Report-Msgid-Bugs-To: http://mate-desktop.org\n"
-"POT-Creation-Date: 2020-01-14 20:58+0100\n"
+"POT-Creation-Date: 2020-06-20 17:26+0200\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: Mosaab Alzoubi <moceap@hotmail.com>, 2019\n"
+"Last-Translator: مهدي السطيفي <chinoune.mehdi@gmail.com>, 2020\n"
 "Language-Team: Arabic (https://www.transifex.com/mate/teams/13566/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -577,24 +577,18 @@ msgid ""
 "project's home page."
 msgstr ""
 
-#: data/mate-calc.desktop.in:3 src/math-window.c:261
+#: data/mate-calc.desktop.in:3 src/math-window.c:342
 msgid "MATE Calculator"
 msgstr "حاسبة متّة"
 
 #. Title of main window
-#: data/mate-calc.desktop.in:4 src/math-window.c:568
+#: data/mate-calc.desktop.in:4 src/math-window.c:688
 msgid "Calculator"
 msgstr "الحاسِبة"
 
 #: data/mate-calc.desktop.in:5
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "أجرِ حساباتك الرّياضية و العلمية و الاقتصادية"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: data/mate-calc.desktop.in:8
-msgid "accessories-calculator"
-msgstr ""
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
@@ -646,58 +640,66 @@ msgstr ""
 "للدلالة على إظهار الأصفار الذّيلية بعد الفاصلة الرّقمية في القيمة المعروضة."
 
 #: data/org.mate.calc.gschema.xml:52
+msgid "Show History"
+msgstr "ام_سح التأريخ"
+
+#: data/org.mate.calc.gschema.xml:53
+msgid "Shows all recent calculations"
+msgstr ""
+
+#: data/org.mate.calc.gschema.xml:57
 msgid "Number format"
 msgstr "صيغة الأرقام"
 
-#: data/org.mate.calc.gschema.xml:53
+#: data/org.mate.calc.gschema.xml:58
 msgid "The format to display numbers in"
 msgstr "صيغة عرض الأرقام"
 
-#: data/org.mate.calc.gschema.xml:57
+#: data/org.mate.calc.gschema.xml:62
 msgid "Angle units"
 msgstr "وحدات الزّوايا"
 
-#: data/org.mate.calc.gschema.xml:58
+#: data/org.mate.calc.gschema.xml:63
 msgid "The angle units to use"
 msgstr "وحدات الزّوايا المُستخدمة"
 
-#: data/org.mate.calc.gschema.xml:62
+#: data/org.mate.calc.gschema.xml:67
 msgid "Button mode"
 msgstr "نمط الزّر"
 
-#: data/org.mate.calc.gschema.xml:63
+#: data/org.mate.calc.gschema.xml:68
 msgid "The button mode"
 msgstr "نمط الزّر"
 
-#: data/org.mate.calc.gschema.xml:67
+#: data/org.mate.calc.gschema.xml:72
 msgid "Source currency"
 msgstr "العُملة المصدر"
 
-#: data/org.mate.calc.gschema.xml:68
+#: data/org.mate.calc.gschema.xml:73
 msgid "Currency of the current calculation"
 msgstr "عملة الحساب الحالي"
 
-#: data/org.mate.calc.gschema.xml:72
+#: data/org.mate.calc.gschema.xml:77
 msgid "Target currency"
 msgstr "العملة الهدف"
 
-#: data/org.mate.calc.gschema.xml:73
+#: data/org.mate.calc.gschema.xml:78
 msgid "Currency to convert the current calculation into"
 msgstr "العملة التي يحول الحساب الحالي لها"
 
-#: data/org.mate.calc.gschema.xml:77
+#: data/org.mate.calc.gschema.xml:82
 msgid "Source units"
 msgstr "الوحدة المصدر"
 
-#: data/org.mate.calc.gschema.xml:78
+#: data/org.mate.calc.gschema.xml:83
 msgid "Units of the current calculation"
 msgstr "وحدة الحساب الحالي"
 
-#: data/org.mate.calc.gschema.xml:82
+#: data/org.mate.calc.gschema.xml:87
 msgid "Target units"
 msgstr "الوحدة الهدف"
 
-#: data/org.mate.calc.gschema.xml:83
+#: data/org.mate.calc.gschema.xml:88
 msgid "Units to convert the current calculation into"
 msgstr "الوحدة التي يحوّل الحساب الحالي إليها"
 
@@ -941,12 +943,12 @@ msgstr "بوليفار فنزويلي"
 msgid "South African Rand"
 msgstr "راند جنوب إفريقي"
 
-#: src/financial.c:70
+#: src/financial.c:80
 msgid "Error: the number of periods must be positive"
 msgstr "خطأ: الرّقم الدّال على زمن يجب أن يكون موجبًا"
 
 #. Description on how to use mate-calc displayed on command-line
-#: src/mate-calc.c:79
+#: src/mate-calc.c:82
 #, c-format
 msgid ""
 "Usage:\n"
@@ -957,7 +959,7 @@ msgstr ""
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
-#: src/mate-calc.c:87
+#: src/mate-calc.c:90
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -974,7 +976,7 @@ msgstr ""
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
-#: src/mate-calc.c:98
+#: src/mate-calc.c:101
 #, c-format
 msgid ""
 "GTK+ Options:\n"
@@ -994,7 +996,7 @@ msgstr ""
 "  --g-fatal-warnings              جعل جميع التّحذيرات خطيرة"
 
 #. Description on mate-calc application options displayed on command-line
-#: src/mate-calc.c:112
+#: src/mate-calc.c:115
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -1004,13 +1006,13 @@ msgstr ""
 "  -s, --solve <معادلة>          لحلّ المُعادلة المعطاة"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: src/mate-calc.c:160
+#: src/mate-calc.c:163
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "يتطلب المُعطى --solve معادلةً لحلّها"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: src/mate-calc.c:171
+#: src/mate-calc.c:174
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "مُعطى غير معروف '%s'"
@@ -1201,12 +1203,12 @@ msgid "Boolean NOT"
 msgstr "\"ليس\" منطقية"
 
 #. Tooltip for the integer component button
-#: src/math-buttons.c:209 src/math-buttons.c:997
+#: src/math-buttons.c:209 src/math-buttons.c:1001
 msgid "Integer Component"
 msgstr "الجزء الصّحيح"
 
 #. Tooltip for the fractional component button
-#: src/math-buttons.c:212 src/math-buttons.c:999
+#: src/math-buttons.c:212 src/math-buttons.c:1003
 msgid "Fractional Component"
 msgstr "الجزء الكسري"
 
@@ -1296,28 +1298,28 @@ msgid "Straight Line Depreciation"
 msgstr "الاستهلاك الثّابت"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: src/math-buttons.c:628
+#: src/math-buttons.c:632
 msgid "Binary"
 msgstr "ثنائي"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: src/math-buttons.c:632
+#: src/math-buttons.c:636
 msgid "Octal"
 msgstr "ثماني"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: src/math-buttons.c:636
+#: src/math-buttons.c:640
 msgid "Decimal"
 msgstr "عشري"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: src/math-buttons.c:640
+#: src/math-buttons.c:644
 msgid "Hexadecimal"
 msgstr "ستّة عشر"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: src/math-buttons.c:908 src/math-buttons.c:951
+#: src/math-buttons.c:912 src/math-buttons.c:955
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
@@ -1330,7 +1332,7 @@ msgstr[5] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: src/math-buttons.c:912 src/math-buttons.c:955
+#: src/math-buttons.c:916 src/math-buttons.c:959
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
@@ -1342,188 +1344,188 @@ msgstr[4] ""
 msgstr[5] ""
 
 #. Tooltip for the round button
-#: src/math-buttons.c:1001
+#: src/math-buttons.c:1005
 msgid "Round"
 msgstr "الدّورة"
 
 #. Tooltip for the floor button
-#: src/math-buttons.c:1003
+#: src/math-buttons.c:1007
 msgid "Floor"
 msgstr "الحد الأدنى"
 
 #. Tooltip for the ceiling button
-#: src/math-buttons.c:1005
+#: src/math-buttons.c:1009
 msgid "Ceiling"
 msgstr "الحد الأعلى"
 
 #. Tooltip for the ceiling button
-#: src/math-buttons.c:1007
+#: src/math-buttons.c:1011
 msgid "Sign"
 msgstr "الإشارة"
 
 #. Tooltip for the c₀ component button
-#: src/math-buttons.c:1049
+#: src/math-buttons.c:1053
 msgid "Velocity of Light"
 msgstr ""
 
-#: src/math-buttons.c:1049
+#: src/math-buttons.c:1053
 msgid "299,792,458 m/s"
 msgstr ""
 
 #. Tooltip for the μ₀ component button
-#: src/math-buttons.c:1051
+#: src/math-buttons.c:1055
 msgid "Magnetic constant"
 msgstr ""
 
-#: src/math-buttons.c:1051
+#: src/math-buttons.c:1055
 msgid "1.2566370614×10⁻⁶ N/A²"
 msgstr ""
 
 #. Tooltip for the ε₀ button
-#: src/math-buttons.c:1053
+#: src/math-buttons.c:1057
 msgid "Electric constant"
 msgstr ""
 
-#: src/math-buttons.c:1053
+#: src/math-buttons.c:1057
 msgid "8.85418782×10⁻¹² s⁴A²/m³kg"
 msgstr ""
 
 #. Tooltip for the G button
-#: src/math-buttons.c:1055
+#: src/math-buttons.c:1059
 msgid "Newtonian constant of gravitation"
 msgstr ""
 
-#: src/math-buttons.c:1055
+#: src/math-buttons.c:1059
 msgid "6.67408×10⁻¹¹ m³/(s²kg)"
 msgstr ""
 
 #. Tooltip for the h button
-#: src/math-buttons.c:1057
+#: src/math-buttons.c:1061
 msgid "Planck constant"
 msgstr ""
 
-#: src/math-buttons.c:1057
+#: src/math-buttons.c:1061
 msgid "6.62607004×10⁻³⁴ m²kg/s"
 msgstr ""
 
 #. Tooltip for the ｅ button
-#: src/math-buttons.c:1059
+#: src/math-buttons.c:1063
 msgid "Elementary charge"
 msgstr ""
 
-#: src/math-buttons.c:1059
+#: src/math-buttons.c:1063
 msgid "1.6021766208(98)×10⁻¹⁹ C"
 msgstr ""
 
 #. Tooltip for the mₑ button
-#: src/math-buttons.c:1061
+#: src/math-buttons.c:1065
 msgid "Electron mass"
 msgstr ""
 
-#: src/math-buttons.c:1061
+#: src/math-buttons.c:1065
 msgid "9.10938356×10⁻³¹ kg"
 msgstr ""
 
 #. Tooltip for the mₚ button
-#: src/math-buttons.c:1063
+#: src/math-buttons.c:1067
 msgid "Proton mass"
 msgstr ""
 
-#: src/math-buttons.c:1063
+#: src/math-buttons.c:1067
 msgid "1.672621898(21)×10⁻²⁷ kg"
 msgstr ""
 
 #. Tooltip for the Nₐ button
-#: src/math-buttons.c:1065
+#: src/math-buttons.c:1069
 msgid "Avogadro constant"
 msgstr ""
 
-#: src/math-buttons.c:1065
+#: src/math-buttons.c:1069
 msgid "6.02214086×10²³ mol⁻¹"
 msgstr ""
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
-#: src/math-converter.c:412
+#: src/math-converter.c:418
 msgid " in "
 msgstr "إلى"
 
 #. Tooltip for swap conversion button
-#: src/math-converter.c:427
+#: src/math-converter.c:433
 msgid "Switch conversion units"
 msgstr "بدّل بين وحدات التحويل"
 
 #. Error shown when trying to undo with no undo history
-#: src/math-equation.c:459
+#: src/math-equation.c:460
 msgid "No undo history"
 msgstr "لا يوجد تأريخ للتّراجع"
 
 #. Error shown when trying to redo with no redo history
-#: src/math-equation.c:486
+#: src/math-equation.c:487
 msgid "No redo history"
 msgstr "لا يوجد تأريخ للتّكرار"
 
-#: src/math-equation.c:948
+#: src/math-equation.c:949
 msgid "No sane value to store"
 msgstr "القيمة غير صالحةٍ لحفظها"
 
 #. Error displayed to user when they perform a bitwise operation on numbers
 #. greater than the current word
-#: src/math-equation.c:1230
+#: src/math-equation.c:1238
 msgid "Overflow. Try a bigger word size"
 msgstr "تجاوز. جرّب كلمةً أكبر حجمًا"
 
 #. Error displayed to user when they an unknown variable is entered
-#: src/math-equation.c:1235
+#: src/math-equation.c:1243
 #, c-format
 msgid "Unknown variable '%s'"
 msgstr "مُتغير غير معروف '%s'"
 
 #. Error displayed to user when an unknown function is entered
-#: src/math-equation.c:1240
+#: src/math-equation.c:1248
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr "الدّالة %s غير معرّفة"
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: src/math-equation.c:1245
+#: src/math-equation.c:1253
 msgid "Unknown conversion"
 msgstr "تحويل غير معروف"
 
 #. Uncategorized error. Show error token to user
-#: src/math-equation.c:1253
+#: src/math-equation.c:1261
 #, c-format
 msgid "Malformed expression at token '%s'"
 msgstr "جملة غير صالحة عند المُعطى '%s'"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: src/math-equation.c:1256 src/math-equation.c:1261
+#: src/math-equation.c:1264 src/math-equation.c:1269
 msgid "Malformed expression"
 msgstr "جملة غير صالحة"
 
-#: src/math-equation.c:1275
+#: src/math-equation.c:1284
 msgid "Calculating"
 msgstr "يجري الحساب"
 
 #. Error displayed when trying to factorize a non-integer value
-#: src/math-equation.c:1390
+#: src/math-equation.c:1402
 msgid "Need an integer to factorize"
 msgstr "تحتاج لعددٍ صحيح لتحليله إلى عوامله"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: src/math-equation.c:1462
+#: src/math-equation.c:1475
 msgid "No sane value to bitwise shift"
 msgstr "القيمة غير صالحةٍ لتحويلها"
 
 #. Message displayed when cannot toggle bit in display
-#: src/math-equation.c:1493
+#: src/math-equation.c:1508
 msgid "Displayed value not an integer"
 msgstr "اعرض قيمةً بدلًا من العدد الصحيح"
 
 #. Digits localized for the given language
-#: src/math-equation.c:1916
+#: src/math-equation.c:1945
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1575,19 +1577,19 @@ msgid "Show %d decimal _places"
 msgstr "أظهر %d خا_نة عُشرية"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: src/math-window.c:212
+#: src/math-window.c:268
 msgid "Unable to open help file"
 msgstr "تعذّر فتح ملفِ المُساعدة"
 
-#: src/math-window.c:234
+#: src/math-window.c:286
 msgid "Sun Microsystems"
 msgstr ""
 
-#: src/math-window.c:235
+#: src/math-window.c:287
 msgid "MATE Documentation Team"
 msgstr ""
 
-#: src/math-window.c:241
+#: src/math-window.c:293
 msgid ""
 "MATE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -1595,7 +1597,7 @@ msgid ""
 "any later version."
 msgstr ""
 
-#: src/math-window.c:245
+#: src/math-window.c:297
 msgid ""
 "MATE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
@@ -1603,211 +1605,230 @@ msgid ""
 " more details."
 msgstr ""
 
-#: src/math-window.c:249
+#: src/math-window.c:301
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
 
-#: src/math-window.c:263
+#: src/math-window.c:338
+#, c-format
+msgid ""
+"Calculator with financial and scientific modes.\n"
+"Using GNU MPFR %s and GNU MPC %s"
+msgstr ""
+
+#: src/math-window.c:344
 msgid "About MATE Calculator"
 msgstr ""
 
-#: src/math-window.c:264
+#: src/math-window.c:345
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2020 MATE developers"
 msgstr ""
 
-#: src/math-window.c:267
-msgid "Calculator with financial and scientific modes."
-msgstr "ألة حاسبة ذات خصائص علميّة و اقتصادية."
-
-#: src/math-window.c:270
+#: src/math-window.c:351
 msgid "translator-credits"
 msgstr ""
 "فريق عيون العرب للترجمة http://www.arabeyes.org :\n"
 "مصعب الزعبي\t<moceap@hotmail.com>"
 
 #. Calculator menu
-#: src/math-window.c:403
+#: src/math-window.c:493
 msgid "_Calculator"
 msgstr "_حاسبة"
 
 #. Mode menu
-#: src/math-window.c:405
+#: src/math-window.c:495
 msgid "_Mode"
 msgstr "الو_ضع"
 
+#. View menu
+#: src/math-window.c:497
+msgid "_View"
+msgstr "_عرض"
+
 #. Help menu label
-#: src/math-window.c:407
+#: src/math-window.c:499
 msgid "_Help"
 msgstr "_مساعدة"
 
 #. Basic menu label
-#: src/math-window.c:409
+#: src/math-window.c:501
 msgid "_Basic"
 msgstr "_أساسي"
 
 #. Advanced menu label
-#: src/math-window.c:411
+#: src/math-window.c:503
 msgid "_Advanced"
 msgstr "مُ_تقدم"
 
 #. Financial menu label
-#: src/math-window.c:413
+#: src/math-window.c:505
 msgid "_Financial"
 msgstr "_مصرفي"
 
 #. Programming menu label
-#: src/math-window.c:415
+#: src/math-window.c:507
 msgid "_Programming"
 msgstr "برم_جي"
 
+#. History menu label
+#: src/math-window.c:509
+msgid "_History"
+msgstr ""
+
 #. Help>Contents menu label
-#: src/math-window.c:417
+#: src/math-window.c:511
 msgid "_Contents"
 msgstr "الم_حتويات"
 
-#: src/math-window.c:420
+#: src/math-window.c:514
 msgid "_Copy"
 msgstr "ا_نسخ"
 
-#: src/math-window.c:422
+#: src/math-window.c:516
 msgid "_Paste"
 msgstr "ا_لصق"
 
-#: src/math-window.c:424
+#: src/math-window.c:518
 msgid "_Undo"
 msgstr "_تراجع"
 
-#: src/math-window.c:426
+#: src/math-window.c:520
 msgid "_Redo"
 msgstr "أ_عِد"
 
-#: src/math-window.c:429
+#: src/math-window.c:522
+msgid "_Clear History"
+msgstr ""
+
+#: src/math-window.c:525
 msgid "_Preferences"
 msgstr "ال_تّفضيلات"
 
-#: src/math-window.c:431
+#: src/math-window.c:527
 msgid "_Quit"
 msgstr "_خروج"
 
-#: src/math-window.c:448
+#: src/math-window.c:548
 msgid "_About"
 msgstr "_عنْ"
 
 #. Translators: Error displayed when boolean AND attempted on non-integer
 #. values
-#: src/mp-binary.c:115
+#: src/mp-binary.c:119
 msgid "Boolean AND is only defined for positive integers"
 msgstr "\"و\" المنطقية مُعرّفة فقط على الأعداد الصّحيحة الموجبة"
 
 #. Translators: Error displayed when boolean OR attempted on non-integer
 #. values
-#: src/mp-binary.c:128
+#: src/mp-binary.c:132
 msgid "Boolean OR is only defined for positive integers"
 msgstr "\"أو\" المنطقية مُعرّفة فقط على الأعداد الصّحيحة الموجبة"
 
 #. Translators: Error displayed when boolean XOR attempted on non-integer
 #. values
-#: src/mp-binary.c:141
+#: src/mp-binary.c:145
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "\"أو\" المنطقية الحصرية مُعرّفة فقط على الأعداد الصّحيحة الموجبة"
 
 #. Translators: Error displayed when boolean NOT attempted on non-integer
 #. values
-#: src/mp-binary.c:156
+#: src/mp-binary.c:162
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "\"ليس\" المنطقية مُعرّفة فقط على الأعداد الصّحيحة الموجبة"
 
 #. Translators: Error displayed when bit shift attempted on non-integer values
-#: src/mp-binary.c:174
+#: src/mp-binary.c:175
 msgid "Shift is only possible on integer values"
 msgstr "النّقل مسموح فقط في القيم الصّحيحة"
 
 #. Translators: Error display when attempting to take argument of zero
-#: src/mp.c:148
+#: src/mp.c:124
 msgid "Argument not defined for zero"
 msgstr "المُعطى غير مُعرّف على الصّفر"
 
-#: src/mp.c:299
-msgid "Overflow: the result couldn't be calculated"
-msgstr "تجاوز: النّتيجة غير قابلة للحساب"
-
 #. Translators: Error displayed attempted to divide by zero
-#: src/mp.c:644 src/mp.c:676 src/mp.c:1605
+#: src/mp.c:245
 msgid "Division by zero is undefined"
 msgstr "القسمة على صفر غير مُعرّفة"
 
 #. Translators: Error displayed when attempting to take logarithm of zero
-#: src/mp.c:1276 src/mp.c:1313
+#: src/mp.c:360 src/mp.c:389
 msgid "Logarithm of zero is undefined"
 msgstr "لوغاريتم الصّفر غير مُعرّف"
 
-#. Translators: Error displayed when attempted to raise 0 to a negative
-#. exponent
-#: src/mp.c:1680 src/mp.c:1994
-msgid "The power of zero is undefined for a negative exponent"
-msgstr "قوة الصّفر غير مُعرّفة عند الأُسِ السّالب"
-
-#: src/mp.c:1704
-msgid "Reciprocal of zero is undefined"
-msgstr "مُبادلة الصّفر غير مُعرّفة"
-
-#: src/mp.c:1789
-msgid "Root must be non-zero"
-msgstr "لا ينبغي ان يكون الجذرُ صفريًا"
-
-#: src/mp.c:1807
-msgid "Negative root of zero is undefined"
-msgstr "الجذر السّالب للصّفر غير مُعرّف"
-
-#: src/mp.c:1813
-msgid "nth root of negative number is undefined for even n"
-msgstr "الجذر النّوني من الدّرجة ن للرّقم السّالب غير مُعرّف لكل ن"
+#. Translators: Error displayed when attempting to take zeroth root
+#: src/mp.c:450
+msgid "The zeroth root of a number is undefined"
+msgstr ""
 
 #. Translators: Error displayed when attempted take the factorial of a
-#. fractional number
-#: src/mp.c:1934
-msgid "Factorial is only defined for natural numbers"
-msgstr "الدّالة العامليّة مُعرّفة فقط على الأعداد الطّبيعية"
+#. negative or complex number
+#: src/mp.c:492
+msgid "Factorial is only defined for non-negative real numbers"
+msgstr ""
 
 #. Translators: Error displayed when attemping to do a modulus division on
 #. non-integer numbers
-#: src/mp.c:1954
+#: src/mp.c:523
 msgid "Modulus division is only defined for integers"
 msgstr "القسمة المُعاملية مُعرّفة فقط على الأعداد الصّحيحة"
 
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. re_exponent
+#: src/mp.c:596 src/mp.c:624
+msgid "The power of zero is undefined for a negative exponent"
+msgstr "قوة الصّفر غير مُعرّفة عند الأُسِ السّالب"
+
+#. Translators: Error displayed when error function (erf) value is undefined
+#: src/mp.c:637
+msgid "The error function is only defined for real numbers"
+msgstr ""
+
+#. Translators: Error displayed when zeta function value is undefined
+#: src/mp.c:654
+msgid "The Riemann zeta function is only defined for real numbers ≠1"
+msgstr ""
+
 #. Translators: Error displayed when tangent value is undefined
-#: src/mp-trigonometric.c:310
+#: src/mp-trigonometric.c:120
 msgid ""
 "Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
 "(90°)"
 msgstr "الظّل غير مُعرّف على الزّوايا من أمثال π (180°) ابتداءً من π/2 (90°)"
 
 #. Translators: Error displayed when inverse sine value is undefined
-#: src/mp-trigonometric.c:355
+#: src/mp-trigonometric.c:150
 msgid "Inverse sine is undefined for values outside [-1, 1]"
 msgstr "الجيب العكسي غير معرّف على القيم خارج المجال [-1،1]"
 
-#. Translators: Error displayed when inverse cosine value is undefined
-#: src/mp-trigonometric.c:372
+#. Translators: Error displayed when inverse sine value is undefined
+#: src/mp-trigonometric.c:175
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
 msgstr "التّجيب العكسي غير معرّف على القيم خارج المجال [-1،1]"
 
+#. Translators: Error displayed when inverse sine value is undefined
+#: src/mp-trigonometric.c:201
+msgid "Arctangent function is undefined for values i and -i"
+msgstr ""
+
 #. Translators: Error displayed when inverse hyperbolic cosine value is
 #. undefined
-#: src/mp-trigonometric.c:591
+#: src/mp-trigonometric.c:253
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
 msgstr "التّجيب العكسي الزّائد غير معرّف على القيم الأصغر من واحد"
 
 #. Translators: Error displayed when inverse hyperbolic tangent value is
 #. undefined
-#: src/mp-trigonometric.c:615
-msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
-msgstr "الظّل العكسي الزّائد غير معرّف على القيم خارج المجال [-1،1]"
+#: src/mp-trigonometric.c:275
+msgid "Inverse hyperbolic tangent is undefined for values outside (-1, 1)"
+msgstr ""
 
 #: src/unit-manager.c:54
 #, c-format

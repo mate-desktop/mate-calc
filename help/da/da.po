@@ -1,3 +1,4 @@
+# 
 # Translators:
 # Aputsiak Niels Janussen <aj@isit.gl>, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
@@ -5,8 +6,8 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: MATE Desktop Environment\n"
-"POT-Creation-Date: 2018-10-03 14:33+0200\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-06-20 17:26+0200\n"
 "PO-Revision-Date: 2018-10-01 16:45+0000\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>, 2019\n"
 "Language-Team: Danish (https://www.transifex.com/mate/teams/13566/da/)\n"
@@ -162,8 +163,70 @@ msgstr "Komplekse tal"
 
 #. (itstool) path: page/p
 #: C/complex.page:11
-msgid "Complex numbers are not supported in <app>MATE Calculator</app>."
-msgstr "Komplekse tal er ikke understøttet i <app>-lommeregneren</app>."
+msgid ""
+"<app>MATE Calculator</app> supports complex numbers, as well as the "
+"following functions while in <link xref=\"mouse\">Advanced mode</link>."
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/complex.page:18
+msgid "Re"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/complex.page:19
+msgid "Returns the real part of a complex number. For example:"
+msgstr ""
+
+#. (itstool) path: example/p
+#: C/complex.page:21
+msgid "Re (2-5i) = 2"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/complex.page:29
+msgid "Im"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/complex.page:30
+msgid "Returns the imaginary part of a complex number. For example:"
+msgstr ""
+
+#. (itstool) path: example/p
+#: C/complex.page:32
+msgid "Im (2-5i) = -5"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/complex.page:40
+msgid "conj"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/complex.page:41
+msgid "Returns the conjugate of a complex number. For example:"
+msgstr ""
+
+#. (itstool) path: example/p
+#: C/complex.page:43
+msgid "conj (2-5i) = 2+5i"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/complex.page:51
+msgid "Arg"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/complex.page:52
+msgid "Returns the argument of a complex number. For example:"
+msgstr ""
+
+#. (itstool) path: example/p
+#: C/complex.page:54
+msgid "Arg (2-5i) = -68.1986"
+msgstr ""
 
 #. (itstool) path: page/p
 #: C/conv-base.page:11
@@ -647,126 +710,146 @@ msgstr "<link xref=\"trigonometry\">Hyperbolsk cosinus</link>"
 
 #. (itstool) path: td/p
 #: C/functions.page:40
+msgid "erf"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/functions.page:41
+msgid "Gauss Error function"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/functions.page:44
 msgid "frac"
 msgstr "frac"
 
 #. (itstool) path: td/p
-#: C/functions.page:41
+#: C/functions.page:45
 msgid "Fractional Component"
 msgstr "Decimaldel"
 
 #. (itstool) path: td/p
-#: C/functions.page:44
+#: C/functions.page:48
 msgid "int"
 msgstr "int"
 
 #. (itstool) path: td/p
-#: C/functions.page:45
+#: C/functions.page:49
 msgid "Integer Component"
 msgstr "Heltalsdel"
 
 #. (itstool) path: td/p
-#: C/functions.page:48
+#: C/functions.page:52
 msgid "ln"
 msgstr "ln"
 
 #. (itstool) path: td/p
-#: C/functions.page:49
+#: C/functions.page:53
 msgid "<link xref=\"logarithm\">Natural Logarithm</link>"
 msgstr "<link xref=\"logarithm\">Naturlig logaritme</link>"
 
 #. (itstool) path: td/p
-#: C/functions.page:52
+#: C/functions.page:56
 msgid "log"
 msgstr "log"
 
 #. (itstool) path: td/p
-#: C/functions.page:53
+#: C/functions.page:57
 msgid "<link xref=\"logarithm\">Logarithm</link>"
 msgstr "<link xref=\"logarithm\">Logaritme</link>"
 
 #. (itstool) path: td/p
-#: C/functions.page:56
+#: C/functions.page:60
 msgid "not"
 msgstr "not"
 
 #. (itstool) path: td/p
-#: C/functions.page:57
+#: C/functions.page:61
 msgid "<link xref=\"boolean\">Boolean NOT</link>"
 msgstr "<link xref=\"boolean\">Boolesk NOT</link>"
 
 #. (itstool) path: td/p
-#: C/functions.page:60
+#: C/functions.page:64
 msgid "ones"
 msgstr "1'er"
 
 #. (itstool) path: td/p
-#: C/functions.page:61
+#: C/functions.page:65
 msgid "Ones complement"
 msgstr "1'er-komplementærmængden"
 
 #. (itstool) path: td/p
-#: C/functions.page:64
+#: C/functions.page:68
 msgid "sin"
 msgstr "sin"
 
 #. (itstool) path: td/p
-#: C/functions.page:65
+#: C/functions.page:69
 msgid "<link xref=\"trigonometry\">Sine</link>"
 msgstr "<link xref=\"trigonometry\">Sinus</link>"
 
 #. (itstool) path: td/p
-#: C/functions.page:68
+#: C/functions.page:72
 msgid "sinh"
 msgstr "sinh"
 
 #. (itstool) path: td/p
-#: C/functions.page:69
+#: C/functions.page:73
 msgid "<link xref=\"trigonometry\">Hyperbolic Sine</link>"
 msgstr "<link xref=\"trigonometry\">Hyperbolsk sinus</link>"
 
 #. (itstool) path: td/p
-#: C/functions.page:72
+#: C/functions.page:76
 msgid "sqrt"
 msgstr "sqrt"
 
 #. (itstool) path: td/p
-#: C/functions.page:73
+#: C/functions.page:77
 msgid "<link xref=\"power\">Square Root</link>"
 msgstr "<link xref=\"power\">Kvadratrod</link>"
 
 #. (itstool) path: td/p
-#: C/functions.page:76
+#: C/functions.page:80
 msgid "tan"
 msgstr "tan"
 
 #. (itstool) path: td/p
-#: C/functions.page:77
+#: C/functions.page:81
 msgid "<link xref=\"trigonometry\">Tangent</link>"
 msgstr "<link xref=\"trigonometry\">Tangent</link>"
 
 #. (itstool) path: td/p
-#: C/functions.page:80
+#: C/functions.page:84
 msgid "tanh"
 msgstr "tanh"
 
 #. (itstool) path: td/p
-#: C/functions.page:81
+#: C/functions.page:85
 msgid "<link xref=\"trigonometry\">Hyperbolic Tangent</link>"
 msgstr "<link xref=\"trigonometry\">Hyperbolsk tangent</link>"
 
 #. (itstool) path: td/p
-#: C/functions.page:84
+#: C/functions.page:88
 msgid "twos"
 msgstr "2'er"
 
 #. (itstool) path: td/p
-#: C/functions.page:85
+#: C/functions.page:89
 msgid "Twos complement"
 msgstr "2'er-koplementærmængden"
 
+#. (itstool) path: td/p
+#: C/functions.page:92
+msgid "zeta"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/functions.page:93
+msgid "Riemann zeta function"
+msgstr ""
+
 #. (itstool) path: page/p
-#: C/functions.page:88
+#: C/functions.page:96
 msgid "<app>MATE Calculator</app> does not support user-defined functions."
 msgstr ""
 "<app>MATE-lommeregneren</app> understøtter ikke brugerdefinerede funktioner."
