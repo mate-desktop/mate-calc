@@ -104,13 +104,13 @@ mp_to_unsigned_integer(const MPNumber *x)
 float
 mp_to_float(const MPNumber *x)
 {
-    return mpfr_get_flt(mpc_realref(x->num), MPFR_RNDN);  
+    return mpfr_get_flt(mpc_realref(x->num), MPFR_RNDN);
 }
 
 double
 mp_to_double(const MPNumber *x)
 {
-    return mpfr_get_d(mpc_realref(x->num), MPFR_RNDN);  
+    return mpfr_get_d(mpc_realref(x->num), MPFR_RNDN);
 }
 
 static int
