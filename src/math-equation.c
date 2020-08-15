@@ -1856,8 +1856,8 @@ pre_insert_text_cb(MathEquation  *equation,
         offset = gtk_text_iter_get_offset(location);
         get_ans_offsets(equation, &ans_start, &ans_end);
 
-        /* Inserted inside ans */
-        if (offset > ans_start && offset < ans_end)
+        /* Inserted inside or right before ans */
+        if (offset >= ans_start && offset < ans_end)
             clear_ans(equation, TRUE);
     }
 }
