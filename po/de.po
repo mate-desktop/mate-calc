@@ -4,23 +4,26 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# nautilusx, 2018
-# Xpistian <xpistianbecker2@web.de>, 2018
-# guyfawkes <a.dawtjan@gmx.de>, 2018
-# Tobias Bannert <tobannert@gmail.com>, 2018
-# Wolfgang Ulbrich <mate@raveit.de>, 2019
-# Julian Rüger <jr98@gmx.net>, 2019
-# Stefano Karapetsas <stefano@karapetsas.com>, 2019
-# Paul Zillmann <mail@paulzillmann.de>, 2019
-# Ettore Atalan <atalanttore@googlemail.com>, 2019
+# Wolfgang Ulbrich <mate@raveit.de>, 2020
+# Julian Rüger <jr98@gmx.net>, 2020
+# Marcel Artz <email@marcel-artz.de>, 2020
+# Paul Zillmann <mail@paulzillmann.de>, 2020
+# clefebvre <clement.lefebvre@linuxmint.com>, 2020
+# Xpistian <xpistianbecker2@web.de>, 2020
+# Stefano Karapetsas <stefano@karapetsas.com>, 2020
+# Ettore Atalan <atalanttore@googlemail.com>, 2020
+# guyfawkes <a.dawtjan@gmx.de>, 2020
+# Tobias Bannert <tobannert@gmail.com>, 2020
+# nautilusx, 2020
+# Michael Hartmann, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-calc 1.23.0\n"
 "Report-Msgid-Bugs-To: http://mate-desktop.org\n"
 "POT-Creation-Date: 2020-01-14 20:58+0100\n"
-"PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>, 2019\n"
+"PO-Revision-Date: 2020-02-15 13:04+0000\n"
+"Last-Translator: Michael Hartmann, 2020\n"
 "Language-Team: German (https://www.transifex.com/mate/teams/13566/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -118,7 +121,7 @@ msgstr "Tiefstellung"
 
 #: src/buttons-advanced.ui:966
 msgid "const"
-msgstr ""
+msgstr "Konstante"
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
@@ -572,7 +575,7 @@ msgstr "_Tausender-Trennzeichen anzeigen"
 
 #: data/mate-calc.appdata.xml.in:7
 msgid "MATE Calc"
-msgstr ""
+msgstr "MATE Taschenrechner"
 
 #: data/mate-calc.appdata.xml.in:8
 msgid "MATE Desktop calculator"
@@ -584,6 +587,10 @@ msgid ""
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
 msgstr ""
+"MATE-Calc ist ein leistungsfähiger grafischer Taschenrechner mit "
+"finanziellen, logischen und wissenschaftlichen Modi. Es verwendet ein "
+"Mehrfachpräzisionspaket für seine Arithmetik, um ein hohes Maß an "
+"Genauigkeit zu bieten."
 
 #: data/mate-calc.appdata.xml.in:15
 msgid ""
@@ -591,6 +598,9 @@ msgid ""
 "If you would like to know more about MATE and MATE Calc, please visit the "
 "project's home page."
 msgstr ""
+"MATE-Calc ist eine Abspaltung von GNOME-Calc und ein Teil der MATE-"
+"Arbeitsumgebung. Wenn Sie mehr über MATE und MATE-Calc erfahren möchten, "
+"besuchen Sie bitte die Internetseite des Projektes."
 
 #: data/mate-calc.desktop.in:3 src/math-window.c:261
 msgid "MATE Calculator"
@@ -1340,8 +1350,8 @@ msgstr "Hexadezimal"
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] "_%d Stelle"
-msgstr[1] "_%d Stellen"
+msgstr[0] ""
+msgstr[1] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
@@ -1349,8 +1359,8 @@ msgstr[1] "_%d Stellen"
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] "%d Stelle"
-msgstr[1] "%d Stellen"
+msgstr[0] ""
+msgstr[1] ""
 
 #. Tooltip for the round button
 #: src/math-buttons.c:1001
@@ -1645,7 +1655,8 @@ msgstr ""
 "Hendrik Richter\n"
 "Christian Kirbach\n"
 "Wolfgang Stoeggl\n"
-"Tobias Bannert"
+"Tobias Bannert\n"
+"Marcel Artz"
 
 #. Calculator menu
 #: src/math-window.c:403

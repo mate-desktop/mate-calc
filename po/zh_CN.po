@@ -4,23 +4,26 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Wylmer Wang, 2018
-# gtrslower, 2018
-# liushuyu011 <liushuyu011@gmail.com>, 2018
-# 玉堂白鹤 <yjwork@qq.com>, 2018
-# Mingcong Bai <jeffbai@aosc.xyz>, 2018
-# Wolfgang Ulbrich <mate@raveit.de>, 2019
-# CNAmira <forucial@icloud.com>, 2019
-# Stefano Karapetsas <stefano@karapetsas.com>, 2019
-# liulitchi <xingzuo88@qq.com>, 2019
+# Mingcong Bai <jeffbai@aosc.xyz>, 2020
+# Wolfgang Ulbrich <mate@raveit.de>, 2020
+# CNAmira <forucial@icloud.com>, 2020
+# Mingtian Yang <i@skylee.xyz>, 2020
+# e0c668032ced196bd60f2b6a070d982d_8f72ae0, 2020
+# clefebvre <clement.lefebvre@linuxmint.com>, 2020
+# Wenbin Lv <wenbin816@gmail.com>, 2020
+# Stefano Karapetsas <stefano@karapetsas.com>, 2020
+# gtrslower, 2020
+# liushuyu011 <liushuyu011@gmail.com>, 2020
+# liulitchi <xingzuo88@qq.com>, 2020
+# 玉堂白鹤 <yjwork@qq.com>, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-calc 1.23.0\n"
 "Report-Msgid-Bugs-To: http://mate-desktop.org\n"
 "POT-Creation-Date: 2020-01-14 20:58+0100\n"
-"PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: liulitchi <xingzuo88@qq.com>, 2019\n"
+"PO-Revision-Date: 2020-02-15 13:04+0000\n"
+"Last-Translator: 玉堂白鹤 <yjwork@qq.com>, 2020\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/mate/teams/13566/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -61,7 +64,7 @@ msgstr "记忆"
 #: src/buttons-advanced.ui:417 src/buttons-financial.ui:1894
 #: src/math-buttons.c:236
 msgid "Memory"
-msgstr "记忆"
+msgstr "内存"
 
 #. Accessible name for the exponentiation (x to the power of y) button
 #: src/buttons-advanced.ui:503 src/buttons-basic.ui:339
@@ -541,7 +544,7 @@ msgstr "显示千位分隔符(_T)"
 
 #: data/mate-calc.appdata.xml.in:7
 msgid "MATE Calc"
-msgstr ""
+msgstr "MATE 计算器"
 
 #: data/mate-calc.appdata.xml.in:8
 msgid "MATE Desktop calculator"
@@ -580,13 +583,13 @@ msgstr "执行算术、科学或财务计算"
 #. file name)!
 #: data/mate-calc.desktop.in:8
 msgid "accessories-calculator"
-msgstr ""
+msgstr "accessories-calculator"
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mate-calc.desktop.in:13
 msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
-msgstr ""
+msgstr "计算器;MATE;科学;算术;财务;计算;"
 
 #: data/org.mate.calc.gschema.xml:25
 msgid "Accuracy value"
@@ -1058,7 +1061,7 @@ msgstr "附加函数"
 #. Tooltip for the additional constant button
 #: src/math-buttons.c:131
 msgid "Additional constants"
-msgstr "补充常数"
+msgstr "其它常量"
 
 #. Tooltip for the exponent button
 #: src/math-buttons.c:134
@@ -1343,16 +1346,16 @@ msgstr "光速"
 
 #: src/math-buttons.c:1049
 msgid "299,792,458 m/s"
-msgstr ""
+msgstr "299,792,458 m/s"
 
 #. Tooltip for the μ₀ component button
 #: src/math-buttons.c:1051
 msgid "Magnetic constant"
-msgstr "磁常数"
+msgstr "真空磁导率"
 
 #: src/math-buttons.c:1051
 msgid "1.2566370614×10⁻⁶ N/A²"
-msgstr ""
+msgstr "1.2566370614×10⁻⁶ N/A²"
 
 #. Tooltip for the ε₀ button
 #: src/math-buttons.c:1053
@@ -1361,7 +1364,7 @@ msgstr "真空介电常量"
 
 #: src/math-buttons.c:1053
 msgid "8.85418782×10⁻¹² s⁴A²/m³kg"
-msgstr ""
+msgstr "8.85418782×10⁻¹² s⁴A²/m³kg"
 
 #. Tooltip for the G button
 #: src/math-buttons.c:1055
@@ -1370,7 +1373,7 @@ msgstr "万有引力常数"
 
 #: src/math-buttons.c:1055
 msgid "6.67408×10⁻¹¹ m³/(s²kg)"
-msgstr ""
+msgstr "6.67408×10⁻¹¹ m³/(s²kg)"
 
 #. Tooltip for the h button
 #: src/math-buttons.c:1057
@@ -1379,7 +1382,7 @@ msgstr "普朗克常量"
 
 #: src/math-buttons.c:1057
 msgid "6.62607004×10⁻³⁴ m²kg/s"
-msgstr ""
+msgstr "6.62607004×10⁻³⁴ m²kg/s"
 
 #. Tooltip for the ｅ button
 #: src/math-buttons.c:1059
@@ -1397,7 +1400,7 @@ msgstr "电子质量"
 
 #: src/math-buttons.c:1061
 msgid "9.10938356×10⁻³¹ kg"
-msgstr ""
+msgstr "9.10938356×10⁻³¹ kg"
 
 #. Tooltip for the mₚ button
 #: src/math-buttons.c:1063
@@ -1406,16 +1409,16 @@ msgstr "质子质量"
 
 #: src/math-buttons.c:1063
 msgid "1.672621898(21)×10⁻²⁷ kg"
-msgstr ""
+msgstr "1.672621898(21)×10⁻²⁷ kg"
 
 #. Tooltip for the Nₐ button
 #: src/math-buttons.c:1065
 msgid "Avogadro constant"
-msgstr ""
+msgstr "阿伏伽德罗常数"
 
 #: src/math-buttons.c:1065
 msgid "6.02214086×10²³ mol⁻¹"
-msgstr ""
+msgstr "6.02214086×10²³ mol⁻¹"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
@@ -1569,6 +1572,7 @@ msgid ""
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
+"MATE 计算器为自由软件；在自由软件基金会发表的 GNU GPL 协议下，任何人都可自由发布或修改该软件；GPL 协议应采用第二版或后续版本。"
 
 #: src/math-window.c:245
 msgid ""
@@ -1577,6 +1581,8 @@ msgid ""
 "or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
 " more details."
 msgstr ""
+"MATE Calculator "
+"发表的目的是希望它能够对您有用，但我们没有任何保证；对于以任何用途使用它所造成的任何直接或间接后果都不承担任何责任。请参看GNU GPL 协议中的细节。"
 
 #: src/math-window.c:249
 msgid ""
@@ -1584,6 +1590,8 @@ msgid ""
 " MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
+"MATE 计算器附有 GNU GPL 协议的副本；如未发现协议，请写信给自由软件基金会，地址是 51 Franklin Street, Fifth "
+"Floor, Boston, MA 02110-1301 USA 。"
 
 #: src/math-window.c:263
 msgid "About MATE Calculator"
@@ -1594,6 +1602,8 @@ msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2020 MATE developers"
 msgstr ""
+"版权所有 © 1986–2010 The GCalctool authors\n"
+"版权所有 ©  2011-2020 MATE 开发团队"
 
 #: src/math-window.c:267
 msgid "Calculator with financial and scientific modes."
@@ -1611,12 +1621,13 @@ msgstr ""
 "玉堂白鹤 <yjwork@qq.com>, 2015\n"
 "Mingye Wang <arthur200126@gmail.com>, 2015-2016\n"
 "白铭骢 <jeffbai@aosc.xyz>, 2015-2016\n"
-"刘子兴 <liushuyu@aosc.xyz>, 2015-2016"
+"刘子兴 <liushuyu@aosc.xyz>, 2015-2016\n"
+"Mingtian Yang <i@skylee.xyz>, 2020"
 
 #. Calculator menu
 #: src/math-window.c:403
 msgid "_Calculator"
-msgstr "计算器（_C）"
+msgstr "计算器(_C)"
 
 #. Mode menu
 #: src/math-window.c:405
@@ -1626,7 +1637,7 @@ msgstr "模式(_M)"
 #. Help menu label
 #: src/math-window.c:407
 msgid "_Help"
-msgstr "帮助（_H）"
+msgstr "帮助(_H)"
 
 #. Basic menu label
 #: src/math-window.c:409
@@ -2499,7 +2510,7 @@ msgstr "面积"
 
 #: src/unit-manager.c:112
 msgid "Volume"
-msgstr "音量"
+msgstr "文件卷"
 
 #: src/unit-manager.c:113
 msgid "Weight"

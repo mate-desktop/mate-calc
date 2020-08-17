@@ -4,23 +4,25 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Piotr Strębski <strebski@gmail.com>, 2018
-# Robert Strojec <ross606@gmail.com>, 2018
-# Marcin Kralka <marcink96@gmail.com>, 2018
-# Krzysztof Kokot <kokot300@gmail.com>, 2018
-# Przemek P <ppjg@dami.pl>, 2018
-# Piotr Drąg <piotrdrag@gmail.com>, 2018
-# Marcin GTriderXC <gtriderxc@yahoo.com>, 2019
-# pietrasagh <pietrasagh@gmail.com>, 2019
-# Stefano Karapetsas <stefano@karapetsas.com>, 2019
+# Piotr Strębski <strebski@gmail.com>, 2020
+# clefebvre <clement.lefebvre@linuxmint.com>, 2020
+# Robert Strojec <ross606@gmail.com>, 2020
+# Przemek P <ppjg@dami.pl>, 2020
+# pietrasagh <pietrasagh@gmail.com>, 2020
+# Daniel Tokarzewski <bezimo@gmail.com>, 2020
+# Piotr Drąg <piotrdrag@gmail.com>, 2020
+# Stefano Karapetsas <stefano@karapetsas.com>, 2020
+# Marcin Kralka <marcink96@gmail.com>, 2020
+# Krzysztof Kokot <kokot300@gmail.com>, 2020
+# Dominik Adrian Grzywak, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-calc 1.23.0\n"
 "Report-Msgid-Bugs-To: http://mate-desktop.org\n"
 "POT-Creation-Date: 2020-01-14 20:58+0100\n"
-"PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2019\n"
+"PO-Revision-Date: 2020-02-15 13:04+0000\n"
+"Last-Translator: Dominik Adrian Grzywak, 2020\n"
 "Language-Team: Polish (https://www.transifex.com/mate/teams/13566/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -118,7 +120,7 @@ msgstr "Indeks dolny"
 
 #: src/buttons-advanced.ui:966
 msgid "const"
-msgstr ""
+msgstr "stała"
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
@@ -538,7 +540,7 @@ msgstr "Preferencje"
 
 #: src/preferences.ui:80
 msgid "_Close"
-msgstr "Za_mknij"
+msgstr "_Zamknij"
 
 #. Preferences dialog: Label for angle unit combo box
 #: src/preferences.ui:112
@@ -567,7 +569,7 @@ msgstr "Wyświetlanie _separatorów tysięcy"
 
 #: data/mate-calc.appdata.xml.in:7
 msgid "MATE Calc"
-msgstr ""
+msgstr "Kalkulator MATE"
 
 #: data/mate-calc.appdata.xml.in:8
 msgid "MATE Desktop calculator"
@@ -579,6 +581,9 @@ msgid ""
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
 msgstr ""
+"Kalkulator MATE to potężny kalkulator graficzny o trybach finansowych, "
+"logicznych i naukowych. Wykorzystuje pakiet wielokrotnej precyzji, aby "
+"wykonać swoją arytmetykę, aby zapewnić wysoki stopień dokładności."
 
 #: data/mate-calc.appdata.xml.in:15
 msgid ""
@@ -586,6 +591,9 @@ msgid ""
 "If you would like to know more about MATE and MATE Calc, please visit the "
 "project's home page."
 msgstr ""
+"Kalkulator MATE to odgałęzienie Kalkulatora GNOME i część środowiska MATE "
+"Desktop. Jeśli chcesz dowiedzieć się więcej o MATE i Kalkulatorze MATE, "
+"odwiedź stronę główną projektu."
 
 #: data/mate-calc.desktop.in:3 src/math-window.c:261
 msgid "MATE Calculator"
@@ -604,13 +612,13 @@ msgstr "Wykonanie obliczeń arytmetycznych, naukowych lub finansowych"
 #. file name)!
 #: data/mate-calc.desktop.in:8
 msgid "accessories-calculator"
-msgstr ""
+msgstr "accessories-calculator"
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mate-calc.desktop.in:13
 msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
-msgstr ""
+msgstr "calculator;MATE;scientific;arithmetic;financial;calculations;"
 
 #: data/org.mate.calc.gschema.xml:25
 msgid "Accuracy value"
@@ -1084,7 +1092,7 @@ msgstr "Dodatkowe funkcje"
 #. Tooltip for the additional constant button
 #: src/math-buttons.c:131
 msgid "Additional constants"
-msgstr ""
+msgstr "Dodatkowe stałe"
 
 #. Tooltip for the exponent button
 #: src/math-buttons.c:134
@@ -1332,10 +1340,10 @@ msgstr "Heksadecymalnie"
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] "_%d miejsce"
-msgstr[1] "_%d miejsca"
-msgstr[2] "_%d miejsc"
-msgstr[3] "_%d miejsc"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
@@ -1343,10 +1351,10 @@ msgstr[3] "_%d miejsc"
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] "%d miejsce"
-msgstr[1] "%d miejsca"
-msgstr[2] "%d miejsc"
-msgstr[3] "%d miejsc"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #. Tooltip for the round button
 #: src/math-buttons.c:1001
@@ -1371,83 +1379,83 @@ msgstr "Signum"
 #. Tooltip for the c₀ component button
 #: src/math-buttons.c:1049
 msgid "Velocity of Light"
-msgstr ""
+msgstr "Prędkość Światła"
 
 #: src/math-buttons.c:1049
 msgid "299,792,458 m/s"
-msgstr ""
+msgstr "299,792,458 m/s"
 
 #. Tooltip for the μ₀ component button
 #: src/math-buttons.c:1051
 msgid "Magnetic constant"
-msgstr ""
+msgstr "Stała magnetyczna"
 
 #: src/math-buttons.c:1051
 msgid "1.2566370614×10⁻⁶ N/A²"
-msgstr ""
+msgstr "1.2566370614×10⁻⁶ N/A²"
 
 #. Tooltip for the ε₀ button
 #: src/math-buttons.c:1053
 msgid "Electric constant"
-msgstr ""
+msgstr "Stała elektryczna"
 
 #: src/math-buttons.c:1053
 msgid "8.85418782×10⁻¹² s⁴A²/m³kg"
-msgstr ""
+msgstr "8.85418782×10⁻¹² s⁴A²/m³kg"
 
 #. Tooltip for the G button
 #: src/math-buttons.c:1055
 msgid "Newtonian constant of gravitation"
-msgstr ""
+msgstr "Newtonowska stała grawitacji"
 
 #: src/math-buttons.c:1055
 msgid "6.67408×10⁻¹¹ m³/(s²kg)"
-msgstr ""
+msgstr "6.67408×10⁻¹¹ m³/(s²kg)"
 
 #. Tooltip for the h button
 #: src/math-buttons.c:1057
 msgid "Planck constant"
-msgstr ""
+msgstr "Stała Plancka"
 
 #: src/math-buttons.c:1057
 msgid "6.62607004×10⁻³⁴ m²kg/s"
-msgstr ""
+msgstr "6.62607004×10⁻³⁴ m²kg/s"
 
 #. Tooltip for the ｅ button
 #: src/math-buttons.c:1059
 msgid "Elementary charge"
-msgstr ""
+msgstr "Ładunek elementarny"
 
 #: src/math-buttons.c:1059
 msgid "1.6021766208(98)×10⁻¹⁹ C"
-msgstr ""
+msgstr "1.6021766208(98)×10⁻¹⁹ C"
 
 #. Tooltip for the mₑ button
 #: src/math-buttons.c:1061
 msgid "Electron mass"
-msgstr ""
+msgstr "Masa elektronowa"
 
 #: src/math-buttons.c:1061
 msgid "9.10938356×10⁻³¹ kg"
-msgstr ""
+msgstr "9.10938356×10⁻³¹ kg"
 
 #. Tooltip for the mₚ button
 #: src/math-buttons.c:1063
 msgid "Proton mass"
-msgstr ""
+msgstr "Masa protonowa"
 
 #: src/math-buttons.c:1063
 msgid "1.672621898(21)×10⁻²⁷ kg"
-msgstr ""
+msgstr "1.672621898(21)×10⁻²⁷ kg"
 
 #. Tooltip for the Nₐ button
 #: src/math-buttons.c:1065
 msgid "Avogadro constant"
-msgstr ""
+msgstr "Stała Avogadro"
 
 #: src/math-buttons.c:1065
 msgid "6.02214086×10²³ mol⁻¹"
-msgstr ""
+msgstr "6.02214086×10²³ mol⁻¹"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
@@ -1592,7 +1600,7 @@ msgstr "Sun Microsystems"
 
 #: src/math-window.c:235
 msgid "MATE Documentation Team"
-msgstr "MATE Documentation Team"
+msgstr "Zespół dokumentacji MATE"
 
 #: src/math-window.c:241
 msgid ""
@@ -1625,6 +1633,10 @@ msgid ""
 " MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
+"Z pewnością wraz z Kalkulatorem MATE dostarczono także egzemplarz "
+"Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie "
+"- proszę napisać do Free Software Foundation, Inc., 51 Franklin Street, "
+"Fifth Floor, Boston, MA 02110-1301 USA."
 
 #: src/math-window.c:263
 msgid "About MATE Calculator"
@@ -1635,6 +1647,8 @@ msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2020 MATE developers"
 msgstr ""
+"Prawa autorskie © 1986–2010 The GCalctool authors\n"
+"Prawa autorskie © 2011-2020 Deweloperzy MATE"
 
 #: src/math-window.c:267
 msgid "Calculator with financial and scientific modes."
@@ -1643,7 +1657,7 @@ msgstr "Kalkulator z trybem finansowym i naukowym."
 #: src/math-window.c:270
 msgid "translator-credits"
 msgstr ""
-"Tłumacze środowiska MATE, 2014-2018\n"
+"Tłumacze środowiska MATE, 2014-2020\n"
 "\n"
 "Zbigniew Chyla, 2002-2003\n"
 "Artur Flinta, 2003-2005\n"
@@ -1651,7 +1665,8 @@ msgstr ""
 "Tomasz Dominikowski, 2008-2009\n"
 "Joanna Mazgaj, 2009\n"
 "Piotr Drąg, 2010\n"
-"Aviary.pl, 2007-2010"
+"Aviary.pl, 2007-2010\n"
+"Daniel Tokarzewski, 2020"
 
 #. Calculator menu
 #: src/math-window.c:403
@@ -1666,7 +1681,7 @@ msgstr "_Tryb"
 #. Help menu label
 #: src/math-window.c:407
 msgid "_Help"
-msgstr "P_omoc"
+msgstr "_Pomoc"
 
 #. Basic menu label
 #: src/math-window.c:409
@@ -1711,7 +1726,7 @@ msgstr "_Ponów"
 
 #: src/math-window.c:429
 msgid "_Preferences"
-msgstr "P_referencje"
+msgstr "_Preferencje"
 
 #: src/math-window.c:431
 msgid "_Quit"

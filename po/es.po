@@ -4,15 +4,15 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Fabian Rodriguez, 2018
-# Andres Sanchez <blackatze93@gmail.com>, 2018
-# elio <micta2003@hotmail.com>, 2018
-# Lluís Tusquellas <lutusq@gmail.com>, 2018
-# Emiliano Fascetti, 2018
-# Wolfgang Ulbrich <mate@raveit.de>, 2019
-# Joel Barrios <darkshram@gmail.com>, 2019
-# Adolfo Jayme-Barrientos, 2019
-# Stefano Karapetsas <stefano@karapetsas.com>, 2019
+# elio <micta2003@hotmail.com>, 2020
+# Wolfgang Ulbrich <mate@raveit.de>, 2020
+# Andres Sanchez <blackatze93@gmail.com>, 2020
+# Emiliano Fascetti, 2020
+# Adolfo Jayme-Barrientos, 2020
+# Fabian Rodriguez, 2020
+# Stefano Karapetsas <stefano@karapetsas.com>, 2020
+# Lluís Tusquellas <lutusq@gmail.com>, 2020
+# Joel Barrios <darkshram@gmail.com>, 2020
 # Toni Estévez <toni.estevez@gmail.com>, 2020
 # 
 msgid ""
@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: mate-calc 1.23.0\n"
 "Report-Msgid-Bugs-To: http://mate-desktop.org\n"
 "POT-Creation-Date: 2020-01-14 20:58+0100\n"
-"PO-Revision-Date: 2018-03-11 16:33+0000\n"
+"PO-Revision-Date: 2020-02-15 13:04+0000\n"
 "Last-Translator: Toni Estévez <toni.estevez@gmail.com>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/mate/teams/13566/es/)\n"
 "MIME-Version: 1.0\n"
@@ -991,7 +991,7 @@ msgstr ""
 "  -v, --version                   Mostrar la versión de publicación\n"
 "  -h, -?, --help                  Mostrar las opciones de ayuda\n"
 "  -help-all                       Mostrar todas las opciones de ayuda\n"
-"  -help-gtk                       Mostrar las opciones de GTK+"
+"  -help-gtk                       Mostrar las opciones de GTK"
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
@@ -1006,12 +1006,12 @@ msgid ""
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
-"Opciones de GTK+:\n"
+"Opciones de GTK:\n"
 "  --class=CLASE                   Clase de programa como se usa por el gestor de ventanas\n"
 "  --name=NOMBRE                   Nombre del programa como se usa por el gestor de ventanas\n"
 "  --screen=PANTALLA               Pantalla X que usar\n"
 "  --sync                          Hacer que las llamadas las X sean síncronas\n"
-"  --gtk-module=MÓDULOS            Cargar módulos de GTK+ adicionales\n"
+"  --gtk-module=MÓDULOS            Cargar módulos de GTK adicionales\n"
 "  --g-fatal-warnings              Hacer que todos los avisos sean fatales"
 
 #. Description on mate-calc application options displayed on command-line
@@ -1342,8 +1342,8 @@ msgstr "Hexadecimal"
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] "_%d lugar"
-msgstr[1] "_%d posiciones"
+msgstr[0] ""
+msgstr[1] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
@@ -1351,8 +1351,8 @@ msgstr[1] "_%d posiciones"
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] "%d lugar"
-msgstr[1] "%d posiciones"
+msgstr[0] ""
+msgstr[1] ""
 
 #. Tooltip for the round button
 #: src/math-buttons.c:1001
@@ -1449,7 +1449,7 @@ msgstr "1,672621898(21)×10⁻²⁷ kg"
 #. Tooltip for the Nₐ button
 #: src/math-buttons.c:1065
 msgid "Avogadro constant"
-msgstr ""
+msgstr "Número de Avogadro"
 
 #: src/math-buttons.c:1065
 msgid "6.02214086×10²³ mol⁻¹"
@@ -1598,7 +1598,7 @@ msgstr "Sun Microsystems"
 
 #: src/math-window.c:235
 msgid "MATE Documentation Team"
-msgstr "Equipo de Documentación de MATE"
+msgstr "Equipo de documentación de MATE"
 
 #: src/math-window.c:241
 msgid ""
@@ -1653,7 +1653,7 @@ msgstr "Calculadora con modos científico y financiero."
 #: src/math-window.c:270
 msgid "translator-credits"
 msgstr ""
-"Toni Estevez <toni.estevez@gmail.com>, 2019\n"
+"Toni Estevez <toni.estevez@gmail.com>, 2020\n"
 "Jorge González <jorgegonz@svn.gnome.org>, 2007-2010\n"
 "Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003-2006\n"
 "Pablo Gonzalo del Campo <pablodc@bigfoot.com>, 2002-2003"
@@ -1716,7 +1716,7 @@ msgstr "_Rehacer"
 
 #: src/math-window.c:429
 msgid "_Preferences"
-msgstr "Preferencias"
+msgstr "_Preferencias"
 
 #: src/math-window.c:431
 msgid "_Quit"
