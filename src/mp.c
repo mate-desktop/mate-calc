@@ -435,6 +435,8 @@ mp_root(const MPNumber *x, int64_t n, MPNumber *z)
 
     if (n < 0)
     {
+        mpc_ui_div(z->num, 1, x->num, MPC_RNDNN);
+
         if (n == INT64_MIN)
             p = (uint64_t) INT64_MAX + 1;
         else
