@@ -69,6 +69,8 @@ void        mperr(const char *format, ...) __attribute__((format(printf, 1, 2)))
 /* Returns initialized MPNumber object */
 MPNumber    mp_new(void);
 
+MPNumber    mp_new_from_integer(uint64_t x);
+
 MPNumber*   mp_new_ptr(void);
 
 void        mp_clear(MPNumber *z);

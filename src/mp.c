@@ -61,6 +61,14 @@ mp_new(void)
     return z;
 }
 
+MPNumber
+mp_new_from_integer(uint64_t x)
+{
+    MPNumber z;
+    mpc_init2(z.num, PRECISION);
+    mpc_set_si(z.num, x, MPC_RNDNN);
+    return z;
+}
 
 MPNumber *
 mp_new_ptr(void)
@@ -70,14 +78,12 @@ mp_new_ptr(void)
     return z;
 }
 
-
 void
 mp_clear(MPNumber *z)
 {
     if (z != NULL)
         mpc_clear(z->num);
 }
-
 
 void
 mp_free(MPNumber *z)
@@ -89,7 +95,6 @@ mp_free(MPNumber *z)
     }
 }
 
-
 void
 mp_get_eulers(MPNumber *z)
 {
@@ -99,13 +104,11 @@ mp_get_eulers(MPNumber *z)
     mpfr_set_zero(mpc_imagref(z->num), 0);
 }
 
-
 void
 mp_get_i(MPNumber *z)
 {
     mpc_set_si_si(z->num, 0, 1, MPC_RNDNN);
 }
-
 
 void
 mp_abs(const MPNumber *x, MPNumber *z)
@@ -113,7 +116,6 @@ mp_abs(const MPNumber *x, MPNumber *z)
     mpfr_set_zero(mpc_imagref(z->num), MPFR_RNDN);
     mpc_abs(mpc_realref(z->num), x->num, MPC_RNDNN);
 }
-
 
 void
 mp_arg(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
@@ -136,20 +138,17 @@ mp_arg(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
         mpfr_abs(mpc_realref(z->num), mpc_realref(z->num), MPFR_RNDN);
 }
 
-
 void
 mp_conjugate(const MPNumber *x, MPNumber *z)
 {
     mpc_conj(z->num, x->num, MPC_RNDNN);
 }
 
-
 void
 mp_real_component(const MPNumber *x, MPNumber *z)
 {
     mpc_set_fr(z->num, mpc_realref(x->num), MPC_RNDNN);
 }
-
 
 void
 mp_imaginary_component(const MPNumber *x, MPNumber *z)
@@ -162,7 +161,6 @@ mp_add(const MPNumber *x, const MPNumber *y, MPNumber *z)
 {
     mpc_add(z->num, x->num, y->num, MPC_RNDNN);
 }
-
 
 void
 mp_add_integer(const MPNumber *x, int64_t y, MPNumber *z)
@@ -196,7 +194,6 @@ mp_fractional_component(const MPNumber *x, MPNumber *z)
     mpfr_frac(mpc_realref(z->num), mpc_realref(x->num), MPFR_RNDN);
 }
 
-
 void
 mp_fractional_part(const MPNumber *x, MPNumber *z)
 {
@@ -206,7 +203,6 @@ mp_fractional_part(const MPNumber *x, MPNumber *z)
     mp_clear(&f);
 }
 
-
 void
 mp_floor(const MPNumber *x, MPNumber *z)
 {
@@ -214,14 +210,12 @@ mp_floor(const MPNumber *x, MPNumber *z)
     mpfr_floor(mpc_realref(z->num), mpc_realref(x->num));
 }
 
-
 void
 mp_ceiling(const MPNumber *x, MPNumber *z)
 {
     mpfr_set_zero(mpc_imagref(z->num), MPFR_RNDN);
     mpfr_ceil(mpc_realref(z->num), mpc_realref(x->num));
 }
-
 
 void
 mp_round(const MPNumber *x, MPNumber *z)
@@ -268,7 +262,6 @@ mp_is_integer(const MPNumber *x)
     return mpfr_integer_p(mpc_realref(x->num)) != 0;
 }
 
-
 bool
 mp_is_positive_integer(const MPNumber *x)
 {
@@ -277,7 +270,6 @@ mp_is_positive_integer(const MPNumber *x)
     else
         return mpfr_sgn(mpc_realref(x->num)) >= 0 && mp_is_integer(x);
 }
-
 
 bool
 mp_is_natural(const MPNumber *x)
@@ -288,13 +280,11 @@ mp_is_natural(const MPNumber *x)
         return mpfr_sgn(mpc_realref(x->num)) > 0 && mp_is_integer(x);
 }
 
-
 bool
 mp_is_complex(const MPNumber *x)
 {
     return !mpfr_zero_p(mpc_imagref(x->num));
 }
-
 
 bool
 mp_is_equal(const MPNumber *x, const MPNumber *y)
@@ -302,7 +292,6 @@ mp_is_equal(const MPNumber *x, const MPNumber *y)
     int res = mpc_cmp(x->num, y->num);
     return MPC_INEX_RE(res) == 0 && MPC_INEX_IM(res) == 0;
 }
-
 
 void
 mp_epowy(const MPNumber *x, MPNumber *z)
@@ -323,20 +312,17 @@ mp_is_negative(const MPNumber *x)
     return mpfr_sgn(mpc_realref(x->num)) < 0;
 }
 
-
 bool
 mp_is_greater_equal(const MPNumber *x, const MPNumber *y)
 {
     return mp_compare(x, y) >= 0;
 }
 
-
 bool
 mp_is_greater_than(const MPNumber *x, const MPNumber *y)
 {
     return mp_compare(x, y) > 0;
 }
-
 
 bool
 mp_is_less_equal(const MPNumber *x, const MPNumber *y)
@@ -378,7 +364,6 @@ mp_ln(const MPNumber *x, MPNumber *z)
         mpfr_abs(mpc_imagref(z->num), mpc_imagref(z->num), MPFR_RNDN);
 }
 
-
 void
 mp_logarithm(int64_t n, const MPNumber *x, MPNumber *z)
 {
@@ -406,20 +391,17 @@ mp_multiply(const MPNumber *x, const MPNumber *y, MPNumber *z)
     mpc_mul(z->num, x->num, y->num, MPC_RNDNN);
 }
 
-
 void
 mp_multiply_integer(const MPNumber *x, int64_t y, MPNumber *z)
 {
     mpc_mul_si(z->num, x->num, (long) y, MPC_RNDNN);
 }
 
-
 void
 mp_invert_sign(const MPNumber *x, MPNumber *z)
 {
     mpc_neg(z->num, x->num, MPC_RNDNN);
 }
-
 
 void
 mp_reciprocal(const MPNumber *x, MPNumber *z)
@@ -469,13 +451,11 @@ mp_root(const MPNumber *x, int64_t n, MPNumber *z)
     }
 }
 
-
 void
 mp_sqrt(const MPNumber *x, MPNumber *z)
 {
     mp_root(x, 2, z);
 }
-
 
 void
 mp_factorial(const MPNumber *x, MPNumber *z)
@@ -516,7 +496,6 @@ mp_factorial(const MPNumber *x, MPNumber *z)
     }
 }
 
-
 void
 mp_modulus_divide(const MPNumber *x, const MPNumber *y, MPNumber *z)
 {
@@ -543,7 +522,6 @@ mp_modulus_divide(const MPNumber *x, const MPNumber *y, MPNumber *z)
     mp_clear(&t1);
     mp_clear(&t2);
 }
-
 
 void
 mp_modular_exponentiation(const MPNumber *x, const MPNumber *y, const MPNumber *p, MPNumber *z)
@@ -588,7 +566,6 @@ mp_modular_exponentiation(const MPNumber *x, const MPNumber *y, const MPNumber *
     mp_clear(&tmp);
 }
 
-
 void
 mp_xpowy(const MPNumber *x, const MPNumber *y, MPNumber *z)
 {
@@ -615,7 +592,6 @@ mp_xpowy(const MPNumber *x, const MPNumber *y, MPNumber *z)
 
     mpc_pow(z->num, x->num, y->num, MPC_RNDNN);
 }
-
 
 void
 mp_xpowy_integer(const MPNumber *x, int64_t n, MPNumber *z)
@@ -665,6 +641,205 @@ mp_zeta(const MPNumber *x, MPNumber *z)
     mp_clear(&one);
 }
 
+/***********************************************************************/
+/**                          FACTORIZATION                            **/
+/***********************************************************************/
+
+
+/**
+ * mp_is_pprime uses the Miller-Rabin primality test to decide
+ * whether or not a number is probable prime.
+ * For special values of @n and @rounds it can be deterministic,
+ * but in general the probability of declaring @n as prime if it
+ * is not is at most 4^(-@rounds).
+ * @n has to be odd.
+ * Returns TRUE if @n is probable prime and FALSE otherwise.
+ */
+static bool
+mp_is_pprime(MPNumber *n, uint64_t rounds)
+{
+    MPNumber tmp = mp_new();
+    MPNumber two = mp_new_from_integer(2);
+    uint64_t l = 0;
+    bool is_pprime = TRUE;
+
+    /* Write t := n-1 = 2^l * q with q odd */
+    MPNumber q = mp_new();
+    MPNumber t = mp_new();
+    mp_add_integer(n, -1, &t);
+    mp_set_from_mp(&t, &q);
+    do
+    {
+        mp_divide_integer(&q, 2, &q);
+        mp_modulus_divide(&q, &two, &tmp);
+        l++;
+    } while (mp_is_zero(&tmp));
+
+    /* @rounds Miller-Rabin tests to bases a = 2,3,...,@rounds+1 */
+    MPNumber one = mp_new_from_integer(1);
+    MPNumber a = mp_new_from_integer(1);
+    MPNumber b = mp_new();
+
+    for (uint64_t i = 1; (i < mp_to_integer(&t)) && (i <= rounds+1); i++)
+    {
+        mp_add_integer(&a, 1, &a);
+        mp_modular_exponentiation(&a, &q, n, &b);
+        if (mp_compare(&one, &b) == 0 || mp_compare(&t, &b) == 0)
+        {
+            continue;
+        }
+
+        bool is_witness = FALSE;
+        for (int i = 1; i < l; i++)
+        {
+            mp_modular_exponentiation(&b, &two, n, &b);
+            if (mp_compare(&b, &t) == 0)
+            {
+                is_witness = TRUE;
+                break;
+            }
+        }
+
+        if (!is_witness)
+        {
+            is_pprime = FALSE;
+            break;
+        }
+    }
+
+    mp_clear(&t);
+    mp_clear(&q);
+    mp_clear(&a);
+    mp_clear(&b);
+    mp_clear(&one);
+    mp_clear(&two);
+    mp_clear(&tmp);
+
+    return is_pprime;
+}
+
+/**
+ * Sets z = gcd(a,b) where gcd(a,b) is the greatest common divisor of @a and @b.
+ */
+static void
+mp_gcd (const MPNumber *a, const MPNumber *b, MPNumber *z)
+{
+    MPNumber null = mp_new_from_integer(0);
+    MPNumber t1 = mp_new();
+    MPNumber t2 = mp_new();
+
+    mp_set_from_mp(a, z);
+    mp_set_from_mp(b, &t2);
+
+    while (mp_compare(&t2, &null) != 0)
+    {
+        mp_set_from_mp(&t2, &t1);
+        mp_modulus_divide(z, &t2, &t2);
+        mp_set_from_mp(&t1, z);
+    }
+
+    mp_clear(&null);
+    mp_clear(&t1);
+    mp_clear(&t2);
+}
+
+/**
+ * mp_pollard_rho searches a divisor of @n using Pollard's rho algorithm.
+ * @i is the start value of the pseudorandom sequence which is generated
+ * by the polynomial x^2+1 mod n.
+ *
+ * Returns TRUE if a divisor was found and stores the divisor in z.
+ * Returns FALSE otherwise.
+ */
+static bool
+mp_pollard_rho (const MPNumber *n, uint64_t i, MPNumber *z)
+{
+    MPNumber one = mp_new_from_integer(1);
+    MPNumber two = mp_new_from_integer(2);
+    MPNumber x = mp_new_from_integer(i);
+    MPNumber y = mp_new_from_integer(2);
+    MPNumber d = mp_new_from_integer(1);
+
+    while (mp_compare(&d, &one) == 0)
+    {
+        mp_modular_exponentiation(&x, &two, n, &x);
+        mp_add(&x, &one, &x);
+
+        mp_modular_exponentiation(&y, &two, n, &y);
+        mp_add(&y, &one, &y);
+
+        mp_modular_exponentiation(&y, &two, n, &y);
+        mp_add(&y, &one, &y);
+
+        mp_subtract(&x, &y,z);
+        mp_abs(z, z);
+        mp_gcd(z, n, &d);
+    }
+
+    if (mp_compare(&d, n) == 0)
+    {
+        mp_clear(&one);
+        mp_clear(&two);
+        mp_clear(&x);
+        mp_clear(&y);
+        mp_clear(&d);
+
+        return FALSE;
+    }
+    else
+    {
+        mp_set_from_mp(&d, z);
+
+        mp_clear(&one);
+        mp_clear(&two);
+        mp_clear(&x);
+        mp_clear(&y);
+        mp_clear(&d);
+
+        return TRUE;
+    }
+}
+
+/**
+ * find_big_prime_factor acts as driver function for mp_pollard_rho which
+ * is run as long as a prime factor is found.
+ * On success sets @z to a prime factor of @n.
+ */
+static void
+find_big_prime_factor (const MPNumber *n, MPNumber *z)
+{
+    MPNumber tmp = mp_new();
+    uint64_t i = 2;
+
+    while (TRUE)
+    {
+        while (mp_pollard_rho (n, i, &tmp) == FALSE)
+        {
+            i++;
+        }
+
+        if (!mp_is_pprime(&tmp, 50))
+        {
+            mp_divide(n, &tmp, &tmp);
+        }
+        else
+            break;
+    }
+
+    mp_set_from_mp(&tmp, z);
+    mp_clear(&tmp);
+}
+
+/**
+ * mp_factorize tries to factorize the value of @x.
+ * If @x < 2^64 it calls mp_factorize_unit64 which deals in integers
+ * and should be fast enough for most values.
+ * If @x > 2^64 the approach to find factors of @x is as follows:
+ *   - Try to divide @x by prime numbers 2,3,5,7,.. up to min(2^13, sqrt(x))
+ *   - Use Pollard rho to find prime factors > 2^13.
+ * Returns a pointer to a GList with all prime factors of @x which needs to
+ * be freed.
+ */
 GList*
 mp_factorize(const MPNumber *x)
 {
@@ -711,8 +886,7 @@ mp_factorize(const MPNumber *x)
         return list;
     }
 
-    MPNumber divisor = mp_new();
-    mp_set_from_integer(2, &divisor);
+    MPNumber divisor = mp_new_from_integer(2);
     while (TRUE)
     {
         mp_divide(&value, &divisor, &tmp);
@@ -728,10 +902,13 @@ mp_factorize(const MPNumber *x)
             break;
     }
 
-    MPNumber root = mp_new();
     mp_set_from_integer(3, &divisor);
+
+    MPNumber root = mp_new();
     mp_sqrt(&value, &root);
-    while (mp_is_less_equal(&divisor, &root))
+    uint64_t max_trial_division = (uint64_t) (1 << 10);
+    uint64_t iter = 0;
+    while (mp_is_less_equal(&divisor, &root) && (iter++ < max_trial_division))
     {
         mp_divide(&value, &divisor, &tmp);
         if (mp_is_integer(&tmp))
@@ -745,8 +922,22 @@ mp_factorize(const MPNumber *x)
         }
         else
         {
-            mp_add_integer(&divisor, 2, &tmp);
-            mp_set_from_mp(&tmp, &divisor);
+            mp_add_integer(&divisor, 2, &divisor);
+        }
+    }
+
+    while (!mp_is_pprime(&value, 50))
+    {
+        find_big_prime_factor (&value, &divisor);
+
+        mp_divide(&value, &divisor, &tmp);
+        if (mp_is_integer(&tmp))
+        {
+            mp_set_from_mp(&tmp, &value);
+            mp_set_from_mp(&divisor, factor);
+            list = g_list_append(list, factor);
+            factor = g_slice_alloc0(sizeof(MPNumber));
+            mpc_init2(factor->num, PRECISION);
         }
     }
 
@@ -765,7 +956,6 @@ mp_factorize(const MPNumber *x)
     if (mp_is_negative(x))
         mp_invert_sign(list->data, list->data);
 
-    /* MPNumbers in GList will be freed in math_equation_factorize_real */
     mp_clear(&value);
     mp_clear(&tmp);
     mp_clear(&divisor);

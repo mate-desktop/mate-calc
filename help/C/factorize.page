@@ -7,9 +7,12 @@
     </info>
 
 	<title>Factorization</title>
-    
+
     <p>
-    You can factorize the number currently displayed by pressing the <gui>fact</gui> button.
+    You can factorize the number currently displayed by pressing <keyseq><key>Ctrl</key><key>F</key></keyseq> or by pressing the <gui>fact</gui> button.
     This button is visible in <link xref="mouse">programming mode</link>.
+    </p>
+    <p>
+    To factorize integers bigger than 2^64 the Miller-Rabin primality test and Pollard's rho algorithm are used.
     </p>
 </page>
