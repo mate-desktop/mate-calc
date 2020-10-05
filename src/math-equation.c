@@ -971,6 +971,24 @@ math_equation_set(MathEquation *equation, const gchar *text)
     clear_ans(equation, FALSE);
 }
 
+static void
+math_equation_set_with_history(MathEquation *equation, const gchar *text)
+{
+    MathEquationState *state;
+    MPNumber x = mp_new();
+
+    math_equation_get_number(equation, &x);
+    math_equation_set(equation, text);
+
+    /* Notify history */
+    state = get_current_state(equation);
+    g_signal_emit_by_name(equation, "history", state->expression, &x,
+                          mp_serializer_get_base(equation->priv->serializer));
+
+    free_state(state);
+    mp_clear(&x);
+}
+
 
 void
 math_equation_set_number(MathEquation *equation, const MPNumber *x)
@@ -1313,7 +1331,7 @@ math_equation_look_for_answer(gpointer data)
         g_slice_free(MPNumber, result->number_result);
     }
     else if (result->text_result != NULL) {
-        math_equation_set(equation, result->text_result);
+        math_equation_set_with_history(equation, result->text_result);
         g_free(result->text_result);
     }
     g_slice_free(SolveData, result);
@@ -1355,7 +1373,7 @@ static gpointer
 math_equation_factorize_real(gpointer data)
 {
     GString *text;
-    GList *factors, *factor;
+    GList *factors, *factor, *next_factor;
     MPNumber x = mp_new();
     MathEquation *equation = MATH_EQUATION(data);
     SolveData *result = g_slice_new0(SolveData);
@@ -1365,15 +1383,32 @@ math_equation_factorize_real(gpointer data)
 
     text = g_string_new("");
 
-    for (factor = factors; factor; factor = factor->next) {
+    int e = 1;
+    for (factor = factors; factor != NULL; factor = factor->next)
+    {
         gchar *temp;
         MPNumber *n;
 
         n = factor->data;
+        next_factor = factor->next;
+        if (next_factor != NULL && mp_compare(n, next_factor->data) == 0)
+        {
+            e++;
+            continue;
+        }
         temp = mp_serializer_to_string(equation->priv->serializer, n);
         g_string_append(text, temp);
+
+        if (e > 1)
+        {
+            g_string_append(text, "^");
+            g_string_append_printf(text, "%d", e);
+        }
         if (factor->next)
-            g_string_append(text, "×");
+            g_string_append(text, " × ");
+
+        e = 1;
+
         mp_clear(n);
         g_slice_free(MPNumber, n);
         g_free(temp);
