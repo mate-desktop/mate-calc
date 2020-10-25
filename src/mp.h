@@ -69,7 +69,7 @@ void        mperr(const char *format, ...) __attribute__((format(printf, 1, 2)))
 /* Returns initialized MPNumber object */
 MPNumber    mp_new(void);
 
-MPNumber    mp_new_from_integer(uint64_t x);
+MPNumber    mp_new_from_unsigned_integer(ulong x);
 
 MPNumber*   mp_new_ptr(void);
 
@@ -195,7 +195,7 @@ void   mp_get_eulers(MPNumber *z);
 void   mp_get_i(MPNumber *z);
 
 /* Sets z = n√x */
-void   mp_root(const MPNumber *x, int64_t n, MPNumber *z);
+void   mp_root(const MPNumber *x, long n, MPNumber *z);
 
 /* Sets z = √x */
 void   mp_sqrt(const MPNumber *x, MPNumber *z);
@@ -213,7 +213,7 @@ void mp_modular_exponentiation(const MPNumber *x, const MPNumber *y, const MPNum
 void   mp_xpowy(const MPNumber *x, const MPNumber *y, MPNumber *z);
 
 /* Sets z = x^y */
-void   mp_xpowy_integer(const MPNumber *x, int64_t y, MPNumber *z);
+void   mp_xpowy_integer(const MPNumber *x, long y, MPNumber *z);
 
 /* Sets z = e^x */
 void   mp_epowy(const MPNumber *x, MPNumber *z);
@@ -262,10 +262,10 @@ float  mp_to_float(const MPNumber *x);
 double mp_to_double(const MPNumber *x);
 
 /* Returns x as a native integer */
-int64_t mp_to_integer(const MPNumber *x);
+long mp_to_integer(const MPNumber *x);
 
 /* Returns x as a native unsigned integer */
-uint64_t mp_to_unsigned_integer(const MPNumber *x);
+ulong mp_to_unsigned_integer(const MPNumber *x);
 
 /* Sets z = sin x */
 void   mp_sin(const MPNumber *x, MPAngleUnit unit, MPNumber *z);

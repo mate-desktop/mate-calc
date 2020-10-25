@@ -347,7 +347,7 @@ p_check_variable(ParserState* state, gchar* name)
         for(c = name; *c != '\0'; c = next)
         {
             next = utf8_next_char(c);
-            snprintf(buffer, next - c + 1, "%s", c);
+            snprintf(buffer, (size_t) (next - c + 1), "%s", c);
             if(!(*(state->get_variable))(state, buffer, &temp))
             {
                 result = 0;

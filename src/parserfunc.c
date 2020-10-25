@@ -584,7 +584,7 @@ void*
 pf_do_x_pow_y_int(ParseNode* self)
 {
     MPNumber* val;
-    gint pow;
+    long pow;
     MPNumber* ans = mp_new_ptr();
     val = (MPNumber*) (*(self->left->evaluate))(self->left);
 

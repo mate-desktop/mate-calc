@@ -70,7 +70,6 @@ int
 main(int argc, char **argv)
 {
     char *equation, *line;
-    size_t nbytes = MAXLINE;
 
     /* Seed random number generator. */
     srand48((long) time((time_t *) 0));
@@ -82,7 +81,7 @@ main(int argc, char **argv)
     equation = (char *) malloc(MAXLINE * sizeof(char));
     while (1) {
         printf("> ");
-        line = fgets(equation, nbytes, stdin);
+        line = fgets(equation, MAXLINE, stdin);
 
         if (line != NULL)
             str_adjust(equation);

@@ -60,15 +60,14 @@ calc_ddb(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *life, MP
  *
  */
 
-    int i;
-    int len;
+    long len;
     MPNumber MPbv = mp_new();
     MPNumber MP1 = mp_new();
     MPNumber MP2 = mp_new();
 
     mp_set_from_integer(0, &MPbv);
     len = mp_to_integer(period);
-    for (i = 0; i < len; i++) {
+    for (long i = 0; i < len; i++) {
         mp_subtract(cost, &MPbv, &MP1);
         mp_multiply_integer(&MP1, 2, &MP2);
         mp_divide(&MP2, life, t);

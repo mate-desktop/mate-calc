@@ -37,13 +37,11 @@ mperr(const char *format, ...)
     mp_error = strdup(text);
 }
 
-
 const char *
 mp_get_error()
 {
     return mp_error;
 }
-
 
 void mp_clear_error()
 {
@@ -51,7 +49,6 @@ void mp_clear_error()
         free(mp_error);
     mp_error = NULL;
 }
-
 
 MPNumber
 mp_new(void)
@@ -62,11 +59,11 @@ mp_new(void)
 }
 
 MPNumber
-mp_new_from_integer(uint64_t x)
+mp_new_from_unsigned_integer(ulong x)
 {
     MPNumber z;
     mpc_init2(z.num, PRECISION);
-    mpc_set_si(z.num, x, MPC_RNDNN);
+    mpc_set_ui(z.num, x, MPC_RNDNN);
     return z;
 }
 
@@ -163,7 +160,7 @@ mp_add(const MPNumber *x, const MPNumber *y, MPNumber *z)
 }
 
 void
-mp_add_integer(const MPNumber *x, int64_t y, MPNumber *z)
+mp_add_integer(const MPNumber *x, long y, MPNumber *z)
 {
     mpc_add_si(z->num, x->num, y, MPC_RNDNN);
 }
@@ -244,7 +241,7 @@ mp_divide(const MPNumber *x, const MPNumber *y, MPNumber *z)
 }
 
 void
-mp_divide_integer(const MPNumber *x, int64_t y, MPNumber *z)
+mp_divide_integer(const MPNumber *x, long y, MPNumber *z)
 {
     MPNumber t1 = mp_new();
 
@@ -365,7 +362,7 @@ mp_ln(const MPNumber *x, MPNumber *z)
 }
 
 void
-mp_logarithm(int64_t n, const MPNumber *x, MPNumber *z)
+mp_logarithm(long n, const MPNumber *x, MPNumber *z)
 {
     /* log(0) undefined */
     if (mp_is_zero(x))
@@ -392,9 +389,9 @@ mp_multiply(const MPNumber *x, const MPNumber *y, MPNumber *z)
 }
 
 void
-mp_multiply_integer(const MPNumber *x, int64_t y, MPNumber *z)
+mp_multiply_integer(const MPNumber *x, long y, MPNumber *z)
 {
-    mpc_mul_si(z->num, x->num, (long) y, MPC_RNDNN);
+    mpc_mul_si(z->num, x->num, y, MPC_RNDNN);
 }
 
 void
@@ -411,18 +408,18 @@ mp_reciprocal(const MPNumber *x, MPNumber *z)
 }
 
 void
-mp_root(const MPNumber *x, int64_t n, MPNumber *z)
+mp_root(const MPNumber *x, long n, MPNumber *z)
 {
-    uint64_t p;
+    ulong p;
 
     if (n < 0)
     {
         mpc_ui_div(z->num, 1, x->num, MPC_RNDNN);
 
-        if (n == INT64_MIN)
-            p = (uint64_t) INT64_MAX + 1;
+        if (n == LONG_MIN)
+            p = (ulong) LONG_MAX + 1;
         else
-            p = -n;
+            p = (ulong) -n;
     }
     else if (n > 0)
     {
@@ -437,14 +434,14 @@ mp_root(const MPNumber *x, int64_t n, MPNumber *z)
     }
     if (!mp_is_complex(x) && (!mp_is_negative(x) || (p & 1) == 1))
     {
-        mpfr_rootn_ui(mpc_realref(z->num), mpc_realref(z->num), (uint64_t) p, MPFR_RNDN);
+        mpfr_rootn_ui(mpc_realref(z->num), mpc_realref(z->num), p, MPFR_RNDN);
         mpfr_set_zero(mpc_imagref(z->num), MPFR_RNDN);
     }
     else
     {
         mpfr_t tmp;
         mpfr_init2(tmp, PRECISION);
-        mpfr_set_ui(tmp, (uint64_t) p, MPFR_RNDN);
+        mpfr_set_ui(tmp, p, MPFR_RNDN);
         mpfr_ui_div(tmp, 1, tmp, MPFR_RNDN);
         mpc_pow_fr(z->num, z->num, tmp, MPC_RNDNN);
         mpfr_clear(tmp);
@@ -490,7 +487,7 @@ mp_factorial(const MPNumber *x, MPNumber *z)
     else
     {
         /* Convert to integer - if couldn't be converted then the factorial would be too big anyway */
-        int64_t value = mp_to_integer(x);
+        ulong value = mp_to_unsigned_integer(x);
         mpfr_fac_ui(mpc_realref(z->num), value, MPFR_RNDN);
         mpfr_set_zero(mpc_imagref(z->num), MPFR_RNDN);
     }
@@ -594,7 +591,7 @@ mp_xpowy(const MPNumber *x, const MPNumber *y, MPNumber *z)
 }
 
 void
-mp_xpowy_integer(const MPNumber *x, int64_t n, MPNumber *z)
+mp_xpowy_integer(const MPNumber *x, long n, MPNumber *z)
 {
     /* 0^-n invalid */
     if (mp_is_zero(x) && n < 0)
@@ -604,7 +601,7 @@ mp_xpowy_integer(const MPNumber *x, int64_t n, MPNumber *z)
         return;
     }
 
-    mpc_pow_si(z->num, x->num, (long) n, MPC_RNDNN);
+    mpc_pow_si(z->num, x->num, n, MPC_RNDNN);
 }
 
 void
@@ -656,11 +653,11 @@ mp_zeta(const MPNumber *x, MPNumber *z)
  * Returns TRUE if @n is probable prime and FALSE otherwise.
  */
 static bool
-mp_is_pprime(MPNumber *n, uint64_t rounds)
+mp_is_pprime(MPNumber *n, ulong rounds)
 {
     MPNumber tmp = mp_new();
-    MPNumber two = mp_new_from_integer(2);
-    uint64_t l = 0;
+    MPNumber two = mp_new_from_unsigned_integer(2);
+    ulong l = 0;
     bool is_pprime = TRUE;
 
     /* Write t := n-1 = 2^l * q with q odd */
@@ -676,11 +673,11 @@ mp_is_pprime(MPNumber *n, uint64_t rounds)
     } while (mp_is_zero(&tmp));
 
     /* @rounds Miller-Rabin tests to bases a = 2,3,...,@rounds+1 */
-    MPNumber one = mp_new_from_integer(1);
-    MPNumber a = mp_new_from_integer(1);
+    MPNumber one = mp_new_from_unsigned_integer(1);
+    MPNumber a = mp_new_from_unsigned_integer(1);
     MPNumber b = mp_new();
 
-    for (uint64_t i = 1; (i < mp_to_integer(&t)) && (i <= rounds+1); i++)
+    for (ulong i = 1; (i < mp_to_integer(&t)) && (i <= rounds+1); i++)
     {
         mp_add_integer(&a, 1, &a);
         mp_modular_exponentiation(&a, &q, n, &b);
@@ -690,7 +687,7 @@ mp_is_pprime(MPNumber *n, uint64_t rounds)
         }
 
         bool is_witness = FALSE;
-        for (int i = 1; i < l; i++)
+        for (long j = 1; j < l; j++)
         {
             mp_modular_exponentiation(&b, &two, n, &b);
             if (mp_compare(&b, &t) == 0)
@@ -724,7 +721,7 @@ mp_is_pprime(MPNumber *n, uint64_t rounds)
 static void
 mp_gcd (const MPNumber *a, const MPNumber *b, MPNumber *z)
 {
-    MPNumber null = mp_new_from_integer(0);
+    MPNumber null = mp_new_from_unsigned_integer(0);
     MPNumber t1 = mp_new();
     MPNumber t2 = mp_new();
 
@@ -752,13 +749,13 @@ mp_gcd (const MPNumber *a, const MPNumber *b, MPNumber *z)
  * Returns FALSE otherwise.
  */
 static bool
-mp_pollard_rho (const MPNumber *n, uint64_t i, MPNumber *z)
+mp_pollard_rho (const MPNumber *n, ulong i, MPNumber *z)
 {
-    MPNumber one = mp_new_from_integer(1);
-    MPNumber two = mp_new_from_integer(2);
-    MPNumber x = mp_new_from_integer(i);
-    MPNumber y = mp_new_from_integer(2);
-    MPNumber d = mp_new_from_integer(1);
+    MPNumber one = mp_new_from_unsigned_integer(1);
+    MPNumber two = mp_new_from_unsigned_integer(2);
+    MPNumber x = mp_new_from_unsigned_integer(i);
+    MPNumber y = mp_new_from_unsigned_integer(2);
+    MPNumber d = mp_new_from_unsigned_integer(1);
 
     while (mp_compare(&d, &one) == 0)
     {
@@ -809,7 +806,7 @@ static void
 find_big_prime_factor (const MPNumber *n, MPNumber *z)
 {
     MPNumber tmp = mp_new();
-    uint64_t i = 2;
+    ulong i = 2;
 
     while (TRUE)
     {
@@ -886,7 +883,7 @@ mp_factorize(const MPNumber *x)
         return list;
     }
 
-    MPNumber divisor = mp_new_from_integer(2);
+    MPNumber divisor = mp_new_from_unsigned_integer(2);
     while (TRUE)
     {
         mp_divide(&value, &divisor, &tmp);

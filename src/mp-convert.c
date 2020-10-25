@@ -33,21 +33,21 @@ mp_set_from_double(double dx, MPNumber *z)
 
 
 void
-mp_set_from_integer(int64_t x, MPNumber *z)
+mp_set_from_integer(long x, MPNumber *z)
 {
     mpc_set_si(z->num, x, MPC_RNDNN);
 }
 
 
 void
-mp_set_from_unsigned_integer(uint64_t x, MPNumber *z)
+mp_set_from_unsigned_integer(ulong x, MPNumber *z)
 {
     mpc_set_ui(z->num, x, MPC_RNDNN);
 }
 
 
 void
-mp_set_from_fraction(int64_t numerator, int64_t denominator, MPNumber *z)
+mp_set_from_fraction(long numerator, long denominator, MPNumber *z)
 {
     if (denominator < 0) {
         numerator = -numerator;
@@ -88,14 +88,14 @@ mp_set_from_random(MPNumber *z)
     mp_set_from_double(drand48(), z);
 }
 
-int64_t
+long
 mp_to_integer(const MPNumber *x)
 {
     return mpfr_get_si(mpc_realref(x->num), MPFR_RNDN);
 }
 
 
-uint64_t
+ulong
 mp_to_unsigned_integer(const MPNumber *x)
 {
     return mpfr_get_ui(mpc_realref(x->num), MPFR_RNDN);
@@ -116,7 +116,8 @@ mp_to_double(const MPNumber *x)
 static int
 char_val(char **c, int base)
 {
-    int i, j, value, offset;
+    int i, j, value;
+    size_t offset;
     const char *digits[][10] = {{"٠", "١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩"},
                                 {"〇", "〡", "〢", "〣", "〤", "〥", "〦", "〧", "〨", "〩"},
                                 {"۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"},
