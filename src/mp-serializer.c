@@ -63,7 +63,8 @@ mp_to_string_real(MpSerializer *serializer, const MPNumber *x, int base, gboolea
     MPNumber integer_component = mp_new();
     MPNumber fractional_component = mp_new();
     MPNumber temp = mp_new();
-    int i, last_non_zero;
+    int i;
+    gsize last_non_zero;
 
     if (mp_is_negative(x))
         mp_abs(x, &number);
@@ -92,7 +93,7 @@ mp_to_string_real(MpSerializer *serializer, const MPNumber *x, int base, gboolea
         MPNumber t = mp_new();
         MPNumber t2 = mp_new();
         MPNumber t3 = mp_new();
-        int64_t d;
+        long d;
 
         if (serializer->priv->base == 10 && serializer->priv->show_tsep && i == serializer->priv->tsep_count) {
             g_string_prepend_unichar(string, serializer->priv->tsep);
