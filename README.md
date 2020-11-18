@@ -1,21 +1,14 @@
-# Introduction.
+# MATE Calculator
 
-This is `mate-calc`, a fork of `gnome-calc`, the calculator application
+![mate-calc-icon](mate-calc.png)
+
+## General Information
+
+MATE Calculator (*mate-calc*) started as a fork of *gnome-calc*, the calculator application
 that was previously in the OpenWindows Deskset of the Solaris 8
 operating system.
 
-It incorporates a multiple precision arithmetic packages based on the
-work of Professor Richard Brent, who has also kindly given me
-permission to make it available.
-
-There is a single graphics driver for Gtk3 included with this release.
-
-## Getting started.
-
-The manual pages also describe how to use `mate-calc` in detail.
-
-
-## Calctool history.
+## Calctool history
 
 Calctool was a project I worked on before I joined the OpenWindows
 DeskSet engineering group at Sun. It was originally released to
@@ -42,15 +35,28 @@ application that is a part of CDE (albeit I had nothing to do with
 that).
 
 With its inclusion in the MATE CVS repository, it was renamed to
-`mate-calc`.
+*mate-calc*.
 
 More recently, Sami Pietila provided arithmetic precedence support and
 Robert Ancell converted the UI to use Glade.
 
+## Build/Installation
 
-## Acknowledgements.
+MATE Calculator requires GTK+ (>= 3.22) and the [GNU MPFR](https://www.mpfr.org/) and [GNU MPC](http://www.multiprecision.org/mpc) libraries. For a complete list of dependencies see the [build.yml](https://github.com/mate-desktop/mate-calc/blob/master/.build.yml).
 
-See the AUTHORS file.
+Simple install procedure:
+
+```
+$ ./autogen.sh                              # Build configuration
+$ make                                      # Build
+[ Become root if necessary ]
+$ make install                              # Installation
+```
+
+
+## Acknowledgements
+
+See the [AUTHORS](https://github.com/mate-desktop/mate-calc/blob/master/AUTHORS) file.
 
 Suggestions for further improvement would be most welcome, plus bug
 reports and comments.
