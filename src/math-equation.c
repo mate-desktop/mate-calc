@@ -49,8 +49,6 @@ enum {
 
 static GType number_mode_type, number_format_type, angle_unit_type;
 
-#define MAX_DIGITS 512
-
 /* Expression mode state */
 typedef struct {
     MPNumber ans;              /* Previously calculated answer */

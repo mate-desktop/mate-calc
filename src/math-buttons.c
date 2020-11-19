@@ -69,9 +69,6 @@ G_DEFINE_TYPE_WITH_PRIVATE (MathButtons, math_buttons, GTK_TYPE_BOX);
 #define GET_WIDGET(ui, name) \
           GTK_WIDGET(gtk_builder_get_object((ui), (name)))
 
-#define WM_WIDTH_FACTOR  10
-#define WM_HEIGHT_FACTOR 30
-
 typedef enum
 {
     NUMBER,
