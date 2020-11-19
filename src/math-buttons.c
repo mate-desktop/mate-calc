@@ -905,17 +905,16 @@ shift_left_cb(GtkWidget *widget, MathButtons *buttons)
 
         for (i = 1; i < 16; i++) {
             GtkWidget *item, *label;
-            gchar *format, *text;
+            gchar *text;
 
             if (i < 10) {
                 /* Left Shift Popup: Menu item to shift left by n places (n < 10) */
-                format = ngettext("_%d place", "_%d places", i);
+                text = g_strdup_printf(ngettext("_%d place", "_%d places", i), i);
             }
             else {
                 /* Left Shift Popup: Menu item to shift left by n places (n >= 10) */
-                format = ngettext("%d place", "%d places", i);
+                text = g_strdup_printf(ngettext("%d place", "%d places", i), i);
             }
-            text = g_strdup_printf(format, i);
             label = gtk_label_new_with_mnemonic(text);
 
             item = gtk_menu_item_new();
@@ -948,17 +947,16 @@ shift_right_cb(GtkWidget *widget, MathButtons *buttons)
 
         for (i = 1; i < 16; i++) {
             GtkWidget *item, *label;
-            gchar *format, *text;
+            gchar *text;
 
             if (i < 10) {
                 /* Right Shift Popup: Menu item to shift right by n places (n < 10) */
-                format = ngettext("_%d place", "_%d places", i);
+                text = g_strdup_printf(ngettext("_%d place", "_%d places", i), i);
             }
             else {
                 /* Right Shift Popup: Menu item to shift right by n places (n >= 10) */
-                format = ngettext("%d place", "%d places", i);
+                text = g_strdup_printf(ngettext("%d place", "%d places", i), i);
             }
-            text = g_strdup_printf(format, i);
             label = gtk_label_new_with_mnemonic(text);
 
             item = gtk_menu_item_new();
