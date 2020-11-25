@@ -15,7 +15,7 @@
 #include "mp.h"
 
 static void
-calc_ctrm(MathEquation *equation, MPNumber *t, MPNumber *pint, MPNumber *fv, MPNumber *pv)
+calc_ctrm(MPNumber *t, MPNumber *pint, MPNumber *fv, MPNumber *pv)
 {
 
 /*  Cterm - pint (periodic interest rate).
@@ -87,7 +87,7 @@ calc_ddb(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *life, MP
 
 
 static void
-calc_fv(MathEquation *equation, MPNumber *t, MPNumber *pmt, MPNumber *pint, MPNumber *n)
+calc_fv(MPNumber *t, MPNumber *pmt, MPNumber *pint, MPNumber *n)
 {
 
 /*  Fv    - pmt (periodic payment).
@@ -116,7 +116,7 @@ calc_fv(MathEquation *equation, MPNumber *t, MPNumber *pmt, MPNumber *pint, MPNu
 
 
 static void
-calc_gpm(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *margin)
+calc_gpm(MPNumber *t, MPNumber *cost, MPNumber *margin)
 {
 
 /*  Gpm   - cost (cost of sale).
@@ -138,7 +138,7 @@ calc_gpm(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *margin)
 
 
 static void
-calc_pmt(MathEquation *equation, MPNumber *t, MPNumber *prin, MPNumber *pint, MPNumber *n)
+calc_pmt(MPNumber *t, MPNumber *prin, MPNumber *pint, MPNumber *n)
 {
 
 /*  Pmt   - prin (principal).
@@ -169,7 +169,7 @@ calc_pmt(MathEquation *equation, MPNumber *t, MPNumber *prin, MPNumber *pint, MP
 
 
 static void
-calc_pv(MathEquation *equation, MPNumber *t, MPNumber *pmt, MPNumber *pint, MPNumber *n)
+calc_pv(MPNumber *t, MPNumber *pmt, MPNumber *pint, MPNumber *n)
 {
 
 /*  Pv    - pmt (periodic payment).
@@ -200,7 +200,7 @@ calc_pv(MathEquation *equation, MPNumber *t, MPNumber *pmt, MPNumber *pint, MPNu
 
 
 static void
-calc_rate(MathEquation *equation, MPNumber *t, MPNumber *fv, MPNumber *pv, MPNumber *n)
+calc_rate(MPNumber *t, MPNumber *fv, MPNumber *pv, MPNumber *n)
 {
 
 /*  Rate  - fv (future value).
@@ -229,7 +229,7 @@ calc_rate(MathEquation *equation, MPNumber *t, MPNumber *fv, MPNumber *pv, MPNum
 
 
 static void
-calc_sln(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *salvage, MPNumber *life)
+calc_sln(MPNumber *t, MPNumber *cost, MPNumber *salvage, MPNumber *life)
 {
 
 /*  Sln   - cost    (cost of the asset).
@@ -247,7 +247,7 @@ calc_sln(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *salvage,
 
 
 static void
-calc_syd(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *salvage, MPNumber *life, MPNumber *period)
+calc_syd(MPNumber *t, MPNumber *cost, MPNumber *salvage, MPNumber *life, MPNumber *period)
 {
 
 /*  Syd   - cost    (cost of the asset).
@@ -282,7 +282,7 @@ calc_syd(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *salvage,
 
 
 static void
-calc_term(MathEquation *equation, MPNumber *t, MPNumber *pmt, MPNumber *fv, MPNumber *pint)
+calc_term(MPNumber *t, MPNumber *pmt, MPNumber *fv, MPNumber *pint)
 {
 
 /*  Term  - pmt (periodic payment).
@@ -318,34 +318,34 @@ do_finc_expression(MathEquation *equation, int function, MPNumber *arg1, MPNumbe
     MPNumber result = mp_new();
     switch (function) {
      case FINC_CTRM_DIALOG:
-       calc_ctrm(equation, &result, arg1, arg2, arg3);
+       calc_ctrm(&result, arg1, arg2, arg3);
        break;
      case FINC_DDB_DIALOG:
        calc_ddb(equation, &result, arg1, arg2, arg3);
        break;
      case FINC_FV_DIALOG:
-       calc_fv(equation, &result, arg1, arg2, arg3);
+       calc_fv(&result, arg1, arg2, arg3);
        break;
      case FINC_GPM_DIALOG:
-       calc_gpm(equation, &result, arg1, arg2);
+       calc_gpm(&result, arg1, arg2);
        break;
      case FINC_PMT_DIALOG:
-       calc_pmt(equation, &result, arg1, arg2, arg3);
+       calc_pmt(&result, arg1, arg2, arg3);
        break;
      case FINC_PV_DIALOG:
-       calc_pv(equation, &result, arg1, arg2, arg3);
+       calc_pv(&result, arg1, arg2, arg3);
        break;
      case FINC_RATE_DIALOG:
-       calc_rate(equation, &result, arg1, arg2, arg3);
+       calc_rate(&result, arg1, arg2, arg3);
        break;
      case FINC_SLN_DIALOG:
-       calc_sln(equation, &result, arg1, arg2, arg3);
+       calc_sln(&result, arg1, arg2, arg3);
        break;
      case FINC_SYD_DIALOG:
-       calc_syd(equation, &result, arg1, arg2, arg3, arg4);
+       calc_syd(&result, arg1, arg2, arg3, arg4);
        break;
      case FINC_TERM_DIALOG:
-       calc_term(equation, &result, arg1, arg2, arg3);
+       calc_term(&result, arg1, arg2, arg3);
        break;
     }
     math_equation_set_number(equation, &result);
