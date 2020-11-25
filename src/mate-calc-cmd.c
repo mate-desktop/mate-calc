@@ -67,7 +67,7 @@ str_adjust(char *str)
 }
 
 int
-main(int argc, char **argv)
+main(void)
 {
     char *equation, *line;
 

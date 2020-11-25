@@ -221,7 +221,7 @@ test_mp(void)
 
 
 int
-main (int argc, char **argv)
+main (void)
 {
     setlocale(LC_ALL, "C");
 
