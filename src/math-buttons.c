@@ -219,9 +219,6 @@ static ButtonData button_data[] = {
     {"twos_complement",    "twos ", FUNCTION,
       /* Tooltip for the two's complement button */
       N_("Two's Complement")},
-    {"trunc",              "trunc ", FUNCTION,
-      /* Tooltip for the truncate button */
-      N_("Truncate")},
     {"start_group",        "(", GROUP,
       /* Tooltip for the start group button */
       N_("Start Group [(]")},
