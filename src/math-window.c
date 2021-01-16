@@ -365,7 +365,7 @@ static void about_cb(GtkWidget* widget, MathWindow* window)
         "version", VERSION,
         "title", _("About MATE Calculator"),
         "copyright", _("Copyright \xc2\xa9 1986–2010 The GCalctool authors\n"
-                       "Copyright \xc2\xa9 2011-2020 MATE developers"),
+                       "Copyright \xc2\xa9 2011-2021 MATE developers"),
         "license", license_trans,
         "comments", comments,
         "authors", authors,
