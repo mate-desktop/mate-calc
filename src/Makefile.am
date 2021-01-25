@@ -4,9 +4,7 @@ noinst_PROGRAMS = test-mp test-mp-equation
 TESTS = test-mp test-mp-equation
 
 AM_CPPFLAGS = \
-	-DVERSION=\""$(VERSION)"\" \
 	-DLOCALE_DIR=\""$(localedir)"\" \
-	-DGETTEXT_PACKAGE=\"$(GETTEXT_PACKAGE)\" \
 	$(WARN_CFLAGS) \
 	$(MATE_CALC_CFLAGS)
 
