@@ -52,7 +52,10 @@ dnl ###########################################################################
 AM_GNU_GETTEXT_VERSION([0.19.8])
 AM_GNU_GETTEXT_REQUIRE_VERSION([0.19.8])
 AM_GNU_GETTEXT([external])
-AC_SUBST(GETTEXT_PACKAGE, mate-calc)
+
+GETTEXT_PACKAGE=AC_PACKAGE_NAME
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[the gettext translation domain])
 
 # **********************
 # GLIB_COMPILE_RESOURCES
