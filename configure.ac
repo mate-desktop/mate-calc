@@ -89,3 +89,16 @@ po/Makefile.in
 data/Makefile
 help/Makefile
 ])
+
+echo "
+Configure summary:
+
+    ${PACKAGE_STRING}
+    `echo $PACKAGE_STRING | sed "s/./=/g"`
+
+    prefix:                       ${prefix}
+    source code location:         ${srcdir}
+    compiler:                     ${CC}
+    compiler flags:               ${CFLAGS}
+    warning flags:                ${WARN_CFLAGS}
+"
