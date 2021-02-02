@@ -1375,7 +1375,9 @@ math_equation_factorize_real(gpointer data)
     MPNumber x = mp_new();
     MathEquation *equation = MATH_EQUATION(data);
     SolveData *result = g_slice_new0(SolveData);
+    MpDisplayFormat format = mp_serializer_get_number_format(equation->priv->serializer);
 
+    mp_serializer_set_number_format(equation->priv->serializer, MP_DISPLAY_FORMAT_FIXED);
     math_equation_get_number(equation, &x);
     factors = mp_factorize(&x);
 
@@ -1417,6 +1419,8 @@ math_equation_factorize_real(gpointer data)
     g_async_queue_push(equation->priv->queue, result);
     g_string_free(text, TRUE);
     mp_clear(&x);
+
+    mp_serializer_set_number_format(equation->priv->serializer, format);
 
     return NULL;
 }
