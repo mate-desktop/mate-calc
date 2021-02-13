@@ -403,8 +403,11 @@ mp_invert_sign(const MPNumber *x, MPNumber *z)
 void
 mp_reciprocal(const MPNumber *x, MPNumber *z)
 {
-    mpc_set_si(z->num, 1, MPC_RNDNN);
-    mpc_fr_div(z->num, mpc_realref(z->num), x->num, MPC_RNDNN);
+    mpc_t temp;
+    mpc_init2(temp, PRECISION);
+    mpc_set_ui(temp, 1, MPC_RNDNN);
+    mpc_fr_div(z->num, mpc_realref(temp), x->num, MPC_RNDNN);
+    mpc_clear(temp);
 }
 
 void
