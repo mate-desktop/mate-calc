@@ -42,7 +42,10 @@ MathHistoryEntry *
 math_history_entry_new(MathEquation *equation);
 
 void
-math_history_entry_insert_entry(MathHistoryEntry *history_entry, const gchar *equation, const gchar *answer_four_digits, const gchar *answer_nine_digits);
+math_history_entry_insert_entry(MathHistoryEntry *history_entry, const gchar *equation, MPNumber *answer, MpSerializer *serializer);
+
+void 
+math_history_entry_redisplay(MathHistoryEntry *history_entry, MpSerializer *serializer);
 
 gchar *
 math_history_entry_get_equation(MathHistoryEntry *history_entry);

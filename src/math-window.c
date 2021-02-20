@@ -444,10 +444,17 @@ static GtkWidget *add_menu(GtkWidget *menu_bar, const gchar *name)
 }
 
 static void
-update_history_cb (MathEquation *equation, char *answer, MPNumber *number, int number_base, gpointer data)
+update_history_cb (MathEquation *equation, char *equation_string, MPNumber *answer, MathWindow *window)
 {   /* Recieves signal emitted by a MathEquation object for updating history */
-    MathWindow *window = MATH_WINDOW(data);
-    math_history_insert_entry (window->priv->history, answer, number, number_base); /* Sends current equation and answer for updating History-View */
+    math_history_insert_entry (window->priv->history, equation_string, answer); /* Sends current equation string and answer for updating History-View */
+}
+
+static void
+history_set_serializer_cb(MathEquation *equation, MathWindow *window)
+{
+    MpSerializer *serializer = math_equation_get_serializer(equation);
+
+    math_history_set_serializer(window->priv->history, serializer);
 }
 
 static void quit_cb(GtkWidget* widget, MathWindow* window)
@@ -599,6 +606,8 @@ create_gui(MathWindow *window)
     g_signal_connect(window->priv->equation, "history", G_CALLBACK(update_history_cb), window);
     g_signal_connect(window, "notify::show-history", G_CALLBACK(show_history_cb), NULL);
     show_history_cb(window, NULL);
+    g_signal_connect(window->priv->equation, "display-changed", G_CALLBACK(history_set_serializer_cb), window);
+    history_set_serializer_cb(window->priv->equation, window);
     gtk_box_pack_start(GTK_BOX(vbox), GTK_WIDGET(window->priv->history), TRUE, TRUE, 0);
 
     scrolled_window = gtk_scrolled_window_new(NULL, NULL);
