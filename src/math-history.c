@@ -20,7 +20,7 @@ struct MathHistoryPrivate
 {
     MathEquation *equation;
 
-    gchar *last_answer;
+    MpSerializer *serializer;
     gchar *last_equation;
     int current; /* 0 is the first entry, rows-1 the most recent entry */
     int rows;
@@ -52,42 +52,27 @@ scroll_bottom_cb(MathHistory *history, gpointer data)
 }
 
 void
-math_history_insert_entry (MathHistory *history, char *equation, MPNumber *answer, int number_base)
+math_history_insert_entry (MathHistory *history, char *equation, MPNumber *answer)
 {
-    MathHistoryEntry *entry = math_history_entry_new(history->priv->equation);
-
-    MpSerializer *serializer_four = mp_serializer_new(MP_DISPLAY_FORMAT_AUTOMATIC, number_base, 4);
-    MpSerializer *serializer_nine = mp_serializer_new(MP_DISPLAY_FORMAT_AUTOMATIC, number_base, 9);
-
-    gchar *answer_four_digits = mp_serializer_to_string(serializer_four, answer);
-    gchar *answer_nine_digits = mp_serializer_to_string(serializer_nine, answer);
-
-    if (g_strcmp0(history->priv->last_answer, answer_nine_digits) == 0 &&
-        g_strcmp0(history->priv->last_equation, equation) == 0 &&
-        history->priv->rows >= 1)
+    if (g_strcmp0(history->priv->last_equation, equation) == 0 && history->priv->rows >= 1)
     {
-        g_free(answer_four_digits);
-        g_free(answer_nine_digits);
         return;
     }
 
-    math_history_entry_insert_entry(entry, equation, answer_four_digits, answer_nine_digits);
+    MathHistoryEntry *entry = math_history_entry_new(history->priv->equation);
+
+    math_history_entry_insert_entry(entry, equation, answer, history->priv->serializer);
 
     gtk_list_box_insert(GTK_LIST_BOX(history->priv->listbox), GTK_WIDGET(entry), -1);
     gtk_widget_set_can_focus(GTK_WIDGET(entry), FALSE);
     gtk_widget_show(GTK_WIDGET(entry));
 
-    g_free(history->priv->last_answer);
     g_free(history->priv->last_equation);
 
-    history->priv->last_answer = g_strdup(answer_nine_digits);
     history->priv->last_equation = g_strdup(equation);
     history->priv->rows++;
     history->priv->current = history->priv->rows;
     g_signal_emit_by_name(history, "row-added");
-
-    g_free(answer_four_digits);
-    g_free(answer_nine_digits);
 }
 
 void
@@ -123,6 +108,18 @@ math_history_get_current(MathHistory *history)
     return history->priv->current;
 }
 
+void
+math_history_set_serializer(MathHistory *history, MpSerializer *serializer)
+{
+    history->priv->serializer = serializer;
+
+    GList *children, *iter;
+    children = gtk_container_get_children(GTK_CONTAINER(history->priv->listbox));
+    for (iter = children; iter != NULL; iter = g_list_next(iter))
+          math_history_entry_redisplay(MATH_HISTORY_ENTRY(iter->data), serializer);
+    g_list_free(children);
+}
+
 static void
 math_history_class_init(MathHistoryClass *klass)
 {
@@ -147,9 +144,9 @@ math_history_init(MathHistory *history)
     gtk_scrolled_window_set_policy(GTK_SCROLLED_WINDOW(history), GTK_POLICY_NEVER, GTK_POLICY_AUTOMATIC);
     gtk_scrolled_window_set_placement(GTK_SCROLLED_WINDOW(history), GTK_CORNER_TOP_LEFT);
 
+    history->priv->serializer = NULL;
     history->priv->current = 0;
     history->priv->rows = 0;
-    history->priv->last_answer = g_strdup("");
     history->priv->last_equation = g_strdup("");
     history->priv->listbox = gtk_list_box_new();
 

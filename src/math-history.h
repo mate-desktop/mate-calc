@@ -43,7 +43,7 @@ MathHistory *
 math_history_new(MathEquation *equation);
 
 void
-math_history_insert_entry(MathHistory *history, char *equation, MPNumber *answer, int number_base);
+math_history_insert_entry(MathHistory *history, char *equation, MPNumber *answer);
 
 gpointer
 math_history_get_entry_at(MathHistory *history, int index);
@@ -56,6 +56,9 @@ math_history_get_current(MathHistory *history);
 
 void
 math_history_clear(MathHistory *history);
+
+void
+math_history_set_serializer(MathHistory *history, MpSerializer *serializer);
 
 G_END_DECLS
 

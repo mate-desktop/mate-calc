@@ -288,6 +288,8 @@ reformat_display(MathEquation *equation)
 
     /* Add/remove thousands separators */
     reformat_separators(equation);
+
+    g_signal_emit_by_name(equation, "display-changed");
 }
 
 
@@ -980,8 +982,7 @@ math_equation_set_with_history(MathEquation *equation, const gchar *text)
 
     /* Notify history */
     state = get_current_state(equation);
-    g_signal_emit_by_name(equation, "history", state->expression, &x,
-                          mp_serializer_get_base(equation->priv->serializer));
+    g_signal_emit_by_name(equation, "history", state->expression, &x);
 
     free_state(state);
     mp_clear(&x);
@@ -1000,7 +1001,7 @@ math_equation_set_number(MathEquation *equation, const MPNumber *x)
 
     /* Notify history */
     state = get_current_state(equation);
-    g_signal_emit_by_name(equation, "history", state->expression, x, mp_serializer_get_base(equation->priv->serializer));
+    g_signal_emit_by_name(equation, "history", state->expression, x);
 
     /* Show the number in the user chosen format */
     text = mp_serializer_to_string(equation->priv->serializer, x);
@@ -1846,7 +1847,7 @@ math_equation_class_init(MathEquationClass *klass)
                                                         MP_TYPE_SERIALIZER,
                                                         G_PARAM_READABLE));
 
-    GType param_types[3] = {G_TYPE_STRING, G_TYPE_POINTER, G_TYPE_INT};
+    GType param_types[2] = {G_TYPE_STRING, G_TYPE_POINTER};
     g_signal_newv("history",
                   G_TYPE_FROM_CLASS(klass),
                   G_SIGNAL_RUN_LAST,
@@ -1855,8 +1856,19 @@ math_equation_class_init(MathEquationClass *klass)
                   NULL,
                   NULL,
                   G_TYPE_NONE,
-                  3,
+                  2,
                   param_types);
+
+    g_signal_new ("display-changed",
+                  G_TYPE_FROM_CLASS(klass),
+                  G_SIGNAL_RUN_LAST,
+                  0,
+                  NULL,
+                  NULL,
+                  NULL,
+                  G_TYPE_NONE,
+                  0,
+                  NULL);
 }
 
 
