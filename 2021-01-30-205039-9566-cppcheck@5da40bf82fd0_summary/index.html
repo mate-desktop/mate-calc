@@ -1,0 +1,166 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cppcheck - HTML report - mate-calc</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+    <script>
+      function getStyle(el, styleProp) {
+        var y;
+
+        if (el.currentStyle) {
+          y = el.currentStyle[styleProp];
+        } else if (window.getComputedStyle) {
+          y = document.defaultView.getComputedStyle(el, null).getPropertyValue(styleProp);
+        }
+
+        return y;
+      }
+
+      function toggle() {
+        var el = this.expandable_content;
+        var mark = this.expandable_marker;
+
+        if (el.style.display === "block") {
+          el.style.display = "none";
+          mark.textContent = "[+]";
+        } else {
+          el.style.display = "block";
+          mark.textContent = "[-]";
+        }
+      }
+
+      function initExpandables() {
+        var elements = document.querySelectorAll(".expandable");
+
+        for (var i = 0, len = elements.length; i < len; i++) {
+          var el = elements[i];
+          var clickable = el.querySelector("span");
+          var marker = clickable.querySelector(".marker");
+          var content = el.querySelector(".content");
+          var width = clickable.clientWidth - parseInt(getStyle(content, "padding-left")) - parseInt(getStyle(content, "padding-right"));
+          content.style.width = width + "px";
+          clickable.expandable_content = content;
+          clickable.expandable_marker = marker;
+          clickable.addEventListener("click", toggle);
+        }
+      }
+
+      function toggleDisplay(id) {
+        var elements = document.querySelectorAll("." + id);
+
+        for (var i = 0, len = elements.length; i < len; i++) {
+          elements[i].classList.toggle("d-none");
+        }
+      }
+
+      function toggleAll() {
+        var elements = document.querySelectorAll("input");
+
+        // starting from 1 since 0 is the "toggle all" input
+        for (var i = 1, len = elements.length; i < len; i++) {
+          var el = elements[i];
+
+          if (el.checked) {
+            el.checked = false;
+          } else {
+            el.checked = true;
+          }
+
+          toggleDisplay(el.id);
+        }
+      }
+      window.addEventListener("load", initExpandables);
+    </script>
+  </head>
+  <body>
+    <div id="header" class="header">
+      <h1>Cppcheck report - mate-calc: </h1>
+    </div>
+    <div class="wrapper">
+      <div id="menu_index">
+       <p id="filename"><a href="index.html">Defect summary;</a> </p>
+
+       <label><input type="checkbox" onclick="toggleAll()" checked> Toggle all</label>
+       <table>
+           <tr><th>Show</th><th>#</th><th>Defect ID</th></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="variableScope" name="variableScope" checked></td><td>23</td><td>variableScope</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="unusedStructMember" name="unusedStructMember" checked></td><td>4</td><td>unusedStructMember</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="unreadVariable" name="unreadVariable" checked></td><td>3</td><td>unreadVariable</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="invalidscanf" name="invalidscanf" checked></td><td>1</td><td>invalidscanf</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="knownConditionTrueFalse" name="knownConditionTrueFalse" checked></td><td>1</td><td>knownConditionTrueFalse</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="missingIncludeSystem" name="missingIncludeSystem" checked></td><td>1</td><td>missingIncludeSystem</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="redundantAssignment" name="redundantAssignment" checked></td><td>1</td><td>redundantAssignment</td></tr>
+           <tr><td></td><td>34</td><td>total</td></tr>
+       </table>
+       <p><a href="stats.html">Statistics</a></p>
+    </div>
+    <div id="content_index">
+
+       <table>
+       <tr><th>Line</th><th>Id</th><th>CWE</th><th>Severity</th><th>Message</th></tr>
+       <tr><td colspan="5"><a href="13.html"></a></td></tr>
+       <tr class="missingIncludeSystem"><td><a href="13.html#line-0">0</a></td><td>missingIncludeSystem</td><td></td><td>information</td><td >Cppcheck cannot find all the include files (use --check-config for details)</td></tr>
+       <tr><td colspan="5"><a href="0.html">src/lexer.c</a></td></tr>
+       <tr class="variableScope"><td><a href="0.html#line-34">34</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;count&apos; can be reduced.</td></tr>
+       <tr class="unreadVariable"><td><a href="0.html#line-125">125</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >Variable &apos;type&apos; is assigned a value that is never used.</td></tr>
+       <tr class="variableScope"><td><a href="0.html#line-533">533</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;token&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="1.html">src/mate-calc-cmd.c</a></td></tr>
+       <tr class="variableScope"><td><a href="1.html#line-72">72</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;line&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="2.html">src/mate-calc-resources.c</a></td></tr>
+       <tr class="unusedStructMember"><td><a href="2.html#line-10">10</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >union member &apos;Anonymous0::alignment&apos; is never used.</td></tr>
+       <tr class="unusedStructMember"><td><a href="2.html#line-10">10</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >union member &apos;Anonymous0::ptr&apos; is never used.</td></tr>
+       <tr class="unusedStructMember"><td><a href="2.html#line-947">947</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >union member &apos;Anonymous0::alignment&apos; is never used.</td></tr>
+       <tr class="unusedStructMember"><td><a href="2.html#line-947">947</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >union member &apos;Anonymous0::ptr&apos; is never used.</td></tr>
+       <tr><td colspan="5"><a href="3.html">src/mate-calc.c</a></td></tr>
+       <tr class="variableScope"><td><a href="3.html#line-127">127</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;arg&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="4.html">src/math-buttons.c</a></td></tr>
+       <tr class="unreadVariable"><td><a href="4.html#line-471">471</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >Variable &apos;valid&apos; is assigned a value that is never used.</td></tr>
+       <tr><td colspan="5"><a href="5.html">src/math-equation.c</a></td></tr>
+       <tr class="variableScope"><td><a href="5.html#line-872">872</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;text&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="5.html#line-1374">1374</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;next_factor&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="6.html">src/math-preferences.c</a></td></tr>
+       <tr class="unreadVariable"><td><a href="6.html#line-161">161</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >Variable &apos;valid&apos; is assigned a value that is never used.</td></tr>
+       <tr><td colspan="5"><a href="7.html">src/mp-convert.c</a></td></tr>
+       <tr class="invalidscanf"><td><a href="7.html#line-207">207</a></td><td>invalidscanf</td><td><a href="https://cwe.mitre.org/data/definitions/119.html">119</a></td><td>warning</td><td >sscanf() without field width limits can crash with huge input data.</td></tr>
+       <tr class="variableScope"><td><a href="7.html#line-238">238</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;numerators&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="7.html#line-239">239</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;denominators&apos; can be reduced.</td></tr>
+       <tr class="knownConditionTrueFalse"><td><a href="7.html#line-326">326</a></td><td>knownConditionTrueFalse</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The comparison &apos;multiplier != 0&apos; is always false.</td></tr>
+       <tr><td colspan="5"><a href="8.html">src/mp-equation.c</a></td></tr>
+       <tr class="variableScope"><td><a href="8.html#line-298">298</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;err&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="9.html">src/parser.c</a></td></tr>
+       <tr class="variableScope"><td><a href="9.html#line-326">326</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;c&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="9.html#line-327">327</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;buffer&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="9.html#line-541">541</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;token_old&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="9.html#line-542">542</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;node&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="9.html#line-1164">1164</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;token_old&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="9.html#line-1165">1165</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;node&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="9.html#line-1209">1209</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;node&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="10.html">src/parserfunc.c</a></td></tr>
+       <tr class="variableScope"><td><a href="10.html#line-171">171</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;c&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="10.html#line-172">172</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;buffer&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="10.html#line-227">227</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;c&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="10.html#line-228">228</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;buffer&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="11.html">src/unit-manager.c</a></td></tr>
+       <tr class="variableScope"><td><a href="11.html#line-196">196</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;u&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="11.html#line-216">216</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;u&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="12.html">src/unittest.c</a></td></tr>
+       <tr class="variableScope"><td><a href="12.html#line-81">81</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;result_str&apos; can be reduced.</td></tr>
+       <tr class="redundantAssignment"><td><a href="12.html#line-182">182</a></td><td>redundantAssignment</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >Variable &apos;options.base&apos; is reassigned a value before the old one has been used.</td></tr>
+       </table>
+      </div> <!-- /.wrapper -->
+    </div>
+    <div id="footer" class="footer">
+      <p>
+        Cppcheck 2.3 - a tool for static C/C++ code analysis<br>
+        <br>
+        Internet: <a href="http://cppcheck.net">http://cppcheck.net</a><br>
+        IRC: <a href="irc://irc.freenode.net/cppcheck">irc://irc.freenode.net/cppcheck</a><br>
+      </p>
+    </div>
+  </body>
+</html>
