@@ -601,14 +601,20 @@ mp_serializer_class_init(MpSerializerClass *klass)
 static void
 mp_serializer_init(MpSerializer *serializer)
 {
-    gchar *radix, *tsep;
+    gchar *radix, *utf8_radix, *tsep;
     serializer->priv = mp_serializer_get_instance_private (serializer);
 
     radix = nl_langinfo(RADIXCHAR);
-    serializer->priv->radix = radix ? g_utf8_get_char(g_locale_to_utf8(radix, -1, NULL, NULL, NULL)) : '.';
+    utf8_radix = g_locale_to_utf8(radix, -1, NULL, NULL, NULL);
+    serializer->priv->radix = radix ? g_utf8_get_char(utf8_radix) : '.';
+    g_free(utf8_radix);
     tsep = nl_langinfo(THOUSEP);
     if (tsep && tsep[0] != '\0')
-        serializer->priv->tsep = g_utf8_get_char(g_locale_to_utf8(tsep, -1, NULL, NULL, NULL));
+    {
+        gchar *utf8_tsep = g_locale_to_utf8(tsep, -1, NULL, NULL, NULL);
+        serializer->priv->tsep = g_utf8_get_char(utf8_tsep);
+        g_free(utf8_tsep);
+    }
     else
         serializer->priv->tsep = ' ';
     serializer->priv->tsep_count = 3;
