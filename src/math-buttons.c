@@ -354,7 +354,7 @@ load_finc_dialogs(MathButtons *buttons)
 static void
 update_bit_panel(MathButtons *buttons)
 {
-    MPNumber x = mp_new();
+    MPNumber x;
     gboolean enabled;
     guint64 bits;
     int i;
@@ -364,6 +364,7 @@ update_bit_panel(MathButtons *buttons)
     if (!buttons->priv->bit_panel)
         return;
 
+    x = mp_new();
     enabled = math_equation_get_number(buttons->priv->equation, &x);
 
     if (enabled) {
@@ -384,7 +385,10 @@ update_bit_panel(MathButtons *buttons)
     gtk_widget_set_sensitive(buttons->priv->base_label, enabled);
 
     if (!enabled)
+    {
+        mp_clear(&x);
         return;
+    }
 
     for (i = 0; i < MAXBITS; i++) {
         const gchar *bin_label;
