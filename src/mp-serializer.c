@@ -89,10 +89,10 @@ mp_to_string_real(MpSerializer *serializer, const MPNumber *x, int base, gboolea
     /* Write out the integer component least significant digit to most */
     mp_set_from_mp(&integer_component, &temp);
     i = 0;
+    MPNumber t = mp_new();
+    MPNumber t2 = mp_new();
+    MPNumber t3 = mp_new();
     do {
-        MPNumber t = mp_new();
-        MPNumber t2 = mp_new();
-        MPNumber t3 = mp_new();
         long d;
 
         if (serializer->priv->base == 10 && serializer->priv->show_tsep && i == serializer->priv->tsep_count) {
@@ -119,10 +119,10 @@ mp_to_string_real(MpSerializer *serializer, const MPNumber *x, int base, gboolea
         (*n_digits)++;
 
         mp_set_from_mp(&t, &temp);
-        mp_clear(&t);
-        mp_clear(&t2);
-        mp_clear(&t3);
     } while (!mp_is_zero(&temp));
+    mp_clear(&t);
+    mp_clear(&t2);
+    mp_clear(&t3);
 
     last_non_zero = string->len;
 
@@ -130,9 +130,9 @@ mp_to_string_real(MpSerializer *serializer, const MPNumber *x, int base, gboolea
 
     /* Write out the fractional component */
     mp_set_from_mp(&fractional_component, &temp);
+    MPNumber digit = mp_new();
     for (i = serializer->priv->trailing_digits; i > 0 && !mp_is_zero(&temp); i--) {
         int d;
-        MPNumber digit = mp_new();
 
         mp_multiply_integer(&temp, base, &temp);
         mp_floor(&temp, &digit);
@@ -143,8 +143,8 @@ mp_to_string_real(MpSerializer *serializer, const MPNumber *x, int base, gboolea
         if(d != 0)
             last_non_zero = string->len;
         mp_subtract(&temp, &digit, &temp);
-        mp_clear(&digit);
     }
+    mp_clear(&digit);
 
     /* Strip trailing zeroes */
     if (!serializer->priv->show_zeroes || serializer->priv->trailing_digits == 0)
