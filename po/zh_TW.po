@@ -12,9 +12,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc 1.23.0\n"
+"Project-Id-Version: mate-calc 1.24.0\n"
 "Report-Msgid-Bugs-To: http://mate-desktop.org\n"
-"POT-Creation-Date: 2020-01-14 20:58+0100\n"
+"POT-Creation-Date: 2020-08-17 12:26+0200\n"
 "PO-Revision-Date: 2020-02-15 13:04+0000\n"
 "Last-Translator: 黃柏諺 <s8321414@gmail.com>, 2020\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/mate/teams/13566/zh_TW/)\n"
@@ -560,24 +560,18 @@ msgstr ""
 "MATE Calc 是一個 GNOME Calc 的分支以及 MATE 桌面環境的一部份。若您想要知道更多關於 MATE 與 MATE Calc "
 "的資訊，請拜訪專案首頁。"
 
-#: data/mate-calc.desktop.in:3 src/math-window.c:261
+#: data/mate-calc.desktop.in:3 src/math-window.c:282
 msgid "MATE Calculator"
 msgstr "MATE 計算機"
 
 #. Title of main window
-#: data/mate-calc.desktop.in:4 src/math-window.c:568
+#: data/mate-calc.desktop.in:4 src/math-window.c:590
 msgid "Calculator"
 msgstr "計算機"
 
 #: data/mate-calc.desktop.in:5
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "進行數字、科學或金融的計算"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: data/mate-calc.desktop.in:8
-msgid "accessories-calculator"
-msgstr "accessories-calculator"
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
@@ -1302,7 +1296,7 @@ msgstr "16 進位"
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] ""
+msgstr[0] "_%d位數"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
@@ -1310,7 +1304,7 @@ msgstr[0] ""
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] ""
+msgstr[0] "%d 位數"
 
 #. Tooltip for the round button
 #: src/math-buttons.c:1001
@@ -1550,15 +1544,15 @@ msgstr "顯示小數點後 %d 位數(_P)"
 msgid "Unable to open help file"
 msgstr "無法開啟求助檔案"
 
-#: src/math-window.c:234
+#: src/math-window.c:230
 msgid "Sun Microsystems"
 msgstr "昇陽電腦"
 
-#: src/math-window.c:235
+#: src/math-window.c:231
 msgid "MATE Documentation Team"
 msgstr "MATE 文件團隊"
 
-#: src/math-window.c:241
+#: src/math-window.c:237
 msgid ""
 "MATE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -1568,7 +1562,7 @@ msgstr ""
 "MATE 計算機為自由軟體；您可依據自由軟體基金會所發表的 GNU 通用公共授權\n"
 "條款規定，就本程式再為散布與／或修改；無論您依據的是本授權的第二版或（您自行選擇的）任一日後發行的版本。"
 
-#: src/math-window.c:245
+#: src/math-window.c:241
 msgid ""
 "MATE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
@@ -1577,7 +1571,7 @@ msgid ""
 msgstr ""
 "MATE 計算機係基於使用目的而加以散布，然而不負任何擔保責任；亦無對適售性或特定目的適用性所為的默示性擔保。詳情請參照 GNU 通用公共授權。"
 
-#: src/math-window.c:249
+#: src/math-window.c:245
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
@@ -1586,11 +1580,11 @@ msgstr ""
 "您應該已收到附於 MATE 計算機的 GNU 通用公共授權的副本。如果沒有，請寫信至：Free Software Foundation, Inc., "
 "51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA"
 
-#: src/math-window.c:263
+#: src/math-window.c:284
 msgid "About MATE Calculator"
 msgstr "關於 MATE 計算機"
 
-#: src/math-window.c:264
+#: src/math-window.c:285
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2020 MATE developers"
@@ -1598,11 +1592,11 @@ msgstr ""
 "Copyright © 1986–2010 GCalctool 作者群\n"
 "Copyright © 2011–2020 MATE 開發者"
 
-#: src/math-window.c:267
+#: src/math-window.c:288
 msgid "Calculator with financial and scientific modes."
 msgstr "附有財務及科學計算模式的計算機。"
 
-#: src/math-window.c:270
+#: src/math-window.c:291
 msgid "translator-credits"
 msgstr ""
 "黃柏諺 <s8321414@yahoo.com.tw>,2013-14\n"
@@ -1613,70 +1607,70 @@ msgstr ""
 "Walter Cheuk <wwycheuk@gmail.com>, 2016."
 
 #. Calculator menu
-#: src/math-window.c:403
+#: src/math-window.c:425
 msgid "_Calculator"
 msgstr "計算機(_C)"
 
 #. Mode menu
-#: src/math-window.c:405
+#: src/math-window.c:427
 msgid "_Mode"
 msgstr "模式(_M)"
 
 #. Help menu label
-#: src/math-window.c:407
+#: src/math-window.c:429
 msgid "_Help"
 msgstr "說明(_H)"
 
 #. Basic menu label
-#: src/math-window.c:409
+#: src/math-window.c:431
 msgid "_Basic"
 msgstr "基本模式(_B)"
 
 #. Advanced menu label
-#: src/math-window.c:411
+#: src/math-window.c:433
 msgid "_Advanced"
 msgstr "進階模式(_A)"
 
 #. Financial menu label
-#: src/math-window.c:413
+#: src/math-window.c:435
 msgid "_Financial"
 msgstr "財務計算模式(_F)"
 
 #. Programming menu label
-#: src/math-window.c:415
+#: src/math-window.c:437
 msgid "_Programming"
 msgstr "軟體開發(_P)"
 
 #. Help>Contents menu label
-#: src/math-window.c:417
+#: src/math-window.c:439
 msgid "_Contents"
 msgstr "內容(_C)"
 
-#: src/math-window.c:420
+#: src/math-window.c:442
 msgid "_Copy"
 msgstr "複製(_C)"
 
-#: src/math-window.c:422
+#: src/math-window.c:444
 msgid "_Paste"
 msgstr "貼上(_P)"
 
-#: src/math-window.c:424
+#: src/math-window.c:446
 msgid "_Undo"
 msgstr "復原(_U)"
 
-#: src/math-window.c:426
+#: src/math-window.c:448
 msgid "_Redo"
 msgstr "重做(_R)"
 
-#: src/math-window.c:429
+#: src/math-window.c:451
 msgid "_Preferences"
 msgstr "偏好設定(_P)"
 
-#: src/math-window.c:431
+#: src/math-window.c:453
 msgid "_Quit"
 msgstr "結束(_Q)"
 
-#: src/math-window.c:448
+#: src/math-window.c:470
 msgid "_About"
 msgstr "關於(_A)"
 

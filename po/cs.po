@@ -13,14 +13,15 @@
 # Lukáš Kvídera <lukas.kvidera@seznam.cz>, 2020
 # ToMáš Marný, 2020
 # Lucas Lommer <drom@kdyne.net>, 2020
+# Roman Horník <roman.hornik@debian-linux.cz>, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc 1.23.0\n"
+"Project-Id-Version: mate-calc 1.24.0\n"
 "Report-Msgid-Bugs-To: http://mate-desktop.org\n"
-"POT-Creation-Date: 2020-01-14 20:58+0100\n"
+"POT-Creation-Date: 2020-08-17 12:26+0200\n"
 "PO-Revision-Date: 2020-02-15 13:04+0000\n"
-"Last-Translator: Lucas Lommer <drom@kdyne.net>, 2020\n"
+"Last-Translator: Roman Horník <roman.hornik@debian-linux.cz>, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/mate/teams/13566/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -118,7 +119,7 @@ msgstr "Dolní index"
 
 #: src/buttons-advanced.ui:966
 msgid "const"
-msgstr ""
+msgstr "konstanta"
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
@@ -591,24 +592,18 @@ msgstr ""
 " Pokud byste se chtěli dozvědět více o MATE a MATE Calc, navštivte domovskou"
 " stránku projektu."
 
-#: data/mate-calc.desktop.in:3 src/math-window.c:261
+#: data/mate-calc.desktop.in:3 src/math-window.c:282
 msgid "MATE Calculator"
 msgstr "MATE Kalkulačka"
 
 #. Title of main window
-#: data/mate-calc.desktop.in:4 src/math-window.c:568
+#: data/mate-calc.desktop.in:4 src/math-window.c:590
 msgid "Calculator"
 msgstr "Kalkulačka"
 
 #: data/mate-calc.desktop.in:5
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Provádí aritmetické, vědecké i finanční výpočty"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: data/mate-calc.desktop.in:8
-msgid "accessories-calculator"
-msgstr "accessories-calculator"
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
@@ -1591,15 +1586,15 @@ msgstr "Zobrazovat %d desetinných _míst"
 msgid "Unable to open help file"
 msgstr "Nezdařilo se otevření souboru nápovědy"
 
-#: src/math-window.c:234
+#: src/math-window.c:230
 msgid "Sun Microsystems"
 msgstr "Sun Microsystems"
 
-#: src/math-window.c:235
+#: src/math-window.c:231
 msgid "MATE Documentation Team"
 msgstr "Dokumentační tým MATE"
 
-#: src/math-window.c:241
+#: src/math-window.c:237
 msgid ""
 "MATE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -1611,7 +1606,7 @@ msgstr ""
 "Foundation; a to buď verze 2 této licence anebo (podle vlastního uvážení) "
 "kterékoliv pozdější verze."
 
-#: src/math-window.c:245
+#: src/math-window.c:241
 msgid ""
 "MATE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
@@ -1623,7 +1618,7 @@ msgstr ""
 "KONKRÉTNÍ ÚČEL. Více podrobností najdete přímo v licenci GNU General Public "
 "License."
 
-#: src/math-window.c:249
+#: src/math-window.c:245
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
@@ -1633,11 +1628,11 @@ msgstr ""
 "kalkulačkou; pokud ne, napište na: Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 
-#: src/math-window.c:263
+#: src/math-window.c:284
 msgid "About MATE Calculator"
 msgstr "O kalkulačce"
 
-#: src/math-window.c:264
+#: src/math-window.c:285
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2020 MATE developers"
@@ -1645,11 +1640,11 @@ msgstr ""
 "Copyright © 1986–2010 Autoři GCalctool\n"
 "Copyright © 2011-2020 Vývojáři MATE"
 
-#: src/math-window.c:267
+#: src/math-window.c:288
 msgid "Calculator with financial and scientific modes."
 msgstr "Kalkulačka s finančním a vědeckým režimem."
 
-#: src/math-window.c:270
+#: src/math-window.c:291
 msgid "translator-credits"
 msgstr ""
 "Stanislav Brabec <utx@penguin.cz>\n"
@@ -1666,70 +1661,70 @@ msgstr ""
 "Roman Horník <roman.hornik@debian-linux.cz>"
 
 #. Calculator menu
-#: src/math-window.c:403
+#: src/math-window.c:425
 msgid "_Calculator"
 msgstr "_Kalkulátor"
 
 #. Mode menu
-#: src/math-window.c:405
+#: src/math-window.c:427
 msgid "_Mode"
 msgstr "Reži_m"
 
 #. Help menu label
-#: src/math-window.c:407
+#: src/math-window.c:429
 msgid "_Help"
 msgstr "_Nápověda"
 
 #. Basic menu label
-#: src/math-window.c:409
+#: src/math-window.c:431
 msgid "_Basic"
 msgstr "_Základní"
 
 #. Advanced menu label
-#: src/math-window.c:411
+#: src/math-window.c:433
 msgid "_Advanced"
 msgstr "_Pokročilá"
 
 #. Financial menu label
-#: src/math-window.c:413
+#: src/math-window.c:435
 msgid "_Financial"
 msgstr "_Finanční"
 
 #. Programming menu label
-#: src/math-window.c:415
+#: src/math-window.c:437
 msgid "_Programming"
 msgstr "_Programátorský"
 
 #. Help>Contents menu label
-#: src/math-window.c:417
+#: src/math-window.c:439
 msgid "_Contents"
 msgstr "_Obsah"
 
-#: src/math-window.c:420
+#: src/math-window.c:442
 msgid "_Copy"
 msgstr "_Kopírovat"
 
-#: src/math-window.c:422
+#: src/math-window.c:444
 msgid "_Paste"
 msgstr "V_ložit"
 
-#: src/math-window.c:424
+#: src/math-window.c:446
 msgid "_Undo"
 msgstr "_Zpět"
 
-#: src/math-window.c:426
+#: src/math-window.c:448
 msgid "_Redo"
 msgstr "Zn_ovu"
 
-#: src/math-window.c:429
+#: src/math-window.c:451
 msgid "_Preferences"
 msgstr "_Předvolby"
 
-#: src/math-window.c:431
+#: src/math-window.c:453
 msgid "_Quit"
 msgstr "U_končit"
 
-#: src/math-window.c:448
+#: src/math-window.c:470
 msgid "_About"
 msgstr "O _aplikaci"
 

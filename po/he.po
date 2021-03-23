@@ -4,18 +4,18 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# shy tzedaka <shaytzedaka123@gmail.com>, 2020
 # בר בוכובזה <bokovzabox@gmail.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Yaron Shahrabani <sh.yaron@gmail.com>, 2020
+# shy tzedaka <shaytzedaka123@gmail.com>, 2020
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc 1.23.0\n"
+"Project-Id-Version: mate-calc 1.24.0\n"
 "Report-Msgid-Bugs-To: http://mate-desktop.org\n"
-"POT-Creation-Date: 2020-01-14 20:58+0100\n"
+"POT-Creation-Date: 2020-08-17 12:26+0200\n"
 "PO-Revision-Date: 2020-02-15 13:04+0000\n"
-"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>, 2020\n"
+"Last-Translator: shy tzedaka <shaytzedaka123@gmail.com>, 2020\n"
 "Language-Team: Hebrew (https://www.transifex.com/mate/teams/13566/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -128,7 +128,7 @@ msgstr "משך הצבירה"
 #: src/buttons-financial.ui:1466 src/buttons-financial.ui:1679
 #: src/buttons-programming.ui:29
 msgid "_Cancel"
-msgstr "_בטל"
+msgstr "_ביטול"
 
 #. Compounding Term Dialog: Calculate button
 #. Double-Declining Depreciation Dialog: Calculate button
@@ -582,24 +582,18 @@ msgstr ""
 "MATE. אם מעניין אותך לדעת עוד על MATE ועל המחשבון של MATE, נא לבקר בדף הבית "
 "של המיזם."
 
-#: data/mate-calc.desktop.in:3 src/math-window.c:261
+#: data/mate-calc.desktop.in:3 src/math-window.c:282
 msgid "MATE Calculator"
 msgstr "המחשבון של MATE"
 
 #. Title of main window
-#: data/mate-calc.desktop.in:4 src/math-window.c:568
+#: data/mate-calc.desktop.in:4 src/math-window.c:590
 msgid "Calculator"
 msgstr "מחשבון"
 
 #: data/mate-calc.desktop.in:5
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "ביצוע חישובים פשוטים, מדעיים וכלכליים."
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: data/mate-calc.desktop.in:8
-msgid "accessories-calculator"
-msgstr "accessories-calculator"
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
@@ -1581,15 +1575,15 @@ msgstr "הצגת %d _מקומות עשרוניים"
 msgid "Unable to open help file"
 msgstr "לא ניתן לפתוח את קובץ העזרה"
 
-#: src/math-window.c:234
+#: src/math-window.c:230
 msgid "Sun Microsystems"
 msgstr "סאן מיקרוסיסטמס"
 
-#: src/math-window.c:235
+#: src/math-window.c:231
 msgid "MATE Documentation Team"
 msgstr "צוות התיעוד של MATE"
 
-#: src/math-window.c:241
+#: src/math-window.c:237
 msgid ""
 "MATE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -1600,7 +1594,7 @@ msgstr ""
 "הרישיון הציבורי הכללי של GNU כפי שפורסם על ידי קרן התכנה החופשית, בין אם "
 "גרסה 2 של הרישיון או (לשיקולך) גרסה עדכנית יותר שלו."
 
-#: src/math-window.c:245
+#: src/math-window.c:241
 msgid ""
 "MATE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
@@ -1611,7 +1605,7 @@ msgstr ""
 " למסחריות או התאמה לשימוש מסוים. ניתן לעיין ברישיון הציבורי הכללי של GNU "
 "לפרטים נוספים."
 
-#: src/math-window.c:249
+#: src/math-window.c:245
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
@@ -1621,11 +1615,11 @@ msgstr ""
 "אם לא, יש לכתוב אל Free Software Foundation, Inc., 51 Franklin Street, Fifth"
 " Floor, Boston, MA 02110-1301, USA."
 
-#: src/math-window.c:263
+#: src/math-window.c:284
 msgid "About MATE Calculator"
 msgstr "על אודות המחשבון של MATE"
 
-#: src/math-window.c:264
+#: src/math-window.c:285
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2020 MATE developers"
@@ -1633,79 +1627,79 @@ msgstr ""
 "כל הזכויות שמורות © 1986–2010 יוצרי GCalctool\n"
 "כל הזכויות שמורות © 2011-2020 מפתחי MATE"
 
-#: src/math-window.c:267
+#: src/math-window.c:288
 msgid "Calculator with financial and scientific modes."
 msgstr "מחשבון עם מצבים פיננסיים ומדעיים"
 
-#: src/math-window.c:270
+#: src/math-window.c:291
 msgid "translator-credits"
 msgstr "Yaron Shahrabani <sh.yaron@gmail.com>"
 
 #. Calculator menu
-#: src/math-window.c:403
+#: src/math-window.c:425
 msgid "_Calculator"
 msgstr "_מחשבון"
 
 #. Mode menu
-#: src/math-window.c:405
+#: src/math-window.c:427
 msgid "_Mode"
 msgstr "_מצב"
 
 #. Help menu label
-#: src/math-window.c:407
+#: src/math-window.c:429
 msgid "_Help"
 msgstr "ע_זרה"
 
 #. Basic menu label
-#: src/math-window.c:409
+#: src/math-window.c:431
 msgid "_Basic"
 msgstr "_בסיסי"
 
 #. Advanced menu label
-#: src/math-window.c:411
+#: src/math-window.c:433
 msgid "_Advanced"
 msgstr "_מתקדם"
 
 #. Financial menu label
-#: src/math-window.c:413
+#: src/math-window.c:435
 msgid "_Financial"
 msgstr "_פיננסי"
 
 #. Programming menu label
-#: src/math-window.c:415
+#: src/math-window.c:437
 msgid "_Programming"
 msgstr "_תכנות"
 
 #. Help>Contents menu label
-#: src/math-window.c:417
+#: src/math-window.c:439
 msgid "_Contents"
 msgstr "_תוכן עניינים"
 
-#: src/math-window.c:420
+#: src/math-window.c:442
 msgid "_Copy"
 msgstr "ה_עתק"
 
-#: src/math-window.c:422
+#: src/math-window.c:444
 msgid "_Paste"
 msgstr "ה_דבק"
 
-#: src/math-window.c:424
+#: src/math-window.c:446
 msgid "_Undo"
-msgstr "_בטל"
+msgstr "_ביטול"
 
-#: src/math-window.c:426
+#: src/math-window.c:448
 msgid "_Redo"
 msgstr "_ביצוע שוב"
 
-#: src/math-window.c:429
+#: src/math-window.c:451
 msgid "_Preferences"
 msgstr "ה_עדפות"
 
-#: src/math-window.c:431
+#: src/math-window.c:453
 msgid "_Quit"
 msgstr "_יציאה"
 
-#: src/math-window.c:448
+#: src/math-window.c:470
 msgid "_About"
 msgstr "על _אודות"
 

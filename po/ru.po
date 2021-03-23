@@ -20,9 +20,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc 1.23.0\n"
+"Project-Id-Version: mate-calc 1.24.0\n"
 "Report-Msgid-Bugs-To: http://mate-desktop.org\n"
-"POT-Creation-Date: 2020-01-14 20:58+0100\n"
+"POT-Creation-Date: 2020-08-17 12:26+0200\n"
 "PO-Revision-Date: 2020-02-15 13:04+0000\n"
 "Last-Translator: Anna Vyalkova <cybertailor@gmail.com>, 2020\n"
 "Language-Team: Russian (https://www.transifex.com/mate/teams/13566/ru/)\n"
@@ -596,24 +596,18 @@ msgstr ""
 " Если вы хотите узнать больше о MATE и Калькуляторе MATE, пожалуйста, "
 "посетите домашнюю страницу проекта. "
 
-#: data/mate-calc.desktop.in:3 src/math-window.c:261
+#: data/mate-calc.desktop.in:3 src/math-window.c:282
 msgid "MATE Calculator"
 msgstr "Калькулятор MATE"
 
 #. Title of main window
-#: data/mate-calc.desktop.in:4 src/math-window.c:568
+#: data/mate-calc.desktop.in:4 src/math-window.c:590
 msgid "Calculator"
 msgstr "Калькулятор"
 
 #: data/mate-calc.desktop.in:5
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Вычисления: арифметические, научные и финансовые"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: data/mate-calc.desktop.in:8
-msgid "accessories-calculator"
-msgstr "accessories-calculator"
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
@@ -1593,15 +1587,15 @@ msgstr "Показывать %d десятичных _разрядов"
 msgid "Unable to open help file"
 msgstr "Не удалось открыть файл справки"
 
-#: src/math-window.c:234
+#: src/math-window.c:230
 msgid "Sun Microsystems"
 msgstr "Sun Microsystems"
 
-#: src/math-window.c:235
+#: src/math-window.c:231
 msgid "MATE Documentation Team"
 msgstr "Команда документирования MATE"
 
-#: src/math-window.c:241
+#: src/math-window.c:237
 msgid ""
 "MATE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -1613,7 +1607,7 @@ msgstr ""
 "License, опубликованной Фондом свободного программного обеспечения; либо "
 "версии 2 этой лицензии, либо (по вашему выбору) любой более поздней версии."
 
-#: src/math-window.c:245
+#: src/math-window.c:241
 msgid ""
 "MATE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
@@ -1626,7 +1620,7 @@ msgstr ""
 "ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ. Для получения дополнительных "
 "сведений обратитесь к лицензии GNU General Public License."
 
-#: src/math-window.c:249
+#: src/math-window.c:245
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
@@ -1637,11 +1631,11 @@ msgstr ""
 "Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  "
 "02110-1301 USA."
 
-#: src/math-window.c:263
+#: src/math-window.c:284
 msgid "About MATE Calculator"
 msgstr "О приложении Калькулятор MATE"
 
-#: src/math-window.c:264
+#: src/math-window.c:285
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2020 MATE developers"
@@ -1649,11 +1643,11 @@ msgstr ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2020 MATE developers"
 
-#: src/math-window.c:267
+#: src/math-window.c:288
 msgid "Calculator with financial and scientific modes."
 msgstr "Калькулятор с финансовым и научным режимами."
 
-#: src/math-window.c:270
+#: src/math-window.c:291
 msgid "translator-credits"
 msgstr ""
 "Александр Сапрыкин <xelfium@gmail.com>\n"
@@ -1690,70 +1684,70 @@ msgstr ""
 "Evolve32 <evolve32@ya.ru>"
 
 #. Calculator menu
-#: src/math-window.c:403
+#: src/math-window.c:425
 msgid "_Calculator"
 msgstr "_Калькулятор"
 
 #. Mode menu
-#: src/math-window.c:405
+#: src/math-window.c:427
 msgid "_Mode"
 msgstr "_Режим"
 
 #. Help menu label
-#: src/math-window.c:407
+#: src/math-window.c:429
 msgid "_Help"
 msgstr "_Справка"
 
 #. Basic menu label
-#: src/math-window.c:409
+#: src/math-window.c:431
 msgid "_Basic"
 msgstr "_Простой"
 
 #. Advanced menu label
-#: src/math-window.c:411
+#: src/math-window.c:433
 msgid "_Advanced"
 msgstr "_Расширенный"
 
 #. Financial menu label
-#: src/math-window.c:413
+#: src/math-window.c:435
 msgid "_Financial"
 msgstr "_Финансовый"
 
 #. Programming menu label
-#: src/math-window.c:415
+#: src/math-window.c:437
 msgid "_Programming"
 msgstr "Пр_ограммирование"
 
 #. Help>Contents menu label
-#: src/math-window.c:417
+#: src/math-window.c:439
 msgid "_Contents"
 msgstr "_Содержание"
 
-#: src/math-window.c:420
+#: src/math-window.c:442
 msgid "_Copy"
 msgstr "_Копировать"
 
-#: src/math-window.c:422
+#: src/math-window.c:444
 msgid "_Paste"
 msgstr "Вст_авить"
 
-#: src/math-window.c:424
+#: src/math-window.c:446
 msgid "_Undo"
 msgstr "_Отменить"
 
-#: src/math-window.c:426
+#: src/math-window.c:448
 msgid "_Redo"
 msgstr "Ве_рнуть"
 
-#: src/math-window.c:429
+#: src/math-window.c:451
 msgid "_Preferences"
 msgstr "Н_астройка"
 
-#: src/math-window.c:431
+#: src/math-window.c:453
 msgid "_Quit"
 msgstr "_Выход"
 
-#: src/math-window.c:448
+#: src/math-window.c:470
 msgid "_About"
 msgstr "_О программе"
 

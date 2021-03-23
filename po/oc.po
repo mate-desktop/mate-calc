@@ -9,15 +9,15 @@
 # 48c2de07903ce5a77a8e90265f95c4c2_8909374 <837c8d0ab97b27e737893c19f79bd4de_348476>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Cédric Valmary <cvalmary@yahoo.fr>, 2020
-# Quentin PAGÈS, 2020
+# Quentin PAGÈS, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc 1.23.0\n"
+"Project-Id-Version: mate-calc 1.24.0\n"
 "Report-Msgid-Bugs-To: http://mate-desktop.org\n"
-"POT-Creation-Date: 2020-01-14 20:58+0100\n"
+"POT-Creation-Date: 2020-08-17 12:26+0200\n"
 "PO-Revision-Date: 2020-02-15 13:04+0000\n"
-"Last-Translator: Quentin PAGÈS, 2020\n"
+"Last-Translator: Quentin PAGÈS, 2021\n"
 "Language-Team: Occitan (post 1500) (https://www.transifex.com/mate/teams/13566/oc/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -571,7 +571,7 @@ msgstr "MATE Calc"
 
 #: data/mate-calc.appdata.xml.in:8
 msgid "MATE Desktop calculator"
-msgstr ""
+msgstr "Calculadoira de burèu MATE"
 
 #: data/mate-calc.appdata.xml.in:10
 msgid ""
@@ -579,6 +579,9 @@ msgid ""
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
 msgstr ""
+"MATE Calc es una calculadoira potenta amb mòdes finança, logic e scientific."
+" Emplega d’unes paquets de precisions per son aritmetica per dire de donar "
+"un naut grau d’exactitud."
 
 #: data/mate-calc.appdata.xml.in:15
 msgid ""
@@ -586,25 +589,22 @@ msgid ""
 "If you would like to know more about MATE and MATE Calc, please visit the "
 "project's home page."
 msgstr ""
+"MATE Calc es una derivacion de GNOME Calc e fa part de l’environament de "
+"burèu MATE. Se volètz ne saber mai a prepaus de MATE e MATE Calc, consultatz"
+" lo site del projècte."
 
-#: data/mate-calc.desktop.in:3 src/math-window.c:261
+#: data/mate-calc.desktop.in:3 src/math-window.c:282
 msgid "MATE Calculator"
 msgstr "Calculadoira MATE"
 
 #. Title of main window
-#: data/mate-calc.desktop.in:4 src/math-window.c:568
+#: data/mate-calc.desktop.in:4 src/math-window.c:590
 msgid "Calculator"
 msgstr "Calculadoira"
 
 #: data/mate-calc.desktop.in:5
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Effectue de calculs aritmetics, scientifics o financièrs"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: data/mate-calc.desktop.in:8
-msgid "accessories-calculator"
-msgstr "accessories-calculator"
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
@@ -1011,7 +1011,7 @@ msgstr ""
 #: src/mate-calc.c:171
 #, c-format
 msgid "Unknown argument '%s'"
-msgstr ""
+msgstr "Argument desconegut « %s »"
 
 #. Tooltip for the Pi button
 #: src/math-buttons.c:96
@@ -1569,15 +1569,15 @@ msgstr "Afichar %d de_cimalas"
 msgid "Unable to open help file"
 msgstr "Impossible de dobrir lo fichièr d'ajuda"
 
-#: src/math-window.c:234
+#: src/math-window.c:230
 msgid "Sun Microsystems"
 msgstr "Sun Microsystems"
 
-#: src/math-window.c:235
+#: src/math-window.c:231
 msgid "MATE Documentation Team"
 msgstr "MATE Documentation Team"
 
-#: src/math-window.c:241
+#: src/math-window.c:237
 msgid ""
 "MATE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -1589,33 +1589,33 @@ msgstr ""
 "es publicada per la Free Software Foundation ; version 2 de la licéncia, o "
 "(se volètz) tota version seguenta."
 
-#: src/math-window.c:245
+#: src/math-window.c:241
 msgid ""
 "MATE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
 "or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
 " more details."
 msgstr ""
-"La Calculadoira de MATE es distribuit en esperant que vos serà util mas SENS"
-" CAP DE GARANTIA ; sens tanpauc la garantia implicita de VALOR MERCANDA o "
-"D'ADEQÜACION A UN BESONH PARTICULIER. Consultatz la licéncia publica "
-"generala GNU per mai d'entresenhas."
+"La Calculadoira de MATE es distribuida en esperant que vos serà util mas "
+"SENS CAP DE GARANTIDA ; sens tanpauc la garantida implicita de VALOR "
+"MERCANDA o D'ADEQÜACION A UN BESONH PARTICULAR. Consultatz la licéncia "
+"publica generala GNU per mai d'entresenhas."
 
-#: src/math-window.c:249
+#: src/math-window.c:245
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
-"Debètz aver recebuda una còpia de la licéncia generala publica GNU amb la "
+"Devètz aver recebuda una còpia de la licéncia generala publica GNU amb la "
 "Calculadoira de MATE ; s'es pas lo cas, escribètz a la Free Software "
 "Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA"
 
-#: src/math-window.c:263
+#: src/math-window.c:284
 msgid "About MATE Calculator"
 msgstr "A prepaus de la Calculadoira MATE"
 
-#: src/math-window.c:264
+#: src/math-window.c:285
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2020 MATE developers"
@@ -1623,81 +1623,81 @@ msgstr ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2020 Los desvolopaires de MATE"
 
-#: src/math-window.c:267
+#: src/math-window.c:288
 msgid "Calculator with financial and scientific modes."
 msgstr "Calculadoira amb de mòdes financièrs e scientifics."
 
-#: src/math-window.c:270
+#: src/math-window.c:291
 msgid "translator-credits"
 msgstr ""
 "Yannig Marchegay (Kokoyaya) <yannig@marchegay.org> & Cédric Valmary "
 "(totenoc.eu) <cvalmary@yahoo.fr>"
 
 #. Calculator menu
-#: src/math-window.c:403
+#: src/math-window.c:425
 msgid "_Calculator"
 msgstr "Calc_uladoira"
 
 #. Mode menu
-#: src/math-window.c:405
+#: src/math-window.c:427
 msgid "_Mode"
-msgstr ""
+msgstr "_Mòde"
 
 #. Help menu label
-#: src/math-window.c:407
+#: src/math-window.c:429
 msgid "_Help"
 msgstr "Aju_da"
 
 #. Basic menu label
-#: src/math-window.c:409
+#: src/math-window.c:431
 msgid "_Basic"
 msgstr "_Basic"
 
 #. Advanced menu label
-#: src/math-window.c:411
+#: src/math-window.c:433
 msgid "_Advanced"
 msgstr "_Avançat"
 
 #. Financial menu label
-#: src/math-window.c:413
+#: src/math-window.c:435
 msgid "_Financial"
 msgstr "_Financièr"
 
 #. Programming menu label
-#: src/math-window.c:415
+#: src/math-window.c:437
 msgid "_Programming"
-msgstr ""
+msgstr "_Programacion"
 
 #. Help>Contents menu label
-#: src/math-window.c:417
+#: src/math-window.c:439
 msgid "_Contents"
 msgstr "_Ensenhador"
 
-#: src/math-window.c:420
+#: src/math-window.c:442
 msgid "_Copy"
 msgstr "_Copiar"
 
-#: src/math-window.c:422
+#: src/math-window.c:444
 msgid "_Paste"
 msgstr "_Pegar"
 
-#: src/math-window.c:424
+#: src/math-window.c:446
 msgid "_Undo"
 msgstr "_Anullar"
 
-#: src/math-window.c:426
+#: src/math-window.c:448
 msgid "_Redo"
 msgstr "_Tornar far"
 
-#: src/math-window.c:429
+#: src/math-window.c:451
 msgid "_Preferences"
 msgstr "_Preferéncias"
 
-#: src/math-window.c:431
+#: src/math-window.c:453
 msgid "_Quit"
 msgstr "_Quitar"
 
-#: src/math-window.c:448
+#: src/math-window.c:470
 msgid "_About"
 msgstr "A _prepaus"
 

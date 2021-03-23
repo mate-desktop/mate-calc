@@ -9,15 +9,15 @@
 # Wolfgang Ulbrich <mate@raveit.de>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Vlad - <priv4417@gmail.com>, 2020
-# Микола Ткач <chistomov@gmail.com>, 2020
+# Микола Ткач <chistomov@gmail.com>, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc 1.23.0\n"
+"Project-Id-Version: mate-calc 1.24.0\n"
 "Report-Msgid-Bugs-To: http://mate-desktop.org\n"
-"POT-Creation-Date: 2020-01-14 20:58+0100\n"
+"POT-Creation-Date: 2020-08-17 12:26+0200\n"
 "PO-Revision-Date: 2020-02-15 13:04+0000\n"
-"Last-Translator: Микола Ткач <chistomov@gmail.com>, 2020\n"
+"Last-Translator: Микола Ткач <chistomov@gmail.com>, 2021\n"
 "Language-Team: Ukrainian (https://www.transifex.com/mate/teams/13566/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -592,24 +592,18 @@ msgstr ""
 "MATE. Якщо ви хочете дізнатися більше про MATE або MATE Calc, будь ласка, "
 "відвідайте домашню сторінку проєкту."
 
-#: data/mate-calc.desktop.in:3 src/math-window.c:261
+#: data/mate-calc.desktop.in:3 src/math-window.c:282
 msgid "MATE Calculator"
 msgstr "Рахівник MATE"
 
 #. Title of main window
-#: data/mate-calc.desktop.in:4 src/math-window.c:568
+#: data/mate-calc.desktop.in:4 src/math-window.c:590
 msgid "Calculator"
 msgstr "Рахівник"
 
 #: data/mate-calc.desktop.in:5
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Виконання арифметичних, наукових або фінансових розрахунків"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: data/mate-calc.desktop.in:8
-msgid "accessories-calculator"
-msgstr "accessories-calculator"
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
@@ -1335,10 +1329,10 @@ msgstr "Шістнадцяткова"
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "_%d місце"
+msgstr[1] "_%d місця"
+msgstr[2] "_%d місць"
+msgstr[3] "_%d місць"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
@@ -1346,10 +1340,10 @@ msgstr[3] ""
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%d місце"
+msgstr[1] "%d місця"
+msgstr[2] "%d місць"
+msgstr[3] "%d місць"
 
 #. Tooltip for the round button
 #: src/math-buttons.c:1001
@@ -1589,15 +1583,15 @@ msgstr "Показати _місця десяткового %d"
 msgid "Unable to open help file"
 msgstr "Не вдається відкрити файл довідки"
 
-#: src/math-window.c:234
+#: src/math-window.c:230
 msgid "Sun Microsystems"
 msgstr "Сун Мікросістемс"
 
-#: src/math-window.c:235
+#: src/math-window.c:231
 msgid "MATE Documentation Team"
 msgstr "Команда документування MATE"
 
-#: src/math-window.c:241
+#: src/math-window.c:237
 msgid ""
 "MATE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -1609,15 +1603,19 @@ msgstr ""
 " ліцензії GNU, оголошених Фундацією вільного програмного забезпечення; або "
 "версії 2 Ліцензії, або (за вашим бажанням) будь-якої пізнішої версії."
 
-#: src/math-window.c:245
+#: src/math-window.c:241
 msgid ""
 "MATE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
 "or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
 " more details."
 msgstr ""
+"Рахівник MATE розповсюджується зі сподіванням, що він буде корисним, але БЕЗ"
+" БУДЬ-ЯКИХ ЗАПОРУК; навіть не маючи на увазі запоруку ПРОДУКЦІЙНОСТИ або "
+"ПРИДАТНОСТИІ ДЛЯ ПЕВНОЇ МЕТИ. Детальніше див. У Загальній публічній ліцензії"
+" GNU."
 
-#: src/math-window.c:249
+#: src/math-window.c:245
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
@@ -1628,11 +1626,11 @@ msgstr ""
 "забезпечення, Inc., Франклін Стріт, 51, П'ятий поверх, Бостон, MA "
 "02110-1301, США."
 
-#: src/math-window.c:263
+#: src/math-window.c:284
 msgid "About MATE Calculator"
 msgstr "Про MATE Calc"
 
-#: src/math-window.c:264
+#: src/math-window.c:285
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2020 MATE developers"
@@ -1640,11 +1638,11 @@ msgstr ""
 "Авторське право © 1986–2010 Автори GCalctool\n"
 "Авторське право © 2011-2020 Розробники MATE"
 
-#: src/math-window.c:267
+#: src/math-window.c:288
 msgid "Calculator with financial and scientific modes."
 msgstr "Рахівник з фінансовими і науковими функціями."
 
-#: src/math-window.c:270
+#: src/math-window.c:291
 msgid "translator-credits"
 msgstr ""
 "Yarema aka Knedlyk <yupadmin@gmail.com>,\n"
@@ -1652,70 +1650,70 @@ msgstr ""
 "Oleh Tsyupka <myr4yk@gmail.com>"
 
 #. Calculator menu
-#: src/math-window.c:403
+#: src/math-window.c:425
 msgid "_Calculator"
 msgstr "_Рахівник"
 
 #. Mode menu
-#: src/math-window.c:405
+#: src/math-window.c:427
 msgid "_Mode"
 msgstr "Р_ежим"
 
 #. Help menu label
-#: src/math-window.c:407
+#: src/math-window.c:429
 msgid "_Help"
 msgstr "_Допомога"
 
 #. Basic menu label
-#: src/math-window.c:409
+#: src/math-window.c:431
 msgid "_Basic"
 msgstr "_Простий"
 
 #. Advanced menu label
-#: src/math-window.c:411
+#: src/math-window.c:433
 msgid "_Advanced"
 msgstr "_Розширений"
 
 #. Financial menu label
-#: src/math-window.c:413
+#: src/math-window.c:435
 msgid "_Financial"
 msgstr "_Фінансовий"
 
 #. Programming menu label
-#: src/math-window.c:415
+#: src/math-window.c:437
 msgid "_Programming"
 msgstr "_Програмування"
 
 #. Help>Contents menu label
-#: src/math-window.c:417
+#: src/math-window.c:439
 msgid "_Contents"
 msgstr "_Зміст"
 
-#: src/math-window.c:420
+#: src/math-window.c:442
 msgid "_Copy"
 msgstr "_Копіювати"
 
-#: src/math-window.c:422
+#: src/math-window.c:444
 msgid "_Paste"
 msgstr "Вст_авити"
 
-#: src/math-window.c:424
+#: src/math-window.c:446
 msgid "_Undo"
 msgstr "Пов_ернути"
 
-#: src/math-window.c:426
+#: src/math-window.c:448
 msgid "_Redo"
 msgstr "Повт_орити"
 
-#: src/math-window.c:429
+#: src/math-window.c:451
 msgid "_Preferences"
 msgstr "_Налаштування"
 
-#: src/math-window.c:431
+#: src/math-window.c:453
 msgid "_Quit"
 msgstr "_Вийти"
 
-#: src/math-window.c:448
+#: src/math-window.c:470
 msgid "_About"
 msgstr "_Про програму"
 

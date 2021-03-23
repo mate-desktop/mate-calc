@@ -6,23 +6,23 @@
 # Translators:
 # Wolfgang Ulbrich <mate@raveit.de>, 2020
 # jeremy shields <jeremy.shields@orange.fr>, 2020
-# Tubuntu <tubuntu@testimonium.be>, 2020
 # David D, 2020
-# Rox fr <roxfr@outlook.fr>, 2020
+# roxfr <roxfr@outlook.fr>, 2020
 # mauron, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # clefebvre <clement.lefebvre@linuxmint.com>, 2020
 # Charles Monzat <c.monzat@laposte.net>, 2020
 # Étienne Deparis <etienne@depar.is>, 2020
 # Laurent Napias, 2020
+# Tubuntu, 2020
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-calc 1.23.0\n"
+"Project-Id-Version: mate-calc 1.24.0\n"
 "Report-Msgid-Bugs-To: http://mate-desktop.org\n"
-"POT-Creation-Date: 2020-01-14 20:58+0100\n"
+"POT-Creation-Date: 2020-08-17 12:26+0200\n"
 "PO-Revision-Date: 2020-02-15 13:04+0000\n"
-"Last-Translator: Laurent Napias, 2020\n"
+"Last-Translator: Tubuntu, 2020\n"
 "Language-Team: French (https://www.transifex.com/mate/teams/13566/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -597,12 +597,12 @@ msgstr ""
 "bureau MATE. Si vous désirez en savoir à propos de MATE et de la "
 "calculatrice MATE, veuillez visiter la page d'accueil du projet."
 
-#: data/mate-calc.desktop.in:3 src/math-window.c:261
+#: data/mate-calc.desktop.in:3 src/math-window.c:282
 msgid "MATE Calculator"
 msgstr "Calculatrice de MATE"
 
 #. Title of main window
-#: data/mate-calc.desktop.in:4 src/math-window.c:568
+#: data/mate-calc.desktop.in:4 src/math-window.c:590
 msgid "Calculator"
 msgstr "Calculatrice"
 
@@ -610,17 +610,11 @@ msgstr "Calculatrice"
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Effectue des calculs arithmétiques, scientifiques ou financiers"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: data/mate-calc.desktop.in:8
-msgid "accessories-calculator"
-msgstr ""
-
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mate-calc.desktop.in:13
 msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
-msgstr ""
+msgstr "calculator;MATE;scientific;arithmetic;financial;calculations;"
 
 #: data/org.mate.calc.gschema.xml:25
 msgid "Accuracy value"
@@ -1096,7 +1090,7 @@ msgstr "Fonctions supplémentaires"
 #. Tooltip for the additional constant button
 #: src/math-buttons.c:131
 msgid "Additional constants"
-msgstr ""
+msgstr "Constantes supplémentaires"
 
 #. Tooltip for the exponent button
 #: src/math-buttons.c:134
@@ -1379,83 +1373,83 @@ msgstr "Signe"
 #. Tooltip for the c₀ component button
 #: src/math-buttons.c:1049
 msgid "Velocity of Light"
-msgstr ""
+msgstr "Vitesse de la lumière"
 
 #: src/math-buttons.c:1049
 msgid "299,792,458 m/s"
-msgstr ""
+msgstr "299,792,458 m/s"
 
 #. Tooltip for the μ₀ component button
 #: src/math-buttons.c:1051
 msgid "Magnetic constant"
-msgstr ""
+msgstr "Constante magnétique"
 
 #: src/math-buttons.c:1051
 msgid "1.2566370614×10⁻⁶ N/A²"
-msgstr ""
+msgstr "1.2566370614×10⁻⁶ N/A²"
 
 #. Tooltip for the ε₀ button
 #: src/math-buttons.c:1053
 msgid "Electric constant"
-msgstr ""
+msgstr "Constante électrique"
 
 #: src/math-buttons.c:1053
 msgid "8.85418782×10⁻¹² s⁴A²/m³kg"
-msgstr ""
+msgstr "8.85418782×10⁻¹² s⁴A²/m³kg"
 
 #. Tooltip for the G button
 #: src/math-buttons.c:1055
 msgid "Newtonian constant of gravitation"
-msgstr ""
+msgstr "Constante de gravitation newtonienne"
 
 #: src/math-buttons.c:1055
 msgid "6.67408×10⁻¹¹ m³/(s²kg)"
-msgstr ""
+msgstr "6.67408×10⁻¹¹ m³/(s²kg)"
 
 #. Tooltip for the h button
 #: src/math-buttons.c:1057
 msgid "Planck constant"
-msgstr ""
+msgstr "Constante de Planck"
 
 #: src/math-buttons.c:1057
 msgid "6.62607004×10⁻³⁴ m²kg/s"
-msgstr ""
+msgstr "6.62607004×10⁻³⁴ m²kg/s"
 
 #. Tooltip for the ｅ button
 #: src/math-buttons.c:1059
 msgid "Elementary charge"
-msgstr ""
+msgstr "Charge élémentaire"
 
 #: src/math-buttons.c:1059
 msgid "1.6021766208(98)×10⁻¹⁹ C"
-msgstr ""
+msgstr "1.6021766208(98)×10⁻¹⁹ C"
 
 #. Tooltip for the mₑ button
 #: src/math-buttons.c:1061
 msgid "Electron mass"
-msgstr ""
+msgstr "Masse de l'électron"
 
 #: src/math-buttons.c:1061
 msgid "9.10938356×10⁻³¹ kg"
-msgstr ""
+msgstr "9.10938356×10⁻³¹ kg"
 
 #. Tooltip for the mₚ button
 #: src/math-buttons.c:1063
 msgid "Proton mass"
-msgstr ""
+msgstr "Masse du proton"
 
 #: src/math-buttons.c:1063
 msgid "1.672621898(21)×10⁻²⁷ kg"
-msgstr ""
+msgstr "1.672621898(21)×10⁻²⁷ kg"
 
 #. Tooltip for the Nₐ button
 #: src/math-buttons.c:1065
 msgid "Avogadro constant"
-msgstr ""
+msgstr "Constante d'Avogadro"
 
 #: src/math-buttons.c:1065
 msgid "6.02214086×10²³ mol⁻¹"
-msgstr ""
+msgstr "6.02214086×10²³ mol⁻¹"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
@@ -1594,15 +1588,15 @@ msgstr "Afficher %d dé_cimales"
 msgid "Unable to open help file"
 msgstr "Impossible d'ouvrir le fichier d'aide"
 
-#: src/math-window.c:234
+#: src/math-window.c:230
 msgid "Sun Microsystems"
 msgstr "Sun Microsystems"
 
-#: src/math-window.c:235
+#: src/math-window.c:231
 msgid "MATE Documentation Team"
 msgstr "Équipe de documentation MATE"
 
-#: src/math-window.c:241
+#: src/math-window.c:237
 msgid ""
 "MATE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -1614,7 +1608,7 @@ msgstr ""
 "publiée par la Free Software Foundation ; version 2 de la licence, ou (à "
 "votre discrétion) toute version ultérieure."
 
-#: src/math-window.c:245
+#: src/math-window.c:241
 msgid ""
 "MATE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
@@ -1626,7 +1620,7 @@ msgstr ""
 "ou D'ADÉQUATION À UN BESOIN PARTICULIER. Consultez la Licence Publique "
 "Générale GNU pour plus de détails."
 
-#: src/math-window.c:249
+#: src/math-window.c:245
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
@@ -1637,11 +1631,11 @@ msgstr ""
 "Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA "
 "02110-1301, USA."
 
-#: src/math-window.c:263
+#: src/math-window.c:284
 msgid "About MATE Calculator"
 msgstr "À propos de Calculatrice de MATE"
 
-#: src/math-window.c:264
+#: src/math-window.c:285
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2020 MATE developers"
@@ -1649,11 +1643,11 @@ msgstr ""
 "Copyright © 1986–2010 Les auteurs de GCalctool\n"
 "Copyright © 2011-2020 Les développeurs de MATE"
 
-#: src/math-window.c:267
+#: src/math-window.c:288
 msgid "Calculator with financial and scientific modes."
 msgstr "Calculatrice avec des modes financiers et scientifiques."
 
-#: src/math-window.c:270
+#: src/math-window.c:291
 msgid "translator-credits"
 msgstr ""
 "Contributeurs au projet MATE :\n"
@@ -1672,70 +1666,70 @@ msgstr ""
 "Gérard Baylard <gerard dot b at bbox dot fr>, 2010"
 
 #. Calculator menu
-#: src/math-window.c:403
+#: src/math-window.c:425
 msgid "_Calculator"
 msgstr "_Calculatrice"
 
 #. Mode menu
-#: src/math-window.c:405
+#: src/math-window.c:427
 msgid "_Mode"
 msgstr "_Mode"
 
 #. Help menu label
-#: src/math-window.c:407
+#: src/math-window.c:429
 msgid "_Help"
 msgstr "_Aide"
 
 #. Basic menu label
-#: src/math-window.c:409
+#: src/math-window.c:431
 msgid "_Basic"
 msgstr "_Basique"
 
 #. Advanced menu label
-#: src/math-window.c:411
+#: src/math-window.c:433
 msgid "_Advanced"
 msgstr "_Avancé"
 
 #. Financial menu label
-#: src/math-window.c:413
+#: src/math-window.c:435
 msgid "_Financial"
 msgstr "_Financier"
 
 #. Programming menu label
-#: src/math-window.c:415
+#: src/math-window.c:437
 msgid "_Programming"
 msgstr "_Programmation"
 
 #. Help>Contents menu label
-#: src/math-window.c:417
+#: src/math-window.c:439
 msgid "_Contents"
 msgstr "_Sommaire"
 
-#: src/math-window.c:420
+#: src/math-window.c:442
 msgid "_Copy"
 msgstr "_Copier"
 
-#: src/math-window.c:422
+#: src/math-window.c:444
 msgid "_Paste"
 msgstr "C_oller"
 
-#: src/math-window.c:424
+#: src/math-window.c:446
 msgid "_Undo"
 msgstr "A_nnuler"
 
-#: src/math-window.c:426
+#: src/math-window.c:448
 msgid "_Redo"
 msgstr "_Restaurer"
 
-#: src/math-window.c:429
+#: src/math-window.c:451
 msgid "_Preferences"
 msgstr "_Préférences"
 
-#: src/math-window.c:431
+#: src/math-window.c:453
 msgid "_Quit"
 msgstr "_Quitter"
 
-#: src/math-window.c:448
+#: src/math-window.c:470
 msgid "_About"
 msgstr "_À propos"
 
