@@ -45,7 +45,7 @@ GLIB_MKENUMS=`$PKG_CONFIG --variable=glib_mkenums glib-2.0`
 AC_SUBST(GLIB_MKENUMS)
 
 AC_CHECK_LIB(m, log)
-AC_CHECK_LIB(mpc, log)
+AC_CHECK_LIB(mpc, log, [], [AC_MSG_ERROR(could not find required development libraries for MPC)], [])
 
 dnl ###########################################################################
 dnl Internationalization
