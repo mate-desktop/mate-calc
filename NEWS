@@ -1,3 +1,37 @@
+### mate-calc 1.25.1
+
+  * Translations update
+  * build: abort configuration when development library for MPC is missing
+  * history view follows preferences
+  * mp-serializer: init MPNumbers outside of loop
+  * mp.c: mp_reciprocal: fix when calling it with same arguments.
+  * mp-serializer: fix memory leaks reported by valgrind
+  * math-buttons: fix memory leaks reported by valgrind
+  * factorization: display prime factors in fixed number format
+  * build: add configure summary
+  * build: Use PACKAGE_URL variable
+  * build: Use config.h which defines GETTEXT_PACKAGE & VERSION
+  * Update copyright to 2021
+  * insert character dialog: add spacing, remove invisible char
+  * remove unused trunc button from programming mode
+  * Remove warning about unused parameters in `ìnt main` function
+  * financial: Remove warnings about unused parameter 'equation'
+  * math-buttons: Remove warnings about format not a string literal
+  * Remove unused macros
+  * Show factorization in history view.
+  * Show exponents in factorization.
+  * Update Readme
+  * Remove USE_MATE2_MACROS from autogen.sh (legacy)
+  * Fix most conversion warnings.
+  * Improve factorization speed
+  * fix calulation of x^q, where 1/q is a negative integer
+  * Clear answer if editing right before it
+  * Refresh bits panel after calculation
+  * Correct Astronomical unit (to 149597870700 m)
+  * mp-convert: Remove trailing spaces/tabs
+  * Implement navigation through history stack equations using keyboard
+  * fixes incorrect parenthesis handling
+
 ### mate-calc 1.25.0
 
   * Translations update
