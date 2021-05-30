@@ -20,7 +20,8 @@ DISTCHECK_CONFIGURE_FLAGS = \
 	CFLAGS='-Wno-deprecated-declarations'
 
 EXTRA_DIST = \
-	autogen.sh
+	autogen.sh \
+	README.md
 
 
 # Build ChangeLog from GIT  history
