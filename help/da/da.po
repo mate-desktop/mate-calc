@@ -2,14 +2,14 @@
 # Translators:
 # Aputsiak Niels Janussen <aj@isit.gl>, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
-# Joe Hansen <joedalton2@yahoo.dk>, 2019
+# Joe Hansen <joedalton2@yahoo.dk>, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-06-20 17:26+0200\n"
+"POT-Creation-Date: 2021-01-16 15:04+0100\n"
 "PO-Revision-Date: 2018-10-01 16:45+0000\n"
-"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>, 2019\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>, 2021\n"
 "Language-Team: Danish (https://www.transifex.com/mate/teams/13566/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -167,66 +167,68 @@ msgid ""
 "<app>MATE Calculator</app> supports complex numbers, as well as the "
 "following functions while in <link xref=\"mouse\">Advanced mode</link>."
 msgstr ""
+"<app>MATE-lommeregneren</app> understøtter komplekse tal, samt de følgende "
+"funktioner i <link xref=\"mouse\">Avanceret tilstand</link>."
 
 #. (itstool) path: td/p
 #: C/complex.page:18
 msgid "Re"
-msgstr ""
+msgstr "Re"
 
 #. (itstool) path: td/p
 #: C/complex.page:19
 msgid "Returns the real part of a complex number. For example:"
-msgstr ""
+msgstr "Returnerer den reelle del af et komplekst tal. For eksempel:"
 
 #. (itstool) path: example/p
 #: C/complex.page:21
 msgid "Re (2-5i) = 2"
-msgstr ""
+msgstr "Re (2-5i) = 2"
 
 #. (itstool) path: td/p
 #: C/complex.page:29
 msgid "Im"
-msgstr ""
+msgstr "Im"
 
 #. (itstool) path: td/p
 #: C/complex.page:30
 msgid "Returns the imaginary part of a complex number. For example:"
-msgstr ""
+msgstr "Returnerer den imaginære del af et komplekst tal. For eksempel:"
 
 #. (itstool) path: example/p
 #: C/complex.page:32
 msgid "Im (2-5i) = -5"
-msgstr ""
+msgstr "Im (2-5i) = -5"
 
 #. (itstool) path: td/p
 #: C/complex.page:40
 msgid "conj"
-msgstr ""
+msgstr "conj"
 
 #. (itstool) path: td/p
 #: C/complex.page:41
 msgid "Returns the conjugate of a complex number. For example:"
-msgstr ""
+msgstr "Returnerer konjugatet af et komplekst tal. For eksempel:"
 
 #. (itstool) path: example/p
 #: C/complex.page:43
 msgid "conj (2-5i) = 2+5i"
-msgstr ""
+msgstr "conj (2-5i) = 2+5i"
 
 #. (itstool) path: td/p
 #: C/complex.page:51
 msgid "Arg"
-msgstr ""
+msgstr "Arg"
 
 #. (itstool) path: td/p
 #: C/complex.page:52
 msgid "Returns the argument of a complex number. For example:"
-msgstr ""
+msgstr "Returnerer argumentet for et komplekst tal. For eksempel:"
 
 #. (itstool) path: example/p
 #: C/complex.page:54
 msgid "Arg (2-5i) = -68.1986"
-msgstr ""
+msgstr "Arg (2-5i) = -68.1986"
 
 #. (itstool) path: page/p
 #: C/conv-base.page:11
@@ -466,12 +468,24 @@ msgstr "Faktorisering"
 #. (itstool) path: page/p
 #: C/factorize.page:11
 msgid ""
-"You can factorize the number currently displayed by pressing the "
+"You can factorize the number currently displayed by pressing "
+"<keyseq><key>Ctrl</key><key>F</key></keyseq> or by pressing the "
 "<gui>fact</gui> button. This button is visible in <link "
 "xref=\"mouse\">programming mode</link>."
 msgstr ""
-"Du kan faktorisere nummeret vist ved at trykke på tasten <gui>fact</gui>. "
-"Denne tast er synlig i <link xref=\"mouse\">programmeringstilstand</link>."
+"Du kan faktorisere tallet vist ved at trykke på tasten "
+"<keyseq><key>Ctrl</key><key>F</key></keyseq> eller ved at rykke på "
+"<gui>fact</gui>-tasten. Denne tast er synlig i <link "
+"xref=\"mouse\">programmeringstilstand</link>."
+
+#. (itstool) path: page/p
+#: C/factorize.page:15
+msgid ""
+"To factorize integers bigger than 2^64 the Miller-Rabin primality test and "
+"Pollard's rho algorithm are used."
+msgstr ""
+"For at faktorisere heltal større end 2^64 bliver Miller-Rabin-primality-"
+"testen og Pollards rho-algoritme anvendt."
 
 #. (itstool) path: page/title
 #: C/financial.page:9
@@ -711,12 +725,12 @@ msgstr "<link xref=\"trigonometry\">Hyperbolsk cosinus</link>"
 #. (itstool) path: td/p
 #: C/functions.page:40
 msgid "erf"
-msgstr ""
+msgstr "erf"
 
 #. (itstool) path: td/p
 #: C/functions.page:41
 msgid "Gauss Error function"
-msgstr ""
+msgstr "Gauss Error-funktion"
 
 #. (itstool) path: td/p
 #: C/functions.page:44
@@ -841,12 +855,12 @@ msgstr "2'er-koplementærmængden"
 #. (itstool) path: td/p
 #: C/functions.page:92
 msgid "zeta"
-msgstr ""
+msgstr "zeta"
 
 #. (itstool) path: td/p
 #: C/functions.page:93
 msgid "Riemann zeta function"
-msgstr ""
+msgstr "Riemann zeta-funktion"
 
 #. (itstool) path: page/p
 #: C/functions.page:96
@@ -968,6 +982,80 @@ msgstr ""
 "For at indtaste <link xref=\"superscript\">tal i hævet skrift</link> brug "
 "<keyseq><key>Ctrl</key> tal</keyseq>, for sænket tegn brug "
 "<keyseq><key>Alt</key> tal</keyseq>."
+
+#. (itstool) path: page/p
+#: C/keyboard.page:42
+msgid ""
+"When in <link xref=\"mouse\">programming mode</link>, to cycle between base "
+"digits use:"
+msgstr ""
+"Når i <link xref=\"mouse\">programmingstilstand</link>, for at løbe igennem "
+"grundlæggende talbrug:"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:47 C/number-display.page:28
+msgid "Binary"
+msgstr "Binær"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:48
+msgid "<keyseq><key>Ctrl</key><key>B</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>B</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:51 C/number-display.page:32
+msgid "Octal"
+msgstr "Oktal"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:52
+msgid "<keyseq><key>Ctrl</key><key>O</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>O</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:55 C/number-display.page:16
+msgid "Decimal"
+msgstr "Decimal"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:56
+msgid "<keyseq><key>Ctrl</key><key>D</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>D</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:59 C/number-display.page:36
+msgid "Hexadecimal"
+msgstr "Hexadecimal"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:60
+msgid "<keyseq><key>Ctrl</key><key>H</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>H</key></keyseq>"
+
+#. (itstool) path: page/p
+#: C/keyboard.page:63
+msgid "To cycle between history entries you may use:"
+msgstr "For at løbe igennem historikposter kan du bruge:"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:68
+msgid "Previous Entry"
+msgstr "Forrige post"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:69
+msgid "<keyseq><key>Alt</key><key>Up</key></keyseq>"
+msgstr "<keyseq><key>Alt</key><key>Up</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:72
+msgid "Next Entry"
+msgstr "Next Entry"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:73
+msgid "<keyseq><key>Alt</key><key>Down</key></keyseq>"
+msgstr "<keyseq><key>Alt</key><key>Ned</key></keyseq>"
 
 #. (itstool) path: p/link
 #: C/legal.xml:4
@@ -1141,11 +1229,6 @@ msgstr ""
 "<guiseq><gui>Lommeregner</gui><gui>Præferencer</gui></guiseq>."
 
 #. (itstool) path: td/p
-#: C/number-display.page:16
-msgid "Decimal"
-msgstr "Decimal"
-
-#. (itstool) path: td/p
 #: C/number-display.page:17
 msgid "Results are displayed as decimal numbers"
 msgstr "Resultater vises som decimaltal"
@@ -1178,29 +1261,14 @@ msgstr ""
 "et flertal på tre."
 
 #. (itstool) path: td/p
-#: C/number-display.page:28
-msgid "Binary"
-msgstr "Binær"
-
-#. (itstool) path: td/p
 #: C/number-display.page:29
 msgid "Results are displayed as <link xref=\"base\">binary numbers</link>"
 msgstr "Resultaterne vises som <link xref=\"base\">binære tal</link>"
 
 #. (itstool) path: td/p
-#: C/number-display.page:32
-msgid "Octal"
-msgstr "Oktal"
-
-#. (itstool) path: td/p
 #: C/number-display.page:33
 msgid "Results are displayed as <link xref=\"base\">octal numbers</link>"
 msgstr "Resultater vises som <link xref=\"base\">oktale tal</link>"
-
-#. (itstool) path: td/p
-#: C/number-display.page:36
-msgid "Hexadecimal"
-msgstr "Hexadecimal"
 
 #. (itstool) path: td/p
 #: C/number-display.page:37

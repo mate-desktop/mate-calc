@@ -1,15 +1,15 @@
 # 
 # Translators:
-# 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2018
 # Seong-ho Cho <darkcircle.0426@gmail.com>, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
+# Jung Hee Lee <daemul72@gmail.com>, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-06-20 17:26+0200\n"
+"POT-Creation-Date: 2021-01-16 15:04+0100\n"
 "PO-Revision-Date: 2018-10-01 16:45+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2018\n"
+"Last-Translator: Jung Hee Lee <daemul72@gmail.com>, 2021\n"
 "Language-Team: Korean (https://www.transifex.com/mate/teams/13566/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,6 +26,7 @@ msgstr ""
 "Yoo Duk Nam https://launchpad.net/~yoo2001818\n"
 "onlyeriko https://launchpad.net/~onlyeriko\n"
 "Seong-ho Cho <darkcircle.0426@gmail.com>\n"
+"JungHee Lee <daemul72@gmail.com>\n"
 "MATE Desktop Environment Team <https://www.transifex.com/mate/teams/13566/ko/>"
 
 #. (itstool) path: page/title
@@ -152,6 +153,8 @@ msgid ""
 "<app>MATE Calculator</app> supports complex numbers, as well as the "
 "following functions while in <link xref=\"mouse\">Advanced mode</link>."
 msgstr ""
+"<app>MATE 계산기</app>는 <link xref=\"mouse\">고급 모드</link>에서 복잡한 숫자와 다음 함수를 "
+"지원합니다."
 
 #. (itstool) path: td/p
 #: C/complex.page:18
@@ -427,9 +430,17 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/factorize.page:11
 msgid ""
-"You can factorize the number currently displayed by pressing the "
+"You can factorize the number currently displayed by pressing "
+"<keyseq><key>Ctrl</key><key>F</key></keyseq> or by pressing the "
 "<gui>fact</gui> button. This button is visible in <link "
 "xref=\"mouse\">programming mode</link>."
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/factorize.page:15
+msgid ""
+"To factorize integers bigger than 2^64 the Miller-Rabin primality test and "
+"Pollard's rho algorithm are used."
 msgstr ""
 
 #. (itstool) path: page/title
@@ -777,7 +788,7 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/functions.page:96
 msgid "<app>MATE Calculator</app> does not support user-defined functions."
-msgstr ""
+msgstr "<app>MATE 계산기</app>는 사용자 정의 함수를 지원하지 않습니다."
 
 #. (itstool) path: credit/name
 #: C/index.page:7
@@ -787,7 +798,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/index.page:13
 msgid "MATE Calculator Help"
-msgstr ""
+msgstr "MATE 계산기 도움말"
 
 #. (itstool) path: section/title
 #: C/index.page:16
@@ -889,6 +900,78 @@ msgid ""
 "<keyseq><key>Alt</key>number</keyseq>."
 msgstr ""
 
+#. (itstool) path: page/p
+#: C/keyboard.page:42
+msgid ""
+"When in <link xref=\"mouse\">programming mode</link>, to cycle between base "
+"digits use:"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:47 C/number-display.page:28
+msgid "Binary"
+msgstr "2진수"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:48
+msgid "<keyseq><key>Ctrl</key><key>B</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:51 C/number-display.page:32
+msgid "Octal"
+msgstr "8진수"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:52
+msgid "<keyseq><key>Ctrl</key><key>O</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:55 C/number-display.page:16
+msgid "Decimal"
+msgstr "10진수"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:56
+msgid "<keyseq><key>Ctrl</key><key>D</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:59 C/number-display.page:36
+msgid "Hexadecimal"
+msgstr "16진수"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:60
+msgid "<keyseq><key>Ctrl</key><key>H</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/keyboard.page:63
+msgid "To cycle between history entries you may use:"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:68
+msgid "Previous Entry"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:69
+msgid "<keyseq><key>Alt</key><key>Up</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:72
+msgid "Next Entry"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:73
+msgid "<keyseq><key>Alt</key><key>Down</key></keyseq>"
+msgstr ""
+
 #. (itstool) path: p/link
 #: C/legal.xml:4
 msgid "Creative Commons Attribution-Share Alike 3.0 Unported License"
@@ -906,6 +989,8 @@ msgid ""
 "modify, and distribute the example code contained in this document under the"
 " terms of your choosing, without restriction."
 msgstr ""
+"특별한 예외로서 저작권 소유자는 사용자가 선택한 조건에 따라 본 문서에 포함된 예제 코드를 제한 없이 복사, 수정 및 배포할 수 있는 "
+"권한을 부여합니다."
 
 #. (itstool) path: page/title
 #: C/logarithm.page:9
@@ -951,7 +1036,7 @@ msgstr ""
 msgid ""
 "Euler's number can be entered by using the <link "
 "xref=\"variable\">variable</link> e."
-msgstr ""
+msgstr "오일러의 수는 <link xref=\"variable\">변수</link> e를 사용하여 입력할 수 있습니다."
 
 #. (itstool) path: example/p
 #: C/logarithm.page:39
@@ -1043,11 +1128,6 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: td/p
-#: C/number-display.page:16
-msgid "Decimal"
-msgstr "10진수"
-
-#. (itstool) path: td/p
 #: C/number-display.page:17
 msgid "Results are displayed as decimal numbers"
 msgstr ""
@@ -1077,29 +1157,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: td/p
-#: C/number-display.page:28
-msgid "Binary"
-msgstr "2진수"
-
-#. (itstool) path: td/p
 #: C/number-display.page:29
 msgid "Results are displayed as <link xref=\"base\">binary numbers</link>"
 msgstr ""
 
 #. (itstool) path: td/p
-#: C/number-display.page:32
-msgid "Octal"
-msgstr "8진수"
-
-#. (itstool) path: td/p
 #: C/number-display.page:33
 msgid "Results are displayed as <link xref=\"base\">octal numbers</link>"
 msgstr ""
-
-#. (itstool) path: td/p
-#: C/number-display.page:36
-msgid "Hexadecimal"
-msgstr "16진수"
 
 #. (itstool) path: td/p
 #: C/number-display.page:37
@@ -1442,7 +1507,7 @@ msgstr "e"
 #. (itstool) path: td/p
 #: C/variables.page:45
 msgid "<link xref=\"logarithm\">Euler's Number</link>"
-msgstr ""
+msgstr "<link xref=\"logarithm\">오일러의 수</link>"
 
 #. (itstool) path: td/p
 #: C/variables.page:49

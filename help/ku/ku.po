@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-06-20 17:26+0200\n"
+"POT-Creation-Date: 2021-01-16 15:04+0100\n"
 "PO-Revision-Date: 2018-10-01 16:45+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2018\n"
 "Language-Team: Kurdish (https://www.transifex.com/mate/teams/13566/ku/)\n"
@@ -419,9 +419,17 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/factorize.page:11
 msgid ""
-"You can factorize the number currently displayed by pressing the "
+"You can factorize the number currently displayed by pressing "
+"<keyseq><key>Ctrl</key><key>F</key></keyseq> or by pressing the "
 "<gui>fact</gui> button. This button is visible in <link "
 "xref=\"mouse\">programming mode</link>."
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/factorize.page:15
+msgid ""
+"To factorize integers bigger than 2^64 the Miller-Rabin primality test and "
+"Pollard's rho algorithm are used."
 msgstr ""
 
 #. (itstool) path: page/title
@@ -881,6 +889,78 @@ msgid ""
 "<keyseq><key>Alt</key>number</keyseq>."
 msgstr ""
 
+#. (itstool) path: page/p
+#: C/keyboard.page:42
+msgid ""
+"When in <link xref=\"mouse\">programming mode</link>, to cycle between base "
+"digits use:"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:47 C/number-display.page:28
+msgid "Binary"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:48
+msgid "<keyseq><key>Ctrl</key><key>B</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:51 C/number-display.page:32
+msgid "Octal"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:52
+msgid "<keyseq><key>Ctrl</key><key>O</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:55 C/number-display.page:16
+msgid "Decimal"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:56
+msgid "<keyseq><key>Ctrl</key><key>D</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:59 C/number-display.page:36
+msgid "Hexadecimal"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:60
+msgid "<keyseq><key>Ctrl</key><key>H</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/keyboard.page:63
+msgid "To cycle between history entries you may use:"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:68
+msgid "Previous Entry"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:69
+msgid "<keyseq><key>Alt</key><key>Up</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:72
+msgid "Next Entry"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:73
+msgid "<keyseq><key>Alt</key><key>Down</key></keyseq>"
+msgstr ""
+
 #. (itstool) path: p/link
 #: C/legal.xml:4
 msgid "Creative Commons Attribution-Share Alike 3.0 Unported License"
@@ -1035,11 +1115,6 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: td/p
-#: C/number-display.page:16
-msgid "Decimal"
-msgstr ""
-
-#. (itstool) path: td/p
 #: C/number-display.page:17
 msgid "Results are displayed as decimal numbers"
 msgstr ""
@@ -1069,28 +1144,13 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: td/p
-#: C/number-display.page:28
-msgid "Binary"
-msgstr ""
-
-#. (itstool) path: td/p
 #: C/number-display.page:29
 msgid "Results are displayed as <link xref=\"base\">binary numbers</link>"
 msgstr ""
 
 #. (itstool) path: td/p
-#: C/number-display.page:32
-msgid "Octal"
-msgstr ""
-
-#. (itstool) path: td/p
 #: C/number-display.page:33
 msgid "Results are displayed as <link xref=\"base\">octal numbers</link>"
-msgstr ""
-
-#. (itstool) path: td/p
-#: C/number-display.page:36
-msgid "Hexadecimal"
 msgstr ""
 
 #. (itstool) path: td/p

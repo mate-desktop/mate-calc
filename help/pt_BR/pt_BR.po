@@ -6,13 +6,14 @@
 # Marcelo Ghelman <marcelo.ghelman@gmail.com>, 2018
 # Lucas Dias <lucasdiaas@outlook.com>, 2019
 # George Silva <algoritmo.linux@gmail.com>, 2019
+# gustavo s, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-06-20 17:26+0200\n"
+"POT-Creation-Date: 2021-01-16 15:04+0100\n"
 "PO-Revision-Date: 2018-10-01 16:45+0000\n"
-"Last-Translator: George Silva <algoritmo.linux@gmail.com>, 2019\n"
+"Last-Translator: gustavo s, 2021\n"
 "Language-Team: Portuguese (Brazil) (https://www.transifex.com/mate/teams/13566/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -250,7 +251,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/conv-character.page:9
 msgid "Character Codes"
-msgstr ""
+msgstr "Códigos de caractere"
 
 #. (itstool) path: page/p
 #: C/conv-character.page:11
@@ -286,7 +287,7 @@ msgstr ""
 #. (itstool) path: example/p
 #: C/conv-currency.page:18
 msgid "13.65 USD in GBP"
-msgstr ""
+msgstr "13.65 USD em GBP"
 
 #. (itstool) path: note/p
 #: C/conv-currency.page:23
@@ -310,7 +311,7 @@ msgstr ""
 #. (itstool) path: example/p
 #: C/conv-length.page:15
 msgid "6 meters in inches"
-msgstr ""
+msgstr "6 metros em polegadas"
 
 #. (itstool) path: example/p
 #: C/conv-length.page:18
@@ -360,7 +361,7 @@ msgstr ""
 #. (itstool) path: example/p
 #: C/conv-weight.page:15
 msgid "1kg in pounds"
-msgstr ""
+msgstr "1kg em libras"
 
 #. (itstool) path: note/p
 #: C/conv-weight.page:20
@@ -376,7 +377,7 @@ msgstr "0"
 #. (itstool) path: page/title
 #: C/equation.page:11
 msgid "Basic Equations"
-msgstr ""
+msgstr "Equações Básicas"
 
 #. (itstool) path: page/p
 #: C/equation.page:13
@@ -431,7 +432,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/factorial.page:9
 msgid "Factorials"
-msgstr ""
+msgstr "Factoriais"
 
 #. (itstool) path: page/p
 #: C/factorial.page:11
@@ -453,9 +454,17 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/factorize.page:11
 msgid ""
-"You can factorize the number currently displayed by pressing the "
+"You can factorize the number currently displayed by pressing "
+"<keyseq><key>Ctrl</key><key>F</key></keyseq> or by pressing the "
 "<gui>fact</gui> button. This button is visible in <link "
 "xref=\"mouse\">programming mode</link>."
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/factorize.page:15
+msgid ""
+"To factorize integers bigger than 2^64 the Miller-Rabin primality test and "
+"Pollard's rho algorithm are used."
 msgstr ""
 
 #. (itstool) path: page/title
@@ -915,6 +924,78 @@ msgid ""
 "<keyseq><key>Alt</key>number</keyseq>."
 msgstr ""
 
+#. (itstool) path: page/p
+#: C/keyboard.page:42
+msgid ""
+"When in <link xref=\"mouse\">programming mode</link>, to cycle between base "
+"digits use:"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:47 C/number-display.page:28
+msgid "Binary"
+msgstr "Binário"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:48
+msgid "<keyseq><key>Ctrl</key><key>B</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:51 C/number-display.page:32
+msgid "Octal"
+msgstr "Octal"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:52
+msgid "<keyseq><key>Ctrl</key><key>O</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:55 C/number-display.page:16
+msgid "Decimal"
+msgstr "Decimal"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:56
+msgid "<keyseq><key>Ctrl</key><key>D</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:59 C/number-display.page:36
+msgid "Hexadecimal"
+msgstr "Hexadecimal"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:60
+msgid "<keyseq><key>Ctrl</key><key>H</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/keyboard.page:63
+msgid "To cycle between history entries you may use:"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:68
+msgid "Previous Entry"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:69
+msgid "<keyseq><key>Alt</key><key>Up</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:72
+msgid "Next Entry"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:73
+msgid "<keyseq><key>Alt</key><key>Down</key></keyseq>"
+msgstr ""
+
 #. (itstool) path: p/link
 #: C/legal.xml:4
 msgid "Creative Commons Attribution-Share Alike 3.0 Unported License"
@@ -1069,11 +1150,6 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: td/p
-#: C/number-display.page:16
-msgid "Decimal"
-msgstr "Decimal"
-
-#. (itstool) path: td/p
 #: C/number-display.page:17
 msgid "Results are displayed as decimal numbers"
 msgstr ""
@@ -1103,29 +1179,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: td/p
-#: C/number-display.page:28
-msgid "Binary"
-msgstr "Binário"
-
-#. (itstool) path: td/p
 #: C/number-display.page:29
 msgid "Results are displayed as <link xref=\"base\">binary numbers</link>"
 msgstr ""
 
 #. (itstool) path: td/p
-#: C/number-display.page:32
-msgid "Octal"
-msgstr "Octal"
-
-#. (itstool) path: td/p
 #: C/number-display.page:33
 msgid "Results are displayed as <link xref=\"base\">octal numbers</link>"
 msgstr ""
-
-#. (itstool) path: td/p
-#: C/number-display.page:36
-msgid "Hexadecimal"
-msgstr "Hexadecimal"
 
 #. (itstool) path: td/p
 #: C/number-display.page:37

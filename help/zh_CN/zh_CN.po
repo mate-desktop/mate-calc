@@ -4,13 +4,14 @@
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
 # Dianjin Wang <1132321739qq@gmail.com>, 2018
 # Mingcong Bai <jeffbai@aosc.xyz>, 2018
+# liulitchi <xingzuo88@qq.com>, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-06-20 17:26+0200\n"
+"POT-Creation-Date: 2021-01-16 15:04+0100\n"
 "PO-Revision-Date: 2018-10-01 16:45+0000\n"
-"Last-Translator: Mingcong Bai <jeffbai@aosc.xyz>, 2018\n"
+"Last-Translator: liulitchi <xingzuo88@qq.com>, 2020\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/mate/teams/13566/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,7 +38,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/absolute.page:9
 msgid "Absolute Values"
-msgstr ""
+msgstr "绝对值"
 
 #. (itstool) path: page/p
 #: C/absolute.page:11
@@ -115,12 +116,12 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/boolean.page:9
 msgid "Boolean Algebra"
-msgstr ""
+msgstr "布尔代数"
 
 #. (itstool) path: page/p
 #: C/boolean.page:11
 msgid "Boolean algebra can be calculated using the AND, OR and XOR operators."
-msgstr ""
+msgstr "布尔代数可进行“且(AND)”、“或(OR)”及“异或(XOR)”运算。"
 
 #. (itstool) path: example/p
 #: C/boolean.page:15
@@ -150,7 +151,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/complex.page:9
 msgid "Complex Numbers"
-msgstr ""
+msgstr "复数"
 
 #. (itstool) path: page/p
 #: C/complex.page:11
@@ -230,7 +231,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/conv-character.page:9
 msgid "Character Codes"
-msgstr ""
+msgstr "字符码"
 
 #. (itstool) path: page/p
 #: C/conv-character.page:11
@@ -278,7 +279,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/conv-length.page:9
 msgid "Length/Area/Volume"
-msgstr ""
+msgstr "长度/面积/体积"
 
 #. (itstool) path: page/p
 #: C/conv-length.page:11
@@ -356,7 +357,7 @@ msgstr "0"
 #. (itstool) path: page/title
 #: C/equation.page:11
 msgid "Basic Equations"
-msgstr ""
+msgstr "基础等式"
 
 #. (itstool) path: page/p
 #: C/equation.page:13
@@ -411,7 +412,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/factorial.page:9
 msgid "Factorials"
-msgstr ""
+msgstr "阶乘"
 
 #. (itstool) path: page/p
 #: C/factorial.page:11
@@ -433,15 +434,23 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/factorize.page:11
 msgid ""
-"You can factorize the number currently displayed by pressing the "
+"You can factorize the number currently displayed by pressing "
+"<keyseq><key>Ctrl</key><key>F</key></keyseq> or by pressing the "
 "<gui>fact</gui> button. This button is visible in <link "
 "xref=\"mouse\">programming mode</link>."
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/factorize.page:15
+msgid ""
+"To factorize integers bigger than 2^64 the Miller-Rabin primality test and "
+"Pollard's rho algorithm are used."
 msgstr ""
 
 #. (itstool) path: page/title
 #: C/financial.page:9
 msgid "Financial Functions"
-msgstr ""
+msgstr "金融函数"
 
 #. (itstool) path: page/p
 #: C/financial.page:10
@@ -895,6 +904,78 @@ msgid ""
 "<keyseq><key>Alt</key>number</keyseq>."
 msgstr ""
 
+#. (itstool) path: page/p
+#: C/keyboard.page:42
+msgid ""
+"When in <link xref=\"mouse\">programming mode</link>, to cycle between base "
+"digits use:"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:47 C/number-display.page:28
+msgid "Binary"
+msgstr "二进制"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:48
+msgid "<keyseq><key>Ctrl</key><key>B</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:51 C/number-display.page:32
+msgid "Octal"
+msgstr "八进制"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:52
+msgid "<keyseq><key>Ctrl</key><key>O</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:55 C/number-display.page:16
+msgid "Decimal"
+msgstr "十进制"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:56
+msgid "<keyseq><key>Ctrl</key><key>D</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:59 C/number-display.page:36
+msgid "Hexadecimal"
+msgstr "十六进制"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:60
+msgid "<keyseq><key>Ctrl</key><key>H</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/keyboard.page:63
+msgid "To cycle between history entries you may use:"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:68
+msgid "Previous Entry"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:69
+msgid "<keyseq><key>Alt</key><key>Up</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:72
+msgid "Next Entry"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:73
+msgid "<keyseq><key>Alt</key><key>Down</key></keyseq>"
+msgstr ""
+
 #. (itstool) path: p/link
 #: C/legal.xml:4
 msgid "Creative Commons Attribution-Share Alike 3.0 Unported License"
@@ -1049,11 +1130,6 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: td/p
-#: C/number-display.page:16
-msgid "Decimal"
-msgstr "十进制"
-
-#. (itstool) path: td/p
 #: C/number-display.page:17
 msgid "Results are displayed as decimal numbers"
 msgstr ""
@@ -1083,29 +1159,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: td/p
-#: C/number-display.page:28
-msgid "Binary"
-msgstr "二进制"
-
-#. (itstool) path: td/p
 #: C/number-display.page:29
 msgid "Results are displayed as <link xref=\"base\">binary numbers</link>"
 msgstr ""
 
 #. (itstool) path: td/p
-#: C/number-display.page:32
-msgid "Octal"
-msgstr "八进制"
-
-#. (itstool) path: td/p
 #: C/number-display.page:33
 msgid "Results are displayed as <link xref=\"base\">octal numbers</link>"
 msgstr ""
-
-#. (itstool) path: td/p
-#: C/number-display.page:36
-msgid "Hexadecimal"
-msgstr "十六进制"
 
 #. (itstool) path: td/p
 #: C/number-display.page:37

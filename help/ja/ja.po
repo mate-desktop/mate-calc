@@ -1,14 +1,15 @@
 # 
 # Translators:
-# いくや (AWASHIRO Ikuya) <ikunya@gmail.com>, 2018
+# あわしろいくや <ikunya@gmail.com>, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
+# Green, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-06-20 17:26+0200\n"
+"POT-Creation-Date: 2021-01-16 15:04+0100\n"
 "PO-Revision-Date: 2018-10-01 16:45+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2018\n"
+"Last-Translator: Green, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/mate/teams/13566/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,7 +36,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/absolute.page:9
 msgid "Absolute Values"
-msgstr ""
+msgstr "絶対値"
 
 #. (itstool) path: page/p
 #: C/absolute.page:11
@@ -431,9 +432,17 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/factorize.page:11
 msgid ""
-"You can factorize the number currently displayed by pressing the "
+"You can factorize the number currently displayed by pressing "
+"<keyseq><key>Ctrl</key><key>F</key></keyseq> or by pressing the "
 "<gui>fact</gui> button. This button is visible in <link "
 "xref=\"mouse\">programming mode</link>."
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/factorize.page:15
+msgid ""
+"To factorize integers bigger than 2^64 the Miller-Rabin primality test and "
+"Pollard's rho algorithm are used."
 msgstr ""
 
 #. (itstool) path: page/title
@@ -838,7 +847,7 @@ msgstr ""
 #. (itstool) path: td/p
 #: C/keyboard.page:19
 msgid "×"
-msgstr ""
+msgstr "×"
 
 #. (itstool) path: td/p
 #: C/keyboard.page:20
@@ -848,7 +857,7 @@ msgstr ""
 #. (itstool) path: td/p
 #: C/keyboard.page:23
 msgid "÷"
-msgstr ""
+msgstr "÷"
 
 #. (itstool) path: td/p
 #: C/keyboard.page:24
@@ -873,7 +882,7 @@ msgstr ""
 #. (itstool) path: td/p
 #: C/keyboard.page:32
 msgid "<keyseq><key>Ctrl</key><key>R</key></keyseq>"
-msgstr ""
+msgstr "<keyseq><key>Ctrl</key><key>R</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard.page:35 C/variables.page:48
@@ -883,7 +892,7 @@ msgstr ""
 #. (itstool) path: td/p
 #: C/keyboard.page:36
 msgid "<keyseq><key>Ctrl</key><key>P</key></keyseq>"
-msgstr ""
+msgstr "<keyseq><key>Ctrl</key><key>P</key></keyseq>"
 
 #. (itstool) path: page/p
 #: C/keyboard.page:39
@@ -891,6 +900,78 @@ msgid ""
 "To enter <link xref=\"superscript\">superscript numbers</link> use "
 "<keyseq><key>Ctrl</key>number</keyseq>, for subscript use "
 "<keyseq><key>Alt</key>number</keyseq>."
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/keyboard.page:42
+msgid ""
+"When in <link xref=\"mouse\">programming mode</link>, to cycle between base "
+"digits use:"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:47 C/number-display.page:28
+msgid "Binary"
+msgstr "2進数"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:48
+msgid "<keyseq><key>Ctrl</key><key>B</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:51 C/number-display.page:32
+msgid "Octal"
+msgstr "8進数"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:52
+msgid "<keyseq><key>Ctrl</key><key>O</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>O</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:55 C/number-display.page:16
+msgid "Decimal"
+msgstr "10進数"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:56
+msgid "<keyseq><key>Ctrl</key><key>D</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>D</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:59 C/number-display.page:36
+msgid "Hexadecimal"
+msgstr "16進数"
+
+#. (itstool) path: td/p
+#: C/keyboard.page:60
+msgid "<keyseq><key>Ctrl</key><key>H</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/keyboard.page:63
+msgid "To cycle between history entries you may use:"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:68
+msgid "Previous Entry"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:69
+msgid "<keyseq><key>Alt</key><key>Up</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:72
+msgid "Next Entry"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:73
+msgid "<keyseq><key>Alt</key><key>Down</key></keyseq>"
 msgstr ""
 
 #. (itstool) path: p/link
@@ -901,7 +982,7 @@ msgstr ""
 #. (itstool) path: license/p
 #: C/legal.xml:3
 msgid "This work is licensed under a <_:link-1/>."
-msgstr ""
+msgstr "この著作物は<_:link-1/>に従ってライセンスされています。"
 
 #. (itstool) path: license/p
 #: C/legal.xml:6
@@ -910,6 +991,7 @@ msgid ""
 "modify, and distribute the example code contained in this document under the"
 " terms of your choosing, without restriction."
 msgstr ""
+"特別な例外として、著作権者は、この文書に含まれるサンプルコードを、あなたが選択した条件の下で、無制限にコピー、変更、配布することを許可します。"
 
 #. (itstool) path: page/title
 #: C/logarithm.page:9
@@ -1047,11 +1129,6 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: td/p
-#: C/number-display.page:16
-msgid "Decimal"
-msgstr "10進数"
-
-#. (itstool) path: td/p
 #: C/number-display.page:17
 msgid "Results are displayed as decimal numbers"
 msgstr ""
@@ -1081,29 +1158,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: td/p
-#: C/number-display.page:28
-msgid "Binary"
-msgstr "2進数"
-
-#. (itstool) path: td/p
 #: C/number-display.page:29
 msgid "Results are displayed as <link xref=\"base\">binary numbers</link>"
 msgstr ""
 
 #. (itstool) path: td/p
-#: C/number-display.page:32
-msgid "Octal"
-msgstr "8進数"
-
-#. (itstool) path: td/p
 #: C/number-display.page:33
 msgid "Results are displayed as <link xref=\"base\">octal numbers</link>"
 msgstr ""
-
-#. (itstool) path: td/p
-#: C/number-display.page:36
-msgid "Hexadecimal"
-msgstr "16進数"
 
 #. (itstool) path: td/p
 #: C/number-display.page:37
@@ -1386,7 +1448,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/variables.page:9
 msgid "Variables"
-msgstr ""
+msgstr "変数"
 
 #. (itstool) path: page/p
 #: C/variables.page:11
