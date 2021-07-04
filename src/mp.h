@@ -139,7 +139,7 @@ void   mp_invert_sign(const MPNumber *x, MPNumber *z);
 void   mp_add(const MPNumber *x, const MPNumber *y, MPNumber *z);
 
 /* Sets z = x + y */
-void   mp_add_integer(const MPNumber *x, int64_t y, MPNumber *z);
+void   mp_add_integer(const MPNumber *x, long y, MPNumber *z);
 
 /* Sets z = x − y */
 void   mp_subtract(const MPNumber *x, const MPNumber *y, MPNumber *z);
@@ -148,13 +148,13 @@ void   mp_subtract(const MPNumber *x, const MPNumber *y, MPNumber *z);
 void   mp_multiply(const MPNumber *x, const MPNumber *y, MPNumber *z);
 
 /* Sets z = x × y */
-void   mp_multiply_integer(const MPNumber *x, int64_t y, MPNumber *z);
+void   mp_multiply_integer(const MPNumber *x, long y, MPNumber *z);
 
 /* Sets z = x ÷ y */
 void   mp_divide(const MPNumber *x, const MPNumber *y, MPNumber *z);
 
 /* Sets z = x ÷ y */
-void   mp_divide_integer(const MPNumber *x, int64_t y, MPNumber *z);
+void   mp_divide_integer(const MPNumber *x, long y, MPNumber *z);
 
 /* Sets z = 1 ÷ x */
 void   mp_reciprocal(const MPNumber *, MPNumber *);
@@ -183,7 +183,7 @@ void   mp_round(const MPNumber *x, MPNumber *z);
 void   mp_ln(const MPNumber *x, MPNumber *z);
 
 /* Sets z = log_n x */
-void   mp_logarithm(int64_t n, const MPNumber *x, MPNumber *z);
+void   mp_logarithm(long n, const MPNumber *x, MPNumber *z);
 
 /* Sets z = π */
 void   mp_get_pi(MPNumber *z);
@@ -233,13 +233,13 @@ void   mp_set_from_float(float x, MPNumber *z);
 void   mp_set_from_double(double x, MPNumber *z);
 
 /* Sets z = x */
-void   mp_set_from_integer(int64_t x, MPNumber *z);
+void   mp_set_from_integer(long x, MPNumber *z);
 
 /* Sets z = x */
-void   mp_set_from_unsigned_integer(uint64_t x, MPNumber *z);
+void   mp_set_from_unsigned_integer(ulong x, MPNumber *z);
 
 /* Sets z = numerator ÷ denominator */
-void   mp_set_from_fraction(int64_t numerator, int64_t denominator, MPNumber *z);
+void   mp_set_from_fraction(long numerator, long denominator, MPNumber *z);
 
 /* Sets z = r(cos theta + i sin theta) */
 void   mp_set_from_polar(const MPNumber *r, MPAngleUnit unit, const MPNumber *theta, MPNumber *z);
