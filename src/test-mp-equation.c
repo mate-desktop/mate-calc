@@ -162,6 +162,108 @@ test_conversions(void)
 }
 
 
+static void try(const char* string, bool result, bool expected)
+{
+    if ((result && !expected) || (!result && expected))
+    {
+        fail("%s -> %s, expected %s", string, expected ? "true" : "false", result ? "true" : "false");
+    }
+    else
+    {
+        pass("%s -> %s", string, result ? "true" : "false");
+    }
+}
+
+
+static void test_mp()
+{
+    MPNumber zero = mp_new();
+    MPNumber one = mp_new();
+    MPNumber minus_one = mp_new();
+    mp_set_from_integer(0, &zero);
+    mp_set_from_integer(1, &one);
+    mp_set_from_integer(-1, &minus_one);
+
+    try("mp_is_zero(-1)", mp_is_zero(&minus_one), false);
+    try("mp_is_zero(0)", mp_is_zero(&zero), true);
+    try("mp_is_zero(1)", mp_is_zero(&one), false);
+
+    try("mp_is_negative(-1)", mp_is_negative(&minus_one), true);
+    try("mp_is_negative(0)", mp_is_negative(&zero), false);
+    try("mp_is_negative(1)", mp_is_negative(&one), false);
+
+    try("mp_is_integer(-1)", mp_is_integer(&minus_one), true);
+    try("mp_is_integer(0)", mp_is_integer(&zero), true);
+    try("mp_is_integer(1)", mp_is_integer(&one), true);
+
+    try("mp_is_positive_integer(-1)", mp_is_positive_integer(&minus_one), false);
+    try("mp_is_positive_integer(0)", mp_is_positive_integer(&zero), true);
+    try("mp_is_positive_integer(1)", mp_is_positive_integer(&one), true);
+
+    try("mp_is_natural(-1)", mp_is_natural(&minus_one), false);
+    try("mp_is_natural(0)", mp_is_natural(&zero), false);
+    try("mp_is_natural(1)", mp_is_natural(&one), true);
+
+    try("mp_is_complex(-1)", mp_is_complex(&minus_one), false);
+    try("mp_is_complex(0)", mp_is_complex(&zero), false);
+    try("mp_is_complex(1)", mp_is_complex(&one), false);
+
+    try("mp_is_equal(-1, -1)", mp_is_equal(&minus_one, &minus_one), true);
+    try("mp_is_equal(-1, 0)", mp_is_equal(&minus_one, &zero), false);
+    try("mp_is_equal(-1, 1)", mp_is_equal(&minus_one, &one), false);
+    try("mp_is_equal(0, -1)", mp_is_equal(&zero, &minus_one), false);
+    try("mp_is_equal(0, 0)", mp_is_equal(&zero, &zero), true);
+    try("mp_is_equal(0, 1)", mp_is_equal(&zero, &one), false);
+    try("mp_is_equal(1, -1)", mp_is_equal(&one, &minus_one), false);
+    try("mp_is_equal(1, 0)", mp_is_equal(&one, &zero), false);
+    try("mp_is_equal(1, 1)", mp_is_equal(&one, &one), true);
+
+    try("mp_is_greater_than(0, -1)", mp_is_greater_than (&zero, &minus_one), true);
+    try("mp_is_greater_than(0, 0)", mp_is_greater_than (&zero, &zero), false);
+    try("mp_is_greater_than(0, 1)", mp_is_greater_than (&zero, &one), false);
+    try("mp_is_greater_than(1, -1)", mp_is_greater_than (&one, &minus_one), true);
+    try("mp_is_greater_than(1, 0)", mp_is_greater_than (&one, &zero), true);
+    try("mp_is_greater_than(1, 1)", mp_is_greater_than (&one, &one), false);
+    try("mp_is_greater_than(-1, -1)", mp_is_greater_than (&minus_one, &minus_one), false);
+    try("mp_is_greater_than(-1, 0)", mp_is_greater_than (&minus_one, &zero), false);
+    try("mp_is_greater_than(-1, 1)", mp_is_greater_than (&minus_one, &one), false);
+
+    try("mp_is_greater_equal(0, -1)", mp_is_greater_equal (&zero, &minus_one), true);
+    try("mp_is_greater_equal(0, 0)", mp_is_greater_equal (&zero, &zero), true);
+    try("mp_is_greater_equal(0, 1)", mp_is_greater_equal (&zero, &one), false);
+    try("mp_is_greater_equal(1, -1)", mp_is_greater_equal (&one, &minus_one), true);
+    try("mp_is_greater_equal(1, 0)", mp_is_greater_equal (&one, &zero), true);
+    try("mp_is_greater_equal(1, 1)", mp_is_greater_equal (&one, &one), true);
+    try("mp_is_greater_equal(-1, -1)", mp_is_greater_equal (&minus_one, &minus_one), true);
+    try("mp_is_greater_equal(-1, 0)", mp_is_greater_equal (&minus_one, &zero), false);
+    try("mp_is_greater_equal(-1, 1)", mp_is_greater_equal (&minus_one, &one), false);
+
+    try("mp_is_less_than(0, -1)", mp_is_less_than (&zero, &minus_one), false);
+    try("mp_is_less_than(0, 0)", mp_is_less_than (&zero, &zero), false);
+    try("mp_is_less_than(0, 1)", mp_is_less_than (&zero, &one), true);
+    try("mp_is_less_than(1, -1)", mp_is_less_than (&one, &minus_one), false);
+    try("mp_is_less_than(1, 0)", mp_is_less_than (&one, &zero), false);
+    try("mp_is_less_than(1, 1)", mp_is_less_than (&one, &one), false);
+    try("mp_is_less_than(-1, -1)", mp_is_less_than (&minus_one, &minus_one), false);
+    try("mp_is_less_than(-1, 0)", mp_is_less_than (&minus_one, &zero), true);
+    try("mp_is_less_than(-1, 1)", mp_is_less_than (&minus_one, &one), true);
+
+    try("mp_is_less_equal(0, -1)", mp_is_less_equal (&zero, &minus_one), false);
+    try("mp_is_less_equal(0, 0)", mp_is_less_equal (&zero, &zero), true);
+    try("mp_is_less_equal(0, 1)", mp_is_less_equal (&zero, &one), true);
+    try("mp_is_less_equal(1, -1)", mp_is_less_equal (&one, &minus_one), false);
+    try("mp_is_less_equal(1, 0)", mp_is_less_equal (&one, &zero), false);
+    try("mp_is_less_equal(1, 1)", mp_is_less_equal (&one, &one), true);
+    try("mp_is_less_equal(-1, -1)", mp_is_less_equal (&minus_one, &minus_one), true);
+    try("mp_is_less_equal(-1, 0)", mp_is_less_equal (&minus_one, &zero), true);
+    try("mp_is_less_equal(-1, 1)", mp_is_less_equal (&minus_one, &one), true);
+
+    mp_clear(&zero);
+    mp_clear(&one);
+    mp_clear(&minus_one);
+}
+
+
 static int
 variable_is_defined(const char *name, void *data)
 {
@@ -687,6 +789,7 @@ main (void)
 {
     setlocale(LC_ALL, "C");
 
+    test_mp();
     test_conversions();
     test_equations();
     if (fails == 0)
