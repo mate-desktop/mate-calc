@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-calc 1.25.0\n"
-"Report-Msgid-Bugs-To: http://mate-desktop.org\n"
-"POT-Creation-Date: 2021-01-16 15:04+0100\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-calc/issues\n"
+"POT-Creation-Date: 2021-05-30 11:18+0200\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>, 2021\n"
 "Language-Team: Serbian (https://www.transifex.com/mate/teams/13566/sr/)\n"
@@ -585,12 +585,12 @@ msgstr ""
 "површи. Ако желите да сазнате више о Мејту и Мејтовом дигитрону, посетите "
 "матичну страницу пројекта."
 
-#: data/mate-calc.desktop.in:3 src/math-window.c:364
+#: data/mate-calc.desktop.in:3 src/math-window.c:368
 msgid "MATE Calculator"
 msgstr "Мејтов дигитрон"
 
 #. Title of main window
-#: data/mate-calc.desktop.in:4 src/math-window.c:710
+#: data/mate-calc.desktop.in:4 src/math-window.c:723
 msgid "Calculator"
 msgstr "Дигитрон"
 
@@ -957,7 +957,7 @@ msgid "Error: the number of periods must be positive"
 msgstr "Грешка: број периода мора бити позитиван"
 
 #. Description on how to use mate-calc displayed on command-line
-#: src/mate-calc.c:82
+#: src/mate-calc.c:86
 #, c-format
 msgid ""
 "Usage:\n"
@@ -968,7 +968,7 @@ msgstr ""
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
-#: src/mate-calc.c:90
+#: src/mate-calc.c:94
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -985,7 +985,7 @@ msgstr ""
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
-#: src/mate-calc.c:101
+#: src/mate-calc.c:105
 #, c-format
 msgid ""
 "GTK+ Options:\n"
@@ -1005,7 +1005,7 @@ msgstr ""
 "  --g-fatal-warnings              Чини сва упозорења кобним"
 
 #. Description on mate-calc application options displayed on command-line
-#: src/mate-calc.c:115
+#: src/mate-calc.c:119
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -1015,13 +1015,13 @@ msgstr ""
 "  -s, --solve <equation>          Решава задату једначину"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: src/mate-calc.c:163
+#: src/mate-calc.c:167
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "Аргумент „--solve“ захтева једначину за решавање"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: src/mate-calc.c:174
+#: src/mate-calc.c:178
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "Непознат аргумент „%s“"
@@ -1212,12 +1212,12 @@ msgid "Boolean NOT"
 msgstr "Логичко НЕ"
 
 #. Tooltip for the integer component button
-#: src/math-buttons.c:206 src/math-buttons.c:993
+#: src/math-buttons.c:206 src/math-buttons.c:997
 msgid "Integer Component"
 msgstr "Целобројни део"
 
 #. Tooltip for the fractional component button
-#: src/math-buttons.c:209 src/math-buttons.c:995
+#: src/math-buttons.c:209 src/math-buttons.c:999
 msgid "Fractional Component"
 msgstr "Разломљени део"
 
@@ -1302,28 +1302,28 @@ msgid "Straight Line Depreciation"
 msgstr "Праволинијско умањење"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: src/math-buttons.c:626
+#: src/math-buttons.c:630
 msgid "Binary"
 msgstr "Бинарна"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: src/math-buttons.c:630
+#: src/math-buttons.c:634
 msgid "Octal"
 msgstr "Октална"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: src/math-buttons.c:634
+#: src/math-buttons.c:638
 msgid "Decimal"
 msgstr "Децимална"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: src/math-buttons.c:638
+#: src/math-buttons.c:642
 msgid "Hexadecimal"
 msgstr "Хексадецимална"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: src/math-buttons.c:906 src/math-buttons.c:948
+#: src/math-buttons.c:910 src/math-buttons.c:952
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
@@ -1333,7 +1333,7 @@ msgstr[2] "_%d места"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: src/math-buttons.c:910 src/math-buttons.c:952
+#: src/math-buttons.c:914 src/math-buttons.c:956
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
@@ -1342,103 +1342,103 @@ msgstr[1] "%d места"
 msgstr[2] "%d места"
 
 #. Tooltip for the round button
-#: src/math-buttons.c:997
+#: src/math-buttons.c:1001
 msgid "Round"
 msgstr "Заокружи"
 
 #. Tooltip for the floor button
-#: src/math-buttons.c:999
+#: src/math-buttons.c:1003
 msgid "Floor"
 msgstr "Заокружи на доле"
 
 #. Tooltip for the ceiling button
-#: src/math-buttons.c:1001
+#: src/math-buttons.c:1005
 msgid "Ceiling"
 msgstr "Заокружи на горе"
 
 #. Tooltip for the ceiling button
-#: src/math-buttons.c:1003
+#: src/math-buttons.c:1007
 msgid "Sign"
 msgstr "Знак"
 
 #. Tooltip for the c₀ component button
-#: src/math-buttons.c:1045
+#: src/math-buttons.c:1049
 msgid "Velocity of Light"
 msgstr "Брзина светлости"
 
-#: src/math-buttons.c:1045
+#: src/math-buttons.c:1049
 msgid "299,792,458 m/s"
 msgstr "299.792.458 m/s"
 
 #. Tooltip for the μ₀ component button
-#: src/math-buttons.c:1047
+#: src/math-buttons.c:1051
 msgid "Magnetic constant"
 msgstr "Магнетна константа"
 
-#: src/math-buttons.c:1047
+#: src/math-buttons.c:1051
 msgid "1.2566370614×10⁻⁶ N/A²"
 msgstr "1,2566370614×10⁻⁶ N/A²"
 
 #. Tooltip for the ε₀ button
-#: src/math-buttons.c:1049
+#: src/math-buttons.c:1053
 msgid "Electric constant"
 msgstr "Електрична константа"
 
-#: src/math-buttons.c:1049
+#: src/math-buttons.c:1053
 msgid "8.85418782×10⁻¹² s⁴A²/m³kg"
 msgstr "8,85418782×10⁻¹² s⁴A²/m³kg"
 
 #. Tooltip for the G button
-#: src/math-buttons.c:1051
+#: src/math-buttons.c:1055
 msgid "Newtonian constant of gravitation"
 msgstr "Њутнова гравитациона константа"
 
-#: src/math-buttons.c:1051
+#: src/math-buttons.c:1055
 msgid "6.67408×10⁻¹¹ m³/(s²kg)"
 msgstr "6,67408×10⁻¹¹ m³/(s²kg)"
 
 #. Tooltip for the h button
-#: src/math-buttons.c:1053
+#: src/math-buttons.c:1057
 msgid "Planck constant"
 msgstr "Планкова константа"
 
-#: src/math-buttons.c:1053
+#: src/math-buttons.c:1057
 msgid "6.62607004×10⁻³⁴ m²kg/s"
 msgstr "6,62607004×10⁻³⁴ m²kg/s"
 
 #. Tooltip for the ｅ button
-#: src/math-buttons.c:1055
+#: src/math-buttons.c:1059
 msgid "Elementary charge"
 msgstr "Елементарно наелектрисање"
 
-#: src/math-buttons.c:1055
+#: src/math-buttons.c:1059
 msgid "1.6021766208(98)×10⁻¹⁹ C"
 msgstr "1,6021766208(98)×10⁻¹⁹ C"
 
 #. Tooltip for the mₑ button
-#: src/math-buttons.c:1057
+#: src/math-buttons.c:1061
 msgid "Electron mass"
 msgstr "Маса електрона"
 
-#: src/math-buttons.c:1057
+#: src/math-buttons.c:1061
 msgid "9.10938356×10⁻³¹ kg"
 msgstr "9,10938356×10⁻³¹ kg"
 
 #. Tooltip for the mₚ button
-#: src/math-buttons.c:1059
+#: src/math-buttons.c:1063
 msgid "Proton mass"
 msgstr "Маса протона"
 
-#: src/math-buttons.c:1059
+#: src/math-buttons.c:1063
 msgid "1.672621898(21)×10⁻²⁷ kg"
 msgstr "1,672621898(21)×10⁻²⁷ kg"
 
 #. Tooltip for the Nₐ button
-#: src/math-buttons.c:1061
+#: src/math-buttons.c:1065
 msgid "Avogadro constant"
 msgstr "Авогадрова константа"
 
-#: src/math-buttons.c:1061
+#: src/math-buttons.c:1065
 msgid "6.02214086×10²³ mol⁻¹"
 msgstr "6,02214086×10²³ mol⁻¹"
 
@@ -1454,76 +1454,76 @@ msgid "Switch conversion units"
 msgstr "Промените јединице претварања"
 
 #. Error shown when trying to undo with no undo history
-#: src/math-equation.c:458
+#: src/math-equation.c:460
 msgid "No undo history"
 msgstr "Нема радњи опозивања"
 
 #. Error shown when trying to redo with no redo history
-#: src/math-equation.c:485
+#: src/math-equation.c:487
 msgid "No redo history"
 msgstr "Нема радњи враћања"
 
-#: src/math-equation.c:947
+#: src/math-equation.c:949
 msgid "No sane value to store"
 msgstr "Нема разумне вредности за чување"
 
 #. Error displayed to user when they perform a bitwise operation on numbers
 #. greater than the current word
-#: src/math-equation.c:1257
+#: src/math-equation.c:1258
 msgid "Overflow. Try a bigger word size"
 msgstr "Прекорачење. Покушајте са већом дужином речи"
 
 #. Error displayed to user when they an unknown variable is entered
-#: src/math-equation.c:1262
+#: src/math-equation.c:1263
 #, c-format
 msgid "Unknown variable '%s'"
 msgstr "Непозната променљива „%s“"
 
 #. Error displayed to user when an unknown function is entered
-#: src/math-equation.c:1267
+#: src/math-equation.c:1268
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr "Функција „%s“ није одређена"
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: src/math-equation.c:1272
+#: src/math-equation.c:1273
 msgid "Unknown conversion"
 msgstr "Непознато претварање"
 
 #. Uncategorized error. Show error token to user
-#: src/math-equation.c:1280
+#: src/math-equation.c:1281
 #, c-format
 msgid "Malformed expression at token '%s'"
 msgstr "Неисправан израз на „%s“"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: src/math-equation.c:1283 src/math-equation.c:1288
+#: src/math-equation.c:1284 src/math-equation.c:1289
 msgid "Malformed expression"
 msgstr "Неисправан израз"
 
-#: src/math-equation.c:1303
+#: src/math-equation.c:1304
 msgid "Calculating"
 msgstr "Израчунавам"
 
 #. Error displayed when trying to factorize a non-integer value
-#: src/math-equation.c:1438
+#: src/math-equation.c:1443
 msgid "Need an integer to factorize"
 msgstr "За факторисање је потребан цео број"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: src/math-equation.c:1511
+#: src/math-equation.c:1516
 msgid "No sane value to bitwise shift"
 msgstr "Нема разумне вредности за битско померање"
 
 #. Message displayed when cannot toggle bit in display
-#: src/math-equation.c:1544
+#: src/math-equation.c:1549
 msgid "Displayed value not an integer"
 msgstr "Приказана вредност није цео број"
 
 #. Digits localized for the given language
-#: src/math-equation.c:1981
+#: src/math-equation.c:1997
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1575,19 +1575,19 @@ msgid "Show %d decimal _places"
 msgstr "_Прикажи %d децимална места"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: src/math-window.c:290
+#: src/math-window.c:294
 msgid "Unable to open help file"
 msgstr "Не могу да отворим датотеку помоћи"
 
-#: src/math-window.c:308
+#: src/math-window.c:312
 msgid "Sun Microsystems"
 msgstr "Сан Микросистеми"
 
-#: src/math-window.c:309
+#: src/math-window.c:313
 msgid "MATE Documentation Team"
 msgstr "Тим документације Гнома"
 
-#: src/math-window.c:315
+#: src/math-window.c:319
 msgid ""
 "MATE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -1599,7 +1599,7 @@ msgstr ""
 "софтвера; било верзије 2 лиценце или (по вашем избору) било које новије "
 "верзије."
 
-#: src/math-window.c:319
+#: src/math-window.c:323
 msgid ""
 "MATE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
@@ -1611,7 +1611,7 @@ msgstr ""
 "ПРИЛАГОЂЕНОСТИ ОДРЕЂЕНОЈ НАМЕНИ.  Погледајте Гнуову Општу јавну лиценцу за "
 "више детаља."
 
-#: src/math-window.c:323
+#: src/math-window.c:327
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
@@ -1622,7 +1622,7 @@ msgstr ""
 "Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 "
 "USA“."
 
-#: src/math-window.c:360
+#: src/math-window.c:364
 #, c-format
 msgid ""
 "Calculator with financial and scientific modes.\n"
@@ -1631,11 +1631,11 @@ msgstr ""
 "Дигитрон са финансијским и научним режимом рада.\n"
 "Користи „GNU MPFR %s“ и „GNU MPC %s“"
 
-#: src/math-window.c:366
+#: src/math-window.c:370
 msgid "About MATE Calculator"
 msgstr "О Мејтовом дигитрону"
 
-#: src/math-window.c:367
+#: src/math-window.c:371
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2021 MATE developers"
@@ -1643,89 +1643,89 @@ msgstr ""
 "Ауторска права © 1986–2010 Аутори Гдигиталата\n"
 "Ауторска права © 2011-2021 Програмери Мејта"
 
-#: src/math-window.c:373
+#: src/math-window.c:377
 msgid "translator-credits"
 msgstr "Мирослав Николић <miroslavnikolic@rocketmail.com>"
 
 #. Calculator menu
-#: src/math-window.c:515
+#: src/math-window.c:526
 msgid "_Calculator"
 msgstr "_Дигитрон"
 
 #. Mode menu
-#: src/math-window.c:517
+#: src/math-window.c:528
 msgid "_Mode"
 msgstr "_Режим"
 
 #. View menu
-#: src/math-window.c:519
+#: src/math-window.c:530
 msgid "_View"
 msgstr "_Преглед"
 
 #. Help menu label
-#: src/math-window.c:521
+#: src/math-window.c:532
 msgid "_Help"
 msgstr "По_моћ"
 
 #. Basic menu label
-#: src/math-window.c:523
+#: src/math-window.c:534
 msgid "_Basic"
 msgstr "_Основни"
 
 #. Advanced menu label
-#: src/math-window.c:525
+#: src/math-window.c:536
 msgid "_Advanced"
 msgstr "_Напредни"
 
 #. Financial menu label
-#: src/math-window.c:527
+#: src/math-window.c:538
 msgid "_Financial"
 msgstr "_Финансијски"
 
 #. Programming menu label
-#: src/math-window.c:529
+#: src/math-window.c:540
 msgid "_Programming"
 msgstr "_Програмерски"
 
 #. History menu label
-#: src/math-window.c:531
+#: src/math-window.c:542
 msgid "_History"
 msgstr "_Историјат"
 
 #. Help>Contents menu label
-#: src/math-window.c:533
+#: src/math-window.c:544
 msgid "_Contents"
 msgstr "_Садржаји"
 
-#: src/math-window.c:536
+#: src/math-window.c:547
 msgid "_Copy"
 msgstr "_Умножи"
 
-#: src/math-window.c:538
+#: src/math-window.c:549
 msgid "_Paste"
 msgstr "У_баци"
 
-#: src/math-window.c:540
+#: src/math-window.c:551
 msgid "_Undo"
 msgstr "Опо_зови"
 
-#: src/math-window.c:542
+#: src/math-window.c:553
 msgid "_Redo"
 msgstr "_Понови"
 
-#: src/math-window.c:544
+#: src/math-window.c:555
 msgid "_Clear History"
 msgstr "Очисти _историјат"
 
-#: src/math-window.c:547
+#: src/math-window.c:558
 msgid "_Preferences"
 msgstr "_Поставке"
 
-#: src/math-window.c:549
+#: src/math-window.c:560
 msgid "_Quit"
 msgstr "_Изађи"
 
-#: src/math-window.c:570
+#: src/math-window.c:581
 msgid "_About"
 msgstr "_О програму"
 
@@ -1774,19 +1774,19 @@ msgid "Logarithm of zero is undefined"
 msgstr "Логаритам нуле није дефинисан"
 
 #. Translators: Error displayed when attempting to take zeroth root
-#: src/mp.c:431
+#: src/mp.c:434
 msgid "The zeroth root of a number is undefined"
 msgstr "Нулти корен броја је недефинисан"
 
 #. Translators: Error displayed when attempted take the factorial of a
 #. negative or complex number
-#: src/mp.c:471
+#: src/mp.c:474
 msgid "Factorial is only defined for non-negative real numbers"
 msgstr "Факторијел је дефинисан само за не-негативне природне бројеве"
 
 #. Translators: Error displayed when attemping to do a modulus division on
 #. non-integer numbers
-#: src/mp.c:501
+#: src/mp.c:504
 msgid "Modulus division is only defined for integers"
 msgstr "Дељење по модулу је дефинисано само за целе бројеве"
 
@@ -1794,17 +1794,17 @@ msgstr "Дељење по модулу је дефинисано само за �
 #. exponent
 #. Translators: Error displayed when attempted to raise 0 to a negative
 #. re_exponent
-#: src/mp.c:572 src/mp.c:599
+#: src/mp.c:575 src/mp.c:602
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "Степеновање нуле није дефинисано за негативне изложиоце"
 
 #. Translators: Error displayed when error function (erf) value is undefined
-#: src/mp.c:612
+#: src/mp.c:615
 msgid "The error function is only defined for real numbers"
 msgstr "Функција грешке је дефинисана само за реалне бројеве"
 
 #. Translators: Error displayed when zeta function value is undefined
-#: src/mp.c:629
+#: src/mp.c:632
 msgid "The Riemann zeta function is only defined for real numbers ≠1"
 msgstr "Рајманова зета функција је дефинисана само за реалне бројеве ≠1"
 

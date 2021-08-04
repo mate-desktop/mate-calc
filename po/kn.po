@@ -11,8 +11,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-calc 1.25.0\n"
-"Report-Msgid-Bugs-To: http://mate-desktop.org\n"
-"POT-Creation-Date: 2021-01-16 15:04+0100\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-calc/issues\n"
+"POT-Creation-Date: 2021-05-30 11:18+0200\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
 "Last-Translator: karthik holla <karthikholla87@gmail.com>, 2020\n"
 "Language-Team: Kannada (https://www.transifex.com/mate/teams/13566/kn/)\n"
@@ -582,12 +582,12 @@ msgid ""
 "project's home page."
 msgstr ""
 
-#: data/mate-calc.desktop.in:3 src/math-window.c:364
+#: data/mate-calc.desktop.in:3 src/math-window.c:368
 msgid "MATE Calculator"
 msgstr "ಮೇಟ್ ಕ್ಯಾಲ್ಕುಲೇಟರ್"
 
 #. Title of main window
-#: data/mate-calc.desktop.in:4 src/math-window.c:710
+#: data/mate-calc.desktop.in:4 src/math-window.c:723
 msgid "Calculator"
 msgstr "ಕ್ಯಾಲ್ಕುಲೇಟರ್"
 
@@ -955,7 +955,7 @@ msgid "Error: the number of periods must be positive"
 msgstr "ದೋಷ: ಅವಧಿಗಳ ಸಂಖ್ಯೆಯು ಧನಾತ್ಮಕವಾಗಿರಬೇಕು"
 
 #. Description on how to use mate-calc displayed on command-line
-#: src/mate-calc.c:82
+#: src/mate-calc.c:86
 #, c-format
 msgid ""
 "Usage:\n"
@@ -966,7 +966,7 @@ msgstr ""
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
-#: src/mate-calc.c:90
+#: src/mate-calc.c:94
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -983,7 +983,7 @@ msgstr ""
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
-#: src/mate-calc.c:101
+#: src/mate-calc.c:105
 #, c-format
 msgid ""
 "GTK+ Options:\n"
@@ -1003,7 +1003,7 @@ msgstr ""
 "  --g-fatal-warnings              ಎಲ್ಲಾ ಎಚ್ಚರಿಕೆಗಳನ್ನು ಮಾರಕವಾಗಿಸುತ್ತದೆ"
 
 #. Description on mate-calc application options displayed on command-line
-#: src/mate-calc.c:115
+#: src/mate-calc.c:119
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -1013,13 +1013,13 @@ msgstr ""
 "  -s, --solve <equation>          ಒದಗಿಸಲಾದ ಸಮೀಕರಣವನ್ನು ಬಿಡಿಸುತ್ತದೆ"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: src/mate-calc.c:163
+#: src/mate-calc.c:167
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "ಆರ್ಗುಮೆಂಟ್ --solve ಗಾಗಿ ಪರಿಹರಿಸಲು ಒಂದು ಸಮೀಕರಣದ ಅಗತ್ಯವಿರುತ್ತದೆ"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: src/mate-calc.c:174
+#: src/mate-calc.c:178
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "ಗೊತ್ತಿರದ ಆರ್ಗುಮೆಂಟ್ '%s'"
@@ -1210,12 +1210,12 @@ msgid "Boolean NOT"
 msgstr "ಬೂಲಿಯನ್ NOT"
 
 #. Tooltip for the integer component button
-#: src/math-buttons.c:206 src/math-buttons.c:993
+#: src/math-buttons.c:206 src/math-buttons.c:997
 msgid "Integer Component"
 msgstr "ಪೂರ್ಣಾಂಕದ ಭಾಗ"
 
 #. Tooltip for the fractional component button
-#: src/math-buttons.c:209 src/math-buttons.c:995
+#: src/math-buttons.c:209 src/math-buttons.c:999
 msgid "Fractional Component"
 msgstr "ಭಿನ್ನರಾಶಿ ಭಾಗ"
 
@@ -1300,28 +1300,28 @@ msgid "Straight Line Depreciation"
 msgstr "ನೇರ ರೇಖೆಯ ಸವಕಳಿ"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: src/math-buttons.c:626
+#: src/math-buttons.c:630
 msgid "Binary"
 msgstr "ಬೈನರಿ"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: src/math-buttons.c:630
+#: src/math-buttons.c:634
 msgid "Octal"
 msgstr "ಆಕ್ಟಲ್"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: src/math-buttons.c:634
+#: src/math-buttons.c:638
 msgid "Decimal"
 msgstr "ದಶಾಂಶ"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: src/math-buttons.c:638
+#: src/math-buttons.c:642
 msgid "Hexadecimal"
 msgstr "ಹೆಕ್ಸಾಡೆಸಿಮಲ್"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: src/math-buttons.c:906 src/math-buttons.c:948
+#: src/math-buttons.c:910 src/math-buttons.c:952
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
@@ -1330,7 +1330,7 @@ msgstr[1] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: src/math-buttons.c:910 src/math-buttons.c:952
+#: src/math-buttons.c:914 src/math-buttons.c:956
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
@@ -1338,103 +1338,103 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. Tooltip for the round button
-#: src/math-buttons.c:997
+#: src/math-buttons.c:1001
 msgid "Round"
 msgstr "ವೃತ್ತಾಕಾರ"
 
 #. Tooltip for the floor button
-#: src/math-buttons.c:999
+#: src/math-buttons.c:1003
 msgid "Floor"
 msgstr "ನೆಲ"
 
 #. Tooltip for the ceiling button
-#: src/math-buttons.c:1001
+#: src/math-buttons.c:1005
 msgid "Ceiling"
 msgstr "ಛಾವಣಿ"
 
 #. Tooltip for the ceiling button
-#: src/math-buttons.c:1003
+#: src/math-buttons.c:1007
 msgid "Sign"
 msgstr "ಸಂಕೇತ"
 
 #. Tooltip for the c₀ component button
-#: src/math-buttons.c:1045
+#: src/math-buttons.c:1049
 msgid "Velocity of Light"
 msgstr ""
 
-#: src/math-buttons.c:1045
+#: src/math-buttons.c:1049
 msgid "299,792,458 m/s"
 msgstr ""
 
 #. Tooltip for the μ₀ component button
-#: src/math-buttons.c:1047
+#: src/math-buttons.c:1051
 msgid "Magnetic constant"
 msgstr ""
 
-#: src/math-buttons.c:1047
+#: src/math-buttons.c:1051
 msgid "1.2566370614×10⁻⁶ N/A²"
 msgstr ""
 
 #. Tooltip for the ε₀ button
-#: src/math-buttons.c:1049
+#: src/math-buttons.c:1053
 msgid "Electric constant"
 msgstr ""
 
-#: src/math-buttons.c:1049
+#: src/math-buttons.c:1053
 msgid "8.85418782×10⁻¹² s⁴A²/m³kg"
 msgstr ""
 
 #. Tooltip for the G button
-#: src/math-buttons.c:1051
+#: src/math-buttons.c:1055
 msgid "Newtonian constant of gravitation"
 msgstr ""
 
-#: src/math-buttons.c:1051
+#: src/math-buttons.c:1055
 msgid "6.67408×10⁻¹¹ m³/(s²kg)"
 msgstr ""
 
 #. Tooltip for the h button
-#: src/math-buttons.c:1053
+#: src/math-buttons.c:1057
 msgid "Planck constant"
 msgstr ""
 
-#: src/math-buttons.c:1053
+#: src/math-buttons.c:1057
 msgid "6.62607004×10⁻³⁴ m²kg/s"
 msgstr ""
 
 #. Tooltip for the ｅ button
-#: src/math-buttons.c:1055
+#: src/math-buttons.c:1059
 msgid "Elementary charge"
 msgstr ""
 
-#: src/math-buttons.c:1055
+#: src/math-buttons.c:1059
 msgid "1.6021766208(98)×10⁻¹⁹ C"
 msgstr ""
 
 #. Tooltip for the mₑ button
-#: src/math-buttons.c:1057
+#: src/math-buttons.c:1061
 msgid "Electron mass"
 msgstr ""
 
-#: src/math-buttons.c:1057
+#: src/math-buttons.c:1061
 msgid "9.10938356×10⁻³¹ kg"
 msgstr ""
 
 #. Tooltip for the mₚ button
-#: src/math-buttons.c:1059
+#: src/math-buttons.c:1063
 msgid "Proton mass"
 msgstr ""
 
-#: src/math-buttons.c:1059
+#: src/math-buttons.c:1063
 msgid "1.672621898(21)×10⁻²⁷ kg"
 msgstr ""
 
 #. Tooltip for the Nₐ button
-#: src/math-buttons.c:1061
+#: src/math-buttons.c:1065
 msgid "Avogadro constant"
 msgstr ""
 
-#: src/math-buttons.c:1061
+#: src/math-buttons.c:1065
 msgid "6.02214086×10²³ mol⁻¹"
 msgstr ""
 
@@ -1450,76 +1450,76 @@ msgid "Switch conversion units"
 msgstr "ಪರಿವರ್ತನೆ ಏಕಮಾನಗಳನ್ನು ಬದಲಾಯಿಸು"
 
 #. Error shown when trying to undo with no undo history
-#: src/math-equation.c:458
+#: src/math-equation.c:460
 msgid "No undo history"
 msgstr "ರದ್ದುಗೊಳಿಸಿದ ಇತಿಹಾಸ ಇಲ್ಲ"
 
 #. Error shown when trying to redo with no redo history
-#: src/math-equation.c:485
+#: src/math-equation.c:487
 msgid "No redo history"
 msgstr "ರದ್ದುಗೊಳಿಸಿದ ಇತಿಹಾಸ ಇಲ್ಲ"
 
-#: src/math-equation.c:947
+#: src/math-equation.c:949
 msgid "No sane value to store"
 msgstr "ಶೇಖರಿಸಲು ಸಮರ್ಪಕವಾದ ಯಾವುದೆ ಮೌಲ್ಯವಿಲ್ಲ"
 
 #. Error displayed to user when they perform a bitwise operation on numbers
 #. greater than the current word
-#: src/math-equation.c:1257
+#: src/math-equation.c:1258
 msgid "Overflow. Try a bigger word size"
 msgstr "ಮಿತಿಮೀರಿದೆ. ಒಂದು ದೊಡ್ಡ ಪದದೊಂದಿಗೆ ಪ್ರಯತ್ನಿಸಿ"
 
 #. Error displayed to user when they an unknown variable is entered
-#: src/math-equation.c:1262
+#: src/math-equation.c:1263
 #, c-format
 msgid "Unknown variable '%s'"
 msgstr "ಗೊತ್ತಿರದ ವೇರಿಯೇಬಲ್ '%s'"
 
 #. Error displayed to user when an unknown function is entered
-#: src/math-equation.c:1267
+#: src/math-equation.c:1268
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr "'%s' ಎಂಬ ಕ್ರಿಯೆಯನ್ನು ಸೂಚಿಸಲಾಗಿಲ್ಲ"
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: src/math-equation.c:1272
+#: src/math-equation.c:1273
 msgid "Unknown conversion"
 msgstr "ಗೊತ್ತಿರದೆ ಪರಿವರ್ತನೆ"
 
 #. Uncategorized error. Show error token to user
-#: src/math-equation.c:1280
+#: src/math-equation.c:1281
 #, c-format
 msgid "Malformed expression at token '%s'"
 msgstr "'%s' ಟೋಕನ್‌ನಲ್ಲಿ ತಪ್ಪಾದ ಎಕ್ಸ್‍ಪ್ರೆಶನ್"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: src/math-equation.c:1283 src/math-equation.c:1288
+#: src/math-equation.c:1284 src/math-equation.c:1289
 msgid "Malformed expression"
 msgstr "ತಪ್ಪಾದ ಎಕ್ಸ್‍ಪ್ರೆಶನ್"
 
-#: src/math-equation.c:1303
+#: src/math-equation.c:1304
 msgid "Calculating"
 msgstr "ಲೆಕ್ಕಹಾಕಲಾಗುತ್ತಿ"
 
 #. Error displayed when trying to factorize a non-integer value
-#: src/math-equation.c:1438
+#: src/math-equation.c:1443
 msgid "Need an integer to factorize"
 msgstr "ಅಪವರ್ತ್ಯಗೊಳಿಸಲು ಒಂದು ಪೂರ್ಣಾಂಕದ ಅಗತ್ಯವಿದೆ"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: src/math-equation.c:1511
+#: src/math-equation.c:1516
 msgid "No sane value to bitwise shift"
 msgstr "ಬಿಟ್‌ವೈಸ್ ಶಿಫ್ಟ್‍ಗೆ ಯಾವುದೆ ಸಮರ್ಪಕವಾದ ಮೌಲ್ಯವಿಲ್ಲ"
 
 #. Message displayed when cannot toggle bit in display
-#: src/math-equation.c:1544
+#: src/math-equation.c:1549
 msgid "Displayed value not an integer"
 msgstr "ತೋರಿಸಲಾದ ಮೌಲ್ಯವು ಪೂರ್ಣಾಂಕವಾಗಿಲ್ಲ"
 
 #. Digits localized for the given language
-#: src/math-equation.c:1981
+#: src/math-equation.c:1997
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
@@ -1571,19 +1571,19 @@ msgid "Show %d decimal _places"
 msgstr "%d ದಶಾಂಶ ಸ್ಥಾನಗಳನ್ನು ತೋರಿಸು (_p)"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: src/math-window.c:290
+#: src/math-window.c:294
 msgid "Unable to open help file"
 msgstr "ನೆರವಿನ ಕಡತವನ್ನು ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ"
 
-#: src/math-window.c:308
+#: src/math-window.c:312
 msgid "Sun Microsystems"
 msgstr ""
 
-#: src/math-window.c:309
+#: src/math-window.c:313
 msgid "MATE Documentation Team"
 msgstr ""
 
-#: src/math-window.c:315
+#: src/math-window.c:319
 msgid ""
 "MATE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -1591,7 +1591,7 @@ msgid ""
 "any later version."
 msgstr ""
 
-#: src/math-window.c:319
+#: src/math-window.c:323
 msgid ""
 "MATE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
@@ -1599,114 +1599,114 @@ msgid ""
 " more details."
 msgstr ""
 
-#: src/math-window.c:323
+#: src/math-window.c:327
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
 
-#: src/math-window.c:360
+#: src/math-window.c:364
 #, c-format
 msgid ""
 "Calculator with financial and scientific modes.\n"
 "Using GNU MPFR %s and GNU MPC %s"
 msgstr ""
 
-#: src/math-window.c:366
+#: src/math-window.c:370
 msgid "About MATE Calculator"
 msgstr ""
 
-#: src/math-window.c:367
+#: src/math-window.c:371
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2021 MATE developers"
 msgstr ""
 
-#: src/math-window.c:373
+#: src/math-window.c:377
 msgid "translator-credits"
 msgstr ""
 "ಶಂಕರ್ ಪ್ರಸಾದ್ <svenkate@redhat.com>,ಕಾರ್ತಿಕ ಹೊಳ್ಳ <karthikholla87@gmail.com>"
 
 #. Calculator menu
-#: src/math-window.c:515
+#: src/math-window.c:526
 msgid "_Calculator"
 msgstr "ಕ್ಯಾಲ್ಕುಲೇಟರ್(_C)"
 
 #. Mode menu
-#: src/math-window.c:517
+#: src/math-window.c:528
 msgid "_Mode"
 msgstr "ಕ್ರಮ(_M)"
 
 #. View menu
-#: src/math-window.c:519
+#: src/math-window.c:530
 msgid "_View"
 msgstr "ನೋಟ(_V)"
 
 #. Help menu label
-#: src/math-window.c:521
+#: src/math-window.c:532
 msgid "_Help"
 msgstr "ನೆರವು(_H)"
 
 #. Basic menu label
-#: src/math-window.c:523
+#: src/math-window.c:534
 msgid "_Basic"
 msgstr "ಸರಳ(_B)"
 
 #. Advanced menu label
-#: src/math-window.c:525
+#: src/math-window.c:536
 msgid "_Advanced"
 msgstr "ಸುಧಾರಿತ(_A)"
 
 #. Financial menu label
-#: src/math-window.c:527
+#: src/math-window.c:538
 msgid "_Financial"
 msgstr "ಹಣಕಾಸು(_F)"
 
 #. Programming menu label
-#: src/math-window.c:529
+#: src/math-window.c:540
 msgid "_Programming"
 msgstr "ಪ್ರೊಗ್ರಾಮಿಂಗ್(_P)"
 
 #. History menu label
-#: src/math-window.c:531
+#: src/math-window.c:542
 msgid "_History"
 msgstr ""
 
 #. Help>Contents menu label
-#: src/math-window.c:533
+#: src/math-window.c:544
 msgid "_Contents"
 msgstr "ವಿಷಯಗಳು(_C)"
 
-#: src/math-window.c:536
+#: src/math-window.c:547
 msgid "_Copy"
 msgstr "ಕಾಪಿ ಮಾಡು(_C)"
 
-#: src/math-window.c:538
+#: src/math-window.c:549
 msgid "_Paste"
 msgstr "ಅಂಟಿಸು(_P)"
 
-#: src/math-window.c:540
+#: src/math-window.c:551
 msgid "_Undo"
 msgstr "ರದ್ದು ಮಾಡು(_U)"
 
-#: src/math-window.c:542
+#: src/math-window.c:553
 msgid "_Redo"
 msgstr "ಮತ್ತೊಮ್ಮೆ ಮಾಡು(_R)"
 
-#: src/math-window.c:544
+#: src/math-window.c:555
 msgid "_Clear History"
 msgstr ""
 
-#: src/math-window.c:547
+#: src/math-window.c:558
 msgid "_Preferences"
 msgstr "ಆದ್ಯತೆಗಳು(_P)"
 
-#: src/math-window.c:549
+#: src/math-window.c:560
 msgid "_Quit"
 msgstr "ಹೊರನಡೆ(_Q)"
 
-#: src/math-window.c:570
+#: src/math-window.c:581
 msgid "_About"
 msgstr "ಇದರ ಬಗ್ಗೆ(_A)"
 
@@ -1755,19 +1755,19 @@ msgid "Logarithm of zero is undefined"
 msgstr "ಶೂನ್ಯದ ಲಾಗರಿತಮ್ ಅನಿಶ್ಚಿತವಾಗಿರುತ್ತದೆ"
 
 #. Translators: Error displayed when attempting to take zeroth root
-#: src/mp.c:431
+#: src/mp.c:434
 msgid "The zeroth root of a number is undefined"
 msgstr ""
 
 #. Translators: Error displayed when attempted take the factorial of a
 #. negative or complex number
-#: src/mp.c:471
+#: src/mp.c:474
 msgid "Factorial is only defined for non-negative real numbers"
 msgstr ""
 
 #. Translators: Error displayed when attemping to do a modulus division on
 #. non-integer numbers
-#: src/mp.c:501
+#: src/mp.c:504
 msgid "Modulus division is only defined for integers"
 msgstr "ಮಾಡ್ಯುಲಸ್ ಭಾಗಿಸುವಿಕೆಯನ್ನು ಕೇವಲ ಪೂರ್ಣಾಂಕಗಳಿಗೆ ಮಾತ್ರ ಸೂಚಿಸಲಾಗುತ್ತದೆ"
 
@@ -1775,17 +1775,17 @@ msgstr "ಮಾಡ್ಯುಲಸ್ ಭಾಗಿಸುವಿಕೆಯನ್ನ�
 #. exponent
 #. Translators: Error displayed when attempted to raise 0 to a negative
 #. re_exponent
-#: src/mp.c:572 src/mp.c:599
+#: src/mp.c:575 src/mp.c:602
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "ಋಣ ಎಕ್ಸ್‍ಪೋನೆಂಟ್‌ಗಾಗಿ ಶೂನ್ಯದ ಘಾತವನ್ನು ಸೂಚಿಸಲಾಗಿಲ್ಲ"
 
 #. Translators: Error displayed when error function (erf) value is undefined
-#: src/mp.c:612
+#: src/mp.c:615
 msgid "The error function is only defined for real numbers"
 msgstr ""
 
 #. Translators: Error displayed when zeta function value is undefined
-#: src/mp.c:629
+#: src/mp.c:632
 msgid "The Riemann zeta function is only defined for real numbers ≠1"
 msgstr ""
 
