@@ -94,8 +94,12 @@ static ButtonData button_data[] = {
     {"eulers_number",      "e", NUMBER,
       /* Tooltip for the Euler's Number button */
       N_("Euler’s Number")},
-    {"imaginary",          "i", NUMBER, NULL},
-    {"numeric_point", NULL, NUMBER, NULL},
+    {"imaginary",          "i", NUMBER,
+      /* Tooltip for the imaginary number button */
+      N_("Imaginary unit")},
+    {"numeric_point", NULL, NUMBER,
+      /* Tooltip for the numeric point button */
+      N_("Decimal point")},
     {"subscript", NULL, NUMBER_BOLD,
       /* Tooltip for the subscript button */
       N_("Subscript mode [Alt]")},
@@ -546,8 +550,6 @@ load_mode(MathButtons *buttons, ButtonMode mode)
 
         if (button_data[i].tooltip)
             gtk_widget_set_tooltip_text(button, _(button_data[i].tooltip));
-
-        atk_object_set_name(gtk_widget_get_accessible(button), button_data[i].widget_name);
     }
 
     /* Set special button data */
