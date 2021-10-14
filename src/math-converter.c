@@ -196,7 +196,7 @@ math_converter_get_category(MathConverter *converter)
 
 
 static gboolean
-iter_is_unit(GtkTreeModel *model, GtkTreeIter *iter, Unit *unit)
+iter_is_unit(GtkTreeModel *model, GtkTreeIter *iter, const Unit *unit)
 {
     Unit *u;
 
