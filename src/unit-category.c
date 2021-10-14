@@ -104,7 +104,7 @@ unit_category_get_units(UnitCategory *category)
 
 
 gboolean
-unit_category_convert(UnitCategory *category, const MPNumber *x, Unit *x_units, Unit *z_units, MPNumber *z)
+unit_category_convert(const UnitCategory *category, const MPNumber *x, Unit *x_units, Unit *z_units, MPNumber *z)
 {
     g_return_val_if_fail (category != NULL, FALSE);
     g_return_val_if_fail (x_units != NULL, FALSE);

@@ -49,7 +49,7 @@ void unit_category_add_unit(UnitCategory *category, Unit *unit);
 
 const GList *unit_category_get_units(UnitCategory *category);
 
-gboolean unit_category_convert(UnitCategory *category, const MPNumber *x, Unit *x_units, Unit *z_units, MPNumber *z);
+gboolean unit_category_convert(const UnitCategory *category, const MPNumber *x, Unit *x_units, Unit *z_units, MPNumber *z);
 
 G_END_DECLS
 
