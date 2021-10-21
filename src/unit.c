@@ -49,7 +49,7 @@ unit_new(const gchar *name,
     unit->priv->to_function = g_strdup(to_function);
     symbol_names = g_strsplit(symbols, ",", 0);
     for (i = 0; symbol_names[i]; i++)
-        unit->priv->symbols = g_list_append(unit->priv->symbols, g_strdup(symbol_names[i]));
+        unit->priv->symbols = g_list_append(unit->priv->symbols, symbol_names[i]);
     g_free(symbol_names);
 
     return unit;
