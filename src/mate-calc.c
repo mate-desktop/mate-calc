@@ -36,13 +36,11 @@ version(const gchar *progname)
     fprintf(stderr, "%1$s %2$s\n", progname, VERSION);
 }
 
-
 static int
 do_convert(const MPNumber *x, const char *x_units, const char *z_units, MPNumber *z, void *data)
 {
     return unit_manager_convert_by_symbol(unit_manager_get_default(), x, x_units, z_units, z);
 }
-
 
 static void
 solve(const char *equation)
@@ -76,7 +74,6 @@ solve(const char *equation)
         exit(0);
     }
 }
-
 
 static void
 usage(const gchar *progname, gboolean show_application, gboolean show_gtk)
@@ -122,7 +119,6 @@ usage(const gchar *progname, gboolean show_application, gboolean show_gtk)
                 "\n\n");
     }
 }
-
 
 static void
 get_options(int argc, char *argv[])

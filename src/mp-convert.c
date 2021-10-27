@@ -24,13 +24,11 @@ mp_set_from_mp(const MPNumber *x, MPNumber *z)
     mpc_set(z->num, x->num, MPC_RNDNN);
 }
 
-
 void
 mp_set_from_double(double dx, MPNumber *z)
 {
     mpc_set_d(z->num, dx, MPC_RNDNN);
 }
-
 
 void
 mp_set_from_integer(long x, MPNumber *z)
@@ -38,13 +36,11 @@ mp_set_from_integer(long x, MPNumber *z)
     mpc_set_si(z->num, x, MPC_RNDNN);
 }
 
-
 void
 mp_set_from_unsigned_integer(ulong x, MPNumber *z)
 {
     mpc_set_ui(z->num, x, MPC_RNDNN);
 }
-
 
 void
 mp_set_from_fraction(long numerator, long denominator, MPNumber *z)
@@ -58,7 +54,6 @@ mp_set_from_fraction(long numerator, long denominator, MPNumber *z)
     if (denominator != 1)
         mp_divide_integer(z, denominator, z);
 }
-
 
 void
 mp_set_from_polar(const MPNumber *r, MPAngleUnit unit, const MPNumber *theta, MPNumber *z)
@@ -93,7 +88,6 @@ mp_to_integer(const MPNumber *x)
 {
     return mpfr_get_si(mpc_realref(x->num), MPFR_RNDN);
 }
-
 
 ulong
 mp_to_unsigned_integer(const MPNumber *x)
@@ -182,7 +176,6 @@ char_val(char **c, int base)
     return value;
 }
 
-
 static int
 ends_with(const char *start, const char *end, const char *word)
 {
@@ -193,7 +186,6 @@ ends_with(const char *start, const char *end, const char *word)
 
     return strncmp(end - word_len, word, word_len) == 0;
 }
-
 
 // FIXME: Doesn't handle errors well (e.g. trailing space)
 static bool
@@ -224,7 +216,6 @@ set_from_sexagesimal(const char *str, int length, MPNumber *z)
 
     return false;
 }
-
 
 bool
 mp_set_from_string(const char *str, int default_base, MPNumber *z)

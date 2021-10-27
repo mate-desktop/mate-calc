@@ -25,7 +25,6 @@ struct CurrencyPrivate
 
 G_DEFINE_TYPE_WITH_PRIVATE (Currency, currency, G_TYPE_OBJECT);
 
-
 Currency *
 currency_new(const gchar *name,
              const gchar *display_name,
@@ -41,14 +40,12 @@ currency_new(const gchar *name,
     return currency;
 }
 
-
 const gchar *
 currency_get_name(Currency *currency)
 {
     g_return_val_if_fail (currency != NULL, NULL);
     return currency->priv->name;
 }
-
 
 const gchar *
 currency_get_display_name(Currency *currency)
@@ -57,14 +54,12 @@ currency_get_display_name(Currency *currency)
     return currency->priv->display_name;
 }
 
-
 const gchar *
 currency_get_symbol(Currency *currency)
 {
     g_return_val_if_fail (currency != NULL, NULL);
     return currency->priv->symbol;
 }
-
 
 void
 currency_set_value(Currency *currency, MPNumber *value)
@@ -74,7 +69,6 @@ currency_set_value(Currency *currency, MPNumber *value)
     mp_set_from_mp (value, &currency->priv->value);
 }
 
-
 const MPNumber *
 currency_get_value(Currency *currency)
 {
@@ -82,12 +76,10 @@ currency_get_value(Currency *currency)
     return &currency->priv->value;
 }
 
-
 static void
 currency_class_init(CurrencyClass *klass)
 {
 }
-
 
 static void
 currency_init(Currency *currency)

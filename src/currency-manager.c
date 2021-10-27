@@ -101,7 +101,6 @@ struct CurrencyManagerPrivate
 
 G_DEFINE_TYPE_WITH_PRIVATE (CurrencyManager, currency_manager, G_TYPE_OBJECT);
 
-
 enum {
     UPDATED,
     LAST_SIGNAL
@@ -109,7 +108,6 @@ enum {
 static guint signals[LAST_SIGNAL] = { 0, };
 
 static CurrencyManager *default_currency_manager = NULL;
-
 
 CurrencyManager *
 currency_manager_get_default(void)
@@ -131,14 +129,12 @@ currency_manager_get_default(void)
     return default_currency_manager;
 }
 
-
 GList *
 currency_manager_get_currencies(CurrencyManager *manager)
 {
     g_return_val_if_fail(manager != NULL, NULL);
     return manager->priv->currencies;
 }
-
 
 Currency *
 currency_manager_get_currency(CurrencyManager *manager, const gchar *name)
@@ -165,7 +161,6 @@ currency_manager_get_currency(CurrencyManager *manager, const gchar *name)
     return NULL;
 }
 
-
 static char *
 get_imf_rate_filepath(void)
 {
@@ -175,7 +170,6 @@ get_imf_rate_filepath(void)
                             NULL);
 }
 
-
 static char *
 get_ecb_rate_filepath(void)
 {
@@ -184,7 +178,6 @@ get_ecb_rate_filepath(void)
                             "eurofxref-daily.xml",
                             NULL);
 }
-
 
 static Currency *
 add_currency(CurrencyManager *manager, const gchar *short_name)
@@ -204,7 +197,6 @@ add_currency(CurrencyManager *manager, const gchar *short_name)
 
     return c;
 }
-
 
 /* A file needs to be redownloaded if it doesn't exist, or is too old.
  * When an error occur, it probably won't hurt to try to download again.
@@ -226,7 +218,6 @@ file_needs_update(gchar *filename, double max_age)
     return FALSE;
 }
 
-
 static void
 download_imf_cb(GObject *object, GAsyncResult *result, gpointer user_data)
 {
@@ -242,7 +233,6 @@ download_imf_cb(GObject *object, GAsyncResult *result, gpointer user_data)
     load_rates(manager);
 }
 
-
 static void
 download_ecb_cb(GObject *object, GAsyncResult *result, gpointer user_data)
 {
@@ -257,7 +247,6 @@ download_ecb_cb(GObject *object, GAsyncResult *result, gpointer user_data)
     downloading_ecb_rates = FALSE;
     load_rates(manager);
 }
-
 
 static void
 download_file(CurrencyManager *manager, gchar *uri, gchar *filename, GAsyncReadyCallback callback)
@@ -276,7 +265,6 @@ download_file(CurrencyManager *manager, gchar *uri, gchar *filename, GAsyncReady
     g_object_unref(source);
     g_object_unref(dest);
 }
-
 
 static void
 load_imf_rates(CurrencyManager *manager)
@@ -414,7 +402,6 @@ load_imf_rates(CurrencyManager *manager)
     g_strfreev(lines);
 }
 
-
 static void
 set_ecb_rate(CurrencyManager *manager, xmlNodePtr node, Currency *eur_rate)
 {
@@ -455,7 +442,6 @@ set_ecb_rate(CurrencyManager *manager, xmlNodePtr node, Currency *eur_rate)
         xmlFree(value);
 }
 
-
 static void
 set_ecb_fixed_rate(CurrencyManager *manager, const gchar *name, const gchar *value, Currency *eur_rate)
 {
@@ -472,7 +458,6 @@ set_ecb_fixed_rate(CurrencyManager *manager, const gchar *name, const gchar *val
     mp_clear(&r);
     mp_clear(&v);
 }
-
 
 static void
 load_ecb_rates(CurrencyManager *manager)
@@ -538,7 +523,6 @@ load_ecb_rates(CurrencyManager *manager)
     xmlCleanupParser();
 }
 
-
 static gboolean
 load_rates(CurrencyManager *manager)
 {
@@ -575,7 +559,6 @@ load_rates(CurrencyManager *manager)
     return TRUE;
 }
 
-
 const MPNumber *
 currency_manager_get_value(CurrencyManager *manager, const gchar *currency)
 {
@@ -611,7 +594,6 @@ currency_manager_get_value(CurrencyManager *manager, const gchar *currency)
         return NULL;
 }
 
-
 static void
 currency_manager_class_init(CurrencyManagerClass *klass)
 {
@@ -624,7 +606,6 @@ currency_manager_class_init(CurrencyManagerClass *klass)
                      g_cclosure_marshal_VOID__VOID,
                      G_TYPE_NONE, 0);
 }
-
 
 static void
 currency_manager_init(CurrencyManager *manager)

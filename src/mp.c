@@ -645,7 +645,6 @@ mp_zeta(const MPNumber *x, MPNumber *z)
 /**                          FACTORIZATION                            **/
 /***********************************************************************/
 
-
 /**
  * mp_is_pprime uses the Miller-Rabin primality test to decide
  * whether or not a number is probable prime.

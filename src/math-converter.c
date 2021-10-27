@@ -32,12 +32,10 @@ struct MathConverterPrivate
     GtkWidget *result_label;
 };
 
-
 G_DEFINE_TYPE_WITH_PRIVATE (MathConverter, math_converter, GTK_TYPE_BOX);
 
 static void display_changed_cb(MathEquation *equation, GParamSpec *spec, MathConverter *converter);
 static void update_from_model(MathConverter *converter);
-
 
 MathConverter *
 math_converter_new(MathEquation *equation)
@@ -48,7 +46,6 @@ math_converter_new(MathEquation *equation)
     update_from_model(converter);
     return converter;
 }
-
 
 static gboolean
 convert_equation(MathConverter *converter, const MPNumber *x, MPNumber *z)
@@ -76,7 +73,6 @@ convert_equation(MathConverter *converter, const MPNumber *x, MPNumber *z)
 
     return result;
 }
-
 
 static void
 update_result_label(MathConverter *converter)
@@ -116,13 +112,11 @@ update_result_label(MathConverter *converter)
     mp_clear(&z);
 }
 
-
 static void
 display_changed_cb(MathEquation *equation, GParamSpec *spec, MathConverter *converter)
 {
     update_result_label(converter);
 }
-
 
 static void
 update_from_model(MathConverter *converter)
@@ -169,7 +163,6 @@ update_from_model(MathConverter *converter)
     gtk_combo_box_set_model(GTK_COMBO_BOX(converter->priv->from_combo), GTK_TREE_MODEL(from_model));
 }
 
-
 void
 math_converter_set_category(MathConverter *converter, const gchar *category)
 {
@@ -186,14 +179,12 @@ math_converter_set_category(MathConverter *converter, const gchar *category)
     update_from_model(converter);
 }
 
-
 const gchar *
 math_converter_get_category(MathConverter *converter)
 {
     g_return_val_if_fail (converter != NULL, NULL);
     return converter->priv->category;
 }
-
 
 static gboolean
 iter_is_unit(GtkTreeModel *model, GtkTreeIter *iter, Unit *unit)
@@ -211,7 +202,6 @@ iter_is_unit(GtkTreeModel *model, GtkTreeIter *iter, Unit *unit)
 
     return FALSE;
 }
-
 
 static gboolean
 set_active_unit(GtkComboBox *combo, GtkTreeIter *iter, Unit *unit)
@@ -236,7 +226,6 @@ set_active_unit(GtkComboBox *combo, GtkTreeIter *iter, Unit *unit)
 
     return FALSE;
 }
-
 
 void
 math_converter_set_conversion(MathConverter *converter, /*const gchar *category,*/ const gchar *unit_a, const gchar *unit_b)
@@ -270,7 +259,6 @@ math_converter_set_conversion(MathConverter *converter, /*const gchar *category,
     set_active_unit(GTK_COMBO_BOX(converter->priv->to_combo), NULL, ub);
 }
 
-
 void
 math_converter_get_conversion(MathConverter *converter, Unit **from_unit, Unit **to_unit)
 {
@@ -287,7 +275,6 @@ math_converter_get_conversion(MathConverter *converter, Unit **from_unit, Unit *
     gtk_tree_model_get(gtk_combo_box_get_model(GTK_COMBO_BOX(converter->priv->to_combo)), &to_iter, 2, to_unit, -1);
 }
 
-
 static void
 math_converter_class_init(MathConverterClass *klass)
 {
@@ -300,7 +287,6 @@ math_converter_class_init(MathConverterClass *klass)
                      g_cclosure_marshal_VOID__VOID,
                      G_TYPE_NONE, 0);
 }
-
 
 static void
 from_combobox_changed_cb(GtkWidget *combo, MathConverter *converter)
@@ -334,7 +320,6 @@ from_combobox_changed_cb(GtkWidget *combo, MathConverter *converter)
     g_object_unref(unit);
 }
 
-
 static void
 to_combobox_changed_cb(GtkWidget *combo, MathConverter *converter)
 {
@@ -343,7 +328,6 @@ to_combobox_changed_cb(GtkWidget *combo, MathConverter *converter)
 
     g_signal_emit(converter, signals[CHANGED], 0);
 }
-
 
 static void
 from_cell_data_func(GtkCellLayout   *cell_layout,
@@ -354,7 +338,6 @@ from_cell_data_func(GtkCellLayout   *cell_layout,
 {
     g_object_set(cell, "sensitive", !gtk_tree_model_iter_has_child(tree_model, iter), NULL);
 }
-
 
 static void
 currency_updated_cb(CurrencyManager *manager, MathConverter *converter)

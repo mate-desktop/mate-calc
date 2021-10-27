@@ -14,7 +14,6 @@
 #include "math-preferences.h"
 #include "utility.h"
 
-
 enum {
     PROP_0,
     PROP_EQUATION
@@ -32,13 +31,11 @@ G_DEFINE_TYPE_WITH_PRIVATE (MathPreferencesDialog, math_preferences, GTK_TYPE_DI
 #define GET_WIDGET(ui, name) \
           GTK_WIDGET(gtk_builder_get_object(ui, name))
 
-
 MathPreferencesDialog *
 math_preferences_dialog_new(MathEquation *equation)
 {
     return g_object_new(math_preferences_get_type(), "equation", equation, NULL);
 }
-
 
 static void
 preferences_response_cb(GtkWidget *widget, gint id)
@@ -46,14 +43,12 @@ preferences_response_cb(GtkWidget *widget, gint id)
     gtk_widget_hide(widget);
 }
 
-
 static gboolean
 preferences_dialog_delete_cb(GtkWidget *widget, GdkEvent *event)
 {
     preferences_response_cb(widget, 0);
     return TRUE;
 }
-
 
 void number_format_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialog);
 G_MODULE_EXPORT
@@ -70,7 +65,6 @@ number_format_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialo
     math_equation_set_number_format(dialog->priv->equation, value);
 }
 
-
 void angle_unit_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialog);
 G_MODULE_EXPORT
 void
@@ -85,7 +79,6 @@ angle_unit_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialog)
     gtk_tree_model_get(model, &iter, 1, &value, -1);
     math_equation_set_angle_units(dialog->priv->equation, value);
 }
-
 
 void word_size_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialog);
 G_MODULE_EXPORT
@@ -102,7 +95,6 @@ word_size_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialog)
     math_equation_set_word_size(dialog->priv->equation, value);
 }
 
-
 void decimal_places_spin_change_value_cb(GtkWidget *spin, MathPreferencesDialog *dialog);
 G_MODULE_EXPORT
 void
@@ -113,7 +105,6 @@ decimal_places_spin_change_value_cb(GtkWidget *spin, MathPreferencesDialog *dial
     value = gtk_spin_button_get_value_as_int(GTK_SPIN_BUTTON(spin));
     math_equation_set_accuracy(dialog->priv->equation, value);
 }
-
 
 void thousands_separator_check_toggled_cb(GtkWidget *check, MathPreferencesDialog *dialog);
 G_MODULE_EXPORT
@@ -126,7 +117,6 @@ thousands_separator_check_toggled_cb(GtkWidget *check, MathPreferencesDialog *di
     math_equation_set_show_thousands_separators(dialog->priv->equation, value);
 }
 
-
 void trailing_zeroes_check_toggled_cb(GtkWidget *check, MathPreferencesDialog *dialog);
 G_MODULE_EXPORT
 void
@@ -137,7 +127,6 @@ trailing_zeroes_check_toggled_cb(GtkWidget *check, MathPreferencesDialog *dialog
     value = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(check));
     math_equation_set_show_trailing_zeroes(dialog->priv->equation, value);
 }
-
 
 static void
 set_combo_box_from_int(GtkWidget *combo, int value)
@@ -163,7 +152,6 @@ set_combo_box_from_int(GtkWidget *combo, int value)
     gtk_combo_box_set_active_iter(GTK_COMBO_BOX(combo), &iter);
 }
 
-
 static void
 accuracy_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
 {
@@ -171,7 +159,6 @@ accuracy_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dia
                               math_equation_get_accuracy(equation));
     g_settings_set_int(g_settings_var, "accuracy", math_equation_get_accuracy(equation));
 }
-
 
 static void
 show_thousands_separators_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
@@ -181,7 +168,6 @@ show_thousands_separators_cb(MathEquation *equation, GParamSpec *spec, MathPrefe
     g_settings_set_boolean(g_settings_var, "show-thousands", math_equation_get_show_thousands_separators(equation));
 }
 
-
 static void
 show_trailing_zeroes_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
 {
@@ -190,14 +176,12 @@ show_trailing_zeroes_cb(MathEquation *equation, GParamSpec *spec, MathPreference
     g_settings_set_boolean(g_settings_var, "show-zeroes", math_equation_get_show_trailing_zeroes(equation));
 }
 
-
 static void
 number_format_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
 {
     set_combo_box_from_int(GET_WIDGET(dialog->priv->ui, "number_format_combobox"), math_equation_get_number_format(equation));
     g_settings_set_enum(g_settings_var, "number-format", math_equation_get_number_format(equation));
 }
-
 
 static void
 word_size_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
@@ -206,14 +190,12 @@ word_size_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *di
     g_settings_set_int(g_settings_var, "word-size", math_equation_get_word_size(equation));
 }
 
-
 static void
 angle_unit_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
 {
     set_combo_box_from_int(GET_WIDGET(dialog->priv->ui, "angle_unit_combobox"), math_equation_get_angle_units(equation));
     g_settings_set_enum(g_settings_var, "angle-units", math_equation_get_angle_units(equation));
 }
-
 
 static void
 create_gui(MathPreferencesDialog *dialog)
@@ -335,7 +317,6 @@ create_gui(MathPreferencesDialog *dialog)
     angle_unit_cb(dialog->priv->equation, NULL, dialog);
 }
 
-
 static void
 math_preferences_set_property(GObject      *object,
                               guint         prop_id,
@@ -357,7 +338,6 @@ math_preferences_set_property(GObject      *object,
     }
 }
 
-
 static void
 math_preferences_get_property(GObject    *object,
                               guint       prop_id,
@@ -378,7 +358,6 @@ math_preferences_get_property(GObject    *object,
     }
 }
 
-
 static void
 math_preferences_class_init(MathPreferencesDialogClass *klass)
 {
@@ -395,7 +374,6 @@ math_preferences_class_init(MathPreferencesDialogClass *klass)
                                                         math_equation_get_type(),
                                                         G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY));
 }
-
 
 static void
 math_preferences_init(MathPreferencesDialog *dialog)

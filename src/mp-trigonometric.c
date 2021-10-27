@@ -71,14 +71,12 @@ convert_from_radians(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
     mpfr_clear(scale);
 }
 
-
 void
 mp_get_pi (MPNumber *z)
 {
     mpfr_const_pi(mpc_realref(z->num), MPFR_RNDN);
     mpfr_set_zero(mpc_imagref(z->num), 0);
 }
-
 
 void
 mp_sin(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
@@ -90,7 +88,6 @@ mp_sin(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
     mpc_sin(z->num, z->num, MPC_RNDNN);
 }
 
-
 void
 mp_cos(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
 {
@@ -100,7 +97,6 @@ mp_cos(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
         convert_to_radians(x, unit, z);
     mpc_cos(z->num, z->num, MPC_RNDNN);
 }
-
 
 void
 mp_tan(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
@@ -135,7 +131,6 @@ mp_tan(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
     mp_clear(&t1);
 }
 
-
 void
 mp_asin(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
 {
@@ -160,7 +155,6 @@ mp_asin(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
     mp_clear(&x_min);
 }
 
-
 void
 mp_acos(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
 {
@@ -184,7 +178,6 @@ mp_acos(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
     mp_clear(&x_max);
     mp_clear(&x_min);
 }
-
 
 void
 mp_atan(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
@@ -211,13 +204,11 @@ mp_atan(const MPNumber *x, MPAngleUnit unit, MPNumber *z)
     mp_clear(&minus_i);
 }
 
-
 void
 mp_sinh(const MPNumber *x, MPNumber *z)
 {
     mpc_sinh(z->num, x->num, MPC_RNDNN);
 }
-
 
 void
 mp_cosh(const MPNumber *x, MPNumber *z)
@@ -225,20 +216,17 @@ mp_cosh(const MPNumber *x, MPNumber *z)
     mpc_cosh(z->num, x->num, MPC_RNDNN);
 }
 
-
 void
 mp_tanh(const MPNumber *x, MPNumber *z)
 {
     mpc_tanh(z->num, x->num, MPC_RNDNN);
 }
 
-
 void
 mp_asinh(const MPNumber *x, MPNumber *z)
 {
     mpc_asinh(z->num, x->num, MPC_RNDNN);
 }
-
 
 void
 mp_acosh(const MPNumber *x, MPNumber *z)
@@ -259,7 +247,6 @@ mp_acosh(const MPNumber *x, MPNumber *z)
     mpc_acosh(z->num, x->num, MPC_RNDNN);
     mp_clear(&t);
 }
-
 
 void
 mp_atanh(const MPNumber *x, MPNumber *z)

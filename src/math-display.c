@@ -42,20 +42,17 @@ math_display_new()
     return g_object_new(math_display_get_type(), "equation", math_equation_new(), NULL);
 }
 
-
 MathDisplay *
 math_display_new_with_equation(MathEquation *equation)
 {
     return g_object_new(math_display_get_type(), "equation", equation, NULL);
 }
 
-
 MathEquation *
 math_display_get_equation(MathDisplay *display)
 {
     return display->priv->equation;
 }
-
 
 static gboolean
 display_key_press_cb(GtkWidget *widget, GdkEventKey *event, MathDisplay *display)
@@ -294,7 +291,6 @@ display_key_press_cb(GtkWidget *widget, GdkEventKey *event, MathDisplay *display
     return FALSE;
 }
 
-
 static gboolean
 key_press_cb(MathDisplay *display, GdkEventKey *event)
 {
@@ -302,7 +298,6 @@ key_press_cb(MathDisplay *display, GdkEventKey *event)
     g_signal_emit_by_name(display->priv->text_view, "key-press-event", event, &result);
     return result;
 }
-
 
 static void
 status_changed_cb(MathEquation *equation, GParamSpec *spec, MathDisplay *display)
@@ -414,7 +409,6 @@ create_gui(MathDisplay *display)
     status_changed_cb(display->priv->equation, NULL, display);
 }
 
-
 static void
 math_display_set_property(GObject      *object,
                           guint         prop_id,
@@ -436,7 +430,6 @@ math_display_set_property(GObject      *object,
     }
 }
 
-
 static void
 math_display_get_property(GObject    *object,
                           guint       prop_id,
@@ -457,7 +450,6 @@ math_display_get_property(GObject    *object,
     }
 }
 
-
 static void
 math_display_class_init(MathDisplayClass *klass)
 {
@@ -474,7 +466,6 @@ math_display_class_init(MathDisplayClass *klass)
                                                         math_equation_get_type(),
                                                         G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY));
 }
-
 
 static void
 math_display_init(MathDisplay *display)

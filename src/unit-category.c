@@ -22,7 +22,6 @@ struct UnitCategoryPrivate
 
 G_DEFINE_TYPE_WITH_PRIVATE (UnitCategory, unit_category, G_TYPE_OBJECT);
 
-
 UnitCategory *
 unit_category_new(const gchar *name, const gchar *display_name)
 {
@@ -32,14 +31,12 @@ unit_category_new(const gchar *name, const gchar *display_name)
     return category;
 }
 
-
 const gchar *
 unit_category_get_name(UnitCategory *category)
 {
     g_return_val_if_fail (category != NULL, NULL);
     return category->priv->name;
 }
-
 
 const gchar *
 unit_category_get_display_name(UnitCategory *category)
@@ -48,7 +45,6 @@ unit_category_get_display_name(UnitCategory *category)
     return category->priv->display_name;
 }
 
-
 void
 unit_category_add_unit(UnitCategory *category, Unit *unit)
 {
@@ -56,7 +52,6 @@ unit_category_add_unit(UnitCategory *category, Unit *unit)
     g_return_if_fail (unit != NULL);
     category->priv->units = g_list_append(category->priv->units, g_object_ref(unit));
 }
-
 
 Unit *
 unit_category_get_unit_by_name(UnitCategory *category, const gchar *name)
@@ -76,7 +71,6 @@ unit_category_get_unit_by_name(UnitCategory *category, const gchar *name)
     return NULL;
 }
 
-
 Unit *
 unit_category_get_unit_by_symbol(UnitCategory *category, const gchar *symbol)
 {
@@ -94,14 +88,12 @@ unit_category_get_unit_by_symbol(UnitCategory *category, const gchar *symbol)
     return NULL;
 }
 
-
 const GList *
 unit_category_get_units(UnitCategory *category)
 {
     g_return_val_if_fail (category != NULL, NULL);
     return category->priv->units;
 }
-
 
 gboolean
 unit_category_convert(UnitCategory *category, const MPNumber *x, Unit *x_units, Unit *z_units, MPNumber *z)
@@ -126,12 +118,10 @@ unit_category_convert(UnitCategory *category, const MPNumber *x, Unit *x_units, 
     return TRUE;
 }
 
-
 static void
 unit_category_class_init(UnitCategoryClass *klass)
 {
 }
-
 
 static void
 unit_category_init(UnitCategory *category)

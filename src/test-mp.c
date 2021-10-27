@@ -27,7 +27,6 @@ static int passes = 0;
 static void pass(const char *format, ...) __attribute__((format(printf, 1, 2)));
 static void fail(const char *format, ...) __attribute__((format(printf, 1, 2)));
 
-
 static void pass(const char *format, ...)
 {
 /*    va_list args;
@@ -52,7 +51,6 @@ static void fail(const char *format, ...)
     printf("\n");
     fails++;
 }
-
 
 static void
 print_number(MPNumber *x)
@@ -86,7 +84,6 @@ test_integer(int number)
     mp_clear(&t);
 }
 
-
 static void
 test_numbers(void)
 {
@@ -119,7 +116,6 @@ test_numbers(void)
     test_string("16384.00006103515625");
 }
 
-
 static void
 try(const char *string, bool result, bool expected)
 {
@@ -128,7 +124,6 @@ try(const char *string, bool result, bool expected)
     else
         pass("%s -> %s", string, result ? "true" : "false");
 }
-
 
 static void
 test_mp(void)
@@ -218,7 +213,6 @@ test_mp(void)
     mp_clear(&one);
     mp_clear(&minus_one);
 }
-
 
 int
 main (void)

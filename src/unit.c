@@ -29,7 +29,6 @@ struct UnitPrivate
 
 G_DEFINE_TYPE_WITH_PRIVATE (Unit, unit, G_TYPE_OBJECT);
 
-
 Unit *
 unit_new(const gchar *name,
          const gchar *display_name,
@@ -55,7 +54,6 @@ unit_new(const gchar *name,
     return unit;
 }
 
-
 const gchar *
 unit_get_name(Unit *unit)
 {
@@ -63,14 +61,12 @@ unit_get_name(Unit *unit)
     return unit->priv->name;
 }
 
-
 const gchar *
 unit_get_display_name(Unit *unit)
 {
     g_return_val_if_fail (unit != NULL, NULL);
     return unit->priv->display_name;
 }
-
 
 gboolean
 unit_matches_symbol(Unit *unit, const gchar *symbol)
@@ -89,7 +85,6 @@ unit_matches_symbol(Unit *unit, const gchar *symbol)
     return FALSE;
 }
 
-
 const GList *
 unit_get_symbols(Unit *unit)
 {
@@ -97,13 +92,11 @@ unit_get_symbols(Unit *unit)
     return unit->priv->symbols;
 }
 
-
 static int
 variable_is_defined(const char *name, void *data)
 {
     return TRUE;
 }
-
 
 static int
 get_variable(const char *name, MPNumber *z, void *data)
@@ -112,7 +105,6 @@ get_variable(const char *name, MPNumber *z, void *data)
     mp_set_from_mp(x, z);
     return TRUE;
 }
-
 
 static gboolean
 solve_function(const gchar *function, const MPNumber *x, MPNumber *z)
@@ -135,7 +127,6 @@ solve_function(const gchar *function, const MPNumber *x, MPNumber *z)
     return TRUE;
 }
 
-
 gboolean
 unit_convert_from(Unit *unit, const MPNumber *x, MPNumber *z)
 {
@@ -156,7 +147,6 @@ unit_convert_from(Unit *unit, const MPNumber *x, MPNumber *z)
         return TRUE;
     }
 }
-
 
 gboolean
 unit_convert_to(Unit *unit, const MPNumber *x, MPNumber *z)
@@ -179,7 +169,6 @@ unit_convert_to(Unit *unit, const MPNumber *x, MPNumber *z)
     }
 }
 
-
 gchar *
 unit_format(Unit *unit, MPNumber *x)
 {
@@ -195,12 +184,10 @@ unit_format(Unit *unit, MPNumber *x)
     return text;
 }
 
-
 static void
 unit_class_init(UnitClass *klass)
 {
 }
-
 
 static void
 unit_init(Unit *unit)

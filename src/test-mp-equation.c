@@ -33,7 +33,6 @@ static int passes = 0;
 static void pass(const char *format, ...) __attribute__((format(printf, 1, 2)));
 static void fail(const char *format, ...) __attribute__((format(printf, 1, 2)));
 
-
 static void pass(const char *format, ...)
 {
 /*    va_list args;
@@ -59,7 +58,6 @@ static void fail(const char *format, ...)
     fails++;
 }
 
-
 static const char *
 error_code_to_string(MPErrorCode error)
 {
@@ -71,7 +69,6 @@ error_code_to_string(MPErrorCode error)
     snprintf(error_string, 1024, "PARSER_ERR_MP(\"%s\")", mp_get_error());
     return error_string;
 }
-
 
 static void
 Test(char *expression, char *expected, int expected_error, int trailing_digits)
@@ -113,13 +110,11 @@ Test(char *expression, char *expected, int expected_error, int trailing_digits)
     mp_clear(&result);
 }
 
-
 static int
 do_convert(const MPNumber *x, const char *x_units, const char *z_units, MPNumber *z, void *data)
 {
     return unit_manager_convert_by_symbol(unit_manager_get_default(), x, x_units, z_units, z);
 }
-
 
 static void
 test_conversions(void)
@@ -161,7 +156,6 @@ test_conversions(void)
     test("0 K in degC", "−273.15", 0);
 }
 
-
 static void try(const char* string, bool result, bool expected)
 {
     if ((result && !expected) || (!result && expected))
@@ -173,7 +167,6 @@ static void try(const char* string, bool result, bool expected)
         pass("%s -> %s", string, result ? "true" : "false");
     }
 }
-
 
 static void test_mp()
 {
@@ -263,13 +256,11 @@ static void test_mp()
     mp_clear(&minus_one);
 }
 
-
 static int
 variable_is_defined(const char *name, void *data)
 {
     return strcmp (name, "x") == 0 || strcmp (name, "y") == 0;
 }
-
 
 static int
 get_variable(const char *name, MPNumber *z, void *data)
@@ -284,7 +275,6 @@ get_variable(const char *name, MPNumber *z, void *data)
     }
     return 0;
 }
-
 
 static void
 set_variable(const char *name, const MPNumber *x, void *data)
@@ -782,7 +772,6 @@ test_equations(void)
     //test("¬01₂", "10₂", 0);
     //test("¬¬10₂", "10₂", 0);
 }
-
 
 int
 main (void)

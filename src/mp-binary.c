@@ -30,7 +30,6 @@ static int hex_to_int(char digit)
     return 0;
 }
 
-
 static gchar *
 to_hex_string(const MPNumber *x)
 {
@@ -43,7 +42,6 @@ to_hex_string(const MPNumber *x)
 
     return result;
 }
-
 
 static void
 mp_bitwise(const MPNumber *x, const MPNumber *y, int (*bitwise_operator)(int, int), MPNumber *z, int wordlen)
@@ -88,12 +86,10 @@ mp_bitwise(const MPNumber *x, const MPNumber *y, int (*bitwise_operator)(int, in
     g_free(text2);
 }
 
-
 static int mp_bitwise_and(int v1, int v2) { return v1 & v2; }
 static int mp_bitwise_or(int v1, int v2) { return v1 | v2; }
 static int mp_bitwise_xor(int v1, int v2) { return v1 ^ v2; }
 static int mp_bitwise_not(int v1, int dummy) { return v1 ^ 0xF; }
-
 
 bool
 mp_is_overflow (const MPNumber *x, int wordlen)
@@ -109,7 +105,6 @@ mp_is_overflow (const MPNumber *x, int wordlen)
     return is_overflow;
 }
 
-
 void
 mp_and(const MPNumber *x, const MPNumber *y, MPNumber *z)
 {
@@ -121,7 +116,6 @@ mp_and(const MPNumber *x, const MPNumber *y, MPNumber *z)
 
     mp_bitwise(x, y, mp_bitwise_and, z, 0);
 }
-
 
 void
 mp_or(const MPNumber *x, const MPNumber *y, MPNumber *z)
@@ -135,7 +129,6 @@ mp_or(const MPNumber *x, const MPNumber *y, MPNumber *z)
     mp_bitwise(x, y, mp_bitwise_or, z, 0);
 }
 
-
 void
 mp_xor(const MPNumber *x, const MPNumber *y, MPNumber *z)
 {
@@ -147,7 +140,6 @@ mp_xor(const MPNumber *x, const MPNumber *y, MPNumber *z)
 
     mp_bitwise(x, y, mp_bitwise_xor, z, 0);
 }
-
 
 void
 mp_not(const MPNumber *x, int wordlen, MPNumber *z)
@@ -165,7 +157,6 @@ mp_not(const MPNumber *x, int wordlen, MPNumber *z)
     mp_bitwise(x, &temp, mp_bitwise_not, z, wordlen);
     mp_clear(&temp);
 }
-
 
 void
 mp_shift(const MPNumber *x, int count, MPNumber *z)
@@ -192,7 +183,6 @@ mp_shift(const MPNumber *x, int count, MPNumber *z)
     mp_clear(&multiplier);
 }
 
-
 void
 mp_ones_complement(const MPNumber *x, int wordlen, MPNumber *z)
 {
@@ -202,7 +192,6 @@ mp_ones_complement(const MPNumber *x, int wordlen, MPNumber *z)
     mp_not(z, wordlen, z);
     mp_clear(&t);
 }
-
 
 void
 mp_twos_complement(const MPNumber *x, int wordlen, MPNumber *z)
