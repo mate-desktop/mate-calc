@@ -41,7 +41,6 @@ struct MpSerializerPrivate
     gint tsep_count;          /* Number of digits between separator. */
 };
 
-
 G_DEFINE_TYPE_WITH_PRIVATE (MpSerializer, mp_serializer, G_TYPE_OBJECT);
 
 MpSerializer *
@@ -53,7 +52,6 @@ mp_serializer_new(MpDisplayFormat format, int base, int trailing_digits)
     mp_serializer_set_trailing_digits(serializer, trailing_digits);
     return serializer;
 }
-
 
 static void
 mp_to_string_real(MpSerializer *serializer, const MPNumber *x, int base, gboolean force_sign, int *n_digits, GString *string)
@@ -180,7 +178,6 @@ mp_to_string_real(MpSerializer *serializer, const MPNumber *x, int base, gboolea
     mp_clear(&temp);
 }
 
-
 static gchar *
 mp_to_string(MpSerializer *serializer, const MPNumber *x, int *n_digits)
 {
@@ -242,7 +239,6 @@ mp_to_string(MpSerializer *serializer, const MPNumber *x, int *n_digits)
 
     return result;
 }
-
 
 static int
 mp_to_exponential_string_real(MpSerializer *serializer, const MPNumber *x, GString *string, gboolean eng_format, int *n_digits)
@@ -307,7 +303,6 @@ mp_to_exponential_string_real(MpSerializer *serializer, const MPNumber *x, GStri
     return exponent;
 }
 
-
 static void
 append_exponent(GString *string, int exponent)
 {
@@ -328,7 +323,6 @@ append_exponent(GString *string, int exponent)
         g_string_append(string, super_digits[*c - '0']);
     g_free (super_value);
 }
-
 
 static gchar *
 mp_to_exponential_string(MpSerializer *serializer, const MPNumber *x, gboolean eng_format, int *n_digits)
@@ -392,7 +386,6 @@ mp_to_exponential_string(MpSerializer *serializer, const MPNumber *x, gboolean e
     return result;
 }
 
-
 gchar *
 mp_serializer_to_string(MpSerializer *serializer, const MPNumber *x)
 {
@@ -418,13 +411,11 @@ mp_serializer_to_string(MpSerializer *serializer, const MPNumber *x)
     }
 }
 
-
 gboolean
 mp_serializer_from_string(MpSerializer *serializer, const gchar *str, MPNumber *z)
 {
     return mp_set_from_string(str, serializer->priv->base, z);
 }
-
 
 void
 mp_serializer_set_base(MpSerializer *serializer, gint base)
@@ -432,13 +423,11 @@ mp_serializer_set_base(MpSerializer *serializer, gint base)
     serializer->priv->base = base;
 }
 
-
 int
 mp_serializer_get_base(MpSerializer *serializer)
 {
     return serializer->priv->base;
 }
-
 
 void
 mp_serializer_set_radix(MpSerializer *serializer, gunichar radix)
@@ -446,13 +435,11 @@ mp_serializer_set_radix(MpSerializer *serializer, gunichar radix)
     serializer->priv->radix = radix;
 }
 
-
 gunichar
 mp_serializer_get_radix(MpSerializer *serializer)
 {
     return serializer->priv->radix;
 }
-
 
 void
 mp_serializer_set_thousands_separator(MpSerializer *serializer, gunichar separator)
@@ -460,13 +447,11 @@ mp_serializer_set_thousands_separator(MpSerializer *serializer, gunichar separat
     serializer->priv->tsep = separator;
 }
 
-
 gunichar
 mp_serializer_get_thousands_separator(MpSerializer *serializer)
 {
     return serializer->priv->tsep;
 }
-
 
 gint
 mp_serializer_get_thousands_separator_count(MpSerializer *serializer)
@@ -474,13 +459,11 @@ mp_serializer_get_thousands_separator_count(MpSerializer *serializer)
     return serializer->priv->tsep_count;
 }
 
-
 void
 mp_serializer_set_show_thousands_separators(MpSerializer *serializer, gboolean visible)
 {
     serializer->priv->show_tsep = visible;
 }
-
 
 gboolean
 mp_serializer_get_show_thousands_separators(MpSerializer *serializer)
@@ -488,13 +471,11 @@ mp_serializer_get_show_thousands_separators(MpSerializer *serializer)
     return serializer->priv->show_tsep;
 }
 
-
 void
 mp_serializer_set_show_trailing_zeroes(MpSerializer *serializer, gboolean visible)
 {
     serializer->priv->show_zeroes = visible;
 }
-
 
 gboolean
 mp_serializer_get_show_trailing_zeroes(MpSerializer *serializer)
@@ -502,13 +483,11 @@ mp_serializer_get_show_trailing_zeroes(MpSerializer *serializer)
     return serializer->priv->show_zeroes;
 }
 
-
 int
 mp_serializer_get_leading_digits(MpSerializer *serializer)
 {
     return serializer->priv->leading_digits;
 }
-
 
 void
 mp_serializer_set_leading_digits(MpSerializer *serializer, int leading_digits)
@@ -516,13 +495,11 @@ mp_serializer_set_leading_digits(MpSerializer *serializer, int leading_digits)
     serializer->priv->leading_digits = leading_digits;
 }
 
-
 int
 mp_serializer_get_trailing_digits(MpSerializer *serializer)
 {
     return serializer->priv->trailing_digits;
 }
-
 
 void
 mp_serializer_set_trailing_digits(MpSerializer *serializer, int trailing_digits)
@@ -530,20 +507,17 @@ mp_serializer_set_trailing_digits(MpSerializer *serializer, int trailing_digits)
     serializer->priv->trailing_digits = trailing_digits;
 }
 
-
 MpDisplayFormat
 mp_serializer_get_number_format(MpSerializer *serializer)
 {
     return serializer->priv->format;
 }
 
-
 void
 mp_serializer_set_number_format(MpSerializer *serializer, MpDisplayFormat format)
 {
     serializer->priv->format = format;
 }
-
 
 static void
 mp_serializer_set_property(GObject *object,
@@ -569,7 +543,6 @@ mp_serializer_set_property(GObject *object,
     }
 }
 
-
 static void
 mp_serializer_get_property(GObject *object,
                            guint prop_id,
@@ -593,7 +566,6 @@ mp_serializer_get_property(GObject *object,
         break;
     }
 }
-
 
 static void
 mp_serializer_class_init(MpSerializerClass *klass)
@@ -632,7 +604,6 @@ mp_serializer_class_init(MpSerializerClass *klass)
                                                      2, 16, 10,
                                                      G_PARAM_READWRITE));
 }
-
 
 static void
 mp_serializer_init(MpSerializer *serializer)

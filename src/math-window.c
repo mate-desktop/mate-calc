@@ -86,14 +86,12 @@ math_window_get_equation(MathWindow *window)
     return window->priv->equation;
 }
 
-
 MathDisplay *
 math_window_get_display(MathWindow *window)
 {
     g_return_val_if_fail(window != NULL, NULL);
     return window->priv->display;
 }
-
 
 MathButtons *
 math_window_get_buttons(MathWindow *window)
@@ -393,7 +391,6 @@ scroll_changed_cb(GtkAdjustment *adjustment, MathWindow *window)
         gtk_adjustment_set_value(adjustment, gtk_adjustment_get_upper(adjustment) - gtk_adjustment_get_page_size(adjustment));
 }
 
-
 static void
 scroll_value_changed_cb(GtkAdjustment *adjustment, MathWindow *window)
 {
@@ -630,7 +627,6 @@ create_gui(MathWindow *window)
     gtk_widget_show(GTK_WIDGET(window->priv->buttons));
 }
 
-
 static void
 math_window_set_property(GObject      *object,
                          guint         prop_id,
@@ -655,7 +651,6 @@ math_window_set_property(GObject      *object,
     }
 }
 
-
 static void
 math_window_get_property(GObject    *object,
                          guint       prop_id,
@@ -678,7 +673,6 @@ math_window_get_property(GObject    *object,
         break;
     }
 }
-
 
 static void
 math_window_class_init(MathWindowClass *klass)
@@ -712,7 +706,6 @@ math_window_class_init(MathWindowClass *klass)
                                  g_cclosure_marshal_VOID__VOID,
                                  G_TYPE_NONE, 0);
 }
-
 
 static void
 math_window_init(MathWindow *window)

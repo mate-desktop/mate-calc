@@ -103,20 +103,17 @@ typedef struct {
 
 G_DEFINE_TYPE_WITH_PRIVATE (MathEquation, math_equation, GTK_TYPE_TEXT_BUFFER);
 
-
 MathEquation *
 math_equation_new()
 {
     return g_object_new(math_equation_get_type(), NULL);
 }
 
-
 MathVariables *
 math_equation_get_variables(MathEquation *equation)
 {
     return equation->priv->variables;
 }
-
 
 static void
 get_ans_offsets(MathEquation *equation, gint *start, gint *end)
@@ -133,7 +130,6 @@ get_ans_offsets(MathEquation *equation, gint *start, gint *end)
     gtk_text_buffer_get_iter_at_mark(GTK_TEXT_BUFFER(equation), &iter, equation->priv->ans_end);
     *end = gtk_text_iter_get_offset(&iter);
 }
-
 
 static void
 reformat_ans(MathEquation *equation)
@@ -173,7 +169,6 @@ reformat_ans(MathEquation *equation)
     g_free(ans_text);
 }
 
-
 static gint
 count_digits(MathEquation *equation, const gchar *text)
 {
@@ -199,7 +194,6 @@ count_digits(MathEquation *equation, const gchar *text)
 
     return count;
 }
-
 
 static void
 reformat_separators(MathEquation *equation)
@@ -279,7 +273,6 @@ reformat_separators(MathEquation *equation)
     equation->priv->in_undo_operation = FALSE;
 }
 
-
 static void
 reformat_display(MathEquation *equation)
 {
@@ -291,7 +284,6 @@ reformat_display(MathEquation *equation)
 
     g_signal_emit_by_name(equation, "display-changed");
 }
-
 
 static MathEquationState *
 get_current_state(MathEquation *equation)
@@ -324,7 +316,6 @@ get_current_state(MathEquation *equation)
     return state;
 }
 
-
 static void
 free_state(MathEquationState *state)
 {
@@ -332,7 +323,6 @@ free_state(MathEquationState *state)
     g_free(state->status);
     g_free(state);
 }
-
 
 static void
 math_equation_push_undo_stack(MathEquation *equation)
@@ -357,7 +347,6 @@ math_equation_push_undo_stack(MathEquation *equation)
     equation->priv->undo_stack = g_list_prepend(equation->priv->undo_stack, state);
 }
 
-
 static void
 clear_ans(MathEquation *equation, gboolean remove_tag)
 {
@@ -377,7 +366,6 @@ clear_ans(MathEquation *equation, gboolean remove_tag)
     equation->priv->ans_start = NULL;
     equation->priv->ans_end = NULL;
 }
-
 
 static void
 apply_state(MathEquation *equation, MathEquationState *state)
@@ -411,7 +399,6 @@ apply_state(MathEquation *equation, MathEquationState *state)
     equation->priv->in_undo_operation = FALSE;
 }
 
-
 void
 math_equation_copy(MathEquation *equation)
 {
@@ -428,7 +415,6 @@ math_equation_copy(MathEquation *equation)
     g_free(text);
 }
 
-
 static void
 on_paste(GtkClipboard *clipboard, const gchar *text, gpointer data)
 {
@@ -437,14 +423,12 @@ on_paste(GtkClipboard *clipboard, const gchar *text, gpointer data)
         math_equation_insert(equation, text);
 }
 
-
 void
 math_equation_paste(MathEquation *equation)
 {
     g_return_if_fail(equation != NULL);
     gtk_clipboard_request_text(gtk_clipboard_get(GDK_NONE), on_paste, equation);
 }
-
 
 void
 math_equation_undo(MathEquation *equation)
@@ -472,7 +456,6 @@ math_equation_undo(MathEquation *equation)
     free_state(state);
 }
 
-
 void
 math_equation_redo(MathEquation *equation)
 {
@@ -499,7 +482,6 @@ math_equation_redo(MathEquation *equation)
     free_state(state);
 }
 
-
 gunichar
 math_equation_get_digit_text(MathEquation *equation, guint digit)
 {
@@ -508,7 +490,6 @@ math_equation_get_digit_text(MathEquation *equation, guint digit)
 
     return equation->priv->digits[digit];
 }
-
 
 void
 math_equation_set_accuracy(MathEquation *equation, gint accuracy)
@@ -522,7 +503,6 @@ math_equation_set_accuracy(MathEquation *equation, gint accuracy)
     g_object_notify(G_OBJECT(equation), "accuracy");
 }
 
-
 gint
 math_equation_get_accuracy(MathEquation *equation)
 {
@@ -530,7 +510,6 @@ math_equation_get_accuracy(MathEquation *equation)
 
     return mp_serializer_get_trailing_digits(equation->priv->serializer);
 }
-
 
 void
 math_equation_set_show_thousands_separators(MathEquation *equation, gboolean visible)
@@ -545,14 +524,12 @@ math_equation_set_show_thousands_separators(MathEquation *equation, gboolean vis
     g_object_notify(G_OBJECT(equation), "show-thousands-separators");
 }
 
-
 gboolean
 math_equation_get_show_thousands_separators(MathEquation *equation)
 {
     g_return_val_if_fail(equation != NULL, FALSE);
     return mp_serializer_get_show_thousands_separators(equation->priv->serializer);
 }
-
 
 void
 math_equation_set_show_trailing_zeroes(MathEquation *equation, gboolean visible)
@@ -567,14 +544,12 @@ math_equation_set_show_trailing_zeroes(MathEquation *equation, gboolean visible)
     g_object_notify(G_OBJECT(equation), "show-trailing-zeroes");
 }
 
-
 gboolean
 math_equation_get_show_trailing_zeroes(MathEquation *equation)
 {
     g_return_val_if_fail(equation != NULL, FALSE);
     return mp_serializer_get_show_trailing_zeroes(equation->priv->serializer);
 }
-
 
 void
 math_equation_set_number_format(MathEquation *equation, MpDisplayFormat format)
@@ -589,14 +564,12 @@ math_equation_set_number_format(MathEquation *equation, MpDisplayFormat format)
     g_object_notify(G_OBJECT(equation), "number-format");
 }
 
-
 MpDisplayFormat
 math_equation_get_number_format(MathEquation *equation)
 {
     g_return_val_if_fail(equation != NULL, MP_DISPLAY_FORMAT_AUTOMATIC);
     return mp_serializer_get_number_format(equation->priv->serializer);
 }
-
 
 void
 math_equation_set_base(MathEquation *equation, gint base)
@@ -611,14 +584,12 @@ math_equation_set_base(MathEquation *equation, gint base)
     g_object_notify(G_OBJECT(equation), "base");
 }
 
-
 gint
 math_equation_get_base(MathEquation *equation)
 {
     g_return_val_if_fail(equation != NULL, 10);
     return mp_serializer_get_base(equation->priv->serializer);
 }
-
 
 void
 math_equation_set_word_size(MathEquation *equation, gint word_size)
@@ -632,14 +603,12 @@ math_equation_set_word_size(MathEquation *equation, gint word_size)
     g_object_notify(G_OBJECT(equation), "word-size");
 }
 
-
 gint
 math_equation_get_word_size(MathEquation *equation)
 {
     g_return_val_if_fail(equation != NULL, 64);
     return equation->priv->word_size;
 }
-
 
 void
 math_equation_set_angle_units(MathEquation *equation, MPAngleUnit angle_units)
@@ -653,14 +622,12 @@ math_equation_set_angle_units(MathEquation *equation, MPAngleUnit angle_units)
     g_object_notify(G_OBJECT(equation), "angle-units");
 }
 
-
 MPAngleUnit
 math_equation_get_angle_units(MathEquation *equation)
 {
     g_return_val_if_fail(equation != NULL, MP_DEGREES);
     return equation->priv->angle_units;
 }
-
 
 void
 math_equation_set_source_currency(MathEquation *equation, const gchar *currency)
@@ -676,14 +643,12 @@ math_equation_set_source_currency(MathEquation *equation, const gchar *currency)
             math_equation_get_source_currency(equation));
 }
 
-
 const gchar *
 math_equation_get_source_currency(MathEquation *equation)
 {
     g_return_val_if_fail(equation != NULL, NULL);
     return equation->priv->source_currency;
 }
-
 
 void
 math_equation_set_target_currency(MathEquation *equation, const gchar *currency)
@@ -699,14 +664,12 @@ math_equation_set_target_currency(MathEquation *equation, const gchar *currency)
             math_equation_get_target_currency(equation));
 }
 
-
 const gchar *
 math_equation_get_target_currency(MathEquation *equation)
 {
     g_return_val_if_fail(equation != NULL, NULL);
     return equation->priv->target_currency;
 }
-
 
 void
 math_equation_set_source_units(MathEquation *equation, const gchar *units)
@@ -730,7 +693,6 @@ math_equation_get_source_units(MathEquation *equation)
     return equation->priv->source_units;
 }
 
-
 void
 math_equation_set_target_units(MathEquation *equation, const gchar *units)
 {
@@ -746,14 +708,12 @@ math_equation_set_target_units(MathEquation *equation, const gchar *units)
             math_equation_get_target_units(equation));
 }
 
-
 const gchar *
 math_equation_get_target_units(MathEquation *equation)
 {
     g_return_val_if_fail(equation != NULL, NULL);
     return equation->priv->target_units;
 }
-
 
 void
 math_equation_set_status(MathEquation *equation, const gchar *status)
@@ -769,7 +729,6 @@ math_equation_set_status(MathEquation *equation, const gchar *status)
     g_object_notify(G_OBJECT(equation), "status");
 }
 
-
 const gchar *
 math_equation_get_status(MathEquation *equation)
 {
@@ -777,14 +736,12 @@ math_equation_get_status(MathEquation *equation)
     return equation->priv->state.status;
 }
 
-
 gboolean
 math_equation_is_empty(MathEquation *equation)
 {
     g_return_val_if_fail(equation != NULL, FALSE);
     return gtk_text_buffer_get_char_count(GTK_TEXT_BUFFER(equation)) == 0;
 }
-
 
 gboolean
 math_equation_is_result(MathEquation *equation)
@@ -801,7 +758,6 @@ math_equation_is_result(MathEquation *equation)
     return result;
 }
 
-
 gchar *
 math_equation_get_display(MathEquation *equation)
 {
@@ -812,7 +768,6 @@ math_equation_get_display(MathEquation *equation)
     gtk_text_buffer_get_bounds(GTK_TEXT_BUFFER(equation), &start, &end);
     return gtk_text_buffer_get_text(GTK_TEXT_BUFFER(equation), &start, &end, FALSE);
 }
-
 
 gchar *
 math_equation_get_equation(MathEquation *equation)
@@ -867,7 +822,6 @@ math_equation_get_equation(MathEquation *equation)
     return text;
 }
 
-
 gboolean
 math_equation_get_number(MathEquation *equation, MPNumber *z)
 {
@@ -889,14 +843,12 @@ math_equation_get_number(MathEquation *equation, MPNumber *z)
     }
 }
 
-
 MpSerializer *
 math_equation_get_serializer(MathEquation *equation)
 {
     g_return_val_if_fail(equation != NULL, NULL);
     return equation->priv->serializer;
 }
-
 
 void
 math_equation_set_number_mode(MathEquation *equation, NumberMode mode)
@@ -912,14 +864,12 @@ math_equation_set_number_mode(MathEquation *equation, NumberMode mode)
     g_object_notify(G_OBJECT(equation), "number-mode");
 }
 
-
 NumberMode
 math_equation_get_number_mode(MathEquation *equation)
 {
     g_return_val_if_fail(equation != NULL, NORMAL);
     return equation->priv->number_mode;
 }
-
 
 gboolean
 math_equation_in_solve(MathEquation *equation)
@@ -928,14 +878,12 @@ math_equation_in_solve(MathEquation *equation)
     return equation->priv->in_solve;
 }
 
-
 const MPNumber *
 math_equation_get_answer(MathEquation *equation)
 {
     g_return_val_if_fail(equation != NULL, FALSE);
     return &equation->priv->state.ans;
 }
-
 
 void
 math_equation_store(MathEquation *equation, const gchar *name)
@@ -952,7 +900,6 @@ math_equation_store(MathEquation *equation, const gchar *name)
     mp_clear(&t);
 }
 
-
 void
 math_equation_recall(MathEquation *equation, const gchar *name)
 {
@@ -960,7 +907,6 @@ math_equation_recall(MathEquation *equation, const gchar *name)
     g_return_if_fail(name != NULL);
     math_equation_insert(equation, name);
 }
-
 
 void
 math_equation_set(MathEquation *equation, const gchar *text)
@@ -987,7 +933,6 @@ math_equation_set_with_history(MathEquation *equation, const gchar *text)
     free_state(state);
     mp_clear(&x);
 }
-
 
 void
 math_equation_set_number(MathEquation *equation, const MPNumber *x)
@@ -1021,7 +966,6 @@ math_equation_set_number(MathEquation *equation, const MPNumber *x)
     free_state(state);
 }
 
-
 void
 math_equation_insert(MathEquation *equation, const gchar *text)
 {
@@ -1051,7 +995,6 @@ math_equation_insert(MathEquation *equation, const gchar *text)
     gtk_text_buffer_insert_at_cursor(GTK_TEXT_BUFFER(equation), text, -1);
 }
 
-
 void
 math_equation_insert_digit(MathEquation *equation, guint digit)
 {
@@ -1074,7 +1017,6 @@ math_equation_insert_digit(MathEquation *equation, guint digit)
         math_equation_insert(equation, subscript_digits[digit]);
 }
 
-
 void
 math_equation_insert_numeric_point(MathEquation *equation)
 {
@@ -1087,7 +1029,6 @@ math_equation_insert_numeric_point(MathEquation *equation)
     buffer[len] = '\0';
     math_equation_insert(equation, buffer);
 }
-
 
 void
 math_equation_insert_number(MathEquation *equation, const MPNumber *x)
@@ -1102,7 +1043,6 @@ math_equation_insert_number(MathEquation *equation, const MPNumber *x)
     g_free(text);
 }
 
-
 void
 math_equation_insert_exponent(MathEquation *equation)
 {
@@ -1110,7 +1050,6 @@ math_equation_insert_exponent(MathEquation *equation)
     math_equation_insert(equation, "×10");
     math_equation_set_number_mode(equation, SUPERSCRIPT);
 }
-
 
 void
 math_equation_insert_subtract(MathEquation *equation)
@@ -1125,7 +1064,6 @@ math_equation_insert_subtract(MathEquation *equation)
         math_equation_set_number_mode(equation, NORMAL);
     }
 }
-
 
 static int
 variable_is_defined(const char *name, void *data)
@@ -1146,7 +1084,6 @@ variable_is_defined(const char *name, void *data)
 
     return math_variables_get(equation->priv->variables, name) != NULL;
 }
-
 
 static int
 get_variable(const char *name, MPNumber *z, void *data)
@@ -1176,7 +1113,6 @@ get_variable(const char *name, MPNumber *z, void *data)
     return result;
 }
 
-
 static void
 set_variable(const char *name, const MPNumber *x, void *data)
 {
@@ -1185,13 +1121,11 @@ set_variable(const char *name, const MPNumber *x, void *data)
     math_variables_set(equation->priv->variables, name, x);
 }
 
-
 static int
 convert(const MPNumber *x, const char *x_units, const char *z_units, MPNumber *z, void *data)
 {
     return unit_manager_convert_by_symbol(unit_manager_get_default(), x, x_units, z_units, z);
 }
-
 
 static int
 parse(MathEquation *equation, const char *text, MPNumber *z, char **error_token)
@@ -1210,7 +1144,6 @@ parse(MathEquation *equation, const char *text, MPNumber *z, char **error_token)
 
     return mp_equation_parse(text, &options, z, error_token);
 }
-
 
 /*
  * Executed in separate thread. It is thus not a good idea to write to anything
@@ -1241,7 +1174,6 @@ math_equation_solve_real(gpointer data)
         g_string_append_c(equation_text, ')');
         n_brackets--;
     }
-
 
     result = parse(equation, equation_text->str, &z, &error_token);
     g_string_free(equation_text, TRUE);
@@ -1295,7 +1227,6 @@ math_equation_solve_real(gpointer data)
     return NULL;
 }
 
-
 static gboolean
 math_equation_show_in_progress(gpointer data)
 {
@@ -1304,7 +1235,6 @@ math_equation_show_in_progress(gpointer data)
         math_equation_set_status(equation, _("Calculating"));
     return false;
 }
-
 
 static gboolean
 math_equation_look_for_answer(gpointer data)
@@ -1338,7 +1268,6 @@ math_equation_look_for_answer(gpointer data)
     return false;
 }
 
-
 void
 math_equation_solve(MathEquation *equation)
 {
@@ -1366,7 +1295,6 @@ math_equation_solve(MathEquation *equation)
     g_timeout_add(50, math_equation_look_for_answer, equation);
     g_timeout_add(100, math_equation_show_in_progress, equation);
 }
-
 
 static gpointer
 math_equation_factorize_real(gpointer data)
@@ -1426,7 +1354,6 @@ math_equation_factorize_real(gpointer data)
     return NULL;
 }
 
-
 void
 math_equation_factorize(MathEquation *equation)
 {
@@ -1453,7 +1380,6 @@ math_equation_factorize(MathEquation *equation)
     g_timeout_add(100, math_equation_show_in_progress, equation);
 }
 
-
 void
 math_equation_delete(MathEquation *equation)
 {
@@ -1470,7 +1396,6 @@ math_equation_delete(MathEquation *equation)
     gtk_text_buffer_get_iter_at_offset(GTK_TEXT_BUFFER(equation), &end, cursor+1);
     gtk_text_buffer_delete(GTK_TEXT_BUFFER(equation), &start, &end);
 }
-
 
 void
 math_equation_backspace(MathEquation *equation)
@@ -1490,7 +1415,6 @@ math_equation_backspace(MathEquation *equation)
     }
 }
 
-
 void
 math_equation_clear(MathEquation *equation)
 {
@@ -1500,7 +1424,6 @@ math_equation_clear(MathEquation *equation)
     gtk_text_buffer_set_text(GTK_TEXT_BUFFER(equation), "", -1);
     clear_ans(equation, FALSE);
 }
-
 
 void
 math_equation_shift(MathEquation *equation, gint count)
@@ -1521,7 +1444,6 @@ math_equation_shift(MathEquation *equation, gint count)
     math_equation_set_number(equation, &z);
     mp_clear(&z);
 }
-
 
 void
 math_equation_toggle_bit(MathEquation *equation, guint bit)
@@ -1559,7 +1481,6 @@ math_equation_toggle_bit(MathEquation *equation, guint bit)
     math_equation_set_number(equation, &x);
     mp_clear(&x);
 }
-
 
 static void
 math_equation_set_property(GObject      *object,
@@ -1619,7 +1540,6 @@ math_equation_set_property(GObject      *object,
         break;
     }
 }
-
 
 static void
 math_equation_get_property(GObject    *object,
@@ -1691,7 +1611,6 @@ math_equation_get_property(GObject    *object,
     }
 }
 
-
 static void
 math_equation_constructed(GObject *object)
 {
@@ -1702,7 +1621,6 @@ math_equation_constructed(GObject *object)
 
     MATH_EQUATION(object)->priv->ans_tag = gtk_text_buffer_create_tag(GTK_TEXT_BUFFER(object), NULL, "weight", PANGO_WEIGHT_BOLD, NULL);
 }
-
 
 static void
 math_equation_class_init(MathEquationClass *klass)
@@ -1871,7 +1789,6 @@ math_equation_class_init(MathEquationClass *klass)
                   NULL);
 }
 
-
 static void
 pre_insert_text_cb(MathEquation  *equation,
                    GtkTextIter   *location,
@@ -1914,14 +1831,12 @@ pre_insert_text_cb(MathEquation  *equation,
     }
 }
 
-
 static gboolean
 on_delete(MathEquation *equation)
 {
     equation->priv->in_delete = FALSE;
     return FALSE;
 }
-
 
 static void
 pre_delete_range_cb(MathEquation  *equation,
@@ -1951,7 +1866,6 @@ pre_delete_range_cb(MathEquation  *equation,
     }
 }
 
-
 static void
 insert_text_cb(MathEquation  *equation,
                GtkTextIter   *location,
@@ -1970,7 +1884,6 @@ insert_text_cb(MathEquation  *equation,
     g_object_notify(G_OBJECT(equation), "display");
 }
 
-
 static void
 delete_range_cb(MathEquation  *equation,
                 GtkTextIter   *start,
@@ -1988,7 +1901,6 @@ delete_range_cb(MathEquation  *equation,
     // FIXME: A replace will emit this both for delete-range and insert-text, can it be avoided?
     g_object_notify(G_OBJECT(equation), "display");
 }
-
 
 static void
 math_equation_init(MathEquation *equation)

@@ -301,7 +301,6 @@ static char *finc_dialog_fields[][5] = {
     {NULL,        NULL,          NULL,         NULL,         NULL}
 };
 
-
 MathButtons *
 math_buttons_new(MathEquation *equation)
 {
@@ -317,7 +316,6 @@ set_data(GtkBuilder *ui, const gchar *object_name, const gchar *name, const char
         g_object_set_data(object, name, GINT_TO_POINTER(value));
 }
 
-
 static void
 set_int_data(GtkBuilder *ui, const gchar *object_name, const gchar *name, gint value)
 {
@@ -326,7 +324,6 @@ set_int_data(GtkBuilder *ui, const gchar *object_name, const gchar *name, gint v
     if (object)
         g_object_set_data(object, name, GINT_TO_POINTER(value));
 }
-
 
 static void
 load_finc_dialogs(MathButtons *buttons)
@@ -353,7 +350,6 @@ load_finc_dialogs(MathButtons *buttons)
         }
     }
 }
-
 
 static void
 update_bit_panel(MathButtons *buttons)
@@ -430,13 +426,11 @@ update_bit_panel(MathButtons *buttons)
     mp_clear(&x);
 }
 
-
 static void
 display_changed_cb(MathEquation *equation, GParamSpec *spec, MathButtons *buttons)
 {
     update_bit_panel(buttons);
 }
-
 
 static void
 base_combobox_changed_cb(GtkWidget *combo, MathButtons *buttons)
@@ -451,7 +445,6 @@ base_combobox_changed_cb(GtkWidget *combo, MathButtons *buttons)
 
     math_buttons_set_programming_base(buttons, value);
 }
-
 
 static void
 base_changed_cb(MathEquation *equation, GParamSpec *spec, MathButtons *buttons)
@@ -480,7 +473,6 @@ base_changed_cb(MathEquation *equation, GParamSpec *spec, MathButtons *buttons)
 
     gtk_combo_box_set_active_iter(GTK_COMBO_BOX(buttons->priv->base_combo), &iter);
 }
-
 
 static GtkWidget *
 load_mode(MathButtons *buttons, ButtonMode mode)
@@ -675,7 +667,6 @@ out:
     return *panel;
 }
 
-
 static void
 converter_changed_cb(MathConverter *converter, MathButtons *buttons)
 {
@@ -694,7 +685,6 @@ converter_changed_cb(MathConverter *converter, MathButtons *buttons)
     g_object_unref(from_unit);
     g_object_unref(to_unit);
 }
-
 
 static void
 load_buttons(MathButtons *buttons)
@@ -723,7 +713,6 @@ load_buttons(MathButtons *buttons)
     if (panel)
         gtk_widget_show(panel);
 }
-
 
 void
 math_buttons_set_mode(MathButtons *buttons, ButtonMode mode)
@@ -759,13 +748,11 @@ math_buttons_set_mode(MathButtons *buttons, ButtonMode mode)
     g_object_notify(G_OBJECT(buttons), "mode");
 }
 
-
 ButtonMode
 math_buttons_get_mode(MathButtons *buttons)
 {
     return buttons->priv->mode;
 }
-
 
 void
 math_buttons_set_programming_base(MathButtons *buttons, gint base)
@@ -783,14 +770,12 @@ math_buttons_set_programming_base(MathButtons *buttons, gint base)
         math_equation_set_base(buttons->priv->equation, base);
 }
 
-
 gint
 math_buttons_get_programming_base(MathButtons *buttons)
 {
     g_return_val_if_fail(buttons != NULL, 10);
     return buttons->priv->programming_base;
 }
-
 
 void exponent_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
@@ -800,7 +785,6 @@ exponent_cb(GtkWidget *widget, MathButtons *buttons)
     math_equation_insert_exponent(buttons->priv->equation);
 }
 
-
 void subtract_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
 void
@@ -808,7 +792,6 @@ subtract_cb(GtkWidget *widget, MathButtons *buttons)
 {
     math_equation_insert_subtract(buttons->priv->equation);
 }
-
 
 void button_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
@@ -818,7 +801,6 @@ button_cb(GtkWidget *widget, MathButtons *buttons)
     math_equation_insert(buttons->priv->equation, g_object_get_data(G_OBJECT(widget), "calc_text"));
 }
 
-
 void solve_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
 void
@@ -826,7 +808,6 @@ solve_cb(GtkWidget *widget, MathButtons *buttons)
 {
     math_equation_solve(buttons->priv->equation);
 }
-
 
 void clear_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
@@ -836,7 +817,6 @@ clear_cb(GtkWidget *widget, MathButtons *buttons)
     math_equation_clear(buttons->priv->equation);
 }
 
-
 void delete_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
 void
@@ -845,7 +825,6 @@ delete_cb(GtkWidget *widget, MathButtons *buttons)
     math_equation_delete(buttons->priv->equation);
 }
 
-
 void undo_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
 void
@@ -853,7 +832,6 @@ undo_cb(GtkWidget *widget, MathButtons *buttons)
 {
     math_equation_undo(buttons->priv->equation);
 }
-
 
 static void
 shift_cb(GtkWidget *widget, MathButtons *buttons)
@@ -870,7 +848,6 @@ popup_button_menu(GtkWidget *widget, GtkMenu *menu)
                               GDK_GRAVITY_NORTH_WEST,
                               NULL);
 }
-
 
 void memory_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
@@ -889,7 +866,6 @@ memory_cb(GtkWidget *widget, MathButtons *buttons)
     gtk_window_move(GTK_WINDOW(popup), x, y);
     gtk_widget_show(GTK_WIDGET(popup));
 }
-
 
 void shift_left_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
@@ -932,7 +908,6 @@ shift_left_cb(GtkWidget *widget, MathButtons *buttons)
     popup_button_menu(widget, GTK_MENU(buttons->priv->shift_left_menu));
 }
 
-
 void shift_right_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
 void
@@ -974,13 +949,11 @@ shift_right_cb(GtkWidget *widget, MathButtons *buttons)
     popup_button_menu(widget, GTK_MENU(buttons->priv->shift_right_menu));
 }
 
-
 static void
 insert_function_cb(GtkWidget *widget, MathButtons *buttons)
 {
     math_equation_insert(buttons->priv->equation, g_object_get_data(G_OBJECT(widget), "function"));
 }
-
 
 void function_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
@@ -1032,7 +1005,6 @@ insert_const_cb(GtkWidget *widget, MathButtons *buttons)
 {
     math_equation_insert(buttons->priv->equation, g_object_get_data(G_OBJECT(widget), "const"));
 }
-
 
 void const_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
@@ -1094,7 +1066,6 @@ factorize_cb(GtkWidget *widget, MathButtons *buttons)
     math_equation_factorize(buttons->priv->equation);
 }
 
-
 void digit_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
 void
@@ -1103,7 +1074,6 @@ digit_cb(GtkWidget *widget, MathButtons *buttons)
     math_equation_insert_digit(buttons->priv->equation, GPOINTER_TO_INT(g_object_get_data(G_OBJECT(widget), "calc_digit")));
 }
 
-
 void numeric_point_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
 void
@@ -1111,8 +1081,6 @@ numeric_point_cb(GtkWidget *widget, MathButtons *buttons)
 {
     math_equation_insert_numeric_point(buttons->priv->equation);
 }
-
-
 
 void finc_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
@@ -1126,7 +1094,6 @@ finc_cb(GtkWidget *widget, MathButtons *buttons)
     gtk_widget_hide(GTK_WIDGET(GET_WIDGET(buttons->priv->financial_ui, name)));
 }
 
-
 void insert_character_code_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
 void
@@ -1134,7 +1101,6 @@ insert_character_code_cb(GtkWidget *widget, MathButtons *buttons)
 {
     gtk_window_present(GTK_WINDOW(buttons->priv->character_code_dialog));
 }
-
 
 void finc_activate_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
@@ -1161,7 +1127,6 @@ finc_activate_cb(GtkWidget *widget, MathButtons *buttons)
         gtk_widget_grab_focus(next_widget);
     }
 }
-
 
 void finc_response_cb(GtkWidget *widget, gint response_id, MathButtons *buttons);
 G_MODULE_EXPORT
@@ -1196,7 +1161,6 @@ finc_response_cb(GtkWidget *widget, gint response_id, MathButtons *buttons)
     }
 }
 
-
 void character_code_dialog_response_cb(GtkWidget *dialog, gint response_id, MathButtons *buttons);
 G_MODULE_EXPORT
 void
@@ -1226,7 +1190,6 @@ character_code_dialog_response_cb(GtkWidget *dialog, gint response_id, MathButto
     gtk_widget_hide(dialog);
 }
 
-
 void character_code_dialog_activate_cb(GtkWidget *entry, MathButtons *buttons);
 G_MODULE_EXPORT
 void
@@ -1234,7 +1197,6 @@ character_code_dialog_activate_cb(GtkWidget *entry, MathButtons *buttons)
 {
     character_code_dialog_response_cb(buttons->priv->character_code_dialog, GTK_RESPONSE_OK, buttons);
 }
-
 
 gboolean character_code_dialog_delete_cb(GtkWidget *dialog, GdkEvent *event, MathButtons *buttons);
 G_MODULE_EXPORT
@@ -1245,7 +1207,6 @@ character_code_dialog_delete_cb(GtkWidget *dialog, GdkEvent *event, MathButtons 
     return TRUE;
 }
 
-
 gboolean bit_toggle_cb(GtkWidget *event_box, GdkEventButton *event, MathButtons *buttons);
 G_MODULE_EXPORT
 gboolean
@@ -1254,7 +1215,6 @@ bit_toggle_cb(GtkWidget *event_box, GdkEventButton *event, MathButtons *buttons)
     math_equation_toggle_bit(buttons->priv->equation, GPOINTER_TO_INT(g_object_get_data(G_OBJECT(event_box), "bit_index")));
     return TRUE;
 }
-
 
 static void
 remove_trailing_spaces(MathButtons *buttons)
@@ -1271,7 +1231,6 @@ remove_trailing_spaces(MathButtons *buttons)
     }
 }
 
-
 void set_superscript_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
 void
@@ -1287,7 +1246,6 @@ set_superscript_cb(GtkWidget *widget, MathButtons *buttons)
         math_equation_set_number_mode(buttons->priv->equation, NORMAL);
 }
 
-
 void set_subscript_cb(GtkWidget *widget, MathButtons *buttons);
 G_MODULE_EXPORT
 void
@@ -1302,7 +1260,6 @@ set_subscript_cb(GtkWidget *widget, MathButtons *buttons)
     else if (math_equation_get_number_mode(buttons->priv->equation) == SUBSCRIPT)
         math_equation_set_number_mode(buttons->priv->equation, NORMAL);
 }
-
 
 static void
 number_mode_changed_cb(MathEquation *equation, GParamSpec *spec, MathButtons *buttons)
@@ -1321,7 +1278,6 @@ number_mode_changed_cb(MathEquation *equation, GParamSpec *spec, MathButtons *bu
         gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(widget), mode == SUBSCRIPT);
     }
 }
-
 
 static void
 math_buttons_set_property(GObject      *object,
@@ -1356,7 +1312,6 @@ math_buttons_set_property(GObject      *object,
     }
 }
 
-
 static void
 math_buttons_get_property(GObject    *object,
                           guint       prop_id,
@@ -1382,7 +1337,6 @@ math_buttons_get_property(GObject    *object,
         break;
     }
 }
-
 
 static void
 math_buttons_class_init(MathButtonsClass *klass)
@@ -1425,7 +1379,6 @@ math_buttons_class_init(MathButtonsClass *klass)
                                                      2, 16, 10,
                                                      G_PARAM_READWRITE));
 }
-
 
 static void
 math_buttons_init(MathButtons *buttons)

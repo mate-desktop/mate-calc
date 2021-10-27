@@ -35,13 +35,11 @@ math_variable_popup_new(MathEquation *equation)
     return g_object_new(math_variable_popup_get_type(), "equation", equation, NULL);
 }
 
-
 static void
 variable_focus_out_event_cb(GtkWidget *widget, GdkEventFocus *event, MathVariablePopup *popup)
 {
     gtk_widget_destroy(widget);
 }
-
 
 static void
 insert_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
@@ -54,7 +52,6 @@ insert_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
     gtk_widget_destroy(gtk_widget_get_toplevel(widget));
 }
 
-
 static gboolean
 variable_name_key_press_cb(GtkWidget *widget, GdkEventKey *event, MathVariablePopup *popup)
 {
@@ -65,14 +62,12 @@ variable_name_key_press_cb(GtkWidget *widget, GdkEventKey *event, MathVariablePo
     return FALSE;
 }
 
-
 static void
 variable_name_changed_cb(GtkWidget *widget, MathVariablePopup *popup)
 {
     const gchar *text = gtk_entry_get_text(GTK_ENTRY(popup->priv->variable_name_entry));
     gtk_widget_set_sensitive(popup->priv->add_variable_button, text[0] != '\0');
 }
-
 
 static void
 add_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
@@ -95,7 +90,6 @@ add_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
     mp_clear(&z);
 }
 
-
 static void
 save_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
 {
@@ -114,7 +108,6 @@ save_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
     mp_clear(&z);
 }
 
-
 static void
 delete_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
 {
@@ -125,7 +118,6 @@ delete_variable_cb(GtkWidget *widget, MathVariablePopup *popup)
 
     gtk_widget_destroy(gtk_widget_get_toplevel(widget));
 }
-
 
 static GtkWidget *
 make_variable_entry(MathVariablePopup *popup, const gchar *name, const MPNumber *value, gboolean writable)
@@ -183,7 +175,6 @@ make_variable_entry(MathVariablePopup *popup, const gchar *name, const MPNumber 
 
     return hbox;
 }
-
 
 static void
 math_variable_popup_set_property(GObject      *object,
@@ -248,7 +239,6 @@ math_variable_popup_set_property(GObject      *object,
     }
 }
 
-
 static void
 math_variable_popup_get_property(GObject    *object,
                                  guint       prop_id,
@@ -269,7 +259,6 @@ math_variable_popup_get_property(GObject    *object,
     }
 }
 
-
 static void
 math_variable_popup_class_init(MathVariablePopupClass *klass)
 {
@@ -286,7 +275,6 @@ math_variable_popup_class_init(MathVariablePopupClass *klass)
                                                         math_equation_get_type(),
                                                         G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY));
 }
-
 
 static void
 math_variable_popup_init(MathVariablePopup *popup)

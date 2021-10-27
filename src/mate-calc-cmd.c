@@ -49,7 +49,6 @@ solve(const char *equation)
     mp_clear(&z);
 }
 
-
 /* Adjust user input equation string before solving it. */
 static void
 str_adjust(char *str)

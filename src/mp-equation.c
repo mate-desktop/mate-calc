@@ -37,7 +37,6 @@ variable_is_defined(ParserState *state, const char *name)
     return 0;
 }
 
-
 static int
 get_variable(ParserState *state, const char *name, MPNumber *z)
 {
@@ -103,7 +102,6 @@ set_variable(ParserState *state, const char *name, const MPNumber *x)
 // i.e. numbers+letters = variable or function depending on following arg
 // letters+numbers = numbers+letters+numbers = function
 
-
 int
 sub_atoi(const char *data)
 {
@@ -142,7 +140,6 @@ super_atoi(const char *data)
 
    return sign * value;
 }
-
 
 static int
 function_is_defined(ParserState *state, const char *name)
@@ -187,7 +184,6 @@ function_is_defined(ParserState *state, const char *name)
         return state->options->function_is_defined(name, state->options->callback_data);
     return 0;
 }
-
 
 static int
 get_function(ParserState *state, const char *name, const MPNumber *x, MPNumber *z)
@@ -280,7 +276,6 @@ get_function(ParserState *state, const char *name, const MPNumber *x, MPNumber *
     return result;
 }
 
-
 static int
 convert(ParserState *state, const MPNumber *x, const char *x_units, const char *z_units, MPNumber *z)
 {
@@ -289,7 +284,6 @@ convert(ParserState *state, const MPNumber *x, const char *x_units, const char *
     else
         return 0;
 }
-
 
 MPErrorCode
 mp_equation_parse(const char *expression, MPEquationOptions *options, MPNumber *result, char **error_token)
@@ -335,7 +329,6 @@ mp_equation_parse(const char *expression, MPEquationOptions *options, MPNumber *
     p_destroy_parser (state);
     return PARSER_ERR_NONE;
 }
-
 
 const char *
 mp_error_code_to_string(MPErrorCode error_code)

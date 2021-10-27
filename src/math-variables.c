@@ -14,7 +14,6 @@
 #include "math-variables.h"
 #include "mp-serializer.h"
 
-
 struct MathVariablesPrivate
 {
     gchar *file_name;
@@ -24,13 +23,11 @@ struct MathVariablesPrivate
 
 G_DEFINE_TYPE_WITH_PRIVATE (MathVariables, math_variables, G_TYPE_OBJECT);
 
-
 MathVariables *
 math_variables_new()
 {
     return g_object_new (math_variables_get_type(), NULL);
 }
-
 
 static void
 registers_load(MathVariables *variables)
@@ -71,7 +68,6 @@ registers_load(MathVariables *variables)
     fclose(f);
 }
 
-
 static void
 registers_save(MathVariables *variables)
 {
@@ -102,7 +98,6 @@ registers_save(MathVariables *variables)
     fclose(f);
 }
 
-
 // FIXME: Sort
 gchar **
 math_variables_get_names(MathVariables *variables)
@@ -128,7 +123,6 @@ math_variables_get_names(MathVariables *variables)
     return names;
 }
 
-
 void
 math_variables_set(MathVariables *variables, const char *name, const MPNumber *value)
 {
@@ -145,7 +139,6 @@ math_variables_set(MathVariables *variables, const char *name, const MPNumber *v
     registers_save(variables);
 }
 
-
 MPNumber *
 math_variables_get(MathVariables *variables, const char *name)
 {
@@ -153,7 +146,6 @@ math_variables_get(MathVariables *variables, const char *name)
     g_return_val_if_fail(name != NULL, NULL);
     return g_hash_table_lookup(variables->priv->registers, name);
 }
-
 
 void
 math_variables_delete(MathVariables *variables, const char *name)
@@ -164,12 +156,10 @@ math_variables_delete(MathVariables *variables, const char *name)
     registers_save(variables);
 }
 
-
 static void
 math_variables_class_init (MathVariablesClass *klass)
 {
 }
-
 
 static void
 math_variables_init(MathVariables *variables)

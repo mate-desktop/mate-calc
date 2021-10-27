@@ -22,16 +22,13 @@ struct UnitManagerPrivate
 
 G_DEFINE_TYPE_WITH_PRIVATE (UnitManager, unit_manager, G_TYPE_OBJECT);
 
-
 static UnitManager *default_unit_manager = NULL;
-
 
 static gint
 compare_currencies(gconstpointer a, gconstpointer b)
 {
     return strcmp(currency_get_display_name((Currency *)a), currency_get_display_name((Currency *)b));
 }
-
 
 UnitManager *
 unit_manager_get_default(void)
@@ -145,7 +142,6 @@ unit_manager_get_default(void)
     return default_unit_manager;
 }
 
-
 UnitCategory *
 unit_manager_add_category(UnitManager *manager, const gchar *name, const gchar *display_name)
 {
@@ -162,14 +158,12 @@ unit_manager_add_category(UnitManager *manager, const gchar *name, const gchar *
     return category;
 }
 
-
 const GList *
 unit_manager_get_categories(UnitManager *manager)
 {
     g_return_val_if_fail(manager != NULL, NULL);
     return manager->priv->categories;
 }
-
 
 UnitCategory *
 unit_manager_get_category(UnitManager *manager, const gchar *category)
@@ -187,7 +181,6 @@ unit_manager_get_category(UnitManager *manager, const gchar *category)
 
     return NULL;
 }
-
 
 Unit *
 unit_manager_get_unit_by_name(UnitManager *manager, const gchar *name)
@@ -208,7 +201,6 @@ unit_manager_get_unit_by_name(UnitManager *manager, const gchar *name)
     return NULL;
 }
 
-
 Unit *
 unit_manager_get_unit_by_symbol(UnitManager *manager, const gchar *symbol)
 {
@@ -227,7 +219,6 @@ unit_manager_get_unit_by_symbol(UnitManager *manager, const gchar *symbol)
 
     return NULL;
 }
-
 
 gboolean
 unit_manager_convert_by_symbol(UnitManager *manager, const MPNumber *x, const char *x_symbol, const char *z_symbol, MPNumber *z)
@@ -253,12 +244,10 @@ unit_manager_convert_by_symbol(UnitManager *manager, const MPNumber *x, const ch
     return FALSE;
 }
 
-
 static void
 unit_manager_class_init(UnitManagerClass *klass)
 {
 }
-
 
 static void
 unit_manager_init(UnitManager *manager)

@@ -41,7 +41,6 @@ calc_ctrm(MPNumber *t, MPNumber *pint, MPNumber *fv, MPNumber *pv)
     mp_clear(&MP4);
 }
 
-
 static void
 calc_ddb(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *life, MPNumber *period)
 {
@@ -85,7 +84,6 @@ calc_ddb(MathEquation *equation, MPNumber *t, MPNumber *cost, MPNumber *life, MP
     mp_clear(&MP2);
 }
 
-
 static void
 calc_fv(MPNumber *t, MPNumber *pmt, MPNumber *pint, MPNumber *n)
 {
@@ -114,7 +112,6 @@ calc_fv(MPNumber *t, MPNumber *pmt, MPNumber *pint, MPNumber *n)
     mp_clear(&MP4);
 }
 
-
 static void
 calc_gpm(MPNumber *t, MPNumber *cost, MPNumber *margin)
 {
@@ -135,7 +132,6 @@ calc_gpm(MPNumber *t, MPNumber *cost, MPNumber *margin)
     mp_clear(&MP1);
     mp_clear(&MP2);
 }
-
 
 static void
 calc_pmt(MPNumber *t, MPNumber *prin, MPNumber *pint, MPNumber *n)
@@ -167,7 +163,6 @@ calc_pmt(MPNumber *t, MPNumber *prin, MPNumber *pint, MPNumber *n)
     mp_clear(&MP4);
 }
 
-
 static void
 calc_pv(MPNumber *t, MPNumber *pmt, MPNumber *pint, MPNumber *n)
 {
@@ -198,7 +193,6 @@ calc_pv(MPNumber *t, MPNumber *pmt, MPNumber *pint, MPNumber *n)
     mp_clear(&MP4);
 }
 
-
 static void
 calc_rate(MPNumber *t, MPNumber *fv, MPNumber *pv, MPNumber *n)
 {
@@ -227,7 +221,6 @@ calc_rate(MPNumber *t, MPNumber *fv, MPNumber *pv, MPNumber *n)
     mp_clear(&MP4);
 }
 
-
 static void
 calc_sln(MPNumber *t, MPNumber *cost, MPNumber *salvage, MPNumber *life)
 {
@@ -244,7 +237,6 @@ calc_sln(MPNumber *t, MPNumber *cost, MPNumber *salvage, MPNumber *life)
     mp_divide(&MP1, life, t);
     mp_clear(&MP1);
 }
-
 
 static void
 calc_syd(MPNumber *t, MPNumber *cost, MPNumber *salvage, MPNumber *life, MPNumber *period)
@@ -280,7 +272,6 @@ calc_syd(MPNumber *t, MPNumber *cost, MPNumber *salvage, MPNumber *life, MPNumbe
     mp_clear(&MP4);
 }
 
-
 static void
 calc_term(MPNumber *t, MPNumber *pmt, MPNumber *fv, MPNumber *pint)
 {
@@ -310,7 +301,6 @@ calc_term(MPNumber *t, MPNumber *pmt, MPNumber *fv, MPNumber *pint)
     mp_clear(&MP3);
     mp_clear(&MP4);
 }
-
 
 void
 do_finc_expression(MathEquation *equation, int function, MPNumber *arg1, MPNumber *arg2, MPNumber *arg3, MPNumber *arg4)
