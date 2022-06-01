@@ -86,13 +86,14 @@ dnl ###########################################################################
 dnl Files to generate
 dnl ###########################################################################
 
-AC_OUTPUT([
+AC_CONFIG_FILES([
 Makefile
 src/Makefile
 po/Makefile.in
 data/Makefile
 help/Makefile
 ])
+AC_OUTPUT
 
 echo "
 Configure summary:
