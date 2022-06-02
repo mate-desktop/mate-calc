@@ -35,13 +35,16 @@ GType currency_get_type(void);
 
 Currency *currency_new(const gchar *name,
                        const gchar *display_name,
-                       const gchar *symbol);
+                       const gchar *symbol,
+                       int	 type_format);
 
 const gchar *currency_get_name(Currency *currency);
 
 const gchar *currency_get_short_display_name(Currency *currency);
 
 const gchar *currency_get_display_name(Currency *currency);
+
+int currency_get_type_format(Currency *currency);
 
 const gchar *currency_get_symbol(Currency *currency);
 
