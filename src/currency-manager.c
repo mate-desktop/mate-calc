@@ -23,72 +23,72 @@
 
 typedef struct {
     char *short_name;
-    int  type_format;    
     char *symbol;
+    char *format;        
     char *long_name;
 } CurrencyInfo;
 static const CurrencyInfo currency_info[] = {
-    {"AED", 0,	"إ.د", 	N_("UAE Dirham")},
-    {"AUD", 0,	"$",  	N_("Australian Dollar")},
-    {"BGN", 0,	"лв",   N_("Bulgarian Lev")},
-    {"BHD", 0,	".ب.د", N_("Bahraini Dinar")},
-    {"BND", 0,	"$",    N_("Brunei Dollar")},
-    {"BRL", 0,	"R$",   N_("Brazilian Real")},
-    {"BWP", 0,	"P",    N_("Botswana Pula")},
-    {"CAD", 0,	"$",    N_("Canadian Dollar")},
-    {"CFA", 0,	"Fr",   N_("CFA Franc")},
-    {"CHF", 0,	"Fr",   N_("Swiss Franc")},
-    {"CLP", 0,	"$",    N_("Chilean Peso")},
-    {"CNY", 0,	"元",   N_("Chinese Yuan")},
-    {"COP", 0,	"$",    N_("Colombian Peso")},
-    {"CZK", 0,	"Kč",   N_("Czech Koruna")},
-    {"DKK", 0,	"kr",   N_("Danish Krone")},
-    {"DZD", 0,	"ج.د",  N_("Algerian Dinar")},
-    {"EEK", 0,	"KR",   N_("Estonian Kroon")},
-    {"EUR", 0,	"€",    N_("Euro")},
-    {"GBP", 0,	"£",    N_("Pound Sterling")},
-    {"HKD", 0,	"$",    N_("Hong Kong Dollar")},
-    {"HRK", 0,	"kn",   N_("Croatian Kuna")},
-    {"HUF", 0,	"Ft",   N_("Hungarian Forint")},
-    {"IDR", 0,	"Rp",   N_("Indonesian Rupiah")},
-    {"ILS", 0,	"₪",    N_("Israeli New Shekel")},
-    {"INR", 0,	"₹",    N_("Indian Rupee")},
-    {"IRR", 0,	"﷼",   N_("Iranian Rial")},
-    {"ISK", 0,	"kr",   N_("Icelandic Krona")},
-    {"JPY", 0,	"¥",    N_("Japanese Yen")},
-    {"KRW", 0,	"₩",    N_("South Korean Won")},
-    {"KWD", 0,	"ك.د",  N_("Kuwaiti Dinar")},
-    {"KZT", 0,	"₸",    N_("Kazakhstani Tenge")},
-    {"LKR", 0,	"Rs",   N_("Sri Lankan Rupee")},
-    {"LTL", 0,	"Lt",   N_("Lithuanian Litas")},
-    {"LVL", 0,	"Ls",   N_("Latvian Lats")},
-    {"LYD", 0,	"د.ل",  N_("Libyan Dinar")},
-    {"MUR", 0,	"Rs",   N_("Mauritian Rupee")},
-    {"MXN", 0,	"$",    N_("Mexican Peso")},
-    {"MYR", 0,	"RM",   N_("Malaysian Ringgit")},
-    {"NOK", 0,	"kr",   N_("Norwegian Krone")},
-    {"NPR", 0,	"Rs",   N_("Nepalese Rupee")},
-    {"NZD", 0,	"$",    N_("New Zealand Dollar")},
-    {"OMR", 0,	"ع.ر.", N_("Omani Rial")},
-    {"PEN", 0,	"S/.",  N_("Peruvian Nuevo Sol")},
-    {"PHP", 0,	"₱",    N_("Philippine Peso")},
-    {"PKR", 0,	"Rs",   N_("Pakistani Rupee")},
-    {"PLN", 0,	"zł",   N_("Polish Zloty")},
-    {"QAR", 0,	"ق.ر",  N_("Qatari Riyal")},
-    {"RON", 0,	"L",    N_("New Romanian Leu")},
-    {"RUB", 1,	"руб.", N_("Russian Rouble")},
-    {"SAR", 0,	"س.ر",  N_("Saudi Riyal")},
-    {"SEK", 0,	"kr",   N_("Swedish Krona")},
-    {"SGD", 0,	"$",    N_("Singapore Dollar")},
-    {"THB", 0,	"฿",    N_("Thai Baht")},
-    {"TND", 0,	"ت.د",  N_("Tunisian Dinar")},
-    {"TRY", 0,	"TL",   N_("New Turkish Lira")},
-    {"TTD", 0,	"$",    N_("T&T Dollar (TTD)")},
-    {"USD", 0,	"$",    N_("US Dollar")},
-    {"UYU", 0,	"$",    N_("Uruguayan Peso")},
-    {"VEF", 0,	"Bs F", N_("Venezuelan Bolívar")},
-    {"ZAR", 0,	"R",    N_("South African Rand")},
-    {NULL, 0, NULL}
+    {"AED", "إ.د",	"%s%%s",	N_("UAE Dirham")},
+    {"AUD", "$",	"%s%%s",	N_("Australian Dollar")},
+    {"BGN", "лв",	"%s%%s",	N_("Bulgarian Lev")},
+    {"BHD", ".ب.د",	"%s%%s",	N_("Bahraini Dinar")},
+    {"BND", "$",	"%s%%s",	N_("Brunei Dollar")},
+    {"BRL", "R$",	"%s%%s",	N_("Brazilian Real")},
+    {"BWP", "P",	"%s%%s",	N_("Botswana Pula")},
+    {"CAD", "$",	"%s%%s",	N_("Canadian Dollar")},
+    {"CFA", "Fr",	"%s%%s",	N_("CFA Franc")},
+    {"CHF", "Fr",	"%s%%s",	N_("Swiss Franc")},
+    {"CLP", "$",	"%s%%s",	N_("Chilean Peso")},
+    {"CNY", "元",	"%s%%s",	N_("Chinese Yuan")},
+    {"COP", "$",	"%s%%s",	N_("Colombian Peso")},
+    {"CZK", "Kč",	"%s%%s",	N_("Czech Koruna")},
+    {"DKK", "kr",	"%s%%s",	N_("Danish Krone")},
+    {"DZD", "ج.د",	"%s%%s",	N_("Algerian Dinar")},
+    {"EEK", "KR",	"%s%%s",	N_("Estonian Kroon")},
+    {"EUR", "€",	"%s%%s",	N_("Euro")},
+    {"GBP", "£",	"%s%%s",	N_("Pound Sterling")},
+    {"HKD", "$",	"%s%%s",	N_("Hong Kong Dollar")},
+    {"HRK", "kn",	"%s%%s",	N_("Croatian Kuna")},
+    {"HUF", "Ft",	"%s%%s",	N_("Hungarian Forint")},
+    {"IDR", "Rp",	"%s%%s",	N_("Indonesian Rupiah")},
+    {"ILS", "₪",	"%s%%s",	N_("Israeli New Shekel")},
+    {"INR", "₹",	"%s%%s",	N_("Indian Rupee")},
+    {"IRR", "﷼",	"%s%%s",	N_("Iranian Rial")},
+    {"ISK", "kr",	"%s%%s",	N_("Icelandic Krona")},
+    {"JPY", "¥",	"%s%%s",	N_("Japanese Yen")},
+    {"KRW", "₩",	"%s%%s",	N_("South Korean Won")},
+    {"KWD", "ك.د",	"%s%%s",	N_("Kuwaiti Dinar")},
+    {"KZT", "₸",	"%s%%s",	N_("Kazakhstani Tenge")},
+    {"LKR", "Rs",	"%s%%s",	N_("Sri Lankan Rupee")},
+    {"LTL", "Lt",	"%s%%s",	N_("Lithuanian Litas")},
+    {"LVL", "Ls",	"%s%%s",	N_("Latvian Lats")},
+    {"LYD", "د.ل",	"%s%%s",	N_("Libyan Dinar")},
+    {"MUR", "Rs",	"%s%%s",	N_("Mauritian Rupee")},
+    {"MXN", "$",	"%s%%s",	N_("Mexican Peso")},
+    {"MYR", "RM",	"%s%%s",	N_("Malaysian Ringgit")},
+    {"NOK", "kr",	"%s%%s",	N_("Norwegian Krone")},
+    {"NPR", "Rs",	"%s%%s",	N_("Nepalese Rupee")},
+    {"NZD", "$",	"%s%%s",	N_("New Zealand Dollar")},
+    {"OMR", "ع.ر.",	"%s%%s",	N_("Omani Rial")},
+    {"PEN", "S/.",	"%s%%s",	N_("Peruvian Nuevo Sol")},
+    {"PHP", "₱",	"%s%%s",	N_("Philippine Peso")},
+    {"PKR", "Rs",	"%s%%s",	N_("Pakistani Rupee")},
+    {"PLN", "zł",	"%s%%s",	N_("Polish Zloty")},
+    {"QAR", "ق.ر",	"%s%%s",	N_("Qatari Riyal")},
+    {"RON", "L",	"%s%%s",	N_("New Romanian Leu")},
+    {"RUB", "руб.",	"%%s%s",	N_("Russian Rouble")},
+    {"SAR", "س.ر",	"%s%%s",	N_("Saudi Riyal")},
+    {"SEK", "kr",	"%s%%s",	N_("Swedish Krona")},
+    {"SGD", "$",	"%s%%s",	N_("Singapore Dollar")},
+    {"THB", "฿",	"%s%%s",	N_("Thai Baht")},
+    {"TND", "ت.د",	"%s%%s",	N_("Tunisian Dinar")},
+    {"TRY", "TL",	"%s%%s",	N_("New Turkish Lira")},
+    {"TTD", "$",	"%s%%s",	N_("T&T Dollar (TTD)")},
+    {"USD", "$",	"%s%%s",	N_("US Dollar")},
+    {"UYU", "$",	"%s%%s",	N_("Uruguayan Peso")},
+    {"VEF", "Bs F",	"%s%%s",	N_("Venezuelan Bolívar")},
+    {"ZAR", "R",	"%s%%s",	N_("South African Rand")},
+    {NULL, NULL, NULL}
 };
 
 static gboolean downloading_imf_rates = FALSE, downloading_ecb_rates = FALSE;
@@ -124,7 +124,7 @@ currency_manager_get_default(void)
         Currency *c = currency_new(currency_info[i].short_name,
                                    _(currency_info[i].long_name),
                                    currency_info[i].symbol,
-                                   currency_info[i].type_format);
+                                   currency_info[i].format);
         default_currency_manager->priv->currencies = g_list_append(default_currency_manager->priv->currencies, c);
     }
 
@@ -194,7 +194,7 @@ add_currency(CurrencyManager *manager, const gchar *short_name)
     }
 
     g_warning("Currency %s is not in the currency table", short_name);
-    c = currency_new(short_name, short_name, short_name, 0);
+    c = currency_new(short_name, short_name, short_name, "%s%%s");
     manager->priv->currencies = g_list_append(manager->priv->currencies, c);
 
     return c;

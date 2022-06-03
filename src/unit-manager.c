@@ -111,7 +111,7 @@ unit_manager_get_default(void)
     unit_manager_add_category(default_unit_manager, "duration", _("Duration"));
     unit_manager_add_category(default_unit_manager, "temperature", _("Temperature"));
 
-     for (i = 0; units[i].name; i++) {
+    for (i = 0; units[i].name; i++) {
         if (units[i].category)
             category = unit_manager_get_category(default_unit_manager, units[i].category);
         unit_category_add_unit(category, unit_new(units[i].name,
@@ -129,13 +129,9 @@ unit_manager_get_default(void)
         Currency *currency = iter->data;
         gchar *format;
         Unit *unit;
-        int type_format;
 
         /* Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100 */
-        if ((type_format = currency_get_type_format(currency)) == 1)
-       		format = g_strdup_printf(_("%%s%s"), currency_get_symbol(currency));
-       	else
-       		format = g_strdup_printf(_("%s%%s"), currency_get_symbol(currency));       	
+        format = g_strdup_printf(_(currency_get_format(currency)), currency_get_symbol(currency)); 
  
         unit = unit_new(currency_get_name(currency), currency_get_display_name(currency), format, NULL, NULL, currency_get_name(currency));
         g_free(format);
