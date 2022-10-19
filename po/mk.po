@@ -2,23 +2,23 @@
 # Copyright (C) YEAR MATE Desktop Environment team
 # This file is distributed under the same license as the mate-calc package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # exoos <mince.lesovski@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-calc 1.25.0\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-calc/issues\n"
-"POT-Creation-Date: 2021-05-30 11:18+0200\n"
+"POT-Creation-Date: 2022-10-20 20:12+0200\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
 "Last-Translator: exoos <mince.lesovski@gmail.com>, 2020\n"
 "Language-Team: Macedonian (https://www.transifex.com/mate/teams/13566/mk/)\n"
+"Language: mk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: mk\n"
 "Plural-Forms: nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;\n"
 
 #. Accessible name for the factorize button
@@ -52,7 +52,7 @@ msgstr "x"
 #. Accessible name for the memory value button
 #. Tooltip for the memory button
 #: src/buttons-advanced.ui:417 src/buttons-financial.ui:1894
-#: src/math-buttons.c:230
+#: src/math-buttons.c:234
 msgid "Memory"
 msgstr "Меморија"
 
@@ -115,7 +115,7 @@ msgstr ""
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
-#: src/buttons-financial.ui:8 src/math-buttons.c:254
+#: src/buttons-financial.ui:8 src/math-buttons.c:258
 msgid "Compounding Term"
 msgstr "Збирен израз"
 
@@ -215,7 +215,7 @@ msgstr "Ц_ена:"
 
 #. Title of Future Value dialog
 #. Tooltip for the future value button
-#: src/buttons-financial.ui:374 src/math-buttons.c:260
+#: src/buttons-financial.ui:374 src/math-buttons.c:264
 msgid "Future Value"
 msgstr "Идна вредност"
 
@@ -245,7 +245,7 @@ msgstr "_Периодична наплата:"
 
 #. Title of Gross Profit Margin dialog
 #. Tooltip for the gross profit margin button
-#: src/buttons-financial.ui:557 src/math-buttons.c:281
+#: src/buttons-financial.ui:557 src/math-buttons.c:285
 msgid "Gross Profit Margin"
 msgstr "Бруто маржа"
 
@@ -265,7 +265,7 @@ msgstr "_Маргина:"
 
 #. Title of Periodic Payment dialog
 #. Tooltip for the periodic payment button
-#: src/buttons-financial.ui:710 src/math-buttons.c:278
+#: src/buttons-financial.ui:710 src/math-buttons.c:282
 msgid "Periodic Payment"
 msgstr "Рата на исплата"
 
@@ -291,7 +291,7 @@ msgstr "_Финансиски:"
 
 #. Title of Present Value dialog
 #. Tooltip for the present value button
-#: src/buttons-financial.ui:894 src/math-buttons.c:275
+#: src/buttons-financial.ui:894 src/math-buttons.c:279
 msgid "Present Value"
 msgstr "Сегашна вредност"
 
@@ -307,7 +307,7 @@ msgstr ""
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
-#: src/buttons-financial.ui:1078 src/math-buttons.c:272
+#: src/buttons-financial.ui:1078 src/math-buttons.c:276
 msgid "Periodic Interest Rate"
 msgstr "Периодична каматна стапка"
 
@@ -317,8 +317,8 @@ msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
 msgstr ""
-"Ја пресметува периодичната камата потребна за да се зголеми инвестицијата до"
-" некоја идна вредност, во неколку рати."
+"Ја пресметува периодичната камата потребна за да се зголеми инвестицијата до "
+"некоја идна вредност, во неколку рати."
 
 #. Title of Straight-Line Depreciation dialog
 #: src/buttons-financial.ui:1262
@@ -359,8 +359,8 @@ msgstr "Девалвација според збирот на цифрите н�
 #: src/buttons-financial.ui:1631
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
-" accelerates the rate of depreciation, so that more depreciation expense "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
+"accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
 msgstr ""
@@ -383,94 +383,63 @@ msgstr "Идна _вредност:"
 #: src/buttons-financial.ui:1815
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest"
-" rate."
+"of an ordinary annuity, to accumulate a future value, at a periodic interest "
+"rate."
 msgstr "Го пресметува бројот на периоди на исплата."
 
-#. Calculates the number of compounding periods necessary to increase an
-#. investment of present value pv to a future value of fv, at a fixed interest
-#. rate of int per compounding period. See also:
-#. http://en.wikipedia.org/wiki/Compound_interest
+#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
 #: src/buttons-financial.ui:2166
 msgid "Ctrm"
 msgstr "Ctrm"
 
-#. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the double-declining balance method. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2181
 msgid "Ddb"
 msgstr "Ddb"
 
-#. Calculates the future value of an investment based on a series of equal
-#. payments, each of amount pmt, at a periodic interest rate of int, over the
-#. number of payment periods in the term. See also:
-#. http://en.wikipedia.org/wiki/Future_value
+#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
 #: src/buttons-financial.ui:2196
 msgid "Fv"
 msgstr "Fv"
 
-#. Calculates the number of payment periods that are necessary during the term
-#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
-#. interest rate of int. Each payment is equal to amount pmt. See also:
-#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
 #: src/buttons-financial.ui:2211
 msgid "Term"
 msgstr "Временски термин"
 
-#. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2226
 msgid "Syd"
 msgstr "Syd"
 
-#. Calculates the straight-line depreciation of an asset for one period. The
-#. depreciable cost is cost - salvage. The straight-line method of
-#. depreciation divides the depreciable cost evenly over the useful life of an
-#. asset. The useful life is the number of periods, typically years, over
-#. which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2241
 msgid "Sln"
 msgstr "Sln"
 
-#. Calculates the periodic interest necessary to increase an investment of
-#. present value pv to a future value of fv, over the number of compounding
-#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
 #: src/buttons-financial.ui:2256
 msgid "Rate"
 msgstr "Стапка"
 
-#. Calculates the present value of an investment based on a series of equal
-#. payments, each of amount pmt, discounted at a periodic interest rate of
-#. int, over the number of payment periods in the term. See also:
-#. http://en.wikipedia.org/wiki/Present_value
+#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
 #: src/buttons-financial.ui:2271
 msgid "Pv"
 msgstr "Pv"
 
-#. Calculates the amount of the periodic payment of a loan, where payments are
-#. made at the end of each payment period. See also:
-#. http://en.wikipedia.org/wiki/Amortization_schedule
+#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
 #: src/buttons-financial.ui:2286
 msgid "Pmt"
 msgstr "Pmt"
 
-#. Calculates the resale price of a product, based on the product cost and the
-#. wanted gross profit margin. See also:
-#. http://en.wikipedia.org/wiki/Gross_profit_margin
+#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
 #: src/buttons-financial.ui:2301
 msgid "Gpm"
 msgstr "бруто маржа"
 
 #. Title of insert character code dialog
 #. Tooltip for the insert character code button
-#: src/buttons-programming.ui:8 src/math-buttons.c:233
+#: src/buttons-programming.ui:8 src/math-buttons.c:237
 msgid "Insert Character Code"
 msgstr "Внеси код на знак"
 
@@ -520,7 +489,7 @@ msgid "64-bit"
 msgstr "64-bit"
 
 #. Title of preferences dialog
-#: src/preferences.ui:60 src/math-preferences.c:239
+#: src/preferences.ui:60 src/math-preferences.c:221
 msgid "Preferences"
 msgstr "Параметри"
 
@@ -575,12 +544,12 @@ msgid ""
 "project's home page."
 msgstr ""
 
-#: data/mate-calc.desktop.in:3 src/math-window.c:368
+#: data/mate-calc.desktop.in:3 src/math-window.c:366
 msgid "MATE Calculator"
 msgstr ""
 
 #. Title of main window
-#: data/mate-calc.desktop.in:4 src/math-window.c:723
+#: data/mate-calc.desktop.in:4 src/math-window.c:716
 msgid "Calculator"
 msgstr "Калкулатор"
 
@@ -588,8 +557,7 @@ msgstr "Калкулатор"
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Извршете аритметички, научни или финансиски пресметки"
 
-#. Translators: Search terms to find this application. Do NOT translate or
-#. localize the semicolons! The list MUST also end with a semicolon!
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/mate-calc.desktop.in:13
 msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
 msgstr ""
@@ -941,12 +909,12 @@ msgstr "c"
 msgid "South African Rand"
 msgstr "Јужноафрикански ранд"
 
-#: src/financial.c:79
+#: src/financial.c:78
 msgid "Error: the number of periods must be positive"
 msgstr "Грешка: бројот на запирки мора да е позитивен"
 
 #. Description on how to use mate-calc displayed on command-line
-#: src/mate-calc.c:86
+#: src/mate-calc.c:83
 #, c-format
 msgid ""
 "Usage:\n"
@@ -955,9 +923,8 @@ msgstr ""
 "Упатство:\n"
 "  %s — изврши математички пресметки"
 
-#. Description on mate-calc command-line help options displayed on command-
-#. line
-#: src/mate-calc.c:94
+#. Description on mate-calc command-line help options displayed on command-line
+#: src/mate-calc.c:91
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -972,29 +939,32 @@ msgstr ""
 "  --help-all                      покажи ги сите опции за помош\n"
 "  --help-gtk                      покажи ги опциите за  GTK+"
 
-#. Description on mate-calc command-line GTK+ options displayed on command-
-#. line
-#: src/mate-calc.c:105
+#. Description on mate-calc command-line GTK+ options displayed on command-line
+#: src/mate-calc.c:102
 #, c-format
 msgid ""
 "GTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window manager\n"
-"  --name=NAME                     Program name as used by the window manager\n"
+"  --class=CLASS                   Program class as used by the window "
+"manager\n"
+"  --name=NAME                     Program name as used by the window "
+"manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
 "GTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window manager\n"
-"  --name=NAME                     Program name as used by the window manager\n"
+"  --class=CLASS                   Program class as used by the window "
+"manager\n"
+"  --name=NAME                     Program name as used by the window "
+"manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 
 #. Description on mate-calc application options displayed on command-line
-#: src/mate-calc.c:119
+#: src/mate-calc.c:116
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -1004,13 +974,13 @@ msgstr ""
 "  -s, --solve <equation>          реши ја дадената равенка"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: src/mate-calc.c:167
+#: src/mate-calc.c:163
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "Аргумент --solve бара равенка за решавање"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: src/mate-calc.c:178
+#: src/mate-calc.c:174
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "Непознат аргумент „%s“"
@@ -1025,294 +995,308 @@ msgstr "Пи [Ctrl+P]"
 msgid "Euler’s Number"
 msgstr "Ојлеровиот број"
 
+#. Tooltip for the imaginary number button
+#: src/math-buttons.c:99
+#, fuzzy
+#| msgid "Imaginary Component"
+msgid "Imaginary unit"
+msgstr "Имагинарен дел"
+
+#. Tooltip for the numeric point button
+#: src/math-buttons.c:102
+#, fuzzy
+#| msgid "Decimal"
+msgid "Decimal point"
+msgstr "Децимала"
+
 #. Tooltip for the subscript button
-#: src/math-buttons.c:101
+#: src/math-buttons.c:105
 msgid "Subscript mode [Alt]"
 msgstr "Режим на индекси [Alt]"
 
 #. Tooltip for the superscript button
-#: src/math-buttons.c:104
+#: src/math-buttons.c:108
 msgid "Superscript mode [Ctrl]"
 msgstr "Режим на експоненти [Ctrl]"
 
 #. Tooltip for the scientific exponent button
-#: src/math-buttons.c:107
+#: src/math-buttons.c:111
 msgid "Scientific exponent [Ctrl+E]"
 msgstr "Експонент [Ctrl+E]"
 
 #. Tooltip for the add button
-#: src/math-buttons.c:110
+#: src/math-buttons.c:114
 msgid "Add [+]"
 msgstr "Собирање [+]"
 
 #. Tooltip for the subtract button
-#: src/math-buttons.c:113
+#: src/math-buttons.c:117
 msgid "Subtract [-]"
 msgstr "Одземај [-]"
 
 #. Tooltip for the multiply button
-#: src/math-buttons.c:116
+#: src/math-buttons.c:120
 msgid "Multiply [*]"
 msgstr "Помножи [*]"
 
 #. Tooltip for the divide button
-#: src/math-buttons.c:119
+#: src/math-buttons.c:123
 msgid "Divide [/]"
 msgstr "Дели [/]"
 
 #. Tooltip for the modulus divide button
-#: src/math-buttons.c:122
+#: src/math-buttons.c:126
 msgid "Modulus divide"
 msgstr "Делење со модули"
 
 #. Tooltip for the additional functions button
-#: src/math-buttons.c:125
+#: src/math-buttons.c:129
 msgid "Additional Functions"
 msgstr "Додатни функции"
 
 #. Tooltip for the additional constant button
-#: src/math-buttons.c:128
+#: src/math-buttons.c:132
 msgid "Additional constants"
 msgstr ""
 
 #. Tooltip for the exponent button
-#: src/math-buttons.c:131
+#: src/math-buttons.c:135
 msgid "Exponent [^ or **]"
 msgstr "Експонент [^ или **]"
 
 #. Tooltip for the square button
-#: src/math-buttons.c:134
+#: src/math-buttons.c:138
 msgid "Square [Ctrl+2]"
 msgstr "Квадрат [Ctrl+2]"
 
 #. Tooltip for the percentage button
-#: src/math-buttons.c:137
+#: src/math-buttons.c:141
 msgid "Percentage [%]"
 msgstr "Процент [%]"
 
 #. Tooltip for the factorial button
-#: src/math-buttons.c:140
+#: src/math-buttons.c:144
 msgid "Factorial [!]"
 msgstr "Факториел [!]"
 
 #. Tooltip for the absolute value button
-#: src/math-buttons.c:143
+#: src/math-buttons.c:147
 msgid "Absolute value [|]"
 msgstr "Апсолутна вредност [|]"
 
 #. Tooltip for the complex argument component button
-#: src/math-buttons.c:146
+#: src/math-buttons.c:150
 msgid "Complex argument"
 msgstr "Комплексен аргумент"
 
 #. Tooltip for the complex conjugate button
-#: src/math-buttons.c:149
+#: src/math-buttons.c:153
 msgid "Complex conjugate"
 msgstr "Комплексен конјугат"
 
 #. Tooltip for the root button
-#: src/math-buttons.c:152
+#: src/math-buttons.c:156
 msgid "Root [Ctrl+R]"
 msgstr "Корен [Ctrl+R]"
 
 #. Tooltip for the square root button
-#: src/math-buttons.c:155
+#: src/math-buttons.c:159
 msgid "Square root [Ctrl+R]"
 msgstr "Квадратен корен [Ctrl+R]"
 
 #. Tooltip for the logarithm button
-#: src/math-buttons.c:158
+#: src/math-buttons.c:162
 msgid "Logarithm"
 msgstr "Логаритам"
 
 #. Tooltip for the natural logarithm button
-#: src/math-buttons.c:161
+#: src/math-buttons.c:165
 msgid "Natural Logarithm"
 msgstr "Природен логаритам"
 
 #. Tooltip for the sine button
-#: src/math-buttons.c:164
+#: src/math-buttons.c:168
 msgid "Sine"
 msgstr "Синус"
 
 #. Tooltip for the cosine button
-#: src/math-buttons.c:167
+#: src/math-buttons.c:171
 msgid "Cosine"
 msgstr "Косинус"
 
 #. Tooltip for the tangent button
-#: src/math-buttons.c:170
+#: src/math-buttons.c:174
 msgid "Tangent"
 msgstr "Тангенс"
 
 #. Tooltip for the hyperbolic sine button
-#: src/math-buttons.c:173
+#: src/math-buttons.c:177
 msgid "Hyperbolic Sine"
 msgstr "Хиперболичка синусоида"
 
 #. Tooltip for the hyperbolic cosine button
-#: src/math-buttons.c:176
+#: src/math-buttons.c:180
 msgid "Hyperbolic Cosine"
 msgstr "Хиперболичка косинусоида"
 
 #. Tooltip for the hyperbolic tangent button
-#: src/math-buttons.c:179
+#: src/math-buttons.c:183
 msgid "Hyperbolic Tangent"
 msgstr "Хиперболичка тангента"
 
 #. Tooltip for the inverse sine button
-#: src/math-buttons.c:182
+#: src/math-buttons.c:186
 msgid "Inverse Sine"
 msgstr ""
 
 #. Tooltip for the inverse cosine button
-#: src/math-buttons.c:185
+#: src/math-buttons.c:189
 msgid "Inverse Cosine"
 msgstr ""
 
 #. Tooltip for the inverse tangent button
-#: src/math-buttons.c:188
+#: src/math-buttons.c:192
 msgid "Inverse Tangent"
 msgstr ""
 
 #. Tooltip for the inverse button
-#: src/math-buttons.c:191
+#: src/math-buttons.c:195
 msgid "Inverse [Ctrl+I]"
 msgstr "Инверз [Ctrl+I]"
 
 #. Tooltip for the boolean AND button
-#: src/math-buttons.c:194
+#: src/math-buttons.c:198
 msgid "Boolean AND"
 msgstr "Булово И"
 
 #. Tooltip for the boolean OR button
-#: src/math-buttons.c:197
+#: src/math-buttons.c:201
 msgid "Boolean OR"
 msgstr "Булово ИЛИ"
 
 #. Tooltip for the exclusive OR button
-#: src/math-buttons.c:200
+#: src/math-buttons.c:204
 msgid "Boolean Exclusive OR"
 msgstr "Булово исклучително ИЛИ"
 
 #. Tooltip for the boolean NOT button
-#: src/math-buttons.c:203
+#: src/math-buttons.c:207
 msgid "Boolean NOT"
 msgstr "Булово НЕ"
 
 #. Tooltip for the integer component button
-#: src/math-buttons.c:206 src/math-buttons.c:997
+#: src/math-buttons.c:210 src/math-buttons.c:972
 msgid "Integer Component"
 msgstr "Целоброен дел"
 
 #. Tooltip for the fractional component button
-#: src/math-buttons.c:209 src/math-buttons.c:999
+#: src/math-buttons.c:213 src/math-buttons.c:974
 msgid "Fractional Component"
 msgstr "Дропкин дел"
 
 #. Tooltip for the real component button
-#: src/math-buttons.c:212
+#: src/math-buttons.c:216
 msgid "Real Component"
 msgstr "Реален дел"
 
 #. Tooltip for the imaginary component button
-#: src/math-buttons.c:215
+#: src/math-buttons.c:219
 msgid "Imaginary Component"
 msgstr "Имагинарен дел"
 
 #. Tooltip for the ones' complement button
-#: src/math-buttons.c:218
+#: src/math-buttons.c:222
 msgid "Ones' Complement"
 msgstr "1-комплемент"
 
 #. Tooltip for the two's complement button
-#: src/math-buttons.c:221
+#: src/math-buttons.c:225
 msgid "Two's Complement"
 msgstr "2-комплемент"
 
 #. Tooltip for the start group button
-#: src/math-buttons.c:224
+#: src/math-buttons.c:228
 msgid "Start Group [(]"
 msgstr "Започни група на пресметки [(]"
 
 #. Tooltip for the end group button
-#: src/math-buttons.c:227
+#: src/math-buttons.c:231
 msgid "End Group [)]"
 msgstr "Заврши ја групата [)]"
 
 #. Tooltip for the solve button
-#: src/math-buttons.c:236
+#: src/math-buttons.c:240
 msgid "Calculate Result"
 msgstr "Пресметај резултат"
 
 #. Tooltip for the factor button
-#: src/math-buttons.c:239
+#: src/math-buttons.c:243
 msgid "Factorize [Ctrl+F]"
 msgstr "Факторизирај [Ctrl+F]"
 
 #. Tooltip for the clear button
-#: src/math-buttons.c:242
+#: src/math-buttons.c:246
 msgid "Clear Display [Escape]"
 msgstr "Избриши ја прикажаната вредност [Escape]"
 
 #. Tooltip for the undo button
-#: src/math-buttons.c:245
+#: src/math-buttons.c:249
 msgid "Undo [Ctrl+Z]"
 msgstr "Врати [Ctrl+Z]"
 
 #. Tooltip for the shift left button
-#: src/math-buttons.c:248
+#: src/math-buttons.c:252
 msgid "Shift Left [<<]"
 msgstr ""
 
 #. Tooltip for the shift right button
-#: src/math-buttons.c:251
+#: src/math-buttons.c:255
 msgid "Shift Right [>>]"
 msgstr ""
 
 #. Tooltip for the double declining depreciation button
-#: src/math-buttons.c:257
+#: src/math-buttons.c:261
 msgid "Double Declining Depreciation"
 msgstr "Двојно опаѓачка девалвација"
 
 #. Tooltip for the financial term button
-#: src/math-buttons.c:263
+#: src/math-buttons.c:267
 msgid "Financial Term"
 msgstr "Финансиски член"
 
 #. Tooltip for the sum of the years digits depreciation button
-#: src/math-buttons.c:266
+#: src/math-buttons.c:270
 msgid "Sum of the Years Digits Depreciation"
 msgstr "Девалвација според збирот на цифрите на годините"
 
 #. Tooltip for the straight line depreciation button
-#: src/math-buttons.c:269
+#: src/math-buttons.c:273
 msgid "Straight Line Depreciation"
 msgstr "Девалвација по права линија"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: src/math-buttons.c:630
+#: src/math-buttons.c:624
 msgid "Binary"
 msgstr "Бинарен"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: src/math-buttons.c:634
+#: src/math-buttons.c:628
 msgid "Octal"
 msgstr "Октален"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: src/math-buttons.c:638
+#: src/math-buttons.c:632
 msgid "Decimal"
 msgstr "Децимала"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: src/math-buttons.c:642
+#: src/math-buttons.c:636
 msgid "Hexadecimal"
 msgstr "Хексадецимален"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: src/math-buttons.c:910 src/math-buttons.c:952
+#: src/math-buttons.c:888 src/math-buttons.c:929
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
@@ -1321,7 +1305,7 @@ msgstr[1] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: src/math-buttons.c:914 src/math-buttons.c:956
+#: src/math-buttons.c:892 src/math-buttons.c:933
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
@@ -1329,252 +1313,245 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. Tooltip for the round button
-#: src/math-buttons.c:1001
+#: src/math-buttons.c:976
 msgid "Round"
 msgstr "Заокружи"
 
 #. Tooltip for the floor button
-#: src/math-buttons.c:1003
+#: src/math-buttons.c:978
 msgid "Floor"
 msgstr "Подна функција"
 
 #. Tooltip for the ceiling button
-#: src/math-buttons.c:1005
+#: src/math-buttons.c:980
 msgid "Ceiling"
 msgstr "Таванска функција"
 
 #. Tooltip for the ceiling button
-#: src/math-buttons.c:1007
+#: src/math-buttons.c:982
 msgid "Sign"
 msgstr "Знак"
 
 #. Tooltip for the c₀ component button
-#: src/math-buttons.c:1049
+#: src/math-buttons.c:1023
 msgid "Velocity of Light"
 msgstr ""
 
-#: src/math-buttons.c:1049
+#: src/math-buttons.c:1023
 msgid "299,792,458 m/s"
 msgstr ""
 
 #. Tooltip for the μ₀ component button
-#: src/math-buttons.c:1051
+#: src/math-buttons.c:1025
 msgid "Magnetic constant"
 msgstr ""
 
-#: src/math-buttons.c:1051
+#: src/math-buttons.c:1025
 msgid "1.2566370614×10⁻⁶ N/A²"
 msgstr ""
 
 #. Tooltip for the ε₀ button
-#: src/math-buttons.c:1053
+#: src/math-buttons.c:1027
 msgid "Electric constant"
 msgstr ""
 
-#: src/math-buttons.c:1053
+#: src/math-buttons.c:1027
 msgid "8.85418782×10⁻¹² s⁴A²/m³kg"
 msgstr ""
 
 #. Tooltip for the G button
-#: src/math-buttons.c:1055
+#: src/math-buttons.c:1029
 msgid "Newtonian constant of gravitation"
 msgstr ""
 
-#: src/math-buttons.c:1055
+#: src/math-buttons.c:1029
 msgid "6.67408×10⁻¹¹ m³/(s²kg)"
 msgstr ""
 
 #. Tooltip for the h button
-#: src/math-buttons.c:1057
+#: src/math-buttons.c:1031
 msgid "Planck constant"
 msgstr ""
 
-#: src/math-buttons.c:1057
+#: src/math-buttons.c:1031
 msgid "6.62607004×10⁻³⁴ m²kg/s"
 msgstr ""
 
 #. Tooltip for the ｅ button
-#: src/math-buttons.c:1059
+#: src/math-buttons.c:1033
 msgid "Elementary charge"
 msgstr ""
 
-#: src/math-buttons.c:1059
+#: src/math-buttons.c:1033
 msgid "1.6021766208(98)×10⁻¹⁹ C"
 msgstr ""
 
 #. Tooltip for the mₑ button
-#: src/math-buttons.c:1061
+#: src/math-buttons.c:1035
 msgid "Electron mass"
 msgstr ""
 
-#: src/math-buttons.c:1061
+#: src/math-buttons.c:1035
 msgid "9.10938356×10⁻³¹ kg"
 msgstr ""
 
 #. Tooltip for the mₚ button
-#: src/math-buttons.c:1063
+#: src/math-buttons.c:1037
 msgid "Proton mass"
 msgstr ""
 
-#: src/math-buttons.c:1063
+#: src/math-buttons.c:1037
 msgid "1.672621898(21)×10⁻²⁷ kg"
 msgstr ""
 
 #. Tooltip for the Nₐ button
-#: src/math-buttons.c:1065
+#: src/math-buttons.c:1039
 msgid "Avogadro constant"
 msgstr ""
 
-#: src/math-buttons.c:1065
+#: src/math-buttons.c:1039
 msgid "6.02214086×10²³ mol⁻¹"
 msgstr ""
 
-#. Label that is displayed between the two conversion combo boxes, e.g.
-#. "[degrees] in [radians]"
-#: src/math-converter.c:418
+#. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
+#: src/math-converter.c:401
 msgid " in "
 msgstr "во"
 
 #. Tooltip for swap conversion button
-#: src/math-converter.c:433
+#: src/math-converter.c:416
 msgid "Switch conversion units"
 msgstr "Смени ги единиците за конверзија"
 
 #. Error shown when trying to undo with no undo history
-#: src/math-equation.c:460
+#: src/math-equation.c:444
 msgid "No undo history"
 msgstr "Нема историја за отповикување"
 
 #. Error shown when trying to redo with no redo history
-#: src/math-equation.c:487
+#: src/math-equation.c:470
 msgid "No redo history"
 msgstr "Нема историја за отповикување"
 
-#: src/math-equation.c:949
+#: src/math-equation.c:897
 msgid "No sane value to store"
 msgstr "Нема вистинска вредност за складирање"
 
-#. Error displayed to user when they perform a bitwise operation on numbers
-#. greater than the current word
-#: src/math-equation.c:1258
+#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
+#: src/math-equation.c:1190
 msgid "Overflow. Try a bigger word size"
 msgstr "Претекување. Пробајте со поголема големина на збор"
 
 #. Error displayed to user when they an unknown variable is entered
-#: src/math-equation.c:1263
+#: src/math-equation.c:1195
 #, c-format
 msgid "Unknown variable '%s'"
 msgstr "Непозната променлива „%s“"
 
 #. Error displayed to user when an unknown function is entered
-#: src/math-equation.c:1268
+#: src/math-equation.c:1200
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr "Функцијата „%s“ не е дефинирана"
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: src/math-equation.c:1273
+#: src/math-equation.c:1205
 msgid "Unknown conversion"
 msgstr "Непозната конверзија"
 
 #. Uncategorized error. Show error token to user
-#: src/math-equation.c:1281
+#: src/math-equation.c:1213
 #, c-format
 msgid "Malformed expression at token '%s'"
 msgstr ""
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: src/math-equation.c:1284 src/math-equation.c:1289
+#: src/math-equation.c:1216 src/math-equation.c:1221
 msgid "Malformed expression"
 msgstr "Погрешен израз"
 
-#: src/math-equation.c:1304
+#: src/math-equation.c:1235
 msgid "Calculating"
 msgstr "Пресметувам"
 
 #. Error displayed when trying to factorize a non-integer value
-#: src/math-equation.c:1443
+#: src/math-equation.c:1370
 msgid "Need an integer to factorize"
 msgstr "Потребен е цел број за факторизирање"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: src/math-equation.c:1516
+#: src/math-equation.c:1439
 msgid "No sane value to bitwise shift"
 msgstr "Нема разумна вредност за да се направи битово поместување"
 
 #. Message displayed when cannot toggle bit in display
-#: src/math-equation.c:1549
+#: src/math-equation.c:1471
 msgid "Displayed value not an integer"
 msgstr "Прикажаната вредност не е целобројна"
 
 #. Digits localized for the given language
-#: src/math-equation.c:1997
+#: src/math-equation.c:1909
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
-#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
-#. calculations
-#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
-#. grads
-#: src/math-preferences.c:256 src/unit-manager.c:54
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
+#: src/math-preferences.c:238 src/unit-manager.c:51
 msgid "Degrees"
 msgstr "Степени"
 
-#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
-#. calculations
-#: src/math-preferences.c:260 src/unit-manager.c:55
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
+#: src/math-preferences.c:242 src/unit-manager.c:52
 msgid "Radians"
 msgstr "Радијани"
 
-#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
-#. calculations
-#: src/math-preferences.c:264 src/unit-manager.c:56
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
+#: src/math-preferences.c:246 src/unit-manager.c:53
 msgid "Gradians"
 msgstr "Градуси"
 
-#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
-#. number 1.234×10^99)
-#: src/math-preferences.c:274
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
+#: src/math-preferences.c:256
 msgid "Automatic"
 msgstr "Автоматски"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: src/math-preferences.c:278
+#: src/math-preferences.c:260
 msgid "Fixed"
 msgstr "Фиксен"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: src/math-preferences.c:282
+#: src/math-preferences.c:264
 msgid "Scientific"
 msgstr "Научен"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: src/math-preferences.c:286
+#: src/math-preferences.c:268
 msgid "Engineering"
 msgstr "Инженерски"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: src/math-preferences.c:297
+#: src/math-preferences.c:279
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "Покажи %d децимални _места"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: src/math-window.c:294
+#: src/math-window.c:292
 msgid "Unable to open help file"
 msgstr "Не можев да ја отворам датотеката со помош"
 
-#: src/math-window.c:312
+#: src/math-window.c:310
 msgid "Sun Microsystems"
 msgstr ""
 
-#: src/math-window.c:313
+#: src/math-window.c:311
 msgid "MATE Documentation Team"
 msgstr ""
 
-#: src/math-window.c:319
+#: src/math-window.c:317
 msgid ""
 "MATE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -1582,150 +1559,146 @@ msgid ""
 "any later version."
 msgstr ""
 
-#: src/math-window.c:323
+#: src/math-window.c:321
 msgid ""
 "MATE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
-"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
-" more details."
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
 msgstr ""
 
-#: src/math-window.c:327
+#: src/math-window.c:325
 msgid ""
-"You should have received a copy of the GNU General Public License along with"
-" MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
+"You should have received a copy of the GNU General Public License along with "
+"MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
 
-#: src/math-window.c:364
+#: src/math-window.c:362
 #, c-format
 msgid ""
 "Calculator with financial and scientific modes.\n"
 "Using GNU MPFR %s and GNU MPC %s"
 msgstr ""
 
-#: src/math-window.c:370
+#: src/math-window.c:368
 msgid "About MATE Calculator"
 msgstr ""
 
-#: src/math-window.c:371
+#: src/math-window.c:369
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2021 MATE developers"
 msgstr ""
 
-#: src/math-window.c:377
+#: src/math-window.c:375
 msgid "translator-credits"
 msgstr "Арангел Ангов <ufo@linux.net.mk>"
 
 #. Calculator menu
-#: src/math-window.c:526
+#: src/math-window.c:523
 msgid "_Calculator"
 msgstr "_Калкулатор"
 
 #. Mode menu
-#: src/math-window.c:528
+#: src/math-window.c:525
 msgid "_Mode"
 msgstr "_Режим"
 
 #. View menu
-#: src/math-window.c:530
+#: src/math-window.c:527
 msgid "_View"
 msgstr "_Поглед"
 
 #. Help menu label
-#: src/math-window.c:532
+#: src/math-window.c:529
 msgid "_Help"
 msgstr "_Помош"
 
 #. Basic menu label
-#: src/math-window.c:534
+#: src/math-window.c:531
 msgid "_Basic"
 msgstr "_Основен"
 
 #. Advanced menu label
-#: src/math-window.c:536
+#: src/math-window.c:533
 msgid "_Advanced"
 msgstr "_Напреден"
 
 #. Financial menu label
-#: src/math-window.c:538
+#: src/math-window.c:535
 msgid "_Financial"
 msgstr "_Финансиски"
 
 #. Programming menu label
-#: src/math-window.c:540
+#: src/math-window.c:537
 msgid "_Programming"
 msgstr "_Програмирање"
 
 #. History menu label
-#: src/math-window.c:542
+#: src/math-window.c:539
 msgid "_History"
 msgstr ""
 
 #. Help>Contents menu label
-#: src/math-window.c:544
+#: src/math-window.c:541
 msgid "_Contents"
 msgstr "_Содржина"
 
-#: src/math-window.c:547
+#: src/math-window.c:544
 msgid "_Copy"
 msgstr "_Копирај"
 
-#: src/math-window.c:549
+#: src/math-window.c:546
 msgid "_Paste"
 msgstr "_Вметни"
 
-#: src/math-window.c:551
+#: src/math-window.c:548
 msgid "_Undo"
 msgstr "_Врати"
 
-#: src/math-window.c:553
+#: src/math-window.c:550
 msgid "_Redo"
 msgstr "_Повтори"
 
-#: src/math-window.c:555
+#: src/math-window.c:552
 msgid "_Clear History"
 msgstr ""
 
-#: src/math-window.c:558
+#: src/math-window.c:555
 msgid "_Preferences"
 msgstr "_Параметри"
 
-#: src/math-window.c:560
+#: src/math-window.c:557
 msgid "_Quit"
 msgstr "Излез"
 
-#: src/math-window.c:581
+#: src/math-window.c:578
 msgid "_About"
 msgstr "_За"
 
-#. Translators: Error displayed when boolean AND attempted on non-integer
-#. values
-#: src/mp-binary.c:119
+#. Translators: Error displayed when boolean AND attempted on non-integer values
+#: src/mp-binary.c:114
 msgid "Boolean AND is only defined for positive integers"
 msgstr "Булово И е дефинирана само за позитивни цели броеви"
 
-#. Translators: Error displayed when boolean OR attempted on non-integer
-#. values
-#: src/mp-binary.c:132
+#. Translators: Error displayed when boolean OR attempted on non-integer values
+#: src/mp-binary.c:126
 msgid "Boolean OR is only defined for positive integers"
 msgstr "Булово ИЛИ е дефинирана само за позитивни цели броеви"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer
-#. values
-#: src/mp-binary.c:145
+#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#: src/mp-binary.c:138
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "Булово Исклучително ИЛИ е дефинирана само за позитивни цели броеви"
 
-#. Translators: Error displayed when boolean NOT attempted on non-integer
-#. values
-#: src/mp-binary.c:162
+#. Translators: Error displayed when boolean NOT attempted on non-integer values
+#: src/mp-binary.c:154
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "Булово НЕ е дефинирана само за позитивни цели броеви"
 
 #. Translators: Error displayed when bit shift attempted on non-integer values
-#: src/mp-binary.c:175
+#: src/mp-binary.c:166
 msgid "Shift is only possible on integer values"
 msgstr "Поместувањето е можно само за позитивни цели броеви"
 
@@ -1749,22 +1722,18 @@ msgstr "Логаритам од нула не е дефиниран"
 msgid "The zeroth root of a number is undefined"
 msgstr ""
 
-#. Translators: Error displayed when attempted take the factorial of a
-#. negative or complex number
+#. Translators: Error displayed when attempted take the factorial of a negative or complex number
 #: src/mp.c:474
 msgid "Factorial is only defined for non-negative real numbers"
 msgstr ""
 
-#. Translators: Error displayed when attemping to do a modulus division on
-#. non-integer numbers
+#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
 #: src/mp.c:504
 msgid "Modulus division is only defined for integers"
 msgstr "Модул е само дефиниран за цели броеви"
 
-#. Translators: Error displayed when attempted to raise 0 to a negative
-#. exponent
-#. Translators: Error displayed when attempted to raise 0 to a negative
-#. re_exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative re_exponent
 #: src/mp.c:575 src/mp.c:602
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "Степенувањето на нула не е дефинирано за негативни експоненти"
@@ -1780,769 +1749,765 @@ msgid "The Riemann zeta function is only defined for real numbers ≠1"
 msgstr ""
 
 #. Translators: Error displayed when tangent value is undefined
-#: src/mp-trigonometric.c:120
+#: src/mp-trigonometric.c:116
 msgid ""
-"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
-"(90°)"
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
 msgstr ""
 "Тангенс е дефиниран за агли кои се производ на цел број со π (180°) од π∕2 "
 "(90°)"
 
 #. Translators: Error displayed when inverse sine value is undefined
-#: src/mp-trigonometric.c:150
+#: src/mp-trigonometric.c:145
 msgid "Inverse sine is undefined for values outside [-1, 1]"
 msgstr "Аркус синус е недефиниран за вредности надвор од [-1, 1]"
 
 #. Translators: Error displayed when inverse sine value is undefined
-#: src/mp-trigonometric.c:175
+#: src/mp-trigonometric.c:169
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
 msgstr "Аркус косинус е недефиниран за вредности надвор од [-1, 1]"
 
 #. Translators: Error displayed when inverse sine value is undefined
-#: src/mp-trigonometric.c:201
+#: src/mp-trigonometric.c:194
 msgid "Arctangent function is undefined for values i and -i"
 msgstr ""
 
-#. Translators: Error displayed when inverse hyperbolic cosine value is
-#. undefined
-#: src/mp-trigonometric.c:253
+#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
+#: src/mp-trigonometric.c:241
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
 msgstr "Аркус синус хиперболикум е недефиниран за вредности помали од еден"
 
-#. Translators: Error displayed when inverse hyperbolic tangent value is
-#. undefined
-#: src/mp-trigonometric.c:275
+#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
+#: src/mp-trigonometric.c:262
 msgid "Inverse hyperbolic tangent is undefined for values outside (-1, 1)"
 msgstr ""
 
-#: src/unit-manager.c:54
+#: src/unit-manager.c:51
 #, c-format
 msgctxt "unit-format"
 msgid "%s degrees"
 msgstr "%s степени"
 
-#: src/unit-manager.c:54
+#: src/unit-manager.c:51
 msgctxt "unit-symbols"
 msgid "degree,degrees,deg"
 msgstr "степен,степени,сте"
 
-#: src/unit-manager.c:55
+#: src/unit-manager.c:52
 #, c-format
 msgctxt "unit-format"
 msgid "%s radians"
 msgstr "%s радијани"
 
-#: src/unit-manager.c:55
+#: src/unit-manager.c:52
 msgctxt "unit-symbols"
 msgid "radian,radians,rad"
 msgstr "радијан,радијани,рад"
 
-#: src/unit-manager.c:56
+#: src/unit-manager.c:53
 #, c-format
 msgctxt "unit-format"
 msgid "%s gradians"
 msgstr "%s градуси"
 
-#: src/unit-manager.c:56
+#: src/unit-manager.c:53
 msgctxt "unit-symbols"
 msgid "gradian,gradians,grad"
 msgstr "градус,градијани,град"
 
-#: src/unit-manager.c:57
+#: src/unit-manager.c:54
 msgid "Parsecs"
 msgstr "Парсеци"
 
-#: src/unit-manager.c:57
+#: src/unit-manager.c:54
 #, c-format
 msgctxt "unit-format"
 msgid "%s pc"
 msgstr "%s pc"
 
-#: src/unit-manager.c:57
+#: src/unit-manager.c:54
 msgctxt "unit-symbols"
 msgid "parsec,parsecs,pc"
 msgstr "парсек,парсеци,пс"
 
-#: src/unit-manager.c:58
+#: src/unit-manager.c:55
 msgid "Light Years"
 msgstr "Светлосни години"
 
-#: src/unit-manager.c:58
+#: src/unit-manager.c:55
 #, c-format
 msgctxt "unit-format"
 msgid "%s ly"
 msgstr "%s ly"
 
-#: src/unit-manager.c:58
+#: src/unit-manager.c:55
 msgctxt "unit-symbols"
 msgid "lightyear,lightyears,ly"
 msgstr "светлосна година,светлосни години,сг"
 
-#: src/unit-manager.c:59
+#: src/unit-manager.c:56
 msgid "Astronomical Units"
 msgstr "Астрономски единици"
 
-#: src/unit-manager.c:59
+#: src/unit-manager.c:56
 #, c-format
 msgctxt "unit-format"
 msgid "%s au"
 msgstr "%s au"
 
-#: src/unit-manager.c:59
+#: src/unit-manager.c:56
 msgctxt "unit-symbols"
 msgid "au"
 msgstr "au"
 
-#: src/unit-manager.c:60
+#: src/unit-manager.c:57
 msgid "Nautical Miles"
 msgstr "Наутички милји"
 
-#: src/unit-manager.c:60
+#: src/unit-manager.c:57
 #, c-format
 msgctxt "unit-format"
 msgid "%s nmi"
 msgstr "%s nmi"
 
-#: src/unit-manager.c:60
+#: src/unit-manager.c:57
 msgctxt "unit-symbols"
 msgid "nmi"
 msgstr "nmi"
 
-#: src/unit-manager.c:61
+#: src/unit-manager.c:58
 msgid "Miles"
 msgstr "Милји"
 
-#: src/unit-manager.c:61
+#: src/unit-manager.c:58
 #, c-format
 msgctxt "unit-format"
 msgid "%s mi"
 msgstr "%s mi"
 
-#: src/unit-manager.c:61
+#: src/unit-manager.c:58
 msgctxt "unit-symbols"
 msgid "mile,miles,mi"
 msgstr "милја,милји,mi"
 
-#: src/unit-manager.c:62
+#: src/unit-manager.c:59
 msgid "Kilometers"
 msgstr "Километри"
 
-#: src/unit-manager.c:62
+#: src/unit-manager.c:59
 #, c-format
 msgctxt "unit-format"
 msgid "%s km"
 msgstr "%s km"
 
-#: src/unit-manager.c:62
+#: src/unit-manager.c:59
 msgctxt "unit-symbols"
 msgid "kilometer,kilometers,km,kms"
 msgstr "километар,километри,km,km"
 
-#: src/unit-manager.c:63
+#: src/unit-manager.c:60
 msgid "Cables"
 msgstr "Кабли"
 
-#: src/unit-manager.c:63
+#: src/unit-manager.c:60
 #, c-format
 msgctxt "unit-format"
 msgid "%s cb"
 msgstr "%s cb"
 
-#: src/unit-manager.c:63
+#: src/unit-manager.c:60
 msgctxt "unit-symbols"
 msgid "cable,cables,cb"
 msgstr "кабел,кабли,cb"
 
-#: src/unit-manager.c:64
+#: src/unit-manager.c:61
 msgid "Fathoms"
 msgstr "Fathoms"
 
-#: src/unit-manager.c:64
+#: src/unit-manager.c:61
 #, c-format
 msgctxt "unit-format"
 msgid "%s ftm"
 msgstr "%s ftm"
 
-#: src/unit-manager.c:64
+#: src/unit-manager.c:61
 msgctxt "unit-symbols"
 msgid "fathom,fathoms,ftm"
 msgstr "fathom,fathoms,ftm"
 
-#: src/unit-manager.c:65
+#: src/unit-manager.c:62
 msgid "Meters"
 msgstr "Метри"
 
-#: src/unit-manager.c:65
+#: src/unit-manager.c:62
 #, c-format
 msgctxt "unit-format"
 msgid "%s m"
 msgstr "%s m"
 
-#: src/unit-manager.c:65
+#: src/unit-manager.c:62
 msgctxt "unit-symbols"
 msgid "meter,meters,m"
 msgstr "метар,метри,m"
 
-#: src/unit-manager.c:66
+#: src/unit-manager.c:63
 msgid "Yards"
 msgstr "Јарди"
 
-#: src/unit-manager.c:66
+#: src/unit-manager.c:63
 #, c-format
 msgctxt "unit-format"
 msgid "%s yd"
 msgstr "%s yd"
 
-#: src/unit-manager.c:66
+#: src/unit-manager.c:63
 msgctxt "unit-symbols"
 msgid "yard,yards,yd"
 msgstr "јард,јарди,yd"
 
-#: src/unit-manager.c:67
+#: src/unit-manager.c:64
 msgid "Feet"
 msgstr "Стапки"
 
-#: src/unit-manager.c:67
+#: src/unit-manager.c:64
 #, c-format
 msgctxt "unit-format"
 msgid "%s ft"
 msgstr "%s ft"
 
-#: src/unit-manager.c:67
+#: src/unit-manager.c:64
 msgctxt "unit-symbols"
 msgid "foot,feet,ft"
 msgstr "стапка,стапки,ft"
 
-#: src/unit-manager.c:68
+#: src/unit-manager.c:65
 msgid "Inches"
 msgstr "Инчи"
 
-#: src/unit-manager.c:68
+#: src/unit-manager.c:65
 #, c-format
 msgctxt "unit-format"
 msgid "%s in"
 msgstr "%s in"
 
-#: src/unit-manager.c:68
+#: src/unit-manager.c:65
 msgctxt "unit-symbols"
 msgid "inch,inches,in"
 msgstr "инч,инчи,in"
 
-#: src/unit-manager.c:69
+#: src/unit-manager.c:66
 msgid "Centimeters"
 msgstr "Сантиметри"
 
-#: src/unit-manager.c:69
+#: src/unit-manager.c:66
 #, c-format
 msgctxt "unit-format"
 msgid "%s cm"
 msgstr "%s cm"
 
-#: src/unit-manager.c:69
+#: src/unit-manager.c:66
 msgctxt "unit-symbols"
 msgid "centimeter,centimeters,cm,cms"
 msgstr "сантиметар,сантиметри,cm,cm"
 
-#: src/unit-manager.c:70
+#: src/unit-manager.c:67
 msgid "Millimeters"
 msgstr "Милиметри"
 
-#: src/unit-manager.c:70
+#: src/unit-manager.c:67
 #, c-format
 msgctxt "unit-format"
 msgid "%s mm"
 msgstr "%s mm"
 
-#: src/unit-manager.c:70
+#: src/unit-manager.c:67
 msgctxt "unit-symbols"
 msgid "millimeter,millimeters,mm"
 msgstr "милиметар,милиметри,mm"
 
-#: src/unit-manager.c:71
+#: src/unit-manager.c:68
 msgid "Micrometers"
 msgstr "Микрометри"
 
-#: src/unit-manager.c:71
+#: src/unit-manager.c:68
 #, c-format
 msgctxt "unit-format"
 msgid "%s μm"
 msgstr "%s μm"
 
-#: src/unit-manager.c:71
+#: src/unit-manager.c:68
 msgctxt "unit-symbols"
 msgid "micrometer,micrometers,um"
 msgstr "микрометар,микрометри,um"
 
-#: src/unit-manager.c:72
+#: src/unit-manager.c:69
 msgid "Nanometers"
 msgstr "Нанометри"
 
-#: src/unit-manager.c:72
+#: src/unit-manager.c:69
 #, c-format
 msgctxt "unit-format"
 msgid "%s nm"
 msgstr "%s nm"
 
-#: src/unit-manager.c:72
+#: src/unit-manager.c:69
 msgctxt "unit-symbols"
 msgid "nanometer,nanometers,nm"
 msgstr "нанометар,нанометри,nm"
 
-#: src/unit-manager.c:73
+#: src/unit-manager.c:70
 msgid "Hectares"
 msgstr "Хектари"
 
-#: src/unit-manager.c:73
+#: src/unit-manager.c:70
 #, c-format
 msgctxt "unit-format"
 msgid "%s ha"
 msgstr "%s ha"
 
-#: src/unit-manager.c:73
+#: src/unit-manager.c:70
 msgctxt "unit-symbols"
 msgid "hectare,hectares,ha"
 msgstr "хектар,хектари,ha"
 
-#: src/unit-manager.c:74
+#: src/unit-manager.c:71
 msgid "Acres"
 msgstr "Акри"
 
-#: src/unit-manager.c:74
+#: src/unit-manager.c:71
 #, c-format
 msgctxt "unit-format"
 msgid "%s acres"
 msgstr "%s акри"
 
-#: src/unit-manager.c:74
+#: src/unit-manager.c:71
 msgctxt "unit-symbols"
 msgid "acre,acres"
 msgstr "акр,акри"
 
-#: src/unit-manager.c:75
+#: src/unit-manager.c:72
 msgid "Square Meters"
 msgstr "Квадратни метри"
 
-#: src/unit-manager.c:75
+#: src/unit-manager.c:72
 #, c-format
 msgctxt "unit-format"
 msgid "%s m²"
 msgstr "%s m²"
 
-#: src/unit-manager.c:75
+#: src/unit-manager.c:72
 msgctxt "unit-symbols"
 msgid "m²"
 msgstr "m²"
 
-#: src/unit-manager.c:76
+#: src/unit-manager.c:73
 msgid "Square Centimeters"
 msgstr "Квадратни сантиметри"
 
-#: src/unit-manager.c:76
+#: src/unit-manager.c:73
 #, c-format
 msgctxt "unit-format"
 msgid "%s cm²"
 msgstr "%s cm²"
 
-#: src/unit-manager.c:76
+#: src/unit-manager.c:73
 msgctxt "unit-symbols"
 msgid "cm²"
 msgstr "cm²"
 
-#: src/unit-manager.c:77
+#: src/unit-manager.c:74
 msgid "Square Millimeters"
 msgstr "Квадратни милиметри"
 
-#: src/unit-manager.c:77
+#: src/unit-manager.c:74
 #, c-format
 msgctxt "unit-format"
 msgid "%s mm²"
 msgstr "%s mm²"
 
-#: src/unit-manager.c:77
+#: src/unit-manager.c:74
 msgctxt "unit-symbols"
 msgid "mm²"
 msgstr "mm²"
 
-#: src/unit-manager.c:78
+#: src/unit-manager.c:75
 msgid "Cubic Meters"
 msgstr "Кубни метри"
 
-#: src/unit-manager.c:78
+#: src/unit-manager.c:75
 #, c-format
 msgctxt "unit-format"
 msgid "%s m³"
 msgstr "%s m³"
 
-#: src/unit-manager.c:78
+#: src/unit-manager.c:75
 msgctxt "unit-symbols"
 msgid "m³"
 msgstr "m³"
 
-#: src/unit-manager.c:79
+#: src/unit-manager.c:76
 msgid "Gallons"
 msgstr "Галони"
 
-#: src/unit-manager.c:79
+#: src/unit-manager.c:76
 #, c-format
 msgctxt "unit-format"
 msgid "%s gal"
 msgstr "%s gal"
 
-#: src/unit-manager.c:79
+#: src/unit-manager.c:76
 msgctxt "unit-symbols"
 msgid "gallon,gallons,gal"
 msgstr "галон,галони,gal"
 
-#: src/unit-manager.c:80
+#: src/unit-manager.c:77
 msgid "Litres"
 msgstr "Lit"
 
-#: src/unit-manager.c:80
+#: src/unit-manager.c:77
 #, c-format
 msgctxt "unit-format"
 msgid "%s L"
 msgstr "%s L"
 
-#: src/unit-manager.c:80
+#: src/unit-manager.c:77
 msgctxt "unit-symbols"
 msgid "litre,litres,liter,liters,L"
 msgstr "литар,литри,литар,литри,L"
 
-#: src/unit-manager.c:81
+#: src/unit-manager.c:78
 msgid "Quarts"
 msgstr "Quarts"
 
-#: src/unit-manager.c:81
+#: src/unit-manager.c:78
 #, c-format
 msgctxt "unit-format"
 msgid "%s qt"
 msgstr "%s qt"
 
-#: src/unit-manager.c:81
+#: src/unit-manager.c:78
 msgctxt "unit-symbols"
 msgid "quart,quarts,qt"
 msgstr "quart,quarts,qt"
 
-#: src/unit-manager.c:82
+#: src/unit-manager.c:79
 msgid "Pints"
 msgstr "Пинти"
 
-#: src/unit-manager.c:82
+#: src/unit-manager.c:79
 #, c-format
 msgctxt "unit-format"
 msgid "%s pt"
 msgstr "%s pt"
 
-#: src/unit-manager.c:82
+#: src/unit-manager.c:79
 msgctxt "unit-symbols"
 msgid "pint,pints,pt"
 msgstr "пинт,пинти,pt"
 
-#: src/unit-manager.c:83
+#: src/unit-manager.c:80
 msgid "Millilitres"
 msgstr "Милилитри"
 
-#: src/unit-manager.c:83
+#: src/unit-manager.c:80
 #, c-format
 msgctxt "unit-format"
 msgid "%s mL"
 msgstr "%s mL"
 
-#: src/unit-manager.c:83
+#: src/unit-manager.c:80
 msgctxt "unit-symbols"
 msgid "millilitre,millilitres,milliliter,milliliters,mL,cm³"
 msgstr "милилитар,милилитри,милилитар,милилитри,mL,cm³"
 
-#: src/unit-manager.c:84
+#: src/unit-manager.c:81
 msgid "Microlitres"
 msgstr "Микролитри"
 
-#: src/unit-manager.c:84
+#: src/unit-manager.c:81
 #, c-format
 msgctxt "unit-format"
 msgid "%s μL"
 msgstr "%s μL"
 
-#: src/unit-manager.c:84
+#: src/unit-manager.c:81
 msgctxt "unit-symbols"
 msgid "mm³,μL,uL"
 msgstr "mm³,μL,uL"
 
-#: src/unit-manager.c:85
+#: src/unit-manager.c:82
 msgid "Tonnes"
 msgstr "Тони"
 
-#: src/unit-manager.c:85
+#: src/unit-manager.c:82
 #, c-format
 msgctxt "unit-format"
 msgid "%s T"
 msgstr "%s T"
 
-#: src/unit-manager.c:85
+#: src/unit-manager.c:82
 msgctxt "unit-symbols"
 msgid "tonne,tonnes"
 msgstr "тон,тони"
 
-#: src/unit-manager.c:86
+#: src/unit-manager.c:83
 msgid "Kilograms"
 msgstr "Килограми"
 
-#: src/unit-manager.c:86
+#: src/unit-manager.c:83
 #, c-format
 msgctxt "unit-format"
 msgid "%s kg"
 msgstr "%s kg"
 
-#: src/unit-manager.c:86
+#: src/unit-manager.c:83
 msgctxt "unit-symbols"
 msgid "kilogram,kilograms,kilogramme,kilogrammes,kg,kgs"
 msgstr "килограм,килограми,килограм,килограми,kg,kg"
 
-#: src/unit-manager.c:87
+#: src/unit-manager.c:84
 msgid "Pounds"
 msgstr "Фунти"
 
-#: src/unit-manager.c:87
+#: src/unit-manager.c:84
 #, c-format
 msgctxt "unit-format"
 msgid "%s lb"
 msgstr "%s lb"
 
-#: src/unit-manager.c:87
+#: src/unit-manager.c:84
 msgctxt "unit-symbols"
 msgid "pound,pounds,lb"
 msgstr "фунта,фунти,lb"
 
-#: src/unit-manager.c:88
+#: src/unit-manager.c:85
 msgid "Ounces"
 msgstr "Унци"
 
-#: src/unit-manager.c:88
+#: src/unit-manager.c:85
 #, c-format
 msgctxt "unit-format"
 msgid "%s oz"
 msgstr "%s oz"
 
-#: src/unit-manager.c:88
+#: src/unit-manager.c:85
 msgctxt "unit-symbols"
 msgid "ounce,ounces,oz"
 msgstr "унца,унци,oz"
 
-#: src/unit-manager.c:89
+#: src/unit-manager.c:86
 msgid "Grams"
 msgstr "Грамови"
 
-#: src/unit-manager.c:89
+#: src/unit-manager.c:86
 #, c-format
 msgctxt "unit-format"
 msgid "%s g"
 msgstr "%s g"
 
-#: src/unit-manager.c:89
+#: src/unit-manager.c:86
 msgctxt "unit-symbols"
 msgid "gram,grams,gramme,grammes,g"
 msgstr "грам,грамови,g"
 
-#: src/unit-manager.c:90
+#: src/unit-manager.c:87
 msgid "Years"
 msgstr "Години"
 
-#: src/unit-manager.c:90
+#: src/unit-manager.c:87
 #, c-format
 msgctxt "unit-format"
 msgid "%s years"
 msgstr "%s години"
 
-#: src/unit-manager.c:90
+#: src/unit-manager.c:87
 msgctxt "unit-symbols"
 msgid "year,years"
 msgstr "година,години"
 
-#: src/unit-manager.c:91
+#: src/unit-manager.c:88
 msgid "Days"
 msgstr "Денови"
 
-#: src/unit-manager.c:91
+#: src/unit-manager.c:88
 #, c-format
 msgctxt "unit-format"
 msgid "%s days"
 msgstr "%s денови"
 
-#: src/unit-manager.c:91
+#: src/unit-manager.c:88
 msgctxt "unit-symbols"
 msgid "day,days"
 msgstr "ден,денови"
 
-#: src/unit-manager.c:92
+#: src/unit-manager.c:89
 msgid "Hours"
 msgstr "Час"
 
-#: src/unit-manager.c:92
+#: src/unit-manager.c:89
 #, c-format
 msgctxt "unit-format"
 msgid "%s hours"
 msgstr "%s часови"
 
-#: src/unit-manager.c:92
+#: src/unit-manager.c:89
 msgctxt "unit-symbols"
 msgid "hour,hours"
 msgstr "час,часови"
 
-#: src/unit-manager.c:93
+#: src/unit-manager.c:90
 msgid "Minutes"
 msgstr "Минути"
 
-#: src/unit-manager.c:93
+#: src/unit-manager.c:90
 #, c-format
 msgctxt "unit-format"
 msgid "%s minutes"
 msgstr "%s минути"
 
-#: src/unit-manager.c:93
+#: src/unit-manager.c:90
 msgctxt "unit-symbols"
 msgid "minute,minutes"
 msgstr "минута,минути"
 
-#: src/unit-manager.c:94
+#: src/unit-manager.c:91
 msgid "Seconds"
 msgstr "Секунди"
 
-#: src/unit-manager.c:94
+#: src/unit-manager.c:91
 #, c-format
 msgctxt "unit-format"
 msgid "%s s"
 msgstr "%s s"
 
-#: src/unit-manager.c:94
+#: src/unit-manager.c:91
 msgctxt "unit-symbols"
 msgid "second,seconds,s"
 msgstr "секунда,секунди,s"
 
-#: src/unit-manager.c:95
+#: src/unit-manager.c:92
 msgid "Milliseconds"
 msgstr "Милисекунди"
 
-#: src/unit-manager.c:95
+#: src/unit-manager.c:92
 #, c-format
 msgctxt "unit-format"
 msgid "%s ms"
 msgstr "%s ms"
 
-#: src/unit-manager.c:95
+#: src/unit-manager.c:92
 msgctxt "unit-symbols"
 msgid "millisecond,milliseconds,ms"
 msgstr "милисекунда,милисекунди,ms"
 
-#: src/unit-manager.c:96
+#: src/unit-manager.c:93
 msgid "Microseconds"
 msgstr "Микросекунди"
 
-#: src/unit-manager.c:96
+#: src/unit-manager.c:93
 #, c-format
 msgctxt "unit-format"
 msgid "%s μs"
 msgstr "%s μs"
 
-#: src/unit-manager.c:96
+#: src/unit-manager.c:93
 msgctxt "unit-symbols"
 msgid "microsecond,microseconds,us,μs"
 msgstr "микросекунда,микросекунди,us,μs"
 
-#: src/unit-manager.c:97
+#: src/unit-manager.c:94
 msgid "Celsius"
 msgstr "Целзиусови"
 
-#: src/unit-manager.c:97
+#: src/unit-manager.c:94
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚C"
 msgstr "%s ˚C"
 
-#: src/unit-manager.c:97
+#: src/unit-manager.c:94
 msgctxt "unit-symbols"
 msgid "degC,˚C"
 msgstr "degC,˚C"
 
-#: src/unit-manager.c:98
+#: src/unit-manager.c:95
 msgid "Farenheit"
 msgstr "Фаренхајт"
 
-#: src/unit-manager.c:98
+#: src/unit-manager.c:95
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚F"
 msgstr "%s ˚F"
 
-#: src/unit-manager.c:98
+#: src/unit-manager.c:95
 msgctxt "unit-symbols"
 msgid "degF,˚F"
 msgstr "degF,˚F"
 
-#: src/unit-manager.c:99
+#: src/unit-manager.c:96
 msgid "Kelvin"
 msgstr "Келвинови"
 
-#: src/unit-manager.c:99
+#: src/unit-manager.c:96
 #, c-format
 msgctxt "unit-format"
 msgid "%s K"
 msgstr "%s K"
 
-#: src/unit-manager.c:99
+#: src/unit-manager.c:96
 msgctxt "unit-symbols"
 msgid "K"
 msgstr "K"
 
-#: src/unit-manager.c:100
+#: src/unit-manager.c:97
 msgid "Rankine"
 msgstr "Rankine"
 
-#: src/unit-manager.c:100
+#: src/unit-manager.c:97
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚R"
 msgstr "%s ˚R"
 
-#: src/unit-manager.c:100
+#: src/unit-manager.c:97
 msgctxt "unit-symbols"
 msgid "degR,˚R,˚Ra"
 msgstr "degR,˚R,˚Ra"
 
-#: src/unit-manager.c:109
+#: src/unit-manager.c:106
 msgid "Angle"
 msgstr "Агол"
 
-#: src/unit-manager.c:110
+#: src/unit-manager.c:107
 msgid "Length"
 msgstr "Должина"
 
-#: src/unit-manager.c:111
+#: src/unit-manager.c:108
 msgid "Area"
 msgstr "Површина"
 
-#: src/unit-manager.c:112
+#: src/unit-manager.c:109
 msgid "Volume"
 msgstr "Волумен"
 
-#: src/unit-manager.c:113
+#: src/unit-manager.c:110
 msgid "Weight"
 msgstr "Тежина"
 
-#: src/unit-manager.c:114
+#: src/unit-manager.c:111
 msgid "Duration"
 msgstr "Времетраење"
 
-#: src/unit-manager.c:115
+#: src/unit-manager.c:112
 msgid "Temperature"
 msgstr "Температура"
 
-#: src/unit-manager.c:127
+#: src/unit-manager.c:124
 msgid "Currency"
 msgstr "Валута"
 
-#. Translators: result of currency conversion, %s is the symbol, %%s is the
-#. placeholder for amount, i.e.: USD100
-#: src/unit-manager.c:137
+#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
+#: src/unit-manager.c:134
 #, c-format
 msgid "%s%%s"
 msgstr "%s%%s"

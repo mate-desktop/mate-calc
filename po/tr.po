@@ -2,28 +2,28 @@
 # Copyright (C) YEAR MATE Desktop Environment team
 # This file is distributed under the same license as the mate-calc package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Mehmet, 2018
 # Emre FIRAT <emrefirat93@gmail.com>, 2018
+# Butterfly <gokhanlnx@gmail.com>, 2018
 # tarakbumba <tarakbumba@gmail.com>, 2018
-# 0d1bdb3b9a0d4e8f77bc854af8bf3dfc_e6913f4, 2019
 # mauron, 2019
-# Butterfly <gokhanlnx@gmail.com>, 2019
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
-# 
+# Sabri Ünal <libreajans@gmail.com>, 2022
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-calc 1.25.0\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-calc/issues\n"
-"POT-Creation-Date: 2021-05-30 11:18+0200\n"
+"POT-Creation-Date: 2022-10-20 20:12+0200\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2020\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>, 2022\n"
 "Language-Team: Turkish (https://www.transifex.com/mate/teams/13566/tr/)\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Accessible name for the factorize button
@@ -57,7 +57,7 @@ msgstr "x"
 #. Accessible name for the memory value button
 #. Tooltip for the memory button
 #: src/buttons-advanced.ui:417 src/buttons-financial.ui:1894
-#: src/math-buttons.c:230
+#: src/math-buttons.c:234
 msgid "Memory"
 msgstr "Hafıza"
 
@@ -116,17 +116,13 @@ msgstr "Alt simge"
 
 #: src/buttons-advanced.ui:966
 msgid "const"
-msgstr ""
+msgstr "sabit"
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
-#: src/buttons-financial.ui:8 src/math-buttons.c:254
+#: src/buttons-financial.ui:8 src/math-buttons.c:258
 msgid "Compounding Term"
-msgstr ""
-"Bir dönem için bir varlığın doğrusal amortisman hesaplar. Amortisman "
-"doğrusal yöntem bir varlığın faydalı ömrü üzerinden eşit depreciable maliyet"
-" böler. Yararlı yaşam süreleri olan üzerinde bir varlıktır numarası, "
-"genellikle yıl, bir değer kaybetmiştir."
+msgstr "Bileşik Vade"
 
 #: src/buttons-financial.ui:28 src/buttons-financial.ui:211
 #: src/buttons-financial.ui:394 src/buttons-financial.ui:577
@@ -225,7 +221,7 @@ msgstr "_Maliyet:"
 
 #. Title of Future Value dialog
 #. Tooltip for the future value button
-#: src/buttons-financial.ui:374 src/math-buttons.c:260
+#: src/buttons-financial.ui:374 src/math-buttons.c:264
 msgid "Future Value"
 msgstr "Gelecek Değer"
 
@@ -255,7 +251,7 @@ msgstr "Dö_nemsel Özdeme:"
 
 #. Title of Gross Profit Margin dialog
 #. Tooltip for the gross profit margin button
-#: src/buttons-financial.ui:557 src/math-buttons.c:281
+#: src/buttons-financial.ui:557 src/math-buttons.c:285
 msgid "Gross Profit Margin"
 msgstr "Brüt Kar Marjı"
 
@@ -275,7 +271,7 @@ msgstr "_Marj:"
 
 #. Title of Periodic Payment dialog
 #. Tooltip for the periodic payment button
-#: src/buttons-financial.ui:710 src/math-buttons.c:278
+#: src/buttons-financial.ui:710 src/math-buttons.c:282
 msgid "Periodic Payment"
 msgstr "Dönemsel Ödeme"
 
@@ -301,7 +297,7 @@ msgstr "_Temel:"
 
 #. Title of Present Value dialog
 #. Tooltip for the present value button
-#: src/buttons-financial.ui:894 src/math-buttons.c:275
+#: src/buttons-financial.ui:894 src/math-buttons.c:279
 msgid "Present Value"
 msgstr "Bugünki Değer"
 
@@ -317,7 +313,7 @@ msgstr ""
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
-#: src/buttons-financial.ui:1078 src/math-buttons.c:272
+#: src/buttons-financial.ui:1078 src/math-buttons.c:276
 msgid "Periodic Interest Rate"
 msgstr "Dönemsel Faiz Oranı"
 
@@ -357,8 +353,8 @@ msgid ""
 msgstr ""
 "Bir dönem için bir varlığın doğrusal amortismanını hesaplar. Doğrusal "
 "yöntemli amortisman  bir varlığın faydalı ömrü üzerinden amortisman "
-"maliyetini eşit olarak böler. Yararlı yaşam süresi genellikle yıl olarak bir"
-" varlığın amortisman uygulanacağı süreyi belirtir."
+"maliyetini eşit olarak böler. Yararlı yaşam süresi genellikle yıl olarak bir "
+"varlığın amortisman uygulanacağı süreyi belirtir."
 
 #. Title of Sum-of-the-Years'-Digits Depreciation dialog
 #: src/buttons-financial.ui:1446
@@ -369,16 +365,16 @@ msgstr "Yılların-Toplamı Amortisman"
 #: src/buttons-financial.ui:1631
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
-" accelerates the rate of depreciation, so that more depreciation expense "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
+"accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
 msgstr ""
-"Belli bir süre için bir varlık üzerinde,Yılların-Toplamı yöntemi "
-"kullanarak amortisman miktarını hesaplar. Bu yöntemli amortismanda "
-"amortisman oranı hızlandırılır, böylece sonra olanlardan daha fazla "
-"amortisman gideri daha önceki dönemlerde oluşur. Yararlı yaşam süresi "
-"genellikle yıl üzerinden varlığın amortisman edileceği süreyi belirtir."
+"Belli bir süre için bir varlık üzerinde,Yılların-Toplamı yöntemi kullanarak "
+"amortisman miktarını hesaplar. Bu yöntemli amortismanda amortisman oranı "
+"hızlandırılır, böylece sonra olanlardan daha fazla amortisman gideri daha "
+"önceki dönemlerde oluşur. Yararlı yaşam süresi genellikle yıl üzerinden "
+"varlığın amortisman edileceği süreyi belirtir."
 
 #. Title of Payment Period dialog
 #: src/buttons-financial.ui:1659
@@ -394,96 +390,65 @@ msgstr "_Gelecek Değer:"
 #: src/buttons-financial.ui:1815
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest"
-" rate."
+"of an ordinary annuity, to accumulate a future value, at a periodic interest "
+"rate."
 msgstr ""
 "Periyodik bir faiz oranıyla, gelecekteki bir değere ulaşması için sıradan "
 "bir rant dönemi süresince gereken ödeme periyotlarının sayısını hesaplar."
 
-#. Calculates the number of compounding periods necessary to increase an
-#. investment of present value pv to a future value of fv, at a fixed interest
-#. rate of int per compounding period. See also:
-#. http://en.wikipedia.org/wiki/Compound_interest
+#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
 #: src/buttons-financial.ui:2166
 msgid "Ctrm"
 msgstr "Ctrm"
 
-#. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the double-declining balance method. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2181
 msgid "Ddb"
 msgstr "Ddb"
 
-#. Calculates the future value of an investment based on a series of equal
-#. payments, each of amount pmt, at a periodic interest rate of int, over the
-#. number of payment periods in the term. See also:
-#. http://en.wikipedia.org/wiki/Future_value
+#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
 #: src/buttons-financial.ui:2196
 msgid "Fv"
 msgstr "Fv"
 
-#. Calculates the number of payment periods that are necessary during the term
-#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
-#. interest rate of int. Each payment is equal to amount pmt. See also:
-#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
 #: src/buttons-financial.ui:2211
 msgid "Term"
-msgstr "Term"
+msgstr "Vade"
 
-#. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2226
 msgid "Syd"
 msgstr "Syd"
 
-#. Calculates the straight-line depreciation of an asset for one period. The
-#. depreciable cost is cost - salvage. The straight-line method of
-#. depreciation divides the depreciable cost evenly over the useful life of an
-#. asset. The useful life is the number of periods, typically years, over
-#. which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2241
 msgid "Sln"
 msgstr "Sln"
 
-#. Calculates the periodic interest necessary to increase an investment of
-#. present value pv to a future value of fv, over the number of compounding
-#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
 #: src/buttons-financial.ui:2256
 msgid "Rate"
 msgstr "Oran"
 
-#. Calculates the present value of an investment based on a series of equal
-#. payments, each of amount pmt, discounted at a periodic interest rate of
-#. int, over the number of payment periods in the term. See also:
-#. http://en.wikipedia.org/wiki/Present_value
+#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
 #: src/buttons-financial.ui:2271
 msgid "Pv"
 msgstr "Pv"
 
-#. Calculates the amount of the periodic payment of a loan, where payments are
-#. made at the end of each payment period. See also:
-#. http://en.wikipedia.org/wiki/Amortization_schedule
+#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
 #: src/buttons-financial.ui:2286
 msgid "Pmt"
 msgstr "Pmt"
 
-#. Calculates the resale price of a product, based on the product cost and the
-#. wanted gross profit margin. See also:
-#. http://en.wikipedia.org/wiki/Gross_profit_margin
+#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
 #: src/buttons-financial.ui:2301
 msgid "Gpm"
 msgstr "Gpm"
 
 #. Title of insert character code dialog
 #. Tooltip for the insert character code button
-#: src/buttons-programming.ui:8 src/math-buttons.c:233
+#: src/buttons-programming.ui:8 src/math-buttons.c:237
 msgid "Insert Character Code"
 msgstr "Karakter Kodu Ekle"
 
@@ -533,7 +498,7 @@ msgid "64-bit"
 msgstr "64-bit"
 
 #. Title of preferences dialog
-#: src/preferences.ui:60 src/math-preferences.c:239
+#: src/preferences.ui:60 src/math-preferences.c:221
 msgid "Preferences"
 msgstr "Tercihler"
 
@@ -568,7 +533,7 @@ msgstr "_Binlik ayraçları göster"
 
 #: data/mate-calc.appdata.xml.in:7
 msgid "MATE Calc"
-msgstr "MATE Hesaplayıcı"
+msgstr "MATE Hesap Makinesi"
 
 #: data/mate-calc.appdata.xml.in:8
 msgid "MATE Desktop calculator"
@@ -580,9 +545,9 @@ msgid ""
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
 msgstr ""
-"MATE Hesaplayıcı; finansal, mantıksal ve bilimsel kipleri bulunan güçlü bir "
-"grafik hesap makinesidir. Yüksek bir doğruluk seviyesi sağlamak amacıyla, "
-"aritmetiği için çoklu hassasiyet paketi kullanır."
+"MATE Hesap Makinesi; finansal, mantıksal ve bilimsel kipleri bulunan güçlü "
+"bir grafik hesap makinesidir. Yüksek bir doğruluk seviyesi sağlamak "
+"amacıyla, aritmetiği için çoklu hassasiyet paketi kullanır."
 
 #: data/mate-calc.appdata.xml.in:15
 msgid ""
@@ -590,16 +555,16 @@ msgid ""
 "If you would like to know more about MATE and MATE Calc, please visit the "
 "project's home page."
 msgstr ""
-"MATE Hesaplayıcı, GNOME Hesaplayıcının çatallamasıdır ve MATE Masaüstü "
-"Ortamı'nın bir parçasıdır. MATE ve MATE Hesaplayıcı hakkında daha fazla "
+"MATE Hesap Makinesi, GNOME Hesap Makinesinin çatallamasıdır ve MATE Masaüstü "
+"Ortamı'nın bir parçasıdır. MATE ve MATE Hesap Makinesi hakkında daha fazla "
 "bilgi edinmek isterseniz, lütfen projenin anasayfasını ziyaret ediniz."
 
-#: data/mate-calc.desktop.in:3 src/math-window.c:368
+#: data/mate-calc.desktop.in:3 src/math-window.c:366
 msgid "MATE Calculator"
 msgstr "MATE Hesap Makinesi"
 
 #. Title of main window
-#: data/mate-calc.desktop.in:4 src/math-window.c:723
+#: data/mate-calc.desktop.in:4 src/math-window.c:716
 msgid "Calculator"
 msgstr "Hesap Makinesi"
 
@@ -607,11 +572,10 @@ msgstr "Hesap Makinesi"
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Aritmetik, bilimsel ve finansal hesaplamalar gerçekleştirir"
 
-#. Translators: Search terms to find this application. Do NOT translate or
-#. localize the semicolons! The list MUST also end with a semicolon!
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/mate-calc.desktop.in:13
 msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
-msgstr ""
+msgstr "MATE;hesap makinesi;hesap;bilim;aritmetik;finans;hesaplama;"
 
 #: data/org.mate.calc.gschema.xml:25
 msgid "Accuracy value"
@@ -623,7 +587,7 @@ msgstr "Virgülden sonra gösterilen hane sayısı"
 
 #: data/org.mate.calc.gschema.xml:31
 msgid "Word size"
-msgstr "Word boyutu"
+msgstr "Sözcük boyutu"
 
 #: data/org.mate.calc.gschema.xml:32
 msgid "The size of the words used in bitwise operations"
@@ -664,7 +628,7 @@ msgstr "Geçmişi Göster"
 
 #: data/org.mate.calc.gschema.xml:53
 msgid "Shows all recent calculations"
-msgstr ""
+msgstr "Tüm son hesaplamaları göster"
 
 #: data/org.mate.calc.gschema.xml:57
 msgid "Number format"
@@ -962,12 +926,12 @@ msgstr "Venezuela Bolivarı"
 msgid "South African Rand"
 msgstr "Güney Afrika Randı"
 
-#: src/financial.c:79
+#: src/financial.c:78
 msgid "Error: the number of periods must be positive"
 msgstr "Hata: Periyotların toplamı sıfırdan büyük olmalıdır"
 
 #. Description on how to use mate-calc displayed on command-line
-#: src/mate-calc.c:86
+#: src/mate-calc.c:83
 #, c-format
 msgid ""
 "Usage:\n"
@@ -976,9 +940,8 @@ msgstr ""
 "Kullanımı:\n"
 "  %s — Matematiksel Hesapları Yürüt"
 
-#. Description on mate-calc command-line help options displayed on command-
-#. line
-#: src/mate-calc.c:94
+#. Description on mate-calc command-line help options displayed on command-line
+#: src/mate-calc.c:91
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -993,29 +956,32 @@ msgstr ""
 "  --help-all                      Tüm yardım seçeneklerini gösterir\n"
 "  --help-gtk                      GTK+ seçeneklerini gösterir"
 
-#. Description on mate-calc command-line GTK+ options displayed on command-
-#. line
-#: src/mate-calc.c:105
+#. Description on mate-calc command-line GTK+ options displayed on command-line
+#: src/mate-calc.c:102
 #, c-format
 msgid ""
 "GTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window manager\n"
-"  --name=NAME                     Program name as used by the window manager\n"
+"  --class=CLASS                   Program class as used by the window "
+"manager\n"
+"  --name=NAME                     Program name as used by the window "
+"manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
 "GTK+ Seçenekleri: \n"
-"  --class=SINIF                   Pencere yöneticisi tarafından kullanılan program sınıfı\n"
-"  --name=İSİM                     Pencere yöneticisi tarafından kullanılacak program ismi\n"
+"  --class=SINIF                   Pencere yöneticisi tarafından kullanılan "
+"program sınıfı\n"
+"  --name=İSİM                     Pencere yöneticisi tarafından kullanılacak "
+"program ismi\n"
 " --screen=EKRAN                  Kullanılacak X ekranı\n"
 "  --sync                          X çağrılarını eş zamanlı yapar\n"
 " --gtk-module=MODULLER          Tüm ek GTK+ modullerini yükler\n"
 "  --g-fatal-warnings              Tüm uyarıları ölümcül yapar"
 
 #. Description on mate-calc application options displayed on command-line
-#: src/mate-calc.c:119
+#: src/mate-calc.c:116
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -1025,13 +991,13 @@ msgstr ""
 "  -s, --solve <denklem>           Verilen denklemi çözer"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: src/mate-calc.c:167
+#: src/mate-calc.c:163
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "Argüman --solve çözmek için bir denklem gerektirir"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: src/mate-calc.c:178
+#: src/mate-calc.c:174
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "Bilinmeyen argüman '%s'"
@@ -1046,294 +1012,308 @@ msgstr "Pi [Ctrl+P]"
 msgid "Euler’s Number"
 msgstr "Euler Sayıları"
 
+#. Tooltip for the imaginary number button
+#: src/math-buttons.c:99
+#, fuzzy
+#| msgid "Imaginary Component"
+msgid "Imaginary unit"
+msgstr "Sanal Bileşen"
+
+#. Tooltip for the numeric point button
+#: src/math-buttons.c:102
+#, fuzzy
+#| msgid "Decimal"
+msgid "Decimal point"
+msgstr "Ondalık"
+
 #. Tooltip for the subscript button
-#: src/math-buttons.c:101
+#: src/math-buttons.c:105
 msgid "Subscript mode [Alt]"
 msgstr "Altsimge kipi [Alt]"
 
 #. Tooltip for the superscript button
-#: src/math-buttons.c:104
+#: src/math-buttons.c:108
 msgid "Superscript mode [Ctrl]"
 msgstr "Üstsimge kipi [Ctrl]"
 
 #. Tooltip for the scientific exponent button
-#: src/math-buttons.c:107
+#: src/math-buttons.c:111
 msgid "Scientific exponent [Ctrl+E]"
 msgstr "Bilimsel üs [Ctrl+E]"
 
 #. Tooltip for the add button
-#: src/math-buttons.c:110
+#: src/math-buttons.c:114
 msgid "Add [+]"
 msgstr "Topla [+]"
 
 #. Tooltip for the subtract button
-#: src/math-buttons.c:113
+#: src/math-buttons.c:117
 msgid "Subtract [-]"
 msgstr "Çıkart [-]"
 
 #. Tooltip for the multiply button
-#: src/math-buttons.c:116
+#: src/math-buttons.c:120
 msgid "Multiply [*]"
 msgstr "Çarp [*]"
 
 #. Tooltip for the divide button
-#: src/math-buttons.c:119
+#: src/math-buttons.c:123
 msgid "Divide [/]"
 msgstr "Böl [/]"
 
 #. Tooltip for the modulus divide button
-#: src/math-buttons.c:122
+#: src/math-buttons.c:126
 msgid "Modulus divide"
 msgstr "Modül bölümü"
 
 #. Tooltip for the additional functions button
-#: src/math-buttons.c:125
+#: src/math-buttons.c:129
 msgid "Additional Functions"
-msgstr "Ek İşlevler"
+msgstr "Ek Fonksiyonlar"
 
 #. Tooltip for the additional constant button
-#: src/math-buttons.c:128
+#: src/math-buttons.c:132
 msgid "Additional constants"
-msgstr ""
+msgstr "Ek sabitler"
 
 #. Tooltip for the exponent button
-#: src/math-buttons.c:131
+#: src/math-buttons.c:135
 msgid "Exponent [^ or **]"
 msgstr "Kuvvet (Üs) [^ ya da **]"
 
 #. Tooltip for the square button
-#: src/math-buttons.c:134
+#: src/math-buttons.c:138
 msgid "Square [Ctrl+2]"
 msgstr "Kare [Ctrl+2]"
 
 #. Tooltip for the percentage button
-#: src/math-buttons.c:137
+#: src/math-buttons.c:141
 msgid "Percentage [%]"
 msgstr "Yüzde [%]"
 
 #. Tooltip for the factorial button
-#: src/math-buttons.c:140
+#: src/math-buttons.c:144
 msgid "Factorial [!]"
 msgstr "Faktöriyel [!]"
 
 #. Tooltip for the absolute value button
-#: src/math-buttons.c:143
+#: src/math-buttons.c:147
 msgid "Absolute value [|]"
 msgstr "Mutlak değer [|]"
 
 #. Tooltip for the complex argument component button
-#: src/math-buttons.c:146
+#: src/math-buttons.c:150
 msgid "Complex argument"
 msgstr "Karmaşık değişken"
 
 #. Tooltip for the complex conjugate button
-#: src/math-buttons.c:149
+#: src/math-buttons.c:153
 msgid "Complex conjugate"
 msgstr "Karmaşık eşlenik"
 
 #. Tooltip for the root button
-#: src/math-buttons.c:152
+#: src/math-buttons.c:156
 msgid "Root [Ctrl+R]"
 msgstr "Kök [Ctrl+R]"
 
 #. Tooltip for the square root button
-#: src/math-buttons.c:155
+#: src/math-buttons.c:159
 msgid "Square root [Ctrl+R]"
 msgstr "Karekök [Ctrl+R]"
 
 #. Tooltip for the logarithm button
-#: src/math-buttons.c:158
+#: src/math-buttons.c:162
 msgid "Logarithm"
 msgstr "Logaritma"
 
 #. Tooltip for the natural logarithm button
-#: src/math-buttons.c:161
+#: src/math-buttons.c:165
 msgid "Natural Logarithm"
 msgstr "Doğal Logaritma"
 
 #. Tooltip for the sine button
-#: src/math-buttons.c:164
+#: src/math-buttons.c:168
 msgid "Sine"
 msgstr "Sinüs"
 
 #. Tooltip for the cosine button
-#: src/math-buttons.c:167
+#: src/math-buttons.c:171
 msgid "Cosine"
 msgstr "Kosinüs"
 
 #. Tooltip for the tangent button
-#: src/math-buttons.c:170
+#: src/math-buttons.c:174
 msgid "Tangent"
 msgstr "Tanjant"
 
 #. Tooltip for the hyperbolic sine button
-#: src/math-buttons.c:173
+#: src/math-buttons.c:177
 msgid "Hyperbolic Sine"
 msgstr "Hiperbolik Sinüs"
 
 #. Tooltip for the hyperbolic cosine button
-#: src/math-buttons.c:176
+#: src/math-buttons.c:180
 msgid "Hyperbolic Cosine"
 msgstr "Hiperbolik Kosinüs"
 
 #. Tooltip for the hyperbolic tangent button
-#: src/math-buttons.c:179
+#: src/math-buttons.c:183
 msgid "Hyperbolic Tangent"
 msgstr "Hiperbolik Tanjant"
 
 #. Tooltip for the inverse sine button
-#: src/math-buttons.c:182
+#: src/math-buttons.c:186
 msgid "Inverse Sine"
 msgstr "Ters Sinüs"
 
 #. Tooltip for the inverse cosine button
-#: src/math-buttons.c:185
+#: src/math-buttons.c:189
 msgid "Inverse Cosine"
 msgstr "Ters Kosinüs"
 
 #. Tooltip for the inverse tangent button
-#: src/math-buttons.c:188
+#: src/math-buttons.c:192
 msgid "Inverse Tangent"
 msgstr "Ters Tanjant"
 
 #. Tooltip for the inverse button
-#: src/math-buttons.c:191
+#: src/math-buttons.c:195
 msgid "Inverse [Ctrl+I]"
 msgstr "Tersi [Ctrl+I]"
 
 #. Tooltip for the boolean AND button
-#: src/math-buttons.c:194
+#: src/math-buttons.c:198
 msgid "Boolean AND"
 msgstr "Mantıksal VE"
 
 #. Tooltip for the boolean OR button
-#: src/math-buttons.c:197
+#: src/math-buttons.c:201
 msgid "Boolean OR"
 msgstr "Mantıksal VEYA"
 
 #. Tooltip for the exclusive OR button
-#: src/math-buttons.c:200
+#: src/math-buttons.c:204
 msgid "Boolean Exclusive OR"
 msgstr "Mantıksal Özel VEYA"
 
 #. Tooltip for the boolean NOT button
-#: src/math-buttons.c:203
+#: src/math-buttons.c:207
 msgid "Boolean NOT"
 msgstr "Mantıksal DEĞİL"
 
 #. Tooltip for the integer component button
-#: src/math-buttons.c:206 src/math-buttons.c:997
+#: src/math-buttons.c:210 src/math-buttons.c:972
 msgid "Integer Component"
 msgstr "Tamsayı Bileşeni"
 
 #. Tooltip for the fractional component button
-#: src/math-buttons.c:209 src/math-buttons.c:999
+#: src/math-buttons.c:213 src/math-buttons.c:974
 msgid "Fractional Component"
 msgstr "Kesirli Bileşen"
 
 #. Tooltip for the real component button
-#: src/math-buttons.c:212
+#: src/math-buttons.c:216
 msgid "Real Component"
 msgstr "Gerçel Bileşen"
 
 #. Tooltip for the imaginary component button
-#: src/math-buttons.c:215
+#: src/math-buttons.c:219
 msgid "Imaginary Component"
 msgstr "Sanal Bileşen"
 
 #. Tooltip for the ones' complement button
-#: src/math-buttons.c:218
+#: src/math-buttons.c:222
 msgid "Ones' Complement"
 msgstr "Bir'in Tümleyeni"
 
 #. Tooltip for the two's complement button
-#: src/math-buttons.c:221
+#: src/math-buttons.c:225
 msgid "Two's Complement"
 msgstr "İki'nin Tümleyeni"
 
 #. Tooltip for the start group button
-#: src/math-buttons.c:224
+#: src/math-buttons.c:228
 msgid "Start Group [(]"
 msgstr "Yeni bir grup başlat [(]"
 
 #. Tooltip for the end group button
-#: src/math-buttons.c:227
+#: src/math-buttons.c:231
 msgid "End Group [)]"
 msgstr "Grubu sonlandır [)]"
 
 #. Tooltip for the solve button
-#: src/math-buttons.c:236
+#: src/math-buttons.c:240
 msgid "Calculate Result"
 msgstr "Sonucu Hesapla"
 
 #. Tooltip for the factor button
-#: src/math-buttons.c:239
+#: src/math-buttons.c:243
 msgid "Factorize [Ctrl+F]"
 msgstr "Çarpanlara Ayır [Ctrl+F]"
 
 #. Tooltip for the clear button
-#: src/math-buttons.c:242
+#: src/math-buttons.c:246
 msgid "Clear Display [Escape]"
 msgstr "Ekranı Temizle [Escape]"
 
 #. Tooltip for the undo button
-#: src/math-buttons.c:245
+#: src/math-buttons.c:249
 msgid "Undo [Ctrl+Z]"
 msgstr "Geri Al [Ctrl+Z]"
 
 #. Tooltip for the shift left button
-#: src/math-buttons.c:248
+#: src/math-buttons.c:252
 msgid "Shift Left [<<]"
 msgstr "Sola Kaydır [<<]"
 
 #. Tooltip for the shift right button
-#: src/math-buttons.c:251
+#: src/math-buttons.c:255
 msgid "Shift Right [>>]"
 msgstr "Sağa Kaydır [>>]"
 
 #. Tooltip for the double declining depreciation button
-#: src/math-buttons.c:257
+#: src/math-buttons.c:261
 msgid "Double Declining Depreciation"
 msgstr "Çift Azalan Amortisman"
 
 #. Tooltip for the financial term button
-#: src/math-buttons.c:263
+#: src/math-buttons.c:267
 msgid "Financial Term"
-msgstr "Mali Terim"
+msgstr "Mali Vade"
 
 #. Tooltip for the sum of the years digits depreciation button
-#: src/math-buttons.c:266
+#: src/math-buttons.c:270
 msgid "Sum of the Years Digits Depreciation"
 msgstr "Yılların-Toplamı Amortisman"
 
 #. Tooltip for the straight line depreciation button
-#: src/math-buttons.c:269
+#: src/math-buttons.c:273
 msgid "Straight Line Depreciation"
 msgstr "Doğrusal Amortisman"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: src/math-buttons.c:630
+#: src/math-buttons.c:624
 msgid "Binary"
 msgstr "İkilik"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: src/math-buttons.c:634
+#: src/math-buttons.c:628
 msgid "Octal"
 msgstr "Sekizlik"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: src/math-buttons.c:638
+#: src/math-buttons.c:632
 msgid "Decimal"
 msgstr "Ondalık"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: src/math-buttons.c:642
+#: src/math-buttons.c:636
 msgid "Hexadecimal"
 msgstr "Onaltılık"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: src/math-buttons.c:910 src/math-buttons.c:952
+#: src/math-buttons.c:888 src/math-buttons.c:929
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
@@ -1342,7 +1322,7 @@ msgstr[1] "_%d basamak"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: src/math-buttons.c:914 src/math-buttons.c:956
+#: src/math-buttons.c:892 src/math-buttons.c:933
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
@@ -1350,296 +1330,299 @@ msgstr[0] "%d basamak"
 msgstr[1] "%d basamak"
 
 #. Tooltip for the round button
-#: src/math-buttons.c:1001
+#: src/math-buttons.c:976
 msgid "Round"
 msgstr "Yuvarla"
 
 #. Tooltip for the floor button
-#: src/math-buttons.c:1003
+#: src/math-buttons.c:978
 msgid "Floor"
 msgstr "Aşağı yuvarla"
 
 #. Tooltip for the ceiling button
-#: src/math-buttons.c:1005
+#: src/math-buttons.c:980
 msgid "Ceiling"
 msgstr "Yukarı yuvarla"
 
 #. Tooltip for the ceiling button
-#: src/math-buttons.c:1007
+#: src/math-buttons.c:982
 msgid "Sign"
 msgstr "İşaret"
 
 #. Tooltip for the c₀ component button
-#: src/math-buttons.c:1049
+#: src/math-buttons.c:1023
 msgid "Velocity of Light"
-msgstr ""
+msgstr "Işık Hızı"
 
-#: src/math-buttons.c:1049
+#: src/math-buttons.c:1023
 msgid "299,792,458 m/s"
-msgstr ""
+msgstr "299.792.458 m/s"
 
 #. Tooltip for the μ₀ component button
-#: src/math-buttons.c:1051
+#: src/math-buttons.c:1025
 msgid "Magnetic constant"
-msgstr ""
+msgstr "Manyetik sabit"
 
-#: src/math-buttons.c:1051
+#: src/math-buttons.c:1025
 msgid "1.2566370614×10⁻⁶ N/A²"
-msgstr ""
+msgstr "1.2566370614×10⁻⁶ N/A²"
 
 #. Tooltip for the ε₀ button
-#: src/math-buttons.c:1053
+#: src/math-buttons.c:1027
 msgid "Electric constant"
-msgstr ""
+msgstr "Elektrik sabit"
 
-#: src/math-buttons.c:1053
+#: src/math-buttons.c:1027
 msgid "8.85418782×10⁻¹² s⁴A²/m³kg"
-msgstr ""
+msgstr "8.85418782×10⁻¹² s⁴A²/m³kg"
 
 #. Tooltip for the G button
-#: src/math-buttons.c:1055
+#: src/math-buttons.c:1029
 msgid "Newtonian constant of gravitation"
-msgstr ""
+msgstr "Newton sabiti yerçekimi"
 
-#: src/math-buttons.c:1055
+#: src/math-buttons.c:1029
 msgid "6.67408×10⁻¹¹ m³/(s²kg)"
-msgstr ""
+msgstr "6.67408×10⁻¹¹ m³/(s²kg)"
 
 #. Tooltip for the h button
-#: src/math-buttons.c:1057
+#: src/math-buttons.c:1031
 msgid "Planck constant"
-msgstr ""
+msgstr "Planck sabiti"
 
-#: src/math-buttons.c:1057
+#: src/math-buttons.c:1031
 msgid "6.62607004×10⁻³⁴ m²kg/s"
-msgstr ""
+msgstr "6.62607004×10⁻³⁴ m²kg/s"
 
 #. Tooltip for the ｅ button
-#: src/math-buttons.c:1059
+#: src/math-buttons.c:1033
 msgid "Elementary charge"
-msgstr ""
+msgstr "Temel yük"
 
-#: src/math-buttons.c:1059
+#: src/math-buttons.c:1033
 msgid "1.6021766208(98)×10⁻¹⁹ C"
-msgstr ""
+msgstr "1.6021766208(98)×10⁻¹⁹ C"
 
 #. Tooltip for the mₑ button
-#: src/math-buttons.c:1061
+#: src/math-buttons.c:1035
 msgid "Electron mass"
-msgstr ""
+msgstr "Elektron kütlesi"
 
-#: src/math-buttons.c:1061
+#: src/math-buttons.c:1035
 msgid "9.10938356×10⁻³¹ kg"
-msgstr ""
+msgstr "9.10938356×10⁻³¹ kg"
 
 #. Tooltip for the mₚ button
-#: src/math-buttons.c:1063
+#: src/math-buttons.c:1037
 msgid "Proton mass"
-msgstr ""
+msgstr "Proton kütlesi"
 
-#: src/math-buttons.c:1063
+#: src/math-buttons.c:1037
 msgid "1.672621898(21)×10⁻²⁷ kg"
-msgstr ""
+msgstr "1.672621898(21)×10⁻²⁷ kg"
 
 #. Tooltip for the Nₐ button
-#: src/math-buttons.c:1065
+#: src/math-buttons.c:1039
 msgid "Avogadro constant"
-msgstr ""
+msgstr "Avogadro sabiti"
 
-#: src/math-buttons.c:1065
+#: src/math-buttons.c:1039
 msgid "6.02214086×10²³ mol⁻¹"
-msgstr ""
+msgstr "6.02214086×10²³ mol⁻¹"
 
-#. Label that is displayed between the two conversion combo boxes, e.g.
-#. "[degrees] in [radians]"
-#: src/math-converter.c:418
+#. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
+#: src/math-converter.c:401
 msgid " in "
 msgstr "şu birimde:"
 
 #. Tooltip for swap conversion button
-#: src/math-converter.c:433
+#: src/math-converter.c:416
 msgid "Switch conversion units"
 msgstr "Dönüştürme birimlerini yer değiştir"
 
 #. Error shown when trying to undo with no undo history
-#: src/math-equation.c:460
+#: src/math-equation.c:444
 msgid "No undo history"
 msgstr "Geri al geçmişi yok"
 
 #. Error shown when trying to redo with no redo history
-#: src/math-equation.c:487
+#: src/math-equation.c:470
 msgid "No redo history"
 msgstr "Yineleme geçmişi yok"
 
-#: src/math-equation.c:949
+#: src/math-equation.c:897
 msgid "No sane value to store"
 msgstr "Saklanacak mantıklı bir değer yok"
 
-#. Error displayed to user when they perform a bitwise operation on numbers
-#. greater than the current word
-#: src/math-equation.c:1258
+#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
+#: src/math-equation.c:1190
 msgid "Overflow. Try a bigger word size"
 msgstr "Taşma. Daha büyük bir word boyutu deneyin"
 
 #. Error displayed to user when they an unknown variable is entered
-#: src/math-equation.c:1263
+#: src/math-equation.c:1195
 #, c-format
 msgid "Unknown variable '%s'"
 msgstr "Bilinmeyen '%s' değişkeni"
 
 #. Error displayed to user when an unknown function is entered
-#: src/math-equation.c:1268
+#: src/math-equation.c:1200
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr "'%s' fonksiyonu tanımlı değil"
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: src/math-equation.c:1273
+#: src/math-equation.c:1205
 msgid "Unknown conversion"
 msgstr "Bilinmeyen dönüşüm"
 
 #. Uncategorized error. Show error token to user
-#: src/math-equation.c:1281
+#: src/math-equation.c:1213
 #, c-format
 msgid "Malformed expression at token '%s'"
 msgstr "'%s' jetonunda yanlış yapılandırılmış ifade"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: src/math-equation.c:1284 src/math-equation.c:1289
+#: src/math-equation.c:1216 src/math-equation.c:1221
 msgid "Malformed expression"
 msgstr "Hatalı kurulan ifade"
 
-#: src/math-equation.c:1304
+#: src/math-equation.c:1235
 msgid "Calculating"
 msgstr "Hesaplanıyor"
 
 #. Error displayed when trying to factorize a non-integer value
-#: src/math-equation.c:1443
+#: src/math-equation.c:1370
 msgid "Need an integer to factorize"
 msgstr "Çarpanlara ayırmak için bir tamsayıya ihtiyaç var"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: src/math-equation.c:1516
+#: src/math-equation.c:1439
 msgid "No sane value to bitwise shift"
 msgstr "Bit kaydırma için mantıklı bir değer yok"
 
 #. Message displayed when cannot toggle bit in display
-#: src/math-equation.c:1549
+#: src/math-equation.c:1471
 msgid "Displayed value not an integer"
 msgstr "Gösterilen değer tam sayı değil"
 
 #. Digits localized for the given language
-#: src/math-equation.c:1997
+#: src/math-equation.c:1909
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
-#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
-#. calculations
-#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
-#. grads
-#: src/math-preferences.c:256 src/unit-manager.c:54
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
+#: src/math-preferences.c:238 src/unit-manager.c:51
 msgid "Degrees"
 msgstr "Derece"
 
-#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
-#. calculations
-#: src/math-preferences.c:260 src/unit-manager.c:55
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
+#: src/math-preferences.c:242 src/unit-manager.c:52
 msgid "Radians"
 msgstr "Radyan"
 
-#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
-#. calculations
-#: src/math-preferences.c:264 src/unit-manager.c:56
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
+#: src/math-preferences.c:246 src/unit-manager.c:53
 msgid "Gradians"
 msgstr "Grad"
 
-#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
-#. number 1.234×10^99)
-#: src/math-preferences.c:274
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
+#: src/math-preferences.c:256
 msgid "Automatic"
 msgstr "Otomatik"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: src/math-preferences.c:278
+#: src/math-preferences.c:260
 msgid "Fixed"
 msgstr "Sabit"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: src/math-preferences.c:282
+#: src/math-preferences.c:264
 msgid "Scientific"
 msgstr "Bilimsel"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: src/math-preferences.c:286
+#: src/math-preferences.c:268
 msgid "Engineering"
 msgstr "Mühendislik"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: src/math-preferences.c:297
+#: src/math-preferences.c:279
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "%d ondalık _hane göster"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: src/math-window.c:294
+#: src/math-window.c:292
 msgid "Unable to open help file"
 msgstr "Yardım dosyası açılamadı"
 
-#: src/math-window.c:312
+#: src/math-window.c:310
 msgid "Sun Microsystems"
 msgstr "Sun Microsystems"
 
-#: src/math-window.c:313
+#: src/math-window.c:311
 msgid "MATE Documentation Team"
 msgstr "MATE Belgelendirme Projesi"
 
-#: src/math-window.c:319
+#: src/math-window.c:317
 msgid ""
 "MATE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
-"MATE Takvim özgür yazılımdır; Özgür Yazılım Vakfı tarafından yayınlanmış GNU"
-" Genel Kamu Lisansı'nın -Lisans'ın ikinci veya (size bağlı olarak) daha üstü"
-" versiyonları- koşulları altında yeniden dağıtabilir ve/veya "
-"değiştirebilirsiniz. "
+"MATE Hesap Makinesi özgür yazılımdır; Özgür Yazılım Vakfı tarafından "
+"yayınlanmış GNU Genel Kamu Lisansı'nın -Lisans'ın ikinci veya (size bağlı "
+"olarak) daha üstü versiyonları- koşulları altında yeniden dağıtabilir ve/"
+"veya değiştirebilirsiniz. "
 
-#: src/math-window.c:323
+#: src/math-window.c:321
 msgid ""
 "MATE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
-"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
-" more details."
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
 msgstr ""
+"MATE Hesap Makinesi kullanışlı olması amacıyla dağıtılmıştır, ancak HİÇBİR "
+"GARANTİSİ YOKTUR; hatta SATILABİLİRLİK ya da BİR AMACA HİZMET gibi garantisi "
+"de yoktur. Daha fazla ayrıntı için GNU Genel Kamu Lisansı'na bakın."
 
-#: src/math-window.c:327
+#: src/math-window.c:325
 msgid ""
-"You should have received a copy of the GNU General Public License along with"
-" MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
+"You should have received a copy of the GNU General Public License along with "
+"MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
+"GNU Genel Kamu Lisansını MATE Hesap Makinesi ile birlikte almış olmalısınız, "
+"eğer almadıysanız lütfen Free Software Foundation, Inc., 51 Franklin Street, "
+"Fifth Floor, Boston, MA  02110-1301  USA adresine yazın"
 
-#: src/math-window.c:364
+#: src/math-window.c:362
 #, c-format
 msgid ""
 "Calculator with financial and scientific modes.\n"
 "Using GNU MPFR %s and GNU MPC %s"
 msgstr ""
+"Finansal ve bilimsel kiplere sahip hesap makinesi.\n"
+"GNU MPFR %s ve GNU MPC %s kullanır"
 
-#: src/math-window.c:370
+#: src/math-window.c:368
 msgid "About MATE Calculator"
-msgstr "MATE Takvim Hakkında"
+msgstr "MATE Hesap Makinesi Hakkında"
 
-#: src/math-window.c:371
+#: src/math-window.c:369
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2021 MATE developers"
 msgstr ""
+"Telif Hakkı © 1986–2010 The GCalctool yazarları\n"
+"Telif Hakkı © 2011-2021 MATE geliştiricileri"
 
-#: src/math-window.c:377
+#: src/math-window.c:375
 msgid "translator-credits"
 msgstr ""
 "GNOME projesine katkıda bulunanlar:\n"
@@ -1654,113 +1637,109 @@ msgstr ""
 "Emre FIRAT <emrefirat93@gmail.com>, 2013, 2014, 2015"
 
 #. Calculator menu
-#: src/math-window.c:526
+#: src/math-window.c:523
 msgid "_Calculator"
 msgstr "_Hesap Makinesi"
 
 #. Mode menu
-#: src/math-window.c:528
+#: src/math-window.c:525
 msgid "_Mode"
 msgstr "K_ip"
 
 #. View menu
-#: src/math-window.c:530
+#: src/math-window.c:527
 msgid "_View"
 msgstr "_Görünüm"
 
 #. Help menu label
-#: src/math-window.c:532
+#: src/math-window.c:529
 msgid "_Help"
 msgstr "_Yardım"
 
 #. Basic menu label
-#: src/math-window.c:534
+#: src/math-window.c:531
 msgid "_Basic"
 msgstr "_Temel"
 
 #. Advanced menu label
-#: src/math-window.c:536
+#: src/math-window.c:533
 msgid "_Advanced"
 msgstr "_Gelişmiş"
 
 #. Financial menu label
-#: src/math-window.c:538
+#: src/math-window.c:535
 msgid "_Financial"
 msgstr "_Ekonomi"
 
 #. Programming menu label
-#: src/math-window.c:540
+#: src/math-window.c:537
 msgid "_Programming"
 msgstr "_Programlama"
 
 #. History menu label
-#: src/math-window.c:542
+#: src/math-window.c:539
 msgid "_History"
-msgstr ""
+msgstr "_Geçmiş"
 
 #. Help>Contents menu label
-#: src/math-window.c:544
+#: src/math-window.c:541
 msgid "_Contents"
 msgstr "İçi_ndekiler"
 
-#: src/math-window.c:547
+#: src/math-window.c:544
 msgid "_Copy"
 msgstr "_Kopyala"
 
-#: src/math-window.c:549
+#: src/math-window.c:546
 msgid "_Paste"
 msgstr "Y_apıştır"
 
-#: src/math-window.c:551
+#: src/math-window.c:548
 msgid "_Undo"
 msgstr "_Geri"
 
-#: src/math-window.c:553
+#: src/math-window.c:550
 msgid "_Redo"
 msgstr "_Tekrarla"
 
-#: src/math-window.c:555
+#: src/math-window.c:552
 msgid "_Clear History"
-msgstr ""
+msgstr "Geçmişi _Temizle"
 
-#: src/math-window.c:558
+#: src/math-window.c:555
 msgid "_Preferences"
 msgstr "_Tercihler"
 
-#: src/math-window.c:560
+#: src/math-window.c:557
 msgid "_Quit"
 msgstr "_Çık"
 
-#: src/math-window.c:581
+#: src/math-window.c:578
 msgid "_About"
 msgstr "_Hakkında"
 
-#. Translators: Error displayed when boolean AND attempted on non-integer
-#. values
-#: src/mp-binary.c:119
+#. Translators: Error displayed when boolean AND attempted on non-integer values
+#: src/mp-binary.c:114
 msgid "Boolean AND is only defined for positive integers"
 msgstr "Mantıksal VE, sadece pozitif tamsayılar için tanımlıdır"
 
-#. Translators: Error displayed when boolean OR attempted on non-integer
-#. values
-#: src/mp-binary.c:132
+#. Translators: Error displayed when boolean OR attempted on non-integer values
+#: src/mp-binary.c:126
 msgid "Boolean OR is only defined for positive integers"
 msgstr "Mantıksal VEYA, sadece pozitif tamsayılar için tanımlıdır"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer
-#. values
-#: src/mp-binary.c:145
+#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#: src/mp-binary.c:138
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "Mantıksal Özel VEYA, sadece pozitif tamsayılar için tanımlıdır"
 
-#. Translators: Error displayed when boolean NOT attempted on non-integer
-#. values
-#: src/mp-binary.c:162
+#. Translators: Error displayed when boolean NOT attempted on non-integer values
+#: src/mp-binary.c:154
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "Mantıksal DEĞİL, sadece pozitif tamsayılar için tanımlıdır"
 
 #. Translators: Error displayed when bit shift attempted on non-integer values
-#: src/mp-binary.c:175
+#: src/mp-binary.c:166
 msgid "Shift is only possible on integer values"
 msgstr "Kaydırma yalnız tamsayılar üzerinde yapılabilir"
 
@@ -1782,24 +1761,20 @@ msgstr "Sıfırın logaritması tanımsızdır"
 #. Translators: Error displayed when attempting to take zeroth root
 #: src/mp.c:434
 msgid "The zeroth root of a number is undefined"
-msgstr ""
+msgstr "Bir sayının sıfırıncı kökü tanımsızdır"
 
-#. Translators: Error displayed when attempted take the factorial of a
-#. negative or complex number
+#. Translators: Error displayed when attempted take the factorial of a negative or complex number
 #: src/mp.c:474
 msgid "Factorial is only defined for non-negative real numbers"
-msgstr ""
+msgstr "Faktöriyel sadece negatif olmayan gerçek sayılar için tanımlanır"
 
-#. Translators: Error displayed when attemping to do a modulus division on
-#. non-integer numbers
+#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
 #: src/mp.c:504
 msgid "Modulus division is only defined for integers"
 msgstr "Modüler bölme işlemi sadece tamsayılar için tanımlıdır"
 
-#. Translators: Error displayed when attempted to raise 0 to a negative
-#. exponent
-#. Translators: Error displayed when attempted to raise 0 to a negative
-#. re_exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative re_exponent
 #: src/mp.c:575 src/mp.c:602
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "Negatif bir üs için sıfırın kuvveti tanımsızdır"
@@ -1807,777 +1782,773 @@ msgstr "Negatif bir üs için sıfırın kuvveti tanımsızdır"
 #. Translators: Error displayed when error function (erf) value is undefined
 #: src/mp.c:615
 msgid "The error function is only defined for real numbers"
-msgstr ""
+msgstr "Hata fonksiyonu sadece gerçek sayılar için tanımlıdır"
 
 #. Translators: Error displayed when zeta function value is undefined
 #: src/mp.c:632
 msgid "The Riemann zeta function is only defined for real numbers ≠1"
-msgstr ""
+msgstr "Riemann zeta fonksiyonu yalnızca ≠1 gerçek sayılar için tanımlıdır"
 
 #. Translators: Error displayed when tangent value is undefined
-#: src/mp-trigonometric.c:120
+#: src/mp-trigonometric.c:116
 msgid ""
-"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
-"(90°)"
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
 msgstr ""
 "Tanjan, π∕2 (90°)'den π (180°)'ye kadar olan açıların katları için tanımlı "
 "değildir"
 
 #. Translators: Error displayed when inverse sine value is undefined
-#: src/mp-trigonometric.c:150
+#: src/mp-trigonometric.c:145
 msgid "Inverse sine is undefined for values outside [-1, 1]"
 msgstr "[-1, 1] aralığı dışındaki değerler için ters sinüs tanımlı değildir"
 
 #. Translators: Error displayed when inverse sine value is undefined
-#: src/mp-trigonometric.c:175
+#: src/mp-trigonometric.c:169
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
 msgstr "[-1, 1] aralığı dışındaki değerler için ters kosinüs tanımlı değildir"
 
 #. Translators: Error displayed when inverse sine value is undefined
-#: src/mp-trigonometric.c:201
+#: src/mp-trigonometric.c:194
 msgid "Arctangent function is undefined for values i and -i"
-msgstr ""
+msgstr "Arctanjant fonksiyonu, i ve -i değerleri için tanımsızdır"
 
-#. Translators: Error displayed when inverse hyperbolic cosine value is
-#. undefined
-#: src/mp-trigonometric.c:253
+#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
+#: src/mp-trigonometric.c:241
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
 msgstr "Birden küçük değerler için ters hiperbolik kosinüs tanımsızdır"
 
-#. Translators: Error displayed when inverse hyperbolic tangent value is
-#. undefined
-#: src/mp-trigonometric.c:275
+#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
+#: src/mp-trigonometric.c:262
 msgid "Inverse hyperbolic tangent is undefined for values outside (-1, 1)"
-msgstr ""
+msgstr "Ters hiperbolik tanjant (-1, 1) dışındaki değerler için tanımsızdır"
 
-#: src/unit-manager.c:54
+#: src/unit-manager.c:51
 #, c-format
 msgctxt "unit-format"
 msgid "%s degrees"
 msgstr "%s derece"
 
-#: src/unit-manager.c:54
+#: src/unit-manager.c:51
 msgctxt "unit-symbols"
 msgid "degree,degrees,deg"
 msgstr "derece,derece,der"
 
-#: src/unit-manager.c:55
+#: src/unit-manager.c:52
 #, c-format
 msgctxt "unit-format"
 msgid "%s radians"
 msgstr "%s radyan"
 
-#: src/unit-manager.c:55
+#: src/unit-manager.c:52
 msgctxt "unit-symbols"
 msgid "radian,radians,rad"
 msgstr "radyan,radyan,rad"
 
-#: src/unit-manager.c:56
+#: src/unit-manager.c:53
 #, c-format
 msgctxt "unit-format"
 msgid "%s gradians"
 msgstr "%s grad"
 
-#: src/unit-manager.c:56
+#: src/unit-manager.c:53
 msgctxt "unit-symbols"
 msgid "gradian,gradians,grad"
 msgstr "grad,grad,grad"
 
-#: src/unit-manager.c:57
+#: src/unit-manager.c:54
 msgid "Parsecs"
 msgstr "Parsek"
 
-#: src/unit-manager.c:57
+#: src/unit-manager.c:54
 #, c-format
 msgctxt "unit-format"
 msgid "%s pc"
 msgstr "%s pc"
 
-#: src/unit-manager.c:57
+#: src/unit-manager.c:54
 msgctxt "unit-symbols"
 msgid "parsec,parsecs,pc"
 msgstr "parsek,parsek,pc"
 
-#: src/unit-manager.c:58
+#: src/unit-manager.c:55
 msgid "Light Years"
 msgstr "Işık Yılı"
 
-#: src/unit-manager.c:58
+#: src/unit-manager.c:55
 #, c-format
 msgctxt "unit-format"
 msgid "%s ly"
 msgstr "%s ly"
 
-#: src/unit-manager.c:58
+#: src/unit-manager.c:55
 msgctxt "unit-symbols"
 msgid "lightyear,lightyears,ly"
-msgstr "ışıkyılı,ışıkyılı,ly"
+msgstr "ışık yılı,ışıkyılı,ışıkyılı,ly"
 
-#: src/unit-manager.c:59
+#: src/unit-manager.c:56
 msgid "Astronomical Units"
 msgstr "Astronomik Birimler"
 
-#: src/unit-manager.c:59
+#: src/unit-manager.c:56
 #, c-format
 msgctxt "unit-format"
 msgid "%s au"
 msgstr "%s au"
 
-#: src/unit-manager.c:59
+#: src/unit-manager.c:56
 msgctxt "unit-symbols"
 msgid "au"
 msgstr "au"
 
-#: src/unit-manager.c:60
+#: src/unit-manager.c:57
 msgid "Nautical Miles"
 msgstr "Deniz Mili"
 
-#: src/unit-manager.c:60
+#: src/unit-manager.c:57
 #, c-format
 msgctxt "unit-format"
 msgid "%s nmi"
 msgstr "%s nmi"
 
-#: src/unit-manager.c:60
+#: src/unit-manager.c:57
 msgctxt "unit-symbols"
 msgid "nmi"
 msgstr "nmi"
 
-#: src/unit-manager.c:61
+#: src/unit-manager.c:58
 msgid "Miles"
 msgstr "Mil"
 
-#: src/unit-manager.c:61
+#: src/unit-manager.c:58
 #, c-format
 msgctxt "unit-format"
 msgid "%s mi"
 msgstr "%s mi"
 
-#: src/unit-manager.c:61
+#: src/unit-manager.c:58
 msgctxt "unit-symbols"
 msgid "mile,miles,mi"
 msgstr "mil, mil, mi"
 
-#: src/unit-manager.c:62
+#: src/unit-manager.c:59
 msgid "Kilometers"
 msgstr "Kilometre"
 
-#: src/unit-manager.c:62
+#: src/unit-manager.c:59
 #, c-format
 msgctxt "unit-format"
 msgid "%s km"
 msgstr "%s km"
 
-#: src/unit-manager.c:62
+#: src/unit-manager.c:59
 msgctxt "unit-symbols"
 msgid "kilometer,kilometers,km,kms"
 msgstr "kilometre,kilometre,km,km"
 
-#: src/unit-manager.c:63
+#: src/unit-manager.c:60
 msgid "Cables"
 msgstr "Gomina"
 
-#: src/unit-manager.c:63
+#: src/unit-manager.c:60
 #, c-format
 msgctxt "unit-format"
 msgid "%s cb"
 msgstr "%s cb"
 
-#: src/unit-manager.c:63
+#: src/unit-manager.c:60
 msgctxt "unit-symbols"
 msgid "cable,cables,cb"
 msgstr "gomina,gomina,cb"
 
-#: src/unit-manager.c:64
+#: src/unit-manager.c:61
 msgid "Fathoms"
 msgstr "Kulaç"
 
-#: src/unit-manager.c:64
+#: src/unit-manager.c:61
 #, c-format
 msgctxt "unit-format"
 msgid "%s ftm"
 msgstr "%s ftm"
 
-#: src/unit-manager.c:64
+#: src/unit-manager.c:61
 msgctxt "unit-symbols"
 msgid "fathom,fathoms,ftm"
 msgstr "kulaç,kulaç,ftm"
 
-#: src/unit-manager.c:65
+#: src/unit-manager.c:62
 msgid "Meters"
 msgstr "Metre"
 
-#: src/unit-manager.c:65
+#: src/unit-manager.c:62
 #, c-format
 msgctxt "unit-format"
 msgid "%s m"
 msgstr "%s m"
 
-#: src/unit-manager.c:65
+#: src/unit-manager.c:62
 msgctxt "unit-symbols"
 msgid "meter,meters,m"
 msgstr "metre,metre,m"
 
-#: src/unit-manager.c:66
+#: src/unit-manager.c:63
 msgid "Yards"
 msgstr "Yarda"
 
-#: src/unit-manager.c:66
+#: src/unit-manager.c:63
 #, c-format
 msgctxt "unit-format"
 msgid "%s yd"
 msgstr "%s yd"
 
-#: src/unit-manager.c:66
+#: src/unit-manager.c:63
 msgctxt "unit-symbols"
 msgid "yard,yards,yd"
 msgstr "yarda,yarda,yd"
 
-#: src/unit-manager.c:67
+#: src/unit-manager.c:64
 msgid "Feet"
 msgstr "Ayak"
 
-#: src/unit-manager.c:67
+#: src/unit-manager.c:64
 #, c-format
 msgctxt "unit-format"
 msgid "%s ft"
 msgstr "%s ft"
 
-#: src/unit-manager.c:67
+#: src/unit-manager.c:64
 msgctxt "unit-symbols"
 msgid "foot,feet,ft"
 msgstr "ayak,ayak,ft"
 
-#: src/unit-manager.c:68
+#: src/unit-manager.c:65
 msgid "Inches"
 msgstr "İnç"
 
-#: src/unit-manager.c:68
+#: src/unit-manager.c:65
 #, c-format
 msgctxt "unit-format"
 msgid "%s in"
 msgstr "%s in"
 
-#: src/unit-manager.c:68
+#: src/unit-manager.c:65
 msgctxt "unit-symbols"
 msgid "inch,inches,in"
 msgstr "inç,inç,in"
 
-#: src/unit-manager.c:69
+#: src/unit-manager.c:66
 msgid "Centimeters"
 msgstr "Santimetre"
 
-#: src/unit-manager.c:69
+#: src/unit-manager.c:66
 #, c-format
 msgctxt "unit-format"
 msgid "%s cm"
 msgstr "%s cm"
 
-#: src/unit-manager.c:69
+#: src/unit-manager.c:66
 msgctxt "unit-symbols"
 msgid "centimeter,centimeters,cm,cms"
 msgstr "santimetre,santimetre,cm,cm"
 
-#: src/unit-manager.c:70
+#: src/unit-manager.c:67
 msgid "Millimeters"
 msgstr "Milimetre"
 
-#: src/unit-manager.c:70
+#: src/unit-manager.c:67
 #, c-format
 msgctxt "unit-format"
 msgid "%s mm"
 msgstr "%s mm"
 
-#: src/unit-manager.c:70
+#: src/unit-manager.c:67
 msgctxt "unit-symbols"
 msgid "millimeter,millimeters,mm"
 msgstr "milimetre,milimetre,mm"
 
-#: src/unit-manager.c:71
+#: src/unit-manager.c:68
 msgid "Micrometers"
 msgstr "Mikrometre"
 
-#: src/unit-manager.c:71
+#: src/unit-manager.c:68
 #, c-format
 msgctxt "unit-format"
 msgid "%s μm"
 msgstr "%s μm"
 
-#: src/unit-manager.c:71
+#: src/unit-manager.c:68
 msgctxt "unit-symbols"
 msgid "micrometer,micrometers,um"
 msgstr "mikrometre,mikrometre,um"
 
-#: src/unit-manager.c:72
+#: src/unit-manager.c:69
 msgid "Nanometers"
 msgstr "Nanometre"
 
-#: src/unit-manager.c:72
+#: src/unit-manager.c:69
 #, c-format
 msgctxt "unit-format"
 msgid "%s nm"
 msgstr "%s nm"
 
-#: src/unit-manager.c:72
+#: src/unit-manager.c:69
 msgctxt "unit-symbols"
 msgid "nanometer,nanometers,nm"
 msgstr "nanometre,nanometre,nm"
 
-#: src/unit-manager.c:73
+#: src/unit-manager.c:70
 msgid "Hectares"
 msgstr "Hektar"
 
-#: src/unit-manager.c:73
+#: src/unit-manager.c:70
 #, c-format
 msgctxt "unit-format"
 msgid "%s ha"
 msgstr "%s ha"
 
-#: src/unit-manager.c:73
+#: src/unit-manager.c:70
 msgctxt "unit-symbols"
 msgid "hectare,hectares,ha"
 msgstr "hektar,hektar,ha"
 
-#: src/unit-manager.c:74
+#: src/unit-manager.c:71
 msgid "Acres"
 msgstr "Dönüm"
 
-#: src/unit-manager.c:74
+#: src/unit-manager.c:71
 #, c-format
 msgctxt "unit-format"
 msgid "%s acres"
 msgstr "%s dönüm"
 
-#: src/unit-manager.c:74
+#: src/unit-manager.c:71
 msgctxt "unit-symbols"
 msgid "acre,acres"
 msgstr "dönüm,dönüm"
 
-#: src/unit-manager.c:75
+#: src/unit-manager.c:72
 msgid "Square Meters"
 msgstr "Metrekare"
 
-#: src/unit-manager.c:75
+#: src/unit-manager.c:72
 #, c-format
 msgctxt "unit-format"
 msgid "%s m²"
 msgstr "%s m²"
 
-#: src/unit-manager.c:75
+#: src/unit-manager.c:72
 msgctxt "unit-symbols"
 msgid "m²"
 msgstr "m²"
 
-#: src/unit-manager.c:76
+#: src/unit-manager.c:73
 msgid "Square Centimeters"
 msgstr "Santimetrekare"
 
-#: src/unit-manager.c:76
+#: src/unit-manager.c:73
 #, c-format
 msgctxt "unit-format"
 msgid "%s cm²"
 msgstr "%s cm²"
 
-#: src/unit-manager.c:76
+#: src/unit-manager.c:73
 msgctxt "unit-symbols"
 msgid "cm²"
 msgstr "cm²"
 
-#: src/unit-manager.c:77
+#: src/unit-manager.c:74
 msgid "Square Millimeters"
 msgstr "Milimetrekare"
 
-#: src/unit-manager.c:77
+#: src/unit-manager.c:74
 #, c-format
 msgctxt "unit-format"
 msgid "%s mm²"
 msgstr "%s mm²"
 
-#: src/unit-manager.c:77
+#: src/unit-manager.c:74
 msgctxt "unit-symbols"
 msgid "mm²"
 msgstr "mm²"
 
-#: src/unit-manager.c:78
+#: src/unit-manager.c:75
 msgid "Cubic Meters"
 msgstr "Metreküp"
 
-#: src/unit-manager.c:78
+#: src/unit-manager.c:75
 #, c-format
 msgctxt "unit-format"
 msgid "%s m³"
 msgstr "%s m³"
 
-#: src/unit-manager.c:78
+#: src/unit-manager.c:75
 msgctxt "unit-symbols"
 msgid "m³"
 msgstr "m³"
 
-#: src/unit-manager.c:79
+#: src/unit-manager.c:76
 msgid "Gallons"
 msgstr "Galon"
 
-#: src/unit-manager.c:79
+#: src/unit-manager.c:76
 #, c-format
 msgctxt "unit-format"
 msgid "%s gal"
 msgstr "%s gal"
 
-#: src/unit-manager.c:79
+#: src/unit-manager.c:76
 msgctxt "unit-symbols"
 msgid "gallon,gallons,gal"
 msgstr "galon,galon,gal"
 
-#: src/unit-manager.c:80
+#: src/unit-manager.c:77
 msgid "Litres"
 msgstr "Litre"
 
-#: src/unit-manager.c:80
+#: src/unit-manager.c:77
 #, c-format
 msgctxt "unit-format"
 msgid "%s L"
 msgstr "%s L"
 
-#: src/unit-manager.c:80
+#: src/unit-manager.c:77
 msgctxt "unit-symbols"
 msgid "litre,litres,liter,liters,L"
 msgstr "litre,litre,litre,litre,L"
 
-#: src/unit-manager.c:81
+#: src/unit-manager.c:78
 msgid "Quarts"
 msgstr "Kuart"
 
-#: src/unit-manager.c:81
+#: src/unit-manager.c:78
 #, c-format
 msgctxt "unit-format"
 msgid "%s qt"
 msgstr "%s qt"
 
-#: src/unit-manager.c:81
+#: src/unit-manager.c:78
 msgctxt "unit-symbols"
 msgid "quart,quarts,qt"
 msgstr "kuart,kuart,qt"
 
-#: src/unit-manager.c:82
+#: src/unit-manager.c:79
 msgid "Pints"
 msgstr "Pint"
 
-#: src/unit-manager.c:82
+#: src/unit-manager.c:79
 #, c-format
 msgctxt "unit-format"
 msgid "%s pt"
 msgstr "%s pt"
 
-#: src/unit-manager.c:82
+#: src/unit-manager.c:79
 msgctxt "unit-symbols"
 msgid "pint,pints,pt"
 msgstr "pint,pint,pt"
 
-#: src/unit-manager.c:83
+#: src/unit-manager.c:80
 msgid "Millilitres"
 msgstr "Millilitre"
 
-#: src/unit-manager.c:83
+#: src/unit-manager.c:80
 #, c-format
 msgctxt "unit-format"
 msgid "%s mL"
 msgstr "%s mL"
 
-#: src/unit-manager.c:83
+#: src/unit-manager.c:80
 msgctxt "unit-symbols"
 msgid "millilitre,millilitres,milliliter,milliliters,mL,cm³"
 msgstr "mililitre,mililitre,mililitre,mililitre,mililitre,mL,cm³"
 
-#: src/unit-manager.c:84
+#: src/unit-manager.c:81
 msgid "Microlitres"
 msgstr "Mikrolitre"
 
-#: src/unit-manager.c:84
+#: src/unit-manager.c:81
 #, c-format
 msgctxt "unit-format"
 msgid "%s μL"
 msgstr "%s μL"
 
-#: src/unit-manager.c:84
+#: src/unit-manager.c:81
 msgctxt "unit-symbols"
 msgid "mm³,μL,uL"
 msgstr "mm³,μL,uL"
 
-#: src/unit-manager.c:85
+#: src/unit-manager.c:82
 msgid "Tonnes"
 msgstr "Ton"
 
-#: src/unit-manager.c:85
+#: src/unit-manager.c:82
 #, c-format
 msgctxt "unit-format"
 msgid "%s T"
 msgstr "%s T"
 
-#: src/unit-manager.c:85
+#: src/unit-manager.c:82
 msgctxt "unit-symbols"
 msgid "tonne,tonnes"
 msgstr "ton,ton"
 
-#: src/unit-manager.c:86
+#: src/unit-manager.c:83
 msgid "Kilograms"
 msgstr "Kilogram"
 
-#: src/unit-manager.c:86
+#: src/unit-manager.c:83
 #, c-format
 msgctxt "unit-format"
 msgid "%s kg"
 msgstr "%s kg"
 
-#: src/unit-manager.c:86
+#: src/unit-manager.c:83
 msgctxt "unit-symbols"
 msgid "kilogram,kilograms,kilogramme,kilogrammes,kg,kgs"
 msgstr "kilogram,kilogram,kilogram,kilogram,kg,kg"
 
-#: src/unit-manager.c:87
+#: src/unit-manager.c:84
 msgid "Pounds"
 msgstr "Pound"
 
-#: src/unit-manager.c:87
+#: src/unit-manager.c:84
 #, c-format
 msgctxt "unit-format"
 msgid "%s lb"
 msgstr "%s lb"
 
-#: src/unit-manager.c:87
+#: src/unit-manager.c:84
 msgctxt "unit-symbols"
 msgid "pound,pounds,lb"
 msgstr "pound,pound,lb"
 
-#: src/unit-manager.c:88
+#: src/unit-manager.c:85
 msgid "Ounces"
 msgstr "Ons"
 
-#: src/unit-manager.c:88
+#: src/unit-manager.c:85
 #, c-format
 msgctxt "unit-format"
 msgid "%s oz"
 msgstr "%s oz"
 
-#: src/unit-manager.c:88
+#: src/unit-manager.c:85
 msgctxt "unit-symbols"
 msgid "ounce,ounces,oz"
 msgstr "ons,ons,oz"
 
-#: src/unit-manager.c:89
+#: src/unit-manager.c:86
 msgid "Grams"
 msgstr "Gram"
 
-#: src/unit-manager.c:89
+#: src/unit-manager.c:86
 #, c-format
 msgctxt "unit-format"
 msgid "%s g"
 msgstr "%s g"
 
-#: src/unit-manager.c:89
+#: src/unit-manager.c:86
 msgctxt "unit-symbols"
 msgid "gram,grams,gramme,grammes,g"
 msgstr "gram,gram,gram,gram,g"
 
-#: src/unit-manager.c:90
+#: src/unit-manager.c:87
 msgid "Years"
 msgstr "Yıl"
 
-#: src/unit-manager.c:90
+#: src/unit-manager.c:87
 #, c-format
 msgctxt "unit-format"
 msgid "%s years"
 msgstr "%s yıl"
 
-#: src/unit-manager.c:90
+#: src/unit-manager.c:87
 msgctxt "unit-symbols"
 msgid "year,years"
 msgstr "yıl,yıl"
 
-#: src/unit-manager.c:91
+#: src/unit-manager.c:88
 msgid "Days"
 msgstr "Gün"
 
-#: src/unit-manager.c:91
+#: src/unit-manager.c:88
 #, c-format
 msgctxt "unit-format"
 msgid "%s days"
 msgstr "%s gün"
 
-#: src/unit-manager.c:91
+#: src/unit-manager.c:88
 msgctxt "unit-symbols"
 msgid "day,days"
 msgstr "gün,gün"
 
-#: src/unit-manager.c:92
+#: src/unit-manager.c:89
 msgid "Hours"
 msgstr "Saat"
 
-#: src/unit-manager.c:92
+#: src/unit-manager.c:89
 #, c-format
 msgctxt "unit-format"
 msgid "%s hours"
 msgstr "%s saat"
 
-#: src/unit-manager.c:92
+#: src/unit-manager.c:89
 msgctxt "unit-symbols"
 msgid "hour,hours"
 msgstr "saat,saat"
 
-#: src/unit-manager.c:93
+#: src/unit-manager.c:90
 msgid "Minutes"
 msgstr "Dakika"
 
-#: src/unit-manager.c:93
+#: src/unit-manager.c:90
 #, c-format
 msgctxt "unit-format"
 msgid "%s minutes"
 msgstr "%s dakika"
 
-#: src/unit-manager.c:93
+#: src/unit-manager.c:90
 msgctxt "unit-symbols"
 msgid "minute,minutes"
 msgstr "dakika,dakika"
 
-#: src/unit-manager.c:94
+#: src/unit-manager.c:91
 msgid "Seconds"
 msgstr "Saniye"
 
-#: src/unit-manager.c:94
+#: src/unit-manager.c:91
 #, c-format
 msgctxt "unit-format"
 msgid "%s s"
 msgstr "%s s"
 
-#: src/unit-manager.c:94
+#: src/unit-manager.c:91
 msgctxt "unit-symbols"
 msgid "second,seconds,s"
 msgstr "saniye,saniye,s"
 
-#: src/unit-manager.c:95
+#: src/unit-manager.c:92
 msgid "Milliseconds"
 msgstr "Milisaniye"
 
-#: src/unit-manager.c:95
+#: src/unit-manager.c:92
 #, c-format
 msgctxt "unit-format"
 msgid "%s ms"
 msgstr "%s ms"
 
-#: src/unit-manager.c:95
+#: src/unit-manager.c:92
 msgctxt "unit-symbols"
 msgid "millisecond,milliseconds,ms"
 msgstr "milisaniye,milisaniye,ms"
 
-#: src/unit-manager.c:96
+#: src/unit-manager.c:93
 msgid "Microseconds"
 msgstr "Mikrosaniye"
 
-#: src/unit-manager.c:96
+#: src/unit-manager.c:93
 #, c-format
 msgctxt "unit-format"
 msgid "%s μs"
 msgstr "%s μs"
 
-#: src/unit-manager.c:96
+#: src/unit-manager.c:93
 msgctxt "unit-symbols"
 msgid "microsecond,microseconds,us,μs"
 msgstr "mikrosaniye,mikrosaniye,us,μs"
 
-#: src/unit-manager.c:97
+#: src/unit-manager.c:94
 msgid "Celsius"
 msgstr "Santigrat"
 
-#: src/unit-manager.c:97
+#: src/unit-manager.c:94
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚C"
 msgstr "%s ˚C"
 
-#: src/unit-manager.c:97
+#: src/unit-manager.c:94
 msgctxt "unit-symbols"
 msgid "degC,˚C"
 msgstr "derece santigrat,˚C"
 
-#: src/unit-manager.c:98
+#: src/unit-manager.c:95
 msgid "Farenheit"
 msgstr "Fahrenhayt"
 
-#: src/unit-manager.c:98
+#: src/unit-manager.c:95
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚F"
 msgstr "%s ˚F"
 
-#: src/unit-manager.c:98
+#: src/unit-manager.c:95
 msgctxt "unit-symbols"
 msgid "degF,˚F"
 msgstr "derece fahrenhayt,˚F"
 
-#: src/unit-manager.c:99
+#: src/unit-manager.c:96
 msgid "Kelvin"
 msgstr "Kelvin"
 
-#: src/unit-manager.c:99
+#: src/unit-manager.c:96
 #, c-format
 msgctxt "unit-format"
 msgid "%s K"
 msgstr "%s K"
 
-#: src/unit-manager.c:99
+#: src/unit-manager.c:96
 msgctxt "unit-symbols"
 msgid "K"
 msgstr "K"
 
-#: src/unit-manager.c:100
+#: src/unit-manager.c:97
 msgid "Rankine"
 msgstr "Rankin"
 
-#: src/unit-manager.c:100
+#: src/unit-manager.c:97
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚R"
 msgstr "%s ˚R"
 
-#: src/unit-manager.c:100
+#: src/unit-manager.c:97
 msgctxt "unit-symbols"
 msgid "degR,˚R,˚Ra"
 msgstr "degR,˚R,˚Ra"
 
-#: src/unit-manager.c:109
+#: src/unit-manager.c:106
 msgid "Angle"
 msgstr "Açı"
 
-#: src/unit-manager.c:110
+#: src/unit-manager.c:107
 msgid "Length"
 msgstr "Uzunluk"
 
-#: src/unit-manager.c:111
+#: src/unit-manager.c:108
 msgid "Area"
 msgstr "Alan"
 
-#: src/unit-manager.c:112
+#: src/unit-manager.c:109
 msgid "Volume"
 msgstr "Ses Düzeyi"
 
-#: src/unit-manager.c:113
+#: src/unit-manager.c:110
 msgid "Weight"
 msgstr "Ağırlık"
 
-#: src/unit-manager.c:114
+#: src/unit-manager.c:111
 msgid "Duration"
 msgstr "Süre"
 
-#: src/unit-manager.c:115
+#: src/unit-manager.c:112
 msgid "Temperature"
 msgstr "Sıcaklık"
 
-#: src/unit-manager.c:127
+#: src/unit-manager.c:124
 msgid "Currency"
 msgstr "Para Birimi"
 
-#. Translators: result of currency conversion, %s is the symbol, %%s is the
-#. placeholder for amount, i.e.: USD100
-#: src/unit-manager.c:137
+#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
+#: src/unit-manager.c:134
 #, c-format
 msgid "%s%%s"
 msgstr "%%s%s"
