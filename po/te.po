@@ -2,23 +2,23 @@
 # Copyright (C) YEAR MATE Desktop Environment team
 # This file is distributed under the same license as the mate-calc package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # ప్రవీణ్ ఇళ్ళ <mail2ipn@gmail.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-calc 1.25.0\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-calc/issues\n"
-"POT-Creation-Date: 2021-05-30 11:18+0200\n"
+"POT-Creation-Date: 2022-10-19 21:15+0200\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2020\n"
 "Language-Team: Telugu (https://www.transifex.com/mate/teams/13566/te/)\n"
+"Language: te\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: te\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Accessible name for the factorize button
@@ -52,7 +52,7 @@ msgstr "x"
 #. Accessible name for the memory value button
 #. Tooltip for the memory button
 #: src/buttons-advanced.ui:417 src/buttons-financial.ui:1894
-#: src/math-buttons.c:230
+#: src/math-buttons.c:234
 msgid "Memory"
 msgstr "మెమోరీ"
 
@@ -115,7 +115,7 @@ msgstr ""
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
-#: src/buttons-financial.ui:8 src/math-buttons.c:254
+#: src/buttons-financial.ui:8 src/math-buttons.c:258
 msgid "Compounding Term"
 msgstr "కాంపౌండింగ్ గడువు"
 
@@ -153,9 +153,8 @@ msgid ""
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
 msgstr ""
-"ప్రస్తుత విలువనుండి భవిష్యవిలువకు యెంత పెట్టుబడిని పెంచుటకు యెన్ని కాంపౌండ్ "
-"ఆవృతాలు తప్పనిసరౌతాయో లెక్కిస్తుంది, వొక్క కాంపౌండ్ అవృతానికి నిర్ధిష్ట "
-"వడ్డీ చొప్పున."
+"ప్రస్తుత విలువనుండి భవిష్యవిలువకు యెంత పెట్టుబడిని పెంచుటకు యెన్ని కాంపౌండ్ ఆవృతాలు తప్పనిసరౌతాయో "
+"లెక్కిస్తుంది, వొక్క కాంపౌండ్ అవృతానికి నిర్ధిష్ట వడ్డీ చొప్పున."
 
 #. Compounding Term Dialog: Label before periodic interest rate input
 #. Future Value Dialog: Label before periodic interest rate input
@@ -191,8 +190,8 @@ msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
 msgstr ""
-"double-declining మిగులు పద్దతిని వుపయోగించి, తెలుపబడిన కాలపరిమితికి ఆస్తిపైన"
-" తరుగుదల భరణమును గణిస్తుంది."
+"double-declining మిగులు పద్దతిని వుపయోగించి, తెలుపబడిన కాలపరిమితికి ఆస్తిపైన తరుగుదల భరణమును "
+"గణిస్తుంది."
 
 #. Double-Declining Depreciation Dialog: Label before life input
 #. Straight-Line Depreciation Dialog: Label before life input
@@ -216,7 +215,7 @@ msgstr "ధర (_o):"
 
 #. Title of Future Value dialog
 #. Tooltip for the future value button
-#: src/buttons-financial.ui:374 src/math-buttons.c:260
+#: src/buttons-financial.ui:374 src/math-buttons.c:264
 msgid "Future Value"
 msgstr "భవిష్య విలువ"
 
@@ -233,8 +232,8 @@ msgid ""
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
 msgstr ""
-"గడువు లోపల ఆవృత వడ్డీపై జరిపిన సమవిభజిత చెల్లింపులు పోను మిగిలిన దానిపై "
-"ఆధారపడి, పెట్టుబడియొక్క భవిష్య విలువను లెక్కిస్తుంది."
+"గడువు లోపల ఆవృత వడ్డీపై జరిపిన సమవిభజిత చెల్లింపులు పోను మిగిలిన దానిపై ఆధారపడి, పెట్టుబడియొక్క భవిష్య "
+"విలువను లెక్కిస్తుంది."
 
 #. Future Value Dialog: Label before periodic payment input
 #. Present Value Dialog: Label before periodic payment input
@@ -246,7 +245,7 @@ msgstr "ఆవర్తనా చెల్లింపు (_P):"
 
 #. Title of Gross Profit Margin dialog
 #. Tooltip for the gross profit margin button
-#: src/buttons-financial.ui:557 src/math-buttons.c:281
+#: src/buttons-financial.ui:557 src/math-buttons.c:285
 msgid "Gross Profit Margin"
 msgstr "స్థూల లాభం ఉపాంతం"
 
@@ -256,8 +255,8 @@ msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
 msgstr ""
-"ఉత్పత్తి ధర మరియు రావలిసిన స్థూల లాభం దృష్టిలో వుంచుకొని, ఉత్పత్తి యొక్క "
-"పునఃఅమ్మకం ధరను లెక్కిస్తుంది."
+"ఉత్పత్తి ధర మరియు రావలిసిన స్థూల లాభం దృష్టిలో వుంచుకొని, ఉత్పత్తి యొక్క పునఃఅమ్మకం ధరను "
+"లెక్కిస్తుంది."
 
 #. Gross Profit Margin Dialog: Label before margin input
 #: src/buttons-financial.ui:684
@@ -266,7 +265,7 @@ msgstr "ఉపాంతం (_M):"
 
 #. Title of Periodic Payment dialog
 #. Tooltip for the periodic payment button
-#: src/buttons-financial.ui:710 src/math-buttons.c:278
+#: src/buttons-financial.ui:710 src/math-buttons.c:282
 msgid "Periodic Payment"
 msgstr "ఆవర్తనా చెల్లింపు"
 
@@ -276,8 +275,8 @@ msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
 msgstr ""
-"ఋణం(లోను) యొక్క వాయిదా చెల్లింపు మొత్తమును గణించు, ఇచట వాయిదా అనగా ప్రతి "
-"చెల్లింపు గడువు అంతములో చెల్లించునది."
+"ఋణం(లోను) యొక్క వాయిదా చెల్లింపు మొత్తమును గణించు, ఇచట వాయిదా అనగా ప్రతి చెల్లింపు గడువు అంతములో "
+"చెల్లించునది."
 
 #. Periodic Payment Dialog: Label before term input
 #. Periodic Interest Rate Dialog: Label before term input
@@ -292,7 +291,7 @@ msgstr "అసలు (_P):"
 
 #. Title of Present Value dialog
 #. Tooltip for the present value button
-#: src/buttons-financial.ui:894 src/math-buttons.c:275
+#: src/buttons-financial.ui:894 src/math-buttons.c:279
 msgid "Present Value"
 msgstr "ప్రస్తుత విలువ"
 
@@ -303,12 +302,12 @@ msgid ""
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
 msgstr ""
-"గడువు లోపల ఆవృత వడ్డీపై జరిపిన సమవిభజిత చెల్లింపులు పోను మిగిలిన దానిపై "
-"ఆధారపడి, పెట్టుబడియొక్క ప్రస్తుత విలువను లెక్కిస్తుంది."
+"గడువు లోపల ఆవృత వడ్డీపై జరిపిన సమవిభజిత చెల్లింపులు పోను మిగిలిన దానిపై ఆధారపడి, పెట్టుబడియొక్క "
+"ప్రస్తుత విలువను లెక్కిస్తుంది."
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
-#: src/buttons-financial.ui:1078 src/math-buttons.c:272
+#: src/buttons-financial.ui:1078 src/math-buttons.c:276
 msgid "Periodic Interest Rate"
 msgstr "ఆవర్తనా వడ్డీ రేటు"
 
@@ -318,8 +317,8 @@ msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
 msgstr ""
-"కౌంపౌండింగ్ ఆవృతాల నందు, భవిష్య విలువనకు పెట్టుబడిని పెంచుటకు తప్పనిసరైన "
-"ఆవృత వడ్డీను లెక్కగడుతుంది."
+"కౌంపౌండింగ్ ఆవృతాల నందు, భవిష్య విలువనకు పెట్టుబడిని పెంచుటకు తప్పనిసరైన ఆవృత వడ్డీను "
+"లెక్కగడుతుంది."
 
 #. Title of Straight-Line Depreciation dialog
 #: src/buttons-financial.ui:1262
@@ -346,10 +345,9 @@ msgid ""
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
 msgstr ""
-"ఒక ఆస్థి యొక్క స్ట్రైల్-లైన్ తరుగుదలను వొక కాలానికి లెక్కిస్తుంది. తరుగుదల "
-"యొక్క స్ట్రైట్-లైన్ విధానము అస్తియొక్క వుపయోగకర జీవితకాలమునందు తరుగుదల ధరను "
-"సరిమానంలో విభజించుతుంది. ఉపయోగకర జీవిత కాలం అంటే, వొక ఆస్తి యెన్ని సమయాలు "
-"సాధారణంగా సంవత్సరాలు, తరుగుచేయబడుతుందో."
+"ఒక ఆస్థి యొక్క స్ట్రైల్-లైన్ తరుగుదలను వొక కాలానికి లెక్కిస్తుంది. తరుగుదల యొక్క స్ట్రైట్-లైన్ విధానము "
+"అస్తియొక్క వుపయోగకర జీవితకాలమునందు తరుగుదల ధరను సరిమానంలో విభజించుతుంది. ఉపయోగకర జీవిత కాలం "
+"అంటే, వొక ఆస్తి యెన్ని సమయాలు సాధారణంగా సంవత్సరాలు, తరుగుచేయబడుతుందో."
 
 #. Title of Sum-of-the-Years'-Digits Depreciation dialog
 #: src/buttons-financial.ui:1446
@@ -360,16 +358,15 @@ msgstr "Sum-Of-The-Years'-Digits తరుగుదల"
 #: src/buttons-financial.ui:1631
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
-" accelerates the rate of depreciation, so that more depreciation expense "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
+"accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
 msgstr ""
-"Sum-Of-The-Years'-Digits పద్దతిని ఉపయోగించి, ఆస్తి పైన తరుగుదల భరణమును "
-"తెలుపబడిన కాలమునకు లెక్కిస్తుంది. తరుగుదల యొక్క ఈ పద్దతి తరుగుదల రేటును "
-"త్వరుణీకరిస్తుంది, అందువలన ఎక్కువ తరుగుదల ఖర్చు తరువాతి సమయాలకన్నా ముందల "
-"వాటిలో అవసరమౌతుంది. ఎన్ని కాలపరిమితులకు, సాదారణంగా సంవత్సరాలకు, ఆస్తి "
-"తరుగుదలకు గురిఅవుతుందో అది వుపయోగకర జీవితం."
+"Sum-Of-The-Years'-Digits పద్దతిని ఉపయోగించి, ఆస్తి పైన తరుగుదల భరణమును తెలుపబడిన "
+"కాలమునకు లెక్కిస్తుంది. తరుగుదల యొక్క ఈ పద్దతి తరుగుదల రేటును త్వరుణీకరిస్తుంది, అందువలన "
+"ఎక్కువ తరుగుదల ఖర్చు తరువాతి సమయాలకన్నా ముందల వాటిలో అవసరమౌతుంది. ఎన్ని కాలపరిమితులకు, సాదారణంగా "
+"సంవత్సరాలకు, ఆస్తి తరుగుదలకు గురిఅవుతుందో అది వుపయోగకర జీవితం."
 
 #. Title of Payment Period dialog
 #: src/buttons-financial.ui:1659
@@ -385,96 +382,65 @@ msgstr "భవిష్య విలువ (_V)"
 #: src/buttons-financial.ui:1815
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest"
-" rate."
+"of an ordinary annuity, to accumulate a future value, at a periodic interest "
+"rate."
 msgstr ""
-"ఆవర్తన వడ్డీ రేటువద్ద, భవిష్య విలువను కూడగట్టుటకు, వొక సాధారణ వార్షిక "
-"మొత్తము సమయంలో యెన్ని చెల్లింపు సమయాలు వుండాలో లెక్కగడుతుంది."
+"ఆవర్తన వడ్డీ రేటువద్ద, భవిష్య విలువను కూడగట్టుటకు, వొక సాధారణ వార్షిక మొత్తము సమయంలో యెన్ని "
+"చెల్లింపు సమయాలు వుండాలో లెక్కగడుతుంది."
 
-#. Calculates the number of compounding periods necessary to increase an
-#. investment of present value pv to a future value of fv, at a fixed interest
-#. rate of int per compounding period. See also:
-#. http://en.wikipedia.org/wiki/Compound_interest
+#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
 #: src/buttons-financial.ui:2166
 msgid "Ctrm"
 msgstr "Ctrm"
 
-#. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the double-declining balance method. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2181
 msgid "Ddb"
 msgstr "Ddb"
 
-#. Calculates the future value of an investment based on a series of equal
-#. payments, each of amount pmt, at a periodic interest rate of int, over the
-#. number of payment periods in the term. See also:
-#. http://en.wikipedia.org/wiki/Future_value
+#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
 #: src/buttons-financial.ui:2196
 msgid "Fv"
 msgstr "Fv"
 
-#. Calculates the number of payment periods that are necessary during the term
-#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
-#. interest rate of int. Each payment is equal to amount pmt. See also:
-#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
 #: src/buttons-financial.ui:2211
 msgid "Term"
 msgstr "కాలం"
 
-#. Calculates the depreciation allowance on an asset for a specified period of
-#. time, using the Sum-Of-The-Years'-Digits method. This method of
-#. depreciation accelerates the rate of depreciation, so that more
-#. depreciation expense occurs in earlier periods than in later ones. The
-#. depreciable cost is cost - salvage. The useful life is the number of
-#. periods, typically years, over which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2226
 msgid "Syd"
 msgstr "Syd"
 
-#. Calculates the straight-line depreciation of an asset for one period. The
-#. depreciable cost is cost - salvage. The straight-line method of
-#. depreciation divides the depreciable cost evenly over the useful life of an
-#. asset. The useful life is the number of periods, typically years, over
-#. which an asset is depreciated. See also:
-#. http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2241
 msgid "Sln"
 msgstr "Sln"
 
-#. Calculates the periodic interest necessary to increase an investment of
-#. present value pv to a future value of fv, over the number of compounding
-#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
 #: src/buttons-financial.ui:2256
 msgid "Rate"
 msgstr "రేటు"
 
-#. Calculates the present value of an investment based on a series of equal
-#. payments, each of amount pmt, discounted at a periodic interest rate of
-#. int, over the number of payment periods in the term. See also:
-#. http://en.wikipedia.org/wiki/Present_value
+#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
 #: src/buttons-financial.ui:2271
 msgid "Pv"
 msgstr "Pv"
 
-#. Calculates the amount of the periodic payment of a loan, where payments are
-#. made at the end of each payment period. See also:
-#. http://en.wikipedia.org/wiki/Amortization_schedule
+#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
 #: src/buttons-financial.ui:2286
 msgid "Pmt"
 msgstr "Pmt"
 
-#. Calculates the resale price of a product, based on the product cost and the
-#. wanted gross profit margin. See also:
-#. http://en.wikipedia.org/wiki/Gross_profit_margin
+#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
 #: src/buttons-financial.ui:2301
 msgid "Gpm"
 msgstr "Gpm"
 
 #. Title of insert character code dialog
 #. Tooltip for the insert character code button
-#: src/buttons-programming.ui:8 src/math-buttons.c:233
+#: src/buttons-programming.ui:8 src/math-buttons.c:237
 msgid "Insert Character Code"
 msgstr "అక్షరము కోడును ప్రవేశపెట్టు"
 
@@ -524,7 +490,7 @@ msgid "64-bit"
 msgstr "64-బిట్"
 
 #. Title of preferences dialog
-#: src/preferences.ui:60 src/math-preferences.c:239
+#: src/preferences.ui:60 src/math-preferences.c:221
 msgid "Preferences"
 msgstr "అభిరుచులు"
 
@@ -579,12 +545,12 @@ msgid ""
 "project's home page."
 msgstr ""
 
-#: data/mate-calc.desktop.in:3 src/math-window.c:368
+#: data/mate-calc.desktop.in:3 src/math-window.c:366
 msgid "MATE Calculator"
 msgstr ""
 
 #. Title of main window
-#: data/mate-calc.desktop.in:4 src/math-window.c:723
+#: data/mate-calc.desktop.in:4 src/math-window.c:716
 msgid "Calculator"
 msgstr "గణన పరికరం"
 
@@ -592,8 +558,7 @@ msgstr "గణన పరికరం"
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "బీజీయ, శాస్త్రీయ లేదా ఆర్ధిక గణనలను ప్రదర్శించు"
 
-#. Translators: Search terms to find this application. Do NOT translate or
-#. localize the semicolons! The list MUST also end with a semicolon!
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/mate-calc.desktop.in:13
 msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
 msgstr ""
@@ -638,9 +603,7 @@ msgstr "చివరి సున్నాలను చూపించు"
 msgid ""
 "Indicates whether any trailing zeroes after the numeric point should be "
 "shown in the display value."
-msgstr ""
-"ప్రదర్శిత విలువనందు సంఖ్యా బిందువు తర్వాత ఏమైనా సున్నాలను చూపాలేమో "
-"సూచిస్తుంది."
+msgstr "ప్రదర్శిత విలువనందు సంఖ్యా బిందువు తర్వాత ఏమైనా సున్నాలను చూపాలేమో సూచిస్తుంది."
 
 #: data/org.mate.calc.gschema.xml:52
 msgid "Show History"
@@ -946,12 +909,12 @@ msgstr "వెనుజులియన్ బొలివర్"
 msgid "South African Rand"
 msgstr "సౌత్ ఆఫ్రికన్ ర్యాండ్"
 
-#: src/financial.c:79
+#: src/financial.c:78
 msgid "Error: the number of periods must be positive"
 msgstr "దోషం: ఆవర్తనాల సంఖ్య ధనాత్మకం అయివుండాలి"
 
 #. Description on how to use mate-calc displayed on command-line
-#: src/mate-calc.c:86
+#: src/mate-calc.c:83
 #, c-format
 msgid ""
 "Usage:\n"
@@ -960,9 +923,8 @@ msgstr ""
 "వినియోగం:\n"
 "  %s — గణితశాస్త్ర గణనలను జరుపుతుంది."
 
-#. Description on mate-calc command-line help options displayed on command-
-#. line
-#: src/mate-calc.c:94
+#. Description on mate-calc command-line help options displayed on command-line
+#: src/mate-calc.c:91
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -977,29 +939,32 @@ msgstr ""
 "  --help-all                      అన్ని సహాయ ఐచ్ఛికాలను చూపించు\n"
 "  --help-gtk                      GTK+ ఐచ్ఛికాలను చూపించు"
 
-#. Description on mate-calc command-line GTK+ options displayed on command-
-#. line
-#: src/mate-calc.c:105
+#. Description on mate-calc command-line GTK+ options displayed on command-line
+#: src/mate-calc.c:102
 #, c-format
 msgid ""
 "GTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window manager\n"
-"  --name=NAME                     Program name as used by the window manager\n"
+"  --class=CLASS                   Program class as used by the window "
+"manager\n"
+"  --name=NAME                     Program name as used by the window "
+"manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
 "GTK+ ఐచ్ఛికాలు:\n"
-"  --class=CLASS                   Program class as used by the window manager\n"
-"  --name=NAME                     Program name as used by the window manager\n"
+"  --class=CLASS                   Program class as used by the window "
+"manager\n"
+"  --name=NAME                     Program name as used by the window "
+"manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 
 #. Description on mate-calc application options displayed on command-line
-#: src/mate-calc.c:119
+#: src/mate-calc.c:116
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -1009,13 +974,13 @@ msgstr ""
 "  -s, --solve <equation>          ఇచ్చిన సమీకరణాన్ని సాధించండి"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: src/mate-calc.c:167
+#: src/mate-calc.c:163
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "ఆర్గుమెంట్ --solve అనుదానికి పరిష్కరించుటకు వొక సమీకరణం కావాలి"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: src/mate-calc.c:178
+#: src/mate-calc.c:174
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "తెలియని ఆర్గుమెంట్ '%s'"
@@ -1030,294 +995,308 @@ msgstr "పై [Ctrl+P]"
 msgid "Euler’s Number"
 msgstr "యూలర్స్ సంఖ్య"
 
+#. Tooltip for the imaginary number button
+#: src/math-buttons.c:99
+#, fuzzy
+#| msgid "Imaginary Component"
+msgid "Imaginary unit"
+msgstr "కల్పిత అంశం"
+
+#. Tooltip for the numeric point button
+#: src/math-buttons.c:102
+#, fuzzy
+#| msgid "Decimal"
+msgid "Decimal point"
+msgstr "దశాంశం"
+
 #. Tooltip for the subscript button
-#: src/math-buttons.c:101
+#: src/math-buttons.c:105
 msgid "Subscript mode [Alt]"
 msgstr "ఉపస్క్రిప్టు విధం [Alt]"
 
 #. Tooltip for the superscript button
-#: src/math-buttons.c:104
+#: src/math-buttons.c:108
 msgid "Superscript mode [Ctrl]"
 msgstr "సూపర్‌స్క్రిప్టు విధం [Ctrl]"
 
 #. Tooltip for the scientific exponent button
-#: src/math-buttons.c:107
+#: src/math-buttons.c:111
 msgid "Scientific exponent [Ctrl+E]"
 msgstr "శాస్త్రీయ ఘాతం [Ctrl+E]"
 
 #. Tooltip for the add button
-#: src/math-buttons.c:110
+#: src/math-buttons.c:114
 msgid "Add [+]"
 msgstr "కూడు [+]"
 
 #. Tooltip for the subtract button
-#: src/math-buttons.c:113
+#: src/math-buttons.c:117
 msgid "Subtract [-]"
 msgstr "తీసివేత [-]"
 
 #. Tooltip for the multiply button
-#: src/math-buttons.c:116
+#: src/math-buttons.c:120
 msgid "Multiply [*]"
 msgstr "గుణించు [*]"
 
 #. Tooltip for the divide button
-#: src/math-buttons.c:119
+#: src/math-buttons.c:123
 msgid "Divide [/]"
 msgstr "భాగించు [/]"
 
 #. Tooltip for the modulus divide button
-#: src/math-buttons.c:122
+#: src/math-buttons.c:126
 msgid "Modulus divide"
 msgstr "మాడ్యులస్ భాగహారం"
 
 #. Tooltip for the additional functions button
-#: src/math-buttons.c:125
+#: src/math-buttons.c:129
 msgid "Additional Functions"
 msgstr "అదనపు ప్రమేయాలు"
 
 #. Tooltip for the additional constant button
-#: src/math-buttons.c:128
+#: src/math-buttons.c:132
 msgid "Additional constants"
 msgstr ""
 
 #. Tooltip for the exponent button
-#: src/math-buttons.c:131
+#: src/math-buttons.c:135
 msgid "Exponent [^ or **]"
 msgstr "ఘాతం [^ or **]"
 
 #. Tooltip for the square button
-#: src/math-buttons.c:134
+#: src/math-buttons.c:138
 msgid "Square [Ctrl+2]"
 msgstr "వర్గము [Ctrl+2]"
 
 #. Tooltip for the percentage button
-#: src/math-buttons.c:137
+#: src/math-buttons.c:141
 msgid "Percentage [%]"
 msgstr "శాతం [%]"
 
 #. Tooltip for the factorial button
-#: src/math-buttons.c:140
+#: src/math-buttons.c:144
 msgid "Factorial [!]"
 msgstr "క్రమ గుణితం [!]"
 
 #. Tooltip for the absolute value button
-#: src/math-buttons.c:143
+#: src/math-buttons.c:147
 msgid "Absolute value [|]"
 msgstr "ఖచ్చితమైన విలువ [|]"
 
 #. Tooltip for the complex argument component button
-#: src/math-buttons.c:146
+#: src/math-buttons.c:150
 msgid "Complex argument"
 msgstr "సంకీర్ణ వాదన"
 
 #. Tooltip for the complex conjugate button
-#: src/math-buttons.c:149
+#: src/math-buttons.c:153
 msgid "Complex conjugate"
 msgstr "సంకీర్ణ సంయుగ్మం"
 
 #. Tooltip for the root button
-#: src/math-buttons.c:152
+#: src/math-buttons.c:156
 msgid "Root [Ctrl+R]"
 msgstr "మూలం [Ctrl+R]"
 
 #. Tooltip for the square root button
-#: src/math-buttons.c:155
+#: src/math-buttons.c:159
 msgid "Square root [Ctrl+R]"
 msgstr "వర్గమూలం [Ctrl+R]"
 
 #. Tooltip for the logarithm button
-#: src/math-buttons.c:158
+#: src/math-buttons.c:162
 msgid "Logarithm"
 msgstr "సంవర్గమానం"
 
 #. Tooltip for the natural logarithm button
-#: src/math-buttons.c:161
+#: src/math-buttons.c:165
 msgid "Natural Logarithm"
 msgstr "సహజ సంవర్గమానం"
 
 #. Tooltip for the sine button
-#: src/math-buttons.c:164
+#: src/math-buttons.c:168
 msgid "Sine"
 msgstr "సైన్"
 
 #. Tooltip for the cosine button
-#: src/math-buttons.c:167
+#: src/math-buttons.c:171
 msgid "Cosine"
 msgstr "కొసైన్"
 
 #. Tooltip for the tangent button
-#: src/math-buttons.c:170
+#: src/math-buttons.c:174
 msgid "Tangent"
 msgstr "టాంజెంట్"
 
 #. Tooltip for the hyperbolic sine button
-#: src/math-buttons.c:173
+#: src/math-buttons.c:177
 msgid "Hyperbolic Sine"
 msgstr "హైపర్‌బోలిక్ సైన్"
 
 #. Tooltip for the hyperbolic cosine button
-#: src/math-buttons.c:176
+#: src/math-buttons.c:180
 msgid "Hyperbolic Cosine"
 msgstr "హైపర్‌బోలిక్ కొసైన్"
 
 #. Tooltip for the hyperbolic tangent button
-#: src/math-buttons.c:179
+#: src/math-buttons.c:183
 msgid "Hyperbolic Tangent"
 msgstr "హైపర్‌బోలిక్ టాంజెంట్"
 
 #. Tooltip for the inverse sine button
-#: src/math-buttons.c:182
+#: src/math-buttons.c:186
 msgid "Inverse Sine"
 msgstr ""
 
 #. Tooltip for the inverse cosine button
-#: src/math-buttons.c:185
+#: src/math-buttons.c:189
 msgid "Inverse Cosine"
 msgstr ""
 
 #. Tooltip for the inverse tangent button
-#: src/math-buttons.c:188
+#: src/math-buttons.c:192
 msgid "Inverse Tangent"
 msgstr ""
 
 #. Tooltip for the inverse button
-#: src/math-buttons.c:191
+#: src/math-buttons.c:195
 msgid "Inverse [Ctrl+I]"
 msgstr "విలోమం [Ctrl+I]"
 
 #. Tooltip for the boolean AND button
-#: src/math-buttons.c:194
+#: src/math-buttons.c:198
 msgid "Boolean AND"
 msgstr "బూలియన్ AND"
 
 #. Tooltip for the boolean OR button
-#: src/math-buttons.c:197
+#: src/math-buttons.c:201
 msgid "Boolean OR"
 msgstr "బూలియన్ OR"
 
 #. Tooltip for the exclusive OR button
-#: src/math-buttons.c:200
+#: src/math-buttons.c:204
 msgid "Boolean Exclusive OR"
 msgstr "బూలియన్ ఎక్స్లూసివ్ OR"
 
 #. Tooltip for the boolean NOT button
-#: src/math-buttons.c:203
+#: src/math-buttons.c:207
 msgid "Boolean NOT"
 msgstr "బూలియన్ NOT"
 
 #. Tooltip for the integer component button
-#: src/math-buttons.c:206 src/math-buttons.c:997
+#: src/math-buttons.c:210 src/math-buttons.c:972
 msgid "Integer Component"
 msgstr "పూర్ణాంక అంశం"
 
 #. Tooltip for the fractional component button
-#: src/math-buttons.c:209 src/math-buttons.c:999
+#: src/math-buttons.c:213 src/math-buttons.c:974
 msgid "Fractional Component"
 msgstr "భిన్నాంక అంశం"
 
 #. Tooltip for the real component button
-#: src/math-buttons.c:212
+#: src/math-buttons.c:216
 msgid "Real Component"
 msgstr "వాస్తవ అంశం"
 
 #. Tooltip for the imaginary component button
-#: src/math-buttons.c:215
+#: src/math-buttons.c:219
 msgid "Imaginary Component"
 msgstr "కల్పిత అంశం"
 
 #. Tooltip for the ones' complement button
-#: src/math-buttons.c:218
+#: src/math-buttons.c:222
 msgid "Ones' Complement"
 msgstr "ఒకటవ' పూరకము"
 
 #. Tooltip for the two's complement button
-#: src/math-buttons.c:221
+#: src/math-buttons.c:225
 msgid "Two's Complement"
 msgstr "రెండవ' పూరకము"
 
 #. Tooltip for the start group button
-#: src/math-buttons.c:224
+#: src/math-buttons.c:228
 msgid "Start Group [(]"
 msgstr "సమూహాలను ప్రారంభించు [(]"
 
 #. Tooltip for the end group button
-#: src/math-buttons.c:227
+#: src/math-buttons.c:231
 msgid "End Group [)]"
 msgstr "సమూహం ముగించు [)]"
 
 #. Tooltip for the solve button
-#: src/math-buttons.c:236
+#: src/math-buttons.c:240
 msgid "Calculate Result"
 msgstr "ఫలితాన్ని గణించు"
 
 #. Tooltip for the factor button
-#: src/math-buttons.c:239
+#: src/math-buttons.c:243
 msgid "Factorize [Ctrl+F]"
 msgstr "కారణాంకాలుకట్టు [Ctrl+F]"
 
 #. Tooltip for the clear button
-#: src/math-buttons.c:242
+#: src/math-buttons.c:246
 msgid "Clear Display [Escape]"
 msgstr "ప్రదర్శకాన్ని శుభ్రపరుచు [Escape]"
 
 #. Tooltip for the undo button
-#: src/math-buttons.c:245
+#: src/math-buttons.c:249
 msgid "Undo [Ctrl+Z]"
 msgstr "రద్దుచేయి [Ctrl+Z]"
 
 #. Tooltip for the shift left button
-#: src/math-buttons.c:248
+#: src/math-buttons.c:252
 msgid "Shift Left [<<]"
 msgstr ""
 
 #. Tooltip for the shift right button
-#: src/math-buttons.c:251
+#: src/math-buttons.c:255
 msgid "Shift Right [>>]"
 msgstr ""
 
 #. Tooltip for the double declining depreciation button
-#: src/math-buttons.c:257
+#: src/math-buttons.c:261
 msgid "Double Declining Depreciation"
 msgstr "రెట్టింపు-క్షీణతా తరుగుదల"
 
 #. Tooltip for the financial term button
-#: src/math-buttons.c:263
+#: src/math-buttons.c:267
 msgid "Financial Term"
 msgstr "ఆర్థిక వనరుల సంబంధిత పదం"
 
 #. Tooltip for the sum of the years digits depreciation button
-#: src/math-buttons.c:266
+#: src/math-buttons.c:270
 msgid "Sum of the Years Digits Depreciation"
 msgstr "సంవత్సరాల సంఖ్యల యొక్క మొత్తం తరుగుదల"
 
 #. Tooltip for the straight line depreciation button
-#: src/math-buttons.c:269
+#: src/math-buttons.c:273
 msgid "Straight Line Depreciation"
 msgstr "సరళ రేఖ తరుగుదల"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: src/math-buttons.c:630
+#: src/math-buttons.c:624
 msgid "Binary"
 msgstr "బైనరీ"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: src/math-buttons.c:634
+#: src/math-buttons.c:628
 msgid "Octal"
 msgstr "అష్టము"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: src/math-buttons.c:638
+#: src/math-buttons.c:632
 msgid "Decimal"
 msgstr "దశాంశం"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: src/math-buttons.c:642
+#: src/math-buttons.c:636
 msgid "Hexadecimal"
 msgstr "షట్కోణదశాంశం"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: src/math-buttons.c:910 src/math-buttons.c:952
+#: src/math-buttons.c:888 src/math-buttons.c:929
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
@@ -1326,7 +1305,7 @@ msgstr[1] ""
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: src/math-buttons.c:914 src/math-buttons.c:956
+#: src/math-buttons.c:892 src/math-buttons.c:933
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
@@ -1334,252 +1313,245 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. Tooltip for the round button
-#: src/math-buttons.c:1001
+#: src/math-buttons.c:976
 msgid "Round"
 msgstr "గుండ్రం"
 
 #. Tooltip for the floor button
-#: src/math-buttons.c:1003
+#: src/math-buttons.c:978
 msgid "Floor"
 msgstr "నేల"
 
 #. Tooltip for the ceiling button
-#: src/math-buttons.c:1005
+#: src/math-buttons.c:980
 msgid "Ceiling"
 msgstr "కప్పు"
 
 #. Tooltip for the ceiling button
-#: src/math-buttons.c:1007
+#: src/math-buttons.c:982
 msgid "Sign"
 msgstr "చిహ్నం"
 
 #. Tooltip for the c₀ component button
-#: src/math-buttons.c:1049
+#: src/math-buttons.c:1023
 msgid "Velocity of Light"
 msgstr ""
 
-#: src/math-buttons.c:1049
+#: src/math-buttons.c:1023
 msgid "299,792,458 m/s"
 msgstr ""
 
 #. Tooltip for the μ₀ component button
-#: src/math-buttons.c:1051
+#: src/math-buttons.c:1025
 msgid "Magnetic constant"
 msgstr ""
 
-#: src/math-buttons.c:1051
+#: src/math-buttons.c:1025
 msgid "1.2566370614×10⁻⁶ N/A²"
 msgstr ""
 
 #. Tooltip for the ε₀ button
-#: src/math-buttons.c:1053
+#: src/math-buttons.c:1027
 msgid "Electric constant"
 msgstr ""
 
-#: src/math-buttons.c:1053
+#: src/math-buttons.c:1027
 msgid "8.85418782×10⁻¹² s⁴A²/m³kg"
 msgstr ""
 
 #. Tooltip for the G button
-#: src/math-buttons.c:1055
+#: src/math-buttons.c:1029
 msgid "Newtonian constant of gravitation"
 msgstr ""
 
-#: src/math-buttons.c:1055
+#: src/math-buttons.c:1029
 msgid "6.67408×10⁻¹¹ m³/(s²kg)"
 msgstr ""
 
 #. Tooltip for the h button
-#: src/math-buttons.c:1057
+#: src/math-buttons.c:1031
 msgid "Planck constant"
 msgstr ""
 
-#: src/math-buttons.c:1057
+#: src/math-buttons.c:1031
 msgid "6.62607004×10⁻³⁴ m²kg/s"
 msgstr ""
 
 #. Tooltip for the ｅ button
-#: src/math-buttons.c:1059
+#: src/math-buttons.c:1033
 msgid "Elementary charge"
 msgstr ""
 
-#: src/math-buttons.c:1059
+#: src/math-buttons.c:1033
 msgid "1.6021766208(98)×10⁻¹⁹ C"
 msgstr ""
 
 #. Tooltip for the mₑ button
-#: src/math-buttons.c:1061
+#: src/math-buttons.c:1035
 msgid "Electron mass"
 msgstr ""
 
-#: src/math-buttons.c:1061
+#: src/math-buttons.c:1035
 msgid "9.10938356×10⁻³¹ kg"
 msgstr ""
 
 #. Tooltip for the mₚ button
-#: src/math-buttons.c:1063
+#: src/math-buttons.c:1037
 msgid "Proton mass"
 msgstr ""
 
-#: src/math-buttons.c:1063
+#: src/math-buttons.c:1037
 msgid "1.672621898(21)×10⁻²⁷ kg"
 msgstr ""
 
 #. Tooltip for the Nₐ button
-#: src/math-buttons.c:1065
+#: src/math-buttons.c:1039
 msgid "Avogadro constant"
 msgstr ""
 
-#: src/math-buttons.c:1065
+#: src/math-buttons.c:1039
 msgid "6.02214086×10²³ mol⁻¹"
 msgstr ""
 
-#. Label that is displayed between the two conversion combo boxes, e.g.
-#. "[degrees] in [radians]"
-#: src/math-converter.c:418
+#. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
+#: src/math-converter.c:401
 msgid " in "
 msgstr " in "
 
 #. Tooltip for swap conversion button
-#: src/math-converter.c:433
+#: src/math-converter.c:416
 msgid "Switch conversion units"
 msgstr "పరివర్తక ప్రమాణాలను మార్చు"
 
 #. Error shown when trying to undo with no undo history
-#: src/math-equation.c:460
+#: src/math-equation.c:444
 msgid "No undo history"
 msgstr "రద్దుచేసిన ఏమీ చరిత్రలేదు"
 
 #. Error shown when trying to redo with no redo history
-#: src/math-equation.c:487
+#: src/math-equation.c:470
 msgid "No redo history"
 msgstr "మళ్ళీచేసిన ఏ చరిత్రలేదు"
 
-#: src/math-equation.c:949
+#: src/math-equation.c:897
 msgid "No sane value to store"
 msgstr "నిల్వచేయుటకు ఏ సైన్ విలువలేదు"
 
-#. Error displayed to user when they perform a bitwise operation on numbers
-#. greater than the current word
-#: src/math-equation.c:1258
+#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
+#: src/math-equation.c:1190
 msgid "Overflow. Try a bigger word size"
 msgstr "మించినది. పెద్ద పద పరిమాణమును ప్రయత్నంచు"
 
 #. Error displayed to user when they an unknown variable is entered
-#: src/math-equation.c:1263
+#: src/math-equation.c:1195
 #, c-format
 msgid "Unknown variable '%s'"
 msgstr "తెలియని చరరాశి '%s'"
 
 #. Error displayed to user when an unknown function is entered
-#: src/math-equation.c:1268
+#: src/math-equation.c:1200
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr "'%s' ప్రమేయం నిర్వచించబడలేదు"
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: src/math-equation.c:1273
+#: src/math-equation.c:1205
 msgid "Unknown conversion"
 msgstr "తెలియని పరివర్తనం"
 
 #. Uncategorized error. Show error token to user
-#: src/math-equation.c:1281
+#: src/math-equation.c:1213
 #, c-format
 msgid "Malformed expression at token '%s'"
 msgstr ""
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: src/math-equation.c:1284 src/math-equation.c:1289
+#: src/math-equation.c:1216 src/math-equation.c:1221
 msgid "Malformed expression"
 msgstr "తప్పైన సమీకరణం"
 
-#: src/math-equation.c:1304
+#: src/math-equation.c:1235
 msgid "Calculating"
 msgstr "లెక్కిస్తున్నది"
 
 #. Error displayed when trying to factorize a non-integer value
-#: src/math-equation.c:1443
+#: src/math-equation.c:1370
 msgid "Need an integer to factorize"
 msgstr "కారణాంకాలు కట్టుటకు ఒక పూర్ణాంకం అవసరం"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: src/math-equation.c:1516
+#: src/math-equation.c:1439
 msgid "No sane value to bitwise shift"
 msgstr "బిట్ వారీ షిఫ్ట్‍ చేయుటకు ఏ స్థిరచిత్త విలువలేదు"
 
 #. Message displayed when cannot toggle bit in display
-#: src/math-equation.c:1549
+#: src/math-equation.c:1471
 msgid "Displayed value not an integer"
 msgstr "ప్రదర్శించబడిన విలువ పూర్ణాంకం కాదు"
 
 #. Digits localized for the given language
-#: src/math-equation.c:1997
+#: src/math-equation.c:1909
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
-#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
-#. calculations
-#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
-#. grads
-#: src/math-preferences.c:256 src/unit-manager.c:54
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
+#: src/math-preferences.c:238 src/unit-manager.c:51
 msgid "Degrees"
 msgstr "డిగ్రీలు"
 
-#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
-#. calculations
-#: src/math-preferences.c:260 src/unit-manager.c:55
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
+#: src/math-preferences.c:242 src/unit-manager.c:52
 msgid "Radians"
 msgstr "రేడియన్లు"
 
-#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
-#. calculations
-#: src/math-preferences.c:264 src/unit-manager.c:56
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
+#: src/math-preferences.c:246 src/unit-manager.c:53
 msgid "Gradians"
 msgstr "గ్రేడియన్లు"
 
-#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
-#. number 1.234×10^99)
-#: src/math-preferences.c:274
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
+#: src/math-preferences.c:256
 msgid "Automatic"
 msgstr "స్వయంచాలకం"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: src/math-preferences.c:278
+#: src/math-preferences.c:260
 msgid "Fixed"
 msgstr "స్థిర"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: src/math-preferences.c:282
+#: src/math-preferences.c:264
 msgid "Scientific"
 msgstr "శాస్త్రీయం"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: src/math-preferences.c:286
+#: src/math-preferences.c:268
 msgid "Engineering"
 msgstr "ఇంజనీరింగు"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: src/math-preferences.c:297
+#: src/math-preferences.c:279
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "%d దశాంశ స్థానాలను చూపించు (_p)"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: src/math-window.c:294
+#: src/math-window.c:292
 msgid "Unable to open help file"
 msgstr "సహాయపు దస్త్రాన్ని తెరువలేదు"
 
-#: src/math-window.c:312
+#: src/math-window.c:310
 msgid "Sun Microsystems"
 msgstr ""
 
-#: src/math-window.c:313
+#: src/math-window.c:311
 msgid "MATE Documentation Team"
 msgstr ""
 
-#: src/math-window.c:319
+#: src/math-window.c:317
 msgid ""
 "MATE Calculator is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -1587,150 +1559,146 @@ msgid ""
 "any later version."
 msgstr ""
 
-#: src/math-window.c:323
+#: src/math-window.c:321
 msgid ""
 "MATE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
-"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
-" more details."
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
 msgstr ""
 
-#: src/math-window.c:327
+#: src/math-window.c:325
 msgid ""
-"You should have received a copy of the GNU General Public License along with"
-" MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
+"You should have received a copy of the GNU General Public License along with "
+"MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
 
-#: src/math-window.c:364
+#: src/math-window.c:362
 #, c-format
 msgid ""
 "Calculator with financial and scientific modes.\n"
 "Using GNU MPFR %s and GNU MPC %s"
 msgstr ""
 
-#: src/math-window.c:370
+#: src/math-window.c:368
 msgid "About MATE Calculator"
 msgstr ""
 
-#: src/math-window.c:371
+#: src/math-window.c:369
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2021 MATE developers"
 msgstr ""
 
-#: src/math-window.c:377
+#: src/math-window.c:375
 msgid "translator-credits"
 msgstr "Praveen Illa <mail2ipn@gmail.com>, 2014"
 
 #. Calculator menu
-#: src/math-window.c:526
+#: src/math-window.c:523
 msgid "_Calculator"
 msgstr "గణనపరికరం (_C)"
 
 #. Mode menu
-#: src/math-window.c:528
+#: src/math-window.c:525
 msgid "_Mode"
 msgstr ""
 
 #. View menu
-#: src/math-window.c:530
+#: src/math-window.c:527
 msgid "_View"
 msgstr "చూడటం (_V)"
 
 #. Help menu label
-#: src/math-window.c:532
+#: src/math-window.c:529
 msgid "_Help"
 msgstr "సహాయం (_H)"
 
 #. Basic menu label
-#: src/math-window.c:534
+#: src/math-window.c:531
 msgid "_Basic"
 msgstr "ప్రాథమిక (_B)"
 
 #. Advanced menu label
-#: src/math-window.c:536
+#: src/math-window.c:533
 msgid "_Advanced"
 msgstr "ఆధునిక (_A)"
 
 #. Financial menu label
-#: src/math-window.c:538
+#: src/math-window.c:535
 msgid "_Financial"
 msgstr "ఆర్థికగణని (_F)"
 
 #. Programming menu label
-#: src/math-window.c:540
+#: src/math-window.c:537
 msgid "_Programming"
 msgstr "ప్రోగ్రామింగ్ (_P)"
 
 #. History menu label
-#: src/math-window.c:542
+#: src/math-window.c:539
 msgid "_History"
 msgstr ""
 
 #. Help>Contents menu label
-#: src/math-window.c:544
+#: src/math-window.c:541
 msgid "_Contents"
 msgstr "సారములు (_C)"
 
-#: src/math-window.c:547
+#: src/math-window.c:544
 msgid "_Copy"
 msgstr "నకలుతీయు(_C)"
 
-#: src/math-window.c:549
+#: src/math-window.c:546
 msgid "_Paste"
 msgstr "అతికించు (_P)"
 
-#: src/math-window.c:551
+#: src/math-window.c:548
 msgid "_Undo"
 msgstr "చేసింది రద్దు (_U)"
 
-#: src/math-window.c:553
+#: src/math-window.c:550
 msgid "_Redo"
 msgstr "మళ్ళీచేయి (_R)"
 
-#: src/math-window.c:555
+#: src/math-window.c:552
 msgid "_Clear History"
 msgstr ""
 
-#: src/math-window.c:558
+#: src/math-window.c:555
 msgid "_Preferences"
 msgstr "అభిరుచులు (_P)"
 
-#: src/math-window.c:560
+#: src/math-window.c:557
 msgid "_Quit"
 msgstr "నిష్క్రమించు (_Q)"
 
-#: src/math-window.c:581
+#: src/math-window.c:578
 msgid "_About"
 msgstr "గురించి (_A)"
 
-#. Translators: Error displayed when boolean AND attempted on non-integer
-#. values
-#: src/mp-binary.c:119
+#. Translators: Error displayed when boolean AND attempted on non-integer values
+#: src/mp-binary.c:114
 msgid "Boolean AND is only defined for positive integers"
 msgstr "బూలియన్ AND ధనాత్మక పూర్ణాంకాలకు మాత్రమే నిర్వచించబడింది"
 
-#. Translators: Error displayed when boolean OR attempted on non-integer
-#. values
-#: src/mp-binary.c:132
+#. Translators: Error displayed when boolean OR attempted on non-integer values
+#: src/mp-binary.c:126
 msgid "Boolean OR is only defined for positive integers"
 msgstr "బూలియన్ OR ధనాత్మక పూర్ణాంకాలకు మాత్రమే నిర్వచించబడింది"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer
-#. values
-#: src/mp-binary.c:145
+#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#: src/mp-binary.c:138
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "బూలియన్ XOR ధనాత్మక పూర్ణాంకాలకు మాత్రమే నిర్వచించబడింది"
 
-#. Translators: Error displayed when boolean NOT attempted on non-integer
-#. values
-#: src/mp-binary.c:162
+#. Translators: Error displayed when boolean NOT attempted on non-integer values
+#: src/mp-binary.c:154
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "బూలియన్ NOT ధనాత్మక పూర్ణాంకాలకు మాత్రమే నిర్వచించబడింది"
 
 #. Translators: Error displayed when bit shift attempted on non-integer values
-#: src/mp-binary.c:175
+#: src/mp-binary.c:166
 msgid "Shift is only possible on integer values"
 msgstr "షిఫ్టు అనేది పూర్ణాంక విలువలకు మాత్రమే సాధ్యమవుతుంది"
 
@@ -1754,22 +1722,18 @@ msgstr "సున్నా యొక్క సంవర్గమానం అన
 msgid "The zeroth root of a number is undefined"
 msgstr ""
 
-#. Translators: Error displayed when attempted take the factorial of a
-#. negative or complex number
+#. Translators: Error displayed when attempted take the factorial of a negative or complex number
 #: src/mp.c:474
 msgid "Factorial is only defined for non-negative real numbers"
 msgstr ""
 
-#. Translators: Error displayed when attemping to do a modulus division on
-#. non-integer numbers
+#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
 #: src/mp.c:504
 msgid "Modulus division is only defined for integers"
 msgstr "మాడ్యులస్ భాగాహారం పూర్ణాంకాలకు మాత్రమే నిర్వచించబడింది"
 
-#. Translators: Error displayed when attempted to raise 0 to a negative
-#. exponent
-#. Translators: Error displayed when attempted to raise 0 to a negative
-#. re_exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative re_exponent
 #: src/mp.c:575 src/mp.c:602
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "ఒక ఋణాత్మక ఘాతానికి సున్నా యొక్క ఘాతం నిర్వచించబడలేదు"
@@ -1785,768 +1749,763 @@ msgid "The Riemann zeta function is only defined for real numbers ≠1"
 msgstr ""
 
 #. Translators: Error displayed when tangent value is undefined
-#: src/mp-trigonometric.c:120
+#: src/mp-trigonometric.c:116
 msgid ""
-"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
-"(90°)"
-msgstr ""
-"π∕2 (90°) నుండి π (180°) యొక్క గుణిజాలయిన కోణాలకు టాంజెంటు నిర్వచించబడలేదు"
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
+msgstr "π∕2 (90°) నుండి π (180°) యొక్క గుణిజాలయిన కోణాలకు టాంజెంటు నిర్వచించబడలేదు"
 
 #. Translators: Error displayed when inverse sine value is undefined
-#: src/mp-trigonometric.c:150
+#: src/mp-trigonometric.c:145
 msgid "Inverse sine is undefined for values outside [-1, 1]"
 msgstr "[-1, 1] బయటవున్న విలువలకు విలోమ సైన్ నిర్వచించబడలేదు"
 
 #. Translators: Error displayed when inverse sine value is undefined
-#: src/mp-trigonometric.c:175
+#: src/mp-trigonometric.c:169
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
 msgstr "[-1, 1] బయటవున్న విలువలకు విలోమ కొసైన్ నిర్వచించబడలేదు"
 
 #. Translators: Error displayed when inverse sine value is undefined
-#: src/mp-trigonometric.c:201
+#: src/mp-trigonometric.c:194
 msgid "Arctangent function is undefined for values i and -i"
 msgstr ""
 
-#. Translators: Error displayed when inverse hyperbolic cosine value is
-#. undefined
-#: src/mp-trigonometric.c:253
+#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
+#: src/mp-trigonometric.c:241
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
 msgstr "ఒకటి కంటే తక్కువవున్న విలువలకు విలోమ అతిపరావలయ కొసైన్ నిర్వచించబడలేదు"
 
-#. Translators: Error displayed when inverse hyperbolic tangent value is
-#. undefined
-#: src/mp-trigonometric.c:275
+#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
+#: src/mp-trigonometric.c:262
 msgid "Inverse hyperbolic tangent is undefined for values outside (-1, 1)"
 msgstr ""
 
-#: src/unit-manager.c:54
+#: src/unit-manager.c:51
 #, c-format
 msgctxt "unit-format"
 msgid "%s degrees"
 msgstr "%s డిగ్రీలు"
 
-#: src/unit-manager.c:54
+#: src/unit-manager.c:51
 msgctxt "unit-symbols"
 msgid "degree,degrees,deg"
 msgstr "డిగ్రీ,డిగ్రీలు,డిగ్"
 
-#: src/unit-manager.c:55
+#: src/unit-manager.c:52
 #, c-format
 msgctxt "unit-format"
 msgid "%s radians"
 msgstr "%s రేడియన్లు"
 
-#: src/unit-manager.c:55
+#: src/unit-manager.c:52
 msgctxt "unit-symbols"
 msgid "radian,radians,rad"
 msgstr "రేడియన్,రేడియన్లు,రేడ్"
 
-#: src/unit-manager.c:56
+#: src/unit-manager.c:53
 #, c-format
 msgctxt "unit-format"
 msgid "%s gradians"
 msgstr "%s గ్రేడియన్లు"
 
-#: src/unit-manager.c:56
+#: src/unit-manager.c:53
 msgctxt "unit-symbols"
 msgid "gradian,gradians,grad"
 msgstr "గ్రేడియన్,గ్రేడియన్లు,గ్రేడ్"
 
-#: src/unit-manager.c:57
+#: src/unit-manager.c:54
 msgid "Parsecs"
 msgstr "పార్సెక్లు"
 
-#: src/unit-manager.c:57
+#: src/unit-manager.c:54
 #, c-format
 msgctxt "unit-format"
 msgid "%s pc"
 msgstr "%s pc"
 
-#: src/unit-manager.c:57
+#: src/unit-manager.c:54
 msgctxt "unit-symbols"
 msgid "parsec,parsecs,pc"
 msgstr "పార్సెక్,పార్సెక్లు,pc"
 
-#: src/unit-manager.c:58
+#: src/unit-manager.c:55
 msgid "Light Years"
 msgstr "కాంతి సంవత్సరాలు"
 
-#: src/unit-manager.c:58
+#: src/unit-manager.c:55
 #, c-format
 msgctxt "unit-format"
 msgid "%s ly"
 msgstr "%s ly"
 
-#: src/unit-manager.c:58
+#: src/unit-manager.c:55
 msgctxt "unit-symbols"
 msgid "lightyear,lightyears,ly"
 msgstr "కాంతిసంవత్సరం,కాంతిసంవత్సరాలు,ly"
 
-#: src/unit-manager.c:59
+#: src/unit-manager.c:56
 msgid "Astronomical Units"
 msgstr "ఖగోళ ప్రమాణాలు"
 
-#: src/unit-manager.c:59
+#: src/unit-manager.c:56
 #, c-format
 msgctxt "unit-format"
 msgid "%s au"
 msgstr "%s au"
 
-#: src/unit-manager.c:59
+#: src/unit-manager.c:56
 msgctxt "unit-symbols"
 msgid "au"
 msgstr "au"
 
-#: src/unit-manager.c:60
+#: src/unit-manager.c:57
 msgid "Nautical Miles"
 msgstr "నాటికల్ మైళ్ళు"
 
-#: src/unit-manager.c:60
+#: src/unit-manager.c:57
 #, c-format
 msgctxt "unit-format"
 msgid "%s nmi"
 msgstr "%s nmi"
 
-#: src/unit-manager.c:60
+#: src/unit-manager.c:57
 msgctxt "unit-symbols"
 msgid "nmi"
 msgstr "మైళ్ళు"
 
-#: src/unit-manager.c:61
+#: src/unit-manager.c:58
 msgid "Miles"
 msgstr "మైళ్ళు"
 
-#: src/unit-manager.c:61
+#: src/unit-manager.c:58
 #, c-format
 msgctxt "unit-format"
 msgid "%s mi"
 msgstr "%s మై"
 
-#: src/unit-manager.c:61
+#: src/unit-manager.c:58
 msgctxt "unit-symbols"
 msgid "mile,miles,mi"
 msgstr "మైలు,మైళ్ళు,మై"
 
-#: src/unit-manager.c:62
+#: src/unit-manager.c:59
 msgid "Kilometers"
 msgstr "కిలోమీటర్లు"
 
-#: src/unit-manager.c:62
+#: src/unit-manager.c:59
 #, c-format
 msgctxt "unit-format"
 msgid "%s km"
 msgstr "%s కిమీ"
 
-#: src/unit-manager.c:62
+#: src/unit-manager.c:59
 msgctxt "unit-symbols"
 msgid "kilometer,kilometers,km,kms"
 msgstr "కిలోమీటర్,కిలోమీటర్లు,కిమీ,కిమీలు"
 
-#: src/unit-manager.c:63
+#: src/unit-manager.c:60
 msgid "Cables"
 msgstr "కేబుళ్ళు"
 
-#: src/unit-manager.c:63
+#: src/unit-manager.c:60
 #, c-format
 msgctxt "unit-format"
 msgid "%s cb"
 msgstr "%s cb"
 
-#: src/unit-manager.c:63
+#: src/unit-manager.c:60
 msgctxt "unit-symbols"
 msgid "cable,cables,cb"
 msgstr "కేబుల్,కేబుళ్ళు,cb"
 
-#: src/unit-manager.c:64
+#: src/unit-manager.c:61
 msgid "Fathoms"
 msgstr "ఫాథోములు"
 
-#: src/unit-manager.c:64
+#: src/unit-manager.c:61
 #, c-format
 msgctxt "unit-format"
 msgid "%s ftm"
 msgstr "%s ftm"
 
-#: src/unit-manager.c:64
+#: src/unit-manager.c:61
 msgctxt "unit-symbols"
 msgid "fathom,fathoms,ftm"
 msgstr "ఫేథోమ్,ఫేథోమ్లు,ftm"
 
-#: src/unit-manager.c:65
+#: src/unit-manager.c:62
 msgid "Meters"
 msgstr "మీటర్లు"
 
-#: src/unit-manager.c:65
+#: src/unit-manager.c:62
 #, c-format
 msgctxt "unit-format"
 msgid "%s m"
 msgstr "%s m"
 
-#: src/unit-manager.c:65
+#: src/unit-manager.c:62
 msgctxt "unit-symbols"
 msgid "meter,meters,m"
 msgstr "మీటర్,మీటర్లు,మీ"
 
-#: src/unit-manager.c:66
+#: src/unit-manager.c:63
 msgid "Yards"
 msgstr "యార్డులు"
 
-#: src/unit-manager.c:66
+#: src/unit-manager.c:63
 #, c-format
 msgctxt "unit-format"
 msgid "%s yd"
 msgstr "%s yd"
 
-#: src/unit-manager.c:66
+#: src/unit-manager.c:63
 msgctxt "unit-symbols"
 msgid "yard,yards,yd"
 msgstr "యార్డ్,యార్డులు,yd"
 
-#: src/unit-manager.c:67
+#: src/unit-manager.c:64
 msgid "Feet"
 msgstr "అడుగు"
 
-#: src/unit-manager.c:67
+#: src/unit-manager.c:64
 #, c-format
 msgctxt "unit-format"
 msgid "%s ft"
 msgstr "%s ft"
 
-#: src/unit-manager.c:67
+#: src/unit-manager.c:64
 msgctxt "unit-symbols"
 msgid "foot,feet,ft"
 msgstr "అడుగు,ఫీట్,ఎఫ్టి"
 
-#: src/unit-manager.c:68
+#: src/unit-manager.c:65
 msgid "Inches"
 msgstr "ఇంచులు"
 
-#: src/unit-manager.c:68
+#: src/unit-manager.c:65
 #, c-format
 msgctxt "unit-format"
 msgid "%s in"
 msgstr "%s in"
 
-#: src/unit-manager.c:68
+#: src/unit-manager.c:65
 msgctxt "unit-symbols"
 msgid "inch,inches,in"
 msgstr "ఇంచు,ఇంచులు,ఇం"
 
-#: src/unit-manager.c:69
+#: src/unit-manager.c:66
 msgid "Centimeters"
 msgstr "సెంటీమీటర్లు"
 
-#: src/unit-manager.c:69
+#: src/unit-manager.c:66
 #, c-format
 msgctxt "unit-format"
 msgid "%s cm"
 msgstr "%s సెం.మీ"
 
-#: src/unit-manager.c:69
+#: src/unit-manager.c:66
 msgctxt "unit-symbols"
 msgid "centimeter,centimeters,cm,cms"
 msgstr "సెంటీమీటరు,సెంటీమీటర్లు,సెం,సెం.మీ"
 
-#: src/unit-manager.c:70
+#: src/unit-manager.c:67
 msgid "Millimeters"
 msgstr "మిల్లీమీటర్లు"
 
-#: src/unit-manager.c:70
+#: src/unit-manager.c:67
 #, c-format
 msgctxt "unit-format"
 msgid "%s mm"
 msgstr "%s మిమీ"
 
-#: src/unit-manager.c:70
+#: src/unit-manager.c:67
 msgctxt "unit-symbols"
 msgid "millimeter,millimeters,mm"
 msgstr "మిల్లీమీటర్,మిల్లీమీటర్లు,మిమి"
 
-#: src/unit-manager.c:71
+#: src/unit-manager.c:68
 msgid "Micrometers"
 msgstr "మైక్రోమీటర్లు"
 
-#: src/unit-manager.c:71
+#: src/unit-manager.c:68
 #, c-format
 msgctxt "unit-format"
 msgid "%s μm"
 msgstr "%s μm"
 
-#: src/unit-manager.c:71
+#: src/unit-manager.c:68
 msgctxt "unit-symbols"
 msgid "micrometer,micrometers,um"
 msgstr "మైక్రోమీటర్,మైక్రోమీటర్లు,um"
 
-#: src/unit-manager.c:72
+#: src/unit-manager.c:69
 msgid "Nanometers"
 msgstr "నానోమీటర్లు"
 
-#: src/unit-manager.c:72
+#: src/unit-manager.c:69
 #, c-format
 msgctxt "unit-format"
 msgid "%s nm"
 msgstr "%s nm"
 
-#: src/unit-manager.c:72
+#: src/unit-manager.c:69
 msgctxt "unit-symbols"
 msgid "nanometer,nanometers,nm"
 msgstr "నానో మీటర్, నానో మీటర్లు,nm"
 
-#: src/unit-manager.c:73
+#: src/unit-manager.c:70
 msgid "Hectares"
 msgstr "హెక్టార్లు"
 
-#: src/unit-manager.c:73
+#: src/unit-manager.c:70
 #, c-format
 msgctxt "unit-format"
 msgid "%s ha"
 msgstr "%s హెక్టా"
 
-#: src/unit-manager.c:73
+#: src/unit-manager.c:70
 msgctxt "unit-symbols"
 msgid "hectare,hectares,ha"
 msgstr "హెక్టారు,హెక్టార్లు,హెక్టా"
 
-#: src/unit-manager.c:74
+#: src/unit-manager.c:71
 msgid "Acres"
 msgstr "ఎకరాలు"
 
-#: src/unit-manager.c:74
+#: src/unit-manager.c:71
 #, c-format
 msgctxt "unit-format"
 msgid "%s acres"
 msgstr "%s ఎకరాలు"
 
-#: src/unit-manager.c:74
+#: src/unit-manager.c:71
 msgctxt "unit-symbols"
 msgid "acre,acres"
 msgstr "ఎకరం,ఎకరాలు"
 
-#: src/unit-manager.c:75
+#: src/unit-manager.c:72
 msgid "Square Meters"
 msgstr "చదరపు మీటర్లు"
 
-#: src/unit-manager.c:75
+#: src/unit-manager.c:72
 #, c-format
 msgctxt "unit-format"
 msgid "%s m²"
 msgstr "%s m²"
 
-#: src/unit-manager.c:75
+#: src/unit-manager.c:72
 msgctxt "unit-symbols"
 msgid "m²"
 msgstr "m²"
 
-#: src/unit-manager.c:76
+#: src/unit-manager.c:73
 msgid "Square Centimeters"
 msgstr "చదరపు సెంటీమీటర్లు"
 
-#: src/unit-manager.c:76
+#: src/unit-manager.c:73
 #, c-format
 msgctxt "unit-format"
 msgid "%s cm²"
 msgstr "%s cm²"
 
-#: src/unit-manager.c:76
+#: src/unit-manager.c:73
 msgctxt "unit-symbols"
 msgid "cm²"
 msgstr "cm²"
 
-#: src/unit-manager.c:77
+#: src/unit-manager.c:74
 msgid "Square Millimeters"
 msgstr "చదరపు మిల్లీమీటర్లు"
 
-#: src/unit-manager.c:77
+#: src/unit-manager.c:74
 #, c-format
 msgctxt "unit-format"
 msgid "%s mm²"
 msgstr "%s mm²"
 
-#: src/unit-manager.c:77
+#: src/unit-manager.c:74
 msgctxt "unit-symbols"
 msgid "mm²"
 msgstr "mm²"
 
-#: src/unit-manager.c:78
+#: src/unit-manager.c:75
 msgid "Cubic Meters"
 msgstr "క్యూబిక్ మీటర్లు"
 
-#: src/unit-manager.c:78
+#: src/unit-manager.c:75
 #, c-format
 msgctxt "unit-format"
 msgid "%s m³"
 msgstr "%s m³"
 
-#: src/unit-manager.c:78
+#: src/unit-manager.c:75
 msgctxt "unit-symbols"
 msgid "m³"
 msgstr "m³"
 
-#: src/unit-manager.c:79
+#: src/unit-manager.c:76
 msgid "Gallons"
 msgstr "గేల్లాన్స్"
 
-#: src/unit-manager.c:79
+#: src/unit-manager.c:76
 #, c-format
 msgctxt "unit-format"
 msgid "%s gal"
 msgstr "%s gal"
 
-#: src/unit-manager.c:79
+#: src/unit-manager.c:76
 msgctxt "unit-symbols"
 msgid "gallon,gallons,gal"
 msgstr "గాలోన్,గాలోన్లు,గాల్"
 
-#: src/unit-manager.c:80
+#: src/unit-manager.c:77
 msgid "Litres"
 msgstr "లీటర్లు"
 
-#: src/unit-manager.c:80
+#: src/unit-manager.c:77
 #, c-format
 msgctxt "unit-format"
 msgid "%s L"
 msgstr "%s లీ"
 
-#: src/unit-manager.c:80
+#: src/unit-manager.c:77
 msgctxt "unit-symbols"
 msgid "litre,litres,liter,liters,L"
 msgstr "లీటరు,లీటర్లు,లీటెర్,లీటెర్లు,లీ"
 
-#: src/unit-manager.c:81
+#: src/unit-manager.c:78
 msgid "Quarts"
 msgstr "క్వార్ట్లు"
 
-#: src/unit-manager.c:81
+#: src/unit-manager.c:78
 #, c-format
 msgctxt "unit-format"
 msgid "%s qt"
 msgstr "%s qt"
 
-#: src/unit-manager.c:81
+#: src/unit-manager.c:78
 msgctxt "unit-symbols"
 msgid "quart,quarts,qt"
 msgstr "క్వార్ట్,క్వార్టులు,qt"
 
-#: src/unit-manager.c:82
+#: src/unit-manager.c:79
 msgid "Pints"
 msgstr "పింట్లు"
 
-#: src/unit-manager.c:82
+#: src/unit-manager.c:79
 #, c-format
 msgctxt "unit-format"
 msgid "%s pt"
 msgstr "%s pt"
 
-#: src/unit-manager.c:82
+#: src/unit-manager.c:79
 msgctxt "unit-symbols"
 msgid "pint,pints,pt"
 msgstr "పింట్,పింట్లు,pt"
 
-#: src/unit-manager.c:83
+#: src/unit-manager.c:80
 msgid "Millilitres"
 msgstr "మిల్లీలీటర్లు"
 
-#: src/unit-manager.c:83
+#: src/unit-manager.c:80
 #, c-format
 msgctxt "unit-format"
 msgid "%s mL"
 msgstr "%s మిలీ"
 
-#: src/unit-manager.c:83
+#: src/unit-manager.c:80
 msgctxt "unit-symbols"
 msgid "millilitre,millilitres,milliliter,milliliters,mL,cm³"
 msgstr "మిల్లీలీటర్,మిల్లీలీటర్లు,మిల్లీలీటెర్,మిల్లీలీటెర్లు,mL,cm³"
 
-#: src/unit-manager.c:84
+#: src/unit-manager.c:81
 msgid "Microlitres"
 msgstr "మైక్రోలీటర్లు"
 
-#: src/unit-manager.c:84
+#: src/unit-manager.c:81
 #, c-format
 msgctxt "unit-format"
 msgid "%s μL"
 msgstr "%s μL"
 
-#: src/unit-manager.c:84
+#: src/unit-manager.c:81
 msgctxt "unit-symbols"
 msgid "mm³,μL,uL"
 msgstr "mm³,μL,uL"
 
-#: src/unit-manager.c:85
+#: src/unit-manager.c:82
 msgid "Tonnes"
 msgstr "టన్నులు"
 
-#: src/unit-manager.c:85
+#: src/unit-manager.c:82
 #, c-format
 msgctxt "unit-format"
 msgid "%s T"
 msgstr "%s T"
 
-#: src/unit-manager.c:85
+#: src/unit-manager.c:82
 msgctxt "unit-symbols"
 msgid "tonne,tonnes"
 msgstr "టన్ను,టన్నులు"
 
-#: src/unit-manager.c:86
+#: src/unit-manager.c:83
 msgid "Kilograms"
 msgstr "కిలోగ్రాములు"
 
-#: src/unit-manager.c:86
+#: src/unit-manager.c:83
 #, c-format
 msgctxt "unit-format"
 msgid "%s kg"
 msgstr "%s కిగ్రా"
 
-#: src/unit-manager.c:86
+#: src/unit-manager.c:83
 msgctxt "unit-symbols"
 msgid "kilogram,kilograms,kilogramme,kilogrammes,kg,kgs"
 msgstr "కిలోగ్రామ్,కిలోగ్రాములు,కిలోగ్రామ్మ్,కిలోగ్రామ్మ్స్,కేజీ,కేజీలు"
 
-#: src/unit-manager.c:87
+#: src/unit-manager.c:84
 msgid "Pounds"
 msgstr "పౌండ్లు"
 
-#: src/unit-manager.c:87
+#: src/unit-manager.c:84
 #, c-format
 msgctxt "unit-format"
 msgid "%s lb"
 msgstr "%s lb"
 
-#: src/unit-manager.c:87
+#: src/unit-manager.c:84
 msgctxt "unit-symbols"
 msgid "pound,pounds,lb"
 msgstr "పౌండు,పౌండ్లు,lb"
 
-#: src/unit-manager.c:88
+#: src/unit-manager.c:85
 msgid "Ounces"
 msgstr "ఔన్సులు"
 
-#: src/unit-manager.c:88
+#: src/unit-manager.c:85
 #, c-format
 msgctxt "unit-format"
 msgid "%s oz"
 msgstr "%s oz"
 
-#: src/unit-manager.c:88
+#: src/unit-manager.c:85
 msgctxt "unit-symbols"
 msgid "ounce,ounces,oz"
 msgstr "ఔన్సు,ఔన్సులు,oz"
 
-#: src/unit-manager.c:89
+#: src/unit-manager.c:86
 msgid "Grams"
 msgstr "గ్రాములు"
 
-#: src/unit-manager.c:89
+#: src/unit-manager.c:86
 #, c-format
 msgctxt "unit-format"
 msgid "%s g"
 msgstr "%s గ్రా"
 
-#: src/unit-manager.c:89
+#: src/unit-manager.c:86
 msgctxt "unit-symbols"
 msgid "gram,grams,gramme,grammes,g"
 msgstr "గ్రాము,గ్రాములు,గ్రామీ,గ్రామీలు,గ్రా"
 
-#: src/unit-manager.c:90
+#: src/unit-manager.c:87
 msgid "Years"
 msgstr "సంవత్సరాలు"
 
-#: src/unit-manager.c:90
+#: src/unit-manager.c:87
 #, c-format
 msgctxt "unit-format"
 msgid "%s years"
 msgstr "%s సంవత్సరాలు"
 
-#: src/unit-manager.c:90
+#: src/unit-manager.c:87
 msgctxt "unit-symbols"
 msgid "year,years"
 msgstr "సంవత్సరం,సంవత్సరాలు"
 
-#: src/unit-manager.c:91
+#: src/unit-manager.c:88
 msgid "Days"
 msgstr "రోజులు"
 
-#: src/unit-manager.c:91
+#: src/unit-manager.c:88
 #, c-format
 msgctxt "unit-format"
 msgid "%s days"
 msgstr "%s రోజులు"
 
-#: src/unit-manager.c:91
+#: src/unit-manager.c:88
 msgctxt "unit-symbols"
 msgid "day,days"
 msgstr "రోజు,రోజులు"
 
-#: src/unit-manager.c:92
+#: src/unit-manager.c:89
 msgid "Hours"
 msgstr "గంటలు"
 
-#: src/unit-manager.c:92
+#: src/unit-manager.c:89
 #, c-format
 msgctxt "unit-format"
 msgid "%s hours"
 msgstr "%s గంటలు"
 
-#: src/unit-manager.c:92
+#: src/unit-manager.c:89
 msgctxt "unit-symbols"
 msgid "hour,hours"
 msgstr "గంట,గంటలు"
 
-#: src/unit-manager.c:93
+#: src/unit-manager.c:90
 msgid "Minutes"
 msgstr "నిమిషాలు"
 
-#: src/unit-manager.c:93
+#: src/unit-manager.c:90
 #, c-format
 msgctxt "unit-format"
 msgid "%s minutes"
 msgstr "%s నిమిషాలు"
 
-#: src/unit-manager.c:93
+#: src/unit-manager.c:90
 msgctxt "unit-symbols"
 msgid "minute,minutes"
 msgstr "నిమిషం,నిమిషాలు"
 
-#: src/unit-manager.c:94
+#: src/unit-manager.c:91
 msgid "Seconds"
 msgstr "సెకన్లు"
 
-#: src/unit-manager.c:94
+#: src/unit-manager.c:91
 #, c-format
 msgctxt "unit-format"
 msgid "%s s"
 msgstr "%s s"
 
-#: src/unit-manager.c:94
+#: src/unit-manager.c:91
 msgctxt "unit-symbols"
 msgid "second,seconds,s"
 msgstr "సెకను,సెకన్లు, s"
 
-#: src/unit-manager.c:95
+#: src/unit-manager.c:92
 msgid "Milliseconds"
 msgstr "మిల్లీసెకన్లు"
 
-#: src/unit-manager.c:95
+#: src/unit-manager.c:92
 #, c-format
 msgctxt "unit-format"
 msgid "%s ms"
 msgstr "%s మిసె"
 
-#: src/unit-manager.c:95
+#: src/unit-manager.c:92
 msgctxt "unit-symbols"
 msgid "millisecond,milliseconds,ms"
 msgstr "మిల్లీసెకను,మిల్లీసెకన్లు,ms"
 
-#: src/unit-manager.c:96
+#: src/unit-manager.c:93
 msgid "Microseconds"
 msgstr "మైక్రోసెకన్లు"
 
-#: src/unit-manager.c:96
+#: src/unit-manager.c:93
 #, c-format
 msgctxt "unit-format"
 msgid "%s μs"
 msgstr "%s μs"
 
-#: src/unit-manager.c:96
+#: src/unit-manager.c:93
 msgctxt "unit-symbols"
 msgid "microsecond,microseconds,us,μs"
 msgstr "మైక్రోసెకను,మైక్రోసెకన్లు,us,μs"
 
-#: src/unit-manager.c:97
+#: src/unit-manager.c:94
 msgid "Celsius"
 msgstr "సెల్సియస్"
 
-#: src/unit-manager.c:97
+#: src/unit-manager.c:94
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚C"
 msgstr "%s ˚C"
 
-#: src/unit-manager.c:97
+#: src/unit-manager.c:94
 msgctxt "unit-symbols"
 msgid "degC,˚C"
 msgstr "degC,˚C"
 
-#: src/unit-manager.c:98
+#: src/unit-manager.c:95
 msgid "Farenheit"
 msgstr "ఫారెన్‌హీట్"
 
-#: src/unit-manager.c:98
+#: src/unit-manager.c:95
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚F"
 msgstr "%s ˚F"
 
-#: src/unit-manager.c:98
+#: src/unit-manager.c:95
 msgctxt "unit-symbols"
 msgid "degF,˚F"
 msgstr "degF,˚F"
 
-#: src/unit-manager.c:99
+#: src/unit-manager.c:96
 msgid "Kelvin"
 msgstr "కెల్విన్"
 
-#: src/unit-manager.c:99
+#: src/unit-manager.c:96
 #, c-format
 msgctxt "unit-format"
 msgid "%s K"
 msgstr "%s K"
 
-#: src/unit-manager.c:99
+#: src/unit-manager.c:96
 msgctxt "unit-symbols"
 msgid "K"
 msgstr "K"
 
-#: src/unit-manager.c:100
+#: src/unit-manager.c:97
 msgid "Rankine"
 msgstr "ర్యాంకిన్"
 
-#: src/unit-manager.c:100
+#: src/unit-manager.c:97
 #, c-format
 msgctxt "unit-format"
 msgid "%s ˚R"
 msgstr "%s ˚R"
 
-#: src/unit-manager.c:100
+#: src/unit-manager.c:97
 msgctxt "unit-symbols"
 msgid "degR,˚R,˚Ra"
 msgstr "degR,˚R,˚Ra"
 
-#: src/unit-manager.c:109
+#: src/unit-manager.c:106
 msgid "Angle"
 msgstr "కోణం"
 
-#: src/unit-manager.c:110
+#: src/unit-manager.c:107
 msgid "Length"
 msgstr "పొడవు"
 
-#: src/unit-manager.c:111
+#: src/unit-manager.c:108
 msgid "Area"
 msgstr "వైశాల్యం"
 
-#: src/unit-manager.c:112
+#: src/unit-manager.c:109
 msgid "Volume"
 msgstr "సంపుటం"
 
-#: src/unit-manager.c:113
+#: src/unit-manager.c:110
 msgid "Weight"
 msgstr "బరువు"
 
-#: src/unit-manager.c:114
+#: src/unit-manager.c:111
 msgid "Duration"
 msgstr "నిడివి"
 
-#: src/unit-manager.c:115
+#: src/unit-manager.c:112
 msgid "Temperature"
 msgstr "ఉష్ణోగ్రత"
 
-#: src/unit-manager.c:127
+#: src/unit-manager.c:124
 msgid "Currency"
 msgstr "ద్రవ్యం"
 
-#. Translators: result of currency conversion, %s is the symbol, %%s is the
-#. placeholder for amount, i.e.: USD100
-#: src/unit-manager.c:137
+#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
+#: src/unit-manager.c:134
 #, c-format
 msgid "%s%%s"
 msgstr "%s%%s"
