@@ -5,27 +5,27 @@
 # andrea pittaro <transifex@andreapittaro.it>, 2019
 # Wolfgang Ulbrich <mate@raveit.de>, 2019
 # Enrico B. <enricobe@hotmail.com>, 2019
-# Alessandro Volturno <alelvb@inwind.it>, 2021
+# Alessandro Volturno <alelvb@inwind.it>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-16 15:04+0100\n"
 "PO-Revision-Date: 2018-10-01 16:45+0000\n"
-"Last-Translator: Alessandro Volturno <alelvb@inwind.it>, 2021\n"
+"Last-Translator: Alessandro Volturno <alelvb@inwind.it>, 2022\n"
 "Language-Team: Italian (https://www.transifex.com/mate/teams/13566/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Enrico Bella, 2019\n"
-"Alessandro Volturno, 2020"
+"Alessandro Volturno, 2020, 2022"
 
 #. (itstool) path: page/title
 #: C/absolute.page:9
@@ -63,9 +63,9 @@ msgid ""
 "xref=\"superscript\">subscript numbers</link>. The following numbers are "
 "equivalent."
 msgstr ""
-"Per inserire un numero in una base particolare, utilizzare il numero<link "
-"xref=\"superscript\"> con il pedice </link>. Le notazioni seguenti sono "
-"equivalenti."
+"Per inserire un numero in una base particolare, utilizzare il <link "
+"xref=\"superscript\">numero con il pedice </link>. Le notazioni seguenti "
+"sono equivalenti."
 
 #. (itstool) path: example/p
 #: C/base.page:16
@@ -106,8 +106,8 @@ msgid ""
 "To set the base that results are shown in change the <link xref=\"number-"
 "display\">result format</link>."
 msgstr ""
-"Per impostare la base con cui mostrare i risultati <link xref=\"number-"
-"display\"> selezionare il formato </link>."
+"Per impostare la base con cui mostrare i risultati modificare il <link "
+"xref=\"number-display\">formato del risultato </link>."
 
 #. (itstool) path: page/p
 #: C/base.page:35
@@ -115,9 +115,9 @@ msgid ""
 "To change the base of the current result use a base button or "
 "<keyseq><key>Ctrl</key><key>D</key></keyseq> to show in decimal form."
 msgstr ""
-"Per cambiare la base del risultato corrente utilizzare un pulsante delle "
-"basi oppure <keyseq><key>Ctrl</key> <key>D</key></keyseq> per mostrarlo in "
-"forma decimale."
+"Per cambiare la base del risultato corrente utilizzare un pulsante per "
+"modificare la base oppure <keyseq><key>Ctrl</key> <key>D</key></keyseq> per "
+"mostrarlo in forma decimale."
 
 #. (itstool) path: page/title
 #: C/boolean.page:9
@@ -172,8 +172,9 @@ msgid ""
 "<app>MATE Calculator</app> supports complex numbers, as well as the "
 "following functions while in <link xref=\"mouse\">Advanced mode</link>."
 msgstr ""
-"<app>Calcolatrice di MATE</app> supporta i numeri complessi e le seguenti "
-"funzioni de si è in <link xref=\"mouse\">modalità  Avanzata</link>."
+"<app>MATE Calculator</app> supporta i numeri complessi e le seguenti "
+"funzioni se ci si trova nella <link xref=\"mouse\">modalità  "
+"Avanzata</link>."
 
 #. (itstool) path: td/p
 #: C/complex.page:18
@@ -375,7 +376,7 @@ msgstr "Per convertire tra le unità di massa, usare l'operatore <em>in</em>:"
 #. (itstool) path: example/p
 #: C/conv-weight.page:15
 msgid "1kg in pounds"
-msgstr "1 Kg in pounds"
+msgstr "1 Kg in libbre"
 
 #. (itstool) path: note/p
 #: C/conv-weight.page:20
@@ -392,7 +393,7 @@ msgstr "0"
 #. (itstool) path: page/title
 #: C/equation.page:11
 msgid "Basic Equations"
-msgstr "Equazioni"
+msgstr "Equazioni basilari"
 
 #. (itstool) path: page/p
 #: C/equation.page:13
@@ -400,8 +401,8 @@ msgid ""
 "Equations are entered in standard mathematical form. For example to add 7 "
 "and 2 enter the following:"
 msgstr ""
-"Le equazioni sono scritte in forma matematica normale. Per esempio, per "
-"sommare 7 e 2, inserisci il seguente testo:"
+"Le equazioni sono scritte in forma matematica standard. Per esempio, per "
+"sommare 7 e 2, inserire il seguente testo:"
 
 #. (itstool) path: example/p
 #: C/equation.page:18
@@ -477,7 +478,7 @@ msgstr "6!"
 #. (itstool) path: page/title
 #: C/factorize.page:9
 msgid "Factorization"
-msgstr "Fattorizzazione"
+msgstr "Scomposizione in fattori"
 
 #. (itstool) path: page/p
 #: C/factorize.page:11
@@ -504,7 +505,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/financial.page:9
 msgid "Financial Functions"
-msgstr "Funzioni Finanziarie"
+msgstr "Funzioni finanziarie"
 
 #. (itstool) path: page/p
 #: C/financial.page:10
@@ -538,7 +539,7 @@ msgid ""
 "Calculate the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
 msgstr ""
-"Calcolare il tasso di ammortamento di un bene per un determinato periodo di "
+"Calcola il tasso di ammortamento di un bene per un determinato periodo di "
 "tempo, utilizzando il metodo a quote dimezzate."
 
 #. (itstool) path: td/p
@@ -689,13 +690,13 @@ msgid ""
 msgstr ""
 "Le funzioni possono essere utilizzate inserendo il nome della funzione "
 "seguito dall'argomento della funzione. Se l'argomento non è un numero o una "
-"<link xref=\"variable\">variabile</link>, usaree le parentesi attorno ad "
-"esso."
+"<link xref=\"variable\">variabile</link>, utilizzare le parentesi attorno ad"
+" esso."
 
 #. (itstool) path: example/p
 #: C/functions.page:16
 msgid "sin 30"
-msgstr "seno 30"
+msgstr "sin 30"
 
 #. (itstool) path: example/p
 #: C/functions.page:19
@@ -715,7 +716,7 @@ msgstr "abs"
 #. (itstool) path: td/p
 #: C/functions.page:29
 msgid "<link xref=\"absolute\">Absolute Value</link>"
-msgstr "Valore Assoluto"
+msgstr "<link xref=\"absolute\">Valore Assoluto</link>"
 
 #. (itstool) path: td/p
 #: C/functions.page:32
@@ -725,7 +726,7 @@ msgstr "cos"
 #. (itstool) path: td/p
 #: C/functions.page:33
 msgid "<link xref=\"trigonometry\">Cosine</link>"
-msgstr "Coseno"
+msgstr "<link xref=\"trigonometry\">Coseno</link>"
 
 #. (itstool) path: td/p
 #: C/functions.page:36
@@ -735,7 +736,7 @@ msgstr "cosh"
 #. (itstool) path: td/p
 #: C/functions.page:37
 msgid "<link xref=\"trigonometry\">Hyperbolic Cosine</link>"
-msgstr "Coseno iperbolico"
+msgstr "<link xref=\"trigonometry\">Coseno iperbolico</link>"
 
 #. (itstool) path: td/p
 #: C/functions.page:40
@@ -775,7 +776,7 @@ msgstr "ln"
 #. (itstool) path: td/p
 #: C/functions.page:53
 msgid "<link xref=\"logarithm\">Natural Logarithm</link>"
-msgstr "Logaritmo Naturale"
+msgstr "<link xref=\"logarithm\">Logaritmo Naturale</link>"
 
 #. (itstool) path: td/p
 #: C/functions.page:56
@@ -785,7 +786,7 @@ msgstr "log"
 #. (itstool) path: td/p
 #: C/functions.page:57
 msgid "<link xref=\"logarithm\">Logarithm</link>"
-msgstr "Logaritmo"
+msgstr "<link xref=\"logarithm\">Logaritmo</link>"
 
 #. (itstool) path: td/p
 #: C/functions.page:60
@@ -881,7 +882,7 @@ msgstr "Funzione zeta di Riemann"
 #: C/functions.page:96
 msgid "<app>MATE Calculator</app> does not support user-defined functions."
 msgstr ""
-"<app>Calcolatrice di MATE</app> non supporta funzioni definite dall'utente."
+"<app>MATE Calculator</app> non supporta le funzioni definite dall'utente."
 
 #. (itstool) path: credit/name
 #: C/index.page:7
@@ -891,7 +892,7 @@ msgstr "Robert Ancell"
 #. (itstool) path: page/title
 #: C/index.page:13
 msgid "MATE Calculator Help"
-msgstr "Manuale di Aiuto di Calcolatrice di MATE"
+msgstr "Manuale di Aiuto di MATE Calculator"
 
 #. (itstool) path: section/title
 #: C/index.page:16
@@ -1184,7 +1185,7 @@ msgstr ""
 #. (itstool) path: td/p
 #: C/mouse.page:17
 msgid "Basic"
-msgstr "Generali"
+msgstr "Base"
 
 #. (itstool) path: td/p
 #: C/mouse.page:18
@@ -1205,8 +1206,8 @@ msgid ""
 "Provides buttons suitable for advanced mathematics such as <link "
 "xref=\"trigonometry\"/>"
 msgstr ""
-"Mostra i pulsanti necessari a eseguire funzioni matematiche avanzate come ad"
-" esempio <link xref=\"trigonometry\"/>"
+"Fornisce i pulsanti necessari ad eseguire funzioni matematiche avanzate come"
+" ad esempio <link xref=\"trigonometry\"/>"
 
 #. (itstool) path: td/p
 #: C/mouse.page:25
@@ -1219,7 +1220,7 @@ msgid ""
 "Provides buttons suitable for <link xref=\"financial\">financial "
 "equations</link>"
 msgstr ""
-"Mostra i pulsanti relativi alle <link xref=\"financial\">equazioni "
+"Fornisce i pulsanti relativi alle <link xref=\"financial\">equazioni "
 "finanziarie</link>"
 
 #. (itstool) path: td/p
@@ -1230,7 +1231,7 @@ msgstr "Programmazione"
 #. (itstool) path: td/p
 #: C/mouse.page:30
 msgid "Provides buttons suitable for computer programmers"
-msgstr "Mostra i pulsanti dedicati ai programmatori di computer"
+msgstr "Fornisce i pulsanti dedicati ai programmatori di computer"
 
 #. (itstool) path: page/title
 #: C/number-display.page:9
@@ -1276,8 +1277,8 @@ msgid ""
 "Results are displayed in scientific notation except the exponent is always a"
 " multiple of three"
 msgstr ""
-"I numeri verranno mostrati in notazione scientifica mantenendo l'esponente "
-"fisso su un multiplo di 3"
+"I numeri verranno mostrati in notazione scientifica eccetto il fatto che "
+"l'esponente è sempre un multiplo di 3"
 
 #. (itstool) path: td/p
 #: C/number-display.page:29
@@ -1304,9 +1305,8 @@ msgid ""
 "The number of decimal places, if trailing zeroes and if thousands separators"
 " are shown can also be configured."
 msgstr ""
-"Può essere configurato anche il numero di cifre significative mostrate, se "
-"il numero di zeri terminali o se l'opzione di mostrare il separatore delle "
-"migliaia è attivata."
+"Può essere configurato anche il numero di cifre significative, se il numero "
+"di zeri terminali e il separatore delle migliaia sono mostrati."
 
 #. (itstool) path: page/title
 #: C/percentage.page:9
@@ -1325,10 +1325,10 @@ msgid ""
 "the value being added or subtracted from. The following equation calculates "
 "the price of a $140 item with 15% tax (140 + (15÷100)×140)."
 msgstr ""
-"Quando il simbolo della percentuale viene sommato o sottratto, esso viene "
-"risolto come l'uno per cento del valore da cui è sommato o sottratto. La "
-"seguente equazione calcola il prezzo di un oggetto di €140 addizionato di "
-"una tassa del 15% (140 + (15÷100)×140)."
+"Quando la percentuale viene sommata o sottratta, il simbolo della "
+"percentuale viene risolto come l'uno per cento del valore da cui è sommato o"
+" sottratto. La seguente equazione calcola il prezzo di un oggetto di €140 "
+"addizionato di una tassa del 15% (140 + (15÷100)×140)."
 
 #. (itstool) path: example/p
 #: C/percentage.page:19
@@ -1438,7 +1438,7 @@ msgstr "₃√2"
 #. (itstool) path: page/title
 #: C/scientific.page:9
 msgid "Scientific Notation"
-msgstr "Notazione Scientifica"
+msgstr "Notazione scientifica"
 
 #. (itstool) path: page/p
 #: C/scientific.page:11
@@ -1488,8 +1488,8 @@ msgid ""
 "To show results in scientific form change the <link xref=\"number-"
 "display\">result format</link>."
 msgstr ""
-"Per modificare la visualizzazione del risultato in notazione scientifica, "
-"cambiate il <link xref=\"number-display\">formato del risultato</link>."
+"Per mostrare il risultato in notazione scientifica, cambiate il <link "
+"xref=\"number-display\">formato del risultato</link>."
 
 #. (itstool) path: info/title
 #: C/superscript.page:7
@@ -1715,4 +1715,4 @@ msgstr "rand"
 #. (itstool) path: td/p
 #: C/variables.page:53
 msgid "Random value in the range [0,1] (changes on each read)"
-msgstr "Valore casuale nell'intervallo [0,1] (cambia ad ogni esecuzione)"
+msgstr "Valore casuale nell'intervallo [0,1] (cambia ad ogni letura)"

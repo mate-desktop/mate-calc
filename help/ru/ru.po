@@ -2,15 +2,16 @@
 # Translators:
 # Дмитрий Михирев, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
-# Alexei Sorokin, 2018
+# XRevan86, 2018
 # Aleksey Kabanov <ak099@mail.ru>, 2018
+# Ser82, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-16 15:04+0100\n"
 "PO-Revision-Date: 2018-10-01 16:45+0000\n"
-"Last-Translator: Aleksey Kabanov <ak099@mail.ru>, 2018\n"
+"Last-Translator: Ser82, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/mate/teams/13566/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -133,6 +134,9 @@ msgid ""
 "To set the base that results are shown in change the <link xref=\"number-"
 "display\">result format</link>."
 msgstr ""
+"Чтобы задать систему счисления, в которой будут отображаться результаты, "
+"измените значения параметра <link xref=\"number-display\">формат "
+"результатов</link>."
 
 #. (itstool) path: page/p
 #: C/base.page:35
@@ -140,21 +144,24 @@ msgid ""
 "To change the base of the current result use a base button or "
 "<keyseq><key>Ctrl</key><key>D</key></keyseq> to show in decimal form."
 msgstr ""
+"Чтобы установить отображение результатов в десятичном формате, используйте "
+"кнопку выбора системы исчисления или воспользуйтесь комбинацией клавиш "
+"<keyseq><key>Ctrl</key><key>D</key></keyseq>."
 
 #. (itstool) path: page/title
 #: C/boolean.page:9
 msgid "Boolean Algebra"
-msgstr ""
+msgstr "Булева алгебра"
 
 #. (itstool) path: page/p
 #: C/boolean.page:11
 msgid "Boolean algebra can be calculated using the AND, OR and XOR operators."
-msgstr ""
+msgstr "В булевой алгебре можно использовать операторы AND, OR и XOR."
 
 #. (itstool) path: example/p
 #: C/boolean.page:15
 msgid "010011₂ AND 110101₂"
-msgstr ""
+msgstr "010011₂ AND 110101₂"
 
 #. (itstool) path: page/p
 #: C/boolean.page:19
@@ -162,6 +169,8 @@ msgid ""
 "Buttons for these symbols are available in <link xref=\"mouse\">programming "
 "mode</link>."
 msgstr ""
+"Кнопки для этих операторов доступны в <link xref=\"mouse\">режиме "
+"программирования</link>."
 
 #. (itstool) path: page/p
 #: C/boolean.page:22
@@ -170,11 +179,14 @@ msgid ""
 "number. The word size is set from the "
 "<guiseq><gui>Calculator</gui><gui>Preferences</gui></guiseq> menu."
 msgstr ""
+"<link xref=\"function\">Функция</link> NOT инвертирует биты числа. Размер "
+"слова задаётся в <guiseq><gui>Калькуляторе</gui>, меню "
+"<gui>Параметры</gui></guiseq>."
 
 #. (itstool) path: example/p
 #: C/boolean.page:27
 msgid "NOT 010011₂"
-msgstr ""
+msgstr "NOT 010011₂"
 
 #. (itstool) path: page/title
 #: C/complex.page:9
@@ -187,66 +199,68 @@ msgid ""
 "<app>MATE Calculator</app> supports complex numbers, as well as the "
 "following functions while in <link xref=\"mouse\">Advanced mode</link>."
 msgstr ""
+"<app>Калькулятор MATE</app>поддерживает комплексные числа, а также следующие"
+" функции в <link xref=\"mouse\">Расширенном режиме</link>."
 
 #. (itstool) path: td/p
 #: C/complex.page:18
 msgid "Re"
-msgstr ""
+msgstr "Re"
 
 #. (itstool) path: td/p
 #: C/complex.page:19
 msgid "Returns the real part of a complex number. For example:"
-msgstr ""
+msgstr "Возвращает вещественную часть комплексного числа. Например:"
 
 #. (itstool) path: example/p
 #: C/complex.page:21
 msgid "Re (2-5i) = 2"
-msgstr ""
+msgstr "Re (2-5i) = 2"
 
 #. (itstool) path: td/p
 #: C/complex.page:29
 msgid "Im"
-msgstr ""
+msgstr "Im"
 
 #. (itstool) path: td/p
 #: C/complex.page:30
 msgid "Returns the imaginary part of a complex number. For example:"
-msgstr ""
+msgstr "Возвращает мнимую часть комплексного числа. Например:"
 
 #. (itstool) path: example/p
 #: C/complex.page:32
 msgid "Im (2-5i) = -5"
-msgstr ""
+msgstr "Im (2-5i) = -5"
 
 #. (itstool) path: td/p
 #: C/complex.page:40
 msgid "conj"
-msgstr ""
+msgstr "conj"
 
 #. (itstool) path: td/p
 #: C/complex.page:41
 msgid "Returns the conjugate of a complex number. For example:"
-msgstr ""
+msgstr "Возвращает сопряжение комплексного числа. Например:"
 
 #. (itstool) path: example/p
 #: C/complex.page:43
 msgid "conj (2-5i) = 2+5i"
-msgstr ""
+msgstr "conj (2-5i) = 2+5i"
 
 #. (itstool) path: td/p
 #: C/complex.page:51
 msgid "Arg"
-msgstr ""
+msgstr "Arg"
 
 #. (itstool) path: td/p
 #: C/complex.page:52
 msgid "Returns the argument of a complex number. For example:"
-msgstr ""
+msgstr "Возвращает аргумент комплексного числа. Например:"
 
 #. (itstool) path: example/p
 #: C/complex.page:54
 msgid "Arg (2-5i) = -68.1986"
-msgstr ""
+msgstr "Arg (2-5i) = -68.1986"
 
 #. (itstool) path: page/p
 #: C/conv-base.page:11
@@ -255,6 +269,10 @@ msgid ""
 "change the <link xref=\"number-display\">result format</link> from the "
 "<guiseq><gui>Calculator</gui><gui>Preferences</gui></guiseq> menu."
 msgstr ""
+"Для преобразования числа в другую систему счисления введите число (или "
+"решите уравнение) и измените <link xref=\"number-display\">формат "
+"числа</link> в <guiseq><gui>Калькуляторе</gui>, меню "
+"<gui>Параметры</gui></guiseq>."
 
 #. (itstool) path: page/title
 #: C/conv-character.page:9
@@ -330,22 +348,24 @@ msgstr ""
 #. (itstool) path: example/p
 #: C/conv-length.page:15
 msgid "6 meters in inches"
-msgstr ""
+msgstr "6 meters in inches"
 
 #. (itstool) path: example/p
 #: C/conv-length.page:18
 msgid "1 acre in cm²"
-msgstr ""
+msgstr "1 acre in cm²"
 
 #. (itstool) path: example/p
 #: C/conv-length.page:21
 msgid "1 pint in mL"
-msgstr ""
+msgstr "1 pint in mL"
 
 #. (itstool) path: note/p
 #: C/conv-length.page:26
 msgid "Length/Area/Volume conversions must be performed using the keyboard."
 msgstr ""
+"Преобразования единиц длины, площади и объёма должно выполняться с помощью "
+"клавиатуры."
 
 #. (itstool) path: page/title
 #: C/conv-time.page:9
@@ -356,36 +376,39 @@ msgstr "Время"
 #: C/conv-time.page:11
 msgid "To convert between time use the <em>in</em> operator."
 msgstr ""
+"Для преобразования между единицами времени используйте оператор <em>in</em>."
 
 #. (itstool) path: example/p
 #: C/conv-time.page:15
 msgid "3 years in hours"
-msgstr ""
+msgstr "3 years in hours"
 
 #. (itstool) path: note/p
 #: C/conv-time.page:20
 msgid "Time conversions must be performed using the keyboard."
 msgstr ""
+"Преобразования единиц времени должно выполняться с помощью клавиатуры."
 
 #. (itstool) path: page/title
 #: C/conv-weight.page:9
 msgid "Mass"
-msgstr ""
+msgstr "Масса"
 
 #. (itstool) path: page/p
 #: C/conv-weight.page:11
 msgid "To convert between mass use the <em>in</em> operator."
 msgstr ""
+"Для преобразования между единицами массы используйте оператор <em>in</em>."
 
 #. (itstool) path: example/p
 #: C/conv-weight.page:15
 msgid "1kg in pounds"
-msgstr ""
+msgstr "1kg in pounds"
 
 #. (itstool) path: note/p
 #: C/conv-weight.page:20
 msgid "Mass conversions must be performed using the keyboard."
-msgstr ""
+msgstr "Преобразования единиц массы должно выполняться с помощью клавиатуры."
 
 #. (itstool) path: info/title
 #: C/equation.page:7
@@ -396,7 +419,7 @@ msgstr "0"
 #. (itstool) path: page/title
 #: C/equation.page:11
 msgid "Basic Equations"
-msgstr ""
+msgstr "Базовые выражения"
 
 #. (itstool) path: page/p
 #: C/equation.page:13
@@ -404,6 +427,8 @@ msgid ""
 "Equations are entered in standard mathematical form. For example to add 7 "
 "and 2 enter the following:"
 msgstr ""
+"Выражения вводятся в стандартной математической форме. Например, чтобы "
+"сложить 7 и 2, введите:"
 
 #. (itstool) path: example/p
 #: C/equation.page:18
@@ -489,6 +514,9 @@ msgid ""
 "<gui>fact</gui> button. This button is visible in <link "
 "xref=\"mouse\">programming mode</link>."
 msgstr ""
+"Чтобы разложить на множители текущее число, нажмите "
+"<keyseq><key>Ctrl</key><key>F</key></keyseq> или кнопку <gui>fact</gui>. Эта"
+" кнопка видна в <link xref=\"mouse\">режиме программирования</link>."
 
 #. (itstool) path: page/p
 #: C/factorize.page:15
@@ -496,6 +524,8 @@ msgid ""
 "To factorize integers bigger than 2^64 the Miller-Rabin primality test and "
 "Pollard's rho algorithm are used."
 msgstr ""
+"Для разложения на множители целых чисел больше 2^64 используются тест "
+"простоты Миллера-Рабина и Ро-алгоритм Полларда."
 
 #. (itstool) path: page/title
 #: C/financial.page:9
@@ -519,6 +549,9 @@ msgid ""
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
 msgstr ""
+"Вычисляет количество периодов начисления процентов, необходимых для "
+"увеличения инвестиций от текущей стоимости до будущей при фиксированной "
+"процентной ставке за период начисления процентов."
 
 #. (itstool) path: td/p
 #: C/financial.page:19
@@ -531,6 +564,8 @@ msgid ""
 "Calculate the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
 msgstr ""
+"Рассчитывает значение амортизации актива за определенный период времени, "
+"используя метод двойного уменьшаемого остатка."
 
 #. (itstool) path: td/p
 #: C/financial.page:23
@@ -544,6 +579,9 @@ msgid ""
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
 msgstr ""
+"Рассчитывает будущую стоимость инвестиций на основе серии равных платежей с "
+"периодической процентной ставкой для нескольких периодов платежей в течение "
+"заданного срока."
 
 #. (itstool) path: td/p
 #: C/financial.page:27
@@ -556,6 +594,8 @@ msgid ""
 "Calculate the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
 msgstr ""
+"Рассчитывает цену перепродажи продукта на основе себестоимости продукта и "
+"желаемой валовой прибыли."
 
 #. (itstool) path: td/p
 #: C/financial.page:31
@@ -568,6 +608,8 @@ msgid ""
 "Calculate the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period."
 msgstr ""
+"Рассчитываете сумму периодического платежа по кредиту, где платежи "
+"производятся в конце каждого платежного периода."
 
 #. (itstool) path: td/p
 #: C/financial.page:35
@@ -581,6 +623,9 @@ msgid ""
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term."
 msgstr ""
+"Рассчитывает текущую стоимость инвестиции на основе серии равных платежей, "
+"дисконтированных по периодической процентной ставке в течение нескольких "
+"периодов платежей в указанный срок."
 
 #. (itstool) path: td/p
 #: C/financial.page:39
@@ -593,6 +638,9 @@ msgid ""
 "Calculate the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods."
 msgstr ""
+"Рассчитывает периодическую процентную ставку, необходимую для увеличения "
+"инвестиций до будущей стоимости, за указанное число периодов начисления "
+"сложных процентов."
 
 #. (itstool) path: td/p
 #: C/financial.page:43
@@ -607,6 +655,11 @@ msgid ""
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated."
 msgstr ""
+"Рассчитывает линейную амортизацию актива за один период. При линейном методе"
+" стоимость амортизации распределяется равномерно в течение всего срока "
+"полезного использования актива. Срок полезного использования – это "
+"количество периодов, обычно лет, в течение которых актив снижает свою "
+"стоимость."
 
 #. (itstool) path: td/p
 #: C/financial.page:47
@@ -622,6 +675,11 @@ msgid ""
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated."
 msgstr ""
+"Рассчитывает амортизацию актива за указанный период времени, используя метод"
+" Сумма-Лет-Цифр. Этот метод оценки амортизации учитывает ускорение "
+"амортизации, так что больше амортизационных отчислений приходится на более "
+"ранние периоды. Срок полезного использования – это количество периодов, "
+"обычно лет, в течение которых актив амортизируется."
 
 #. (itstool) path: td/p
 #: C/financial.page:51
@@ -635,11 +693,13 @@ msgid ""
 "of an ordinary annuity, to accumulate a future value, at a periodic interest"
 " rate."
 msgstr ""
+"Вычисляет количество периодов платежей, необходимых, при обычном аннуите и "
+"периодической процентной ставке, для достижения будущей целевой стоимости."
 
 #. (itstool) path: note/p
 #: C/financial.page:56
 msgid "Financial functions cannot be performed using the keyboard."
-msgstr ""
+msgstr "Финансовые функции нельзя ввести с клавиатуры."
 
 #. (itstool) path: page/title
 #: C/functions.page:9
@@ -653,6 +713,9 @@ msgid ""
 "function argument. If the argument is not a number or <link "
 "xref=\"variable\">variable</link> then use parenthesis around the argument."
 msgstr ""
+"Для вычисления функции введите имя функции, за которым следует её аргумент. "
+"Если аргумент не является числом или <link "
+"xref=\"variable\">переменной</link>, его нужно взять в круглые скобки."
 
 #. (itstool) path: example/p
 #: C/functions.page:16
@@ -667,7 +730,7 @@ msgstr "abs (5−9)"
 #. (itstool) path: page/p
 #: C/functions.page:23
 msgid "The following functions are defined."
-msgstr ""
+msgstr "Имеются следующие функции."
 
 #. (itstool) path: td/p
 #: C/functions.page:28
@@ -702,12 +765,12 @@ msgstr "<link xref=\"trigonometry\">Гиперболический косину�
 #. (itstool) path: td/p
 #: C/functions.page:40
 msgid "erf"
-msgstr ""
+msgstr "erf"
 
 #. (itstool) path: td/p
 #: C/functions.page:41
 msgid "Gauss Error function"
-msgstr ""
+msgstr "Функция ошибок Гаусса"
 
 #. (itstool) path: td/p
 #: C/functions.page:44
@@ -832,12 +895,12 @@ msgstr "Дополнение до двух"
 #. (itstool) path: td/p
 #: C/functions.page:92
 msgid "zeta"
-msgstr ""
+msgstr "zeta"
 
 #. (itstool) path: td/p
 #: C/functions.page:93
 msgid "Riemann zeta function"
-msgstr ""
+msgstr "Дзета-функция Римана"
 
 #. (itstool) path: page/p
 #: C/functions.page:96
@@ -848,7 +911,7 @@ msgstr ""
 #. (itstool) path: credit/name
 #: C/index.page:7
 msgid "Robert Ancell"
-msgstr ""
+msgstr "Robert Ancell"
 
 #. (itstool) path: page/title
 #: C/index.page:13
@@ -863,7 +926,7 @@ msgstr "Пользовательский интерфейс"
 #. (itstool) path: section/title
 #: C/index.page:20
 msgid "Equations"
-msgstr ""
+msgstr "Уравнение"
 
 #. (itstool) path: section/title
 #: C/index.page:24
@@ -966,6 +1029,8 @@ msgid ""
 "When in <link xref=\"mouse\">programming mode</link>, to cycle between base "
 "digits use:"
 msgstr ""
+"В <link xref=\"mouse\">режиме программирования</link> переключение между "
+"основными системами счисления осуществляется с помощью:"
 
 #. (itstool) path: td/p
 #: C/keyboard.page:47 C/number-display.page:28
@@ -975,7 +1040,7 @@ msgstr "Двоичная"
 #. (itstool) path: td/p
 #: C/keyboard.page:48
 msgid "<keyseq><key>Ctrl</key><key>B</key></keyseq>"
-msgstr ""
+msgstr "<keyseq><key>Ctrl</key><key>B</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard.page:51 C/number-display.page:32
@@ -985,7 +1050,7 @@ msgstr "Восьмеричная"
 #. (itstool) path: td/p
 #: C/keyboard.page:52
 msgid "<keyseq><key>Ctrl</key><key>O</key></keyseq>"
-msgstr ""
+msgstr "<keyseq><key>Ctrl</key><key>O</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard.page:55 C/number-display.page:16
@@ -995,7 +1060,7 @@ msgstr "Десятичная"
 #. (itstool) path: td/p
 #: C/keyboard.page:56
 msgid "<keyseq><key>Ctrl</key><key>D</key></keyseq>"
-msgstr ""
+msgstr "<keyseq><key>Ctrl</key><key>D</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard.page:59 C/number-display.page:36
@@ -1005,37 +1070,37 @@ msgstr "Шестнадцатиричная"
 #. (itstool) path: td/p
 #: C/keyboard.page:60
 msgid "<keyseq><key>Ctrl</key><key>H</key></keyseq>"
-msgstr ""
+msgstr "<keyseq><key>Ctrl</key><key>H</key></keyseq>"
 
 #. (itstool) path: page/p
 #: C/keyboard.page:63
 msgid "To cycle between history entries you may use:"
-msgstr ""
+msgstr "Для переключения между записями истории вы можете использовать:"
 
 #. (itstool) path: td/p
 #: C/keyboard.page:68
 msgid "Previous Entry"
-msgstr ""
+msgstr "Предыдущая запись"
 
 #. (itstool) path: td/p
 #: C/keyboard.page:69
 msgid "<keyseq><key>Alt</key><key>Up</key></keyseq>"
-msgstr ""
+msgstr "<keyseq><key>Alt</key><key>Up</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard.page:72
 msgid "Next Entry"
-msgstr ""
+msgstr "Следующая запись"
 
 #. (itstool) path: td/p
 #: C/keyboard.page:73
 msgid "<keyseq><key>Alt</key><key>Down</key></keyseq>"
-msgstr ""
+msgstr "<keyseq><key>Alt</key><key>Down</key></keyseq>"
 
 #. (itstool) path: p/link
 #: C/legal.xml:4
 msgid "Creative Commons Attribution-Share Alike 3.0 Unported License"
-msgstr ""
+msgstr "Creative Commons Attribution-Share Alike 3.0 Unported License"
 
 #. (itstool) path: license/p
 #: C/legal.xml:3
@@ -1049,6 +1114,9 @@ msgid ""
 "modify, and distribute the example code contained in this document under the"
 " terms of your choosing, without restriction."
 msgstr ""
+"В виде особого исключения, владельцы авторского права разрешают вам "
+"копировать, изменять и распространять код примеров, содержащихся в этом "
+"документе, на любых выбранных вами условиях без ограничений."
 
 #. (itstool) path: page/title
 #: C/logarithm.page:9
@@ -1110,17 +1178,17 @@ msgstr "e^1.32"
 #. (itstool) path: page/title
 #: C/modulus.page:9
 msgid "Modulus Division"
-msgstr ""
+msgstr "Целочисленное деление"
 
 #. (itstool) path: page/p
 #: C/modulus.page:11
 msgid "Modulus division is performed using the mod operator."
-msgstr ""
+msgstr "Целочисленное деление выполняется с помощью оператора mod."
 
 #. (itstool) path: example/p
 #: C/modulus.page:15
 msgid "9 mod 5"
-msgstr ""
+msgstr "9 mod 5"
 
 #. (itstool) path: page/title
 #: C/mouse.page:9
@@ -1133,6 +1201,9 @@ msgid ""
 "All equations can be entered using the mouse. To access all buttons there "
 "are a number of modes that can be selected from the <gui>Mode</gui> menu."
 msgstr ""
+"Все выражения можно ввести с помощью мыши. Для доступа ко всем кнопкам "
+"существует несколько режимов, которые можно выбрать из меню "
+"<gui>Режим</gui>."
 
 #. (itstool) path: td/p
 #: C/mouse.page:17
@@ -1144,6 +1215,8 @@ msgstr "Простой"
 msgid ""
 "Provides buttons suitable for <link xref=\"equation\">basic equations</link>"
 msgstr ""
+"Предоставляет кнопки, подходящие для <link xref=\"equation\">базовых "
+"вычислений</link>"
 
 #. (itstool) path: td/p
 #: C/mouse.page:21
@@ -1156,6 +1229,8 @@ msgid ""
 "Provides buttons suitable for advanced mathematics such as <link "
 "xref=\"trigonometry\"/>"
 msgstr ""
+"Предоставляет кнопки, подходящие для более сложных математических "
+"вычислений, таких как <link xref=\"trigonometry\"/>"
 
 #. (itstool) path: td/p
 #: C/mouse.page:25
@@ -1168,6 +1243,8 @@ msgid ""
 "Provides buttons suitable for <link xref=\"financial\">financial "
 "equations</link>"
 msgstr ""
+"Предоставляет кнопки, подходящие для <link xref=\"financial\">финансовых "
+"вычислений</link>"
 
 #. (itstool) path: td/p
 #: C/mouse.page:29
@@ -1177,12 +1254,12 @@ msgstr "Программирование"
 #. (itstool) path: td/p
 #: C/mouse.page:30
 msgid "Provides buttons suitable for computer programmers"
-msgstr ""
+msgstr "Предоставляет кнопки, подходящие для программистов"
 
 #. (itstool) path: page/title
 #: C/number-display.page:9
 msgid "Result Format"
-msgstr ""
+msgstr "Формат результата"
 
 #. (itstool) path: page/p
 #: C/number-display.page:11
@@ -1190,11 +1267,13 @@ msgid ""
 "The format used to display results can be changed from the "
 "<guiseq><gui>Calculator</gui><gui>Preferences</gui></guiseq> menu."
 msgstr ""
+"Формат, используемый для отображения результатов, можно изменить в меню "
+"<guiseq><gui>Калькулятор</gui><gui>Параметры</gui></guiseq>."
 
 #. (itstool) path: td/p
 #: C/number-display.page:17
 msgid "Results are displayed as decimal numbers"
-msgstr ""
+msgstr "Результаты отображаются в виде десятичных чисел"
 
 #. (itstool) path: td/p
 #: C/number-display.page:20
@@ -1207,6 +1286,8 @@ msgid ""
 "Results are displayed in <link xref=\"scientific\">scientific "
 "notation</link>"
 msgstr ""
+"Результаты отображаются в <link xref=\"scientific\">научной "
+"(экспоненциальной) записи</link>"
 
 #. (itstool) path: td/p
 #: C/number-display.page:24
@@ -1219,21 +1300,26 @@ msgid ""
 "Results are displayed in scientific notation except the exponent is always a"
 " multiple of three"
 msgstr ""
+"Результаты отображаются в научной (экспоненциальной) записи, но с "
+"показателем степени, всегда кратным трём"
 
 #. (itstool) path: td/p
 #: C/number-display.page:29
 msgid "Results are displayed as <link xref=\"base\">binary numbers</link>"
-msgstr ""
+msgstr "Результаты отображаются в виде <link xref=\"base\">двоичных чисел</link>"
 
 #. (itstool) path: td/p
 #: C/number-display.page:33
 msgid "Results are displayed as <link xref=\"base\">octal numbers</link>"
 msgstr ""
+"Результаты отображаются в виде <link xref=\"base\">восьмеричных чисел</link>"
 
 #. (itstool) path: td/p
 #: C/number-display.page:37
 msgid "Results are displayed as <link xref=\"base\">hexadecimal numbers</link>"
 msgstr ""
+"Результаты отображаются в виде <link xref=\"base\">шестнадцатеричных "
+"чисел</link>"
 
 #. (itstool) path: page/p
 #: C/number-display.page:40
@@ -1241,6 +1327,8 @@ msgid ""
 "The number of decimal places, if trailing zeroes and if thousands separators"
 " are shown can also be configured."
 msgstr ""
+"Кроме того, можно настроить количество десятичных разрядов, а также "
+"показывать или нет незначащие нули после запятой и разделители тысяч."
 
 #. (itstool) path: page/title
 #: C/percentage.page:9
@@ -1259,11 +1347,14 @@ msgid ""
 "the value being added or subtracted from. The following equation calculates "
 "the price of a $140 item with 15% tax (140 + (15÷100)×140)."
 msgstr ""
+"При сложении и вычитании символ процента обозначает один процент от "
+"добавляемой или вычитаемой величины. Следующий пример вычисляет стоимость "
+"предмета ценой $140 с 15%-ным налогом (140 + (15÷100)×140)."
 
 #. (itstool) path: example/p
 #: C/percentage.page:19
 msgid "140+15%"
-msgstr ""
+msgstr "140+15%"
 
 #. (itstool) path: page/p
 #: C/percentage.page:23
@@ -1271,11 +1362,13 @@ msgid ""
 "In all other cases the percentage symbol resolves to a fraction out of 100. "
 "The following equation calculates one quarter of 80 apples ((25÷100)×80)."
 msgstr ""
+"Во всех других случаях символ процента обозначает долю от 100. Следующий "
+"пример вычисляет четверть от 80 яблок ((25÷100)×80)."
 
 #. (itstool) path: example/p
 #: C/percentage.page:28
 msgid "25%×80"
-msgstr ""
+msgstr "25%×80"
 
 #. (itstool) path: page/title
 #: C/power.page:9
@@ -1302,11 +1395,13 @@ msgid ""
 "The inverse of a number can be entered using the inverse symbol ⁻¹ "
 "(<keyseq><key>Ctrl</key><key>I</key></keyseq>)."
 msgstr ""
+"Обратную величину числа можно ввести с помощью символа «⁻¹» "
+"(<keyseq><key>Ctrl</key><key>I</key></keyseq>)."
 
 #. (itstool) path: example/p
 #: C/power.page:23
 msgid "3⁻¹"
-msgstr ""
+msgstr "3⁻¹"
 
 #. (itstool) path: page/p
 #: C/power.page:27
@@ -1314,6 +1409,8 @@ msgid ""
 "Powers can also be calculated using the ^ symbol. This allows the power to "
 "be an equation."
 msgstr ""
+"Степени можно также вычислять с помощью символа «^». Это позволяет "
+"показателю степени быть выражением."
 
 #. (itstool) path: example/p
 #: C/power.page:32
@@ -1326,6 +1423,8 @@ msgid ""
 "If your keyboard does not have a <key>^</key> key you can use <key>*</key> "
 "twice."
 msgstr ""
+"Если на клавиатуре нет клавиши <key>^</key>, можно дважды нажать "
+"<key>*</key>."
 
 #. (itstool) path: page/p
 #: C/power.page:39
@@ -1358,7 +1457,7 @@ msgstr "₃√2"
 #. (itstool) path: page/title
 #: C/scientific.page:9
 msgid "Scientific Notation"
-msgstr ""
+msgstr "Научная запись"
 
 #. (itstool) path: page/p
 #: C/scientific.page:11
@@ -1368,6 +1467,10 @@ msgid ""
 "xref=\"superscript\">number mode</link> automatically changes to "
 "superscript. To enter 2×10¹⁰⁰, start by entering the mantissa (2):"
 msgstr ""
+"Для ввода числа в научном формате используйте кнопку <gui>×10x</gui> "
+"(<keyseq><key>Ctrl</key><key>E</key></keyseq>). <link "
+"xref=\"superscript\">Режим ввода цифр</link> автоматически меняется на "
+"надстрочный. Чтобы ввести 2×10¹⁰⁰, начните с набора мантиссы (2):"
 
 #. (itstool) path: example/p
 #: C/scientific.page:17
@@ -1380,21 +1483,23 @@ msgid ""
 "Then press the scientific notation button (or press "
 "<keyseq><key>Ctrl</key><key>E</key></keyseq>):"
 msgstr ""
+"Затем нажмите кнопку экспоненциальной записи (или комбинацию клавиш "
+"<keyseq><key>Ctrl</key><key>E</key></keyseq>):"
 
 #. (itstool) path: example/p
 #: C/scientific.page:25
 msgid "2×10"
-msgstr ""
+msgstr "2×10"
 
 #. (itstool) path: page/p
 #: C/scientific.page:29
 msgid "Then enter the exponent (100):"
-msgstr ""
+msgstr "После этого введите показатель степени (100):"
 
 #. (itstool) path: example/p
 #: C/scientific.page:33
 msgid "2×10¹⁰⁰"
-msgstr ""
+msgstr "2×10¹⁰⁰"
 
 #. (itstool) path: page/p
 #: C/scientific.page:37
@@ -1402,12 +1507,15 @@ msgid ""
 "To show results in scientific form change the <link xref=\"number-"
 "display\">result format</link>."
 msgstr ""
+"Чтобы задать систему счисления, в которой будут отображаться результаты в "
+"научном формате, измените значения параметра <link xref=\"number-"
+"display\">формат результатов</link>."
 
 #. (itstool) path: info/title
 #: C/superscript.page:7
 msgctxt "sort"
 msgid "_"
-msgstr ""
+msgstr "_"
 
 #. (itstool) path: page/title
 #: C/superscript.page:11
@@ -1430,6 +1538,9 @@ msgid ""
 "<mo>+</mo> <mrow> <mn>2</mn> <msup> <mi>x</mi> <mn>2</mn> </msup> </mrow> "
 "<mo>-</mo> <mn>5</mn> </mrow> </math>"
 msgstr ""
+"<math alttext=\"x³+2x²−5\"> <mrow> <msup> <mi>x</mi> <mn>3</mn> </msup> "
+"<mo>+</mo> <mrow> <mn>2</mn> <msup> <mi>x</mi> <mn>2</mn> </msup> </mrow> "
+"<mo>-</mo> <mn>5</mn> </mrow> </math>"
 
 #. (itstool) path: page/p
 #: C/superscript.page:38
@@ -1439,6 +1550,11 @@ msgid ""
 "clicking the number buttons will enter numbers in superscript or subscript. "
 "To return to normal number mode click the active button."
 msgstr ""
+"Чтобы ввести индекс с помощью мыши, выберите нужный режим с помощью кнопок "
+"<gui>↑n</gui> и <gui>↓n</gui>. Когда один из этих режимов активизирован, "
+"нажатие кнопок с цифрами будет вводить числа в виде надстрочного или "
+"подстрочного индекса. Для возврата в обычный режим ввода чисел повторно "
+"щёлкните активную кнопку."
 
 #. (itstool) path: page/p
 #: C/superscript.page:43
@@ -1446,6 +1562,9 @@ msgid ""
 "To enter superscript numbers with the keyboard hold down <key>Ctrl</key> "
 "while entering the number. Hold <key>Alt</key> for subscript."
 msgstr ""
+"Чтобы ввести надстрочный индекс с помощью клавиатуры, при вводе цифр "
+"удерживайте нажатой клавишу <key>Ctrl</key>. Для ввода нижнего индекса - "
+"удерживайте нажатой клавишу <key>Alt</key>."
 
 #. (itstool) path: page/p
 #: C/superscript.page:47
@@ -1453,6 +1572,8 @@ msgid ""
 "The number mode returns to normal when entering the next non-number "
 "character (e.g. +)."
 msgstr ""
+"Режим ввода чисел возвращается к обычному при вводе следующего нецифрового "
+"символа (например, «+»)"
 
 #. (itstool) path: page/title
 #: C/trigonometry.page:9
@@ -1481,17 +1602,23 @@ msgid ""
 "Trigonometry buttons are visible when in <link xref=\"mouse\">Advanced "
 "mode</link>."
 msgstr ""
+"Используемые единицы измерения углов можно изменить с помощью меню: "
+"<guiseq><gui>Калькулятор</gui><gui>Параметры</gui></guiseq>. Кнопки "
+"тригонометрических функций становятся видимыми в <link "
+"xref=\"mouse\">Расширенном режиме</link>."
 
 #. (itstool) path: page/p
 #: C/trigonometry.page:23
 msgid ""
 "Hyperbolic functions are available by adding \"h\" to the end of a function."
 msgstr ""
+"Гиперболические функции доступны при добавлении «h» к названию "
+"тригонометрической функции."
 
 #. (itstool) path: example/p
 #: C/trigonometry.page:27
 msgid "sinh 0.34"
-msgstr ""
+msgstr "sinh 0.34"
 
 #. (itstool) path: page/p
 #: C/trigonometry.page:31
@@ -1500,16 +1627,19 @@ msgid ""
 "(<keyseq><key>Ctrl</key><key>I</key></keyseq>) or the \"a\" form of the "
 "function. The following two equations are equivalent."
 msgstr ""
+"Обратные функции вводятся либо с помощью обратного символа ⁻¹ "
+"(<keyseq><key>Ctrl</key><key>I</key></keyseq>), либо с помощью формы «a» "
+"функции. Следующие два уравнения эквивалентны."
 
 #. (itstool) path: example/p
 #: C/trigonometry.page:36
 msgid "sin⁻¹ 0.5"
-msgstr ""
+msgstr "sin⁻¹ 0.5"
 
 #. (itstool) path: example/p
 #: C/trigonometry.page:39
 msgid "asin 0.5"
-msgstr ""
+msgstr "asin 0.5"
 
 #. (itstool) path: page/p
 #: C/trigonometry.page:43
