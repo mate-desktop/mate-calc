@@ -1,6 +1,6 @@
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.62)
-AC_INIT([mate-calc], [1.26.0], [https://github.com/mate-desktop/mate-calc/issues],
+AC_INIT([mate-calc], [1.27.0], [https://github.com/mate-desktop/mate-calc/issues],
         [mate-calc], [https://mate-desktop.org])
 
 AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-xz check-news])
