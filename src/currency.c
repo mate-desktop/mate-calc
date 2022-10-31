@@ -20,6 +20,7 @@ struct CurrencyPrivate
     gchar *name;
     gchar *display_name;
     gchar *symbol;
+    gchar *format;    
     MPNumber value;
 };
 
@@ -28,13 +29,15 @@ G_DEFINE_TYPE_WITH_PRIVATE (Currency, currency, G_TYPE_OBJECT);
 Currency *
 currency_new(const gchar *name,
              const gchar *display_name,
-             const gchar *symbol)
+             const gchar *symbol,
+             const gchar *format)
 {
     Currency *currency = g_object_new(currency_get_type(), NULL);
 
     currency->priv->name = g_strdup(name);
     currency->priv->display_name = g_strdup(display_name);
     currency->priv->symbol = g_strdup(symbol);
+    currency->priv->format = g_strdup(format);
     currency->priv->value = mp_new();
 
     return currency;
@@ -59,6 +62,13 @@ currency_get_symbol(Currency *currency)
 {
     g_return_val_if_fail (currency != NULL, NULL);
     return currency->priv->symbol;
+}
+
+const gchar *
+currency_get_format(Currency *currency)
+{
+    g_return_val_if_fail (currency != NULL, NULL);
+    return currency->priv->format;
 }
 
 void

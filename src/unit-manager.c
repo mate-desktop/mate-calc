@@ -131,7 +131,8 @@ unit_manager_get_default(void)
         Unit *unit;
 
         /* Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100 */
-        format = g_strdup_printf(_("%s%%s"), currency_get_symbol(currency));
+        format = g_strdup_printf(_(currency_get_format(currency)), currency_get_symbol(currency)); 
+ 
         unit = unit_new(currency_get_name(currency), currency_get_display_name(currency), format, NULL, NULL, currency_get_name(currency));
         g_free(format);
 
