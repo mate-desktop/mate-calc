@@ -14,6 +14,7 @@
 #include <glib/gstdio.h>
 #include <gio/gio.h>
 #include <libxml/tree.h>
+#include <libxml/parser.h>
 #include <libxml/xpath.h>
 #include <libxml/xpathInternals.h>
 #include <glib/gi18n.h>
