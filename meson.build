@@ -1,5 +1,5 @@
 project('mate-calc','c',
-  version: '1.27.0',
+  version: '1.28.0',
   meson_version: '>=0.50.0',
   license: 'GPLv3+',
 )
