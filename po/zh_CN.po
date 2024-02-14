@@ -2,7 +2,7 @@
 # Copyright (C) YEAR MATE Desktop Environment team
 # This file is distributed under the same license as the mate-calc package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # e0c668032ced196bd60f2b6a070d982d_8f72ae0, 2018
 # gtrslower, 2018
@@ -16,20 +16,19 @@
 # OkayPJ <1535253694@qq.com>, 2021
 # Mingcong Bai <jeffbai@aosc.xyz>, 2022
 # Wenbin Lv <wenbin816@gmail.com>, 2022
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-calc 1.26.0\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-calc/issues\n"
-"POT-Creation-Date: 2022-10-30 00:03+0200\n"
+"POT-Creation-Date: 2022-10-28 17:41+0200\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
 "Last-Translator: Wenbin Lv <wenbin816@gmail.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/mate/teams/13566/"
-"zh_CN/)\n"
-"Language: zh_CN\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/mate/teams/13566/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Accessible name for the factorize button
@@ -163,8 +162,7 @@ msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr ""
-"计算某投资的现值增加到某一未来值需要的复利周期数，每个复利周期的利率固定。"
+msgstr "计算某投资的现值增加到某一未来值需要的复利周期数，每个复利周期的利率固定。"
 
 #. Compounding Term Dialog: Label before periodic interest rate input
 #. Future Value Dialog: Label before periodic interest rate input
@@ -239,8 +237,7 @@ msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
-msgstr ""
-"计算某投资的未来值，按照期限内有若干个付款周期、等额付款、每期固定利率。"
+msgstr "计算某投资的未来值，按照期限内有若干个付款周期、等额付款、每期固定利率。"
 
 #. Future Value Dialog: Label before periodic payment input
 #. Present Value Dialog: Label before periodic payment input
@@ -304,8 +301,7 @@ msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr ""
-"计算某投资的现值，按照期限内有若干个付款周期、等额付款、每期按固定利率贴现。"
+msgstr "计算某投资的现值，按照期限内有若干个付款周期、等额付款、每期按固定利率贴现。"
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
@@ -344,9 +340,7 @@ msgid ""
 "straight-line method of depreciation divides the depreciable cost evenly "
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
-msgstr ""
-"计算某一期限内某资产的直线折旧。直线折旧法在某资产可用年限内均分折旧成本。可"
-"用年限指该资产折旧的期数，典型情况下为年。"
+msgstr "计算某一期限内某资产的直线折旧。直线折旧法在某资产可用年限内均分折旧成本。可用年限指该资产折旧的期数，典型情况下为年。"
 
 #. Title of Sum-of-the-Years'-Digits Depreciation dialog
 #: src/buttons-financial.ui:1446
@@ -357,13 +351,12 @@ msgstr "年数总和法折旧"
 #: src/buttons-financial.ui:1631
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
-"accelerates the rate of depreciation, so that more depreciation expense "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
+" accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
 msgstr ""
-"使用年数总和法计算某一资产在指定期限内的累计折旧。该折旧方法会加快折旧率，因"
-"此前期比后期发生更多折旧费用。可用年限指该资产折旧的周期（通常为年）数。"
+"使用年数总和法计算某一资产在指定期限内的累计折旧。该折旧方法会加快折旧率，因此前期比后期发生更多折旧费用。可用年限指该资产折旧的周期（通常为年）数。"
 
 #. Title of Payment Period dialog
 #: src/buttons-financial.ui:1659
@@ -379,56 +372,87 @@ msgstr "未来值(_V)："
 #: src/buttons-financial.ui:1815
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest "
-"rate."
+"of an ordinary annuity, to accumulate a future value, at a periodic interest"
+" rate."
 msgstr "计算在普通年金期限内以定期利率累积未来值所需的支付期数。"
 
-#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
+#. Calculates the number of compounding periods necessary to increase an
+#. investment of present value pv to a future value of fv, at a fixed interest
+#. rate of int per compounding period. See also:
+#. http://en.wikipedia.org/wiki/Compound_interest
 #: src/buttons-financial.ui:2166
 msgid "Ctrm"
 msgstr "复利"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the double-declining balance method. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2181
 msgid "Ddb"
 msgstr "双倍"
 
-#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
+#. Calculates the future value of an investment based on a series of equal
+#. payments, each of amount pmt, at a periodic interest rate of int, over the
+#. number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Future_value
 #: src/buttons-financial.ui:2196
 msgid "Fv"
 msgstr "未来"
 
-#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#. Calculates the number of payment periods that are necessary during the term
+#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
+#. interest rate of int. Each payment is equal to amount pmt. See also:
+#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
 #: src/buttons-financial.ui:2211
 msgid "Term"
 msgstr "期数"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the Sum-Of-The-Years'-Digits method. This method of
+#. depreciation accelerates the rate of depreciation, so that more
+#. depreciation expense occurs in earlier periods than in later ones. The
+#. depreciable cost is cost - salvage. The useful life is the number of
+#. periods, typically years, over which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2226
 msgid "Syd"
 msgstr "年总"
 
-#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the straight-line depreciation of an asset for one period. The
+#. depreciable cost is cost - salvage. The straight-line method of
+#. depreciation divides the depreciable cost evenly over the useful life of an
+#. asset. The useful life is the number of periods, typically years, over
+#. which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2241
 msgid "Sln"
 msgstr "直线"
 
-#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#. Calculates the periodic interest necessary to increase an investment of
+#. present value pv to a future value of fv, over the number of compounding
+#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
 #: src/buttons-financial.ui:2256
 msgid "Rate"
 msgstr "利率"
 
-#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
+#. Calculates the present value of an investment based on a series of equal
+#. payments, each of amount pmt, discounted at a periodic interest rate of
+#. int, over the number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Present_value
 #: src/buttons-financial.ui:2271
 msgid "Pv"
 msgstr "现值"
 
-#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
+#. Calculates the amount of the periodic payment of a loan, where payments are
+#. made at the end of each payment period. See also:
+#. http://en.wikipedia.org/wiki/Amortization_schedule
 #: src/buttons-financial.ui:2286
 msgid "Pmt"
 msgstr "付款"
 
-#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
+#. Calculates the resale price of a product, based on the product cost and the
+#. wanted gross profit margin. See also:
+#. http://en.wikipedia.org/wiki/Gross_profit_margin
 #: src/buttons-financial.ui:2301
 msgid "Gpm"
 msgstr "毛利"
@@ -531,9 +555,7 @@ msgid ""
 "MATE Calc is a powerful graphical calculator with financial, logical and "
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
-msgstr ""
-"MATE 计算器是一款功能强大的图形计算器，有三种模式：财务，逻辑和科学。 为了提"
-"高精度，它使用多精度软件包进行数学运算。"
+msgstr "MATE 计算器是一款功能强大的图形计算器，有三种模式：财务，逻辑和科学。 为了提高精度，它使用多精度软件包进行数学运算。"
 
 #: data/mate-calc.appdata.xml.in:15
 msgid ""
@@ -541,8 +563,7 @@ msgid ""
 "If you would like to know more about MATE and MATE Calc, please visit the "
 "project's home page."
 msgstr ""
-"MATE 计算器为 MATE 桌面环境的一部分，是 GNOME 计算器的分叉。想了解更多 MATE "
-"及 MATE 计算器的信息，请访问项目主页。"
+"MATE 计算器为 MATE 桌面环境的一部分，是 GNOME 计算器的分叉。想了解更多 MATE 及 MATE 计算器的信息，请访问项目主页。"
 
 #: data/mate-calc.desktop.in:3 src/math-window.c:366
 msgid "MATE Calculator"
@@ -557,12 +578,12 @@ msgstr "计算器"
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "执行算术、科学或财务计算"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#. Translators: Search terms to find this application. Do NOT translate or
+#. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mate-calc.desktop.in:13
 msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
 msgstr ""
-"calculator;MATE;scientific;arithmetic;financial;calculations;计算器;科学;算"
-"术;财务;计算;"
+"calculator;MATE;scientific;arithmetic;financial;calculations;计算器;科学;算术;财务;计算;"
 
 #: data/org.mate.calc.gschema.xml:25
 msgid "Accuracy value"
@@ -924,7 +945,8 @@ msgstr ""
 "用法：\n"
 "  %s — 执行数学计算"
 
-#. Description on mate-calc command-line help options displayed on command-line
+#. Description on mate-calc command-line help options displayed on command-
+#. line
 #: src/mate-calc.c:91
 #, c-format
 msgid ""
@@ -940,15 +962,14 @@ msgstr ""
 "  --help-all                      显示所有帮助选项\n"
 "  --help-gtk                      显示 GTK+ 选项"
 
-#. Description on mate-calc command-line GTK+ options displayed on command-line
+#. Description on mate-calc command-line GTK+ options displayed on command-
+#. line
 #: src/mate-calc.c:102
 #, c-format
 msgid ""
 "GTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window "
-"manager\n"
-"  --name=NAME                     Program name as used by the window "
-"manager\n"
+"  --class=CLASS                   Program class as used by the window manager\n"
+"  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
@@ -1406,7 +1427,8 @@ msgstr "阿伏加德罗常数"
 msgid "6.02214086×10²³ mol⁻¹"
 msgstr "6.02214086×10²³ mol⁻¹"
 
-#. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
+#. Label that is displayed between the two conversion combo boxes, e.g.
+#. "[degrees] in [radians]"
 #: src/math-converter.c:401
 msgid " in "
 msgstr " 换算为 "
@@ -1430,7 +1452,8 @@ msgstr "无重做记录"
 msgid "No sane value to store"
 msgstr "没有正常的值可以存储"
 
-#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
+#. Error displayed to user when they perform a bitwise operation on numbers
+#. greater than the current word
 #: src/math-equation.c:1190
 msgid "Overflow. Try a bigger word size"
 msgstr "溢出。请尝试使用更长的字长"
@@ -1489,23 +1512,28 @@ msgstr "显示的值不是整数"
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
-#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
-#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
+#. calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
+#. grads
 #: src/math-preferences.c:238 src/unit-manager.c:51
 msgid "Degrees"
 msgstr "角度"
 
-#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
+#. calculations
 #: src/math-preferences.c:242 src/unit-manager.c:52
 msgid "Radians"
 msgstr "弧度"
 
-#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
+#. calculations
 #: src/math-preferences.c:246 src/unit-manager.c:53
 msgid "Gradians"
 msgstr "百分度"
 
-#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
+#. number 1.234×10^99)
 #: src/math-preferences.c:256
 msgid "Automatic"
 msgstr "自动"
@@ -1551,28 +1579,26 @@ msgid ""
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
-"MATE 计算器是自由软件；您可以按照自由软件基金会所发布的 GNU 通用公共许可证再"
-"分发和/或修改它；您可以使用此许可证的第二版或（依您所愿）任何更新的版本。"
+"MATE 计算器是自由软件；您可以按照自由软件基金会所发布的 GNU "
+"通用公共许可证再分发和/或修改它；您可以使用此许可证的第二版或（依您所愿）任何更新的版本。"
 
 #: src/math-window.c:321
 msgid ""
 "MATE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
-"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-"more details."
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
+" more details."
 msgstr ""
-"分发 MATE 计算器的目的是希望它对您有用，但没有任何保证；甚至没有对适销性或特"
-"定用途适用性的默示保证。请阅读 GNU 通用公共许可证以了解更多细节。"
+"分发 MATE 计算器的目的是希望它对您有用，但没有任何保证；甚至没有对适销性或特定用途适用性的默示保证。请阅读 GNU 通用公共许可证以了解更多细节。"
 
 #: src/math-window.c:325
 msgid ""
-"You should have received a copy of the GNU General Public License along with "
-"MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
+"You should have received a copy of the GNU General Public License along with"
+" MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
-"您应该在收到 MATE 计算器的同时也收到了 GNU 通用公共许可证的副本；如果没有收到"
-"该许可证的话，您可以写信给自由软件基金会，地址是：51 Franklin Street, Fifth "
-"Floor, Boston, MA 02110-1301, USA"
+"您应该在收到 MATE 计算器的同时也收到了 GNU 通用公共许可证的副本；如果没有收到该许可证的话，您可以写信给自由软件基金会，地址是：51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
 #: src/math-window.c:362
 #, c-format
@@ -1692,22 +1718,26 @@ msgstr "退出(_Q)"
 msgid "_About"
 msgstr "关于(_A)"
 
-#. Translators: Error displayed when boolean AND attempted on non-integer values
+#. Translators: Error displayed when boolean AND attempted on non-integer
+#. values
 #: src/mp-binary.c:114
 msgid "Boolean AND is only defined for positive integers"
 msgstr "逻辑与运算只对正整数定义"
 
-#. Translators: Error displayed when boolean OR attempted on non-integer values
+#. Translators: Error displayed when boolean OR attempted on non-integer
+#. values
 #: src/mp-binary.c:126
 msgid "Boolean OR is only defined for positive integers"
 msgstr "逻辑或运算只对正整数定义"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
 #: src/mp-binary.c:138
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "逻辑异或运算只对正整数定义"
 
-#. Translators: Error displayed when boolean NOT attempted on non-integer values
+#. Translators: Error displayed when boolean NOT attempted on non-integer
+#. values
 #: src/mp-binary.c:154
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "逻辑非运算只对正整数定义"
@@ -1737,18 +1767,22 @@ msgstr "零的对数未定义"
 msgid "The zeroth root of a number is undefined"
 msgstr "数的零次方根未定义"
 
-#. Translators: Error displayed when attempted take the factorial of a negative or complex number
+#. Translators: Error displayed when attempted take the factorial of a
+#. negative or complex number
 #: src/mp.c:474
 msgid "Factorial is only defined for non-negative real numbers"
 msgstr "阶乘仅对非负实数有定义"
 
-#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
+#. Translators: Error displayed when attemping to do a modulus division on
+#. non-integer numbers
 #: src/mp.c:504
 msgid "Modulus division is only defined for integers"
 msgstr "取模运算仅对整数有意义"
 
-#. Translators: Error displayed when attempted to raise 0 to a negative exponent
-#. Translators: Error displayed when attempted to raise 0 to a negative re_exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. re_exponent
 #: src/mp.c:575 src/mp.c:602
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "零的负数次幂未定义"
@@ -1766,7 +1800,8 @@ msgstr "黎曼 zeta 函数仅对不等于 1 的实数有定义"
 #. Translators: Error displayed when tangent value is undefined
 #: src/mp-trigonometric.c:116
 msgid ""
-"Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
+"(90°)"
 msgstr "正切函数对与 π∕2 (90°) 的差为 π (180°) 的整数倍的角未定义"
 
 #. Translators: Error displayed when inverse sine value is undefined
@@ -1784,12 +1819,14 @@ msgstr "反余弦函数在 [-1,1] 范围之外未定义"
 msgid "Arctangent function is undefined for values i and -i"
 msgstr "反正切函数对 i 和 -i 未定义"
 
-#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
+#. Translators: Error displayed when inverse hyperbolic cosine value is
+#. undefined
 #: src/mp-trigonometric.c:241
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
 msgstr "反双曲余弦函数对小于 1 的数未定义"
 
-#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
+#. Translators: Error displayed when inverse hyperbolic tangent value is
+#. undefined
 #: src/mp-trigonometric.c:262
 msgid "Inverse hyperbolic tangent is undefined for values outside (-1, 1)"
 msgstr "反双曲正切函数在 (-1, 1) 之外未定义"
@@ -2519,7 +2556,8 @@ msgstr "温度"
 msgid "Currency"
 msgstr "货币"
 
-#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
+#. Translators: result of currency conversion, %s is the symbol, %%s is the
+#. placeholder for amount, i.e.: USD100
 #: src/unit-manager.c:134
 #, c-format
 msgid "%s%%s"

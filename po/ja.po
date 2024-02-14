@@ -2,29 +2,29 @@
 # Copyright (C) YEAR MATE Desktop Environment team
 # This file is distributed under the same license as the mate-calc package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Rockers <sumorock@hotmail.com>, 2018
 # IWAI, Masaharu <iwaim.sub@gmail.com>, 2018
 # fbc955180bc2b956cb4ef52d00eb80a0_91487f8, 2018
-# BALLOON | FU-SEN, 2018
+# 🎈 BALLOON | FU-SEN, 2018
 # ABE Tsunehiko, 2019
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
-# Green, 2021
 # shinmili <rmsk.pl.ur.lpt@gmail.com>, 2022
-#
+# Green <usergreen@users.osdn.me>, 2022
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-calc 1.26.0\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-calc/issues\n"
-"POT-Creation-Date: 2022-10-30 00:03+0200\n"
+"POT-Creation-Date: 2022-10-28 17:41+0200\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: shinmili <rmsk.pl.ur.lpt@gmail.com>, 2022\n"
-"Language-Team: Japanese (https://www.transifex.com/mate/teams/13566/ja/)\n"
-"Language: ja\n"
+"Last-Translator: Green <usergreen@users.osdn.me>, 2022\n"
+"Language-Team: Japanese (https://app.transifex.com/mate/teams/13566/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Accessible name for the factorize button
@@ -158,9 +158,7 @@ msgid ""
 "Calculates the number of compounding periods necessary to increase an "
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
-msgstr ""
-"現在の投資額をある将来価値に増額するのに必要な複利計算期間の年数を固定金利に"
-"基づいて計算します。"
+msgstr "現在の投資額をある将来価値に増額するのに必要な複利計算期間の年数を固定金利に基づいて計算します。"
 
 #. Compounding Term Dialog: Label before periodic interest rate input
 #. Future Value Dialog: Label before periodic interest rate input
@@ -196,8 +194,7 @@ msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
 msgstr ""
-"指定した期間に対する資産の減価償却費を(二倍)定率法 (Double-Declining Balance "
-"Method) を用いて計算します。"
+"指定した期間に対する資産の減価償却費を(二倍)定率法 (Double-Declining Balance Method) を用いて計算します。"
 
 #. Double-Declining Depreciation Dialog: Label before life input
 #. Straight-Line Depreciation Dialog: Label before life input
@@ -237,9 +234,7 @@ msgid ""
 "Calculates the future value of an investment based on a series of equal "
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
-msgstr ""
-"一定額で積み立てを行った場合の投資額の将来価値を、定期利率に基づいて計算しま"
-"す。"
+msgstr "一定額で積み立てを行った場合の投資額の将来価値を、定期利率に基づいて計算します。"
 
 #. Future Value Dialog: Label before periodic payment input
 #. Present Value Dialog: Label before periodic payment input
@@ -278,9 +273,7 @@ msgstr "定期支払額"
 msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
-msgstr ""
-"ローンの定期支払い額を計算します (返済期間の最終日に支払いを行うものとしま"
-"す)。"
+msgstr "ローンの定期支払い額を計算します (返済期間の最終日に支払いを行うものとします)。"
 
 #. Periodic Payment Dialog: Label before term input
 #. Periodic Interest Rate Dialog: Label before term input
@@ -305,8 +298,7 @@ msgid ""
 "Calculates the present value of an investment based on a series of equal "
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
-msgstr ""
-"将来価値を一定の割引率を使って現在時点まで割り戻した現在価値を計算します。"
+msgstr "将来価値を一定の割引率を使って現在時点まで割り戻した現在価値を計算します。"
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
@@ -319,8 +311,7 @@ msgstr "定期利率"
 msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
-msgstr ""
-"投資額の将来価値を上げる際に必要となる複利計算期の定期利率を計算します。"
+msgstr "投資額の将来価値を上げる際に必要となる複利計算期の定期利率を計算します。"
 
 #. Title of Straight-Line Depreciation dialog
 #: src/buttons-financial.ui:1262
@@ -347,9 +338,8 @@ msgid ""
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
 msgstr ""
-"指定した期間に対する資産の減価償却費を定額法 (Straight-Line Depreciation "
-"Method) を用いて計算します。この償却法は毎年の減価償却費を平準化できるという"
-"特徴があります。耐用年数は一般的に年数で指定し、経過年数との差額で求めます。"
+"指定した期間に対する資産の減価償却費を定額法 (Straight-Line Depreciation Method) "
+"を用いて計算します。この償却法は毎年の減価償却費を平準化できるという特徴があります。耐用年数は一般的に年数で指定し、経過年数との差額で求めます。"
 
 #. Title of Sum-of-the-Years'-Digits Depreciation dialog
 #: src/buttons-financial.ui:1446
@@ -360,15 +350,13 @@ msgstr "級数法による減価償却費"
 #: src/buttons-financial.ui:1631
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
-"accelerates the rate of depreciation, so that more depreciation expense "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
+" accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
 msgstr ""
-"指定した期間に対する資産の減価償却費を級数法 (Sum-Of-The-Years'-Digits "
-"Method) を用いて計算します。これは加速度的減価償却法の一種で、償却期間の初期"
-"に重み付けして減価償却が行われるため、償却期間の後期より初期により大きな減価"
-"償却費が計上されます。耐用年数は一般的に年数で指定し、償却年数と同義です。"
+"指定した期間に対する資産の減価償却費を級数法 (Sum-Of-The-Years'-Digits Method) "
+"を用いて計算します。これは加速度的減価償却法の一種で、償却期間の初期に重み付けして減価償却が行われるため、償却期間の後期より初期により大きな減価償却費が計上されます。耐用年数は一般的に年数で指定し、償却年数と同義です。"
 
 #. Title of Payment Period dialog
 #: src/buttons-financial.ui:1659
@@ -384,58 +372,87 @@ msgstr "将来価値(_V):"
 #: src/buttons-financial.ui:1815
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest "
-"rate."
-msgstr ""
-"普通年金の受領期間内に将来価値を積み立てる際に必要となる支払い期間を定期利率"
-"に基づいて計算します。"
+"of an ordinary annuity, to accumulate a future value, at a periodic interest"
+" rate."
+msgstr "普通年金の受領期間内に将来価値を積み立てる際に必要となる支払い期間を定期利率に基づいて計算します。"
 
-#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
+#. Calculates the number of compounding periods necessary to increase an
+#. investment of present value pv to a future value of fv, at a fixed interest
+#. rate of int per compounding period. See also:
+#. http://en.wikipedia.org/wiki/Compound_interest
 #: src/buttons-financial.ui:2166
 msgid "Ctrm"
 msgstr "Ctrm"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the double-declining balance method. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2181
 msgid "Ddb"
 msgstr "Ddb"
 
-#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
+#. Calculates the future value of an investment based on a series of equal
+#. payments, each of amount pmt, at a periodic interest rate of int, over the
+#. number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Future_value
 #: src/buttons-financial.ui:2196
 msgid "Fv"
 msgstr "Fv"
 
-#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#. Calculates the number of payment periods that are necessary during the term
+#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
+#. interest rate of int. Each payment is equal to amount pmt. See also:
+#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
 #: src/buttons-financial.ui:2211
 msgid "Term"
 msgstr "期間"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the Sum-Of-The-Years'-Digits method. This method of
+#. depreciation accelerates the rate of depreciation, so that more
+#. depreciation expense occurs in earlier periods than in later ones. The
+#. depreciable cost is cost - salvage. The useful life is the number of
+#. periods, typically years, over which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2226
 msgid "Syd"
 msgstr "Syd"
 
-#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the straight-line depreciation of an asset for one period. The
+#. depreciable cost is cost - salvage. The straight-line method of
+#. depreciation divides the depreciable cost evenly over the useful life of an
+#. asset. The useful life is the number of periods, typically years, over
+#. which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2241
 msgid "Sln"
 msgstr "Sln"
 
-#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#. Calculates the periodic interest necessary to increase an investment of
+#. present value pv to a future value of fv, over the number of compounding
+#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
 #: src/buttons-financial.ui:2256
 msgid "Rate"
 msgstr "利率"
 
-#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
+#. Calculates the present value of an investment based on a series of equal
+#. payments, each of amount pmt, discounted at a periodic interest rate of
+#. int, over the number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Present_value
 #: src/buttons-financial.ui:2271
 msgid "Pv"
 msgstr "Pv"
 
-#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
+#. Calculates the amount of the periodic payment of a loan, where payments are
+#. made at the end of each payment period. See also:
+#. http://en.wikipedia.org/wiki/Amortization_schedule
 #: src/buttons-financial.ui:2286
 msgid "Pmt"
 msgstr "Pmt"
 
-#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
+#. Calculates the resale price of a product, based on the product cost and the
+#. wanted gross profit margin. See also:
+#. http://en.wikipedia.org/wiki/Gross_profit_margin
 #: src/buttons-financial.ui:2301
 msgid "Gpm"
 msgstr "売上"
@@ -539,8 +556,7 @@ msgid ""
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
 msgstr ""
-"MATE 電卓は、金融、論理、科学の各モードを備えた強力なグラフィカルな電卓です。"
-"演算を行うために多数の正確なパッケージを使用し、高い精度を実現します。"
+"MATE 電卓は、金融、論理、科学の各モードを備えた強力なグラフィカルな電卓です。演算を行うために多数の正確なパッケージを使用し、高い精度を実現します。"
 
 #: data/mate-calc.appdata.xml.in:15
 msgid ""
@@ -548,9 +564,8 @@ msgid ""
 "If you would like to know more about MATE and MATE Calc, please visit the "
 "project's home page."
 msgstr ""
-"MATE 電卓は GNOME 電卓のフォークであり、MATE デスクトップ環境の一部です。もし"
-"あなたが MATE と MATE 電卓についてもっと知りたければ、プロジェクトのウェブサ"
-"イトを参照してください。"
+"MATE 電卓は GNOME 電卓のフォークであり、MATE デスクトップ環境の一部です。もしあなたが MATE と MATE "
+"電卓についてもっと知りたければ、プロジェクトのウェブサイトを参照してください。"
 
 #: data/mate-calc.desktop.in:3 src/math-window.c:366
 msgid "MATE Calculator"
@@ -565,7 +580,8 @@ msgstr "電卓"
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "算術/科学/財務の計算を行います"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#. Translators: Search terms to find this application. Do NOT translate or
+#. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mate-calc.desktop.in:13
 msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
 msgstr "calculator;MATE;scientific;arithmetic;financial;calculations;"
@@ -930,7 +946,8 @@ msgstr ""
 "使用方法:\n"
 "  %s - 数学的な計算を実行する。"
 
-#. Description on mate-calc command-line help options displayed on command-line
+#. Description on mate-calc command-line help options displayed on command-
+#. line
 #: src/mate-calc.c:91
 #, c-format
 msgid ""
@@ -946,25 +963,22 @@ msgstr ""
 "  --help-all                      すべてのヘルプオプションを表示\n"
 "  --help-gtk                      GTK+のオプションを表示"
 
-#. Description on mate-calc command-line GTK+ options displayed on command-line
+#. Description on mate-calc command-line GTK+ options displayed on command-
+#. line
 #: src/mate-calc.c:102
 #, c-format
 msgid ""
 "GTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window "
-"manager\n"
-"  --name=NAME                     Program name as used by the window "
-"manager\n"
+"  --class=CLASS                   Program class as used by the window manager\n"
+"  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
 "GTK+オプション:\n"
-"  --class=CLASS                   ウィンドウマネジャーが使用するプログラムの"
-"クラス\n"
-"  --name=NAME                     ウィンドウマネジャーが使用するプログラム"
-"名\n"
+"  --class=CLASS                   ウィンドウマネジャーが使用するプログラムのクラス\n"
+"  --name=NAME                     ウィンドウマネジャーが使用するプログラム名\n"
 "  --screen=SCREEN                 使用するXのスクリーン\n"
 "  --sync                          Xを同期して呼び出す\n"
 "  --gtk-module=MODULES            追加呼び出しを行うGTK+モジュール\n"
@@ -1005,7 +1019,7 @@ msgstr "ネイピア数"
 #. Tooltip for the imaginary number button
 #: src/math-buttons.c:99
 msgid "Imaginary unit"
-msgstr ""
+msgstr "虚数単位"
 
 #. Tooltip for the numeric point button
 #: src/math-buttons.c:102
@@ -1414,7 +1428,8 @@ msgstr "アボガドロ定数"
 msgid "6.02214086×10²³ mol⁻¹"
 msgstr "6.02214086×10²³ mol⁻¹"
 
-#. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
+#. Label that is displayed between the two conversion combo boxes, e.g.
+#. "[degrees] in [radians]"
 #: src/math-converter.c:401
 msgid " in "
 msgstr " in "
@@ -1438,7 +1453,8 @@ msgstr "リドゥの履歴はありません"
 msgid "No sane value to store"
 msgstr "格納する値が正しくありません"
 
-#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
+#. Error displayed to user when they perform a bitwise operation on numbers
+#. greater than the current word
 #: src/math-equation.c:1190
 msgid "Overflow. Try a bigger word size"
 msgstr "オーバーフローしました。Wordサイズを大きくして試してください。"
@@ -1497,23 +1513,28 @@ msgstr "整数以外の値を表示します"
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
-#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
-#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
+#. calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
+#. grads
 #: src/math-preferences.c:238 src/unit-manager.c:51
 msgid "Degrees"
 msgstr "度"
 
-#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
+#. calculations
 #: src/math-preferences.c:242 src/unit-manager.c:52
 msgid "Radians"
 msgstr "ラジアン"
 
-#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
+#. calculations
 #: src/math-preferences.c:246 src/unit-manager.c:53
 msgid "Gradians"
 msgstr "グラード"
 
-#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
+#. number 1.234×10^99)
 #: src/math-preferences.c:256
 msgid "Automatic"
 msgstr "自動"
@@ -1559,30 +1580,29 @@ msgid ""
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
-"MATE 電卓は自由ソフトウェアです; フリーソフトウェア財団が発行する GNU 一般公"
-"衆ライセンスの第二版、あるいはそれ以降の版が定める条項の下で本プログラムを再"
-"頒布または改変することができます。"
+"MATE 電卓は自由ソフトウェアです; フリーソフトウェア財団が発行する GNU "
+"一般公衆ライセンスの第二版、あるいはそれ以降の版が定める条項の下で本プログラムを再頒布または改変することができます。"
 
 #: src/math-window.c:321
 msgid ""
 "MATE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
-"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-"more details."
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
+" more details."
 msgstr ""
-"MATE 電卓は役に立つことを期待して配布されいていますが、完全に無保証です。商品"
-"性や十分な品質、特定の目的への適合性についての暗黙の保証も一切ありません。詳"
-"細については GNU 一般公衆利用許諾を参照してください。"
+"MATE "
+"電卓は役に立つことを期待して配布されいていますが、完全に無保証です。商品性や十分な品質、特定の目的への適合性についての暗黙の保証も一切ありません。詳細については"
+" GNU 一般公衆利用許諾を参照してください。"
 
 #: src/math-window.c:325
 msgid ""
-"You should have received a copy of the GNU General Public License along with "
-"MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
+"You should have received a copy of the GNU General Public License along with"
+" MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
-"MATE 電卓の配布と一緒に GNU 一般公衆利用許諾契約の写しを受け取っているはずで"
-"す。そうでない場合は、Free Software Foundation, Inc., 51 Franklin Street, "
-"Fifth Floor, Boston, MA 02110-1301 USA まで手紙を書いてください。"
+"MATE 電卓の配布と一緒に GNU 一般公衆利用許諾契約の写しを受け取っているはずです。そうでない場合は、Free Software "
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA"
+" まで手紙を書いてください。"
 
 #: src/math-window.c:362
 #, c-format
@@ -1665,7 +1685,7 @@ msgstr "プログラム(_P)"
 #. History menu label
 #: src/math-window.c:539
 msgid "_History"
-msgstr "_履歴"
+msgstr "履歴(_H)"
 
 #. Help>Contents menu label
 #: src/math-window.c:541
@@ -1690,7 +1710,7 @@ msgstr "やり直す(_R)"
 
 #: src/math-window.c:552
 msgid "_Clear History"
-msgstr "_履歴をクリア"
+msgstr "履歴をクリア(_C)"
 
 #: src/math-window.c:555
 msgid "_Preferences"
@@ -1704,22 +1724,26 @@ msgstr "終了 (_Q)"
 msgid "_About"
 msgstr "情報(_A)"
 
-#. Translators: Error displayed when boolean AND attempted on non-integer values
+#. Translators: Error displayed when boolean AND attempted on non-integer
+#. values
 #: src/mp-binary.c:114
 msgid "Boolean AND is only defined for positive integers"
 msgstr "真偽値の積は、正の整数のみ定義しています"
 
-#. Translators: Error displayed when boolean OR attempted on non-integer values
+#. Translators: Error displayed when boolean OR attempted on non-integer
+#. values
 #: src/mp-binary.c:126
 msgid "Boolean OR is only defined for positive integers"
 msgstr "真偽値の和は、正の整数のみ定義しています。"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
 #: src/mp-binary.c:138
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "真偽値の排他的論理和は、正の整数のみ定義しています"
 
-#. Translators: Error displayed when boolean NOT attempted on non-integer values
+#. Translators: Error displayed when boolean NOT attempted on non-integer
+#. values
 #: src/mp-binary.c:154
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "真偽値の否定は、正の整数のみ定義しています。"
@@ -1749,18 +1773,22 @@ msgstr "ゼロの対数は未定義です"
 msgid "The zeroth root of a number is undefined"
 msgstr "番号の0番目のルートが定義されていません"
 
-#. Translators: Error displayed when attempted take the factorial of a negative or complex number
+#. Translators: Error displayed when attempted take the factorial of a
+#. negative or complex number
 #: src/mp.c:474
 msgid "Factorial is only defined for non-negative real numbers"
 msgstr "階乗は非負実数に対してのみ定義されます"
 
-#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
+#. Translators: Error displayed when attemping to do a modulus division on
+#. non-integer numbers
 #: src/mp.c:504
 msgid "Modulus division is only defined for integers"
 msgstr "剰余は整数のみ定義しています"
 
-#. Translators: Error displayed when attempted to raise 0 to a negative exponent
-#. Translators: Error displayed when attempted to raise 0 to a negative re_exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. re_exponent
 #: src/mp.c:575 src/mp.c:602
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "負の指数関数に対するゼロの乗数は未定義です"
@@ -1778,7 +1806,8 @@ msgstr "リーマンゼータ関数は実数≠1に対してのみ定義され�
 #. Translators: Error displayed when tangent value is undefined
 #: src/mp-trigonometric.c:116
 msgid ""
-"Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
+"(90°)"
 msgstr "π∕2 (90°)にπ (180°)の倍数を加えた角度の正接は未定義です"
 
 #. Translators: Error displayed when inverse sine value is undefined
@@ -1796,12 +1825,14 @@ msgstr "[-1, 1]の範囲外の値の逆余弦は未定義です"
 msgid "Arctangent function is undefined for values i and -i"
 msgstr "アークタンジェント関数が値 i および -i に対して定義されていません"
 
-#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
+#. Translators: Error displayed when inverse hyperbolic cosine value is
+#. undefined
 #: src/mp-trigonometric.c:241
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
 msgstr "1未満の値の逆双曲線余弦は未定義です。"
 
-#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
+#. Translators: Error displayed when inverse hyperbolic tangent value is
+#. undefined
 #: src/mp-trigonometric.c:262
 msgid "Inverse hyperbolic tangent is undefined for values outside (-1, 1)"
 msgstr "逆双曲線正接は範囲外の値 (-1,1) には定義されていません"
@@ -2531,7 +2562,8 @@ msgstr "温度"
 msgid "Currency"
 msgstr "通貨"
 
-#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
+#. Translators: result of currency conversion, %s is the symbol, %%s is the
+#. placeholder for amount, i.e.: USD100
 #: src/unit-manager.c:134
 #, c-format
 msgid "%s%%s"

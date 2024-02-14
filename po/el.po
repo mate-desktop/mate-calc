@@ -2,7 +2,7 @@
 # Copyright (C) YEAR MATE Desktop Environment team
 # This file is distributed under the same license as the mate-calc package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # gapan <vlahavas@gmail.com>, 2018
 # Panos Panagiotopoulos <panagiotopoulos@gmail.com>, 2018
@@ -15,19 +15,19 @@
 # TheDimitris15, 2019
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # thunk <thunk77@gmail.com>, 2022
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-calc 1.26.0\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-calc/issues\n"
-"POT-Creation-Date: 2022-10-30 00:03+0200\n"
+"POT-Creation-Date: 2022-10-28 17:41+0200\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
 "Last-Translator: thunk <thunk77@gmail.com>, 2022\n"
-"Language-Team: Greek (https://www.transifex.com/mate/teams/13566/el/)\n"
-"Language: el\n"
+"Language-Team: Greek (https://app.transifex.com/mate/teams/13566/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Accessible name for the factorize button
@@ -286,8 +286,8 @@ msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
 msgstr ""
-"Υπολογίζει το ποσό της περιοδικής πληρωμής (δόσης) του δανείου, αν η πληρωμή "
-"των δόσεων γίνεται στο τέλος κάθε περιόδου."
+"Υπολογίζει το ποσό της περιοδικής πληρωμής (δόσης) του δανείου, αν η πληρωμή"
+" των δόσεων γίνεται στο τέλος κάθε περιόδου."
 
 #. Periodic Payment Dialog: Label before term input
 #. Periodic Interest Rate Dialog: Label before term input
@@ -372,14 +372,14 @@ msgstr "Απόσβεση με συντελεστή τα έτη ζωής"
 #: src/buttons-financial.ui:1631
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
-"accelerates the rate of depreciation, so that more depreciation expense "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
+" accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
 msgstr ""
 "Υπολογίζει την απόσβεση ενός στοιχείου ενεργητικού για συγκεκριμένη χρονική "
-"περίοδο με βάση τη μέθοδο της φθίνουσας απόσβεσης με συντελεστή τα έτη ζωής. "
-"Αυτή η μέθοδος απόσβεσης προβλέπει αυξανόμενο ρυθμό απόσβεσης, έτσι ώστε η "
+"περίοδο με βάση τη μέθοδο της φθίνουσας απόσβεσης με συντελεστή τα έτη ζωής."
+" Αυτή η μέθοδος απόσβεσης προβλέπει αυξανόμενο ρυθμό απόσβεσης, έτσι ώστε η "
 "απόσβεση να είναι μεγαλύτερη στις πρώτες περιόδους από ότι στις τελευταίες. "
 "Η ωφέλιμη ζωή είναι ο αριθμός των περιόδων, συνήθως ετών, κατά τη διάρκεια "
 "των οποίων συντελείται η απόσβεση."
@@ -398,59 +398,90 @@ msgstr "Μελλοντική α_ξία:"
 #: src/buttons-financial.ui:1815
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest "
-"rate."
+"of an ordinary annuity, to accumulate a future value, at a periodic interest"
+" rate."
 msgstr ""
-"Υπολογίζει τον αριθμό των περιόδων πληρωμής που απαιτούνται κατά τη διάρκεια "
-"μιας απλής ετήσιας προσόδου για την επίτευξη μιας μελλοντικής αξίας, με βάση "
-"συγκεκριμένο περιοδικό επιτόκιο."
+"Υπολογίζει τον αριθμό των περιόδων πληρωμής που απαιτούνται κατά τη διάρκεια"
+" μιας απλής ετήσιας προσόδου για την επίτευξη μιας μελλοντικής αξίας, με "
+"βάση συγκεκριμένο περιοδικό επιτόκιο."
 
-#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
+#. Calculates the number of compounding periods necessary to increase an
+#. investment of present value pv to a future value of fv, at a fixed interest
+#. rate of int per compounding period. See also:
+#. http://en.wikipedia.org/wiki/Compound_interest
 #: src/buttons-financial.ui:2166
 msgid "Ctrm"
 msgstr "Ctrm"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the double-declining balance method. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2181
 msgid "Ddb"
 msgstr "Ddb"
 
-#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
+#. Calculates the future value of an investment based on a series of equal
+#. payments, each of amount pmt, at a periodic interest rate of int, over the
+#. number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Future_value
 #: src/buttons-financial.ui:2196
 msgid "Fv"
 msgstr "Fv"
 
-#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#. Calculates the number of payment periods that are necessary during the term
+#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
+#. interest rate of int. Each payment is equal to amount pmt. See also:
+#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
 #: src/buttons-financial.ui:2211
 msgid "Term"
 msgstr "Term"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the Sum-Of-The-Years'-Digits method. This method of
+#. depreciation accelerates the rate of depreciation, so that more
+#. depreciation expense occurs in earlier periods than in later ones. The
+#. depreciable cost is cost - salvage. The useful life is the number of
+#. periods, typically years, over which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2226
 msgid "Syd"
 msgstr "Syd"
 
-#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the straight-line depreciation of an asset for one period. The
+#. depreciable cost is cost - salvage. The straight-line method of
+#. depreciation divides the depreciable cost evenly over the useful life of an
+#. asset. The useful life is the number of periods, typically years, over
+#. which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2241
 msgid "Sln"
 msgstr "Sln"
 
-#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#. Calculates the periodic interest necessary to increase an investment of
+#. present value pv to a future value of fv, over the number of compounding
+#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
 #: src/buttons-financial.ui:2256
 msgid "Rate"
 msgstr "Rate"
 
-#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
+#. Calculates the present value of an investment based on a series of equal
+#. payments, each of amount pmt, discounted at a periodic interest rate of
+#. int, over the number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Present_value
 #: src/buttons-financial.ui:2271
 msgid "Pv"
 msgstr "Pv"
 
-#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
+#. Calculates the amount of the periodic payment of a loan, where payments are
+#. made at the end of each payment period. See also:
+#. http://en.wikipedia.org/wiki/Amortization_schedule
 #: src/buttons-financial.ui:2286
 msgid "Pmt"
 msgstr "Pmt"
 
-#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
+#. Calculates the resale price of a product, based on the product cost and the
+#. wanted gross profit margin. See also:
+#. http://en.wikipedia.org/wiki/Gross_profit_margin
 #: src/buttons-financial.ui:2301
 msgid "Gpm"
 msgstr "Gpm"
@@ -575,7 +606,8 @@ msgstr "Αριθμομηχανή"
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Εκτελεί αριθμητικούς, επιστημονικούς ή εμπορικούς υπολογισμούς"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#. Translators: Search terms to find this application. Do NOT translate or
+#. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mate-calc.desktop.in:13
 msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
 msgstr ""
@@ -594,7 +626,8 @@ msgstr "Μήκος λέξης"
 
 #: data/org.mate.calc.gschema.xml:32
 msgid "The size of the words used in bitwise operations"
-msgstr "Το μέγεθος των λέξεων που χρησιμοποιούνται στους υπολογισμούς κατά bit"
+msgstr ""
+"Το μέγεθος των λέξεων που χρησιμοποιούνται στους υπολογισμούς κατά bit"
 
 #: data/org.mate.calc.gschema.xml:37
 msgid "Numeric Base"
@@ -944,7 +977,8 @@ msgstr ""
 "Χρήση:\n"
 "  %s — Εκτέλεση μαθηματικών υπολογισμών"
 
-#. Description on mate-calc command-line help options displayed on command-line
+#. Description on mate-calc command-line help options displayed on command-
+#. line
 #: src/mate-calc.c:91
 #, c-format
 msgid ""
@@ -960,25 +994,22 @@ msgstr ""
 "  --help-all                      Εμφάνιση όλων των επιλογών βοήθειας\n"
 "  --help-gtk                      Εμφάνιση επιλογών GTK+"
 
-#. Description on mate-calc command-line GTK+ options displayed on command-line
+#. Description on mate-calc command-line GTK+ options displayed on command-
+#. line
 #: src/mate-calc.c:102
 #, c-format
 msgid ""
 "GTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window "
-"manager\n"
-"  --name=NAME                     Program name as used by the window "
-"manager\n"
+"  --class=CLASS                   Program class as used by the window manager\n"
+"  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
 "Επιλογές GTK+:\n"
-"  --class=CLASS                   Κλάση προγράμματος χρησιμοποιούμενη από το "
-"διαχειριστή παραθύρων\n"
-"  --name=NAME                     Όνομα προγράμματος χρησιμοποιούμενη από το "
-"διαχειριστή παραθύρων\n"
+"  --class=CLASS                   Κλάση προγράμματος χρησιμοποιούμενη από το διαχειριστή παραθύρων\n"
+"  --name=NAME                     Όνομα προγράμματος χρησιμοποιούμενη από το διαχειριστή παραθύρων\n"
 "  --screen=SCREEN                 Οθόνη X προς χρήση\n"
 "  --sync                          Να είναι σύγχρονες οι κλήσεις στο X\n"
 "  --gtk-module=MODULES            Φόρτωση πρόσθετων αρθρωμάτων GTK+\n"
@@ -1430,7 +1461,8 @@ msgstr ""
 msgid "6.02214086×10²³ mol⁻¹"
 msgstr ""
 
-#. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
+#. Label that is displayed between the two conversion combo boxes, e.g.
+#. "[degrees] in [radians]"
 #: src/math-converter.c:401
 msgid " in "
 msgstr " σε "
@@ -1454,7 +1486,8 @@ msgstr "Δεν υπάρχει ιστορικό ενεργειών για επν�
 msgid "No sane value to store"
 msgstr "Δε δόθηκε θεμιτή τιμή για αποθήκευση"
 
-#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
+#. Error displayed to user when they perform a bitwise operation on numbers
+#. greater than the current word
 #: src/math-equation.c:1190
 msgid "Overflow. Try a bigger word size"
 msgstr "Υπερχείλιση. Δοκιμάστε να επιλέξετε μεγαλύτερο μήκος λέξης"
@@ -1513,23 +1546,28 @@ msgstr "Η εμφανιζόμενη τιμή δεν είναι ακέραια"
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
-#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
-#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
+#. calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
+#. grads
 #: src/math-preferences.c:238 src/unit-manager.c:51
 msgid "Degrees"
 msgstr "Μοίρες"
 
-#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
+#. calculations
 #: src/math-preferences.c:242 src/unit-manager.c:52
 msgid "Radians"
 msgstr "Ακτίνια"
 
-#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
+#. calculations
 #: src/math-preferences.c:246 src/unit-manager.c:53
 msgid "Gradians"
 msgstr "Βαθμοί"
 
-#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
+#. number 1.234×10^99)
 #: src/math-preferences.c:256
 msgid "Automatic"
 msgstr "Αυτόματη"
@@ -1580,14 +1618,14 @@ msgstr ""
 msgid ""
 "MATE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
-"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-"more details."
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
+" more details."
 msgstr ""
 
 #: src/math-window.c:325
 msgid ""
-"You should have received a copy of the GNU General Public License along with "
-"MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
+"You should have received a copy of the GNU General Public License along with"
+" MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
 
@@ -1698,22 +1736,26 @@ msgstr "_Έξοδος"
 msgid "_About"
 msgstr "Πε_ρί"
 
-#. Translators: Error displayed when boolean AND attempted on non-integer values
+#. Translators: Error displayed when boolean AND attempted on non-integer
+#. values
 #: src/mp-binary.c:114
 msgid "Boolean AND is only defined for positive integers"
 msgstr "Το λογικό AND ορίζεται μόνο για θετικούς ακέραιους"
 
-#. Translators: Error displayed when boolean OR attempted on non-integer values
+#. Translators: Error displayed when boolean OR attempted on non-integer
+#. values
 #: src/mp-binary.c:126
 msgid "Boolean OR is only defined for positive integers"
 msgstr "Το λογικό OR ορίζεται μόνο για θετικούς ακέραιους"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
 #: src/mp-binary.c:138
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "Το λογικό XOR ορίζεται μόνο για θετικούς ακέραιους"
 
-#. Translators: Error displayed when boolean NOT attempted on non-integer values
+#. Translators: Error displayed when boolean NOT attempted on non-integer
+#. values
 #: src/mp-binary.c:154
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "Το λογικό NOT ορίζεται μόνο για θετικούς ακέραιους"
@@ -1743,18 +1785,22 @@ msgstr "Δεν ορίζεται λογάριθμος του μηδενός"
 msgid "The zeroth root of a number is undefined"
 msgstr ""
 
-#. Translators: Error displayed when attempted take the factorial of a negative or complex number
+#. Translators: Error displayed when attempted take the factorial of a
+#. negative or complex number
 #: src/mp.c:474
 msgid "Factorial is only defined for non-negative real numbers"
 msgstr ""
 
-#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
+#. Translators: Error displayed when attemping to do a modulus division on
+#. non-integer numbers
 #: src/mp.c:504
 msgid "Modulus division is only defined for integers"
 msgstr "Το υπόλοιπο ορίζεται μόνο για διαίρεση ακέραιων αριθμών"
 
-#. Translators: Error displayed when attempted to raise 0 to a negative exponent
-#. Translators: Error displayed when attempted to raise 0 to a negative re_exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. re_exponent
 #: src/mp.c:575 src/mp.c:602
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "Δεν ορίζονται δυνάμεις του μηδενός για αρνητικούς εκθέτες"
@@ -1772,7 +1818,8 @@ msgstr ""
 #. Translators: Error displayed when tangent value is undefined
 #: src/mp-trigonometric.c:116
 msgid ""
-"Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
+"(90°)"
 msgstr ""
 "Η εφαπτομένη δεν ορίζεται για γωνίες πολλαπλάσιες του απ + π∕2 (α180°+90°)"
 
@@ -1791,14 +1838,16 @@ msgstr "Το αντίστροφο συνημίτονο δεν ορίζεται �
 msgid "Arctangent function is undefined for values i and -i"
 msgstr ""
 
-#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
+#. Translators: Error displayed when inverse hyperbolic cosine value is
+#. undefined
 #: src/mp-trigonometric.c:241
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
 msgstr ""
-"Το αντίστροφο υπερβολικό συνημίτονο δεν ορίζεται για τιμές μικρότερες ή ίσες "
-"του 1"
+"Το αντίστροφο υπερβολικό συνημίτονο δεν ορίζεται για τιμές μικρότερες ή ίσες"
+" του 1"
 
-#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
+#. Translators: Error displayed when inverse hyperbolic tangent value is
+#. undefined
 #: src/mp-trigonometric.c:262
 msgid "Inverse hyperbolic tangent is undefined for values outside (-1, 1)"
 msgstr ""
@@ -2528,7 +2577,8 @@ msgstr "Θερμοκρασία"
 msgid "Currency"
 msgstr "Νόμισμα"
 
-#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
+#. Translators: result of currency conversion, %s is the symbol, %%s is the
+#. placeholder for amount, i.e.: USD100
 #: src/unit-manager.c:134
 #, c-format
 msgid "%s%%s"

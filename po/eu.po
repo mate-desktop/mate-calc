@@ -2,25 +2,25 @@
 # Copyright (C) YEAR MATE Desktop Environment team
 # This file is distributed under the same license as the mate-calc package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Wolfgang Ulbrich <mate@raveit.de>, 2019
-# Alexander Gabilondo <alexgabi@disroot.org>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Asier Iturralde Sarasola <asier.iturralde@gmail.com>, 2022
-#
+# Alexander Gabilondo <alexgabi@disroot.org>, 2022
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-calc 1.26.0\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-calc/issues\n"
-"POT-Creation-Date: 2022-10-30 00:03+0200\n"
+"POT-Creation-Date: 2022-10-28 17:41+0200\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: Asier Iturralde Sarasola <asier.iturralde@gmail.com>, 2022\n"
-"Language-Team: Basque (https://www.transifex.com/mate/teams/13566/eu/)\n"
-"Language: eu\n"
+"Last-Translator: Alexander Gabilondo <alexgabi@disroot.org>, 2022\n"
+"Language-Team: Basque (https://app.transifex.com/mate/teams/13566/eu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: eu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Accessible name for the factorize button
@@ -71,15 +71,15 @@ msgstr "Desegin"
 
 #: src/buttons-advanced.ui:663
 msgid "asin"
-msgstr ""
+msgstr "asin"
 
 #: src/buttons-advanced.ui:677
 msgid "atan"
-msgstr ""
+msgstr "atan"
 
 #: src/buttons-advanced.ui:705
 msgid "acos"
-msgstr ""
+msgstr "acos"
 
 #. Accessible name for the store value button
 #: src/buttons-advanced.ui:764 src/buttons-programming.ui:2338
@@ -113,7 +113,7 @@ msgstr "Azpiindizea"
 
 #: src/buttons-advanced.ui:966
 msgid "const"
-msgstr ""
+msgstr "const"
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
@@ -235,8 +235,8 @@ msgid ""
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
 msgstr ""
-"Inbertsio baten etorkizuneko balioa kalkulatzen du, interes-tasa periodikoko "
-"ordainketa erregularretan oinarrituta epealdiko ordainketa-denboraldietan "
+"Inbertsio baten etorkizuneko balioa kalkulatzen du, interes-tasa periodikoko"
+" ordainketa erregularretan oinarrituta epealdiko ordainketa-denboraldietan "
 "zehar."
 
 #. Future Value Dialog: Label before periodic payment input
@@ -279,8 +279,8 @@ msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
 msgstr ""
-"Mailegu baten aldizkako ordainketaren zenbatekoa kalkulatzen du, ordainketak "
-"ordainketa-denboraldi bakoitzaren amaieran egiten direla kontuan izanda. "
+"Mailegu baten aldizkako ordainketaren zenbatekoa kalkulatzen du, ordainketak"
+" ordainketa-denboraldi bakoitzaren amaieran egiten direla kontuan izanda. "
 
 #. Periodic Payment Dialog: Label before term input
 #. Periodic Interest Rate Dialog: Label before term input
@@ -350,8 +350,8 @@ msgid ""
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
 msgstr ""
-"Denboraldi bateko amortizazio lineala kalkulatzen du. Amortizazio linealaren "
-"metodoak zati berdinetan zatitzen du kostu amortizagarria aktibo baten "
+"Denboraldi bateko amortizazio lineala kalkulatzen du. Amortizazio linealaren"
+" metodoak zati berdinetan zatitzen du kostu amortizagarria aktibo baten "
 "bizitza erabilgarrian zehar. Bizitza erabilgarria aktibo bat amortizatzeko "
 "denboraldien kopurua da (normalean urteetan zehazten da). "
 
@@ -364,13 +364,13 @@ msgstr "Urteen digituen baturaren amortizazioa"
 #: src/buttons-financial.ui:1631
 msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
-"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
-"accelerates the rate of depreciation, so that more depreciation expense "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation"
+" accelerates the rate of depreciation, so that more depreciation expense "
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
 msgstr ""
-"Aktibo baten denboraldi jakin baterako amortizazio-esleipena kalkulatzen du, "
-"urteen digituen baturaren metodoa erabiliz. Amortizazio-metodo honek "
+"Aktibo baten denboraldi jakin baterako amortizazio-esleipena kalkulatzen du,"
+" urteen digituen baturaren metodoa erabiliz. Amortizazio-metodo honek "
 "amortizazio-tasa azeleratzen du, amortizazio-gastu handiagoa aplikatzeko "
 "hasierako denboraldietan amaierakoetan baino. Bizitza erabilgarria aktibo "
 "bat amortizatzeko denboraldien kopurua da (normalean urteetan zehazten da). "
@@ -389,59 +389,90 @@ msgstr "Etorkizuneko _balioa:"
 #: src/buttons-financial.ui:1815
 msgid ""
 "Calculates the number of payment periods that are necessary during the term "
-"of an ordinary annuity, to accumulate a future value, at a periodic interest "
-"rate."
+"of an ordinary annuity, to accumulate a future value, at a periodic interest"
+" rate."
 msgstr ""
 "Urtealdi arrunt batean, interes-tasa periodiko bat aplikatuz, etorkizuneko "
 "balio jakin bat metatzeko zenbat ordainketa-denboraldi behar diren "
 "kalkulatzen du."
 
-#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
+#. Calculates the number of compounding periods necessary to increase an
+#. investment of present value pv to a future value of fv, at a fixed interest
+#. rate of int per compounding period. See also:
+#. http://en.wikipedia.org/wiki/Compound_interest
 #: src/buttons-financial.ui:2166
 msgid "Ctrm"
 msgstr "Ctrm"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the double-declining balance method. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2181
 msgid "Ddb"
 msgstr "Ddb"
 
-#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
+#. Calculates the future value of an investment based on a series of equal
+#. payments, each of amount pmt, at a periodic interest rate of int, over the
+#. number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Future_value
 #: src/buttons-financial.ui:2196
 msgid "Fv"
 msgstr "Fv"
 
-#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#. Calculates the number of payment periods that are necessary during the term
+#. of an ordinary annuity, to accumulate a future value of fv, at a periodic
+#. interest rate of int. Each payment is equal to amount pmt. See also:
+#. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
 #: src/buttons-financial.ui:2211
 msgid "Term"
 msgstr "Epealdia"
 
-#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the depreciation allowance on an asset for a specified period of
+#. time, using the Sum-Of-The-Years'-Digits method. This method of
+#. depreciation accelerates the rate of depreciation, so that more
+#. depreciation expense occurs in earlier periods than in later ones. The
+#. depreciable cost is cost - salvage. The useful life is the number of
+#. periods, typically years, over which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2226
 msgid "Syd"
 msgstr "Syd"
 
-#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
+#. Calculates the straight-line depreciation of an asset for one period. The
+#. depreciable cost is cost - salvage. The straight-line method of
+#. depreciation divides the depreciable cost evenly over the useful life of an
+#. asset. The useful life is the number of periods, typically years, over
+#. which an asset is depreciated. See also:
+#. http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2241
 msgid "Sln"
 msgstr "Sln"
 
-#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#. Calculates the periodic interest necessary to increase an investment of
+#. present value pv to a future value of fv, over the number of compounding
+#. periods in term. See also: http://en.wikipedia.org/wiki/Interest
 #: src/buttons-financial.ui:2256
 msgid "Rate"
 msgstr "Tasa"
 
-#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
+#. Calculates the present value of an investment based on a series of equal
+#. payments, each of amount pmt, discounted at a periodic interest rate of
+#. int, over the number of payment periods in the term. See also:
+#. http://en.wikipedia.org/wiki/Present_value
 #: src/buttons-financial.ui:2271
 msgid "Pv"
 msgstr "Pv"
 
-#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
+#. Calculates the amount of the periodic payment of a loan, where payments are
+#. made at the end of each payment period. See also:
+#. http://en.wikipedia.org/wiki/Amortization_schedule
 #: src/buttons-financial.ui:2286
 msgid "Pmt"
 msgstr "Pmt"
 
-#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
+#. Calculates the resale price of a product, based on the product cost and the
+#. wanted gross profit margin. See also:
+#. http://en.wikipedia.org/wiki/Gross_profit_margin
 #: src/buttons-financial.ui:2301
 msgid "Gpm"
 msgstr "Gpm"
@@ -533,7 +564,7 @@ msgstr "Erakutsi _milakoen bereizleak"
 
 #: data/mate-calc.appdata.xml.in:7
 msgid "MATE Calc"
-msgstr ""
+msgstr "MATE Calc"
 
 #: data/mate-calc.appdata.xml.in:8
 msgid "MATE Desktop calculator"
@@ -545,6 +576,9 @@ msgid ""
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
 msgstr ""
+"MATE Calc kalkulagailu grafiko indartsua da, finantza, logika eta zientifiko"
+" moduekin. Zehaztasun anitzeko pakete bat erabiltzen du bere aritmetika "
+"egiteko zehaztasun maila handia emateko."
 
 #: data/mate-calc.appdata.xml.in:15
 msgid ""
@@ -552,6 +586,9 @@ msgid ""
 "If you would like to know more about MATE and MATE Calc, please visit the "
 "project's home page."
 msgstr ""
+"MATE Calc GNOME Calc-en fork bat da eta MATE mahaigaineko ingurunearen parte"
+" da. MATE eta MATE Calc-i buruz gehiago jakin nahi baduzu, bisita ezazu "
+"proiektuaren hasierako orrialdera."
 
 #: data/mate-calc.desktop.in:3 src/math-window.c:366
 msgid "MATE Calculator"
@@ -566,10 +603,11 @@ msgstr "Kalkulagailua"
 msgid "Perform arithmetic, scientific or financial calculations"
 msgstr "Egin kalkulu aritmetikoak, zientifikoak edo finantzarioak"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#. Translators: Search terms to find this application. Do NOT translate or
+#. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mate-calc.desktop.in:13
 msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
-msgstr ""
+msgstr "kalkulagailua;MATE;zientifikoa;aritmetika;finantza;kalkuluak;"
 
 #: data/org.mate.calc.gschema.xml:25
 msgid "Accuracy value"
@@ -623,7 +661,7 @@ msgstr "Erakutsi historia"
 
 #: data/org.mate.calc.gschema.xml:53
 msgid "Shows all recent calculations"
-msgstr ""
+msgstr "Azken kalkulu guztiak erakusten ditu"
 
 #: data/org.mate.calc.gschema.xml:57
 msgid "Number format"
@@ -935,7 +973,8 @@ msgstr ""
 "Erabilera:\n"
 "  %s – Egin kalkulu matematikoak"
 
-#. Description on mate-calc command-line help options displayed on command-line
+#. Description on mate-calc command-line help options displayed on command-
+#. line
 #: src/mate-calc.c:91
 #, c-format
 msgid ""
@@ -951,25 +990,22 @@ msgstr ""
 "  --help-all                      Erakutsi laguntza-aukera guztiak\n"
 "  --help-gtk                      Erakutsi GTK+ aukerak"
 
-#. Description on mate-calc command-line GTK+ options displayed on command-line
+#. Description on mate-calc command-line GTK+ options displayed on command-
+#. line
 #: src/mate-calc.c:102
 #, c-format
 msgid ""
 "GTK+ Options:\n"
-"  --class=CLASS                   Program class as used by the window "
-"manager\n"
-"  --name=NAME                     Program name as used by the window "
-"manager\n"
+"  --class=CLASS                   Program class as used by the window manager\n"
+"  --name=NAME                     Program name as used by the window manager\n"
 "  --screen=SCREEN                 X screen to use\n"
 "  --sync                          Make X calls synchronous\n"
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
 "GTK+ aukerak:\n"
-"  --class=CLASS                   Programa-klaseak, leiho-kudeatzaileak "
-"erabiltzen duen bezala\n"
-"  --name=NAME                     Programa-izena, leiho-kudeatzaileak "
-"erabiltzen duen bezala\n"
+"  --class=CLASS                   Programa-klaseak, leiho-kudeatzaileak erabiltzen duen bezala\n"
+"  --name=NAME                     Programa-izena, leiho-kudeatzaileak erabiltzen duen bezala\n"
 "  --screen=SCREEN                 Erabiliko den X pantaila\n"
 "  --sync                          Egin X deiak sinkroniko\n"
 "  --gtk-module=MODULES            Kargatu GTK+ moduluak\n"
@@ -1065,7 +1101,7 @@ msgstr "Funtzio gehigarriak"
 #. Tooltip for the additional constant button
 #: src/math-buttons.c:132
 msgid "Additional constants"
-msgstr ""
+msgstr "Konstante gehigarriak"
 
 #. Tooltip for the exponent button
 #: src/math-buttons.c:135
@@ -1255,12 +1291,12 @@ msgstr "Desegin [Ktrl+Z]"
 #. Tooltip for the shift left button
 #: src/math-buttons.c:252
 msgid "Shift Left [<<]"
-msgstr ""
+msgstr "Shift Ezkerra [<<]"
 
 #. Tooltip for the shift right button
 #: src/math-buttons.c:255
 msgid "Shift Right [>>]"
-msgstr ""
+msgstr "Shift Eskuina [>>]"
 
 #. Tooltip for the double declining depreciation button
 #: src/math-buttons.c:261
@@ -1343,85 +1379,86 @@ msgstr "Zeinua"
 #. Tooltip for the c₀ component button
 #: src/math-buttons.c:1023
 msgid "Velocity of Light"
-msgstr ""
+msgstr "Argiaren abiadura"
 
 #: src/math-buttons.c:1023
 msgid "299,792,458 m/s"
-msgstr ""
+msgstr "299.792.458 m/s"
 
 #. Tooltip for the μ₀ component button
 #: src/math-buttons.c:1025
 msgid "Magnetic constant"
-msgstr ""
+msgstr "Konstante magnetikoa"
 
 #: src/math-buttons.c:1025
 msgid "1.2566370614×10⁻⁶ N/A²"
-msgstr ""
+msgstr "1.2566370614×10⁻⁶ N/A²"
 
 #. Tooltip for the ε₀ button
 #: src/math-buttons.c:1027
 msgid "Electric constant"
-msgstr ""
+msgstr "Konstante elektrikoa"
 
 #: src/math-buttons.c:1027
 msgid "8.85418782×10⁻¹² s⁴A²/m³kg"
-msgstr ""
+msgstr "8.85418782×10⁻¹² s⁴A²/m³kg"
 
 #. Tooltip for the G button
 #: src/math-buttons.c:1029
 msgid "Newtonian constant of gravitation"
-msgstr ""
+msgstr "Grabitazio konstante newtoniarra"
 
 #: src/math-buttons.c:1029
 msgid "6.67408×10⁻¹¹ m³/(s²kg)"
-msgstr ""
+msgstr "6.67408×10⁻¹¹ m³/(s²kg)"
 
 #. Tooltip for the h button
 #: src/math-buttons.c:1031
 msgid "Planck constant"
-msgstr ""
+msgstr "Planck konstantea"
 
 #: src/math-buttons.c:1031
 msgid "6.62607004×10⁻³⁴ m²kg/s"
-msgstr ""
+msgstr "6.62607004×10⁻³⁴ m²kg/s"
 
 #. Tooltip for the ｅ button
 #: src/math-buttons.c:1033
 msgid "Elementary charge"
-msgstr ""
+msgstr "Oinarrizko karga"
 
 #: src/math-buttons.c:1033
 msgid "1.6021766208(98)×10⁻¹⁹ C"
-msgstr ""
+msgstr "1.6021766208(98)×10⁻¹⁹ C"
 
 #. Tooltip for the mₑ button
 #: src/math-buttons.c:1035
 msgid "Electron mass"
-msgstr ""
+msgstr "Elektroi masa"
 
 #: src/math-buttons.c:1035
 msgid "9.10938356×10⁻³¹ kg"
-msgstr ""
+msgstr "9.10938356×10⁻³¹ kg"
 
 #. Tooltip for the mₚ button
 #: src/math-buttons.c:1037
 msgid "Proton mass"
-msgstr ""
+msgstr "Protoi masa"
 
 #: src/math-buttons.c:1037
 msgid "1.672621898(21)×10⁻²⁷ kg"
-msgstr ""
+msgstr "1.672621898(21)×10⁻²⁷ kg"
 
 #. Tooltip for the Nₐ button
 #: src/math-buttons.c:1039
 msgid "Avogadro constant"
-msgstr ""
+msgstr "Avogadro konstantea"
 
 #: src/math-buttons.c:1039
 msgid "6.02214086×10²³ mol⁻¹"
-msgstr ""
+msgstr "6.02214086×10²³ mol⁻¹"
 
-#. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
+#. Label that is displayed between the two conversion combo boxes, e.g.
+#. "[degrees] in [radians]"
 #: src/math-converter.c:401
 msgid " in "
 msgstr " honela "
@@ -1445,7 +1482,8 @@ msgstr "Ez dago desegiteko historiarik"
 msgid "No sane value to store"
 msgstr "Ez dago zentzuzko baliorik biltegiratzeko"
 
-#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
+#. Error displayed to user when they perform a bitwise operation on numbers
+#. greater than the current word
 #: src/math-equation.c:1190
 msgid "Overflow. Try a bigger word size"
 msgstr "Gainezkatzea. Saiatu hitz-tamaina handiago batekin"
@@ -1471,7 +1509,7 @@ msgstr "Bihurketa ezezaguna"
 #: src/math-equation.c:1213
 #, c-format
 msgid "Malformed expression at token '%s'"
-msgstr ""
+msgstr "Okerreko adierazpena '%s' tokenean"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
@@ -1504,23 +1542,28 @@ msgstr "Bistaratutako balioa ez da osoko bat"
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
-#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
-#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric
+#. calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400
+#. grads
 #: src/math-preferences.c:238 src/unit-manager.c:51
 msgid "Degrees"
 msgstr "Graduak"
 
-#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric
+#. calculations
 #: src/math-preferences.c:242 src/unit-manager.c:52
 msgid "Radians"
 msgstr "Radianak"
 
-#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric
+#. calculations
 #: src/math-preferences.c:246 src/unit-manager.c:53
 msgid "Gradians"
 msgstr "Gradianak"
 
-#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large
+#. number 1.234×10^99)
 #: src/math-preferences.c:256
 msgid "Automatic"
 msgstr "Automatikoa"
@@ -1566,21 +1609,32 @@ msgid ""
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
+"MATE kalkulagailua software librea da; birbanatu eta/edo alda dezakezu Free "
+"Software Foundation-ek argitaratutako GNU Lizentzia Publiko Orokorraren "
+"baldintzen arabera; Bai Lizentziaren 2. bertsioa edo (zure aukeran) "
+"geroagoko edozein bertsio."
 
 #: src/math-window.c:321
 msgid ""
 "MATE Calculator is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
-"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-"more details."
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
+" more details."
 msgstr ""
+"MATE Kalkulagailua erabilgarria izango den itxaropenarekin banatzen da, "
+"baina INOLAKO BERMErik GABE; MERKATARITZARAKO edo HELBURU BATEKO "
+"EGOKITASUNAREN berme inplizitua ere gabe. Ikusi GNU Lizentzia Publiko "
+"Orokorra xehetasun gehiagorako."
 
 #: src/math-window.c:325
 msgid ""
-"You should have received a copy of the GNU General Public License along with "
-"MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
+"You should have received a copy of the GNU General Public License along with"
+" MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
+"MATE Kalkulagailuarekin batera GNU Lizentzia Publiko Orokorraren kopia bat "
+"jaso beharko zenuke; hala ez bada, idatzi Free Software Foundation, Inc.-ra,"
+" 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, AEB."
 
 #: src/math-window.c:362
 #, c-format
@@ -1588,16 +1642,20 @@ msgid ""
 "Calculator with financial and scientific modes.\n"
 "Using GNU MPFR %s and GNU MPC %s"
 msgstr ""
+"Modu finantzario eta zientifikoekin kalkulagailua.\n"
+"erabiliz %s GNU MPFR  eta  %1s GNU MPC erabiliz."
 
 #: src/math-window.c:368
 msgid "About MATE Calculator"
-msgstr ""
+msgstr "MATE kalkulagailuari buruz"
 
 #: src/math-window.c:369
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2021 MATE developers"
 msgstr ""
+"Copyright 1986–2010 GCalctool egileak\n"
+"Copyright 2011-2021 MATE garatzaileak"
 
 #: src/math-window.c:375
 msgid "translator-credits"
@@ -1648,7 +1706,7 @@ msgstr "_Programazioa"
 #. History menu label
 #: src/math-window.c:539
 msgid "_History"
-msgstr ""
+msgstr "_Historia"
 
 #. Help>Contents menu label
 #: src/math-window.c:541
@@ -1673,7 +1731,7 @@ msgstr "_Berregin"
 
 #: src/math-window.c:552
 msgid "_Clear History"
-msgstr ""
+msgstr "_Garbitu historia"
 
 #: src/math-window.c:555
 msgid "_Preferences"
@@ -1687,22 +1745,26 @@ msgstr "_Irten"
 msgid "_About"
 msgstr "Honi _buruz"
 
-#. Translators: Error displayed when boolean AND attempted on non-integer values
+#. Translators: Error displayed when boolean AND attempted on non-integer
+#. values
 #: src/mp-binary.c:114
 msgid "Boolean AND is only defined for positive integers"
 msgstr "AND boolearra osoko positiboentzat bakarrik dago definituta"
 
-#. Translators: Error displayed when boolean OR attempted on non-integer values
+#. Translators: Error displayed when boolean OR attempted on non-integer
+#. values
 #: src/mp-binary.c:126
 msgid "Boolean OR is only defined for positive integers"
 msgstr "OR boolearra osoko positiboentzat bakarrik dago definituta"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#. Translators: Error displayed when boolean XOR attempted on non-integer
+#. values
 #: src/mp-binary.c:138
 msgid "Boolean XOR is only defined for positive integers"
 msgstr "XOR boolearra osoko positiboentzat bakarrik dago definituta"
 
-#. Translators: Error displayed when boolean NOT attempted on non-integer values
+#. Translators: Error displayed when boolean NOT attempted on non-integer
+#. values
 #: src/mp-binary.c:154
 msgid "Boolean NOT is only defined for positive integers"
 msgstr "NOT boolearra osoko positiboentzat bakarrik dago definituta"
@@ -1730,20 +1792,24 @@ msgstr "Zeroren logaritmoa ez dago definituta"
 #. Translators: Error displayed when attempting to take zeroth root
 #: src/mp.c:434
 msgid "The zeroth root of a number is undefined"
-msgstr ""
+msgstr "Zenbaki baten zerogarren erroa zehaztu gabe dago"
 
-#. Translators: Error displayed when attempted take the factorial of a negative or complex number
+#. Translators: Error displayed when attempted take the factorial of a
+#. negative or complex number
 #: src/mp.c:474
 msgid "Factorial is only defined for non-negative real numbers"
-msgstr ""
+msgstr "Faktoriala zenbaki erreal ez-negatiboetarako bakarrik definitzen da"
 
-#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
+#. Translators: Error displayed when attemping to do a modulus division on
+#. non-integer numbers
 #: src/mp.c:504
 msgid "Modulus division is only defined for integers"
 msgstr "Modulu-zatiketa osoko zenbakientzat bakarrik dago definituta"
 
-#. Translators: Error displayed when attempted to raise 0 to a negative exponent
-#. Translators: Error displayed when attempted to raise 0 to a negative re_exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative
+#. re_exponent
 #: src/mp.c:575 src/mp.c:602
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "Zeroren berretura ez dago definituta berretzaile negatibo batentzat"
@@ -1751,17 +1817,18 @@ msgstr "Zeroren berretura ez dago definituta berretzaile negatibo batentzat"
 #. Translators: Error displayed when error function (erf) value is undefined
 #: src/mp.c:615
 msgid "The error function is only defined for real numbers"
-msgstr ""
+msgstr "Errore-funtzioa zenbaki errealetarako soilik definitzen da"
 
 #. Translators: Error displayed when zeta function value is undefined
 #: src/mp.c:632
 msgid "The Riemann zeta function is only defined for real numbers ≠1"
-msgstr ""
+msgstr "Riemann zeta funtzioa ≠1 zenbaki errealetarako bakarrik definitzen da"
 
 #. Translators: Error displayed when tangent value is undefined
 #: src/mp-trigonometric.c:116
 msgid ""
-"Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
+"(90°)"
 msgstr ""
 "Tangentea ez dago definituta π∕2 (90°)ren π (180°)(r)en multiploak diren "
 "angeluentzat"
@@ -1774,24 +1841,29 @@ msgstr "Arku sinua ez dago definituta [-1, 1] bitartetik kanpoko balioentzat"
 #. Translators: Error displayed when inverse sine value is undefined
 #: src/mp-trigonometric.c:169
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
-msgstr "Arku kosinua ez dago definituta [-1, 1] bitartetik kanpoko balioentzat"
+msgstr ""
+"Arku kosinua ez dago definituta [-1, 1] bitartetik kanpoko balioentzat"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: src/mp-trigonometric.c:194
 msgid "Arctangent function is undefined for values i and -i"
-msgstr ""
+msgstr "Funtzio arkotangentea zehaztu gabe dago i eta -i balioetarako"
 
-#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
+#. Translators: Error displayed when inverse hyperbolic cosine value is
+#. undefined
 #: src/mp-trigonometric.c:241
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
 msgstr ""
 "Arku kosinu hiperbolikoa ez dago definituta 1en baino txikiagoak diren "
 "balioentzat"
 
-#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
+#. Translators: Error displayed when inverse hyperbolic tangent value is
+#. undefined
 #: src/mp-trigonometric.c:262
 msgid "Inverse hyperbolic tangent is undefined for values outside (-1, 1)"
 msgstr ""
+"Alderantzizko tangente hiperbolikoa ez dago zehaztuta kanpoko balioetarako "
+"(-1, 1)"
 
 #: src/unit-manager.c:51
 #, c-format
@@ -2518,7 +2590,8 @@ msgstr "Tenperatura"
 msgid "Currency"
 msgstr "Dibisa"
 
-#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
+#. Translators: result of currency conversion, %s is the symbol, %%s is the
+#. placeholder for amount, i.e.: USD100
 #: src/unit-manager.c:134
 #, c-format
 msgid "%s%%s"
