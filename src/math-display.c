@@ -14,6 +14,11 @@
 
 #include "math-display.h"
 
+/* compatibility with ATK < 2.50 */
+#if ! ATK_CHECK_VERSION(2, 49, 2)
+# define ATK_LIVE_POLITE ((gint) 1)
+#endif
+
 enum {
     PROP_0,
     PROP_EQUATION
@@ -27,8 +32,8 @@ struct MathDisplayPrivate
     /* Display widget */
     GtkWidget *text_view;
 
-    /* Buffer that shows errors etc */
-    GtkTextBuffer *info_buffer;
+    /* Display for errors etc */
+    GtkWidget *info_view;
 
     /* Spinner widget that shows if we're calculating a response */
     GtkWidget *spinner;
@@ -302,7 +307,9 @@ key_press_cb(MathDisplay *display, GdkEventKey *event)
 static void
 status_changed_cb(MathEquation *equation, GParamSpec *spec, MathDisplay *display)
 {
-    gtk_text_buffer_set_text(display->priv->info_buffer, math_equation_get_status(equation), -1);
+    const gchar *status = math_equation_get_status(equation);
+
+    gtk_text_buffer_set_text(gtk_text_view_get_buffer(GTK_TEXT_VIEW(display->priv->info_view)), status, -1);
     if (math_equation_in_solve(equation) && !gtk_widget_get_visible(display->priv->spinner)) {
         gtk_widget_show(display->priv->spinner);
         gtk_spinner_start(GTK_SPINNER(display->priv->spinner));
@@ -310,6 +317,24 @@ status_changed_cb(MathEquation *equation, GParamSpec *spec, MathDisplay *display
     else if (!math_equation_in_solve(equation) && gtk_widget_get_visible(display->priv->spinner)) {
         gtk_widget_hide(display->priv->spinner);
         gtk_spinner_stop(GTK_SPINNER(display->priv->spinner));
+    }
+
+    /* if the info view doesn't have focus yet we want to display a status
+     * update, try and emit an accessible notification so the screen reader can
+     * pick it up */
+    if (status && *status && ! gtk_widget_has_focus(display->priv->info_view)) {
+        AtkObject *obj = gtk_widget_get_accessible(display->priv->info_view);
+
+        if (obj && GTK_IS_ACCESSIBLE(obj)) {
+            guint signal_id;
+
+            /* we're using either signals, which are mostly the same but for
+             * the politeness parameter */
+            if ((signal_id = g_signal_lookup("notification", G_OBJECT_TYPE(obj))))
+                g_signal_emit(obj, (guint) signal_id, 0, status, ATK_LIVE_POLITE);
+            else if ((signal_id = g_signal_lookup("announcement", G_OBJECT_TYPE(obj))))
+                g_signal_emit(obj, (guint) signal_id, 0, status);
+        }
     }
 }
 
@@ -395,7 +420,7 @@ create_gui(MathDisplay *display)
     /* TEMP: Disabled for now as GTK+ doesn't properly render a right aligned right margin, see bug #482688 */
     /*gtk_text_view_set_right_margin(GTK_TEXT_VIEW(info_view), 6);*/
     gtk_box_pack_start(GTK_BOX(info_box), info_view, TRUE, TRUE, 0);
-    display->priv->info_buffer = gtk_text_view_get_buffer(GTK_TEXT_VIEW(info_view));
+    display->priv->info_view = info_view;
 
     display->priv->spinner = gtk_spinner_new();
     gtk_box_pack_end(GTK_BOX(info_box), display->priv->spinner, FALSE, FALSE, 0);
