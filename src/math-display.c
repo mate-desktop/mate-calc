@@ -302,7 +302,10 @@ key_press_cb(MathDisplay *display, GdkEventKey *event)
 static void
 status_changed_cb(MathEquation *equation, GParamSpec *spec, MathDisplay *display)
 {
-    gtk_text_buffer_set_text(display->priv->info_buffer, math_equation_get_status(equation), -1);
+    const gchar *status = math_equation_get_status(equation);
+
+    gtk_text_buffer_set_text(display->priv->info_buffer, status, -1);
+    atk_object_set_description(gtk_widget_get_accessible(display->priv->text_view), status);
     if (math_equation_in_solve(equation) && !gtk_widget_get_visible(display->priv->spinner)) {
         gtk_widget_show(display->priv->spinner);
         gtk_spinner_start(GTK_SPINNER(display->priv->spinner));
