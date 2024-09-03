@@ -230,9 +230,9 @@ pf_get_variable_with_power(ParseNode* self)
 
     MPNumber t = mp_new();
     MPNumber* ans = mp_new_ptr();
-    pow = super_atoi(((LexerToken*) self->value)->string);
+    pow = super_atoi(self->value);
 
-    /* No need to free the memory. It is allocated and freed somewhere else. */
+    free(self->value);
     self->value = NULL;
 
     if(!(self->state->get_variable))
@@ -344,10 +344,11 @@ pf_apply_func_with_power(ParseNode* self)
         set_error(self->state, PARSER_ERR_UNKNOWN_FUNCTION, self->token->string);
         return NULL;
     }
-    pow = super_atoi(((LexerToken*) self->value)->string);
+    pow = super_atoi(self->value);
     mp_xpowy_integer(tmp, pow, ans);
     mp_free(val);
     mp_free(tmp);
+    free(self->value);
     self->value = NULL;
     return ans;
 }
@@ -391,11 +392,12 @@ pf_apply_func_with_npower(ParseNode* self)
         set_error(self->state, PARSER_ERR_UNKNOWN_FUNCTION, self->token->string);
         return NULL;
     }
-    pow = super_atoi(((LexerToken*) self->value)->string);
+    pow = super_atoi(self->value);
     mp_xpowy_integer(tmp, -pow, ans);
     mp_free(val);
     mp_free(tmp);
     free(inv_name);
+    free(self->value);
     self->value = NULL;
     return ans;
 }
@@ -407,7 +409,8 @@ pf_do_nth_root(ParseNode* self)
     MPNumber* val;
     gint pow;
     MPNumber* ans = mp_new_ptr();
-    pow = sub_atoi(((LexerToken*) self->value)->string);
+    pow = sub_atoi(self->value);
+    free(self->value);
     self->value = NULL;
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!val)

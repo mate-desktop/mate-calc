@@ -82,7 +82,7 @@ p_make_precedence_t(ParserState* state, LexerTokenType type)
     return (p_get_precedence(type) + (state->depth_level * P_Depth));
 }
 
-/* Allocate and create a new node. */
+/* Allocate and create a new node.  `value` must be free()able */
 static ParseNode*
 p_create_node(ParserState* state, LexerToken* token, guint precedence, Associativity associativity, void* value, void* (*function)(ParseNode*))
 {
@@ -1055,9 +1055,8 @@ variable(ParserState* state)
         if(token->token_type == T_SUP_NUMBER)
         {
             /* FUNCTION SUP_NUMBER expression */
-            /* Pass power as void * value. That will be taken care in pf_apply_func_with_powre. */
 
-            node = p_create_node(state, token_old, p_make_precedence_t(state, token_old->token_type), p_get_associativity(token_old), token, pf_apply_func_with_power);
+            node = p_create_node(state, token_old, p_make_precedence_t(state, token_old->token_type), p_get_associativity(token_old), g_strdup(token->string), pf_apply_func_with_power);
             p_insert_into_tree_unary(state, node);
 
             if(!expression(state))
@@ -1067,9 +1066,8 @@ variable(ParserState* state)
         else if(token->token_type == T_NSUP_NUMBER)
         {
             /* FUNCTION NSUP_NUMBER expression */
-            /* Pass power as void * value. That will be taken care in pf_apply_func_with_npowre. */
 
-            node = p_create_node(state, token_old, p_make_precedence_t(state, token_old->token_type), p_get_associativity(token_old), token, pf_apply_func_with_npower);
+            node = p_create_node(state, token_old, p_make_precedence_t(state, token_old->token_type), p_get_associativity(token_old), g_strdup(token->string), pf_apply_func_with_npower);
             p_insert_into_tree_unary(state, node);
 
             if(!expression(state))
@@ -1096,9 +1094,8 @@ variable(ParserState* state)
         if(token->token_type == T_ROOT)
         {
             /* SUB_NUM ROOT expression */
-            /* Pass SUB_NUM as void* value in node. pf_do_nth_root will take care of it. */
 
-            node = p_create_node(state, token, p_make_precedence_t(state, token->token_type), p_get_associativity(token), token_old, pf_do_nth_root);
+            node = p_create_node(state, token, p_make_precedence_t(state, token->token_type), p_get_associativity(token), g_strdup(token_old->string), pf_do_nth_root);
             p_insert_into_tree_unary(state, node);
 
             if(!expression (state))
@@ -1177,9 +1174,8 @@ term(ParserState* state)
         if(token->token_type == T_SUP_NUMBER)
         {
             /* VARIABLE SUP_NUMBER */
-            /* Pass power as void* value. pf_get_variable_with_power will take care of it. */
 
-            node = p_create_node(state, token_old, p_make_precedence_t(state, token_old->token_type), p_get_associativity(token_old), token, pf_get_variable_with_power);
+            node = p_create_node(state, token_old, p_make_precedence_t(state, token_old->token_type), p_get_associativity(token_old), g_strdup(token->string), pf_get_variable_with_power);
             p_insert_into_tree(state, node);
 
         }
