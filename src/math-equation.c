@@ -803,9 +803,29 @@ math_equation_get_equation(MathEquation *equation)
              continue;
         }
 
-        /* Ignore thousands separators */
-        if (c == mp_serializer_get_thousands_separator(equation->priv->serializer) && last_is_digit && next_is_digit)
-            ;
+        /* Ignore thousands separators (including spaces between digits) */
+        if (c == mp_serializer_get_thousands_separator(equation->priv->serializer) && last_is_digit && next_is_digit) {
+            /* Skip official thousands separator */
+        }
+        else if (c == ' ' && last_is_digit) {
+            /* Skip consecutive spaces between digits - look ahead to find next non-space character */
+            const gchar *lookahead = read_iter;
+            while (*lookahead != '\0' && g_utf8_get_char(lookahead) == ' ') {
+                lookahead = g_utf8_next_char(lookahead);
+            }
+            /* Only skip if the next non-space character is a digit */
+            if (*lookahead != '\0' && g_unichar_isdigit(g_utf8_get_char(lookahead))) {
+                /* Skip all consecutive spaces - advance read_iter to the last space */
+                while (g_utf8_get_char(g_utf8_next_char(read_iter)) == ' ') {
+                    read_iter = g_utf8_next_char(read_iter);
+                    offset++;
+                }
+                /* Current space will be skipped by not appending it */
+            } else {
+                /* Keep this space - it's not between digits */
+                g_string_append_unichar(eq_text, c);
+            }
+        }
         /* Substitute radix character */
         else if (c == mp_serializer_get_radix(equation->priv->serializer) && (last_is_digit || next_is_digit))
             g_string_append_unichar(eq_text, '.');
