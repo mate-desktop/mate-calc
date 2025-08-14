@@ -343,7 +343,7 @@ p_check_variable(ParserState* state, gchar* name)
     if(utf8_next_char(name)[0] != '\0')
     {
         result = 1;
-        buffer = (gchar*) malloc(sizeof(gchar) * strlen(name));
+        buffer = (gchar*) malloc(sizeof(gchar) * (strlen(name) + 1));
         for(c = name; *c != '\0'; c = next)
         {
             next = utf8_next_char(c);

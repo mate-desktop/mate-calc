@@ -191,7 +191,7 @@ pf_get_variable(ParseNode* self)
     if(utf8_next_char(self->token->string)[0] != '\0')
     {
         result = 1;
-        buffer = (gchar*) malloc(sizeof(gchar) * strlen(self->token->string));
+        buffer = (gchar*) malloc(sizeof(gchar) * (strlen(self->token->string) + 1));
         mp_set_from_integer(1, &value);
         for(c = self->token->string; *c != '\0'; c = next)
         {
@@ -252,7 +252,7 @@ pf_get_variable_with_power(ParseNode* self)
     if(utf8_next_char(self->token->string)[0] != '\0')
     {
         result = 1;
-        buffer = (gchar*) malloc(sizeof(gchar) * strlen(self->token->string));
+        buffer = (gchar*) malloc(sizeof(gchar) * (strlen(self->token->string) + 1));
         mp_set_from_integer(1, &value);
         for(c = self->token->string; *c != '\0'; c = next)
         {
@@ -362,7 +362,7 @@ pf_apply_func_with_npower(ParseNode* self)
     MPNumber* ans = mp_new_ptr();
     gint pow;
     gchar* inv_name;
-    inv_name = (gchar*) malloc(sizeof(gchar) * strlen(self->token->string) + strlen("⁻¹") + 1);
+    inv_name = (gchar*) malloc(sizeof(gchar) * (strlen(self->token->string) + strlen("⁻¹") + 1));
     strcpy(inv_name, self->token->string);
     strcat(inv_name, "⁻¹");
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
