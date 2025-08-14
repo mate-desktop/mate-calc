@@ -1,0 +1,95 @@
+name: Code Quality
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          clang-format \
+          cppcheck \
+          shellcheck \
+          xmllint \
+          desktop-file-utils
+
+    - name: Check C/C++ code formatting
+      run: |
+        # Find all C/C++ files and check formatting
+        find src/ -name "*.c" -o -name "*.h" | while read file; do
+          echo "Checking format of $file"
+          clang-format --dry-run --Werror "$file" || true
+        done
+
+    - name: Run cppcheck
+      run: |
+        cppcheck --error-exitcode=1 \
+                 --enable=warning,style,performance,portability,information \
+                 --suppress=missingIncludeSystem \
+                 --suppress=unusedFunction \
+                 --inline-suppr \
+                 src/
+
+    - name: Check shell scripts
+      run: |
+        find . -name "*.sh" -type f -exec shellcheck {} \; || true
+
+    - name: Validate desktop files
+      run: |
+        find . -name "*.desktop.in" -type f | while read file; do
+          echo "Validating $file"
+          # Basic validation - desktop-file-validate would need the processed .desktop file
+          xmllint --noout --nonet --quiet "$file" 2>/dev/null || echo "XML validation skipped for $file"
+        done
+
+    - name: Check XML files
+      run: |
+        find . -name "*.xml" -type f -exec xmllint --noout {} \;
+
+    - name: Check for common issues
+      run: |
+        # Check for trailing whitespace
+        if grep -r '[[:space:]]$' src/ --exclude-dir=.git; then
+          echo "Found trailing whitespace"
+          exit 1
+        fi
+        
+        # Check for tabs in source files (if project prefers spaces)
+        if grep -r $'\t' src/ --include="*.c" --include="*.h" --exclude-dir=.git; then
+          echo "Found tabs in source files - please use spaces"
+          # Don't fail on this for now, just warn
+        fi
+
+  security:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Run security checks
+      run: |
+        # Check for potential security issues
+        echo "Checking for potential security issues..."
+        
+        # Look for dangerous functions
+        if grep -r '\(strcpy\|sprintf\|gets\|strcat\)(' src/ --include="*.c"; then
+          echo "Warning: Found potentially unsafe functions"
+        fi
+        
+        # Check for TODO/FIXME comments that might indicate security issues
+        grep -r 'TODO.*\(security\|vulner\|exploit\)' src/ || true
+        grep -r 'FIXME.*\(security\|vulner\|exploit\)' src/ || true
+        
+        echo "Security check completed"

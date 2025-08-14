@@ -1,0 +1,161 @@
+name: Build and Test
+
+on:
+  push:
+    branches: [ master, main ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ master, main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        distro:
+          - 'debian:testing'
+          - 'fedora:latest'
+        include:
+          - distro: 'debian:testing'
+            distro_name: 'debian'
+          - distro: 'fedora:latest'
+            distro_name: 'fedora'
+    
+    container:
+      image: ${{ matrix.distro }}
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install dependencies (Debian)
+      if: matrix.distro_name == 'debian'
+      run: |
+        apt-get update
+        apt-get install -y \
+          autopoint \
+          clang \
+          clang-tools \
+          cppcheck \
+          gcc \
+          git \
+          libatk1.0-dev \
+          libglib2.0-dev \
+          libgmp-dev \
+          libgtk-3-dev \
+          libmpc-dev \
+          libmpfr-dev \
+          libxml2-dev \
+          make \
+          mate-common \
+          yelp-tools \
+          bison \
+          flex \
+          curl
+
+    - name: Install dependencies (Fedora)
+      if: matrix.distro_name == 'fedora'
+      run: |
+        dnf update -y
+        dnf install -y \
+          autoconf-archive \
+          clang \
+          clang-analyzer \
+          cppcheck-htmlreport \
+          bison \
+          desktop-file-utils \
+          flex \
+          gcc \
+          git \
+          gmp-devel \
+          gtk3 \
+          libmpc-devel \
+          libxml2-devel \
+          make \
+          mate-common \
+          mate-desktop-devel \
+          mpfr-devel \
+          redhat-rpm-config \
+          curl \
+          which
+
+    - name: Set up environment variables
+      run: |
+        export CPU_COUNT=$(nproc)
+        echo "CPU_COUNT=$CPU_COUNT" >> $GITHUB_ENV
+        echo "DISTRO_NAME=${{ matrix.distro_name }}" >> $GITHUB_ENV
+        echo "REPO_NAME=mate-calc" >> $GITHUB_ENV
+        echo "OWNER_NAME=mate-desktop" >> $GITHUB_ENV
+        export CHECKERS="-enable-checker deadcode.DeadStores -enable-checker alpha.deadcode.UnreachableCode -enable-checker alpha.core.CastSize -enable-checker alpha.core.CastToStruct -enable-checker alpha.core.IdenticalExpr -enable-checker alpha.core.SizeofPtr -enable-checker alpha.security.ArrayBoundV2 -enable-checker alpha.security.MallocOverflow -enable-checker alpha.security.ReturnPtrRange -enable-checker alpha.unix.SimpleStream -enable-checker alpha.unix.cstring.BufferOverlap -enable-checker alpha.unix.cstring.NotNullTerminated -enable-checker alpha.unix.cstring.OutOfBounds -enable-checker alpha.core.FixedAddr -enable-checker security.insecureAPI.strcpy"
+        echo "CHECKERS=$CHECKERS" >> $GITHUB_ENV
+
+    - name: Run cppcheck (Debian only)
+      if: matrix.distro_name == 'debian'
+      run: |
+        export CFLAGS+=" -Wsign-compare"
+        cppcheck --enable=warning,style,performance,portability,information,missingInclude .
+
+    - name: Generate build system
+      run: |
+        NOCONFIGURE=1 ./autogen.sh
+
+    - name: Configure with scan-build
+      run: |
+        scan-build $CHECKERS ./configure --enable-compile-warnings=maximum
+
+    - name: Build with scan-build
+      run: |
+        if [ $CPU_COUNT -gt 1 ]; then
+          if [ "$DISTRO_NAME" == "debian" ]; then
+            scan-build $CHECKERS --keep-cc --use-cc=clang --use-c++=clang++ -o html-report make -j $CPU_COUNT
+            make clean
+          fi
+          scan-build $CHECKERS --keep-cc -o html-report make -j $CPU_COUNT
+        else
+          if [ "$DISTRO_NAME" == "debian" ]; then
+            scan-build $CHECKERS --keep-cc --use-cc=clang --use-c++=clang++ -o html-report make
+            make clean
+          fi
+          scan-build $CHECKERS --keep-cc -o html-report make
+        fi
+
+    - name: Run additional checks (Fedora only)
+      if: matrix.distro_name == 'fedora'
+      run: |
+        cppcheck --xml --output-file=cppcheck.xml --enable=warning,style,performance,portability,information,missingInclude .
+        cppcheck-htmlreport --title=$REPO_NAME --file=cppcheck.xml --report-dir=cppcheck-htmlreport
+
+    - name: Generate index (Fedora only)
+      if: matrix.distro_name == 'fedora'
+      run: |
+        curl -Ls -o gen-index https://github.com/mate-desktop/mate-dev-scripts/raw/master/travis/gen-index.sh
+        chmod +x gen-index
+        ./gen-index -l 20 -i https://github.com/${OWNER_NAME}/mate-icon-theme/raw/master/mate/16x16/apps/accessories-calculator.png
+
+    - name: Run distcheck
+      run: |
+        make distcheck
+
+    - name: Upload HTML reports (Fedora only)
+      if: matrix.distro_name == 'fedora'
+      uses: actions/upload-artifact@v4
+      with:
+        name: html-report-${{ matrix.distro_name }}
+        path: html-report/
+        retention-days: 30
+
+    - name: Upload cppcheck reports (Fedora only)
+      if: matrix.distro_name == 'fedora'
+      uses: actions/upload-artifact@v4
+      with:
+        name: cppcheck-report-${{ matrix.distro_name }}
+        path: cppcheck-htmlreport/
+        retention-days: 30
+
+    - name: Upload distribution archives
+      if: matrix.distro_name == 'fedora'
+      uses: actions/upload-artifact@v4
+      with:
+        name: distribution-archives
+        path: mate-calc-*.tar.xz
+        retention-days: 90

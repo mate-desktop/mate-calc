@@ -1,0 +1,139 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  pull-requests: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+    container:
+      image: 'fedora:latest'
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: |
+        dnf update -y
+        dnf install -y \
+          autoconf-archive \
+          clang \
+          clang-analyzer \
+          cppcheck-htmlreport \
+          bison \
+          desktop-file-utils \
+          flex \
+          gcc \
+          git \
+          gmp-devel \
+          gtk3 \
+          libmpc-devel \
+          libxml2-devel \
+          make \
+          mate-common \
+          mate-desktop-devel \
+          mpfr-devel \
+          redhat-rpm-config \
+          curl \
+          which
+
+    - name: Set up environment variables
+      run: |
+        export CPU_COUNT=$(nproc)
+        echo "CPU_COUNT=$CPU_COUNT" >> $GITHUB_ENV
+        echo "REPO_NAME=mate-calc" >> $GITHUB_ENV
+        echo "OWNER_NAME=mate-desktop" >> $GITHUB_ENV
+        export CHECKERS="-enable-checker deadcode.DeadStores -enable-checker alpha.deadcode.UnreachableCode -enable-checker alpha.core.CastSize -enable-checker alpha.core.CastToStruct -enable-checker alpha.core.IdenticalExpr -enable-checker alpha.core.SizeofPtr -enable-checker alpha.security.ArrayBoundV2 -enable-checker alpha.security.MallocOverflow -enable-checker alpha.security.ReturnPtrRange -enable-checker alpha.unix.SimpleStream -enable-checker alpha.unix.cstring.BufferOverlap -enable-checker alpha.unix.cstring.NotNullTerminated -enable-checker alpha.unix.cstring.OutOfBounds -enable-checker alpha.core.FixedAddr -enable-checker security.insecureAPI.strcpy"
+        echo "CHECKERS=$CHECKERS" >> $GITHUB_ENV
+
+    - name: Generate build system
+      run: |
+        NOCONFIGURE=1 ./autogen.sh
+
+    - name: Configure with scan-build
+      run: |
+        scan-build $CHECKERS ./configure --enable-compile-warnings=maximum
+
+    - name: Build with scan-build
+      run: |
+        scan-build $CHECKERS --keep-cc -o html-report make -j $CPU_COUNT
+
+    - name: Run cppcheck
+      run: |
+        cppcheck --xml --output-file=cppcheck.xml --enable=warning,style,performance,portability,information,missingInclude .
+        cppcheck-htmlreport --title=$REPO_NAME --file=cppcheck.xml --report-dir=cppcheck-htmlreport
+
+    - name: Generate index page
+      run: |
+        curl -Ls -o gen-index https://github.com/mate-desktop/mate-dev-scripts/raw/master/travis/gen-index.sh
+        chmod +x gen-index
+        ./gen-index -l 20 -i https://github.com/${OWNER_NAME}/mate-icon-theme/raw/master/mate/16x16/apps/accessories-calculator.png
+
+    - name: Setup Pages
+      if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
+      uses: actions/configure-pages@v5
+
+    - name: Upload artifact
+      if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: html-report
+
+    - name: Comment on PR with analysis results
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          const path = require('path');
+          
+          // Check if html-report exists and has content
+          const reportDir = 'html-report';
+          let reportCount = 0;
+          
+          if (fs.existsSync(reportDir)) {
+            const files = fs.readdirSync(reportDir);
+            reportCount = files.filter(f => f.endsWith('.html')).length;
+          }
+          
+          const comment = `## 🔍 Static Analysis Results
+          
+          Code analysis completed for this pull request.
+          
+          - **Scan-build reports**: ${reportCount} files generated
+          - **Status**: ${reportCount > 0 ? '⚠️ Issues found' : '✅ No issues found'}
+          
+          The detailed reports are available in the workflow artifacts.`;
+          
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: comment
+          });
+
+  deploy:
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build-docs
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

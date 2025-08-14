@@ -1,0 +1,117 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    container:
+      image: 'fedora:latest'
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Install dependencies
+      run: |
+        dnf update -y
+        dnf install -y \
+          autoconf-archive \
+          clang \
+          clang-analyzer \
+          bison \
+          desktop-file-utils \
+          flex \
+          gcc \
+          git \
+          gmp-devel \
+          gtk3 \
+          libmpc-devel \
+          libxml2-devel \
+          make \
+          mate-common \
+          mate-desktop-devel \
+          mpfr-devel \
+          redhat-rpm-config \
+          curl \
+          which \
+          sha256sum
+
+    - name: Set up environment variables
+      run: |
+        export CPU_COUNT=$(nproc)
+        echo "CPU_COUNT=$CPU_COUNT" >> $GITHUB_ENV
+        echo "REPO_NAME=mate-calc" >> $GITHUB_ENV
+        echo "OWNER_NAME=mate-desktop" >> $GITHUB_ENV
+
+    - name: Generate build system
+      run: |
+        NOCONFIGURE=1 ./autogen.sh
+
+    - name: Configure
+      run: |
+        ./configure --enable-compile-warnings=maximum
+
+    - name: Build
+      run: |
+        make -j $CPU_COUNT
+
+    - name: Create distribution archive
+      run: |
+        make distcheck
+
+    - name: Generate checksums
+      run: |
+        for file in mate-calc-*.tar.xz; do
+          if [ -f "$file" ]; then
+            sha256sum "$file" > "$file.sha256"
+          fi
+        done
+
+    - name: Notify release servers
+      run: |
+        # Notify MATE release servers (if configured)
+        if [ -n "${{ secrets.RELEASE_NOTIFY_TOKEN }}" ]; then
+          curl -X POST -H "Authorization: token ${{ secrets.RELEASE_NOTIFY_TOKEN }}" \
+               -d '{"tag":"${{ github.ref_name }}","repo":"mate-calc"}' \
+               https://release.mate-desktop.org/release || echo "Release notification failed"
+        fi
+
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v2
+      with:
+        draft: false
+        prerelease: false
+        generate_release_notes: true
+        files: |
+          mate-calc-*.tar.xz
+          mate-calc-*.tar.xz.sha256
+        body: |
+          Release ${{ github.ref_name }} of MATE Calculator
+          
+          This release includes the source distribution archive and checksums.
+          
+          ## Installation
+          
+          Download the `mate-calc-*.tar.xz` file and verify it with the corresponding `.sha256` checksum file:
+          
+          ```bash
+          sha256sum -c mate-calc-*.tar.xz.sha256
+          ```
+          
+          Then extract and build:
+          
+          ```bash
+          tar -xf mate-calc-*.tar.xz
+          cd mate-calc-*
+          ./configure
+          make
+          sudo make install
+          ```
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

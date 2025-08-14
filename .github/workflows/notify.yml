@@ -1,0 +1,44 @@
+name: Notifications
+
+on:
+  push:
+    branches: [ master, main ]
+    tags: [ 'v*' ]
+  workflow_run:
+    workflows: ["Build and Test"]
+    types:
+      - completed
+
+jobs:
+  irc-notify:
+    runs-on: ubuntu-latest
+    if: >
+      (github.event_name == 'push' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/'))) ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'failure')
+    
+    steps:
+    - name: Send IRC notification on success
+      if: >
+        (github.event_name == 'push') ||
+        (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+      uses: Gottox/irc-message-action@v2
+      continue-on-error: true
+      with:
+        server: irc.libera.chat
+        channel: '#mate-dev'
+        nickname: mate-github-bot
+        message: |
+          [mate-calc] ${{ github.actor }}: ${{ github.event.head_commit.message || 'Workflow completed successfully' }}
+          [${{ github.ref_name }}] ${{ github.sha }} Success ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+    - name: Send IRC notification on failure
+      if: github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'failure'
+      uses: Gottox/irc-message-action@v2
+      continue-on-error: true
+      with:
+        server: irc.libera.chat
+        channel: '#mate-dev'
+        nickname: mate-github-bot
+        message: |
+          [mate-calc] Build failed: ${{ github.event.workflow_run.head_commit.message }}
+          [${{ github.event.workflow_run.head_branch }}] ${{ github.event.workflow_run.head_sha }} Failure ${{ github.event.workflow_run.html_url }}
