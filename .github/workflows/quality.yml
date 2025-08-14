@@ -21,7 +21,7 @@ jobs:
           clang-format \
           cppcheck \
           shellcheck \
-          xmllint \
+          libxml2-utils \
           desktop-file-utils
 
     - name: Check C/C++ code formatting
