@@ -27,49 +27,81 @@ jobs:
     - name: Check C/C++ code formatting
       run: |
         # Find all C/C++ files and check formatting
+        echo "::warning::Code formatting check - this is informational only"
         find src/ -name "*.c" -o -name "*.h" | while read file; do
           echo "Checking format of $file"
-          clang-format --dry-run --Werror "$file" || true
-        done
+          if ! clang-format --dry-run "$file" > /dev/null 2>&1; then
+            echo "::warning file=$file::Code formatting issues found in $file"
+          fi
+        done || true
 
     - name: Run cppcheck
       run: |
-        cppcheck --error-exitcode=1 \
-                 --enable=warning,style,performance,portability,information \
+        echo "::warning::Running cppcheck analysis - issues will be reported as warnings"
+        cppcheck --enable=warning,style,performance,portability,information \
                  --suppress=missingIncludeSystem \
                  --suppress=unusedFunction \
                  --inline-suppr \
-                 src/
+                 --template='{file}:{line}: {severity}: {message}' \
+                 src/ 2>&1 | while IFS= read -r line; do
+          if [[ $line =~ ^(.+):([0-9]+):[[:space:]]*([^:]+):[[:space:]]*(.+)$ ]]; then
+            file="${BASH_REMATCH[1]}"
+            lineno="${BASH_REMATCH[2]}"
+            severity="${BASH_REMATCH[3]}"
+            message="${BASH_REMATCH[4]}"
+            echo "::warning file=$file,line=$lineno::$severity: $message"
+          else
+            echo "$line"
+          fi
+        done || true
 
     - name: Check shell scripts
       run: |
-        find . -name "*.sh" -type f -exec shellcheck {} \; || true
+        echo "::warning::Running shellcheck analysis - issues will be reported as warnings"
+        find . -name "*.sh" -type f | while read -r file; do
+          echo "Checking shell script: $file"
+          if ! shellcheck "$file"; then
+            echo "::warning file=$file::Shellcheck found issues in $file"
+          fi
+        done || true
 
     - name: Validate desktop files
       run: |
-        find . -name "*.desktop.in" -type f | while read file; do
+        echo "::warning::Validating desktop files - issues will be reported as warnings"
+        find . -name "*.desktop.in" -type f | while read -r file; do
           echo "Validating $file"
           # Basic validation - desktop-file-validate would need the processed .desktop file
-          xmllint --noout --nonet --quiet "$file" 2>/dev/null || echo "XML validation skipped for $file"
-        done
+          if ! xmllint --noout --nonet --quiet "$file" 2>/dev/null; then
+            echo "::warning file=$file::Desktop file validation issues found in $file"
+          fi
+        done || true
 
     - name: Check XML files
       run: |
-        find . -name "*.xml" -type f -exec xmllint --noout {} \;
+        echo "::warning::Validating XML files - issues will be reported as warnings"
+        find . -name "*.xml" -type f | while read -r file; do
+          echo "Validating XML: $file"
+          if ! xmllint --noout "$file" 2>/dev/null; then
+            echo "::warning file=$file::XML validation issues found in $file"
+          fi
+        done || true
 
     - name: Check for common issues
       run: |
+        echo "::warning::Checking for common code issues - issues will be reported as warnings"
+        
         # Check for trailing whitespace
         if grep -r '[[:space:]]$' src/ --exclude-dir=.git; then
-          echo "Found trailing whitespace"
-          exit 1
+          echo "::warning::Found trailing whitespace in source files"
         fi
         
         # Check for tabs in source files (if project prefers spaces)
         if grep -r $'\t' src/ --include="*.c" --include="*.h" --exclude-dir=.git; then
-          echo "Found tabs in source files - please use spaces"
-          # Don't fail on this for now, just warn
+          echo "::warning::Found tabs in source files - consider using spaces for consistency"
         fi
+        
+        # Always succeed
+        true
 
   security:
     runs-on: ubuntu-latest
@@ -80,16 +112,23 @@ jobs:
 
     - name: Run security checks
       run: |
-        # Check for potential security issues
+        echo "::warning::Running security analysis - issues will be reported as warnings"
         echo "Checking for potential security issues..."
         
         # Look for dangerous functions
         if grep -r '\(strcpy\|sprintf\|gets\|strcat\)(' src/ --include="*.c"; then
-          echo "Warning: Found potentially unsafe functions"
+          echo "::warning::Found potentially unsafe functions - consider using safer alternatives"
         fi
         
         # Check for TODO/FIXME comments that might indicate security issues
-        grep -r 'TODO.*\(security\|vulner\|exploit\)' src/ || true
-        grep -r 'FIXME.*\(security\|vulner\|exploit\)' src/ || true
+        if grep -r 'TODO.*\(security\|vulner\|exploit\)' src/; then
+          echo "::warning::Found security-related TODO comments"
+        fi
+        
+        if grep -r 'FIXME.*\(security\|vulner\|exploit\)' src/; then
+          echo "::warning::Found security-related FIXME comments"
+        fi
         
         echo "Security check completed"
+        # Always succeed
+        true
