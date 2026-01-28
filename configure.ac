@@ -4,6 +4,7 @@ AC_INIT([mate-calc], [1.28.0], [https://github.com/mate-desktop/mate-calc/issues
         [mate-calc], [https://mate-desktop.org])
 
 AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-xz check-news])
+AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_HEADERS(config.h)
 AM_MAINTAINER_MODE
 MATE_MAINTAINER_MODE_DEFINES
