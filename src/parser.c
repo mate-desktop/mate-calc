@@ -238,6 +238,7 @@ p_create_parser(const gchar* input, MPEquationOptions* options)
     state->options = options;
     state->error = 0;
     state->error_token = NULL;
+    state->ret = mp_new();
     return state;
 }
 
@@ -276,7 +277,6 @@ p_parse(ParserState* state)
     ans = (MPNumber *) (*(state->root->evaluate))(state->root);
     if(ans)
     {
-        state->ret = mp_new();
         mp_set_from_mp(ans, &state->ret);
         mp_free(ans);
         return PARSER_ERR_NONE;
@@ -294,6 +294,8 @@ p_destroy_parser(ParserState* state)
         p_destroy_all_nodes(state->root);
     }
     l_destroy_lexer(state->lexer);
+    mp_clear(&state->ret);
+    free(state->error_token);
     free(state);
 }
 

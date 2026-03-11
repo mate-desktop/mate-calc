@@ -91,6 +91,7 @@ main(void)
         solve(equation);
     }
     free(equation);
+    g_object_unref(result_serializer);
 
     return 0;
 }

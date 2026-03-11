@@ -291,10 +291,10 @@ mp_equation_parse(const char *expression, MPEquationOptions *options, MPNumber *
     int ret;
     int err;
     ParserState* state;
-    state = p_create_parser (expression, options);
-
     if (!(expression && result) || strlen(expression) == 0)
         return PARSER_ERR_INVALID;
+
+    state = p_create_parser (expression, options);
 
     state->variable_is_defined = variable_is_defined;
     state->get_variable = get_variable;
@@ -307,6 +307,7 @@ mp_equation_parse(const char *expression, MPEquationOptions *options, MPNumber *
     ret = p_parse (state);
     if (state->error_token != NULL && error_token != NULL) {
         *error_token = state->error_token;
+        state->error_token = NULL;
     }
     /* Error during parsing */
     if (state->error) {

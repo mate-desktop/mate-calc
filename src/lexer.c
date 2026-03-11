@@ -441,78 +441,102 @@ LETTER_STATE:
             }
             else if(type == PL_SUB_DIGIT)
             {
+                LexerToken* ret;
+                gchar* sub;
                 while(pl_get_next_token(state) == PL_SUB_DIGIT);
                 pl_roll_back(state);
-                tmp = g_ascii_strdown(pl_get_marked_substring(state), -1);
+                sub = pl_get_marked_substring(state);
+                tmp = g_ascii_strdown(sub, -1);
+                g_free(sub);
                 if(g_strcmp0(tmp, "mod") == 0)
                 {
+                    g_free(tmp);
                     return l_insert_token(lstate, T_MOD);
                 }
                 if(g_strcmp0(tmp, "and") == 0)
                 {
+                    g_free(tmp);
                     return l_insert_token(lstate, T_AND);
                 }
                 if(g_strcmp0(tmp, "or") == 0)
                 {
+                    g_free(tmp);
                     return l_insert_token(lstate, T_OR);
                 }
                 if(g_strcmp0(tmp, "xor") == 0)
                 {
+                    g_free(tmp);
                     return l_insert_token(lstate, T_XOR);
                 }
                 if(g_strcmp0(tmp, "not") == 0)
                 {
+                    g_free(tmp);
                     return l_insert_token(lstate, T_NOT);
                 }
                 if(g_strcmp0(tmp, "in") == 0)
                 {
+                    g_free(tmp);
                     return l_insert_token(lstate, T_IN);
                 }
+                g_free(tmp);
                 if(l_check_if_function(lstate))
                 {
-                    return l_insert_token(lstate, T_FUNCTION);
+                    ret = l_insert_token(lstate, T_FUNCTION);
                 }
                 else
                 {
-                    return l_insert_token(lstate, T_VARIABLE);
+                    ret = l_insert_token(lstate, T_VARIABLE);
                 }
+                return ret;
             }
             else
             {
+                LexerToken* ret;
+                gchar* sub;
                 pl_roll_back(state);
-                tmp = g_ascii_strdown(pl_get_marked_substring(state), -1);
+                sub = pl_get_marked_substring(state);
+                tmp = g_ascii_strdown(sub, -1);
+                g_free(sub);
                 if(g_strcmp0(tmp, "mod") == 0)
                 {
+                    g_free(tmp);
                     return l_insert_token(lstate, T_MOD);
                 }
                 if(g_strcmp0(tmp, "and") == 0)
                 {
+                    g_free(tmp);
                     return l_insert_token(lstate, T_AND);
                 }
                 if(g_strcmp0(tmp, "or") == 0)
                 {
+                    g_free(tmp);
                     return l_insert_token(lstate, T_OR);
                 }
                 if(g_strcmp0(tmp, "xor") == 0)
                 {
+                    g_free(tmp);
                     return l_insert_token(lstate, T_XOR);
                 }
                 if(g_strcmp0(tmp, "not") == 0)
                 {
+                    g_free(tmp);
                     return l_insert_token(lstate, T_NOT);
                 }
                 if(g_strcmp0(tmp, "in") == 0)
                 {
+                    g_free(tmp);
                     return l_insert_token(lstate, T_IN);
                 }
+                g_free(tmp);
                 if(l_check_if_function(lstate))
                 {
-                    return l_insert_token(lstate, T_FUNCTION);
+                    ret = l_insert_token(lstate, T_FUNCTION);
                 }
                 else
                 {
-                    return l_insert_token(lstate, T_VARIABLE);
+                    ret = l_insert_token(lstate, T_VARIABLE);
                 }
+                return ret;
             }
         }
     }

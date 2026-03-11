@@ -68,8 +68,11 @@ solve(const char *equation)
         exit(1);
     }
     else {
-        result_str = mp_serializer_to_string(mp_serializer_new(MP_DISPLAY_FORMAT_AUTOMATIC, 10, 9), &result);
+        MpSerializer *serializer = mp_serializer_new(MP_DISPLAY_FORMAT_AUTOMATIC, 10, 9);
+        result_str = mp_serializer_to_string(serializer, &result);
+        g_object_unref(serializer);
         printf("%s\n", result_str);
+        g_free(result_str);
         mp_clear(&result);
         exit(0);
     }
@@ -165,8 +168,10 @@ get_options(int argc, char *argv[])
                 g_free(progname);
                 exit(1);
             }
-            else
+            else {
+                g_free(progname);
                 solve(argv[i]);
+            }
         }
         else {
             fprintf(stderr,

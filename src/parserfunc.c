@@ -11,8 +11,10 @@ void
 set_error(ParserState* state, gint errorno, const gchar *token)
 {
     state->error = errorno;
-    if(token)
+    if(token) {
+        free(state->error_token);
         state->error_token = strdup(token);
+    }
 }
 
 /* Unused function pointer. This won't be called anytime. */
@@ -177,13 +179,17 @@ pf_get_variable(ParseNode* self)
 
     if(!(self->state->get_variable))
     {
-        free(ans);
+        mp_clear(&value);
+        mp_clear(&t);
+        mp_free(ans);
         return NULL;
     }
 
     /* If defined, then get the variable */
     if((*(self->state->get_variable))(self->state, self->token->string, ans))
     {
+        mp_clear(&value);
+        mp_clear(&t);
         return ans;
     }
 
@@ -208,9 +214,11 @@ pf_get_variable(ParseNode* self)
         if(result)
             mp_set_from_mp(&value, ans);
     }
+    mp_clear(&value);
+    mp_clear(&t);
     if(!result)
     {
-        free (ans);
+        mp_free(ans);
         ans = NULL;
         set_error(self->state, PARSER_ERR_UNKNOWN_VARIABLE, self->token->string);
     }
@@ -237,13 +245,17 @@ pf_get_variable_with_power(ParseNode* self)
 
     if(!(self->state->get_variable))
     {
-        free(ans);
+        mp_clear(&value);
+        mp_clear(&t);
+        mp_free(ans);
         return NULL;
     }
 
     /* If defined, then get the variable */
     if((*(self->state->get_variable))(self->state, self->token->string, ans))
     {
+        mp_clear(&value);
+        mp_clear(&t);
         mp_xpowy_integer(ans, pow, ans);
         return ans;
     }
@@ -273,9 +285,11 @@ pf_get_variable_with_power(ParseNode* self)
         if(result)
             mp_set_from_mp(&value, ans);
     }
+    mp_clear(&value);
+    mp_clear(&t);
     if(!result)
     {
-        free(ans);
+        mp_free(ans);
         ans = NULL;
         set_error(self->state, PARSER_ERR_UNKNOWN_VARIABLE, self->token->string);
     }
@@ -291,23 +305,23 @@ pf_apply_func(ParseNode* self)
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!(self->state->get_function))
     {
-        free(val);
-        free(ans);
+        mp_free(val);
+        mp_free(ans);
         return NULL;
     }
     if(!val)
     {
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     if(!(*(self->state->get_function))(self->state, self->token->string, val, ans))
     {
-        free(val);
-        free(ans);
+        mp_free(val);
+        mp_free(ans);
         set_error(self->state, PARSER_ERR_UNKNOWN_FUNCTION, self->token->string);
         return NULL;
     }
-    free(val);
+    mp_free(val);
     return ans;
 }
 
@@ -432,11 +446,11 @@ pf_do_sqrt(ParseNode* self)
     val = (MPNumber*) (*(self->right->evaluate))(self->right);
     if(!val)
     {
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     mp_sqrt(val, ans);
-    free(val);
+    mp_free(val);
     return ans;
 }
 
@@ -758,7 +772,7 @@ pf_do_subtract(ParseNode* self)
             mp_free(left);
         if(right)
             mp_free(right);
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     mp_subtract(left, right, ans);
@@ -782,7 +796,7 @@ pf_do_add(ParseNode* self)
             mp_free(left);
         if(right)
             mp_free(right);
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     mp_add(left, right, ans);
@@ -832,7 +846,7 @@ pf_do_subtract_percent(ParseNode* self)
             mp_free(val);
         if(per)
             mp_free(per);
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     mp_add_integer(per, -100, per);
@@ -947,7 +961,7 @@ pf_do_xor(ParseNode* self)
             mp_free(left);
         if(right)
             mp_free(right);
-        free(ans);
+        mp_free(ans);
         return NULL;
     }
     mp_xor(left, right, ans);
