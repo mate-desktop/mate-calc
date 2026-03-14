@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 1987-2008 Sun Microsystems, Inc. All Rights Reserved.
  * Copyright (C) 2008-2011 Robert Ancell.
+ * Copyright (C) 2011-2026 MATE Desktop Team
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
@@ -12,7 +13,7 @@
 #ifndef MATH_WINDOW_H
 #define MATH_WINDOW_H
 
-#include <glib-object.h>
+#include <gtk/gtk.h>
 #include "math-equation.h"
 #include "math-display.h"
 #include "math-buttons.h"
@@ -26,15 +27,13 @@ typedef struct MathWindowPrivate MathWindowPrivate;
 
 typedef struct
 {
-    GtkWindow parent_instance;
+    GtkApplicationWindow parent_instance;
     MathWindowPrivate *priv;
 } MathWindow;
 
 typedef struct
 {
-    GtkWindowClass parent_class;
-
-    void (*quit) (MathWindow *window);
+    GtkApplicationWindowClass parent_class;
 } MathWindowClass;
 
 GType math_window_get_type(void);

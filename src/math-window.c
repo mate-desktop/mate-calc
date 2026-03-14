@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 1987-2008 Sun Microsystems, Inc. All Rights Reserved.
  * Copyright (C) 2008-2011 Robert Ancell.
+ * Copyright (C) 2011-2026 MATE Desktop Team
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
@@ -16,6 +17,7 @@
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
 #include <gdk/gdkkeysyms.h>
+#include <mpc.h>
 
 #include "math-window.h"
 #include "math-history.h"
@@ -57,15 +59,7 @@ struct MathWindowPrivate
     GtkWidget *view_history_menu_item;
 };
 
-G_DEFINE_TYPE_WITH_PRIVATE (MathWindow, math_window, GTK_TYPE_WINDOW);
-
-enum
-{
-    QUIT,
-    LAST_SIGNAL
-};
-
-static guint signals[LAST_SIGNAL] = { 0, };
+G_DEFINE_TYPE_WITH_PRIVATE(MathWindow, math_window, GTK_TYPE_APPLICATION_WINDOW);
 
 MathWindow *
 math_window_new(MathEquation *equation)
@@ -135,22 +129,28 @@ void
 math_window_critical_error(MathWindow *window, const gchar *title, const gchar *contents)
 {
     GtkWidget *dialog;
+    GtkApplication *app;
 
     g_return_if_fail(window != NULL);
     g_return_if_fail(title != NULL);
     g_return_if_fail(contents != NULL);
 
-    dialog = gtk_message_dialog_new(NULL, 0,
+    dialog = gtk_message_dialog_new(GTK_WINDOW(window),
+                                    GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT,
                                     GTK_MESSAGE_ERROR,
                                     GTK_BUTTONS_NONE,
                                     "%s", title);
     gtk_message_dialog_format_secondary_text(GTK_MESSAGE_DIALOG(dialog),
                                              "%s", contents);
-    gtk_dialog_add_buttons(GTK_DIALOG(dialog), "gtk-quit", GTK_RESPONSE_ACCEPT, NULL);
+    gtk_dialog_add_buttons(GTK_DIALOG(dialog), _("_Quit"), GTK_RESPONSE_ACCEPT, NULL);
 
     gtk_dialog_run(GTK_DIALOG(dialog));
+    gtk_widget_destroy(dialog);
 
-    g_signal_emit(window, signals[QUIT], 0);
+    /* Critical error - quit the entire application */
+    app = gtk_window_get_application(GTK_WINDOW(window));
+    if (app)
+        g_application_quit(G_APPLICATION(app));
 }
 
 static void mode_changed_cb(GtkWidget *menu, MathWindow *window)
@@ -196,64 +196,6 @@ static void show_preferences_cb(GtkMenuItem *menu, MathWindow *window)
     }
 
     gtk_window_present(GTK_WINDOW(window->priv->preferences_dialog));
-}
-
-static gboolean
-key_press_cb(MathWindow *window, GdkEventKey *event)
-{
-    gboolean result;
-    g_signal_emit_by_name(window->priv->display, "key-press-event", event, &result);
-
-    /* Keyboard navigation for history */
-    if ((event->state & GDK_MOD1_MASK) == GDK_MOD1_MASK && (event->keyval == GDK_KEY_Up || event->keyval == GDK_KEY_Down))
-    {
-        switch (event->keyval)
-        {
-            case GDK_KEY_Up:
-                math_history_set_current(window->priv->history, -1);
-                break;
-            case GDK_KEY_Down:
-                math_history_set_current(window->priv->history, 1);
-                break;
-        }
-
-        MathHistoryEntry *entry = math_history_get_entry_at(window->priv->history, math_history_get_current(window->priv->history));
-        if (entry)
-        {
-            gchar *equation_string = math_history_entry_get_equation(entry);
-            math_equation_set(window->priv->equation, equation_string);
-            g_free(equation_string);
-        }
-        return TRUE;
-    }
-    else if (math_buttons_get_mode (window->priv->buttons) == PROGRAMMING && (event->state & GDK_CONTROL_MASK) == GDK_CONTROL_MASK) {
-        switch(event->keyval)
-        {
-        /* Binary */
-        case GDK_KEY_b:
-            math_equation_set_base (window->priv->equation, 2);
-            return TRUE;
-        /* Octal */
-        case GDK_KEY_o:
-            math_equation_set_base (window->priv->equation, 8);
-            return TRUE;
-        /* Decimal */
-        case GDK_KEY_d:
-            math_equation_set_base (window->priv->equation, 10);
-            return TRUE;
-        /* Hexdecimal */
-        case GDK_KEY_h:
-            math_equation_set_base (window->priv->equation, 16);
-            return TRUE;
-        }
-    }
-
-    return result;
-}
-
-static void delete_cb(MathWindow *window, GdkEvent *event)
-{
-    g_signal_emit(window, signals[QUIT], 0);
 }
 
 static void copy_cb(GtkWidget *widget, MathWindow *window)
@@ -384,6 +326,65 @@ static void about_cb(GtkWidget* widget, MathWindow* window)
     g_free (license_trans);
 }
 
+static void quit_cb(GtkWidget* widget, MathWindow* window)
+{
+    gtk_widget_destroy(GTK_WIDGET(window));
+}
+
+static gboolean
+key_press_cb(MathWindow *window, GdkEventKey *event)
+{
+    gboolean result;
+    g_signal_emit_by_name(window->priv->display, "key-press-event", event, &result);
+
+    /* Keyboard navigation for history */
+    if ((event->state & GDK_MOD1_MASK) == GDK_MOD1_MASK && (event->keyval == GDK_KEY_Up || event->keyval == GDK_KEY_Down))
+    {
+        switch (event->keyval)
+        {
+            case GDK_KEY_Up:
+                math_history_set_current(window->priv->history, -1);
+                break;
+            case GDK_KEY_Down:
+                math_history_set_current(window->priv->history, 1);
+                break;
+        }
+
+        MathHistoryEntry *entry = math_history_get_entry_at(window->priv->history, math_history_get_current(window->priv->history));
+        if (entry)
+        {
+            gchar *equation_string = math_history_entry_get_equation(entry);
+            math_equation_set(window->priv->equation, equation_string);
+            g_free(equation_string);
+        }
+        return TRUE;
+    }
+    else if (math_buttons_get_mode (window->priv->buttons) == PROGRAMMING && (event->state & GDK_CONTROL_MASK) == GDK_CONTROL_MASK) {
+        switch(event->keyval)
+        {
+        /* Binary */
+        case GDK_KEY_b:
+            math_equation_set_base (window->priv->equation, 2);
+            return TRUE;
+        /* Octal */
+        case GDK_KEY_o:
+            math_equation_set_base (window->priv->equation, 8);
+            return TRUE;
+        /* Decimal */
+        case GDK_KEY_d:
+            math_equation_set_base (window->priv->equation, 10);
+            return TRUE;
+        /* Hexdecimal */
+        case GDK_KEY_h:
+            math_equation_set_base (window->priv->equation, 16);
+            return TRUE;
+        }
+    }
+
+    return result;
+}
+
+
 static void
 scroll_changed_cb(GtkAdjustment *adjustment, MathWindow *window)
 {
@@ -452,11 +453,6 @@ history_set_serializer_cb(MathEquation *equation, MathWindow *window)
     MpSerializer *serializer = math_equation_get_serializer(equation);
 
     math_history_set_serializer(window->priv->history, serializer);
-}
-
-static void quit_cb(GtkWidget* widget, MathWindow* window)
-{
-    g_signal_emit(window, signals[QUIT], 0);
 }
 
 static GtkWidget *add_menu_item(GtkWidget *menu, GtkWidget *menu_item, GCallback callback, gpointer callback_data)
@@ -697,14 +693,6 @@ math_window_class_init(MathWindowClass *klass)
                                                          "Show-history",
                                                          FALSE,
                                                          G_PARAM_READWRITE));
-
-    signals[QUIT] = g_signal_new("quit",
-                                 G_TYPE_FROM_CLASS (klass),
-                                 G_SIGNAL_RUN_LAST,
-                                 G_STRUCT_OFFSET (MathWindowClass, quit),
-                                 NULL, NULL,
-                                 g_cclosure_marshal_VOID__VOID,
-                                 G_TYPE_NONE, 0);
 }
 
 static void
@@ -718,5 +706,4 @@ math_window_init(MathWindow *window)
     gtk_window_set_role(GTK_WINDOW(window), "mate-calc");
     gtk_window_set_resizable(GTK_WINDOW(window), FALSE);
     g_signal_connect_after(G_OBJECT(window), "key-press-event", G_CALLBACK(key_press_cb), NULL);
-    g_signal_connect(G_OBJECT(window), "delete-event", G_CALLBACK(delete_cb), NULL);
 }

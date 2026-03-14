@@ -16,6 +16,8 @@ nodist_mate_calc_SOURCES= $(BUILT_SOURCES)
 
 mate_calc_SOURCES = \
 	mate-calc.c \
+	mate-calc-application.c \
+	mate-calc-application.h \
 	currency.c \
 	currency.h \
 	currency-manager.c \

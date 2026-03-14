@@ -25,6 +25,7 @@ ui_resources = gnome.compile_resources(
 
 src += [
     'mate-calc.c',
+    'mate-calc-application.c',
     'currency-manager.c',
     'currency.c',
     'financial.c',
