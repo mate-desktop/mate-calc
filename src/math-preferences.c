@@ -95,6 +95,21 @@ word_size_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialog)
     math_equation_set_word_size(dialog->priv->equation, value);
 }
 
+void radix_char_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialog);
+G_MODULE_EXPORT
+void
+radix_char_combobox_changed_cb(GtkWidget *combo, MathPreferencesDialog *dialog)
+{
+    RadixChar value;
+    GtkTreeModel *model;
+    GtkTreeIter iter;
+
+    model = gtk_combo_box_get_model(GTK_COMBO_BOX(combo));
+    gtk_combo_box_get_active_iter(GTK_COMBO_BOX(combo), &iter);
+    gtk_tree_model_get(model, &iter, 1, &value, -1);
+    math_equation_set_radix_char(dialog->priv->equation, value);
+}
+
 void decimal_places_spin_change_value_cb(GtkWidget *spin, MathPreferencesDialog *dialog);
 G_MODULE_EXPORT
 void
@@ -198,6 +213,13 @@ angle_unit_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *d
 }
 
 static void
+radix_char_cb(MathEquation *equation, GParamSpec *spec, MathPreferencesDialog *dialog)
+{
+    set_combo_box_from_int(GET_WIDGET(dialog->priv->ui, "radix_char_combobox"), math_equation_get_radix_char(equation));
+    g_settings_set_enum(g_settings_var, "radix-char", math_equation_get_radix_char(equation));
+}
+
+static void
 create_gui(MathPreferencesDialog *dialog)
 {
     GtkWidget *widget;
@@ -275,6 +297,11 @@ create_gui(MathPreferencesDialog *dialog)
     gtk_cell_layout_pack_start(GTK_CELL_LAYOUT(widget), renderer, TRUE);
     gtk_cell_layout_add_attribute(GTK_CELL_LAYOUT(widget), renderer, "text", 0);
 
+    widget = GET_WIDGET(dialog->priv->ui, "radix_char_combobox");
+    renderer = gtk_cell_renderer_text_new();
+    gtk_cell_layout_pack_start(GTK_CELL_LAYOUT(widget), renderer, TRUE);
+    gtk_cell_layout_add_attribute(GTK_CELL_LAYOUT(widget), renderer, "text", 0);
+
     /* Label used in preferences dialog.  The %d is replaced by a spinbutton */
     string = _("Show %d decimal _places");
     tokens = g_strsplit(string, "%d", 2);
@@ -308,6 +335,7 @@ create_gui(MathPreferencesDialog *dialog)
     g_signal_connect(dialog->priv->equation, "notify::number-format", G_CALLBACK(number_format_cb), dialog);
     g_signal_connect(dialog->priv->equation, "notify::word-size", G_CALLBACK(word_size_cb), dialog);
     g_signal_connect(dialog->priv->equation, "notify::angle-units", G_CALLBACK(angle_unit_cb), dialog);
+    g_signal_connect(dialog->priv->equation, "notify::radix-char", G_CALLBACK(radix_char_cb), dialog);
 
     accuracy_cb(dialog->priv->equation, NULL, dialog);
     show_thousands_separators_cb(dialog->priv->equation, NULL, dialog);
@@ -315,6 +343,7 @@ create_gui(MathPreferencesDialog *dialog)
     number_format_cb(dialog->priv->equation, NULL, dialog);
     word_size_cb(dialog->priv->equation, NULL, dialog);
     angle_unit_cb(dialog->priv->equation, NULL, dialog);
+    radix_char_cb(dialog->priv->equation, NULL, dialog);
 }
 
 static void

@@ -17,6 +17,10 @@
     <value value="1" nick="degrees"/>
     <value value="2" nick="gradians"/>
   </enum>
+  <enum id="org.mate.calc.RadixChar">
+    <value value="0" nick="dot"/>
+    <value value="1" nick="comma"/>
+  </enum>
 
   <schema path="/org/mate/calc/" id="org.mate.calc" gettext-domain="mate-calc">
     <key type="i" name="accuracy">
@@ -66,6 +70,11 @@
       <default>'basic'</default>
       <summary>Button mode</summary>
       <description>The button mode</description>
+    </key>
+    <key name="radix-char" enum="org.mate.calc.RadixChar">
+      <default>'dot'</default>
+      <summary>Radix character</summary>
+      <description>The character to use as the decimal separator (radix point)</description>
     </key>
     <key type="s" name="source-currency">
       <default>''</default>

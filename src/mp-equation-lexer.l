@@ -103,7 +103,7 @@ IN   [iI][nN]
 {OR}        {return tOR;}
 {XOR}       {return tXOR;}
 {IN}        {return tIN;}
-{NUMBER}    {if (mp_set_from_string(yytext, _mp_equation_get_extra(yyscanner)->options->base, &yylval->int_t) != 0) REJECT; return tNUMBER;}
+{NUMBER}    {if (mp_set_from_string_with_radix(yytext, _mp_equation_get_extra(yyscanner)->options->base, _mp_equation_get_extra(yyscanner)->options->radix_char, &yylval->int_t) != 0) REJECT; return tNUMBER;}
 {SUP_NUM}   {yylval->integer = super_atoi(yytext); return tSUPNUM;}
 {NSUP_NUM}  {yylval->integer = super_atoi(yytext); return tNSUPNUM;}
 {SUB_NUM}   {yylval->integer = sub_atoi(yytext); return tSUBNUM;}

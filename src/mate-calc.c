@@ -21,6 +21,7 @@
 
 #include "math-window.h"
 #include "math-preferences.h"
+#include "math-equation.h"
 #include "mp-equation.h"
 #include "unit-manager.h"
 #include "utility.h"
@@ -224,6 +225,7 @@ int main(int argc, char **argv)
     show_hist = g_settings_get_boolean(g_settings_var, "show-history");
     number_format = g_settings_get_enum(g_settings_var, "number-format");
     angle_units = g_settings_get_enum(g_settings_var, "angle-units");
+    RadixChar radix_char = g_settings_get_enum(g_settings_var, "radix-char");
     button_mode = g_settings_get_enum(g_settings_var, "button-mode");
     source_currency = g_settings_get_string(g_settings_var, "source-currency");
     target_currency = g_settings_get_string(g_settings_var, "target-currency");
@@ -237,6 +239,7 @@ int main(int argc, char **argv)
     math_equation_set_show_trailing_zeroes(equation, show_zeroes);
     math_equation_set_number_format(equation, number_format);
     math_equation_set_angle_units(equation, angle_units);
+    math_equation_set_radix_char(equation, radix_char);
     math_equation_set_source_currency(equation, source_currency);
     math_equation_set_target_currency(equation, target_currency);
     math_equation_set_source_units(equation, source_units);

@@ -15,6 +15,7 @@
 #include <ctype.h>
 #include <math.h>
 #include <langinfo.h>
+#include <glib.h>
 
 #include "mp.h"
 
@@ -217,8 +218,8 @@ set_from_sexagesimal(const char *str, int length, MPNumber *z)
     return false;
 }
 
-bool
-mp_set_from_string(const char *str, int default_base, MPNumber *z)
+static bool
+mp_set_from_string_internal(const char *str, int default_base, gunichar radix_char, MPNumber *z)
 {
     int i, base, negate = 0, multiplier = 0, base_multiplier = 1;
     const char *c, *end;
@@ -287,9 +288,10 @@ mp_set_from_string(const char *str, int default_base, MPNumber *z)
         mp_clear(&fraction);
     }
 
-    if (*c == '.') {
+    /* Check for the specified radix character */
+    if (g_utf8_get_char(c) == radix_char) {
         has_fraction = TRUE;
-        c++;
+        c = g_utf8_next_char(c);
     }
 
     /* Convert fractional part */
@@ -326,4 +328,17 @@ mp_set_from_string(const char *str, int default_base, MPNumber *z)
         mp_invert_sign(z, z);
 
     return false;
+}
+
+bool
+mp_set_from_string_with_radix(const char *str, int default_base, gunichar radix_char, MPNumber *z)
+{
+    return mp_set_from_string_internal(str, default_base, radix_char, z);
+}
+
+bool
+mp_set_from_string(const char *str, int default_base, MPNumber *z)
+{
+    /* Default to period for backward compatibility */
+    return mp_set_from_string_internal(str, default_base, '.', z);
 }

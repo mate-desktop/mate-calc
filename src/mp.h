@@ -255,6 +255,11 @@ void   mp_set_from_random(MPNumber *z);
  */
 bool   mp_set_from_string(const char *text, int default_base, MPNumber *z);
 
+/* Sets z from a string representation in 'text' using the specified radix character.
+ * Returns true on success.
+ */
+bool   mp_set_from_string_with_radix(const char *text, int default_base, gunichar radix_char, MPNumber *z);
+
 /* Returns x as a native single-precision floating point number */
 float  mp_to_float(const MPNumber *x);
 

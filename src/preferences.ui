@@ -54,6 +54,24 @@
       </row>
     </data>
   </object>
+  <object class="GtkListStore" id="number_base_model">
+    <columns>
+      <!-- column-name label -->
+      <column type="gchararray"/>
+      <!-- column-name radix_char -->
+      <column type="gint"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes" comments="Radix character combo: use dot as decimal separator and comma as thousands separator">Dot (123,456.789)</col>
+        <col id="1">0</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes" comments="Radix character combo: use comma as decimal separator and dot as thousands separator">Comma (123.456,789)</col>
+        <col id="1">1</col>
+      </row>
+    </data>
+  </object>
   <object class="GtkDialog" id="preferences_dialog">
     <property name="can_focus">False</property>
     <property name="border_width">8</property>
@@ -181,6 +199,32 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label12">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes" comments="Preferences dialog: label for radix and thousands separator combo box">_Separators:</property>
+                <property name="use_underline">True</property>
+                <property name="mnemonic_widget">radix_char_combobox</property>
+                <property name="xalign">0</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBox" id="radix_char_combobox">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="model">number_base_model</property>
+                <signal name="changed" handler="radix_char_combobox_changed_cb" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">4</property>
               </packing>
             </child>
             <child>

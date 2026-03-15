@@ -44,6 +44,11 @@ typedef enum {
     SUBSCRIPT
 } NumberMode;
 
+typedef enum {
+    RADIX_DOT = 0,
+    RADIX_COMMA = 1
+} RadixChar;
+
 GType math_equation_get_type(void);
 MathEquation *math_equation_new(void);
 
@@ -83,6 +88,9 @@ gint math_equation_get_word_size(MathEquation *equation);
 
 void math_equation_set_angle_units(MathEquation *equation, MPAngleUnit angle_unit);
 MPAngleUnit math_equation_get_angle_units(MathEquation *equation);
+
+void math_equation_set_radix_char(MathEquation *equation, RadixChar radix_char);
+RadixChar math_equation_get_radix_char(MathEquation *equation);
 
 void math_equation_set_source_currency(MathEquation *equation, const gchar *currency);
 const gchar *math_equation_get_source_currency(MathEquation *equation);

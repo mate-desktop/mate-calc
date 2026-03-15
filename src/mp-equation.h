@@ -36,6 +36,9 @@ typedef struct {
     /* Units for angles (e.g. radians, degrees) */
     MPAngleUnit angle_units;
 
+    /* Radix character to use for decimal separator */
+    gunichar radix_char;
+
     // FIXME:
     // int enable_builtins;
 

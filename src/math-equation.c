@@ -40,6 +40,7 @@ enum {
     PROP_BASE,
     PROP_WORD_SIZE,
     PROP_ANGLE_UNITS,
+    PROP_RADIX_CHAR,
     PROP_SOURCE_CURRENCY,
     PROP_TARGET_CURRENCY,
     PROP_SOURCE_UNITS,
@@ -47,7 +48,7 @@ enum {
     PROP_SERIALIZER
 };
 
-static GType number_mode_type, number_format_type, angle_unit_type;
+static GType number_mode_type, number_format_type, angle_unit_type, radix_char_type;
 
 /* Expression mode state */
 typedef struct {
@@ -67,6 +68,7 @@ struct MathEquationPrivate
 
     gint word_size;           /* Word size in bits */
     MPAngleUnit angle_units;  /* Units for trigonometric functions */
+    RadixChar radix_char;     /* Decimal separator character preference */
     char *source_currency;
     char *target_currency;
     char *source_units;
@@ -274,13 +276,19 @@ reformat_separators(MathEquation *equation)
 }
 
 static void
+reformat_separators_cb(gpointer user_data)
+{
+    reformat_separators(MATH_EQUATION(user_data));
+}
+
+static void
 reformat_display(MathEquation *equation)
 {
     /* Change ans */
     reformat_ans(equation);
 
     /* Add/remove thousands separators */
-    reformat_separators(equation);
+    g_idle_add_once(reformat_separators_cb, equation);
 
     g_signal_emit_by_name(equation, "display-changed");
 }
@@ -630,6 +638,34 @@ math_equation_get_angle_units(MathEquation *equation)
 }
 
 void
+math_equation_set_radix_char(MathEquation *equation, RadixChar radix_char)
+{
+    g_return_if_fail(equation != NULL);
+    if (equation->priv->radix_char == radix_char)
+        return;
+    equation->priv->radix_char = radix_char;
+
+    /* Update the serializer radix character and thousands separator */
+    if (radix_char == RADIX_COMMA) {
+        mp_serializer_set_radix(equation->priv->serializer, ',');
+        mp_serializer_set_thousands_separator(equation->priv->serializer, '.');
+    }
+    else {
+        mp_serializer_set_radix(equation->priv->serializer, '.');
+        mp_serializer_set_thousands_separator(equation->priv->serializer, ',');
+    }
+
+    g_object_notify(G_OBJECT(equation), "radix-char");
+}
+
+RadixChar
+math_equation_get_radix_char(MathEquation *equation)
+{
+    g_return_val_if_fail(equation != NULL, RADIX_DOT);
+    return equation->priv->radix_char;
+}
+
+void
 math_equation_set_source_currency(MathEquation *equation, const gchar *currency)
 {
     g_return_if_fail(equation != NULL);
@@ -836,8 +872,7 @@ math_equation_get_equation(MathEquation *equation)
     }
     g_free(text);
 
-    text = eq_text->str;
-    g_string_free(eq_text, FALSE);
+    text = g_string_free(eq_text, FALSE);
 
     return text;
 }
@@ -1156,6 +1191,7 @@ parse(MathEquation *equation, const char *text, MPNumber *z, char **error_token)
     options.base = mp_serializer_get_base(equation->priv->serializer);
     options.wordlen = equation->priv->word_size;
     options.angle_units = equation->priv->angle_units;
+    options.radix_char = (equation->priv->radix_char == RADIX_COMMA) ? ',' : '.';
     options.variable_is_defined = variable_is_defined;
     options.get_variable = get_variable;
     options.set_variable = set_variable;
@@ -1543,6 +1579,9 @@ math_equation_set_property(GObject      *object,
     case PROP_ANGLE_UNITS:
         math_equation_set_angle_units(self, g_value_get_int(value));
         break;
+    case PROP_RADIX_CHAR:
+        math_equation_set_radix_char(self, g_value_get_int(value));
+        break;
     case PROP_SOURCE_CURRENCY:
         math_equation_set_source_currency(self, g_value_get_string(value));
         break;
@@ -1610,6 +1649,9 @@ math_equation_get_property(GObject    *object,
     case PROP_ANGLE_UNITS:
         g_value_set_enum(value, self->priv->angle_units);
         break;
+    case PROP_RADIX_CHAR:
+        g_value_set_enum(value, self->priv->radix_char);
+        break;
     case PROP_SOURCE_CURRENCY:
         g_value_set_string(value, self->priv->source_currency);
         break;
@@ -1659,6 +1701,12 @@ math_equation_class_init(MathEquationClass *klass)
       {MP_GRADIANS, "gradians", "gradians"},
       {0, NULL, NULL}
     };
+    static GEnumValue radix_char_values[] =
+    {
+      {RADIX_DOT,   "dot",   "dot"},
+      {RADIX_COMMA, "comma", "comma"},
+      {0, NULL, NULL}
+    };
     GObjectClass *object_class = G_OBJECT_CLASS(klass);
 
     object_class->get_property = math_equation_get_property;
@@ -1668,6 +1716,7 @@ math_equation_class_init(MathEquationClass *klass)
     number_mode_type = g_enum_register_static("NumberMode", number_mode_values);
     number_format_type = math_mp_display_format_get_type();
     angle_unit_type = g_enum_register_static("AngleUnit", angle_unit_values);
+    radix_char_type = g_enum_register_static("RadixChar", radix_char_values);
 
     g_object_class_install_property(object_class,
                                     PROP_STATUS,
@@ -1748,6 +1797,14 @@ math_equation_class_init(MathEquationClass *klass)
                                                       "Angle units",
                                                       angle_unit_type,
                                                       MP_DEGREES,
+                                                      G_PARAM_READWRITE));
+    g_object_class_install_property(object_class,
+                                    PROP_RADIX_CHAR,
+                                    g_param_spec_enum("radix-char",
+                                                      "radix-char",
+                                                      "Radix character",
+                                                      radix_char_type,
+                                                      RADIX_DOT,
                                                       G_PARAM_READWRITE));
     g_object_class_install_property(object_class,
                                     PROP_SOURCE_CURRENCY,
@@ -1899,7 +1956,7 @@ insert_text_cb(MathEquation  *equation,
     equation->priv->state.entered_multiply = strcmp(text, "×") == 0;
 
     /* Update thousands separators */
-    reformat_separators(equation);
+    g_idle_add_once(reformat_separators_cb, equation);
 
     g_object_notify(G_OBJECT(equation), "display");
 }
@@ -1916,7 +1973,7 @@ delete_range_cb(MathEquation  *equation,
     equation->priv->state.entered_multiply = FALSE;
 
     /* Update thousands separators */
-    reformat_separators(equation);
+    g_idle_add_once(reformat_separators_cb, equation);
 
     // FIXME: A replace will emit this both for delete-range and insert-text, can it be avoided?
     g_object_notify(G_OBJECT(equation), "display");
@@ -1958,6 +2015,7 @@ math_equation_init(MathEquation *equation)
     equation->priv->state.status = g_strdup("");
     equation->priv->word_size = 32;
     equation->priv->angle_units = MP_DEGREES;
+    equation->priv->radix_char = RADIX_DOT;  /* Default to dot separator */
     // FIXME: Pick based on locale
     equation->priv->source_currency = g_strdup("");
     equation->priv->target_currency = g_strdup("");
