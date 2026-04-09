@@ -1,13 +1,14 @@
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
+# Benedikt Straub <benedikt-straub@web.de>, 2025
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: MATE Desktop Environment\n"
-"POT-Creation-Date: 2018-10-03 14:33+0200\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-10-28 17:41+0200\n"
 "PO-Revision-Date: 2018-10-01 16:45+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2018\n"
-"Language-Team: Low German (https://www.transifex.com/mate/teams/13566/nds/)\n"
+"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2025\n"
+"Language-Team: Low German (https://app.transifex.com/mate/teams/13566/nds/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -142,7 +143,69 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/complex.page:11
-msgid "Complex numbers are not supported in <app>MATE Calculator</app>."
+msgid ""
+"<app>MATE Calculator</app> supports complex numbers, as well as the "
+"following functions while in <link xref=\"mouse\">Advanced mode</link>."
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/complex.page:18
+msgid "Re"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/complex.page:19
+msgid "Returns the real part of a complex number. For example:"
+msgstr ""
+
+#. (itstool) path: example/p
+#: C/complex.page:21
+msgid "Re (2-5i) = 2"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/complex.page:29
+msgid "Im"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/complex.page:30
+msgid "Returns the imaginary part of a complex number. For example:"
+msgstr ""
+
+#. (itstool) path: example/p
+#: C/complex.page:32
+msgid "Im (2-5i) = -5"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/complex.page:40
+msgid "conj"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/complex.page:41
+msgid "Returns the conjugate of a complex number. For example:"
+msgstr ""
+
+#. (itstool) path: example/p
+#: C/complex.page:43
+msgid "conj (2-5i) = 2+5i"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/complex.page:51
+msgid "Arg"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/complex.page:52
+msgid "Returns the argument of a complex number. For example:"
+msgstr ""
+
+#. (itstool) path: example/p
+#: C/complex.page:54
+msgid "Arg (2-5i) = -68.1986"
 msgstr ""
 
 #. (itstool) path: page/p
@@ -277,7 +340,7 @@ msgstr ""
 #: C/equation.page:7
 msgctxt "sort"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #. (itstool) path: page/title
 #: C/equation.page:11
@@ -359,9 +422,17 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/factorize.page:11
 msgid ""
-"You can factorize the number currently displayed by pressing the "
+"You can factorize the number currently displayed by pressing "
+"<keyseq><key>Ctrl</key><key>F</key></keyseq> or by pressing the "
 "<gui>fact</gui> button. This button is visible in <link "
 "xref=\"mouse\">programming mode</link>."
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/factorize.page:15
+msgid ""
+"To factorize integers bigger than 2^64 the Miller-Rabin primality test and "
+"Pollard's rho algorithm are used."
 msgstr ""
 
 #. (itstool) path: page/title
@@ -568,126 +639,146 @@ msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:40
-msgid "frac"
+msgid "erf"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:41
-msgid "Fractional Component"
+msgid "Gauss Error function"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:44
-msgid "int"
+msgid "frac"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:45
-msgid "Integer Component"
+msgid "Fractional Component"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:48
-msgid "ln"
+msgid "int"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:49
-msgid "<link xref=\"logarithm\">Natural Logarithm</link>"
+msgid "Integer Component"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:52
-msgid "log"
+msgid "ln"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:53
-msgid "<link xref=\"logarithm\">Logarithm</link>"
+msgid "<link xref=\"logarithm\">Natural Logarithm</link>"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:56
-msgid "not"
+msgid "log"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:57
-msgid "<link xref=\"boolean\">Boolean NOT</link>"
+msgid "<link xref=\"logarithm\">Logarithm</link>"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:60
-msgid "ones"
+msgid "not"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:61
-msgid "Ones complement"
+msgid "<link xref=\"boolean\">Boolean NOT</link>"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:64
-msgid "sin"
+msgid "ones"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:65
-msgid "<link xref=\"trigonometry\">Sine</link>"
+msgid "Ones complement"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:68
-msgid "sinh"
+msgid "sin"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:69
-msgid "<link xref=\"trigonometry\">Hyperbolic Sine</link>"
+msgid "<link xref=\"trigonometry\">Sine</link>"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:72
-msgid "sqrt"
+msgid "sinh"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:73
-msgid "<link xref=\"power\">Square Root</link>"
+msgid "<link xref=\"trigonometry\">Hyperbolic Sine</link>"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:76
-msgid "tan"
+msgid "sqrt"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:77
-msgid "<link xref=\"trigonometry\">Tangent</link>"
+msgid "<link xref=\"power\">Square Root</link>"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:80
-msgid "tanh"
+msgid "tan"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:81
-msgid "<link xref=\"trigonometry\">Hyperbolic Tangent</link>"
+msgid "<link xref=\"trigonometry\">Tangent</link>"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:84
-msgid "twos"
+msgid "tanh"
 msgstr ""
 
 #. (itstool) path: td/p
 #: C/functions.page:85
+msgid "<link xref=\"trigonometry\">Hyperbolic Tangent</link>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/functions.page:88
+msgid "twos"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/functions.page:89
 msgid "Twos complement"
 msgstr ""
 
+#. (itstool) path: td/p
+#: C/functions.page:92
+msgid "zeta"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/functions.page:93
+msgid "Riemann zeta function"
+msgstr ""
+
 #. (itstool) path: page/p
-#: C/functions.page:88
+#: C/functions.page:96
 msgid "<app>MATE Calculator</app> does not support user-defined functions."
 msgstr ""
 
@@ -799,6 +890,78 @@ msgid ""
 "To enter <link xref=\"superscript\">superscript numbers</link> use "
 "<keyseq><key>Ctrl</key>number</keyseq>, for subscript use "
 "<keyseq><key>Alt</key>number</keyseq>."
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/keyboard.page:42
+msgid ""
+"When in <link xref=\"mouse\">programming mode</link>, to cycle between base "
+"digits use:"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:47 C/number-display.page:28
+msgid "Binary"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:48
+msgid "<keyseq><key>Ctrl</key><key>B</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:51 C/number-display.page:32
+msgid "Octal"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:52
+msgid "<keyseq><key>Ctrl</key><key>O</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:55 C/number-display.page:16
+msgid "Decimal"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:56
+msgid "<keyseq><key>Ctrl</key><key>D</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:59 C/number-display.page:36
+msgid "Hexadecimal"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:60
+msgid "<keyseq><key>Ctrl</key><key>H</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/keyboard.page:63
+msgid "To cycle between history entries you may use:"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:68
+msgid "Previous Entry"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:69
+msgid "<keyseq><key>Alt</key><key>Up</key></keyseq>"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:72
+msgid "Next Entry"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/keyboard.page:73
+msgid "<keyseq><key>Alt</key><key>Down</key></keyseq>"
 msgstr ""
 
 #. (itstool) path: p/link
@@ -955,11 +1118,6 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: td/p
-#: C/number-display.page:16
-msgid "Decimal"
-msgstr ""
-
-#. (itstool) path: td/p
 #: C/number-display.page:17
 msgid "Results are displayed as decimal numbers"
 msgstr ""
@@ -989,28 +1147,13 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: td/p
-#: C/number-display.page:28
-msgid "Binary"
-msgstr ""
-
-#. (itstool) path: td/p
 #: C/number-display.page:29
 msgid "Results are displayed as <link xref=\"base\">binary numbers</link>"
 msgstr ""
 
 #. (itstool) path: td/p
-#: C/number-display.page:32
-msgid "Octal"
-msgstr ""
-
-#. (itstool) path: td/p
 #: C/number-display.page:33
 msgid "Results are displayed as <link xref=\"base\">octal numbers</link>"
-msgstr ""
-
-#. (itstool) path: td/p
-#: C/number-display.page:36
-msgid "Hexadecimal"
 msgstr ""
 
 #. (itstool) path: td/p

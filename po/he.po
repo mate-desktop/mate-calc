@@ -7,9 +7,10 @@
 # בר בוכובזה <bokovzabox@gmail.com>, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # haxoc c11 <haxoc112@disroot.org>, 2020
-# Yaron Shahrabani <sh.yaron@gmail.com>, 2020
 # shy tzedaka <shaytzedaka123@gmail.com>, 2020
 # 63f334ffc0709ba0fc2361b80bf3c0f0_00ffd1e <ab96c93ca0ac55ba7fa06385427e60dd_878890>, 2022
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2024
+# Avi Markovitz <avi.markovitz@gmail.com>, 2024
 # 
 msgid ""
 msgstr ""
@@ -17,13 +18,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-calc/issues\n"
 "POT-Creation-Date: 2022-10-28 17:41+0200\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: 63f334ffc0709ba0fc2361b80bf3c0f0_00ffd1e <ab96c93ca0ac55ba7fa06385427e60dd_878890>, 2022\n"
+"Last-Translator: Avi Markovitz <avi.markovitz@gmail.com>, 2024\n"
 "Language-Team: Hebrew (https://app.transifex.com/mate/teams/13566/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: he\n"
-"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
+"Plural-Forms: nplurals=3; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: 2;\n"
 
 #. Accessible name for the factorize button
 #: src/buttons-advanced.ui:27 src/buttons-programming.ui:1900
@@ -530,7 +531,7 @@ msgstr "העדפות"
 
 #: src/preferences.ui:80
 msgid "_Close"
-msgstr "_סגור"
+msgstr "_סגירה"
 
 #. Preferences dialog: Label for angle unit combo box
 #: src/preferences.ui:112
@@ -1339,7 +1340,6 @@ msgid_plural "_%d places"
 msgstr[0] "מקום _אחד"
 msgstr[1] "_%d מקומות"
 msgstr[2] "_%d מקומות"
-msgstr[3] "_%d מקומות"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
@@ -1350,7 +1350,6 @@ msgid_plural "%d places"
 msgstr[0] "מקום אחד"
 msgstr[1] "%d מקומות"
 msgstr[2] "%d מקומות"
-msgstr[3] "%d מקומות"
 
 #. Tooltip for the round button
 #: src/math-buttons.c:976
@@ -1705,7 +1704,7 @@ msgstr "_תוכן עניינים"
 
 #: src/math-window.c:544
 msgid "_Copy"
-msgstr "ה_עתק"
+msgstr "ה_עתקה"
 
 #: src/math-window.c:546
 msgid "_Paste"

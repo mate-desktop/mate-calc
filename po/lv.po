@@ -4,9 +4,9 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rihards Priedītis <rprieditis@gmail.com>, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
-# duck <voiceofwise1@gmail.com>, 2020
+# reki the human <voiceofwise1@gmail.com>, 2020
+# Rihards Priedītis <rprieditis@gmail.com>, 2025
 # 
 msgid ""
 msgstr ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-calc/issues\n"
 "POT-Creation-Date: 2022-10-28 17:41+0200\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: duck <voiceofwise1@gmail.com>, 2020\n"
+"Last-Translator: Rihards Priedītis <rprieditis@gmail.com>, 2025\n"
 "Language-Team: Latvian (https://app.transifex.com/mate/teams/13566/lv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -112,7 +112,7 @@ msgstr "Apakšraksts"
 
 #: src/buttons-advanced.ui:966
 msgid "const"
-msgstr ""
+msgstr "konst."
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
@@ -561,11 +561,11 @@ msgstr "Rādīt _tūkstošu atdalītāju"
 
 #: data/mate-calc.appdata.xml.in:7
 msgid "MATE Calc"
-msgstr ""
+msgstr "MATE Kalkulators"
 
 #: data/mate-calc.appdata.xml.in:8
 msgid "MATE Desktop calculator"
-msgstr ""
+msgstr "MATE Darbvirsmas kalkulators "
 
 #: data/mate-calc.appdata.xml.in:10
 msgid ""
@@ -573,6 +573,9 @@ msgid ""
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
 msgstr ""
+"MATE Kalkulators ir jaudīgs grafiskais kalkulators ar finanšu, loģikas un "
+"zinātniskajiem režīmiem. Tas izmanto vairāku precizitāšu pakotni aritmētisko"
+" darbību veikšanai, lai nodrošinātu augstu precizitātes pakāpi."
 
 #: data/mate-calc.appdata.xml.in:15
 msgid ""
@@ -580,6 +583,9 @@ msgid ""
 "If you would like to know more about MATE and MATE Calc, please visit the "
 "project's home page."
 msgstr ""
+"MATE Kalkulators ir GNOME Kalkulatora atvasinājums un MATE darbvirsmas vides"
+" daļa. Ja vēlaties uzzināt vairāk par MATE un MATE Kalkulatoru, lūdzu, "
+"apmeklējiet projekta mājaslapu."
 
 #: data/mate-calc.desktop.in:3 src/math-window.c:366
 msgid "MATE Calculator"
@@ -598,7 +604,7 @@ msgstr "Veikt aritmētiskus, zinātniskus vai finansiālus aprēķinus"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mate-calc.desktop.in:13
 msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
-msgstr ""
+msgstr "kalkulators;MATE;zinātne;aritēmtika;finanšu;aprēķini;"
 
 #: data/org.mate.calc.gschema.xml:25
 msgid "Accuracy value"
@@ -648,7 +654,7 @@ msgstr "Rādīt vēsturi"
 
 #: data/org.mate.calc.gschema.xml:53
 msgid "Shows all recent calculations"
-msgstr ""
+msgstr "Rāda visus nesenos aprēķinus"
 
 #: data/org.mate.calc.gschema.xml:57
 msgid "Number format"
@@ -1033,12 +1039,12 @@ msgstr "Eilera skaitlis"
 #. Tooltip for the imaginary number button
 #: src/math-buttons.c:99
 msgid "Imaginary unit"
-msgstr ""
+msgstr "Imaginārā mērvienība"
 
 #. Tooltip for the numeric point button
 #: src/math-buttons.c:102
 msgid "Decimal point"
-msgstr ""
+msgstr "Decimālkomats"
 
 #. Tooltip for the subscript button
 #: src/math-buttons.c:105
@@ -1088,7 +1094,7 @@ msgstr "Papildu funkcijas"
 #. Tooltip for the additional constant button
 #: src/math-buttons.c:132
 msgid "Additional constants"
-msgstr ""
+msgstr "Papildus konstantes"
 
 #. Tooltip for the exponent button
 #: src/math-buttons.c:135
@@ -1278,12 +1284,12 @@ msgstr "Atsaukt [Ctrl+Z]"
 #. Tooltip for the shift left button
 #: src/math-buttons.c:252
 msgid "Shift Left [<<]"
-msgstr ""
+msgstr "Bīdīt pa kreisi [<<]"
 
 #. Tooltip for the shift right button
 #: src/math-buttons.c:255
 msgid "Shift Right [>>]"
-msgstr ""
+msgstr "Bīdīt pa labi [>>]"
 
 #. Tooltip for the double declining depreciation button
 #: src/math-buttons.c:261
@@ -1331,9 +1337,9 @@ msgstr "Heksadecimāla"
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "_%d ciparu"
+msgstr[1] "_%d ciparu"
+msgstr[2] "_%d ciparus"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
@@ -1341,9 +1347,9 @@ msgstr[2] ""
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%d ciparu"
+msgstr[1] "%d ciparu"
+msgstr[2] "%d ciparus"
 
 #. Tooltip for the round button
 #: src/math-buttons.c:976
@@ -1368,83 +1374,83 @@ msgstr "Zīme"
 #. Tooltip for the c₀ component button
 #: src/math-buttons.c:1023
 msgid "Velocity of Light"
-msgstr ""
+msgstr "Gaismas ātrums"
 
 #: src/math-buttons.c:1023
 msgid "299,792,458 m/s"
-msgstr ""
+msgstr "299,792,458 m/s"
 
 #. Tooltip for the μ₀ component button
 #: src/math-buttons.c:1025
 msgid "Magnetic constant"
-msgstr ""
+msgstr "Magnētiskā konstante"
 
 #: src/math-buttons.c:1025
 msgid "1.2566370614×10⁻⁶ N/A²"
-msgstr ""
+msgstr "1.2566370614×10⁻⁶ N/A²"
 
 #. Tooltip for the ε₀ button
 #: src/math-buttons.c:1027
 msgid "Electric constant"
-msgstr ""
+msgstr "Elektriskā konstante"
 
 #: src/math-buttons.c:1027
 msgid "8.85418782×10⁻¹² s⁴A²/m³kg"
-msgstr ""
+msgstr "8.85418782×10⁻¹² s⁴A²/m³kg"
 
 #. Tooltip for the G button
 #: src/math-buttons.c:1029
 msgid "Newtonian constant of gravitation"
-msgstr ""
+msgstr "Ņūtona gravitācijas konstante"
 
 #: src/math-buttons.c:1029
 msgid "6.67408×10⁻¹¹ m³/(s²kg)"
-msgstr ""
+msgstr "6.67408×10⁻¹¹ m³/(s²kg)"
 
 #. Tooltip for the h button
 #: src/math-buttons.c:1031
 msgid "Planck constant"
-msgstr ""
+msgstr "Planka konstante"
 
 #: src/math-buttons.c:1031
 msgid "6.62607004×10⁻³⁴ m²kg/s"
-msgstr ""
+msgstr "6.62607004×10⁻³⁴ m²kg/s"
 
 #. Tooltip for the ｅ button
 #: src/math-buttons.c:1033
 msgid "Elementary charge"
-msgstr ""
+msgstr "Elementārlādiņš"
 
 #: src/math-buttons.c:1033
 msgid "1.6021766208(98)×10⁻¹⁹ C"
-msgstr ""
+msgstr "1.6021766208(98)×10⁻¹⁹ C"
 
 #. Tooltip for the mₑ button
 #: src/math-buttons.c:1035
 msgid "Electron mass"
-msgstr ""
+msgstr "Elektrona masa"
 
 #: src/math-buttons.c:1035
 msgid "9.10938356×10⁻³¹ kg"
-msgstr ""
+msgstr "9.10938356×10⁻³¹ kg"
 
 #. Tooltip for the mₚ button
 #: src/math-buttons.c:1037
 msgid "Proton mass"
-msgstr ""
+msgstr "Protona masa"
 
 #: src/math-buttons.c:1037
 msgid "1.672621898(21)×10⁻²⁷ kg"
-msgstr ""
+msgstr "1.672621898(21)×10⁻²⁷ kg"
 
 #. Tooltip for the Nₐ button
 #: src/math-buttons.c:1039
 msgid "Avogadro constant"
-msgstr ""
+msgstr " is referred to as Avogadro konstante"
 
 #: src/math-buttons.c:1039
 msgid "6.02214086×10²³ mol⁻¹"
-msgstr ""
+msgstr "6.02214086×10²³ mol⁻¹"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
@@ -1585,11 +1591,11 @@ msgstr "Nevar atvērt palīdzības datni"
 
 #: src/math-window.c:310
 msgid "Sun Microsystems"
-msgstr ""
+msgstr "Sun Mikrosistēmas"
 
 #: src/math-window.c:311
 msgid "MATE Documentation Team"
-msgstr ""
+msgstr "MATE Dokumentācijas Komanda"
 
 #: src/math-window.c:317
 msgid ""
@@ -1598,6 +1604,10 @@ msgid ""
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
+"MATE Kalkulators ir brīva programmatūra; jūs varat to izplatīt tālāk un/vai "
+"modificēt saskaņā ar GNU Vispārējās publiskās licences noteikumiem, ko "
+"publicējis Brīvas programmatūras fonds; izmantojiet Licences versiju 2 vai "
+"(pēc jūsu izvēles) jebkuru vēlāku versiju."
 
 #: src/math-window.c:321
 msgid ""
@@ -1606,6 +1616,10 @@ msgid ""
 "or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
 " more details."
 msgstr ""
+"MATE Kalkulators tiek izplatīta cerībā, ka tā būs noderīga, taču BEZ "
+"JEBKĀDĀM GARANTIJĀM; pat bez šķietamām KOMERCIĀLAS VĒRTĪBAS un PIEMĒROTĪBAS "
+"KONKRĒTIEM NOLŪKIEM garantijām. Sīkāku informāciju meklējiet GNU Vispārējā "
+"publiskajā licencē."
 
 #: src/math-window.c:325
 msgid ""
@@ -1613,6 +1627,9 @@ msgid ""
 " MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
+"Jums būtu bijis jāsaņem GNU Vispārējās publiskās licences kopiju kopā ar "
+"MATE Kalkulatoru; ja tā nav noticis rakstiet Free Software Foundation, Inc.,"
+" 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
 #: src/math-window.c:362
 #, c-format
@@ -1620,16 +1637,20 @@ msgid ""
 "Calculator with financial and scientific modes.\n"
 "Using GNU MPFR %s and GNU MPC %s"
 msgstr ""
+"Kalkulators ar finansiālo un zinātnisko režīmu.\n"
+"Izmanto GNU MPDR%s un GNU MPC %s"
 
 #: src/math-window.c:368
 msgid "About MATE Calculator"
-msgstr ""
+msgstr "Par MATE Kalkulatoru"
 
 #: src/math-window.c:369
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2021 MATE developers"
 msgstr ""
+"Autortiesības© 1986-2010 GCalctool autori\n"
+"Autortiesības © 2011-2021 MATE izstrādātāji"
 
 #: src/math-window.c:375
 msgid "translator-credits"
@@ -1680,7 +1701,7 @@ msgstr "_Programmēšanas"
 #. History menu label
 #: src/math-window.c:539
 msgid "_History"
-msgstr ""
+msgstr "_Vēsture"
 
 #. Help>Contents menu label
 #: src/math-window.c:541
@@ -1705,7 +1726,7 @@ msgstr "_Pāratsaukt"
 
 #: src/math-window.c:552
 msgid "_Clear History"
-msgstr ""
+msgstr "_Tīrīt Vēsturi"
 
 #: src/math-window.c:555
 msgid "_Preferences"
@@ -1766,13 +1787,13 @@ msgstr "Logaritms no nulles ir nedefinēts"
 #. Translators: Error displayed when attempting to take zeroth root
 #: src/mp.c:434
 msgid "The zeroth root of a number is undefined"
-msgstr ""
+msgstr "Skaitļa nultās pakāpes sakne nav definēta."
 
 #. Translators: Error displayed when attempted take the factorial of a
 #. negative or complex number
 #: src/mp.c:474
 msgid "Factorial is only defined for non-negative real numbers"
-msgstr ""
+msgstr "Faktoriāls ir definēts tikai nemanīgiem reāliem skaitļiem"
 
 #. Translators: Error displayed when attemping to do a modulus division on
 #. non-integer numbers
@@ -1791,12 +1812,14 @@ msgstr "Nulles pakāpe nav definēta negatīviem kāpinātājiem"
 #. Translators: Error displayed when error function (erf) value is undefined
 #: src/mp.c:615
 msgid "The error function is only defined for real numbers"
-msgstr ""
+msgstr "Kļūdas funkcija ir definēta tikai reāliem skaitļiem"
 
 #. Translators: Error displayed when zeta function value is undefined
 #: src/mp.c:632
 msgid "The Riemann zeta function is only defined for real numbers ≠1"
 msgstr ""
+"Rīmaņa zēta funkcija ir definēta tikai reāliem skaitļiem, kas nav vienādi ar"
+" 1"
 
 #. Translators: Error displayed when tangent value is undefined
 #: src/mp-trigonometric.c:116
@@ -1820,7 +1843,7 @@ msgstr "Apgrieztais kosinus nav definēts ārpus intervāla [-1, 1]"
 #. Translators: Error displayed when inverse sine value is undefined
 #: src/mp-trigonometric.c:194
 msgid "Arctangent function is undefined for values i and -i"
-msgstr ""
+msgstr "Arkstangensa funkcija nav definēta vērtībām i un -i."
 
 #. Translators: Error displayed when inverse hyperbolic cosine value is
 #. undefined
@@ -1834,6 +1857,8 @@ msgstr ""
 #: src/mp-trigonometric.c:262
 msgid "Inverse hyperbolic tangent is undefined for values outside (-1, 1)"
 msgstr ""
+"Hiperboliskā arktangensa funkcija nav definēta vērtībām ārpus intervāla (-1,"
+" 1)"
 
 #: src/unit-manager.c:51
 #, c-format

@@ -6,10 +6,10 @@
 # Translators:
 # Tot en òc <totenoc@gmail.com>, 2018
 # 48c2de07903ce5a77a8e90265f95c4c2_8909374 <837c8d0ab97b27e737893c19f79bd4de_348476>, 2018
-# Wolfgang Ulbrich <mate@raveit.de>, 2019
+# Wolfgang Ulbrich <raveit65.sun@gmail.com>, 2019
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Cédric Valmary <cvalmary@yahoo.fr>, 2020
-# Quentin PAGÈS, 2023
+# Quentin PAGÈS, 2025
 # 
 msgid ""
 msgstr ""
@@ -17,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-calc/issues\n"
 "POT-Creation-Date: 2022-10-28 17:41+0200\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: Quentin PAGÈS, 2023\n"
+"Last-Translator: Quentin PAGÈS, 2025\n"
 "Language-Team: Occitan (post 1500) (https://app.transifex.com/mate/teams/13566/oc/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -73,15 +73,15 @@ msgstr "Anullar"
 
 #: src/buttons-advanced.ui:663
 msgid "asin"
-msgstr ""
+msgstr "asin"
 
 #: src/buttons-advanced.ui:677
 msgid "atan"
-msgstr ""
+msgstr "atan"
 
 #: src/buttons-advanced.ui:705
 msgid "acos"
-msgstr ""
+msgstr "acos"
 
 #. Accessible name for the store value button
 #: src/buttons-advanced.ui:764 src/buttons-programming.ui:2338
@@ -115,7 +115,7 @@ msgstr "Indici"
 
 #: src/buttons-advanced.ui:966
 msgid "const"
-msgstr ""
+msgstr "const"
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
@@ -310,7 +310,7 @@ msgid ""
 msgstr ""
 "Calcula la valor iniciala d'un investiment fondat sus una seria de pagaments"
 " egals escomptats amb un taus d'interès periodic donat compte tengut del "
-"nombre de periòdes de versament fins a son tèrme."
+"nombre de periòdes de versament fins a son tèrme. "
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
@@ -484,7 +484,7 @@ msgstr "Marge"
 #. Tooltip for the insert character code button
 #: src/buttons-programming.ui:8 src/math-buttons.c:237
 msgid "Insert Character Code"
-msgstr "Insercion d'un còde de caractèr"
+msgstr "Insercion d'un còdi de caractèr"
 
 #. Insert ASCII dialog: Button to insert selected character
 #: src/buttons-programming.ui:42
@@ -857,7 +857,7 @@ msgstr "Litas lituanian"
 
 #: src/currency-manager.c:63
 msgid "Latvian Lats"
-msgstr ""
+msgstr "Lats letons"
 
 #: src/currency-manager.c:64
 msgid "Libyan Dinar"
@@ -974,6 +974,8 @@ msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
 msgstr ""
+"Utilizacion :\n"
+"   %s — Realizar de calculs matematicas"
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
@@ -986,6 +988,11 @@ msgid ""
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
 msgstr ""
+"Opcions d’ajuda :\n"
+"  -v, --version                   Afichar la version\n"
+"  -h, -?, --help                   Afichar las opcions d’ajuda\n"
+"  --help-all                        Afichar totas las opcions d’ajuda\n"
+"  --help-gtk                       Afichar las opcions GTK+"
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
@@ -1000,6 +1007,13 @@ msgid ""
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
+"Opcions GTK+ :\n"
+"  --class=CLASS                   Classa de programa utilizada pel gestionari de fenèstra\n"
+"  --name=NAME                     Nom de programa utilizat pel gestionari de fenèstra\n"
+"  --screen=SCREEN                 Ecran X d’utilizar\n"
+"  --sync                          Far venir las sonadas X sincrons\n"
+"  --gtk-module=MODULES            Cargar los moduls GTK+ complementaris\n"
+"  --g-fatal-warnings              Far venir totes los avertiments coma fatal"
 
 #. Description on mate-calc application options displayed on command-line
 #: src/mate-calc.c:116
@@ -1008,12 +1022,14 @@ msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
 msgstr ""
+"Opcions de l’aplicacion :\n"
+"  -s, --solve <equation>          Resòlver l’eqüacion donada"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: src/mate-calc.c:163
 #, c-format
 msgid "Argument --solve requires an equation to solve"
-msgstr ""
+msgstr "Lo paramètre --solve requerís una eqüacion de resòlver"
 
 #. Error printed to stderr when user provides an unknown command-line argument
 #: src/mate-calc.c:174
@@ -1039,7 +1055,7 @@ msgstr "Unitat imaginària"
 #. Tooltip for the numeric point button
 #: src/math-buttons.c:102
 msgid "Decimal point"
-msgstr "Punt decimal"
+msgstr "Ponch decimal"
 
 #. Tooltip for the subscript button
 #: src/math-buttons.c:105
@@ -1089,7 +1105,7 @@ msgstr "Foncions suplementàrias"
 #. Tooltip for the additional constant button
 #: src/math-buttons.c:132
 msgid "Additional constants"
-msgstr ""
+msgstr "Constantas addicionalas"
 
 #. Tooltip for the exponent button
 #: src/math-buttons.c:135
@@ -1179,17 +1195,17 @@ msgstr "Tangenta iperbolica"
 #. Tooltip for the inverse sine button
 #: src/math-buttons.c:186
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Invèrs del sinus"
 
 #. Tooltip for the inverse cosine button
 #: src/math-buttons.c:189
 msgid "Inverse Cosine"
-msgstr ""
+msgstr "Invèrs del cosinus"
 
 #. Tooltip for the inverse tangent button
 #: src/math-buttons.c:192
 msgid "Inverse Tangent"
-msgstr ""
+msgstr "Invèrs de la tangenta"
 
 #. Tooltip for the inverse button
 #: src/math-buttons.c:195
@@ -1279,12 +1295,12 @@ msgstr "Anulla [Ctrl+Z]"
 #. Tooltip for the shift left button
 #: src/math-buttons.c:252
 msgid "Shift Left [<<]"
-msgstr ""
+msgstr "Maj. esquèrra [<<]"
 
 #. Tooltip for the shift right button
 #: src/math-buttons.c:255
 msgid "Shift Right [>>]"
-msgstr ""
+msgstr "Maj. drecha [>>]"
 
 #. Tooltip for the double declining depreciation button
 #: src/math-buttons.c:261
@@ -1347,103 +1363,103 @@ msgstr[1] "%d lòcs"
 #. Tooltip for the round button
 #: src/math-buttons.c:976
 msgid "Round"
-msgstr ""
+msgstr "Arredondir"
 
 #. Tooltip for the floor button
 #: src/math-buttons.c:978
 msgid "Floor"
-msgstr ""
+msgstr "Cap a la baissa"
 
 #. Tooltip for the ceiling button
 #: src/math-buttons.c:980
 msgid "Ceiling"
-msgstr ""
+msgstr "Cap a l’auça"
 
 #. Tooltip for the ceiling button
 #: src/math-buttons.c:982
 msgid "Sign"
-msgstr ""
+msgstr "Signe"
 
 #. Tooltip for the c₀ component button
 #: src/math-buttons.c:1023
 msgid "Velocity of Light"
-msgstr ""
+msgstr "Velocitat de la lutz"
 
 #: src/math-buttons.c:1023
 msgid "299,792,458 m/s"
-msgstr ""
+msgstr "299,792,458 m/s"
 
 #. Tooltip for the μ₀ component button
 #: src/math-buttons.c:1025
 msgid "Magnetic constant"
-msgstr ""
+msgstr "Constanta magnetica"
 
 #: src/math-buttons.c:1025
 msgid "1.2566370614×10⁻⁶ N/A²"
-msgstr ""
+msgstr "1.2566370614×10⁻⁶ N/A²"
 
 #. Tooltip for the ε₀ button
 #: src/math-buttons.c:1027
 msgid "Electric constant"
-msgstr ""
+msgstr "Constanta electrica"
 
 #: src/math-buttons.c:1027
 msgid "8.85418782×10⁻¹² s⁴A²/m³kg"
-msgstr ""
+msgstr "8.85418782×10⁻¹² s⁴A²/m³kg"
 
 #. Tooltip for the G button
 #: src/math-buttons.c:1029
 msgid "Newtonian constant of gravitation"
-msgstr ""
+msgstr "Constanta de la gravitacion newtoniana"
 
 #: src/math-buttons.c:1029
 msgid "6.67408×10⁻¹¹ m³/(s²kg)"
-msgstr ""
+msgstr "6.67408×10⁻¹¹ m³/(s²kg)"
 
 #. Tooltip for the h button
 #: src/math-buttons.c:1031
 msgid "Planck constant"
-msgstr ""
+msgstr "Constanta de Planck"
 
 #: src/math-buttons.c:1031
 msgid "6.62607004×10⁻³⁴ m²kg/s"
-msgstr ""
+msgstr "6.62607004×10⁻³⁴ m²kg/s"
 
 #. Tooltip for the ｅ button
 #: src/math-buttons.c:1033
 msgid "Elementary charge"
-msgstr ""
+msgstr "Carga elementària"
 
 #: src/math-buttons.c:1033
 msgid "1.6021766208(98)×10⁻¹⁹ C"
-msgstr ""
+msgstr "1.6021766208(98)×10⁻¹⁹ C"
 
 #. Tooltip for the mₑ button
 #: src/math-buttons.c:1035
 msgid "Electron mass"
-msgstr ""
+msgstr "Massa de l’electron"
 
 #: src/math-buttons.c:1035
 msgid "9.10938356×10⁻³¹ kg"
-msgstr ""
+msgstr "9.10938356×10⁻³¹ kg"
 
 #. Tooltip for the mₚ button
 #: src/math-buttons.c:1037
 msgid "Proton mass"
-msgstr ""
+msgstr "Massa del proton"
 
 #: src/math-buttons.c:1037
 msgid "1.672621898(21)×10⁻²⁷ kg"
-msgstr ""
+msgstr "1.672621898(21)×10⁻²⁷ kg"
 
 #. Tooltip for the Nₐ button
 #: src/math-buttons.c:1039
 msgid "Avogadro constant"
-msgstr ""
+msgstr "Constanta d’Avogadro"
 
 #: src/math-buttons.c:1039
 msgid "6.02214086×10²³ mol⁻¹"
-msgstr ""
+msgstr "6.02214086×10²³ mol⁻¹"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
@@ -1497,7 +1513,7 @@ msgstr "Conversion desconeguda"
 #: src/math-equation.c:1213
 #, c-format
 msgid "Malformed expression at token '%s'"
-msgstr ""
+msgstr "Expression incorrècta al geton « %s »"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
@@ -1622,7 +1638,7 @@ msgid ""
 msgstr ""
 "Devètz aver recebuda una còpia de la licéncia generala publica GNU amb la "
 "Calculadoira de MATE ; s'es pas lo cas, escrivètz a la Free Software "
-"Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA"
+"Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA."
 
 #: src/math-window.c:362
 #, c-format
@@ -1630,6 +1646,8 @@ msgid ""
 "Calculator with financial and scientific modes.\n"
 "Using GNU MPFR %s and GNU MPC %s"
 msgstr ""
+"Calculadoira amb mòdes financièr e scientific.\n"
+"Utiliza GNU MPFR %s e GNU MPC %s"
 
 #: src/math-window.c:368
 msgid "About MATE Calculator"
@@ -1778,13 +1796,13 @@ msgstr "Lo logaritme de zèro es pas definit"
 #. Translators: Error displayed when attempting to take zeroth root
 #: src/mp.c:434
 msgid "The zeroth root of a number is undefined"
-msgstr ""
+msgstr "La raiç zèro d’un nombre es pas definida"
 
 #. Translators: Error displayed when attempted take the factorial of a
 #. negative or complex number
 #: src/mp.c:474
 msgid "Factorial is only defined for non-negative real numbers"
-msgstr ""
+msgstr "La factoriala es sonque definida pels nombres reals positius"
 
 #. Translators: Error displayed when attemping to do a modulus division on
 #. non-integer numbers
@@ -1803,12 +1821,12 @@ msgstr "La poténcia de zèro es pas definida per d'exponents negatius"
 #. Translators: Error displayed when error function (erf) value is undefined
 #: src/mp.c:615
 msgid "The error function is only defined for real numbers"
-msgstr ""
+msgstr "La foncion d’error es sonque definida pels nombres reals"
 
 #. Translators: Error displayed when zeta function value is undefined
 #: src/mp.c:632
 msgid "The Riemann zeta function is only defined for real numbers ≠1"
-msgstr ""
+msgstr "La foncion zèta de Riemann es sonque definida pels nombres reals ≠1"
 
 #. Translators: Error displayed when tangent value is undefined
 #: src/mp-trigonometric.c:116
@@ -1832,7 +1850,7 @@ msgstr "L'arc cosinus es pas definit per las valors fòra del segment [-1, 1]"
 #. Translators: Error displayed when inverse sine value is undefined
 #: src/mp-trigonometric.c:194
 msgid "Arctangent function is undefined for values i and -i"
-msgstr ""
+msgstr "La foncion arc tangenta es indefinida per las valors i e -i"
 
 #. Translators: Error displayed when inverse hyperbolic cosine value is
 #. undefined
@@ -1846,6 +1864,8 @@ msgstr ""
 #: src/mp-trigonometric.c:262
 msgid "Inverse hyperbolic tangent is undefined for values outside (-1, 1)"
 msgstr ""
+"La foncion iperbolica de la tangenta es indefinida per las valors fòra (-1, "
+"1)"
 
 #: src/unit-manager.c:51
 #, c-format
@@ -1938,7 +1958,7 @@ msgstr "%s nmi"
 #: src/unit-manager.c:57
 msgctxt "unit-symbols"
 msgid "nmi"
-msgstr "M,NM,nmi"
+msgstr "nmi"
 
 #: src/unit-manager.c:58
 msgid "Miles"
@@ -2227,7 +2247,7 @@ msgstr "gallon,gallons,gal"
 
 #: src/unit-manager.c:77
 msgid "Litres"
-msgstr ""
+msgstr "Litres"
 
 #: src/unit-manager.c:77
 #, c-format
@@ -2272,7 +2292,7 @@ msgstr "pinta,pintas,pt"
 
 #: src/unit-manager.c:80
 msgid "Millilitres"
-msgstr ""
+msgstr "Millilitres"
 
 #: src/unit-manager.c:80
 #, c-format
@@ -2287,7 +2307,7 @@ msgstr "millilitre,millilitres,mL,cm³"
 
 #: src/unit-manager.c:81
 msgid "Microlitres"
-msgstr ""
+msgstr "Microlitres"
 
 #: src/unit-manager.c:81
 #, c-format
@@ -2497,7 +2517,7 @@ msgstr "˚C"
 
 #: src/unit-manager.c:95
 msgid "Farenheit"
-msgstr ""
+msgstr "Farenheit"
 
 #: src/unit-manager.c:95
 #, c-format

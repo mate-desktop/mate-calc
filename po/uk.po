@@ -8,7 +8,7 @@
 # zubr139, 2019
 # Vlad - <priv4417@gmail.com>, 2019
 # Микола Ткач <chistomov@gmail.com>, 2022
-# Sergiy <sergiy@gorichenko.com>, 2022
+# Serhii <sergiy@gorichenko.com>, 2025
 # 
 msgid ""
 msgstr ""
@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-calc/issues\n"
 "POT-Creation-Date: 2022-10-28 17:41+0200\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: Sergiy <sergiy@gorichenko.com>, 2022\n"
+"Last-Translator: Serhii <sergiy@gorichenko.com>, 2025\n"
 "Language-Team: Ukrainian (https://app.transifex.com/mate/teams/13566/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -85,7 +85,7 @@ msgstr "acos"
 #. Accessible name for the store value button
 #: src/buttons-advanced.ui:764 src/buttons-programming.ui:2338
 msgid "Store"
-msgstr "Зап"
+msgstr "Збер"
 
 #. Accessible name for the inverse button
 #: src/buttons-advanced.ui:791 src/buttons-programming.ui:2594
@@ -114,7 +114,7 @@ msgstr "Нижн інд"
 
 #: src/buttons-advanced.ui:966
 msgid "const"
-msgstr "Константа"
+msgstr "конст"
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
@@ -156,8 +156,9 @@ msgid ""
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
 msgstr ""
-"Обчислює кількість періодів приросту, потрібних для збільшення наявної суми "
-"до бажаної суми з фіксованою відсотковою ставкою за період приросту."
+"Обчислює кількість періодів нарахування, потрібних для збільшення наявної "
+"суми до бажаного значення з фіксованою відсотковою ставкою за період "
+"нарахування."
 
 #. Compounding Term Dialog: Label before periodic interest rate input
 #. Future Value Dialog: Label before periodic interest rate input
@@ -279,8 +280,8 @@ msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
 msgstr ""
-"Обчислює розмір періодичної оплати позики, де платежі виконуються у кінці "
-"кожного платіжного періоду."
+"Обчислює суму періодичної оплати позики, де платежі виконуються у кінці "
+"кожного періоду оплати."
 
 #. Periodic Payment Dialog: Label before term input
 #. Periodic Interest Rate Dialog: Label before term input
@@ -297,7 +298,7 @@ msgstr "_Основа:"
 #. Tooltip for the present value button
 #: src/buttons-financial.ui:894 src/math-buttons.c:279
 msgid "Present Value"
-msgstr "Поточна сума:"
+msgstr "Поточна сума"
 
 #. Present Value Dialog: Description of calculation
 #: src/buttons-financial.ui:963
@@ -306,9 +307,9 @@ msgid ""
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
 msgstr ""
-"Обчислює поточну вартість інвестицій, основану на послідовності однакових "
-"платежів з періодичною відсотковою ставкою для кількості платіжних періодів "
-"впродовж заданого терміну."
+"Обчислює поточну вартість інвестицій на основі серії рівних платежів з "
+"періодичною відсотковою ставкою на кількість періодів впродовж заданого "
+"терміну."
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
@@ -323,7 +324,7 @@ msgid ""
 "future value, over the number of compounding periods. "
 msgstr ""
 "Обчислює періодичну ставку, необхідну для збільшення інвестицій до бажаної "
-"суми впродовж вказаної кількості періодів нарахування."
+"суми впродовж вказаних періодів нарахування."
 
 #. Title of Straight-Line Depreciation dialog
 #: src/buttons-financial.ui:1262
@@ -586,7 +587,7 @@ msgid ""
 "project's home page."
 msgstr ""
 "Калькулятор MATE — відгалуження (форк) Калькулятора GNOME і частина "
-"графічного середовища MATE. Якщо ви хочете дізнатися більше про MATE чи про "
+"графічного середовища MATE. Якщо Ви хочете дізнатися більше про MATE чи про "
 "Калькулятор MATE, відвідайте, будь ласка, домашню сторінку проєкту."
 
 #: data/mate-calc.desktop.in:3 src/math-window.c:366
@@ -610,11 +611,11 @@ msgstr "калькулятор;MATE;наукові;арифметичні;фін
 
 #: data/org.mate.calc.gschema.xml:25
 msgid "Accuracy value"
-msgstr "Значення точности"
+msgstr "Рівень точності"
 
 #: data/org.mate.calc.gschema.xml:26
 msgid "The number of digits displayed after the numeric point"
-msgstr "Кількість цифр, які виводяться після коми"
+msgstr "Кількість цифр після десяткової коми"
 
 #: data/org.mate.calc.gschema.xml:31
 msgid "Word size"
@@ -638,7 +639,7 @@ msgstr "Показувати роздільник тисячних"
 
 #: data/org.mate.calc.gschema.xml:43
 msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr "Показує чи виводяться розділювачі тисяч у великих числах"
+msgstr "Вказує, чи потрібно показувати розділювачі тисяч у великих числах."
 
 #: data/org.mate.calc.gschema.xml:47
 msgid "Show Trailing Zeroes"
@@ -648,7 +649,7 @@ msgstr "Показувати завершальні нулі"
 msgid ""
 "Indicates whether any trailing zeroes after the numeric point should be "
 "shown in the display value."
-msgstr "Показує чи виводяться кінцеві нулі після двійкової коми."
+msgstr "Вказує чи потрібно виводити нулі після коми."
 
 #: data/org.mate.calc.gschema.xml:52
 msgid "Show History"
@@ -692,7 +693,7 @@ msgstr "Валюта поточних розрахунків"
 
 #: data/org.mate.calc.gschema.xml:77
 msgid "Target currency"
-msgstr "Валюта-мета"
+msgstr "Цільова валюта"
 
 #: data/org.mate.calc.gschema.xml:78
 msgid "Currency to convert the current calculation into"
@@ -700,27 +701,27 @@ msgstr "Валюта, у яку перетворюються поточні ро
 
 #: data/org.mate.calc.gschema.xml:82
 msgid "Source units"
-msgstr "Одиниці джерела"
+msgstr "Початкові величини"
 
 #: data/org.mate.calc.gschema.xml:83
 msgid "Units of the current calculation"
-msgstr "Одиниці поточних обчислень"
+msgstr "Величини поточних розрахунків"
 
 #: data/org.mate.calc.gschema.xml:87
 msgid "Target units"
-msgstr "Одиниці мети"
+msgstr "Цільові величини"
 
 #: data/org.mate.calc.gschema.xml:88
 msgid "Units to convert the current calculation into"
-msgstr "Одиниці, у які будуть перетворені поточні обчислення "
+msgstr "Величини, у які будуть перетворено поточні розрахунки "
 
 #: src/currency-manager.c:30
 msgid "UAE Dirham"
-msgstr "Дихрам UAE"
+msgstr "Дирхам UAE"
 
 #: src/currency-manager.c:31
 msgid "Australian Dollar"
-msgstr "Австралійський доляр"
+msgstr "Австралійський долар"
 
 #: src/currency-manager.c:32
 msgid "Bulgarian Lev"
@@ -732,7 +733,7 @@ msgstr "Бахрейнський динар"
 
 #: src/currency-manager.c:34
 msgid "Brunei Dollar"
-msgstr "Брунейський доляр"
+msgstr "Брунейський долар"
 
 #: src/currency-manager.c:35
 msgid "Brazilian Real"
@@ -740,11 +741,11 @@ msgstr "Бразильський реал"
 
 #: src/currency-manager.c:36
 msgid "Botswana Pula"
-msgstr "Пула Ботсвани"
+msgstr "Ботсванська пула"
 
 #: src/currency-manager.c:37
 msgid "Canadian Dollar"
-msgstr "Канадійський доляр"
+msgstr "Канадський долар"
 
 #: src/currency-manager.c:38
 msgid "CFA Franc"
@@ -776,7 +777,7 @@ msgstr "Данська крона"
 
 #: src/currency-manager.c:45
 msgid "Algerian Dinar"
-msgstr "Алжірський динар"
+msgstr "Алжирський динар"
 
 #: src/currency-manager.c:46
 msgid "Estonian Kroon"
@@ -784,15 +785,15 @@ msgstr "Естонська крона"
 
 #: src/currency-manager.c:47
 msgid "Euro"
-msgstr "Евро"
+msgstr "Євро"
 
 #: src/currency-manager.c:48
 msgid "Pound Sterling"
-msgstr "Фунт стерлінґів"
+msgstr "Фунт стерлінгів"
 
 #: src/currency-manager.c:49
 msgid "Hong Kong Dollar"
-msgstr "Гонконґівський доляр"
+msgstr "Гонконгський долар"
 
 #: src/currency-manager.c:50
 msgid "Croatian Kuna"
@@ -836,7 +837,7 @@ msgstr "Кувейтський динар"
 
 #: src/currency-manager.c:60
 msgid "Kazakhstani Tenge"
-msgstr "Казахський тенґе"
+msgstr "Казахстанський теньге"
 
 #: src/currency-manager.c:61
 msgid "Sri Lankan Rupee"
@@ -852,7 +853,7 @@ msgstr "Латвійський лат"
 
 #: src/currency-manager.c:64
 msgid "Libyan Dinar"
-msgstr "Ліванський динар"
+msgstr "Лівійський динар"
 
 #: src/currency-manager.c:65
 msgid "Mauritian Rupee"
@@ -876,7 +877,7 @@ msgstr "Непальська рупія"
 
 #: src/currency-manager.c:70
 msgid "New Zealand Dollar"
-msgstr "Новозеландський доляр"
+msgstr "Новозеландський долар"
 
 #: src/currency-manager.c:71
 msgid "Omani Rial"
@@ -912,7 +913,7 @@ msgstr "Російський рубль"
 
 #: src/currency-manager.c:79
 msgid "Saudi Riyal"
-msgstr "Саудівський ріял"
+msgstr "Саудівський ріал"
 
 #: src/currency-manager.c:80
 msgid "Swedish Krona"
@@ -920,7 +921,7 @@ msgstr "Шведська крона"
 
 #: src/currency-manager.c:81
 msgid "Singapore Dollar"
-msgstr "Сингапурський доляр"
+msgstr "Сингапурський долар"
 
 #: src/currency-manager.c:82
 msgid "Thai Baht"
@@ -936,15 +937,15 @@ msgstr "Турецька ліра"
 
 #: src/currency-manager.c:85
 msgid "T&T Dollar (TTD)"
-msgstr "Доляр T&T (TTD)"
+msgstr "Долар Тринідаду і Тобаго"
 
 #: src/currency-manager.c:86
 msgid "US Dollar"
-msgstr "Доляр США"
+msgstr "Долар США"
 
 #: src/currency-manager.c:87
 msgid "Uruguayan Peso"
-msgstr "Уруґвайське песо"
+msgstr "Уругвайський песо"
 
 #: src/currency-manager.c:88
 msgid "Venezuelan Bolívar"
@@ -956,7 +957,7 @@ msgstr "Південноафриканський ранд"
 
 #: src/financial.c:78
 msgid "Error: the number of periods must be positive"
-msgstr "Помилка: кількість періодів повинна бути додатною"
+msgstr "Помилка: кількість періодів має бути додатною"
 
 #. Description on how to use mate-calc displayed on command-line
 #: src/mate-calc.c:83
@@ -999,9 +1000,9 @@ msgid ""
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
 "Параметри GTK+:\n"
-"  --class=CLASS                   Клас програми, яка використовується упорядником вікон\n"
-"  --name=NAME                     Назва програми, яка використовується упорядником вікон\n"
-"  --screen=SCREEN                 Використовувати екран X\n"
+"  --class=CLASS                   Програмний клас, який використовується віконним менеджером\n"
+"  --name=NAME                     Назва програми, яка використовується віконним менеджером\n"
+"  --screen=SCREEN                 Екран X для використання\n"
 "  --sync                          Зробити виклики X синхронними\n"
 "  --gtk-module=MODULES            Завантажити додаткові модулі GTK+\n"
 "  --g-fatal-warnings              Зробити усі попередження критичними"
@@ -1020,7 +1021,7 @@ msgstr ""
 #: src/mate-calc.c:163
 #, c-format
 msgid "Argument --solve requires an equation to solve"
-msgstr "Для аргументу --solve треба вказати вираз для обчислення"
+msgstr "Для аргументу --solve потрібне рівняння"
 
 #. Error printed to stderr when user provides an unknown command-line argument
 #: src/mate-calc.c:174
@@ -1031,7 +1032,7 @@ msgstr "Невідомий аргумент \"%s\""
 #. Tooltip for the Pi button
 #: src/math-buttons.c:93
 msgid "Pi [Ctrl+P]"
-msgstr "Пі [Ctrl+P]"
+msgstr "π [Ctrl+P]"
 
 #. Tooltip for the Euler's Number button
 #: src/math-buttons.c:96
@@ -1131,7 +1132,7 @@ msgstr "Комплексний аргумент"
 #. Tooltip for the complex conjugate button
 #: src/math-buttons.c:153
 msgid "Complex conjugate"
-msgstr "Пошук спряженого числа "
+msgstr "Спряжені числа"
 
 #. Tooltip for the root button
 #: src/math-buttons.c:156
@@ -1206,7 +1207,7 @@ msgstr "Обернути [Ctrl+I]"
 #. Tooltip for the boolean AND button
 #: src/math-buttons.c:198
 msgid "Boolean AND"
-msgstr "Логічне ТА"
+msgstr "Логічне І"
 
 #. Tooltip for the boolean OR button
 #: src/math-buttons.c:201
@@ -1226,27 +1227,27 @@ msgstr "Логічне НІ"
 #. Tooltip for the integer component button
 #: src/math-buttons.c:210 src/math-buttons.c:972
 msgid "Integer Component"
-msgstr "Ціла складова"
+msgstr "Ціла частина"
 
 #. Tooltip for the fractional component button
 #: src/math-buttons.c:213 src/math-buttons.c:974
 msgid "Fractional Component"
-msgstr "Дробова складова"
+msgstr "Дробова частина"
 
 #. Tooltip for the real component button
 #: src/math-buttons.c:216
 msgid "Real Component"
-msgstr "Дійсна складова"
+msgstr "Дійсна частина"
 
 #. Tooltip for the imaginary component button
 #: src/math-buttons.c:219
 msgid "Imaginary Component"
-msgstr "Уявна складова"
+msgstr "Уявна частина"
 
 #. Tooltip for the ones' complement button
 #: src/math-buttons.c:222
 msgid "Ones' Complement"
-msgstr "Однорозрядне доповнення"
+msgstr "Обернений код"
 
 #. Tooltip for the two's complement button
 #: src/math-buttons.c:225
@@ -1301,12 +1302,12 @@ msgstr "Подвійне нарахування амортизації"
 #. Tooltip for the financial term button
 #: src/math-buttons.c:267
 msgid "Financial Term"
-msgstr "Фінансові терміни"
+msgstr "Фінансові строки"
 
 #. Tooltip for the sum of the years digits depreciation button
 #: src/math-buttons.c:270
 msgid "Sum of the Years Digits Depreciation"
-msgstr "Амортизація суми чисел року"
+msgstr "Річна амортизація"
 
 #. Tooltip for the straight line depreciation button
 #: src/math-buttons.c:273
@@ -1358,17 +1359,17 @@ msgstr[3] "%d розрядів"
 #. Tooltip for the round button
 #: src/math-buttons.c:976
 msgid "Round"
-msgstr "Коло"
+msgstr "Округлення"
 
 #. Tooltip for the floor button
 #: src/math-buttons.c:978
 msgid "Floor"
-msgstr "Підлога"
+msgstr "Вниз"
 
 #. Tooltip for the ceiling button
 #: src/math-buttons.c:980
 msgid "Ceiling"
-msgstr "Стеля"
+msgstr "Вгору"
 
 #. Tooltip for the ceiling button
 #: src/math-buttons.c:982
@@ -1382,34 +1383,34 @@ msgstr "Швидкість світла"
 
 #: src/math-buttons.c:1023
 msgid "299,792,458 m/s"
-msgstr "299,792,458 m/s"
+msgstr "299 792 458 м/с"
 
 #. Tooltip for the μ₀ component button
 #: src/math-buttons.c:1025
 msgid "Magnetic constant"
-msgstr "Магнітна константа"
+msgstr "Магнітна стала"
 
 #: src/math-buttons.c:1025
 msgid "1.2566370614×10⁻⁶ N/A²"
-msgstr "1.2566370614×10⁻⁶ N/A²"
+msgstr "1,2566370614×10⁻⁶ Н/А²"
 
 #. Tooltip for the ε₀ button
 #: src/math-buttons.c:1027
 msgid "Electric constant"
-msgstr "Електрична константа"
+msgstr "Електрична стала"
 
 #: src/math-buttons.c:1027
 msgid "8.85418782×10⁻¹² s⁴A²/m³kg"
-msgstr "8.85418782×10⁻¹² s⁴A²/m³kg"
+msgstr "8,8541878128×10⁻¹² с⁴А²/м³кг"
 
 #. Tooltip for the G button
 #: src/math-buttons.c:1029
 msgid "Newtonian constant of gravitation"
-msgstr "Стала Ньютона для гравітації"
+msgstr "Гравітаційна стала"
 
 #: src/math-buttons.c:1029
 msgid "6.67408×10⁻¹¹ m³/(s²kg)"
-msgstr "6.67408×10⁻¹¹ m³/(s²kg)"
+msgstr "6,674184(78)×10⁻¹¹ м³/(с²кг)"
 
 #. Tooltip for the h button
 #: src/math-buttons.c:1031
@@ -1418,7 +1419,7 @@ msgstr "Стала Планка"
 
 #: src/math-buttons.c:1031
 msgid "6.62607004×10⁻³⁴ m²kg/s"
-msgstr "6.62607004×10⁻³⁴ m²kg/s"
+msgstr "6,62607015×10⁻³⁴ м²кг/с"
 
 #. Tooltip for the ｅ button
 #: src/math-buttons.c:1033
@@ -1427,7 +1428,7 @@ msgstr "Елементарний заряд"
 
 #: src/math-buttons.c:1033
 msgid "1.6021766208(98)×10⁻¹⁹ C"
-msgstr "1.6021766208(98)×10⁻¹⁹ C"
+msgstr "1,602176634×10⁻¹⁹ Кл"
 
 #. Tooltip for the mₑ button
 #: src/math-buttons.c:1035
@@ -1436,7 +1437,7 @@ msgstr "Маса електрона"
 
 #: src/math-buttons.c:1035
 msgid "9.10938356×10⁻³¹ kg"
-msgstr "9.10938356×10⁻³¹ kg"
+msgstr "9,109554(906)×10⁻³¹ кг"
 
 #. Tooltip for the mₚ button
 #: src/math-buttons.c:1037
@@ -1445,16 +1446,16 @@ msgstr "Маса протона"
 
 #: src/math-buttons.c:1037
 msgid "1.672621898(21)×10⁻²⁷ kg"
-msgstr "1.672621898(21)×10⁻²⁷ kg"
+msgstr "1,672621898(21)×10⁻²⁷ кг"
 
 #. Tooltip for the Nₐ button
 #: src/math-buttons.c:1039
 msgid "Avogadro constant"
-msgstr "Константа Авогадро"
+msgstr "Стала Авогадро"
 
 #: src/math-buttons.c:1039
 msgid "6.02214086×10²³ mol⁻¹"
-msgstr "6.02214086×10²³ mol⁻¹"
+msgstr "6,02214076×10²³ моль⁻¹"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
@@ -1491,13 +1492,13 @@ msgstr "Переповнення. Спробуйте більший розмір
 #: src/math-equation.c:1195
 #, c-format
 msgid "Unknown variable '%s'"
-msgstr "Невідома змінна «%s»"
+msgstr "Невідома змінна \"%s\""
 
 #. Error displayed to user when an unknown function is entered
 #: src/math-equation.c:1200
 #, c-format
 msgid "Function '%s' is not defined"
-msgstr "Функція «%s» не визначена"
+msgstr "Функція \"%s\" не визначена"
 
 #. Error displayed to user when an conversion with unknown units is attempted
 #: src/math-equation.c:1205
@@ -1508,7 +1509,7 @@ msgstr "Невідоме перетворення"
 #: src/math-equation.c:1213
 #, c-format
 msgid "Malformed expression at token '%s'"
-msgstr "Некоректний вираз: лексема «%s»"
+msgstr "Неправильний вираз у маркері \"%s\""
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
@@ -1565,12 +1566,12 @@ msgstr "Гради"
 #. number 1.234×10^99)
 #: src/math-preferences.c:256
 msgid "Automatic"
-msgstr "Самочинно"
+msgstr "Автоматично"
 
 #. Number display mode combo: Fixed, e.g. 1234
 #: src/math-preferences.c:260
 msgid "Fixed"
-msgstr "Виправлено"
+msgstr "Фіксований"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
 #: src/math-preferences.c:264
@@ -1586,7 +1587,7 @@ msgstr "Інженерний"
 #: src/math-preferences.c:279
 #, c-format
 msgid "Show %d decimal _places"
-msgstr "Показати _місця десяткового %d"
+msgstr "Показувати %d десяткових _знаків"
 
 #. Translators: Error message displayed when unable to launch help browser
 #: src/math-window.c:292
@@ -1595,7 +1596,7 @@ msgstr "Не вдається відкрити файл довідки"
 
 #: src/math-window.c:310
 msgid "Sun Microsystems"
-msgstr "Сун Мікросістемс"
+msgstr "Sun Microsystems"
 
 #: src/math-window.c:311
 msgid "MATE Documentation Team"
@@ -1608,10 +1609,10 @@ msgid ""
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
-"Калькулятор MATE — це безкоштовне програмне забезпечення; Ви можете "
-"розповсюджувати та/або змінювати його відповідно до умов Загальної публічної"
-" ліцензії GNU, опублікованих Фондом вільного програмного забезпечення; або "
-"версії 2 Ліцензії, або (за Вашим бажанням) будь-якої пізнішої версії."
+"Калькулятор MATE — це безплатне програмне забезпечення; Ви можете "
+"розповсюджувати його та/чи змінювати відповідно до умов Загальної публічної "
+"ліцензії GNU Фонду вільного програмного забезпечення; або версії 2 Ліцензії,"
+" чи (за Вашим бажанням) будь-якої пізнішої версії."
 
 #: src/math-window.c:321
 msgid ""
@@ -1620,10 +1621,10 @@ msgid ""
 "or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
 " more details."
 msgstr ""
-"Калькулятор MATE розповсюджується зі сподіваннями, що він буде корисним, але"
-" БЕЗ БУДЬ-ЯКИХ ГАРАНТІЙ; навіть не маючи на увазі гарантію КОМЕРЦІЙНОЇ "
-"ЦІННОСТІ, чи ПРИДАТНОСТІ ДЛЯ ПЕВНОГО ПРИЗНАЧЕННЯ. Докладніше див. у "
-"Загальній публічній ліцензії GNU."
+"Калькулятор MATE розповсюджується зі сподіванням, що він буде корисним, але "
+"БЕЗ БУДЬ-ЯКИХ ГАРАНТІЙ; навіть без гарантій щодо потенційної КОМЕРЦІЙНОЇ "
+"ЦІННОСТІ чи ПРИДАТНОСТІ ДЛЯ ПЕВНОГО ПРИЗНАЧЕННЯ. Детальніше див. у Загальній"
+" публічній ліцензії GNU."
 
 #: src/math-window.c:325
 msgid ""
@@ -1632,8 +1633,8 @@ msgid ""
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
 "Ви повинні були отримати копію Загальної публічної ліцензії GNU разом із "
-"Калькулятором MATE; якщо ні, напишіть у Фонд вільного програмного "
-"забезпечення: Free Software Foundation, Inc., 51 Franklin Street, Fifth "
+"Калькулятором MATE; якщо не отримали, напишіть у Фонд вільного програмного "
+"забезпечення, Free Software Foundation, Inc., 51 Franklin Street, Fifth "
 "Floor, Boston, MA 02110-1301, USA."
 
 #: src/math-window.c:362
@@ -1643,11 +1644,11 @@ msgid ""
 "Using GNU MPFR %s and GNU MPC %s"
 msgstr ""
 "Калькулятор із фінансовим та науковим режимами.\n"
-"Використовуючи GNU MPFR %s та GNU MPC %s"
+"Використовує GNU MPFR %s та GNU MPC %s"
 
 #: src/math-window.c:368
 msgid "About MATE Calculator"
-msgstr "Про MATE Calc"
+msgstr "Про Калькулятор MATE"
 
 #: src/math-window.c:369
 msgid ""
@@ -1662,7 +1663,9 @@ msgid "translator-credits"
 msgstr ""
 "Yarema aka Knedlyk <yupadmin@gmail.com>,\n"
 "Микола Ткач <Stuartlittle1970@gmail.com>,\n"
-"Oleh Tsyupka <myr4yk@gmail.com>"
+"Oleh Tsyupka <myr4yk@gmail.com>\n"
+"Юрій Яновський <lytvyn349@ukr.net>\n"
+"Serhii Horichenko <mail@sgg.im>"
 
 #. Calculator menu
 #: src/math-window.c:523
@@ -1750,25 +1753,26 @@ msgstr "_Про програму"
 #. values
 #: src/mp-binary.c:114
 msgid "Boolean AND is only defined for positive integers"
-msgstr "Двійкове ТА визначено лише для натуральних чисел"
+msgstr "Логічне І визначене лише для натуральних чисел"
 
 #. Translators: Error displayed when boolean OR attempted on non-integer
 #. values
 #: src/mp-binary.c:126
 msgid "Boolean OR is only defined for positive integers"
-msgstr "Двійкове АБО визначено лише для натуральних чисел"
+msgstr "Логічне АБО визначене лише для натуральних чисел"
 
 #. Translators: Error displayed when boolean XOR attempted on non-integer
 #. values
 #: src/mp-binary.c:138
 msgid "Boolean XOR is only defined for positive integers"
-msgstr "Двійкове ВИКЛЮЧНЕ-АБО визначено лише для натуральних чисел"
+msgstr ""
+"Логічна Виняткова диз'юнкція (XOR) визначена лише для натуральних чисел"
 
 #. Translators: Error displayed when boolean NOT attempted on non-integer
 #. values
 #: src/mp-binary.c:154
 msgid "Boolean NOT is only defined for positive integers"
-msgstr "Двійкове НІ визначено лише для натуральних чисел"
+msgstr "Логічне НІ визначене лише для натуральних чисел"
 
 #. Translators: Error displayed when bit shift attempted on non-integer values
 #: src/mp-binary.c:166
@@ -1788,7 +1792,7 @@ msgstr "Ділення на нуль неприпустиме"
 #. Translators: Error displayed when attempting to take logarithm of zero
 #: src/mp.c:343 src/mp.c:371
 msgid "Logarithm of zero is undefined"
-msgstr "Лоґарифм від нуля неприпустимий"
+msgstr "Логарифм від нуля неприпустимий"
 
 #. Translators: Error displayed when attempting to take zeroth root
 #: src/mp.c:434
@@ -1805,7 +1809,7 @@ msgstr "Факторіал визначається лише для невід�
 #. non-integer numbers
 #: src/mp.c:504
 msgid "Modulus division is only defined for integers"
-msgstr "Ділення за модулем визначено лише для цілих"
+msgstr "Ділення із залишком визначено лише для цілих"
 
 #. Translators: Error displayed when attempted to raise 0 to a negative
 #. exponent
@@ -1830,35 +1834,34 @@ msgstr "Дзета-функція Рімана визначена лише дл�
 msgid ""
 "Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
 "(90°)"
-msgstr "Танґенс невизначений для кутів з періодом π(180°) від π∕2 (90°)"
+msgstr "Тангенс невизначений для кутів з періодом π(180°) від π∕2 (90°)"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: src/mp-trigonometric.c:145
 msgid "Inverse sine is undefined for values outside [-1, 1]"
-msgstr "Зворотній синус невизначено для значень поза діапазоном [-1, 1]"
+msgstr "Арксинус невизначений для значень поза діапазоном [-1, 1]"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: src/mp-trigonometric.c:169
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
-msgstr "Зворотній косинус невизначено для значень поза діапазоном [-1, 1]"
+msgstr "Арккосинус невизначений для значень поза діапазоном [-1, 1]"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: src/mp-trigonometric.c:194
 msgid "Arctangent function is undefined for values i and -i"
-msgstr "Функція Arctangent невизначена для значень i та -i"
+msgstr "Функція арктангенса невизначена для значень i та -i"
 
 #. Translators: Error displayed when inverse hyperbolic cosine value is
 #. undefined
 #: src/mp-trigonometric.c:241
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
-msgstr ""
-"Зворотній гіперболічний косинус невизначено для значень менших за одиницю"
+msgstr "Гіперболічний ареакосинус невизначений для значень менших за одиницю"
 
 #. Translators: Error displayed when inverse hyperbolic tangent value is
 #. undefined
 #: src/mp-trigonometric.c:262
 msgid "Inverse hyperbolic tangent is undefined for values outside (-1, 1)"
-msgstr "Інверсний гіперболічний танґенс невизначений для значень поза (-1, 1)"
+msgstr "Гіперболічний ареатангенс невизначений для значень поза (-1, 1)"
 
 #: src/unit-manager.c:51
 #, c-format
@@ -1886,27 +1889,27 @@ msgstr "радіан,радіани,рад"
 #, c-format
 msgctxt "unit-format"
 msgid "%s gradians"
-msgstr "%s градіанів"
+msgstr "%s град"
 
 #: src/unit-manager.c:53
 msgctxt "unit-symbols"
 msgid "gradian,gradians,grad"
-msgstr "градіан,градіани,град"
+msgstr "град,гради"
 
 #: src/unit-manager.c:54
 msgid "Parsecs"
-msgstr "Персеки"
+msgstr "Парсеки"
 
 #: src/unit-manager.c:54
 #, c-format
 msgctxt "unit-format"
 msgid "%s pc"
-msgstr "%s пс"
+msgstr "%s пк"
 
 #: src/unit-manager.c:54
 msgctxt "unit-symbols"
 msgid "parsec,parsecs,pc"
-msgstr "персек,персеки,пс"
+msgstr "парсек,парсеки,пк"
 
 #: src/unit-manager.c:55
 msgid "Light Years"
@@ -1916,12 +1919,12 @@ msgstr "Світлові роки"
 #, c-format
 msgctxt "unit-format"
 msgid "%s ly"
-msgstr "%s ср"
+msgstr "%s св.р."
 
 #: src/unit-manager.c:55
 msgctxt "unit-symbols"
 msgid "lightyear,lightyears,ly"
-msgstr "світлорік,світлороків,ср"
+msgstr "світловий рік,світлові роки,св.р."
 
 #: src/unit-manager.c:56
 msgid "Astronomical Units"
@@ -1931,12 +1934,12 @@ msgstr "Астрономічні одиниці"
 #, c-format
 msgctxt "unit-format"
 msgid "%s au"
-msgstr "%s ао"
+msgstr "%s а.о."
 
 #: src/unit-manager.c:56
 msgctxt "unit-symbols"
 msgid "au"
-msgstr "ао"
+msgstr "а.о."
 
 #: src/unit-manager.c:57
 msgid "Nautical Miles"
@@ -1961,12 +1964,12 @@ msgstr "Милі"
 #, c-format
 msgctxt "unit-format"
 msgid "%s mi"
-msgstr "%s ми"
+msgstr "%s миль"
 
 #: src/unit-manager.c:58
 msgctxt "unit-symbols"
 msgid "mile,miles,mi"
-msgstr "миль,милі,ми"
+msgstr "миль,милі"
 
 #: src/unit-manager.c:59
 msgid "Kilometers"
@@ -1985,7 +1988,7 @@ msgstr "кілометр,кілометрів,км"
 
 #: src/unit-manager.c:60
 msgid "Cables"
-msgstr "Кабелі"
+msgstr "Кабельтови"
 
 #: src/unit-manager.c:60
 #, c-format
@@ -1996,7 +1999,7 @@ msgstr "%s кб"
 #: src/unit-manager.c:60
 msgctxt "unit-symbols"
 msgid "cable,cables,cb"
-msgstr "кабель,кабелів,кб "
+msgstr "кабельтов,кабельтови,кб "
 
 #: src/unit-manager.c:61
 msgid "Fathoms"
@@ -2036,22 +2039,22 @@ msgstr "Ярди"
 #, c-format
 msgctxt "unit-format"
 msgid "%s yd"
-msgstr "%s яр"
+msgstr "%s ярд"
 
 #: src/unit-manager.c:63
 msgctxt "unit-symbols"
 msgid "yard,yards,yd"
-msgstr "ярд,ярди,яр"
+msgstr "ярд,ярди"
 
 #: src/unit-manager.c:64
 msgid "Feet"
-msgstr "Фут"
+msgstr "Фути"
 
 #: src/unit-manager.c:64
 #, c-format
 msgctxt "unit-format"
 msgid "%s ft"
-msgstr "%s фт"
+msgstr "%s фут"
 
 #: src/unit-manager.c:64
 msgctxt "unit-symbols"
@@ -2066,12 +2069,12 @@ msgstr "Дюйми"
 #, c-format
 msgctxt "unit-format"
 msgid "%s in"
-msgstr "%s дм"
+msgstr "%s дюйм"
 
 #: src/unit-manager.c:65
 msgctxt "unit-symbols"
 msgid "inch,inches,in"
-msgstr "дюйм,дюйми,дм"
+msgstr "дюйм,дюйми"
 
 #: src/unit-manager.c:66
 msgid "Centimeters"
@@ -2126,12 +2129,12 @@ msgstr "Нанометри"
 #, c-format
 msgctxt "unit-format"
 msgid "%s nm"
-msgstr "%s мм"
+msgstr "%s нм"
 
 #: src/unit-manager.c:69
 msgctxt "unit-symbols"
 msgid "nanometer,nanometers,nm"
-msgstr "нанометр,нанометри,морська миля"
+msgstr "нанометр,нанометри,нм"
 
 #: src/unit-manager.c:70
 msgid "Hectares"
@@ -2156,7 +2159,7 @@ msgstr "Акри"
 #, c-format
 msgctxt "unit-format"
 msgid "%s acres"
-msgstr "%s акрів"
+msgstr "%s акр"
 
 #: src/unit-manager.c:71
 msgctxt "unit-symbols"
@@ -2251,7 +2254,7 @@ msgstr "%s л"
 #: src/unit-manager.c:77
 msgctxt "unit-symbols"
 msgid "litre,litres,liter,liters,L"
-msgstr "літр,літри,літер,л"
+msgstr "літр,літри,л"
 
 #: src/unit-manager.c:78
 msgid "Quarts"
@@ -2276,12 +2279,12 @@ msgstr "Пінти"
 #, c-format
 msgctxt "unit-format"
 msgid "%s pt"
-msgstr "%s пт"
+msgstr "%s пінт"
 
 #: src/unit-manager.c:79
 msgctxt "unit-symbols"
 msgid "pint,pints,pt"
-msgstr "пінт,пінти,пт"
+msgstr "пінт,пінти"
 
 #: src/unit-manager.c:80
 msgid "Millilitres"
@@ -2296,7 +2299,7 @@ msgstr "%s мл"
 #: src/unit-manager.c:80
 msgctxt "unit-symbols"
 msgid "millilitre,millilitres,milliliter,milliliters,mL,cm³"
-msgstr "мілілітр,мілілітер,мілілтри,мл,см³"
+msgstr "мілілітр,мілілітри,мл,см³"
 
 #: src/unit-manager.c:81
 msgid "Microlitres"
@@ -2366,12 +2369,12 @@ msgstr "Унції"
 #, c-format
 msgctxt "unit-format"
 msgid "%s oz"
-msgstr "%s унц"
+msgstr "%s ун."
 
 #: src/unit-manager.c:85
 msgctxt "unit-symbols"
 msgid "ounce,ounces,oz"
-msgstr "унція,унцій,унц"
+msgstr "унція,унцій,ун."
 
 #: src/unit-manager.c:86
 msgid "Grams"
@@ -2396,12 +2399,12 @@ msgstr "Роки"
 #, c-format
 msgctxt "unit-format"
 msgid "%s years"
-msgstr "%s років"
+msgstr "%s р."
 
 #: src/unit-manager.c:87
 msgctxt "unit-symbols"
 msgid "year,years"
-msgstr "рік,роки"
+msgstr "рік,роки,р."
 
 #: src/unit-manager.c:88
 msgid "Days"
@@ -2411,12 +2414,12 @@ msgstr "Дні"
 #, c-format
 msgctxt "unit-format"
 msgid "%s days"
-msgstr "%s днів"
+msgstr "%s дн."
 
 #: src/unit-manager.c:88
 msgctxt "unit-symbols"
 msgid "day,days"
-msgstr "день,дні"
+msgstr "день,дні,дн."
 
 #: src/unit-manager.c:89
 msgid "Hours"
@@ -2426,27 +2429,27 @@ msgstr "Години"
 #, c-format
 msgctxt "unit-format"
 msgid "%s hours"
-msgstr "%s годин"
+msgstr "%s год."
 
 #: src/unit-manager.c:89
 msgctxt "unit-symbols"
 msgid "hour,hours"
-msgstr "година,годин"
+msgstr "година,годин,год."
 
 #: src/unit-manager.c:90
 msgid "Minutes"
-msgstr "Хвилин"
+msgstr "Хвилини"
 
 #: src/unit-manager.c:90
 #, c-format
 msgctxt "unit-format"
 msgid "%s minutes"
-msgstr "%s хвилина"
+msgstr "%s хв."
 
 #: src/unit-manager.c:90
 msgctxt "unit-symbols"
 msgid "minute,minutes"
-msgstr "хвилина,хвилини"
+msgstr "хвилина,хвилини,хв."
 
 #: src/unit-manager.c:91
 msgid "Seconds"
@@ -2567,7 +2570,7 @@ msgstr "Площа"
 
 #: src/unit-manager.c:109
 msgid "Volume"
-msgstr "Гучність"
+msgstr "Об'єм"
 
 #: src/unit-manager.c:110
 msgid "Weight"

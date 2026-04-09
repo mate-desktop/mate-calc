@@ -10,12 +10,13 @@
 # cb445fb3dfd1fe3c2b9f58ac5638f478, 2018
 # Tobias Lekare <lekare@linux.com>, 2018
 # Philip Andersen <renegadevi@codeofmagi.net>, 2018
-# Wolfgang Ulbrich <mate@raveit.de>, 2019
+# Wolfgang Ulbrich <raveit65.sun@gmail.com>, 2019
 # 6a42dd6e7ca9a813693714b0d9aa1ad8, 2019
 # eckeman <eckeman@zoho.com>, 2020
 # Kristoffer Grundström <lovaren@gmail.com>, 2022
 # Stefano Karapetsas <stefano@karapetsas.com>, 2022
-# Luna Jernberg <droidbittin@gmail.com>, 2023
+# Luna Jernberg <droidbittin@gmail.com>, 2024
+# Daniel Nylander <po@danielnylander.se>, 2025
 # 
 msgid ""
 msgstr ""
@@ -23,7 +24,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-calc/issues\n"
 "POT-Creation-Date: 2022-10-28 17:41+0200\n"
 "PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: Luna Jernberg <droidbittin@gmail.com>, 2023\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/mate/teams/13566/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -121,7 +122,7 @@ msgstr "Nedsänkt"
 
 #: src/buttons-advanced.ui:966
 msgid "const"
-msgstr ""
+msgstr "konstant"
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
@@ -583,6 +584,9 @@ msgid ""
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
 msgstr ""
+"MATE kalkylator är en kraftfull grafisk kalkylator med finansiella, logiska "
+"och vetenskapliga lägen. Den använder ett multipelprecisionspaket för att "
+"göra sin aritmetik för att ge en hög grad av noggrannhet. "
 
 #: data/mate-calc.appdata.xml.in:15
 msgid ""
@@ -590,6 +594,9 @@ msgid ""
 "If you would like to know more about MATE and MATE Calc, please visit the "
 "project's home page."
 msgstr ""
+"MATE kalkylator en avgrening av GNOME kalkylator och är en del av "
+"skrivbordsmiljön MATE. Om du vill veta mer om MATE och MATE kalkylator, "
+"besök gärna projektets hemsida. "
 
 #: data/mate-calc.desktop.in:3 src/math-window.c:366
 msgid "MATE Calculator"
@@ -608,7 +615,7 @@ msgstr "Utför aritmetiska, vetenskapliga eller finansiella beräkningar"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mate-calc.desktop.in:13
 msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
-msgstr ""
+msgstr "kalkylator;MATE;vetenskaplig;aritmetik;ekonomisk;beräkningar;"
 
 #: data/org.mate.calc.gschema.xml:25
 msgid "Accuracy value"
@@ -1045,7 +1052,7 @@ msgstr "Eulers nummer"
 #. Tooltip for the imaginary number button
 #: src/math-buttons.c:99
 msgid "Imaginary unit"
-msgstr ""
+msgstr "imaginär enhet"
 
 #. Tooltip for the numeric point button
 #: src/math-buttons.c:102
@@ -1608,6 +1615,10 @@ msgid ""
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
+"MATE kalkylator är fri programvara. Du kan distribuera det och/eller "
+"modifiera det under villkoren i GNU General Public License, publicerad av "
+"Free Software Foundation, antingen version 2 eller (om du så vill) någon "
+"senare version."
 
 #: src/math-window.c:321
 msgid ""
@@ -1616,6 +1627,10 @@ msgid ""
 "or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
 " more details."
 msgstr ""
+"MATE kalkylator distribueras i hopp om att det ska vara användbart, men UTAN"
+" NÅGON SOM HELST GARANTI, även utan underförstådd garanti om SÄLJBARHET "
+"eller LÄMPLIGHET FÖR NÅGOT SPECIELLT ÄNDAMÅL. Se GNU General Public License "
+"för ytterligare information."
 
 #: src/math-window.c:325
 msgid ""
@@ -1623,6 +1638,9 @@ msgid ""
 " MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
+"Du bör ha fått en kopia av GNU General Public License tillsammans med Caja. "
+"Om inte, skriv till Free Software Foundation, Inc., 51 Franklin Street, "
+"Fifth Floor, Boston, MA 02110-1301 USA"
 
 #: src/math-window.c:362
 #, c-format
