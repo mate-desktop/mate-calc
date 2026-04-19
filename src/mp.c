@@ -398,6 +398,10 @@ void
 mp_invert_sign(const MPNumber *x, MPNumber *z)
 {
     mpc_neg(z->num, x->num, MPC_RNDNN);
+    if (!mp_is_complex(x))
+    {
+        mpfr_set_zero(mpc_imagref(z->num), MPFR_RNDN);
+    }
 }
 
 void
