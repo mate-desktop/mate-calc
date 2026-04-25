@@ -24,6 +24,7 @@ requires+=(
 	git
 	gmp-devel
 	gtk3-devel
+	libsoup3-devel
 	libmpc-devel
 	libxml2-devel
 	make
