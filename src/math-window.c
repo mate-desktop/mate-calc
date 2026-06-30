@@ -326,9 +326,25 @@ static void about_cb(GtkWidget* widget, MathWindow* window)
     g_free (license_trans);
 }
 
+static void new_window_cb(GtkWidget* widget, MathWindow* window)
+{
+    g_application_activate(G_APPLICATION(gtk_window_get_application(GTK_WINDOW(window))));
+}
+
+static void close_cb(GtkWidget* widget, MathWindow* window)
+{
+    gtk_window_close(GTK_WINDOW(window));
+}
+
 static void quit_cb(GtkWidget* widget, MathWindow* window)
 {
-    gtk_widget_destroy(GTK_WIDGET(window));
+    GApplication *app = G_APPLICATION(gtk_window_get_application(GTK_WINDOW(window)));
+    GList *windows, *l;
+
+    windows = g_list_copy(gtk_application_get_windows(GTK_APPLICATION(app)));
+    for (l = windows; l != NULL; l = l->next)
+        gtk_widget_destroy(GTK_WIDGET(l->data));
+    g_list_free(windows);
 }
 
 static gboolean
@@ -537,6 +553,9 @@ static void create_menu(MathWindow* window)
     #define HELP_CONTENTS_LABEL _("_Contents")
 
     menu = add_menu(window->priv->menu_bar, CALCULATOR_MENU_LABEL);
+    menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("window-new",_("_New Window"), accel_group), G_CALLBACK(new_window_cb), window);
+    gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_N, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
+    add_menu_item(menu, gtk_separator_menu_item_new(), NULL, NULL);
     menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("edit-copy",_("_Copy"), accel_group), G_CALLBACK(copy_cb), window);
     gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_C, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
     menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("edit-paste",_("_Paste"), accel_group), G_CALLBACK(paste_cb), window);
@@ -550,9 +569,10 @@ static void create_menu(MathWindow* window)
     add_menu_item(menu, gtk_separator_menu_item_new(), NULL, NULL);
     add_menu_item(menu, gtk_image_menu_item_new_from_icon("preferences-desktop",_("_Preferences"), accel_group), G_CALLBACK(show_preferences_cb), window);
     add_menu_item(menu, gtk_separator_menu_item_new(), NULL, NULL);
+    menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("window-close",_("C_lose"), accel_group), G_CALLBACK(close_cb), window);
+    gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_W, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
     menu_item = add_menu_item(menu, gtk_image_menu_item_new_from_icon("application-exit",_("_Quit"), accel_group), G_CALLBACK(quit_cb), window);
     gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_Q, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
-    gtk_widget_add_accelerator(menu_item, "activate", accel_group, GDK_KEY_W, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
 
     menu = add_menu(window->priv->menu_bar, MODE_MENU_LABEL);
     window->priv->mode_basic_menu_item = add_menu_item(menu, radio_menu_item_new(&group, MODE_BASIC_LABEL), G_CALLBACK(mode_changed_cb), window);
