@@ -32,6 +32,7 @@ PKG_CHECK_MODULES(MATE_CALC, [
     gio-2.0 >= $GIO_REQUIRED
     mpfr >= $MPFR_REQUIRED
     libxml-2.0
+    libsoup-3.0
     gmodule-export-2.0
 ])
 
@@ -40,6 +41,7 @@ PKG_CHECK_MODULES(MATE_CALC_CMD, [
     gio-2.0 >= $GIO_REQUIRED
     mpfr >= $MPFR_REQUIRED
     libxml-2.0
+    libsoup-3.0
 ])
 
 GLIB_MKENUMS=`$PKG_CONFIG --variable=glib_mkenums glib-2.0`

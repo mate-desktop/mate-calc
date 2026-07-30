@@ -13,6 +13,7 @@
 #include <glib.h>
 #include <glib/gstdio.h>
 #include <gio/gio.h>
+#include <libsoup/soup.h>
 #include <libxml/tree.h>
 #include <libxml/parser.h>
 #include <libxml/xpath.h>
@@ -219,52 +220,87 @@ file_needs_update(gchar *filename, double max_age)
     return FALSE;
 }
 
-static void
-download_imf_cb(GObject *object, GAsyncResult *result, gpointer user_data)
-{
-    CurrencyManager *manager = user_data;
-    GError *error = NULL;
+typedef struct {
+    CurrencyManager *manager;
+    gchar *filename;
+    gboolean *downloading_flag;
+    SoupSession *session;
+    SoupMessage *message;
+} DownloadData;
 
-    if (g_file_copy_finish(G_FILE(object), result, &error))
-        g_debug("IMF rates updated");
-    else
-        g_warning("Couldn't download IMF currency rate file: %s", error->message);
-    g_clear_error(&error);
-    downloading_imf_rates = FALSE;
-    load_rates(manager);
+static void
+download_done(DownloadData *data)
+{
+    *data->downloading_flag = FALSE;
+    load_rates(data->manager);
+
+    g_object_unref(data->message);
+    g_object_unref(data->session);
+    g_free(data->filename);
+    g_free(data);
 }
 
 static void
-download_ecb_cb(GObject *object, GAsyncResult *result, gpointer user_data)
+soup_send_cb(GObject *object, GAsyncResult *result, gpointer user_data)
 {
-    CurrencyManager *manager = user_data;
+    DownloadData *data = user_data;
+    SoupSession *session = SOUP_SESSION(object);
     GError *error = NULL;
+    GBytes *body;
+    guint status = soup_message_get_status(data->message);
 
-    if (g_file_copy_finish(G_FILE(object), result, &error))
-        g_debug("ECB rates updated");
-    else
-        g_warning("Couldn't download ECB currency rate file: %s", error->message);
-    g_clear_error(&error);
-    downloading_ecb_rates = FALSE;
-    load_rates(manager);
+    body = soup_session_send_and_read_finish(session, result, &error);
+    if (error || !SOUP_STATUS_IS_SUCCESSFUL(status) || !body) {
+        if (error)
+            g_warning("Couldn't download currency rate file: %s", error->message);
+        else
+            g_warning("Couldn't download currency rate file: HTTP %u", status);
+        g_clear_error(&error);
+        if (body)
+            g_bytes_unref(body);
+        download_done(data);
+        return;
+    }
+
+    if (!g_file_set_contents(data->filename,
+                             g_bytes_get_data(body, NULL),
+                             g_bytes_get_size(body),
+                             &error)) {
+        g_warning("Couldn't save currency rate file %s: %s", data->filename, error->message);
+        g_clear_error(&error);
+    } else {
+        g_debug("Currency rates saved to %s", data->filename);
+    }
+
+    g_bytes_unref(body);
+    download_done(data);
 }
 
 static void
-download_file(CurrencyManager *manager, gchar *uri, gchar *filename, GAsyncReadyCallback callback)
+download_file(CurrencyManager *manager, const gchar *uri, gchar *filename, gboolean *downloading_flag)
 {
+    DownloadData *data;
     gchar *directory;
-    GFile *source, *dest;
+
+    data = g_new0(DownloadData, 1);
+    data->manager = manager;
+    data->filename = g_strdup(filename);
+    data->downloading_flag = downloading_flag;
+    data->session = soup_session_new();
+    data->message = soup_message_new(SOUP_METHOD_GET, uri);
 
     directory = g_path_get_dirname(filename);
     g_mkdir_with_parents(directory, 0755);
     g_free(directory);
 
-    source = g_file_new_for_uri(uri);
-    dest = g_file_new_for_path(filename);
+    g_object_set(data->session, "user-agent", "curl/8.14.1", NULL);
 
-    g_file_copy_async(source, dest, G_FILE_COPY_OVERWRITE, G_PRIORITY_DEFAULT, NULL, NULL, NULL, callback, manager);
-    g_object_unref(source);
-    g_object_unref(dest);
+    soup_session_send_and_read_async(data->session,
+                                     data->message,
+                                     G_PRIORITY_DEFAULT,
+                                     NULL,
+                                     soup_send_cb,
+                                     data);
 }
 
 static void
@@ -574,14 +610,14 @@ currency_manager_get_value(CurrencyManager *manager, const gchar *currency)
     if (!downloading_imf_rates && file_needs_update(path, 60 * 60 * 24 * 7)) {
         downloading_imf_rates = TRUE;
         g_debug("Downloading rates from the IMF...");
-        download_file(manager, "http://www.imf.org/external/np/fin/data/rms_five.aspx?tsvflag=Y", path, download_imf_cb);
+        download_file(manager, "https://www.imf.org/external/np/fin/data/rms_five.aspx?tsvflag=Y", path, &downloading_imf_rates);
     }
     g_free(path);
     path = get_ecb_rate_filepath();
     if (!downloading_ecb_rates && file_needs_update(path, 60 * 60 * 24 * 7)) {
         downloading_ecb_rates = TRUE;
         g_debug("Downloading rates from the ECB...");
-        download_file(manager, "http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml", path, download_ecb_cb);
+        download_file(manager, "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml", path, &downloading_ecb_rates);
     }
     g_free(path);
 

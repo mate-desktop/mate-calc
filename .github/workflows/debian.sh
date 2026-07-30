@@ -23,6 +23,7 @@ requires+=(
 	libglib2.0-dev
 	libgmp-dev
 	libgtk-3-dev
+	libsoup-3.0-dev
 	libmpc-dev
 	libmpfr-dev
 	libxml2-dev

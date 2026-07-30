@@ -25,6 +25,7 @@ requires+=(
 	gtk3
 	intltool
 	itstool
+	libsoup3
 	libmpc
 	make
 	mate-common
