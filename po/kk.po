@@ -1,25 +1,26 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR MATE Desktop Environment team
 # This file is distributed under the same license as the mate-calc package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2020
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2020, 2026.
 # Stefano Karapetsas <stefano@karapetsas.com>, 2022
-# 
+#
+# Translators:
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-calc 1.26.0\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-calc/issues\n"
 "POT-Creation-Date: 2022-10-28 17:41+0200\n"
-"PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2022\n"
-"Language-Team: Kazakh (https://app.transifex.com/mate/teams/13566/kk/)\n"
+"PO-Revision-Date: 2026-08-24 17:18+0000\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
+"Language-Team: Kazakh <https://translate.fedoraproject.org/projects/mate-"
+"desktop/applications/mate-calc/kk/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: kk\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #. Accessible name for the factorize button
 #: src/buttons-advanced.ui:27 src/buttons-programming.ui:1900
@@ -111,13 +112,13 @@ msgstr "Төменгі индекс"
 
 #: src/buttons-advanced.ui:966
 msgid "const"
-msgstr ""
+msgstr "тұрақты"
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
 #: src/buttons-financial.ui:8 src/math-buttons.c:258
 msgid "Compounding Term"
-msgstr ""
+msgstr "Күрделі есептеу мерзімі"
 
 #: src/buttons-financial.ui:28 src/buttons-financial.ui:211
 #: src/buttons-financial.ui:394 src/buttons-financial.ui:577
@@ -153,6 +154,9 @@ msgid ""
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
 msgstr ""
+"Ағымдағы мәндегі инвестицияны болашақ мәнге дейін арттыру үшін қажетті "
+"күрделі есептеу периодтарының санын әрбір күрделі есептеу периодына "
+"бекітілген пайыздық жиілік бойынша есептейді."
 
 #. Compounding Term Dialog: Label before periodic interest rate input
 #. Future Value Dialog: Label before periodic interest rate input
@@ -163,7 +167,7 @@ msgstr ""
 #: src/buttons-financial.ui:853 src/buttons-financial.ui:1037
 #: src/buttons-financial.ui:1799
 msgid "Periodic Interest _Rate:"
-msgstr ""
+msgstr "Мерзімді пайыздық _жиілік:"
 
 #. Compounding Term Dialog: Label before future value input
 #. Periodic Interest Rate Dialog: Label before future value input
@@ -180,7 +184,7 @@ msgstr "Ағымдағы мә_ні:"
 #. Title of Double-Declining Depreciation dialog
 #: src/buttons-financial.ui:191
 msgid "Double-Declining Depreciation"
-msgstr ""
+msgstr "Қос кему әдісімен амортизация"
 
 #. Double-Declining Depreciation Dialog: Description of calculation
 #: src/buttons-financial.ui:260
@@ -188,6 +192,8 @@ msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
 msgstr ""
+"Активтің көрсетілген уақыт периоды үшін амортизациялық аударымын қос кему "
+"теңгерімі әдісімен есептейді."
 
 #. Double-Declining Depreciation Dialog: Label before life input
 #. Straight-Line Depreciation Dialog: Label before life input
@@ -195,19 +201,19 @@ msgstr ""
 #: src/buttons-financial.ui:319 src/buttons-financial.ui:1388
 #: src/buttons-financial.ui:1527
 msgid "_Life:"
-msgstr ""
+msgstr "_Қызмет мерзімі:"
 
 #. Double-Declining Depreciation Dialog: Label before period input
 #. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
 #: src/buttons-financial.ui:333 src/buttons-financial.ui:1513
 msgid "_Period:"
-msgstr ""
+msgstr "_Период:"
 
 #. Double-Declining Depreciation Dialog: Label before cost input
 #. Gross Profit Margin Dialog: Label before cost input
 #: src/buttons-financial.ui:347 src/buttons-financial.ui:670
 msgid "C_ost:"
-msgstr ""
+msgstr "Қ_ұны:"
 
 #. Title of Future Value dialog
 #. Tooltip for the future value button
@@ -219,7 +225,7 @@ msgstr "Болашақ мәні"
 #. Present Value Dialog: Label before number of periods input
 #: src/buttons-financial.ui:500 src/buttons-financial.ui:1023
 msgid "_Number of Periods:"
-msgstr ""
+msgstr "Периодтар _саны:"
 
 #. Future Value Dialog: Description of calculation
 #: src/buttons-financial.ui:516
@@ -228,6 +234,8 @@ msgid ""
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
 msgstr ""
+"Инвестицияның болашақ мәнін мерзім ішіндегі төлем периодтарының саны бойынша "
+"мерзімді пайыздық жиілікпен тең төлемдер қатары негізінде есептейді."
 
 #. Future Value Dialog: Label before periodic payment input
 #. Present Value Dialog: Label before periodic payment input
@@ -235,13 +243,13 @@ msgstr ""
 #: src/buttons-financial.ui:530 src/buttons-financial.ui:1051
 #: src/buttons-financial.ui:1771
 msgid "_Periodic Payment:"
-msgstr ""
+msgstr "_Мерзімді төлем:"
 
 #. Title of Gross Profit Margin dialog
 #. Tooltip for the gross profit margin button
 #: src/buttons-financial.ui:557 src/math-buttons.c:285
 msgid "Gross Profit Margin"
-msgstr ""
+msgstr "Жалпы пайда маржасы"
 
 #. Gross Profit Margin Dialog: Description of calculation
 #: src/buttons-financial.ui:626
@@ -249,17 +257,19 @@ msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
 msgstr ""
+"Өнімнің өзіндік құны мен қажетті жалпы пайда маржасы негізінде оның сату "
+"бағасын есептейді."
 
 #. Gross Profit Margin Dialog: Label before margin input
 #: src/buttons-financial.ui:684
 msgid "_Margin:"
-msgstr ""
+msgstr "_Маржа:"
 
 #. Title of Periodic Payment dialog
 #. Tooltip for the periodic payment button
 #: src/buttons-financial.ui:710 src/math-buttons.c:282
 msgid "Periodic Payment"
-msgstr ""
+msgstr "Мерзімді төлем"
 
 #. Periodic Payment Dialog: Description of calculation
 #: src/buttons-financial.ui:779
@@ -267,17 +277,19 @@ msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
 msgstr ""
+"Төлемдер әрбір төлем периодының соңында жасалатын несиенің мерзімді төлем "
+"шамасын есептейді. "
 
 #. Periodic Payment Dialog: Label before term input
 #. Periodic Interest Rate Dialog: Label before term input
 #: src/buttons-financial.ui:839 src/buttons-financial.ui:1221
 msgid "_Term:"
-msgstr ""
+msgstr "_Термин:"
 
 #. Periodic Payment Dialog: Label before principal input
 #: src/buttons-financial.ui:867
 msgid "_Principal:"
-msgstr ""
+msgstr "_Негізгі сома:"
 
 #. Title of Present Value dialog
 #. Tooltip for the present value button
@@ -292,12 +304,15 @@ msgid ""
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
 msgstr ""
+"Инвестицияның ағымдағы мәнін мерзім ішіндегі төлем периодтарының саны "
+"бойынша мерзімді пайыздық жиілікпен дисконтталған тең төлемдер қатары "
+"негізінде есептейді. "
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
 #: src/buttons-financial.ui:1078 src/math-buttons.c:276
 msgid "Periodic Interest Rate"
-msgstr ""
+msgstr "Периодтық пайыздық мөлшерлеме"
 
 #. Periodic Interest Rate Dialog: Description of calculation
 #: src/buttons-financial.ui:1147
@@ -305,23 +320,25 @@ msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
 msgstr ""
+"Инвестицияны болашақ мәнге дейін арттыру үшін қажетті мерзімді пайызды "
+"күрделі есептеу периодтарының саны бойынша есептейді. "
 
 #. Title of Straight-Line Depreciation dialog
 #: src/buttons-financial.ui:1262
 msgid "Straight-Line Depreciation"
-msgstr ""
+msgstr "Сызықтық амортизация"
 
 #. Straight-Line Depreciation Dialog: Label before cost input
 #. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
 #: src/buttons-financial.ui:1329 src/buttons-financial.ui:1555
 msgid "_Cost:"
-msgstr ""
+msgstr "_Құны:"
 
 #. Straight-Line Depreciation Dialog: Label before salvage input
 #. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
 #: src/buttons-financial.ui:1402 src/buttons-financial.ui:1541
 msgid "_Salvage:"
-msgstr ""
+msgstr "_Қалдық құны:"
 
 #. Straight-Line Depreciation Dialog: Description of calculation
 #: src/buttons-financial.ui:1418
@@ -331,11 +348,15 @@ msgid ""
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
 msgstr ""
+"Активтің бір период үшін сызықтық амортизациясын есептейді. Амортизацияның "
+"сызықтық әдісі амортизацияланатын құнды активтің пайдалы қызмет мерзімі "
+"ішінде біркелкі бөледі. Пайдалы қызмет мерзімі — актив амортизацияланатын "
+"периодтар саны (әдетте жылдар). "
 
 #. Title of Sum-of-the-Years'-Digits Depreciation dialog
 #: src/buttons-financial.ui:1446
 msgid "Sum-of-the-Years'-Digits Depreciation"
-msgstr ""
+msgstr "Жылдық цифрлар қосындысы әдісімен амортизация"
 
 #. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
 #: src/buttons-financial.ui:1631
@@ -346,11 +367,16 @@ msgid ""
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
 msgstr ""
+"Активтің көрсетілген уақыт периоды үшін амортизациялық аударымын жылдық "
+"цифрлар қосындысы әдісімен есептейді. Бұл амортизация әдісі амортизация "
+"жиілігін үдетеді, сондықтан амортизациялық шығындар соңғы периодтарға "
+"қарағанда бастапқы периодтарда көбірек орын алады. Пайдалы қызмет мерзімі — "
+"актив амортизацияланатын периодтар саны (әдетте жылдар). "
 
 #. Title of Payment Period dialog
 #: src/buttons-financial.ui:1659
 msgid "Payment Period"
-msgstr ""
+msgstr "Төлем периоды"
 
 #. Payment Period Dialog: Label before future value input
 #: src/buttons-financial.ui:1785
@@ -364,6 +390,8 @@ msgid ""
 "of an ordinary annuity, to accumulate a future value, at a periodic interest"
 " rate."
 msgstr ""
+"Болашақ мәнді жинақтау үшін қарапайым аннуитет мерзімі ішінде мерзімді "
+"пайыздық жиілік бойынша қажетті төлем периодтарының санын есептейді."
 
 #. Calculates the number of compounding periods necessary to increase an
 #. investment of present value pv to a future value of fv, at a fixed interest
@@ -371,14 +399,14 @@ msgstr ""
 #. http://en.wikipedia.org/wiki/Compound_interest
 #: src/buttons-financial.ui:2166
 msgid "Ctrm"
-msgstr ""
+msgstr "Кезең"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
 #. time, using the double-declining balance method. See also:
 #. http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2181
 msgid "Ddb"
-msgstr ""
+msgstr "ҚКӘ"
 
 #. Calculates the future value of an investment based on a series of equal
 #. payments, each of amount pmt, at a periodic interest rate of int, over the
@@ -386,7 +414,7 @@ msgstr ""
 #. http://en.wikipedia.org/wiki/Future_value
 #: src/buttons-financial.ui:2196
 msgid "Fv"
-msgstr ""
+msgstr "БМ"
 
 #. Calculates the number of payment periods that are necessary during the term
 #. of an ordinary annuity, to accumulate a future value of fv, at a periodic
@@ -394,7 +422,7 @@ msgstr ""
 #. http://en.wikipedia.org/wiki/Annuity_(finance_theory)
 #: src/buttons-financial.ui:2211
 msgid "Term"
-msgstr ""
+msgstr "Термин"
 
 #. Calculates the depreciation allowance on an asset for a specified period of
 #. time, using the Sum-Of-The-Years'-Digits method. This method of
@@ -405,7 +433,7 @@ msgstr ""
 #. http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2226
 msgid "Syd"
-msgstr ""
+msgstr "ЖЦҚ"
 
 #. Calculates the straight-line depreciation of an asset for one period. The
 #. depreciable cost is cost - salvage. The straight-line method of
@@ -415,14 +443,14 @@ msgstr ""
 #. http://en.wikipedia.org/wiki/Depreciation
 #: src/buttons-financial.ui:2241
 msgid "Sln"
-msgstr ""
+msgstr "СА"
 
 #. Calculates the periodic interest necessary to increase an investment of
 #. present value pv to a future value of fv, over the number of compounding
 #. periods in term. See also: http://en.wikipedia.org/wiki/Interest
 #: src/buttons-financial.ui:2256
 msgid "Rate"
-msgstr ""
+msgstr "Жиілік"
 
 #. Calculates the present value of an investment based on a series of equal
 #. payments, each of amount pmt, discounted at a periodic interest rate of
@@ -430,21 +458,21 @@ msgstr ""
 #. http://en.wikipedia.org/wiki/Present_value
 #: src/buttons-financial.ui:2271
 msgid "Pv"
-msgstr ""
+msgstr "АМ"
 
 #. Calculates the amount of the periodic payment of a loan, where payments are
 #. made at the end of each payment period. See also:
 #. http://en.wikipedia.org/wiki/Amortization_schedule
 #: src/buttons-financial.ui:2286
 msgid "Pmt"
-msgstr ""
+msgstr "Төл"
 
 #. Calculates the resale price of a product, based on the product cost and the
 #. wanted gross profit margin. See also:
 #. http://en.wikipedia.org/wiki/Gross_profit_margin
 #: src/buttons-financial.ui:2301
 msgid "Gpm"
-msgstr ""
+msgstr "ЖПМ"
 
 #. Title of insert character code dialog
 #. Tooltip for the insert character code button
@@ -533,11 +561,11 @@ msgstr "_Мыңдықтар ажыратқыштарын көрсету"
 
 #: data/mate-calc.appdata.xml.in:7
 msgid "MATE Calc"
-msgstr ""
+msgstr "MATE Calc"
 
 #: data/mate-calc.appdata.xml.in:8
 msgid "MATE Desktop calculator"
-msgstr ""
+msgstr "MATE жұмыс үстелінің калькуляторы"
 
 #: data/mate-calc.appdata.xml.in:10
 msgid ""
@@ -545,6 +573,9 @@ msgid ""
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
 msgstr ""
+"MATE Calc — қаржылық, логикалық және ғылыми режимдері бар қуатты графикалық "
+"калькулятор. Ол жоғары дәлдікті қамтамасыз ету үшін арифметикалық "
+"есептеулерде бірнеше дәлдікті дестесін пайдаланады."
 
 #: data/mate-calc.appdata.xml.in:15
 msgid ""
@@ -552,6 +583,9 @@ msgid ""
 "If you would like to know more about MATE and MATE Calc, please visit the "
 "project's home page."
 msgstr ""
+"MATE Calc — GNOME Calc бағдарламасының тармағы және MATE жұмыс үстелі "
+"ортасының бөлігі. Егер сіз MATE және MATE Calc туралы көбірек білгіңіз "
+"келсе, жобаның басты бетіне өтіңіз."
 
 #: data/mate-calc.desktop.in:3 src/math-window.c:366
 msgid "MATE Calculator"
@@ -570,7 +604,7 @@ msgstr "Қарапайым, ғылыми не қаржылық есептеул�
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mate-calc.desktop.in:13
 msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
-msgstr ""
+msgstr "калькулятор;MATE;ғылыми;арифметика;қаржылық;есептеулер;"
 
 #: data/org.mate.calc.gschema.xml:25
 msgid "Accuracy value"
@@ -578,7 +612,7 @@ msgstr "Дәлдігі"
 
 #: data/org.mate.calc.gschema.xml:26
 msgid "The number of digits displayed after the numeric point"
-msgstr ""
+msgstr "Сандық нүктеден кейін көрсетілетін цифрлар саны"
 
 #: data/org.mate.calc.gschema.xml:31
 msgid "Word size"
@@ -586,7 +620,7 @@ msgstr "Сөз өлшемі"
 
 #: data/org.mate.calc.gschema.xml:32
 msgid "The size of the words used in bitwise operations"
-msgstr ""
+msgstr "Биттік операцияларда пайдаланылатын сөздер өлшемі"
 
 #: data/org.mate.calc.gschema.xml:37
 msgid "Numeric Base"
@@ -602,7 +636,7 @@ msgstr "Мыңдықтар ажыратқышын көрсету"
 
 #: data/org.mate.calc.gschema.xml:43
 msgid "Indicates whether thousands separators are shown in large numbers."
-msgstr ""
+msgstr "Үлкен сандарда мыңдық ажыратқыштардың көрсетілетінін көрсетеді."
 
 #: data/org.mate.calc.gschema.xml:47
 msgid "Show Trailing Zeroes"
@@ -613,6 +647,8 @@ msgid ""
 "Indicates whether any trailing zeroes after the numeric point should be "
 "shown in the display value."
 msgstr ""
+"Көрсетілетін мәнде сандық нүктеден кейін кез келген соңындағы нөлдердің "
+"көрсетілуі керек пе екенін көрсетеді."
 
 #: data/org.mate.calc.gschema.xml:52
 msgid "Show History"
@@ -620,7 +656,7 @@ msgstr "Тарихты көрсету"
 
 #: data/org.mate.calc.gschema.xml:53
 msgid "Shows all recent calculations"
-msgstr ""
+msgstr "Барлық жуырдағы есептеулерді көрсетеді"
 
 #: data/org.mate.calc.gschema.xml:57
 msgid "Number format"
@@ -628,7 +664,7 @@ msgstr "Сандар пішімі"
 
 #: data/org.mate.calc.gschema.xml:58
 msgid "The format to display numbers in"
-msgstr ""
+msgstr "Сандарды көрсету пішімі"
 
 #: data/org.mate.calc.gschema.xml:62
 msgid "Angle units"
@@ -636,7 +672,7 @@ msgstr "Бұрыштардың өлшем бірлігі"
 
 #: data/org.mate.calc.gschema.xml:63
 msgid "The angle units to use"
-msgstr ""
+msgstr "Пайдаланылатын бұрыш юниттері"
 
 #: data/org.mate.calc.gschema.xml:67
 msgid "Button mode"
@@ -644,15 +680,15 @@ msgstr "Батырмалар режимі"
 
 #: data/org.mate.calc.gschema.xml:68
 msgid "The button mode"
-msgstr ""
+msgstr "Батырма режимі"
 
 #: data/org.mate.calc.gschema.xml:72
 msgid "Source currency"
-msgstr ""
+msgstr "Дереккөз валютасы"
 
 #: data/org.mate.calc.gschema.xml:73
 msgid "Currency of the current calculation"
-msgstr ""
+msgstr "Ағымдағы есептеу валютасы"
 
 #: data/org.mate.calc.gschema.xml:77
 msgid "Target currency"
@@ -660,27 +696,27 @@ msgstr "Мақсат қаржысы"
 
 #: data/org.mate.calc.gschema.xml:78
 msgid "Currency to convert the current calculation into"
-msgstr ""
+msgstr "Ағымдағы есептеуді түрлендіретін валюта"
 
 #: data/org.mate.calc.gschema.xml:82
 msgid "Source units"
-msgstr ""
+msgstr "Дереккөз юниттері"
 
 #: data/org.mate.calc.gschema.xml:83
 msgid "Units of the current calculation"
-msgstr ""
+msgstr "Ағымдағы есептеу юниттері"
 
 #: data/org.mate.calc.gschema.xml:87
 msgid "Target units"
-msgstr ""
+msgstr "Мақсатты юниттер"
 
 #: data/org.mate.calc.gschema.xml:88
 msgid "Units to convert the current calculation into"
-msgstr ""
+msgstr "Ағымдағы есептеуді түрлендіретін юниттер"
 
 #: src/currency-manager.c:30
 msgid "UAE Dirham"
-msgstr ""
+msgstr "БАӘ дирхамы"
 
 #: src/currency-manager.c:31
 msgid "Australian Dollar"
@@ -688,23 +724,23 @@ msgstr "Аустралиялық доллар"
 
 #: src/currency-manager.c:32
 msgid "Bulgarian Lev"
-msgstr ""
+msgstr "Болгария леві"
 
 #: src/currency-manager.c:33
 msgid "Bahraini Dinar"
-msgstr ""
+msgstr "Бахрейн динары"
 
 #: src/currency-manager.c:34
 msgid "Brunei Dollar"
-msgstr ""
+msgstr "Бруней доллары"
 
 #: src/currency-manager.c:35
 msgid "Brazilian Real"
-msgstr ""
+msgstr "Бразилия реалы"
 
 #: src/currency-manager.c:36
 msgid "Botswana Pula"
-msgstr ""
+msgstr "Ботсвана пуласы"
 
 #: src/currency-manager.c:37
 msgid "Canadian Dollar"
@@ -712,11 +748,11 @@ msgstr "Канадалық доллар"
 
 #: src/currency-manager.c:38
 msgid "CFA Franc"
-msgstr ""
+msgstr "КФА франкі"
 
 #: src/currency-manager.c:39
 msgid "Swiss Franc"
-msgstr ""
+msgstr "Швейцария франкі"
 
 #: src/currency-manager.c:40
 msgid "Chilean Peso"
@@ -724,27 +760,27 @@ msgstr "Чилилық песо"
 
 #: src/currency-manager.c:41
 msgid "Chinese Yuan"
-msgstr ""
+msgstr "Қытай юані"
 
 #: src/currency-manager.c:42
 msgid "Colombian Peso"
-msgstr ""
+msgstr "Колумбия песосы"
 
 #: src/currency-manager.c:43
 msgid "Czech Koruna"
-msgstr ""
+msgstr "Чехия кронасы"
 
 #: src/currency-manager.c:44
 msgid "Danish Krone"
-msgstr ""
+msgstr "Дания кронасы"
 
 #: src/currency-manager.c:45
 msgid "Algerian Dinar"
-msgstr ""
+msgstr "Алжир динары"
 
 #: src/currency-manager.c:46
 msgid "Estonian Kroon"
-msgstr ""
+msgstr "Эстония кроны"
 
 #: src/currency-manager.c:47
 msgid "Euro"
@@ -752,51 +788,51 @@ msgstr "Еуро"
 
 #: src/currency-manager.c:48
 msgid "Pound Sterling"
-msgstr ""
+msgstr "Фунт стерлинг"
 
 #: src/currency-manager.c:49
 msgid "Hong Kong Dollar"
-msgstr ""
+msgstr "Гонконг доллары"
 
 #: src/currency-manager.c:50
 msgid "Croatian Kuna"
-msgstr ""
+msgstr "Хорватия кунасы"
 
 #: src/currency-manager.c:51
 msgid "Hungarian Forint"
-msgstr ""
+msgstr "Венгрия форинті"
 
 #: src/currency-manager.c:52
 msgid "Indonesian Rupiah"
-msgstr ""
+msgstr "Индонезия рупиясы"
 
 #: src/currency-manager.c:53
 msgid "Israeli New Shekel"
-msgstr ""
+msgstr "Израиль жаңа шекелі"
 
 #: src/currency-manager.c:54
 msgid "Indian Rupee"
-msgstr ""
+msgstr "Үнді рупиясы"
 
 #: src/currency-manager.c:55
 msgid "Iranian Rial"
-msgstr ""
+msgstr "Иран риалы"
 
 #: src/currency-manager.c:56
 msgid "Icelandic Krona"
-msgstr ""
+msgstr "Исландия кронасы"
 
 #: src/currency-manager.c:57
 msgid "Japanese Yen"
-msgstr ""
+msgstr "Жапон иені"
 
 #: src/currency-manager.c:58
 msgid "South Korean Won"
-msgstr ""
+msgstr "Оңтүстік Корея воны"
 
 #: src/currency-manager.c:59
 msgid "Kuwaiti Dinar"
-msgstr ""
+msgstr "Кувейт динары"
 
 #: src/currency-manager.c:60
 msgid "Kazakhstani Tenge"
@@ -804,51 +840,51 @@ msgstr "Қазақстандық теңге"
 
 #: src/currency-manager.c:61
 msgid "Sri Lankan Rupee"
-msgstr ""
+msgstr "Шри-Ланка рупиясы"
 
 #: src/currency-manager.c:62
 msgid "Lithuanian Litas"
-msgstr ""
+msgstr "Литва литасы"
 
 #: src/currency-manager.c:63
 msgid "Latvian Lats"
-msgstr ""
+msgstr "Латвия латы"
 
 #: src/currency-manager.c:64
 msgid "Libyan Dinar"
-msgstr ""
+msgstr "Ливия динары"
 
 #: src/currency-manager.c:65
 msgid "Mauritian Rupee"
-msgstr ""
+msgstr "Маврикий рупиясы"
 
 #: src/currency-manager.c:66
 msgid "Mexican Peso"
-msgstr ""
+msgstr "Мексика песосы"
 
 #: src/currency-manager.c:67
 msgid "Malaysian Ringgit"
-msgstr ""
+msgstr "Малайзия ринггиті"
 
 #: src/currency-manager.c:68
 msgid "Norwegian Krone"
-msgstr ""
+msgstr "Норвегия кронасы"
 
 #: src/currency-manager.c:69
 msgid "Nepalese Rupee"
-msgstr ""
+msgstr "Непал рупиясы"
 
 #: src/currency-manager.c:70
 msgid "New Zealand Dollar"
-msgstr ""
+msgstr "Жаңа Зеландия доллары"
 
 #: src/currency-manager.c:71
 msgid "Omani Rial"
-msgstr ""
+msgstr "Оман риалы"
 
 #: src/currency-manager.c:72
 msgid "Peruvian Nuevo Sol"
-msgstr ""
+msgstr "Перу жаңа солі"
 
 #: src/currency-manager.c:73
 msgid "Philippine Peso"
@@ -868,7 +904,7 @@ msgstr "Катарлық риал"
 
 #: src/currency-manager.c:77
 msgid "New Romanian Leu"
-msgstr ""
+msgstr "Румынияның жаңа леиі"
 
 #: src/currency-manager.c:78
 msgid "Russian Rouble"
@@ -876,11 +912,11 @@ msgstr "Ресейлік рубль"
 
 #: src/currency-manager.c:79
 msgid "Saudi Riyal"
-msgstr ""
+msgstr "Сауд риалы"
 
 #: src/currency-manager.c:80
 msgid "Swedish Krona"
-msgstr ""
+msgstr "Швеция кронасы"
 
 #: src/currency-manager.c:81
 msgid "Singapore Dollar"
@@ -892,7 +928,7 @@ msgstr "Тайлық бат"
 
 #: src/currency-manager.c:83
 msgid "Tunisian Dinar"
-msgstr ""
+msgstr "Тунис динары"
 
 #: src/currency-manager.c:84
 msgid "New Turkish Lira"
@@ -900,7 +936,7 @@ msgstr "Жаңа түрік лирасы"
 
 #: src/currency-manager.c:85
 msgid "T&T Dollar (TTD)"
-msgstr ""
+msgstr "Тринидад және Тобаго доллары (TTD)"
 
 #: src/currency-manager.c:86
 msgid "US Dollar"
@@ -912,7 +948,7 @@ msgstr "Уругвайлық песо"
 
 #: src/currency-manager.c:88
 msgid "Venezuelan Bolívar"
-msgstr ""
+msgstr "Венесуэла боливары"
 
 #: src/currency-manager.c:89
 msgid "South African Rand"
@@ -920,7 +956,7 @@ msgstr "Оңтүстік Африкалық ранд"
 
 #: src/financial.c:78
 msgid "Error: the number of periods must be positive"
-msgstr ""
+msgstr "Қате: периодтар саны оң сан болуы тиіс"
 
 #. Description on how to use mate-calc displayed on command-line
 #: src/mate-calc.c:83
@@ -929,6 +965,8 @@ msgid ""
 "Usage:\n"
 "  %s — Perform mathematical calculations"
 msgstr ""
+"Пайдалану:\n"
+"  %s — Математикалық есептеулерді орындау"
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
@@ -941,6 +979,11 @@ msgid ""
 "  --help-all                      Show all help options\n"
 "  --help-gtk                      Show GTK+ options"
 msgstr ""
+"Көмек опциялары:\n"
+"  -v, --version                   Шығарылым нұсқасын көрсету\n"
+"  -h, -?, --help                  Көмек опцияларын көрсету\n"
+"  --help-all                      Барлық көмек опцияларын көрсету\n"
+"  --help-gtk                      GTK+ опцияларын көрсету"
 
 #. Description on mate-calc command-line GTK+ options displayed on command-
 #. line
@@ -955,6 +998,15 @@ msgid ""
 "  --gtk-module=MODULES            Load additional GTK+ modules\n"
 "  --g-fatal-warnings              Make all warnings fatal"
 msgstr ""
+"GTK+ опциялары:\n"
+"  --class=КЛАСС                   Терезе басқарушысы пайдаланатын бағдарлама "
+"класы\n"
+"  --name=АТ                       Терезе басқарушысы пайдаланатын бағдарлама "
+"аты\n"
+"  --screen=ЭКРАН                  Пайдаланылатын X экраны\n"
+"  --sync                          X шақыруларын синхронды жасау\n"
+"  --gtk-module=МОДУЛЬДЕР          Қосымша GTK+ модульдерін жүктеу\n"
+"  --g-fatal-warnings              Барлық ескертулерді критикалық жасау"
 
 #. Description on mate-calc application options displayed on command-line
 #: src/mate-calc.c:116
@@ -963,12 +1015,14 @@ msgid ""
 "Application Options:\n"
 "  -s, --solve <equation>          Solve the given equation"
 msgstr ""
+"Қолданба опциялары:\n"
+"  -s, --solve <equation>          Берілген теңдеуді шешу"
 
 #. Error printed to stderr when user uses --solve argument without an equation
 #: src/mate-calc.c:163
 #, c-format
 msgid "Argument --solve requires an equation to solve"
-msgstr ""
+msgstr "--solve аргументі шешу үшін теңдеуді талап етеді"
 
 #. Error printed to stderr when user provides an unknown command-line argument
 #: src/mate-calc.c:174
@@ -989,7 +1043,7 @@ msgstr "Эйлер саны"
 #. Tooltip for the imaginary number button
 #: src/math-buttons.c:99
 msgid "Imaginary unit"
-msgstr ""
+msgstr "Жорамал юнит"
 
 #. Tooltip for the numeric point button
 #: src/math-buttons.c:102
@@ -1009,7 +1063,7 @@ msgstr "Үстіңгі индекс режимі [Ctrl]"
 #. Tooltip for the scientific exponent button
 #: src/math-buttons.c:111
 msgid "Scientific exponent [Ctrl+E]"
-msgstr ""
+msgstr "Ғылыми экспонента [Ctrl+E]"
 
 #. Tooltip for the add button
 #: src/math-buttons.c:114
@@ -1034,17 +1088,17 @@ msgstr "Бөлу [/]"
 #. Tooltip for the modulus divide button
 #: src/math-buttons.c:126
 msgid "Modulus divide"
-msgstr ""
+msgstr "Қалдықпен бөлу"
 
 #. Tooltip for the additional functions button
 #: src/math-buttons.c:129
 msgid "Additional Functions"
-msgstr ""
+msgstr "Қосымша функциялар"
 
 #. Tooltip for the additional constant button
 #: src/math-buttons.c:132
 msgid "Additional constants"
-msgstr ""
+msgstr "Қосымша тұрақтылар"
 
 #. Tooltip for the exponent button
 #: src/math-buttons.c:135
@@ -1054,7 +1108,7 @@ msgstr "Экспонента [^ немесе **]"
 #. Tooltip for the square button
 #: src/math-buttons.c:138
 msgid "Square [Ctrl+2]"
-msgstr ""
+msgstr "Шаршы [Ctrl+2]"
 
 #. Tooltip for the percentage button
 #: src/math-buttons.c:141
@@ -1074,12 +1128,12 @@ msgstr "Абсолюттік мәні [|]"
 #. Tooltip for the complex argument component button
 #: src/math-buttons.c:150
 msgid "Complex argument"
-msgstr ""
+msgstr "Күрделі аргумент"
 
 #. Tooltip for the complex conjugate button
 #: src/math-buttons.c:153
 msgid "Complex conjugate"
-msgstr ""
+msgstr "Күрделі түйіндес сан"
 
 #. Tooltip for the root button
 #: src/math-buttons.c:156
@@ -1089,7 +1143,7 @@ msgstr "Түбір [Ctrl+R]"
 #. Tooltip for the square root button
 #: src/math-buttons.c:159
 msgid "Square root [Ctrl+R]"
-msgstr ""
+msgstr "Шаршы түбір [Ctrl+R]"
 
 #. Tooltip for the logarithm button
 #: src/math-buttons.c:162
@@ -1119,32 +1173,32 @@ msgstr "Тангенс"
 #. Tooltip for the hyperbolic sine button
 #: src/math-buttons.c:177
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "Гиперболалық синус"
 
 #. Tooltip for the hyperbolic cosine button
 #: src/math-buttons.c:180
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "Гиперболалық косинус"
 
 #. Tooltip for the hyperbolic tangent button
 #: src/math-buttons.c:183
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "Гиперболалық тангенс"
 
 #. Tooltip for the inverse sine button
 #: src/math-buttons.c:186
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Кері синус"
 
 #. Tooltip for the inverse cosine button
 #: src/math-buttons.c:189
 msgid "Inverse Cosine"
-msgstr ""
+msgstr "Кері косинус"
 
 #. Tooltip for the inverse tangent button
 #: src/math-buttons.c:192
 msgid "Inverse Tangent"
-msgstr ""
+msgstr "Кері тангенс"
 
 #. Tooltip for the inverse button
 #: src/math-buttons.c:195
@@ -1164,7 +1218,7 @@ msgstr "Логикалық НЕМЕСЕ"
 #. Tooltip for the exclusive OR button
 #: src/math-buttons.c:204
 msgid "Boolean Exclusive OR"
-msgstr ""
+msgstr "Логикалық EXCLUSIVE OR (XOR)"
 
 #. Tooltip for the boolean NOT button
 #: src/math-buttons.c:207
@@ -1174,42 +1228,42 @@ msgstr "Логикалық ЕМЕС"
 #. Tooltip for the integer component button
 #: src/math-buttons.c:210 src/math-buttons.c:972
 msgid "Integer Component"
-msgstr ""
+msgstr "Бүтін сан бөлігі"
 
 #. Tooltip for the fractional component button
 #: src/math-buttons.c:213 src/math-buttons.c:974
 msgid "Fractional Component"
-msgstr ""
+msgstr "Бөлшек бөлігі"
 
 #. Tooltip for the real component button
 #: src/math-buttons.c:216
 msgid "Real Component"
-msgstr ""
+msgstr "Нақты бөлігі"
 
 #. Tooltip for the imaginary component button
 #: src/math-buttons.c:219
 msgid "Imaginary Component"
-msgstr ""
+msgstr "Жорамал бөлігі"
 
 #. Tooltip for the ones' complement button
 #: src/math-buttons.c:222
 msgid "Ones' Complement"
-msgstr ""
+msgstr "Бірге толықтыру"
 
 #. Tooltip for the two's complement button
 #: src/math-buttons.c:225
 msgid "Two's Complement"
-msgstr ""
+msgstr "Екіге толықтыру"
 
 #. Tooltip for the start group button
 #: src/math-buttons.c:228
 msgid "Start Group [(]"
-msgstr ""
+msgstr "Топты бастау [(]"
 
 #. Tooltip for the end group button
 #: src/math-buttons.c:231
 msgid "End Group [)]"
-msgstr ""
+msgstr "Топты аяқтау [)]"
 
 #. Tooltip for the solve button
 #: src/math-buttons.c:240
@@ -1234,32 +1288,32 @@ msgstr "Болдырмау [Ctrl+Z]"
 #. Tooltip for the shift left button
 #: src/math-buttons.c:252
 msgid "Shift Left [<<]"
-msgstr ""
+msgstr "Солға ығыстыру [<<]"
 
 #. Tooltip for the shift right button
 #: src/math-buttons.c:255
 msgid "Shift Right [>>]"
-msgstr ""
+msgstr "Оңға ығыстыру [>>]"
 
 #. Tooltip for the double declining depreciation button
 #: src/math-buttons.c:261
 msgid "Double Declining Depreciation"
-msgstr ""
+msgstr "Қос кему әдісімен амортизация"
 
 #. Tooltip for the financial term button
 #: src/math-buttons.c:267
 msgid "Financial Term"
-msgstr ""
+msgstr "Қаржылық термин"
 
 #. Tooltip for the sum of the years digits depreciation button
 #: src/math-buttons.c:270
 msgid "Sum of the Years Digits Depreciation"
-msgstr ""
+msgstr "Жылдық цифрлар қосындысы әдісімен амортизация"
 
 #. Tooltip for the straight line depreciation button
 #: src/math-buttons.c:273
 msgid "Straight Line Depreciation"
-msgstr ""
+msgstr "Сызықтық амортизация"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
 #: src/math-buttons.c:624
@@ -1287,8 +1341,8 @@ msgstr "Он алтылық"
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "_%d таңба"
+msgstr[1] "_%d таңба"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
@@ -1296,23 +1350,23 @@ msgstr[1] ""
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d таңба"
+msgstr[1] "%d таңба"
 
 #. Tooltip for the round button
 #: src/math-buttons.c:976
 msgid "Round"
-msgstr ""
+msgstr "Дөңгелектеу"
 
 #. Tooltip for the floor button
 #: src/math-buttons.c:978
 msgid "Floor"
-msgstr ""
+msgstr "Төмен қарай дөңгелектеу"
 
 #. Tooltip for the ceiling button
 #: src/math-buttons.c:980
 msgid "Ceiling"
-msgstr ""
+msgstr "Жоғары қарай дөңгелектеу"
 
 #. Tooltip for the ceiling button
 #: src/math-buttons.c:982
@@ -1322,94 +1376,94 @@ msgstr "Қолтаңба"
 #. Tooltip for the c₀ component button
 #: src/math-buttons.c:1023
 msgid "Velocity of Light"
-msgstr ""
+msgstr "Жарық жылдамдығы"
 
 #: src/math-buttons.c:1023
 msgid "299,792,458 m/s"
-msgstr ""
+msgstr "299 792 458 м/с"
 
 #. Tooltip for the μ₀ component button
 #: src/math-buttons.c:1025
 msgid "Magnetic constant"
-msgstr ""
+msgstr "Магниттік тұрақты"
 
 #: src/math-buttons.c:1025
 msgid "1.2566370614×10⁻⁶ N/A²"
-msgstr ""
+msgstr "1,2566370614×10⁻⁶ Н/А²"
 
 #. Tooltip for the ε₀ button
 #: src/math-buttons.c:1027
 msgid "Electric constant"
-msgstr ""
+msgstr "Электрлік тұрақты"
 
 #: src/math-buttons.c:1027
 msgid "8.85418782×10⁻¹² s⁴A²/m³kg"
-msgstr ""
+msgstr "8,85418782×10⁻¹² с⁴А²/м³кг"
 
 #. Tooltip for the G button
 #: src/math-buttons.c:1029
 msgid "Newtonian constant of gravitation"
-msgstr ""
+msgstr "Ньютондық гравитациялық тұрақты"
 
 #: src/math-buttons.c:1029
 msgid "6.67408×10⁻¹¹ m³/(s²kg)"
-msgstr ""
+msgstr "6,67408×10⁻¹¹ м³/(с²кг)"
 
 #. Tooltip for the h button
 #: src/math-buttons.c:1031
 msgid "Planck constant"
-msgstr ""
+msgstr "Планк тұрақтысы"
 
 #: src/math-buttons.c:1031
 msgid "6.62607004×10⁻³⁴ m²kg/s"
-msgstr ""
+msgstr "6,62607004×10⁻³⁴ м²кг/с"
 
 #. Tooltip for the ｅ button
 #: src/math-buttons.c:1033
 msgid "Elementary charge"
-msgstr ""
+msgstr "Элементар заряд"
 
 #: src/math-buttons.c:1033
 msgid "1.6021766208(98)×10⁻¹⁹ C"
-msgstr ""
+msgstr "1,6021766208(98)×10⁻¹⁹ Кл"
 
 #. Tooltip for the mₑ button
 #: src/math-buttons.c:1035
 msgid "Electron mass"
-msgstr ""
+msgstr "Электрон массасы"
 
 #: src/math-buttons.c:1035
 msgid "9.10938356×10⁻³¹ kg"
-msgstr ""
+msgstr "9,10938356×10⁻³¹ кг"
 
 #. Tooltip for the mₚ button
 #: src/math-buttons.c:1037
 msgid "Proton mass"
-msgstr ""
+msgstr "Протон массасы"
 
 #: src/math-buttons.c:1037
 msgid "1.672621898(21)×10⁻²⁷ kg"
-msgstr ""
+msgstr "1,672621898(21)×10⁻²⁷ кг"
 
 #. Tooltip for the Nₐ button
 #: src/math-buttons.c:1039
 msgid "Avogadro constant"
-msgstr ""
+msgstr "Авогадро тұрақтысы"
 
 #: src/math-buttons.c:1039
 msgid "6.02214086×10²³ mol⁻¹"
-msgstr ""
+msgstr "6,02214086×10²³ моль⁻¹"
 
 #. Label that is displayed between the two conversion combo boxes, e.g.
 #. "[degrees] in [radians]"
 #: src/math-converter.c:401
 msgid " in "
-msgstr ""
+msgstr " мынаған: "
 
 #. Tooltip for swap conversion button
 #: src/math-converter.c:416
 msgid "Switch conversion units"
-msgstr ""
+msgstr "Түрлендіру юниттерін ауыстыру"
 
 #. Error shown when trying to undo with no undo history
 #: src/math-equation.c:444
@@ -1429,7 +1483,7 @@ msgstr "Сақтау үшін жарамды мәндер жоқ"
 #. greater than the current word
 #: src/math-equation.c:1190
 msgid "Overflow. Try a bigger word size"
-msgstr ""
+msgstr "Толып кету. Үлкенірек сөз өлшемін байқап көріңіз"
 
 #. Error displayed to user when they an unknown variable is entered
 #: src/math-equation.c:1195
@@ -1452,7 +1506,7 @@ msgstr "Белгісіз айналдыру"
 #: src/math-equation.c:1213
 #, c-format
 msgid "Malformed expression at token '%s'"
-msgstr ""
+msgstr "«%s» таңбасындағы қате пішімделген өрнек"
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
@@ -1467,13 +1521,13 @@ msgstr "Есептеу"
 #. Error displayed when trying to factorize a non-integer value
 #: src/math-equation.c:1370
 msgid "Need an integer to factorize"
-msgstr ""
+msgstr "Жіктеу үшін бүтін сан қажет"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
 #: src/math-equation.c:1439
 msgid "No sane value to bitwise shift"
-msgstr ""
+msgstr "Биттік ығыстыру үшін жарамды мән жоқ"
 
 #. Message displayed when cannot toggle bit in display
 #: src/math-equation.c:1471
@@ -1539,11 +1593,11 @@ msgstr "Көмек ақпараты файлын ашу мүмкін емес"
 
 #: src/math-window.c:310
 msgid "Sun Microsystems"
-msgstr ""
+msgstr "Sun Microsystems"
 
 #: src/math-window.c:311
 msgid "MATE Documentation Team"
-msgstr ""
+msgstr "MATE құжаттама тобы"
 
 #: src/math-window.c:317
 msgid ""
@@ -1552,6 +1606,10 @@ msgid ""
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
+"MATE калькуляторы — бос бағдарламалық қамтама; сіз оны Еркін бағдарламалық "
+"қамтама қоры жариялаған GNU General Public License лицензиясының шарттары "
+"(лицензияның 2-нұсқасы немесе (өз қалауыңыз бойынша) кез келген кейінгі "
+"нұсқасы) негізінде қайта таратуға және/немесе өзгертуге болады."
 
 #: src/math-window.c:321
 msgid ""
@@ -1560,6 +1618,10 @@ msgid ""
 "or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for"
 " more details."
 msgstr ""
+"MATE калькуляторы пайдалы болады деген үмітпен таратылады, бірақ ЕШҚАНДАЙ "
+"КЕПІЛДІК берілмейді; тіпті САТУҒА ЖАРАМДЫЛЫҚ немесе БЕЛГІЛІ БІР МАҚСАТҚА САЙ "
+"КЕЛУ бойынша жанама кепілдік те берілмейді. Толық ақпарат алу үшін GNU "
+"General Public License лицензиясын қараңыз."
 
 #: src/math-window.c:325
 msgid ""
@@ -1567,6 +1629,9 @@ msgid ""
 " MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
+"Сіз MATE калькуляторымен бірге GNU General Public License лицензиясының "
+"көшірмесін алуыңыз керек еді; егер алынбаса, Free Software Foundation, Inc., "
+"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA адресіне жазыңыз."
 
 #: src/math-window.c:362
 #, c-format
@@ -1574,16 +1639,20 @@ msgid ""
 "Calculator with financial and scientific modes.\n"
 "Using GNU MPFR %s and GNU MPC %s"
 msgstr ""
+"Қаржылық және ғылыми режимдері бар калькулятор.\n"
+"GNU MPFR %s және GNU MPC %s пайдаланылуда"
 
 #: src/math-window.c:368
 msgid "About MATE Calculator"
-msgstr ""
+msgstr "MATE калькуляторы туралы"
 
 #: src/math-window.c:369
 msgid ""
 "Copyright © 1986–2010 The GCalctool authors\n"
 "Copyright © 2011-2021 MATE developers"
 msgstr ""
+"Copyright © 1986–2010 GCalctool авторлары\n"
+"Copyright © 2011-2021 MATE әзірлеушілері"
 
 #: src/math-window.c:375
 msgid "translator-credits"
@@ -1632,7 +1701,7 @@ msgstr "Бағдарл_амалау"
 #. History menu label
 #: src/math-window.c:539
 msgid "_History"
-msgstr ""
+msgstr "_Тарих"
 
 #. Help>Contents menu label
 #: src/math-window.c:541
@@ -1657,7 +1726,7 @@ msgstr "Қай_талау"
 
 #: src/math-window.c:552
 msgid "_Clear History"
-msgstr ""
+msgstr "Тарихты _тазарту"
 
 #: src/math-window.c:555
 msgid "_Preferences"
@@ -1675,62 +1744,62 @@ msgstr "О_сы туралы"
 #. values
 #: src/mp-binary.c:114
 msgid "Boolean AND is only defined for positive integers"
-msgstr ""
+msgstr "Логикалық AND тек оң бүтін сандар үшін анықталған"
 
 #. Translators: Error displayed when boolean OR attempted on non-integer
 #. values
 #: src/mp-binary.c:126
 msgid "Boolean OR is only defined for positive integers"
-msgstr ""
+msgstr "Логикалық OR тек оң бүтін сандар үшін анықталған"
 
 #. Translators: Error displayed when boolean XOR attempted on non-integer
 #. values
 #: src/mp-binary.c:138
 msgid "Boolean XOR is only defined for positive integers"
-msgstr ""
+msgstr "Логикалық XOR тек оң бүтін сандар үшін анықталған"
 
 #. Translators: Error displayed when boolean NOT attempted on non-integer
 #. values
 #: src/mp-binary.c:154
 msgid "Boolean NOT is only defined for positive integers"
-msgstr ""
+msgstr "Логикалық NOT тек оң бүтін сандар үшін анықталған"
 
 #. Translators: Error displayed when bit shift attempted on non-integer values
 #: src/mp-binary.c:166
 msgid "Shift is only possible on integer values"
-msgstr ""
+msgstr "Ығыстыру тек бүтін мәндерде мүмкін"
 
 #. Translators: Error display when attempting to take argument of zero
 #: src/mp.c:123
 msgid "Argument not defined for zero"
-msgstr ""
+msgstr "Аргумент нөл үшін анықталмаған"
 
 #. Translators: Error displayed attempted to divide by zero
 #: src/mp.c:236
 msgid "Division by zero is undefined"
-msgstr ""
+msgstr "Нөлге бөлу анықталмаған"
 
 #. Translators: Error displayed when attempting to take logarithm of zero
 #: src/mp.c:343 src/mp.c:371
 msgid "Logarithm of zero is undefined"
-msgstr ""
+msgstr "Нөлдің логарифмі анықталмаған"
 
 #. Translators: Error displayed when attempting to take zeroth root
 #: src/mp.c:434
 msgid "The zeroth root of a number is undefined"
-msgstr ""
+msgstr "Санның нөлінші түбірі анықталмаған"
 
 #. Translators: Error displayed when attempted take the factorial of a
 #. negative or complex number
 #: src/mp.c:474
 msgid "Factorial is only defined for non-negative real numbers"
-msgstr ""
+msgstr "Факториал тек теріс емес нақты сандар үшін анықталған"
 
 #. Translators: Error displayed when attemping to do a modulus division on
 #. non-integer numbers
 #: src/mp.c:504
 msgid "Modulus division is only defined for integers"
-msgstr ""
+msgstr "Қалдықпен бөлу тек бүтін сандар үшін анықталған"
 
 #. Translators: Error displayed when attempted to raise 0 to a negative
 #. exponent
@@ -1738,51 +1807,52 @@ msgstr ""
 #. re_exponent
 #: src/mp.c:575 src/mp.c:602
 msgid "The power of zero is undefined for a negative exponent"
-msgstr ""
+msgstr "Теріс экспонента үшін нөлдің дәрежесі анықталмаған"
 
 #. Translators: Error displayed when error function (erf) value is undefined
 #: src/mp.c:615
 msgid "The error function is only defined for real numbers"
-msgstr ""
+msgstr "Қателік функциясы тек нақты сандар үшін анықталған"
 
 #. Translators: Error displayed when zeta function value is undefined
 #: src/mp.c:632
 msgid "The Riemann zeta function is only defined for real numbers ≠1"
-msgstr ""
+msgstr "Риманның дзета-функциясы тек 1-ге тең емес нақты сандар үшін анықталған"
 
 #. Translators: Error displayed when tangent value is undefined
 #: src/mp-trigonometric.c:116
 msgid ""
 "Tangent is undefined for angles that are multiples of π (180°) from π∕2 "
 "(90°)"
-msgstr ""
+msgstr "Тангенс π∕2 (90°) мәнінен π (180°) еселі бұрыштар үшін анықталмаған"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: src/mp-trigonometric.c:145
 msgid "Inverse sine is undefined for values outside [-1, 1]"
-msgstr ""
+msgstr "Кері синус [-1, 1] аралығынан тыс мәндер үшін анықталмаған"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: src/mp-trigonometric.c:169
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
-msgstr ""
+msgstr "Кері косинус [-1, 1] аралығынан тыс мәндер үшін анықталмаған"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: src/mp-trigonometric.c:194
 msgid "Arctangent function is undefined for values i and -i"
-msgstr ""
+msgstr "Арктангенс функциясы i және -i мәндері үшін анықталмаған"
 
 #. Translators: Error displayed when inverse hyperbolic cosine value is
 #. undefined
 #: src/mp-trigonometric.c:241
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
-msgstr ""
+msgstr "Кері гиперболалық косинус бірден кем мәндер үшін анықталмаған"
 
 #. Translators: Error displayed when inverse hyperbolic tangent value is
 #. undefined
 #: src/mp-trigonometric.c:262
 msgid "Inverse hyperbolic tangent is undefined for values outside (-1, 1)"
 msgstr ""
+"Кері гиперболалық тангенс (-1, 1) аралығынан тыс мәндер үшін анықталмаған"
 
 #: src/unit-manager.c:51
 #, c-format
@@ -1924,18 +1994,18 @@ msgstr "кабельтов"
 
 #: src/unit-manager.c:61
 msgid "Fathoms"
-msgstr ""
+msgstr "Сажын"
 
 #: src/unit-manager.c:61
 #, c-format
 msgctxt "unit-format"
 msgid "%s ftm"
-msgstr ""
+msgstr "%s сажын"
 
 #: src/unit-manager.c:61
 msgctxt "unit-symbols"
 msgid "fathom,fathoms,ftm"
-msgstr ""
+msgstr "сажын,сажын,ftm"
 
 #: src/unit-manager.c:62
 msgid "Meters"
@@ -2164,7 +2234,7 @@ msgstr "галлон,галлондар"
 
 #: src/unit-manager.c:77
 msgid "Litres"
-msgstr ""
+msgstr "Литр"
 
 #: src/unit-manager.c:77
 #, c-format
@@ -2209,7 +2279,7 @@ msgstr "пинта,пинталар"
 
 #: src/unit-manager.c:80
 msgid "Millilitres"
-msgstr ""
+msgstr "Миллилитр"
 
 #: src/unit-manager.c:80
 #, c-format
@@ -2224,7 +2294,7 @@ msgstr "миллилитр,миллилитрлер,мл,см³"
 
 #: src/unit-manager.c:81
 msgid "Microlitres"
-msgstr ""
+msgstr "Микролитр"
 
 #: src/unit-manager.c:81
 #, c-format
@@ -2430,11 +2500,11 @@ msgstr "%s ˚C"
 #: src/unit-manager.c:94
 msgctxt "unit-symbols"
 msgid "degC,˚C"
-msgstr ""
+msgstr "degC,˚C"
 
 #: src/unit-manager.c:95
 msgid "Farenheit"
-msgstr ""
+msgstr "Фаренгейт"
 
 #: src/unit-manager.c:95
 #, c-format
@@ -2445,7 +2515,7 @@ msgstr "%s ˚F"
 #: src/unit-manager.c:95
 msgctxt "unit-symbols"
 msgid "degF,˚F"
-msgstr ""
+msgstr "degF,˚F"
 
 #: src/unit-manager.c:96
 msgid "Kelvin"
@@ -2475,7 +2545,7 @@ msgstr "%s ˚R"
 #: src/unit-manager.c:97
 msgctxt "unit-symbols"
 msgid "degR,˚R,˚Ra"
-msgstr ""
+msgstr "degR,˚R,˚Ra"
 
 #: src/unit-manager.c:106
 msgid "Angle"
