@@ -1,9 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR MATE Desktop Environment team
 # This file is distributed under the same license as the mate-calc package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
 # Lazybones Nightowl <mokkaran@gmail.com>, 2018
 # Дмитрий Михирев, 2018
 # Victor Kukshiev <andrey0bolkonsky@gmail.com>, 2018
@@ -21,20 +18,27 @@
 # Stefano Karapetsas <stefano@karapetsas.com>, 2022
 # Arbo_Leet <koshelkov.peter@gmail.com>, 2022
 # Andrei Stepanov, 2023
-# 
+# "Sergey A." <Ser82-png@yandex.ru>, 2026.
+#
+# Translators:
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-calc 1.26.0\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-calc/issues\n"
 "POT-Creation-Date: 2022-10-28 17:41+0200\n"
-"PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: Andrei Stepanov, 2023\n"
-"Language-Team: Russian (https://app.transifex.com/mate/teams/13566/ru/)\n"
+"PO-Revision-Date: 2026-06-20 09:13+0000\n"
+"Last-Translator: \"Sergey A.\" <Ser82-png@yandex.ru>\n"
+"Language-Team: Russian <https://translate.fedoraproject.org/projects/mate-"
+"desktop/applications/mate-calc/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Generator: Weblate 2026.6.1\n"
 
 #. Accessible name for the factorize button
 #: src/buttons-advanced.ui:27 src/buttons-programming.ui:1900
@@ -292,7 +296,7 @@ msgid ""
 "made at the end of each payment period. "
 msgstr ""
 "Вычислить периодическую оплату займа, когда оплата производится в конце "
-"каждого периода."
+"каждого периода. "
 
 #. Periodic Payment Dialog: Label before term input
 #. Periodic Interest Rate Dialog: Label before term input
@@ -319,7 +323,7 @@ msgid ""
 "periods in the term. "
 msgstr ""
 "Вычислить объём инвестиций на основе серии равных периодических платежей в "
-"течение некоторого срока."
+"течение некоторого срока. "
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
@@ -334,7 +338,7 @@ msgid ""
 "future value, over the number of compounding periods. "
 msgstr ""
 "Вычислить платёж, необходимый для увеличения инвестиций до некоторого "
-"значения в течение нескольких последовательных периодов."
+"значения в течение нескольких последовательных периодов. "
 
 #. Title of Straight-Line Depreciation dialog
 #: src/buttons-financial.ui:1262
@@ -364,7 +368,7 @@ msgstr ""
 "Вычислить прямолинейную амортизацию ресурса за один период. Прямой метод "
 "делит стоимость амортизации на весь период жизни ресурса. Полезная жизнь "
 "ресурса — это число периодов, обычно лет, в течение которых ресурс "
-"устаревает."
+"устаревает. "
 
 #. Title of Sum-of-the-Years'-Digits Depreciation dialog
 #: src/buttons-financial.ui:1446
@@ -384,7 +388,7 @@ msgstr ""
 "период времени. Этот метод оценки старости учитывает ускорение амортизации, "
 "то есть стоимость в ранний период больше, чем в поздний. Полезная жизнь "
 "ресурса — это число периодов, обычно лет, в течение которых ресурс "
-"устаревает."
+"устаревает. "
 
 #. Title of Payment Period dialog
 #: src/buttons-financial.ui:1659
@@ -578,7 +582,7 @@ msgstr "Калькулятор MATE"
 
 #: data/mate-calc.appdata.xml.in:8
 msgid "MATE Desktop calculator"
-msgstr "Калькулятор MATE "
+msgstr "Калькулятор MATE"
 
 #: data/mate-calc.appdata.xml.in:10
 msgid ""
@@ -596,9 +600,9 @@ msgid ""
 "If you would like to know more about MATE and MATE Calc, please visit the "
 "project's home page."
 msgstr ""
-"Кальулятор MATE — это форк GNOME Calc и часть окружения рабочего стола MATE."
-" Если вы хотите узнать больше о MATE и Калькуляторе MATE, пожалуйста, "
-"посетите домашнюю страницу проекта. "
+"Кальулятор MATE — это форк GNOME Calc и часть окружения рабочего стола MATE. "
+"Если вы хотите узнать больше о MATE и Калькуляторе MATE, пожалуйста, "
+"посетите домашнюю страницу проекта."
 
 #: data/mate-calc.desktop.in:3 src/math-window.c:366
 msgid "MATE Calculator"
@@ -1031,7 +1035,7 @@ msgstr ""
 #: src/mate-calc.c:163
 #, c-format
 msgid "Argument --solve requires an equation to solve"
-msgstr "Аргументу --solve требуется выражение  для вычисления"
+msgstr "Аргументу --solve требуется выражение для вычисления"
 
 #. Error printed to stderr when user provides an unknown command-line argument
 #: src/mate-calc.c:174
@@ -1645,8 +1649,8 @@ msgid ""
 msgstr ""
 "Вы должны были получить копию лицензии GNU General Public License c "
 "программой MATE Calculator. Если это этого не произошло, напишите в Free "
-"Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  "
-"02110-1301 USA."
+"Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-"
+"1301 USA."
 
 #: src/math-window.c:362
 #, c-format
@@ -1689,6 +1693,7 @@ msgstr ""
 "Влад Орлов <monsta@inbox.ru>\n"
 "Глеб Мехренин <mehrenin@gmail.com>\n"
 "Денис Арефьев <arefevdns@mail.ru>\n"
+"Дмитрий Астанков <mornie@basealt.ru>\n"
 "Дмитрий Мандрык <dmandryk@gmail.com>\n"
 "Дмитрий Мастрюков <dmitry@taurussoft.org>\n"
 "Дмитрий Михирев <mikhirev@gmail.com>\n"
@@ -1702,7 +1707,8 @@ msgstr ""
 "Сергей Панов <sipan@mit.edu>\n"
 "Сергей Яковлев\n"
 "Юрий Козлов <yuray@komyakino.ru>\n"
-"Evolve32 <evolve32@ya.ru>"
+"Evolve32 <evolve32@ya.ru>\n"
+"Артём Котлубай <artemkotlubai@yandex.ru>"
 
 #. Calculator menu
 #: src/math-window.c:523
@@ -1866,7 +1872,7 @@ msgstr ""
 #. Translators: Error displayed when error function (erf) value is undefined
 #: src/mp.c:615
 msgid "The error function is only defined for real numbers"
-msgstr "Функция ошибок определена только для действительных чисел."
+msgstr "Функция ошибок определена только для действительных чисел"
 
 #. Translators: Error displayed when zeta function value is undefined
 #: src/mp.c:632
@@ -2447,7 +2453,7 @@ msgstr "Годы"
 #, c-format
 msgctxt "unit-format"
 msgid "%s years"
-msgstr "%s years"
+msgstr "%s годов"
 
 #: src/unit-manager.c:87
 msgctxt "unit-symbols"
