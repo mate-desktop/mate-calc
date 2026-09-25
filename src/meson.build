@@ -104,13 +104,13 @@ test_mp_eq_src += [
 ]
 
 executable('mate-calc', src, include_directories: top_inc,
-    dependencies : [gio, glib, gobject,gtk, libxml, mpc, mpfr],
+    dependencies : [gio, glib, gobject, gtk, libxml, libsoup, mpc, mpfr],
 	link_args: '-rdynamic',
     install : true,
     install_dir : get_option('bindir'))
 
 executable('mate-calc-cmd', src_cmd, include_directories: top_inc,
-    dependencies : [gio, libxml, mpc, mpfr],
+    dependencies : [gio, libxml, libsoup, mpc, mpfr],
     install : true,
     install_dir : get_option('bindir'))
 
@@ -118,4 +118,4 @@ executable('test-mp', test_mp_src, include_directories: top_inc,
     dependencies : [gio, libxml, mpc, mpfr])
 
 executable('test-mp-equation', test_mp_eq_src, include_directories: top_inc,
-    dependencies: [gio, libxml, mpc, mpfr])
+    dependencies: [gio, libxml, libsoup, mpc, mpfr])

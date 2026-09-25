@@ -21,6 +21,7 @@ gio = dependency('gio-2.0', version: '>= ' + glib_min_version)
 glib = dependency('glib-2.0', version: '>= ' + glib_min_version)
 gobject = dependency('gobject-2.0', version: '>= ' + glib_min_version)
 libxml = dependency('libxml-2.0')
+libsoup = dependency('libsoup-3.0')
 gtk = dependency('gtk+-3.0', version : '>=3.22')
 
 # Libraries
