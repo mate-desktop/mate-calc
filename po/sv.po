@@ -1,9 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR MATE Desktop Environment team
 # This file is distributed under the same license as the mate-calc package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
 # Henrik Mattsson-Mårn <h@reglage.net>, 2018
 # efef6ec5b435a041fce803c7f8af77d2_2341d43, 2018
 # Patrik Nilsson <asavartzeth@gmail.com>, 2018
@@ -16,21 +13,25 @@
 # Kristoffer Grundström <lovaren@gmail.com>, 2022
 # Stefano Karapetsas <stefano@karapetsas.com>, 2022
 # Luna Jernberg <droidbittin@gmail.com>, 2024
-# Daniel Nylander <po@danielnylander.se>, 2025
-# 
+# Daniel Nylander <po@danielnylander.se>, 2025, 2026.
+#
+# Translators:
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-calc 1.26.0\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-calc/issues\n"
 "POT-Creation-Date: 2022-10-28 17:41+0200\n"
-"PO-Revision-Date: 2018-03-11 16:33+0000\n"
-"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
-"Language-Team: Swedish (https://app.transifex.com/mate/teams/13566/sv/)\n"
+"PO-Revision-Date: 2026-10-19 13:32+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <https://translate.fedoraproject.org/projects/mate-"
+"desktop/applications/mate-calc/sv/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: sv\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2026.10.1\n"
 
 #. Accessible name for the factorize button
 #: src/buttons-advanced.ui:27 src/buttons-programming.ui:1900
@@ -165,8 +166,8 @@ msgid ""
 "compounding period."
 msgstr ""
 "Beräknar antalet sammansatta perioder som krävs för att öka en investering "
-"för nuvarande värdet till ett framtida värde, med en fast ränta per "
-"sammansatt period."
+"från ett nuvärde till ett framtida värde med en fast ränta per sammansatt "
+"period."
 
 #. Compounding Term Dialog: Label before periodic interest rate input
 #. Future Value Dialog: Label before periodic interest rate input
@@ -202,8 +203,8 @@ msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
 msgstr ""
-"Beräknar avskrivningskostnaden för ett objekt för en angiven tidsperiod, som"
-" använder metoden dubbel degressiv avskrivning."
+"Beräknar avskrivningen för en tillgång under en angiven period med metoden "
+"dubbel degressiv avskrivning."
 
 #. Double-Declining Depreciation Dialog: Label before life input
 #. Straight-Line Depreciation Dialog: Label before life input
@@ -244,9 +245,8 @@ msgid ""
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
 msgstr ""
-"Beräknar det framtida värdet för en investering baserat på ett antal "
-"likvärdiga betalningar med en periodisk ränta över ett antal "
-"betalningsperioder i perioden."
+"Beräknar det framtida värdet för en investering utifrån en serie lika stora "
+"betalningar med periodisk ränta under löptidens antal betalningsperioder."
 
 #. Future Value Dialog: Label before periodic payment input
 #. Present Value Dialog: Label before periodic payment input
@@ -288,8 +288,8 @@ msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
 msgstr ""
-"Beräknar mängden för den periodiska betalningen för ett lån, där betalningar"
-" görs vid slutet av varje betalningsperiod."
+"Beräknar storleken på den periodiska betalningen för ett lån där betalningar "
+"görs i slutet av varje betalningsperiod. "
 
 #. Periodic Payment Dialog: Label before term input
 #. Periodic Interest Rate Dialog: Label before term input
@@ -300,13 +300,13 @@ msgstr "_Period:"
 #. Periodic Payment Dialog: Label before principal input
 #: src/buttons-financial.ui:867
 msgid "_Principal:"
-msgstr "_Principal:"
+msgstr "_Huvudbelopp:"
 
 #. Title of Present Value dialog
 #. Tooltip for the present value button
 #: src/buttons-financial.ui:894 src/math-buttons.c:279
 msgid "Present Value"
-msgstr "Nuvarande värde"
+msgstr "Nuvärde"
 
 #. Present Value Dialog: Description of calculation
 #: src/buttons-financial.ui:963
@@ -315,9 +315,9 @@ msgid ""
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
 msgstr ""
-"Beräknar det nuvarande värdet för en investering baserad på ett antal "
-"likvärdiga betalningar rabatterade med en periodisk ränta över ett antal "
-"betalningsperioder i perioden."
+"Beräknar nuvärdet för en investering utifrån en serie lika stora betalningar "
+"som diskonteras med periodisk ränta under löptidens antal "
+"betalningsperioder. "
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
@@ -331,8 +331,8 @@ msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
 msgstr ""
-"Beräknar den periodiska ränta som behövs för att öka en investering till ett"
-" framtida värde, över ett antal sammansatta perioder."
+"Beräknar den periodiska ränta som krävs för att en investering ska nå ett "
+"framtida värde under antalet sammansatta perioder. "
 
 #. Title of Straight-Line Depreciation dialog
 #: src/buttons-financial.ui:1262
@@ -349,7 +349,7 @@ msgstr "_Kostnad:"
 #. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
 #: src/buttons-financial.ui:1402 src/buttons-financial.ui:1541
 msgid "_Salvage:"
-msgstr "_Salvage:"
+msgstr "_Restvärde:"
 
 #. Straight-Line Depreciation Dialog: Description of calculation
 #: src/buttons-financial.ui:1418
@@ -359,15 +359,15 @@ msgid ""
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
 msgstr ""
-"Beräknar den linjära avskrivningen för ett objekt under en period. Den "
-"linjära metoden för avskrivning delar upp den avskrivna kostnaden jämnt över"
-" den användbara livslängden för objektet. Den användbara livslängden är "
-"antalet perioder, oftast år, över vilket ett objekt skrivs av."
+"Beräknar den linjära avskrivningen för en tillgång under en period. Den "
+"linjära avskrivningsmetoden fördelar tillgångens avskrivningsbara "
+"anskaffningsvärde jämnt över dess nyttjandeperiod. Nyttjandeperioden är "
+"antalet perioder, vanligen år, som tillgången skrivs av under. "
 
 #. Title of Sum-of-the-Years'-Digits Depreciation dialog
 #: src/buttons-financial.ui:1446
 msgid "Sum-of-the-Years'-Digits Depreciation"
-msgstr "Degressiv avskrivning"
+msgstr "Avskrivning enligt summan av årssiffrorna"
 
 #. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
 #: src/buttons-financial.ui:1631
@@ -378,11 +378,11 @@ msgid ""
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
 msgstr ""
-"Beräknar avskrivningskostnaden för ett objekt för en angiven tidsperiod och "
-"använder metoden degressiv avskrivning. Denna metod för avskrivning "
-"accelererar räntan för avskrivningen så att högra avskrivningskostnader "
-"inträffar i tidigare perioder än i de senare. Den användbara livslängden är "
-"antalet perioder, oftast år, över vilka ett objekt skrivs av."
+"Beräknar avskrivningen för en tillgång under en angiven period med metoden "
+"med summan av årssiffrorna. Metoden påskyndar avskrivningen så att större "
+"avskrivningskostnader uppstår under tidigare perioder än under senare. "
+"Nyttjandeperioden är antalet perioder, vanligen år, som tillgången skrivs av "
+"under. "
 
 #. Title of Payment Period dialog
 #: src/buttons-financial.ui:1659
@@ -576,7 +576,7 @@ msgstr "MATE-kalkylator"
 
 #: data/mate-calc.appdata.xml.in:8
 msgid "MATE Desktop calculator"
-msgstr "MATE Desktop kalkylator"
+msgstr "Kalkylator för MATE:s skrivbordsmiljö"
 
 #: data/mate-calc.appdata.xml.in:10
 msgid ""
@@ -584,9 +584,9 @@ msgid ""
 "scientific modes. It uses a multiple precision package to do its arithmetic "
 "to give a high degree of accuracy."
 msgstr ""
-"MATE kalkylator är en kraftfull grafisk kalkylator med finansiella, logiska "
-"och vetenskapliga lägen. Den använder ett multipelprecisionspaket för att "
-"göra sin aritmetik för att ge en hög grad av noggrannhet. "
+"MATE:s kalkylator är en kraftfull grafisk kalkylator med finansiella, "
+"logiska och vetenskapliga lägen. Den använder ett flerprecisionsbibliotek "
+"för beräkningar med hög noggrannhet."
 
 #: data/mate-calc.appdata.xml.in:15
 msgid ""
@@ -594,13 +594,13 @@ msgid ""
 "If you would like to know more about MATE and MATE Calc, please visit the "
 "project's home page."
 msgstr ""
-"MATE kalkylator en avgrening av GNOME kalkylator och är en del av "
-"skrivbordsmiljön MATE. Om du vill veta mer om MATE och MATE kalkylator, "
-"besök gärna projektets hemsida. "
+"MATE:s kalkylator är en avknoppning av GNOME Kalkylator och ingår i MATE:s "
+"skrivbordsmiljö. Läs mer om MATE och MATE:s kalkylator på projektets "
+"webbplats."
 
 #: data/mate-calc.desktop.in:3 src/math-window.c:366
 msgid "MATE Calculator"
-msgstr "MATE Kalkylatorn"
+msgstr "MATE:s kalkylator"
 
 #. Title of main window
 #: data/mate-calc.desktop.in:4 src/math-window.c:716
@@ -707,7 +707,7 @@ msgstr "Målvaluta"
 
 #: data/org.mate.calc.gschema.xml:78
 msgid "Currency to convert the current calculation into"
-msgstr "Valuta att konvertera den aktuell beräkningen till"
+msgstr "Valuta som den aktuella beräkningen ska konverteras till"
 
 #: data/org.mate.calc.gschema.xml:82
 msgid "Source units"
@@ -723,7 +723,7 @@ msgstr "Målenheter"
 
 #: data/org.mate.calc.gschema.xml:88
 msgid "Units to convert the current calculation into"
-msgstr "Enheter att konvertera den aktuell beräkningen till"
+msgstr "Enheter som den aktuella beräkningen ska konverteras till"
 
 #: src/currency-manager.c:30
 msgid "UAE Dirham"
@@ -977,7 +977,7 @@ msgid ""
 "  %s — Perform mathematical calculations"
 msgstr ""
 "Användning:\n"
-"  %s — Genomför matematiska beräkningar"
+"  %s: Utför matematiska beräkningar"
 
 #. Description on mate-calc command-line help options displayed on command-
 #. line
@@ -1052,7 +1052,7 @@ msgstr "Eulers nummer"
 #. Tooltip for the imaginary number button
 #: src/math-buttons.c:99
 msgid "Imaginary unit"
-msgstr "imaginär enhet"
+msgstr "Imaginär enhet"
 
 #. Tooltip for the numeric point button
 #: src/math-buttons.c:102
@@ -1606,7 +1606,7 @@ msgstr "Sun Microsystems"
 
 #: src/math-window.c:311
 msgid "MATE Documentation Team"
-msgstr "MATE Documentation Team"
+msgstr "MATE-dokumentationsgruppen"
 
 #: src/math-window.c:317
 msgid ""
@@ -1638,9 +1638,9 @@ msgid ""
 " MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
-"Du bör ha fått en kopia av GNU General Public License tillsammans med Caja. "
-"Om inte, skriv till Free Software Foundation, Inc., 51 Franklin Street, "
-"Fifth Floor, Boston, MA 02110-1301 USA"
+"Du bör ha fått en kopia av GNU General Public License tillsammans med MATE:s "
+"kalkylator. Om inte, skriv till Free Software Foundation, Inc., 51 Franklin "
+"Street, Fifth Floor, Boston, MA 02110-1301, USA."
 
 #: src/math-window.c:362
 #, c-format
@@ -1727,7 +1727,7 @@ msgstr "Klistra _in"
 
 #: src/math-window.c:548
 msgid "_Undo"
-msgstr "_Ångra"
+msgstr "Ång_ra"
 
 #: src/math-window.c:550
 msgid "_Redo"
@@ -1735,7 +1735,7 @@ msgstr "_Gör om"
 
 #: src/math-window.c:552
 msgid "_Clear History"
-msgstr "_Rensa Historik"
+msgstr "_Rensa historiken"
 
 #: src/math-window.c:555
 msgid "_Preferences"
