@@ -1,0 +1,2514 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR MATE Desktop Environment team
+# This file is distributed under the same license as the mate-calc package.
+# Bone NI <bounkirdni@gmail.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: mate-calc 1.28.0\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/mate-calc/issues\n"
+"POT-Creation-Date: 2026-03-12 17:27+0100\n"
+"PO-Revision-Date: 2026-09-10 04:18+0000\n"
+"Last-Translator: Bone NI <bounkirdni@gmail.com>\n"
+"Language-Team: Lao <https://translate.fedoraproject.org/projects/mate-"
+"desktop/applications/mate-calc/lo/>\n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.9.1\n"
+
+#. Accessible name for the factorize button
+#: src/buttons-advanced.ui:27 src/buttons-programming.ui:1900
+msgid "Factorize"
+msgstr "ແຍກຕົວປະກອບ"
+
+#. Label on the solve button (clicking this solves the displayed calculation)
+#: src/buttons-advanced.ui:270 src/buttons-basic.ui:213
+#: src/buttons-financial.ui:2100 src/buttons-programming.ui:2043
+msgid "="
+msgstr "="
+
+#: src/buttons-advanced.ui:288 src/buttons-basic.ui:262
+#: src/buttons-financial.ui:2149 src/buttons-programming.ui:2061
+msgid "Clear"
+msgstr "ລຶບ"
+
+#. Accessible name for the scientific exponent button
+#: src/buttons-advanced.ui:321
+msgid "Scientific Exponent"
+msgstr "ເລກກຳລັງທາງວິທະຍາສາດ"
+
+#. The label on the memory button
+#: src/buttons-advanced.ui:390 src/buttons-financial.ui:1867
+#: src/buttons-programming.ui:2314
+msgid "x"
+msgstr "x"
+
+#. Accessible name for the memory button
+#. Accessible name for the memory value button
+#. Tooltip for the memory button
+#: src/buttons-advanced.ui:417 src/buttons-financial.ui:1894
+#: src/math-buttons.c:234
+msgid "Memory"
+msgstr "ໜ່ວຍຄວາມຈຳ"
+
+#. Accessible name for the exponentiation (x to the power of y) button
+#: src/buttons-advanced.ui:503 src/buttons-basic.ui:339
+#: src/buttons-financial.ui:2331 src/buttons-programming.ui:2620
+msgid "Exponent"
+msgstr "ເລກກຳລັງ"
+
+#: src/buttons-advanced.ui:529 src/buttons-basic.ui:294
+#: src/buttons-financial.ui:2357
+msgid "Undo"
+msgstr "ຍົກເລີກ"
+
+#: src/buttons-advanced.ui:663
+msgid "asin"
+msgstr "asin"
+
+#: src/buttons-advanced.ui:677
+msgid "atan"
+msgstr "atan"
+
+#: src/buttons-advanced.ui:705
+msgid "acos"
+msgstr "acos"
+
+#. Accessible name for the store value button
+#: src/buttons-advanced.ui:764 src/buttons-programming.ui:2338
+msgid "Store"
+msgstr "ບັນທຶກ"
+
+#. Accessible name for the inverse button
+#: src/buttons-advanced.ui:791 src/buttons-programming.ui:2594
+msgid "Inverse"
+msgstr "ຜັນກັບ"
+
+#. Accessible name for the factorial button
+#: src/buttons-advanced.ui:817 src/buttons-programming.ui:2567
+msgid "Factorial"
+msgstr "ແຟັກທໍຣຽນ"
+
+#. Accessible name for the absolute value button
+#: src/buttons-advanced.ui:844 src/buttons-programming.ui:1942
+msgid "Absolute Value"
+msgstr "ຄ່າສຳບູນ"
+
+#. Accessible name for the superscript mode button
+#: src/buttons-advanced.ui:885 src/buttons-programming.ui:2274
+msgid "Superscript"
+msgstr "ຕົວຫ້ອຍເທິງ"
+
+#. Accessible name for the subscript mode button
+#: src/buttons-advanced.ui:911 src/buttons-programming.ui:2676
+msgid "Subscript"
+msgstr "ຕົວຫ້ອຍລຸ່ມ"
+
+#: src/buttons-advanced.ui:966
+msgid "const"
+msgstr "ຄ່າຄົງທີ່"
+
+#. Title of Compounding Term dialog
+#. Tooltip for the compounding term button
+#: src/buttons-financial.ui:8 src/math-buttons.c:258
+msgid "Compounding Term"
+msgstr "ໄລຍະເວລາທົບຕົ້ນ"
+
+#: src/buttons-financial.ui:28 src/buttons-financial.ui:211
+#: src/buttons-financial.ui:394 src/buttons-financial.ui:577
+#: src/buttons-financial.ui:730 src/buttons-financial.ui:914
+#: src/buttons-financial.ui:1098 src/buttons-financial.ui:1282
+#: src/buttons-financial.ui:1466 src/buttons-financial.ui:1679
+#: src/buttons-programming.ui:27
+msgid "_Cancel"
+msgstr "_ຍົກເລີກ"
+
+#. Compounding Term Dialog: Calculate button
+#. Double-Declining Depreciation Dialog: Calculate button
+#. Future Value Dialog: Calculate button
+#. Gross Profit Margin Dialog: Calculate button
+#. Periodic Payment Dialog: Calculate button
+#. Present Value Dialog: Calculate button
+#. Periodic Interest Rate Dialog: Calculate button
+#. Straight-Line Depreciation Dialog: Calculate button
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Calculate result button
+#. Payment Period Dialog: Button to calculate result
+#: src/buttons-financial.ui:43 src/buttons-financial.ui:226
+#: src/buttons-financial.ui:409 src/buttons-financial.ui:592
+#: src/buttons-financial.ui:745 src/buttons-financial.ui:929
+#: src/buttons-financial.ui:1113 src/buttons-financial.ui:1297
+#: src/buttons-financial.ui:1481 src/buttons-financial.ui:1694
+msgid "C_alculate"
+msgstr "ຄຳນວນ"
+
+#. Compounding Term Dialog: Description of calculation
+#: src/buttons-financial.ui:122
+msgid ""
+"Calculates the number of compounding periods necessary to increase an "
+"investment of present value to a future value, at a fixed interest rate per "
+"compounding period."
+msgstr ""
+"ຄຳນວນຈຳນວນງວດການທົບຕົ້ນທີ່ຈຳເປັນເພື່ອເພີ່ມມູນຄ່າເງິນລົງທຶນຈາກມູນຄ່າປັດຈຸບັນໄປເປັນມູນຄ່າໃນອະນາຄົດ ດ້ວຍອັ"
+"ດຕາດອກເບ້ຍຄົງທີ່ຕໍ່ງວດ."
+
+#. Compounding Term Dialog: Label before periodic interest rate input
+#. Future Value Dialog: Label before periodic interest rate input
+#. Periodic Payment Dialog: Label before periodic interest rate input
+#. Present Value Dialog: Label before periodic interest rate input
+#. Payment Period Dialog: Label before periodic interest rate input
+#: src/buttons-financial.ui:136 src/buttons-financial.ui:486
+#: src/buttons-financial.ui:853 src/buttons-financial.ui:1037
+#: src/buttons-financial.ui:1799
+msgid "Periodic Interest _Rate:"
+msgstr "ອັດຕາດອກເບ້ຍຕໍ່ງວດ:"
+
+#. Compounding Term Dialog: Label before future value input
+#. Periodic Interest Rate Dialog: Label before future value input
+#: src/buttons-financial.ui:150 src/buttons-financial.ui:1235
+msgid "_Future Value:"
+msgstr "ມູນຄ່າໃນອະນາຄົດ:"
+
+#. Compounding Term Dialog: Label before present value input
+#. Periodic Interest Rate Dialog: Label before present value input
+#: src/buttons-financial.ui:164 src/buttons-financial.ui:1207
+msgid "Present _Value:"
+msgstr "ມູນຄ່າປັດຈຸບັນ:"
+
+#. Title of Double-Declining Depreciation dialog
+#: src/buttons-financial.ui:191
+msgid "Double-Declining Depreciation"
+msgstr "ການຄິດຄ່າເສື່ອມລາຄາແບບຫຼຸດລົງເທົ່າຕົວ"
+
+#. Double-Declining Depreciation Dialog: Description of calculation
+#: src/buttons-financial.ui:260
+msgid ""
+"Calculates the depreciation allowance on an asset for a specified period of "
+"time, using the double-declining balance method."
+msgstr ""
+"ຄຳນວນຄ່າເສື່ອມລາຄາຂອງຊັບສິນສຳລັບໄລຍະເວລາທີ່ກຳນົດ ໂດຍໃຊ້ມາດຕະຖານການຫຼຸດລົງເທົ່າຕົວ."
+
+#. Double-Declining Depreciation Dialog: Label before life input
+#. Straight-Line Depreciation Dialog: Label before life input
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#: src/buttons-financial.ui:319 src/buttons-financial.ui:1388
+#: src/buttons-financial.ui:1527
+msgid "_Life:"
+msgstr "ອາຍຸການໃຊ້ງານ:"
+
+#. Double-Declining Depreciation Dialog: Label before period input
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#: src/buttons-financial.ui:333 src/buttons-financial.ui:1513
+msgid "_Period:"
+msgstr "ງວດ:"
+
+#. Double-Declining Depreciation Dialog: Label before cost input
+#. Gross Profit Margin Dialog: Label before cost input
+#: src/buttons-financial.ui:347 src/buttons-financial.ui:670
+msgid "C_ost:"
+msgstr "ຕົ້ນທຶນ:"
+
+#. Title of Future Value dialog
+#. Tooltip for the future value button
+#: src/buttons-financial.ui:374 src/math-buttons.c:264
+msgid "Future Value"
+msgstr "ມູນຄ່າໃນອະນາຄົດ"
+
+#. Future Value Dialog: Label before number of periods input
+#. Present Value Dialog: Label before number of periods input
+#: src/buttons-financial.ui:500 src/buttons-financial.ui:1023
+msgid "_Number of Periods:"
+msgstr "ຈຳນວນງວດ:"
+
+#. Future Value Dialog: Description of calculation
+#: src/buttons-financial.ui:516
+msgid ""
+"Calculates the future value of an investment based on a series of equal "
+"payments at a periodic interest rate over the number of payment periods in "
+"the term."
+msgstr ""
+"ຄຳນວນມູນຄ່າໃນອະນາຄົດຂອງເງິນລົງທຶນ ໂດຍອີງໃສ່ການຈ່າຍເງິນເທົ່າໆກັນໃນອັດຕາດອກເບ້ຍຕໍ່ງວດ ຕະຫຼອດຈຳນວນ"
+"ງວດທີ່ກຳນົດໄວ້."
+
+#. Future Value Dialog: Label before periodic payment input
+#. Present Value Dialog: Label before periodic payment input
+#. Payment Period Dialog: Label before periodic payment input
+#: src/buttons-financial.ui:530 src/buttons-financial.ui:1051
+#: src/buttons-financial.ui:1771
+msgid "_Periodic Payment:"
+msgstr "ການຈ່າຍເງິນຕໍ່ງວດ:"
+
+#. Title of Gross Profit Margin dialog
+#. Tooltip for the gross profit margin button
+#: src/buttons-financial.ui:557 src/math-buttons.c:285
+msgid "Gross Profit Margin"
+msgstr "ອັດຕາກຳໄລຂັ້ນຕົ້ນ"
+
+#. Gross Profit Margin Dialog: Description of calculation
+#: src/buttons-financial.ui:626
+msgid ""
+"Calculates the resale price of a product, based on the product cost and the "
+"wanted gross profit margin."
+msgstr ""
+"ຄຳນວນລາຄາຂາຍຕໍ່ຂອງສິນຄ້າ ໂດຍອີງໃສ່ຕົ້ນທຶນສິນຄ້າ ແລະ ອັດຕາກຳໄລຂັ້ນຕົ້ນທີ່ຕ້ອງການ."
+
+#. Gross Profit Margin Dialog: Label before margin input
+#: src/buttons-financial.ui:684
+msgid "_Margin:"
+msgstr "ອັດຕາກຳໄລ:"
+
+#. Title of Periodic Payment dialog
+#. Tooltip for the periodic payment button
+#: src/buttons-financial.ui:710 src/math-buttons.c:282
+msgid "Periodic Payment"
+msgstr "ການຈ່າຍເງິນຕໍ່ງວດ"
+
+#. Periodic Payment Dialog: Description of calculation
+#: src/buttons-financial.ui:779
+msgid ""
+"Calculates the amount of the periodic payment of a loan, where payments are "
+"made at the end of each payment period. "
+msgstr ""
+"ຄຳນວນຈຳນວນເງິນທີ່ຕ້ອງຈ່າຍຕໍ່ງວດສຳລັບເງິນກູ້ ໂດຍທີ່ການຈ່າຍເງິນຈະເຮັດໃນຕອນທ້າຍຂອງແຕ່ລະງວດ. "
+
+#. Periodic Payment Dialog: Label before term input
+#. Periodic Interest Rate Dialog: Label before term input
+#: src/buttons-financial.ui:839 src/buttons-financial.ui:1221
+msgid "_Term:"
+msgstr "ໄລຍະເວລາ:"
+
+#. Periodic Payment Dialog: Label before principal input
+#: src/buttons-financial.ui:867
+msgid "_Principal:"
+msgstr "ເງິນຕົ້ນ:"
+
+#. Title of Present Value dialog
+#. Tooltip for the present value button
+#: src/buttons-financial.ui:894 src/math-buttons.c:279
+msgid "Present Value"
+msgstr "ມູນຄ່າປັດຈຸບັນ"
+
+#. Present Value Dialog: Description of calculation
+#: src/buttons-financial.ui:963
+msgid ""
+"Calculates the present value of an investment based on a series of equal "
+"payments discounted at a periodic interest rate over the number of payment "
+"periods in the term. "
+msgstr ""
+"ຄຳນວນມູນຄ່າປັດຈຸບັນຂອງເງິນລົງທຶນ ໂດຍອີງໃສ່ການຈ່າຍເງິນເທົ່າໆກັນທີ່ຄິດຫຼຸດມູນຄ່າດ້ວຍອັດຕາດອກເບ້ຍຕໍ່ງວດ ຕະຫຼ"
+"ອດຈຳນວນງວດທີ່ກຳນົດໄວ້. "
+
+#. Title of Periodic Interest Rate dialog
+#. Tooltip for the periodic interest rate button
+#: src/buttons-financial.ui:1078 src/math-buttons.c:276
+msgid "Periodic Interest Rate"
+msgstr "ອັດຕາດອກເບ້ຍຕໍ່ງວດ"
+
+#. Periodic Interest Rate Dialog: Description of calculation
+#: src/buttons-financial.ui:1147
+msgid ""
+"Calculates the periodic interest necessary to increase an investment to a "
+"future value, over the number of compounding periods. "
+msgstr ""
+"ຄຳນວນອັດຕາດອກເບ້ຍຕໍ່ງວດທີ່ຈຳເປັນເພື່ອເພີ່ມມູນຄ່າເງິນລົງທຶນໄປສູ່ມູນຄ່າໃນອະນາຄົດ ຕະຫຼອດຈຳນວນງວດທີ່ທົບຕົ້"
+"ນ. "
+
+#. Title of Straight-Line Depreciation dialog
+#: src/buttons-financial.ui:1262
+msgid "Straight-Line Depreciation"
+msgstr "ການຄິດຄ່າເສື່ອມລາຄາແບບເສັ້ນຊື່"
+
+#. Straight-Line Depreciation Dialog: Label before cost input
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#: src/buttons-financial.ui:1329 src/buttons-financial.ui:1555
+msgid "_Cost:"
+msgstr "ຕົ້ນທຶນ:"
+
+#. Straight-Line Depreciation Dialog: Label before salvage input
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#: src/buttons-financial.ui:1402 src/buttons-financial.ui:1541
+msgid "_Salvage:"
+msgstr "ມູນຄ່າຊາກ:"
+
+#. Straight-Line Depreciation Dialog: Description of calculation
+#: src/buttons-financial.ui:1418
+msgid ""
+"Calculates the straight-line depreciation of an asset for one period. The "
+"straight-line method of depreciation divides the depreciable cost evenly "
+"over the useful life of an asset. The useful life is the number of periods, "
+"typically years, over which an asset is depreciated. "
+msgstr ""
+"ຄຳນວນຄ່າເສື່ອມລາຄາແບບເສັ້ນຊື່ຂອງຊັບສິນສຳລັບໜຶ່ງງວດ. ວິທີແບບເສັ້ນຊື່ຈະແບ່ງຕົ້ນທຶນທີ່ເສື່ອມລາຄາໄດ້ອອກຢ່າງເທົ່"
+"າໆກັນຕະຫຼອດອາຍຸການໃຊ້ງານຂອງຊັບສິນ. ອາຍຸການໃຊ້ງານຄືຈຳນວນງວດ (ປົກກະຕິຄືປີ) ທີ່ຊັບສິນຈະຖືກຄິດຄ່າເສື່ອມ"
+"ລາຄາ. "
+
+#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#: src/buttons-financial.ui:1446
+msgid "Sum-of-the-Years'-Digits Depreciation"
+msgstr "ການຄິດຄ່າເສື່ອມລາຄາແບບຜົນລວມຂອງຕົວເລກປີ"
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#: src/buttons-financial.ui:1631
+msgid ""
+"Calculates the depreciation allowance on an asset for a specified period of "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
+"accelerates the rate of depreciation, so that more depreciation expense "
+"occurs in earlier periods than in later ones. The useful life is the number "
+"of periods, typically years, over which an asset is depreciated. "
+msgstr ""
+"ຄຳນວນຄ່າເສື່ອມລາຄາຂອງຊັບສິນສຳລັບໄລຍະເວລາທີ່ກຳນົດ ໂດຍໃຊ້ມາດຕະຖານຜົນລວມຂອງຕົວເລກປີ. ວິທີນີ້ຈະເລັ່ງ"
+"ອັດຕາການເສື່ອມລາຄາ ໂດຍຈະມີຄ່າເສື່ອມລາຄາຫຼາຍກວ່າໃນງວດທຳອິດເມື່ອທຽບກັບງວດຫຼັງໆ. ອາຍຸການໃຊ້ງານຄືຈຳ"
+"ນວນງວດ (ປົກກະຕິຄືປີ) ທີ່ຊັບສິນຈະຖືກຄິດຄ່າເສື່ອມລາຄາ. "
+
+#. Title of Payment Period dialog
+#: src/buttons-financial.ui:1659
+msgid "Payment Period"
+msgstr "ງວດການຈ່າຍເງິນ"
+
+#. Payment Period Dialog: Label before future value input
+#: src/buttons-financial.ui:1785
+msgid "Future _Value:"
+msgstr "ມູນຄ່າໃນອະນາຄົດ:"
+
+#. Payment Period Dialog: Description of calculation
+#: src/buttons-financial.ui:1815
+msgid ""
+"Calculates the number of payment periods that are necessary during the term "
+"of an ordinary annuity, to accumulate a future value, at a periodic interest "
+"rate."
+msgstr ""
+"ຄຳນວນຈຳນວນງວດການຈ່າຍເງິນທີ່ຈຳເປັນໃນໄລຍະເວລາຂອງການຈ່າຍເງິນລາຍງວດແບບປົກກະຕິ ເພື່ອສະສົມມູນຄ່າໃ"
+"ນອະນາຄົດ ດ້ວຍອັດຕາດອກເບ້ຍຕໍ່ງວດ."
+
+#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
+#: src/buttons-financial.ui:2166
+msgid "Ctrm"
+msgstr "Ctrm"
+
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
+#: src/buttons-financial.ui:2181
+msgid "Ddb"
+msgstr "Ddb"
+
+#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
+#: src/buttons-financial.ui:2196
+msgid "Fv"
+msgstr "Fv"
+
+#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#: src/buttons-financial.ui:2211
+msgid "Term"
+msgstr "Term"
+
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
+#: src/buttons-financial.ui:2226
+msgid "Syd"
+msgstr "Syd"
+
+#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
+#: src/buttons-financial.ui:2241
+msgid "Sln"
+msgstr "Sln"
+
+#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#: src/buttons-financial.ui:2256
+msgid "Rate"
+msgstr "Rate"
+
+#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
+#: src/buttons-financial.ui:2271
+msgid "Pv"
+msgstr "Pv"
+
+#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
+#: src/buttons-financial.ui:2286
+msgid "Pmt"
+msgstr "Pmt"
+
+#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
+#: src/buttons-financial.ui:2301
+msgid "Gpm"
+msgstr "Gpm"
+
+#. Title of insert character code dialog
+#. Tooltip for the insert character code button
+#: src/buttons-programming.ui:8 src/math-buttons.c:237
+msgid "Insert Character Code"
+msgstr "ໃສ່ລະຫັດຕົວອັກສອນ"
+
+#. Insert ASCII dialog: Button to insert selected character
+#: src/buttons-programming.ui:42
+msgid "_Insert"
+msgstr "ໃສ່"
+
+#. Insert ASCII dialog: Label before character entry
+#: src/buttons-programming.ui:73
+msgid "Ch_aracter:"
+msgstr "ຕົວອັກສອນ:"
+
+#. Accessible name for the shift left button
+#: src/buttons-programming.ui:2477
+msgid "Shift Left"
+msgstr "ເລື່ອນຊ້າຍ"
+
+#. Accessible name for the shift right button
+#: src/buttons-programming.ui:2526
+msgid "Shift Right"
+msgstr "ເລື່ອນຂວາ"
+
+#. Accessible name for the insert character button
+#: src/buttons-programming.ui:2756
+msgid "Insert Character"
+msgstr "ໃສ່ຕົວອັກສອນ"
+
+#. Word size combo: 8 bits
+#: src/preferences.ui:40
+msgid "8-bit"
+msgstr "8-ບິດ"
+
+#. Word size combo: 16 bits
+#: src/preferences.ui:44
+msgid "16-bit"
+msgstr "16-ບິດ"
+
+#. Word size combo: 32 bits
+#: src/preferences.ui:48
+msgid "32-bit"
+msgstr "32-ບິດ"
+
+#. Word size combo: 64 bits
+#: src/preferences.ui:52
+msgid "64-bit"
+msgstr "64-ບິດ"
+
+#. Title of preferences dialog
+#: src/preferences.ui:60 src/math-preferences.c:221
+msgid "Preferences"
+msgstr "ການຕັ້ງຄ່າ"
+
+#: src/preferences.ui:80
+msgid "_Close"
+msgstr "ປິດ"
+
+#. Preferences dialog: Label for angle unit combo box
+#: src/preferences.ui:112
+msgid "_Angle units:"
+msgstr "ຫົວໜ່ວຍມຸມ:"
+
+#. Preferences dialog: Label for display format combo box
+#: src/preferences.ui:126
+msgid "Number _Format:"
+msgstr "ຮູບແບບຕົວເລກ:"
+
+#. Preferences dialog: label for word size combo box
+#: src/preferences.ui:176
+msgid "Word _size:"
+msgstr "ຂະໜາດຄຳ:"
+
+#. Preferences dialog: label for show trailing zeroes check button
+#: src/preferences.ui:199
+msgid "Show trailing _zeroes"
+msgstr "ສະແດງສູນທາງທ້າຍ"
+
+#. Preferences dialog: label for show thousands separator check button
+#: src/preferences.ui:215
+msgid "Show _thousands separators"
+msgstr "ສະແດງຕົວແຍກຫຼັກພັນ"
+
+#: data/mate-calc.appdata.xml.in:7
+msgid "MATE Calc"
+msgstr "MATE Calc"
+
+#: data/mate-calc.appdata.xml.in:8
+msgid "MATE Desktop calculator"
+msgstr "ເຄື່ອງຄິດເລກສຳລັບ MATE Desktop"
+
+#: data/mate-calc.appdata.xml.in:10
+msgid ""
+"MATE Calc is a powerful graphical calculator with financial, logical and "
+"scientific modes. It uses a multiple precision package to do its arithmetic "
+"to give a high degree of accuracy."
+msgstr ""
+"MATE Calc ເປັນເຄື່ອງຄິດເລກທີ່ມີປະສິດທິພາບສູງພ້ອມຮອງຮັບໂໝດການເງິນ, ໂລຈິກ ແລະ ວິທະຍາສາດ. ມັນໃຊ້ແ"
+"ພັກເກດຄຳນວນຄວາມລະອຽດສູງເພື່ອໃຫ້ໄດ້ຜົນລັພທີ່ຖືກຕ້ອງແມ່ນຍຳ."
+
+#: data/mate-calc.appdata.xml.in:15
+msgid ""
+"MATE Calc is a fork of GNOME Calc and part of the MATE Desktop Environment. "
+"If you would like to know more about MATE and MATE Calc, please visit the "
+"project's home page."
+msgstr ""
+"MATE Calc ເປັນການແຍກພັດທະນາ (fork) ມາຈາກ GNOME Calc ແລະ ເປັນສ່ວນໜຶ່ງຂອງ MATE "
+"Desktop Environment. ຖ້າເຈົ້າຕ້ອງການຮູ້ເພີ່ມເຕີມກ່ຽວກັບ MATE ແລະ MATE Calc, ກະລຸນາເຂົ້າໄປທີ່ໜ້"
+"າເວັບໄຊຂອງໂຄງການ."
+
+#: data/mate-calc.desktop.in:2 src/math-window.c:366
+msgid "MATE Calculator"
+msgstr "ເຄື່ອງຄິດເລກ MATE"
+
+#. Title of main window
+#: data/mate-calc.desktop.in:3 src/math-window.c:716
+msgid "Calculator"
+msgstr "ເຄື່ອງຄິດເລກ"
+
+#: data/mate-calc.desktop.in:4
+msgid "Perform arithmetic, scientific or financial calculations"
+msgstr "ຄຳນວນເລກເລກ, ວິທະຍາສາດ ຫຼື ການເງິນ"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/mate-calc.desktop.in:12
+msgid "calculator;MATE;scientific;arithmetic;financial;calculations;"
+msgstr "calculator;MATE;scientific;arithmetic;financial;calculations;"
+
+#: data/org.mate.calc.gschema.xml:25
+msgid "Accuracy value"
+msgstr "ຄ່າຄວາມລະອຽດ"
+
+#: data/org.mate.calc.gschema.xml:26
+msgid "The number of digits displayed after the numeric point"
+msgstr "ຈຳນວນຫຼັກທີ່ສະແດງຫຼັງຈຸດທົດສະນິຍົມ"
+
+#: data/org.mate.calc.gschema.xml:31
+msgid "Word size"
+msgstr "ຂະໜາດຄຳ"
+
+#: data/org.mate.calc.gschema.xml:32
+msgid "The size of the words used in bitwise operations"
+msgstr "ຂະໜາດຂອງຄຳທີ່ໃຊ້ໃນການດຳເນີນການບິດວايສ໌"
+
+#: data/org.mate.calc.gschema.xml:37
+msgid "Numeric Base"
+msgstr "ຖານຕົວເລກ"
+
+#: data/org.mate.calc.gschema.xml:38
+msgid "The numeric base"
+msgstr "ຖານຕົວເລກ"
+
+#: data/org.mate.calc.gschema.xml:42
+msgid "Show Thousands Separators"
+msgstr "ສະແດງຕົວແຍກຫຼັກພັນ"
+
+#: data/org.mate.calc.gschema.xml:43
+msgid "Indicates whether thousands separators are shown in large numbers."
+msgstr "ລະບຸວ່າໃຫ້ສະແດງຕົວແຍກຫຼັກພັນໃນຕົວເລກທີ່ມີຄ່າຫຼາຍຫຼືບໍ່."
+
+#: data/org.mate.calc.gschema.xml:47
+msgid "Show Trailing Zeroes"
+msgstr "ສະແດງສູນທາງທ້າຍ"
+
+#: data/org.mate.calc.gschema.xml:48
+msgid ""
+"Indicates whether any trailing zeroes after the numeric point should be "
+"shown in the display value."
+msgstr "ລະບຸວ່າໃຫ້ສະແດງສູນທາງທ້າຍຫຼັງຈຸດທົດສະນິຍົມໃນຄ່າທີ່ສະແດງຢູ່ໜ້າຈໍຫຼືບໍ່."
+
+#: data/org.mate.calc.gschema.xml:52
+msgid "Show History"
+msgstr "ສະແດງປະຫວັດ"
+
+#: data/org.mate.calc.gschema.xml:53
+msgid "Shows all recent calculations"
+msgstr "ສະແດງການຄຳນວນທີ່ຜ່ານມາທັງໝົດ"
+
+#: data/org.mate.calc.gschema.xml:57
+msgid "Number format"
+msgstr "ຮູບແບບຕົວເລກ"
+
+#: data/org.mate.calc.gschema.xml:58
+msgid "The format to display numbers in"
+msgstr "ຮູບແບບທີ່ໃຊ້ສະແດງຕົວເລກ"
+
+#: data/org.mate.calc.gschema.xml:62
+msgid "Angle units"
+msgstr "ຫົວໜ່ວຍມຸມ"
+
+#: data/org.mate.calc.gschema.xml:63
+msgid "The angle units to use"
+msgstr "ຫົວໜ່ວຍມຸມທີ່ຕ້ອງການໃຊ້"
+
+#: data/org.mate.calc.gschema.xml:67
+msgid "Button mode"
+msgstr "ໂໝດປຸ່ມກົດ"
+
+#: data/org.mate.calc.gschema.xml:68
+msgid "The button mode"
+msgstr "ໂໝດປຸ່ມກົດ"
+
+#: data/org.mate.calc.gschema.xml:72
+msgid "Source currency"
+msgstr "ສະກຸນເງິນຕົ້ນທາງ"
+
+#: data/org.mate.calc.gschema.xml:73
+msgid "Currency of the current calculation"
+msgstr "ສະກຸນເງິນທີ່ໃຊ້ໃນການຄຳນວນປັດຈຸບັນ"
+
+#: data/org.mate.calc.gschema.xml:77
+msgid "Target currency"
+msgstr "ສະກຸນເງິນປາຍທາງ"
+
+#: data/org.mate.calc.gschema.xml:78
+msgid "Currency to convert the current calculation into"
+msgstr "ສະກຸນເງິນທີ່ຕ້ອງການແປງຄ່າການຄຳນວນປັດຈຸບັນໄປຫາ"
+
+#: data/org.mate.calc.gschema.xml:82
+msgid "Source units"
+msgstr "ຫົວໜ່ວຍຕົ້ນທາງ"
+
+#: data/org.mate.calc.gschema.xml:83
+msgid "Units of the current calculation"
+msgstr "ຫົວໜ່ວຍທີ່ໃຊ້ໃນການຄຳນວນປັດຈຸບັນ"
+
+#: data/org.mate.calc.gschema.xml:87
+msgid "Target units"
+msgstr "ຫົວໜ່ວຍປາຍທາງ"
+
+#: data/org.mate.calc.gschema.xml:88
+msgid "Units to convert the current calculation into"
+msgstr "ຫົວໜ່ວຍທີ່ຕ້ອງການແປງຄ່າການຄຳນວນປັດຈຸບັນໄປຫາ"
+
+#: src/currency-manager.c:31
+msgid "UAE Dirham"
+msgstr "ດີຣາມສະຫະລັດອາຣັບເອມີເຣດ"
+
+#: src/currency-manager.c:32
+msgid "Australian Dollar"
+msgstr "ໂດລາອົດສະຕຣາລີ"
+
+#: src/currency-manager.c:33
+msgid "Bulgarian Lev"
+msgstr "ເລບບຸນກາຣີ"
+
+#: src/currency-manager.c:34
+msgid "Bahraini Dinar"
+msgstr "ດີນາບາເຣນ"
+
+#: src/currency-manager.c:35
+msgid "Brunei Dollar"
+msgstr "ໂດລາບຣູໄນ"
+
+#: src/currency-manager.c:36
+msgid "Brazilian Real"
+msgstr "ຣຽລບຣາຊິນ"
+
+#: src/currency-manager.c:37
+msgid "Botswana Pula"
+msgstr "ພູລາບອດສະວານາ"
+
+#: src/currency-manager.c:38
+msgid "Canadian Dollar"
+msgstr "ໂດລາແຄນາດາ"
+
+#: src/currency-manager.c:39
+msgid "CFA Franc"
+msgstr "ຟຣັງ CFA"
+
+#: src/currency-manager.c:40
+msgid "Swiss Franc"
+msgstr "ຟຣັງສະວິດ"
+
+#: src/currency-manager.c:41
+msgid "Chilean Peso"
+msgstr "ເປໂຊຊີເລ"
+
+#: src/currency-manager.c:42
+msgid "Chinese Yuan"
+msgstr "ຢວນຈີນ"
+
+#: src/currency-manager.c:43
+msgid "Colombian Peso"
+msgstr "ເປໂຊໂຄລົມບີ"
+
+#: src/currency-manager.c:44
+msgid "Czech Koruna"
+msgstr "ໂຄຣູນາເຊັກ"
+
+#: src/currency-manager.c:45
+msgid "Danish Krone"
+msgstr "ໂຄຣນເດນມາກ"
+
+#: src/currency-manager.c:46
+msgid "Algerian Dinar"
+msgstr "ດີນາອັລຈີເຣຍ"
+
+#: src/currency-manager.c:47
+msgid "Estonian Kroon"
+msgstr "ໂຄຣູນເອສໂຕເນຍ"
+
+#: src/currency-manager.c:48
+msgid "Euro"
+msgstr "ເອີໂຣ"
+
+#: src/currency-manager.c:49
+msgid "Pound Sterling"
+msgstr "ປອນສະເຕີລິງ"
+
+#: src/currency-manager.c:50
+msgid "Hong Kong Dollar"
+msgstr "ໂດລາຮົງກົງ"
+
+#: src/currency-manager.c:51
+msgid "Croatian Kuna"
+msgstr "ຄູນາໂຄຣເອເຊຍ"
+
+#: src/currency-manager.c:52
+msgid "Hungarian Forint"
+msgstr "ໂຟຣິນຮັງກາຣີ"
+
+#: src/currency-manager.c:53
+msgid "Indonesian Rupiah"
+msgstr "ຣູເປຍອິນໂດເນເຊຍ"
+
+#: src/currency-manager.c:54
+msgid "Israeli New Shekel"
+msgstr "ນິວເຊເກວອິດສະຣາເອນ"
+
+#: src/currency-manager.c:55
+msgid "Indian Rupee"
+msgstr "ຣູປີອິນເດຍ"
+
+#: src/currency-manager.c:56
+msgid "Iranian Rial"
+msgstr "ຣຽລອີຣ່ານ"
+
+#: src/currency-manager.c:57
+msgid "Icelandic Krona"
+msgstr "ໂຄຣນາໄອສແລນ"
+
+#: src/currency-manager.c:58
+msgid "Japanese Yen"
+msgstr "ເຢນຍີ່ປຸ່ນ"
+
+#: src/currency-manager.c:59
+msgid "South Korean Won"
+msgstr "ວອນເກົາຫຼີໃຕ້"
+
+#: src/currency-manager.c:60
+msgid "Kuwaiti Dinar"
+msgstr "ດີນາຄູເວດ"
+
+#: src/currency-manager.c:61
+msgid "Kazakhstani Tenge"
+msgstr "ເຕັງເກກາຊັກສະຖານ"
+
+#: src/currency-manager.c:62
+msgid "Sri Lankan Rupee"
+msgstr "ຣູປີສີລັງກາ"
+
+#: src/currency-manager.c:63
+msgid "Lithuanian Litas"
+msgstr "ລີຕາສລີທົວເນຍ"
+
+#: src/currency-manager.c:64
+msgid "Latvian Lats"
+msgstr "ລັດສລັດເວຍ"
+
+#: src/currency-manager.c:65
+msgid "Libyan Dinar"
+msgstr "ດີນາລີບີ"
+
+#: src/currency-manager.c:66
+msgid "Mauritian Rupee"
+msgstr "ຣູປີມໍຣິເຊຍ"
+
+#: src/currency-manager.c:67
+msgid "Mexican Peso"
+msgstr "ເປໂຊເມັກຊິໂກ"
+
+#: src/currency-manager.c:68
+msgid "Malaysian Ringgit"
+msgstr "ຣິງກິດມາເລເຊຍ"
+
+#: src/currency-manager.c:69
+msgid "Norwegian Krone"
+msgstr "ໂຄຣນນໍເວ"
+
+#: src/currency-manager.c:70
+msgid "Nepalese Rupee"
+msgstr "ຣູປີເນປານ"
+
+#: src/currency-manager.c:71
+msgid "New Zealand Dollar"
+msgstr "ໂດລານິວຊີແລນ"
+
+#: src/currency-manager.c:72
+msgid "Omani Rial"
+msgstr "ຣຽລໂອມານ"
+
+#: src/currency-manager.c:73
+msgid "Peruvian Nuevo Sol"
+msgstr "ນູເອບໂວໂຊນເປຣູ"
+
+#: src/currency-manager.c:74
+msgid "Philippine Peso"
+msgstr "ເປໂຊຟີລິບປິນ"
+
+#: src/currency-manager.c:75
+msgid "Pakistani Rupee"
+msgstr "ຣູປີປາກິດສະຖານ"
+
+#: src/currency-manager.c:76
+msgid "Polish Zloty"
+msgstr "ຊລອຕີໂປໂລຍ"
+
+#: src/currency-manager.c:77
+msgid "Qatari Riyal"
+msgstr "ຣຽລກາຕາ"
+
+#: src/currency-manager.c:78
+msgid "New Romanian Leu"
+msgstr "ນິວລິວໂຣມາເນຍ"
+
+#: src/currency-manager.c:79
+msgid "Russian Rouble"
+msgstr "ຣູເບີນຣັດເຊຍ"
+
+#: src/currency-manager.c:80
+msgid "Saudi Riyal"
+msgstr "ຣຽລຊາອຸດີ"
+
+#: src/currency-manager.c:81
+msgid "Swedish Krona"
+msgstr "ໂຄຣນາສະວີເດັນ"
+
+#: src/currency-manager.c:82
+msgid "Singapore Dollar"
+msgstr "ໂດລາສິງກະໂປ"
+
+#: src/currency-manager.c:83
+msgid "Thai Baht"
+msgstr "ບາດໄທ"
+
+#: src/currency-manager.c:84
+msgid "Tunisian Dinar"
+msgstr "ດີນາຕູນີເຊຍ"
+
+#: src/currency-manager.c:85
+msgid "New Turkish Lira"
+msgstr "ນິວລີຣາຕວກກີ"
+
+#: src/currency-manager.c:86
+msgid "T&T Dollar (TTD)"
+msgstr "ໂດລາຕຣິນິດາດ ແລະ ໂຕເບໂກ (TTD)"
+
+#: src/currency-manager.c:87
+msgid "US Dollar"
+msgstr "ໂດລາສະຫະລັດ"
+
+#: src/currency-manager.c:88
+msgid "Uruguayan Peso"
+msgstr "ເປໂຊອູຣູກວາຍ"
+
+#: src/currency-manager.c:89
+msgid "Venezuelan Bolívar"
+msgstr "ໂບລິວາເວເນຊູເອລາ"
+
+#: src/currency-manager.c:90
+msgid "South African Rand"
+msgstr "ຣານອາຟຣິກາໃຕ້"
+
+#: src/financial.c:78
+msgid "Error: the number of periods must be positive"
+msgstr "ຜິດພາດ: ຈຳນວນງວດຕ້ອງເປັນຄ່າບວກ"
+
+#. Description on how to use mate-calc displayed on command-line
+#: src/mate-calc.c:86
+#, c-format
+msgid ""
+"Usage:\n"
+"  %s — Perform mathematical calculations"
+msgstr ""
+"ວິທີໃຊ້:\n"
+"  %s — ຄຳນວນທາງຄະນິດສາດ"
+
+#. Description on mate-calc command-line help options displayed on command-line
+#: src/mate-calc.c:94
+#, c-format
+msgid ""
+"Help Options:\n"
+"  -v, --version                   Show release version\n"
+"  -h, -?, --help                  Show help options\n"
+"  --help-all                      Show all help options\n"
+"  --help-gtk                      Show GTK+ options"
+msgstr ""
+"ທາງເລືອກຄວາມຊ່ວຍເຫຼືອ:\n"
+"  -v, --version                   ສະແດງເວີຊັນລຸ້ນ\n"
+"  -h, -?, --help                  ສະແດງທາງເລືອກຄວາມຊ່ວຍເຫຼືອ\n"
+"  --help-all                      ສະແດງທາງເລືອກຄວາມຊ່ວຍເຫຼືອທັງໝົດ\n"
+"  --help-gtk                      ສະແດງທາງເລືອກ GTK+"
+
+#. Description on mate-calc command-line GTK+ options displayed on command-line
+#: src/mate-calc.c:105
+#, c-format
+msgid ""
+"GTK+ Options:\n"
+"  --class=CLASS                   Program class as used by the window "
+"manager\n"
+"  --name=NAME                     Program name as used by the window "
+"manager\n"
+"  --screen=SCREEN                 X screen to use\n"
+"  --sync                          Make X calls synchronous\n"
+"  --gtk-module=MODULES            Load additional GTK+ modules\n"
+"  --g-fatal-warnings              Make all warnings fatal"
+msgstr ""
+"ທາງເລືອກ GTK+:\n"
+"  --class=CLASS                   ຄລາດຂອງໂປຣແກຣມທີ່ໃຊ້ໂດຍຕົວຈັດການໜ້າຕ່າງ\n"
+"  --name=NAME                     ຊື່ໂປຣແກຣມທີ່ໃຊ້ໂດຍຕົວຈັດການໜ້າຕ່າງ\n"
+"  --screen=SCREEN                 ໜ້າຈໍ X ທີ່ຕ້ອງການໃຊ້\n"
+"  --sync                          ເຮັດໃຫ້ການຮຽກ X ເປັນແບບຊິງໂຄຣນັດ\n"
+"  --gtk-module=MODULES            ໂຫຼດໂມດູນ GTK+ ເພີ່ມເຕີມ\n"
+"  --g-fatal-warnings              ເຮັດໃຫ້ທຸກຄຳເຕືອນກາຍເປັນຂໍ້ຜິດພາດຮ້າຍແຮງ"
+
+#. Description on mate-calc application options displayed on command-line
+#: src/mate-calc.c:119
+#, c-format
+msgid ""
+"Application Options:\n"
+"  -s, --solve <equation>          Solve the given equation"
+msgstr ""
+"ທາງເລືອກແອັບພລິເຄຊັນ:\n"
+"  -s, --solve <equation>          ແກ້ສົມຜົນທີ່ກຳນົດໃຫ້"
+
+#. Error printed to stderr when user uses --solve argument without an equation
+#: src/mate-calc.c:166
+#, c-format
+msgid "Argument --solve requires an equation to solve"
+msgstr "ອາກິວເມັ້ນ --solve ຕ້ອງການສົມຜົນເພື່ອແກ້"
+
+#. Error printed to stderr when user provides an unknown command-line argument
+#: src/mate-calc.c:179
+#, c-format
+msgid "Unknown argument '%s'"
+msgstr "ບໍ່ຮູ້ຈັກອາກິວເມັ້ນ '%s'"
+
+#. Tooltip for the Pi button
+#: src/math-buttons.c:93
+msgid "Pi [Ctrl+P]"
+msgstr "ພາຍ (Pi) [Ctrl+P]"
+
+#. Tooltip for the Euler's Number button
+#: src/math-buttons.c:96
+msgid "Euler’s Number"
+msgstr "ເລກຂອງ Euler"
+
+#. Tooltip for the imaginary number button
+#: src/math-buttons.c:99
+msgid "Imaginary unit"
+msgstr "ໜ່ວຍຈິນຕະພາບ"
+
+#. Tooltip for the numeric point button
+#: src/math-buttons.c:102
+msgid "Decimal point"
+msgstr "ຈຸດທົດສະນິຍົມ"
+
+#. Tooltip for the subscript button
+#: src/math-buttons.c:105
+msgid "Subscript mode [Alt]"
+msgstr "ໂໝດຕົວຫ້ອຍລຸ່ມ [Alt]"
+
+#. Tooltip for the superscript button
+#: src/math-buttons.c:108
+msgid "Superscript mode [Ctrl]"
+msgstr "ໂໝດຕົວຫ້ອຍເທິງ [Ctrl]"
+
+#. Tooltip for the scientific exponent button
+#: src/math-buttons.c:111
+msgid "Scientific exponent [Ctrl+E]"
+msgstr "ເລກກຳລັງທາງວິທະຍາສາດ [Ctrl+E]"
+
+#. Tooltip for the add button
+#: src/math-buttons.c:114
+msgid "Add [+]"
+msgstr "ບວກ [+]"
+
+#. Tooltip for the subtract button
+#: src/math-buttons.c:117
+msgid "Subtract [-]"
+msgstr "ລົບ [-]"
+
+#. Tooltip for the multiply button
+#: src/math-buttons.c:120
+msgid "Multiply [*]"
+msgstr "ຄູນ [*]"
+
+#. Tooltip for the divide button
+#: src/math-buttons.c:123
+msgid "Divide [/]"
+msgstr "ຫານ [/]"
+
+#. Tooltip for the modulus divide button
+#: src/math-buttons.c:126
+msgid "Modulus divide"
+msgstr "ຫານເອົາເສດ (Modulus)"
+
+#. Tooltip for the additional functions button
+#: src/math-buttons.c:129
+msgid "Additional Functions"
+msgstr "ຟັງຊັນເພີ່ມເຕີມ"
+
+#. Tooltip for the additional constant button
+#: src/math-buttons.c:132
+msgid "Additional constants"
+msgstr "ຄ່າຄົງທີ່ເພີ່ມເຕີມ"
+
+#. Tooltip for the exponent button
+#: src/math-buttons.c:135
+msgid "Exponent [^ or **]"
+msgstr "ເລກກຳລັງ [^ ຫຼື **]"
+
+#. Tooltip for the square button
+#: src/math-buttons.c:138
+msgid "Square [Ctrl+2]"
+msgstr "ຍົກກຳລັງສອງ [Ctrl+2]"
+
+#. Tooltip for the percentage button
+#: src/math-buttons.c:141
+msgid "Percentage [%]"
+msgstr "ເປີເຊັນ [%]"
+
+#. Tooltip for the factorial button
+#: src/math-buttons.c:144
+msgid "Factorial [!]"
+msgstr "ແຟັກທໍຣຽນ [!]"
+
+#. Tooltip for the absolute value button
+#: src/math-buttons.c:147
+msgid "Absolute value [|]"
+msgstr "ຄ່າສຳບູນ [|]"
+
+#. Tooltip for the complex argument component button
+#: src/math-buttons.c:150
+msgid "Complex argument"
+msgstr "ອາກິວເມັ້ນຂອງຈຳນວນຊັບຊ້ອນ"
+
+#. Tooltip for the complex conjugate button
+#: src/math-buttons.c:153
+msgid "Complex conjugate"
+msgstr "ຄອນຈູເກດຂອງຈຳນວນຊັບຊ້ອນ"
+
+#. Tooltip for the root button
+#: src/math-buttons.c:156
+msgid "Root [Ctrl+R]"
+msgstr "ຮາກ [Ctrl+R]"
+
+#. Tooltip for the square root button
+#: src/math-buttons.c:159
+msgid "Square root [Ctrl+R]"
+msgstr "ຮາກຂັ້ນສອງ [Ctrl+R]"
+
+#. Tooltip for the logarithm button
+#: src/math-buttons.c:162
+msgid "Logarithm"
+msgstr "ລອກກາຣິດ"
+
+#. Tooltip for the natural logarithm button
+#: src/math-buttons.c:165
+msgid "Natural Logarithm"
+msgstr "ລອກກາຣິດທຳມະຊາດ"
+
+#. Tooltip for the sine button
+#: src/math-buttons.c:168
+msgid "Sine"
+msgstr "ຊາຍ (Sine)"
+
+#. Tooltip for the cosine button
+#: src/math-buttons.c:171
+msgid "Cosine"
+msgstr "ໂຄຊາຍ (Cosine)"
+
+#. Tooltip for the tangent button
+#: src/math-buttons.c:174
+msgid "Tangent"
+msgstr "ແທນເຈນ (Tangent)"
+
+#. Tooltip for the hyperbolic sine button
+#: src/math-buttons.c:177
+msgid "Hyperbolic Sine"
+msgstr "ໄຮເປີໂບລິກຊາຍ"
+
+#. Tooltip for the hyperbolic cosine button
+#: src/math-buttons.c:180
+msgid "Hyperbolic Cosine"
+msgstr "ໄຮເປີໂບລິກໂຄຊາຍ"
+
+#. Tooltip for the hyperbolic tangent button
+#: src/math-buttons.c:183
+msgid "Hyperbolic Tangent"
+msgstr "ໄຮເປີໂບລິກແທນເຈນ"
+
+#. Tooltip for the inverse sine button
+#: src/math-buttons.c:186
+msgid "Inverse Sine"
+msgstr "ອາກຊາຍ (Inverse Sine)"
+
+#. Tooltip for the inverse cosine button
+#: src/math-buttons.c:189
+msgid "Inverse Cosine"
+msgstr "ອາກໂຄຊາຍ (Inverse Cosine)"
+
+#. Tooltip for the inverse tangent button
+#: src/math-buttons.c:192
+msgid "Inverse Tangent"
+msgstr "ອາກແທນເຈນ (Inverse Tangent)"
+
+#. Tooltip for the inverse button
+#: src/math-buttons.c:195
+msgid "Inverse [Ctrl+I]"
+msgstr "ຜັນກັບ [Ctrl+I]"
+
+#. Tooltip for the boolean AND button
+#: src/math-buttons.c:198
+msgid "Boolean AND"
+msgstr "ບູລີນ AND"
+
+#. Tooltip for the boolean OR button
+#: src/math-buttons.c:201
+msgid "Boolean OR"
+msgstr "ບູລີນ OR"
+
+#. Tooltip for the exclusive OR button
+#: src/math-buttons.c:204
+msgid "Boolean Exclusive OR"
+msgstr "ບູລີນ Exclusive OR"
+
+#. Tooltip for the boolean NOT button
+#: src/math-buttons.c:207
+msgid "Boolean NOT"
+msgstr "ບູລີນ NOT"
+
+#. Tooltip for the integer component button
+#: src/math-buttons.c:210 src/math-buttons.c:972
+msgid "Integer Component"
+msgstr "ສ່ວນຈຳນວນເຕັມ"
+
+#. Tooltip for the fractional component button
+#: src/math-buttons.c:213 src/math-buttons.c:974
+msgid "Fractional Component"
+msgstr "ສ່ວນເສດ"
+
+#. Tooltip for the real component button
+#: src/math-buttons.c:216
+msgid "Real Component"
+msgstr "ສ່ວນຈິງ"
+
+#. Tooltip for the imaginary component button
+#: src/math-buttons.c:219
+msgid "Imaginary Component"
+msgstr "ສ່ວນຈິນຕະພາບ"
+
+#. Tooltip for the ones' complement button
+#: src/math-buttons.c:222
+msgid "Ones' Complement"
+msgstr "ສ່ວນປະກອບແບບ Ones' complement"
+
+#. Tooltip for the two's complement button
+#: src/math-buttons.c:225
+msgid "Two's Complement"
+msgstr "ສ່ວນປະກອບແບບ Two's complement"
+
+#. Tooltip for the start group button
+#: src/math-buttons.c:228
+msgid "Start Group [(]"
+msgstr "ເລີ່ມກຸ່ມ [(]"
+
+#. Tooltip for the end group button
+#: src/math-buttons.c:231
+msgid "End Group [)]"
+msgstr "ຈົບກຸ່ມ [)]"
+
+#. Tooltip for the solve button
+#: src/math-buttons.c:240
+msgid "Calculate Result"
+msgstr "ຄຳນວນຜົນລັພ"
+
+#. Tooltip for the factor button
+#: src/math-buttons.c:243
+msgid "Factorize [Ctrl+F]"
+msgstr "ແຍກຕົວປະກອບ [Ctrl+F]"
+
+#. Tooltip for the clear button
+#: src/math-buttons.c:246
+msgid "Clear Display [Escape]"
+msgstr "ລຶບໜ້າຈໍ [Escape]"
+
+#. Tooltip for the undo button
+#: src/math-buttons.c:249
+msgid "Undo [Ctrl+Z]"
+msgstr "ຍົກເລີກ [Ctrl+Z]"
+
+#. Tooltip for the shift left button
+#: src/math-buttons.c:252
+msgid "Shift Left [<<]"
+msgstr "ເລື່ອນຊ້າຍ [<<]"
+
+#. Tooltip for the shift right button
+#: src/math-buttons.c:255
+msgid "Shift Right [>>]"
+msgstr "ເລື່ອນຂວາ [>>]"
+
+#. Tooltip for the double declining depreciation button
+#: src/math-buttons.c:261
+msgid "Double Declining Depreciation"
+msgstr "ການຄິດຄ່າເສື່ອມລາຄາແບບຫຼຸດລົງເທົ່າຕົວ"
+
+#. Tooltip for the financial term button
+#: src/math-buttons.c:267
+msgid "Financial Term"
+msgstr "ໄລຍະເວລາທາງການເງິນ"
+
+#. Tooltip for the sum of the years digits depreciation button
+#: src/math-buttons.c:270
+msgid "Sum of the Years Digits Depreciation"
+msgstr "ການຄິດຄ່າເສື່ອມລາຄາແບບຜົນລວມຂອງຕົວເລກປີ"
+
+#. Tooltip for the straight line depreciation button
+#: src/math-buttons.c:273
+msgid "Straight Line Depreciation"
+msgstr "ການຄິດຄ່າເສື່ອມລາຄາແບບເສັ້ນຊື່"
+
+#. Number display mode combo: Binary, e.g. 10011010010₂
+#: src/math-buttons.c:624
+msgid "Binary"
+msgstr "ເລກຖານສອງ"
+
+#. Number display mode combo: Octal, e.g. 2322₈
+#: src/math-buttons.c:628
+msgid "Octal"
+msgstr "ເລກຖານແປດ"
+
+#. Number display mode combo: Decimal, e.g. 1234
+#: src/math-buttons.c:632
+msgid "Decimal"
+msgstr "ເລກຖານສິບ"
+
+#. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
+#: src/math-buttons.c:636
+msgid "Hexadecimal"
+msgstr "ເລກຖານສິບຫົກ"
+
+#. Left Shift Popup: Menu item to shift left by n places (n < 10)
+#. Right Shift Popup: Menu item to shift right by n places (n < 10)
+#: src/math-buttons.c:888 src/math-buttons.c:929
+#, c-format
+msgid "_%d place"
+msgid_plural "_%d places"
+msgstr[0] "_%d ຕຳແໜ່ງ"
+
+#. Left Shift Popup: Menu item to shift left by n places (n >= 10)
+#. Right Shift Popup: Menu item to shift right by n places (n >= 10)
+#: src/math-buttons.c:892 src/math-buttons.c:933
+#, c-format
+msgid "%d place"
+msgid_plural "%d places"
+msgstr[0] "%d ຕຳແໜ່ງ"
+
+#. Tooltip for the round button
+#: src/math-buttons.c:976
+msgid "Round"
+msgstr "ປັດເສດ"
+
+#. Tooltip for the floor button
+#: src/math-buttons.c:978
+msgid "Floor"
+msgstr "ພື້ນ (Floor)"
+
+#. Tooltip for the ceiling button
+#: src/math-buttons.c:980
+msgid "Ceiling"
+msgstr "ເພດານ (Ceiling)"
+
+#. Tooltip for the ceiling button
+#: src/math-buttons.c:982
+msgid "Sign"
+msgstr "ເຄື່ອງໝາຍ"
+
+#. Tooltip for the c₀ component button
+#: src/math-buttons.c:1023
+msgid "Velocity of Light"
+msgstr "ຄວາມໄວແສງ"
+
+#: src/math-buttons.c:1023
+msgid "299,792,458 m/s"
+msgstr "299,792,458 m/s"
+
+#. Tooltip for the μ₀ component button
+#: src/math-buttons.c:1025
+msgid "Magnetic constant"
+msgstr "ຄ່າຄົງທີ່ແມ່ເຫຼັກ"
+
+#: src/math-buttons.c:1025
+msgid "1.2566370614×10⁻⁶ N/A²"
+msgstr "1.2566370614×10⁻⁶ N/A²"
+
+#. Tooltip for the ε₀ button
+#: src/math-buttons.c:1027
+msgid "Electric constant"
+msgstr "ຄ່າຄົງທີ່ໄຟຟ້າ"
+
+#: src/math-buttons.c:1027
+msgid "8.85418782×10⁻¹² s⁴A²/m³kg"
+msgstr "8.85418782×10⁻¹² s⁴A²/m³kg"
+
+#. Tooltip for the G button
+#: src/math-buttons.c:1029
+msgid "Newtonian constant of gravitation"
+msgstr "ຄ່າຄົງທີ່ຄວາມໂນ້ມຖ່ວງຂອງນິວຕັນ"
+
+#: src/math-buttons.c:1029
+msgid "6.67408×10⁻¹¹ m³/(s²kg)"
+msgstr "6.67408×10⁻¹¹ m³/(s²kg)"
+
+#. Tooltip for the h button
+#: src/math-buttons.c:1031
+msgid "Planck constant"
+msgstr "ຄ່າຄົງທີ່ພລັງຄ໌"
+
+#: src/math-buttons.c:1031
+msgid "6.62607004×10⁻³⁴ m²kg/s"
+msgstr "6.62607004×10⁻³⁴ m²kg/s"
+
+#. Tooltip for the ｅ button
+#: src/math-buttons.c:1033
+msgid "Elementary charge"
+msgstr "ປະຈຸໄຟຟ້າມູນຖານ"
+
+#: src/math-buttons.c:1033
+msgid "1.6021766208(98)×10⁻¹⁹ C"
+msgstr "1.6021766208(98)×10⁻¹⁹ C"
+
+#. Tooltip for the mₑ button
+#: src/math-buttons.c:1035
+msgid "Electron mass"
+msgstr "ມວນອິເລັກຕຣອນ"
+
+#: src/math-buttons.c:1035
+msgid "9.10938356×10⁻³¹ kg"
+msgstr "9.10938356×10⁻³¹ kg"
+
+#. Tooltip for the mₚ button
+#: src/math-buttons.c:1037
+msgid "Proton mass"
+msgstr "ມວນໂປຣຕອນ"
+
+#: src/math-buttons.c:1037
+msgid "1.672621898(21)×10⁻²⁷ kg"
+msgstr "1.672621898(21)×10⁻²⁷ kg"
+
+#. Tooltip for the Nₐ button
+#: src/math-buttons.c:1039
+msgid "Avogadro constant"
+msgstr "ຄ່າຄົງທີ່ອາໂວກາໂດຣ"
+
+#: src/math-buttons.c:1039
+msgid "6.02214086×10²³ mol⁻¹"
+msgstr "6.02214086×10²³ mol⁻¹"
+
+#. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
+#: src/math-converter.c:401
+msgid " in "
+msgstr " ໃນ "
+
+#. Tooltip for swap conversion button
+#: src/math-converter.c:416
+msgid "Switch conversion units"
+msgstr "ສະຫຼັບຫົວໜ່ວຍການແປງ"
+
+#. Error shown when trying to undo with no undo history
+#: src/math-equation.c:444
+msgid "No undo history"
+msgstr "ບໍ່ມີປະຫວັດການຍົກເລີກ"
+
+#. Error shown when trying to redo with no redo history
+#: src/math-equation.c:470
+msgid "No redo history"
+msgstr "ບໍ່ມີປະຫວັດການເຮັດຊ້ຳ"
+
+#: src/math-equation.c:917
+msgid "No sane value to store"
+msgstr "ບໍ່ມີຄ່າທີ່ເໝາະສົມໃຫ້ບັນທຶກ"
+
+#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
+#: src/math-equation.c:1210
+msgid "Overflow. Try a bigger word size"
+msgstr "ຄ່າລົ້ນ. ລອງໃຊ້ຂະໜາດຄຳທີ່ໃຫຍ່ຂຶ້ນ"
+
+#. Error displayed to user when they an unknown variable is entered
+#: src/math-equation.c:1215
+#, c-format
+msgid "Unknown variable '%s'"
+msgstr "ບໍ່ຮູ້ຈັກຕົວປ່ຽນ '%s'"
+
+#. Error displayed to user when an unknown function is entered
+#: src/math-equation.c:1220
+#, c-format
+msgid "Function '%s' is not defined"
+msgstr "ຟັງຊັນ '%s' ບໍ່ໄດ້ຖືກນິຍາມໄວ້"
+
+#. Error displayed to user when an conversion with unknown units is attempted
+#: src/math-equation.c:1225
+msgid "Unknown conversion"
+msgstr "ບໍ່ຮູ້ຈັກການແປງຫົວໜ່ວຍ"
+
+#. Uncategorized error. Show error token to user
+#: src/math-equation.c:1233
+#, c-format
+msgid "Malformed expression at token '%s'"
+msgstr "ນິພົດຜິດຮູບທີ່ໂທເຄັນ '%s'"
+
+#. Unknown error.
+#. Error displayed to user when they enter an invalid calculation
+#: src/math-equation.c:1236 src/math-equation.c:1241
+msgid "Malformed expression"
+msgstr "ນິພົດຜິດຮູບ"
+
+#: src/math-equation.c:1255
+msgid "Calculating"
+msgstr "ກຳລັງຄຳນວນ"
+
+#. Error displayed when trying to factorize a non-integer value
+#: src/math-equation.c:1390
+msgid "Need an integer to factorize"
+msgstr "ຕ້ອງການຈຳນວນເຕັມເພື່ອແຍກຕົວປະກອບ"
+
+#. This message is displayed in the status bar when a bit
+#. shift operation is performed and the display does not contain a number
+#: src/math-equation.c:1459
+msgid "No sane value to bitwise shift"
+msgstr "ບໍ່ມີຄ່າທີ່ເໝາະສົມສຳລັບການເລື່ອນບິດ"
+
+#. Message displayed when cannot toggle bit in display
+#: src/math-equation.c:1491
+msgid "Displayed value not an integer"
+msgstr "ຄ່າທີ່ສະແດງບໍ່ແມ່ນຈຳນວນເຕັມ"
+
+#. Digits localized for the given language
+#: src/math-equation.c:1929
+msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
+msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
+
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
+#: src/math-preferences.c:238 src/unit-manager.c:51
+msgid "Degrees"
+msgstr "ອົງສາ"
+
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
+#: src/math-preferences.c:242 src/unit-manager.c:52
+msgid "Radians"
+msgstr "ເຣດຽນ"
+
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
+#: src/math-preferences.c:246 src/unit-manager.c:53
+msgid "Gradians"
+msgstr "ກຣາດຽນ"
+
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
+#: src/math-preferences.c:256
+msgid "Automatic"
+msgstr "ອັດຕະໂນມັດ"
+
+#. Number display mode combo: Fixed, e.g. 1234
+#: src/math-preferences.c:260
+msgid "Fixed"
+msgstr "ຄົງທີ່"
+
+#. Number display mode combo: Scientific, e.g. 1.234×10^3
+#: src/math-preferences.c:264
+msgid "Scientific"
+msgstr "ວິທະຍາສາດ"
+
+#. Number display mode combo: Engineering, e.g. 1.234k
+#: src/math-preferences.c:268
+msgid "Engineering"
+msgstr "ວິສະວະກຳ"
+
+#. Label used in preferences dialog.  The %d is replaced by a spinbutton
+#: src/math-preferences.c:279
+#, c-format
+msgid "Show %d decimal _places"
+msgstr "ສະແດງ %d ຕຳແໜ່ງ_ທົດສະນິຍົມ"
+
+#. Translators: Error message displayed when unable to launch help browser
+#: src/math-window.c:292
+msgid "Unable to open help file"
+msgstr "ບໍ່ສາມາດເປີດໄຟລ໌ຊ່ວຍເຫຼືອໄດ້"
+
+#: src/math-window.c:310
+msgid "Sun Microsystems"
+msgstr "Sun Microsystems"
+
+#: src/math-window.c:311
+msgid "MATE Documentation Team"
+msgstr "ທີມງານເອກະສານ MATE"
+
+#: src/math-window.c:317
+msgid ""
+"MATE Calculator is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"ເຄື່ອງຄິດເລກ MATE ເປັນຊອບແວເສລີ; ເຈົ້າສາມາດເຜີຍແຜ່ຕໍ່ ແລະ/ຫຼື ດັດແປງໄດ້ພາຍໃຕ້ເງື່ອນໄຂຂອງ GNU "
+"General Public License ທີ່ຈັດພິມໂດຍ Free Software Foundation; ບໍ່ວ່າຈະເປັນເວີຊັນ 2 ຂອງໃ"
+"ບອະນຸຍາດ ຫຼື (ຕາມທີ່ເຈົ້າເລືອກ) ເວີຊັນໃດກໍໄດ້ທີ່ໃໝ່ກວ່ານັ້ນ."
+
+#: src/math-window.c:321
+msgid ""
+"MATE Calculator is distributed in the hope that it will be useful, but "
+"WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"ເຄື່ອງຄິດເລກ MATE ຖືກແຈກຢາຍດ້ວຍຄວາມຫວັງວ່າມັນຈະເປັນປະໂຫຍດ ແຕ່ບໍ່ມີການຮັບປະກັນໃດໆ; ບໍ່ມີແມ້ແຕ່ການຮັ"
+"ບປະກັນໂດຍນິໄສໃນດ້ານການຄ້າ ຫຼື ຄວາມເໝາະສົມສຳລັບຈຸດປະສົງສະເພາະ. ເບິ່ງ GNU General Public "
+"License ສຳລັບລາຍລະອຽດເພີ່ມເຕີມ."
+
+#: src/math-window.c:325
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"MATE Calculator; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+"ເຈົ້າຄວນຈະໄດ້ຮັບສຳເນົາຂອງ GNU General Public License ມາພ້ອມກັບເຄື່ອງຄິດເລກ MATE; ຖ້າບໍ່ໄດ້ຮັ"
+"ບ, ກະລຸນາຂຽນຫາ Free Software Foundation, Inc., 51 Franklin Street, Fifth "
+"Floor, Boston, MA 02110-1301, USA."
+
+#: src/math-window.c:362
+#, c-format
+msgid ""
+"Calculator with financial and scientific modes.\n"
+"Using GNU MPFR %s and GNU MPC %s"
+msgstr ""
+"ເຄື່ອງຄິດເລກພ້ອມໂໝດການເງິນ ແລະ ວິທະຍາສາດ.\n"
+"ໃຊ້ GNU MPFR %s ແລະ GNU MPC %s"
+
+#: src/math-window.c:368
+msgid "About MATE Calculator"
+msgstr "ກ່ຽວກັບເຄື່ອງຄິດເລກ MATE"
+
+#: src/math-window.c:369
+msgid ""
+"Copyright © 1986–2010 The GCalctool authors\n"
+"Copyright © 2011-2021 MATE developers"
+msgstr ""
+"ລິຂະສິດ © 1986–2010 ຜູ້ຂຽນ GCalctool\n"
+"ລິຂະສິດ © 2011-2021 ນັກພັດທະນາ MATE"
+
+#: src/math-window.c:375
+msgid "translator-credits"
+msgstr "ທີມງານແປພາສາລາວ"
+
+#. Calculator menu
+#: src/math-window.c:523
+msgid "_Calculator"
+msgstr "_ເຄື່ອງຄິດເລກ"
+
+#. Mode menu
+#: src/math-window.c:525
+msgid "_Mode"
+msgstr "_ໂໝດ"
+
+#. View menu
+#: src/math-window.c:527
+msgid "_View"
+msgstr "_ມຸມມອງ"
+
+#. Help menu label
+#: src/math-window.c:529
+msgid "_Help"
+msgstr "_ຊ່ວຍເຫຼືອ"
+
+#. Basic menu label
+#: src/math-window.c:531
+msgid "_Basic"
+msgstr "_ພື້ນຖານ"
+
+#. Advanced menu label
+#: src/math-window.c:533
+msgid "_Advanced"
+msgstr "_ຂັ້ນສູງ"
+
+#. Financial menu label
+#: src/math-window.c:535
+msgid "_Financial"
+msgstr "_ການເງິນ"
+
+#. Programming menu label
+#: src/math-window.c:537
+msgid "_Programming"
+msgstr "_ການຂຽນໂປຣແກຣມ"
+
+#. History menu label
+#: src/math-window.c:539
+msgid "_History"
+msgstr "_ປະຫວັດ"
+
+#. Help>Contents menu label
+#: src/math-window.c:541
+msgid "_Contents"
+msgstr "_ເນື້ອຫາ"
+
+#: src/math-window.c:544
+msgid "_Copy"
+msgstr "_ສຳເນົາ"
+
+#: src/math-window.c:546
+msgid "_Paste"
+msgstr "_ວາງ"
+
+#: src/math-window.c:548
+msgid "_Undo"
+msgstr "_ຍົກເລີກ"
+
+#: src/math-window.c:550
+msgid "_Redo"
+msgstr "_ເຮັດຊ້ຳ"
+
+#: src/math-window.c:552
+msgid "_Clear History"
+msgstr "_ລຶບປະຫວັດ"
+
+#: src/math-window.c:555
+msgid "_Preferences"
+msgstr "_ການຕັ້ງຄ່າ"
+
+#: src/math-window.c:557
+msgid "_Quit"
+msgstr "_ອອກ"
+
+#: src/math-window.c:578
+msgid "_About"
+msgstr "_ກ່ຽວກັບ"
+
+#. Translators: Error displayed when boolean AND attempted on non-integer values
+#: src/mp-binary.c:114
+msgid "Boolean AND is only defined for positive integers"
+msgstr "ບູລີນ AND ຖືກນິຍາມໄວ້ສຳລັບຈຳນວນເຕັມບວກເທົ່ານັ້ນ"
+
+#. Translators: Error displayed when boolean OR attempted on non-integer values
+#: src/mp-binary.c:126
+msgid "Boolean OR is only defined for positive integers"
+msgstr "ບູລີນ OR ຖືກນິຍາມໄວ້ສຳລັບຈຳນວນເຕັມບວກເທົ່ານັ້ນ"
+
+#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#: src/mp-binary.c:138
+msgid "Boolean XOR is only defined for positive integers"
+msgstr "ບູລີນ XOR ຖືກນິຍາມໄວ້ສຳລັບຈຳນວນເຕັມບວກເທົ່ານັ້ນ"
+
+#. Translators: Error displayed when boolean NOT attempted on non-integer values
+#: src/mp-binary.c:154
+msgid "Boolean NOT is only defined for positive integers"
+msgstr "ບູລີນ NOT ຖືກນິຍາມໄວ້ສຳລັບຈຳນວນເຕັມບວກເທົ່ານັ້ນ"
+
+#. Translators: Error displayed when bit shift attempted on non-integer values
+#: src/mp-binary.c:166
+msgid "Shift is only possible on integer values"
+msgstr "ການເລື່ອນບິດເຮັດໄດ້ສະເພາະກັບຄ່າຈຳນວນເຕັມເທົ່ານັ້ນ"
+
+#. Translators: Error display when attempting to take argument of zero
+#: src/mp.c:123
+msgid "Argument not defined for zero"
+msgstr "ອາກິວເມັ້ນບໍ່ຖືກນິຍາມສຳລັບສູນ"
+
+#. Translators: Error displayed attempted to divide by zero
+#: src/mp.c:236
+msgid "Division by zero is undefined"
+msgstr "ການຫານດ້ວຍສູນບໍ່ໄດ້ຖືກນິຍາມ"
+
+#. Translators: Error displayed when attempting to take logarithm of zero
+#: src/mp.c:343 src/mp.c:371
+msgid "Logarithm of zero is undefined"
+msgstr "ລອກກາຣິດຂອງສູນບໍ່ໄດ້ຖືກນິຍາມ"
+
+#. Translators: Error displayed when attempting to take zeroth root
+#: src/mp.c:434
+msgid "The zeroth root of a number is undefined"
+msgstr "ຮາກຂັ້ນສູນຂອງຕົວເລກໃດໜຶ່ງບໍ່ໄດ້ຖືກນິຍາມ"
+
+#. Translators: Error displayed when attempted take the factorial of a negative or complex number
+#: src/mp.c:474
+msgid "Factorial is only defined for non-negative real numbers"
+msgstr "ແຟັກທໍຣຽນຖືກນິຍາມໄວ້ສຳລັບຈຳນວນຈິງທີ່ບໍ່ແມ່ນຄ່າລົບເທົ່ານັ້ນ"
+
+#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
+#: src/mp.c:504
+msgid "Modulus division is only defined for integers"
+msgstr "ການຫານເອົາເສດຖືກນິຍາມໄວ້ສຳລັບຈຳນວນເຕັມເທົ່ານັ້ນ"
+
+#. Translators: Error displayed when attempted to raise 0 to a negative exponent
+#. Translators: Error displayed when attempted to raise 0 to a negative re_exponent
+#: src/mp.c:575 src/mp.c:602
+msgid "The power of zero is undefined for a negative exponent"
+msgstr "ເລກກຳລັງຂອງສູນບໍ່ໄດ້ຖືກນິຍາມສຳລັບເລກກຳລັງທີ່ເປັນຄ່າລົບ"
+
+#. Translators: Error displayed when error function (erf) value is undefined
+#: src/mp.c:615
+msgid "The error function is only defined for real numbers"
+msgstr "ຟັງຊັນຄວາມຜິດພາດ (erf) ຖືກນິຍາມໄວ້ສຳລັບຈຳນວນຈິງເທົ່ານັ້ນ"
+
+#. Translators: Error displayed when zeta function value is undefined
+#: src/mp.c:632
+msgid "The Riemann zeta function is only defined for real numbers ≠1"
+msgstr "ຟັງຊັນ Riemann zeta ຖືກນິຍາມໄວ້ສຳລັບຈຳນວນຈິງທີ່ບໍ່ເທົ່າກັບ 1 ເທົ່ານັ້ນ"
+
+#. Translators: Error displayed when tangent value is undefined
+#: src/mp-trigonometric.c:116
+msgid ""
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
+msgstr "ແທນເຈນບໍ່ໄດ້ຖືກນິຍາມສຳລັບມຸມທີ່ເປັນພະຫຸຄູນຂອງ π (180°) ຈາກ π∕2 (90°)"
+
+#. Translators: Error displayed when inverse sine value is undefined
+#: src/mp-trigonometric.c:145
+msgid "Inverse sine is undefined for values outside [-1, 1]"
+msgstr "ອາກຊາຍບໍ່ໄດ້ຖືກນິຍາມສຳລັບຄ່າທີ່ຢູ່ນອກຊ່ວງ [-1, 1]"
+
+#. Translators: Error displayed when inverse sine value is undefined
+#: src/mp-trigonometric.c:169
+msgid "Inverse cosine is undefined for values outside [-1, 1]"
+msgstr "ອາກໂຄຊາຍບໍ່ໄດ້ຖືກນິຍາມສຳລັບຄ່າທີ່ຢູ່ນອກຊ່ວງ [-1, 1]"
+
+#. Translators: Error displayed when inverse sine value is undefined
+#: src/mp-trigonometric.c:194
+msgid "Arctangent function is undefined for values i and -i"
+msgstr "ຟັງຊັນອາກແທນເຈນບໍ່ໄດ້ຖືກນິຍາມສຳລັບຄ່າ i ແລະ -i"
+
+#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
+#: src/mp-trigonometric.c:241
+msgid "Inverse hyperbolic cosine is undefined for values less than one"
+msgstr "ອາກໄຮເປີໂບລິກໂຄຊາຍບໍ່ໄດ້ຖືກນິຍາມສຳລັບຄ່າທີ່ນ້ອຍກວ່າໜຶ່ງ"
+
+#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
+#: src/mp-trigonometric.c:262
+msgid "Inverse hyperbolic tangent is undefined for values outside (-1, 1)"
+msgstr "ອາກໄຮເປີໂບລິກແທນເຈນບໍ່ໄດ້ຖືກນິຍາມສຳລັບຄ່າທີ່ຢູ່ນອກຊ່ວງ (-1, 1)"
+
+#: src/unit-manager.c:51
+#, c-format
+msgctxt "unit-format"
+msgid "%s degrees"
+msgstr "%s ອົງສາ"
+
+#: src/unit-manager.c:51
+msgctxt "unit-symbols"
+msgid "degree,degrees,deg"
+msgstr "degree,degrees,deg"
+
+#: src/unit-manager.c:52
+#, c-format
+msgctxt "unit-format"
+msgid "%s radians"
+msgstr "%s ເຣດຽນ"
+
+#: src/unit-manager.c:52
+msgctxt "unit-symbols"
+msgid "radian,radians,rad"
+msgstr "radian,radians,rad"
+
+#: src/unit-manager.c:53
+#, c-format
+msgctxt "unit-format"
+msgid "%s gradians"
+msgstr "%s ກຣາດຽນ"
+
+#: src/unit-manager.c:53
+msgctxt "unit-symbols"
+msgid "gradian,gradians,grad"
+msgstr "gradian,gradians,grad"
+
+#: src/unit-manager.c:54
+msgid "Parsecs"
+msgstr "ພາກເຊກ"
+
+#: src/unit-manager.c:54
+#, c-format
+msgctxt "unit-format"
+msgid "%s pc"
+msgstr "%s pc"
+
+#: src/unit-manager.c:54
+msgctxt "unit-symbols"
+msgid "parsec,parsecs,pc"
+msgstr "parsec,parsecs,pc"
+
+#: src/unit-manager.c:55
+msgid "Light Years"
+msgstr "ປີແສງ"
+
+#: src/unit-manager.c:55
+#, c-format
+msgctxt "unit-format"
+msgid "%s ly"
+msgstr "%s ly"
+
+#: src/unit-manager.c:55
+msgctxt "unit-symbols"
+msgid "lightyear,lightyears,ly"
+msgstr "lightyear,lightyears,ly"
+
+#: src/unit-manager.c:56
+msgid "Astronomical Units"
+msgstr "ໜ່ວຍດາລາສາດ"
+
+#: src/unit-manager.c:56
+#, c-format
+msgctxt "unit-format"
+msgid "%s au"
+msgstr "%s au"
+
+#: src/unit-manager.c:56
+msgctxt "unit-symbols"
+msgid "au"
+msgstr "au"
+
+#: src/unit-manager.c:57
+msgid "Nautical Miles"
+msgstr "ໄມທະເລ"
+
+#: src/unit-manager.c:57
+#, c-format
+msgctxt "unit-format"
+msgid "%s nmi"
+msgstr "%s nmi"
+
+#: src/unit-manager.c:57
+msgctxt "unit-symbols"
+msgid "nmi"
+msgstr "nmi"
+
+#: src/unit-manager.c:58
+msgid "Miles"
+msgstr "ໄມ"
+
+#: src/unit-manager.c:58
+#, c-format
+msgctxt "unit-format"
+msgid "%s mi"
+msgstr "%s mi"
+
+#: src/unit-manager.c:58
+msgctxt "unit-symbols"
+msgid "mile,miles,mi"
+msgstr "mile,miles,mi"
+
+#: src/unit-manager.c:59
+msgid "Kilometers"
+msgstr "ກິໂລແມັດ"
+
+#: src/unit-manager.c:59
+#, c-format
+msgctxt "unit-format"
+msgid "%s km"
+msgstr "%s km"
+
+#: src/unit-manager.c:59
+msgctxt "unit-symbols"
+msgid "kilometer,kilometers,km,kms"
+msgstr "kilometer,kilometers,km,kms"
+
+#: src/unit-manager.c:60
+msgid "Cables"
+msgstr "ສາຍ"
+
+#: src/unit-manager.c:60
+#, c-format
+msgctxt "unit-format"
+msgid "%s cb"
+msgstr "%s cb"
+
+#: src/unit-manager.c:60
+msgctxt "unit-symbols"
+msgid "cable,cables,cb"
+msgstr "cable,cables,cb"
+
+#: src/unit-manager.c:61
+msgid "Fathoms"
+msgstr "ຟັດທອມ"
+
+#: src/unit-manager.c:61
+#, c-format
+msgctxt "unit-format"
+msgid "%s ftm"
+msgstr "%s ftm"
+
+#: src/unit-manager.c:61
+msgctxt "unit-symbols"
+msgid "fathom,fathoms,ftm"
+msgstr "fathom,fathoms,ftm"
+
+#: src/unit-manager.c:62
+msgid "Meters"
+msgstr "ແມັດ"
+
+#: src/unit-manager.c:62
+#, c-format
+msgctxt "unit-format"
+msgid "%s m"
+msgstr "%s m"
+
+#: src/unit-manager.c:62
+msgctxt "unit-symbols"
+msgid "meter,meters,m"
+msgstr "meter,meters,m"
+
+#: src/unit-manager.c:63
+msgid "Yards"
+msgstr "ຢາຣ໌ດ"
+
+#: src/unit-manager.c:63
+#, c-format
+msgctxt "unit-format"
+msgid "%s yd"
+msgstr "%s yd"
+
+#: src/unit-manager.c:63
+msgctxt "unit-symbols"
+msgid "yard,yards,yd"
+msgstr "yard,yards,yd"
+
+#: src/unit-manager.c:64
+msgid "Feet"
+msgstr "ຟຸດ"
+
+#: src/unit-manager.c:64
+#, c-format
+msgctxt "unit-format"
+msgid "%s ft"
+msgstr "%s ft"
+
+#: src/unit-manager.c:64
+msgctxt "unit-symbols"
+msgid "foot,feet,ft"
+msgstr "foot,feet,ft"
+
+#: src/unit-manager.c:65
+msgid "Inches"
+msgstr "ນິ້ວ"
+
+#: src/unit-manager.c:65
+#, c-format
+msgctxt "unit-format"
+msgid "%s in"
+msgstr "%s in"
+
+#: src/unit-manager.c:65
+msgctxt "unit-symbols"
+msgid "inch,inches,in"
+msgstr "inch,inches,in"
+
+#: src/unit-manager.c:66
+msgid "Centimeters"
+msgstr "ຊັງຕີແມັດ"
+
+#: src/unit-manager.c:66
+#, c-format
+msgctxt "unit-format"
+msgid "%s cm"
+msgstr "%s cm"
+
+#: src/unit-manager.c:66
+msgctxt "unit-symbols"
+msgid "centimeter,centimeters,cm,cms"
+msgstr "centimeter,centimeters,cm,cms"
+
+#: src/unit-manager.c:67
+msgid "Millimeters"
+msgstr "ມິນລີແມັດ"
+
+#: src/unit-manager.c:67
+#, c-format
+msgctxt "unit-format"
+msgid "%s mm"
+msgstr "%s mm"
+
+#: src/unit-manager.c:67
+msgctxt "unit-symbols"
+msgid "millimeter,millimeters,mm"
+msgstr "millimeter,millimeters,mm"
+
+#: src/unit-manager.c:68
+msgid "Micrometers"
+msgstr "ໄມໂຄຣແມັດ"
+
+#: src/unit-manager.c:68
+#, c-format
+msgctxt "unit-format"
+msgid "%s μm"
+msgstr "%s μm"
+
+#: src/unit-manager.c:68
+msgctxt "unit-symbols"
+msgid "micrometer,micrometers,um"
+msgstr "micrometer,micrometers,um"
+
+#: src/unit-manager.c:69
+msgid "Nanometers"
+msgstr "ນາໂນແມັດ"
+
+#: src/unit-manager.c:69
+#, c-format
+msgctxt "unit-format"
+msgid "%s nm"
+msgstr "%s nm"
+
+#: src/unit-manager.c:69
+msgctxt "unit-symbols"
+msgid "nanometer,nanometers,nm"
+msgstr "nanometer,nanometers,nm"
+
+#: src/unit-manager.c:70
+msgid "Hectares"
+msgstr "ເຮັກຕາ"
+
+#: src/unit-manager.c:70
+#, c-format
+msgctxt "unit-format"
+msgid "%s ha"
+msgstr "%s ha"
+
+#: src/unit-manager.c:70
+msgctxt "unit-symbols"
+msgid "hectare,hectares,ha"
+msgstr "hectare,hectares,ha"
+
+#: src/unit-manager.c:71
+msgid "Acres"
+msgstr "ເອເຄີ"
+
+#: src/unit-manager.c:71
+#, c-format
+msgctxt "unit-format"
+msgid "%s acres"
+msgstr "%s acres"
+
+#: src/unit-manager.c:71
+msgctxt "unit-symbols"
+msgid "acre,acres"
+msgstr "acre,acres"
+
+#: src/unit-manager.c:72
+msgid "Square Meters"
+msgstr "ຕາແມັດ"
+
+#: src/unit-manager.c:72
+#, c-format
+msgctxt "unit-format"
+msgid "%s m²"
+msgstr "%s m²"
+
+#: src/unit-manager.c:72
+msgctxt "unit-symbols"
+msgid "m²"
+msgstr "m²"
+
+#: src/unit-manager.c:73
+msgid "Square Centimeters"
+msgstr "ຕາຊັງຕີແມັດ"
+
+#: src/unit-manager.c:73
+#, c-format
+msgctxt "unit-format"
+msgid "%s cm²"
+msgstr "%s cm²"
+
+#: src/unit-manager.c:73
+msgctxt "unit-symbols"
+msgid "cm²"
+msgstr "cm²"
+
+#: src/unit-manager.c:74
+msgid "Square Millimeters"
+msgstr "ຕາມິນລີແມັດ"
+
+#: src/unit-manager.c:74
+#, c-format
+msgctxt "unit-format"
+msgid "%s mm²"
+msgstr "%s mm²"
+
+#: src/unit-manager.c:74
+msgctxt "unit-symbols"
+msgid "mm²"
+msgstr "mm²"
+
+#: src/unit-manager.c:75
+msgid "Cubic Meters"
+msgstr "ແມັດກ້ອນ"
+
+#: src/unit-manager.c:75
+#, c-format
+msgctxt "unit-format"
+msgid "%s m³"
+msgstr "%s m³"
+
+#: src/unit-manager.c:75
+msgctxt "unit-symbols"
+msgid "m³"
+msgstr "m³"
+
+#: src/unit-manager.c:76
+msgid "Gallons"
+msgstr "ກາລອນ"
+
+#: src/unit-manager.c:76
+#, c-format
+msgctxt "unit-format"
+msgid "%s gal"
+msgstr "%s gal"
+
+#: src/unit-manager.c:76
+msgctxt "unit-symbols"
+msgid "gallon,gallons,gal"
+msgstr "gallon,gallons,gal"
+
+#: src/unit-manager.c:77
+msgid "Litres"
+msgstr "ລິດ"
+
+#: src/unit-manager.c:77
+#, c-format
+msgctxt "unit-format"
+msgid "%s L"
+msgstr "%s L"
+
+#: src/unit-manager.c:77
+msgctxt "unit-symbols"
+msgid "litre,litres,liter,liters,L"
+msgstr "litre,litres,liter,liters,L"
+
+#: src/unit-manager.c:78
+msgid "Quarts"
+msgstr "ຄວອດ"
+
+#: src/unit-manager.c:78
+#, c-format
+msgctxt "unit-format"
+msgid "%s qt"
+msgstr "%s qt"
+
+#: src/unit-manager.c:78
+msgctxt "unit-symbols"
+msgid "quart,quarts,qt"
+msgstr "quart,quarts,qt"
+
+#: src/unit-manager.c:79
+msgid "Pints"
+msgstr "ພາຍນ໌"
+
+#: src/unit-manager.c:79
+#, c-format
+msgctxt "unit-format"
+msgid "%s pt"
+msgstr "%s pt"
+
+#: src/unit-manager.c:79
+msgctxt "unit-symbols"
+msgid "pint,pints,pt"
+msgstr "pint,pints,pt"
+
+#: src/unit-manager.c:80
+msgid "Millilitres"
+msgstr "ມິນລີລິດ"
+
+#: src/unit-manager.c:80
+#, c-format
+msgctxt "unit-format"
+msgid "%s mL"
+msgstr "%s mL"
+
+#: src/unit-manager.c:80
+msgctxt "unit-symbols"
+msgid "millilitre,millilitres,milliliter,milliliters,mL,cm³"
+msgstr "millilitre,millilitres,milliliter,milliliters,mL,cm³"
+
+#: src/unit-manager.c:81
+msgid "Microlitres"
+msgstr "ໄມໂຄຣລິດ"
+
+#: src/unit-manager.c:81
+#, c-format
+msgctxt "unit-format"
+msgid "%s μL"
+msgstr "%s μL"
+
+#: src/unit-manager.c:81
+msgctxt "unit-symbols"
+msgid "mm³,μL,uL"
+msgstr "mm³,μL,uL"
+
+#: src/unit-manager.c:82
+msgid "Tonnes"
+msgstr "ໂຕນ"
+
+#: src/unit-manager.c:82
+#, c-format
+msgctxt "unit-format"
+msgid "%s T"
+msgstr "%s T"
+
+#: src/unit-manager.c:82
+msgctxt "unit-symbols"
+msgid "tonne,tonnes"
+msgstr "tonne,tonnes"
+
+#: src/unit-manager.c:83
+msgid "Kilograms"
+msgstr "ກິໂລກຣາມ"
+
+#: src/unit-manager.c:83
+#, c-format
+msgctxt "unit-format"
+msgid "%s kg"
+msgstr "%s kg"
+
+#: src/unit-manager.c:83
+msgctxt "unit-symbols"
+msgid "kilogram,kilograms,kilogramme,kilogrammes,kg,kgs"
+msgstr "kilogram,kilograms,kilogramme,kilogrammes,kg,kgs"
+
+#: src/unit-manager.c:84
+msgid "Pounds"
+msgstr "ປອນ"
+
+#: src/unit-manager.c:84
+#, c-format
+msgctxt "unit-format"
+msgid "%s lb"
+msgstr "%s lb"
+
+#: src/unit-manager.c:84
+msgctxt "unit-symbols"
+msgid "pound,pounds,lb"
+msgstr "pound,pounds,lb"
+
+#: src/unit-manager.c:85
+msgid "Ounces"
+msgstr "ອອນສ໌"
+
+#: src/unit-manager.c:85
+#, c-format
+msgctxt "unit-format"
+msgid "%s oz"
+msgstr "%s oz"
+
+#: src/unit-manager.c:85
+msgctxt "unit-symbols"
+msgid "ounce,ounces,oz"
+msgstr "ounce,ounces,oz"
+
+#: src/unit-manager.c:86
+msgid "Grams"
+msgstr "ກຣາມ"
+
+#: src/unit-manager.c:86
+#, c-format
+msgctxt "unit-format"
+msgid "%s g"
+msgstr "%s g"
+
+#: src/unit-manager.c:86
+msgctxt "unit-symbols"
+msgid "gram,grams,gramme,grammes,g"
+msgstr "gram,grams,gramme,grammes,g"
+
+#: src/unit-manager.c:87
+msgid "Years"
+msgstr "ປີ"
+
+#: src/unit-manager.c:87
+#, c-format
+msgctxt "unit-format"
+msgid "%s years"
+msgstr "%s ປີ"
+
+#: src/unit-manager.c:87
+msgctxt "unit-symbols"
+msgid "year,years"
+msgstr "year,years"
+
+#: src/unit-manager.c:88
+msgid "Days"
+msgstr "ມື້"
+
+#: src/unit-manager.c:88
+#, c-format
+msgctxt "unit-format"
+msgid "%s days"
+msgstr "%s ມື້"
+
+#: src/unit-manager.c:88
+msgctxt "unit-symbols"
+msgid "day,days"
+msgstr "day,days"
+
+#: src/unit-manager.c:89
+msgid "Hours"
+msgstr "ຊົ່ວໂມງ"
+
+#: src/unit-manager.c:89
+#, c-format
+msgctxt "unit-format"
+msgid "%s hours"
+msgstr "%s ຊົ່ວໂມງ"
+
+#: src/unit-manager.c:89
+msgctxt "unit-symbols"
+msgid "hour,hours"
+msgstr "hour,hours"
+
+#: src/unit-manager.c:90
+msgid "Minutes"
+msgstr "ນາທີ"
+
+#: src/unit-manager.c:90
+#, c-format
+msgctxt "unit-format"
+msgid "%s minutes"
+msgstr "%s ນາທີ"
+
+#: src/unit-manager.c:90
+msgctxt "unit-symbols"
+msgid "minute,minutes"
+msgstr "minute,minutes"
+
+#: src/unit-manager.c:91
+msgid "Seconds"
+msgstr "ວິນາທີ"
+
+#: src/unit-manager.c:91
+#, c-format
+msgctxt "unit-format"
+msgid "%s s"
+msgstr "%s s"
+
+#: src/unit-manager.c:91
+msgctxt "unit-symbols"
+msgid "second,seconds,s"
+msgstr "second,seconds,s"
+
+#: src/unit-manager.c:92
+msgid "Milliseconds"
+msgstr "ມິນລີວິນາທີ"
+
+#: src/unit-manager.c:92
+#, c-format
+msgctxt "unit-format"
+msgid "%s ms"
+msgstr "%s ms"
+
+#: src/unit-manager.c:92
+msgctxt "unit-symbols"
+msgid "millisecond,milliseconds,ms"
+msgstr "millisecond,milliseconds,ms"
+
+#: src/unit-manager.c:93
+msgid "Microseconds"
+msgstr "ໄມໂຄຣວິນາທີ"
+
+#: src/unit-manager.c:93
+#, c-format
+msgctxt "unit-format"
+msgid "%s μs"
+msgstr "%s μs"
+
+#: src/unit-manager.c:93
+msgctxt "unit-symbols"
+msgid "microsecond,microseconds,us,μs"
+msgstr "microsecond,microseconds,us,μs"
+
+#: src/unit-manager.c:94
+msgid "Celsius"
+msgstr "ເຊນຊຽດ"
+
+#: src/unit-manager.c:94
+#, c-format
+msgctxt "unit-format"
+msgid "%s ˚C"
+msgstr "%s ˚C"
+
+#: src/unit-manager.c:94
+msgctxt "unit-symbols"
+msgid "degC,˚C"
+msgstr "degC,˚C"
+
+#: src/unit-manager.c:95
+msgid "Farenheit"
+msgstr "ຟາເຣັນໄຮ"
+
+#: src/unit-manager.c:95
+#, c-format
+msgctxt "unit-format"
+msgid "%s ˚F"
+msgstr "%s ˚F"
+
+#: src/unit-manager.c:95
+msgctxt "unit-symbols"
+msgid "degF,˚F"
+msgstr "degF,˚F"
+
+#: src/unit-manager.c:96
+msgid "Kelvin"
+msgstr "ເຄວິນ"
+
+#: src/unit-manager.c:96
+#, c-format
+msgctxt "unit-format"
+msgid "%s K"
+msgstr "%s K"
+
+#: src/unit-manager.c:96
+msgctxt "unit-symbols"
+msgid "K"
+msgstr "K"
+
+#: src/unit-manager.c:97
+msgid "Rankine"
+msgstr "ຣັງກິນ"
+
+#: src/unit-manager.c:97
+#, c-format
+msgctxt "unit-format"
+msgid "%s ˚R"
+msgstr "%s ˚R"
+
+#: src/unit-manager.c:97
+msgctxt "unit-symbols"
+msgid "degR,˚R,˚Ra"
+msgstr "degR,˚R,˚Ra"
+
+#: src/unit-manager.c:106
+msgid "Angle"
+msgstr "ມຸມ"
+
+#: src/unit-manager.c:107
+msgid "Length"
+msgstr "ຄວາມຍາວ"
+
+#: src/unit-manager.c:108
+msgid "Area"
+msgstr "ພື້ນທີ່"
+
+#: src/unit-manager.c:109
+msgid "Volume"
+msgstr "ປະລິມາດ"
+
+#: src/unit-manager.c:110
+msgid "Weight"
+msgstr "ນ້ຳໜັກ"
+
+#: src/unit-manager.c:111
+msgid "Duration"
+msgstr "ໄລຍະເວລາ"
+
+#: src/unit-manager.c:112
+msgid "Temperature"
+msgstr "ອຸນຫະພູມ"
+
+#: src/unit-manager.c:124
+msgid "Currency"
+msgstr "ສະກຸນເງິນ"
+
+#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
+#: src/unit-manager.c:134
+#, c-format
+msgid "%s%%s"
+msgstr "%s%%s"
