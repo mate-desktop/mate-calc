@@ -276,8 +276,25 @@ math_converter_get_conversion(MathConverter *converter, Unit **from_unit, Unit *
 }
 
 static void
+math_converter_dispose(GObject *object)
+{
+    MathConverter *self;
+
+    self = MATH_CONVERTER(object);
+
+    g_clear_object(&self->priv->equation);
+    g_clear_pointer(&self->priv->category, g_free);
+
+    G_OBJECT_CLASS(math_converter_parent_class)->dispose(object);
+}
+
+static void
 math_converter_class_init(MathConverterClass *klass)
 {
+    GObjectClass *object_class = G_OBJECT_CLASS(klass);
+
+    object_class->dispose = math_converter_dispose;
+
     signals[CHANGED] =
         g_signal_new("changed",
                      G_TYPE_FROM_CLASS (klass),

@@ -121,8 +121,28 @@ math_history_set_serializer(MathHistory *history, MpSerializer *serializer)
 }
 
 static void
+math_history_dispose(GObject *object)
+{
+    MathHistory *self;
+
+    self = MATH_HISTORY(object);
+
+    g_clear_object(&self->priv->equation);
+    g_clear_pointer(&self->priv->last_equation, g_free);
+
+    /* Borrowed from the equation, not ours to free. */
+    self->priv->serializer = NULL;
+
+    G_OBJECT_CLASS(math_history_parent_class)->dispose(object);
+}
+
+static void
 math_history_class_init(MathHistoryClass *klass)
 {
+    GObjectClass *object_class = G_OBJECT_CLASS(klass);
+
+    object_class->dispose = math_history_dispose;
+
     g_signal_new("row-added",
                  G_TYPE_FROM_CLASS(klass),
                  G_SIGNAL_RUN_FIRST,

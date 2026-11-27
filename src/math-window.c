@@ -675,7 +675,7 @@ math_window_set_property(GObject      *object,
 
     switch (prop_id) {
     case PROP_EQUATION:
-        self->priv->equation = g_value_get_object(value);
+        self->priv->equation = g_object_ref(g_value_get_object(value));
         create_gui(self);
         break;
     case PROP_SHOW_HISTORY:
@@ -711,12 +711,37 @@ math_window_get_property(GObject    *object,
 }
 
 static void
+math_window_dispose(GObject *object)
+{
+    MathWindow *self;
+
+    self = MATH_WINDOW(object);
+
+    /* The preferences dialog is a toplevel transient for this window, not a
+     * child widget, so it is not torn down by the container dispose. Destroy
+     * it while the equation it points at is still alive. */
+    if (self->priv->preferences_dialog != NULL)
+    {
+        gtk_widget_destroy(GTK_WIDGET(self->priv->preferences_dialog));
+        self->priv->preferences_dialog = NULL;
+    }
+
+    /* Chain up first: the display, buttons and history widgets either borrow
+     * the equation or hold a reference of their own, so it has to outlive
+     * them. */
+    G_OBJECT_CLASS(math_window_parent_class)->dispose(object);
+
+    g_clear_object(&self->priv->equation);
+}
+
+static void
 math_window_class_init(MathWindowClass *klass)
 {
     GObjectClass *object_class = G_OBJECT_CLASS(klass);
 
     object_class->get_property = math_window_get_property;
     object_class->set_property = math_window_set_property;
+    object_class->dispose = math_window_dispose;
 
     g_object_class_install_property(object_class,
                                     PROP_EQUATION,
