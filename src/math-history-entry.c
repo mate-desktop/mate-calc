@@ -102,6 +102,18 @@ math_history_entry_get_equation(MathHistoryEntry *history_entry)
 }
 
 static void
+math_history_entry_dispose(GObject *object)
+{
+    MathHistoryEntry *self;
+
+    self = MATH_HISTORY_ENTRY(object);
+
+    g_clear_object(&self->priv->equation);
+
+    G_OBJECT_CLASS(math_history_entry_parent_class)->dispose(object);
+}
+
+static void
 math_history_entry_finalize(GObject *object)
 {
     MathHistoryEntry *self = MATH_HISTORY_ENTRY (object);
@@ -116,6 +128,7 @@ math_history_entry_class_init(MathHistoryEntryClass *klass)
 {
     GObjectClass *object_class = G_OBJECT_CLASS(klass);
 
+    object_class->dispose = math_history_entry_dispose;
     object_class->finalize = math_history_entry_finalize;
 }
 

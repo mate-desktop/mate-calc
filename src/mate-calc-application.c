@@ -90,6 +90,7 @@ mate_calc_application_activate(GApplication *application)
     g_free(target_units);
 
     window = GTK_WINDOW(math_window_new(equation));
+    g_object_unref(equation);
     gtk_application_add_window(GTK_APPLICATION(app), window);
 
     buttons = math_window_get_buttons(MATH_WINDOW(window));
